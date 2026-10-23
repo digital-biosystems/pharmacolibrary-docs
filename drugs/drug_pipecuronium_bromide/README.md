@@ -80,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -91,13 +91,13 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Caldwell_1988.pdf` | Caldwell JE et al., Pipecuronium and pancuronium: compariso…, British journal of anaesthe… (1988) | popPK | 10 | [10.1093/bja/61.6.693](https://doi.org/10.1093/bja/61.6.693) | [2849968](https://pubmed.ncbi.nlm.nih.gov/2849968) | The abstract explicitly reports quantitative pharmacokinetic parameters for pipecuronium, including steady-state volume of distribution (Vss) and plasma clearance (Cl), with numerical values and standard deviations. |
 | `Caldwell_1989.pdf` | Caldwell JE et al., The influence of renal failure on the p…, Anesthesiology (1989) | popPK | 10 | [10.1097/00000542-198901000-00004](https://doi.org/10.1097/00000542-198901000-00004) | [2536254](https://pubmed.ncbi.nlm.nih.gov/2536254) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for pipecuronium bromide in human patients with and without renal failure, with values explicitly stated in the abstract. |
-| `DHonneur_1993.pdf` | D'Honneur G et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and analgesia (1993) | popPK | 10 | not captured | [8250313](https://pubmed.ncbi.nlm.nih.gov/8250313) | The study reports specific quantitative pharmacokinetic parameters (clearance, half-life, volume of distribution) for pipecuronium in human subjects. |
-| `Tassonyi_1981.pdf` | Tassonyi E et al., Pharmacokinetics of pipecurium bromide,…, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [6274362](https://pubmed.ncbi.nlm.nih.gov/6274362) | The study reports quantitative pharmacokinetic parameters (Cl, Vbeta, half-lives) for pipecuronium bromide in humans, with all values explicitly provided in the text. |
+| `DHonneur_1993.pdf` | D'Honneur G et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and analgesia (1993) | popPK | 10 |  | [8250313](https://pubmed.ncbi.nlm.nih.gov/8250313) | The study reports specific quantitative pharmacokinetic parameters (clearance, half-life, volume of distribution) for pipecuronium in human subjects. |
+| `Tassonyi_1981.pdf` | Tassonyi E et al., Pharmacokinetics of pipecurium bromide,…, Arzneimittel-Forschung (1981) | popPK | 10 |  | [6274362](https://pubmed.ncbi.nlm.nih.gov/6274362) | The study reports quantitative pharmacokinetic parameters (Cl, Vbeta, half-lives) for pipecuronium bromide in humans, with all values explicitly provided in the text. |
 | `Tassonyi_1995.pdf` | Tassonyi E et al., Pharmacokinetics of pipecuronium in inf…, European journal of drug me… (1995) | popPK | 10 | [10.1007/BF03189671](https://doi.org/10.1007/BF03189671) | [8751042](https://pubmed.ncbi.nlm.nih.gov/8751042) | The study reports specific quantitative pharmacokinetic parameters (half-life, clearance) for pipecuronium in humans using a compartmental model. |
-| `Yajima_1990.pdf` | Yajima C et al., [Comparative pharmacokinetics of pipecu…, Masui. The Japanese journal… (1990) | popPK | 10 | not captured | [1976829](https://pubmed.ncbi.nlm.nih.gov/1976829) | The abstract explicitly reports quantitative pharmacokinetic parameters (clearance, volumes, half-lives) for pipecuronium bromide in humans. |
-| `Vereczkey_1992.pdf` | Vereczkey L, [Pharmacokinetics and metabolism of pip…, Acta pharmaceutica Hungarica (1992) | popPK | 5 | not captured | [1323914](https://pubmed.ncbi.nlm.nih.gov/1323914) | The text confirms a two-compartment model for pipecuronium but only reports qualitative elimination half-life ranges (40 min, 44-137 min) without specific numeric values for clearance, volume, or intercompartmental clearance in the provided evidence. |
+| `Yajima_1990.pdf` | Yajima C et al., [Comparative pharmacokinetics of pipecu…, Masui. The Japanese journal… (1990) | popPK | 10 |  | [1976829](https://pubmed.ncbi.nlm.nih.gov/1976829) | The abstract explicitly reports quantitative pharmacokinetic parameters (clearance, volumes, half-lives) for pipecuronium bromide in humans. |
+| `Vereczkey_1992.pdf` | Vereczkey L, [Pharmacokinetics and metabolism of pip…, Acta pharmaceutica Hungarica (1992) | popPK | 5 |  | [1323914](https://pubmed.ncbi.nlm.nih.gov/1323914) | The text confirms a two-compartment model for pipecuronium but only reports qualitative elimination half-life ranges (40 min, 44-137 min) without specific numeric values for clearance, volume, or intercompartmental clearance in the provided evidence. |
 
-<sub>queue written 2026-10-07T02:35:43.318869+00:00</sub>
+<sub>queue written 2026-10-07 02:35 UTC</sub>
 
 ## Screened and excluded
 
@@ -110,5 +110,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 02:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpipecuronium_bromide%5D&body=Drug%3A%20pipecuronium_bromide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pipecuronium_bromide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:35 UTC</sub>

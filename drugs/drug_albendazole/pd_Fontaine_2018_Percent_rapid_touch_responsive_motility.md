@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbendazole%5D%20pd_Fontaine_2018_Percent_rapid_touch_responsive_motility&body=Drug%3A%20albendazole%0ARecord%3A%20pd_Fontaine_2018_Percent_rapid_touch_responsive_motility%0APaper%3A%20Fontaine_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albendazole/pd_Fontaine_2018_Percent_rapid_touch_responsive_motility%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [albendazole](drugs/drug_albendazole/)</sub>

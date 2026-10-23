@@ -58,4 +58,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbromhexine%5D%20pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin&body=Drug%3A%20bromhexine%0ARecord%3A%20pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin%0APaper%3A%20Bergogne-B%C3%A9r%C3%A9zin_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bromhexine/pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [bromhexine](drugs/drug_bromhexine/)</sub>

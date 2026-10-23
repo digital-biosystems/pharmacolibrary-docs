@@ -93,4 +93,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxycycline%5D%20pd_Rothan_2015_CHIKV&body=Drug%3A%20doxycycline%0ARecord%3A%20pd_Rothan_2015_CHIKV%0APaper%3A%20Rothan_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxycycline/pd_Rothan_2015_CHIKV%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [doxycycline](drugs/drug_doxycycline/)</sub>

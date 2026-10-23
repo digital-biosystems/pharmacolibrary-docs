@@ -55,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 92 matched, 104 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -71,15 +71,15 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bergstrand_1984.pdf` | Bergstrand R et al., Intravenous and oral administration of…, European journal of clinica… (1984) | popPK | 8 | [10.1007/BF00544046](https://doi.org/10.1007/BF00544046) | [6548711](https://pubmed.ncbi.nlm.nih.gov/6548711) | The study reports quantitative PK parameters (bioavailability, clearance, volume) for molsidomine in humans, but specific numeric values for CL and V are not provided in the text, only bioavailability. |
 | `Meinertz_1985.pdf` | Meinertz T et al., Relationship between pharmacokinetics a…, American heart journal (1985) | popPK | 8 | [10.1016/0002-8703(85)90671-4](https://doi.org/10.1016/0002-8703(85)90671-4) | [3838400](https://pubmed.ncbi.nlm.nih.gov/3838400) | The study investigates the pharmacokinetics of molsidomine in humans, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
 | `Rosenkranz_1996.pdf` | Rosenkranz B et al., Clinical pharmacokinetics of molsidomine, Clinical pharmacokinetics (1996) | popPK | 8 | [10.2165/00003088-199630050-00004](https://doi.org/10.2165/00003088-199630050-00004) | [8743336](https://pubmed.ncbi.nlm.nih.gov/8743336) | The text provides specific quantitative PK parameters (bioavailability, tmax, t1/2, Vd, protein binding) for molsidomine and its metabolite SIN-1 in humans. |
-| `Singlas_1983.pdf` | Singlas E et al., [Human pharmacokinetics of molsidomine], Annales de cardiologie et d… (1983) | popPK | 8 | not captured | [6364946](https://pubmed.ncbi.nlm.nih.gov/6364946) | The text provides quantitative PK parameters including volume of distribution (1 L/kg), half-life (1-2 hours), and bioavailability (60%) for molsidomine in humans. |
-| `Wildgrube_1986.pdf` | Wildgrube HJ et al., Liver function and pharmacokinetics of…, Arzneimittel-Forschung (1986) | popPK | 8 | not captured | [3768083](https://pubmed.ncbi.nlm.nih.gov/3768083) | The study reports pharmacokinetic parameters for molsidomine in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Singlas_1983.pdf` | Singlas E et al., [Human pharmacokinetics of molsidomine], Annales de cardiologie et d… (1983) | popPK | 8 |  | [6364946](https://pubmed.ncbi.nlm.nih.gov/6364946) | The text provides quantitative PK parameters including volume of distribution (1 L/kg), half-life (1-2 hours), and bioavailability (60%) for molsidomine in humans. |
+| `Wildgrube_1986.pdf` | Wildgrube HJ et al., Liver function and pharmacokinetics of…, Arzneimittel-Forschung (1986) | popPK | 8 |  | [3768083](https://pubmed.ncbi.nlm.nih.gov/3768083) | The study reports pharmacokinetic parameters for molsidomine in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Wilson_1987.pdf` | Wilson ID et al., The metabolism of [14C]N-ethoxycarbonyl…, Xenobiotica; the fate of fo… (1987) | popPK | 8 | [10.3109/00498258709047179](https://doi.org/10.3109/00498258709047179) | [3825179](https://pubmed.ncbi.nlm.nih.gov/3825179) | The study reports quantitative PK parameters (Cmax, Tmax, half-lives) for molsidomine in humans, but lacks explicit clearance or volume of distribution values. |
-| `Kuhn_1989.pdf` | Kuhn M et al., Endothelium-dependent vasodilatation in…, Journal of cardiovascular p… (1989) | pd | 5 | not captured | [2484699](https://www.ncbi.nlm.nih.gov/pubmed/2484699) | metadata signals extractable PD data (EC50) |
-| `Nunez_1987.pdf` | Nunez D et al., [Effects of SIN-1, a metabolite of mols…, Pathologie-biologie (1987) | pd | 4 | not captured | [3550639](https://www.ncbi.nlm.nih.gov/pubmed/3550639) | metadata signals extractable PD data (IC50) |
-| `Robak_1993.pdf` | Robak J et al., Nitric oxide donors as generators and s…, Polish journal of pharmacol… (1993) | pd | 4 | not captured | [8401759](https://www.ncbi.nlm.nih.gov/pubmed/8401759) | metadata signals extractable PD data (IC50) |
-| `Zembowicz_1990.pdf` | Zembowicz A et al., Vasorelaxant and platelet-suppressant p…, Polish journal of pharmacol… (1990) | pd | 4 | not captured | [2124687](https://www.ncbi.nlm.nih.gov/pubmed/2124687) | metadata signals extractable PD data (EC50) |
+| `Kuhn_1989.pdf` | Kuhn M et al., Endothelium-dependent vasodilatation in…, Journal of cardiovascular p… (1989) | pd | 5 |  | [2484699](https://www.ncbi.nlm.nih.gov/pubmed/2484699) | metadata signals extractable PD data (EC50) |
+| `Nunez_1987.pdf` | Nunez D et al., [Effects of SIN-1, a metabolite of mols…, Pathologie-biologie (1987) | pd | 4 |  | [3550639](https://www.ncbi.nlm.nih.gov/pubmed/3550639) | metadata signals extractable PD data (IC50) |
+| `Robak_1993.pdf` | Robak J et al., Nitric oxide donors as generators and s…, Polish journal of pharmacol… (1993) | pd | 4 |  | [8401759](https://www.ncbi.nlm.nih.gov/pubmed/8401759) | metadata signals extractable PD data (IC50) |
+| `Zembowicz_1990.pdf` | Zembowicz A et al., Vasorelaxant and platelet-suppressant p…, Polish journal of pharmacol… (1990) | pd | 4 |  | [2124687](https://www.ncbi.nlm.nih.gov/pubmed/2124687) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T10:49:08.951583+00:00</sub>
+<sub>queue written 2026-10-06 10:49 UTC</sub>
 
 ## Screened and excluded
 
@@ -170,5 +170,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmolsidomine%5D&body=Drug%3A%20molsidomine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_molsidomine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -141,7 +141,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 466 matched, 87 returned
 - **screened:** 17  ·  **relevant:** 17
-- **records:** 13  ·  extracted 4  ·  needs_review 6  ·  rejected 3  ·  stale 3
+- **records:** 13  ·  extracted 4  ·  needs review 6  ·  rejected 3  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -150,19 +150,19 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Camu_1982.pdf` | Camu F et al., Pharmacokinetics of alfentanil in man, Anesthesia and analgesia (1982) | popPK | 10 | not captured | [6124179](https://pubmed.ncbi.nlm.nih.gov/6124179) | The study reports quantitative three-compartment pharmacokinetic parameters (clearance, volume, half-lives) for alfentanil in humans directly in the text. |
+| `Camu_1982.pdf` | Camu F et al., Pharmacokinetics of alfentanil in man, Anesthesia and analgesia (1982) | popPK | 10 |  | [6124179](https://pubmed.ncbi.nlm.nih.gov/6124179) | The study reports quantitative three-compartment pharmacokinetic parameters (clearance, volume, half-lives) for alfentanil in humans directly in the text. |
 | `Davis_1989.pdf` | Davis PJ et al., Pharmacokinetics of alfentanil in newbo…, Developmental pharmacology… (1989) | popPK | 10 | [10.1159/000457577](https://doi.org/10.1159/000457577) | [2505988](https://pubmed.ncbi.nlm.nih.gov/2505988) | The study reports specific quantitative disposition parameters (Vd, CL, t1/2) for alfentanil in humans. |
 | `Frenkel_1995.pdf` | Frenkel C et al., Pharmacokinetics and pharmacodynamics o…, Intensive care medicine (1995) | popPK | 10 | [10.1007/BF01700659](https://doi.org/10.1007/BF01700659) | [8750122](https://pubmed.ncbi.nlm.nih.gov/8750122) | The study is a population pharmacokinetic analysis of alfentanil in humans, and the specific numeric parameters (V1, Vdss, Cltot, half-lives) are explicitly provided in the text. |
 | `Helmers_1984.pdf` | Helmers H et al., Alfentanil kinetics in the elderly, Clinical pharmacology and t… (1984) | popPK | 10 | [10.1038/clpt.1984.169](https://doi.org/10.1038/clpt.1984.169) | [6146424](https://pubmed.ncbi.nlm.nih.gov/6146424) | The abstract provides explicit numeric values for clearance, volume of distribution, and half-life for alfentanil in humans. |
 | `Medina-Aymerich_2025.pdf` | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | popPK | 10 | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) | [40377652](https://pubmed.ncbi.nlm.nih.gov/40377652) | The full text contains specific quantitative population pharmacokinetic model equations for clearance and volume of distribution in pediatric patients. |
 | `Meistelman_1987.pdf` | Meistelman C et al., A comparison of alfentanil pharmacokine…, Anesthesiology (1987) | popPK | 10 | [10.1097/00000542-198701000-00003](https://doi.org/10.1097/00000542-198701000-00003) | [3099603](https://pubmed.ncbi.nlm.nih.gov/3099603) | The abstract provides explicit quantitative values for volume of distribution, clearance comparison, and half-life for alfentanil in both pediatric and adult subjects. |
-| `Schüttler_1982.pdf` | Schüttler J et al., [Clinical pharmacokinetics of alfentany…, Der Anaesthesist (1982) | popPK | 9 | not captured | [6122384](https://pubmed.ncbi.nlm.nih.gov/6122384) | The study reports specific quantitative PK parameters (half-life, volume of distribution, clearance) for alfentanil in humans directly in the text. |
-| `Mandema_1995.pdf` | Mandema JW et al., Pharmacodynamic model for acute toleran…, The Journal of pharmacology… (1995) | popPK | 8 | not captured | [8531080](https://pubmed.ncbi.nlm.nih.gov/8531080) | The study reports specific clearance values (49.7 to 29.3 ml/min/kg) derived from a three-compartment model for alfentanil in rats. |
+| `Schüttler_1982.pdf` | Schüttler J et al., [Clinical pharmacokinetics of alfentany…, Der Anaesthesist (1982) | popPK | 9 |  | [6122384](https://pubmed.ncbi.nlm.nih.gov/6122384) | The study reports specific quantitative PK parameters (half-life, volume of distribution, clearance) for alfentanil in humans directly in the text. |
+| `Mandema_1995.pdf` | Mandema JW et al., Pharmacodynamic model for acute toleran…, The Journal of pharmacology… (1995) | popPK | 8 |  | [8531080](https://pubmed.ncbi.nlm.nih.gov/8531080) | The study reports specific clearance values (49.7 to 29.3 ml/min/kg) derived from a three-compartment model for alfentanil in rats. |
 | `Scott_1985.pdf` | Scott JC et al., EEG quantitation of narcotic effect: th…, Anesthesiology (1985) | popPK | 7 | [10.1097/00000542-198503000-00005](https://doi.org/10.1097/00000542-198503000-00005) | [3919613](https://pubmed.ncbi.nlm.nih.gov/3919613) | The study reports quantitative pharmacokinetic/pharmacodynamic parameters for alfentanil in humans, including the half-time of equilibration to the effect compartment (1.1 +/- 0.3 min) and EC50 (520 +/- 163 ng/ml). |
 | `Glass_1993.pdf` | Glass PS et al., Preliminary pharmacokinetics and pharma…, Anesthesia and analgesia (1993) | popPK | 5 | [10.1213/00000539-199311000-00028](https://doi.org/10.1213/00000539-199311000-00028) | [8105723](https://pubmed.ncbi.nlm.nih.gov/8105723) | The study reports PK parameters for remifentanil as the primary subject, with alfentanil serving as a comparator where only volume and half-life values are provided, lacking full disposition parameters like clearance or intercompartmental clearance. |
-| `Scott_1987.pdf` | Scott JC et al., Decreased fentanyl and alfentanil dose…, The Journal of pharmacology… (1987) | popPK | 5 | not captured | [3100765](https://pubmed.ncbi.nlm.nih.gov/3100765) | The study analyzes alfentanil PK but explicitly states no numeric parameter values were found to change with age and provides no quantitative PK data in the evidence. |
+| `Scott_1987.pdf` | Scott JC et al., Decreased fentanyl and alfentanil dose…, The Journal of pharmacology… (1987) | popPK | 5 |  | [3100765](https://pubmed.ncbi.nlm.nih.gov/3100765) | The study analyzes alfentanil PK but explicitly states no numeric parameter values were found to change with age and provides no quantitative PK data in the evidence. |
 
-<sub>queue written 2026-10-07T04:02:55.555622+00:00</sub>
+<sub>queue written 2026-10-07 04:02 UTC</sub>
 
 ## Screened and excluded
 
@@ -226,5 +226,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balfentanil%5D&body=Drug%3A%20alfentanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alfentanil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:03 UTC</sub>

@@ -88,7 +88,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 36 matched, 33 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 3  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -97,16 +97,16 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cano_1982.pdf` | Cano JP et al., [Pharmacokinetics of intravenous mezloc…, La Nouvelle presse medicale (1982) | popPK | 10 | not captured | [6460972](https://pubmed.ncbi.nlm.nih.gov/6460972) | The abstract provides clear numeric values for half-life, clearance, and volume of distribution for mezlocillin in patients. |
+| `Cano_1982.pdf` | Cano JP et al., [Pharmacokinetics of intravenous mezloc…, La Nouvelle presse medicale (1982) | popPK | 10 |  | [6460972](https://pubmed.ncbi.nlm.nih.gov/6460972) | The abstract provides clear numeric values for half-life, clearance, and volume of distribution for mezlocillin in patients. |
 | `Frimodt-Möller_1980.pdf` | Frimodt-Möller N et al., Mezlocillin pharmacokinetics after sing…, Antimicrobial agents and ch… (1980) | popPK | 10 | [10.1128/AAC.17.4.599](https://doi.org/10.1128/AAC.17.4.599) | [6446877](https://pubmed.ncbi.nlm.nih.gov/6446877) | The study reports quantitative pharmacokinetic parameters including elimination half-life and Vdss for mezlocillin in human patients, with values explicitly listed in the text. |
 | `Modr_1982.pdf` | Modr Z et al., [Pharmacokinetics and dosage of mezloci…, Infection 10 Suppl (1982) | popPK | 10 | [10.1007/BF01640669](https://doi.org/10.1007/BF01640669) | [6218111](https://pubmed.ncbi.nlm.nih.gov/6218111) | The study reports quantitative two-compartment pharmacokinetic parameters (half-life, clearance, volume of distribution) for mezlocillin in humans. |
 | `Zhou_2022.pdf` | Zhou J et al., Population pharmacokinetics and dosing…, The Journal of antimicrobia… (2022) | popPK | 10 | [10.1093/jac/dkac176](https://doi.org/10.1093/jac/dkac176) | [35662337](https://pubmed.ncbi.nlm.nih.gov/35662337) | The study reports a population pharmacokinetic model for mezlocillin in neonates, but specific numeric parameter values (e.g., clearance, volume) are not provided in the extracted evidence. |
-| `Adam_1979.pdf` | Adam D et al., [Pharmacokinetic studies on broad spect…, Arzneimittel-Forschung (1979) | popPK | 9 | not captured | [543889](https://pubmed.ncbi.nlm.nih.gov/543889) | The study is a relevant PK investigation of mezlocillin in humans, but the specific numeric parameter values (CL, V, t1/2, ka) are described qualitatively in the abstract without explicit numbers provided in the evidence. |
+| `Adam_1979.pdf` | Adam D et al., [Pharmacokinetic studies on broad spect…, Arzneimittel-Forschung (1979) | popPK | 9 |  | [543889](https://pubmed.ncbi.nlm.nih.gov/543889) | The study is a relevant PK investigation of mezlocillin in humans, but the specific numeric parameter values (CL, V, t1/2, ka) are described qualitatively in the abstract without explicit numbers provided in the evidence. |
 | `Lode_1980.pdf` | Lode H et al., Clinical pharmacology of a new ureidope…, Chemotherapy (1980) | popPK | 9 | [10.1159/000237887](https://doi.org/10.1159/000237887) | [7363710](https://pubmed.ncbi.nlm.nih.gov/7363710) | The study is a comparative PK study including mezlocillin with a three-compartment model, but no specific numeric PK parameter values (CL, V, half-life) for mezlocillin are provided in the evidence. |
 | `Wittman_1983.pdf` | Wittman DH et al., Penetration of eight beta-lactam antibi…, Archives of surgery (Chicag… (1983) | popPK | 8 | [10.1001/archsurg.1983.01390020055010](https://doi.org/10.1001/archsurg.1983.01390020055010) | [6849637](https://pubmed.ncbi.nlm.nih.gov/6849637) | The study describes a pharmacokinetic investigation of mezlocillin in humans using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Wittmann_1981.pdf` | Wittmann DH et al., [Pharmacokinetic studies on the penetra…, Arzneimittel-Forschung (1981) | popPK | 6 | not captured | [6456009](https://pubmed.ncbi.nlm.nih.gov/6456009) | The study investigates mezlocillin pharmacokinetics and reports a two-compartment model, but the specific numeric parameter values are described as being derived for individual patients and presented as geometric means/tables not fully detailed in the abstract evidence. |
+| `Wittmann_1981.pdf` | Wittmann DH et al., [Pharmacokinetic studies on the penetra…, Arzneimittel-Forschung (1981) | popPK | 6 |  | [6456009](https://pubmed.ncbi.nlm.nih.gov/6456009) | The study investigates mezlocillin pharmacokinetics and reports a two-compartment model, but the specific numeric parameter values are described as being derived for individual patients and presented as geometric means/tables not fully detailed in the abstract evidence. |
 
-<sub>queue written 2026-10-07T10:07:13.063856+00:00</sub>
+<sub>queue written 2026-10-07 10:07 UTC</sub>
 
 ## Screened and excluded
 
@@ -134,5 +134,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmezlocillin%5D&body=Drug%3A%20mezlocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mezlocillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:07 UTC</sub>

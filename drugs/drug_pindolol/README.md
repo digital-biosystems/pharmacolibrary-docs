@@ -58,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 259 matched, 88 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -71,30 +71,30 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Gonçalves_2002.pdf` | Gonçalves PV et al., Enantioselectivity in the steady-state…, Chirality (2002) | popPK | 10 | [10.1002/chir.10124](https://doi.org/10.1002/chir.10124) | [12125040](https://pubmed.ncbi.nlm.nih.gov/12125040) | The study reports quantitative pharmacokinetic parameters (AUC, Cl, Vd/f, Cl/f) for pindolol enantiomers in humans. |
 | `Schwarz_1982.pdf` | Schwarz HJ, Pharmacokinetics of pindolol in humans…, American heart journal (1982) | popPK | 10 | [10.1016/0002-8703(82)90126-0](https://doi.org/10.1016/0002-8703(82)90126-0) | [7102525](https://pubmed.ncbi.nlm.nih.gov/7102525) | The paper describes a PK study of pindolol in humans and animals with a 3-compartment model, but specific numeric values for CL, V, or ka are not present in the provided abstract text. |
 | `Balant_1981.pdf` | Balant L et al., Simultaneous tubular excretion and reab…, European journal of clinica… (1981) | popPK | 9 | [10.1007/BF00609590](https://doi.org/10.1007/BF00609590) | [7333348](https://pubmed.ncbi.nlm.nih.gov/7333348) | The study reports pindolol PK parameters in humans, but only half-lives are explicitly provided in the text; clearance and volume values are described as derived from models without specific numeric values listed in the evidence. |
-| `Ohnhaus_1976.pdf` | Ohnhaus EE et al., [Comparative study on the elimination o…, Schweizerische medizinische… (1976) | popPK | 9 | not captured | [1013699](https://pubmed.ncbi.nlm.nih.gov/1013699) | The study reports pharmacokinetic parameters for pindolol in humans, but the specific numeric values are not present in the provided evidence text. |
-| `Kiger_1976.pdf` | Kiger JL et al., The effect of food and clopamide on the…, International journal of cl… (1976) | popPK | 8 | not captured | [780287](https://pubmed.ncbi.nlm.nih.gov/780287) | The study reports a one-compartment PK model for pindolol in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
-| `Gross_1994.pdf` | Gross AS et al., Interaction of the stereoisomers of bas…, The Journal of pharmacology… (1994) | pd | 5 | not captured | [8138920](https://www.ncbi.nlm.nih.gov/pubmed/8138920) | metadata signals extractable PD data (IC50) |
-| `Unsworth_1992.pdf` | Unsworth CD et al., Regulation of the 5-hydroxytryptamine1B…, Molecular pharmacology (1992) | pd | 5 | not captured | [1328846](https://www.ncbi.nlm.nih.gov/pubmed/1328846) | metadata signals extractable PD data (EC50) |
+| `Ohnhaus_1976.pdf` | Ohnhaus EE et al., [Comparative study on the elimination o…, Schweizerische medizinische… (1976) | popPK | 9 |  | [1013699](https://pubmed.ncbi.nlm.nih.gov/1013699) | The study reports pharmacokinetic parameters for pindolol in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Kiger_1976.pdf` | Kiger JL et al., The effect of food and clopamide on the…, International journal of cl… (1976) | popPK | 8 |  | [780287](https://pubmed.ncbi.nlm.nih.gov/780287) | The study reports a one-compartment PK model for pindolol in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
+| `Gross_1994.pdf` | Gross AS et al., Interaction of the stereoisomers of bas…, The Journal of pharmacology… (1994) | pd | 5 |  | [8138920](https://www.ncbi.nlm.nih.gov/pubmed/8138920) | metadata signals extractable PD data (IC50) |
+| `Unsworth_1992.pdf` | Unsworth CD et al., Regulation of the 5-hydroxytryptamine1B…, Molecular pharmacology (1992) | pd | 5 |  | [1328846](https://www.ncbi.nlm.nih.gov/pubmed/1328846) | metadata signals extractable PD data (EC50) |
 | `Chevalier_1989.pdf` | Chevalier B et al., Beta-adrenergic system is modified in c…, Journal of cardiovascular p… (1989) | pd | 4 | [10.1097/00005344-198903000-00009](https://doi.org/10.1097/00005344-198903000-00009) | [2471887](https://www.ncbi.nlm.nih.gov/pubmed/2471887) | metadata signals extractable PD data (EC50) |
 | `Choppin_1995.pdf` | Choppin A et al., Presence of vasoconstrictor 5HT1-like r…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb13228.x](https://doi.org/10.1111/j.1476-5381.1995.tb13228.x) | [7881730](https://www.ncbi.nlm.nih.gov/pubmed/7881730) | metadata signals extractable PD data (EC50) |
 | `Croci_1988.pdf` | Croci T et al., Inhibition of rat colon motility by sti…, Pharmacological research co… (1988) | pd | 4 | [10.1016/s0031-6989(88)80007-9](https://doi.org/10.1016/s0031-6989(88)80007-9) | [2898155](https://www.ncbi.nlm.nih.gov/pubmed/2898155) | metadata signals extractable PD data (EC50) |
 | `De_1990.pdf` | De Vivo M et al., Stimulation and inhibition of adenylyl…, Biochemical pharmacology (1990) | pd | 4 | [10.1016/0006-2952(90)90453-r](https://doi.org/10.1016/0006-2952(90)90453-r) | [2222510](https://www.ncbi.nlm.nih.gov/pubmed/2222510) | metadata signals extractable PD data (EC50) |
 | `Drira-Chaabane_1996.pdf` | Drira-Chaabane S et al., Lipolytic action of Buthus occitanus tu…, Biochemical and biophysical… (1996) | pd | 4 | [10.1006/bbrc.1996.1346](https://doi.org/10.1006/bbrc.1996.1346) | [8806627](https://www.ncbi.nlm.nih.gov/pubmed/8806627) | metadata signals extractable PD data (EC50) |
 | `Gillis_1988.pdf` | Gillis AM et al., Voltage-dependent Vmax blockade in Na+-…, Canadian journal of physiol… (1988) | pd | 4 | [10.1139/y88-211](https://doi.org/10.1139/y88-211) | [2853642](https://www.ncbi.nlm.nih.gov/pubmed/2853642) | metadata signals extractable PD data (IC50) |
-| `Gobbi_1996.pdf` | Gobbi M et al., Are 5-hydroxytryptamine7 receptors invo…, Molecular pharmacology (1996) | pd | 4 | not captured | [8643096](https://www.ncbi.nlm.nih.gov/pubmed/8643096) | metadata signals extractable PD data (IC50) |
+| `Gobbi_1996.pdf` | Gobbi M et al., Are 5-hydroxytryptamine7 receptors invo…, Molecular pharmacology (1996) | pd | 4 |  | [8643096](https://www.ncbi.nlm.nih.gov/pubmed/8643096) | metadata signals extractable PD data (IC50) |
 | `Kitazawa_1998.pdf` | Kitazawa T et al., Involvement of 5-hydroxytryptamine7 rec…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701583](https://doi.org/10.1038/sj.bjp.0701583) | [9489604](https://www.ncbi.nlm.nih.gov/pubmed/9489604) | metadata signals extractable PD data (EC50) |
 | `Klug_1994.pdf` | Klug S et al., Toxicity of beta-blockers in a rat whol…, Archives of toxicology (1994) | pd | 4 | [10.1007/s002040050085](https://doi.org/10.1007/s002040050085) | [7916561](https://www.ncbi.nlm.nih.gov/pubmed/7916561) | metadata signals extractable PD data (EC50) |
 | `Landi_1992.pdf` | Landi M et al., Phenylethanolaminotetralines compete wi…, Biochemical pharmacology (1992) | pd | 4 | [10.1016/0006-2952(92)90401-4](https://doi.org/10.1016/0006-2952(92)90401-4) | [1354964](https://www.ncbi.nlm.nih.gov/pubmed/1354964) | metadata signals extractable PD data (IC50) |
 | `Lima_1996.pdf` | Lima JJ, Relationship between beta adrenoceptor…, Journal of receptor and sig… (1996) | pd | 4 | [10.3109/10799899609039956](https://doi.org/10.3109/10799899609039956) | [8968966](https://www.ncbi.nlm.nih.gov/pubmed/8968966) | metadata signals extractable PD data (EC50) |
 | `Mian_1985.pdf` | Mian MA et al., The sympathomimetic activity of (+/-)-p…, European journal of pharmac… (1985) | pd | 4 | [10.1016/0014-2999(85)90540-0](https://doi.org/10.1016/0014-2999(85)90540-0) | [2986991](https://www.ncbi.nlm.nih.gov/pubmed/2986991) | metadata signals extractable PD data (Emax) |
-| `Ozawa_1989.pdf` | Ozawa H et al., Age-related alteration in the catechola…, Yakubutsu, seishin, kodo =… (1989) | pd | 4 | not captured | [2560883](https://www.ncbi.nlm.nih.gov/pubmed/2560883) | metadata signals extractable PD data (EC50) |
+| `Ozawa_1989.pdf` | Ozawa H et al., Age-related alteration in the catechola…, Yakubutsu, seishin, kodo =… (1989) | pd | 4 |  | [2560883](https://www.ncbi.nlm.nih.gov/pubmed/2560883) | metadata signals extractable PD data (EC50) |
 | `Rick_1995.pdf` | Rick CE et al., Excitation of rat substantia nigra pars…, Neuroscience (1995) | pd | 4 | [10.1016/0306-4522(95)00283-o](https://doi.org/10.1016/0306-4522(95)00283-o) | [8596658](https://www.ncbi.nlm.nih.gov/pubmed/8596658) | metadata signals extractable PD data (EC50) |
 | `Schoeffter_1988.pdf` | Schoeffter P et al., Centrally acting hypotensive agents wit…, British journal of pharmaco… (1988) | pd | 4 | [10.1111/j.1476-5381.1988.tb11728.x](https://doi.org/10.1111/j.1476-5381.1988.tb11728.x) | [3207999](https://www.ncbi.nlm.nih.gov/pubmed/3207999) | metadata signals extractable PD data (EC50) |
-| `Scott_1994.pdf` | Scott PA et al., Differential induction of 5-HT1A-mediat…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8035316](https://www.ncbi.nlm.nih.gov/pubmed/8035316) | metadata signals extractable PD data (EC50) |
-| `Stupack_1999.pdf` | Stupack DG et al., Heterogeneity among beta-adrenoreceptor…, Canadian journal of physiol… (1999) | pd | 4 | not captured | [10537226](https://www.ncbi.nlm.nih.gov/pubmed/10537226) | metadata signals extractable PD data (IC50) |
+| `Scott_1994.pdf` | Scott PA et al., Differential induction of 5-HT1A-mediat…, The Journal of pharmacology… (1994) | pd | 4 |  | [8035316](https://www.ncbi.nlm.nih.gov/pubmed/8035316) | metadata signals extractable PD data (EC50) |
+| `Stupack_1999.pdf` | Stupack DG et al., Heterogeneity among beta-adrenoreceptor…, Canadian journal of physiol… (1999) | pd | 4 |  | [10537226](https://www.ncbi.nlm.nih.gov/pubmed/10537226) | metadata signals extractable PD data (IC50) |
 | `Yukawa_1990.pdf` | Yukawa T et al., Beta 2-adrenergic receptors on eosinoph…, The American review of resp… (1990) | pd | 4 | [10.1164/ajrccm/141.6.1446](https://doi.org/10.1164/ajrccm/141.6.1446) | [2161627](https://www.ncbi.nlm.nih.gov/pubmed/2161627) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07T00:35:26.568543+00:00</sub>
+<sub>queue written 2026-10-07 00:35 UTC</sub>
 
 ## Screened and excluded
 
@@ -208,5 +208,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpindolol%5D&body=Drug%3A%20pindolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pindolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -153,7 +153,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 680 matched, 190 returned
 - **screened:** 72  ·  **relevant:** 7
-- **records:** 7  ·  extracted 2  ·  needs_review 2  ·  rejected 3  ·  stale 4
+- **records:** 7  ·  extracted 2  ·  needs review 2  ·  rejected 3  ·  stale 4
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -163,29 +163,29 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Bajcetic_2019.pdf` | Bajcetic M et al., Orodispersible minitablets of enalapril…, Contemporary clinical trial… (2019) | popPK | 10 | [10.1016/j.conctc.2019.100393](https://doi.org/10.1016/j.conctc.2019.100393) | [31249901](https://pubmed.ncbi.nlm.nih.gov/31249901) | The paper is a protocol for a pharmacokinetic study of enalapril in children, but it contains no numeric parameter values as the study had not yet been conducted. |
-| `Ajayi_1985.pdf` | Ajayi AA et al., Pharmacodynamics and population pharmac…, International journal of cl… (1985) | popPK | 9 | not captured | [3005181](https://pubmed.ncbi.nlm.nih.gov/3005181) | The paper describes a population pharmacokinetic study of enalapril (via its metabolite enalaprilat) in humans, but the specific numeric parameter values are not present in the provided abstract text. |
-| `Lohitnavy_2003.pdf` | Lohitnavy O et al., Relative bioavailability study of 20-mg…, Journal of the Medical Asso… (2003) | popPK | 8 | not captured | [14650707](https://pubmed.ncbi.nlm.nih.gov/14650707) | The study reports pharmacokinetic parameters for enalapril, but the evidence only provides bioequivalence confidence intervals for Cmax and AUC, lacking specific numeric values for clearance, volume, or half-life. |
+| `Ajayi_1985.pdf` | Ajayi AA et al., Pharmacodynamics and population pharmac…, International journal of cl… (1985) | popPK | 9 |  | [3005181](https://pubmed.ncbi.nlm.nih.gov/3005181) | The paper describes a population pharmacokinetic study of enalapril (via its metabolite enalaprilat) in humans, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Lohitnavy_2003.pdf` | Lohitnavy O et al., Relative bioavailability study of 20-mg…, Journal of the Medical Asso… (2003) | popPK | 8 |  | [14650707](https://pubmed.ncbi.nlm.nih.gov/14650707) | The study reports pharmacokinetic parameters for enalapril, but the evidence only provides bioequivalence confidence intervals for Cmax and AUC, lacking specific numeric values for clearance, volume, or half-life. |
 | `Donnelly_1990.pdf` | Donnelly R et al., Kinetic-dynamic relations and individua…, Hypertension (Dallas, Tex.… (1990) | pd | 5 | [10.1161/01.hyp.15.3.301](https://doi.org/10.1161/01.hyp.15.3.301) | [2154407](https://www.ncbi.nlm.nih.gov/pubmed/2154407) | metadata signals extractable PD data (Emax) |
-| `Edeki_1994.pdf` | Edeki T et al., Enalapril pharmacokinetics and ACE inhi…, International journal of cl… (1994) | pd | 5 | not captured | [8205376](https://www.ncbi.nlm.nih.gov/pubmed/8205376) | metadata signals extractable PD data (Emax) |
+| `Edeki_1994.pdf` | Edeki T et al., Enalapril pharmacokinetics and ACE inhi…, International journal of cl… (1994) | pd | 5 |  | [8205376](https://www.ncbi.nlm.nih.gov/pubmed/8205376) | metadata signals extractable PD data (Emax) |
 | `Inglessis_1995.pdf` | Inglessis N et al., Comparison of the angiotensin II antago…, Journal of cardiovascular p… (1995) | pd | 5 | [10.1097/00005344-199506000-00019](https://doi.org/10.1097/00005344-199506000-00019) | [7564346](https://www.ncbi.nlm.nih.gov/pubmed/7564346) | metadata signals extractable PD data (EC50) |
 | `MacFadyen_1993.pdf` | MacFadyen RJ et al., Enalapril clinical pharmacokinetics and…, Clinical pharmacokinetics (1993) | pd | 5 | [10.2165/00003088-199325040-00003](https://doi.org/10.2165/00003088-199325040-00003) | [8261712](https://www.ncbi.nlm.nih.gov/pubmed/8261712) | metadata signals extractable PD data (concentration-effect) |
-| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 | not captured | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
+| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 |  | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
 | `Snelder_2013.pdf` | Snelder N et al., PKPD modelling of the interrelationship…, British journal of pharmaco… (2013) | pd | 5 | [10.1111/bph.12190](https://doi.org/10.1111/bph.12190) | [23849040](https://www.ncbi.nlm.nih.gov/pubmed/23849040) | metadata signals extractable PD data (PKPD) |
 | `Snelder_2014.pdf` | Snelder N et al., Drug effects on the CVS in conscious ra…, British journal of pharmaco… (2014) | pd | 5 | [10.1111/bph.12824](https://doi.org/10.1111/bph.12824) | [24962208](https://www.ncbi.nlm.nih.gov/pubmed/24962208) | metadata signals extractable PD data (PKPD) |
 | `Zapater_2004.pdf` | Zapater P et al., Gender differences in angiotensin-conve…, Journal of cardiovascular p… (2004) | pd | 5 | [10.1097/00005344-200405000-00018](https://doi.org/10.1097/00005344-200405000-00018) | [15071363](https://www.ncbi.nlm.nih.gov/pubmed/15071363) | metadata signals extractable PD data (Emax) |
-| `Adigun_2000.pdf` | Adigun AQ et al., Chronotropic dose response of atropine…, Ethnicity & disease (2000) | pd | 4 | not captured | [10892826](https://www.ncbi.nlm.nih.gov/pubmed/10892826) | metadata signals extractable PD data (EC50) |
+| `Adigun_2000.pdf` | Adigun AQ et al., Chronotropic dose response of atropine…, Ethnicity & disease (2000) | pd | 4 |  | [10892826](https://www.ncbi.nlm.nih.gov/pubmed/10892826) | metadata signals extractable PD data (EC50) |
 | `Advenier_1992.pdf` | Advenier C et al., Contractile activity of big endothelin-…, British journal of pharmaco… (1992) | pd | 4 | [10.1111/j.1476-5381.1992.tb14429.x](https://doi.org/10.1111/j.1476-5381.1992.tb14429.x) | [1393287](https://www.ncbi.nlm.nih.gov/pubmed/1393287) | metadata signals extractable PD data (EC50) |
-| `Chevillard_1994.pdf` | Chevillard C et al., Compared properties of trandolapril, en…, Journal of cardiovascular p… (1994) | pd | 4 | not captured | [7527095](https://www.ncbi.nlm.nih.gov/pubmed/7527095) | metadata signals extractable PD data (IC50) |
-| `Hale_2002.pdf` | Hale TM et al., Recovery of erectile function after bri…, The Journal of urology (2002) | pd | 4 | not captured | [12050568](https://www.ncbi.nlm.nih.gov/pubmed/12050568) | metadata signals extractable PD data (EC50) |
+| `Chevillard_1994.pdf` | Chevillard C et al., Compared properties of trandolapril, en…, Journal of cardiovascular p… (1994) | pd | 4 |  | [7527095](https://www.ncbi.nlm.nih.gov/pubmed/7527095) | metadata signals extractable PD data (IC50) |
+| `Hale_2002.pdf` | Hale TM et al., Recovery of erectile function after bri…, The Journal of urology (2002) | pd | 4 |  | [12050568](https://www.ncbi.nlm.nih.gov/pubmed/12050568) | metadata signals extractable PD data (EC50) |
 | `Jankovic_2016.pdf` | Jankovic SM et al., Angiotensin Receptor Blocker Losartan I…, European journal of drug me… (2016) | pd | 4 | [10.1007/s13318-015-0298-x](https://doi.org/10.1007/s13318-015-0298-x) | [26328808](https://www.ncbi.nlm.nih.gov/pubmed/26328808) | metadata signals extractable PD data (EC50) |
 | `Lomba_2020.pdf` | Lomba L et al., Ecotoxicological study of six drugs in…, Environmental science and p… (2020) | pd | 4 | [10.1007/s11356-019-07592-8](https://doi.org/10.1007/s11356-019-07592-8) | [31925696](https://www.ncbi.nlm.nih.gov/pubmed/31925696) | metadata signals extractable PD data (EC50) |
 | `Park_2022.pdf` | Park JB, Finding a cell-permeable compound to in…, Life sciences (2022) | pd | 4 | [10.1016/j.lfs.2021.120280](https://doi.org/10.1016/j.lfs.2021.120280) | [34982964](https://www.ncbi.nlm.nih.gov/pubmed/34982964) | metadata signals extractable PD data (IC50) |
 | `Rouini_2002.pdf` | Rouini M et al., Relationship of serum ACE inhibition to…, Journal of clinical pharmac… (2002) | pd | 4 | [10.1046/j.1365-2710.2002.00390.x](https://doi.org/10.1046/j.1365-2710.2002.00390.x) | [11975696](https://www.ncbi.nlm.nih.gov/pubmed/11975696) | metadata signals extractable PD data (Emax) |
-| `Weisser_1993.pdf` | Weisser K et al., Measurements of serum ACE activity in v…, Methods and findings in exp… (1993) | pd | 4 | not captured | [8231461](https://www.ncbi.nlm.nih.gov/pubmed/8231461) | metadata signals extractable PD data (concentration-effect) |
+| `Weisser_1993.pdf` | Weisser K et al., Measurements of serum ACE activity in v…, Methods and findings in exp… (1993) | pd | 4 |  | [8231461](https://www.ncbi.nlm.nih.gov/pubmed/8231461) | metadata signals extractable PD data (concentration-effect) |
 | `Sychev_2023.pdf` | Sychev IV et al., Pharmacogenetic predictors of developme…, Drug metabolism and persona… (2023) | pgx | 5 | [10.1515/dmpt-2023-0008](https://doi.org/10.1515/dmpt-2023-0008) | [37201212](https://www.ncbi.nlm.nih.gov/pubmed/37201212) | metadata signals extractable PGX data (SLCO1B1) |
 | `Sychev_2024.pdf` | Sychev IV et al., Pharmacogenetic markers of development…, The International journal o… (2024) | pgx | 5 | [10.3233/JRS-230006](https://doi.org/10.3233/JRS-230006) | [37742663](https://www.ncbi.nlm.nih.gov/pubmed/37742663) | metadata signals extractable PGX data (SLCO1B1) |
 
-<sub>queue written 2026-10-07T05:41:48.917237+00:00</sub>
+<sub>queue written 2026-10-07 05:41 UTC</sub>
 
 ## Screened and excluded
 
@@ -371,5 +371,5 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 05:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benalapril%5D&body=Drug%3A%20enalapril%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enalapril/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:43 UTC</sub>

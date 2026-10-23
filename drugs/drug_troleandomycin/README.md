@@ -60,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 477 matched, 112 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -70,25 +70,25 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Kharasch_2005.pdf` | Kharasch ED et al., Paradoxical role of cytochrome P450 3A…, Clinical pharmacokinetics (2005) | pd | 5 | [10.2165/00003088-200544070-00005](https://doi.org/10.2165/00003088-200544070-00005) | [15966756](https://www.ncbi.nlm.nih.gov/pubmed/15966756) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Echizen_2000.pdf` | Echizen H et al., Identification of CYP3A4 as the enzyme…, Drug metabolism and disposi… (2000) | pd | 4 | not captured | [10901704](https://www.ncbi.nlm.nih.gov/pubmed/10901704) | metadata signals extractable PD data (IC50) |
+| `Echizen_2000.pdf` | Echizen H et al., Identification of CYP3A4 as the enzyme…, Drug metabolism and disposi… (2000) | pd | 4 |  | [10901704](https://www.ncbi.nlm.nih.gov/pubmed/10901704) | metadata signals extractable PD data (IC50) |
 | `Faucette_2004.pdf` | Faucette SR et al., Regulation of CYP2B6 in primary human h…, Drug metabolism and disposi… (2004) | pd | 4 | [10.1124/dmd.32.3.348](https://doi.org/10.1124/dmd.32.3.348) | [14977870](https://www.ncbi.nlm.nih.gov/pubmed/14977870) | metadata signals extractable PD data (EC50) |
 | `Fowler_2002.pdf` | Fowler SM et al., CYP3A4 active site volume modification…, Drug metabolism and disposi… (2002) | pd | 4 | [10.1124/dmd.30.4.452](https://doi.org/10.1124/dmd.30.4.452) | [11901100](https://www.ncbi.nlm.nih.gov/pubmed/11901100) | metadata signals extractable PD data (IC50) |
 | `Fujimaki_2001.pdf` | Fujimaki Y et al., Nefiracetam metabolism by human liver m…, The Journal of pharmacy and… (2001) | pd | 4 | [10.1211/0022357011776144](https://doi.org/10.1211/0022357011776144) | [11428655](https://www.ncbi.nlm.nih.gov/pubmed/11428655) | metadata signals extractable PD data (sigmoid) |
 | `Greenblatt_2011.pdf` | Greenblatt DJ et al., Mechanism of cytochrome P450-3A inhibit…, The Journal of pharmacy and… (2011) | pd | 4 | [10.1111/j.2042-7158.2010.01202.x](https://doi.org/10.1111/j.2042-7158.2010.01202.x) | [21235585](https://www.ncbi.nlm.nih.gov/pubmed/21235585) | metadata signals extractable PD data (IC50) |
 | `Grogan_1990.pdf` | Grogan WM et al., Corticosterone 6 beta-hydroxylase in A6…, The American journal of phy… (1990) | pd | 4 | [10.1152/ajpcell.1990.258.3.C480](https://doi.org/10.1152/ajpcell.1990.258.3.C480) | [2316635](https://www.ncbi.nlm.nih.gov/pubmed/2316635) | metadata signals extractable PD data (EC50) |
-| `Jurima-Romet_1994.pdf` | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | pd | 4 | not captured | [7895601](https://www.ncbi.nlm.nih.gov/pubmed/7895601) | metadata signals extractable PD data (IC50) |
-| `Jönsson_1995.pdf` | Jönsson G et al., Budesonide is metabolized by cytochrome…, Drug metabolism and disposi… (1995) | pd | 4 | not captured | [7720517](https://www.ncbi.nlm.nih.gov/pubmed/7720517) | metadata signals extractable PD data (IC50) |
+| `Jurima-Romet_1994.pdf` | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | pd | 4 |  | [7895601](https://www.ncbi.nlm.nih.gov/pubmed/7895601) | metadata signals extractable PD data (IC50) |
+| `Jönsson_1995.pdf` | Jönsson G et al., Budesonide is metabolized by cytochrome…, Drug metabolism and disposi… (1995) | pd | 4 |  | [7720517](https://www.ncbi.nlm.nih.gov/pubmed/7720517) | metadata signals extractable PD data (IC50) |
 | `Pan_1998.pdf` | Pan LP et al., In-vitro characterization of the cytoch…, Pharmacogenetics (1998) | pd | 4 | [10.1097/00008571-199810000-00003](https://doi.org/10.1097/00008571-199810000-00003) | [9825830](https://www.ncbi.nlm.nih.gov/pubmed/9825830) | metadata signals extractable PD data (IC50) |
 | `Sanchez_2004.pdf` | Sanchez RI et al., Cytochrome P450 3A4 is the major enzyme…, Drug metabolism and disposi… (2004) | pd | 4 | [10.1124/dmd.104.000216](https://doi.org/10.1124/dmd.104.000216) | [15304427](https://www.ncbi.nlm.nih.gov/pubmed/15304427) | metadata signals extractable PD data (IC50) |
 | `Schmider_1997.pdf` | Schmider J et al., Biotransformation of mestranol to ethin…, Journal of clinical pharmac… (1997) | pd | 4 | [10.1002/j.1552-4604.1997.tb04781.x](https://doi.org/10.1002/j.1552-4604.1997.tb04781.x) | [9089421](https://www.ncbi.nlm.nih.gov/pubmed/9089421) | metadata signals extractable PD data (Emax) |
-| `Sutton_1997.pdf` | Sutton D et al., Role of CYP3A4 in human hepatic diltiaz…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9223567](https://www.ncbi.nlm.nih.gov/pubmed/9223567) | metadata signals extractable PD data (IC50) |
+| `Sutton_1997.pdf` | Sutton D et al., Role of CYP3A4 in human hepatic diltiaz…, The Journal of pharmacology… (1997) | pd | 4 |  | [9223567](https://www.ncbi.nlm.nih.gov/pubmed/9223567) | metadata signals extractable PD data (IC50) |
 | `Tassaneeyakul_1994.pdf` | Tassaneeyakul W et al., Caffeine metabolism by human hepatic cy…, Biochemical pharmacology (1994) | pd | 4 | [10.1016/0006-2952(94)90304-2](https://doi.org/10.1016/0006-2952(94)90304-2) | [8204093](https://www.ncbi.nlm.nih.gov/pubmed/8204093) | metadata signals extractable PD data (IC50) |
 | `Venkatakrishnan_1998.pdf` | Venkatakrishnan K et al., Kinetic characterization and identifica…, The Journal of pharmacy and… (1998) | pd | 4 | [10.1111/j.2042-7158.1998.tb06859.x](https://doi.org/10.1111/j.2042-7158.1998.tb06859.x) | [9600717](https://www.ncbi.nlm.nih.gov/pubmed/9600717) | metadata signals extractable PD data (IC50) |
 | `Wright_1994.pdf` | Wright MC et al., Induction of the cytochrome P450 3A sub…, Biochemical and biophysical… (1994) | pd | 4 | [10.1006/bbrc.1994.1797](https://doi.org/10.1006/bbrc.1994.1797) | [8003039](https://www.ncbi.nlm.nih.gov/pubmed/8003039) | metadata signals extractable PD data (emax) |
-| `Wu_1998.pdf` | Wu ZL et al., Clomipramine N-demethylation metabolism…, Zhongguo yao li xue bao = A… (1998) | pd | 4 | not captured | [10375803](https://www.ncbi.nlm.nih.gov/pubmed/10375803) | metadata signals extractable PD data (IC50) |
-| `Xia_2002.pdf` | Xia XY et al., In vitro metabolic characteristics of c…, Acta pharmacologica Sinica (2002) | pd | 4 | not captured | [11978200](https://www.ncbi.nlm.nih.gov/pubmed/11978200) | metadata signals extractable PD data (IC50) |
+| `Wu_1998.pdf` | Wu ZL et al., Clomipramine N-demethylation metabolism…, Zhongguo yao li xue bao = A… (1998) | pd | 4 |  | [10375803](https://www.ncbi.nlm.nih.gov/pubmed/10375803) | metadata signals extractable PD data (IC50) |
+| `Xia_2002.pdf` | Xia XY et al., In vitro metabolic characteristics of c…, Acta pharmacologica Sinica (2002) | pd | 4 |  | [11978200](https://www.ncbi.nlm.nih.gov/pubmed/11978200) | metadata signals extractable PD data (IC50) |
 | `Zhao_1997.pdf` | Zhao XJ et al., Metabolic interactions of selected anti…, British journal of clinical… (1997) | pd | 4 | [10.1046/j.1365-2125.1997.t01-1-00619.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00619.x) | [9384469](https://www.ncbi.nlm.nih.gov/pubmed/9384469) | metadata signals extractable PD data (IC50) |
-| `Ledirac_2000.pdf` | Ledirac N et al., Effects of macrolide antibiotics on CYP…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [11095572](https://www.ncbi.nlm.nih.gov/pubmed/11095572) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Ledirac_2000.pdf` | Ledirac N et al., Effects of macrolide antibiotics on CYP…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [11095572](https://www.ncbi.nlm.nih.gov/pubmed/11095572) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Michalets_2000.pdf` | Michalets EL et al., Drug interactions with cisapride: clini…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039010-00004](https://doi.org/10.2165/00003088-200039010-00004) | [10926350](https://www.ncbi.nlm.nih.gov/pubmed/10926350) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Mitra_1995.pdf` | Mitra AK et al., Metabolism of dapsone to its hydroxylam…, Clinical pharmacology and t… (1995) | pgx | 7 | [10.1016/0009-9236(95)90176-0](https://doi.org/10.1016/0009-9236(95)90176-0) | [7586950](https://www.ncbi.nlm.nih.gov/pubmed/7586950) | metadata signals extractable PGX data (CYP2E1, PK/PD-context) |
 | `Projean_2003.pdf` | Projean D et al., Identification of CYP3A4 and CYP2C8 as…, Xenobiotica; the fate of fo… (2003) | pgx | 7 | [10.1080/0049825031000121608](https://doi.org/10.1080/0049825031000121608) | [12936704](https://www.ncbi.nlm.nih.gov/pubmed/12936704) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -98,7 +98,7 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chasserot-Golaz_1993.pdf` | Chasserot-Golaz S et al., Biotransformation of 17 beta-hydroxy-11…, Biochemical pharmacology (1993) | pgx | 5 | [10.1016/0006-2952(93)90654-f](https://doi.org/10.1016/0006-2952(93)90654-f) | [8267660](https://www.ncbi.nlm.nih.gov/pubmed/8267660) | metadata signals extractable PGX data (CYP3A) |
 
-<sub>queue written 2026-10-07T11:41:12.335843+00:00</sub>
+<sub>queue written 2026-10-07 11:41 UTC</sub>
 
 ## Screened and excluded
 
@@ -159,5 +159,5 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btroleandomycin%5D&body=Drug%3A%20troleandomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_troleandomycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

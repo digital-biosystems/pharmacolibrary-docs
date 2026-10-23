@@ -75,7 +75,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 35 matched, 35 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -84,14 +84,14 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Grass_1994.pdf` | Grass P et al., Spirapril: pharmacokinetic properties a…, Blood pressure. Supplement (1994) | popPK | 10 | not captured | [8061850](https://pubmed.ncbi.nlm.nih.gov/8061850) | The text explicitly reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for spirapril and its active metabolite spiraprilat. |
-| `Meredith_1994.pdf` | Meredith PA et al., Pharmacokinetics of spirapril in renal…, Blood pressure. Supplement (1994) | popPK | 9 | not captured | [8061840](https://pubmed.ncbi.nlm.nih.gov/8061840) | The study reports quantitative PK parameters for spirapril and its metabolite in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Grass_1994.pdf` | Grass P et al., Spirapril: pharmacokinetic properties a…, Blood pressure. Supplement (1994) | popPK | 10 |  | [8061850](https://pubmed.ncbi.nlm.nih.gov/8061850) | The text explicitly reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for spirapril and its active metabolite spiraprilat. |
+| `Meredith_1994.pdf` | Meredith PA et al., Pharmacokinetics of spirapril in renal…, Blood pressure. Supplement (1994) | popPK | 9 |  | [8061840](https://pubmed.ncbi.nlm.nih.gov/8061840) | The study reports quantitative PK parameters for spirapril and its metabolite in humans, but the specific numeric values are not present in the provided abstract text. |
 | `Bellissant_1997.pdf` | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | popPK | 8 | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) | [9269955](https://pubmed.ncbi.nlm.nih.gov/9269955) | The study models the active metabolite spiraprilat (relevant as spirapril PK) but the provided evidence only contains pharmacodynamic parameters (Emax, EC50, Hill coefficients) and lacks specific quantitative PK parameters like clearance or volume of distribution. |
-| `Haufe_1994.pdf` | Haufe CC et al., [Kidney function in hypertensive patien…, Medizinische Klinik (Munich… (1994) | popPK | 8 | not captured | [7968874](https://pubmed.ncbi.nlm.nih.gov/7968874) | The study reports a linear correlation between the total plasma clearance of the active metabolite spiraprilate and creatinine clearance, but specific numeric parameter values are not provided in the text. |
-| `Stein_1994.pdf` | Stein G et al., Pharmacokinetics of spirapril and spira…, Blood pressure. Supplement (1994) | popPK | 8 | not captured | [8061846](https://pubmed.ncbi.nlm.nih.gov/8061846) | The study reports pharmacokinetic parameters for spirapril and its metabolite spiraprilat in humans, but the specific numeric values are not present in the provided abstract text. |
-| `Sybertz_1987.pdf` | Sybertz EJ et al., Angiotensin converting enzyme inhibitor…, Archives internationales de… (1987) | pd | 4 | not captured | [3036028](https://www.ncbi.nlm.nih.gov/pubmed/3036028) | metadata signals extractable PD data (IC50) |
+| `Haufe_1994.pdf` | Haufe CC et al., [Kidney function in hypertensive patien…, Medizinische Klinik (Munich… (1994) | popPK | 8 |  | [7968874](https://pubmed.ncbi.nlm.nih.gov/7968874) | The study reports a linear correlation between the total plasma clearance of the active metabolite spiraprilate and creatinine clearance, but specific numeric parameter values are not provided in the text. |
+| `Stein_1994.pdf` | Stein G et al., Pharmacokinetics of spirapril and spira…, Blood pressure. Supplement (1994) | popPK | 8 |  | [8061846](https://pubmed.ncbi.nlm.nih.gov/8061846) | The study reports pharmacokinetic parameters for spirapril and its metabolite spiraprilat in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Sybertz_1987.pdf` | Sybertz EJ et al., Angiotensin converting enzyme inhibitor…, Archives internationales de… (1987) | pd | 4 |  | [3036028](https://www.ncbi.nlm.nih.gov/pubmed/3036028) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T07:27:50.923305+00:00</sub>
+<sub>queue written 2026-10-07 07:27 UTC</sub>
 
 ## Screened and excluded
 
@@ -131,5 +131,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 07:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspirapril%5D&body=Drug%3A%20spirapril%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spirapril/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:27 UTC</sub>

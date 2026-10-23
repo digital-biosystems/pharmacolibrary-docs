@@ -89,7 +89,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 607 matched, 84 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -103,7 +103,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lala_2019.pdf` | Lala M et al., Simplification of Imipenem Dosing by Re…, Journal of clinical pharmac… (2019) | popPK | 10 | [10.1002/jcph.1356](https://doi.org/10.1002/jcph.1356) | [30536420](https://pubmed.ncbi.nlm.nih.gov/30536420) | The paper describes a population pharmacokinetic model for imipenem in humans, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Gruber_1985.pdf` | Gruber WC et al., Single-dose pharmacokinetics of imipene…, Antimicrobial agents and ch… (1985) | popPK | 9 | [10.1128/AAC.27.4.511](https://doi.org/10.1128/AAC.27.4.511) | [3859243](https://pubmed.ncbi.nlm.nih.gov/3859243) | The paper reports quantitative single-dose pharmacokinetic parameters (t1/2, Vd) for imipenem in neonates. |
 | `Somani_1988.pdf` | Somani P et al., Pharmacokinetics of imipenem-cilastatin…, Antimicrobial agents and ch… (1988) | popPK | 9 | [10.1128/AAC.32.4.530](https://doi.org/10.1128/AAC.32.4.530) | [3377464](https://pubmed.ncbi.nlm.nih.gov/3377464) | Study reports PK parameters for imipenem in humans, providing numeric values for half-life (3.28 h) and stating CL, V, and AUC were calculated but specific numeric values for CL and V are not explicitly listed in the provided text. |
-| `Ito_1986.pdf` | Ito K et al., [Fundamental and clinical studies of im…, The Japanese journal of ant… (1986) | popPK | 7 | not captured | [3463797](https://pubmed.ncbi.nlm.nih.gov/3463797) | The study applies a two-compartment model to imipenem data and provides plasma concentration-time points, but specific PK parameter values (CL, V) are not explicitly listed in the text. |
+| `Ito_1986.pdf` | Ito K et al., [Fundamental and clinical studies of im…, The Japanese journal of ant… (1986) | popPK | 7 |  | [3463797](https://pubmed.ncbi.nlm.nih.gov/3463797) | The study applies a two-compartment model to imipenem data and provides plasma concentration-time points, but specific PK parameter values (CL, V) are not explicitly listed in the text. |
 | `Freij_1985.pdf` | Freij BJ et al., Pharmacokinetics of imipenem-cilastatin…, Antimicrobial agents and ch… (1985) | popPK | 6 | [10.1128/AAC.27.4.431](https://doi.org/10.1128/AAC.27.4.431) | [3859242](https://pubmed.ncbi.nlm.nih.gov/3859242) | The study reports qualitative PK parameters (half-life, relative clearance, model type) for imipenem but lacks specific numeric values for CL and V, and does not specify the species in the provided text. |
 | `Chen_2020.pdf` | Chen IH et al., Imipenem/Cilastatin/Relebactam Alone an…, Antimicrobial agents and ch… (2020) | pd | 5 | [10.1128/AAC.01764-20](https://doi.org/10.1128/AAC.01764-20) | [33139283](https://www.ncbi.nlm.nih.gov/pubmed/33139283) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Horcajada_2019.pdf` | Horcajada JP et al., Epidemiology and Treatment of Multidrug…, Clinical microbiology revie… (2019) | pd | 5 | [10.1128/CMR.00031-19](https://doi.org/10.1128/CMR.00031-19) | [31462403](https://www.ncbi.nlm.nih.gov/pubmed/31462403) | metadata signals extractable PD data (PK/PD) |
@@ -111,9 +111,9 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mavridou_2015.pdf` | Mavridou E et al., Pharmacodynamics of imipenem in combina…, Antimicrobial agents and ch… (2015) | pd | 5 | [10.1128/AAC.03706-14](https://doi.org/10.1128/AAC.03706-14) | [25403667](https://www.ncbi.nlm.nih.gov/pubmed/25403667) | metadata signals extractable PD data (sigmoid) |
 | `Appelbaum_1994.pdf` | Appelbaum PC et al., Characterization of a beta-lactamase fr…, The Journal of antimicrobia… (1994) | pd | 4 | [10.1093/jac/33.1.33](https://doi.org/10.1093/jac/33.1.33) | [8157571](https://www.ncbi.nlm.nih.gov/pubmed/8157571) | metadata signals extractable PD data (IC50) |
 | `Teng_2024.pdf` | Teng H et al., HDL-C and creatinine levels at 1 month…, Pharmacogenetics and genomi… (2024) | pgx | 8 | [10.1097/FPC.0000000000000514](https://doi.org/10.1097/FPC.0000000000000514) | [37906625](https://www.ncbi.nlm.nih.gov/pubmed/37906625) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
-| `Szałek_2012.pdf` | Szałek E et al., [Optimization of antibiotic therapy in…, Ginekologia polska (2012) | pgx | 7 | not captured | [22880468](https://www.ncbi.nlm.nih.gov/pubmed/22880468) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Szałek_2012.pdf` | Szałek E et al., [Optimization of antibiotic therapy in…, Ginekologia polska (2012) | pgx | 7 |  | [22880468](https://www.ncbi.nlm.nih.gov/pubmed/22880468) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T11:17:33.359773+00:00</sub>
+<sub>queue written 2026-10-07 11:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -177,5 +177,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimipenem%5D&body=Drug%3A%20imipenem%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imipenem/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:21 UTC</sub>

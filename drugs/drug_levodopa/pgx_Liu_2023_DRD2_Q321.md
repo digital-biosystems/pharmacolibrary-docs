@@ -76,4 +76,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D%20pgx_Liu_2023_DRD2_Q321&body=Drug%3A%20levodopa%0ARecord%3A%20pgx_Liu_2023_DRD2_Q321%0APaper%3A%20Liu_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/pgx_Liu_2023_DRD2_Q321%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [levodopa](drugs/drug_levodopa/)</sub>

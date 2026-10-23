@@ -75,7 +75,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 483 matched, 130 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -84,22 +84,22 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhu_1990.pdf` | Zhu ZY et al., [Studies on the bioavailability of nitr…, Yao xue xue bao = Acta phar… (1990) | popPK | 8 | not captured | [2092581](https://pubmed.ncbi.nlm.nih.gov/2092581) | The study reports in vivo pharmacokinetic parameters for nitrendipine in humans, but the specific numeric values for CL, V, or ka are not present in the provided evidence, only bioavailability percentages. |
+| `Zhu_1990.pdf` | Zhu ZY et al., [Studies on the bioavailability of nitr…, Yao xue xue bao = Acta phar… (1990) | popPK | 8 |  | [2092581](https://pubmed.ncbi.nlm.nih.gov/2092581) | The study reports in vivo pharmacokinetic parameters for nitrendipine in humans, but the specific numeric values for CL, V, or ka are not present in the provided evidence, only bioavailability percentages. |
 | `Grover_1994.pdf` | Grover AK et al., Angiotensin II contractions in coronary…, Molecular and cellular bioc… (1994) | pd | 5 | [10.1007/BF00925957](https://doi.org/10.1007/BF00925957) | [7816052](https://www.ncbi.nlm.nih.gov/pubmed/7816052) | metadata signals extractable PD data (EC50) |
 | `Nielsen-Kudsk_1987.pdf` | Nielsen-Kudsk F et al., A comparative study of the pharmacodyna…, Pharmacology & toxicology (1987) | pd | 5 | [10.1111/j.1600-0773.1987.tb01732.x](https://doi.org/10.1111/j.1600-0773.1987.tb01732.x) | [3588513](https://www.ncbi.nlm.nih.gov/pubmed/3588513) | metadata signals extractable PD data (Emax) |
 | `Soons_1993.pdf` | Soons PA et al., Comparative effects of felodipine, nitr…, European journal of clinica… (1993) | pd | 5 | [10.1007/BF00315467](https://doi.org/10.1007/BF00315467) | [8453956](https://www.ncbi.nlm.nih.gov/pubmed/8453956) | metadata signals extractable PD data (concentration-effect) |
-| `Zernig_1992.pdf` | Zernig G et al., Ion dependence of the partially purifie…, Molecular pharmacology (1992) | pd | 5 | not captured | [1310145](https://www.ncbi.nlm.nih.gov/pubmed/1310145) | metadata signals extractable PD data (EC50) |
+| `Zernig_1992.pdf` | Zernig G et al., Ion dependence of the partially purifie…, Molecular pharmacology (1992) | pd | 5 |  | [1310145](https://www.ncbi.nlm.nih.gov/pubmed/1310145) | metadata signals extractable PD data (EC50) |
 | `Andrejauskas_1986.pdf` | Andrejauskas E et al., 3,4,5-Triiodobenzoic acid affects [3H]v…, Biochemical and biophysical… (1986) | pd | 4 | [10.1016/s0006-291x(86)80420-x](https://doi.org/10.1016/s0006-291x(86)80420-x) | [3753496](https://www.ncbi.nlm.nih.gov/pubmed/3753496) | metadata signals extractable PD data (EC50) |
 | `Boarder_1991.pdf` | Boarder MR et al., Endothelin-1 stimulation of noradrenali…, Biochemical pharmacology (1991) | pd | 4 | [10.1016/0006-2952(91)90623-d](https://doi.org/10.1016/0006-2952(91)90623-d) | [1705122](https://www.ncbi.nlm.nih.gov/pubmed/1705122) | metadata signals extractable PD data (EC50) |
 | `Borges_1993.pdf` | Borges R, Ionic mechanisms involved in the secret…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0014-2999(93)90202-s](https://doi.org/10.1016/0014-2999(93)90202-s) | [7694862](https://www.ncbi.nlm.nih.gov/pubmed/7694862) | metadata signals extractable PD data (EC50) |
 | `Castillo_1989.pdf` | Castillo CJ et al., (+)-PN200-110 and ouabain binding sites…, Journal of neurochemistry (1989) | pd | 4 | [10.1111/j.1471-4159.1989.tb08536.x](https://doi.org/10.1111/j.1471-4159.1989.tb08536.x) | [2529351](https://www.ncbi.nlm.nih.gov/pubmed/2529351) | metadata signals extractable PD data (IC50) |
 | `Challiss_1991.pdf` | Challiss RA et al., Depolarization and agonist-stimulated c…, Journal of neurochemistry (1991) | pd | 4 | [10.1111/j.1471-4159.1991.tb08255.x](https://doi.org/10.1111/j.1471-4159.1991.tb08255.x) | [1861143](https://www.ncbi.nlm.nih.gov/pubmed/1861143) | metadata signals extractable PD data (EC50) |
-| `Chouabe_1998.pdf` | Chouabe C et al., HERG and KvLQT1/IsK, the cardiac K+ cha…, Molecular pharmacology (1998) | pd | 4 | not captured | [9765513](https://www.ncbi.nlm.nih.gov/pubmed/9765513) | metadata signals extractable PD data (EC50) |
-| `Chouabe_2000.pdf` | Chouabe C et al., Effects of calcium channel blockers on…, Therapie (2000) | pd | 4 | not captured | [10860024](https://www.ncbi.nlm.nih.gov/pubmed/10860024) | metadata signals extractable PD data (EC50) |
-| `Elmoselhi_1997.pdf` | Elmoselhi AB et al., Endothelin contraction in pig coronary…, Molecular and cellular bioc… (1997) | pd | 4 | not captured | [9406141](https://www.ncbi.nlm.nih.gov/pubmed/9406141) | metadata signals extractable PD data (EC50) |
+| `Chouabe_1998.pdf` | Chouabe C et al., HERG and KvLQT1/IsK, the cardiac K+ cha…, Molecular pharmacology (1998) | pd | 4 |  | [9765513](https://www.ncbi.nlm.nih.gov/pubmed/9765513) | metadata signals extractable PD data (EC50) |
+| `Chouabe_2000.pdf` | Chouabe C et al., Effects of calcium channel blockers on…, Therapie (2000) | pd | 4 |  | [10860024](https://www.ncbi.nlm.nih.gov/pubmed/10860024) | metadata signals extractable PD data (EC50) |
+| `Elmoselhi_1997.pdf` | Elmoselhi AB et al., Endothelin contraction in pig coronary…, Molecular and cellular bioc… (1997) | pd | 4 |  | [9406141](https://www.ncbi.nlm.nih.gov/pubmed/9406141) | metadata signals extractable PD data (EC50) |
 | `Flockerzi_1986.pdf` | Flockerzi V et al., Purification of a functional receptor f…, European journal of biochem… (1986) | pd | 4 | [10.1111/j.1432-1033.1986.tb10145.x](https://doi.org/10.1111/j.1432-1033.1986.tb10145.x) | [3023084](https://www.ncbi.nlm.nih.gov/pubmed/3023084) | metadata signals extractable PD data (EC50) |
 | `Litzinger_1986.pdf` | Litzinger MJ et al., [3H]-tetrodotoxin binding in neuronal a…, Biochemical and biophysical… (1986) | pd | 4 | [10.1016/s0006-291x(86)80417-x](https://doi.org/10.1016/s0006-291x(86)80417-x) | [2428363](https://www.ncbi.nlm.nih.gov/pubmed/2428363) | metadata signals extractable PD data (IC50) |
-| `Mazeaud_1994.pdf` | Mazeaud MM et al., Platelet aggregation and in vivo shear…, Thrombosis and haemostasis (1994) | pd | 4 | not captured | [8165643](https://www.ncbi.nlm.nih.gov/pubmed/8165643) | metadata signals extractable PD data (EC50) |
+| `Mazeaud_1994.pdf` | Mazeaud MM et al., Platelet aggregation and in vivo shear…, Thrombosis and haemostasis (1994) | pd | 4 |  | [8165643](https://www.ncbi.nlm.nih.gov/pubmed/8165643) | metadata signals extractable PD data (EC50) |
 | `Pliego_2006.pdf` | Pliego RG et al., Vasodilator effects of bis-dihydropyrid…, Medicinal chemistry (Shariq… (2006) | pd | 4 | [10.2174/157340606778250243](https://doi.org/10.2174/157340606778250243) | [17017993](https://www.ncbi.nlm.nih.gov/pubmed/17017993) | metadata signals extractable PD data (concentration-effect) |
 | `Pong_1985.pdf` | Pong SF et al., Effect of dantrolene sodium on [3H]nitr…, The Journal of pharmacy and… (1985) | pd | 4 | [10.1111/j.2042-7158.1985.tb04981.x](https://doi.org/10.1111/j.2042-7158.1985.tb04981.x) | [2867170](https://www.ncbi.nlm.nih.gov/pubmed/2867170) | metadata signals extractable PD data (IC50) |
 | `Schaberg_1991.pdf` | Schaberg T et al., Evidence for a platelet-activating fact…, Biochemical and biophysical… (1991) | pd | 4 | [10.1016/0006-291x(91)91845-4](https://doi.org/10.1016/0006-291x(91)91845-4) | [1646607](https://www.ncbi.nlm.nih.gov/pubmed/1646607) | metadata signals extractable PD data (EC50) |
@@ -107,7 +107,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Steinsland_1985.pdf` | Steinsland OS et al., Comparative effects of nitrendipine and…, Journal of cardiovascular p… (1985) | pd | 4 | [10.1097/00005344-198509000-00028](https://doi.org/10.1097/00005344-198509000-00028) | [2413313](https://www.ncbi.nlm.nih.gov/pubmed/2413313) | metadata signals extractable PD data (EC50) |
 | `Sze_1994.pdf` | Sze PY et al., Glucocorticoid action on depolarization…, Neuroendocrinology (1994) | pd | 4 | [10.1159/000126692](https://doi.org/10.1159/000126692) | [8022521](https://www.ncbi.nlm.nih.gov/pubmed/8022521) | metadata signals extractable PD data (EC50) |
 | `Wei_1996.pdf` | Wei L et al., CHEB, a convulsant barbiturate, evokes…, Neuropharmacology (1996) | pd | 4 | [10.1016/0028-3908(96)84641-7](https://doi.org/10.1016/0028-3908(96)84641-7) | [8887978](https://www.ncbi.nlm.nih.gov/pubmed/8887978) | metadata signals extractable PD data (EC50) |
-| `Wong_1993.pdf` | Wong PC et al., Pharmacology of 2-amino-1,4-dihydro-4-(…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [8099616](https://www.ncbi.nlm.nih.gov/pubmed/8099616) | metadata signals extractable PD data (IC50) |
+| `Wong_1993.pdf` | Wong PC et al., Pharmacology of 2-amino-1,4-dihydro-4-(…, The Journal of pharmacology… (1993) | pd | 4 |  | [8099616](https://www.ncbi.nlm.nih.gov/pubmed/8099616) | metadata signals extractable PD data (IC50) |
 | `Ozdemir_2000.pdf` | Ozdemir V et al., Evaluation of the genetic component of…, Pharmacogenetics (2000) | pgx | 8 | [10.1097/00008571-200007000-00001](https://doi.org/10.1097/00008571-200007000-00001) | [10898107](https://www.ncbi.nlm.nih.gov/pubmed/10898107) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Bailey_2004.pdf` | Bailey DG et al., Interactions between grapefruit juice a…, American journal of cardiov… (2004) | pgx | 7 | [10.2165/00129784-200404050-00002](https://doi.org/10.2165/00129784-200404050-00002) | [15449971](https://www.ncbi.nlm.nih.gov/pubmed/15449971) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chen_2025.pdf` | Chen X et al., Inhibitory effects of nimodipine, nitre…, Biochemical pharmacology (2025) | pgx | 7 | [10.1016/j.bcp.2025.116854](https://doi.org/10.1016/j.bcp.2025.116854) | [40054784](https://www.ncbi.nlm.nih.gov/pubmed/40054784) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -116,7 +116,7 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Voruganti_2012.pdf` | Voruganti S et al., Effect of pomegranate juice on intestin…, Phytotherapy research : PTR (2012) | pgx | 7 | [10.1002/ptr.3704](https://doi.org/10.1002/ptr.3704) | [22275232](https://www.ncbi.nlm.nih.gov/pubmed/22275232) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Wang_2007.pdf` | Wang XD et al., Rapid and simultaneous determination of…, Journal of chromatography.… (2007) | pgx | 7 | [10.1016/j.jchromb.2007.02.026](https://doi.org/10.1016/j.jchromb.2007.02.026) | [17339138](https://www.ncbi.nlm.nih.gov/pubmed/17339138) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T04:54:45.183441+00:00</sub>
+<sub>queue written 2026-10-07 04:54 UTC</sub>
 
 ## Screened and excluded
 
@@ -274,5 +274,5 @@ _31 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnitrendipine%5D&body=Drug%3A%20nitrendipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nitrendipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

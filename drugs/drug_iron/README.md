@@ -113,7 +113,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5916 matched, 250 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 5  ·  extracted 3  ·  needs_review 1  ·  rejected 1  ·  stale 5
+- **records:** 5  ·  extracted 3  ·  needs review 1  ·  rejected 1  ·  stale 5
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -124,7 +124,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `van_1977.pdf` | van Dijk JP, Iron metabolism and placental transfer…, European journal of obstetr… (1977) | popPK | 9 | [10.1016/0028-2243(77)90022-3](https://doi.org/10.1016/0028-2243(77)90022-3) | [264050](https://pubmed.ncbi.nlm.nih.gov/264050) | The abstract reports specific quantitative disposition parameters for iron, including a 5-compartmental model and daily transport rates (1.0 mumol/day/100g), within the evidence text. |
 | `Ding_2020.pdf` | Ding Y et al., Pharmacokinetic, Pharmacodynamic, and S…, Clinical therapeutics (2020) | popPK | 7 | [10.1016/j.clinthera.2019.12.010](https://doi.org/10.1016/j.clinthera.2019.12.010) | [31937462](https://pubmed.ncbi.nlm.nih.gov/31937462) | Reports terminal half-life and dose-dependent Cmax/AUC ratios for ferric carboxymaltose, but lacks explicit numerical values for clearance (CL) or volume of distribution (V). |
-| `McLaren_1991.pdf` | McLaren GD et al., Regulation of intestinal iron absorptio…, The Journal of laboratory a… (1991) | popPK | 6 | not captured | [2019794](https://pubmed.ncbi.nlm.nih.gov/2019794) | The paper uses a compartmental model to analyze iron absorption and systemic ferrokinetics, but specific numeric parameter values are not explicitly provided in the text evidence. |
+| `McLaren_1991.pdf` | McLaren GD et al., Regulation of intestinal iron absorptio…, The Journal of laboratory a… (1991) | popPK | 6 |  | [2019794](https://pubmed.ncbi.nlm.nih.gov/2019794) | The paper uses a compartmental model to analyze iron absorption and systemic ferrokinetics, but specific numeric parameter values are not explicitly provided in the text evidence. |
 | `Bateman_2018.pdf` | Bateman DN et al., Iron overdose epidemiology, clinical fe…, Clinical toxicology (Philad… (2018) | pd | 5 | [10.1080/15563650.2018.1455978](https://doi.org/10.1080/15563650.2018.1455978) | [29587543](https://www.ncbi.nlm.nih.gov/pubmed/29587543) | metadata signals extractable PD data (concentration-effect) |
 | `Cheng_2021.pdf` | Cheng R et al., Combined effect of nanoscale zero-valen…, Ecotoxicology (London, Engl… (2021) | pd | 5 | [10.1007/s10646-020-02294-1](https://doi.org/10.1007/s10646-020-02294-1) | [33131022](https://www.ncbi.nlm.nih.gov/pubmed/33131022) | metadata signals extractable PD data (IC50) |
 | `Cho_2022.pdf` | Cho YS et al., Population Pharmacokinetic and Pharmaco…, Clinical therapeutics (2022) | pd | 5 | [10.1016/j.clinthera.2021.11.008](https://doi.org/10.1016/j.clinthera.2021.11.008) | [34974943](https://www.ncbi.nlm.nih.gov/pubmed/34974943) | metadata signals extractable PD data (Pharmacodynamicmodel) |
@@ -134,7 +134,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bérczi_1993.pdf` | Bérczi A et al., Influence of conjugation of doxorubicin…, European journal of biochem… (1993) | pd | 4 | [10.1111/j.1432-1033.1993.tb17778.x](https://doi.org/10.1111/j.1432-1033.1993.tb17778.x) | [8477715](https://www.ncbi.nlm.nih.gov/pubmed/8477715) | metadata signals extractable PD data (EC50) |
 | `Falgueyret_1995.pdf` | Falgueyret JP et al., Characterization of the arachidonate an…, Biochemistry (1995) | pd | 4 | [10.1021/bi00041a040](https://doi.org/10.1021/bi00041a040) | [7577949](https://www.ncbi.nlm.nih.gov/pubmed/7577949) | metadata signals extractable PD data (IC50) |
 | `Gonçalves_2024.pdf` | Gonçalves J et al., Discarded substrates from soilless hydr…, Chemosphere (2024) | pd | 4 | [10.1016/j.chemosphere.2024.143127](https://doi.org/10.1016/j.chemosphere.2024.143127) | [39154767](https://www.ncbi.nlm.nih.gov/pubmed/39154767) | metadata signals extractable PD data (EC50) |
-| `Inman_1993.pdf` | Inman RS et al., Characterization of transferrin-indepen…, The Journal of biological c… (1993) | pd | 4 | not captured | [8473296](https://www.ncbi.nlm.nih.gov/pubmed/8473296) | metadata signals extractable PD data (IC50) |
+| `Inman_1993.pdf` | Inman RS et al., Characterization of transferrin-indepen…, The Journal of biological c… (1993) | pd | 4 |  | [8473296](https://www.ncbi.nlm.nih.gov/pubmed/8473296) | metadata signals extractable PD data (IC50) |
 | `Ismaiel_2024.pdf` | Ismaiel MMS et al., Cooperative antioxidative defense of th…, Environmental pollution (Ba… (2024) | pd | 4 | [10.1016/j.envpol.2023.123002](https://doi.org/10.1016/j.envpol.2023.123002) | [38000724](https://www.ncbi.nlm.nih.gov/pubmed/38000724) | metadata signals extractable PD data (EC50) |
 | `Janssens_2021.pdf` | Janssens LK et al., Sensing an Oxygen Sensor: Development a…, Analytical chemistry (2021) | pd | 4 | [10.1021/acs.analchem.1c02923](https://doi.org/10.1021/acs.analchem.1c02923) | [34677954](https://www.ncbi.nlm.nih.gov/pubmed/34677954) | metadata signals extractable PD data (EC50) |
 | `Mak_2004.pdf` | Mak IT et al., Potent antioxidant properties of 4-hydr…, The Journal of pharmacology… (2004) | pd | 4 | [10.1124/jpet.103.058032](https://doi.org/10.1124/jpet.103.058032) | [14569064](https://www.ncbi.nlm.nih.gov/pubmed/14569064) | metadata signals extractable PD data (IC50) |
@@ -144,7 +144,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mülsch_1991.pdf` | Mülsch A et al., The potent vasodilating and guanylyl cy…, FEBS letters (1991) | pd | 4 | [10.1016/0014-5793(91)81441-a](https://doi.org/10.1016/0014-5793(91)81441-a) | [1684553](https://www.ncbi.nlm.nih.gov/pubmed/1684553) | metadata signals extractable PD data (EC50) |
 | `Pant_2025.pdf` | Pant A et al., Ciclopirox suppresses poxvirus replicat…, Antiviral research (2025) | pd | 4 | [10.1016/j.antiviral.2025.106290](https://doi.org/10.1016/j.antiviral.2025.106290) | [41067563](https://www.ncbi.nlm.nih.gov/pubmed/41067563) | metadata signals extractable PD data (EC50) |
 | `Rottet_2023.pdf` | Rottet S et al., Biochemical interactions between the At…, Archives of biochemistry an… (2023) | pd | 4 | [10.1016/j.abb.2023.109696](https://doi.org/10.1016/j.abb.2023.109696) | [37481198](https://www.ncbi.nlm.nih.gov/pubmed/37481198) | metadata signals extractable PD data (EC50) |
-| `Wolff_1993.pdf` | Wolff DJ et al., The dual mode of inhibition of calmodul…, The Journal of biological c… (1993) | pd | 4 | not captured | [7683652](https://www.ncbi.nlm.nih.gov/pubmed/7683652) | metadata signals extractable PD data (IC50) |
+| `Wolff_1993.pdf` | Wolff DJ et al., The dual mode of inhibition of calmodul…, The Journal of biological c… (1993) | pd | 4 |  | [7683652](https://www.ncbi.nlm.nih.gov/pubmed/7683652) | metadata signals extractable PD data (IC50) |
 | `Guo_2020.pdf` | Guo J et al., Impact of gender, albumin, and CYP2C19…, The Journal of internationa… (2020) | pgx | 8 | [10.1177/0300060520952281](https://doi.org/10.1177/0300060520952281) | [32865063](https://www.ncbi.nlm.nih.gov/pubmed/32865063) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Hall_2009.pdf` | Hall RG et al., Treatment of active pulmonary tuberculo…, Pharmacotherapy (2009) | pgx | 8 | [10.1592/phco.29.12.1468](https://doi.org/10.1592/phco.29.12.1468) | [19947806](https://www.ncbi.nlm.nih.gov/pubmed/19947806) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
 | `Xie_2023.pdf` | Xie SL et al., Genetic variations of CYP3A4 on the met…, Food and chemical toxicolog… (2023) | pgx | 8 | [10.1016/j.fct.2023.114101](https://doi.org/10.1016/j.fct.2023.114101) | [37863381](https://www.ncbi.nlm.nih.gov/pubmed/37863381) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -152,7 +152,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ohmori_2025.pdf` | Ohmori Y et al., Comprehensive functional characterizati…, Biochemical pharmacology (2025) | pgx | 5 | [10.1016/j.bcp.2025.117396](https://doi.org/10.1016/j.bcp.2025.117396) | [41047031](https://www.ncbi.nlm.nih.gov/pubmed/41047031) | metadata signals extractable PGX data (CYP2E1) |
 | `Xiang_2021.pdf` | Xiang GQ et al., [Gilbert's syndrome: hyperbilirubinemia…, Zhonghua gan zang bing za z… (2021) | pgx | 5 | [10.3760/cma.j.cn501113-20200212-00041](https://doi.org/10.3760/cma.j.cn501113-20200212-00041) | [34814402](https://www.ncbi.nlm.nih.gov/pubmed/34814402) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-10-07T16:27:07.450697+00:00</sub>
+<sub>queue written 2026-10-07 16:27 UTC</sub>
 
 ## Screened and excluded
 
@@ -414,5 +414,5 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 16:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biron%5D&body=Drug%3A%20iron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iron/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:27 UTC</sub>

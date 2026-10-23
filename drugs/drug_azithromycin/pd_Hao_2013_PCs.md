@@ -136,4 +136,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazithromycin%5D%20pd_Hao_2013_PCs&body=Drug%3A%20azithromycin%0ARecord%3A%20pd_Hao_2013_PCs%0APaper%3A%20Hao_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azithromycin/pd_Hao_2013_PCs%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [azithromycin](drugs/drug_azithromycin/)</sub>

@@ -123,7 +123,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 252 matched, 113 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 8  ·  extracted 4  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 8  ·  extracted 4  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -132,7 +132,7 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chen_1989.pdf` | Chen TL et al., Plasma pharmacokinetics and urinary exc…, Drug metabolism and disposi… (1989) | popPK | 10 | not captured | [2571480](https://pubmed.ncbi.nlm.nih.gov/2571480) | The study reports quantitative PK parameters (Vd, CL, half-lives) for thalidomide in humans. |
+| `Chen_1989.pdf` | Chen TL et al., Plasma pharmacokinetics and urinary exc…, Drug metabolism and disposi… (1989) | popPK | 10 |  | [2571480](https://pubmed.ncbi.nlm.nih.gov/2571480) | The study reports quantitative PK parameters (Vd, CL, half-lives) for thalidomide in humans. |
 | `Chung_2004.pdf` | Chung F et al., Thalidomide pharmacokinetics and metabo…, Clinical cancer research :… (2004) | popPK | 10 | [10.1158/1078-0432.CCR-04-0421](https://doi.org/10.1158/1078-0432.CCR-04-0421) | [15355928](https://pubmed.ncbi.nlm.nih.gov/15355928) | The study reports quantitative PK parameters (AUC and half-life) for thalidomide in mice, rabbits, and humans, fitted to a one-compartment model, though specific clearance and volume values are not explicitly listed in the evidence text. |
 | `Eriksson_2000.pdf` | Eriksson T et al., Intravenous formulations of the enantio…, The Journal of pharmacy and… (2000) | popPK | 10 | [10.1211/0022357001774660](https://doi.org/10.1211/0022357001774660) | [10933131](https://pubmed.ncbi.nlm.nih.gov/10933131) | The study reports thalidomide pharmacokinetics using a compartmental model in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only cites a range for terminal half-lives. |
 | `Eriksson_2003.pdf` | Eriksson T et al., Pharmacokinetics of thalidomide in pati…, The Journal of pharmacy and… (2003) | popPK | 10 | [10.1211/0022357022241](https://doi.org/10.1211/0022357022241) | [14738599](https://pubmed.ncbi.nlm.nih.gov/14738599) | The paper reports quantitative PK parameters (CL ~10 L/h, V ~1 L/kg) for thalidomide in humans using a population PK model. |
@@ -141,10 +141,10 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Noormohamed_1999.pdf` | Noormohamed FH et al., Pharmacokinetics and hemodynamic effect…, AIDS research and human ret… (1999) | popPK | 10 | [10.1089/088922299310331](https://doi.org/10.1089/088922299310331) | [10461824](https://pubmed.ncbi.nlm.nih.gov/10461824) | The paper reports quantitative pharmacokinetic parameters including clearance, volume of distribution, and half-lives for thalidomide in humans. |
 | `Eriksson_1995.pdf` | Eriksson T et al., Stereospecific determination, chiral in…, Chirality (1995) | popPK | 9 | [10.1002/chir.530070109](https://doi.org/10.1002/chir.530070109) | [7702998](https://pubmed.ncbi.nlm.nih.gov/7702998) | The study reports quantitative pharmacokinetic parameters (elimination rate constants for R and S enantiomers and inversion rates) for thalidomide in humans, but the evidence provided contains rate constants rather than explicit clearance or volume values. |
 | `Scheffler_1999.pdf` | Scheffler MR et al., Thalidomide does not alter estrogen-pro…, Clinical pharmacology and t… (1999) | popPK | 9 | [10.1016/S0009-9236(99)70067-6](https://doi.org/10.1016/S0009-9236(99)70067-6) | [10340913](https://pubmed.ncbi.nlm.nih.gov/10340913) | The paper reports that thalidomide PK was modeled with a 1-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not included in the provided evidence, likely residing in unshown tables or figures. |
-| `Teo_1999.pdf` | Teo SK et al., Single-dose oral pharmacokinetics of th…, Journal of clinical pharmac… (1999) | popPK | 9 | not captured | [10579147](https://pubmed.ncbi.nlm.nih.gov/10579147) | The study reports quantitative pharmacokinetic parameters for thalidomide in humans, including specific terminal half-life values for different formulations. |
+| `Teo_1999.pdf` | Teo SK et al., Single-dose oral pharmacokinetics of th…, Journal of clinical pharmac… (1999) | popPK | 9 |  | [10579147](https://pubmed.ncbi.nlm.nih.gov/10579147) | The study reports quantitative pharmacokinetic parameters for thalidomide in humans, including specific terminal half-life values for different formulations. |
 | `Teo_2004.pdf` | Teo SK et al., Clinical pharmacokinetics of thalidomide, Clinical pharmacokinetics (2004) | popPK | 8 | [10.2165/00003088-200443050-00004](https://doi.org/10.2165/00003088-200443050-00004) | [15080764](https://pubmed.ncbi.nlm.nih.gov/15080764) | Reports quantitative PK parameters (CL, V, t1/2, AUC) for thalidomide in humans based on a one-compartment model, though values appear to be from a review of primary data rather than original raw population-PK modeling. |
 
-<sub>queue written 2026-10-07T00:49:14.929491+00:00</sub>
+<sub>queue written 2026-10-07 00:49 UTC</sub>
 
 ## Screened and excluded
 
@@ -212,5 +212,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 00:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthalidomide%5D&body=Drug%3A%20thalidomide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thalidomide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:49 UTC</sub>

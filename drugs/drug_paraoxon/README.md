@@ -4,7 +4,7 @@
 
 - **generic name:** paraoxon
 - **ATC codes:** `S01EB10`
-- **DrugBank:** [DB13495](https://go.drugbank.com/drugs/DB13495) · **PubChem:** not captured
+- **DrugBank:** [DB13495](https://go.drugbank.com/drugs/DB13495) · **PubChem:** none
 - **molar mass:** 275.195 g/mol (C10H14NO6P) — DrugBank
 - **groups:** experimental
 
@@ -77,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 240 matched, 118 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -93,10 +93,10 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Jiang_2015.pdf` | Jiang F et al., Identification of polymorphisms in Cyrt…, Pesticide biochemistry and… (2015) | pd | 5 | [10.1016/j.pestbp.2014.10.010](https://doi.org/10.1016/j.pestbp.2014.10.010) | [25619913](https://www.ncbi.nlm.nih.gov/pubmed/25619913) | metadata signals extractable PD data (IC50) |
 | `Küster_2006.pdf` | Küster E et al., Comparison of cholin- and carboxylester…, Biomarkers : biochemical in… (2006) | pd | 5 | [10.1080/13547500600742136](https://doi.org/10.1080/13547500600742136) | [16908441](https://www.ncbi.nlm.nih.gov/pubmed/16908441) | metadata signals extractable PD data (IC50) |
 | `Petroianu_2005.pdf` | Petroianu GA et al., Weak inhibitors protect cholinesterases…, Journal of applied toxicolo… (2005) | pd | 5 | [10.1002/jat.1036](https://doi.org/10.1002/jat.1036) | [15669026](https://www.ncbi.nlm.nih.gov/pubmed/15669026) | metadata signals extractable PD data (IC50) |
-| `Camara_1997.pdf` | Camara AL et al., Methamidophos: an anticholinesterase wi…, Neurotoxicology (1997) | pd | 4 | not captured | [9291508](https://www.ncbi.nlm.nih.gov/pubmed/9291508) | metadata signals extractable PD data (IC50) |
+| `Camara_1997.pdf` | Camara AL et al., Methamidophos: an anticholinesterase wi…, Neurotoxicology (1997) | pd | 4 |  | [9291508](https://www.ncbi.nlm.nih.gov/pubmed/9291508) | metadata signals extractable PD data (IC50) |
 | `DAgostino_2000.pdf` | D'Agostino G et al., Prejunctional muscarinic inhibitory con…, British journal of pharmaco… (2000) | pd | 4 | [10.1038/sj.bjp.0703080](https://doi.org/10.1038/sj.bjp.0703080) | [10711347](https://www.ncbi.nlm.nih.gov/pubmed/10711347) | metadata signals extractable PD data (EC50) |
 | `Parker_2000.pdf` | Parker ML et al., Differential toxicities of organophosph…, Archives of environmental c… (2000) | pd | 4 | [10.1007/s002440010100](https://doi.org/10.1007/s002440010100) | [10871426](https://www.ncbi.nlm.nih.gov/pubmed/10871426) | metadata signals extractable PD data (IC50) |
-| `Zoh_2005.pdf` | Zoh KD et al., Degradation of parathion and the reduct…, Water science and technolog… (2005) | pd | 4 | not captured | [16312950](https://www.ncbi.nlm.nih.gov/pubmed/16312950) | metadata signals extractable PD data (EC50) |
+| `Zoh_2005.pdf` | Zoh KD et al., Degradation of parathion and the reduct…, Water science and technolog… (2005) | pd | 4 |  | [16312950](https://www.ncbi.nlm.nih.gov/pubmed/16312950) | metadata signals extractable PD data (EC50) |
 | `Zoh_2006.pdf` | Zoh KD et al., Parathion degradation and toxicity redu…, Water science and technolog… (2006) | pd | 4 | [10.2166/wst.2006.069](https://doi.org/10.2166/wst.2006.069) | [16605011](https://www.ncbi.nlm.nih.gov/pubmed/16605011) | metadata signals extractable PD data (EC50) |
 | `Gentry_2002.pdf` | Gentry PR et al., An approach for the quantitative consid…, Toxicological sciences : an… (2002) | pgx | 8 | [10.1093/toxsci/70.1.120](https://doi.org/10.1093/toxsci/70.1.120) | [12388841](https://www.ncbi.nlm.nih.gov/pubmed/12388841) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Hein_1993.pdf` | Hein DW et al., Metabolic activation and deactivation o…, Carcinogenesis (1993) | pgx | 8 | [10.1093/carcin/14.8.1633](https://doi.org/10.1093/carcin/14.8.1633) | [8353847](https://www.ncbi.nlm.nih.gov/pubmed/8353847) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
@@ -104,7 +104,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Foxenberg_2007.pdf` | Foxenberg RJ et al., Human hepatic cytochrome p450-specific…, Drug metabolism and disposi… (2007) | pgx | 7 | [10.1124/dmd.106.012427](https://doi.org/10.1124/dmd.106.012427) | [17079358](https://www.ncbi.nlm.nih.gov/pubmed/17079358) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Mutch_2003.pdf` | Mutch E et al., Do multiple cytochrome P450 isoforms co…, Archives of toxicology (2003) | pgx | 5 | [10.1007/s00204-003-0452-0](https://doi.org/10.1007/s00204-003-0452-0) | [12669189](https://www.ncbi.nlm.nih.gov/pubmed/12669189) | metadata signals extractable PGX data (CYP2C8) |
 
-<sub>queue written 2026-10-07T19:17:56.355825+00:00</sub>
+<sub>queue written 2026-10-07 19:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -170,5 +170,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 19:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparaoxon%5D&body=Drug%3A%20paraoxon%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paraoxon/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:17 UTC</sub>

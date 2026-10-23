@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcalcium_dobesilate%5D%20pd_Alda_2011_TAS&body=Drug%3A%20calcium_dobesilate%0ARecord%3A%20pd_Alda_2011_TAS%0APaper%3A%20Alda_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_calcium_dobesilate/pd_Alda_2011_TAS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [calcium dobesilate](drugs/drug_calcium_dobesilate/)</sub>

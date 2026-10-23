@@ -67,4 +67,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclofenotane%5D%20pd_Legler_1999_ER_CALUX&body=Drug%3A%20clofenotane%0ARecord%3A%20pd_Legler_1999_ER_CALUX%0APaper%3A%20Legler_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clofenotane/pd_Legler_1999_ER_CALUX%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [clofenotane](drugs/drug_clofenotane/)</sub>

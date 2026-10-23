@@ -4,7 +4,7 @@
 
 - **generic name:** phenazone
 - **ATC codes:** `N02BB01`, `S02DA03`
-- **DrugBank:** [DB01435](https://go.drugbank.com/drugs/DB01435) · **PubChem:** not captured
+- **DrugBank:** [DB01435](https://go.drugbank.com/drugs/DB01435) · **PubChem:** none
 - **groups:** approved
 
 ## About
@@ -61,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 230 matched, 151 returned
 - **screened:** 5  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 4
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -70,20 +70,20 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Brinkmann_1977.pdf` | Brinkmann HJ et al., [On the pharmacokinetics of phenazone i…, Arzneimittel-Forschung (1977) | popPK | 10 | not captured | [578756](https://pubmed.ncbi.nlm.nih.gov/578756) | The paper describes a pharmacokinetic study of phenazone in humans using a one-compartment model, but no numeric parameter values are present in the provided evidence. |
+| `Brinkmann_1977.pdf` | Brinkmann HJ et al., [On the pharmacokinetics of phenazone i…, Arzneimittel-Forschung (1977) | popPK | 10 |  | [578756](https://pubmed.ncbi.nlm.nih.gov/578756) | The paper describes a pharmacokinetic study of phenazone in humans using a one-compartment model, but no numeric parameter values are present in the provided evidence. |
 | `Doyle_1981.pdf` | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | popPK | 9 | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) | [7268788](https://pubmed.ncbi.nlm.nih.gov/7268788) | The study reports phenazone PK parameters (half-life, volume of distribution percentage) in non-human primates, but specific numeric values for clearance and absolute volume are not fully detailed in the text, only percentages and ranges. |
-| `Eichelbaum_1982.pdf` | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | popPK | 9 | not captured | [7201837](https://pubmed.ncbi.nlm.nih.gov/7201837) | The abstract reports key parameters (half-life, bioavailability) for phenazone in humans, though detailed compartmental values (CL, V) are likely in the full text not fully provided here. |
-| `Gawrońska-Szklarz_1992.pdf` | Gawrońska-Szklarz B et al., [Pharmacokinetics of phenazone after bi…, Ginekologia polska (1992) | popPK | 9 | not captured | [1305588](https://pubmed.ncbi.nlm.nih.gov/1305588) | The study reports a two-compartment model for phenazone in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Eichelbaum_1982.pdf` | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | popPK | 9 |  | [7201837](https://pubmed.ncbi.nlm.nih.gov/7201837) | The abstract reports key parameters (half-life, bioavailability) for phenazone in humans, though detailed compartmental values (CL, V) are likely in the full text not fully provided here. |
+| `Gawrońska-Szklarz_1992.pdf` | Gawrońska-Szklarz B et al., [Pharmacokinetics of phenazone after bi…, Ginekologia polska (1992) | popPK | 9 |  | [1305588](https://pubmed.ncbi.nlm.nih.gov/1305588) | The study reports a two-compartment model for phenazone in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Fabre_1993.pdf` | Fabre D et al., Identification of patients with impaire…, Clinical pharmacokinetics (1993) | popPK | 8 | [10.2165/00003088-199324040-00006](https://doi.org/10.2165/00003088-199324040-00006) | [8491059](https://pubmed.ncbi.nlm.nih.gov/8491059) | The abstract reports population-level mean error and standard deviation for phenazone clearance in humans, providing quantitative PK parameters despite the lack of a full parameter table. |
 | `Chernyak_2016.pdf` | Chernyak YI et al., Impact of dioxins on antipyrine metabol…, Toxicology letters (2016) | pgx | 8 | [10.1016/j.toxlet.2016.04.006](https://doi.org/10.1016/j.toxlet.2016.04.006) | [27067104](https://www.ncbi.nlm.nih.gov/pubmed/27067104) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Huber_1996.pdf` | Huber R et al., Pharmacokinetics of pantoprazole in man, International journal of cl… (1996) | pgx | 7 | not captured | [8793599](https://www.ncbi.nlm.nih.gov/pubmed/8793599) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Huber_1996.pdf` | Huber R et al., Pharmacokinetics of pantoprazole in man, International journal of cl… (1996) | pgx | 7 |  | [8793599](https://www.ncbi.nlm.nih.gov/pubmed/8793599) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Klotz_2007.pdf` | Klotz U, Antiarrhythmics: elimination and dosage…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746120-00002](https://doi.org/10.2165/00003088-200746120-00002) | [18027986](https://www.ncbi.nlm.nih.gov/pubmed/18027986) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Matzke_2000.pdf` | Matzke GR et al., Evaluation of the influence of diabetes…, Pharmacotherapy (2000) | pgx | 7 | [10.1592/phco.20.3.182.34775](https://doi.org/10.1592/phco.20.3.182.34775) | [10678296](https://www.ncbi.nlm.nih.gov/pubmed/10678296) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Pienimäki_1997.pdf` | Pienimäki P et al., Pharmacokinetics of oxcarbazepine and c…, Epilepsia (1997) | pgx | 7 | [10.1111/j.1528-1157.1997.tb01122.x](https://doi.org/10.1111/j.1528-1157.1997.tb01122.x) | [9070593](https://www.ncbi.nlm.nih.gov/pubmed/9070593) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chernyak_2020.pdf` | Chernyak YI et al., CYP3A Polymorphism and Chronic Mercury…, Bulletin of experimental bi… (2020) | pgx | 5 | [10.1007/s10517-020-04738-4](https://doi.org/10.1007/s10517-020-04738-4) | [32146629](https://www.ncbi.nlm.nih.gov/pubmed/32146629) | metadata signals extractable PGX data (CYP3A) |
 
-<sub>queue written 2026-10-07T07:00:25.552958+00:00</sub>
+<sub>queue written 2026-10-07 07:00 UTC</sub>
 
 ## Screened and excluded
 
@@ -186,5 +186,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 07:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenazone%5D&body=Drug%3A%20phenazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenazone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:00 UTC</sub>

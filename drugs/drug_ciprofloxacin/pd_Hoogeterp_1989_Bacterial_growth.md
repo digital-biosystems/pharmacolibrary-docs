@@ -57,4 +57,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20pd_Hoogeterp_1989_Bacterial_growth&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20pd_Hoogeterp_1989_Bacterial_growth%0APaper%3A%20Hoogeterp_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/pd_Hoogeterp_1989_Bacterial_growth%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ciprofloxacin](drugs/drug_ciprofloxacin/)</sub>

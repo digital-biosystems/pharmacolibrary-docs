@@ -46,14 +46,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC28A2` substrate | DrugBank actor |
 | absorption | small intestine | `SLC28A2` substrate | DrugBank actor |
 | distribution | blood | `SLC29A1` substrate | DrugBank actor |
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
 | metabolism | blood | `TPMT` substrate | DrugBank actor |
 | metabolism | liver | `AOX1` substrate, `TPMT` substrate, `XDH` substrate | DrugBank actor |
 | metabolism | small intestine | `XDH` substrate | DrugBank actor |
-| excretion | kidney | `ABCC4` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `ABCC4` substrate, `SLC22A8` inhibitor/substrate, `SLC28A2` substrate | DrugBank actor |
 | excretion | liver | `ABCC4` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABCC5 (substrate), HPRT1 (inhibitor), IMPDH1 (inhibitor), PPAT (inhibitor), SLC28A3 (substrate), SLC29A2 (substrate).</sub>
@@ -76,7 +75,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 25 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 3
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -86,13 +85,13 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Arun_2024.pdf` | Arun B et al., Bioequivalence study followed by model-…, Pediatric blood & cancer (2024) | popPK | 10 | [10.1002/pbc.30813](https://doi.org/10.1002/pbc.30813) | [38110844](https://pubmed.ncbi.nlm.nih.gov/38110844) | The paper describes a population pharmacokinetic (PopPK) model study for mercaptopurine, but no specific numeric parameter values (CL, V, etc.) are provided in the extracted evidence, only qualitative findings (47% higher bioavailability) and simulation results. |
-| `Ding_1979.pdf` | Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979) | popPK | 10 | not captured | [43222](https://pubmed.ncbi.nlm.nih.gov/43222) | The abstract explicitly reports quantitative pharmacokinetic parameters (CLp, Vdss, half-life) for 6-mercaptopurine. |
+| `Ding_1979.pdf` | Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979) | popPK | 10 |  | [43222](https://pubmed.ncbi.nlm.nih.gov/43222) | The abstract explicitly reports quantitative pharmacokinetic parameters (CLp, Vdss, half-life) for 6-mercaptopurine. |
 | `Covell_1985.pdf` | Covell DG et al., Kinetic model for disposition of 6-merc…, The American journal of phy… (1985) | popPK | 9 | [10.1152/ajpregu.1985.248.2.R147](https://doi.org/10.1152/ajpregu.1985.248.2.R147) | [4038588](https://pubmed.ncbi.nlm.nih.gov/4038588) | The paper describes a compartmental pharmacokinetic model for 6-mercaptopurine in monkeys, but no specific numeric parameter values are provided in the evidence text. |
-| `Wierzba_1983.pdf` | Wierzba K et al., The effect of glutathione on 6-mercapto…, Polish journal of pharmacol… (1983) | popPK | 8 | not captured | [6687157](https://pubmed.ncbi.nlm.nih.gov/6687157) | The study reports a compartmental model for mercaptopurine in rabbits, but no specific numeric PK parameter values (CL, V, t1/2, etc.) are provided in the extracted evidence. |
-| `Hermann_1985.pdf` | Hermann T et al., Pharmacokinetics of elimination of 6-me…, Polish journal of pharmacol… (1985) | popPK | 6 | not captured | [3863097](https://pubmed.ncbi.nlm.nih.gov/3863097) | The paper reports pharmacokinetic parameters (elimination rate K, half-life) for 6-mercaptopurine, but no numeric values are present in the provided evidence. |
+| `Wierzba_1983.pdf` | Wierzba K et al., The effect of glutathione on 6-mercapto…, Polish journal of pharmacol… (1983) | popPK | 8 |  | [6687157](https://pubmed.ncbi.nlm.nih.gov/6687157) | The study reports a compartmental model for mercaptopurine in rabbits, but no specific numeric PK parameter values (CL, V, t1/2, etc.) are provided in the extracted evidence. |
+| `Hermann_1985.pdf` | Hermann T et al., Pharmacokinetics of elimination of 6-me…, Polish journal of pharmacol… (1985) | popPK | 6 |  | [3863097](https://pubmed.ncbi.nlm.nih.gov/3863097) | The paper reports pharmacokinetic parameters (elimination rate K, half-life) for 6-mercaptopurine, but no numeric values are present in the provided evidence. |
 | `Klés_2003.pdf` | Klés V et al., Application of pharmacokinetic/pharmaco…, Journal of applied toxicolo… (2003) | popPK | 5 | [10.1002/jat.888](https://doi.org/10.1002/jat.888) | [12518338](https://pubmed.ncbi.nlm.nih.gov/12518338) | The study involves PK/PD modeling of mercaptopurine in mice but no specific numeric pharmacokinetic parameters (CL, V, etc.) are present in the provided evidence. |
 
-<sub>queue written 2026-10-07T16:52:25.056351+00:00</sub>
+<sub>queue written 2026-10-07 16:52 UTC</sub>
 
 ## Screened and excluded
 
@@ -126,5 +125,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 16:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmercaptopurine%5D&body=Drug%3A%20mercaptopurine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mercaptopurine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:52 UTC</sub>

@@ -58,4 +58,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balendronic_acid%5D%20pd_Abrahamsen_2011_HF&body=Drug%3A%20alendronic_acid%0ARecord%3A%20pd_Abrahamsen_2011_HF%0APaper%3A%20Abrahamsen_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alendronic_acid/pd_Abrahamsen_2011_HF%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [alendronic acid](drugs/drug_alendronic_acid/)</sub>

@@ -79,4 +79,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmanidipine%5D%20pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin&body=Drug%3A%20manidipine%0ARecord%3A%20pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin%0APaper%3A%20Katoh_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_manidipine/pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [manidipine](drugs/drug_manidipine/)</sub>

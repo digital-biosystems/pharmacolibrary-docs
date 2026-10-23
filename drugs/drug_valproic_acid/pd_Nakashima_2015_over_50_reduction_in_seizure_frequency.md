@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalproic_acid%5D%20pd_Nakashima_2015_over_50_reduction_in_seizure_frequency&body=Drug%3A%20valproic_acid%0ARecord%3A%20pd_Nakashima_2015_over_50_reduction_in_seizure_frequency%0APaper%3A%20Nakashima_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valproic_acid/pd_Nakashima_2015_over_50_reduction_in_seizure_frequency%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [valproic acid](drugs/drug_valproic_acid/)</sub>

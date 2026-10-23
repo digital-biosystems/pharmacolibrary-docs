@@ -82,4 +82,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpamidronic_acid%5D%20pd_Hosking_1990_bone_resorption&body=Drug%3A%20pamidronic_acid%0ARecord%3A%20pd_Hosking_1990_bone_resorption%0APaper%3A%20Hosking_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pamidronic_acid/pd_Hosking_1990_bone_resorption%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pamidronic acid](drugs/drug_pamidronic_acid/)</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** albumin
 - **ATC codes:** `B05AA01`
-- **DrugBank:** [DB00062](https://go.drugbank.com/drugs/DB00062) · **PubChem:** not captured
+- **DrugBank:** [DB00062](https://go.drugbank.com/drugs/DB00062) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -76,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9838 matched, 309 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -96,10 +96,10 @@ _47 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Wang_2022.pdf` | Wang Z et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | pd | 5 | [10.1111/bcp.14971](https://doi.org/10.1111/bcp.14971) | [34197653](https://www.ncbi.nlm.nih.gov/pubmed/34197653) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Wang_2024.pdf` | Wang K et al., Evaluation of omadacycline dosing regim…, European journal of pharmac… (2024) | pd | 5 | [10.1016/j.ejps.2024.106713](https://doi.org/10.1016/j.ejps.2024.106713) | [38295963](https://www.ncbi.nlm.nih.gov/pubmed/38295963) | metadata signals extractable PD data (PK/PD) |
 | `Yu_2025.pdf` | Yu H et al., Pharmacokinetic-pharmacodynamic (PK/PD)…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70093](https://doi.org/10.1002/bcp.70093) | [40344607](https://www.ncbi.nlm.nih.gov/pubmed/40344607) | metadata signals extractable PD data (PK/PD) |
-| `Cioli_1992.pdf` | Cioli V et al., A new protein antidenaturant agent, bin…, The Journal of rheumatology (1992) | pd | 4 | not captured | [1491393](https://www.ncbi.nlm.nih.gov/pubmed/1491393) | metadata signals extractable PD data (EC50) |
+| `Cioli_1992.pdf` | Cioli V et al., A new protein antidenaturant agent, bin…, The Journal of rheumatology (1992) | pd | 4 |  | [1491393](https://www.ncbi.nlm.nih.gov/pubmed/1491393) | metadata signals extractable PD data (EC50) |
 | `Colli_1985.pdf` | Colli S et al., Prostacyclin-lipoprotein interactions.…, Biochemical pharmacology (1985) | pd | 4 | [10.1016/0006-2952(85)90525-8](https://doi.org/10.1016/0006-2952(85)90525-8) | [3893439](https://www.ncbi.nlm.nih.gov/pubmed/3893439) | metadata signals extractable PD data (IC50) |
 | `Fujiwara_1995.pdf` | Fujiwara K et al., Determination of urinary acetylpolyamin…, Journal of biochemistry (1995) | pd | 4 | [10.1093/oxfordjournals.jbchem.a125009](https://doi.org/10.1093/oxfordjournals.jbchem.a125009) | [8720137](https://www.ncbi.nlm.nih.gov/pubmed/8720137) | metadata signals extractable PD data (EC50) |
-| `Hughes_1979.pdf` | Hughes SP et al., The extraction from the blood of phosph…, Nuklearmedizin. Nuclear med… (1979) | pd | 4 | not captured | [228254](https://www.ncbi.nlm.nih.gov/pubmed/228254) | metadata signals extractable PD data (Emax) |
+| `Hughes_1979.pdf` | Hughes SP et al., The extraction from the blood of phosph…, Nuklearmedizin. Nuclear med… (1979) | pd | 4 |  | [228254](https://www.ncbi.nlm.nih.gov/pubmed/228254) | metadata signals extractable PD data (Emax) |
 | `Pasandideh_2021.pdf` | Pasandideh S et al., Evaluation of antioxidant and inhibitor…, International journal of bi… (2021) | pd | 4 | [10.1016/j.ijbiomac.2021.04.043](https://doi.org/10.1016/j.ijbiomac.2021.04.043) | [33848544](https://www.ncbi.nlm.nih.gov/pubmed/33848544) | metadata signals extractable PD data (EC50) |
 | `Psychoyos_1989.pdf` | Psychoyos S et al., Comparison of LTB4- and C5a-stimulated…, Agents and actions (1989) | pd | 4 | [10.1007/BF01972828](https://doi.org/10.1007/BF01972828) | [2552766](https://www.ncbi.nlm.nih.gov/pubmed/2552766) | metadata signals extractable PD data (EC50) |
 | `Webber_1989.pdf` | Webber SE, Receptors mediating the effects of subs…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb12665.x](https://doi.org/10.1111/j.1476-5381.1989.tb12665.x) | [2482101](https://www.ncbi.nlm.nih.gov/pubmed/2482101) | metadata signals extractable PD data (EC50) |
@@ -133,7 +133,7 @@ _47 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Tu_2024.pdf` | Tu YP et al., Population pharmacokinetics of mirvetux…, British journal of clinical… (2024) | pgx | 7 | [10.1111/bcp.15937](https://doi.org/10.1111/bcp.15937) | [37872122](https://www.ncbi.nlm.nih.gov/pubmed/37872122) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Meaddough_2025.pdf` | Meaddough EL et al., Assessment of CYP2D6 gene expression in…, Chemico-biological interact… (2025) | pgx | 5 | [10.1016/j.cbi.2025.111526](https://doi.org/10.1016/j.cbi.2025.111526) | [40280382](https://www.ncbi.nlm.nih.gov/pubmed/40280382) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-05T21:10:33.006022+00:00</sub>
+<sub>queue written 2026-10-05 21:10 UTC</sub>
 
 ## Screened and excluded
 
@@ -468,5 +468,5 @@ _47 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbumin%5D&body=Drug%3A%20albumin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albumin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

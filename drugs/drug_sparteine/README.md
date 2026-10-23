@@ -124,7 +124,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 532 matched, 188 returned
 - **screened:** 43  ·  **relevant:** 1
-- **records:** 8  ·  extracted 2  ·  needs_review 2  ·  rejected 4  ·  stale 0
+- **records:** 8  ·  extracted 2  ·  needs review 2  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -135,9 +135,9 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Gram_1990.pdf` | Gram LF, Inadequate dosing and pharmacokinetic v…, Clinical neuropharmacology (1990) | pd | 5 | [10.1097/00002826-199001001-00004](https://doi.org/10.1097/00002826-199001001-00004) | [2199035](https://www.ncbi.nlm.nih.gov/pubmed/2199035) | metadata signals extractable PD data (concentrationeffect) |
 | `unknown_1999.pdf` | unknown, Clomipramine dose-effect study in patie…, Clinical pharmacology and t… (1999) | pd | 5 | [10.1016/S0009-9236(99)90053-X](https://doi.org/10.1016/S0009-9236(99)90053-X) | [10460069](https://www.ncbi.nlm.nih.gov/pubmed/10460069) | metadata signals extractable PD data (concentration-effect) |
-| `Echizen_2000.pdf` | Echizen H et al., Identification of CYP3A4 as the enzyme…, Drug metabolism and disposi… (2000) | pd | 4 | not captured | [10901704](https://www.ncbi.nlm.nih.gov/pubmed/10901704) | metadata signals extractable PD data (IC50) |
-| `Jurima-Romet_1994.pdf` | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | pd | 4 | not captured | [7895601](https://www.ncbi.nlm.nih.gov/pubmed/7895601) | metadata signals extractable PD data (IC50) |
-| `Tyndale_1991.pdf` | Tyndale RF et al., Neuronal cytochrome P450IID1 (debrisoqu…, Molecular pharmacology (1991) | pd | 4 | not captured | [1857341](https://www.ncbi.nlm.nih.gov/pubmed/1857341) | metadata signals extractable PD data (IC50) |
+| `Echizen_2000.pdf` | Echizen H et al., Identification of CYP3A4 as the enzyme…, Drug metabolism and disposi… (2000) | pd | 4 |  | [10901704](https://www.ncbi.nlm.nih.gov/pubmed/10901704) | metadata signals extractable PD data (IC50) |
+| `Jurima-Romet_1994.pdf` | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | pd | 4 |  | [7895601](https://www.ncbi.nlm.nih.gov/pubmed/7895601) | metadata signals extractable PD data (IC50) |
+| `Tyndale_1991.pdf` | Tyndale RF et al., Neuronal cytochrome P450IID1 (debrisoqu…, Molecular pharmacology (1991) | pd | 4 |  | [1857341](https://www.ncbi.nlm.nih.gov/pubmed/1857341) | metadata signals extractable PD data (IC50) |
 | `Baumann_1996.pdf` | Baumann P, Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (1996) | pgx | 8 | [10.2165/00003088-199631060-00004](https://doi.org/10.2165/00003088-199631060-00004) | [8968657](https://www.ncbi.nlm.nih.gov/pubmed/8968657) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Brøsen_1993.pdf` | Brøsen K et al., Inhibition by paroxetine of desipramine…, European journal of clinica… (1993) | pgx | 8 | [10.1007/BF00316471](https://doi.org/10.1007/BF00316471) | [8513845](https://www.ncbi.nlm.nih.gov/pubmed/8513845) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Fjordside_1999.pdf` | Fjordside L et al., The stereoselective metabolism of fluox…, Pharmacogenetics (1999) | pgx | 8 | [10.1097/00008571-199902000-00008](https://doi.org/10.1097/00008571-199902000-00008) | [10208643](https://www.ncbi.nlm.nih.gov/pubmed/10208643) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -153,9 +153,9 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kees_2001.pdf` | Kees F et al., Pharmacokinetics of therapeutic doses o…, British journal of clinical… (2001) | pgx | 7 | [10.1046/j.0306-5251.2001.01512.x](https://doi.org/10.1046/j.0306-5251.2001.01512.x) | [11736884](https://www.ncbi.nlm.nih.gov/pubmed/11736884) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Klein_2025.pdf` | Klein K et al., Transcription factors of the Nuclear Fa…, Pharmacological research (2025) | pgx | 5 | [10.1016/j.phrs.2025.107998](https://doi.org/10.1016/j.phrs.2025.107998) | [41106572](https://www.ncbi.nlm.nih.gov/pubmed/41106572) | metadata signals extractable PGX data (CYP2D6) |
 | `Slanar_2001.pdf` | Slanar O et al., Phenotype of cytochrome P450 CYP2D6 in…, Methods and findings in exp… (2001) | pgx | 5 | [10.1358/mf.2001.23.3.627948](https://doi.org/10.1358/mf.2001.23.3.627948) | [11523314](https://www.ncbi.nlm.nih.gov/pubmed/11523314) | metadata signals extractable PGX data (CYP2D6) |
-| `Szewczuk-Bogusławska_2004.pdf` | Szewczuk-Bogusławska M et al., Doxepin inhibits CYP2D6 activity in vivo, Polish journal of pharmacol… (2004) | pgx | 5 | not captured | [15520506](https://www.ncbi.nlm.nih.gov/pubmed/15520506) | metadata signals extractable PGX data (CYP2D6) |
+| `Szewczuk-Bogusławska_2004.pdf` | Szewczuk-Bogusławska M et al., Doxepin inhibits CYP2D6 activity in vivo, Polish journal of pharmacol… (2004) | pgx | 5 |  | [15520506](https://www.ncbi.nlm.nih.gov/pubmed/15520506) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-08T22:19:38.099844+00:00</sub>
+<sub>queue written 2026-10-08 22:19 UTC</sub>
 
 ## Screened and excluded
 
@@ -293,5 +293,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-08 21:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsparteine%5D&body=Drug%3A%20sparteine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sparteine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-08 21:55 UTC</sub>

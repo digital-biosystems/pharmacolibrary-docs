@@ -81,4 +81,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdequalinium%5D%20pd_Dawkins_2005_efferent_effects&body=Drug%3A%20dequalinium%0ARecord%3A%20pd_Dawkins_2005_efferent_effects%0APaper%3A%20Dawkins_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dequalinium/pd_Dawkins_2005_efferent_effects%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dequalinium](drugs/drug_dequalinium/)</sub>

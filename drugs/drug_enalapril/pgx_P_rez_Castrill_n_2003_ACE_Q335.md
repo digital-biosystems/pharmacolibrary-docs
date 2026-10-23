@@ -77,4 +77,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benalapril%5D%20pgx_P_rez_Castrill_n_2003_ACE_Q335&body=Drug%3A%20enalapril%0ARecord%3A%20pgx_P_rez_Castrill_n_2003_ACE_Q335%0APaper%3A%20P%C3%A9rez-Castrill%C3%B3n_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enalapril/pgx_P_rez_Castrill_n_2003_ACE_Q335%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [enalapril](drugs/drug_enalapril/)</sub>

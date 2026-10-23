@@ -84,4 +84,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcopper_sulfate%5D%20pd_Mehdizadeh_2026_Cell_mortality&body=Drug%3A%20copper_sulfate%0ARecord%3A%20pd_Mehdizadeh_2026_Cell_mortality%0APaper%3A%20Mehdizadeh_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_copper_sulfate/pd_Mehdizadeh_2026_Cell_mortality%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [copper sulfate](drugs/drug_copper_sulfate/)</sub>

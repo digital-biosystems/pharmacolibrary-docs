@@ -82,4 +82,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgliclazide%5D%20pd_Frey_2003_disease_progression&body=Drug%3A%20gliclazide%0ARecord%3A%20pd_Frey_2003_disease_progression%0APaper%3A%20Frey_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gliclazide/pd_Frey_2003_disease_progression%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [gliclazide](drugs/drug_gliclazide/)</sub>

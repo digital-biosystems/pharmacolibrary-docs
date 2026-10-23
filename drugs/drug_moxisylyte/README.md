@@ -59,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 64 matched, 60 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -69,16 +69,16 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Costa_1992.pdf` | Costa P et al., Pharmacokinetics of moxisylyte in healt…, Journal of pharmaceutical s… (1992) | popPK | 10 | [10.1002/jps.2600811220](https://doi.org/10.1002/jps.2600811220) | [1491345](https://pubmed.ncbi.nlm.nih.gov/1491345) | The study reports quantitative PK parameters (half-lives, excretion percentages) for moxisylyte metabolites in humans, which are valid PK data for the parent drug, though specific clearance/volume values are not explicitly listed in the text. |
-| `Neau_1995.pdf` | Neau B et al., Metabolism of 14C-moxisylyte in hairles…, Arzneimittel-Forschung (1995) | popPK | 9 | not captured | [7893260](https://pubmed.ncbi.nlm.nih.gov/7893260) | The study reports quantitative pharmacokinetic parameters (half-lives, Tmax) for moxisylyte in rats, with values explicitly stated in the text. |
-| `Neau_1995_2.pdf` | Neau B et al., Pharmacokinetics study of 14C-moxisylyt…, Arzneimittel-Forschung (1995) | popPK | 9 | not captured | [8929231](https://pubmed.ncbi.nlm.nih.gov/8929231) | The study reports quantitative pharmacokinetic parameters (absorption half-life, elimination half-life, Tmax, absorption percentage) for moxisylyte in rats. |
+| `Neau_1995.pdf` | Neau B et al., Metabolism of 14C-moxisylyte in hairles…, Arzneimittel-Forschung (1995) | popPK | 9 |  | [7893260](https://pubmed.ncbi.nlm.nih.gov/7893260) | The study reports quantitative pharmacokinetic parameters (half-lives, Tmax) for moxisylyte in rats, with values explicitly stated in the text. |
+| `Neau_1995_2.pdf` | Neau B et al., Pharmacokinetics study of 14C-moxisylyt…, Arzneimittel-Forschung (1995) | popPK | 9 |  | [8929231](https://pubmed.ncbi.nlm.nih.gov/8929231) | The study reports quantitative pharmacokinetic parameters (absorption half-life, elimination half-life, Tmax, absorption percentage) for moxisylyte in rats. |
 | `Bressolle_1996.pdf` | Bressolle F et al., Pharmacokinetics of moxisylyte in healt…, European journal of clinica… (1996) | popPK | 8 | [10.1007/BF00203788](https://doi.org/10.1007/BF00203788) | [8866639](https://pubmed.ncbi.nlm.nih.gov/8866639) | The study reports quantitative pharmacokinetic parameters (half-lives) for the specific metabolites of moxisylyte in humans, which constitutes the pharmacokinetic profile of the drug when the parent is not the primary focus or is rapidly metabolized. |
 | `Costa_1996.pdf` | Costa P et al., Pharmacokinetics of moxisylyte in healt…, Therapeutic drug monitoring (1996) | popPK | 8 | [10.1097/00007691-199604000-00005](https://doi.org/10.1097/00007691-199604000-00005) | [8721275](https://pubmed.ncbi.nlm.nih.gov/8721275) | The study reports pharmacokinetic parameters (Cmax, tmax, MRT, half-life) for the major metabolite desacetylmoxisylyte (DAM) in humans, with specific numeric values provided in the abstract. |
-| `Neau_1998.pdf` | Neau B et al., Metabolism of 14C-moxisylyte after perc…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9522028](https://pubmed.ncbi.nlm.nih.gov/9522028) | The study reports pharmacokinetic parameters (half-life) for moxisylyte in rats, but specific quantitative values for clearance, volume, or rate constants are not provided in the text. |
+| `Neau_1998.pdf` | Neau B et al., Metabolism of 14C-moxisylyte after perc…, Arzneimittel-Forschung (1998) | popPK | 8 |  | [9522028](https://pubmed.ncbi.nlm.nih.gov/9522028) | The study reports pharmacokinetic parameters (half-life) for moxisylyte in rats, but specific quantitative values for clearance, volume, or rate constants are not provided in the text. |
 | `Harris_1973.pdf` | Harris M et al., Effect of centrally acting drugs on the…, British journal of pharmaco… (1973) | pd | 4 | [10.1111/j.1476-5381.1973.tb08320.x](https://doi.org/10.1111/j.1476-5381.1973.tb08320.x) | [4722039](https://www.ncbi.nlm.nih.gov/pubmed/4722039) | metadata signals extractable PD data (IC50) |
 | `Humphrey_1978.pdf` | Humphrey PP, The effects of alpha-adrenoceptor antag…, British journal of pharmaco… (1978) | pd | 4 | [10.1111/j.1476-5381.1978.tb17281.x](https://doi.org/10.1111/j.1476-5381.1978.tb17281.x) | [28807](https://www.ncbi.nlm.nih.gov/pubmed/28807) | metadata signals extractable PD data (concentration-effect) |
 | `Peters_1983.pdf` | Peters JR et al., Alpha 1-adrenoreceptors on intact rat a…, Endocrinology (1983) | pd | 4 | [10.1210/endo-113-1-133](https://doi.org/10.1210/endo-113-1-133) | [6305631](https://www.ncbi.nlm.nih.gov/pubmed/6305631) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T20:23:24.162981+00:00</sub>
+<sub>queue written 2026-10-06 20:23 UTC</sub>
 
 ## Screened and excluded
 
@@ -164,5 +164,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxisylyte%5D&body=Drug%3A%20moxisylyte%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxisylyte/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

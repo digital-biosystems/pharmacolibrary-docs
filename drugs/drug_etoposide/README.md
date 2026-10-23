@@ -121,7 +121,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1398 matched, 175 returned
 - **screened:** 12  ·  **relevant:** 12
-- **records:** 7  ·  extracted 2  ·  needs_review 0  ·  rejected 5  ·  stale 2
+- **records:** 7  ·  extracted 2  ·  needs review 0  ·  rejected 5  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -139,13 +139,13 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ciccolini_2002.pdf` | Ciccolini J et al., Population pharmacokinetics of etoposid…, Therapeutic drug monitoring (2002) | popPK | 9 | [10.1097/00007691-200212000-00005](https://doi.org/10.1097/00007691-200212000-00005) | [12451286](https://pubmed.ncbi.nlm.nih.gov/12451286) | The abstract explicitly reports quantitative population PK parameters (CL and t1/2) for etoposide in human patients. |
 | `Evans_1982.pdf` | Evans WE et al., Pharmacokinetics of Teniposide (VM26) a…, Cancer chemotherapy and pha… (1982) | popPK | 9 | [10.1007/BF00254537](https://doi.org/10.1007/BF00254537) | [7083455](https://pubmed.ncbi.nlm.nih.gov/7083455) | The paper reports a pharmacokinetic study for etoposide in children with quantitative clearance values (17.8 +/- 11.2 ml/min/m2) present in the abstract, but detailed volume of distribution parameters are not explicitly quantified in the provided text snippet. |
 | `Pigatto_2016.pdf` | Pigatto MC et al., Population Pharmacokinetic Modeling of…, Pharmaceutical research (2016) | popPK | 9 | [10.1007/s11095-016-1906-4](https://doi.org/10.1007/s11095-016-1906-4) | [27068281](https://pubmed.ncbi.nlm.nih.gov/27068281) | The study reports a population PK model for etoposide in rats, but the specific numeric parameter values (CL, V, Q) are not included in the provided text. |
-| `Tian_2007.pdf` | Tian LL et al., [Preparation and in vitro and in vivo e…, Yao xue xue bao = Acta phar… (2007) | popPK | 9 | not captured | [17944242](https://pubmed.ncbi.nlm.nih.gov/17944242) | The study reports in vivo PK in rats with a two-compartment model, but specific parameters like CL and V are not explicitly listed in the evidence, only AUC and MRT. |
+| `Tian_2007.pdf` | Tian LL et al., [Preparation and in vitro and in vivo e…, Yao xue xue bao = Acta phar… (2007) | popPK | 9 |  | [17944242](https://pubmed.ncbi.nlm.nih.gov/17944242) | The study reports in vivo PK in rats with a two-compartment model, but specific parameters like CL and V are not explicitly listed in the evidence, only AUC and MRT. |
 | `Al-Ali_2020.pdf` | Al-Ali AAA et al., High-dose etoposide formulations do not…, International journal of ph… (2020) | popPK | 8 | [10.1016/j.ijpharm.2020.119399](https://doi.org/10.1016/j.ijpharm.2020.119399) | [32376439](https://pubmed.ncbi.nlm.nih.gov/32376439) | The study is a pharmacokinetic study in rats reporting quantitative parameters like AUC and Cmax, but specific disposition parameters like CL, V, or ka are not explicitly listed in the provided text. |
-| `Ando_1999.pdf` | Ando M et al., Pharmacological analysis of etoposide i…, Clinical cancer research :… (1999) | popPK | 8 | not captured | [10430070](https://pubmed.ncbi.nlm.nih.gov/10430070) | The abstract explicitly reports quantitative pharmacokinetic parameters (apparent oral clearance and AUC) for etoposide in elderly patients compared to younger controls. |
+| `Ando_1999.pdf` | Ando M et al., Pharmacological analysis of etoposide i…, Clinical cancer research :… (1999) | popPK | 8 |  | [10430070](https://pubmed.ncbi.nlm.nih.gov/10430070) | The abstract explicitly reports quantitative pharmacokinetic parameters (apparent oral clearance and AUC) for etoposide in elderly patients compared to younger controls. |
 | `Lum_2000.pdf` | Lum BL et al., Effect of high-dose cyclosporine on eto…, Cancer chemotherapy and pha… (2000) | popPK | 8 | [10.1007/s002800050045](https://doi.org/10.1007/s002800050045) | [10755319](https://pubmed.ncbi.nlm.nih.gov/10755319) | The paper studies etoposide pharmacokinetics in humans and reports qualitative PK changes (AUC increase), but specific numeric disposition parameters (CL, V, etc.) are not explicitly listed in the provided text. |
 | `Reif_2002_2.pdf` | Reif S et al., Effect of grapefruit juice intake on et…, European journal of clinica… (2002) | popPK | 8 | [10.1007/s00228-002-0495-9](https://doi.org/10.1007/s00228-002-0495-9) | [12389073](https://pubmed.ncbi.nlm.nih.gov/12389073) | The study reports etoposide PK parameters (bioavailability, variability) in a human study using a two-compartment model, but specific numeric values for clearance, volume, or rate constants are not listed in the provided text. |
 
-<sub>queue written 2026-10-07T18:12:02.082556+00:00</sub>
+<sub>queue written 2026-10-07 18:12 UTC</sub>
 
 ## Screened and excluded
 
@@ -265,5 +265,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 18:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betoposide%5D&body=Drug%3A%20etoposide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etoposide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:12 UTC</sub>

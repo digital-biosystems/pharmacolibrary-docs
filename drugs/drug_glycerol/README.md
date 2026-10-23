@@ -58,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1686 matched, 226 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -68,26 +68,26 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Monteleone_2013.pdf` | Monteleone JP et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2013) | popPK | 10 | [10.1002/jcph.92](https://doi.org/10.1002/jcph.92) | [23775211](https://pubmed.ncbi.nlm.nih.gov/23775211) | The study presents a population PK model for glycerol phenylbutyrate (the subject drug prodrug) and its metabolite, but the specific numeric parameter values are not displayed in the provided abstract/evidence. |
-| `Beylot_1987.pdf` | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | popPK | 8 | not captured | [3585175](https://pubmed.ncbi.nlm.nih.gov/3585175) | The study reports quantitative pharmacokinetic parameters for glycerol, specifically the volume of distribution (0.306-0.308 L/kg) and appearance rates, in human subjects. |
+| `Beylot_1987.pdf` | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | popPK | 8 |  | [3585175](https://pubmed.ncbi.nlm.nih.gov/3585175) | The study reports quantitative pharmacokinetic parameters for glycerol, specifically the volume of distribution (0.306-0.308 L/kg) and appearance rates, in human subjects. |
 | `Hall_1976.pdf` | Hall SE et al., Effects of age and fasting on gluconeog…, The American journal of phy… (1976) | popPK | 8 | [10.1152/ajplegacy.1976.230.2.362](https://doi.org/10.1152/ajplegacy.1976.230.2.362) | [1259014](https://pubmed.ncbi.nlm.nih.gov/1259014) | The study uses a compartmental model to analyze glycerol kinetics in dogs, but the provided text reports metabolic percentages rather than explicit pharmacokinetic parameter values (e.g., CL, V, k). |
 | `Schoemaker_2002.pdf` | Schoemaker RC et al., Modeling the influence of growth hormon…, Journal of pharmacokinetics… (2002) | popPK | 8 | [10.1023/a:1019803924485](https://doi.org/10.1023/a:1019803924485) | [12361241](https://pubmed.ncbi.nlm.nih.gov/12361241) | The study models glycerol PK/PD in humans, but the abstract does not provide specific numeric parameter values (CL, V, etc.). |
 | `Asher_2023.pdf` | Asher MJ et al., A Complete Endocannabinoid Signaling Sy…, Molecular pharmacology (2023) | pd | 5 | [10.1124/molpharm.122.000555](https://doi.org/10.1124/molpharm.122.000555) | [36379717](https://www.ncbi.nlm.nih.gov/pubmed/36379717) | metadata signals extractable PD data (EC50) |
 | `Cheng_2024.pdf` | Cheng R et al., Time-dependent hormesis transfer from f…, Environmental research (2024) | pd | 5 | [10.1016/j.envres.2024.118418](https://doi.org/10.1016/j.envres.2024.118418) | [38316386](https://www.ncbi.nlm.nih.gov/pubmed/38316386) | metadata signals extractable PD data (EC50) |
-| `Huber_1990.pdf` | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | pd | 5 | not captured | [2128865](https://www.ncbi.nlm.nih.gov/pubmed/2128865) | metadata signals extractable PD data (EC50) |
+| `Huber_1990.pdf` | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | pd | 5 |  | [2128865](https://www.ncbi.nlm.nih.gov/pubmed/2128865) | metadata signals extractable PD data (EC50) |
 | `Macário_2018.pdf` | Macário IPE et al., The antagonist and synergist potential…, Ecotoxicology and environme… (2018) | pd | 5 | [10.1016/j.ecoenv.2018.09.027](https://doi.org/10.1016/j.ecoenv.2018.09.027) | [30236922](https://www.ncbi.nlm.nih.gov/pubmed/30236922) | metadata signals extractable PD data (EC50) |
 | `Ming_2026.pdf` | Ming C et al., Development of a SMEDDS for oral delive…, Journal of pharmaceutical s… (2026) | pd | 5 | [10.1016/j.xphs.2026.104356](https://doi.org/10.1016/j.xphs.2026.104356) | [42250802](https://www.ncbi.nlm.nih.gov/pubmed/42250802) | metadata signals extractable PD data (PK/PD) |
 | `Cui_2024.pdf` | Cui K et al., Inhibitory activity and antioomycete me…, Pesticide biochemistry and… (2024) | pd | 4 | [10.1016/j.pestbp.2024.106067](https://doi.org/10.1016/j.pestbp.2024.106067) | [39277383](https://www.ncbi.nlm.nih.gov/pubmed/39277383) | metadata signals extractable PD data (EC50) |
 | `Cui_2026.pdf` | Cui J et al., Identification, Biology, and Bactericid…, Microorganisms (2026) | pd | 4 | [10.3390/microorganisms14061179](https://doi.org/10.3390/microorganisms14061179) | [42354804](https://www.ncbi.nlm.nih.gov/pubmed/42354804) | metadata signals extractable PD data (EC50) |
 | `Hamann_2022.pdf` | Hamann D et al., Active edible films based on green tea…, Meat science (2022) | pd | 4 | [10.1016/j.meatsci.2022.108966](https://doi.org/10.1016/j.meatsci.2022.108966) | [36126391](https://www.ncbi.nlm.nih.gov/pubmed/36126391) | metadata signals extractable PD data (IC50) |
 | `Hou_2019.pdf` | Hou YP et al., Impact of fluazinam on morphological an…, Pesticide biochemistry and… (2019) | pd | 4 | [10.1016/j.pestbp.2019.01.009](https://doi.org/10.1016/j.pestbp.2019.01.009) | [30857631](https://www.ncbi.nlm.nih.gov/pubmed/30857631) | metadata signals extractable PD data (EC50) |
-| `Nagata_1995.pdf` | Nagata T, Morphometry in anatomy: image analysis…, Italian journal of anatomy… (1995) | pd | 4 | not captured | [11322340](https://www.ncbi.nlm.nih.gov/pubmed/11322340) | metadata signals extractable PD data (EMAX) |
+| `Nagata_1995.pdf` | Nagata T, Morphometry in anatomy: image analysis…, Italian journal of anatomy… (1995) | pd | 4 |  | [11322340](https://www.ncbi.nlm.nih.gov/pubmed/11322340) | metadata signals extractable PD data (EMAX) |
 | `Sun_2021.pdf` | Sun YY et al., Several natural products isolated from…, Environmental science and p… (2021) | pd | 4 | [10.1007/s11356-020-11755-3](https://doi.org/10.1007/s11356-020-11755-3) | [33420683](https://www.ncbi.nlm.nih.gov/pubmed/33420683) | metadata signals extractable PD data (EC50) |
 | `Tao_2021.pdf` | Tao X et al., Antifungal Activity and Biological Char…, Plant disease (2021) | pd | 4 | [10.1094/PDIS-08-20-1821-RE](https://doi.org/10.1094/PDIS-08-20-1821-RE) | [33404275](https://www.ncbi.nlm.nih.gov/pubmed/33404275) | metadata signals extractable PD data (EC50) |
 | `Wang_2025.pdf` | Wang C et al., A Novel Field Resistance Mechanism: Two…, Journal of agricultural and… (2025) | pd | 4 | [10.1021/acs.jafc.5c04566](https://doi.org/10.1021/acs.jafc.5c04566) | [40667854](https://www.ncbi.nlm.nih.gov/pubmed/40667854) | metadata signals extractable PD data (EC50) |
 | `Heikal_2009.pdf` | Heikal A et al., The stabilisation of purified, reconsti…, Cryobiology (2009) | pgx | 7 | [10.1016/j.cryobiol.2008.10.125](https://doi.org/10.1016/j.cryobiol.2008.10.125) | [18983838](https://www.ncbi.nlm.nih.gov/pubmed/18983838) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Li_2017.pdf` | Li Z et al., Analysis of the Variables Influencing V…, Therapeutic drug monitoring (2017) | pgx | 5 | [10.1097/FTD.0000000000000424](https://doi.org/10.1097/FTD.0000000000000424) | [28604475](https://www.ncbi.nlm.nih.gov/pubmed/28604475) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-10-07T19:42:20.531973+00:00</sub>
+<sub>queue written 2026-10-07 19:42 UTC</sub>
 
 ## Screened and excluded
 
@@ -359,5 +359,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 19:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglycerol%5D&body=Drug%3A%20glycerol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glycerol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:42 UTC</sub>

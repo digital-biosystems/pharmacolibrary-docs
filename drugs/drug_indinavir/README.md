@@ -77,7 +77,6 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCC2` substrate, `SLCO1A2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCC1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor | DrugBank actor |
@@ -85,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | distribution | testis | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO2B1` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
 | excretion | kidney | `ABCB1` inducer/inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
 | excretion | liver | `ABCB1` inducer/inhibitor/substrate, `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
@@ -108,7 +107,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 387 matched, 147 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 7  ·  extracted 2  ·  needs_review 1  ·  rejected 4  ·  stale 0
+- **records:** 7  ·  extracted 2  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -126,12 +125,12 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kshirsagar_2007.pdf` | Kshirsagar SA et al., Improving data reliability using a non-…, Journal of pharmacokinetics… (2007) | popPK | 9 | [10.1007/s10928-006-9032-2](https://doi.org/10.1007/s10928-006-9032-2) | [17004125](https://pubmed.ncbi.nlm.nih.gov/17004125) | The paper reports a population PK analysis of indinavir in humans and provides specific percentage differences in clearance and volume for a subpopulation, though absolute parameter values are likely in the unprovided tables/figures. |
 | `Pfister_2003.pdf` | Pfister M et al., Population pharmacokinetics and pharmac…, Antimicrobial agents and ch… (2003) | popPK | 9 | [10.1128/AAC.47.1.130-137.2003](https://doi.org/10.1128/AAC.47.1.130-137.2003) | [12499180](https://pubmed.ncbi.nlm.nih.gov/12499180) | The study reports population PK for indinavir but no numeric parameter values are present in the provided evidence. |
 | `Snedecor_2006.pdf` | Snedecor SJ et al., Feasibility of weekly HIV drug delivery…, Pharmaceutical research (2006) | popPK | 9 | [10.1007/s11095-006-9026-1](https://doi.org/10.1007/s11095-006-9026-1) | [16832614](https://pubmed.ncbi.nlm.nih.gov/16832614) | The paper develops a quantitative two-compartment pharmacokinetic model for indinavir in humans, but the specific numeric parameter values are likely in figures or tables not fully detailed in the provided abstract snippet. |
-| `Piscitelli_1998.pdf` | Piscitelli SC et al., Alteration in indinavir clearance durin…, Pharmacotherapy (1998) | popPK | 7 | not captured | [9855318](https://pubmed.ncbi.nlm.nih.gov/9855318) | The study reports a PK model and clearance changes, but specific numeric parameter values (like CL or V values) are not explicitly listed in the text provided, only AUC changes and trough concentrations. |
+| `Piscitelli_1998.pdf` | Piscitelli SC et al., Alteration in indinavir clearance durin…, Pharmacotherapy (1998) | popPK | 7 |  | [9855318](https://pubmed.ncbi.nlm.nih.gov/9855318) | The study reports a PK model and clearance changes, but specific numeric parameter values (like CL or V values) are not explicitly listed in the text provided, only AUC changes and trough concentrations. |
 | `Samson_2007.pdf` | Samson A et al., The SAEM algorithm for group comparison…, Statistics in medicine (2007) | popPK | 7 | [10.1002/sim.2950](https://doi.org/10.1002/sim.2950) | [17562540](https://pubmed.ncbi.nlm.nih.gov/17562540) | The paper applies a PK modeling algorithm to indinavir data in HIV patients, but the specific numeric parameter values are likely in the illustration section not fully detailed in the provided abstract or do not appear as explicit numbers in the text. |
 | `Duval_2005.pdf` | Duval X et al., Indinavir plasma concentration and adhe…, Therapeutic drug monitoring (2005) | popPK | 6 | [10.1097/00007691-200502000-00013](https://doi.org/10.1097/00007691-200502000-00013) | [15665749](https://pubmed.ncbi.nlm.nih.gov/15665749) | The study uses a population PK model to estimate indinavir concentrations, but specific structural parameter values (CL, V, etc.) are not reported in the provided text, only derived Cmin/Cmax metrics. |
 | `Mole_2001.pdf` | Mole L et al., A pilot trial of indinavir, ritonavir,…, Journal of acquired immune… (2001) | popPK | 5 | [10.1097/00126334-200107010-00007](https://doi.org/10.1097/00126334-200107010-00007) | [11464145](https://pubmed.ncbi.nlm.nih.gov/11464145) | The study reports qualitative PK comparisons (concentrations vs IC95/EC50) but contains no quantitative disposition parameters (CL, V, t1/2) in the provided text. |
 
-<sub>queue written 2026-10-07T13:01:28.192147+00:00</sub>
+<sub>queue written 2026-10-07 13:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -208,5 +207,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 13:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindinavir%5D&body=Drug%3A%20indinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indinavir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 13:01 UTC</sub>

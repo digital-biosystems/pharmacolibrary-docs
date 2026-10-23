@@ -78,7 +78,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 87 matched, 74 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -95,16 +95,16 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Stubbs_1997.pdf` | Stubbs K et al., Pharmacokinetics of dolasetron after or…, Journal of clinical pharmac… (1997) | popPK | 9 | [10.1002/j.1552-4604.1997.tb04267.x](https://doi.org/10.1002/j.1552-4604.1997.tb04267.x) | [9505984](https://pubmed.ncbi.nlm.nih.gov/9505984) | The study reports quantitative PK parameters (half-life, clearance changes) for dolasetron and its metabolite in humans, but specific numeric values for clearance and volume are not fully listed in the provided abstract text. |
 | `Coppes_1999.pdf` | Coppes MJ et al., Safety, tolerability, antiemetic effica…, Journal of pediatric hemato… (1999) | popPK | 8 | [10.1097/00043426-199907000-00007](https://doi.org/10.1097/00043426-199907000-00007) | [10445889](https://pubmed.ncbi.nlm.nih.gov/10445889) | The study reports pharmacokinetic parameters for the active metabolite of dolasetron (MDL 74,156), including half-life and qualitative clearance trends, but specific numeric values for clearance or volume are not explicitly listed in the provided text. |
 | `Herndon_2018.pdf` | Herndon AK et al., Preliminary pharmacokinetics of intrave…, Journal of feline medicine… (2018) | popPK | 8 | [10.1177/1098612X17729310](https://doi.org/10.1177/1098612X17729310) | [28905667](https://pubmed.ncbi.nlm.nih.gov/28905667) | The study reports quantitative non-compartmental PK parameters (Cmax, Tmax, half-life, AUC) for hydrodolasetron, the active metabolite of dolasetron, in cats. |
-| `Hunt_1996.pdf` | Hunt TL et al., Multiple-dose, placebo-controlled, phas…, Pharmacotherapy (1996) | popPK | 8 | not captured | [8820469](https://pubmed.ncbi.nlm.nih.gov/8820469) | The study reports pharmacokinetics of the reduced metabolite of dolasetron, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
+| `Hunt_1996.pdf` | Hunt TL et al., Multiple-dose, placebo-controlled, phas…, Pharmacotherapy (1996) | popPK | 8 |  | [8820469](https://pubmed.ncbi.nlm.nih.gov/8820469) | The study reports pharmacokinetics of the reduced metabolite of dolasetron, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
 | `Darpo_2015.pdf` | Darpo B et al., Results from the IQ-CSRC prospective st…, Clinical pharmacology and t… (2015) | pd | 5 | [10.1002/cpt.60](https://doi.org/10.1002/cpt.60) | [25670536](https://www.ncbi.nlm.nih.gov/pubmed/25670536) | metadata signals extractable PD data (exposure-response) |
 | `Darpo_2018.pdf` | Darpo B et al., Challenges in implementing and obtainin…, Journal of pharmacological… (2018) | pd | 5 | [10.1016/j.vascn.2018.05.006](https://doi.org/10.1016/j.vascn.2018.05.006) | [29879475](https://www.ncbi.nlm.nih.gov/pubmed/29879475) | metadata signals extractable PD data (concentration-effect) |
 | `Ferber_2017.pdf` | Ferber G et al., Can Bias Evaluation Provide Protection…, Journal of clinical pharmac… (2017) | pd | 5 | [10.1002/jcph.779](https://doi.org/10.1002/jcph.779) | [27271102](https://www.ncbi.nlm.nih.gov/pubmed/27271102) | metadata signals extractable PD data (Exposure-Response) |
-| `Hassan_2011.pdf` | Hassan BA et al., Genetic polymorphisms in the three mala…, Asian Pacific journal of ca… (2011) | pgx | 8 | not captured | [21517255](https://www.ncbi.nlm.nih.gov/pubmed/21517255) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hassan_2011.pdf` | Hassan BA et al., Genetic polymorphisms in the three mala…, Asian Pacific journal of ca… (2011) | pgx | 8 |  | [21517255](https://www.ncbi.nlm.nih.gov/pubmed/21517255) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Zhou_2009.pdf` | Zhou SF, Polymorphism of human cytochrome P450 2…, Clinical pharmacokinetics (2009) | pgx | 8 | [10.2165/11318070-000000000-00000](https://doi.org/10.2165/11318070-000000000-00000) | [19902987](https://www.ncbi.nlm.nih.gov/pubmed/19902987) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Janicki_2005.pdf` | Janicki PK, Cytochrome P450 2D6 metabolism and 5-hy…, Medical science monitor : i… (2005) | pgx | 5 | not captured | [16192915](https://www.ncbi.nlm.nih.gov/pubmed/16192915) | metadata signals extractable PGX data (CYP2D6) |
+| `Janicki_2005.pdf` | Janicki PK, Cytochrome P450 2D6 metabolism and 5-hy…, Medical science monitor : i… (2005) | pgx | 5 |  | [16192915](https://www.ncbi.nlm.nih.gov/pubmed/16192915) | metadata signals extractable PGX data (CYP2D6) |
 | `Janicki_2006.pdf` | Janicki PK et al., Prevention of postoperative nausea and…, Anesthesia and analgesia (2006) | pgx | 5 | [10.1213/01.ane.0000200364.55798.3f](https://doi.org/10.1213/01.ane.0000200364.55798.3f) | [16551910](https://www.ncbi.nlm.nih.gov/pubmed/16551910) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-04T13:51:29.298231+00:00</sub>
+<sub>queue written 2026-10-04 13:51 UTC</sub>
 
 ## Screened and excluded
 
@@ -165,5 +165,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-04 13:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolasetron%5D&body=Drug%3A%20dolasetron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolasetron/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:51 UTC</sub>

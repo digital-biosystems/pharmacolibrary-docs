@@ -116,7 +116,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3271 matched, 233 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 5
+- **records:** 5  ·  extracted 2  ·  needs review 1  ·  rejected 2  ·  stale 5
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -132,10 +132,10 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Grover_1994.pdf` | Grover AK et al., Angiotensin II contractions in coronary…, Molecular and cellular bioc… (1994) | pd | 5 | [10.1007/BF00925957](https://doi.org/10.1007/BF00925957) | [7816052](https://www.ncbi.nlm.nih.gov/pubmed/7816052) | metadata signals extractable PD data (EC50) |
 | `Hong_2008.pdf` | Hong Y et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical pharmacology and t… (2008) | pd | 5 | [10.1038/sj.clpt.6100495](https://doi.org/10.1038/sj.clpt.6100495) | [18288088](https://www.ncbi.nlm.nih.gov/pubmed/18288088) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Mochel_2015.pdf` | Mochel JP et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pharmaceutical research (2015) | pd | 5 | [10.1007/s11095-014-1587-9](https://doi.org/10.1007/s11095-014-1587-9) | [25446774](https://www.ncbi.nlm.nih.gov/pubmed/25446774) | metadata signals extractable PD data (PharmacodynamicModel) |
-| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 | not captured | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
+| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 |  | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
 | `Wiggers_2008.pdf` | Wiggers GA et al., Low nanomolar concentration of mercury…, Comparative biochemistry an… (2008) | pd | 5 | [10.1016/j.cbpc.2007.10.003](https://doi.org/10.1016/j.cbpc.2007.10.003) | [18093879](https://www.ncbi.nlm.nih.gov/pubmed/18093879) | metadata signals extractable PD data (Emax) |
 | `Wong_1995.pdf` | Wong PC et al., Pharmacology and pharmacokinetics of a…, Clinical and experimental h… (1995) | pd | 5 | [10.3109/10641969509037406](https://doi.org/10.3109/10641969509037406) | [8563699](https://www.ncbi.nlm.nih.gov/pubmed/8563699) | metadata signals extractable PD data (IC50) |
-| `Auguet_1986.pdf` | Auguet M, [Effect of histamine on the isolated ao…, Journal de pharmacologie (1986) | pd | 4 | not captured | [3795970](https://www.ncbi.nlm.nih.gov/pubmed/3795970) | metadata signals extractable PD data (IC50) |
+| `Auguet_1986.pdf` | Auguet M, [Effect of histamine on the isolated ao…, Journal de pharmacologie (1986) | pd | 4 |  | [3795970](https://www.ncbi.nlm.nih.gov/pubmed/3795970) | metadata signals extractable PD data (IC50) |
 | `Baan_1998.pdf` | Baan J et al., Effects of angiotensin II and losartan…, Journal of hypertension (1998) | pd | 4 | [10.1097/00004872-199816090-00011](https://doi.org/10.1097/00004872-199816090-00011) | [9746117](https://www.ncbi.nlm.nih.gov/pubmed/9746117) | metadata signals extractable PD data (Emax) |
 | `Bommer_1989.pdf` | Bommer M et al., Neuropeptides and other secretagogues i…, Neuropeptides (1989) | pd | 4 | [10.1016/0143-4179(89)90077-2](https://doi.org/10.1016/0143-4179(89)90077-2) | [2747855](https://www.ncbi.nlm.nih.gov/pubmed/2747855) | metadata signals extractable PD data (sigmoid) |
 | `Chan_2014.pdf` | Chan KH et al., Angiotensin-[1-12] interacts with angio…, Neuropharmacology (2014) | pd | 4 | [10.1016/j.neuropharm.2013.06.022](https://doi.org/10.1016/j.neuropharm.2013.06.022) | [23823979](https://www.ncbi.nlm.nih.gov/pubmed/23823979) | metadata signals extractable PD data (EC50) |
@@ -152,9 +152,9 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Werner_2008.pdf` | Werner D et al., Determinants of steady-state torasemide…, Clinical pharmacokinetics (2008) | pgx | 8 | [10.2165/00003088-200847050-00003](https://doi.org/10.2165/00003088-200847050-00003) | [18399713](https://www.ncbi.nlm.nih.gov/pubmed/18399713) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Marino_2001.pdf` | Marino MR et al., Drug interactions with irbesartan, Clinical pharmacokinetics (2001) | pgx | 7 | [10.2165/00003088-200140080-00004](https://doi.org/10.2165/00003088-200140080-00004) | [11523726](https://www.ncbi.nlm.nih.gov/pubmed/11523726) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Dong_2021.pdf` | Dong H et al., Association of Cytochrome P450 2C9*3 an…, American journal of hyperte… (2021) | pgx | 5 | [10.1093/ajh/hpaa134](https://doi.org/10.1093/ajh/hpaa134) | [33599747](https://www.ncbi.nlm.nih.gov/pubmed/33599747) | metadata signals extractable PGX data (CYP2C9*3) |
-| `Göktaş_2016.pdf` | Göktaş MT et al., Relationship between genetic polymorphi…, European review for medical… (2016) | pgx | 5 | not captured | [27338075](https://www.ncbi.nlm.nih.gov/pubmed/27338075) | metadata signals extractable PGX data (ABCB1) |
+| `Göktaş_2016.pdf` | Göktaş MT et al., Relationship between genetic polymorphi…, European review for medical… (2016) | pgx | 5 |  | [27338075](https://www.ncbi.nlm.nih.gov/pubmed/27338075) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-06T04:10:52.901124+00:00</sub>
+<sub>queue written 2026-10-06 04:10 UTC</sub>
 
 ## Screened and excluded
 
@@ -369,5 +369,5 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 04:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bangiotensin_ii%5D&body=Drug%3A%20angiotensin_ii%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_angiotensin_ii/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 04:08 UTC</sub>

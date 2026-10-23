@@ -61,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 76 matched, 80 returned
 - **screened:** 10  ·  **relevant:** 6
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -72,19 +72,19 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Lee_1998.pdf` | Lee Y et al., Pharmacokinetics and tolerability of in…, Biopharmaceutics & drug dis… (1998) | popPK | 10 | [10.1002/(sici)1099-081x(199812)19:9&lt;577::aid-bdd136&gt;3.0.co;2-w](https://doi.org/10.1002/(sici)1099-081x(199812)19:9<577::aid-bdd136>3.0.co;2-w) | [9872339](https://pubmed.ncbi.nlm.nih.gov/9872339) | The abstract reports specific numeric values for clearance, half-life, and urinary excretion for intravenous rizatriptan in healthy females. |
 | `Lee_1999.pdf` | Lee Y et al., Pharmacokinetics and tolerability of or…, British journal of clinical… (1999) | popPK | 10 | [10.1046/j.1365-2125.1999.00917.x](https://doi.org/10.1046/j.1365-2125.1999.00917.x) | [10233200](https://pubmed.ncbi.nlm.nih.gov/10233200) | The study reports quantitative PK parameters (AUC, clearance, renal clearance) for rizatriptan in humans, with values explicitly provided in the text. |
-| `Vyas_2000.pdf` | Vyas KP et al., Disposition and pharmacokinetics of the…, Drug metabolism and disposi… (2000) | popPK | 10 | not captured | [10611145](https://pubmed.ncbi.nlm.nih.gov/10611145) | The evidence provides explicit numeric values for plasma clearance (CL), renal clearance (CLr), and bioavailability for rizatriptan in humans. |
+| `Vyas_2000.pdf` | Vyas KP et al., Disposition and pharmacokinetics of the…, Drug metabolism and disposi… (2000) | popPK | 10 |  | [10611145](https://pubmed.ncbi.nlm.nih.gov/10611145) | The evidence provides explicit numeric values for plasma clearance (CL), renal clearance (CLr), and bioavailability for rizatriptan in humans. |
 | `Chen_2005.pdf` | Chen J et al., Evaluation of the bioequivalence and ph…, Arzneimittel-Forschung (2005) | popPK | 9 | [10.1055/s-0031-1296872](https://doi.org/10.1055/s-0031-1296872) | [16080273](https://pubmed.ncbi.nlm.nih.gov/16080273) | The study reports rizatriptan pharmacokinetic parameters, but the evidence provides only bioequivalence ratios and confidence intervals, not specific absolute values for clearance, volume, or half-life. |
 | `Chokshi_2019.pdf` | Chokshi A et al., Intranasal spray formulation containing…, International journal of ph… (2019) | popPK | 8 | [10.1016/j.ijpharm.2019.118702](https://doi.org/10.1016/j.ijpharm.2019.118702) | [31593810](https://pubmed.ncbi.nlm.nih.gov/31593810) | Study reports rizatriptan PK in dogs (Cmax, Tmax) but lacks full disposition parameters like CL or V in the text. |
 | `Sciberras_1997.pdf` | Sciberras DG et al., Initial human experience with MK-462 (r…, British journal of clinical… (1997) | popPK | 8 | [10.1111/j.1365-2125.1997.tb00032.x](https://doi.org/10.1111/j.1365-2125.1997.tb00032.x) | [9056052](https://pubmed.ncbi.nlm.nih.gov/9056052) | The study is a Phase I pharmacokinetic trial of rizatriptan in humans, but the extracted text only reports tmax and qualitative observations, lacking specific quantitative parameters like CL, V, or AUC. |
 | `Wang_2007.pdf` | Wang C et al., Uptake and biodistribution of rizatript…, International journal of ph… (2007) | popPK | 8 | [10.1016/j.ijpharm.2006.12.039](https://doi.org/10.1016/j.ijpharm.2006.12.039) | [17267150](https://pubmed.ncbi.nlm.nih.gov/17267150) | The study reports quantitative PK parameters (Tmax, AUC, bioavailability) for rizatriptan in rats, though specific clearance and volume values are not explicitly detailed in the provided abstract. |
 | `Fraser_2012.pdf` | Fraser IP et al., Pharmacokinetics and tolerability of ri…, Headache (2012) | popPK | 7 | [10.1111/j.1526-4610.2011.02069.x](https://doi.org/10.1111/j.1526-4610.2011.02069.x) | [22289113](https://pubmed.ncbi.nlm.nih.gov/22289113) | Study reports rizatriptan PK parameters (AUC, Cmax) but lacks compartmental model estimates (CL, V, ka) required for population PK extraction. |
 | `Goldberg_2001.pdf` | Goldberg MR et al., Influence of beta-adrenoceptor antagoni…, British journal of clinical… (2001) | popPK | 7 | [10.1046/j.0306-5251.2001.01417.x](https://doi.org/10.1046/j.0306-5251.2001.01417.x) | [11453892](https://pubmed.ncbi.nlm.nih.gov/11453892) | The study investigates rizatriptan PK, but the provided text only reports relative percentage changes (e.g., AUC increased by 67%) rather than absolute quantitative parameter values (CL, V, half-life) for rizatriptan alone. |
-| `Musson_2001.pdf` | Musson DG et al., Pharmacokinetics of rizatriptan in heal…, International journal of cl… (2001) | popPK | 7 | not captured | [11680669](https://pubmed.ncbi.nlm.nih.gov/11680669) | The study reports key disposition parameters including half-life (1.8 h), renal clearance (197 ml/min), and exposure metrics (AUC, Cmax) for rizatriptan in humans, although total body clearance and volume of distribution are not explicitly listed. |
+| `Musson_2001.pdf` | Musson DG et al., Pharmacokinetics of rizatriptan in heal…, International journal of cl… (2001) | popPK | 7 |  | [11680669](https://pubmed.ncbi.nlm.nih.gov/11680669) | The study reports key disposition parameters including half-life (1.8 h), renal clearance (197 ml/min), and exposure metrics (AUC, Cmax) for rizatriptan in humans, although total body clearance and volume of distribution are not explicitly listed. |
 | `Barrish_1996.pdf` | Barrish A et al., The use of stable isotope labeling and…, Rapid communications in mas… (1996) | popPK | 6 | [10.1002/(SICI)1097-0231(19960715)10:9&lt;1033::AID-RCM616&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1097-0231(19960715)10:9<1033::AID-RCM616>3.0.CO;2-4) | [8755236](https://pubmed.ncbi.nlm.nih.gov/8755236) | The paper is a pharmacokinetic study of rizatriptan in dogs, but the provided evidence is only the abstract which mentions clearance and bioavailability are measured without providing the actual numeric values. |
 | `Pauwels_1998.pdf` | Pauwels PJ et al., Pharmacological analysis of G-protein a…, British journal of pharmaco… (1998) | pd | 5 | [10.1038/sj.bjp.0701584](https://doi.org/10.1038/sj.bjp.0701584) | [9484854](https://www.ncbi.nlm.nih.gov/pubmed/9484854) | metadata signals extractable PD data (Emax) |
 | `Longmore_1998.pdf` | Longmore J et al., Comparison of the vasoconstrictor effec…, British journal of clinical… (1998) | pd | 4 | [10.1046/j.1365-2125.1998.00821.x](https://doi.org/10.1046/j.1365-2125.1998.00821.x) | [9862247](https://www.ncbi.nlm.nih.gov/pubmed/9862247) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-10-07T06:39:00.458043+00:00</sub>
+<sub>queue written 2026-10-07 06:39 UTC</sub>
 
 ## Screened and excluded
 
@@ -167,5 +167,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brizatriptan%5D&body=Drug%3A%20rizatriptan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rizatriptan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

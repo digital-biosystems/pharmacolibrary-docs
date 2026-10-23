@@ -111,7 +111,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 220 matched, 102 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 2
+- **records:** 3  ·  extracted 2  ·  needs review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -121,21 +121,21 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Siao_2011.pdf` | Siao KT et al., Pharmacokinetics of oxymorphone in cats, Journal of veterinary pharm… (2011) | popPK | 10 | [10.1111/j.1365-2885.2011.01271.x](https://doi.org/10.1111/j.1365-2885.2011.01271.x) | [21323677](https://pubmed.ncbi.nlm.nih.gov/21323677) | The study reports quantitative pharmacokinetic parameters (V1, Vss, CL, t1/2) for oxymorphone in cats. |
-| `Kelly_2011.pdf` | Kelly KR et al., Pharmacokinetics of oxymorphone in titi…, Journal of the American Ass… (2011) | popPK | 9 | not captured | [21439215](https://pubmed.ncbi.nlm.nih.gov/21439215) | The study reports oxymorphone PK parameters (clearance, half-life) in non-human primates, but the specific numeric values are not present in the provided evidence text. |
+| `Kelly_2011.pdf` | Kelly KR et al., Pharmacokinetics of oxymorphone in titi…, Journal of the American Ass… (2011) | popPK | 9 |  | [21439215](https://pubmed.ncbi.nlm.nih.gov/21439215) | The study reports oxymorphone PK parameters (clearance, half-life) in non-human primates, but the specific numeric values are not present in the provided evidence text. |
 | `Xu_2012.pdf` | Xu XS et al., Pharmacokinetic and pharmacodynamic mod…, Pharmaceutical research (2012) | popPK | 9 | [10.1007/s11095-012-0786-5](https://doi.org/10.1007/s11095-012-0786-5) | [22618801](https://pubmed.ncbi.nlm.nih.gov/22618801) | The study performs population PK modeling for oxymorphone (as a metabolite of oxycodone) but provides no numeric parameter values in the abstract or evidence. |
-| `Schoedel_2010.pdf` | Schoedel KA et al., Reduced cognitive and psychomotor impai…, Pain physician (2010) | pd | 4 | not captured | [21102969](https://www.ncbi.nlm.nih.gov/pubmed/21102969) | metadata signals extractable PD data (Emax) |
+| `Schoedel_2010.pdf` | Schoedel KA et al., Reduced cognitive and psychomotor impai…, Pain physician (2010) | pd | 4 |  | [21102969](https://www.ncbi.nlm.nih.gov/pubmed/21102969) | metadata signals extractable PD data (Emax) |
 | `Heiskanen_1998.pdf` | Heiskanen T et al., Effects of blocking CYP2D6 on the pharm…, Clinical pharmacology and t… (1998) | pgx | 8 | [10.1016/S0009-9236(98)90051-0](https://doi.org/10.1016/S0009-9236(98)90051-0) | [9871425](https://www.ncbi.nlm.nih.gov/pubmed/9871425) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Kummer_2011.pdf` | Kummer O et al., Effect of the inhibition of CYP3A4 or C…, European journal of clinica… (2011) | pgx | 8 | [10.1007/s00228-010-0893-3](https://doi.org/10.1007/s00228-010-0893-3) | [20857093](https://www.ncbi.nlm.nih.gov/pubmed/20857093) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Söderberg_2013.pdf` | Söderberg Löfdal KC et al., Cytochrome P450-mediated changes in oxy…, Drugs (2013) | pgx | 8 | [10.1007/s40265-013-0036-0](https://doi.org/10.1007/s40265-013-0036-0) | [23605691](https://www.ncbi.nlm.nih.gov/pubmed/23605691) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Lalovic_2004.pdf` | Lalovic B et al., Quantitative contribution of CYP2D6 and…, Drug metabolism and disposi… (2004) | pgx | 7 | [10.1124/dmd.32.4.447](https://doi.org/10.1124/dmd.32.4.447) | [15039299](https://www.ncbi.nlm.nih.gov/pubmed/15039299) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Lalovic_2006.pdf` | Lalovic B et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2006) | pgx | 7 | [10.1016/j.clpt.2006.01.009](https://doi.org/10.1016/j.clpt.2006.01.009) | [16678548](https://www.ncbi.nlm.nih.gov/pubmed/16678548) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Overholser_2011.pdf` | Overholser BR et al., Opioid pharmacokinetic drug-drug intera…, The American journal of man… (2011) | pgx | 7 | not captured | [21999760](https://www.ncbi.nlm.nih.gov/pubmed/21999760) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+| `Overholser_2011.pdf` | Overholser BR et al., Opioid pharmacokinetic drug-drug intera…, The American journal of man… (2011) | pgx | 7 |  | [21999760](https://www.ncbi.nlm.nih.gov/pubmed/21999760) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 | `Rytkönen_2020.pdf` | Rytkönen J et al., Physiologically based pharmacokinetic m…, Biopharmaceutics & drug dis… (2020) | pgx | 7 | [10.1002/bdd.2215](https://doi.org/10.1002/bdd.2215) | [31925778](https://www.ncbi.nlm.nih.gov/pubmed/31925778) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Saari_2010.pdf` | Saari TI et al., Effects of itraconazole on the pharmaco…, European journal of clinica… (2010) | pgx | 7 | [10.1007/s00228-009-0775-8](https://doi.org/10.1007/s00228-009-0775-8) | [20076952](https://www.ncbi.nlm.nih.gov/pubmed/20076952) | metadata signals extractable PGX data (CYP34A, PK/PD-context) |
 | `Madadi_2012.pdf` | Madadi P et al., Pharmacogenetics of opioids for the tre…, Current drug metabolism (2012) | pgx | 5 | [10.2174/138920012800840392](https://doi.org/10.2174/138920012800840392) | [22452458](https://www.ncbi.nlm.nih.gov/pubmed/22452458) | metadata signals extractable PGX data (CYP2D6) |
 | `Otton_1993.pdf` | Otton SV et al., Inhibition by fluoxetine of cytochrome…, Clinical pharmacology and t… (1993) | pgx | 5 | [10.1038/clpt.1993.43](https://doi.org/10.1038/clpt.1993.43) | [8477556](https://www.ncbi.nlm.nih.gov/pubmed/8477556) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-07T15:00:34.886244+00:00</sub>
+<sub>queue written 2026-10-07 15:00 UTC</sub>
 
 ## Screened and excluded
 
@@ -201,5 +201,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 15:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxymorphone%5D&body=Drug%3A%20oxymorphone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxymorphone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:00 UTC</sub>

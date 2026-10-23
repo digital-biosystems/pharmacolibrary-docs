@@ -69,4 +69,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapecitabine%5D%20pgx_Saif_2019_TYMS_Q100&body=Drug%3A%20capecitabine%0ARecord%3A%20pgx_Saif_2019_TYMS_Q100%0APaper%3A%20Saif_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capecitabine/pgx_Saif_2019_TYMS_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [capecitabine](drugs/drug_capecitabine/)</sub>

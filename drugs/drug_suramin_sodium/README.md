@@ -110,7 +110,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 672 matched, 115 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -121,16 +121,16 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Jodrell_1994.pdf` | Jodrell DI et al., Suramin: development of a population ph…, Journal of clinical oncolog… (1994) | popPK | 10 | [10.1200/JCO.1994.12.1.166](https://doi.org/10.1200/JCO.1994.12.1.166) | [8270974](https://pubmed.ncbi.nlm.nih.gov/8270974) | Population PK model for suramin in prostate cancer patients, but the actual numeric parameter values are not shown in the abstract evidence. |
 | `Kosarek_2006.pdf` | Kosarek CE et al., Phase I evaluation of low-dose suramin…, Journal of veterinary inter… (2006) | popPK | 9 | [10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2](https://doi.org/10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2) | [17063712](https://pubmed.ncbi.nlm.nih.gov/17063712) | Suramin is the subject drug with quantitative PK values (V 0.34 L/kg, CL 1.86 mL/kg/h, half-lives 2 h and 6 d) reported directly in the abstract. |
-| `Motzer_1992.pdf` | Motzer RJ et al., Phase II trial of suramin in patients w…, Cancer research (1992) | popPK | 9 | not captured | [1394202](https://pubmed.ncbi.nlm.nih.gov/1394202) | Human phase II trial with two-compartment PK model reporting median Vd (15.2 L/m2) and t1/2-beta (20.6 days) directly in the abstract. |
-| `Scher_1992.pdf` | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | popPK | 9 | not captured | [1727387](https://pubmed.ncbi.nlm.nih.gov/1727387) | Population PK model of suramin in humans with numeric compartment volumes and half-lives reported directly in the abstract. |
+| `Motzer_1992.pdf` | Motzer RJ et al., Phase II trial of suramin in patients w…, Cancer research (1992) | popPK | 9 |  | [1394202](https://pubmed.ncbi.nlm.nih.gov/1394202) | Human phase II trial with two-compartment PK model reporting median Vd (15.2 L/m2) and t1/2-beta (20.6 days) directly in the abstract. |
+| `Scher_1992.pdf` | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | popPK | 9 |  | [1727387](https://pubmed.ncbi.nlm.nih.gov/1727387) | Population PK model of suramin in humans with numeric compartment volumes and half-lives reported directly in the abstract. |
 | `Cooper_1992.pdf` | Cooper MR et al., Adaptive control with feedback strategi…, Clinical pharmacology and t… (1992) | popPK | 8 | [10.1038/clpt.1992.97](https://doi.org/10.1038/clpt.1992.97) | [1623689](https://pubmed.ncbi.nlm.nih.gov/1623689) | Population PK modeling of suramin in humans is described, but no numeric parameter values (CL, V, etc.) appear in the evidence. |
-| `Piscitelli_1997.pdf` | Piscitelli SC et al., Pharmacometric analysis of the effect o…, Pharmacotherapy (1997) | popPK | 8 | not captured | [9165547](https://pubmed.ncbi.nlm.nih.gov/9165547) | Human population PK of suramin with a three-compartment model, but only a relative clearance change (36% decrease) is reported; absolute CL/V parameter values are not in the evidence. |
+| `Piscitelli_1997.pdf` | Piscitelli SC et al., Pharmacometric analysis of the effect o…, Pharmacotherapy (1997) | popPK | 8 |  | [9165547](https://pubmed.ncbi.nlm.nih.gov/9165547) | Human population PK of suramin with a three-compartment model, but only a relative clearance change (36% decrease) is reported; absolute CL/V parameter values are not in the evidence. |
 | `Fairlamb_1980.pdf` | Fairlamb AH et al., Uptake of the trypanocidal drug suramin…, Molecular and biochemical p… (1980) | popPK | 7 | [10.1016/0166-6851(80)90050-x](https://doi.org/10.1016/0166-6851(80)90050-x) | [6108510](https://pubmed.ncbi.nlm.nih.gov/6108510) | Rat PK study fitting suramin plasma disposition to a two-compartment open model, but no numeric CL/V/half-life values appear in the evidence (likely in figures/text not provided). |
 | `Reyno_1995.pdf` | Reyno LM et al., Development and validation of a pharmac…, Journal of clinical oncolog… (1995) | popPK | 7 | [10.1200/JCO.1995.13.9.2187](https://doi.org/10.1200/JCO.1995.13.9.2187) | [7666077](https://pubmed.ncbi.nlm.nih.gov/7666077) | Population-PK-based fixed dosing of suramin in humans, but the numeric PK parameter values (CL, V) are not present in the abstract text. |
 | `van_1992.pdf` | van Rijswijk RE et al., Suramin: rapid loading and weekly maint…, Journal of clinical oncolog… (1992) | popPK | 7 | [10.1200/JCO.1992.10.11.1788](https://doi.org/10.1200/JCO.1992.10.11.1788) | [1403059](https://pubmed.ncbi.nlm.nih.gov/1403059) | Human population/Bayesian PK dosing study of suramin, but numeric disposition parameters (CL, V) are not given in the abstract text. |
 | `Hutson_1993.pdf` | Hutson PR et al., Evidence of an absorption phase after s…, Cancer chemotherapy and pha… (1993) | popPK | 6 | [10.1007/BF00685042](https://doi.org/10.1007/BF00685042) | [8453691](https://pubmed.ncbi.nlm.nih.gov/8453691) | Human phase I PK study of suramin with a two-compartment model, but no numeric parameter values (CL, V, half-life) appear in the evidence. |
 
-<sub>queue written 2026-10-07T09:30:56.086040+00:00</sub>
+<sub>queue written 2026-10-07 09:30 UTC</sub>
 
 ## Screened and excluded
 
@@ -211,5 +211,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 09:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D&body=Drug%3A%20suramin_sodium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:31 UTC</sub>

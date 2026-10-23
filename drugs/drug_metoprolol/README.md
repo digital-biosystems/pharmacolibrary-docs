@@ -91,7 +91,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 104 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 4
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -106,15 +106,15 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Höcht_2006.pdf` | Höcht C et al., Pharmacokinetic-pharmacodynamic (PK-PD)…, Naunyn-Schmiedeberg's archi… (2006) | popPK | 9 | [10.1007/s00210-006-0078-x](https://doi.org/10.1007/s00210-006-0078-x) | [16733693](https://pubmed.ncbi.nlm.nih.gov/16733693) | The study reports quantitative PK parameters (Volume of Distribution) for metoprolol in rats, with specific numeric values provided in the abstract. |
 | `Isbister_2016.pdf` | Isbister GK et al., Zero-order metoprolol pharmacokinetics…, Clinical toxicology (Philad… (2016) | popPK | 9 | [10.1080/15563650.2016.1209768](https://doi.org/10.1080/15563650.2016.1209768) | [27442605](https://pubmed.ncbi.nlm.nih.gov/27442605) | The paper reports specific quantitative pharmacokinetic parameters (V, Vm, Km, half-life) for metoprolol derived from a compartmental model in a human case. |
 | `Qian_2024.pdf` | Qian J et al., Study on genotype and phenotype of nove…, The pharmacogenomics journal (2024) | popPK | 9 | [10.1038/s41397-024-00332-3](https://doi.org/10.1038/s41397-024-00332-3) | [38637522](https://pubmed.ncbi.nlm.nih.gov/38637522) | The study reports quantitative PK parameters (AUC, t1/2) for metoprolol in humans, but specific numeric values are not present in the provided text, only relative changes (2-3 times). |
-| `Yin_1997.pdf` | Yin XX et al., Pharmacokinetic-pharmacodynamic modelin…, Zhongguo yao li xue bao = A… (1997) | popPK | 9 | not captured | [10072957](https://pubmed.ncbi.nlm.nih.gov/10072957) | The study reports a two-compartment PK model for metoprolol stereoisomers in rats, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Yin_1997_2.pdf` | Yin XX et al., [Pharmacokinetic-pharmacodynamic modeli…, Yao xue xue bao = Acta phar… (1997) | popPK | 9 | not captured | [11596322](https://pubmed.ncbi.nlm.nih.gov/11596322) | The study reports a two-compartment PK model for metoprolol enantiomers in dogs, but specific numeric values for clearance (CL), volume (V), and rate constants are not explicitly listed in the provided text, only qualitative descriptions and PD parameters. |
+| `Yin_1997.pdf` | Yin XX et al., Pharmacokinetic-pharmacodynamic modelin…, Zhongguo yao li xue bao = A… (1997) | popPK | 9 |  | [10072957](https://pubmed.ncbi.nlm.nih.gov/10072957) | The study reports a two-compartment PK model for metoprolol stereoisomers in rats, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Yin_1997_2.pdf` | Yin XX et al., [Pharmacokinetic-pharmacodynamic modeli…, Yao xue xue bao = Acta phar… (1997) | popPK | 9 |  | [11596322](https://pubmed.ncbi.nlm.nih.gov/11596322) | The study reports a two-compartment PK model for metoprolol enantiomers in dogs, but specific numeric values for clearance (CL), volume (V), and rate constants are not explicitly listed in the provided text, only qualitative descriptions and PD parameters. |
 | `Fukao_2014.pdf` | Fukao M et al., Variability of bioavailability and inte…, Drug metabolism and pharmac… (2014) | popPK | 8 | [10.2133/dmpk.dmpk-13-rg-057](https://doi.org/10.2133/dmpk.dmpk-13-rg-057) | [24025984](https://pubmed.ncbi.nlm.nih.gov/24025984) | The study reports a population PK model for metoprolol in humans, but the specific numeric parameter values are not present in the provided evidence. |
 | `Höcht_2004.pdf` | Höcht C et al., Pharmacokinetic-pharmacodynamic propert…, Naunyn-Schmiedeberg's archi… (2004) | popPK | 8 | [10.1007/s00210-004-0945-2](https://doi.org/10.1007/s00210-004-0945-2) | [15300360](https://pubmed.ncbi.nlm.nih.gov/15300360) | The study reports a PK-PD model for metoprolol in rats, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative statements and PD values. |
 | `Höcht_2005.pdf` | Höcht C et al., Applicability of microdialysis as a tec…, Journal of pharmacological… (2005) | popPK | 8 | [10.1016/j.vascn.2005.01.002](https://doi.org/10.1016/j.vascn.2005.01.002) | [16125622](https://pubmed.ncbi.nlm.nih.gov/16125622) | The study reports PK-PD modeling of metoprolol in rats, but specific quantitative PK parameter values (CL, V, etc.) are not explicitly listed in the provided text, only qualitative descriptions and PD parameters. |
 | `Ritchie_1998.pdf` | Ritchie RH et al., Myocardial effect compartment modeling…, Journal of pharmaceutical s… (1998) | popPK | 8 | [10.1021/js9702776](https://doi.org/10.1021/js9702776) | [9519150](https://pubmed.ncbi.nlm.nih.gov/9519150) | The study reports a compartmental model for metoprolol myocardial uptake, but specific numeric parameter values (clearance, volume, rate constants) are not explicitly listed in the provided text. |
 | `Zhao_2016.pdf` | Zhao S et al., Synchronous delivery of felodipine and…, Drug development and indust… (2016) | popPK | 8 | [10.3109/03639045.2016.1171332](https://doi.org/10.3109/03639045.2016.1171332) | [27074758](https://pubmed.ncbi.nlm.nih.gov/27074758) | The study reports pharmacokinetic parameters for metoprolol in beagle dogs, but the specific numeric values are not present in the provided evidence text. |
 
-<sub>queue written 2026-10-07T00:07:42.671059+00:00</sub>
+<sub>queue written 2026-10-07 00:07 UTC</sub>
 
 ## Screened and excluded
 
@@ -140,5 +140,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 00:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetoprolol%5D&body=Drug%3A%20metoprolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metoprolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:08 UTC</sub>

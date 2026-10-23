@@ -78,4 +78,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfamethoxazole%5D%20pd_Hirai_2022_K&body=Drug%3A%20sulfamethoxazole%0ARecord%3A%20pd_Hirai_2022_K%0APaper%3A%20Hirai_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfamethoxazole/pd_Hirai_2022_K%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sulfamethoxazole](drugs/drug_sulfamethoxazole/)</sub>

@@ -105,7 +105,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1639 matched, 215 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 10  ·  extracted 4  ·  needs_review 1  ·  rejected 5  ·  stale 0
+- **records:** 10  ·  extracted 4  ·  needs review 1  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -114,17 +114,17 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Goudah_2004.pdf` | Goudah A et al., Pharmacokinetics and tissue residue pro…, DTW. Deutsche tierarztliche… (2004) | popPK | 10 | not captured | [15171602](https://pubmed.ncbi.nlm.nih.gov/15171602) | The study reports quantitative pharmacokinetic parameters (half-lives, Cmax, MRT) for erythromycin in broiler chickens, with values explicitly stated in the provided abstract/text. |
+| `Goudah_2004.pdf` | Goudah A et al., Pharmacokinetics and tissue residue pro…, DTW. Deutsche tierarztliche… (2004) | popPK | 10 |  | [15171602](https://pubmed.ncbi.nlm.nih.gov/15171602) | The study reports quantitative pharmacokinetic parameters (half-lives, Cmax, MRT) for erythromycin in broiler chickens, with values explicitly stated in the provided abstract/text. |
 | `Prescott_1983.pdf` | Prescott JF et al., Pharmacokinetics of erythromycin in foa…, Journal of veterinary pharm… (1983) | popPK | 10 | [10.1111/j.1365-2885.1983.tb00456.x](https://doi.org/10.1111/j.1365-2885.1983.tb00456.x) | [6854734](https://pubmed.ncbi.nlm.nih.gov/6854734) | The paper reports quantitative pharmacokinetic parameters (half-life, volume of distribution, and clearance) for erythromycin in horses, with specific numeric ranges and peak concentration values provided in the abstract text. |
 | `Colburn_1977.pdf` | Colburn WA et al., Pharmacokinetics of erythromycin on rep…, Journal of clinical pharmac… (1977) | popPK | 9 | [10.1177/009127007701701006](https://doi.org/10.1177/009127007701701006) | [915023](https://pubmed.ncbi.nlm.nih.gov/915023) | Reports qualitative PK model characteristics and average half-lives (1.8 h, 2.6 h) for erythromycin, but lacks specific numeric values for clearance, volume, or rate constants in the provided evidence. |
 | `Hall_1982.pdf` | Hall KW et al., Pharmacokinetics of erythromycin in nor…, Journal of clinical pharmac… (1982) | popPK | 9 | [10.1002/j.1552-4604.1982.tb02682.x](https://doi.org/10.1002/j.1552-4604.1982.tb02682.x) | [7107981](https://pubmed.ncbi.nlm.nih.gov/7107981) | The study reports pharmacokinetic parameters (half-life, systemic availability) for erythromycin in humans, but specific clearance and volume values are not explicitly listed in the provided text. |
-| `Mäntylä_1978.pdf` | Mäntylä R et al., Bioavailability and effect of food on t…, Annals of clinical research (1978) | popPK | 9 | not captured | [367255](https://pubmed.ncbi.nlm.nih.gov/367255) | The study reports quantitative PK parameters for erythromycin including half-life, renal clearance, and urinary excretion percentages, though specific values for total clearance or volume of distribution are not explicitly provided in the text. |
+| `Mäntylä_1978.pdf` | Mäntylä R et al., Bioavailability and effect of food on t…, Annals of clinical research (1978) | popPK | 9 |  | [367255](https://pubmed.ncbi.nlm.nih.gov/367255) | The study reports quantitative PK parameters for erythromycin including half-life, renal clearance, and urinary excretion percentages, though specific values for total clearance or volume of distribution are not explicitly provided in the text. |
 | `Austin_1980.pdf` | Austin KL et al., Intersubject and dose-related variabili…, British journal of clinical… (1980) | popPK | 8 | [10.1111/j.1365-2125.1980.tb01755.x](https://doi.org/10.1111/j.1365-2125.1980.tb01755.x) | [7437245](https://pubmed.ncbi.nlm.nih.gov/7437245) | The paper describes a human PK study of erythromycin using a two-compartment model and reports the existence of parameters like clearance and Vdss, but no specific numeric values are present in the provided abstract/text evidence. |
 | `Clarke_1993.pdf` | Clarke CR et al., Distribution of intramuscularly adminis…, Research in veterinary scie… (1993) | popPK | 8 | [10.1016/0034-5288(93)90137-5](https://doi.org/10.1016/0034-5288(93)90137-5) | [8337485](https://pubmed.ncbi.nlm.nih.gov/8337485) | The study describes a pharmacokinetic model for erythromycin in calves, but no specific numeric parameter values (CL, V, Ka, etc.) are provided in the extracted evidence text. |
-| `Fukuda_2002_2.pdf` | Fukuda M et al., [Antibiotic ophthalmic solutions evalua…, Nippon Ganka Gakkai zasshi (2002) | popPK | 7 | not captured | [11979978](https://pubmed.ncbi.nlm.nih.gov/11979978) | The study reports a single pharmacokinetic parameter (AQCmax) for erythromycin, but does not provide standard disposition parameters (CL, V, t1/2) or a population PK model. |
+| `Fukuda_2002_2.pdf` | Fukuda M et al., [Antibiotic ophthalmic solutions evalua…, Nippon Ganka Gakkai zasshi (2002) | popPK | 7 |  | [11979978](https://pubmed.ncbi.nlm.nih.gov/11979978) | The study reports a single pharmacokinetic parameter (AQCmax) for erythromycin, but does not provide standard disposition parameters (CL, V, t1/2) or a population PK model. |
 | `Welling_1978.pdf` | Welling PG et al., Pharmacokinetics of intravenous erythro…, Journal of pharmaceutical s… (1978) | popPK | 5 | [10.1002/jps.2600670809](https://doi.org/10.1002/jps.2600670809) | [671237](https://pubmed.ncbi.nlm.nih.gov/671237) | The study reports pharmacokinetic parameters (half-life, mention of two-compartment model volumes) for erythromycin in humans, but the specific numeric values for clearance, volume, or intercompartmental clearance are described rather than listed in the provided text. |
 
-<sub>queue written 2026-10-07T08:11:21.117457+00:00</sub>
+<sub>queue written 2026-10-07 08:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -275,5 +275,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 08:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berythromycin%5D&body=Drug%3A%20erythromycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erythromycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:11 UTC</sub>

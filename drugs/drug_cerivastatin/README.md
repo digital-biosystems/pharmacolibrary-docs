@@ -88,7 +88,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 168 matched, 104 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -97,7 +97,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mück_1997.pdf` | Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997) | popPK | 9 | not captured | [9208342](https://pubmed.ncbi.nlm.nih.gov/9208342) | The study reports quantitative PK parameters (bioavailability, half-lives, model structure) for cerivastatin in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Mück_1997.pdf` | Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997) | popPK | 9 |  | [9208342](https://pubmed.ncbi.nlm.nih.gov/9208342) | The study reports quantitative PK parameters (bioavailability, half-lives, model structure) for cerivastatin in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
 | `Walsky_2005.pdf` | Walsky RL et al., Examination of 209 drugs for inhibition…, Journal of clinical pharmac… (2005) | pd | 5 | [10.1177/0091270004270642](https://doi.org/10.1177/0091270004270642) | [15601807](https://www.ncbi.nlm.nih.gov/pubmed/15601807) | metadata signals extractable PD data (IC50) |
 | `Zeitlinger_2003.pdf` | Zeitlinger M et al., [Clinico-pharmacologic explanation mode…, Wiener medizinische Wochens… (2003) | pd | 5 | [10.1046/j.1563-258x.2003.03029.x](https://doi.org/10.1046/j.1563-258x.2003.03029.x) | [12879633](https://www.ncbi.nlm.nih.gov/pubmed/12879633) | metadata signals extractable PD data (IC50) |
 | `Dansette_2000.pdf` | Dansette PM et al., HMG-CoA reductase activity in human liv…, Experimental and toxicologi… (2000) | pd | 4 | [10.1016/S0940-2993(00)80107-4](https://doi.org/10.1016/S0940-2993(00)80107-4) | [10965989](https://www.ncbi.nlm.nih.gov/pubmed/10965989) | metadata signals extractable PD data (IC50) |
@@ -107,7 +107,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Christians_1998.pdf` | Christians U et al., Metabolism and drug interactions of 3-h…, Pharmacology & therapeutics (1998) | pgx | 7 | [10.1016/s0163-7258(98)00016-3](https://doi.org/10.1016/s0163-7258(98)00016-3) | [9804052](https://www.ncbi.nlm.nih.gov/pubmed/9804052) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Fujino_2003.pdf` | Fujino H et al., Studies on the interaction between fibr…, Arzneimittel-Forschung (2003) | pgx | 7 | [10.1055/s-0031-1299815](https://doi.org/10.1055/s-0031-1299815) | [14650362](https://www.ncbi.nlm.nih.gov/pubmed/14650362) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Fujino_2004.pdf` | Fujino H et al., Metabolic properties of the acid and la…, Xenobiotica; the fate of fo… (2004) | pgx | 7 | [10.1080/00498250400015319](https://doi.org/10.1080/00498250400015319) | [15801541](https://www.ncbi.nlm.nih.gov/pubmed/15801541) | metadata signals extractable PGX data (CYP2Cs, PK/PD-context) |
-| `García_2003.pdf` | García MJ et al., Clinical pharmacokinetics of statins, Methods and findings in exp… (2003) | pgx | 7 | not captured | [12949632](https://www.ncbi.nlm.nih.gov/pubmed/12949632) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `García_2003.pdf` | García MJ et al., Clinical pharmacokinetics of statins, Methods and findings in exp… (2003) | pgx | 7 |  | [12949632](https://www.ncbi.nlm.nih.gov/pubmed/12949632) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kajinami_2003.pdf` | Kajinami K et al., Pitavastatin: efficacy and safety profi…, Cardiovascular drug reviews (2003) | pgx | 7 | [10.1111/j.1527-3466.2003.tb00116.x](https://doi.org/10.1111/j.1527-3466.2003.tb00116.x) | [12931254](https://www.ncbi.nlm.nih.gov/pubmed/12931254) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kantola_1999.pdf` | Kantola T et al., Effect of itraconazole on cerivastatin…, European journal of clinica… (1999) | pgx | 7 | [10.1007/s002280050566](https://doi.org/10.1007/s002280050566) | [10027660](https://www.ncbi.nlm.nih.gov/pubmed/10027660) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Neuvonen_2006.pdf` | Neuvonen PJ et al., Drug interactions with lipid-lowering d…, Clinical pharmacology and t… (2006) | pgx | 7 | [10.1016/j.clpt.2006.09.003](https://doi.org/10.1016/j.clpt.2006.09.003) | [17178259](https://www.ncbi.nlm.nih.gov/pubmed/17178259) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
@@ -119,7 +119,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Marciante_2011.pdf` | Marciante KD et al., Cerivastatin, genetic variants, and the…, Pharmacogenetics and genomi… (2011) | pgx | 5 | [10.1097/FPC.0b013e328343dd7d](https://doi.org/10.1097/FPC.0b013e328343dd7d) | [21386754](https://www.ncbi.nlm.nih.gov/pubmed/21386754) | metadata signals extractable PGX data (CYP2C8) |
 | `Vermes_2004.pdf` | Vermes A et al., Genetic polymorphisms in cytochrome P45…, American journal of cardiov… (2004) | pgx | 5 | [10.2165/00129784-200404040-00005](https://doi.org/10.2165/00129784-200404040-00005) | [15285699](https://www.ncbi.nlm.nih.gov/pubmed/15285699) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-07T11:19:04.523257+00:00</sub>
+<sub>queue written 2026-10-07 11:19 UTC</sub>
 
 ## Screened and excluded
 
@@ -180,5 +180,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcerivastatin%5D&body=Drug%3A%20cerivastatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cerivastatin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:19 UTC</sub>

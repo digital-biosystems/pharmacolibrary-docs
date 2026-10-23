@@ -67,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 81 matched, 60 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -76,7 +76,7 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Gao_1998.pdf` | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | popPK | 9 | not captured | [11939069](https://pubmed.ncbi.nlm.nih.gov/11939069) | Reports human PK parameters (half-lives) for diflunisal after oral administration, though clearance and volume values are not explicitly listed in the evidence provided. |
+| `Gao_1998.pdf` | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | popPK | 9 |  | [11939069](https://pubmed.ncbi.nlm.nih.gov/11939069) | Reports human PK parameters (half-lives) for diflunisal after oral administration, though clearance and volume values are not explicitly listed in the evidence provided. |
 | `Ray_1983.pdf` | Ray JE et al., High-performance liquid chromatographic…, Journal of pharmaceutical s… (1983) | popPK | 9 | [10.1002/jps.2600721209](https://doi.org/10.1002/jps.2600721209) | [6663474](https://pubmed.ncbi.nlm.nih.gov/6663474) | The study is a PK study of diflunisal in humans using a two-compartment model, but specific parameter values (CL, V, ka) are not listed, only AUC ratios and qualitative trends. |
 | `Mano_2006.pdf` | Mano Y et al., In vitro drug interaction between diflu…, Biopharmaceutics & drug dis… (2006) | pd | 5 | [10.1002/bdd.507](https://doi.org/10.1002/bdd.507) | [16733833](https://www.ncbi.nlm.nih.gov/pubmed/16733833) | metadata signals extractable PD data (IC50) |
 | `Vietri_2000.pdf` | Vietri M et al., Inhibition of human liver phenol sulfot…, European journal of clinica… (2000) | pd | 5 | [10.1007/s002280050725](https://doi.org/10.1007/s002280050725) | [10853883](https://www.ncbi.nlm.nih.gov/pubmed/10853883) | metadata signals extractable PD data (IC50) |
@@ -85,12 +85,12 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kasuya_2001.pdf` | Kasuya F et al., Inhibitory effect of quinolone antimicr…, Biochemical pharmacology (2001) | pd | 4 | [10.1016/s0006-2952(01)00667-0](https://doi.org/10.1016/s0006-2952(01)00667-0) | [11434910](https://www.ncbi.nlm.nih.gov/pubmed/11434910) | metadata signals extractable PD data (IC50) |
 | `McDougall_1988.pdf` | McDougall P et al., Action of the nonsteroidal anti-inflamm…, Biochemical pharmacology (1988) | pd | 4 | [10.1016/0006-2952(88)90790-3](https://doi.org/10.1016/0006-2952(88)90790-3) | [3355604](https://www.ncbi.nlm.nih.gov/pubmed/3355604) | metadata signals extractable PD data (IC50) |
 | `Pacifici_1991.pdf` | Pacifici GM et al., Conjugation of benzoic acid with glycin…, Developmental pharmacology… (1991) | pd | 4 | [10.1159/000457499](https://doi.org/10.1159/000457499) | [1811921](https://www.ncbi.nlm.nih.gov/pubmed/1811921) | metadata signals extractable PD data (IC50) |
-| `Squires_1993.pdf` | Squires RF et al., Indomethacin/ibuprofen-like anti-inflam…, Molecular pharmacology (1993) | pd | 4 | not captured | [8388990](https://www.ncbi.nlm.nih.gov/pubmed/8388990) | metadata signals extractable PD data (EC50) |
+| `Squires_1993.pdf` | Squires RF et al., Indomethacin/ibuprofen-like anti-inflam…, Molecular pharmacology (1993) | pd | 4 |  | [8388990](https://www.ncbi.nlm.nih.gov/pubmed/8388990) | metadata signals extractable PD data (EC50) |
 | `Squires_1999.pdf` | Squires RF et al., Honokiol and magnolol increase the numb…, Neurochemical research (1999) | pd | 4 | [10.1023/a:1021116502548](https://doi.org/10.1023/a:1021116502548) | [10591411](https://www.ncbi.nlm.nih.gov/pubmed/10591411) | metadata signals extractable PD data (EC50) |
 | `Ghosal_2011.pdf` | Ghosal A et al., Characterization of human liver enzymes…, Drug metabolism and disposi… (2011) | pgx | 7 | [10.1124/dmd.110.036996](https://doi.org/10.1124/dmd.110.036996) | [21123164](https://www.ncbi.nlm.nih.gov/pubmed/21123164) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kiang_2005.pdf` | Kiang TK et al., UDP-glucuronosyltransferases and clinic…, Pharmacology & therapeutics (2005) | pgx | 5 | [10.1016/j.pharmthera.2004.10.013](https://doi.org/10.1016/j.pharmthera.2004.10.013) | [15781124](https://www.ncbi.nlm.nih.gov/pubmed/15781124) | metadata signals extractable PGX data (UGT1A7) |
 
-<sub>queue written 2026-10-07T06:04:11.358699+00:00</sub>
+<sub>queue written 2026-10-07 06:04 UTC</sub>
 
 ## Screened and excluded
 
@@ -153,5 +153,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 06:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiflunisal%5D&body=Drug%3A%20diflunisal%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diflunisal/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:04 UTC</sub>

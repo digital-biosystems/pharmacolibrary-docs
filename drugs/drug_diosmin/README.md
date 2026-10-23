@@ -24,13 +24,12 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` unknown | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
 | distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
 | distribution | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C9` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C9` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` unknown, `SLCO2B1` unknown | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inhibitor | DrugBank actor |
 | excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
@@ -56,7 +55,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 71 matched, 64 returned
 - **screened:** 10  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -65,12 +64,12 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ma_2007.pdf` | Ma YL et al., [Studies on pharmacokinetics of diosmin…, Zhongguo Zhong yao za zhi =… (2007) | popPK | 9 | not captured | [17511149](https://pubmed.ncbi.nlm.nih.gov/17511149) | The study reports a one-compartment PK model for diosmin in rats, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
-| `Russo_2015.pdf` | Russo R et al., Pharmacokinetic Profile of µSMIN Plus™,…, Natural product communicati… (2015) | popPK | 8 | not captured | [26594761](https://pubmed.ncbi.nlm.nih.gov/26594761) | The study reports pharmacokinetic parameters for diosmin in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Ma_2007.pdf` | Ma YL et al., [Studies on pharmacokinetics of diosmin…, Zhongguo Zhong yao za zhi =… (2007) | popPK | 9 |  | [17511149](https://pubmed.ncbi.nlm.nih.gov/17511149) | The study reports a one-compartment PK model for diosmin in rats, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
+| `Russo_2015.pdf` | Russo R et al., Pharmacokinetic Profile of µSMIN Plus™,…, Natural product communicati… (2015) | popPK | 8 |  | [26594761](https://pubmed.ncbi.nlm.nih.gov/26594761) | The study reports pharmacokinetic parameters for diosmin in rats, but the specific numeric values are not present in the provided evidence text. |
 | `El-Shiekh_2024.pdf` | El-Shiekh RA et al., Natural compounds as possible anti-SARS…, Natural product research (2024) | pd | 5 | [10.1080/14786419.2023.2261069](https://doi.org/10.1080/14786419.2023.2261069) | [37752734](https://www.ncbi.nlm.nih.gov/pubmed/37752734) | metadata signals extractable PD data (IC50) |
 | `Cho_2020.pdf` | Cho YW et al., Small molecule inhibitors of IκB kinase…, Bioorganic & medicinal chem… (2020) | pd | 4 | [10.1016/j.bmc.2020.115440](https://doi.org/10.1016/j.bmc.2020.115440) | [32205046](https://www.ncbi.nlm.nih.gov/pubmed/32205046) | metadata signals extractable PD data (IC50) |
 | `Dubey_2021.pdf` | Dubey K et al., Exploration of Diosmin to Control Diabe…, Current computer-aided drug… (2021) | pd | 4 | [10.2174/1573409916666200324135734](https://doi.org/10.2174/1573409916666200324135734) | [32208122](https://www.ncbi.nlm.nih.gov/pubmed/32208122) | metadata signals extractable PD data (IC50) |
-| `Kavutcu_1999.pdf` | Kavutcu M et al., In vitro effects of selected flavonoids…, Die Pharmazie (1999) | pd | 4 | not captured | [10399192](https://www.ncbi.nlm.nih.gov/pubmed/10399192) | metadata signals extractable PD data (IC50) |
+| `Kavutcu_1999.pdf` | Kavutcu M et al., In vitro effects of selected flavonoids…, Die Pharmazie (1999) | pd | 4 |  | [10399192](https://www.ncbi.nlm.nih.gov/pubmed/10399192) | metadata signals extractable PD data (IC50) |
 | `Kiran_2024.pdf` | Kiran KS et al., Diosmin: A Daboia russelii venom PLA2s…, Journal of ethnopharmacology (2024) | pd | 4 | [10.1016/j.jep.2023.116977](https://doi.org/10.1016/j.jep.2023.116977) | [37544341](https://www.ncbi.nlm.nih.gov/pubmed/37544341) | metadata signals extractable PD data (IC50) |
 | `Kuppusamy_2017.pdf` | Kuppusamy A et al., Combining in silico and in vitro approa…, International journal of bi… (2017) | pd | 4 | [10.1016/j.ijbiomac.2016.11.062](https://doi.org/10.1016/j.ijbiomac.2016.11.062) | [27871793](https://www.ncbi.nlm.nih.gov/pubmed/27871793) | metadata signals extractable PD data (IC50) |
 | `Liu_2025.pdf` | Liu Y et al., Preparation of monoclonal antibody agai…, Talanta (2025) | pd | 4 | [10.1016/j.talanta.2024.126871](https://doi.org/10.1016/j.talanta.2024.126871) | [39276572](https://www.ncbi.nlm.nih.gov/pubmed/39276572) | metadata signals extractable PD data (IC50) |
@@ -80,7 +79,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Poór_2018.pdf` | Poór M et al., Pharmacokinetic interaction of diosmeti…, Biomedicine & pharmacothera… (2018) | pgx | 7 | [10.1016/j.biopha.2018.03.146](https://doi.org/10.1016/j.biopha.2018.03.146) | [29710546](https://www.ncbi.nlm.nih.gov/pubmed/29710546) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Rajnarayana_2007.pdf` | Rajnarayana K et al., Bioavailability of diclofenac sodium af…, Drug metabolism and drug in… (2007) | pgx | 7 | [10.1515/dmdi.2007.22.2-3.165](https://doi.org/10.1515/dmdi.2007.22.2-3.165) | [17708066](https://www.ncbi.nlm.nih.gov/pubmed/17708066) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-10-06T21:42:30.862539+00:00</sub>
+<sub>queue written 2026-10-06 21:42 UTC</sub>
 
 ## Screened and excluded
 
@@ -184,5 +183,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiosmin%5D&body=Drug%3A%20diosmin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diosmin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

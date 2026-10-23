@@ -92,4 +92,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsilver_nitrate%5D%20pd_Jadhav_2018_pancreas_MIA_Pa_Ca_2&body=Drug%3A%20silver_nitrate%0ARecord%3A%20pd_Jadhav_2018_pancreas_MIA_Pa_Ca_2%0APaper%3A%20Jadhav_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_silver_nitrate/pd_Jadhav_2018_pancreas_MIA_Pa_Ca_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [silver nitrate](drugs/drug_silver_nitrate/)</sub>

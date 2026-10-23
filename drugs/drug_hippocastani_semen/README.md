@@ -4,7 +4,7 @@
 
 - **generic name:** Hippocastani semen
 - **ATC codes:** `C05CX03`
-- **DrugBank:** [DB13195](https://go.drugbank.com/drugs/DB13195) · **PubChem:** not captured
+- **DrugBank:** [DB13195](https://go.drugbank.com/drugs/DB13195) · **PubChem:** none
 - **groups:** investigational
 
 ## About
@@ -73,7 +73,6 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` transport | PGx paper |
 | absorption | small intestine | `ABCB1` transport, `ABCC2` transport, `ABCG2` transport, `SLCO2B1` transport | PGx paper |
 | distribution | blood-brain barrier | `ABCB1` transport, `ABCG2` transport | PGx paper |
 | distribution | mammary gland | `ABCG2` transport | PGx paper |
@@ -81,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | distribution | testis | `ABCB1` transport, `ABCG2` transport | PGx paper |
 | metabolism | brain | `CYP2D6` metabolism | PGx paper |
 | metabolism | kidney | `CYP3A5` metabolism | PGx paper |
-| metabolism | liver | `CYP1A2` metabolism, `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C8` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `CYP3A4` metabolism, `CYP3A5` metabolism, `GSTP1` metabolism, `SLCO1B1` transport | PGx paper |
+| metabolism | liver | `CYP1A2` metabolism, `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C8` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `CYP3A4` metabolism, `CYP3A5` metabolism, `GSTP1` metabolism, `SLCO1B1` transport, `SLCO2B1` transport | PGx paper |
 | metabolism | lung | `GSTP1` metabolism | PGx paper |
 | metabolism | small intestine | `CYP3A4` metabolism, `CYP3A5` metabolism | PGx paper |
 | excretion | kidney | `ABCB1` transport, `ABCC2` transport | PGx paper |
@@ -107,7 +106,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 25008 matched, 584 returned
 - **screened:** 93  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -141,7 +140,7 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Chhatwal_1992.pdf` | Chhatwal I et al., Isolation and characterization of draco…, Toxicon : official journal… (1992) | pd | 4 | [10.1016/0041-0101(92)90504-x](https://doi.org/10.1016/0041-0101(92)90504-x) | [1595081](https://www.ncbi.nlm.nih.gov/pubmed/1595081) | metadata signals extractable PD data (EC50) |
 | `Fagoo_1985.pdf` | Fagoo M et al., Interaction of cardiodigin, endogenous…, Biochemical and biophysical… (1985) | pd | 4 | [10.1016/0006-291x(85)90187-1](https://doi.org/10.1016/0006-291x(85)90187-1) | [2990458](https://www.ncbi.nlm.nih.gov/pubmed/2990458) | metadata signals extractable PD data (EC50) |
 | `Farias_2009.pdf` | Farias DF et al., Insecticidal action of sodium anacardat…, Journal of the American Mos… (2009) | pd | 4 | [10.2987/08-5851.1](https://doi.org/10.2987/08-5851.1) | [19852234](https://www.ncbi.nlm.nih.gov/pubmed/19852234) | metadata signals extractable PD data (EC50) |
-| `González-Garza_1989.pdf` | González-Garza MT et al., [Reliability of the PEHPS culture mediu…, Archivos de investigacion m… (1989) | pd | 4 | not captured | [2548449](https://www.ncbi.nlm.nih.gov/pubmed/2548449) | metadata signals extractable PD data (IC50) |
+| `González-Garza_1989.pdf` | González-Garza MT et al., [Reliability of the PEHPS culture mediu…, Archivos de investigacion m… (1989) | pd | 4 |  | [2548449](https://www.ncbi.nlm.nih.gov/pubmed/2548449) | metadata signals extractable PD data (IC50) |
 | `Gorelik_2020.pdf` | Gorelik VS et al., Stimulated Raman scattering of light in…, Spectrochimica acta. Part A… (2020) | pd | 4 | [10.1016/j.saa.2020.118418](https://doi.org/10.1016/j.saa.2020.118418) | [32380431](https://www.ncbi.nlm.nih.gov/pubmed/32380431) | metadata signals extractable PD data (Emax) |
 | `Gu_2024.pdf` | Gu D et al., Optimization of liquid fermentation con…, Preparative biochemistry &… (2024) | pd | 4 | [10.1080/10826068.2023.2297703](https://doi.org/10.1080/10826068.2023.2297703) | [38147976](https://www.ncbi.nlm.nih.gov/pubmed/38147976) | metadata signals extractable PD data (EC50) |
 | `Hostetler_1986.pdf` | Hostetler KY et al., Purification of lysosomal phospholipase…, Biochemistry (1986) | pd | 4 | [10.1021/bi00369a017](https://doi.org/10.1021/bi00369a017) | [3790533](https://www.ncbi.nlm.nih.gov/pubmed/3790533) | metadata signals extractable PD data (IC50) |
@@ -159,7 +158,7 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Trikha_1994.pdf` | Trikha M et al., Purification and characterization of fi…, Toxicon : official journal… (1994) | pd | 4 | [10.1016/0041-0101(94)90310-7](https://doi.org/10.1016/0041-0101(94)90310-7) | [7725320](https://www.ncbi.nlm.nih.gov/pubmed/7725320) | metadata signals extractable PD data (EC50) |
 | `Xu_2018.pdf` | Xu H et al., Triterpenoids with antioxidant activiti…, Journal of Asian natural pr… (2018) | pd | 4 | [10.1080/10286020.2017.1321636](https://doi.org/10.1080/10286020.2017.1321636) | [28463577](https://www.ncbi.nlm.nih.gov/pubmed/28463577) | metadata signals extractable PD data (EC50) |
 | `Abduljalil_2013.pdf` | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | pgx | 8 | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) | [23519598](https://www.ncbi.nlm.nih.gov/pubmed/23519598) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
-| `Bagli_1995.pdf` | Bagli M et al., Bioequivalence and absolute bioavailabi…, International journal of cl… (1995) | pgx | 8 | not captured | [8963481](https://www.ncbi.nlm.nih.gov/pubmed/8963481) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Bagli_1995.pdf` | Bagli M et al., Bioequivalence and absolute bioavailabi…, International journal of cl… (1995) | pgx | 8 |  | [8963481](https://www.ncbi.nlm.nih.gov/pubmed/8963481) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Byeon_2023.pdf` | Byeon JY et al., Effects of CYP2D6 and CYP2C19 genetic p…, Archives of pharmacal resea… (2023) | pgx | 8 | [10.1007/s12272-023-01462-1](https://doi.org/10.1007/s12272-023-01462-1) | [37728834](https://www.ncbi.nlm.nih.gov/pubmed/37728834) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Cabrera_2009.pdf` | Cabrera SE et al., Influence of the cytochrome P450 2B6 ge…, Antimicrobial agents and ch… (2009) | pgx | 8 | [10.1128/AAC.01537-08](https://doi.org/10.1128/AAC.01537-08) | [19433561](https://www.ncbi.nlm.nih.gov/pubmed/19433561) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Cai_2021.pdf` | Cai Y et al., Evaluation of Recombinant CYP3A4 Varian…, Chemical research in toxico… (2021) | pgx | 8 | [10.1021/acs.chemrestox.0c00361](https://doi.org/10.1021/acs.chemrestox.0c00361) | [33393779](https://www.ncbi.nlm.nih.gov/pubmed/33393779) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -176,7 +175,7 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Djordjevic_2016.pdf` | Djordjevic N et al., CYP1A2 genotype affects carbamazepine p…, European journal of clinica… (2016) | pgx | 8 | [10.1007/s00228-015-2006-9](https://doi.org/10.1007/s00228-015-2006-9) | [26762380](https://www.ncbi.nlm.nih.gov/pubmed/26762380) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Fang_2024.pdf` | Fang Y et al., Association Study of Esomeprazole Pharm…, Clinical pharmacology in dr… (2024) | pgx | 8 | [10.1002/cpdd.1334](https://doi.org/10.1002/cpdd.1334) | [37772804](https://www.ncbi.nlm.nih.gov/pubmed/37772804) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Fukudo_2013.pdf` | Fukudo M et al., Population pharmacokinetics/pharmacodyn…, Clinical pharmacokinetics (2013) | pgx | 8 | [10.1007/s40262-013-0058-5](https://doi.org/10.1007/s40262-013-0058-5) | [23532985](https://www.ncbi.nlm.nih.gov/pubmed/23532985) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Gram_1993.pdf` | Gram LF et al., Citalopram: interaction studies with le…, Therapeutic drug monitoring (1993) | pgx | 8 | not captured | [8451775](https://www.ncbi.nlm.nih.gov/pubmed/8451775) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Gram_1993.pdf` | Gram LF et al., Citalopram: interaction studies with le…, Therapeutic drug monitoring (1993) | pgx | 8 |  | [8451775](https://www.ncbi.nlm.nih.gov/pubmed/8451775) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Guo_2020.pdf` | Guo L et al., Influence of CYP2D6*5 and *10 polymorph…, Journal of clinical pharmac… (2020) | pgx | 8 | [10.1111/jcpt.13155](https://doi.org/10.1111/jcpt.13155) | [32379356](https://www.ncbi.nlm.nih.gov/pubmed/32379356) | metadata signals extractable PGX data (CYP2D6*5, PK/PD-context) |
 | `Guo_2026.pdf` | Guo L et al., Effects of ABC transporter polymorphism…, European journal of clinica… (2026) | pgx | 8 | [10.1007/s00228-026-03993-0](https://doi.org/10.1007/s00228-026-03993-0) | [41553547](https://www.ncbi.nlm.nih.gov/pubmed/41553547) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Hu_2024.pdf` | Hu Y et al., Functional assessment of CYP3A4 and CYP…, Chemico-biological interact… (2024) | pgx | 8 | [10.1016/j.cbi.2024.111154](https://doi.org/10.1016/j.cbi.2024.111154) | [39025286](https://www.ncbi.nlm.nih.gov/pubmed/39025286) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -218,7 +217,7 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Tham_2007.pdf` | Tham LS et al., Lack of association of single-nucleotid…, Clinical cancer research :… (2007) | pgx | 8 | [10.1158/1078-0432.CCR-07-1276](https://doi.org/10.1158/1078-0432.CCR-07-1276) | [18056193](https://www.ncbi.nlm.nih.gov/pubmed/18056193) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Thomas_2026.pdf` | Thomas L et al., Influence of CYP2D6, CYP2C19, and CYP2C…, Pharmaceuticals (Basel, Swi… (2026) | pgx | 8 | [10.3390/ph19020209](https://doi.org/10.3390/ph19020209) | [41754751](https://www.ncbi.nlm.nih.gov/pubmed/41754751) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Tsuchiya_2025.pdf` | Tsuchiya K et al., High plasma concentration of tenofovir…, Journal of infection and ch… (2025) | pgx | 8 | [10.1016/j.jiac.2024.10.009](https://doi.org/10.1016/j.jiac.2024.10.009) | [39426598](https://www.ncbi.nlm.nih.gov/pubmed/39426598) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Tybring_2001.pdf` | Tybring G et al., Role of CYP2C9 polymorphism in losartan…, Drug metabolism and disposi… (2001) | pgx | 8 | not captured | [11408373](https://www.ncbi.nlm.nih.gov/pubmed/11408373) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Tybring_2001.pdf` | Tybring G et al., Role of CYP2C9 polymorphism in losartan…, Drug metabolism and disposi… (2001) | pgx | 8 |  | [11408373](https://www.ncbi.nlm.nih.gov/pubmed/11408373) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Wang_2014.pdf` | Wang HF et al., Steady-state pharmacokinetics of siroli…, Clinical pharmacology in dr… (2014) | pgx | 8 | [10.1002/cpdd.96](https://doi.org/10.1002/cpdd.96) | [27128614](https://www.ncbi.nlm.nih.gov/pubmed/27128614) | metadata signals extractable PGX data (CYP3A5*3, PK/PD-context) |
 | `Wei_2024.pdf` | Wei S et al., UGT1A polymorphism rs4148324 associated…, Seizure (2024) | pgx | 8 | [10.1016/j.seizure.2023.10.004](https://doi.org/10.1016/j.seizure.2023.10.004) | [37858371](https://www.ncbi.nlm.nih.gov/pubmed/37858371) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
 | `Wong_2006.pdf` | Wong M et al., Predictors of vinorelbine pharmacokinet…, Journal of clinical oncolog… (2006) | pgx | 8 | [10.1200/JCO.2005.02.1295](https://doi.org/10.1200/JCO.2005.02.1295) | [16651648](https://www.ncbi.nlm.nih.gov/pubmed/16651648) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
@@ -228,21 +227,21 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Yaowaluk_2022.pdf` | Yaowaluk T et al., Association study identifies genetic de…, European journal of clinica… (2022) | pgx | 8 | [10.1007/s00228-022-03322-1](https://doi.org/10.1007/s00228-022-03322-1) | [35633386](https://www.ncbi.nlm.nih.gov/pubmed/35633386) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Yin_2006.pdf` | Yin OQ et al., Phenotype-genotype relationship and cli…, Journal of clinical psychop… (2006) | pgx | 8 | [10.1097/01.jcp.0000227355.54074.14](https://doi.org/10.1097/01.jcp.0000227355.54074.14) | [16855453](https://www.ncbi.nlm.nih.gov/pubmed/16855453) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Yuan_2023.pdf` | Yuan LJ et al., Functional evaluation of CYP2C19 and CY…, Toxicology and applied phar… (2023) | pgx | 8 | [10.1016/j.taap.2023.116653](https://doi.org/10.1016/j.taap.2023.116653) | [37574146](https://www.ncbi.nlm.nih.gov/pubmed/37574146) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
-| `Zhang_2014.pdf` | Zhang H et al., [SLCO1B1c. 521T&gt;C gene polymorphisms ar…, Zhonghua er ke za zhi = Chi… (2014) | pgx | 8 | not captured | [25537545](https://www.ncbi.nlm.nih.gov/pubmed/25537545) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Zhang_2014.pdf` | Zhang H et al., [SLCO1B1c. 521T&gt;C gene polymorphisms ar…, Zhonghua er ke za zhi = Chi… (2014) | pgx | 8 |  | [25537545](https://www.ncbi.nlm.nih.gov/pubmed/25537545) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
 | `Zhang_2021.pdf` | Zhang X et al., Influence of CYP2D6 gene polymorphisms…, Pharmacogenomics (2021) | pgx | 8 | [10.2217/pgs-2020-0134](https://doi.org/10.2217/pgs-2020-0134) | [33586456](https://www.ncbi.nlm.nih.gov/pubmed/33586456) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Zhao_2023.pdf` | Zhao T et al., Association of CYP2C19, CYP3A4 and ABCC…, Pharmacogenomics (2023) | pgx | 8 | [10.2217/pgs-2022-0159](https://doi.org/10.2217/pgs-2022-0159) | [36718992](https://www.ncbi.nlm.nih.gov/pubmed/36718992) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Zhao_2024.pdf` | Zhao T et al., Impact of UGT1A4 and UGT2B7 polymorphis…, Pharmacogenetics and genomi… (2024) | pgx | 8 | [10.1097/FPC.0000000000000543](https://doi.org/10.1097/FPC.0000000000000543) | [39171428](https://www.ncbi.nlm.nih.gov/pubmed/39171428) | metadata signals extractable PGX data (UGT1A4, PK/PD-context) |
 | `Zuo_2022.pdf` | Zuo W et al., Relationship between CYP2C8, UGT1A1, an…, European journal of clinica… (2022) | pgx | 8 | [10.1007/s00228-022-03367-2](https://doi.org/10.1007/s00228-022-03367-2) | [35922716](https://www.ncbi.nlm.nih.gov/pubmed/35922716) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
-| `ter_2008.pdf` | ter Heine R et al., A pharmacokinetic and pharmacogenetic s…, Antiviral therapy (2008) | pgx | 8 | not captured | [18839779](https://www.ncbi.nlm.nih.gov/pubmed/18839779) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `ter_2008.pdf` | ter Heine R et al., A pharmacokinetic and pharmacogenetic s…, Antiviral therapy (2008) | pgx | 8 |  | [18839779](https://www.ncbi.nlm.nih.gov/pubmed/18839779) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `van_2024.pdf` | van der Heijden LT et al., Is Higher Docetaxel Clearance in Prosta…, Journal of clinical pharmac… (2024) | pgx | 8 | [10.1002/jcph.2362](https://doi.org/10.1002/jcph.2362) | [37789682](https://www.ncbi.nlm.nih.gov/pubmed/37789682) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Bi_2025.pdf` | Bi G et al., Assessment of the in vitro cytochrome P…, Drug metabolism and disposi… (2025) | pgx | 7 | [10.1016/j.dmd.2025.100106](https://doi.org/10.1016/j.dmd.2025.100106) | [40614320](https://www.ncbi.nlm.nih.gov/pubmed/40614320) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Carrasco-Portugal_2026.pdf` | Carrasco-Portugal MDC et al., Pharmacokinetics of the potassium-compe…, International journal of cl… (2026) | pgx | 7 | [10.5414/CP204709](https://doi.org/10.5414/CP204709) | [41553168](https://www.ncbi.nlm.nih.gov/pubmed/41553168) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chaphekar_2026.pdf` | Chaphekar N et al., Selective and Time-Dependent Alteration…, European journal of drug me… (2026) | pgx | 7 | [10.1007/s13318-026-01031-z](https://doi.org/10.1007/s13318-026-01031-z) | [42663925](https://www.ncbi.nlm.nih.gov/pubmed/42663925) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Cherstniakova_2001.pdf` | Cherstniakova SA et al., Metabolism of vanoxerine, 1-[2-[bis(4-f…, Drug metabolism and disposi… (2001) | pgx | 7 | not captured | [11502731](https://www.ncbi.nlm.nih.gov/pubmed/11502731) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Cherstniakova_2001.pdf` | Cherstniakova SA et al., Metabolism of vanoxerine, 1-[2-[bis(4-f…, Drug metabolism and disposi… (2001) | pgx | 7 |  | [11502731](https://www.ncbi.nlm.nih.gov/pubmed/11502731) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Ge_2024.pdf` | Ge M et al., Investigation of the drug-drug interact…, Journal of ethnopharmacology (2024) | pgx | 7 | [10.1016/j.jep.2024.118212](https://doi.org/10.1016/j.jep.2024.118212) | [38636577](https://www.ncbi.nlm.nih.gov/pubmed/38636577) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Giri_2022.pdf` | Giri P et al., ZY12201, A Potent TGR5 Agonist: Identif…, Drug metabolism letters (2022) | pgx | 7 | [10.2174/1872312815666220315145945](https://doi.org/10.2174/1872312815666220315145945) | [35293300](https://www.ncbi.nlm.nih.gov/pubmed/35293300) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 | `Kedderis_1991.pdf` | Kedderis LB et al., Disposition of 2,3,7,8-tetrabromodibenz…, Toxicology and applied phar… (1991) | pgx | 7 | [10.1016/0041-008x(91)90145-5](https://doi.org/10.1016/0041-008x(91)90145-5) | [1949032](https://www.ncbi.nlm.nih.gov/pubmed/1949032) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
-| `Lang_1994.pdf` | Lang NP et al., Rapid metabolic phenotypes for acetyltr…, Cancer epidemiology, biomar… (1994) | pgx | 7 | not captured | [7881341](https://www.ncbi.nlm.nih.gov/pubmed/7881341) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Lang_1994.pdf` | Lang NP et al., Rapid metabolic phenotypes for acetyltr…, Cancer epidemiology, biomar… (1994) | pgx | 7 |  | [7881341](https://www.ncbi.nlm.nih.gov/pubmed/7881341) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Lee_2024.pdf` | Lee MS et al., Comparative metabolism of fargesin in h…, Toxicological research (2024) | pgx | 7 | [10.1007/s43188-023-00211-2](https://doi.org/10.1007/s43188-023-00211-2) | [38223669](https://www.ncbi.nlm.nih.gov/pubmed/38223669) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Li_2024.pdf` | Li Q et al., [Pharmacokinetic differences and relate…, Zhongguo Zhong yao za zhi =… (2024) | pgx | 7 | [10.19540/j.cnki.cjcmm.20240616.201](https://doi.org/10.19540/j.cnki.cjcmm.20240616.201) | [39701685](https://www.ncbi.nlm.nih.gov/pubmed/39701685) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Liu_2025.pdf` | Liu FL et al., Metabolic Characteristics of Schisanthe…, Metabolites (2025) | pgx | 7 | [10.3390/metabo15120763](https://doi.org/10.3390/metabo15120763) | [41441005](https://www.ncbi.nlm.nih.gov/pubmed/41441005) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
@@ -264,7 +263,7 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 | `Xie_1995.pdf` | Xie HG et al., High-performance liquid chromatographic…, Journal of chromatography.… (1995) | pgx | 5 | [10.1016/0378-4347(95)00065-q](https://doi.org/10.1016/0378-4347(95)00065-q) | [7550968](https://www.ncbi.nlm.nih.gov/pubmed/7550968) | metadata signals extractable PGX data (CYP2C19) |
 | `Ye_2024.pdf` | Ye Z et al., CYP3A4 and CYP2C19 genetic polymorphism…, Biomedicine & pharmacothera… (2024) | pgx | 5 | [10.1016/j.biopha.2024.116421](https://doi.org/10.1016/j.biopha.2024.116421) | [38719708](https://www.ncbi.nlm.nih.gov/pubmed/38719708) | metadata signals extractable PGX data (CYP3A4) |
 
-<sub>queue written 2026-10-07T15:06:47.131596+00:00</sub>
+<sub>queue written 2026-10-07 15:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -766,5 +765,5 @@ _147 abstract-screened relevant papers lack full text. Retrieve via the DOI, sav
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhippocastani_semen%5D&body=Drug%3A%20hippocastani_semen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hippocastani_semen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

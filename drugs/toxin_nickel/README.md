@@ -4,8 +4,7 @@
 # Nickel
 
 - **generic name:** Nickel
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** [CID 934](https://pubchem.ncbi.nlm.nih.gov/compound/934)
+- **DrugBank:** none · **PubChem:** [CID 934](https://pubchem.ncbi.nlm.nih.gov/compound/934)
 - **groups:** not captured
 
 ## Start here
@@ -61,7 +60,7 @@
 
 - **PubMed hits:** 12355 matched, 140 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -71,7 +70,7 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Menzel_1988.pdf` | Menzel DB, Planning and using PB-PK models: an int…, Toxicology letters (1988) | popPK | 9 | [10.1016/0378-4274(88)90021-5](https://doi.org/10.1016/0378-4274(88)90021-5) | [3176072](https://pubmed.ncbi.nlm.nih.gov/3176072) | The paper describes a PB-PK model for nickel with quantitative parameters (Km, Vmax), but the specific numeric values are not present in the provided abstract text. |
-| `Zhao_2017.pdf` | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | popPK | 9 | not captured | [29903311](https://pubmed.ncbi.nlm.nih.gov/29903311) | The paper presents a PBPK model for nickel with specific quantitative partition coefficients and tissue concentrations provided in the text. |
+| `Zhao_2017.pdf` | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | popPK | 9 |  | [29903311](https://pubmed.ncbi.nlm.nih.gov/29903311) | The paper presents a PBPK model for nickel with specific quantitative partition coefficients and tissue concentrations provided in the text. |
 | `English_1981.pdf` | English JC et al., Toxicokinetics of nickel in rats after…, American Industrial Hygiene… (1981) | popPK | 8 | [10.1080/15298668191420125](https://doi.org/10.1080/15298668191420125) | [7246426](https://pubmed.ncbi.nlm.nih.gov/7246426) | The paper is a toxicokinetic study of nickel in rats reporting distribution and clearance dynamics, but the specific quantitative parameter values (e.g., half-lives, clearance rates) are not explicitly listed in the provided abstract text. |
 | `Nielsen_1994.pdf` | Nielsen GD et al., Effect of tetraethylthiuramdisulphide a…, Pharmacology & toxicology (1994) | popPK | 8 | [10.1111/j.1600-0773.1994.tb00362.x](https://doi.org/10.1111/j.1600-0773.1994.tb00362.x) | [7870700](https://pubmed.ncbi.nlm.nih.gov/7870700) | The paper describes a pharmacokinetic study of nickel in mice, but the provided evidence contains only qualitative descriptions and relative ratios (e.g., "10 times higher", "700 times higher") rather than specific quantitative PK parameter values like clearance or volume. |
 | `Chai_2025.pdf` | Chai X et al., Association between serum cobalt concen…, Journal of trace elements i… (2025) | pd | 5 | [10.1016/j.jtemb.2025.127762](https://doi.org/10.1016/j.jtemb.2025.127762) | [40992113](https://www.ncbi.nlm.nih.gov/pubmed/40992113) | metadata signals extractable PD data (exposure-response) |
@@ -84,9 +83,9 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Peters_2016.pdf` | Peters S et al., SYN-JEM: A Quantitative Job-Exposure Ma…, The Annals of occupational… (2016) | pd | 5 | [10.1093/annhyg/mew034](https://doi.org/10.1093/annhyg/mew034) | [27286764](https://www.ncbi.nlm.nih.gov/pubmed/27286764) | metadata signals extractable PD data (exposure-response) |
 | `Tainio_2015.pdf` | Tainio M, Burden of disease caused by local trans…, Journal of transport & heal… (2015) | pd | 5 | [10.1016/j.jth.2015.06.005](https://doi.org/10.1016/j.jth.2015.06.005) | [26516622](https://www.ncbi.nlm.nih.gov/pubmed/26516622) | metadata signals extractable PD data (exposure-response) |
 | `Franzellitti_2011.pdf` | Franzellitti S et al., Interactive effects of nickel and chlor…, Comparative biochemistry an… (2011) | pgx | 7 | [10.1016/j.cbpc.2011.07.006](https://doi.org/10.1016/j.cbpc.2011.07.006) | [21798369](https://www.ncbi.nlm.nih.gov/pubmed/21798369) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Dawling_2001.pdf` | Dawling S et al., Catechol-O-methyltransferase (COMT)-med…, Cancer research (2001) | pgx | 5 | not captured | [11559542](https://www.ncbi.nlm.nih.gov/pubmed/11559542) | metadata signals extractable PGX data (COMT) |
+| `Dawling_2001.pdf` | Dawling S et al., Catechol-O-methyltransferase (COMT)-med…, Cancer research (2001) | pgx | 5 |  | [11559542](https://www.ncbi.nlm.nih.gov/pubmed/11559542) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-09-08T15:42:49.918061+00:00</sub>
+<sub>queue written 2026-09-08 15:42 UTC</sub>
 
 ## Screened and excluded
 
@@ -242,5 +241,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-09-08 15:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnickel%5D&body=Drug%3A%20nickel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_nickel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-09-08 15:42 UTC</sub>

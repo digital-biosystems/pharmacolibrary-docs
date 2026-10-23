@@ -88,4 +88,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoexipril%5D%20pd_Cawello_2002_ACE_inhibition&body=Drug%3A%20moexipril%0ARecord%3A%20pd_Cawello_2002_ACE_inhibition%0APaper%3A%20Cawello_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [moexipril](drugs/drug_moexipril/)</sub>

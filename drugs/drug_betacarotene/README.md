@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1151 matched, 191 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -91,7 +91,7 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Green_2021.pdf` | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | popPK | 10 | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) | [33188397](https://pubmed.ncbi.nlm.nih.gov/33188397) | The paper presents a compartmental model for betacarotene kinetics in humans and reports quantitative parameters such as bioavailability (9.5%) and bioefficacy (7.3%) in the abstract. |
-| `Novotny_1995.pdf` | Novotny JA et al., Compartmental analysis of the dynamics…, Journal of lipid research (1995) | popPK | 9 | not captured | [7595103](https://pubmed.ncbi.nlm.nih.gov/7595103) | The study reports a compartmental model and qualitative parameters (absorption %, MRT) for beta-carotene in humans, but specific numeric PK values (CL, V, Q) are not explicitly listed in the provided text. |
+| `Novotny_1995.pdf` | Novotny JA et al., Compartmental analysis of the dynamics…, Journal of lipid research (1995) | popPK | 9 |  | [7595103](https://pubmed.ncbi.nlm.nih.gov/7595103) | The study reports a compartmental model and qualitative parameters (absorption %, MRT) for beta-carotene in humans, but specific numeric PK values (CL, V, Q) are not explicitly listed in the provided text. |
 | `Poor_1992.pdf` | Poor CL et al., Evaluation of the preruminant calf as a…, The Journal of nutrition (1992) | popPK | 9 | [10.1093/jn/122.2.262](https://doi.org/10.1093/jn/122.2.262) | [1732467](https://pubmed.ncbi.nlm.nih.gov/1732467) | The study reports a two-compartment model for beta-carotene in calves, but specific numeric parameter values (CL, V, k2) are not explicitly listed in the provided text, only qualitative descriptions and peak times. |
 | `Faulks_2004.pdf` | Faulks RM et al., Kinetics of gastro-intestinal transit a…, European journal of nutriti… (2004) | popPK | 8 | [10.1007/s00394-004-0434-x](https://doi.org/10.1007/s00394-004-0434-x) | [14991265](https://pubmed.ncbi.nlm.nih.gov/14991265) | The study reports a single-compartment model and a specific half-life value (11 min) for beta-carotene absorption/disposal, but lacks detailed clearance or volume parameters. |
 | `Green_2016.pdf` | Green MH et al., Plasma Retinol Kinetics and β-Carotene…, The Journal of nutrition (2016) | popPK | 8 | [10.3945/jn.116.233486](https://doi.org/10.3945/jn.116.233486) | [27511941](https://pubmed.ncbi.nlm.nih.gov/27511941) | The study reports quantitative compartmental model parameters (disposal rate, fractional catabolic rate, stores) for the vitamin A system including beta-carotene bioefficacy in humans, though specific PK parameters like CL or V for beta-carotene alone are not explicitly listed as separate numeric values. |
@@ -125,13 +125,13 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Zalazar_2019.pdf` | Zalazar L et al., Bacterioruberin extracts from a genetic…, Journal of applied microbio… (2019) | pd | 4 | [10.1111/jam.14160](https://doi.org/10.1111/jam.14160) | [30472814](https://www.ncbi.nlm.nih.gov/pubmed/30472814) | metadata signals extractable PD data (EC50) |
 | `Zengin_2015.pdf` | Zengin G et al., Enzyme Inhibitory Properties, Antioxida…, Advances in pharmacological… (2015) | pd | 4 | [10.1155/2015/410675](https://doi.org/10.1155/2015/410675) | [26798334](https://www.ncbi.nlm.nih.gov/pubmed/26798334) | metadata signals extractable PD data (IC50) |
 | `Zhang_2022.pdf` | Zhang X et al., Chemical Composition, Antibacterial, An…, Chemistry & biodiversity (2022) | pd | 4 | [10.1002/cbdv.202100951](https://doi.org/10.1002/cbdv.202100951) | [35344272](https://www.ncbi.nlm.nih.gov/pubmed/35344272) | metadata signals extractable PD data (IC50) |
-| `da_2011.pdf` | da Silva JK et al., Antioxidant capacity and larvicidal and…, Natural product communicati… (2011) | pd | 4 | not captured | [21941916](https://www.ncbi.nlm.nih.gov/pubmed/21941916) | metadata signals extractable PD data (EC50) |
+| `da_2011.pdf` | da Silva JK et al., Antioxidant capacity and larvicidal and…, Natural product communicati… (2011) | pd | 4 |  | [21941916](https://www.ncbi.nlm.nih.gov/pubmed/21941916) | metadata signals extractable PD data (EC50) |
 | `Liu_2003.pdf` | Liu C et al., Exposing ferrets to cigarette smoke and…, The Journal of nutrition (2003) | pgx | 7 | [10.1093/jn/133.1.173](https://doi.org/10.1093/jn/133.1.173) | [12514286](https://www.ncbi.nlm.nih.gov/pubmed/12514286) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
 | `Domarkienė_2022.pdf` | Domarkienė I et al., New associations of serum β-carotene, l…, Food science & nutrition (2022) | pgx | 5 | [10.1002/fsn3.2705](https://doi.org/10.1002/fsn3.2705) | [35282004](https://www.ncbi.nlm.nih.gov/pubmed/35282004) | metadata signals extractable PGX data (CYP2C9) |
 | `Moran_2019.pdf` | Moran NE et al., Single Nucleotide Polymorphisms in β-Ca…, The Journal of nutrition (2019) | pgx | 5 | [10.1093/jn/nxy304](https://doi.org/10.1093/jn/nxy304) | [30801647](https://www.ncbi.nlm.nih.gov/pubmed/30801647) | metadata signals extractable PGX data (ABCB1) |
 | `Stewart_2014.pdf` | Stewart JC, Tomatoes cause under-arm odour, Medical hypotheses (2014) | pgx | 5 | [10.1016/j.mehy.2014.02.001](https://doi.org/10.1016/j.mehy.2014.02.001) | [24576684](https://www.ncbi.nlm.nih.gov/pubmed/24576684) | metadata signals extractable PGX data (ABCC11) |
 
-<sub>queue written 2026-10-05T07:09:13.032083+00:00</sub>
+<sub>queue written 2026-10-05 07:09 UTC</sub>
 
 ## Screened and excluded
 
@@ -415,5 +415,5 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-05 07:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbetacarotene%5D&body=Drug%3A%20betacarotene%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_betacarotene/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 07:09 UTC</sub>

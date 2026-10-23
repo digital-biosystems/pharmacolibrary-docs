@@ -90,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfructose_16_diphosphate%5D%20pd_Dietzler_1975_3_rate_of_glycogen_synthesis&body=Drug%3A%20fructose_16_diphosphate%0ARecord%3A%20pd_Dietzler_1975_3_rate_of_glycogen_synthesis%0APaper%3A%20Dietzler_1975_3%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fructose_16_diphosphate/pd_Dietzler_1975_3_rate_of_glycogen_synthesis%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fructose 1,6-diphosphate](drugs/drug_fructose_16_diphosphate/)</sub>

@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 54 matched, 45 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -88,11 +88,11 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Huang_1990.pdf` | Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990) | popPK | 10 | not captured | [2130609](https://pubmed.ncbi.nlm.nih.gov/2130609) | The paper reports quantitative two-compartment and one-compartment pharmacokinetic parameters (CL, Vd, half-lives) for m-nisoldipine in rats and rabbits. |
+| `Huang_1990.pdf` | Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990) | popPK | 10 |  | [2130609](https://pubmed.ncbi.nlm.nih.gov/2130609) | The paper reports quantitative two-compartment and one-compartment pharmacokinetic parameters (CL, Vd, half-lives) for m-nisoldipine in rats and rabbits. |
 | `Krosuri_2026.pdf` | Krosuri P et al., Pharmacokinetic Studies and Toxicity As…, Cardiovascular & hematologi… (2026) | popPK | 8 | [10.2174/011871529X435644260126080638](https://doi.org/10.2174/011871529X435644260126080638) | [41941298](https://pubmed.ncbi.nlm.nih.gov/41941298) | The study reports non-compartmental PK parameters (t1/2, bioavailability) for nisoldipine analogues in rabbits, but specific numeric values for clearance, volume, or absolute bioavailability are not explicitly listed in the provided text. |
 | `Schaefer_1997.pdf` | Schaefer HG et al., Pharmacokinetic-pharmacodynamic modelli…, European journal of clinica… (1997) | pd | 5 | [10.1007/s002280050233](https://doi.org/10.1007/s002280050233) | [9112062](https://www.ncbi.nlm.nih.gov/pubmed/9112062) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `van_1988.pdf` | van Harten J et al., Pharmacokinetics and hemodynamic effect…, Clinical pharmacology and t… (1988) | pd | 5 | [10.1038/clpt.1988.40](https://doi.org/10.1038/clpt.1988.40) | [3345623](https://www.ncbi.nlm.nih.gov/pubmed/3345623) | metadata signals extractable PD data (sigmoid) |
-| `Liu_1994.pdf` | Liu JJ et al., Synergistic effect of nisoldipine and n…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8301585](https://www.ncbi.nlm.nih.gov/pubmed/8301585) | metadata signals extractable PD data (EC50) |
+| `Liu_1994.pdf` | Liu JJ et al., Synergistic effect of nisoldipine and n…, The Journal of pharmacology… (1994) | pd | 4 |  | [8301585](https://www.ncbi.nlm.nih.gov/pubmed/8301585) | metadata signals extractable PD data (EC50) |
 | `Pijl_1993.pdf` | Pijl AJ et al., Hemodynamic and antiischemic effects of…, Journal of cardiovascular p… (1993) | pd | 4 | [10.1097/00005344-199309000-00006](https://doi.org/10.1097/00005344-199309000-00006) | [7504127](https://www.ncbi.nlm.nih.gov/pubmed/7504127) | metadata signals extractable PD data (EC50) |
 | `Zhang_1994.pdf` | Zhang ZH et al., Ketanserin inhibits depolarization-acti…, Circulation research (1994) | pd | 4 | [10.1161/01.res.75.4.711](https://doi.org/10.1161/01.res.75.4.711) | [7923617](https://www.ncbi.nlm.nih.gov/pubmed/7923617) | metadata signals extractable PD data (EC50) |
 | `Nagaya_2025.pdf` | Nagaya Y et al., In vitro-in vivo scaling of cytochrome…, Drug metabolism and disposi… (2025) | pgx | 8 | [10.1016/j.dmd.2025.100065](https://doi.org/10.1016/j.dmd.2025.100065) | [40199158](https://www.ncbi.nlm.nih.gov/pubmed/40199158) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
@@ -105,7 +105,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ozdemir_1998.pdf` | Ozdemir M et al., Interaction between grapefruit juice an…, European journal of drug me… (1998) | pgx | 7 | [10.1007/BF03189827](https://doi.org/10.1007/BF03189827) | [9625273](https://www.ncbi.nlm.nih.gov/pubmed/9625273) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Sun_2018.pdf` | Sun Y et al., Effects of m-nisoldipine on the activit…, Xenobiotica; the fate of fo… (2018) | pgx | 7 | [10.1080/00498254.2017.1358831](https://doi.org/10.1080/00498254.2017.1358831) | [28756727](https://www.ncbi.nlm.nih.gov/pubmed/28756727) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-07T04:45:52.524709+00:00</sub>
+<sub>queue written 2026-10-07 04:45 UTC</sub>
 
 ## Screened and excluded
 
@@ -150,5 +150,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnisoldipine%5D&body=Drug%3A%20nisoldipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nisoldipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:45 UTC</sub>

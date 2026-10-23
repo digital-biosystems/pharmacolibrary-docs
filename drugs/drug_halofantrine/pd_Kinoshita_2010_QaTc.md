@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhalofantrine%5D%20pd_Kinoshita_2010_QaTc&body=Drug%3A%20halofantrine%0ARecord%3A%20pd_Kinoshita_2010_QaTc%0APaper%3A%20Kinoshita_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_halofantrine/pd_Kinoshita_2010_QaTc%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [halofantrine](drugs/drug_halofantrine/)</sub>

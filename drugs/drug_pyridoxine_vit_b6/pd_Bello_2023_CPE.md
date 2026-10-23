@@ -83,4 +83,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyridoxine_vit_b6%5D%20pd_Bello_2023_CPE&body=Drug%3A%20pyridoxine_vit_b6%0ARecord%3A%20pd_Bello_2023_CPE%0APaper%3A%20Bello_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyridoxine_vit_b6/pd_Bello_2023_CPE%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pyridoxine (vit B6)](drugs/drug_pyridoxine_vit_b6/)</sub>

@@ -3,7 +3,7 @@
 # Bufuralol
 
 - **generic name:** Bufuralol
-- **ATC codes:** not captured
+- **ATC codes:** none (no WHO ATC code)
 - **DrugBank:** [DB06726](https://go.drugbank.com/drugs/DB06726) · **PubChem:** [CID 71733](https://pubchem.ncbi.nlm.nih.gov/compound/71733)
 - **molar mass:** 261.3593 g/mol (C16H23NO2) — DrugBank
 - **groups:** experimental
@@ -47,7 +47,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 551 matched, 233 returned
 - **screened:** 12  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -58,7 +58,7 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Francis_1982.pdf` | Francis RJ et al., Kinetics and metabolism of (+)-, (-)- a…, European journal of clinica… (1982) | popPK | 10 | [10.1007/BF00637501](https://doi.org/10.1007/BF00637501) | [6130953](https://pubmed.ncbi.nlm.nih.gov/6130953) | The study reports qualitative PK parameters (clearance, half-life, AUC) for bufuralol in humans, but no specific numeric values are provided in the evidence. |
 | `Dayer_1982.pdf` | Dayer P et al., The genetic control of bufuralol metabo…, European journal of drug me… (1982) | popPK | 9 | [10.1007/BF03189547](https://doi.org/10.1007/BF03189547) | [6121708](https://pubmed.ncbi.nlm.nih.gov/6121708) | The study reports specific quantitative pharmacokinetic parameters for bufuralol, including elimination half-life (2.7 h) and bioavailability (46%). |
-| `Balant_1983.pdf` | Balant LP et al., Consequences of renal insufficiency on…, International journal of cl… (1983) | popPK | 8 | not captured | [6147317](https://pubmed.ncbi.nlm.nih.gov/6147317) | The paper reports that pharmacokinetic parameters (clearance, AUC) for bufuralol were determined in human subjects with renal insufficiency, but the specific numeric values are not provided in the text. |
+| `Balant_1983.pdf` | Balant LP et al., Consequences of renal insufficiency on…, International journal of cl… (1983) | popPK | 8 |  | [6147317](https://pubmed.ncbi.nlm.nih.gov/6147317) | The paper reports that pharmacokinetic parameters (clearance, AUC) for bufuralol were determined in human subjects with renal insufficiency, but the specific numeric values are not provided in the text. |
 | `Dayer_1986.pdf` | Dayer P et al., Stereo- and regioselectivity of hepatic…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00981130](https://doi.org/10.1007/BF00981130) | [2878813](https://pubmed.ncbi.nlm.nih.gov/2878813) | The study reports qualitative pharmacokinetic findings and a single isomeric ratio (1.84) but lacks explicit numeric values for standard disposition parameters like clearance, volume, or half-life. |
 | `Dayer_1985.pdf` | Dayer P et al., Effect of oxidative polymorphism (debri…, European journal of clinica… (1985) | popPK | 7 | [10.1007/BF00543330](https://doi.org/10.1007/BF00543330) | [2861095](https://pubmed.ncbi.nlm.nih.gov/2861095) | The study reports pharmacokinetics of bufuralol in humans but provides no quantitative disposition parameters (clearance, volume, half-life) in the text; it only mentions a bioavailability value of 43%. |
 | `Balant_1980.pdf` | Balant L et al., Influence of renal failure on the hepat…, Journal of pharmacokinetics… (1980) | popPK | 5 | [10.1007/BF01059544](https://doi.org/10.1007/BF01059544) | [6114166](https://pubmed.ncbi.nlm.nih.gov/6114166) | The abstract describes qualitative trends (increased AUC, decreased presystemic biotransformation) but does not provide any specific quantitative values for clearance, volume of distribution, or half-life in the provided text. |
@@ -67,26 +67,26 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Emoto_2005.pdf` | Emoto C et al., In vitro inhibitory effect of 1-aminobe…, Drug metabolism and pharmac… (2005) | pd | 4 | [10.2133/dmpk.20.351](https://doi.org/10.2133/dmpk.20.351) | [16272753](https://www.ncbi.nlm.nih.gov/pubmed/16272753) | metadata signals extractable PD data (IC50) |
 | `Fasinu_2013.pdf` | Fasinu PS et al., The potential of Hypoxis hemerocallidea…, Pharmaceutical biology (2013) | pd | 4 | [10.3109/13880209.2013.796393](https://doi.org/10.3109/13880209.2013.796393) | [23844611](https://www.ncbi.nlm.nih.gov/pubmed/23844611) | metadata signals extractable PD data (IC50) |
 | `Glass_2019.pdf` | Glass SM et al., Rolapitant Is a Reversible Inhibitor of…, Drug metabolism and disposi… (2019) | pd | 4 | [10.1124/dmd.118.085928](https://doi.org/10.1124/dmd.118.085928) | [30952677](https://www.ncbi.nlm.nih.gov/pubmed/30952677) | metadata signals extractable PD data (IC50) |
-| `Jönsson_1995.pdf` | Jönsson G et al., Budesonide is metabolized by cytochrome…, Drug metabolism and disposi… (1995) | pd | 4 | not captured | [7720517](https://www.ncbi.nlm.nih.gov/pubmed/7720517) | metadata signals extractable PD data (IC50) |
+| `Jönsson_1995.pdf` | Jönsson G et al., Budesonide is metabolized by cytochrome…, Drug metabolism and disposi… (1995) | pd | 4 |  | [7720517](https://www.ncbi.nlm.nih.gov/pubmed/7720517) | metadata signals extractable PD data (IC50) |
 | `Peng_2015.pdf` | Peng Y et al., A comprehensive assay for nine major cy…, Xenobiotica; the fate of fo… (2015) | pd | 4 | [10.3109/00498254.2015.1036954](https://doi.org/10.3109/00498254.2015.1036954) | [26007223](https://www.ncbi.nlm.nih.gov/pubmed/26007223) | metadata signals extractable PD data (IC50) |
 | `Speirs_1986.pdf` | Speirs CJ et al., Quinidine and the identification of dru…, British journal of clinical… (1986) | pd | 4 | [10.1111/j.1365-2125.1986.tb02969.x](https://doi.org/10.1111/j.1365-2125.1986.tb02969.x) | [3567021](https://www.ncbi.nlm.nih.gov/pubmed/3567021) | metadata signals extractable PD data (IC50) |
 | `Takanohashi_2010.pdf` | Takanohashi T et al., Inhibition of human liver microsomal CY…, The Journal of pharmacy and… (2010) | pd | 4 | [10.1211/jpp.62.05.0005](https://doi.org/10.1211/jpp.62.05.0005) | [20609060](https://www.ncbi.nlm.nih.gov/pubmed/20609060) | metadata signals extractable PD data (IC50) |
-| `Tu_1996.pdf` | Tu ZG et al., Inhibitory effects of quinidine and qui…, Zhongguo yao li xue bao = A… (1996) | pd | 4 | not captured | [9863152](https://www.ncbi.nlm.nih.gov/pubmed/9863152) | metadata signals extractable PD data (IC50) |
+| `Tu_1996.pdf` | Tu ZG et al., Inhibitory effects of quinidine and qui…, Zhongguo yao li xue bao = A… (1996) | pd | 4 |  | [9863152](https://www.ncbi.nlm.nih.gov/pubmed/9863152) | metadata signals extractable PD data (IC50) |
 | `Weaver_2003.pdf` | Weaver R et al., Cytochrome P450 inhibition using recomb…, Drug metabolism and disposi… (2003) | pd | 4 | [10.1124/dmd.31.7.955](https://doi.org/10.1124/dmd.31.7.955) | [12814974](https://www.ncbi.nlm.nih.gov/pubmed/12814974) | metadata signals extractable PD data (IC50) |
 | `Yamamoto_2003.pdf` | Yamamoto T et al., High-throughput screening to estimate s…, Xenobiotica; the fate of fo… (2003) | pd | 4 | [10.1080/0049825031000140887](https://doi.org/10.1080/0049825031000140887) | [12936703](https://www.ncbi.nlm.nih.gov/pubmed/12936703) | metadata signals extractable PD data (IC50) |
 | `He_2002.pdf` | He N et al., Inhibitory effects of H1-antihistamines…, European journal of clinica… (2002) | pgx | 8 | [10.1007/s00228-001-0399-0](https://doi.org/10.1007/s00228-001-0399-0) | [11936702](https://www.ncbi.nlm.nih.gov/pubmed/11936702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Obach_1998.pdf` | Obach RS et al., Cytochrome P4502D6 catalyzes the O-deme…, Drug metabolism and disposi… (1998) | pgx | 8 | not captured | [9698290](https://www.ncbi.nlm.nih.gov/pubmed/9698290) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Paulson_1999.pdf` | Paulson SK et al., Evidence for polymorphism in the canine…, Drug metabolism and disposi… (1999) | pgx | 8 | not captured | [10497139](https://www.ncbi.nlm.nih.gov/pubmed/10497139) | metadata signals extractable PGX data (CYP2B11, PK/PD-context) |
+| `Obach_1998.pdf` | Obach RS et al., Cytochrome P4502D6 catalyzes the O-deme…, Drug metabolism and disposi… (1998) | pgx | 8 |  | [9698290](https://www.ncbi.nlm.nih.gov/pubmed/9698290) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Paulson_1999.pdf` | Paulson SK et al., Evidence for polymorphism in the canine…, Drug metabolism and disposi… (1999) | pgx | 8 |  | [10497139](https://www.ncbi.nlm.nih.gov/pubmed/10497139) | metadata signals extractable PGX data (CYP2B11, PK/PD-context) |
 | `van_2021.pdf` | van der Lee M et al., Substrate specificity of CYP2D6 genetic…, Pharmacogenomics (2021) | pgx | 8 | [10.2217/pgs-2021-0093](https://doi.org/10.2217/pgs-2021-0093) | [34569808](https://www.ncbi.nlm.nih.gov/pubmed/34569808) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Basińska-Ziobroń_2015.pdf` | Basińska-Ziobroń A et al., Inhibition of human cytochrome P450 iso…, Pharmacological reports : PR (2015) | pgx | 7 | [10.1016/j.pharep.2015.04.005](https://doi.org/10.1016/j.pharep.2015.04.005) | [26481538](https://www.ncbi.nlm.nih.gov/pubmed/26481538) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Cho_2014.pdf` | Cho DY et al., Selective inhibition of cytochrome P450…, Drug metabolism and disposi… (2014) | pgx | 7 | [10.1124/dmd.113.054296](https://doi.org/10.1124/dmd.113.054296) | [24167220](https://www.ncbi.nlm.nih.gov/pubmed/24167220) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Dalmadi_2003.pdf` | Dalmadi B et al., Identification of metabolic pathways in…, Drug metabolism and disposi… (2003) | pgx | 7 | [10.1124/dmd.31.5.631](https://doi.org/10.1124/dmd.31.5.631) | [12695352](https://www.ncbi.nlm.nih.gov/pubmed/12695352) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Foti_2004.pdf` | Foti RS et al., Impact of incubation conditions on bufu…, Drug metabolism and disposi… (2004) | pgx | 7 | [10.1124/dmd.32.3.295](https://doi.org/10.1124/dmd.32.3.295) | [14977863](https://www.ncbi.nlm.nih.gov/pubmed/14977863) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Hanioka_1998.pdf` | Hanioka N et al., In vitro biotransformation of atrazine…, Chemico-biological interact… (1998) | pgx | 7 | [10.1016/s0009-2797(98)00086-6](https://doi.org/10.1016/s0009-2797(98)00086-6) | [9920461](https://www.ncbi.nlm.nih.gov/pubmed/9920461) | metadata signals extractable PGX data (CYP2B1, PK/PD-context) |
-| `Jacobsen_2000.pdf` | Jacobsen W et al., In vitro evaluation of the disposition…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [11038163](https://www.ncbi.nlm.nih.gov/pubmed/11038163) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Jacobsen_2000.pdf` | Jacobsen W et al., In vitro evaluation of the disposition…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [11038163](https://www.ncbi.nlm.nih.gov/pubmed/11038163) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Li_2004.pdf` | Li XQ et al., Comparison of inhibitory effects of the…, Drug metabolism and disposi… (2004) | pgx | 7 | [10.1124/dmd.32.8.821](https://doi.org/10.1124/dmd.32.8.821) | [15258107](https://www.ncbi.nlm.nih.gov/pubmed/15258107) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Lu_2003.pdf` | Lu P et al., Mechanism-based inhibition of human liv…, Drug metabolism and disposi… (2003) | pgx | 7 | [10.1124/dmd.31.11.1352](https://doi.org/10.1124/dmd.31.11.1352) | [14570767](https://www.ncbi.nlm.nih.gov/pubmed/14570767) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Ma_2000.pdf` | Ma B et al., Drug interactions with calcium channel…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [10640508](https://www.ncbi.nlm.nih.gov/pubmed/10640508) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Ma_2000.pdf` | Ma B et al., Drug interactions with calcium channel…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [10640508](https://www.ncbi.nlm.nih.gov/pubmed/10640508) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Mills_2010.pdf` | Mills BM et al., Current cytochrome P450 phenotyping met…, Drug metabolism and disposi… (2010) | pgx | 7 | [10.1124/dmd.109.030429](https://doi.org/10.1124/dmd.109.030429) | [20007294](https://www.ncbi.nlm.nih.gov/pubmed/20007294) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Selvakumar_2014.pdf` | Selvakumar S et al., Expression and characterization of cyno…, Drug metabolism and disposi… (2014) | pgx | 7 | [10.1124/dmd.113.055491](https://doi.org/10.1124/dmd.113.055491) | [24335510](https://www.ncbi.nlm.nih.gov/pubmed/24335510) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Stringer_2009.pdf` | Stringer RA et al., Evaluation of recombinant cytochrome P4…, Drug metabolism and disposi… (2009) | pgx | 7 | [10.1124/dmd.108.024810](https://doi.org/10.1124/dmd.108.024810) | [19196847](https://www.ncbi.nlm.nih.gov/pubmed/19196847) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -103,7 +103,7 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sandee_2010.pdf` | Sandee D et al., Effects of genetic variants of human P4…, Pharmacogenetics and genomi… (2010) | pgx | 5 | [10.1097/FPC.0b013e32833f4f9b](https://doi.org/10.1097/FPC.0b013e32833f4f9b) | [20940534](https://www.ncbi.nlm.nih.gov/pubmed/20940534) | metadata signals extractable PGX data (CYP2D6) |
 | `Uno_2015.pdf` | Uno Y et al., CYP2D44 polymorphisms in cynomolgus and…, Molecular biology reports (2015) | pgx | 5 | [10.1007/s11033-015-3863-0](https://doi.org/10.1007/s11033-015-3863-0) | [25682269](https://www.ncbi.nlm.nih.gov/pubmed/25682269) | metadata signals extractable PGX data (CYP2D44) |
 
-<sub>queue written 2026-10-22T09:47:54.000902+00:00</sub>
+<sub>queue written 2026-10-22 09:47 UTC</sub>
 
 ## Screened and excluded
 
@@ -245,5 +245,5 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbufuralol%5D&body=Drug%3A%20bufuralol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bufuralol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

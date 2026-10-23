@@ -58,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 82 matched, 82 returned
 - **screened:** 1  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -69,21 +69,21 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Ruban_2001.pdf` | Ruban AV et al., Kinetic analysis of nonphotochemical qu…, Biochemistry (2001) | pd | 5 | [10.1021/bi010370f](https://doi.org/10.1021/bi010370f) | [11502183](https://www.ncbi.nlm.nih.gov/pubmed/11502183) | metadata signals extractable PD data (sigmoid) |
 | `Verhallen_1987.pdf` | Verhallen PF et al., Correlation between calpain-mediated cy…, Biochimica et biophysica ac… (1987) | pd | 5 | [10.1016/0005-2736(87)90170-2](https://doi.org/10.1016/0005-2736(87)90170-2) | [2820487](https://www.ncbi.nlm.nih.gov/pubmed/2820487) | metadata signals extractable PD data (sigmoid) |
-| `Bolger_1987.pdf` | Bolger GT et al., Local anesthetics differentiate dihydro…, The Journal of pharmacology… (1987) | pd | 4 | not captured | [3031279](https://www.ncbi.nlm.nih.gov/pubmed/3031279) | metadata signals extractable PD data (IC50) |
+| `Bolger_1987.pdf` | Bolger GT et al., Local anesthetics differentiate dihydro…, The Journal of pharmacology… (1987) | pd | 4 |  | [3031279](https://www.ncbi.nlm.nih.gov/pubmed/3031279) | metadata signals extractable PD data (IC50) |
 | `Camins_1997.pdf` | Camins A et al., Effect of 1-methyl-4-phenylpyridinium (…, Journal of neural transmiss… (1997) | pd | 4 | [10.1007/BF01291876](https://doi.org/10.1007/BF01291876) | [9444558](https://www.ncbi.nlm.nih.gov/pubmed/9444558) | metadata signals extractable PD data (IC50) |
 | `Donnelly-Roberts_1991.pdf` | Donnelly-Roberts DL et al., Binding sites for alpha-bungarotoxin an…, Biochemistry (1991) | pd | 4 | [10.1021/bi00244a017](https://doi.org/10.1021/bi00244a017) | [1854749](https://www.ncbi.nlm.nih.gov/pubmed/1854749) | metadata signals extractable PD data (IC50) |
 | `Flowers_2002.pdf` | Flowers A et al., Reserpine: interactions with batrachoto…, Cellular and molecular neur… (2002) | pd | 4 | [10.1023/a:1015301610349](https://doi.org/10.1023/a:1015301610349) | [12064513](https://www.ncbi.nlm.nih.gov/pubmed/12064513) | metadata signals extractable PD data (IC50) |
 | `Hattori_1997.pdf` | Hattori M et al., The inhibitory effects of local anesthe…, Anesthesia and analgesia (1997) | pd | 4 | [10.1097/00000539-199702000-00031](https://doi.org/10.1097/00000539-199702000-00031) | [9024038](https://www.ncbi.nlm.nih.gov/pubmed/9024038) | metadata signals extractable PD data (IC50) |
 | `Irita_1986.pdf` | Irita K et al., Cinchocaine and amethocaine inhibit act…, British journal of anaesthe… (1986) | pd | 4 | [10.1093/bja/58.6.639](https://doi.org/10.1093/bja/58.6.639) | [3011043](https://www.ncbi.nlm.nih.gov/pubmed/3011043) | metadata signals extractable PD data (IC50) |
 | `Kansha_1999.pdf` | Kansha M et al., Dibucaine and tetracaine inhibit the ac…, Anesthesiology (1999) | pd | 4 | [10.1097/00000542-199912000-00034](https://doi.org/10.1097/00000542-199912000-00034) | [10598624](https://www.ncbi.nlm.nih.gov/pubmed/10598624) | metadata signals extractable PD data (IC50) |
-| `Katsuki_2002.pdf` | Katsuki H et al., [A comparative study of membrane destru…, Masui. The Japanese journal… (2002) | pd | 4 | not captured | [12229132](https://www.ncbi.nlm.nih.gov/pubmed/12229132) | metadata signals extractable PD data (EC50) |
+| `Katsuki_2002.pdf` | Katsuki H et al., [A comparative study of membrane destru…, Masui. The Japanese journal… (2002) | pd | 4 |  | [12229132](https://www.ncbi.nlm.nih.gov/pubmed/12229132) | metadata signals extractable PD data (EC50) |
 | `Kihlström_1991.pdf` | Kihlström MT et al., Selective effects of some anesthetics a…, Comparative biochemistry an… (1991) | pd | 4 | [10.1016/0305-0491(91)90291-k](https://doi.org/10.1016/0305-0491(91)90291-k) | [1782761](https://www.ncbi.nlm.nih.gov/pubmed/1782761) | metadata signals extractable PD data (IC50) |
 | `Michaelis_1983.pdf` | Michaelis ML et al., Alcohol and local anesthetic effects on…, Biochemical pharmacology (1983) | pd | 4 | [10.1016/0006-2952(83)90612-3](https://doi.org/10.1016/0006-2952(83)90612-3) | [6301510](https://www.ncbi.nlm.nih.gov/pubmed/6301510) | metadata signals extractable PD data (IC50) |
 | `Phillips_1989.pdf` | Phillips WJ et al., Pituitary thyrotropin-releasing hormone…, Molecular endocrinology (Ba… (1989) | pd | 4 | [10.1210/mend-3-9-1345](https://doi.org/10.1210/mend-3-9-1345) | [2558307](https://www.ncbi.nlm.nih.gov/pubmed/2558307) | metadata signals extractable PD data (IC50) |
 | `Reiser_1983.pdf` | Reiser G et al., Tetrodotoxin-sensitive ion channels cha…, Brain research (1983) | pd | 4 | [10.1016/0006-8993(83)90640-6](https://doi.org/10.1016/0006-8993(83)90640-6) | [6299468](https://www.ncbi.nlm.nih.gov/pubmed/6299468) | metadata signals extractable PD data (EC50) |
 | `Woodward_1995.pdf` | Woodward JJ et al., In vitro and in vivo effects of cocaine…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00042-j](https://doi.org/10.1016/0014-2999(95)00042-j) | [7635175](https://www.ncbi.nlm.nih.gov/pubmed/7635175) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T22:32:34.599345+00:00</sub>
+<sub>queue written 2026-10-06 22:32 UTC</sub>
 
 ## Screened and excluded
 
@@ -183,5 +183,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcinchocaine%5D&body=Drug%3A%20cinchocaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cinchocaine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

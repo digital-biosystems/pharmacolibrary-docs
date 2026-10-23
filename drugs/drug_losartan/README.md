@@ -88,7 +88,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 915 matched, 216 returned
 - **screened:** 14  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -97,14 +97,14 @@ _61 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Christ_1994.pdf` | Christ DD et al., The pharmacokinetics and pharmacodynami…, The Journal of pharmacology… (1994) | popPK | 10 | not captured | [8138932](https://pubmed.ncbi.nlm.nih.gov/8138932) | The abstract provides explicit quantitative pharmacokinetic parameters for losartan in dogs, including clearance (22.2 ml/min/kg), volume of distribution (0.30 L/kg), and half-life (41-153 min). |
+| `Christ_1994.pdf` | Christ DD et al., The pharmacokinetics and pharmacodynami…, The Journal of pharmacology… (1994) | popPK | 10 |  | [8138932](https://pubmed.ncbi.nlm.nih.gov/8138932) | The abstract provides explicit quantitative pharmacokinetic parameters for losartan in dogs, including clearance (22.2 ml/min/kg), volume of distribution (0.30 L/kg), and half-life (41-153 min). |
 | `Karatza_2020.pdf` | Karatza E et al., Modelling gastric emptying: A pharmacok…, Basic & clinical pharmacolo… (2020) | popPK | 10 | [10.1111/bcpt.13321](https://doi.org/10.1111/bcpt.13321) | [31514255](https://pubmed.ncbi.nlm.nih.gov/31514255) | The paper describes a population PK model for losartan and its metabolite, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Lankford_1997.pdf` | Lankford SM et al., Pharmacokinetic-pharmacodynamic relatio…, Journal of cardiovascular p… (1997) | popPK | 10 | [10.1097/00005344-199711000-00008](https://doi.org/10.1097/00005344-199711000-00008) | [9388040](https://pubmed.ncbi.nlm.nih.gov/9388040) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for losartan and its active metabolite in pigs. |
 | `Baek_2013.pdf` | Baek IH et al., Pharmacokinetics of angiotensin II rece…, Drug research (2013) | popPK | 9 | [10.1055/s-0033-1341424](https://doi.org/10.1055/s-0033-1341424) | [23539423](https://pubmed.ncbi.nlm.nih.gov/23539423) | The study reports quantitative PK parameters for losartan in dogs, but the specific numeric values are not present in the provided evidence text. |
 | `Karatza_2021.pdf` | Karatza E et al., Investigating the Impact of Gastric Emp…, European journal of drug me… (2021) | popPK | 9 | [10.1007/s13318-021-00683-3](https://doi.org/10.1007/s13318-021-00683-3) | [33768449](https://pubmed.ncbi.nlm.nih.gov/33768449) | The paper describes a population PK model for losartan, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence. |
 | `Shimizu_2012.pdf` | Shimizu R et al., The pharmacokinetic-pharmacodynamic ass…, Drug metabolism and pharmac… (2012) | popPK | 9 | [10.2133/dmpk.dmpk-11-rg-060](https://doi.org/10.2133/dmpk.dmpk-11-rg-060) | [22076447](https://pubmed.ncbi.nlm.nih.gov/22076447) | The study reports a population PK analysis for losartan in rats, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
 | `Khandave_2012.pdf` | Khandave SS et al., Bioequivalence study of two losartan ta…, International journal of cl… (2012) | popPK | 8 | [10.5414/cp201521](https://doi.org/10.5414/cp201521) | [22541840](https://pubmed.ncbi.nlm.nih.gov/22541840) | The study reports pharmacokinetic parameters for losartan in humans, but the specific numeric values are not present in the provided evidence text. |
-| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 | not captured | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
+| `Reid_1993.pdf` | Reid JL, Inhibitors of the renin-angiotensin sys…, Arzneimittel-Forschung (1993) | pd | 5 |  | [8498975](https://www.ncbi.nlm.nih.gov/pubmed/8498975) | metadata signals extractable PD data (concentration-effect) |
 | `Reque_2021.pdf` | Reque R et al., Ecotoxicity of losartan potassium in aq…, Environmental toxicology an… (2021) | pd | 5 | [10.1016/j.etap.2021.103727](https://doi.org/10.1016/j.etap.2021.103727) | [34454063](https://www.ncbi.nlm.nih.gov/pubmed/34454063) | metadata signals extractable PD data (EC50) |
 | `Baan_1998.pdf` | Baan J et al., Effects of angiotensin II and losartan…, Journal of hypertension (1998) | pd | 4 | [10.1097/00004872-199816090-00011](https://doi.org/10.1097/00004872-199816090-00011) | [9746117](https://www.ncbi.nlm.nih.gov/pubmed/9746117) | metadata signals extractable PD data (Emax) |
 | `Bhunia_2017.pdf` | Bhunia SS et al., Molecular modelling studies in explaini…, SAR and QSAR in environment… (2017) | pd | 4 | [10.1080/1062936X.2017.1396247](https://doi.org/10.1080/1062936X.2017.1396247) | [29135287](https://www.ncbi.nlm.nih.gov/pubmed/29135287) | metadata signals extractable PD data (IC50) |
@@ -124,7 +124,7 @@ _61 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Spasov_2014.pdf` | Spasov AA et al., In vitro method of studying the angiote…, Bulletin of experimental bi… (2014) | pd | 4 | [10.1007/s10517-014-2705-8](https://doi.org/10.1007/s10517-014-2705-8) | [25403411](https://www.ncbi.nlm.nih.gov/pubmed/25403411) | metadata signals extractable PD data (IC50) |
 | `Vanderheyden_1999.pdf` | Vanderheyden PM et al., Distinction between surmountable and in…, British journal of pharmaco… (1999) | pd | 4 | [10.1038/sj.bjp.0702398](https://doi.org/10.1038/sj.bjp.0702398) | [10193788](https://www.ncbi.nlm.nih.gov/pubmed/10193788) | metadata signals extractable PD data (EC50) |
 | `Zeng_2005.pdf` | Zeng C et al., Interaction of angiotensin II type 1 an…, Hypertension (Dallas, Tex.… (2005) | pd | 4 | [10.1161/01.HYP.0000155212.33212.99](https://doi.org/10.1161/01.HYP.0000155212.33212.99) | [15699451](https://www.ncbi.nlm.nih.gov/pubmed/15699451) | metadata signals extractable PD data (EC50) |
-| `Zhang_2001.pdf` | Zhang J et al., Effect of angiotensin II receptor antag…, Chinese medical sciences jo… (2001) | pd | 4 | not captured | [12901495](https://www.ncbi.nlm.nih.gov/pubmed/12901495) | metadata signals extractable PD data (EC50) |
+| `Zhang_2001.pdf` | Zhang J et al., Effect of angiotensin II receptor antag…, Chinese medical sciences jo… (2001) | pd | 4 |  | [12901495](https://www.ncbi.nlm.nih.gov/pubmed/12901495) | metadata signals extractable PD data (EC50) |
 | `Bae_2012.pdf` | Bae JW et al., Effects of CYP2C9*1/*3 and *1/*13 on th…, International journal of cl… (2012) | pgx | 8 | [10.5414/CP201467](https://doi.org/10.5414/CP201467) | [22735459](https://www.ncbi.nlm.nih.gov/pubmed/22735459) | metadata signals extractable PGX data (CYP2C9*1, PK/PD-context) |
 | `Cabaleiro_2013.pdf` | Cabaleiro T et al., Evaluation of the relationship between…, Drug metabolism and disposi… (2013) | pgx | 8 | [10.1124/dmd.112.046292](https://doi.org/10.1124/dmd.112.046292) | [23118328](https://www.ncbi.nlm.nih.gov/pubmed/23118328) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
 | `Falvella_2016.pdf` | Falvella FS et al., Pharmacogenetic approach to losartan in…, Drug metabolism and persona… (2016) | pgx | 8 | [10.1515/dmpt-2016-0006](https://doi.org/10.1515/dmpt-2016-0006) | [27474842](https://www.ncbi.nlm.nih.gov/pubmed/27474842) | metadata signals extractable PGX data (CYP2C9*2, PK/PD-context) |
@@ -152,14 +152,14 @@ _61 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yang_2011.pdf` | Yang SH et al., Effects of HMG-CoA reductase inhibitors…, Pharmacology (2011) | pgx | 7 | [10.1159/000328773](https://doi.org/10.1159/000328773) | [21709429](https://www.ncbi.nlm.nih.gov/pubmed/21709429) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Yang_2016.pdf` | Yang R et al., Drug Interactions with Angiotensin Rece…, Current drug metabolism (2016) | pgx | 7 | [10.2174/1389200217666160524143843](https://doi.org/10.2174/1389200217666160524143843) | [27216792](https://www.ncbi.nlm.nih.gov/pubmed/27216792) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Zhao_2019.pdf` | Zhao Q et al., Effects of quercetin on the pharmacokin…, Xenobiotica; the fate of fo… (2019) | pgx | 7 | [10.1080/00498254.2018.1478168](https://doi.org/10.1080/00498254.2018.1478168) | [29768080](https://www.ncbi.nlm.nih.gov/pubmed/29768080) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
-| `Arslanbekova_2013.pdf` | Arslanbekova SM et al., [Relationship between warfarin dosing a…, Kardiologiia (2013) | pgx | 5 | not captured | [24800477](https://www.ncbi.nlm.nih.gov/pubmed/24800477) | metadata signals extractable PGX data (CYP2C9) |
+| `Arslanbekova_2013.pdf` | Arslanbekova SM et al., [Relationship between warfarin dosing a…, Kardiologiia (2013) | pgx | 5 |  | [24800477](https://www.ncbi.nlm.nih.gov/pubmed/24800477) | metadata signals extractable PGX data (CYP2C9) |
 | `Byeon_2016.pdf` | Byeon JY et al., Effects of ABCB1 Genetic Polymorphism o…, Clinical therapeutics (2016) | pgx | 5 | [10.1016/j.clinthera.2016.07.139](https://doi.org/10.1016/j.clinthera.2016.07.139) | [27673635](https://www.ncbi.nlm.nih.gov/pubmed/27673635) | metadata signals extractable PGX data (ABCB1) |
 | `Chen_2014.pdf` | Chen SZ et al., Drug-drug interaction of losartan and g…, International journal of cl… (2014) | pgx | 5 | [10.5414/CP202071](https://doi.org/10.5414/CP202071) | [24986093](https://www.ncbi.nlm.nih.gov/pubmed/24986093) | metadata signals extractable PGX data (CYP2C9*1) |
 | `Eadon_2022.pdf` | Eadon MT et al., Pharmacogenomics of Hypertension in CKD…, Kidney360 (2022) | pgx | 5 | [10.34067/kid.0005362021](https://doi.org/10.34067/kid.0005362021) | [35342886](https://www.ncbi.nlm.nih.gov/pubmed/35342886) | metadata signals extractable PGX data (CYP2C9) |
 | `Lajer_2007.pdf` | Lajer M et al., CYP2C9 variant modifies blood pressure-…, Diabetic medicine : a journ… (2007) | pgx | 5 | [10.1111/j.1464-5491.2007.02086.x](https://doi.org/10.1111/j.1464-5491.2007.02086.x) | [17305793](https://www.ncbi.nlm.nih.gov/pubmed/17305793) | metadata signals extractable PGX data (CYP2C9) |
 | `Thu_2016.pdf` | Thu OK et al., Effect of commercial Rhodiola rosea on…, European journal of clinica… (2016) | pgx | 5 | [10.1007/s00228-015-1988-7](https://doi.org/10.1007/s00228-015-1988-7) | [26613955](https://www.ncbi.nlm.nih.gov/pubmed/26613955) | metadata signals extractable PGX data (CYP1A2) |
 
-<sub>queue written 2026-10-07T07:56:13.089832+00:00</sub>
+<sub>queue written 2026-10-07 07:56 UTC</sub>
 
 ## Screened and excluded
 
@@ -362,5 +362,5 @@ _61 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blosartan%5D&body=Drug%3A%20losartan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_losartan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

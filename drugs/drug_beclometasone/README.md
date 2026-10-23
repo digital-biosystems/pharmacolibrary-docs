@@ -4,7 +4,7 @@
 
 - **generic name:** beclometasone
 - **ATC codes:** `A07EA07`, `D07AC15`, `R01AD01`, `R03BA01`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -35,7 +35,7 @@ _not available_
 
 - **PubMed hits:** 101 matched, 98 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -46,7 +46,7 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Agertoft_2003.pdf` | Agertoft L et al., Influence of particle size on lung depo…, Pediatric pulmonology (2003) | popPK | 9 | [10.1002/ppul.10238](https://doi.org/10.1002/ppul.10238) | [12567387](https://pubmed.ncbi.nlm.nih.gov/12567387) | The study reports quantitative PK parameters (Vd, t1/2, CL) for beclomethasone dipropionate and its metabolite 17-BMP in children. |
 | `Small_2018.pdf` | Small CJ et al., Pharmacokinetics of Beclomethasone Dipr…, Journal of aerosol medicine… (2018) | popPK | 9 | [10.1089/jamp.2017.1397](https://doi.org/10.1089/jamp.2017.1397) | [28937845](https://pubmed.ncbi.nlm.nih.gov/28937845) | The study reports PK parameters for 17-BMP (active metabolite of beclomethasone), including half-life (~4 hours) and relative exposure metrics, but lacks specific numeric values for clearance, volume, or absolute AUC/Cmax. |
-| `Chanoine_1991.pdf` | Chanoine F et al., Pharmacokinetics of butixocort 21-propi…, Drug metabolism and disposi… (1991) | popPK | 8 | not captured | [1676668](https://pubmed.ncbi.nlm.nih.gov/1676668) | The study reports pharmacokinetic parameters for beclomethasone dipropionate (BDP) and its metabolite beclomethasone monopropionate (BMP) in rats, but specific numeric values for clearance, volume, or half-life are not present in the provided abstract text. |
+| `Chanoine_1991.pdf` | Chanoine F et al., Pharmacokinetics of butixocort 21-propi…, Drug metabolism and disposi… (1991) | popPK | 8 |  | [1676668](https://pubmed.ncbi.nlm.nih.gov/1676668) | The study reports pharmacokinetic parameters for beclomethasone dipropionate (BDP) and its metabolite beclomethasone monopropionate (BMP) in rats, but specific numeric values for clearance, volume, or half-life are not present in the provided abstract text. |
 | `Esposito-Festen_2007.pdf` | Esposito-Festen JE et al., Pharmacokinetics of inhaled monodispers…, British journal of clinical… (2007) | popPK | 8 | [10.1111/j.1365-2125.2007.02894.x](https://doi.org/10.1111/j.1365-2125.2007.02894.x) | [17439539](https://pubmed.ncbi.nlm.nih.gov/17439539) | The study reports quantitative PK parameters (Cmax, AUC, half-life) for 17-beclomethasone monopropionate, the primary metabolite of beclomethasone dipropionate, in human subjects. |
 | `Harrison_1997.pdf` | Harrison LI et al., Pharmacokinetics and dose proportionali…, Biopharmaceutics & drug dis… (1997) | popPK | 8 | [10.1002/(sici)1099-081x(199710)18:7&lt;635::aid-bdd53&gt;3.0.co;2-y](https://doi.org/10.1002/(sici)1099-081x(199710)18:7<635::aid-bdd53>3.0.co;2-y) | [9330783](https://pubmed.ncbi.nlm.nih.gov/9330783) | The study reports pharmacokinetic parameters (Cmax, AUC) for beclomethasone in humans, but specific numeric values are not provided in the text, only ratios and qualitative descriptions. |
 | `Harrison_1999.pdf` | Harrison LI et al., Adrenal effects and pharmacokinetics of…, The Journal of pharmacy and… (1999) | popPK | 8 | [10.1211/0022357991772439](https://doi.org/10.1211/0022357991772439) | [10344626](https://pubmed.ncbi.nlm.nih.gov/10344626) | The study reports pharmacokinetics of beclomethasone dipropionate in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
@@ -56,7 +56,7 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Teramoto_2006.pdf` | Teramoto T et al., Pharmacokinetics of beclomethasone dipr…, Allergology international :… (2006) | popPK | 8 | [10.2332/allergolint.55.317](https://doi.org/10.2332/allergolint.55.317) | [17075274](https://pubmed.ncbi.nlm.nih.gov/17075274) | The study reports quantitative non-compartmental pharmacokinetic parameters (AUC, Cmax, t1/2) for beclomethasone 17-monopropionate, the major metabolite of beclomethasone dipropionate, in human subjects. |
 | `Uchida_2025.pdf` | Uchida A et al., Novel Enteric Microsphere of Beclometha…, Biopharmaceutics & drug dis… (2025) | popPK | 8 | [10.1002/bdd.70005](https://doi.org/10.1002/bdd.70005) | [40202075](https://pubmed.ncbi.nlm.nih.gov/40202075) | The study reports PK parameters (bioavailability, tissue-to-plasma partition) for beclomethasone dipropionate and its metabolite in rats, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided abstract text. |
 
-<sub>queue written 2026-10-04T19:11:11.594732+00:00</sub>
+<sub>queue written 2026-10-04 19:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -162,5 +162,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbeclometasone%5D&body=Drug%3A%20beclometasone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_beclometasone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# myocardial Na+-K+-ATPase activity — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0), ollama:gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span>
+# myocardial Na+-K+-ATPase activity — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -53,15 +53,14 @@ Almotrefi AA et al., The effect of modifying potassium conce…, General pharmac
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/7 fields) | 7 |
-| `ollama:gpt-oss:120b` | secondary_empty | 0.0 (0/7 fields) | 7 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -72,13 +71,6 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 | `einfracz:gpt-oss-120b` | `parameters[Q100]` | 12.3 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q322]` | 15.5 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q324]` | 24.5 |  | only_one_extracted |
-| `ollama:gpt-oss:120b` | `driver_compound` | tocainide |  | mismatch |
-| `ollama:gpt-oss:120b` | `effect_direction` | inhibition |  | mismatch |
-| `ollama:gpt-oss:120b` | `effect_form` | unknown |  | mismatch |
-| `ollama:gpt-oss:120b` | `model_family` | unknown |  | mismatch |
-| `ollama:gpt-oss:120b` | `parameters[Q100]` | 12.3 |  | only_one_extracted |
-| `ollama:gpt-oss:120b` | `parameters[Q322]` | 15.5 |  | only_one_extracted |
-| `ollama:gpt-oss:120b` | `parameters[Q324]` | 24.5 |  | only_one_extracted |
 
 </details>
 
@@ -111,4 +103,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btocainide%5D%20pd_Almotrefi_1991_Na_K_ATPase&body=Drug%3A%20tocainide%0ARecord%3A%20pd_Almotrefi_1991_Na_K_ATPase%0APaper%3A%20Almotrefi_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tocainide/pd_Almotrefi_1991_Na_K_ATPase%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [tocainide](drugs/drug_tocainide/)</sub>

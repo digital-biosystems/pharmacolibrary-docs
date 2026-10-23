@@ -6,7 +6,7 @@ The site ships three SQLite databases. Each runs in the browser (the Query and S
 |---|---|---|---|---|
 | Query database | [pharmacolibrary-312ae7d078.sqlite](data/pharmacolibrary-312ae7d078.sqlite) | 15.5 MB | 16,462 records, 35,537 parameters, 2,176 drugs | licence not set yet; each record cites its source paper |
 | Passage database | [knowledge-9d6a3f9763.sqlite](data/knowledge-9d6a3f9763.sqlite) | 58.6 MB | 45,122 passages for 2,173 drugs: DrugBank 16,622, ClinPGx guideline 2,476, ClinPGx clinical 1,698, PubMed abstracts 24,326 | DrugBank CC BY-NC 4.0; ClinPGx CC BY-SA 4.0; abstracts per paper |
-| ADME sites database | [adme-34bbb38324.sqlite](data/adme-34bbb38324.sqlite) | 7.4 MB | 12,084 drugs, 35,968 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
+| ADME sites database | [adme-7fe8f1367f.sqlite](data/adme-7fe8f1367f.sqlite) | 7.4 MB | 12,084 drugs, 35,968 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
 
 ## Query database
 

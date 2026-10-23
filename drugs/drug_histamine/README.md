@@ -4,7 +4,7 @@
 
 - **generic name:** Histamine
 - **ATC codes:** `L03AX14`, `V04CG03`
-- **DrugBank:** [DB05381](https://go.drugbank.com/drugs/DB05381) · **PubChem:** not captured
+- **DrugBank:** [DB05381](https://go.drugbank.com/drugs/DB05381) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -44,14 +44,12 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | liver | `SLC22A1` unknown | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABP1 (transport), HNMT (metabolism), HNMT (substrate), HRH1 (target), HRH2 (target), HRH3 (target), HRH4 (target), SLC18A2 (unknown).</sub>
 
@@ -73,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4504 matched, 117 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -91,17 +89,17 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Oliveira_2006.pdf` | Oliveira Rde C et al., Spasmolytic action of the methanol extr…, Zeitschrift fur Naturforsch… (2006) | pd | 4 | [10.1515/znc-2006-11-1205](https://doi.org/10.1515/znc-2006-11-1205) | [17294689](https://www.ncbi.nlm.nih.gov/pubmed/17294689) | metadata signals extractable PD data (IC50) |
 | `Reviriego_1990.pdf` | Reviriego J et al., Actions of vasoactive drugs on human pl…, General pharmacology (1990) | pd | 4 | [10.1016/0306-3623(90)91024-l](https://doi.org/10.1016/0306-3623(90)91024-l) | [2276590](https://www.ncbi.nlm.nih.gov/pubmed/2276590) | metadata signals extractable PD data (EC50) |
 | `Yanovsky_2011.pdf` | Yanovsky Y et al., L-Dopa activates histaminergic neurons, The Journal of physiology (2011) | pd | 4 | [10.1113/jphysiol.2010.203257](https://doi.org/10.1113/jphysiol.2010.203257) | [21242252](https://www.ncbi.nlm.nih.gov/pubmed/21242252) | metadata signals extractable PD data (EC50) |
-| `Yu_1992.pdf` | Yu DY et al., Agonist response of human isolated post…, Investigative ophthalmology… (1992) | pd | 4 | not captured | [1346127](https://www.ncbi.nlm.nih.gov/pubmed/1346127) | metadata signals extractable PD data (EC50) |
+| `Yu_1992.pdf` | Yu DY et al., Agonist response of human isolated post…, Investigative ophthalmology… (1992) | pd | 4 |  | [1346127](https://www.ncbi.nlm.nih.gov/pubmed/1346127) | metadata signals extractable PD data (EC50) |
 | `Jang_2025.pdf` | Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025) | pgx | 8 | [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1) | [40439884](https://www.ncbi.nlm.nih.gov/pubmed/40439884) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Kinoshita_2004.pdf` | Kinoshita Y, Review article: treatment for gastro-oe…, Alimentary pharmacology & t… (2004) | pgx | 8 | [10.1111/j.1365-2036.2004.02223.x](https://doi.org/10.1111/j.1365-2036.2004.02223.x) | [15575867](https://www.ncbi.nlm.nih.gov/pubmed/15575867) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Knadler_2011.pdf` | Knadler MP et al., Duloxetine: clinical pharmacokinetics a…, Clinical pharmacokinetics (2011) | pgx | 8 | [10.2165/11539240-000000000-00000](https://doi.org/10.2165/11539240-000000000-00000) | [21366359](https://www.ncbi.nlm.nih.gov/pubmed/21366359) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Umukoro_2021.pdf` | Umukoro NN et al., Pharmacogenomics of oxycodone: a narrat…, Pharmacogenomics (2021) | pgx | 8 | [10.2217/pgs-2020-0143](https://doi.org/10.2217/pgs-2020-0143) | [33728947](https://www.ncbi.nlm.nih.gov/pubmed/33728947) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Yasuda_1995.pdf` | Yasuda SU et al., Chlorpheniramine plasma concentration a…, Clinical pharmacology and t… (1995) | pgx | 8 | [10.1016/0009-9236(95)90199-X](https://doi.org/10.1016/0009-9236(95)90199-X) | [7648771](https://www.ncbi.nlm.nih.gov/pubmed/7648771) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Cardona_1999.pdf` | Cardona Pera D, [Drug-food interactions], Nutricion hospitalaria (1999) | pgx | 7 | not captured | [10548035](https://www.ncbi.nlm.nih.gov/pubmed/10548035) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Fontes-Carvalho_2010.pdf` | Fontes-Carvalho R et al., [Clopidogrel--proton pump inhibitors dr…, Revista portuguesa de cardi… (2010) | pgx | 7 | not captured | [21268429](https://www.ncbi.nlm.nih.gov/pubmed/21268429) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Cardona_1999.pdf` | Cardona Pera D, [Drug-food interactions], Nutricion hospitalaria (1999) | pgx | 7 |  | [10548035](https://www.ncbi.nlm.nih.gov/pubmed/10548035) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Fontes-Carvalho_2010.pdf` | Fontes-Carvalho R et al., [Clopidogrel--proton pump inhibitors dr…, Revista portuguesa de cardi… (2010) | pgx | 7 |  | [21268429](https://www.ncbi.nlm.nih.gov/pubmed/21268429) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Schwasinger-Schmidt_2019.pdf` | Schwasinger-Schmidt TE et al., Other Antidepressants, Handbook of experimental ph… (2019) | pgx | 7 | [10.1007/164_2018_167](https://doi.org/10.1007/164_2018_167) | [30194544](https://www.ncbi.nlm.nih.gov/pubmed/30194544) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06T23:17:53.383854+00:00</sub>
+<sub>queue written 2026-10-06 23:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -196,5 +194,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhistamine%5D&body=Drug%3A%20histamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_histamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

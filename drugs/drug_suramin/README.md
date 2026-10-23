@@ -5,7 +5,7 @@
 
 - **generic name:** Suramin
 - **ATC codes:** `P01CX02`
-- **DrugBank:** [DB04786](https://go.drugbank.com/drugs/DB04786) · **PubChem:** not captured
+- **DrugBank:** [DB04786](https://go.drugbank.com/drugs/DB04786) · **PubChem:** none
 - **groups:** investigational
 
 ## About
@@ -132,7 +132,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 672 matched, 71 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 15  ·  extracted 14  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 15  ·  extracted 14  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -142,25 +142,25 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Kosarek_2006.pdf` | Kosarek CE et al., Phase I evaluation of low-dose suramin…, Journal of veterinary inter… (2006) | popPK | 9 | [10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2](https://doi.org/10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2) | [17063712](https://pubmed.ncbi.nlm.nih.gov/17063712) | Original PK study in dogs reporting suramin's own disposition parameters (V, CL, half-lives, 2-compartment model) with numeric values in the abstract. |
-| `Scher_1992.pdf` | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | popPK | 9 | not captured | [1727387](https://pubmed.ncbi.nlm.nih.gov/1727387) | Population PK model for suramin in humans with numeric compartment volumes and half-lives reported directly in the abstract. |
-| `Piscitelli_1997.pdf` | Piscitelli SC et al., Pharmacometric analysis of the effect o…, Pharmacotherapy (1997) | popPK | 8 | not captured | [9165547](https://pubmed.ncbi.nlm.nih.gov/9165547) | Population PK of suramin in humans with a three-compartment model, but numeric parameter values (CL, V) are not given in the evidence beyond a 36% clearance change. |
+| `Scher_1992.pdf` | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | popPK | 9 |  | [1727387](https://pubmed.ncbi.nlm.nih.gov/1727387) | Population PK model for suramin in humans with numeric compartment volumes and half-lives reported directly in the abstract. |
+| `Piscitelli_1997.pdf` | Piscitelli SC et al., Pharmacometric analysis of the effect o…, Pharmacotherapy (1997) | popPK | 8 |  | [9165547](https://pubmed.ncbi.nlm.nih.gov/9165547) | Population PK of suramin in humans with a three-compartment model, but numeric parameter values (CL, V) are not given in the evidence beyond a 36% clearance change. |
 | `Hutson_1993.pdf` | Hutson PR et al., Evidence of an absorption phase after s…, Cancer chemotherapy and pha… (1993) | popPK | 7 | [10.1007/BF00685042](https://doi.org/10.1007/BF00685042) | [8453691](https://pubmed.ncbi.nlm.nih.gov/8453691) | Human phase I PK modeling of suramin with a two-compartment model, but the evidence contains almost no numeric parameter values (only a 3.8 h distribution phase); full parameters likely in tables/figures not provided. |
 | `Reyno_1995.pdf` | Reyno LM et al., Development and validation of a pharmac…, Journal of clinical oncolog… (1995) | popPK | 7 | [10.1200/JCO.1995.13.9.2187](https://doi.org/10.1200/JCO.1995.13.9.2187) | [7666077](https://pubmed.ncbi.nlm.nih.gov/7666077) | Population-PK-based fixed dosing of suramin in patients, but the numeric PK parameter values (CL, V) are not present in the abstract text. |
 | `Fairlamb_1980.pdf` | Fairlamb AH et al., Uptake of the trypanocidal drug suramin…, Molecular and biochemical p… (1980) | popPK | 6 | [10.1016/0166-6851(80)90050-x](https://doi.org/10.1016/0166-6851(80)90050-x) | [6108510](https://pubmed.ncbi.nlm.nih.gov/6108510) | Rat PK described as two-compartment model with biexponential decay, but no numeric CL/V/half-life values appear in the evidence. |
 | `van_1992.pdf` | van Rijswijk RE et al., Suramin: rapid loading and weekly maint…, Journal of clinical oncolog… (1992) | popPK | 6 | [10.1200/JCO.1992.10.11.1788](https://doi.org/10.1200/JCO.1992.10.11.1788) | [1403059](https://pubmed.ncbi.nlm.nih.gov/1403059) | Human suramin PK study with Bayesian population modeling, but numeric disposition parameters (CL, V) are not given in the evidence—only concentration targets. |
 | `Rosen_1996.pdf` | Rosen PJ et al., Suramin in hormone-refractory metastati…, Journal of clinical oncolog… (1996) | popPK | 5 | [10.1200/JCO.1996.14.5.1626](https://doi.org/10.1200/JCO.1996.14.5.1626) | [8622081](https://pubmed.ncbi.nlm.nih.gov/8622081) | Human suramin study using a three-compartment PK model for dosing, but no numeric PK parameter values (CL, V, half-life) are reported in the evidence. |
 | `Barajas-López_1993.pdf` | Barajas-López C et al., Suramin increases the efficacy of ATP t…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0014-2999(93)90631-q](https://doi.org/10.1016/0014-2999(93)90631-q) | [8119311](https://www.ncbi.nlm.nih.gov/pubmed/8119311) | metadata signals extractable PD data (EC50) |
-| `Evans_1995.pdf` | Evans RJ et al., Pharmacological characterization of het…, Molecular pharmacology (1995) | pd | 4 | not captured | [7544432](https://www.ncbi.nlm.nih.gov/pubmed/7544432) | metadata signals extractable PD data (EC50) |
-| `Kumar_1987.pdf` | Kumar S, The response of adult and free-living s…, Revista de biologia tropical (1987) | pd | 4 | not captured | [3444926](https://www.ncbi.nlm.nih.gov/pubmed/3444926) | metadata signals extractable PD data (EC50) |
+| `Evans_1995.pdf` | Evans RJ et al., Pharmacological characterization of het…, Molecular pharmacology (1995) | pd | 4 |  | [7544432](https://www.ncbi.nlm.nih.gov/pubmed/7544432) | metadata signals extractable PD data (EC50) |
+| `Kumar_1987.pdf` | Kumar S, The response of adult and free-living s…, Revista de biologia tropical (1987) | pd | 4 |  | [3444926](https://www.ncbi.nlm.nih.gov/pubmed/3444926) | metadata signals extractable PD data (EC50) |
 | `Mallard_1992.pdf` | Mallard N et al., Suramin: a selective inhibitor of purin…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90004-n](https://doi.org/10.1016/0014-2999(92)90004-n) | [1330614](https://www.ncbi.nlm.nih.gov/pubmed/1330614) | metadata signals extractable PD data (EC50) |
 | `Townsend-Nicholson_1999.pdf` | Townsend-Nicholson A et al., Molecular cloning, functional character…, Brain research. Molecular b… (1999) | pd | 4 | [10.1016/s0169-328x(98)00328-3](https://doi.org/10.1016/s0169-328x(98)00328-3) | [9931497](https://www.ncbi.nlm.nih.gov/pubmed/9931497) | metadata signals extractable PD data (EC50) |
 | `Volsky_1992.pdf` | Volsky DJ et al., Evaluation of multiple parameters of HI…, Antiviral research (1992) | pd | 4 | [10.1016/0166-3542(92)90028-4](https://doi.org/10.1016/0166-3542(92)90028-4) | [1322647](https://www.ncbi.nlm.nih.gov/pubmed/1322647) | metadata signals extractable PD data (EC50) |
 | `Wang_2014.pdf` | Wang Y et al., Suramin inhibits EV71 infection, Antiviral research (2014) | pd | 4 | [10.1016/j.antiviral.2013.12.008](https://doi.org/10.1016/j.antiviral.2013.12.008) | [24374150](https://www.ncbi.nlm.nih.gov/pubmed/24374150) | metadata signals extractable PD data (IC50) |
 | `Zhong_2000.pdf` | Zhong Y et al., Pharmacological comparison of P2X recep…, Neuropharmacology (2000) | pd | 4 | [10.1016/s0028-3908(99)00145-8](https://doi.org/10.1016/s0028-3908(99)00145-8) | [10670412](https://www.ncbi.nlm.nih.gov/pubmed/10670412) | metadata signals extractable PD data (EC50) |
 | `von_1995.pdf` | von Kügelgen I et al., Vasoconstrictor responses to the P2x-pu…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb16685.x](https://doi.org/10.1111/j.1476-5381.1995.tb16685.x) | [8528582](https://www.ncbi.nlm.nih.gov/pubmed/8528582) | metadata signals extractable PD data (EC50) |
-| `Hutson_1998.pdf` | Hutson PR et al., Renal clearance, tissue distribution, a…, Clinical cancer research :… (1998) | pgx | 7 | not captured | [9626459](https://www.ncbi.nlm.nih.gov/pubmed/9626459) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Hutson_1998.pdf` | Hutson PR et al., Renal clearance, tissue distribution, a…, Clinical cancer research :… (1998) | pgx | 7 |  | [9626459](https://www.ncbi.nlm.nih.gov/pubmed/9626459) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-07T09:06:44.322505+00:00</sub>
+<sub>queue written 2026-10-07 09:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -217,5 +217,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 09:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin%5D&body=Drug%3A%20suramin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:06 UTC</sub>

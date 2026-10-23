@@ -69,4 +69,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenralizumab%5D%20pd_Jin_2025_AAER&body=Drug%3A%20benralizumab%0ARecord%3A%20pd_Jin_2025_AAER%0APaper%3A%20Jin_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benralizumab/pd_Jin_2025_AAER%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [benralizumab](drugs/drug_benralizumab/)</sub>

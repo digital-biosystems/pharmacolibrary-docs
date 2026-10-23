@@ -66,4 +66,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D%20pd_Darwish_2012_MSLT&body=Drug%3A%20modafinil%0ARecord%3A%20pd_Darwish_2012_MSLT%0APaper%3A%20Darwish_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/pd_Darwish_2012_MSLT%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [modafinil](drugs/drug_modafinil/)</sub>

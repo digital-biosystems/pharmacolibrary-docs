@@ -156,6 +156,246 @@ Carboplatin is a platinum-based anticancer drug used to treat many cancers, incl
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+25 reaction(s) reported in 17 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity. | 30-40% | germline genetic variation (unknown unknown); elevated serum SDMA; reduced glomerular filtration rate (GFR); maropitant | laboratory: neutrophil count; laboratory: complete blood count (CBC) | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213), [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+| Thrombocytopenia | Thrombocytopenia is a myelosuppressive adverse effect associated with carboplatin administration in dogs, characterized by a reduction in thrombocyte blood count, with the nadir generally occurring 14 days after administration. | 66 ± 16% | AUC0-∞; dose (mg/kg); elevated SDMA; n/a (n/a n/a) | laboratory: thrombocytes blood count; hospital: complete blood count (CBC) | [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+| Anemia | In a phase II trial of carboplatin and bevacizumab, 29 out of 38 patients (76%) experienced adverse events classified as Hemoglobin abnormalities, with 44% of the HER2-negative cohort (4/9) and 34% of the HER2-positive cohort (10/29) affected. | 29 (76%) | — | — | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) |
+| Febrile neutropenia | One dog with elevated SDMA was hospitalized for febrile neutropenia 13 days following carboplatin chemotherapy. | 1/4 (25%) | elevated SDMA | laboratory: CBC | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) |
+| Myelosuppression | In cancer patients, myelosuppression (defined as excessive reduction of blood cell levels, specifically thrombocytopenia and neutropenia) is the main dose-limiting toxicity for carboplatin, frequently leading to dose reductions, treatment delays, or interruptions. | — | low serum albumin (&lt; 44 g/L); reduced renal function (lower eGFR); older age (95th percentile: 84 years); higher serum creatinine values (95th percentile: 139 μmol/L) | laboratory: unknown; primary_care: unknown | [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) |
+| Myelotoxicity | The paper states that escalation of the carboplatin target area under the curve (AUC) beyond 7 mg·min/mL increases myelotoxicity without improving response. | — | — | — | [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051), [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948) |
+| Hematological toxicities | Individualized dosing of carboplatin using PK measurements compared with weight-based dosing demonstrated decreased incidence in hematological toxicities in neonates. | — | individualized dosing using PK measurements | — | [Centanni 2024](https://pubmed.ncbi.nlm.nih.gov/38141094) |
+| Hematological toxicity | In common arm trials for non-small cell lung cancer comparing Japanese and US patients, the frequency of hematological toxicity was significantly higher in the Japanese trials than in the SWOG trial. | — | ethnicity (Japanese) | — | [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) |
+| Leukopenia | Leukopenia was one of the myelosuppressive toxicities induced by gemcitabine/carboplatin treatment in non-small cell lung cancer patients, with a total incidence of 59.4% (CTCAE grades 0-4) and a severe (grade 3-4) incidence of 29.2%. The paper states that severe myelosuppression is roughly… | Grade 1: 7.3%, Grade 2: 22.9%, Grade 3: 25.0%, Grade 4: 4.2% | 62 genetic variants in the toxicity module (e.g., rs10898940, rs11629627, rs11629694, rs11794611, rs11996440, rs12034981, rs12046258, rs12117788, rs1247572, rs12981050, rs13431476, rs1367216, rs1498830, rs1652456, rs1740430, rs17404301, rs2465836, rs2569538, rs2569543, rs2590763, rs2590807, rs2590827, rs2590829, rs2616405, rs2616431, rs2616433, rs34285220, rs4864488, rs4864820, rs531650, rs5858236, rs5858241, rs58982282, rs59065201, rs59481386, rs61825739, rs62225956, rs62225957, rs62225958, rs62436699, rs66628040, rs67425308, rs6815433, rs6826915, rs6828755, rs6842780, rs6877573, rs7184277, rs7249753, rs7256793, rs72808733, rs73559035, rs7378471, rs74464209, rs7703879, rs77321629, rs77456162, rs783176, rs904414, rs9626751, rs9627100, rs9759545) | — | [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+| Sepsis | 2 of the 96 patients treated with cabazitaxel plus carboplatin in the clinical trial suffered grade 4 sepsis. | 2 (2%) | — | — | [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) |
+
+<details><summary>Evidence: neutropenia (6)</summary>
+
+> “20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(case report)</sub>
+
+> “It is well known that the use of classical chemotherapeutic agents is associated with the induction of considerable adverse drug reactions (ADRs). This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(cohort)</sub>
+
+> “Follow‐up CBCs were available for four of the five dogs with elevated serum SDMA post‐carboplatin chemotherapy; three (75%) developed grade 4 neutropenia. In comparison, 10 of 25 dogs (40%) with normal serum SDMA experienced asymptomatic grade 3 or 4 neutropenia (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “carboplatin is still associated however with a strong risk of myelosuppression, characterized by thrombocytopenia and neutropenia, which generally occurs 14 days after administration in dogs [4, 5].” — [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Thrombocytopenia (6)</summary>
+
+> “carboplatin is still associated however with a strong risk of myelosuppression, characterized by thrombocytopenia and neutropenia, which generally occurs 14 days after administration in dogs [4, 5].” — [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213) <sub>(case series)</sub>
+
+> “Two dogs experienced grade 1 thrombocytopenia (one with elevated SDMA).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%)” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+> “Despite its established role in oncology, myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions. The target population was focused on the most frequent tumour diagnoses in which carboplatin is a standard treatment (i.e., lung…” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (2)</summary>
+
+> “The most common reason for dose delay or hold was hematological toxicity (thrombocytopenia, neutropenia without fever), which was most likely due to the carboplatin.” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case series)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis, and 1 (1%) patient died of unspecified causes.” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: febrile neutropenia (2)</summary>
+
+> “Of the four dogs that had follow‐up CBCs, one was hospitalised for febrile neutropenia 13 days following carboplatin chemotherapy and was euthanized 2 days later.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “In addition the frequency of hematological toxicities such as grade IV neutropenia and febrile neutropenia were significantly higher among the Japanese patients (Table 4).” — [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: myelosuppression (2)</summary>
+
+> “Despite its established role in oncology, myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(case report)</sub>
+
+> “For the GDPT regimen, adverse event data from included RCTs only reported general bone marrow suppression without specific grading for grade ≥3 hematologic toxicity; thus, detailed analysis was not conducted.” — [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myelotoxicity (2)</summary>
+
+> “The target AUC was set at 4–6 mg·min/mL, as this range is most appropriate in previously treated patients, while escalation beyond 7 mg·min/mL increases myelotoxicity without improving response [13].” — [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051) <sub>(in vitro)</sub>
+
+> “A platinum derivative, carboplatin, has a similar activity to cisplatin, but is different and gene rally less toxic (absence of nephrotoxicity, ototoxicity and neurotoxicity, but substantial myelotoxicity).” — [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hematological toxicities (1)</summary>
+
+> “Indeed, individualized dosing of carboplatin using PK measurements compared with weight-based dosing demonstrated reduced variability in PK and decreased incidence in hematological toxicities in neonates [18].” — [Centanni 2024](https://pubmed.ncbi.nlm.nih.gov/38141094) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: hematological toxicity (1)</summary>
+
+> “In common arm trials conducted in Japan and by Southwest Oncology Group (SWOG) that used the same doses and schedules for the administration of carboplatin plus paclitaxel, the frequency of hematological toxicity was significantly higher in the Japanese trials than in the SWOG trial, despite demonstrating similar response rates.” — [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Leukopenia (1)</summary>
+
+> “It is well known that the use of classical chemotherapeutic agents is associated with the induction of considerable adverse drug reactions (ADRs). This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Sepsis (1)</summary>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+</details>
+
+### Ear
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Ototoxicity | Among 900 pediatric cancer survivors treated with cisplatin, carboplatin, or both, patients were categorized into no hearing loss (n=222), minor hearing loss (n=481), and clinically relevant hearing loss (n=197) based on post-treatment audiograms. | clinically relevant hearing loss (n = 197) / 900 | TPMT, ABCC3, OTOS, SLC22A2, NFE2L2, SLC16A5, LRP2, GSTP1, SOD2, WFS1, ACYP2 variants (TPMT, ABCC3, OTOS, SLC22A2, NFE2L2, SLC16A5, LRP2, GSTP1, SOD2, WFS1, ACYP2 rs1872328, rs2075252, rs6721961, rs2291767, rs62283056, rs12201199, rs1142345, rs1800460, rs1800462, rs4880, rs316019, rs1695, rs1051640, rs4788863) | hospital: hearing loss | [Langer 2020](https://pubmed.ncbi.nlm.nih.gov/32939381) |
+
+<details><summary>Evidence: ototoxicity (1)</summary>
+
+> “Based on the assessment of original audiograms, patients were assigned to three phenotype categories: no, minor, and clinically relevant hearing loss.” — [Langer 2020](https://pubmed.ncbi.nlm.nih.gov/32939381) <sub>(cohort)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Diarrhea | Diarrhea was documented as part of GI toxicity (along with mucositis and vomiting) in ovarian cancer patients treated with carboplatin and a taxane (paclitaxel or docetaxel) in the SCOTROC1 trial, with 20% of patients facing grade III/IV GI toxicity. | 20% grade III/IV gastrointestinal (GI) toxicity | rs1061472 (ATP7B), rs1801249 (ATP7B), rs3594 (GSR), rs6900017 (VEGFA), rs879825 (VEGFA), rs9369421 (VEGFA), rs9825762 (SCN10A) (ATP7B, GSR, VEGFA, SCN10A risk genotypes); VEGFA rs879825 GG (VEGFA GG); taxane (paclitaxel or docetaxel); unknown (unknown unknown) | hospital: GI toxicity; home: owner assessment forms to record their impressions of their dogs' clinical status and confirm drug administration (anti-nausea and/or antidiarrheals) | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+| Vomiting | Vomiting was documented as one of the major gastrointestinal toxicities encountered by ovarian cancer patients treated with carboplatin combined with either docetaxel or paclitaxel in the SCOTROC1 trial. | unknown | SNP rs879825 in VEGFA (GG carriers) (VEGFA G); Composite genetic risk score (number of risk genotypes across ATP7B, GSR, VEGFA, SCN10A); normal SDMA concentrations (≤ 14 μg/dL) | home: vomiting; primary_care: vomiting | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Anorexia | In dogs receiving carboplatin, persistent grade 4 anorexia occurred in one dog with elevated SDMA, leading to euthanasia 13 days post-chemotherapy. | 1/5 (20% of elevated SDMA group) | elevated SDMA (&gt; 14 μg/dL); 300 mg/m2; NSAIDs | home: adverse events; laboratory: CBC | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Gastrointestinal toxicity | In the SCOTROC1 trial of 1077 ovarian cancer patients treated with carboplatin and a taxane, 20% experienced grade III/IV gastrointestinal toxicity, which presented as mucositis, diarrhea, and vomiting. | 20% grade III/IV | ATP7B rs1061472 (ATP7B unknown) | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Mucositis | Mucositis occurred in 20% of patients as part of grade III/IV gastrointestinal toxicity during carboplatin/taxane treatment. | 20% grade III/IV gastrointestinal (GI) toxicity | VEGFA rs879825 GG (VEGFA G); ATP7B risk genotypes (ATP7B unknown); GSR risk genotypes (GSR unknown); SCN10A risk genotypes (SCN10A unknown) | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Nausea and vomiting | The paper states that the chemotherapy combining etoposide and carboplatin is often associated to nausea and vomiting in children during and after the treatment period. | — | — | — | [Urien 2011](https://pubmed.ncbi.nlm.nih.gov/20490798) |
+| Regurgitation | One dog with elevated serum SDMA (19 μg/dL) developed severe regurgitation and was euthanized 5 days after receiving carboplatin. | 1/5 | elevated serum SDMA | — | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+
+<details><summary>Evidence: diarrhea (3)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin. ... The GI toxicity including mucositis, vomiting and diarrhea was documented.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “Diarrhea w/o prior colostomy11 (29%)1(11%)1(11%)7 (24%)2 (7%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: vomiting (2)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: anorexia (1)</summary>
+
+> “Another dog was euthanized 13 days post‐chemotherapy due to persistent grade 4 anorexia and lethargy.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: gastrointestinal toxicity (1)</summary>
+
+> “20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity. 5 Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: mucositis (1)</summary>
+
+> “20% grade III/IV gastrointestinal (GI) toxicity. 5 Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (1)</summary>
+
+> “This highly potent chemotherapy is often associated to nausea and vomiting in children during and after the treatment period.” — [Urien 2011](https://pubmed.ncbi.nlm.nih.gov/20490798) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: regurgitation (1)</summary>
+
+> “The fifth dog with an elevated serum SDMA (19 μg/dL) was euthanized due to severe regurgitation and respiratory complications 5 days after receiving carboplatin.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cell death (apoptosis) | In UWB1.289 BRCA1- and BRCA1+ cell lines treated with carboplatin, the proportion of apoptotic cells increased over time, reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 hours. | reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 h | — | — | [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) |
+| DNA damage | Carboplatin treatment in TYK-nu, UWB1.289, and CIOV ovarian carcinoma cell lines induced a DNA damage response (DDR) characterized by S-phase arrest and activation of DDR protein modules containing pH2AX, pATM, pCHK1, pp53, and pRPA. | — | BRCA1 (BRCA1 mutation 2594delC / loss of heterozygosity); talazoparib; rucaparib | — | [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) |
+| Poor tolerability | The paper states that cisplatin and carboplatin have significant adverse effects and several contraindications, making PARP inhibitors the choice for patients with poor tolerability to platinum compounds, but does not specify who is affected or how often. | — | — | — | [Imyanitov 2021](https://pubmed.ncbi.nlm.nih.gov/34454564) |
+
+<details><summary>Evidence: Cell death (apoptosis) (1)</summary>
+
+> “The number of apoptotic cells increased over time, reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 h (Figure S13B).” — [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: DNA damage (1)</summary>
+
+> “Module 6 comprised pH2AX, pATM, pCHK1, pp53, and pRPA, proteins with critical roles in the DDR that function in damage sensing, signaling, and checkpoint activation following double-strand breaks.” — [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: poor tolerability (1)</summary>
+
+> “Cisplatin and carboplatin have significant adverse effects and several contraindications, which are not applicable to PARPi, therefore PARP inhibitors are certainly the choice for patients with poor tolerability to platinum compounds [50–52].” — [Imyanitov 2021](https://pubmed.ncbi.nlm.nih.gov/34454564) <sub>(review)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Creatinine | Creatinine abnormality was observed in 4 of 38 patients (11%) treated with the combination regimen. | 4 (11%) | — | laboratory: Creatinine | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+| Nephrotoxicity | The paper states that large amounts of ginseng, aristolochic acid-containing herbs, and some green tea extracts can cause acute tubular necrosis, interstitial nephritis, or chronic kidney disease, either alone or in combination with nephrotoxic chemotherapy agents such as carboplatin. | — | large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts; nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate) | — | [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231) |
+
+<details><summary>Evidence: creatinine (1)</summary>
+
+> “Creatinine4 (11%)2(22%)2 (7%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Nephrotoxicity (1)</summary>
+
+> “Large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts cause acute tubular necrosis, interstitial nephritis, or CKD either alone or in combination with nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate).” — [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231) <sub>(review)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Peripheral neuropathy | 20-30% of patients treated with platinum-based chemotherapy in combination with a taxane agent experience grade III/IV peripheral neuropathy. | 20-30% | — | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+
+<details><summary>Evidence: peripheral neuropathy (1)</summary>
+
+> “Despite the therapeutic impact of platinum in conjunction with taxane agents in the management of ovarian cancer, 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(review)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Alopecia | Alopecia occurred in 16% of the 38 patients treated with carboplatin and bevacizumab, with 11% in the HER2-negative cohort and 14% in the HER2-positive cohort. | 6 (16%) | — | — | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+
+<details><summary>Evidence: alopecia (1)</summary>
+
+> “Alopecia6 (16%)1(11%)4 (14%)1 (3%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case series)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=carboplatin).
@@ -193,7 +433,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1348 matched, 205 returned
 - **screened:** 12  ·  **relevant:** 12
-- **records:** 20  ·  extracted 4  ·  needs_review 10  ·  rejected 6  ·  stale 0
+- **records:** 20  ·  extracted 4  ·  needs review 10  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -204,9 +444,9 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Calvert_1989.pdf` | Calvert AH et al., Carboplatin dosage: prospective evaluat…, Journal of clinical oncolog… (1989) | popPK | 10 | [10.1200/JCO.1989.7.11.1748](https://doi.org/10.1200/JCO.1989.7.11.1748) | [2681557](https://pubmed.ncbi.nlm.nih.gov/2681557) | Human carboplatin clearance is quantified through the dose–AUC–GFR formulas, with numeric coefficients reported. |
 | `Chatelut_1995.pdf` | Chatelut E et al., Prediction of carboplatin clearance fro…, Journal of the National Can… (1995) | popPK | 10 | [10.1093/jnci/87.8.573](https://doi.org/10.1093/jnci/87.8.573) | [7752255](https://pubmed.ncbi.nlm.nih.gov/7752255) | Human population pharmacokinetics reports a numeric formula for carboplatin clearance. |
-| `Chatelut_1995_2.pdf` | Chatelut E et al., [Prediction of carboplatin clearance fr…, Bulletin du cancer (1995) | popPK | 10 | not captured | [8535021](https://pubmed.ncbi.nlm.nih.gov/8535021) | Human population pharmacokinetics reports carboplatin clearance, but the quantitative prediction formula is referenced as “see text” and is not provided. |
+| `Chatelut_1995_2.pdf` | Chatelut E et al., [Prediction of carboplatin clearance fr…, Bulletin du cancer (1995) | popPK | 10 |  | [8535021](https://pubmed.ncbi.nlm.nih.gov/8535021) | Human population pharmacokinetics reports carboplatin clearance, but the quantitative prediction formula is referenced as “see text” and is not provided. |
 | `Guillet_1997.pdf` | Guillet P et al., A Bayesian dosing method for carboplati…, Cancer chemotherapy and pha… (1997) | popPK | 10 | [10.1007/s002800050639](https://doi.org/10.1007/s002800050639) | [9182836](https://pubmed.ncbi.nlm.nih.gov/9182836) | The study estimates carboplatin population pharmacokinetics, but numeric disposition parameter values are not shown in the provided evidence. |
-| `Ito_1992.pdf` | Ito K et al., [Usefulness of intraperitoneal carbopla…, Nihon Sanka Fujinka Gakkai… (1992) | popPK | 10 | not captured | [1453047](https://pubmed.ncbi.nlm.nih.gov/1453047) | Human carboplatin pharmacokinetics were modeled, but no numeric disposition parameter values are provided. |
+| `Ito_1992.pdf` | Ito K et al., [Usefulness of intraperitoneal carbopla…, Nihon Sanka Fujinka Gakkai… (1992) | popPK | 10 |  | [1453047](https://pubmed.ncbi.nlm.nih.gov/1453047) | Human carboplatin pharmacokinetics were modeled, but no numeric disposition parameter values are provided. |
 | `Lindauer_2010.pdf` | Lindauer A et al., Population pharmacokinetics of high-dos…, Therapeutic drug monitoring (2010) | popPK | 10 | [10.1097/FTD.0b013e3181cc6e21](https://doi.org/10.1097/FTD.0b013e3181cc6e21) | [20110851](https://pubmed.ncbi.nlm.nih.gov/20110851) | This is a human population-PK study of carboplatin, but numeric clearance estimates are not provided. |
 | `Moeung_2017.pdf` | Moeung S et al., Therapeutic Drug Monitoring of Carbopla…, Clinical cancer research :… (2017) | popPK | 10 | [10.1158/1078-0432.CCR-17-1344](https://doi.org/10.1158/1078-0432.CCR-17-1344) | [28928162](https://pubmed.ncbi.nlm.nih.gov/28928162) | Human carboplatin PK analysis reports a quantitative clearance equation and exposure values in the evidence. |
 | `Newell_1993.pdf` | Newell DR et al., Carboplatin pharmacokinetics in childre…, Journal of clinical oncolog… (1993) | popPK | 10 | [10.1200/JCO.1993.11.12.2314](https://doi.org/10.1200/JCO.1993.11.12.2314) | [8246021](https://pubmed.ncbi.nlm.nih.gov/8246021) | Pediatric human carboplatin pharmacokinetics report a two-compartment model and a quantitative clearance equation. |
@@ -214,10 +454,10 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Schmitt_2009.pdf` | Schmitt A et al., A universal formula based on cystatin C…, Clinical cancer research :… (2009) | popPK | 10 | [10.1158/1078-0432.CCR-09-0017](https://doi.org/10.1158/1078-0432.CCR-09-0017) | [19401344](https://pubmed.ncbi.nlm.nih.gov/19401344) | Reports a quantitative population-PK clearance equation for carboplatin with values present in the evidence. |
 | `el-Yazigi_1989.pdf` | el-Yazigi A et al., Pharmacokinetics of platinum in cancer…, Pharmaceutical research (1989) | popPK | 9 | [10.1023/a:1015920524065](https://doi.org/10.1023/a:1015920524065) | [2668915](https://pubmed.ncbi.nlm.nih.gov/2668915) | Human patients received carboplatin and numeric plasma platinum disposition parameters are reported. |
 | `Dowell_2000.pdf` | Dowell JA et al., Noninvasive measurements for studying t…, Advanced drug delivery revi… (2000) | popPK | 8 | [10.1016/s0169-409x(99)00059-9](https://doi.org/10.1016/s0169-409x(99)00059-9) | [10699308](https://pubmed.ncbi.nlm.nih.gov/10699308) | Compartmental models and drug biodistribution are described, but no numeric parameter values are provided in the evidence. |
-| `Gotoh_1991.pdf` | Gotoh T et al., [Evaluation of carboplatin administrati…, Gan to kagaku ryoho. Cancer… (1991) | popPK | 8 | not captured | [1877819](https://pubmed.ncbi.nlm.nih.gov/1877819) | Intracavitary carboplatin pharmacokinetics were analyzed with a two-compartment model and a reported beta half-life of 18.60 hours. |
+| `Gotoh_1991.pdf` | Gotoh T et al., [Evaluation of carboplatin administrati…, Gan to kagaku ryoho. Cancer… (1991) | popPK | 8 |  | [1877819](https://pubmed.ncbi.nlm.nih.gov/1877819) | Intracavitary carboplatin pharmacokinetics were analyzed with a two-compartment model and a reported beta half-life of 18.60 hours. |
 | `Harsha_2014.pdf` | Harsha S et al., Pharmacokinetics and tissue distributio…, Archives of pharmacal resea… (2014) | popPK | 8 | [10.1007/s12272-013-0151-1](https://doi.org/10.1007/s12272-013-0151-1) | [23712379](https://pubmed.ncbi.nlm.nih.gov/23712379) | Carboplatin plasma concentrations are described by a two-compartment model, but no numeric PK parameter values are provided. |
 
-<sub>queue written 2026-10-07T21:39:09.088380+00:00</sub>
+<sub>queue written 2026-10-07 21:39 UTC</sub>
 
 ## Screened and excluded
 
@@ -366,5 +606,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 21:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D&body=Drug%3A%20carboplatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:41 UTC</sub>

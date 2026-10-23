@@ -81,7 +81,7 @@ Arbekacin is an aminoglycoside antibiotic that kills bacteria and is used as an 
 
 - **PubMed hits:** 49 matched, 42 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 6  ·  extracted 1  ·  needs_review 2  ·  rejected 3  ·  stale 0
+- **records:** 6  ·  extracted 1  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -94,7 +94,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Hagihara_2016.pdf` | Hagihara M et al., Population pharmacokinetics of arbekaci…, Journal of infection and ch… (2016) | popPK | 10 | [10.1016/j.jiac.2016.03.008](https://doi.org/10.1016/j.jiac.2016.03.008) | [27260679](https://pubmed.ncbi.nlm.nih.gov/27260679) | The study reports population PK parameters including Vd values by infection type, but specific clearance (CL) and Q values are not explicitly listed in the provided text, only described as covariates. |
 | `Kim_2008.pdf` | Kim JH et al., Population pharmacokinetics of arbekaci…, European journal of clinica… (2008) | popPK | 10 | [10.1007/s00228-008-0470-1](https://doi.org/10.1007/s00228-008-0470-1) | [18320181](https://pubmed.ncbi.nlm.nih.gov/18320181) | The paper reports a population PK model for arbekacin in humans with explicit numeric parameter estimates and covariate relationships in the abstract. |
 | `Kimura_2004.pdf` | Kimura T et al., Population pharmacokinetics of arbekaci…, Antimicrobial agents and ch… (2004) | popPK | 10 | [10.1128/AAC.48.4.1159-1167.2004](https://doi.org/10.1128/AAC.48.4.1159-1167.2004) | [15047516](https://pubmed.ncbi.nlm.nih.gov/15047516) | The paper reports population PK parameters (CL and V) for arbekacin with explicit numeric values in the evidence. |
-| `Kumon_1989.pdf` | Kumon H et al., [Pharmacokinetics of arbekacin in healt…, The Japanese journal of ant… (1989) | popPK | 10 | not captured | [2709618](https://pubmed.ncbi.nlm.nih.gov/2709618) | The paper reports a population PK model for arbekacin, but specific numeric parameter values (CL, V, t1/2) are not present in the provided abstract text, only qualitative trends are described. |
+| `Kumon_1989.pdf` | Kumon H et al., [Pharmacokinetics of arbekacin in healt…, The Japanese journal of ant… (1989) | popPK | 10 |  | [2709618](https://pubmed.ncbi.nlm.nih.gov/2709618) | The paper reports a population PK model for arbekacin, but specific numeric parameter values (CL, V, t1/2) are not present in the provided abstract text, only qualitative trends are described. |
 | `Lakota_2019.pdf` | Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.00267-19](https://doi.org/10.1128/AAC.00267-19) | [31182524](https://pubmed.ncbi.nlm.nih.gov/31182524) | The paper reports a population pharmacokinetic model for arbekacin with explicit quantitative parameter equations for clearance (CL) and bioavailability (19.5%) directly in the text. |
 | `Suzuki_2003.pdf` | Suzuki K et al., Pharmacokinetics and dosing of arbekaci…, Pediatrics international :… (2003) | popPK | 10 | [10.1046/j.1442-200x.2003.01679.x](https://doi.org/10.1046/j.1442-200x.2003.01679.x) | [12709144](https://pubmed.ncbi.nlm.nih.gov/12709144) | The paper reports quantitative pharmacokinetic parameters (Volume of Distribution and Clearance) for arbekacin in human neonates, with specific values provided in the abstract. |
 | `Tanigawara_2006.pdf` | Tanigawara Y et al., Population pharmacokinetics of Arbekaci…, Antimicrobial agents and ch… (2006) | popPK | 10 | [10.1128/AAC.00420-05](https://doi.org/10.1128/AAC.00420-05) | [17065621](https://pubmed.ncbi.nlm.nih.gov/17065621) | The study reports quantitative population PK parameters (clearance equations, specific volume values) for arbekacin in humans within the text. |
@@ -108,7 +108,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yamamura_2003.pdf` | Yamamura S, Clinical application of artificial neur…, Advanced drug delivery revi… (2003) | pd | 5 | [10.1016/s0169-409x(03)00121-2](https://doi.org/10.1016/s0169-409x(03)00121-2) | [12954201](https://www.ncbi.nlm.nih.gov/pubmed/12954201) | metadata signals extractable PD data (PK/PD) |
 | `LaPlante_2006.pdf` | LaPlante KL et al., Impact of Enterococcus faecalis on the…, Antimicrobial agents and ch… (2006) | pd | 4 | [10.1128/AAC.50.4.1298-1303.2006](https://doi.org/10.1128/AAC.50.4.1298-1303.2006) | [16569844](https://www.ncbi.nlm.nih.gov/pubmed/16569844) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-07T11:27:39.946752+00:00</sub>
+<sub>queue written 2026-10-07 11:27 UTC</sub>
 
 ## Screened and excluded
 
@@ -133,5 +133,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barbekacin%5D&body=Drug%3A%20arbekacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arbekacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:27 UTC</sub>

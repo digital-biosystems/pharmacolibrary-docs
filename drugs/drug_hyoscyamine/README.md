@@ -58,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2431 matched, 213 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -68,15 +68,15 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Marquart_2019.pdf` | Marquart K et al., Human small bowel as model for poisonin…, Toxicology in vitro : an in… (2019) | pd | 5 | [10.1016/j.tiv.2019.02.010](https://doi.org/10.1016/j.tiv.2019.02.010) | [30763608](https://www.ncbi.nlm.nih.gov/pubmed/30763608) | metadata signals extractable PD data (EC50) |
-| `Morris_2007.pdf` | Morris RW et al., "Orpheus" cardiopulmonary bypass simula…, The journal of extra-corpor… (2007) | pd | 5 | not captured | [18293807](https://www.ncbi.nlm.nih.gov/pubmed/18293807) | metadata signals extractable PD data (effectcompartment) |
+| `Morris_2007.pdf` | Morris RW et al., "Orpheus" cardiopulmonary bypass simula…, The journal of extra-corpor… (2007) | pd | 5 |  | [18293807](https://www.ncbi.nlm.nih.gov/pubmed/18293807) | metadata signals extractable PD data (effectcompartment) |
 | `Müller_2012.pdf` | Müller C et al., Relative bioavailability and pharmacody…, European journal of clinica… (2012) | pd | 5 | [10.1007/s00228-012-1286-6](https://doi.org/10.1007/s00228-012-1286-6) | [22527350](https://www.ncbi.nlm.nih.gov/pubmed/22527350) | metadata signals extractable PD data (sigmoid) |
 | `Renner_2005.pdf` | Renner UD et al., Pharmacokinetics and pharmacodynamics i…, Therapeutic drug monitoring (2005) | pd | 5 | [10.1097/01.ftd.0000168293.48226.57](https://doi.org/10.1097/01.ftd.0000168293.48226.57) | [16175141](https://www.ncbi.nlm.nih.gov/pubmed/16175141) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Xu_2024.pdf` | Xu HC et al., The EC50 of propofol with different dos…, Medicine (2024) | pd | 5 | [10.1097/MD.0000000000038421](https://doi.org/10.1097/MD.0000000000038421) | [38847682](https://www.ncbi.nlm.nih.gov/pubmed/38847682) | metadata signals extractable PD data (EC50) |
 | `Calzetta_2013.pdf` | Calzetta L et al., Effect of the mixed phosphodiesterase 3…, The Journal of pharmacology… (2013) | pd | 4 | [10.1124/jpet.113.204644](https://doi.org/10.1124/jpet.113.204644) | [23766543](https://www.ncbi.nlm.nih.gov/pubmed/23766543) | metadata signals extractable PD data (Emax) |
 | `Cook_1987.pdf` | Cook CJ et al., Cholinoreceptors in the isolated costo-…, Journal of autonomic pharma… (1987) | pd | 4 | [10.1111/j.1474-8673.1987.tb00146.x](https://doi.org/10.1111/j.1474-8673.1987.tb00146.x) | [3654684](https://www.ncbi.nlm.nih.gov/pubmed/3654684) | metadata signals extractable PD data (EC50) |
 | `Corsi_1991.pdf` | Corsi M et al., Pharmacological analysis of 5-hydroxytr…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12494.x](https://doi.org/10.1111/j.1476-5381.1991.tb12494.x) | [1797331](https://www.ncbi.nlm.nih.gov/pubmed/1797331) | metadata signals extractable PD data (EC50) |
-| `Dickinson_1988.pdf` | Dickinson KE et al., Muscarinic cholinergic receptor subtype…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [2901489](https://www.ncbi.nlm.nih.gov/pubmed/2901489) | metadata signals extractable PD data (IC50) |
-| `Faisal_2020.pdf` | Faisal R et al., Azithromycin induced contractile respon…, Pakistan journal of pharmac… (2020) | pd | 4 | not captured | [33832879](https://www.ncbi.nlm.nih.gov/pubmed/33832879) | metadata signals extractable PD data (Emax) |
+| `Dickinson_1988.pdf` | Dickinson KE et al., Muscarinic cholinergic receptor subtype…, The Journal of pharmacology… (1988) | pd | 4 |  | [2901489](https://www.ncbi.nlm.nih.gov/pubmed/2901489) | metadata signals extractable PD data (IC50) |
+| `Faisal_2020.pdf` | Faisal R et al., Azithromycin induced contractile respon…, Pakistan journal of pharmac… (2020) | pd | 4 |  | [33832879](https://www.ncbi.nlm.nih.gov/pubmed/33832879) | metadata signals extractable PD data (Emax) |
 | `Ford_1992.pdf` | Ford AP et al., Analysis of muscarinic cholinoceptors m…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0922-4106(92)90089-e](https://doi.org/10.1016/0922-4106(92)90089-e) | [1551411](https://www.ncbi.nlm.nih.gov/pubmed/1551411) | metadata signals extractable PD data (EC50) |
 | `Glaza_2011.pdf` | Glaza I et al., Modulating activity of M1 receptor to t…, Postepy higieny i medycyny… (2011) | pd | 4 | [10.5604/17322693.954785](https://doi.org/10.5604/17322693.954785) | [21918249](https://www.ncbi.nlm.nih.gov/pubmed/21918249) | metadata signals extractable PD data (Concentration-effect) |
 | `Habibi_2023.pdf` | Habibi S et al., The Haemonchus contortus LGC-39 subunit…, International journal for p… (2023) | pd | 4 | [10.1016/j.ijpddr.2023.04.001](https://doi.org/10.1016/j.ijpddr.2023.04.001) | [37054482](https://www.ncbi.nlm.nih.gov/pubmed/37054482) | metadata signals extractable PD data (EC50) |
@@ -84,14 +84,14 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Jones_1982.pdf` | Jones TR et al., Pharmacological study of the contractil…, Canadian journal of physiol… (1982) | pd | 4 | [10.1139/y82-087](https://doi.org/10.1139/y82-087) | [6896671](https://www.ncbi.nlm.nih.gov/pubmed/6896671) | metadata signals extractable PD data (EC50) |
 | `Kerr_1995.pdf` | Kerr PM et al., Characterization of muscarinic receptor…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb16645.x](https://doi.org/10.1111/j.1476-5381.1995.tb16645.x) | [8564213](https://www.ncbi.nlm.nih.gov/pubmed/8564213) | metadata signals extractable PD data (EC50) |
 | `Kitazawa_1998.pdf` | Kitazawa T et al., Involvement of 5-hydroxytryptamine7 rec…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701583](https://doi.org/10.1038/sj.bjp.0701583) | [9489604](https://www.ncbi.nlm.nih.gov/pubmed/9489604) | metadata signals extractable PD data (EC50) |
-| `Kiyanmehr_2016.pdf` | Kiyanmehr M et al., Possible Mechanisms for Functional Anta…, The Malaysian journal of me… (2016) | pd | 4 | not captured | [27540324](https://www.ncbi.nlm.nih.gov/pubmed/27540324) | metadata signals extractable PD data (EC50) |
+| `Kiyanmehr_2016.pdf` | Kiyanmehr M et al., Possible Mechanisms for Functional Anta…, The Malaysian journal of me… (2016) | pd | 4 |  | [27540324](https://www.ncbi.nlm.nih.gov/pubmed/27540324) | metadata signals extractable PD data (EC50) |
 | `Long_2014.pdf` | Long Z et al., Amide alkaloids from Scopolia tangutica, Planta medica (2014) | pd | 4 | [10.1055/s-0034-1382961](https://doi.org/10.1055/s-0034-1382961) | [25127021](https://www.ncbi.nlm.nih.gov/pubmed/25127021) | metadata signals extractable PD data (EC50) |
 | `Maggi_1992.pdf` | Maggi CA et al., Tachykinin NK1 receptor in the guinea-p…, British journal of pharmaco… (1992) | pd | 4 | [10.1111/j.1476-5381.1992.tb14430.x](https://doi.org/10.1111/j.1476-5381.1992.tb14430.x) | [1327390](https://www.ncbi.nlm.nih.gov/pubmed/1327390) | metadata signals extractable PD data (EC50) |
 | `Martin_1992.pdf` | Martin CA et al., Influence of (+/-)-CP-96,345 and SR 489…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90797-8](https://doi.org/10.1016/0014-2999(92)90797-8) | [1334836](https://www.ncbi.nlm.nih.gov/pubmed/1334836) | metadata signals extractable PD data (EC50) |
-| `McKinney_1989.pdf` | McKinney M et al., Different agonist-receptor active confo…, Molecular pharmacology (1989) | pd | 4 | not captured | [2536467](https://www.ncbi.nlm.nih.gov/pubmed/2536467) | metadata signals extractable PD data (EC50) |
+| `McKinney_1989.pdf` | McKinney M et al., Different agonist-receptor active confo…, Molecular pharmacology (1989) | pd | 4 |  | [2536467](https://www.ncbi.nlm.nih.gov/pubmed/2536467) | metadata signals extractable PD data (EC50) |
 | `Montgomery_2016.pdf` | Montgomery LE et al., Autonomic modification of intestinal sm…, Advances in physiology educ… (2016) | pd | 4 | [10.1152/advan.00038.2015](https://doi.org/10.1152/advan.00038.2015) | [26873897](https://www.ncbi.nlm.nih.gov/pubmed/26873897) | metadata signals extractable PD data (concentration-effect) |
 | `Morais_2019.pdf` | Morais ICPS et al., Cardiovascular Effect of Diosgenin in O…, Journal of medicinal food (2019) | pd | 4 | [10.1089/jmf.2018.0019](https://doi.org/10.1089/jmf.2018.0019) | [30735081](https://www.ncbi.nlm.nih.gov/pubmed/30735081) | metadata signals extractable PD data (Emax) |
-| `Moummi_1992.pdf` | Moummi C et al., Effect of endothelin-1 on guinea pig ga…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1738105](https://www.ncbi.nlm.nih.gov/pubmed/1738105) | metadata signals extractable PD data (EC50) |
+| `Moummi_1992.pdf` | Moummi C et al., Effect of endothelin-1 on guinea pig ga…, The Journal of pharmacology… (1992) | pd | 4 |  | [1738105](https://www.ncbi.nlm.nih.gov/pubmed/1738105) | metadata signals extractable PD data (EC50) |
 | `Norberg_1986.pdf` | Norberg L et al., Stimulation of acid formation by histam…, Acta physiologica Scandinav… (1986) | pd | 4 | [10.1111/j.1748-1716.1986.tb07831.x](https://doi.org/10.1111/j.1748-1716.1986.tb07831.x) | [2421535](https://www.ncbi.nlm.nih.gov/pubmed/2421535) | metadata signals extractable PD data (EC50) |
 | `Pérez-González_2025.pdf` | Pérez-González MZ et al., Anti-inflammatory, antioxidant, and acu…, Biomedicine & pharmacothera… (2025) | pd | 4 | [10.1016/j.biopha.2025.117972](https://doi.org/10.1016/j.biopha.2025.117972) | [40101586](https://www.ncbi.nlm.nih.gov/pubmed/40101586) | metadata signals extractable PD data (EC50) |
 | `Re_1993.pdf` | Re L et al., Muscarinic modulation of neurotransmiss…, General pharmacology (1993) | pd | 4 | [10.1016/0306-3623(93)90433-x](https://doi.org/10.1016/0306-3623(93)90433-x) | [8112518](https://www.ncbi.nlm.nih.gov/pubmed/8112518) | metadata signals extractable PD data (EC50) |
@@ -104,7 +104,7 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Labbé_1999.pdf` | Labbé L et al., Clinical pharmacokinetics of mexiletine, Clinical pharmacokinetics (1999) | pgx | 7 | [10.2165/00003088-199937050-00002](https://doi.org/10.2165/00003088-199937050-00002) | [10589372](https://www.ncbi.nlm.nih.gov/pubmed/10589372) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Kersten_2014.pdf` | Kersten H et al., Association between inherited CYP2D6/2C…, Therapeutic drug monitoring (2014) | pgx | 5 | [10.1097/FTD.0b013e31829da990](https://doi.org/10.1097/FTD.0b013e31829da990) | [24089073](https://www.ncbi.nlm.nih.gov/pubmed/24089073) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-04T13:21:50.340481+00:00</sub>
+<sub>queue written 2026-10-04 13:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -312,5 +312,5 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhyoscyamine%5D&body=Drug%3A%20hyoscyamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hyoscyamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

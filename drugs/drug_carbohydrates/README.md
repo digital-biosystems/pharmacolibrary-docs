@@ -4,7 +4,7 @@
 
 - **generic name:** carbohydrates
 - **ATC codes:** `B05BA03`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -35,7 +35,7 @@ _not available_
 
 - **PubMed hits:** 1598 matched, 207 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -44,23 +44,23 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lavau_1975.pdf` | Lavau M et al., [U-14C]glucose metabolism in vivo in ra…, Journal of lipid research (1975) | popPK | 8 | not captured | [1127353](https://pubmed.ncbi.nlm.nih.gov/1127353) | The study reports quantitative pharmacokinetic parameters (turnover rate, pool size, space) for glucose (a carbohydrate) in rats using a two-compartment model. |
+| `Lavau_1975.pdf` | Lavau M et al., [U-14C]glucose metabolism in vivo in ra…, Journal of lipid research (1975) | popPK | 8 |  | [1127353](https://pubmed.ncbi.nlm.nih.gov/1127353) | The study reports quantitative pharmacokinetic parameters (turnover rate, pool size, space) for glucose (a carbohydrate) in rats using a two-compartment model. |
 | `Atengueño-Reyes_2023.pdf` | Atengueño-Reyes K et al., Microalgal consortium tolerance to bisp…, Ecotoxicology and environme… (2023) | pd | 5 | [10.1016/j.ecoenv.2023.115117](https://doi.org/10.1016/j.ecoenv.2023.115117) | [37315359](https://www.ncbi.nlm.nih.gov/pubmed/37315359) | metadata signals extractable PD data (EC50) |
 | `Cheng_2024.pdf` | Cheng S et al., Improving Anti-HIV activity and pharmac…, European journal of medicin… (2024) | pd | 5 | [10.1016/j.ejmech.2024.116299](https://doi.org/10.1016/j.ejmech.2024.116299) | [38479167](https://www.ncbi.nlm.nih.gov/pubmed/38479167) | metadata signals extractable PD data (EC50) |
 | `Kovačević_2022.pdf` | Kovačević M et al., Comprehensive study of the effects of s…, Ecotoxicology (London, Engl… (2022) | pd | 5 | [10.1007/s10646-022-02609-4](https://doi.org/10.1007/s10646-022-02609-4) | [36462129](https://www.ncbi.nlm.nih.gov/pubmed/36462129) | metadata signals extractable PD data (EC50) |
 | `Byambaragchaa_2018.pdf` | Byambaragchaa M et al., Site specificity of eel luteinizing hor…, General and comparative end… (2018) | pd | 4 | [10.1016/j.ygcen.2018.07.015](https://doi.org/10.1016/j.ygcen.2018.07.015) | [30056138](https://www.ncbi.nlm.nih.gov/pubmed/30056138) | metadata signals extractable PD data (EC50) |
-| `Ghosia_2019.pdf` | Ghosia L et al., Phytochemical screening, antioxidant an…, Journal of traditional Chin… (2019) | pd | 4 | not captured | [32186146](https://www.ncbi.nlm.nih.gov/pubmed/32186146) | metadata signals extractable PD data (EC50) |
+| `Ghosia_2019.pdf` | Ghosia L et al., Phytochemical screening, antioxidant an…, Journal of traditional Chin… (2019) | pd | 4 |  | [32186146](https://www.ncbi.nlm.nih.gov/pubmed/32186146) | metadata signals extractable PD data (EC50) |
 | `Iyanda_2024.pdf` | Iyanda Y et al., Inhibition of alpha-Amylase and alpha-G…, Nigerian journal of physiol… (2024) | pd | 4 | [10.54548/njps.v39i1.18](https://doi.org/10.54548/njps.v39i1.18) | [40156814](https://www.ncbi.nlm.nih.gov/pubmed/40156814) | metadata signals extractable PD data (IC50) |
 | `Jiang_2024.pdf` | Jiang Y et al., RNA-Activatable Near-Infrared Photosens…, Journal of the American Che… (2024) | pd | 4 | [10.1021/jacs.4c09470](https://doi.org/10.1021/jacs.4c09470) | [39215718](https://www.ncbi.nlm.nih.gov/pubmed/39215718) | metadata signals extractable PD data (IC50) |
 | `Kim_2019.pdf` | Kim JM et al., Site-specific roles of N-linked oligosa…, General and comparative end… (2019) | pd | 4 | [10.1016/j.ygcen.2019.03.003](https://doi.org/10.1016/j.ygcen.2019.03.003) | [30836102](https://www.ncbi.nlm.nih.gov/pubmed/30836102) | metadata signals extractable PD data (EC50) |
 | `Leifeld_2018.pdf` | Leifeld V et al., Ferrous ions reused as catalysts in Fen…, Journal of environmental ma… (2018) | pd | 4 | [10.1016/j.jenvman.2018.05.087](https://doi.org/10.1016/j.jenvman.2018.05.087) | [29860122](https://www.ncbi.nlm.nih.gov/pubmed/29860122) | metadata signals extractable PD data (EC50) |
 | `Nyayiru_2020.pdf` | Nyayiru Kannaian UP et al., Phytochemical composition and antioxida…, Heliyon (2020) | pd | 4 | [10.1016/j.heliyon.2020.e03411](https://doi.org/10.1016/j.heliyon.2020.e03411) | [32083218](https://www.ncbi.nlm.nih.gov/pubmed/32083218) | metadata signals extractable PD data (EC50) |
-| `Laki_2013.pdf` | Laki S et al., [Importance of drug interactions with s…, Acta pharmaceutica Hungarica (2013) | pgx | 7 | not captured | [24575657](https://www.ncbi.nlm.nih.gov/pubmed/24575657) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Laki_2013.pdf` | Laki S et al., [Importance of drug interactions with s…, Acta pharmaceutica Hungarica (2013) | pgx | 7 |  | [24575657](https://www.ncbi.nlm.nih.gov/pubmed/24575657) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Murray_2006.pdf` | Murray M, Altered CYP expression and function in…, Current drug metabolism (2006) | pgx | 7 | [10.2174/138920006774832569](https://doi.org/10.2174/138920006774832569) | [16454693](https://www.ncbi.nlm.nih.gov/pubmed/16454693) | metadata signals extractable PGX data (CYP1A, PK/PD-context) |
 | `Robledo_2015.pdf` | Robledo MA et al., Hypothesis of demodicidosis rosacea flu…, Medical hypotheses (2015) | pgx | 5 | [10.1016/j.mehy.2015.01.036](https://doi.org/10.1016/j.mehy.2015.01.036) | [25683389](https://www.ncbi.nlm.nih.gov/pubmed/25683389) | metadata signals extractable PGX data (CYP2E1) |
 | `Slemc_2016.pdf` | Slemc L et al., Transcription factor HIF1A: downstream…, Tumour biology : the journa… (2016) | pgx | 5 | [10.1007/s13277-016-5331-4](https://doi.org/10.1007/s13277-016-5331-4) | [27644243](https://www.ncbi.nlm.nih.gov/pubmed/27644243) | metadata signals extractable PGX data (ABCG2) |
 
-<sub>queue written 2026-10-05T22:43:30.416663+00:00</sub>
+<sub>queue written 2026-10-05 22:43 UTC</sub>
 
 ## Screened and excluded
 
@@ -295,5 +295,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbohydrates%5D&body=Drug%3A%20carbohydrates%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbohydrates/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

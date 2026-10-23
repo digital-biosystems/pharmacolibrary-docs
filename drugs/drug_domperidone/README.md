@@ -84,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 82 matched, 60 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -96,7 +96,7 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Dailly_2008.pdf` | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | popPK | 10 | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) | [18685840](https://pubmed.ncbi.nlm.nih.gov/18685840) | The paper reports a population pharmacokinetic model for domperidone with explicit numeric values for clearance, volume of distribution, and absorption rate constant in the abstract. |
 | `Heykants_1981.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 10 | [10.1007/BF03189516](https://doi.org/10.1007/BF03189516) | [7250152](https://pubmed.ncbi.nlm.nih.gov/7250152) | The study reports quantitative PK parameters for domperidone in humans, but specific numeric values for clearance, volume, or rate constants are not present in the provided abstract text. |
 | `Heykants_1981_2.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 9 | [10.1007/BF03189513](https://doi.org/10.1007/BF03189513) | [7250149](https://pubmed.ncbi.nlm.nih.gov/7250149) | The study reports quantitative PK parameters (half-lives, model type) for domperidone in rats and dogs, but specific values for clearance, volume, or ka are not fully detailed in the provided abstract text. |
-| `Wu_2002.pdf` | Wu MS et al., Determination of domperidone in human p…, Acta pharmacologica Sinica (2002) | popPK | 9 | not captured | [11918857](https://pubmed.ncbi.nlm.nih.gov/11918857) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, T1/2) for domperidone in humans, though clearance and volume values are not explicitly listed in the provided text. |
+| `Wu_2002.pdf` | Wu MS et al., Determination of domperidone in human p…, Acta pharmacologica Sinica (2002) | popPK | 9 |  | [11918857](https://pubmed.ncbi.nlm.nih.gov/11918857) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, T1/2) for domperidone in humans, though clearance and volume values are not explicitly listed in the provided text. |
 | `Bose_2013.pdf` | Bose A et al., Convolution and validation of in vitro-…, European journal of drug me… (2013) | popPK | 8 | [10.1007/s13318-012-0116-7](https://doi.org/10.1007/s13318-012-0116-7) | [23264125](https://pubmed.ncbi.nlm.nih.gov/23264125) | The study reports pharmacokinetic parameters (absorption rate constant, AUC, Cmax) for domperidone, but the specific numeric values are not present in the provided evidence text. |
 | `Devandla_2015.pdf` | Devandla A et al., Effect of rifampicin pretreatment on th…, Drug metabolism and persona… (2015) | popPK | 8 | [10.1515/dmpt-2015-0004](https://doi.org/10.1515/dmpt-2015-0004) | [26353177](https://pubmed.ncbi.nlm.nih.gov/26353177) | The study reports quantitative PK parameters (Cmax, AUC, MRT, t1/2) for domperidone in humans, but specific numeric values are not explicitly listed in the provided abstract text, only percentage changes. |
 | `Corsi_1991.pdf` | Corsi M et al., Pharmacological analysis of 5-hydroxytr…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12494.x](https://doi.org/10.1111/j.1476-5381.1991.tb12494.x) | [1797331](https://www.ncbi.nlm.nih.gov/pubmed/1797331) | metadata signals extractable PD data (EC50) |
@@ -107,17 +107,17 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Athukuri_2017.pdf` | Athukuri BL et al., Enhanced Oral Bioavailability of Domper…, Journal of pharmacy & pharm… (2017) | pgx | 7 | [10.18433/J3MK72](https://doi.org/10.18433/J3MK72) | [28459658](https://www.ncbi.nlm.nih.gov/pubmed/28459658) | metadata signals extractable PGX data (CYP3A1, PK/PD-context) |
 | `Michaud_2010.pdf` | Michaud V et al., Characterization of CYP3A isozymes invo…, Drug metabolism letters (2010) | pgx | 7 | [10.2174/187231210791292735](https://doi.org/10.2174/187231210791292735) | [21281268](https://www.ncbi.nlm.nih.gov/pubmed/21281268) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Naidoo_2019.pdf` | Naidoo P et al., Progress in the Consideration of Possib…, Current drug metabolism (2019) | pgx | 7 | [10.2174/1389200220666181128160813](https://doi.org/10.2174/1389200220666181128160813) | [30488793](https://www.ncbi.nlm.nih.gov/pubmed/30488793) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 | not captured | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
+| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 |  | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Rossi_2010.pdf` | Rossi M et al., Domperidone and long QT syndrome, Current drug safety (2010) | pgx | 7 | [10.2174/157488610791698334](https://doi.org/10.2174/157488610791698334) | [20394569](https://www.ncbi.nlm.nih.gov/pubmed/20394569) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Templeton_2016.pdf` | Templeton I et al., A physiologically based pharmacokinetic…, Biopharmaceutics & drug dis… (2016) | pgx | 7 | [10.1002/bdd.1992](https://doi.org/10.1002/bdd.1992) | [26356245](https://www.ncbi.nlm.nih.gov/pubmed/26356245) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Ung_2009.pdf` | Ung D et al., Metabolic interactions between prokinet…, Xenobiotica; the fate of fo… (2009) | pgx | 7 | [10.1080/00498250903096121](https://doi.org/10.1080/00498250903096121) | [19575604](https://www.ncbi.nlm.nih.gov/pubmed/19575604) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Yamsani_2014.pdf` | Yamsani SK et al., Effect of silymarin pretreatment on the…, Drug metabolism and drug in… (2014) | pgx | 7 | [10.1515/dmdi-2014-0013](https://doi.org/10.1515/dmdi-2014-0013) | [25029082](https://www.ncbi.nlm.nih.gov/pubmed/25029082) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Zhou_2021.pdf` | Zhou H et al., A simple LC-MS/MS method for simultaneo…, Journal of chromatography.… (2021) | pgx | 7 | [10.1016/j.jchromb.2021.122766](https://doi.org/10.1016/j.jchromb.2021.122766) | [34247102](https://www.ncbi.nlm.nih.gov/pubmed/34247102) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `unknown_2016.pdf` | unknown, Metoclopramide, domperidone: sudden car…, Prescrire international (2016) | pgx | 7 | not captured | [30645828](https://www.ncbi.nlm.nih.gov/pubmed/30645828) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Essa_2012.pdf` | Essa EA et al., Preparation and characterization of dom…, Pakistan journal of pharmac… (2012) | pgx | 5 | not captured | [23009995](https://www.ncbi.nlm.nih.gov/pubmed/23009995) | metadata signals extractable PGX data (CYP3A4) |
+| `unknown_2016.pdf` | unknown, Metoclopramide, domperidone: sudden car…, Prescrire international (2016) | pgx | 7 |  | [30645828](https://www.ncbi.nlm.nih.gov/pubmed/30645828) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Essa_2012.pdf` | Essa EA et al., Preparation and characterization of dom…, Pakistan journal of pharmac… (2012) | pgx | 5 |  | [23009995](https://www.ncbi.nlm.nih.gov/pubmed/23009995) | metadata signals extractable PGX data (CYP3A4) |
 | `Parkman_2011.pdf` | Parkman HP et al., Domperidone treatment for gastroparesis…, Digestive diseases and scie… (2011) | pgx | 5 | [10.1007/s10620-010-1472-2](https://doi.org/10.1007/s10620-010-1472-2) | [21063774](https://www.ncbi.nlm.nih.gov/pubmed/21063774) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-04T13:48:37.709551+00:00</sub>
+<sub>queue written 2026-10-04 13:48 UTC</sub>
 
 ## Screened and excluded
 
@@ -180,5 +180,5 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-04 13:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdomperidone%5D&body=Drug%3A%20domperidone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_domperidone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:48 UTC</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** choline salicylate
 - **ATC codes:** `N02BA03`
-- **DrugBank:** [DB14006](https://go.drugbank.com/drugs/DB14006) · **PubChem:** not captured
+- **DrugBank:** [DB14006](https://go.drugbank.com/drugs/DB14006) · **PubChem:** none
 - **molar mass:** 241.287 g/mol (C12H19NO4) — DrugBank
 - **groups:** approved, investigational, nutraceutical
 
@@ -36,15 +36,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | blood | `BCHE` product | DrugBank actor |
 | metabolism | liver | `BCHE` product, `SLC22A1` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | — | blood | `ACHE` product | DrugBank actor |
 | — | neuromuscular junction | `ACHE` product | DrugBank actor |
 
@@ -68,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1047 matched, 302 returned
 - **screened:** 50  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -89,20 +87,20 @@ _38 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Costa_2014.pdf` | Costa SP et al., Automated evaluation of pharmaceuticall…, Journal of hazardous materi… (2014) | pd | 4 | [10.1016/j.jhazmat.2013.11.052](https://doi.org/10.1016/j.jhazmat.2013.11.052) | [24355776](https://www.ncbi.nlm.nih.gov/pubmed/24355776) | metadata signals extractable PD data (EC50) |
 | `Dunstan_1998.pdf` | Dunstan C et al., Alphitol, a phenolic substance from Alp…, Phytochemistry (1998) | pd | 4 | [10.1016/s0031-9422(97)00827-3](https://doi.org/10.1016/s0031-9422(97)00827-3) | [9654777](https://www.ncbi.nlm.nih.gov/pubmed/9654777) | metadata signals extractable PD data (IC50) |
 | `Gu_2018.pdf` | Gu CB et al., Characterization, culture medium optimi…, Journal of applied microbio… (2018) | pd | 4 | [10.1111/jam.13928](https://doi.org/10.1111/jam.13928) | [29791772](https://www.ncbi.nlm.nih.gov/pubmed/29791772) | metadata signals extractable PD data (EC50) |
-| `Hurni_1993.pdf` | Hurni MA et al., Permeability enhancement in Caco-2 cell…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [7504101](https://www.ncbi.nlm.nih.gov/pubmed/7504101) | metadata signals extractable PD data (EC50) |
+| `Hurni_1993.pdf` | Hurni MA et al., Permeability enhancement in Caco-2 cell…, The Journal of pharmacology… (1993) | pd | 4 |  | [7504101](https://www.ncbi.nlm.nih.gov/pubmed/7504101) | metadata signals extractable PD data (EC50) |
 | `Iguchi_2022.pdf` | Iguchi T et al., Chemical constituents and aldose reduct…, Natural product research (2022) | pd | 4 | [10.1080/14786419.2020.1839455](https://doi.org/10.1080/14786419.2020.1839455) | [33121272](https://www.ncbi.nlm.nih.gov/pubmed/33121272) | metadata signals extractable PD data (IC50) |
-| `Laneuville_1994.pdf` | Laneuville O et al., Differential inhibition of human prosta…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [7965814](https://www.ncbi.nlm.nih.gov/pubmed/7965814) | metadata signals extractable PD data (IC50) |
+| `Laneuville_1994.pdf` | Laneuville O et al., Differential inhibition of human prosta…, The Journal of pharmacology… (1994) | pd | 4 |  | [7965814](https://www.ncbi.nlm.nih.gov/pubmed/7965814) | metadata signals extractable PD data (IC50) |
 | `Li_2024.pdf` | Li W et al., Endocrine-Disrupting Effects of Salicyl…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.4c04265](https://doi.org/10.1021/acs.jafc.4c04265) | [39454092](https://www.ncbi.nlm.nih.gov/pubmed/39454092) | metadata signals extractable PD data (IC50) |
 | `Mitchell_1993.pdf` | Mitchell JA et al., Selectivity of nonsteroidal antiinflamm…, Proceedings of the National… (1993) | pd | 4 | [10.1073/pnas.90.24.11693](https://doi.org/10.1073/pnas.90.24.11693) | [8265610](https://www.ncbi.nlm.nih.gov/pubmed/8265610) | metadata signals extractable PD data (IC50) |
 | `Pacifici_1991.pdf` | Pacifici GM et al., Conjugation of benzoic acid with glycin…, Developmental pharmacology… (1991) | pd | 4 | [10.1159/000457499](https://doi.org/10.1159/000457499) | [1811921](https://www.ncbi.nlm.nih.gov/pubmed/1811921) | metadata signals extractable PD data (IC50) |
 | `Picone_2021.pdf` | Picone M et al., Fragrance materials (FMs) affect the la…, Ecotoxicology and environme… (2021) | pd | 4 | [10.1016/j.ecoenv.2021.112146](https://doi.org/10.1016/j.ecoenv.2021.112146) | [33744517](https://www.ncbi.nlm.nih.gov/pubmed/33744517) | metadata signals extractable PD data (EC50) |
-| `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
+| `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 |  | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
 | `Rolli_2016.pdf` | Rolli E et al., Phytotoxic Effects and Phytochemical Fi…, Chemistry & biodiversity (2016) | pd | 4 | [10.1002/cbdv.201500010](https://doi.org/10.1002/cbdv.201500010) | [26765353](https://www.ncbi.nlm.nih.gov/pubmed/26765353) | metadata signals extractable PD data (EC50) |
 | `Saeed_2019.pdf` | Saeed KM et al., Comparative assessment of phytochemical…, Journal of food biochemistry (2019) | pd | 4 | [10.1111/jfbc.13025](https://doi.org/10.1111/jfbc.13025) | [31456236](https://www.ncbi.nlm.nih.gov/pubmed/31456236) | metadata signals extractable PD data (EC50) |
 | `Tzima_2023.pdf` | Tzima CS et al., Possible implementation of salicylate a…, Journal of inorganic bioche… (2023) | pd | 4 | [10.1016/j.jinorgbio.2023.112225](https://doi.org/10.1016/j.jinorgbio.2023.112225) | [37075542](https://www.ncbi.nlm.nih.gov/pubmed/37075542) | metadata signals extractable PD data (IC50) |
 | `Xie_2020.pdf` | Xie F et al., Generation of Fluorinated Amychelin Sid…, Cell chemical biology (2020) | pd | 4 | [10.1016/j.chembiol.2020.10.009](https://doi.org/10.1016/j.chembiol.2020.10.009) | [33186541](https://www.ncbi.nlm.nih.gov/pubmed/33186541) | metadata signals extractable PD data (EC50) |
 | `Zhang_2024.pdf` | Zhang T et al., Quinolizidine Alkaloids and Isoflavones…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.3c09529](https://doi.org/10.1021/acs.jafc.3c09529) | [38394631](https://www.ncbi.nlm.nih.gov/pubmed/38394631) | metadata signals extractable PD data (EC50) |
-| `Allegaert_2008.pdf` | Allegaert K et al., Neonatal clinical pharmacology: recent…, Acta anaesthesiologica Belg… (2008) | pgx | 8 | not captured | [19235528](https://www.ncbi.nlm.nih.gov/pubmed/19235528) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Allegaert_2008.pdf` | Allegaert K et al., Neonatal clinical pharmacology: recent…, Acta anaesthesiologica Belg… (2008) | pgx | 8 |  | [19235528](https://www.ncbi.nlm.nih.gov/pubmed/19235528) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Chen_2007.pdf` | Chen Y et al., UGT1A6 polymorphism and salicylic acid…, Pharmacogenetics and genomi… (2007) | pgx | 8 | [10.1097/01.fpc.0000236339.79916.07](https://doi.org/10.1097/01.fpc.0000236339.79916.07) | [17622933](https://www.ncbi.nlm.nih.gov/pubmed/17622933) | metadata signals extractable PGX data (UGT1A6, PK/PD-context) |
 | `Colizza_2007.pdf` | Colizza K et al., Metabolism, pharmacokinetics, and excre…, Drug metabolism and disposi… (2007) | pgx | 8 | [10.1124/dmd.106.014266](https://doi.org/10.1124/dmd.106.014266) | [17360832](https://www.ncbi.nlm.nih.gov/pubmed/17360832) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Lennard_1998.pdf` | Lennard L, Clinical implications of thiopurine met…, Therapeutic drug monitoring (1998) | pgx | 8 | [10.1097/00007691-199810000-00014](https://doi.org/10.1097/00007691-199810000-00014) | [9780130](https://www.ncbi.nlm.nih.gov/pubmed/9780130) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
@@ -116,7 +114,7 @@ _38 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sundaravadivel_2025.pdf` | Sundaravadivel P et al., Association of platelet ADP receptor va…, Personalized medicine (2025) | pgx | 5 | [10.1080/17410541.2025.2530381](https://doi.org/10.1080/17410541.2025.2530381) | [40644802](https://www.ncbi.nlm.nih.gov/pubmed/40644802) | metadata signals extractable PGX data (UGT1A6) |
 | `Wang_2016.pdf` | Wang SH et al., Comparison of the antiplatelet effect o…, Genetics and molecular rese… (2016) | pgx | 5 | [10.4238/gmr.15027136](https://doi.org/10.4238/gmr.15027136) | [27173230](https://www.ncbi.nlm.nih.gov/pubmed/27173230) | metadata signals extractable PGX data (CYP2C19*2) |
 
-<sub>queue written 2026-10-07T06:00:58.276998+00:00</sub>
+<sub>queue written 2026-10-07 06:00 UTC</sub>
 
 ## Screened and excluded
 
@@ -408,5 +406,5 @@ _38 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcholine_salicylate%5D&body=Drug%3A%20choline_salicylate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_choline_salicylate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

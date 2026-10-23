@@ -146,4 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperacillin%5D%20pd_de_2011_N&body=Drug%3A%20piperacillin%0ARecord%3A%20pd_de_2011_N%0APaper%3A%20de_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperacillin/pd_de_2011_N%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [piperacillin](drugs/drug_piperacillin/)</sub>

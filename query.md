@@ -18,8 +18,10 @@
 
 ## Databases
 
-Current file sizes, row counts and licences: [Data & downloads](data.md). Two SQLite databases are queried locally using sql.js. Results summarise literature evidence,
-not medical advice.
+Current file sizes, row counts and licences: [Data & downloads](data.md). The site publishes
+three SQLite databases, all queried locally using sql.js: this page uses the query and passage
+databases below; the ADME database (enzymes, transporters and their tissues) drives
+[Sites & interactions](sites.md). Results summarise literature evidence, not medical advice.
 
 **Query database** (~8 MB, loaded with the page):
 

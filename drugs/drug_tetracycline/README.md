@@ -90,12 +90,11 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | kidney | `CYP3A5` metabolism, `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` metabolism, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` metabolism, `SLC22A7` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` metabolism | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
@@ -121,7 +120,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 703 matched, 168 returned
 - **screened:** 5  ·  **relevant:** 3
-- **records:** 8  ·  extracted 5  ·  needs_review 1  ·  rejected 2  ·  stale 6
+- **records:** 8  ·  extracted 5  ·  needs review 1  ·  rejected 2  ·  stale 6
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -139,7 +138,7 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Passarell_2009.pdf` | Passarell J et al., Exposure-response analyses of tigecycli…, Diagnostic microbiology and… (2009) | pd | 5 | [10.1016/j.diagmicrobio.2009.06.019](https://doi.org/10.1016/j.diagmicrobio.2009.06.019) | [19748422](https://www.ncbi.nlm.nih.gov/pubmed/19748422) | metadata signals extractable PD data (Exposure-response) |
 | `Prats_2005.pdf` | Prats C et al., PK and PK/PD of doxycycline in drinking…, Journal of veterinary pharm… (2005) | pd | 5 | [10.1111/j.1365-2885.2005.00700.x](https://doi.org/10.1111/j.1365-2885.2005.00700.x) | [16343284](https://www.ncbi.nlm.nih.gov/pubmed/16343284) | metadata signals extractable PD data (PK/PD) |
 | `Wei_2023.pdf` | Wei H et al., Four antibiotics and copper interactive…, Environmental science and p… (2023) | pd | 5 | [10.1007/s11356-023-30415-w](https://doi.org/10.1007/s11356-023-30415-w) | [37872331](https://www.ncbi.nlm.nih.gov/pubmed/37872331) | metadata signals extractable PD data (EC50) |
-| `Burns_1989.pdf` | Burns FR et al., Inhibition of purified collagenase from…, Investigative ophthalmology… (1989) | pd | 4 | not captured | [2545645](https://www.ncbi.nlm.nih.gov/pubmed/2545645) | metadata signals extractable PD data (IC50) |
+| `Burns_1989.pdf` | Burns FR et al., Inhibition of purified collagenase from…, Investigative ophthalmology… (1989) | pd | 4 |  | [2545645](https://www.ncbi.nlm.nih.gov/pubmed/2545645) | metadata signals extractable PD data (IC50) |
 | `Escobar-Huerfano_2020.pdf` | Escobar-Huerfano F et al., Embryotoxic and teratogenic profile of…, Chemosphere (2020) | pd | 4 | [10.1016/j.chemosphere.2019.124969](https://doi.org/10.1016/j.chemosphere.2019.124969) | [31726589](https://www.ncbi.nlm.nih.gov/pubmed/31726589) | metadata signals extractable PD data (EC50) |
 | `Salcedo_2017.pdf` | Salcedo DE et al., Fate of tetracycline resistance in synt…, Journal of environmental ma… (2017) | pd | 4 | [10.1016/j.jenvman.2016.11.048](https://doi.org/10.1016/j.jenvman.2016.11.048) | [27912133](https://www.ncbi.nlm.nih.gov/pubmed/27912133) | metadata signals extractable PD data (EC50) |
 | `Suomalainen_1992.pdf` | Suomalainen K et al., Tetracycline inhibition identifies the…, Oral microbiology and immun… (1992) | pd | 4 | [10.1111/j.1399-302x.1992.tb00522.x](https://doi.org/10.1111/j.1399-302x.1992.tb00522.x) | [1326740](https://www.ncbi.nlm.nih.gov/pubmed/1326740) | metadata signals extractable PD data (IC50) |
@@ -149,9 +148,9 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Wehring_2018.pdf` | Wehring HJ et al., Adjunctive Minocycline in Clozapine-Tre…, The Psychiatric quarterly (2018) | pgx | 7 | [10.1007/s11126-017-9515-x](https://doi.org/10.1007/s11126-017-9515-x) | [28466366](https://www.ncbi.nlm.nih.gov/pubmed/28466366) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Yasuda_2008.pdf` | Yasuda K et al., A comprehensive in vitro and in silico…, Drug metabolism and disposi… (2008) | pgx | 7 | [10.1124/dmd.108.020701](https://doi.org/10.1124/dmd.108.020701) | [18505790](https://www.ncbi.nlm.nih.gov/pubmed/18505790) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kuo_2013.pdf` | Kuo CH et al., Comparison of 10 day bismuth quadruple…, The Journal of antimicrobia… (2013) | pgx | 5 | [10.1093/jac/dks361](https://doi.org/10.1093/jac/dks361) | [22984204](https://www.ncbi.nlm.nih.gov/pubmed/22984204) | metadata signals extractable PGX data (CYP2C19) |
-| `Sezgin_2014.pdf` | Sezgin O et al., Modified sequential Helicobacter pylori…, Acta gastro-enterologica Be… (2014) | pgx | 5 | not captured | [24761684](https://www.ncbi.nlm.nih.gov/pubmed/24761684) | metadata signals extractable PGX data (CYP2C19) |
+| `Sezgin_2014.pdf` | Sezgin O et al., Modified sequential Helicobacter pylori…, Acta gastro-enterologica Be… (2014) | pgx | 5 |  | [24761684](https://www.ncbi.nlm.nih.gov/pubmed/24761684) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-07T19:21:53.128615+00:00</sub>
+<sub>queue written 2026-10-07 19:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -325,5 +324,5 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 19:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracycline%5D&body=Drug%3A%20tetracycline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracycline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:21 UTC</sub>

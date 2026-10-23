@@ -64,4 +64,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdisopyramide%5D%20pd_Vir_g_1998_I_to&body=Drug%3A%20disopyramide%0ARecord%3A%20pd_Vir_g_1998_I_to%0APaper%3A%20Vir%C3%A1g_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_disopyramide/pd_Vir_g_1998_I_to%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [disopyramide](drugs/drug_disopyramide/)</sub>

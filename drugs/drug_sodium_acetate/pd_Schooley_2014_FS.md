@@ -83,4 +83,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_acetate%5D%20pd_Schooley_2014_FS&body=Drug%3A%20sodium_acetate%0ARecord%3A%20pd_Schooley_2014_FS%0APaper%3A%20Schooley_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_acetate/pd_Schooley_2014_FS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sodium acetate](drugs/drug_sodium_acetate/)</sub>

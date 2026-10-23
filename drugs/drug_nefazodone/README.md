@@ -35,13 +35,12 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer/inhibitor | DrugBank actor |
 | distribution | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
 | distribution | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B3` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | excretion | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
 | excretion | liver | `ABCB1` inducer/inhibitor, `ABCB11` substrate | DrugBank actor |
@@ -69,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 142 matched, 96 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -96,14 +95,14 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Michalets_2000.pdf` | Michalets EL et al., Drug interactions with cisapride: clini…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039010-00004](https://doi.org/10.2165/00003088-200039010-00004) | [10926350](https://www.ncbi.nlm.nih.gov/pubmed/10926350) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Ohno_2007.pdf` | Ohno Y et al., General framework for the quantitative…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746080-00005](https://doi.org/10.2165/00003088-200746080-00005) | [17655375](https://www.ncbi.nlm.nih.gov/pubmed/17655375) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Richelson_1997.pdf` | Richelson E, Pharmacokinetic drug interactions of ne…, Mayo Clinic proceedings (1997) | pgx | 7 | [10.4065/72.9.835](https://doi.org/10.4065/72.9.835) | [9294531](https://www.ncbi.nlm.nih.gov/pubmed/9294531) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Richelson_1998.pdf` | Richelson E, Pharmacokinetic interactions of antidep…, The Journal of clinical psy… (1998) | pgx | 7 | not captured | [9720479](https://www.ncbi.nlm.nih.gov/pubmed/9720479) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Taylor_1999.pdf` | Taylor D et al., The effect of nefazodone on clozapine p…, International clinical psyc… (1999) | pgx | 7 | not captured | [10435773](https://www.ncbi.nlm.nih.gov/pubmed/10435773) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Richelson_1998.pdf` | Richelson E, Pharmacokinetic interactions of antidep…, The Journal of clinical psy… (1998) | pgx | 7 |  | [9720479](https://www.ncbi.nlm.nih.gov/pubmed/9720479) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Taylor_1999.pdf` | Taylor D et al., The effect of nefazodone on clozapine p…, International clinical psyc… (1999) | pgx | 7 |  | [10435773](https://www.ncbi.nlm.nih.gov/pubmed/10435773) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Ucar_2000.pdf` | Ucar M et al., HMG-CoA reductase inhibitors and myotox…, Drug safety (2000) | pgx | 7 | [10.2165/00002018-200022060-00003](https://doi.org/10.2165/00002018-200022060-00003) | [10877038](https://www.ncbi.nlm.nih.gov/pubmed/10877038) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Wójcikowski_2013.pdf` | Wójcikowski J et al., Effect of antidepressant drugs on cytoc…, Pharmacological reports : PR (2013) | pgx | 7 | [10.1016/s1734-1140(13)71482-8](https://doi.org/10.1016/s1734-1140(13)71482-8) | [24399720](https://www.ncbi.nlm.nih.gov/pubmed/24399720) | metadata signals extractable PGX data (CYP2C11, PK/PD-context) |
 | `Mazzarino_2018.pdf` | Mazzarino M et al., A further insight into the metabolic pr…, Drug testing and analysis (2018) | pgx | 5 | [10.1002/dta.2538](https://doi.org/10.1002/dta.2538) | [30395700](https://www.ncbi.nlm.nih.gov/pubmed/30395700) | metadata signals extractable PGX data (CYP3A4) |
 | `Pollock_1996.pdf` | Pollock BG et al., Bupropion plasma levels and CYP2D6 phen…, Therapeutic drug monitoring (1996) | pgx | 5 | [10.1097/00007691-199610000-00010](https://doi.org/10.1097/00007691-199610000-00010) | [8885123](https://www.ncbi.nlm.nih.gov/pubmed/8885123) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-06T23:43:04.282272+00:00</sub>
+<sub>queue written 2026-10-06 23:43 UTC</sub>
 
 ## Screened and excluded
 
@@ -206,5 +205,5 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnefazodone%5D&body=Drug%3A%20nefazodone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nefazodone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

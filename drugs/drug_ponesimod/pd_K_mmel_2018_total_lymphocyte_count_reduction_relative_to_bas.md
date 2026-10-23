@@ -59,4 +59,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bponesimod%5D%20pd_K_mmel_2018_total_lymphocyte_count_reduction_relative_to_bas&body=Drug%3A%20ponesimod%0ARecord%3A%20pd_K_mmel_2018_total_lymphocyte_count_reduction_relative_to_bas%0APaper%3A%20K%C3%BCmmel_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ponesimod/pd_K_mmel_2018_total_lymphocyte_count_reduction_relative_to_bas%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ponesimod](drugs/drug_ponesimod/)</sub>

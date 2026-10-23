@@ -60,4 +60,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbutorphanol%5D%20pd_Vandeputte_2020_mini_Gi&body=Drug%3A%20butorphanol%0ARecord%3A%20pd_Vandeputte_2020_mini_Gi%0APaper%3A%20Vandeputte_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_butorphanol/pd_Vandeputte_2020_mini_Gi%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [butorphanol](drugs/drug_butorphanol/)</sub>

@@ -105,7 +105,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 19 matched, 18 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 8  ·  extracted 2  ·  needs_review 3  ·  rejected 3  ·  stale 0
+- **records:** 8  ·  extracted 2  ·  needs review 3  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -117,15 +117,15 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kuhlmann_2001.pdf` | Kuhlmann O et al., Pharmacokinetics and toxicity of idarub…, European journal of drug me… (2001) | popPK | 10 | [10.1007/BF03226374](https://doi.org/10.1007/BF03226374) | [11808862](https://pubmed.ncbi.nlm.nih.gov/11808862) | Rat idarubicin PK parameters, including clearance and steady-state volume, are reported numerically in the evidence. |
 | `Looby_1997.pdf` | Looby M et al., Pharmacokinetics and tissue distributio…, Cancer chemotherapy and pha… (1997) | popPK | 10 | [10.1007/s002800050614](https://doi.org/10.1007/s002800050614) | [9118470](https://pubmed.ncbi.nlm.nih.gov/9118470) | Rabbit idarubicin pharmacokinetics are modeled with numeric clearance, distribution clearance, and steady-state volume values. |
 | `Pea_1999.pdf` | Pea F et al., Multidrug resistance modulation in vivo…, European journal of clinica… (1999) | popPK | 10 | [10.1007/s002280050641](https://doi.org/10.1007/s002280050641) | [10456485](https://pubmed.ncbi.nlm.nih.gov/10456485) | Human idarubicin pharmacokinetics are modeled and numeric clearance values are reported. |
-| `Reid_1990.pdf` | Reid JM et al., Plasma pharmacokinetics and cerebrospin…, Cancer research (1990) | popPK | 10 | not captured | [2208112](https://pubmed.ncbi.nlm.nih.gov/2208112) | Quantitative pharmacokinetic parameters for idarubicin and idarubicinol are reported in the evidence. |
+| `Reid_1990.pdf` | Reid JM et al., Plasma pharmacokinetics and cerebrospin…, Cancer research (1990) | popPK | 10 |  | [2208112](https://pubmed.ncbi.nlm.nih.gov/2208112) | Quantitative pharmacokinetic parameters for idarubicin and idarubicinol are reported in the evidence. |
 | `Stewart_1991.pdf` | Stewart DJ et al., Bioavailability and pharmacology of ora…, Cancer chemotherapy and pha… (1991) | popPK | 10 | [10.1007/BF00685117](https://doi.org/10.1007/BF00685117) | [1998987](https://pubmed.ncbi.nlm.nih.gov/1998987) | Human idarubicin pharmacokinetics are modeled, with numeric half-life and bioavailability values included in the evidence. |
-| `Tamura_1996.pdf` | Tamura K, A phase I study of idarubicin hydrochlo…, Seminars in hematology (1996) | popPK | 10 | not captured | [8916310](https://pubmed.ncbi.nlm.nih.gov/8916310) | Human idarubicin PK parameters, including half-life, Vdss, and clearance, are numerically reported in the evidence. |
+| `Tamura_1996.pdf` | Tamura K, A phase I study of idarubicin hydrochlo…, Seminars in hematology (1996) | popPK | 10 |  | [8916310](https://pubmed.ncbi.nlm.nih.gov/8916310) | Human idarubicin PK parameters, including half-life, Vdss, and clearance, are numerically reported in the evidence. |
 | `Weiss_2002.pdf` | Weiss M et al., P-glycoprotein inhibitors enhance satur…, The Journal of pharmacology… (2002) | popPK | 10 | [10.1124/jpet.300.2.688](https://doi.org/10.1124/jpet.300.2.688) | [11805234](https://pubmed.ncbi.nlm.nih.gov/11805234) | Rat-heart PK modeling reports numeric idarubicin uptake parameters (Km and Vmax) in the evidence. |
 | `Eksborg_1990.pdf` | Eksborg S et al., Plasma pharmacokinetics of Idarubicin a…, Acta oncologica (Stockholm,… (1990) | popPK | 9 | [10.3109/02841869009096390](https://doi.org/10.3109/02841869009096390) | [2261209](https://pubmed.ncbi.nlm.nih.gov/2261209) | The study models intravenous idarubicin pharmacokinetics, but no numeric parameter values are provided in the evidence. |
 | `Eksborg_1997.pdf` | Eksborg S et al., Plasma pharmacokinetics of idarubicin a…, Anti-cancer drugs (1997) | popPK | 9 | [10.1097/00001813-199701000-00005](https://doi.org/10.1097/00001813-199701000-00005) | [9147610](https://pubmed.ncbi.nlm.nih.gov/9147610) | Human idarubicin pharmacokinetics are modeled, but numeric disposition parameter values are not provided. |
 | `Kang_2003.pdf` | Kang W et al., Kinetic analysis of saturable myocardia…, Pharmaceutical research (2003) | popPK | 8 | [10.1023/a:1022246708326](https://doi.org/10.1023/a:1022246708326) | [12608537](https://pubmed.ncbi.nlm.nih.gov/12608537) | Rat-heart uptake kinetics are modeled, but only relative changes are reported, not absolute parameter values. |
 
-<sub>queue written 2026-10-06T18:01:10.326090+00:00</sub>
+<sub>queue written 2026-10-06 18:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -146,5 +146,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 18:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D&body=Drug%3A%20idarubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 18:02 UTC</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** Tocopherol
 - **ATC codes:** `A11HA03`
-- **DrugBank:** [DB11251](https://go.drugbank.com/drugs/DB11251) · **PubChem:** not captured
+- **DrugBank:** [DB11251](https://go.drugbank.com/drugs/DB11251) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -87,7 +87,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1019 matched, 100 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -97,8 +97,8 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Hidiroglou_1996.pdf` | Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy science (1996) | popPK | 10 | [10.3168/jds.S0022-0302(96)76455-X](https://doi.org/10.3168/jds.S0022-0302(96)76455-X) | [8827467](https://pubmed.ncbi.nlm.nih.gov/8827467) | The study reports quantitative pharmacokinetic parameters (Ka, t1/2, AUC, Cmax) for alpha-tocopherol in sheep. |
-| `Hidiroglou_1991.pdf` | Hidiroglou M, Plasma kinetics of tritiated d-alpha-to…, Annales de recherches veter… (1991) | popPK | 9 | not captured | [1809212](https://pubmed.ncbi.nlm.nih.gov/1809212) | The abstract describes compartmental modeling (2- and 3-compartment) and compares vehicle effects, but no specific numeric PK parameter values (CL, V, ka, t1/2) are provided in the text. |
-| `Hidiroglou_1993.pdf` | Hidiroglou M, Assessment of the oral administration o…, Veterinary research (1993) | popPK | 8 | not captured | [8111430](https://pubmed.ncbi.nlm.nih.gov/8111430) | The study reports a 2-compartment pharmacokinetic model for tocopherol in sheep, but the specific numeric parameter values are not provided in the extracted evidence. |
+| `Hidiroglou_1991.pdf` | Hidiroglou M, Plasma kinetics of tritiated d-alpha-to…, Annales de recherches veter… (1991) | popPK | 9 |  | [1809212](https://pubmed.ncbi.nlm.nih.gov/1809212) | The abstract describes compartmental modeling (2- and 3-compartment) and compares vehicle effects, but no specific numeric PK parameter values (CL, V, ka, t1/2) are provided in the text. |
+| `Hidiroglou_1993.pdf` | Hidiroglou M, Assessment of the oral administration o…, Veterinary research (1993) | popPK | 8 |  | [8111430](https://pubmed.ncbi.nlm.nih.gov/8111430) | The study reports a 2-compartment pharmacokinetic model for tocopherol in sheep, but the specific numeric parameter values are not provided in the extracted evidence. |
 | `Hidiroglou_1992.pdf` | Hidiroglou M et al., Biokinetics and biliary excretion of ra…, Journal of animal science (1992) | popPK | 7 | [10.2527/1992.7041220x](https://doi.org/10.2527/1992.7041220x) | [1316347](https://pubmed.ncbi.nlm.nih.gov/1316347) | The study describes the pharmacokinetic modeling of tocopherol in sheep (two-compartment model), but specific numeric parameter values (CL, V, ka, etc.) are not provided in the text, only qualitative descriptions and time points. |
 | `Bateman_1985.pdf` | Bateman NE et al., Kinetics of D-alpha-tocopherol in a wat…, The Journal of pharmacy and… (1985) | popPK | 5 | [10.1111/j.2042-7158.1985.tb04952.x](https://doi.org/10.1111/j.2042-7158.1985.tb04952.x) | [2867143](https://pubmed.ncbi.nlm.nih.gov/2867143) | The study reports tocopherol kinetics in humans using a one-compartment model, but only provides plasma concentration-time data points without explicit numeric values for PK parameters like clearance or volume. |
 | `Watanabe_2021.pdf` | Watanabe A et al., Pharmacokinetic-pharmacodynamic modelin…, Biopharmaceutics & drug dis… (2021) | pd | 5 | [10.1002/bdd.2271](https://doi.org/10.1002/bdd.2271) | [33724506](https://www.ncbi.nlm.nih.gov/pubmed/33724506) | metadata signals extractable PD data (pharmacodynamicmodel) |
@@ -109,7 +109,7 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Clarke_2009.pdf` | Clarke MW et al., Vitamin E supplementation and hepatic d…, Journal of cardiovascular p… (2009) | pgx | 7 | [10.1097/FJC.0b013e3181bfae18](https://doi.org/10.1097/FJC.0b013e3181bfae18) | [19755916](https://www.ncbi.nlm.nih.gov/pubmed/19755916) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Perepechaeva_2022.pdf` | Perepechaeva ML et al., Effects of prolonged subchronic benzo(α…, Drug and chemical toxicology (2022) | pgx | 7 | [10.1080/01480545.2020.1849270](https://doi.org/10.1080/01480545.2020.1849270) | [33213213](https://www.ncbi.nlm.nih.gov/pubmed/33213213) | metadata signals extractable PGX data (CYP1A, PK/PD-context) |
 
-<sub>queue written 2026-10-07T17:01:19.016517+00:00</sub>
+<sub>queue written 2026-10-07 17:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -227,5 +227,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 17:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btocopherol%5D&body=Drug%3A%20tocopherol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tocopherol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:01 UTC</sub>

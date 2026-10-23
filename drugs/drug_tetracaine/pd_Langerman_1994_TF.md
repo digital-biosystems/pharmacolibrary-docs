@@ -90,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracaine%5D%20pd_Langerman_1994_TF&body=Drug%3A%20tetracaine%0ARecord%3A%20pd_Langerman_1994_TF%0APaper%3A%20Langerman_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracaine/pd_Langerman_1994_TF%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [tetracaine](drugs/drug_tetracaine/)</sub>

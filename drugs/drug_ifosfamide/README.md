@@ -109,7 +109,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 384 matched, 154 returned
 - **screened:** 10  ·  **relevant:** 9
-- **records:** 10  ·  extracted 2  ·  needs_review 1  ·  rejected 5  ·  stale 1
+- **records:** 10  ·  extracted 2  ·  needs review 1  ·  rejected 5  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -122,7 +122,7 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Di_2000.pdf` | Di Marco MP et al., New insights into the pharmacokinetics…, Pharmaceutical research (2000) | popPK | 10 | [10.1023/a:1007561727948](https://doi.org/10.1023/a:1007561727948) | [10955835](https://pubmed.ncbi.nlm.nih.gov/10955835) | The study is a population PK model of ifosfamide in cancer patients and reports specific numeric clearance values (e.g., 4 vs 7 L/h for R-Ifosfamide) directly in the abstract. |
 | `Freyer_2000.pdf` | Freyer G et al., Population pharmacokinetics of doxorubi…, British journal of clinical… (2000) | popPK | 10 | [10.1046/j.1365-2125.2000.00269.x](https://doi.org/10.1046/j.1365-2125.2000.00269.x) | [11012554](https://pubmed.ncbi.nlm.nih.gov/11012554) | The paper is a population PK study for ifosfamide in human patients, and the abstract explicitly provides numeric values for clearance and volume of distribution. |
 | `Kerbusch_2000.pdf` | Kerbusch T et al., Evaluation of the autoinduction of ifos…, British journal of clinical… (2000) | popPK | 10 | [10.1046/j.1365-2125.2000.00217.x](https://doi.org/10.1046/j.1365-2125.2000.00217.x) | [10848719](https://pubmed.ncbi.nlm.nih.gov/10848719) | The study reports quantitative population pharmacokinetic parameters (CL, V, autoinduction rates) for ifosfamide in humans, with all numeric values explicitly provided in the abstract. |
-| `Kerbusch_2001.pdf` | Kerbusch T et al., Influence of dose and infusion duration…, Drug metabolism and disposi… (2001) | popPK | 10 | not captured | [11408362](https://pubmed.ncbi.nlm.nih.gov/11408362) | The paper reports a population PK model for ifosfamide in patients, but the specific numeric parameter values (CL, V, etc.) are not included in the provided text. |
+| `Kerbusch_2001.pdf` | Kerbusch T et al., Influence of dose and infusion duration…, Drug metabolism and disposi… (2001) | popPK | 10 |  | [11408362](https://pubmed.ncbi.nlm.nih.gov/11408362) | The paper reports a population PK model for ifosfamide in patients, but the specific numeric parameter values (CL, V, etc.) are not included in the provided text. |
 | `Kerbusch_2001_2.pdf` | Kerbusch T et al., Population pharmacokinetics of ifosfami…, Clinical pharmacokinetics (2001) | popPK | 10 | [10.2165/00003088-200140080-00005](https://doi.org/10.2165/00003088-200140080-00005) | [11523727](https://pubmed.ncbi.nlm.nih.gov/11523727) | The study reports quantitative population pharmacokinetic parameters (clearance, volume, intercompartmental clearances) for ifosfamide and its metabolites in children. |
 | `Kerbusch_2001_4.pdf` | Kerbusch T et al., Population pharmacokinetics and explora…, European journal of clinica… (2001) | popPK | 10 | [10.1007/s002280100322](https://doi.org/10.1007/s002280100322) | [11699611](https://pubmed.ncbi.nlm.nih.gov/11699611) | The study reports quantitative population PK parameters (clearance and volume of distribution) for ifosfamide in the abstract text. |
 | `Kerbusch_2001_5.pdf` | Kerbusch T et al., Population pharmacokinetics of ifosfami…, Cancer chemotherapy and pha… (2001) | popPK | 10 | [10.1007/s002800100277](https://doi.org/10.1007/s002800100277) | [11488525](https://pubmed.ncbi.nlm.nih.gov/11488525) | The study is a population PK study for ifosfamide in humans, but the provided evidence contains only a summary/abstract without specific numeric parameter values (CL, V, etc.), which are likely in the full text or supplementary material not included here. |
@@ -130,7 +130,7 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kerbusch_2001_3.pdf` | Kerbusch T et al., Modulation of the cytochrome P450-media…, Clinical pharmacology and t… (2001) | popPK | 9 | [10.1067/mcp.2001.117283](https://doi.org/10.1067/mcp.2001.117283) | [11503007](https://pubmed.ncbi.nlm.nih.gov/11503007) | The study reports population pharmacokinetic parameters for ifosfamide in humans, including clearance changes due to drug interactions, though specific baseline CL or V values are not explicitly listed in the abstract text provided. |
 | `Nelson_1976.pdf` | Nelson RL et al., Pharmacokinetics of divided-dose ifosfa…, Clinical pharmacology and t… (1976) | popPK | 8 | [10.1002/cpt1976193365](https://doi.org/10.1002/cpt1976193365) | [1261170](https://pubmed.ncbi.nlm.nih.gov/1261170) | Study reports PK for ifosfamide with specific half-life values, but key parameters like clearance and volume are described qualitatively without numeric values in the text. |
 
-<sub>queue written 2026-10-07T17:22:18.725393+00:00</sub>
+<sub>queue written 2026-10-07 17:22 UTC</sub>
 
 ## Screened and excluded
 
@@ -229,5 +229,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 17:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bifosfamide%5D&body=Drug%3A%20ifosfamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ifosfamide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:22 UTC</sub>

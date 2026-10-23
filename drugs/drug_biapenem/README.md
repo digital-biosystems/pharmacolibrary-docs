@@ -87,7 +87,7 @@ Biapenem is a carbapenem antibiotic (a beta-lactam antibacterial) with bacterici
 
 - **PubMed hits:** 74 matched, 62 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 10  ·  extracted 2  ·  needs_review 5  ·  rejected 3  ·  stale 0
+- **records:** 10  ·  extracted 2  ·  needs review 5  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -99,16 +99,16 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Dong_2016.pdf` | Dong J et al., Optimal dosing regimen of biapenem in C…, International journal of an… (2016) | popPK | 10 | [10.1016/j.ijantimicag.2015.12.018](https://doi.org/10.1016/j.ijantimicag.2015.12.018) | [26895604](https://pubmed.ncbi.nlm.nih.gov/26895604) | The evidence explicitly reports the final population pharmacokinetic model parameters (CL, Vc, Q, Vp) for biapenem in humans. |
 | `Ikawa_2008.pdf` | Ikawa K et al., Pharmacodynamic evaluation of biapenem…, International journal of an… (2008) | popPK | 10 | [10.1016/j.ijantimicag.2008.03.011](https://doi.org/10.1016/j.ijantimicag.2008.03.011) | [18602798](https://pubmed.ncbi.nlm.nih.gov/18602798) | The abstract provides explicit numeric values for the population pharmacokinetic model parameters (CL, V1, Q2, V2, Q3, V3) for biapenem in humans. |
 | `Ikawa_2008_3.pdf` | Ikawa K et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2008) | popPK | 10 | [10.1111/j.1365-2710.2008.00908.x](https://doi.org/10.1111/j.1365-2710.2008.00908.x) | [18315787](https://pubmed.ncbi.nlm.nih.gov/18315787) | The evidence contains a population PK model for biapenem in humans with explicit numerical values for clearance, volume, and intercompartmental clearance. |
-| `Koeppe_1997.pdf` | Koeppe P et al., Biapenem pharmacokinetics in healthy vo…, Arzneimittel-Forschung (1997) | popPK | 10 | not captured | [9428983](https://pubmed.ncbi.nlm.nih.gov/9428983) | The abstract describes a relevant pharmacokinetic study of biapenem in humans but does not provide any specific numeric values for CL, V, or other parameters in the text provided. |
+| `Koeppe_1997.pdf` | Koeppe P et al., Biapenem pharmacokinetics in healthy vo…, Arzneimittel-Forschung (1997) | popPK | 10 |  | [9428983](https://pubmed.ncbi.nlm.nih.gov/9428983) | The abstract describes a relevant pharmacokinetic study of biapenem in humans but does not provide any specific numeric values for CL, V, or other parameters in the text provided. |
 | `Kozawa_1998.pdf` | Kozawa O et al., Pharmacokinetics and safety of a new pa…, Antimicrobial agents and ch… (1998) | popPK | 10 | [10.1128/AAC.42.6.1433](https://doi.org/10.1128/AAC.42.6.1433) | [9624490](https://pubmed.ncbi.nlm.nih.gov/9624490) | The study reports quantitative pharmacokinetic parameters (half-life, renal clearance, volume of distribution trends) for biapenem in humans, with specific numeric values provided in the abstract text. |
 | `Rao_2023.pdf` | Rao Q et al., Optimal dosing regimen of biapenem base…, International journal of an… (2023) | popPK | 10 | [10.1016/j.ijantimicag.2023.106841](https://doi.org/10.1016/j.ijantimicag.2023.106841) | [37160241](https://pubmed.ncbi.nlm.nih.gov/37160241) | The evidence provides explicit quantitative population PK parameter formulas for biapenem (CL and V) including specific numeric coefficients and base values. |
 | `Dong_2016_2.pdf` | Dong J et al., Efficacy and safety of biapenem against…, Journal of chemotherapy (Fl… (2016) | popPK | 9 | [10.1179/1973947815Y.0000000078](https://doi.org/10.1179/1973947815Y.0000000078) | [26430768](https://pubmed.ncbi.nlm.nih.gov/26430768) | The study is a PK/PD analysis of biapenem in humans, but the provided evidence only contains efficacy outcomes and simulation inputs, lacking the specific quantitative PK parameter estimates (e.g., CL, V) required for extraction. |
-| `Nakashima_1993.pdf` | Nakashima M et al., Phase 1 study of L-627, biapenem, a new…, International journal of cl… (1993) | popPK | 9 | not captured | [8458679](https://pubmed.ncbi.nlm.nih.gov/8458679) | The study reports quantitative PK parameters (t1/2, renal recovery) and a model fit, but lacks explicit values for CL, V, and Q. |
+| `Nakashima_1993.pdf` | Nakashima M et al., Phase 1 study of L-627, biapenem, a new…, International journal of cl… (1993) | popPK | 9 |  | [8458679](https://pubmed.ncbi.nlm.nih.gov/8458679) | The study reports quantitative PK parameters (t1/2, renal recovery) and a model fit, but lacks explicit values for CL, V, and Q. |
 | `Ikawa_2011.pdf` | Ikawa K et al., Clinical pharmacokinetics of meropenem…, Antimicrobial agents and ch… (2011) | popPK | 8 | [10.1128/aac.00497-11](https://doi.org/10.1128/aac.00497-11) | [21947393](https://pubmed.ncbi.nlm.nih.gov/21947393) | Study reports clinical PK/PD of biapenem with some quantitative values (bile/plasma ratios, MIC breakpoints), but specific disposition parameters (CL, V) are likely in tables not fully detailed in the abstract snippet. |
 | `Ikawa_2008_2.pdf` | Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, Chemotherapy (2008) | popPK | 5 | [10.1159/000152459](https://doi.org/10.1159/000152459) | [18769027](https://pubmed.ncbi.nlm.nih.gov/18769027) | The study is a population PK study of biapenem in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided evidence, only the model structure and covariates are described. |
 | `Karino_2013.pdf` | Karino F et al., Evaluation of the efficacy and safety o…, Journal of infection and ch… (2013) | popPK | 5 | [10.1007/s10156-012-0463-y](https://doi.org/10.1007/s10156-012-0463-y) | [22926665](https://pubmed.ncbi.nlm.nih.gov/22926665) | The study mentions pharmacokinetics and low trough values but does not provide specific numeric PK parameters (CL, V, ka, etc.) in the provided evidence. |
 
-<sub>queue written 2026-10-07T10:25:43.427156+00:00</sub>
+<sub>queue written 2026-10-07 10:25 UTC</sub>
 
 ## Screened and excluded
 
@@ -134,5 +134,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbiapenem%5D&body=Drug%3A%20biapenem%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_biapenem/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:26 UTC</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** trometamol
 - **ATC codes:** `B05BB03`, `B05XX02`
-- **DrugBank:** [DB03754](https://go.drugbank.com/drugs/DB03754) · **PubChem:** not captured
+- **DrugBank:** [DB03754](https://go.drugbank.com/drugs/DB03754) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -44,7 +44,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1318 matched, 210 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -56,9 +56,9 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Brasch_1982.pdf` | Brasch H et al., Pharmacokinetics of TRIS (hydroxymethyl…, European journal of clinica… (1982) | popPK | 10 | [10.1007/BF00545225](https://doi.org/10.1007/BF00545225) | [7106159](https://pubmed.ncbi.nlm.nih.gov/7106159) | The study reports specific quantitative PK parameters for trometamol (TRIS) in humans, including half-lives, volume of distribution, and urinary recovery, though specific numeric values for clearance and initial distribution volume are not explicitly listed in the abstract text. |
 | `Konishi_2018.pdf` | Konishi K et al., Identification of Uridine 5'-Diphosphat…, European journal of drug me… (2018) | pd | 5 | [10.1007/s13318-017-0450-x](https://doi.org/10.1007/s13318-017-0450-x) | [29164523](https://www.ncbi.nlm.nih.gov/pubmed/29164523) | metadata signals extractable PD data (IC50) |
 | `Liu_2020.pdf` | Liu D et al., The toxicity effects and mechanisms of…, Environmental pollution (Ba… (2020) | pd | 5 | [10.1016/j.envpol.2020.114788](https://doi.org/10.1016/j.envpol.2020.114788) | [32559856](https://www.ncbi.nlm.nih.gov/pubmed/32559856) | metadata signals extractable PD data (EC50) |
-| `Biden_1986.pdf` | Biden TJ et al., Ca2+ regulates the inositol tris/tetrak…, The Journal of biological c… (1986) | pd | 4 | not captured | [3017952](https://www.ncbi.nlm.nih.gov/pubmed/3017952) | metadata signals extractable PD data (EC50) |
+| `Biden_1986.pdf` | Biden TJ et al., Ca2+ regulates the inositol tris/tetrak…, The Journal of biological c… (1986) | pd | 4 |  | [3017952](https://www.ncbi.nlm.nih.gov/pubmed/3017952) | metadata signals extractable PD data (EC50) |
 | `Bolger_1986.pdf` | Bolger GT et al., Novel interactions of cations with dihy…, British journal of pharmaco… (1986) | pd | 4 | [10.1111/j.1476-5381.1986.tb16259.x](https://doi.org/10.1111/j.1476-5381.1986.tb16259.x) | [3017494](https://www.ncbi.nlm.nih.gov/pubmed/3017494) | metadata signals extractable PD data (EC50) |
-| `Bostock_1984.pdf` | Bostock E et al., Mu opioid receptors participate in the…, The Journal of pharmacology… (1984) | pd | 4 | not captured | [6094789](https://www.ncbi.nlm.nih.gov/pubmed/6094789) | metadata signals extractable PD data (EC50) |
+| `Bostock_1984.pdf` | Bostock E et al., Mu opioid receptors participate in the…, The Journal of pharmacology… (1984) | pd | 4 |  | [6094789](https://www.ncbi.nlm.nih.gov/pubmed/6094789) | metadata signals extractable PD data (EC50) |
 | `Ji_2021.pdf` | Ji F et al., A cyclic peptide antenna ligand for enh…, The Analyst (2021) | pd | 4 | [10.1039/d1an00530h](https://doi.org/10.1039/d1an00530h) | [33913937](https://www.ncbi.nlm.nih.gov/pubmed/33913937) | metadata signals extractable PD data (EC50) |
 | `Jowett_2018.pdf` | Jowett LA et al., New Insights into the Anion Transport S…, Chemistry (Weinheim an der… (2018) | pd | 4 | [10.1002/chem.201801463](https://doi.org/10.1002/chem.201801463) | [29786913](https://www.ncbi.nlm.nih.gov/pubmed/29786913) | metadata signals extractable PD data (EC50) |
 | `Kardos_1984.pdf` | Kardos J et al., Inhibition of [3H]GABA binding to rat b…, Biochemical pharmacology (1984) | pd | 4 | [10.1016/0006-2952(84)90134-5](https://doi.org/10.1016/0006-2952(84)90134-5) | [6095852](https://www.ncbi.nlm.nih.gov/pubmed/6095852) | metadata signals extractable PD data (IC50) |
@@ -80,7 +80,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Suzuki_2020.pdf` | Suzuki K et al., A Reversed-Phase Mode LC-MS/MS Method U…, Therapeutic drug monitoring (2020) | pgx | 7 | [10.1097/FTD.0000000000000707](https://doi.org/10.1097/FTD.0000000000000707) | [31613803](https://www.ncbi.nlm.nih.gov/pubmed/31613803) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Yan_2017.pdf` | Yan S et al., Halogen-free organophosphorus flame ret…, Environmental pollution (Ba… (2017) | pgx | 7 | [10.1016/j.envpol.2017.02.071](https://doi.org/10.1016/j.envpol.2017.02.071) | [28318792](https://www.ncbi.nlm.nih.gov/pubmed/28318792) | metadata signals extractable PGX data (cyp4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T14:30:49.836882+00:00</sub>
+<sub>queue written 2026-10-07 14:30 UTC</sub>
 
 ## Screened and excluded
 
@@ -334,5 +334,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrometamol%5D&body=Drug%3A%20trometamol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trometamol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

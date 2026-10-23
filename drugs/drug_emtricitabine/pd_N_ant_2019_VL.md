@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bemtricitabine%5D%20pd_N_ant_2019_VL&body=Drug%3A%20emtricitabine%0ARecord%3A%20pd_N_ant_2019_VL%0APaper%3A%20N%C3%A9ant_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_emtricitabine/pd_N_ant_2019_VL%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [emtricitabine](drugs/drug_emtricitabine/)</sub>

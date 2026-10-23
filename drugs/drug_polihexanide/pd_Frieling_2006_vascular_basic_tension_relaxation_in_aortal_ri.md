@@ -83,4 +83,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpolihexanide%5D%20pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri&body=Drug%3A%20polihexanide%0ARecord%3A%20pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri%0APaper%3A%20Frieling_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_polihexanide/pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [polihexanide](drugs/drug_polihexanide/)</sub>

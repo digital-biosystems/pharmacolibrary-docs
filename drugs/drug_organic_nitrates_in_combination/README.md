@@ -4,7 +4,7 @@
 
 - **generic name:** organic nitrates in combination
 - **ATC codes:** `C01DA20`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -35,7 +35,7 @@ _not available_
 
 - **PubMed hits:** 59 matched, 43 returned
 - **screened:** 11  ·  **relevant:** 9
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -44,21 +44,21 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chasseaud_1983.pdf` | Chasseaud LF, Newer aspects of the pharmacokinetics o…, Zeitschrift fur Kardiologie… (1983) | popPK | 10 | not captured | [6666223](https://pubmed.ncbi.nlm.nih.gov/6666223) | The paper reports specific quantitative pharmacokinetic parameters (clearance, volume, half-life) for isosorbide dinitrate and its metabolite isosorbide-5-mononitrate in humans. |
+| `Chasseaud_1983.pdf` | Chasseaud LF, Newer aspects of the pharmacokinetics o…, Zeitschrift fur Kardiologie… (1983) | popPK | 10 |  | [6666223](https://pubmed.ncbi.nlm.nih.gov/6666223) | The paper reports specific quantitative pharmacokinetic parameters (clearance, volume, half-life) for isosorbide dinitrate and its metabolite isosorbide-5-mononitrate in humans. |
 | `Major_1984.pdf` | Major RM et al., Isosorbide 5-mononitrate kinetics, Clinical pharmacology and t… (1984) | popPK | 10 | [10.1038/clpt.1984.90](https://doi.org/10.1038/clpt.1984.90) | [6713775](https://pubmed.ncbi.nlm.nih.gov/6713775) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, half-life, absorption) for isosorbide 5-mononitrate, which is an organic nitrate. |
 | `Chen_2004.pdf` | Chen J et al., Pharmacokinetics of three organic nitra…, Arzneimittel-Forschung (2004) | popPK | 9 | [10.1055/s-0031-1296960](https://doi.org/10.1055/s-0031-1296960) | [15146932](https://pubmed.ncbi.nlm.nih.gov/15146932) | The study reports quantitative pharmacokinetic parameters (AUC, bioavailability) for organic nitrates (ISDN, 5-ISMN) in humans, with specific numeric values provided in the abstract. |
 | `Fung_1988.pdf` | Fung HL et al., Interpretation of nitrate plasma concen…, European heart journal 9 Su… (1988) | popPK | 9 | [10.1093/eurheartj/9.suppl_a.39](https://doi.org/10.1093/eurheartj/9.suppl_a.39) | [3137071](https://pubmed.ncbi.nlm.nih.gov/3137071) | The study reports quantitative pharmacokinetic parameters (clearance) for nitroglycerin in rats, but specific numeric values for clearance are not explicitly listed in the text, only correlations and relative estimates. |
-| `Hatanaka_2001.pdf` | Hatanaka T et al., Stereoselective pharmacokinetics and ph…, The Journal of pharmacology… (2001) | popPK | 9 | not captured | [11408561](https://pubmed.ncbi.nlm.nih.gov/11408561) | The study reports quantitative PK parameters (clearance, volume) for organic nitrates in rats, but the specific numeric values are not present in the provided abstract text. |
+| `Hatanaka_2001.pdf` | Hatanaka T et al., Stereoselective pharmacokinetics and ph…, The Journal of pharmacology… (2001) | popPK | 9 |  | [11408561](https://pubmed.ncbi.nlm.nih.gov/11408561) | The study reports quantitative PK parameters (clearance, volume) for organic nitrates in rats, but the specific numeric values are not present in the provided abstract text. |
 | `McNiff_1981.pdf` | McNiff EF et al., Nitroglycerin pharmacokinetics after in…, Journal of pharmaceutical s… (1981) | popPK | 9 | [10.1002/jps.2600700923](https://doi.org/10.1002/jps.2600700923) | [6101155](https://pubmed.ncbi.nlm.nih.gov/6101155) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for nitroglycerin, an organic nitrate, in human subjects. |
 | `Platzer_1982.pdf` | Platzer R et al., Pharmacokinetics of intravenous isosorb…, Journal of pharmacokinetics… (1982) | popPK | 9 | [10.1007/BF01062541](https://doi.org/10.1007/BF01062541) | [7182455](https://pubmed.ncbi.nlm.nih.gov/7182455) | The study reports quantitative pharmacokinetic parameters (clearance, half-life, bioavailability) for isosorbide dinitrate, which is a member of the organic nitrates class, in human subjects. |
-| `Pressmar_1992.pdf` | Pressmar F et al., Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1992) | popPK | 9 | not captured | [1492842](https://pubmed.ncbi.nlm.nih.gov/1492842) | The study reports pharmacokinetic parameters (bioavailability, protein binding, half-life) for an organic nitrate in dogs, but specific clearance and volume values are not explicitly listed in the provided text. |
+| `Pressmar_1992.pdf` | Pressmar F et al., Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1992) | popPK | 9 |  | [1492842](https://pubmed.ncbi.nlm.nih.gov/1492842) | The study reports pharmacokinetic parameters (bioavailability, protein binding, half-life) for an organic nitrate in dogs, but specific clearance and volume values are not explicitly listed in the provided text. |
 | `Yap_1978.pdf` | Yap PS et al., Pharmacokinetics of nitroglycerin in ra…, Journal of pharmaceutical s… (1978) | popPK | 9 | [10.1002/jps.2600670446](https://doi.org/10.1002/jps.2600670446) | [417170](https://pubmed.ncbi.nlm.nih.gov/417170) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, bioavailability) for nitroglycerin in rats. |
-| `Zell_1994.pdf` | Zell C et al., Pharmacokinetics of the organic nitrate…, Arzneimittel-Forschung (1994) | popPK | 9 | not captured | [7848329](https://pubmed.ncbi.nlm.nih.gov/7848329) | The study reports quantitative pharmacokinetic parameters (half-life, bioavailability) for organic nitrates in dogs and humans, with specific numeric values provided in the abstract. |
+| `Zell_1994.pdf` | Zell C et al., Pharmacokinetics of the organic nitrate…, Arzneimittel-Forschung (1994) | popPK | 9 |  | [7848329](https://pubmed.ncbi.nlm.nih.gov/7848329) | The study reports quantitative pharmacokinetic parameters (half-life, bioavailability) for organic nitrates in dogs and humans, with specific numeric values provided in the abstract. |
 | `Armstrong_1979.pdf` | Armstrong PW et al., Blood levels after sublingual nitroglyc…, Circulation (1979) | popPK | 8 | [10.1161/01.cir.59.3.585](https://doi.org/10.1161/01.cir.59.3.585) | [104803](https://pubmed.ncbi.nlm.nih.gov/104803) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) for nitroglycerin (a member of the organic nitrates class) in humans, though specific CL and V values are not explicitly listed as numbers. |
 | `Blei_1984.pdf` | Blei AT et al., Role of the liver in the disposition of…, Biochemical pharmacology (1984) | popPK | 8 | [10.1016/0006-2952(84)90645-2](https://doi.org/10.1016/0006-2952(84)90645-2) | [6431989](https://pubmed.ncbi.nlm.nih.gov/6431989) | The study reports quantitative systemic clearance (Cls) values for nitroglycerin (an organic nitrate) in rats, providing specific numeric data for disposition parameters. |
-| `Fung_1986.pdf` | Fung HL et al., Cardiac output is an apparent determina…, The Journal of pharmacology… (1986) | popPK | 8 | not captured | [3098960](https://pubmed.ncbi.nlm.nih.gov/3098960) | The study reports quantitative PK parameters (clearance) for nitroglycerin in rats, but specific numeric values are limited to correlations and relative estimates (e.g., 3/4 of cardiac output) rather than absolute units. |
+| `Fung_1986.pdf` | Fung HL et al., Cardiac output is an apparent determina…, The Journal of pharmacology… (1986) | popPK | 8 |  | [3098960](https://pubmed.ncbi.nlm.nih.gov/3098960) | The study reports quantitative PK parameters (clearance) for nitroglycerin in rats, but specific numeric values are limited to correlations and relative estimates (e.g., 3/4 of cardiac output) rather than absolute units. |
 
-<sub>queue written 2026-10-06T11:09:19.326442+00:00</sub>
+<sub>queue written 2026-10-06 11:09 UTC</sub>
 
 ## Screened and excluded
 
@@ -103,5 +103,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Borganic_nitrates_in_combination%5D&body=Drug%3A%20organic_nitrates_in_combination%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_organic_nitrates_in_combination/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

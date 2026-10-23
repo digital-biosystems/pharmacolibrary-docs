@@ -57,4 +57,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmefenamic_acid%5D%20pd_G_gelein_1990_single_nonselective_cation_channel_current&body=Drug%3A%20mefenamic_acid%0ARecord%3A%20pd_G_gelein_1990_single_nonselective_cation_channel_current%0APaper%3A%20G%C3%B6gelein_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mefenamic_acid/pd_G_gelein_1990_single_nonselective_cation_channel_current%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [mefenamic acid](drugs/drug_mefenamic_acid/)</sub>

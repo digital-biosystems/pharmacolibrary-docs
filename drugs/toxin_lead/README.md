@@ -3,8 +3,7 @@
 # Lead
 
 - **generic name:** Lead
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** [CID 73212](https://pubchem.ncbi.nlm.nih.gov/compound/73212)
+- **DrugBank:** none · **PubChem:** [CID 73212](https://pubchem.ncbi.nlm.nih.gov/compound/73212)
 - **groups:** not captured
 
 ## Parameters across studies
@@ -78,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 27159 matched, 258 returned
 - **screened:** 15  ·  **relevant:** 12
-- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -93,12 +92,12 @@ _33 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ganti_2023.pdf` | Ganti A et al., Physiologically-based pharmacokinetic/p…, Biopharmaceutics & drug dis… (2023) | popPK | 8 | [10.1002/bdd.2358](https://doi.org/10.1002/bdd.2358) | [37102506](https://pubmed.ncbi.nlm.nih.gov/37102506) | The paper describes a PBPK-PD study for the lead drug GDC-9545, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Ito_2018.pdf` | Ito Y et al., Pharmacokinetic and toxicodynamic evalu…, Cancer chemotherapy and pha… (2018) | popPK | 8 | [10.1007/s00280-017-3485-4](https://doi.org/10.1007/s00280-017-3485-4) | [29164296](https://pubmed.ncbi.nlm.nih.gov/29164296) | The study reports quantitative PK parameters (AUC) for oxaliplatin in rats, but lacks specific clearance, volume, or rate constants. |
 | `Järup_2003.pdf` | Järup L, Hazards of heavy metal contamination, British medical bulletin (2003) | pd | 5 | [10.1093/bmb/ldg032](https://doi.org/10.1093/bmb/ldg032) | [14757716](https://www.ncbi.nlm.nih.gov/pubmed/14757716) | metadata signals extractable PD data (exposure-response) |
-| `Lundberg_1995.pdf` | Lundberg I et al., Neuropsychiatric function of housepaint…, Scandinavian journal of wor… (1995) | pd | 5 | not captured | [8824938](https://www.ncbi.nlm.nih.gov/pubmed/8824938) | metadata signals extractable PD data (exposure-response) |
+| `Lundberg_1995.pdf` | Lundberg I et al., Neuropsychiatric function of housepaint…, Scandinavian journal of wor… (1995) | pd | 5 |  | [8824938](https://www.ncbi.nlm.nih.gov/pubmed/8824938) | metadata signals extractable PD data (exposure-response) |
 | `Marfo_2024.pdf` | Marfo A et al., The Effect of Physical Activity on Comb…, Medical sciences (Basel, Sw… (2024) | pd | 5 | [10.3390/medsci12040071](https://doi.org/10.3390/medsci12040071) | [39728420](https://www.ncbi.nlm.nih.gov/pubmed/39728420) | metadata signals extractable PD data (exposure-response) |
 | `Mei_2024.pdf` | Mei Y et al., Leisure-time physical activity and the…, Age and ageing (2024) | pd | 5 | [10.1093/ageing/afae142](https://doi.org/10.1093/ageing/afae142) | [38984694](https://www.ncbi.nlm.nih.gov/pubmed/38984694) | metadata signals extractable PD data (exposure-response) |
 | `Rajwade_2025.pdf` | Rajwade A et al., Investigation of dose-exposure-response…, The Journal of pharmacology… (2025) | pd | 5 | [10.1016/j.jpet.2025.103601](https://doi.org/10.1016/j.jpet.2025.103601) | [40424661](https://www.ncbi.nlm.nih.gov/pubmed/40424661) | metadata signals extractable PD data (exposure-response) |
 | `Seppäläinen_1980.pdf` | Seppäläinen AM et al., Subclinical lead neuropathy, American journal of industr… (1980) | pd | 5 | [10.1002/ajim.4700010319](https://doi.org/10.1002/ajim.4700010319) | [6282122](https://www.ncbi.nlm.nih.gov/pubmed/6282122) | metadata signals extractable PD data (exposure-response) |
-| `Seppäläinen_1982.pdf` | Seppäläinen AM, Lead poisoning: neurophysiological aspe…, Acta neurologica Scandinavi… (1982) | pd | 5 | not captured | [6962650](https://www.ncbi.nlm.nih.gov/pubmed/6962650) | metadata signals extractable PD data (exposure-response) |
+| `Seppäläinen_1982.pdf` | Seppäläinen AM, Lead poisoning: neurophysiological aspe…, Acta neurologica Scandinavi… (1982) | pd | 5 |  | [6962650](https://www.ncbi.nlm.nih.gov/pubmed/6962650) | metadata signals extractable PD data (exposure-response) |
 | `Takebayashi_1993.pdf` | Takebayashi T et al., Evaluation of delta-aminolaevulinic aci…, British journal of industri… (1993) | pd | 5 | [10.1136/oem.50.1.49](https://doi.org/10.1136/oem.50.1.49) | [8431390](https://www.ncbi.nlm.nih.gov/pubmed/8431390) | metadata signals extractable PD data (exposure-response) |
 | `Wade_1995.pdf` | Wade JR et al., Felodipine population dose-response and…, Clinical pharmacology and t… (1995) | pd | 5 | [10.1016/0009-9236(95)90042-X](https://doi.org/10.1016/0009-9236(95)90042-X) | [7768080](https://www.ncbi.nlm.nih.gov/pubmed/7768080) | metadata signals extractable PD data (Emax) |
 | `Chetty_2020.pdf` | Chetty M et al., Prediction of the exposure to a 400-mg…, European journal of clinica… (2020) | pgx | 8 | [10.1007/s00228-020-02890-4](https://doi.org/10.1007/s00228-020-02890-4) | [32377759](https://www.ncbi.nlm.nih.gov/pubmed/32377759) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
@@ -115,13 +114,13 @@ _33 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Aslanis_2019.pdf` | Aslanis V et al., Multiple administrations of fluconazole…, Cancer chemotherapy and pha… (2019) | pgx | 7 | [10.1007/s00280-019-03907-1](https://doi.org/10.1007/s00280-019-03907-1) | [31324935](https://www.ncbi.nlm.nih.gov/pubmed/31324935) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Chen_2022.pdf` | Chen KF et al., Physiologically Based Pharmacokinetic M…, Drug metabolism and disposi… (2022) | pgx | 7 | [10.1124/dmd.122.000926](https://doi.org/10.1124/dmd.122.000926) | [36100353](https://www.ncbi.nlm.nih.gov/pubmed/36100353) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Crewe_1992.pdf` | Crewe HK et al., The effect of selective serotonin re-up…, British journal of clinical… (1992) | pgx | 7 | [10.1111/j.1365-2125.1992.tb04134.x](https://doi.org/10.1111/j.1365-2125.1992.tb04134.x) | [1389951](https://www.ncbi.nlm.nih.gov/pubmed/1389951) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Gade_2016.pdf` | Gade C et al., The CYTONOX trial, Danish medical journal (2016) | pgx | 7 | not captured | [27127017](https://www.ncbi.nlm.nih.gov/pubmed/27127017) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Gade_2016.pdf` | Gade C et al., The CYTONOX trial, Danish medical journal (2016) | pgx | 7 |  | [27127017](https://www.ncbi.nlm.nih.gov/pubmed/27127017) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Hiemke_2000.pdf` | Hiemke C et al., Pharmacokinetics of selective serotonin…, Pharmacology & therapeutics (2000) | pgx | 7 | [10.1016/s0163-7258(99)00048-0](https://doi.org/10.1016/s0163-7258(99)00048-0) | [10674711](https://www.ncbi.nlm.nih.gov/pubmed/10674711) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Niu_2021.pdf` | Niu W et al., Investigating the interaction between n…, British journal of clinical… (2021) | pgx | 7 | [10.1111/bcp.14684](https://doi.org/10.1111/bcp.14684) | [33269470](https://www.ncbi.nlm.nih.gov/pubmed/33269470) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Ragia_2022.pdf` | Ragia G et al., SLCO1B1 c.521T&gt;C gene polymorphism decr…, Drug metabolism and persona… (2022) | pgx | 5 | [10.1515/dmpt-2022-0131](https://doi.org/10.1515/dmpt-2022-0131) | [36169244](https://www.ncbi.nlm.nih.gov/pubmed/36169244) | metadata signals extractable PGX data (SLCO1B1) |
 | `Sindrup_1995.pdf` | Sindrup SH et al., The pharmacogenetics of codeine hypoalg…, Pharmacogenetics (1995) | pgx | 5 | [10.1097/00008571-199512000-00001](https://doi.org/10.1097/00008571-199512000-00001) | [8845855](https://www.ncbi.nlm.nih.gov/pubmed/8845855) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-08T17:36:36.569044+00:00</sub>
+<sub>queue written 2026-09-08 17:36 UTC</sub>
 
 ## Screened and excluded
 
@@ -404,5 +403,5 @@ _33 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-09-08 17:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blead%5D&body=Drug%3A%20lead%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_lead/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-09-08 17:26 UTC</sub>

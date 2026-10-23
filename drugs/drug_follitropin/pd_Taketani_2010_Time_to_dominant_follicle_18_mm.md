@@ -83,4 +83,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfollitropin%5D%20pd_Taketani_2010_Time_to_dominant_follicle_18_mm&body=Drug%3A%20follitropin%0ARecord%3A%20pd_Taketani_2010_Time_to_dominant_follicle_18_mm%0APaper%3A%20Taketani_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_follitropin/pd_Taketani_2010_Time_to_dominant_follicle_18_mm%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Follitropin](drugs/drug_follitropin/)</sub>

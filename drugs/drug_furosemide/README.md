@@ -139,14 +139,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCC2` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | metabolism | liver | `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | kidney | `ABCC2` inhibitor, `ABCC4` transport, `SLC22A6` inducer/inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor, `ABCC4` transport, `SLC22A5` inhibitor, `SLC22A6` inducer/inhibitor, `SLC22A8` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor, `ABCC4` transport | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (target), ADD1 (target), ANP (target), APOL1 (unknown), CA2 (inhibitor), GNB3 (target), GPR35 (target), PGD (inhibitor), SERPINA7 (binder), SLC12A1 (inhibitor), SLC22A11 (inhibitor), SLCO2A1 (inhibitor).</sub>
@@ -169,7 +168,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 982 matched, 189 returned
 - **screened:** 11  ·  **relevant:** 11
-- **records:** 15  ·  extracted 7  ·  needs_review 7  ·  rejected 1  ·  stale 4
+- **records:** 15  ·  extracted 7  ·  needs review 7  ·  rejected 1  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -180,21 +179,21 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Andreasen_1983.pdf` | Andreasen F et al., The pharmacokinetics of frusemide are i…, British journal of clinical… (1983) | popPK | 10 | [10.1111/j.1365-2125.1983.tb02183.x](https://doi.org/10.1111/j.1365-2125.1983.tb02183.x) | [6626433](https://pubmed.ncbi.nlm.nih.gov/6626433) | The study reports quantitative pharmacokinetic parameters (CLs, Vd ss, half-life) for furosemide in humans, with all numeric values explicitly present in the text. |
 | `Cetin_2021.pdf` | Cetin G et al., Pharmacokinetics of furosemide in goats…, Journal of veterinary pharm… (2021) | popPK | 10 | [10.1111/jvp.13009](https://doi.org/10.1111/jvp.13009) | [34427339](https://pubmed.ncbi.nlm.nih.gov/34427339) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance, bioavailability) for furosemide in goats, with all numeric values explicitly provided in the abstract. |
-| `El-Sayed_1981.pdf` | El-Sayed MG et al., Disposition kinetics of furosemide in d…, Archives internationales de… (1981) | popPK | 10 | not captured | [7325754](https://pubmed.ncbi.nlm.nih.gov/7325754) | The study reports quantitative PK parameters (CL, V, t1/2, F) for furosemide in dogs with all numeric values present in the text. |
+| `El-Sayed_1981.pdf` | El-Sayed MG et al., Disposition kinetics of furosemide in d…, Archives internationales de… (1981) | popPK | 10 |  | [7325754](https://pubmed.ncbi.nlm.nih.gov/7325754) | The study reports quantitative PK parameters (CL, V, t1/2, F) for furosemide in dogs with all numeric values present in the text. |
 | `Hammarlund_1982.pdf` | Hammarlund MM et al., Dose-dependent pharmacokinetics of furo…, Biopharmaceutics & drug dis… (1982) | popPK | 10 | [10.1002/bdd.2510030408](https://doi.org/10.1002/bdd.2510030408) | [7159689](https://pubmed.ncbi.nlm.nih.gov/7159689) | The study reports quantitative PK parameters (half-life, clearance, volume) for furosemide in rats, but specific numeric values for CL, V, and Q are not explicitly listed in the provided text, only the half-life range. |
 | `Knych_2018.pdf` | Knych HK et al., Pharmacokinetics of furosemide administ…, Journal of veterinary pharm… (2018) | popPK | 10 | [10.1111/jvp.12458](https://doi.org/10.1111/jvp.12458) | [29057472](https://pubmed.ncbi.nlm.nih.gov/29057472) | The study reports quantitative pharmacokinetic parameters (Vss, CL, t1/2) for furosemide in horses with specific numeric values provided in the text. |
 | `Kodati_2017.pdf` | Kodati D et al., Population pharmacokinetic modeling of…, Pharmacological reports : PR (2017) | popPK | 10 | [10.1016/j.pharep.2017.01.006](https://doi.org/10.1016/j.pharep.2017.01.006) | [28340405](https://pubmed.ncbi.nlm.nih.gov/28340405) | The study reports a population PK model for furosemide with explicit numeric values for CL/F and Vd/F in the abstract. |
 | `Tilstone_1978.pdf` | Tilstone WJ et al., Furosemide kinetics in renal failure, Clinical pharmacology and t… (1978) | popPK | 10 | [10.1002/cpt1978236644](https://doi.org/10.1002/cpt1978236644) | [648078](https://pubmed.ncbi.nlm.nih.gov/648078) | The paper reports quantitative compartmental PK parameters (clearance, volumes, half-life) for furosemide in humans with values explicitly listed in the text. |
 | `Van_2014.pdf` | Van Wart SA et al., Population-based meta-analysis of furos…, Biopharmaceutics & drug dis… (2014) | popPK | 10 | [10.1002/bdd.1874](https://doi.org/10.1002/bdd.1874) | [24151207](https://pubmed.ncbi.nlm.nih.gov/24151207) | The paper reports a population PK model for furosemide with specific numeric values for renal clearance, bioavailability, and non-renal clearance in the abstract. |
-| `Kaojarern_1990.pdf` | Kaojarern S et al., Bioavailability and pharmacokinetics of…, Journal of the Medical Asso… (1990) | popPK | 9 | not captured | [2394955](https://pubmed.ncbi.nlm.nih.gov/2394955) | The study reports quantitative pharmacokinetic parameters (half-life, Cmax, Tmax, bioavailability) for furosemide in humans, with specific numeric values provided in the text. |
+| `Kaojarern_1990.pdf` | Kaojarern S et al., Bioavailability and pharmacokinetics of…, Journal of the Medical Asso… (1990) | popPK | 9 |  | [2394955](https://pubmed.ncbi.nlm.nih.gov/2394955) | The study reports quantitative pharmacokinetic parameters (half-life, Cmax, Tmax, bioavailability) for furosemide in humans, with specific numeric values provided in the text. |
 | `Mühlberg_1986.pdf` | Mühlberg W et al., Pharmacokinetics and pharmacodynamics o…, Archives of gerontology and… (1986) | popPK | 9 | [10.1016/0167-4943(86)90026-9](https://doi.org/10.1016/0167-4943(86)90026-9) | [3800492](https://pubmed.ncbi.nlm.nih.gov/3800492) | The study reports quantitative PK parameters (clearance, volume, half-life) for furosemide in humans, but the specific numeric values are not present in the provided abstract text. |
 | `Savic_2007.pdf` | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | popPK | 9 | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) | [17653836](https://pubmed.ncbi.nlm.nih.gov/17653836) | The paper is a population PK study of furosemide, but the specific numeric parameter values are not present in the provided evidence (abstract only). |
 | `Van_1992.pdf` | Van Meyel JJ et al., Absorption of high dose furosemide (fru…, Clinical pharmacokinetics (1992) | popPK | 9 | [10.2165/00003088-199222040-00006](https://doi.org/10.2165/00003088-199222040-00006) | [1606790](https://pubmed.ncbi.nlm.nih.gov/1606790) | The study reports a compartmental PK model for furosemide in humans, but specific numeric parameter values (CL, V, ka, etc.) are not present in the provided text, only qualitative comparisons and model descriptions. |
 | `Vert_1982.pdf` | Vert P et al., Pharmacokinetics of furosemide in neona…, European journal of clinica… (1982) | popPK | 9 | [10.1007/BF00606423](https://doi.org/10.1007/BF00606423) | [7094973](https://pubmed.ncbi.nlm.nih.gov/7094973) | The study reports quantitative PK parameters (half-lives, clearance trends) for furosemide in neonates, though specific volume of distribution values are not explicitly listed in the text. |
 | `Chu_2001.pdf` | Chu KK et al., Statistical evaluation of the regulator…, Biometrics (2001) | popPK | 8 | [10.1111/j.0006-341x.2001.00294.x](https://doi.org/10.1111/j.0006-341x.2001.00294.x) | [11252613](https://pubmed.ncbi.nlm.nih.gov/11252613) | The paper describes a population PK study of furosemide in horses, but the specific numeric parameter values are not present in the provided evidence. |
-| `Hammarlund_1985.pdf` | Hammarlund MM et al., Acute tolerance to furosemide diuresis…, The Journal of pharmacology… (1985) | popPK | 8 | not captured | [3999028](https://pubmed.ncbi.nlm.nih.gov/3999028) | The study is a PK/PD modeling study of furosemide in humans, but the specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided abstract text, only cumulative excretion and effect data. |
+| `Hammarlund_1985.pdf` | Hammarlund MM et al., Acute tolerance to furosemide diuresis…, The Journal of pharmacology… (1985) | popPK | 8 |  | [3999028](https://pubmed.ncbi.nlm.nih.gov/3999028) | The study is a PK/PD modeling study of furosemide in humans, but the specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided abstract text, only cumulative excretion and effect data. |
 
-<sub>queue written 2026-10-06T18:18:28.292667+00:00</sub>
+<sub>queue written 2026-10-06 18:18 UTC</sub>
 
 ## Screened and excluded
 
@@ -329,5 +328,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 18:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfurosemide%5D&body=Drug%3A%20furosemide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_furosemide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 18:19 UTC</sub>

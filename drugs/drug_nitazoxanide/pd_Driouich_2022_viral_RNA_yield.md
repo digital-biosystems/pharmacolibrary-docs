@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnitazoxanide%5D%20pd_Driouich_2022_viral_RNA_yield&body=Drug%3A%20nitazoxanide%0ARecord%3A%20pd_Driouich_2022_viral_RNA_yield%0APaper%3A%20Driouich_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nitazoxanide/pd_Driouich_2022_viral_RNA_yield%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [nitazoxanide](drugs/drug_nitazoxanide/)</sub>

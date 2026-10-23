@@ -4,7 +4,7 @@
 
 - **generic name:** oil
 - **ATC codes:** `A06AG06`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -57,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7085 matched, 241 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -69,10 +69,10 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Aguila_2024.pdf` | Aguila FA et al., Population Pharmacokinetic of the Diter…, Planta medica (2024) | popPK | 10 | [10.1055/a-2328-2644](https://doi.org/10.1055/a-2328-2644) | [38749480](https://pubmed.ncbi.nlm.nih.gov/38749480) | The paper reports a population pharmacokinetic model for the major diterpenes in Copaifera duckei oil resin in rats, with all numeric parameter values (ka, V, CL, t1/2) explicitly provided in the text. |
 | `Ming_2026.pdf` | Ming C et al., Development of a SMEDDS for oral delive…, Journal of pharmaceutical s… (2026) | pd | 5 | [10.1016/j.xphs.2026.104356](https://doi.org/10.1016/j.xphs.2026.104356) | [42250802](https://www.ncbi.nlm.nih.gov/pubmed/42250802) | metadata signals extractable PD data (PK/PD) |
 | `Selles_2024.pdf` | Selles SMA et al., Chemical compounds, antioxidant and sco…, Experimental parasitology (2024) | pd | 5 | [10.1016/j.exppara.2024.108699](https://doi.org/10.1016/j.exppara.2024.108699) | [38199324](https://www.ncbi.nlm.nih.gov/pubmed/38199324) | metadata signals extractable PD data (IC50) |
-| `Wince_1982.pdf` | Wince LC et al., Developmental changes in the accumulati…, The Journal of pharmacology… (1982) | pd | 5 | not captured | [7057395](https://www.ncbi.nlm.nih.gov/pubmed/7057395) | metadata signals extractable PD data (EC50) |
+| `Wince_1982.pdf` | Wince LC et al., Developmental changes in the accumulati…, The Journal of pharmacology… (1982) | pd | 5 |  | [7057395](https://www.ncbi.nlm.nih.gov/pubmed/7057395) | metadata signals extractable PD data (EC50) |
 | `Brosnan_2007.pdf` | Brosnan RJ et al., Ammonia has anesthetic properties, Anesthesia and analgesia (2007) | pd | 4 | [10.1213/01.ane.0000264072.97705.0f](https://doi.org/10.1213/01.ane.0000264072.97705.0f) | [17513636](https://www.ncbi.nlm.nih.gov/pubmed/17513636) | metadata signals extractable PD data (EC50) |
-| `Fujimoto_1988.pdf` | Fujimoto S et al., Altered vascular beta adrenoceptor-medi…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [2831351](https://www.ncbi.nlm.nih.gov/pubmed/2831351) | metadata signals extractable PD data (EC50) |
-| `Galo_1975.pdf` | Galo MG et al., Kinetic changes of the erythrocyte (Mg2…, The Journal of biological c… (1975) | pd | 4 | not captured | [125751](https://www.ncbi.nlm.nih.gov/pubmed/125751) | metadata signals extractable PD data (sigmoid) |
+| `Fujimoto_1988.pdf` | Fujimoto S et al., Altered vascular beta adrenoceptor-medi…, The Journal of pharmacology… (1988) | pd | 4 |  | [2831351](https://www.ncbi.nlm.nih.gov/pubmed/2831351) | metadata signals extractable PD data (EC50) |
+| `Galo_1975.pdf` | Galo MG et al., Kinetic changes of the erythrocyte (Mg2…, The Journal of biological c… (1975) | pd | 4 |  | [125751](https://www.ncbi.nlm.nih.gov/pubmed/125751) | metadata signals extractable PD data (sigmoid) |
 | `García_1995.pdf` | García E et al., Resistance to atracurium in rats with e…, Acta anaesthesiologica Scan… (1995) | pd | 4 | [10.1111/j.1399-6576.1995.tb04221.x](https://doi.org/10.1111/j.1399-6576.1995.tb04221.x) | [8607301](https://www.ncbi.nlm.nih.gov/pubmed/8607301) | metadata signals extractable PD data (sigmoid) |
 | `He_2020.pdf` | He C et al., Chemical compositions and antioxidant a…, Journal of food science (2020) | pd | 4 | [10.1111/1750-3841.14982](https://doi.org/10.1111/1750-3841.14982) | [31872874](https://www.ncbi.nlm.nih.gov/pubmed/31872874) | metadata signals extractable PD data (IC50) |
 | `He_2022.pdf` | He M et al., Influence of extraction technology on r…, Food & function (2022) | pd | 4 | [10.1039/d1fo01507a](https://doi.org/10.1039/d1fo01507a) | [34888592](https://www.ncbi.nlm.nih.gov/pubmed/34888592) | metadata signals extractable PD data (EC50) |
@@ -85,7 +85,7 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Alharbi_2017.pdf` | Alharbi HA et al., Toxicokinetics and toxicodynamics of ch…, Journal of applied toxicolo… (2017) | pgx | 7 | [10.1002/jat.3397](https://doi.org/10.1002/jat.3397) | [27774651](https://www.ncbi.nlm.nih.gov/pubmed/27774651) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Yeo_2025.pdf` | Yeo M et al., Deep phenotyping of patients with citri…, Molecular genetics and meta… (2025) | pgx | 5 | [10.1016/j.ymgme.2025.109215](https://doi.org/10.1016/j.ymgme.2025.109215) | [40780027](https://www.ncbi.nlm.nih.gov/pubmed/40780027) | metadata signals extractable PGX data (SLC25A13) |
 
-<sub>queue written 2026-10-04T17:22:24.781860+00:00</sub>
+<sub>queue written 2026-10-04 17:22 UTC</sub>
 
 ## Screened and excluded
 
@@ -335,5 +335,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boil%5D&body=Drug%3A%20oil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

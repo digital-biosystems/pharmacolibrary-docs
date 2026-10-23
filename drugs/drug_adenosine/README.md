@@ -56,13 +56,12 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC28A2` substrate | DrugBank actor |
 | absorption | small intestine | `SLC28A2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `SLC29A1` substrate | DrugBank actor |
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` formation, `XDH` substrate | DrugBank actor |
 | metabolism | small intestine | `XDH` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC28A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADA (substrate), ADK (substrate), ADORA1 (target), ADORA2A (target), ADORA2B (target), ADORA3 (target), ADRA2A (target), AK1 (substrate), GJA1 (substrate), ITGA2 (target), NME1 (substrate), NME2 (substrate), P2Y12 (target), PEAR1 (target), PNP (substrate), PTGS1 (target), SLC28A1 (substrate), SLC28A3 (unknown), SLC29A2 (substrate), SLC29A3 (substrate), SLC29A4 (substrate), TBXA2R (target).</sub>
 
@@ -84,7 +83,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9462 matched, 391 returned
 - **screened:** 25  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -111,11 +110,11 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Eckle_2013.pdf` | Eckle T et al., Crosstalk between the equilibrative nuc…, FASEB journal : official pu… (2013) | pd | 4 | [10.1096/fj.13-228551](https://doi.org/10.1096/fj.13-228551) | [23603835](https://www.ncbi.nlm.nih.gov/pubmed/23603835) | metadata signals extractable PD data (EC50) |
 | `Franceschi_2013.pdf` | Franceschi F et al., A2A adenosine receptor function in pati…, Europace : European pacing,… (2013) | pd | 4 | [10.1093/europace/eut066](https://doi.org/10.1093/europace/eut066) | [23594931](https://www.ncbi.nlm.nih.gov/pubmed/23594931) | metadata signals extractable PD data (EC50) |
 | `Hu_2021.pdf` | Hu L et al., Identification of anti-Parkinson's Dise…, ChemistryOpen (2021) | pd | 4 | [10.1002/open.202100022](https://doi.org/10.1002/open.202100022) | [34102706](https://www.ncbi.nlm.nih.gov/pubmed/34102706) | metadata signals extractable PD data (EC50) |
-| `Jarvis_1991.pdf` | Jarvis MF et al., Characterization of the binding of a no…, Molecular pharmacology (1991) | pd | 4 | not captured | [1987452](https://www.ncbi.nlm.nih.gov/pubmed/1987452) | metadata signals extractable PD data (IC50) |
+| `Jarvis_1991.pdf` | Jarvis MF et al., Characterization of the binding of a no…, Molecular pharmacology (1991) | pd | 4 |  | [1987452](https://www.ncbi.nlm.nih.gov/pubmed/1987452) | metadata signals extractable PD data (IC50) |
 | `Mathôt_1994.pdf` | Mathôt RA et al., Assessment of the enantiomeric purity o…, Naunyn-Schmiedeberg's archi… (1994) | pd | 4 | [10.1007/BF00180020](https://doi.org/10.1007/BF00180020) | [7935848](https://www.ncbi.nlm.nih.gov/pubmed/7935848) | metadata signals extractable PD data (IC50) |
 | `Mudgal_2020.pdf` | Mudgal R et al., Inhibition of Chikungunya virus by an a…, FEBS letters (2020) | pd | 4 | [10.1002/1873-3468.13642](https://doi.org/10.1002/1873-3468.13642) | [31623018](https://www.ncbi.nlm.nih.gov/pubmed/31623018) | metadata signals extractable PD data (EC50) |
 | `Patel_1982.pdf` | Patel J et al., Benzodiazepines are weak inhibitors of…, Neuroscience letters (1982) | pd | 4 | [10.1016/0304-3940(82)90368-8](https://doi.org/10.1016/0304-3940(82)90368-8) | [7070715](https://www.ncbi.nlm.nih.gov/pubmed/7070715) | metadata signals extractable PD data (IC50) |
-| `Pejman_2014.pdf` | Pejman L et al., Thymoquinone, the main constituent of N…, Iranian journal of basic me… (2014) | pd | 4 | not captured | [25859306](https://www.ncbi.nlm.nih.gov/pubmed/25859306) | metadata signals extractable PD data (EC50) |
+| `Pejman_2014.pdf` | Pejman L et al., Thymoquinone, the main constituent of N…, Iranian journal of basic me… (2014) | pd | 4 |  | [25859306](https://www.ncbi.nlm.nih.gov/pubmed/25859306) | metadata signals extractable PD data (EC50) |
 | `Serpa_2014.pdf` | Serpa A et al., Modulation of cGMP accumulation by aden…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.09.045](https://doi.org/10.1016/j.ejphar.2014.09.045) | [25300679](https://www.ncbi.nlm.nih.gov/pubmed/25300679) | metadata signals extractable PD data (EC50) |
 | `Sharma_1988.pdf` | Sharma AD et al., Comparative quantitative electrophysiol…, The American journal of car… (1988) | pd | 4 | [10.1016/0002-9149(88)90939-3](https://doi.org/10.1016/0002-9149(88)90939-3) | [3341210](https://www.ncbi.nlm.nih.gov/pubmed/3341210) | metadata signals extractable PD data (sigmoid) |
 | `Weir_1984.pdf` | Weir RL et al., Interaction of anticonvulsant drugs wit…, Epilepsia (1984) | pd | 4 | [10.1111/j.1528-1157.1984.tb03449.x](https://doi.org/10.1111/j.1528-1157.1984.tb03449.x) | [6086302](https://www.ncbi.nlm.nih.gov/pubmed/6086302) | metadata signals extractable PD data (IC50) |
@@ -138,7 +137,7 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sam_2011.pdf` | Sam WJ et al., Associations of ABCB1 3435C&gt;T and IL-10…, Transplantation (2011) | pgx | 5 | [10.1097/TP.0b013e3182384ae2](https://doi.org/10.1097/TP.0b013e3182384ae2) | [22094953](https://www.ncbi.nlm.nih.gov/pubmed/22094953) | metadata signals extractable PGX data (ABCB1) |
 | `Tsujimoto_2016.pdf` | Tsujimoto S et al., Influence of ADORA2A gene polymorphism…, Pediatric blood & cancer (2016) | pgx | 5 | [10.1002/pbc.26090](https://doi.org/10.1002/pbc.26090) | [27399166](https://www.ncbi.nlm.nih.gov/pubmed/27399166) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-08T11:32:11.907436+00:00</sub>
+<sub>queue written 2026-10-08 11:32 UTC</sub>
 
 ## Screened and excluded
 
@@ -527,5 +526,5 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Badenosine%5D&body=Drug%3A%20adenosine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_adenosine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -247,7 +247,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3479 matched, 194 returned
 - **screened:** 42  ·  **relevant:** 8
-- **records:** 20  ·  extracted 4  ·  needs_review 13  ·  rejected 2  ·  stale 0
+- **records:** 20  ·  extracted 4  ·  needs review 13  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -259,7 +259,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Jiang_2016.pdf` | Jiang XL et al., Development of a physiology-directed po…, European journal of pharmac… (2016) | popPK | 10 | [10.1016/j.ejps.2015.10.024](https://doi.org/10.1016/j.ejps.2015.10.024) | [26524713](https://pubmed.ncbi.nlm.nih.gov/26524713) | The study develops a population PK/PD model for clopidogrel and its active metabolite, but specific quantitative parameter values (e.g., CL, V) are not listed in the provided evidence, likely residing in the full text or tables not included. |
 | `Lee_2012.pdf` | Lee J et al., Population pharmacokinetic/pharmacodyna…, Journal of clinical pharmac… (2012) | popPK | 10 | [10.1177/0091270011409228](https://doi.org/10.1177/0091270011409228) | [21617016](https://pubmed.ncbi.nlm.nih.gov/21617016) | The abstract explicitly provides quantitative PK parameters (ke, kd, V2, V3, ktr) for the clopidogrel metabolite from a population PK model in humans. |
 | `Simon_2015.pdf` | Simon N et al., Omeprazole, pantoprazole, and CYP2C19 e…, European journal of clinica… (2015) | popPK | 10 | [10.1007/s00228-015-1882-3](https://doi.org/10.1007/s00228-015-1882-3) | [26071277](https://pubmed.ncbi.nlm.nih.gov/26071277) | The study is a PK/PD study in humans reporting specific quantitative parameters for the active metabolite (AUC, Emax, EAUC50) and mentioning clearance variability. |
-| `Xie_2014.pdf` | Xie C et al., [Population pharmacokinetics and pharma…, Yao xue xue bao = Acta phar… (2014) | popPK | 10 | not captured | [25577873](https://pubmed.ncbi.nlm.nih.gov/25577873) | The abstract explicitly reports quantitative population PK parameter values (CL/F, V/F, K12) for the clopidogrel active metabolite in human patients with acute coronary syndrome. |
+| `Xie_2014.pdf` | Xie C et al., [Population pharmacokinetics and pharma…, Yao xue xue bao = Acta phar… (2014) | popPK | 10 |  | [25577873](https://pubmed.ncbi.nlm.nih.gov/25577873) | The abstract explicitly reports quantitative population PK parameter values (CL/F, V/F, K12) for the clopidogrel active metabolite in human patients with acute coronary syndrome. |
 | `Gopalakrishnan_2026.pdf` | Gopalakrishnan M et al., Leveraging Model Integrated Bioequivale…, Journal of clinical pharmac… (2026) | popPK | 9 | [10.1002/jcph.70142](https://doi.org/10.1002/jcph.70142) | [41405506](https://pubmed.ncbi.nlm.nih.gov/41405506) | The paper describes a population PK model for clopidogrel and provides a mean half-life, but the specific clearance and volume parameter values are not listed in the provided text. |
 | `Pejčić_2024.pdf` | Pejčić Z et al., Integrating Clopidogrel's First-Pass Ef…, Pharmaceutics (2024) | popPK | 9 | [10.3390/pharmaceutics16050685](https://doi.org/10.3390/pharmaceutics16050685) | [38794348](https://pubmed.ncbi.nlm.nih.gov/38794348) | Study develops a population PK model for clopidogrel and reports specific parameters like MTT and bioavailability, but lacks core quantitative disposition parameters (CL, V) in the provided text. |
 | `Ernest_2008.pdf` | Ernest CS et al., Population pharmacokinetics and pharmac…, Journal of pharmacokinetics… (2008) | popPK | 8 | [10.1007/s10928-008-9103-7](https://doi.org/10.1007/s10928-008-9103-7) | [19023649](https://pubmed.ncbi.nlm.nih.gov/19023649) | The paper describes a population PK/PD study of clopidogrel's active metabolite, but the specific numeric parameter values are not present in the provided abstract or evidence text. |
@@ -286,7 +286,7 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Fuster_2010.pdf` | Fuster V et al., Clopidogrel and the reduced-function CY…, JAMA (2010) | pgx | 5 | [10.1001/jama.2010.1566](https://doi.org/10.1001/jama.2010.1566) | [20978263](https://www.ncbi.nlm.nih.gov/pubmed/20978263) | metadata signals extractable PGX data (CYP2C19) |
 | `PMID21716271_2011.pdf` | PMID21716271, Clinical Pharmacogenetics Implementatio… (2011) | pgx | 5 | [10.1038/clpt.2011.132](https://doi.org/10.1038/clpt.2011.132) | [21716271](https://www.ncbi.nlm.nih.gov/pubmed/21716271) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-20T19:48:17.573070+00:00</sub>
+<sub>queue written 2026-10-20 19:48 UTC</sub>
 
 ## Screened and excluded
 
@@ -474,5 +474,5 @@ _29 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D&body=Drug%3A%20clopidogrel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-20 19:48 UTC</sub>

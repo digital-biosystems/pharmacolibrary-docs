@@ -63,4 +63,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btemsavir%5D%20pd_Parasrampuria_2025_Proportion_1_log10_decrease&body=Drug%3A%20temsavir%0ARecord%3A%20pd_Parasrampuria_2025_Proportion_1_log10_decrease%0APaper%3A%20Parasrampuria_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_temsavir/pd_Parasrampuria_2025_Proportion_1_log10_decrease%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Temsavir](drugs/drug_temsavir/)</sub>

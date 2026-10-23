@@ -137,4 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bempagliflozin%5D%20pd_van_2023_UGE&body=Drug%3A%20empagliflozin%0ARecord%3A%20pd_van_2023_UGE%0APaper%3A%20van_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_empagliflozin/pd_van_2023_UGE%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [empagliflozin](drugs/drug_empagliflozin/)</sub>

@@ -70,4 +70,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselegiline%5D%20pd_Mahmood_1998_MAO_B_inhibition&body=Drug%3A%20selegiline%0ARecord%3A%20pd_Mahmood_1998_MAO_B_inhibition%0APaper%3A%20Mahmood_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selegiline/pd_Mahmood_1998_MAO_B_inhibition%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [selegiline](drugs/drug_selegiline/)</sub>

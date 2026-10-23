@@ -103,7 +103,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 158 matched, 62 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 3
+- **records:** 3  ·  extracted 0  ·  needs review 3  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -122,7 +122,7 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Dolton_2012.pdf` | Dolton MJ et al., Multicenter study of posaconazole thera…, Antimicrobial agents and ch… (2012) | pd | 5 | [10.1128/AAC.00802-12](https://doi.org/10.1128/AAC.00802-12) | [22890761](https://www.ncbi.nlm.nih.gov/pubmed/22890761) | metadata signals extractable PD data (exposure-response) |
 | `Corsi_1991.pdf` | Corsi M et al., Pharmacological analysis of 5-hydroxytr…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12494.x](https://doi.org/10.1111/j.1476-5381.1991.tb12494.x) | [1797331](https://www.ncbi.nlm.nih.gov/pubmed/1797331) | metadata signals extractable PD data (EC50) |
 | `Eglen_1990.pdf` | Eglen RM et al., Characterization of 5-HT3 and 'atypical…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14113.x](https://doi.org/10.1111/j.1476-5381.1990.tb14113.x) | [2076474](https://www.ncbi.nlm.nih.gov/pubmed/2076474) | metadata signals extractable PD data (EC50) |
-| `Faisal_2020.pdf` | Faisal R et al., Azithromycin induced contractile respon…, Pakistan journal of pharmac… (2020) | pd | 4 | not captured | [33832879](https://www.ncbi.nlm.nih.gov/pubmed/33832879) | metadata signals extractable PD data (Emax) |
+| `Faisal_2020.pdf` | Faisal R et al., Azithromycin induced contractile respon…, Pakistan journal of pharmac… (2020) | pd | 4 |  | [33832879](https://www.ncbi.nlm.nih.gov/pubmed/33832879) | metadata signals extractable PD data (Emax) |
 | `Bae_2020.pdf` | Bae JW et al., Effects of CYP2D6 genetic polymorphism…, Archives of pharmacal resea… (2020) | pgx | 8 | [10.1007/s12272-020-01293-4](https://doi.org/10.1007/s12272-020-01293-4) | [33247397](https://www.ncbi.nlm.nih.gov/pubmed/33247397) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Desta_2002.pdf` | Desta Z et al., The gastroprokinetic and antiemetic dru…, Drug metabolism and disposi… (2002) | pgx | 8 | [10.1124/dmd.30.3.336](https://doi.org/10.1124/dmd.30.3.336) | [11854155](https://www.ncbi.nlm.nih.gov/pubmed/11854155) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Rauers_2010.pdf` | Rauers NI et al., Antagonistic effects of ondansetron and…, The journal of pain (2010) | pgx | 8 | [10.1016/j.jpain.2010.03.003](https://doi.org/10.1016/j.jpain.2010.03.003) | [20488759](https://www.ncbi.nlm.nih.gov/pubmed/20488759) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -132,11 +132,11 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kotlinska-Lemieszek_2014.pdf` | Kotlinska-Lemieszek A et al., Polypharmacy in patients with advanced…, Journal of pain and symptom… (2014) | pgx | 7 | [10.1016/j.jpainsymman.2014.03.008](https://doi.org/10.1016/j.jpainsymman.2014.03.008) | [24780183](https://www.ncbi.nlm.nih.gov/pubmed/24780183) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Labbé_1999.pdf` | Labbé L et al., Clinical pharmacokinetics of mexiletine, Clinical pharmacokinetics (1999) | pgx | 7 | [10.2165/00003088-199937050-00002](https://doi.org/10.2165/00003088-199937050-00002) | [10589372](https://www.ncbi.nlm.nih.gov/pubmed/10589372) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Tod_2011.pdf` | Tod M et al., Quantitative prediction of cytochrome P…, Clinical pharmacokinetics (2011) | pgx | 7 | [10.2165/11592620-000000000-00000](https://doi.org/10.2165/11592620-000000000-00000) | [21740075](https://www.ncbi.nlm.nih.gov/pubmed/21740075) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `unknown_2016.pdf` | unknown, Metoclopramide, domperidone: sudden car…, Prescrire international (2016) | pgx | 7 | not captured | [30645828](https://www.ncbi.nlm.nih.gov/pubmed/30645828) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `unknown_2016.pdf` | unknown, Metoclopramide, domperidone: sudden car…, Prescrire international (2016) | pgx | 7 |  | [30645828](https://www.ncbi.nlm.nih.gov/pubmed/30645828) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Livezey_2014.pdf` | Livezey MR et al., Metoclopramide is metabolized by CYP2D6…, Xenobiotica; the fate of fo… (2014) | pgx | 5 | [10.3109/00498254.2013.835885](https://doi.org/10.3109/00498254.2013.835885) | [24010633](https://www.ncbi.nlm.nih.gov/pubmed/24010633) | metadata signals extractable PGX data (CYP2D6) |
 | `Parkman_2012.pdf` | Parkman HP et al., Clinical response and side effects of m…, Journal of clinical gastroe… (2012) | pgx | 5 | [10.1097/MCG.0b013e3182522624](https://doi.org/10.1097/MCG.0b013e3182522624) | [22688145](https://www.ncbi.nlm.nih.gov/pubmed/22688145) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-04T13:54:21.570770+00:00</sub>
+<sub>queue written 2026-10-04 13:54 UTC</sub>
 
 ## Screened and excluded
 
@@ -189,5 +189,5 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-04 13:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetoclopramide%5D&body=Drug%3A%20metoclopramide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metoclopramide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:54 UTC</sub>

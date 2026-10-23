@@ -5,7 +5,7 @@
 
 - **generic name:** s-atenolol
 - **ATC codes:** `C07AB11`
-- **DrugBank:** [DB13443](https://go.drugbank.com/drugs/DB13443) · **PubChem:** not captured
+- **DrugBank:** [DB13443](https://go.drugbank.com/drugs/DB13443) · **PubChem:** none
 - **molar mass:** 266.341 g/mol (C14H22N2O3) — DrugBank
 - **groups:** experimental
 
@@ -104,7 +104,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 192 matched, 62 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 3
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -119,7 +119,7 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Wójcicki_2000.pdf` | Wójcicki J et al., Pharmacokinetics of propranolol and ate…, European journal of clinica… (2000) | popPK | 9 | [10.1007/s002280050724](https://doi.org/10.1007/s002280050724) | [10853882](https://pubmed.ncbi.nlm.nih.gov/10853882) | The study reports pharmacokinetic parameters for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
 | `Wójcicki_2003.pdf` | Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003) | popPK | 9 | [10.1002/bdd.357](https://doi.org/10.1002/bdd.357) | [12784321](https://pubmed.ncbi.nlm.nih.gov/12784321) | The study reports quantitative PK parameters (Cl/F, Vd/F) for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
 | `van_2007.pdf` | van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007) | popPK | 9 | [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234) | [17420778](https://pubmed.ncbi.nlm.nih.gov/17420778) | The study reports a three-compartment PK model for S(-)-atenolol in rats, but the specific numeric PK parameter values (CL, V, etc.) are not listed in the provided evidence, only PD parameters. |
-| `Hurst_1998.pdf` | Hurst AK et al., Pharmacokinetic and pharmacodynamic eva…, Pharmacotherapy (1998) | popPK | 8 | not captured | [9692658](https://pubmed.ncbi.nlm.nih.gov/9692658) | The study reports PK parameters (AUC, Cmax) for atenolol in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
+| `Hurst_1998.pdf` | Hurst AK et al., Pharmacokinetic and pharmacodynamic eva…, Pharmacotherapy (1998) | popPK | 8 |  | [9692658](https://pubmed.ncbi.nlm.nih.gov/9692658) | The study reports PK parameters (AUC, Cmax) for atenolol in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
 | `Jia_2011.pdf` | Jia J et al., Evaluation of pharmacokinetic and pharm…, Journal of pharmaceutical a… (2011) | popPK | 8 | [10.1016/j.jpba.2011.01.044](https://doi.org/10.1016/j.jpba.2011.01.044) | [21353427](https://pubmed.ncbi.nlm.nih.gov/21353427) | The study reports PK parameters for atenolol in rats, but the specific numeric values are not present in the provided text, only relative comparisons (e.g., "2 times longer"). |
 | `Baek_2008.pdf` | Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008) | pd | 5 | [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4) | [18563366](https://www.ncbi.nlm.nih.gov/pubmed/18563366) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Celardo_1987.pdf` | Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal of drug me… (1987) | pd | 5 | [10.1007/BF03189860](https://doi.org/10.1007/BF03189860) | [3609072](https://www.ncbi.nlm.nih.gov/pubmed/3609072) | metadata signals extractable PD data (pharmacodynamicmodel) |
@@ -129,7 +129,7 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Akazawa_2018.pdf` | Akazawa T et al., Application of Intestinal Epithelial Ce…, Drug metabolism and disposi… (2018) | pgx | 7 | [10.1124/dmd.118.083246](https://doi.org/10.1124/dmd.118.083246) | [30135242](https://www.ncbi.nlm.nih.gov/pubmed/30135242) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Brodde_2003.pdf` | Brodde OE et al., Drug-drug interactions of beta-adrenoce…, Arzneimittel-Forschung (2003) | pgx | 7 | [10.1055/s-0031-1299835](https://doi.org/10.1055/s-0031-1299835) | [14732961](https://www.ncbi.nlm.nih.gov/pubmed/14732961) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-07T01:01:35.791710+00:00</sub>
+<sub>queue written 2026-10-07 01:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -193,5 +193,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 01:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bs_atenolol%5D&body=Drug%3A%20s_atenolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_s_atenolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:01 UTC</sub>

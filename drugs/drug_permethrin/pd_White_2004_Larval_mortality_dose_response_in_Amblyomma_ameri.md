@@ -84,4 +84,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpermethrin%5D%20pd_White_2004_Larval_mortality_dose_response_in_Amblyomma_ameri&body=Drug%3A%20permethrin%0ARecord%3A%20pd_White_2004_Larval_mortality_dose_response_in_Amblyomma_ameri%0APaper%3A%20White_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_permethrin/pd_White_2004_Larval_mortality_dose_response_in_Amblyomma_ameri%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [permethrin](drugs/drug_permethrin/)</sub>

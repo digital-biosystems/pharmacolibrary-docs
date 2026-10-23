@@ -6,6 +6,11 @@ Compare tissue-specific absorption, metabolism, and elimination pathways, associ
 enzymes and transporters, and potential drug–drug or pharmacogenomic effects.
 The ADME database is processed locally in the browser; selections are not uploaded.
 
+**Mechanistic hypotheses, not clinical interaction risk.** Shared enzymes, transporters and
+pharmacogene effects shown here, including a PharmCAT import, say where two drugs or a
+genotype could interact. They do not estimate how likely or how large an interaction is,
+and they are not advice for dosing or prescribing.
+
 <div id="pk-sites">
   <div id="pks-status" class="pkq-status">Loading the site database…</div>
   <div id="pks-ui" hidden>

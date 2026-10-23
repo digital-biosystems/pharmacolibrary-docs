@@ -90,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdilazep%5D%20pd_Endres_2004_3H_adenosine_transport&body=Drug%3A%20dilazep%0ARecord%3A%20pd_Endres_2004_3H_adenosine_transport%0APaper%3A%20Endres_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dilazep/pd_Endres_2004_3H_adenosine_transport%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dilazep](drugs/drug_dilazep/)</sub>

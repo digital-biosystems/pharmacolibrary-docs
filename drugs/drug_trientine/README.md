@@ -4,7 +4,7 @@
 
 - **generic name:** trientine
 - **ATC codes:** `A16AX12`
-- **DrugBank:** [DB06824](https://go.drugbank.com/drugs/DB06824) · **PubChem:** not captured
+- **DrugBank:** [DB06824](https://go.drugbank.com/drugs/DB06824) · **PubChem:** none
 - **groups:** approved
 
 ## About
@@ -52,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 550 matched, 123 returned
 - **screened:** 5  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -62,19 +62,19 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Cho_2009.pdf` | Cho HY et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009337939](https://doi.org/10.1177/0091270009337939) | [19602718](https://pubmed.ncbi.nlm.nih.gov/19602718) | The paper describes a population PK study of trientine in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Babich_1994.pdf` | Babich M et al., A novel phospholipase C inhibitor and p…, The Journal of pharmacology… (1994) | pd | 5 | not captured | [8169821](https://www.ncbi.nlm.nih.gov/pubmed/8169821) | metadata signals extractable PD data (IC50) |
+| `Babich_1994.pdf` | Babich M et al., A novel phospholipase C inhibitor and p…, The Journal of pharmacology… (1994) | pd | 5 |  | [8169821](https://www.ncbi.nlm.nih.gov/pubmed/8169821) | metadata signals extractable PD data (IC50) |
 | `Tatrai_1994.pdf` | Tatrai A et al., U-73122, a phospholipase C antagonist,…, Biochimica et biophysica ac… (1994) | pd | 5 | [10.1016/0167-4889(94)90296-8](https://doi.org/10.1016/0167-4889(94)90296-8) | [7803518](https://www.ncbi.nlm.nih.gov/pubmed/7803518) | metadata signals extractable PD data (IC50) |
 | `Biancani_1994.pdf` | Biancani P et al., Differential signal transduction pathwa…, The American journal of phy… (1994) | pd | 4 | [10.1152/ajpgi.1994.266.5.G767](https://doi.org/10.1152/ajpgi.1994.266.5.G767) | [8203523](https://www.ncbi.nlm.nih.gov/pubmed/8203523) | metadata signals extractable PD data (Emax) |
 | `Borda_1999.pdf` | Borda TG et al., Haloperidol-mediated phosphoinositide h…, Canadian journal of physiol… (1999) | pd | 4 | [10.1139/cjpp-77-1-22](https://doi.org/10.1139/cjpp-77-1-22) | [10535662](https://www.ncbi.nlm.nih.gov/pubmed/10535662) | metadata signals extractable PD data (Emax) |
 | `Chawengrum_2021.pdf` | Chawengrum P et al., Diterpenoids with Aromatase Inhibitory…, Journal of natural products (2021) | pd | 4 | [10.1021/acs.jnatprod.0c01292](https://doi.org/10.1021/acs.jnatprod.0c01292) | [34110821](https://www.ncbi.nlm.nih.gov/pubmed/34110821) | metadata signals extractable PD data (IC50) |
-| `Dorn_1993.pdf` | Dorn GW et al., Thromboxane A2 stimulated signal transd…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [8474027](https://www.ncbi.nlm.nih.gov/pubmed/8474027) | metadata signals extractable PD data (IC50) |
+| `Dorn_1993.pdf` | Dorn GW et al., Thromboxane A2 stimulated signal transd…, The Journal of pharmacology… (1993) | pd | 4 |  | [8474027](https://www.ncbi.nlm.nih.gov/pubmed/8474027) | metadata signals extractable PD data (IC50) |
 | `Gu_2025.pdf` | Gu WJ et al., Two undescribed steroids from Munronia…, Natural product research (2025) | pd | 4 | [10.1080/14786419.2023.2272286](https://doi.org/10.1080/14786419.2023.2272286) | [37874658](https://www.ncbi.nlm.nih.gov/pubmed/37874658) | metadata signals extractable PD data (IC50) |
 | `Klein_2011.pdf` | Klein RR et al., Direct activation of human phospholipas…, The Journal of biological c… (2011) | pd | 4 | [10.1074/jbc.M110.191783](https://doi.org/10.1074/jbc.M110.191783) | [21266572](https://www.ncbi.nlm.nih.gov/pubmed/21266572) | metadata signals extractable PD data (EC50) |
 | `Kong_2023.pdf` | Kong X et al., Two lanostane triterpenoids with α-gluc…, Natural product research (2023) | pd | 4 | [10.1080/14786419.2022.2050911](https://doi.org/10.1080/14786419.2022.2050911) | [35289692](https://www.ncbi.nlm.nih.gov/pubmed/35289692) | metadata signals extractable PD data (IC50) |
 | `Pitt_2005.pdf` | Pitt SJ et al., Potentiation of P2Y receptors by physio…, Molecular pharmacology (2005) | pd | 4 | [10.1124/mol.104.009902](https://doi.org/10.1124/mol.104.009902) | [15710744](https://www.ncbi.nlm.nih.gov/pubmed/15710744) | metadata signals extractable PD data (EC50) |
 | `Soria-Jasso_1996.pdf` | Soria-Jasso LE et al., Histamine H1 receptor activation stimul…, European journal of pharmac… (1996) | pd | 4 | [10.1016/s0014-2999(96)00782-0](https://doi.org/10.1016/s0014-2999(96)00782-0) | [9007531](https://www.ncbi.nlm.nih.gov/pubmed/9007531) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-05T12:06:18.198179+00:00</sub>
+<sub>queue written 2026-10-05 12:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -248,5 +248,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrientine%5D&body=Drug%3A%20trientine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trientine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

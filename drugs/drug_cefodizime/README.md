@@ -5,7 +5,7 @@
 
 - **generic name:** cefodizime
 - **ATC codes:** `J01DD09`
-- **DrugBank:** [DB13470](https://go.drugbank.com/drugs/DB13470) · **PubChem:** not captured
+- **DrugBank:** [DB13470](https://go.drugbank.com/drugs/DB13470) · **PubChem:** none
 - **molar mass:** 584.669 g/mol (C20H20N6O7S4) — DrugBank
 - **groups:** investigational
 
@@ -72,7 +72,7 @@ Cefodizime is a third-generation cephalosporin antibiotic used against bacterial
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 1  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -81,17 +81,17 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Arai_1989.pdf` | Arai S et al., Pharmacokinetic study of cefodizime in…, Arzneimittel-Forschung (1989) | popPK | 10 | not captured | [2818675](https://pubmed.ncbi.nlm.nih.gov/2818675) | The paper describes a PK study of cefodizime in mice with specific parameters (KE, V2, T1/2, AUC) mentioned qualitatively in the abstract, but no numeric values are present in the provided evidence. |
+| `Arai_1989.pdf` | Arai S et al., Pharmacokinetic study of cefodizime in…, Arzneimittel-Forschung (1989) | popPK | 10 |  | [2818675](https://pubmed.ncbi.nlm.nih.gov/2818675) | The paper describes a PK study of cefodizime in mice with specific parameters (KE, V2, T1/2, AUC) mentioned qualitatively in the abstract, but no numeric values are present in the provided evidence. |
 | `Boccazzi_1990.pdf` | Boccazzi A et al., The pharmacokinetics of cefodizime in c…, The Journal of antimicrobia… (1990) | popPK | 10 | [10.1093/jac/26.suppl_c.83](https://doi.org/10.1093/jac/26.suppl_c.83) | [2074256](https://pubmed.ncbi.nlm.nih.gov/2074256) | The study provides quantitative pharmacokinetic parameters (Vd, T1/2, AUC) for cefodizime in children, although clearance (CL) and intercompartmental clearance (Q) are not explicitly listed as numeric values. |
 | `Conte_1994.pdf` | Conte JE, Pharmacokinetics of cefodizime in volun…, Journal of clinical pharmac… (1994) | popPK | 10 | [10.1002/j.1552-4604.1994.tb01982.x](https://doi.org/10.1002/j.1552-4604.1994.tb01982.x) | [7876397](https://pubmed.ncbi.nlm.nih.gov/7876397) | The paper reports quantitative pharmacokinetic parameters (clearance and half-life) for cefodizime in human subjects, with specific numeric values provided in the abstract. |
-| `Dagrosa_1987.pdf` | Dagrosa EE et al., Dose linearity and other pharmacokineti…, Clinical therapeutics (1987) | popPK | 10 | not captured | [3450392](https://pubmed.ncbi.nlm.nih.gov/3450392) | The abstract provides key quantitative parameters (Vss ~40 L, t1/2 2.5 h, AUC linearity) but does not explicitly list numeric values for clearance (CL) or specific compartmental clearances (Q). |
+| `Dagrosa_1987.pdf` | Dagrosa EE et al., Dose linearity and other pharmacokineti…, Clinical therapeutics (1987) | popPK | 10 |  | [3450392](https://pubmed.ncbi.nlm.nih.gov/3450392) | The abstract provides key quantitative parameters (Vss ~40 L, t1/2 2.5 h, AUC linearity) but does not explicitly list numeric values for clearance (CL) or specific compartmental clearances (Q). |
 | `Müller_1997.pdf` | Müller M et al., Relationship between serum and free int…, Journal of clinical pharmac… (1997) | popPK | 10 | [10.1002/j.1552-4604.1997.tb04294.x](https://doi.org/10.1002/j.1552-4604.1997.tb04294.x) | [9506005](https://pubmed.ncbi.nlm.nih.gov/9506005) | The study is a pharmacokinetic investigation of cefodizime in humans that explicitly mentions fitting data to a two-compartment model, but the specific numeric parameter values (CL, V, etc.) are not provided in the evidence text, likely residing in tables or figures not included. |
 | `Schäfer-Korting_1986.pdf` | Schäfer-Korting M et al., Cefodizime penetration into skin suctio…, European journal of clinica… (1986) | popPK | 10 | [10.1007/BF00541531](https://doi.org/10.1007/BF00541531) | [3732363](https://pubmed.ncbi.nlm.nih.gov/3732363) | The paper provides a compartmental model and explicit numeric values for volume of distribution, clearance, and half-life for cefodizime in humans. |
 | `el_1991.pdf` | el Guinaidy MA et al., Pharmacokinetics of cefodizime in norma…, Chemotherapy (1991) | popPK | 10 | [10.1159/000238837](https://doi.org/10.1159/000238837) | [2032473](https://pubmed.ncbi.nlm.nih.gov/2032473) | The abstract explicitly reports quantitative pharmacokinetic parameters including half-life and total systemic clearance for cefodizime in humans. |
 | `el_1992.pdf` | el Touny M et al., Pharmacokinetics of cefodizime in patie…, Chemotherapy (1992) | popPK | 10 | [10.1159/000239001](https://doi.org/10.1159/000239001) | [1473357](https://pubmed.ncbi.nlm.nih.gov/1473357) | The abstract provides explicit quantitative pharmacokinetic parameters for cefodizime, including half-life, volume of distribution, and AUC values for both healthy volunteers and patients with liver cirrhosis. |
 | `Blandino_2000.pdf` | Blandino G et al., Comparative activity of cefodizime and…, Journal of chemotherapy (Fl… (2000) | pd | 5 | [10.1179/joc.2000.12.6.503](https://doi.org/10.1179/joc.2000.12.6.503) | [11154034](https://www.ncbi.nlm.nih.gov/pubmed/11154034) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-07T11:12:02.313044+00:00</sub>
+<sub>queue written 2026-10-07 11:12 UTC</sub>
 
 ## Screened and excluded
 
@@ -105,5 +105,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefodizime%5D&body=Drug%3A%20cefodizime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefodizime/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:14 UTC</sub>

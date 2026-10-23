@@ -77,4 +77,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium%5D%20pgx_Omran_2020_SLCO1B3_Q100&body=Drug%3A%20potassium%0ARecord%3A%20pgx_Omran_2020_SLCO1B3_Q100%0APaper%3A%20Omran_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium/pgx_Omran_2020_SLCO1B3_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Potassium](drugs/drug_potassium/)</sub>

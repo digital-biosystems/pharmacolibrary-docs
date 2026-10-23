@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprazolam%5D%20pd_Ammit_1991_PAF_induced_platelet_aggregation&body=Drug%3A%20alprazolam%0ARecord%3A%20pd_Ammit_1991_PAF_induced_platelet_aggregation%0APaper%3A%20Ammit_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprazolam/pd_Ammit_1991_PAF_induced_platelet_aggregation%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [alprazolam](drugs/drug_alprazolam/)</sub>

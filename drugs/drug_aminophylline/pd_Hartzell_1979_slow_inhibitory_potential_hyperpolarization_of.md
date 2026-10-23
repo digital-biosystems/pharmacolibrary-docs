@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20pd_Hartzell_1979_slow_inhibitory_potential_hyperpolarization_of&body=Drug%3A%20aminophylline%0ARecord%3A%20pd_Hartzell_1979_slow_inhibitory_potential_hyperpolarization_of%0APaper%3A%20Hartzell_1979%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/pd_Hartzell_1979_slow_inhibitory_potential_hyperpolarization_of%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [aminophylline](drugs/drug_aminophylline/)</sub>

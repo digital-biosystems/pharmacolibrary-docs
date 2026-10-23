@@ -48,11 +48,11 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` unknown, `SLC22A5` unknown | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` unknown | DrugBank actor |
 | absorption | small intestine | `SLC22A4` unknown, `SLC22A5` unknown | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A4` unknown, `SLC22A5` unknown | DrugBank actor |
 
 <sub>Actors without a tissue in the table: HRH1 (target).</sub>
 
@@ -74,7 +74,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 475 matched, 78 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -83,12 +83,12 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kelly_1987.pdf` | Kelly DW et al., The metabolism and elimination of pyril…, Drug metabolism and disposi… (1987) | popPK | 9 | not captured | [2888617](https://pubmed.ncbi.nlm.nih.gov/2888617) | Rat pyrilamine (mepyramine) is modeled with a one-compartment model, and numeric elimination half-lives are provided. |
+| `Kelly_1987.pdf` | Kelly DW et al., The metabolism and elimination of pyril…, Drug metabolism and disposi… (1987) | popPK | 9 |  | [2888617](https://pubmed.ncbi.nlm.nih.gov/2888617) | Rat pyrilamine (mepyramine) is modeled with a one-compartment model, and numeric elimination half-lives are provided. |
 | `Szabo_1993.pdf` | Szabo Z et al., Noncompartmental and compartmental mode…, Synapse (New York, N.Y.) (1993) | popPK | 8 | [10.1002/syn.890150403](https://doi.org/10.1002/syn.890150403) | [7908760](https://pubmed.ncbi.nlm.nih.gov/7908760) | A compartment model of radiolabeled pyrilamine is described, but no numeric parameter values are provided. |
 | `Hashemzadeh-Gargari_1992.pdf` | Hashemzadeh-Gargari H et al., Histamine activates chloride conductanc…, Journal of neurophysiology (1992) | pd | 5 | [10.1152/jn.1992.68.1.9](https://doi.org/10.1152/jn.1992.68.1.9) | [1381422](https://www.ncbi.nlm.nih.gov/pubmed/1381422) | metadata signals extractable PD data (EC50) |
 | `Barker_1983.pdf` | Barker LA et al., Selectivity of 4-methylhistamine at H1-…, British journal of pharmaco… (1983) | pd | 4 | [10.1111/j.1476-5381.1983.tb11050.x](https://doi.org/10.1111/j.1476-5381.1983.tb11050.x) | [6228278](https://www.ncbi.nlm.nih.gov/pubmed/6228278) | metadata signals extractable PD data (EC50) |
 | `Casale_1989.pdf` | Casale TB, The interaction of azelastine with huma…, The Journal of allergy and… (1989) | pd | 4 | [10.1016/0091-6749(89)90013-4](https://doi.org/10.1016/0091-6749(89)90013-4) | [2540229](https://www.ncbi.nlm.nih.gov/pubmed/2540229) | metadata signals extractable PD data (IC50) |
-| `Claro_1987.pdf` | Claro E et al., Histamine-stimulated phosphoinositide h…, Molecular pharmacology (1987) | pd | 4 | not captured | [2823091](https://www.ncbi.nlm.nih.gov/pubmed/2823091) | metadata signals extractable PD data (concentration-effect) |
+| `Claro_1987.pdf` | Claro E et al., Histamine-stimulated phosphoinositide h…, Molecular pharmacology (1987) | pd | 4 |  | [2823091](https://www.ncbi.nlm.nih.gov/pubmed/2823091) | metadata signals extractable PD data (concentration-effect) |
 | `Fanous_1993.pdf` | Fanous K et al., Azelastine and allergen transduction si…, Naunyn-Schmiedeberg's archi… (1993) | pd | 4 | [10.1007/BF00173212](https://doi.org/10.1007/BF00173212) | [7509459](https://www.ncbi.nlm.nih.gov/pubmed/7509459) | metadata signals extractable PD data (IC50) |
 | `Gardiner_1988.pdf` | Gardiner PJ et al., Characterisation of the leukotriene rec…, Agents and actions. Supplem… (1988) | pd | 4 | [10.1007/978-3-0348-9156-1_8](https://doi.org/10.1007/978-3-0348-9156-1_8) | [2845748](https://www.ncbi.nlm.nih.gov/pubmed/2845748) | metadata signals extractable PD data (EC50) |
 | `Gonzalez_1993.pdf` | Gonzalez R et al., Histamine H1 receptor binding sites in…, General pharmacology (1993) | pd | 4 | [10.1016/0306-3623(93)90007-k](https://doi.org/10.1016/0306-3623(93)90007-k) | [8482504](https://www.ncbi.nlm.nih.gov/pubmed/8482504) | metadata signals extractable PD data (IC50) |
@@ -97,10 +97,10 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sigrist_1986.pdf` | Sigrist S et al., Specific receptor and cardiovascular ef…, Endocrinology (1986) | pd | 4 | [10.1210/endo-119-1-381](https://doi.org/10.1210/endo-119-1-381) | [3013594](https://www.ncbi.nlm.nih.gov/pubmed/3013594) | metadata signals extractable PD data (EC50) |
 | `Soria-Jasso_1997.pdf` | Soria-Jasso LE et al., Histamine H1 receptors and inositol pho…, Neuroscience letters (1997) | pd | 4 | [10.1016/s0304-3940(97)00209-7](https://doi.org/10.1016/s0304-3940(97)00209-7) | [9147388](https://www.ncbi.nlm.nih.gov/pubmed/9147388) | metadata signals extractable PD data (EC50) |
 | `Tabarean_2013.pdf` | Tabarean IV, Functional pharmacology of H1 histamine…, British journal of pharmaco… (2013) | pd | 4 | [10.1111/bph.12286](https://doi.org/10.1111/bph.12286) | [23808378](https://www.ncbi.nlm.nih.gov/pubmed/23808378) | metadata signals extractable PD data (IC50) |
-| `Trzeciakowski_1987.pdf` | Trzeciakowski JP, Inhibition of guinea pig ileum contract…, The Journal of pharmacology… (1987) | pd | 4 | not captured | [2826760](https://www.ncbi.nlm.nih.gov/pubmed/2826760) | metadata signals extractable PD data (EC50) |
-| `Wallace_1983.pdf` | Wallace RM et al., Temperature dependence of the binding o…, Molecular pharmacology (1983) | pd | 4 | not captured | [6135145](https://www.ncbi.nlm.nih.gov/pubmed/6135145) | metadata signals extractable PD data (IC50) |
+| `Trzeciakowski_1987.pdf` | Trzeciakowski JP, Inhibition of guinea pig ileum contract…, The Journal of pharmacology… (1987) | pd | 4 |  | [2826760](https://www.ncbi.nlm.nih.gov/pubmed/2826760) | metadata signals extractable PD data (EC50) |
+| `Wallace_1983.pdf` | Wallace RM et al., Temperature dependence of the binding o…, Molecular pharmacology (1983) | pd | 4 |  | [6135145](https://www.ncbi.nlm.nih.gov/pubmed/6135145) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T14:46:16.762736+00:00</sub>
+<sub>queue written 2026-10-07 14:46 UTC</sub>
 
 ## Screened and excluded
 
@@ -156,5 +156,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 14:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmepyramine%5D&body=Drug%3A%20mepyramine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mepyramine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 14:46 UTC</sub>

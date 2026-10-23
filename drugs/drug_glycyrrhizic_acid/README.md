@@ -4,7 +4,7 @@
 
 - **generic name:** glycyrrhizic acid
 - **ATC codes:** `A05BA08`
-- **DrugBank:** [DB13751](https://go.drugbank.com/drugs/DB13751) · **PubChem:** not captured
+- **DrugBank:** [DB13751](https://go.drugbank.com/drugs/DB13751) · **PubChem:** none
 - **molar mass:** 822.942 g/mol (C42H62O16) — DrugBank
 - **groups:** approved, investigational
 
@@ -60,7 +60,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 340 matched, 160 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -69,24 +69,24 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shao_2001.pdf` | Shao W et al., [Studies of the determination of glycyr…, Zhong yao cai = Zhongyaocai… (2001) | popPK | 10 | not captured | [11715198](https://pubmed.ncbi.nlm.nih.gov/11715198) | The study reports quantitative pharmacokinetic parameters (half-lives, AUC, clearance) for glycyrrhizic acid (GK) in mice, with all numeric values explicitly present in the text. |
+| `Shao_2001.pdf` | Shao W et al., [Studies of the determination of glycyr…, Zhong yao cai = Zhongyaocai… (2001) | popPK | 10 |  | [11715198](https://pubmed.ncbi.nlm.nih.gov/11715198) | The study reports quantitative pharmacokinetic parameters (half-lives, AUC, clearance) for glycyrrhizic acid (GK) in mice, with all numeric values explicitly present in the text. |
 | `Ploeger_2001.pdf` | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | popPK | 9 | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) | [11141355](https://pubmed.ncbi.nlm.nih.gov/11141355) | The paper describes a population PK/PD model for glycyrrhetic acid (the active metabolite of glycyrrhizic acid) in humans, but the specific numeric parameter values are not present in the provided abstract text. |
 | `Tsai_1992.pdf` | Tsai TH et al., Pharmacokinetics of glycyrrhizin after…, Journal of pharmaceutical s… (1992) | popPK | 9 | [10.1002/jps.2600810925](https://doi.org/10.1002/jps.2600810925) | [1432649](https://pubmed.ncbi.nlm.nih.gov/1432649) | The study reports nonlinear pharmacokinetics of glycyrrhizin (metabolite of glycyrrhizic acid) in rats with a two-compartment model, but specific numeric parameter values are not present in the provided evidence. |
-| `Zhang_2000.pdf` | Zhang L et al., [Determination of glycyrrihizin in rats…, Zhong yao cai = Zhongyaocai… (2000) | popPK | 9 | not captured | [12575285](https://pubmed.ncbi.nlm.nih.gov/12575285) | The study reports a two-compartment pharmacokinetic model for glycyrrhizin in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| `Li_2013.pdf` | Li T et al., [LC-MS quantification and pharmacokinet…, Yao xue xue bao = Acta phar… (2013) | popPK | 8 | not captured | [23984529](https://pubmed.ncbi.nlm.nih.gov/23984529) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
-| `Li_2014.pdf` | Li T et al., [Pharmacokinetics and pharmacodynamics…, Yao xue xue bao = Acta phar… (2014) | popPK | 8 | not captured | [25577872](https://pubmed.ncbi.nlm.nih.gov/25577872) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Zhang_2000.pdf` | Zhang L et al., [Determination of glycyrrihizin in rats…, Zhong yao cai = Zhongyaocai… (2000) | popPK | 9 |  | [12575285](https://pubmed.ncbi.nlm.nih.gov/12575285) | The study reports a two-compartment pharmacokinetic model for glycyrrhizin in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Li_2013.pdf` | Li T et al., [LC-MS quantification and pharmacokinet…, Yao xue xue bao = Acta phar… (2013) | popPK | 8 |  | [23984529](https://pubmed.ncbi.nlm.nih.gov/23984529) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Li_2014.pdf` | Li T et al., [Pharmacokinetics and pharmacodynamics…, Yao xue xue bao = Acta phar… (2014) | popPK | 8 |  | [25577872](https://pubmed.ncbi.nlm.nih.gov/25577872) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
 | `Sakoda_2025.pdf` | Sakoda R et al., Stereoisomerism at the 3-position of gl…, Drug metabolism and disposi… (2025) | popPK | 8 | [10.1016/j.dmd.2025.100180](https://doi.org/10.1016/j.dmd.2025.100180) | [41192341](https://pubmed.ncbi.nlm.nih.gov/41192341) | The study reports toxicokinetic parameters (half-life, AUC) for glycyrrhetinic acid (the primary metabolite of glycyrrhizic acid) in rats, but specific numeric values for clearance or volume are not explicitly listed in the provided text, only relative fold-changes. |
 | `Tsai_1992_2.pdf` | Tsai TH et al., Determination of glycyrrhizin in rabbit…, Journal of chromatography (1992) | popPK | 8 | [10.1016/0378-4347(92)80190-2](https://doi.org/10.1016/0378-4347(92)80190-2) | [1500453](https://pubmed.ncbi.nlm.nih.gov/1500453) | The study reports a two-compartment model for glycyrrhizin (glycyrrhizic acid) in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 | `Wang_2013.pdf` | Wang Y et al., Pharmacokinetic comparisons of differen…, Journal of chromatography.… (2013) | popPK | 8 | [10.1016/j.jchromb.2013.06.021](https://doi.org/10.1016/j.jchromb.2013.06.021) | [23831700](https://pubmed.ncbi.nlm.nih.gov/23831700) | The study reports pharmacokinetic parameters (CL, AUC) for glycyrrhizin (the salt form of glycyrrhizic acid) in rats, but the specific numeric values are not present in the provided evidence text. |
 | `Song_2024.pdf` | Song D et al., Natural Binary Herbal Small Molecules S…, ACS biomaterials science &… (2024) | pd | 5 | [10.1021/acsbiomaterials.4c01227](https://doi.org/10.1021/acsbiomaterials.4c01227) | [39324477](https://www.ncbi.nlm.nih.gov/pubmed/39324477) | metadata signals extractable PD data (EC50) |
 | `Cao_2023.pdf` | Cao X et al., Photothermal Therapy Mediated Hybrid Me…, AAPS PharmSciTech (2023) | pd | 4 | [10.1208/s12249-023-02594-9](https://doi.org/10.1208/s12249-023-02594-9) | [37380936](https://www.ncbi.nlm.nih.gov/pubmed/37380936) | metadata signals extractable PD data (IC50) |
 | `Homma_1994.pdf` | Homma M et al., A novel 11 beta-hydroxysteroid dehydrog…, The Journal of pharmacy and… (1994) | pd | 4 | [10.1111/j.2042-7158.1994.tb03799.x](https://doi.org/10.1111/j.2042-7158.1994.tb03799.x) | [8051615](https://www.ncbi.nlm.nih.gov/pubmed/8051615) | metadata signals extractable PD data (IC50) |
-| `Itoh_1989.pdf` | Itoh K et al., Effects of glycyrrhizin and glycyrrheti…, Biochemistry international (1989) | pd | 4 | not captured | [2541725](https://www.ncbi.nlm.nih.gov/pubmed/2541725) | metadata signals extractable PD data (IC50) |
+| `Itoh_1989.pdf` | Itoh K et al., Effects of glycyrrhizin and glycyrrheti…, Biochemistry international (1989) | pd | 4 |  | [2541725](https://www.ncbi.nlm.nih.gov/pubmed/2541725) | metadata signals extractable PD data (IC50) |
 | `Liang_2020.pdf` | Liang RF et al., Involvement of organic anion-transporti…, Xenobiotica; the fate of fo… (2020) | pd | 4 | [10.1080/00498254.2019.1651921](https://doi.org/10.1080/00498254.2019.1651921) | [31368836](https://www.ncbi.nlm.nih.gov/pubmed/31368836) | metadata signals extractable PD data (IC50) |
 | `Okada_2023.pdf` | Okada S et al., Development of a Peptide Sensor Derived…, Analytical chemistry (2023) | pd | 4 | [10.1021/acs.analchem.2c05818](https://doi.org/10.1021/acs.analchem.2c05818) | [37028948](https://www.ncbi.nlm.nih.gov/pubmed/37028948) | metadata signals extractable PD data (EC50) |
 | `Schleimer_1991.pdf` | Schleimer RP, Potential regulation of inflammation in…, American journal of respira… (1991) | pd | 4 | [10.1165/ajrcmb/4.2.166](https://doi.org/10.1165/ajrcmb/4.2.166) | [1991073](https://www.ncbi.nlm.nih.gov/pubmed/1991073) | metadata signals extractable PD data (IC50) |
 | `Tao_2015.pdf` | Tao S et al., [Screening of active compounds with myo…, Zhejiang da xue xue bao. Yi… (2015) | pd | 4 | [10.3785/j.issn.1008-9292.2015.03.005](https://doi.org/10.3785/j.issn.1008-9292.2015.03.005) | [26038132](https://www.ncbi.nlm.nih.gov/pubmed/26038132) | metadata signals extractable PD data (EC50) |
-| `Wang_2006.pdf` | Wang XQ et al., [The anti-respiratory syncytial virus e…, Zhong yao cai = Zhongyaocai… (2006) | pd | 4 | not captured | [17059011](https://www.ncbi.nlm.nih.gov/pubmed/17059011) | metadata signals extractable PD data (EC50) |
+| `Wang_2006.pdf` | Wang XQ et al., [The anti-respiratory syncytial virus e…, Zhong yao cai = Zhongyaocai… (2006) | pd | 4 |  | [17059011](https://www.ncbi.nlm.nih.gov/pubmed/17059011) | metadata signals extractable PD data (EC50) |
 | `Xue_2026.pdf` | Xue L et al., Acid-responsive natural amphiphile self…, Colloids and surfaces. B, B… (2026) | pd | 4 | [10.1016/j.colsurfb.2026.116146](https://doi.org/10.1016/j.colsurfb.2026.116146) | [42704987](https://www.ncbi.nlm.nih.gov/pubmed/42704987) | metadata signals extractable PD data (EC50) |
 | `Zhang_1994.pdf` | Zhang YD et al., Inhibition of 11 beta-hydroxysteroid de…, The Journal of steroid bioc… (1994) | pd | 4 | [10.1016/0960-0760(94)90304-2](https://doi.org/10.1016/0960-0760(94)90304-2) | [8003443](https://www.ncbi.nlm.nih.gov/pubmed/8003443) | metadata signals extractable PD data (IC50) |
 | `Tu_2010.pdf` | Tu JH et al., Effect of glycyrrhizin on CYP2C19 and C…, Xenobiotica; the fate of fo… (2010) | pgx | 8 | [10.3109/00498251003748095](https://doi.org/10.3109/00498251003748095) | [20350051](https://www.ncbi.nlm.nih.gov/pubmed/20350051) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
@@ -96,7 +96,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Liu_2023.pdf` | Liu J et al., Pharmacokinetic Interactions of a Licor…, Drug metabolism and disposi… (2023) | pgx | 7 | [10.1124/dmd.122.001050](https://doi.org/10.1124/dmd.122.001050) | [36328482](https://www.ncbi.nlm.nih.gov/pubmed/36328482) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Suroowan_2019.pdf` | Suroowan S et al., Herbal Medicine of the 21st Century: A…, Current topics in medicinal… (2019) | pgx | 7 | [10.2174/1568026619666191112121330](https://doi.org/10.2174/1568026619666191112121330) | [31721714](https://www.ncbi.nlm.nih.gov/pubmed/31721714) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-04T14:52:27.503982+00:00</sub>
+<sub>queue written 2026-10-04 14:52 UTC</sub>
 
 ## Screened and excluded
 
@@ -306,5 +306,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglycyrrhizic_acid%5D&body=Drug%3A%20glycyrrhizic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glycyrrhizic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

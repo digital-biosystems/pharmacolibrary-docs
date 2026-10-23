@@ -77,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 341 matched, 139 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -87,11 +87,11 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Edgar_1987.pdf` | Edgar B et al., Pharmacokinetic and pharmacodynamic stu…, Biopharmaceutics & drug dis… (1987) | popPK | 10 | [10.1002/bdd.2510080305](https://doi.org/10.1002/bdd.2510080305) | [3593901](https://pubmed.ncbi.nlm.nih.gov/3593901) | The study describes a two-compartment model for felodipine in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Yang_1998.pdf` | Yang L et al., [Determination of felodipine concentrat…, Yao xue xue bao = Acta phar… (1998) | popPK | 10 | not captured | [12016918](https://pubmed.ncbi.nlm.nih.gov/12016918) | The study reports quantitative pharmacokinetic parameters (T1/2, Cmax, Tmax, AUC) for felodipine in humans, though clearance and volume of distribution are not explicitly listed. |
-| `Blychert_1992_2.pdf` | Blychert E, Felodipine pharmacokinetics and plasma…, Blood pressure. Supplement (1992) | popPK | 8 | not captured | [1343111](https://pubmed.ncbi.nlm.nih.gov/1343111) | The study reports qualitative PK trends (increased half-life, decreased clearance with age) and Emax model parameters, but specific numeric PK values (CL, V, t1/2) are not present in the provided abstract text. |
+| `Yang_1998.pdf` | Yang L et al., [Determination of felodipine concentrat…, Yao xue xue bao = Acta phar… (1998) | popPK | 10 |  | [12016918](https://pubmed.ncbi.nlm.nih.gov/12016918) | The study reports quantitative pharmacokinetic parameters (T1/2, Cmax, Tmax, AUC) for felodipine in humans, though clearance and volume of distribution are not explicitly listed. |
+| `Blychert_1992_2.pdf` | Blychert E, Felodipine pharmacokinetics and plasma…, Blood pressure. Supplement (1992) | popPK | 8 |  | [1343111](https://pubmed.ncbi.nlm.nih.gov/1343111) | The study reports qualitative PK trends (increased half-life, decreased clearance with age) and Emax model parameters, but specific numeric PK values (CL, V, t1/2) are not present in the provided abstract text. |
 | `Zhao_2016.pdf` | Zhao S et al., Synchronous delivery of felodipine and…, Drug development and indust… (2016) | popPK | 8 | [10.3109/03639045.2016.1171332](https://doi.org/10.3109/03639045.2016.1171332) | [27074758](https://pubmed.ncbi.nlm.nih.gov/27074758) | The study reports pharmacokinetic parameters for felodipine in beagle dogs, but the specific numeric values are not present in the provided evidence text. |
 | `Blychert_1992.pdf` | Blychert E et al., Plasma concentration--effect relationsh…, Clinical pharmacology and t… (1992) | pd | 5 | [10.1038/clpt.1992.105](https://doi.org/10.1038/clpt.1992.105) | [1385566](https://www.ncbi.nlm.nih.gov/pubmed/1385566) | metadata signals extractable PD data (Emax) |
-| `Ericsson_1999.pdf` | Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism and disposi… (1999) | pd | 5 | not captured | [10220482](https://www.ncbi.nlm.nih.gov/pubmed/10220482) | metadata signals extractable PD data (Emax) |
+| `Ericsson_1999.pdf` | Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism and disposi… (1999) | pd | 5 |  | [10220482](https://www.ncbi.nlm.nih.gov/pubmed/10220482) | metadata signals extractable PD data (Emax) |
 | `Larsson_1990.pdf` | Larsson R et al., Acute and steady-state pharmacokinetics…, Journal of clinical pharmac… (1990) | pd | 5 | [10.1002/j.1552-4604.1990.tb03589.x](https://doi.org/10.1002/j.1552-4604.1990.tb03589.x) | [2243149](https://www.ncbi.nlm.nih.gov/pubmed/2243149) | metadata signals extractable PD data (Emax) |
 | `Li_2026.pdf` | Li W et al., Drug-drug interactions between lopinavi…, Biochemical pharmacology (2026) | pd | 5 | [10.1016/j.bcp.2026.118012](https://doi.org/10.1016/j.bcp.2026.118012) | [42055143](https://www.ncbi.nlm.nih.gov/pubmed/42055143) | metadata signals extractable PD data (IC50) |
 | `Soons_1993.pdf` | Soons PA et al., Comparative effects of felodipine, nitr…, European journal of clinica… (1993) | pd | 5 | [10.1007/BF00315467](https://doi.org/10.1007/BF00315467) | [8453956](https://www.ncbi.nlm.nih.gov/pubmed/8453956) | metadata signals extractable PD data (concentration-effect) |
@@ -127,7 +127,7 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Walsky_2004.pdf` | Walsky RL et al., Validated assays for human cytochrome P…, Drug metabolism and disposi… (2004) | pgx | 7 | [10.1124/dmd.32.6.647](https://doi.org/10.1124/dmd.32.6.647) | [15155557](https://www.ncbi.nlm.nih.gov/pubmed/15155557) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T03:12:10.099384+00:00</sub>
+<sub>queue written 2026-10-07 03:12 UTC</sub>
 
 ## Screened and excluded
 
@@ -236,5 +236,5 @@ _40 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 03:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfelodipine%5D&body=Drug%3A%20felodipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_felodipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:12 UTC</sub>

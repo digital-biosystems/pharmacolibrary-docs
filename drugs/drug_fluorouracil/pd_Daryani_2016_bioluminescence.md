@@ -134,4 +134,5 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20pd_Daryani_2016_bioluminescence&body=Drug%3A%20fluorouracil%0ARecord%3A%20pd_Daryani_2016_bioluminescence%0APaper%3A%20Daryani_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fluorouracil](drugs/drug_fluorouracil/)</sub>

@@ -69,4 +69,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluoxetine%5D%20pd_Kecskem_ti_2005_IBa&body=Drug%3A%20fluoxetine%0ARecord%3A%20pd_Kecskem_ti_2005_IBa%0APaper%3A%20Kecskem%C3%A9ti_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluoxetine/pd_Kecskem_ti_2005_IBa%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fluoxetine](drugs/drug_fluoxetine/)</sub>

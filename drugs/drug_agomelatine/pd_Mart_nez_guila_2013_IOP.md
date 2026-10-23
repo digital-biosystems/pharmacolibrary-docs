@@ -69,4 +69,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bagomelatine%5D%20pd_Mart_nez_guila_2013_IOP&body=Drug%3A%20agomelatine%0ARecord%3A%20pd_Mart_nez_guila_2013_IOP%0APaper%3A%20Mart%C3%ADnez-%C3%81guila_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_agomelatine/pd_Mart_nez_guila_2013_IOP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [agomelatine](drugs/drug_agomelatine/)</sub>

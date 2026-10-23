@@ -47,7 +47,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 126 matched, 100 returned
 - **screened:** 1  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -57,7 +57,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Langeloh_1987.pdf` | Langeloh A et al., The mechanism of the 3H-noradrenaline r…, Naunyn-Schmiedeberg's archi… (1987) | pd | 5 | [10.1007/BF00165750](https://doi.org/10.1007/BF00165750) | [3444477](https://www.ncbi.nlm.nih.gov/pubmed/3444477) | metadata signals extractable PD data (IC50) |
-| `Abrahamsen_1985.pdf` | Abrahamsen J et al., Accumulation of 3H-adrenaline by rabbit…, Blood vessels (1985) | pd | 4 | not captured | [3967097](https://www.ncbi.nlm.nih.gov/pubmed/3967097) | metadata signals extractable PD data (IC50) |
+| `Abrahamsen_1985.pdf` | Abrahamsen J et al., Accumulation of 3H-adrenaline by rabbit…, Blood vessels (1985) | pd | 4 |  | [3967097](https://www.ncbi.nlm.nih.gov/pubmed/3967097) | metadata signals extractable PD data (IC50) |
 | `Abrahamsen_1991.pdf` | Abrahamsen J, Accumulation and release of adrenaline,…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01613.x](https://doi.org/10.1111/j.1600-0773.1991.tb01613.x) | [1762989](https://www.ncbi.nlm.nih.gov/pubmed/1762989) | metadata signals extractable PD data (IC50) |
 | `Boeijinga_1993.pdf` | Boeijinga PH et al., Serotonergic modulation of neurotransmi…, Naunyn-Schmiedeberg's archi… (1993) | pd | 4 | [10.1007/BF00167229](https://doi.org/10.1007/BF00167229) | [8133898](https://www.ncbi.nlm.nih.gov/pubmed/8133898) | metadata signals extractable PD data (EC50) |
 | `Fowler_1986.pdf` | Fowler CJ et al., Stimulation by noradrenaline of inosito…, The Journal of pharmacy and… (1986) | pd | 4 | [10.1111/j.2042-7158.1986.tb04544.x](https://doi.org/10.1111/j.2042-7158.1986.tb04544.x) | [2871155](https://www.ncbi.nlm.nih.gov/pubmed/2871155) | metadata signals extractable PD data (EC50) |
@@ -67,14 +67,14 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `May_1993.pdf` | May T, 1-Methyl-4-phenylpyridinium (MPP+) bind…, Neuroscience letters (1993) | pd | 4 | [10.1016/0304-3940(93)90558-3](https://doi.org/10.1016/0304-3940(93)90558-3) | [8121637](https://www.ncbi.nlm.nih.gov/pubmed/8121637) | metadata signals extractable PD data (IC50) |
 | `Reeves_1991.pdf` | Reeves JJ et al., Investigation into the 5-hydroxytryptam…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12301.x](https://doi.org/10.1111/j.1476-5381.1991.tb12301.x) | [1878746](https://www.ncbi.nlm.nih.gov/pubmed/1878746) | metadata signals extractable PD data (concentration-effect) |
 | `Robinson_1989.pdf` | Robinson TN et al., The mechanism of tetrahydroaminoacridin…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb12656.x](https://doi.org/10.1111/j.1476-5381.1989.tb12656.x) | [2611486](https://www.ncbi.nlm.nih.gov/pubmed/2611486) | metadata signals extractable PD data (IC50) |
-| `Strait_1986.pdf` | Strait KA et al., Dopamine autoreceptor regulation of the…, Molecular pharmacology (1986) | pd | 4 | not captured | [2872588](https://www.ncbi.nlm.nih.gov/pubmed/2872588) | metadata signals extractable PD data (EC50) |
-| `Wolfe_1978.pdf` | Wolfe BB et al., Presynaptic modulation of beta adrenerg…, The Journal of pharmacology… (1978) | pd | 4 | not captured | [213556](https://www.ncbi.nlm.nih.gov/pubmed/213556) | metadata signals extractable PD data (EC50) |
-| `Ziance_1977.pdf` | Ziance RJ et al., Influence of MAO inhibitors on uptake a…, Archives internationales de… (1977) | pd | 4 | not captured | [921400](https://www.ncbi.nlm.nih.gov/pubmed/921400) | metadata signals extractable PD data (IC50) |
+| `Strait_1986.pdf` | Strait KA et al., Dopamine autoreceptor regulation of the…, Molecular pharmacology (1986) | pd | 4 |  | [2872588](https://www.ncbi.nlm.nih.gov/pubmed/2872588) | metadata signals extractable PD data (EC50) |
+| `Wolfe_1978.pdf` | Wolfe BB et al., Presynaptic modulation of beta adrenerg…, The Journal of pharmacology… (1978) | pd | 4 |  | [213556](https://www.ncbi.nlm.nih.gov/pubmed/213556) | metadata signals extractable PD data (EC50) |
+| `Ziance_1977.pdf` | Ziance RJ et al., Influence of MAO inhibitors on uptake a…, Archives internationales de… (1977) | pd | 4 |  | [921400](https://www.ncbi.nlm.nih.gov/pubmed/921400) | metadata signals extractable PD data (IC50) |
 | `Shen_2010.pdf` | Shen HW et al., Effects of monoamine oxidase inhibitor…, Biochemical pharmacology (2010) | pgx | 8 | [10.1016/j.bcp.2010.02.020](https://doi.org/10.1016/j.bcp.2010.02.020) | [20206139](https://www.ncbi.nlm.nih.gov/pubmed/20206139) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Nirogi_2015.pdf` | Nirogi R et al., Evaluation of metabolism dependent inhi…, Chemico-biological interact… (2015) | pgx | 7 | [10.1016/j.cbi.2015.01.028](https://doi.org/10.1016/j.cbi.2015.01.028) | [25656918](https://www.ncbi.nlm.nih.gov/pubmed/25656918) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Niwa_2011.pdf` | Niwa T et al., Human liver enzymes responsible for met…, Drug metabolism letters (2011) | pgx | 5 | [10.2174/187231211796905026](https://doi.org/10.2174/187231211796905026) | [21679153](https://www.ncbi.nlm.nih.gov/pubmed/21679153) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-06T16:17:46.861228+00:00</sub>
+<sub>queue written 2026-10-06 16:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -207,5 +207,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpargyline%5D&body=Drug%3A%20pargyline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pargyline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

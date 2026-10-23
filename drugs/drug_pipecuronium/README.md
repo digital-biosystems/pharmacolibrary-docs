@@ -5,7 +5,7 @@
 
 - **generic name:** Pipecuronium
 - **ATC codes:** `M03AC06`
-- **DrugBank:** [DB01338](https://go.drugbank.com/drugs/DB01338) · **PubChem:** not captured
+- **DrugBank:** [DB01338](https://go.drugbank.com/drugs/DB01338) · **PubChem:** none
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 48 matched, 38 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -90,14 +90,14 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Caldwell_1988.pdf` | Caldwell JE et al., Pipecuronium and pancuronium: compariso…, British journal of anaesthe… (1988) | popPK | 10 | [10.1093/bja/61.6.693](https://doi.org/10.1093/bja/61.6.693) | [2849968](https://pubmed.ncbi.nlm.nih.gov/2849968) | The abstract explicitly provides quantitative pharmacokinetic parameters (Vss and Cl) for pipecuronium in humans. |
 | `Caldwell_1989.pdf` | Caldwell JE et al., The influence of renal failure on the p…, Anesthesiology (1989) | popPK | 10 | [10.1097/00000542-198901000-00004](https://doi.org/10.1097/00000542-198901000-00004) | [2536254](https://pubmed.ncbi.nlm.nih.gov/2536254) | The paper reports quantitative pharmacokinetic parameters (Vss, CL, MRT, half-life) for pipecuronium in humans, and all numeric values are explicitly provided in the text. |
-| `DHonneur_1993.pdf` | D'Honneur G et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and analgesia (1993) | popPK | 10 | not captured | [8250313](https://pubmed.ncbi.nlm.nih.gov/8250313) | The paper reports specific numeric values for clearance, half-life, and volume of distribution for pipecuronium in a human PK study. |
-| `Tassonyi_1981.pdf` | Tassonyi E et al., Pharmacokinetics of pipecurium bromide,…, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [6274362](https://pubmed.ncbi.nlm.nih.gov/6274362) | The study reports quantitative PK parameters (half-lives, volume, clearance) for pipecuronium in humans with specific numeric values provided in the text. |
+| `DHonneur_1993.pdf` | D'Honneur G et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and analgesia (1993) | popPK | 10 |  | [8250313](https://pubmed.ncbi.nlm.nih.gov/8250313) | The paper reports specific numeric values for clearance, half-life, and volume of distribution for pipecuronium in a human PK study. |
+| `Tassonyi_1981.pdf` | Tassonyi E et al., Pharmacokinetics of pipecurium bromide,…, Arzneimittel-Forschung (1981) | popPK | 10 |  | [6274362](https://pubmed.ncbi.nlm.nih.gov/6274362) | The study reports quantitative PK parameters (half-lives, volume, clearance) for pipecuronium in humans with specific numeric values provided in the text. |
 | `Tassonyi_1995.pdf` | Tassonyi E et al., Pharmacokinetics of pipecuronium in inf…, European journal of drug me… (1995) | popPK | 10 | [10.1007/BF03189671](https://doi.org/10.1007/BF03189671) | [8751042](https://pubmed.ncbi.nlm.nih.gov/8751042) | The evidence contains explicit numeric values for clearance, distribution half-life, and volume of distribution for pipecuronium in human infants, children, and adults. |
-| `Yajima_1990.pdf` | Yajima C et al., [Comparative pharmacokinetics of pipecu…, Masui. The Japanese journal… (1990) | popPK | 10 | not captured | [1976829](https://pubmed.ncbi.nlm.nih.gov/1976829) | The abstract provides explicit numeric values for pipecuronium's PK parameters (CL, V1, Vdss, t1/2) in human subjects. |
-| `Vereczkey_1992.pdf` | Vereczkey L, [Pharmacokinetics and metabolism of pip…, Acta pharmaceutica Hungarica (1992) | popPK | 6 | not captured | [1323914](https://pubmed.ncbi.nlm.nih.gov/1323914) | The paper describes a two-compartment model and reports half-lives, but specific quantitative clearance, volume, or rate constants are not provided in the text, only summary range data. |
-| `Okamoto_1992.pdf` | Okamoto T et al., [Neuromuscular blocking effect of ORG94…, Masui. The Japanese journal… (1992) | pd | 4 | not captured | [1433879](https://www.ncbi.nlm.nih.gov/pubmed/1433879) | metadata signals extractable PD data (IC50) |
+| `Yajima_1990.pdf` | Yajima C et al., [Comparative pharmacokinetics of pipecu…, Masui. The Japanese journal… (1990) | popPK | 10 |  | [1976829](https://pubmed.ncbi.nlm.nih.gov/1976829) | The abstract provides explicit numeric values for pipecuronium's PK parameters (CL, V1, Vdss, t1/2) in human subjects. |
+| `Vereczkey_1992.pdf` | Vereczkey L, [Pharmacokinetics and metabolism of pip…, Acta pharmaceutica Hungarica (1992) | popPK | 6 |  | [1323914](https://pubmed.ncbi.nlm.nih.gov/1323914) | The paper describes a two-compartment model and reports half-lives, but specific quantitative clearance, volume, or rate constants are not provided in the text, only summary range data. |
+| `Okamoto_1992.pdf` | Okamoto T et al., [Neuromuscular blocking effect of ORG94…, Masui. The Japanese journal… (1992) | pd | 4 |  | [1433879](https://www.ncbi.nlm.nih.gov/pubmed/1433879) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T02:34:50.109605+00:00</sub>
+<sub>queue written 2026-10-07 02:34 UTC</sub>
 
 ## Screened and excluded
 
@@ -110,5 +110,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 02:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpipecuronium%5D&body=Drug%3A%20pipecuronium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pipecuronium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:34 UTC</sub>

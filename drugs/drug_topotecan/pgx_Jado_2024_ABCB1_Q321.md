@@ -72,4 +72,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btopotecan%5D%20pgx_Jado_2024_ABCB1_Q321&body=Drug%3A%20topotecan%0ARecord%3A%20pgx_Jado_2024_ABCB1_Q321%0APaper%3A%20Jado_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_topotecan/pgx_Jado_2024_ABCB1_Q321%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [topotecan](drugs/drug_topotecan/)</sub>

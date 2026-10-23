@@ -5,7 +5,7 @@
 
 - **generic name:** cannabinoids
 - **ATC codes:** `N02BG10`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -86,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 926 matched, 193 returned
 - **screened:** 47  ·  **relevant:** 11
-- **records:** 7  ·  extracted 4  ·  needs_review 0  ·  rejected 3  ·  stale 6
+- **records:** 7  ·  extracted 4  ·  needs review 0  ·  rejected 3  ·  stale 6
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -99,10 +99,10 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Reuter_2025.pdf` | Reuter SE et al., Pharmacokinetics and Bioavailability of…, Cannabis and cannabinoid re… (2025) | popPK | 10 | [10.1089/can.2024.0117](https://doi.org/10.1089/can.2024.0117) | [40130357](https://pubmed.ncbi.nlm.nih.gov/40130357) | The paper is a population PK study of cannabinoids in humans, but the evidence only reports bioavailability percentages, while the specific numeric values for clearance, volume, and half-life are not included in the text. |
 | `Schaefer_2016.pdf` | Schaefer N et al., Pharmacokinetics of (synthetic) cannabi…, Toxicology letters (2016) | popPK | 10 | [10.1016/j.toxlet.2016.04.021](https://doi.org/10.1016/j.toxlet.2016.04.021) | [27113702](https://pubmed.ncbi.nlm.nih.gov/27113702) | The paper provides explicit quantitative population PK parameters (central volumes and clearances) for three cannabinoids in pigs. |
 | `Schaefer_2018.pdf` | Schaefer N et al., Can toxicokinetics of (synthetic) canna…, Biochemical pharmacology (2018) | popPK | 10 | [10.1016/j.bcp.2018.07.029](https://doi.org/10.1016/j.bcp.2018.07.029) | [30048626](https://pubmed.ncbi.nlm.nih.gov/30048626) | The study reports a compartmental toxicokinetic model for cannabinoids in pigs, but the specific clearance and volume of distribution values are not explicitly listed in the provided text, though concentration and bioavailability data are present. |
-| `Brewster_1997.pdf` | Brewster ME et al., Clinical pharmacokinetics of escalating…, International journal of cl… (1997) | popPK | 9 | not captured | [9314087](https://pubmed.ncbi.nlm.nih.gov/9314087) | The study is a clinical PK trial of dexanabinol, a synthetic cannabinoid, reporting quantitative parameters such as clearance (1700 ml/min), volume of distribution (15 l/kg), and half-lives. |
+| `Brewster_1997.pdf` | Brewster ME et al., Clinical pharmacokinetics of escalating…, International journal of cl… (1997) | popPK | 9 |  | [9314087](https://pubmed.ncbi.nlm.nih.gov/9314087) | The study is a clinical PK trial of dexanabinol, a synthetic cannabinoid, reporting quantitative parameters such as clearance (1700 ml/min), volume of distribution (15 l/kg), and half-lives. |
 | `Ravula_2019.pdf` | Ravula A et al., Pharmacokinetic and Pharmacodynamic Cha…, Cannabis and cannabinoid re… (2019) | popPK | 9 | [10.1089/can.2019.0049](https://doi.org/10.1089/can.2019.0049) | [32042924](https://pubmed.ncbi.nlm.nih.gov/32042924) | The paper is a PK study of THC in rats using a compartmental model, but no specific numeric parameter values (CL, V, ka) are provided in the extracted evidence. |
 | `Huang_2022.pdf` | Huang W et al., Objective Identification of Cannabis Us…, Cannabis and cannabinoid re… (2022) | popPK | 8 | [10.1089/can.2021.0068](https://doi.org/10.1089/can.2021.0068) | [34793254](https://pubmed.ncbi.nlm.nih.gov/34793254) | The paper develops population PK models for THC and its metabolites, but the specific parameter estimates (CL, V, Q, etc.) are derived from external published studies and are not listed in the provided evidence, only the resulting cutoff value is given. |
-| `Joerger_2012.pdf` | Joerger M et al., Single-dose pharmacokinetics and tolera…, Drug metabolism letters (2012) | popPK | 6 | not captured | [22594565](https://pubmed.ncbi.nlm.nih.gov/22594565) | The study reports population PK/PD modeling for the metabolite THC-OH and discusses parent THC variability, but specific numeric disposition parameters (CL, V, Q) are not present in the provided text. |
+| `Joerger_2012.pdf` | Joerger M et al., Single-dose pharmacokinetics and tolera…, Drug metabolism letters (2012) | popPK | 6 |  | [22594565](https://pubmed.ncbi.nlm.nih.gov/22594565) | The study reports population PK/PD modeling for the metabolite THC-OH and discusses parent THC variability, but specific numeric disposition parameters (CL, V, Q) are not present in the provided text. |
 | `Asher_2023.pdf` | Asher MJ et al., A Complete Endocannabinoid Signaling Sy…, Molecular pharmacology (2023) | pd | 5 | [10.1124/molpharm.122.000555](https://doi.org/10.1124/molpharm.122.000555) | [36379717](https://www.ncbi.nlm.nih.gov/pubmed/36379717) | metadata signals extractable PD data (EC50) |
 | `Campbell_1992.pdf` | Campbell M et al., Pharmacokinetic optimisation of antieme…, Clinical pharmacokinetics (1992) | pd | 5 | [10.2165/00003088-199223020-00006](https://doi.org/10.2165/00003088-199223020-00006) | [1355018](https://www.ncbi.nlm.nih.gov/pubmed/1355018) | metadata signals extractable PD data (concentration-effect) |
 | `Kullebi_2025.pdf` | Kullebi B et al., Embryotoxicity Evaluation of Novel Synt…, Journal of applied toxicolo… (2025) | pd | 5 | [10.1002/jat.4778](https://doi.org/10.1002/jat.4778) | [40070117](https://www.ncbi.nlm.nih.gov/pubmed/40070117) | metadata signals extractable PD data (EC50) |
@@ -111,7 +111,7 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Evans_1987.pdf` | Evans AT et al., Activation of phospholipase A2 by canna…, FEBS letters (1987) | pd | 4 | [10.1016/0014-5793(87)81420-5](https://doi.org/10.1016/0014-5793(87)81420-5) | [3803591](https://www.ncbi.nlm.nih.gov/pubmed/3803591) | metadata signals extractable PD data (EC50) |
 | `Fabregat-Safont_2019.pdf` | Fabregat-Safont D et al., Comprehensive investigation on syntheti…, Drug testing and analysis (2019) | pd | 4 | [10.1002/dta.2659](https://doi.org/10.1002/dta.2659) | [31192526](https://www.ncbi.nlm.nih.gov/pubmed/31192526) | metadata signals extractable PD data (EC50) |
 | `Hillard_1986.pdf` | Hillard CJ et al., Effects of delta 9-tetrahydrocannabinol…, Biochemical pharmacology (1986) | pd | 4 | [10.1016/0006-2952(86)90192-9](https://doi.org/10.1016/0006-2952(86)90192-9) | [3017362](https://www.ncbi.nlm.nih.gov/pubmed/3017362) | metadata signals extractable PD data (EC50) |
-| `Nye_1985.pdf` | Nye JS et al., High-affinity cannabinoid binding sites…, The Journal of pharmacology… (1985) | pd | 4 | not captured | [2993595](https://www.ncbi.nlm.nih.gov/pubmed/2993595) | metadata signals extractable PD data (IC50) |
+| `Nye_1985.pdf` | Nye JS et al., High-affinity cannabinoid binding sites…, The Journal of pharmacology… (1985) | pd | 4 |  | [2993595](https://www.ncbi.nlm.nih.gov/pubmed/2993595) | metadata signals extractable PD data (IC50) |
 | `Raz_2026.pdf` | Raz N et al., Selective activation of cannabinoid rec…, Biochemical pharmacology (2026) | pd | 4 | [10.1016/j.bcp.2025.117498](https://doi.org/10.1016/j.bcp.2025.117498) | [41173057](https://www.ncbi.nlm.nih.gov/pubmed/41173057) | metadata signals extractable PD data (EC50) |
 | `Stout_2014.pdf` | Stout SM et al., Exogenous cannabinoids as substrates, i…, Drug metabolism reviews (2014) | pgx | 8 | [10.3109/03602532.2013.849268](https://doi.org/10.3109/03602532.2013.849268) | [24160757](https://www.ncbi.nlm.nih.gov/pubmed/24160757) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Anderson_2016.pdf` | Anderson GD et al., Pharmacokinetic Drug Interactions with…, Clinical pharmacokinetics (2016) | pgx | 7 | [10.1007/s40262-016-0400-9](https://doi.org/10.1007/s40262-016-0400-9) | [27106177](https://www.ncbi.nlm.nih.gov/pubmed/27106177) | metadata signals extractable PGX data (CYP1A, PK/PD-context) |
@@ -120,7 +120,7 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Qian_2019.pdf` | Qian Y et al., The Potential for Pharmacokinetic Inter…, Journal of clinical psychop… (2019) | pgx | 7 | [10.1097/JCP.0000000000001089](https://doi.org/10.1097/JCP.0000000000001089) | [31433338](https://www.ncbi.nlm.nih.gov/pubmed/31433338) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Sherif_2016.pdf` | Sherif M et al., Human Laboratory Studies on Cannabinoid…, Biological psychiatry (2016) | pgx | 5 | [10.1016/j.biopsych.2016.01.011](https://doi.org/10.1016/j.biopsych.2016.01.011) | [26970363](https://www.ncbi.nlm.nih.gov/pubmed/26970363) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-10-07T05:52:49.181302+00:00</sub>
+<sub>queue written 2026-10-07 05:52 UTC</sub>
 
 ## Screened and excluded
 
@@ -305,5 +305,5 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 05:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcannabinoids%5D&body=Drug%3A%20cannabinoids%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cannabinoids/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:53 UTC</sub>

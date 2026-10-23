@@ -5,7 +5,7 @@
 
 - **generic name:** Potassium
 - **ATC codes:** `C03AB01`, `C03AB02`, `C03AB03`, `C03AB04`, `C03AB05`, `C03AB06`, `C03AB07`, `C03AB08`, `C03AB09`, `C03BB02`, `C03BB03`, `C03BB04`, `C03BB05`, `C03BB07`, `C03CB01`, `C03CB02`
-- **DrugBank:** [DB14500](https://go.drugbank.com/drugs/DB14500) · **PubChem:** not captured
+- **DrugBank:** [DB14500](https://go.drugbank.com/drugs/DB14500) · **PubChem:** none
 - **molar mass:** 39.0983 g/mol (K) — DrugBank
 - **groups:** approved, investigational
 
@@ -141,7 +141,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 44002 matched, 460 returned
 - **screened:** 37  ·  **relevant:** 2
-- **records:** 13  ·  extracted 8  ·  needs_review 2  ·  rejected 3  ·  stale 0
+- **records:** 13  ·  extracted 8  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -161,7 +161,7 @@ _83 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lock_2025.pdf` | Lock GA et al., Can distinct Gram-negative biofilm-form…, Microbial pathogenesis (2025) | pd | 5 | [10.1016/j.micpath.2024.107092](https://doi.org/10.1016/j.micpath.2024.107092) | [39515546](https://www.ncbi.nlm.nih.gov/pubmed/39515546) | metadata signals extractable PD data (PK/PD) |
 | `Lötsch_2005.pdf` | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | pd | 5 | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) | [15907650](https://www.ncbi.nlm.nih.gov/pubmed/15907650) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Muller_2023.pdf` | Muller AE et al., Pharmacodynamics of Temocillin in Neutr…, Antimicrobial agents and ch… (2023) | pd | 5 | [10.1128/aac.01433-22](https://doi.org/10.1128/aac.01433-22) | [36692307](https://www.ncbi.nlm.nih.gov/pubmed/36692307) | metadata signals extractable PD data (exposure-response) |
-| `Phillips_2001.pdf` | Phillips L et al., A population pharmacokinetic-pharmacody…, Clinical pharmacology and t… (2001) | pd | 5 | not captured | [11673753](https://www.ncbi.nlm.nih.gov/pubmed/11673753) | metadata signals extractable PD data (PK/PD) |
+| `Phillips_2001.pdf` | Phillips L et al., A population pharmacokinetic-pharmacody…, Clinical pharmacology and t… (2001) | pd | 5 |  | [11673753](https://www.ncbi.nlm.nih.gov/pubmed/11673753) | metadata signals extractable PD data (PK/PD) |
 | `Pétermann_2026.pdf` | Pétermann YJ et al., Population pharmacokinetics of encorafe…, Cancer chemotherapy and pha… (2026) | pd | 5 | [10.1007/s00280-026-04876-y](https://doi.org/10.1007/s00280-026-04876-y) | [41843134](https://www.ncbi.nlm.nih.gov/pubmed/41843134) | metadata signals extractable PD data (IC50) |
 | `Serkland_2025.pdf` | Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70136](https://doi.org/10.1002/bcp.70136) | [40515509](https://www.ncbi.nlm.nih.gov/pubmed/40515509) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Shao_2026.pdf` | Shao Q et al., Prediction of pharmacokinetics and cent…, Drug metabolism and disposi… (2026) | pd | 5 | [10.1016/j.dmd.2026.100319](https://doi.org/10.1016/j.dmd.2026.100319) | [42424960](https://www.ncbi.nlm.nih.gov/pubmed/42424960) | metadata signals extractable PD data (pharmacodynamicmodel) |
@@ -176,7 +176,7 @@ _83 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Chen_1991.pdf` | Chen J et al., Sodium nitroprusside degenerates cultur…, Neuroreport (1991) | pd | 4 | [10.1097/00001756-199103000-00002](https://doi.org/10.1097/00001756-199103000-00002) | [1662993](https://www.ncbi.nlm.nih.gov/pubmed/1662993) | metadata signals extractable PD data (EC50) |
 | `Fonteriz_1987.pdf` | Fonteriz RI et al., Dihydropyridine chirality at the chroma…, Brain research (1987) | pd | 4 | [10.1016/0006-8993(87)90405-7](https://doi.org/10.1016/0006-8993(87)90405-7) | [2439171](https://www.ncbi.nlm.nih.gov/pubmed/2439171) | metadata signals extractable PD data (IC50) |
 | `Henry_1995.pdf` | Henry DJ et al., Activation of inwardly rectifying potas…, Neuroscience letters (1995) | pd | 4 | [10.1016/0304-3940(95)11289-9](https://doi.org/10.1016/0304-3940(95)11289-9) | [7777206](https://www.ncbi.nlm.nih.gov/pubmed/7777206) | metadata signals extractable PD data (EC50) |
-| `Hescheler_1987.pdf` | Hescheler J et al., ATP-dependent potassium channels in the…, Biomedica biochimica acta (1987) | pd | 4 | not captured | [2449199](https://www.ncbi.nlm.nih.gov/pubmed/2449199) | metadata signals extractable PD data (IC50) |
+| `Hescheler_1987.pdf` | Hescheler J et al., ATP-dependent potassium channels in the…, Biomedica biochimica acta (1987) | pd | 4 |  | [2449199](https://www.ncbi.nlm.nih.gov/pubmed/2449199) | metadata signals extractable PD data (IC50) |
 | `Le_1995.pdf` | Le Grand B et al., Ketanserin inhibits the transient outwa…, Journal of cardiovascular p… (1995) | pd | 4 | [10.1097/00005344-199502000-00022](https://doi.org/10.1097/00005344-199502000-00022) | [7752662](https://www.ncbi.nlm.nih.gov/pubmed/7752662) | metadata signals extractable PD data (IC50) |
 | `Liu_2006.pdf` | Liu H et al., Curcumin potently blocks Kv1.4 potassiu…, Biochemical and biophysical… (2006) | pd | 4 | [10.1016/j.bbrc.2006.04.020](https://doi.org/10.1016/j.bbrc.2006.04.020) | [16647042](https://www.ncbi.nlm.nih.gov/pubmed/16647042) | metadata signals extractable PD data (IC50) |
 | `Mukherjee_2004.pdf` | Mukherjee D et al., A method of obtaining starting values o…, Journal of pharmacokinetics… (2004) | pd | 4 | [10.1023/b:jopa.0000029487.21238.5c](https://doi.org/10.1023/b:jopa.0000029487.21238.5c) | [15346850](https://www.ncbi.nlm.nih.gov/pubmed/15346850) | metadata signals extractable PD data (indirectresponse) |
@@ -234,7 +234,7 @@ _83 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Saito_2014.pdf` | Saito R et al., Nutri-pharmacogenomics of warfarin anti…, Journal of thrombosis and t… (2014) | pgx | 5 | [10.1007/s11239-013-0978-9](https://doi.org/10.1007/s11239-013-0978-9) | [23928870](https://www.ncbi.nlm.nih.gov/pubmed/23928870) | metadata signals extractable PGX data (VKORC1) |
 | `Shiozawa_2021.pdf` | Shiozawa A et al., Effects of acid and lactone forms of st…, Drug metabolism and pharmac… (2021) | pgx | 5 | [10.1016/j.dmpk.2020.10.003](https://doi.org/10.1016/j.dmpk.2020.10.003) | [33341662](https://www.ncbi.nlm.nih.gov/pubmed/33341662) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-10-07T15:40:51.509333+00:00</sub>
+<sub>queue written 2026-10-07 15:40 UTC</sub>
 
 ## Screened and excluded
 
@@ -696,5 +696,5 @@ _83 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 15:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium%5D&body=Drug%3A%20potassium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:40 UTC</sub>

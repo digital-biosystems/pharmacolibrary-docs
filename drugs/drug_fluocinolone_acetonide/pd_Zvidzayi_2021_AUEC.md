@@ -90,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluocinolone_acetonide%5D%20pd_Zvidzayi_2021_AUEC&body=Drug%3A%20fluocinolone_acetonide%0ARecord%3A%20pd_Zvidzayi_2021_AUEC%0APaper%3A%20Zvidzayi_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluocinolone_acetonide/pd_Zvidzayi_2021_AUEC%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fluocinolone acetonide](drugs/drug_fluocinolone_acetonide/)</sub>

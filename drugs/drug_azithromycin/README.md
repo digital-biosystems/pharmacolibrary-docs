@@ -159,7 +159,6 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC28A2` transport | PGx paper |
 | absorption | small intestine | `ABCB1` inhibitor/substrate/transport, `ABCC2` inhibitor/substrate/transport, `SLC28A2` transport, `SLCO1A2` transport | DrugBank actor |
 | distribution | blood | `SLC29A1` transport | PGx paper |
 | distribution | blood-brain barrier | `ABCB1` inhibitor/substrate/transport, `SLCO1A2` transport | DrugBank actor |
@@ -171,7 +170,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | metabolism | liver | `CES1` formation, `CYP2B6` metabolism, `CYP2C8` metabolism, `CYP2D6` metabolism, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` metabolism, `SLCO1B1` transport, `UGT1A1` safety_allele | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` metabolism, `UGT1A1` safety_allele | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` inhibitor/substrate/transport, `ABCC2` inhibitor/substrate/transport | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate/transport, `ABCC2` inhibitor/substrate/transport, `SLC28A2` transport | DrugBank actor |
 | excretion | liver | `ABCB1` inhibitor/substrate/transport, `ABCC2` inhibitor/substrate/transport | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABCA4 (safety_allele), ABCC10 (transport), ACE2 (target), APOA5 (unknown), CYP3A (metabolism), FCGR3A (target), G6PD (safety_allele), HLA-B (safety_allele), HLA-DRB1 (safety_allele), HO-1 (unknown), IL-1A (target), IL6R (target), IRF6 (safety_allele), ITPA (safety_allele), MDR1 (transport), OATP1B1 (transport), PADI4 (inhibitor), SLC28A3 (transport), UGT1A7 (metabolism).</sub>
@@ -194,7 +193,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1133 matched, 196 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 18  ·  extracted 0  ·  needs_review 6  ·  rejected 12  ·  stale 0
+- **records:** 18  ·  extracted 0  ·  needs review 6  ·  rejected 12  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -205,7 +204,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Boelig_2026.pdf` | Boelig RC et al., Azithromycin in preterm premature ruptu…, American journal of obstetr… (2026) | popPK | 10 | [10.1016/j.ajog.2025.09.029](https://doi.org/10.1016/j.ajog.2025.09.029) | [41692622](https://pubmed.ncbi.nlm.nih.gov/41692622) | The study is a population PK analysis of azithromycin in humans, but specific parameter estimates (CL, V, Q, ka) are not explicitly listed in the provided text, only derived exposure metrics like AUC and concentrations. |
 | `Salman_2010.pdf` | Salman S et al., Pharmacokinetic properties of azithromy…, Antimicrobial agents and ch… (2010) | popPK | 10 | [10.1128/AAC.00771-09](https://doi.org/10.1128/AAC.00771-09) | [19858250](https://pubmed.ncbi.nlm.nih.gov/19858250) | The paper reports quantitative PK parameters (AUC, half-life, Vd changes) from a population pharmacokinetic model for azithromycin in humans. |
-| `Stevens_1997.pdf` | Stevens RC et al., Pharmacokinetics of azithromycin after…, Pharmacotherapy (1997) | popPK | 10 | not captured | [9324176](https://pubmed.ncbi.nlm.nih.gov/9324176) | The paper explicitly reports quantitative pharmacokinetic parameters (clearance, half-life, Cmax, Tmax) for azithromycin in children within the abstract text. |
+| `Stevens_1997.pdf` | Stevens RC et al., Pharmacokinetics of azithromycin after…, Pharmacotherapy (1997) | popPK | 10 |  | [9324176](https://pubmed.ncbi.nlm.nih.gov/9324176) | The paper explicitly reports quantitative pharmacokinetic parameters (clearance, half-life, Cmax, Tmax) for azithromycin in children within the abstract text. |
 | `Tian_2019.pdf` | Tian J et al., Pharmacokinetic interaction between shu…, Xenobiotica; the fate of fo… (2019) | popPK | 10 | [10.1080/00498254.2018.1550588](https://doi.org/10.1080/00498254.2018.1550588) | [30457423](https://pubmed.ncbi.nlm.nih.gov/30457423) | The study is a relevant population PK analysis of azithromycin in rats using a nonlinear mixed-effects model, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Zhang_2024.pdf` | Zhang Y et al., Population Pharmacokinetics and Individ…, Journal of pharmaceutical s… (2024) | popPK | 10 | [10.1016/j.xphs.2024.01.012](https://doi.org/10.1016/j.xphs.2024.01.012) | [38253224](https://pubmed.ncbi.nlm.nih.gov/38253224) | The study reports a population PK model for azithromycin in children with specific numeric values for clearance and volume provided in the abstract. |
 | `Zheng_2014.pdf` | Zheng S et al., Development of a population pharmacokin…, Antimicrobial agents and ch… (2014) | popPK | 10 | [10.1128/AAC.02904-14](https://doi.org/10.1128/AAC.02904-14) | [25155592](https://pubmed.ncbi.nlm.nih.gov/25155592) | The study is a population PK model for azithromycin, but the text evidence only contains concentration summaries and qualitative descriptions, not the specific PK parameter values (CL, V, ka, etc.). |
@@ -218,7 +217,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Salman_2015.pdf` | Salman S et al., Pharmacokinetics of Transfer of Azithro…, Antimicrobial agents and ch… (2015) | popPK | 6 | [10.1128/AAC.02668-15](https://doi.org/10.1128/AAC.02668-15) | [26711756](https://pubmed.ncbi.nlm.nih.gov/26711756) | The study uses a population PK model but relies on "published parameters" for azithromycin disposition and does not report the original quantitative PK parameter values (CL, V, ka) in the provided evidence. |
 | `Martiniano_2021.pdf` | Martiniano SL et al., Pharmacokinetics of oral antimycobacter…, Journal of cystic fibrosis… (2021) | popPK | 5 | [10.1016/j.jcf.2021.04.011](https://doi.org/10.1016/j.jcf.2021.04.011) | [34030986](https://pubmed.ncbi.nlm.nih.gov/34030986) | The study reports PK parameters for azithromycin in humans, but the specific numeric values are not present in the provided abstract text. |
 
-<sub>queue written 2026-10-07T11:33:00.703986+00:00</sub>
+<sub>queue written 2026-10-07 11:33 UTC</sub>
 
 ## Screened and excluded
 
@@ -347,5 +346,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazithromycin%5D&body=Drug%3A%20azithromycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azithromycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:33 UTC</sub>

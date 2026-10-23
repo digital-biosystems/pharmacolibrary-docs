@@ -4,7 +4,7 @@
 # methylene blue
 
 - **generic name:** methylene blue
-- **ATC codes:** not captured
+- **ATC codes:** none (no WHO ATC code)
 - **DrugBank:** [DB09241](https://go.drugbank.com/drugs/DB09241) · **PubChem:** [CID 6099](https://pubchem.ncbi.nlm.nih.gov/compound/6099)
 - **molar mass:** 319.85 g/mol (C16H18ClN3S) — DrugBank
 - **groups:** approved, investigational
@@ -95,7 +95,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1000 matched, 207 returned
 - **screened:** 17  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -105,11 +105,11 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Milani_1992.pdf` | Milani A et al., Ascites dynamics in cirrhosis. Proposal…, Journal of hepatology (1992) | popPK | 8 | [10.1016/s0168-8278(05)80672-5](https://doi.org/10.1016/s0168-8278(05)80672-5) | [1336786](https://pubmed.ncbi.nlm.nih.gov/1336786) | The study reports quantitative compartmental PK parameters (volume of distribution and clearance) for methylene blue in a peritoneal fluid compartment for human subjects. |
-| `Desta_1995.pdf` | Desta B et al., Previous exposure to bradykinin unmasks…, The Journal of pharmacology… (1995) | pd | 5 | not captured | [7531766](https://www.ncbi.nlm.nih.gov/pubmed/7531766) | metadata signals extractable PD data (IC50) |
+| `Desta_1995.pdf` | Desta B et al., Previous exposure to bradykinin unmasks…, The Journal of pharmacology… (1995) | pd | 5 |  | [7531766](https://www.ncbi.nlm.nih.gov/pubmed/7531766) | metadata signals extractable PD data (IC50) |
 | `Berkenboom_1989.pdf` | Berkenboom G et al., Comparison of responses to acetylcholin…, Cardiovascular research (1989) | pd | 4 | [10.1093/cvr/23.9.780](https://doi.org/10.1093/cvr/23.9.780) | [2482133](https://www.ncbi.nlm.nih.gov/pubmed/2482133) | metadata signals extractable PD data (EC50) |
 | `Burkard_2016.pdf` | Burkard L et al., Development of a functional assay to de…, Biomedical chromatography :… (2016) | pd | 4 | [10.1002/bmc.3580](https://doi.org/10.1002/bmc.3580) | [26257195](https://www.ncbi.nlm.nih.gov/pubmed/26257195) | metadata signals extractable PD data (IC50) |
 | `Danziger_1993.pdf` | Danziger RS et al., Characterization of soluble guanylyl cy…, Biochemical and biophysical… (1993) | pd | 4 | [10.1006/bbrc.1993.2137](https://doi.org/10.1006/bbrc.1993.2137) | [8103987](https://www.ncbi.nlm.nih.gov/pubmed/8103987) | metadata signals extractable PD data (EC50) |
-| `Gaston_1994.pdf` | Gaston B et al., Relaxation of human bronchial smooth mu…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [7906736](https://www.ncbi.nlm.nih.gov/pubmed/7906736) | metadata signals extractable PD data (IC50) |
+| `Gaston_1994.pdf` | Gaston B et al., Relaxation of human bronchial smooth mu…, The Journal of pharmacology… (1994) | pd | 4 |  | [7906736](https://www.ncbi.nlm.nih.gov/pubmed/7906736) | metadata signals extractable PD data (IC50) |
 | `Gorzalczany_2013.pdf` | Gorzalczany S et al., Spasmolytic activity of Artemisia copa…, Natural product research (2013) | pd | 4 | [10.1080/14786419.2012.688049](https://doi.org/10.1080/14786419.2012.688049) | [22577954](https://www.ncbi.nlm.nih.gov/pubmed/22577954) | metadata signals extractable PD data (EC50) |
 | `Jackson_1996.pdf` | Jackson TS et al., Vasodilatory properties of recombinant…, The American journal of phy… (1996) | pd | 4 | [10.1152/ajpheart.1996.271.3.H924](https://doi.org/10.1152/ajpheart.1996.271.3.H924) | [8853326](https://www.ncbi.nlm.nih.gov/pubmed/8853326) | metadata signals extractable PD data (EC50) |
 | `Komas_1991.pdf` | Komas N et al., Endothelium-dependent and independent r…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12457.x](https://doi.org/10.1111/j.1476-5381.1991.tb12457.x) | [1665741](https://www.ncbi.nlm.nih.gov/pubmed/1665741) | metadata signals extractable PD data (EC50) |
@@ -120,12 +120,12 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yu_1995.pdf` | Yu SM et al., Endothelium-dependent relaxation of rat…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00190-v](https://doi.org/10.1016/0014-2999(95)00190-v) | [7498256](https://www.ncbi.nlm.nih.gov/pubmed/7498256) | metadata signals extractable PD data (IC50) |
 | `Belfield_2018.pdf` | Belfield KD et al., Review and drug therapy implications of…, American journal of health-… (2018) | pgx | 7 | [10.2146/ajhp160961](https://doi.org/10.2146/ajhp160961) | [29305344](https://www.ncbi.nlm.nih.gov/pubmed/29305344) | metadata signals extractable PGX data (G6PD, PK/PD-context) |
 | `Caprari_1991.pdf` | Caprari P et al., Membrane alterations in G6PD- and PK-de…, Biochemical medicine and me… (1991) | pgx | 7 | [10.1016/0885-4505(91)90004-5](https://doi.org/10.1016/0885-4505(91)90004-5) | [2015106](https://www.ncbi.nlm.nih.gov/pubmed/2015106) | metadata signals extractable PGX data (G6PD, PK/PD-context) |
-| `Cladera_1997.pdf` | Cladera Serra A et al., [Prevalence of glucose-6-phosphate dehy…, Sangre (1997) | pgx | 5 | not captured | [9424735](https://www.ncbi.nlm.nih.gov/pubmed/9424735) | metadata signals extractable PGX data (G6PD) |
+| `Cladera_1997.pdf` | Cladera Serra A et al., [Prevalence of glucose-6-phosphate dehy…, Sangre (1997) | pgx | 5 |  | [9424735](https://www.ncbi.nlm.nih.gov/pubmed/9424735) | metadata signals extractable PGX data (G6PD) |
 | `PMID24787449_2014.pdf` | PMID24787449, Clinical Pharmacogenetics Implementatio… (2014) | pgx | 5 | [10.1038/clpt.2014.97](https://doi.org/10.1038/clpt.2014.97) | [24787449](https://www.ncbi.nlm.nih.gov/pubmed/24787449) | metadata signals extractable PGX data (G6PD) |
 | `Pascale_1987.pdf` | Pascale R et al., Decreased stimulation by 12-O-tetradeca…, Carcinogenesis (1987) | pgx | 5 | [10.1093/carcin/8.10.1567](https://doi.org/10.1093/carcin/8.10.1567) | [2820605](https://www.ncbi.nlm.nih.gov/pubmed/2820605) | metadata signals extractable PGX data (G6PD) |
-| `Yermakov_1981.pdf` | Yermakov N et al., New stable mutant (Gd(-) variants: G6PD…, Acta biologica et medica Ge… (1981) | pgx | 5 | not captured | [7315103](https://www.ncbi.nlm.nih.gov/pubmed/7315103) | metadata signals extractable PGX data (G6PD) |
+| `Yermakov_1981.pdf` | Yermakov N et al., New stable mutant (Gd(-) variants: G6PD…, Acta biologica et medica Ge… (1981) | pgx | 5 |  | [7315103](https://www.ncbi.nlm.nih.gov/pubmed/7315103) | metadata signals extractable PGX data (G6PD) |
 
-<sub>queue written 2026-10-22T10:04:11.826497+00:00</sub>
+<sub>queue written 2026-10-22 10:04 UTC</sub>
 
 ## Screened and excluded
 
@@ -267,5 +267,5 @@ _20 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 10:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethylene_blue%5D&body=Drug%3A%20methylene_blue%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methylene_blue/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 10:04 UTC</sub>

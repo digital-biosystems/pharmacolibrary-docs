@@ -67,4 +67,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenibut%5D%20pd_Irie_2020_outward_current_density_evoked_by_GABAB_agonists_i&body=Drug%3A%20phenibut%0ARecord%3A%20pd_Irie_2020_outward_current_density_evoked_by_GABAB_agonists_i%0APaper%3A%20Irie_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenibut/pd_Irie_2020_outward_current_density_evoked_by_GABAB_agonists_i%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [phenibut](drugs/drug_phenibut/)</sub>

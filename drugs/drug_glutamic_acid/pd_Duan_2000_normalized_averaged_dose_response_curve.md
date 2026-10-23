@@ -90,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglutamic_acid%5D%20pd_Duan_2000_normalized_averaged_dose_response_curve&body=Drug%3A%20glutamic_acid%0ARecord%3A%20pd_Duan_2000_normalized_averaged_dose_response_curve%0APaper%3A%20Duan_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glutamic_acid/pd_Duan_2000_normalized_averaged_dose_response_curve%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Glutamic acid](drugs/drug_glutamic_acid/)</sub>

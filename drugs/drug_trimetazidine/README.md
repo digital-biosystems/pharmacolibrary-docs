@@ -47,7 +47,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 79 matched, 82 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -59,15 +59,15 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Barré_2003.pdf` | Barré J et al., Pharmacokinetic profile of a modified r…, Biopharmaceutics & drug dis… (2003) | popPK | 9 | [10.1002/bdd.350](https://doi.org/10.1002/bdd.350) | [12698499](https://pubmed.ncbi.nlm.nih.gov/12698499) | The study reports quantitative PK parameters (half-life, renal clearance, AUC) for trimetazidine in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Körnicke_2020.pdf` | Körnicke T et al., Single Ascending Dose Study to Assess P…, Drug research (2020) | popPK | 9 | [10.1055/a-1180-4357](https://doi.org/10.1055/a-1180-4357) | [32886932](https://pubmed.ncbi.nlm.nih.gov/32886932) | The study reports quantitative PK parameters (CL/F, t1/2, AUC) for trimetazidine in humans, with values explicitly listed in the abstract. |
 | `Génissel_2004.pdf` | Génissel P et al., Assessment of the sustained release pro…, European journal of drug me… (2004) | popPK | 8 | [10.1007/BF03190575](https://doi.org/10.1007/BF03190575) | [15151172](https://pubmed.ncbi.nlm.nih.gov/15151172) | The study reports pharmacokinetic parameters (Cmax, trough, fluctuation) for trimetazidine in humans, but specific disposition parameters like clearance (CL) or volume (V) are not explicitly listed in the provided text. |
-| `Liu_2012.pdf` | Liu WF et al., [Pharmacokinetics and bioequivalence of…, Zhonghua xin xue guan bing… (2012) | popPK | 8 | not captured | [23363721](https://pubmed.ncbi.nlm.nih.gov/23363721) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, t1/2z, AUC) for trimetazidine in humans, which are present in the text. |
+| `Liu_2012.pdf` | Liu WF et al., [Pharmacokinetics and bioequivalence of…, Zhonghua xin xue guan bing… (2012) | popPK | 8 |  | [23363721](https://pubmed.ncbi.nlm.nih.gov/23363721) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, t1/2z, AUC) for trimetazidine in humans, which are present in the text. |
 | `Nenchev_2020.pdf` | Nenchev N et al., Effect of age and renal impairment on t…, Drug development research (2020) | popPK | 8 | [10.1002/ddr.21654](https://doi.org/10.1002/ddr.21654) | [32128844](https://pubmed.ncbi.nlm.nih.gov/32128844) | The study reports PK ratios (AUC, Cmax) for trimetazidine in humans, but lacks absolute quantitative disposition parameters like clearance (CL) or volume (V). |
 | `Othman_2021.pdf` | Othman AI et al., Trimetazidine Dihydrochloride Pulsatile…, Current drug delivery (2021) | popPK | 8 | [10.2174/1567201818666210212095932](https://doi.org/10.2174/1567201818666210212095932) | [33583377](https://pubmed.ncbi.nlm.nih.gov/33583377) | The study reports pharmacokinetic parameters (Cmax, Tmax, relative bioavailability) for trimetazidine in rabbits, but specific disposition parameters like clearance (CL) or volume (V) are not explicitly listed in the provided text. |
 | `Tan_2025.pdf` | Tan D et al., Evaluation of the Pharmacokinetics, Bio…, Clinical pharmacology in dr… (2025) | popPK | 8 | [10.1002/cpdd.1582](https://doi.org/10.1002/cpdd.1582) | [40765434](https://pubmed.ncbi.nlm.nih.gov/40765434) | The study reports pharmacokinetic parameters for trimetazidine in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Wang_2023.pdf` | Wang J et al., Bioequivalence and Pharmacokinetic Prof…, Clinical pharmacology in dr… (2023) | popPK | 8 | [10.1002/cpdd.1200](https://doi.org/10.1002/cpdd.1200) | [36458661](https://pubmed.ncbi.nlm.nih.gov/36458661) | The study reports pharmacokinetic parameters for trimetazidine, but the specific numeric values (Cmax, AUC, t1/2, etc.) are not present in the provided abstract text. |
 | `Kennedy_1998.pdf` | Kennedy JA et al., Effect of trimetazidine on carnitine pa…, Cardiovascular drugs and th… (1998) | pd | 4 | [10.1023/a:1007768716934](https://doi.org/10.1023/a:1007768716934) | [9825181](https://www.ncbi.nlm.nih.gov/pubmed/9825181) | metadata signals extractable PD data (IC50) |
-| `Simon_2001.pdf` | Simon N et al., [Effects of trimetazidine on altered fu…, Therapie (2001) | pd | 4 | not captured | [11806297](https://www.ncbi.nlm.nih.gov/pubmed/11806297) | metadata signals extractable PD data (EC50) |
+| `Simon_2001.pdf` | Simon N et al., [Effects of trimetazidine on altered fu…, Therapie (2001) | pd | 4 |  | [11806297](https://www.ncbi.nlm.nih.gov/pubmed/11806297) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T11:46:41.214351+00:00</sub>
+<sub>queue written 2026-10-06 11:46 UTC</sub>
 
 ## Screened and excluded
 
@@ -168,5 +168,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrimetazidine%5D&body=Drug%3A%20trimetazidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trimetazidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

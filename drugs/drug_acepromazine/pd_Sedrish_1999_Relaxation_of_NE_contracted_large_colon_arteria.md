@@ -60,4 +60,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacepromazine%5D%20pd_Sedrish_1999_Relaxation_of_NE_contracted_large_colon_arteria&body=Drug%3A%20acepromazine%0ARecord%3A%20pd_Sedrish_1999_Relaxation_of_NE_contracted_large_colon_arteria%0APaper%3A%20Sedrish_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acepromazine/pd_Sedrish_1999_Relaxation_of_NE_contracted_large_colon_arteria%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [acepromazine](drugs/drug_acepromazine/)</sub>

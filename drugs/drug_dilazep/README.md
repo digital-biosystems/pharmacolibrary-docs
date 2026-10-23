@@ -4,7 +4,7 @@
 
 - **generic name:** dilazep
 - **ATC codes:** `C01DX10`
-- **DrugBank:** [DB13715](https://go.drugbank.com/drugs/DB13715) · **PubChem:** not captured
+- **DrugBank:** [DB13715](https://go.drugbank.com/drugs/DB13715) · **PubChem:** none
 - **molar mass:** 604.697 g/mol (C31H44N2O10) — DrugBank
 - **groups:** experimental
 
@@ -52,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 70 matched, 57 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -64,9 +64,9 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sambhi_1989.pdf` | Sambhi MP et al., Therapeutic tolerance, hemodynamic effe…, Journal of pharmaceutical s… (1989) | popPK | 9 | [10.1002/jps.2600780404](https://doi.org/10.1002/jps.2600780404) | [2724090](https://pubmed.ncbi.nlm.nih.gov/2724090) | The study reports quantitative PK parameters (elimination rate constant, half-life, tmax) for dilazep in humans, with values explicitly stated in the text. |
 | `Wiemer_1982.pdf` | Wiemer G et al., Energy-dependent extrusion of cyclic 3'…, Naunyn-Schmiedeberg's archi… (1982) | pd | 5 | [10.1007/BF00498507](https://doi.org/10.1007/BF00498507) | [6300698](https://www.ncbi.nlm.nih.gov/pubmed/6300698) | metadata signals extractable PD data (EC50) |
 | `Balcar_1995.pdf` | Balcar VJ et al., Autoradiography of P2x ATP receptors in…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb15877.x](https://doi.org/10.1111/j.1476-5381.1995.tb15877.x) | [7670731](https://www.ncbi.nlm.nih.gov/pubmed/7670731) | metadata signals extractable PD data (IC50) |
-| `Bendayan_1997.pdf` | Bendayan R, Interaction of dipyridamole, a nucleosi…, Canadian journal of physiol… (1997) | pd | 4 | not captured | [9101065](https://www.ncbi.nlm.nih.gov/pubmed/9101065) | metadata signals extractable PD data (IC50) |
-| `Borgland_1997.pdf` | Borgland SL et al., Uptake and release of [3H]formycin B vi…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9103516](https://www.ncbi.nlm.nih.gov/pubmed/9103516) | metadata signals extractable PD data (EC50) |
-| `Chiba_1995.pdf` | Chiba K et al., Dilazep inhibits binding of batrachotox…, Archives internationales de… (1995) | pd | 4 | not captured | [8861708](https://www.ncbi.nlm.nih.gov/pubmed/8861708) | metadata signals extractable PD data (IC50) |
+| `Bendayan_1997.pdf` | Bendayan R, Interaction of dipyridamole, a nucleosi…, Canadian journal of physiol… (1997) | pd | 4 |  | [9101065](https://www.ncbi.nlm.nih.gov/pubmed/9101065) | metadata signals extractable PD data (IC50) |
+| `Borgland_1997.pdf` | Borgland SL et al., Uptake and release of [3H]formycin B vi…, The Journal of pharmacology… (1997) | pd | 4 |  | [9103516](https://www.ncbi.nlm.nih.gov/pubmed/9103516) | metadata signals extractable PD data (EC50) |
+| `Chiba_1995.pdf` | Chiba K et al., Dilazep inhibits binding of batrachotox…, Archives internationales de… (1995) | pd | 4 |  | [8861708](https://www.ncbi.nlm.nih.gov/pubmed/8861708) | metadata signals extractable PD data (IC50) |
 | `Foga_1996.pdf` | Foga IO et al., Nucleoside transporter-mediated uptake…, European journal of pharmac… (1996) | pd | 4 | [10.1016/s0014-2999(96)00720-0](https://doi.org/10.1016/s0014-2999(96)00720-0) | [9016938](https://www.ncbi.nlm.nih.gov/pubmed/9016938) | metadata signals extractable PD data (IC50) |
 | `Gu_1996.pdf` | Gu JG et al., Characterization of inhibitor-sensitive…, Journal of neurochemistry (1996) | pd | 4 | [10.1046/j.1471-4159.1996.67030972.x](https://doi.org/10.1046/j.1471-4159.1996.67030972.x) | [8752102](https://www.ncbi.nlm.nih.gov/pubmed/8752102) | metadata signals extractable PD data (IC50) |
 | `Okamura_1992.pdf` | Okamura N et al., Inhibitory action of dilazep on histami…, Japanese journal of pharmac… (1992) | pd | 4 | [10.1254/jjp.59.183](https://doi.org/10.1254/jjp.59.183) | [1434114](https://www.ncbi.nlm.nih.gov/pubmed/1434114) | metadata signals extractable PD data (IC50) |
@@ -75,7 +75,7 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sundaram_1998.pdf` | Sundaram M et al., Chimeric constructs between human and r…, The Journal of biological c… (1998) | pd | 4 | [10.1074/jbc.273.34.21519](https://doi.org/10.1074/jbc.273.34.21519) | [9705281](https://www.ncbi.nlm.nih.gov/pubmed/9705281) | metadata signals extractable PD data (IC50) |
 | `Yao_1997.pdf` | Yao SY et al., Molecular cloning and functional charac…, The Journal of biological c… (1997) | pd | 4 | [10.1074/jbc.272.45.28423](https://doi.org/10.1074/jbc.272.45.28423) | [9353301](https://www.ncbi.nlm.nih.gov/pubmed/9353301) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T09:58:33.515508+00:00</sub>
+<sub>queue written 2026-10-06 09:58 UTC</sub>
 
 ## Screened and excluded
 
@@ -128,5 +128,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdilazep%5D&body=Drug%3A%20dilazep%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dilazep/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -75,4 +75,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchenodeoxycholic_acid%5D%20pgx_Trottier_2013_UGT2B7_Q100&body=Drug%3A%20chenodeoxycholic_acid%0ARecord%3A%20pgx_Trottier_2013_UGT2B7_Q100%0APaper%3A%20Trottier_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chenodeoxycholic_acid/pgx_Trottier_2013_UGT2B7_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [chenodeoxycholic acid](drugs/drug_chenodeoxycholic_acid/)</sub>

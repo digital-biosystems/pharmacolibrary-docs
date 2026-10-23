@@ -4,7 +4,7 @@
 
 - **generic name:** buflomedil
 - **ATC codes:** `C04AX20`
-- **DrugBank:** [DB13510](https://go.drugbank.com/drugs/DB13510) · **PubChem:** not captured
+- **DrugBank:** [DB13510](https://go.drugbank.com/drugs/DB13510) · **PubChem:** none
 - **molar mass:** 307.39 g/mol (C17H25NO4) — DrugBank
 - **groups:** experimental
 
@@ -55,7 +55,7 @@ Buflomedil is a vasodilator that was used to improve blood flow in peripheral va
 
 - **PubMed hits:** 40 matched, 39 returned
 - **screened:** 5  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -65,15 +65,15 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Gundert-Remy_1981.pdf` | Gundert-Remy U et al., The clinical pharmacokinetics of buflom…, European journal of clinica… (1981) | popPK | 10 | [10.1007/BF00542100](https://doi.org/10.1007/BF00542100) | [7286057](https://pubmed.ncbi.nlm.nih.gov/7286057) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, bioavailability) for buflomedil in humans. |
-| `Rey_1984.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | popPK | 10 | not captured | [6526539](https://pubmed.ncbi.nlm.nih.gov/6526539) | The study reports quantitative pharmacokinetic parameters (half-life, total clearance) for buflomedil in humans, with specific numeric values provided in the abstract. |
+| `Rey_1984.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | popPK | 10 |  | [6526539](https://pubmed.ncbi.nlm.nih.gov/6526539) | The study reports quantitative pharmacokinetic parameters (half-life, total clearance) for buflomedil in humans, with specific numeric values provided in the abstract. |
 | `Bourguignon_2012.pdf` | Bourguignon L et al., The value of population pharmacokinetic…, Fundamental & clinical phar… (2012) | popPK | 9 | [10.1111/j.1472-8206.2011.01000.x](https://doi.org/10.1111/j.1472-8206.2011.01000.x) | [22004557](https://pubmed.ncbi.nlm.nih.gov/22004557) | The paper describes a population PK study of buflomedil in humans using a three-compartment model, but the specific numeric parameter values (CL, V, Q, etc.) are not listed in the provided abstract text. |
-| `Rey_1980.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1980) | popPK | 9 | not captured | [7203720](https://pubmed.ncbi.nlm.nih.gov/7203720) | The study reports quantitative pharmacokinetic parameters (clearance and half-life) for buflomedil in humans, with specific numeric values provided in the text. |
-| `Zecca_1989.pdf` | Zecca L et al., Pharmacokinetics of buflomedil after va…, Arzneimittel-Forschung (1989) | popPK | 9 | not captured | [2751740](https://pubmed.ncbi.nlm.nih.gov/2751740) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence text. |
-| `Rey_1986.pdf` | Rey E et al., Buflomedil kinetics in patients with li…, International journal of cl… (1986) | popPK | 8 | not captured | [3759277](https://pubmed.ncbi.nlm.nih.gov/3759277) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence. |
-| `de_1992.pdf` | de Bernardi di Valserra M et al., Pharmacokinetics of a sustained release…, Arzneimittel-Forschung (1992) | popPK | 8 | not captured | [1530676](https://pubmed.ncbi.nlm.nih.gov/1530676) | The study reports quantitative PK parameters (Cmax, Tmax, steady-state levels, urinary excretion) for buflomedil in humans, but lacks explicit clearance or volume of distribution values. |
+| `Rey_1980.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1980) | popPK | 9 |  | [7203720](https://pubmed.ncbi.nlm.nih.gov/7203720) | The study reports quantitative pharmacokinetic parameters (clearance and half-life) for buflomedil in humans, with specific numeric values provided in the text. |
+| `Zecca_1989.pdf` | Zecca L et al., Pharmacokinetics of buflomedil after va…, Arzneimittel-Forschung (1989) | popPK | 9 |  | [2751740](https://pubmed.ncbi.nlm.nih.gov/2751740) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Rey_1986.pdf` | Rey E et al., Buflomedil kinetics in patients with li…, International journal of cl… (1986) | popPK | 8 |  | [3759277](https://pubmed.ncbi.nlm.nih.gov/3759277) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence. |
+| `de_1992.pdf` | de Bernardi di Valserra M et al., Pharmacokinetics of a sustained release…, Arzneimittel-Forschung (1992) | popPK | 8 |  | [1530676](https://pubmed.ncbi.nlm.nih.gov/1530676) | The study reports quantitative PK parameters (Cmax, Tmax, steady-state levels, urinary excretion) for buflomedil in humans, but lacks explicit clearance or volume of distribution values. |
 | `Tyagi_2019.pdf` | Tyagi V et al., Topical iontophoresis of buflomedil hyd…, International journal of ph… (2019) | pd | 4 | [10.1016/j.ijpharm.2019.118610](https://doi.org/10.1016/j.ijpharm.2019.118610) | [31415875](https://www.ncbi.nlm.nih.gov/pubmed/31415875) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T19:52:57.983038+00:00</sub>
+<sub>queue written 2026-10-06 19:52 UTC</sub>
 
 ## Screened and excluded
 
@@ -113,5 +113,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 19:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuflomedil%5D&body=Drug%3A%20buflomedil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buflomedil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 19:53 UTC</sub>

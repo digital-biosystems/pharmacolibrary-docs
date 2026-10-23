@@ -58,4 +58,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D%20pd_Gruwez_2007_depression_clinical_score_response_to_treatment&body=Drug%3A%20clomipramine%0ARecord%3A%20pd_Gruwez_2007_depression_clinical_score_response_to_treatment%0APaper%3A%20Gruwez_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/pd_Gruwez_2007_depression_clinical_score_response_to_treatment%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [clomipramine](drugs/drug_clomipramine/)</sub>

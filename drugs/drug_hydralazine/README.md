@@ -88,7 +88,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 243 matched, 179 returned
 - **screened:** 21  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -101,7 +101,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Aalkjaer_1985.pdf` | Aalkjaer C et al., Atrial natriuretic factor causes specif…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb08914.x](https://doi.org/10.1111/j.1476-5381.1985.tb08914.x) | [2932194](https://www.ncbi.nlm.nih.gov/pubmed/2932194) | metadata signals extractable PD data (IC50) |
 | `Elbouny_2025.pdf` | Elbouny H et al., Preliminary Characterization of the Vas…, Current drug discovery tech… (2025) | pd | 4 | [10.2174/0115701638309612240726060844](https://doi.org/10.2174/0115701638309612240726060844) | [39501951](https://www.ncbi.nlm.nih.gov/pubmed/39501951) | metadata signals extractable PD data (EC50) |
 | `Graves_1990.pdf` | Graves DA et al., Hydralazine dose-response curve analysis, Journal of pharmacokinetics… (1990) | pd | 4 | [10.1007/BF01062269](https://doi.org/10.1007/BF01062269) | [2231320](https://www.ncbi.nlm.nih.gov/pubmed/2231320) | metadata signals extractable PD data (Emax) |
-| `Sun_1995.pdf` | Sun G et al., Inhibition of protein kinases A and G b…, Zhongguo yao li xue bao = A… (1995) | pd | 4 | not captured | [7660828](https://www.ncbi.nlm.nih.gov/pubmed/7660828) | metadata signals extractable PD data (IC50) |
+| `Sun_1995.pdf` | Sun G et al., Inhibition of protein kinases A and G b…, Zhongguo yao li xue bao = A… (1995) | pd | 4 |  | [7660828](https://www.ncbi.nlm.nih.gov/pubmed/7660828) | metadata signals extractable PD data (IC50) |
 | `Tang_2026.pdf` | Tang LWT, Glutathione-reversible inactivation of…, Drug metabolism and pharmac… (2026) | pd | 4 | [10.1016/j.dmpk.2026.101537](https://doi.org/10.1016/j.dmpk.2026.101537) | [41955649](https://www.ncbi.nlm.nih.gov/pubmed/41955649) | metadata signals extractable PD data (IC50) |
 | `Vidrio_1998.pdf` | Vidrio H et al., Potentiation by isoniazid of relaxation…, Journal of cardiovascular p… (1998) | pd | 4 | [10.1097/00005344-199809000-00007](https://doi.org/10.1097/00005344-199809000-00007) | [9733350](https://www.ncbi.nlm.nih.gov/pubmed/9733350) | metadata signals extractable PD data (EC50) |
 | `Zhao_1997.pdf` | Zhao XJ et al., Metabolic interactions of selected anti…, British journal of clinical… (1997) | pd | 4 | [10.1046/j.1365-2125.1997.t01-1-00619.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00619.x) | [9384469](https://www.ncbi.nlm.nih.gov/pubmed/9384469) | metadata signals extractable PD data (IC50) |
@@ -110,12 +110,12 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Garcés-Eisele_2014.pdf` | Garcés-Eisele SJ et al., Genetic selection of volunteers and con…, Journal of clinical pharmac… (2014) | pgx | 8 | [10.1111/jcpt.12155](https://doi.org/10.1111/jcpt.12155) | [24702251](https://www.ncbi.nlm.nih.gov/pubmed/24702251) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
 | `Han_2019.pdf` | Han LW et al., Effect of N-Acetyltransferase 2 Genotyp…, Journal of clinical pharmac… (2019) | pgx | 8 | [10.1002/jcph.1477](https://doi.org/10.1002/jcph.1477) | [31257615](https://www.ncbi.nlm.nih.gov/pubmed/31257615) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
 | `Hein_2021.pdf` | Hein DW et al., Arylamine N-acetyltransferase acetylati…, Expert opinion on drug meta… (2021) | pgx | 8 | [10.1080/17425255.2021.1840551](https://doi.org/10.1080/17425255.2021.1840551) | [33094670](https://www.ncbi.nlm.nih.gov/pubmed/33094670) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
-| `Rodríguez-Nóvoa_2005.pdf` | Rodríguez-Nóvoa S et al., Pharmacogenetics in HIV therapy, AIDS reviews (2005) | pgx | 8 | not captured | [16092504](https://www.ncbi.nlm.nih.gov/pubmed/16092504) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
+| `Rodríguez-Nóvoa_2005.pdf` | Rodríguez-Nóvoa S et al., Pharmacogenetics in HIV therapy, AIDS reviews (2005) | pgx | 8 |  | [16092504](https://www.ncbi.nlm.nih.gov/pubmed/16092504) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
 | `Al-Ahmad_2017.pdf` | Al-Ahmad MM et al., Studies on N-Acetyltransferase (NAT2) G…, Annals of human genetics (2017) | pgx | 5 | [10.1111/ahg.12198](https://doi.org/10.1111/ahg.12198) | [28653770](https://www.ncbi.nlm.nih.gov/pubmed/28653770) | metadata signals extractable PGX data (NAT2) |
 | `Ladero_2008.pdf` | Ladero JM, Influence of polymorphic N-acetyltransf…, Current drug metabolism (2008) | pgx | 5 | [10.2174/138920008784892038](https://doi.org/10.2174/138920008784892038) | [18680473](https://www.ncbi.nlm.nih.gov/pubmed/18680473) | metadata signals extractable PGX data (NAT2) |
 | `Spinasse_2014.pdf` | Spinasse LB et al., Different phenotypes of the NAT2 gene i…, Pharmacogenomics (2014) | pgx | 5 | [10.2217/pgs.13.202](https://doi.org/10.2217/pgs.13.202) | [24444407](https://www.ncbi.nlm.nih.gov/pubmed/24444407) | metadata signals extractable PGX data (NAT2) |
 
-<sub>queue written 2026-10-06T13:23:05.384621+00:00</sub>
+<sub>queue written 2026-10-06 13:23 UTC</sub>
 
 ## Screened and excluded
 
@@ -327,5 +327,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydralazine%5D&body=Drug%3A%20hydralazine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydralazine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

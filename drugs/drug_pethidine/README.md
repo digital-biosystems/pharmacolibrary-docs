@@ -110,7 +110,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 223 matched, 125 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 8  ·  extracted 1  ·  needs_review 1  ·  rejected 6  ·  stale 6
+- **records:** 8  ·  extracted 1  ·  needs review 1  ·  rejected 6  ·  stale 6
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -119,12 +119,12 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Koska_1981.pdf` | Koska AJ et al., Pharmacokinetics of high-dose meperidin…, Anesthesia and analgesia (1981) | popPK | 10 | not captured | [7192957](https://pubmed.ncbi.nlm.nih.gov/7192957) | The paper reports specific PK parameters (half-life, clearance, Vd) for meperidine (pethidine) in humans, although the provided values are attributed to a 50 mg dose (likely literature comparison) rather than the high-dose data of the study itself. |
+| `Koska_1981.pdf` | Koska AJ et al., Pharmacokinetics of high-dose meperidin…, Anesthesia and analgesia (1981) | popPK | 10 |  | [7192957](https://pubmed.ncbi.nlm.nih.gov/7192957) | The paper reports specific PK parameters (half-life, clearance, Vd) for meperidine (pethidine) in humans, although the provided values are attributed to a 50 mg dose (likely literature comparison) rather than the high-dose data of the study itself. |
 | `Mather_1975.pdf` | Mather LE et al., Meperidine kinetics in man. Intravenous…, Clinical pharmacology and t… (1975) | popPK | 10 | [10.1002/cpt197517121](https://doi.org/10.1002/cpt197517121) | [1091390](https://pubmed.ncbi.nlm.nih.gov/1091390) | The paper reports a two-compartment model for pethidine (meperidine) in humans, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
 | `Qiao_1993.pdf` | Qiao GL et al., Pharmacokinetic-pharmacodynamic modelli…, Journal of veterinary pharm… (1993) | popPK | 10 | [10.1111/j.1365-2885.1993.tb00208.x](https://doi.org/10.1111/j.1365-2885.1993.tb00208.x) | [8126759](https://pubmed.ncbi.nlm.nih.gov/8126759) | The paper reports detailed compartmental pharmacokinetic parameters (Vd, Cl, Ke, etc.) for meperidine (pethidine) in goats with all numeric values present in the evidence. |
-| `Peiker_1981.pdf` | Peiker G et al., [On the kinetics of pethidine in the la…, Die Pharmazie (1981) | popPK | 9 | not captured | [7232483](https://pubmed.ncbi.nlm.nih.gov/7232483) | The paper reports a population pharmacokinetic analysis of pethidine in humans using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
-| `Szeto_1979.pdf` | Szeto HH et al., Urinary excretion of meperidine by the…, The Journal of pharmacology… (1979) | popPK | 9 | not captured | [439000](https://pubmed.ncbi.nlm.nih.gov/439000) | The study reports quantitative pharmacokinetic parameters for pethidine (meperidine) including half-life (32.6 +/- 3.7 min) and renal clearance (2.8-16.7 ml/min) in fetal lambs. |
-| `Chmelar_1975.pdf` | Chmelar V et al., Sex differences in the fate of N-methyl…, Materia medica Polona. Poli… (1975) | popPK | 8 | not captured | [1214512](https://pubmed.ncbi.nlm.nih.gov/1214512) | Reports a compartmental PK model for pethidine in rats with specific rate constants (k13, k30) provided, but lacks direct clearance/volume metrics. |
+| `Peiker_1981.pdf` | Peiker G et al., [On the kinetics of pethidine in the la…, Die Pharmazie (1981) | popPK | 9 |  | [7232483](https://pubmed.ncbi.nlm.nih.gov/7232483) | The paper reports a population pharmacokinetic analysis of pethidine in humans using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
+| `Szeto_1979.pdf` | Szeto HH et al., Urinary excretion of meperidine by the…, The Journal of pharmacology… (1979) | popPK | 9 |  | [439000](https://pubmed.ncbi.nlm.nih.gov/439000) | The study reports quantitative pharmacokinetic parameters for pethidine (meperidine) including half-life (32.6 +/- 3.7 min) and renal clearance (2.8-16.7 ml/min) in fetal lambs. |
+| `Chmelar_1975.pdf` | Chmelar V et al., Sex differences in the fate of N-methyl…, Materia medica Polona. Poli… (1975) | popPK | 8 |  | [1214512](https://pubmed.ncbi.nlm.nih.gov/1214512) | Reports a compartmental PK model for pethidine in rats with specific rate constants (k13, k30) provided, but lacks direct clearance/volume metrics. |
 | `Gustafsson_1989.pdf` | Gustafsson LL et al., Distribution of 11C-labelled morphine a…, Acta anaesthesiologica Scan… (1989) | popPK | 8 | [10.1111/j.1399-6576.1989.tb02870.x](https://doi.org/10.1111/j.1399-6576.1989.tb02870.x) | [2784246](https://pubmed.ncbi.nlm.nih.gov/2784246) | The study reports quantitative relative distribution data (e.g., 10-20% uptake at T6, 60x systemic vs rostral) from a compartmental model for pethidine in Rhesus monkeys, but lacks absolute PK parameters like CL or V. |
 | `Hanafi_2021.pdf` | Hanafi AL et al., Pharmacokinetics and pharmacodynamics o…, Veterinary surgery : VS (2021) | popPK | 8 | [10.1111/vsu.13545](https://doi.org/10.1111/vsu.13545) | [33242227](https://pubmed.ncbi.nlm.nih.gov/33242227) | Reports PK parameters (half-life, Cmax, Tmax) for meperidine (pethidine) in horses, but specific clearance or volume values are not provided in the text. |
 | `Kalvass_2007.pdf` | Kalvass JC et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (2007) | popPK | 8 | [10.1124/jpet.107.119560](https://doi.org/10.1124/jpet.107.119560) | [17646430](https://pubmed.ncbi.nlm.nih.gov/17646430) | The study reports PK/PD parameters for meperidine (pethidine) in mice, but specific numeric values are not explicitly listed in the provided abstract text. |
@@ -134,7 +134,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Shafer_1988.pdf` | Shafer A et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1988) | pd | 5 | [10.1097/00000542-198809000-00011](https://doi.org/10.1097/00000542-198809000-00011) | [3261954](https://www.ncbi.nlm.nih.gov/pubmed/3261954) | metadata signals extractable PD data (EC50) |
 | `Uccellini_1986.pdf` | Uccellini DA et al., Influence of intravenous infusion durat…, Journal of pharmacokinetics… (1986) | pd | 5 | [10.1007/BF01106710](https://doi.org/10.1007/BF01106710) | [3783449](https://www.ncbi.nlm.nih.gov/pubmed/3783449) | metadata signals extractable PD data (effectcompartment) |
 | `White_2008.pdf` | White PF, Propofol: its role in changing the prac…, Anesthesiology (2008) | pd | 5 | [10.1097/ALN.0b013e31818ddba8](https://doi.org/10.1097/ALN.0b013e31818ddba8) | [19034110](https://www.ncbi.nlm.nih.gov/pubmed/19034110) | metadata signals extractable PD data (EC50) |
-| `Alt_1998.pdf` | Alt A et al., Stimulation of guanosine-5'-O-(3-[35S]t…, The Journal of pharmacology… (1998) | pd | 4 | not captured | [9655870](https://www.ncbi.nlm.nih.gov/pubmed/9655870) | metadata signals extractable PD data (EC50) |
+| `Alt_1998.pdf` | Alt A et al., Stimulation of guanosine-5'-O-(3-[35S]t…, The Journal of pharmacology… (1998) | pd | 4 |  | [9655870](https://www.ncbi.nlm.nih.gov/pubmed/9655870) | metadata signals extractable PD data (EC50) |
 | `Austin_1980.pdf` | Austin KL et al., Relationship between blood meperidine c…, Anesthesiology (1980) | pd | 4 | [10.1097/00000542-198012000-00005](https://doi.org/10.1097/00000542-198012000-00005) | [7457961](https://www.ncbi.nlm.nih.gov/pubmed/7457961) | metadata signals extractable PD data (concentration-effect) |
 | `Baldessarini_1986.pdf` | Baldessarini RJ et al., Synthetic analgesics and other phenylpi…, Life sciences (1986) | pd | 4 | [10.1016/0024-3205(86)90096-2](https://doi.org/10.1016/0024-3205(86)90096-2) | [3490612](https://www.ncbi.nlm.nih.gov/pubmed/3490612) | metadata signals extractable PD data (IC50) |
 | `Barann_2015.pdf` | Barann M et al., Effects of opioids on human serotonin t…, Naunyn-Schmiedeberg's archi… (2015) | pd | 4 | [10.1007/s00210-014-1056-3](https://doi.org/10.1007/s00210-014-1056-3) | [25332055](https://www.ncbi.nlm.nih.gov/pubmed/25332055) | metadata signals extractable PD data (IC50) |
@@ -143,10 +143,10 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Grond_2004.pdf` | Grond S et al., Clinical pharmacology of tramadol, Clinical pharmacokinetics (2004) | pgx | 8 | [10.2165/00003088-200443130-00004](https://doi.org/10.2165/00003088-200443130-00004) | [15509185](https://www.ncbi.nlm.nih.gov/pubmed/15509185) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Armstrong_2009.pdf` | Armstrong SC et al., Pharmacokinetic drug interactions of sy…, Psychosomatics (2009) | pgx | 7 | [10.1176/appi.psy.50.2.169](https://doi.org/10.1176/appi.psy.50.2.169) | [19377028](https://www.ncbi.nlm.nih.gov/pubmed/19377028) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Hassan_2009.pdf` | Hassan HE et al., Differential involvement of P-glycoprot…, Journal of pharmaceutical s… (2009) | pgx | 7 | [10.1002/jps.21770](https://doi.org/10.1002/jps.21770) | [19370547](https://www.ncbi.nlm.nih.gov/pubmed/19370547) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Ramírez_2004.pdf` | Ramírez J et al., CYP2B6, CYP3A4, and CYP2C19 are respons…, Drug metabolism and disposi… (2004) | pgx | 7 | not captured | [15319333](https://www.ncbi.nlm.nih.gov/pubmed/15319333) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `Ramírez_2004.pdf` | Ramírez J et al., CYP2B6, CYP3A4, and CYP2C19 are respons…, Drug metabolism and disposi… (2004) | pgx | 7 |  | [15319333](https://www.ncbi.nlm.nih.gov/pubmed/15319333) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Turpeinen_2006.pdf` | Turpeinen M et al., The functional role of CYP2B6 in human…, Current drug metabolism (2006) | pgx | 5 | [10.2174/138920006778520633](https://doi.org/10.2174/138920006778520633) | [17073575](https://www.ncbi.nlm.nih.gov/pubmed/17073575) | metadata signals extractable PGX data (CYP2B6) |
 
-<sub>queue written 2026-10-07T05:34:53.341446+00:00</sub>
+<sub>queue written 2026-10-07 05:34 UTC</sub>
 
 ## Screened and excluded
 
@@ -276,5 +276,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 05:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpethidine%5D&body=Drug%3A%20pethidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pethidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:34 UTC</sub>

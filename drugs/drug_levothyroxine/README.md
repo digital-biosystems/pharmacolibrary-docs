@@ -5,7 +5,7 @@
 
 - **generic name:** Levothyroxine
 - **ATC codes:** `H03AA01`, `H03AA51`
-- **DrugBank:** [DB00451](https://go.drugbank.com/drugs/DB00451) · **PubChem:** not captured
+- **DrugBank:** [DB00451](https://go.drugbank.com/drugs/DB00451) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -79,7 +79,6 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer, `SLCO1A2` substrate, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer, `SLCO1A2` substrate | DrugBank actor |
@@ -87,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | distribution | testis | `ABCB1` inducer | DrugBank actor |
 | metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| metabolism | liver | `CYP2C8` inhibitor, `SLCO1B1` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor, `SLCO1B1` substrate, `SLCO2B1` inhibitor, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `ABCB1` inducer | DrugBank actor |
@@ -113,7 +112,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 692 matched, 165 returned
 - **screened:** 42  ·  **relevant:** 3
-- **records:** 8  ·  extracted 0  ·  needs_review 3  ·  rejected 5  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs review 3  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -126,8 +125,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Aimuzi_2020.pdf` | Aimuzi R et al., Perfluoroalkyl and polyfluroalkyl subst…, Environmental pollution (Ba… (2020) | pd | 5 | [10.1016/j.envpol.2020.114557](https://doi.org/10.1016/j.envpol.2020.114557) | [32388293](https://www.ncbi.nlm.nih.gov/pubmed/32388293) | metadata signals extractable PD data (exposure-response) |
 | `Cheng_2015.pdf` | Cheng Y et al., Relative developmental toxicities of pe…, Ecotoxicology and environme… (2015) | pd | 5 | [10.1016/j.ecoenv.2014.10.004](https://doi.org/10.1016/j.ecoenv.2014.10.004) | [25463847](https://www.ncbi.nlm.nih.gov/pubmed/25463847) | metadata signals extractable PD data (EC50) |
 | `Leonard_2016.pdf` | Leonard JA et al., Estimating Margin of Exposure to Thyroi…, Toxicological sciences : an… (2016) | pd | 5 | [10.1093/toxsci/kfw022](https://doi.org/10.1093/toxsci/kfw022) | [26865668](https://www.ncbi.nlm.nih.gov/pubmed/26865668) | metadata signals extractable PD data (PharmacodynamicModel) |
-| `Pennock_1992.pdf` | Pennock GD et al., Cardiac effects of 3,5-diiodothyropropi…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1403782](https://www.ncbi.nlm.nih.gov/pubmed/1403782) | metadata signals extractable PD data (EC50) |
-| `Pennock_1994.pdf` | Pennock GD et al., Identification of simple substituted ph…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8301561](https://www.ncbi.nlm.nih.gov/pubmed/8301561) | metadata signals extractable PD data (EC50) |
+| `Pennock_1992.pdf` | Pennock GD et al., Cardiac effects of 3,5-diiodothyropropi…, The Journal of pharmacology… (1992) | pd | 4 |  | [1403782](https://www.ncbi.nlm.nih.gov/pubmed/1403782) | metadata signals extractable PD data (EC50) |
+| `Pennock_1994.pdf` | Pennock GD et al., Identification of simple substituted ph…, The Journal of pharmacology… (1994) | pd | 4 |  | [8301561](https://www.ncbi.nlm.nih.gov/pubmed/8301561) | metadata signals extractable PD data (EC50) |
 | `Shiizaki_2010.pdf` | Shiizaki K et al., Establishment of yeast reporter assay s…, Toxicology in vitro : an in… (2010) | pd | 4 | [10.1016/j.tiv.2009.10.001](https://doi.org/10.1016/j.tiv.2009.10.001) | [19853653](https://www.ncbi.nlm.nih.gov/pubmed/19853653) | metadata signals extractable PD data (EC50) |
 | `Yazici_2004.pdf` | Yazici M et al., Effects of thyroxin therapy on cardiac…, International journal of ca… (2004) | pd | 4 | [10.1016/j.ijcard.2003.05.015](https://doi.org/10.1016/j.ijcard.2003.05.015) | [15193811](https://www.ncbi.nlm.nih.gov/pubmed/15193811) | metadata signals extractable PD data (Emax) |
 | `Suchy_2011.pdf` | Suchy D et al., Ezetimibe--a new approach in hyperchole…, Pharmacological reports : PR (2011) | pgx | 8 | [10.1016/s1734-1140(11)70698-3](https://doi.org/10.1016/s1734-1140(11)70698-3) | [22358082](https://www.ncbi.nlm.nih.gov/pubmed/22358082) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -137,7 +136,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Liang_2019.pdf` | Liang L et al., [Analysis of genes related to hypothyro…, Zhonghua yi xue za zhi (2019) | pgx | 5 | [10.3760/cma.j.issn.0376-2491.2019.42.015](https://doi.org/10.3760/cma.j.issn.0376-2491.2019.42.015) | [31715674](https://www.ncbi.nlm.nih.gov/pubmed/31715674) | metadata signals extractable PGX data (UGT1A1) |
 | `Yoder_2007.pdf` | Yoder Graber AL et al., UGT1A1*28 genotype affects the in-vitro…, Pharmacogenetics and genomi… (2007) | pgx | 5 | [10.1097/FPC.0b013e3280121fe9](https://doi.org/10.1097/FPC.0b013e3280121fe9) | [17622938](https://www.ncbi.nlm.nih.gov/pubmed/17622938) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-10-22T12:13:22.926184+00:00</sub>
+<sub>queue written 2026-10-22 12:13 UTC</sub>
 
 ## Screened and excluded
 
@@ -310,5 +309,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 12:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D&body=Drug%3A%20levothyroxine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 12:13 UTC</sub>

@@ -96,7 +96,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1669 matched, 185 returned
 - **screened:** 10  ·  **relevant:** 9
-- **records:** 8  ·  extracted 2  ·  needs_review 1  ·  rejected 5  ·  stale 1
+- **records:** 8  ·  extracted 2  ·  needs review 1  ·  rejected 5  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -113,7 +113,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bruno_1997.pdf` | Bruno R et al., Pharmacokinetic and pharmacodynamic pro…, American journal of health-… (1997) | popPK | 9 | [10.1093/ajhp/54.suppl_2.S16](https://doi.org/10.1093/ajhp/54.suppl_2.S16) | [9435928](https://pubmed.ncbi.nlm.nih.gov/9435928) | The paper reports on a population PK model for docetaxel in humans but the provided text lacks the specific numeric parameter values (CL, V, etc.). |
 | `Fujita_2015.pdf` | Fujita K et al., A clinical pharmacokinetic microdosing…, Cancer chemotherapy and pha… (2015) | popPK | 9 | [10.1007/s00280-015-2844-2](https://doi.org/10.1007/s00280-015-2844-2) | [26297058](https://pubmed.ncbi.nlm.nih.gov/26297058) | The study is a clinical PK study of docetaxel using a two-compartment model; while it explicitly reports AUC, protein correlations, and a clearance ratio, it lacks the absolute numeric values for CL, V, and Q required for full parameter extraction. |
 | `McLeod_1998.pdf` | McLeod HL et al., Evaluation of the linearity of docetaxe…, Cancer chemotherapy and pha… (1998) | popPK | 9 | [10.1007/s002800050799](https://doi.org/10.1007/s002800050799) | [9654116](https://pubmed.ncbi.nlm.nih.gov/9654116) | The study reports a compartmental PK model for docetaxel in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided text, only the model type and qualitative fit results. |
-| `Bruno_1993.pdf` | Bruno R et al., Pharmacokinetics and metabolism of Taxo…, Cancer surveys (1993) | popPK | 8 | not captured | [7907950](https://pubmed.ncbi.nlm.nih.gov/7907950) | The paper reports docetaxel PK parameters (half-life, clearance) but only provides aggregate values for humans in the abstract; specific compartmental model parameters or detailed numeric data for other species are likely in the full text or figures not provided here. |
+| `Bruno_1993.pdf` | Bruno R et al., Pharmacokinetics and metabolism of Taxo…, Cancer surveys (1993) | popPK | 8 |  | [7907950](https://pubmed.ncbi.nlm.nih.gov/7907950) | The paper reports docetaxel PK parameters (half-life, clearance) but only provides aggregate values for humans in the abstract; specific compartmental model parameters or detailed numeric data for other species are likely in the full text or figures not provided here. |
 | `Chen_2018.pdf` | Chen W et al., Pharmacokinetic/Pharmacodynamic Modelin…, The Journal of pharmacology… (2018) | popPK | 8 | [10.1124/jpet.117.243931](https://doi.org/10.1124/jpet.117.243931) | [29084815](https://pubmed.ncbi.nlm.nih.gov/29084815) | The study is a PK/PD modeling investigation in mice that reports docetaxel PK parameters (clearance affected by cabozantinib), but no numeric values are present in the provided evidence. |
 | `Koolen_2012.pdf` | Koolen SL et al., From mouse to man: predictions of human…, Journal of clinical pharmac… (2012) | popPK | 8 | [10.1177/0091270010397051](https://doi.org/10.1177/0091270010397051) | [21505085](https://pubmed.ncbi.nlm.nih.gov/21505085) | The paper describes a population PK model for docetaxel but the specific numeric parameter values are not provided in the evidence, only residual error percentages are mentioned. |
 | `Meille_2016.pdf` | Meille C et al., Revisiting Dosing Regimen Using Pharmac…, Clinical pharmacokinetics (2016) | popPK | 8 | [10.1007/s40262-016-0374-7](https://doi.org/10.1007/s40262-016-0374-7) | [26946136](https://pubmed.ncbi.nlm.nih.gov/26946136) | The paper describes a PK/PD modeling study for docetaxel dosing, but the specific quantitative PK parameter values are not present in the provided text. |
@@ -123,7 +123,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Wang_2025.pdf` | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | popPK | 6 | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) | [40967486](https://pubmed.ncbi.nlm.nih.gov/40967486) | The study establishes a PK/PD model for docetaxel in mice, but specific quantitative disposition parameter values (CL, V, etc.) are not explicitly listed in the provided evidence text. |
 | `Clarke_1999.pdf` | Clarke SJ et al., Clinical pharmacokinetics of docetaxel, Clinical pharmacokinetics (1999) | popPK | 5 | [10.2165/00003088-199936020-00002](https://doi.org/10.2165/00003088-199936020-00002) | [10092957](https://pubmed.ncbi.nlm.nih.gov/10092957) | The paper is a review that summarizes general clinical pharmacokinetics (CL, Vd, t1/2) and population PK covariates but does not present original experimental data or a specific population PK parameter estimation model in the provided text. |
 
-<sub>queue written 2026-10-07T17:51:18.523310+00:00</sub>
+<sub>queue written 2026-10-07 17:51 UTC</sub>
 
 ## Screened and excluded
 
@@ -256,5 +256,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 17:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdocetaxel%5D&body=Drug%3A%20docetaxel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_docetaxel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:51 UTC</sub>

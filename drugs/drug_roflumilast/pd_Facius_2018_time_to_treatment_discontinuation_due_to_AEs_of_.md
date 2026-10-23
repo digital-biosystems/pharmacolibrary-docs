@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Broflumilast%5D%20pd_Facius_2018_time_to_treatment_discontinuation_due_to_AEs_of_&body=Drug%3A%20roflumilast%0ARecord%3A%20pd_Facius_2018_time_to_treatment_discontinuation_due_to_AEs_of_%0APaper%3A%20Facius_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_roflumilast/pd_Facius_2018_time_to_treatment_discontinuation_due_to_AEs_of_%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [roflumilast](drugs/drug_roflumilast/)</sub>

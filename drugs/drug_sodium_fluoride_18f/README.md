@@ -73,7 +73,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 159 matched, 57 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 0  ·  needs_review 2  ·  rejected 5  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -82,20 +82,20 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Charkes_1978.pdf` | Charkes ND et al., Studies of skeletal tracer kinetics. I.…, Journal of nuclear medicine… (1978) | popPK | 9 | not captured | [731317](https://pubmed.ncbi.nlm.nih.gov/731317) | The paper describes a quantitative 5-compartment PK model for [18F] fluoride in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text. |
-| `Charkes_1979.pdf` | Charkes ND et al., Studies of skeletal tracer kinetics: II…, Journal of nuclear medicine… (1979) | popPK | 9 | not captured | [536775](https://pubmed.ncbi.nlm.nih.gov/536775) | The paper describes a quantitative five-compartment PK model for [18F]fluoride in rats, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Charkes_1978.pdf` | Charkes ND et al., Studies of skeletal tracer kinetics. I.…, Journal of nuclear medicine… (1978) | popPK | 9 |  | [731317](https://pubmed.ncbi.nlm.nih.gov/731317) | The paper describes a quantitative 5-compartment PK model for [18F] fluoride in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text. |
+| `Charkes_1979.pdf` | Charkes ND et al., Studies of skeletal tracer kinetics: II…, Journal of nuclear medicine… (1979) | popPK | 9 |  | [536775](https://pubmed.ncbi.nlm.nih.gov/536775) | The paper describes a quantitative five-compartment PK model for [18F]fluoride in rats, but the specific numeric parameter values are not present in the provided abstract text. |
 | `Cook_2000.pdf` | Cook GJ et al., Differences in skeletal kinetics betwee…, Journal of bone and mineral… (2000) | popPK | 9 | [10.1359/jbmr.2000.15.4.763](https://doi.org/10.1359/jbmr.2000.15.4.763) | [10780868](https://pubmed.ncbi.nlm.nih.gov/10780868) | The study reports quantitative compartmental PK parameters (Ki, K1, k2-k4) for 18F-fluoride in humans with specific numeric values provided in the text. |
 | `Cook_2002.pdf` | Cook GJ et al., Quantification of skeletal kinetic indi…, Journal of bone and mineral… (2002) | popPK | 9 | [10.1359/jbmr.2002.17.5.854](https://doi.org/10.1359/jbmr.2002.17.5.854) | [12009016](https://pubmed.ncbi.nlm.nih.gov/12009016) | The study reports quantitative kinetic parameters (Ki, K1, k4, K1/k2) for 18F-fluoride in a compartmental model, with specific numeric values provided in the abstract. |
-| `Hawkins_1992.pdf` | Hawkins RA et al., Evaluation of the skeletal kinetics of…, Journal of nuclear medicine… (1992) | popPK | 9 | not captured | [1569473](https://pubmed.ncbi.nlm.nih.gov/1569473) | The study reports quantitative kinetic parameters (K1, KNLR, KPAT) for a compartmental model of [18F]fluoride in humans. |
+| `Hawkins_1992.pdf` | Hawkins RA et al., Evaluation of the skeletal kinetics of…, Journal of nuclear medicine… (1992) | popPK | 9 |  | [1569473](https://pubmed.ncbi.nlm.nih.gov/1569473) | The study reports quantitative kinetic parameters (K1, KNLR, KPAT) for a compartmental model of [18F]fluoride in humans. |
 | `Raijmakers_2014.pdf` | Raijmakers P et al., Quantification of 18F-Fluoride Kinetics…, Journal of nuclear medicine… (2014) | popPK | 9 | [10.2967/jnumed.113.135269](https://doi.org/10.2967/jnumed.113.135269) | [24868107](https://pubmed.ncbi.nlm.nih.gov/24868107) | The study reports quantitative kinetic parameters (Ki, K1) for 18F-fluoride in humans using compartmental and simplified models. |
-| `Ahmed_1998.pdf` | Ahmed K et al., Comparative study of positron emission…, Radiation medicine (1998) | popPK | 8 | not captured | [9814417](https://pubmed.ncbi.nlm.nih.gov/9814417) | The study reports quantitative kinetic parameters (K-constants) from a three-compartment model for 18F-fluoride in guinea pigs. |
+| `Ahmed_1998.pdf` | Ahmed K et al., Comparative study of positron emission…, Radiation medicine (1998) | popPK | 8 |  | [9814417](https://pubmed.ncbi.nlm.nih.gov/9814417) | The study reports quantitative kinetic parameters (K-constants) from a three-compartment model for 18F-fluoride in guinea pigs. |
 | `Blake_2012.pdf` | Blake GM et al., A semipopulation input function for qua…, Nuclear medicine communicat… (2012) | popPK | 8 | [10.1097/MNM.0b013e3283550275](https://doi.org/10.1097/MNM.0b013e3283550275) | [22617486](https://pubmed.ncbi.nlm.nih.gov/22617486) | The study reports quantitative bone plasma clearance parameters for 18F-fluoride using the Hawkins compartmental model, but specific mean parameter values (CL, V, etc.) are not explicitly listed in the provided text, only precision errors and AUC percentages. |
-| `Cheng_2013.pdf` | Cheng C et al., Evaluation of bone remodeling with (18)…, American journal of nuclear… (2013) | popPK | 8 | not captured | [23526138](https://pubmed.ncbi.nlm.nih.gov/23526138) | The study reports a compartmental PK model (K1-k4, Ki) for 18F-fluoride in rats, but specific numeric parameter values are not present in the provided text. |
+| `Cheng_2013.pdf` | Cheng C et al., Evaluation of bone remodeling with (18)…, American journal of nuclear… (2013) | popPK | 8 |  | [23526138](https://pubmed.ncbi.nlm.nih.gov/23526138) | The study reports a compartmental PK model (K1-k4, Ki) for 18F-fluoride in rats, but specific numeric parameter values are not present in the provided text. |
 | `Frost_2004.pdf` | Frost ML et al., Dissociation between global markers of…, Journal of bone and mineral… (2004) | popPK | 8 | [10.1359/JBMR.040818](https://doi.org/10.1359/JBMR.040818) | [15476579](https://pubmed.ncbi.nlm.nih.gov/15476579) | The study reports quantitative compartmental PK parameters (K1, Ki, k2, k3, k4) for 18F-fluoride in humans, but specific mean values for the rate constants are not explicitly listed in the provided text, only relative differences and correlations. |
 | `Puri_2012.pdf` | Puri T et al., Comparison of six quantitative methods…, Nuclear medicine communicat… (2012) | popPK | 8 | [10.1097/MNM.0b013e3283512adb](https://doi.org/10.1097/MNM.0b013e3283512adb) | [22441132](https://pubmed.ncbi.nlm.nih.gov/22441132) | The study reports quantitative bone plasma clearance (Ki) values for 18F-fluoride using compartmental models in humans, providing specific numeric biases and limits of agreement. |
-| `Schiepers_1997.pdf` | Schiepers C et al., Fluoride kinetics of the axial skeleton…, Journal of nuclear medicine… (1997) | popPK | 8 | not captured | [9430479](https://pubmed.ncbi.nlm.nih.gov/9430479) | The study reports a three-compartment model for [18F]fluoride kinetics in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text. |
+| `Schiepers_1997.pdf` | Schiepers C et al., Fluoride kinetics of the axial skeleton…, Journal of nuclear medicine… (1997) | popPK | 8 |  | [9430479](https://pubmed.ncbi.nlm.nih.gov/9430479) | The study reports a three-compartment model for [18F]fluoride kinetics in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text. |
 
-<sub>queue written 2026-10-07T16:32:22.079202+00:00</sub>
+<sub>queue written 2026-10-07 16:32 UTC</sub>
 
 ## Screened and excluded
 
@@ -149,5 +149,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 16:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_fluoride_18f%5D&body=Drug%3A%20sodium_fluoride_18f%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_fluoride_18f/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:32 UTC</sub>

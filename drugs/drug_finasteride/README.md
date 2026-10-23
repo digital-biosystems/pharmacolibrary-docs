@@ -83,7 +83,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 208 matched, 125 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -100,23 +100,23 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kim_2016.pdf` | Kim SE et al., Compartmental approach to assess bioequ…, International journal of cl… (2016) | popPK | 5 | [10.5414/CP202525](https://doi.org/10.5414/CP202525) | [27087152](https://pubmed.ncbi.nlm.nih.gov/27087152) | While finasteride is a subject drug, the paper is a methodological comparison of bioequivalence analysis techniques and does not report the specific quantitative PK parameter values (CL, V, etc.) for finasteride. |
 | `Suzuki_2010.pdf` | Suzuki R et al., Saturable binding of finasteride to ste…, Drug metabolism and pharmac… (2010) | pd | 5 | [10.2133/dmpk.25.208](https://doi.org/10.2133/dmpk.25.208) | [20460827](https://www.ncbi.nlm.nih.gov/pubmed/20460827) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Berthaut_1997.pdf` | Berthaut I et al., Pharmacological and molecular evidence…, The Prostate (1997) | pd | 4 | [10.1002/(sici)1097-0045(19970801)32:3&lt;155::aid-pros1&gt;3.0.co;2-k](https://doi.org/10.1002/(sici)1097-0045(19970801)32:3<155::aid-pros1>3.0.co;2-k) | [9254894](https://www.ncbi.nlm.nih.gov/pubmed/9254894) | metadata signals extractable PD data (IC50) |
-| `Boudon_1995.pdf` | Boudon C et al., 5 alpha-reductase activity in cultured…, Cellular and molecular biol… (1995) | pd | 4 | not captured | [8747081](https://www.ncbi.nlm.nih.gov/pubmed/8747081) | metadata signals extractable PD data (IC50) |
+| `Boudon_1995.pdf` | Boudon C et al., 5 alpha-reductase activity in cultured…, Cellular and molecular biol… (1995) | pd | 4 |  | [8747081](https://www.ncbi.nlm.nih.gov/pubmed/8747081) | metadata signals extractable PD data (IC50) |
 | `Hirosumi_1995.pdf` | Hirosumi J et al., FK143, a novel nonsteroidal inhibitor o…, The Journal of steroid bioc… (1995) | pd | 4 | [10.1016/0960-0760(94)00187-q](https://doi.org/10.1016/0960-0760(94)00187-q) | [7734404](https://www.ncbi.nlm.nih.gov/pubmed/7734404) | metadata signals extractable PD data (IC50) |
-| `Ko_1995.pdf` | Ko HC et al., Pharmacodynamic modeling of finasteride…, Pharmacotherapy (1995) | pd | 4 | not captured | [7479205](https://www.ncbi.nlm.nih.gov/pubmed/7479205) | metadata signals extractable PD data (Pharmacodynamicmodel) |
+| `Ko_1995.pdf` | Ko HC et al., Pharmacodynamic modeling of finasteride…, Pharmacotherapy (1995) | pd | 4 |  | [7479205](https://www.ncbi.nlm.nih.gov/pubmed/7479205) | metadata signals extractable PD data (Pharmacodynamicmodel) |
 | `Krieg_1995.pdf` | Krieg M et al., Potential activities of androgen metabo…, The Journal of steroid bioc… (1995) | pd | 4 | [10.1016/0960-0760(95)00085-e](https://doi.org/10.1016/0960-0760(95)00085-e) | [7542902](https://www.ncbi.nlm.nih.gov/pubmed/7542902) | metadata signals extractable PD data (IC50) |
 | `Mellin_1993.pdf` | Mellin TN et al., Azasteroids as inhibitors of testostero…, The Journal of steroid bioc… (1993) | pd | 4 | [10.1016/0960-0760(93)90019-s](https://doi.org/10.1016/0960-0760(93)90019-s) | [8439517](https://www.ncbi.nlm.nih.gov/pubmed/8439517) | metadata signals extractable PD data (IC50) |
 | `Srivilai_2016.pdf` | Srivilai J et al., A new label-free screen for steroid 5α-…, Steroids (2016) | pd | 4 | [10.1016/j.steroids.2016.10.007](https://doi.org/10.1016/j.steroids.2016.10.007) | [27789379](https://www.ncbi.nlm.nih.gov/pubmed/27789379) | metadata signals extractable PD data (IC50) |
-| `Wang_2015.pdf` | Wang LL et al., [Study of gonadal hormone drugs in bloc…, Yao xue xue bao = Acta phar… (2015) | pd | 4 | not captured | [27169275](https://www.ncbi.nlm.nih.gov/pubmed/27169275) | metadata signals extractable PD data (IC50) |
+| `Wang_2015.pdf` | Wang LL et al., [Study of gonadal hormone drugs in bloc…, Yao xue xue bao = Acta phar… (2015) | pd | 4 |  | [27169275](https://www.ncbi.nlm.nih.gov/pubmed/27169275) | metadata signals extractable PD data (IC50) |
 | `Weisser_1994.pdf` | Weisser H et al., 5 alpha-reductase inhibition by finaste…, Steroids (1994) | pd | 4 | [10.1016/0039-128x(94)90016-7](https://doi.org/10.1016/0039-128x(94)90016-7) | [7535480](https://www.ncbi.nlm.nih.gov/pubmed/7535480) | metadata signals extractable PD data (IC50) |
 | `di_1993.pdf` | di Salle E et al., Hormonal effects of turosteride, a 5 al…, The Journal of steroid bioc… (1993) | pd | 4 | [10.1016/0960-0760(93)90181-u](https://doi.org/10.1016/0960-0760(93)90181-u) | [8240976](https://www.ncbi.nlm.nih.gov/pubmed/8240976) | metadata signals extractable PD data (IC50) |
 | `Yasumori_2006.pdf` | Yasumori T et al., Finasteride 1 mg has no inhibitory effe…, European journal of clinica… (2006) | pgx | 8 | [10.1007/s00228-006-0189-9](https://doi.org/10.1007/s00228-006-0189-9) | [16953457](https://www.ncbi.nlm.nih.gov/pubmed/16953457) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
-| `Fleishaker_1998.pdf` | Fleishaker JC et al., Biotransformation of tirilazad in human…, The Journal of pharmacology… (1998) | pgx | 7 | not captured | [9808685](https://www.ncbi.nlm.nih.gov/pubmed/9808685) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Fleishaker_1998.pdf` | Fleishaker JC et al., Biotransformation of tirilazad in human…, The Journal of pharmacology… (1998) | pgx | 7 |  | [9808685](https://www.ncbi.nlm.nih.gov/pubmed/9808685) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Li_2026.pdf` | Li Z et al., Identification of Metabolites for the N…, Drug testing and analysis (2026) | pgx | 7 | [10.1002/dta.3969](https://doi.org/10.1002/dta.3969) | [41242714](https://www.ncbi.nlm.nih.gov/pubmed/41242714) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
-| `Wienkers_1998.pdf` | Wienkers LC et al., Biotransformation of tirilazad in human…, The Journal of pharmacology… (1998) | pgx | 7 | not captured | [9808684](https://www.ncbi.nlm.nih.gov/pubmed/9808684) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Wienkers_1998.pdf` | Wienkers LC et al., Biotransformation of tirilazad in human…, The Journal of pharmacology… (1998) | pgx | 7 |  | [9808684](https://www.ncbi.nlm.nih.gov/pubmed/9808684) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Price_2016.pdf` | Price DK et al., Association of androgen metabolism gene…, Cancer (2016) | pgx | 5 | [10.1002/cncr.30071](https://doi.org/10.1002/cncr.30071) | [27164191](https://www.ncbi.nlm.nih.gov/pubmed/27164191) | metadata signals extractable PGX data (CYP1B1) |
 | `Tang_2011.pdf` | Tang L et al., Repeat polymorphisms in estrogen metabo…, Carcinogenesis (2011) | pgx | 5 | [10.1093/carcin/bgr139](https://doi.org/10.1093/carcin/bgr139) | [21771722](https://www.ncbi.nlm.nih.gov/pubmed/21771722) | metadata signals extractable PGX data (CYP11A1) |
 
-<sub>queue written 2026-10-07T08:06:59.368906+00:00</sub>
+<sub>queue written 2026-10-07 08:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -194,5 +194,5 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfinasteride%5D&body=Drug%3A%20finasteride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_finasteride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

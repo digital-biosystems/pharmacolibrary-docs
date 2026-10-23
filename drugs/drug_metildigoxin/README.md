@@ -4,7 +4,7 @@
 
 - **generic name:** metildigoxin
 - **ATC codes:** `C01AA08`
-- **DrugBank:** [DB13401](https://go.drugbank.com/drugs/DB13401) · **PubChem:** not captured
+- **DrugBank:** [DB13401](https://go.drugbank.com/drugs/DB13401) · **PubChem:** none
 - **molar mass:** 794.976 g/mol (C42H66O14) — DrugBank
 - **groups:** investigational
 
@@ -38,7 +38,7 @@ Metildigoxin is a digitalis cardiac glycoside with cardiotonic and antiarrhythmi
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -48,16 +48,16 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Hinderling_1977.pdf` | Hinderling PH et al., Pharmacokinetics of beta-methyldigoxin…, Journal of pharmaceutical s… (1977) | popPK | 10 | [10.1002/jps.2600660304](https://doi.org/10.1002/jps.2600660304) | [845795](https://pubmed.ncbi.nlm.nih.gov/845795) | The study reports quantitative pharmacokinetic parameters (absorption half-life, bioavailability, excretion percentages) for beta-methyldigoxin in humans, though specific clearance and volume values are not explicitly listed in the provided text. |
-| `Twittenhoff_1981.pdf` | Twittenhoff WD et al., Extrarenal clearance, distribution volu…, International journal of cl… (1981) | popPK | 10 | not captured | [7298247](https://pubmed.ncbi.nlm.nih.gov/7298247) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, elimination rate, half-life) for metildigoxin in anuric patients. |
-| `Yukawa_1995.pdf` | Yukawa E, New and simple method for estimating me…, International journal of cl… (1995) | popPK | 9 | not captured | [8688985](https://pubmed.ncbi.nlm.nih.gov/8688985) | The study reports a population PK model for metildigoxin clearance in humans, but specific numeric parameter estimates (e.g., typical clearance values) are not explicitly listed in the provided text, only variability coefficients. |
-| `Angelino_1977.pdf` | Angelino PF et al., [Kinetics of beta-methyl-digoxin in var…, Giornale italiano di cardio… (1977) | popPK | 8 | not captured | [892276](https://pubmed.ncbi.nlm.nih.gov/892276) | The study reports quantitative clearance rates for metildigoxin in humans, but specific numeric values are not present in the provided abstract text. |
+| `Twittenhoff_1981.pdf` | Twittenhoff WD et al., Extrarenal clearance, distribution volu…, International journal of cl… (1981) | popPK | 10 |  | [7298247](https://pubmed.ncbi.nlm.nih.gov/7298247) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, elimination rate, half-life) for metildigoxin in anuric patients. |
+| `Yukawa_1995.pdf` | Yukawa E, New and simple method for estimating me…, International journal of cl… (1995) | popPK | 9 |  | [8688985](https://pubmed.ncbi.nlm.nih.gov/8688985) | The study reports a population PK model for metildigoxin clearance in humans, but specific numeric parameter estimates (e.g., typical clearance values) are not explicitly listed in the provided text, only variability coefficients. |
+| `Angelino_1977.pdf` | Angelino PF et al., [Kinetics of beta-methyl-digoxin in var…, Giornale italiano di cardio… (1977) | popPK | 8 |  | [892276](https://pubmed.ncbi.nlm.nih.gov/892276) | The study reports quantitative clearance rates for metildigoxin in humans, but specific numeric values are not present in the provided abstract text. |
 | `Dotti_1977.pdf` | Dotti C et al., Study of the influence of haemodialysis…, La Ricerca in clinica e in… (1977) | popPK | 8 | [10.1007/BF02886650](https://doi.org/10.1007/BF02886650) | [615333](https://pubmed.ncbi.nlm.nih.gov/615333) | The study reports pharmacokinetic parameters (half-times, disappearance rates) for metildigoxin in humans, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the text, only peak concentrations and qualitative comparisons. |
 | `Haasis_1975.pdf` | Haasis R et al., [Cardiac effects and glycoside concentr…, Klinische Wochenschrift (1975) | popPK | 8 | [10.1007/BF01468758](https://doi.org/10.1007/BF01468758) | [1152344](https://pubmed.ncbi.nlm.nih.gov/1152344) | The study reports quantitative pharmacokinetic parameters (renal clearance and half-life) for beta-methyl-digoxin in humans. |
 | `Kaufmann_1981.pdf` | Kaufmann B et al., Pharmacokinetics of metildigoxin and di…, Clinical pharmacokinetics (1981) | popPK | 8 | [10.2165/00003088-198106060-00004](https://doi.org/10.2165/00003088-198106060-00004) | [7318305](https://pubmed.ncbi.nlm.nih.gov/7318305) | The study investigates the pharmacokinetics of metildigoxin in humans and mentions parameters like volume of distribution and clearance, but the specific numeric values are not present in the provided abstract text. |
 | `Marinow_1977.pdf` | Marinow J et al., Serum glycoside concentrations after si…, European journal of clinica… (1977) | popPK | 8 | [10.1007/BF00606413](https://doi.org/10.1007/BF00606413) | [856604](https://pubmed.ncbi.nlm.nih.gov/856604) | The study reports quantitative renal clearance values for beta-methyl-digoxin (metildigoxin) in humans, though volume of distribution and other compartmental parameters are not explicitly provided. |
-| `Rameis_1984.pdf` | Rameis H et al., Changes in metildigoxin pharmacokinetic…, International journal of cl… (1984) | popPK | 8 | not captured | [6715083](https://pubmed.ncbi.nlm.nih.gov/6715083) | The study reports qualitative changes in metildigoxin clearance and volume of distribution in humans, but specific numeric parameter values are not present in the provided evidence. |
+| `Rameis_1984.pdf` | Rameis H et al., Changes in metildigoxin pharmacokinetic…, International journal of cl… (1984) | popPK | 8 |  | [6715083](https://pubmed.ncbi.nlm.nih.gov/6715083) | The study reports qualitative changes in metildigoxin clearance and volume of distribution in humans, but specific numeric parameter values are not present in the provided evidence. |
 
-<sub>queue written 2026-10-06T03:11:19.758993+00:00</sub>
+<sub>queue written 2026-10-06 03:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -79,5 +79,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 03:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetildigoxin%5D&body=Drug%3A%20metildigoxin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metildigoxin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 03:11 UTC</sub>

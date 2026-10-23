@@ -5,7 +5,7 @@
 
 - **generic name:** zinc
 - **ATC codes:** `A12CB01`, `A16AX05`, `B05XA18`, `C05AX04`
-- **DrugBank:** [DB01593](https://go.drugbank.com/drugs/DB01593) · **PubChem:** not captured
+- **DrugBank:** [DB01593](https://go.drugbank.com/drugs/DB01593) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4683 matched, 116 returned
 - **screened:** 19  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 3
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -103,7 +103,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Świątek_2017.pdf` | Świątek ZM et al., Toxicokinetics of zinc-oxide nanopartic…, Ecotoxicology and environme… (2017) | popPK | 9 | [10.1016/j.ecoenv.2017.05.027](https://doi.org/10.1016/j.ecoenv.2017.05.027) | [28531765](https://pubmed.ncbi.nlm.nih.gov/28531765) | This is a toxicokinetic study reporting a one-compartment model with absorption (ka) and elimination (ke) rate constants for zinc in earthworms, but the specific numeric values are described rather than listed in the provided evidence. |
 | `House_1997.pdf` | House WA et al., Compartmental analysis of zinc kinetics…, The American journal of phy… (1997) | popPK | 8 | [10.1152/ajpregu.1997.273.3.R1117](https://doi.org/10.1152/ajpregu.1997.273.3.R1117) | [9321894](https://pubmed.ncbi.nlm.nih.gov/9321894) | The paper describes a compartmental model for zinc in rats, but no numeric parameter values (CL, V, k, etc.) are present in the provided abstract/evidence. |
 | `Wastney_1991.pdf` | Wastney ME et al., Kinetic analysis of zinc metabolism in…, The American journal of phy… (1991) | popPK | 8 | [10.1152/ajpregu.1991.260.1.R134](https://doi.org/10.1152/ajpregu.1991.260.1.R134) | [1992814](https://pubmed.ncbi.nlm.nih.gov/1992814) | The paper describes a compartmental model of zinc kinetics in humans, but the specific numeric parameter values (clearance, volume, rates) are not present in the provided evidence, only the qualitative results and methods are described. |
-| `Wastney_1988.pdf` | Wastney ME et al., Development and application of a model…, Progress in food & nutritio… (1988) | popPK | 7 | not captured | [3150858](https://pubmed.ncbi.nlm.nih.gov/3150858) | The paper describes a compartmental model for zinc metabolism in humans, but no specific quantitative parameter values (such as clearance, volume, or rate constants) are present in the provided evidence. |
+| `Wastney_1988.pdf` | Wastney ME et al., Development and application of a model…, Progress in food & nutritio… (1988) | popPK | 7 |  | [3150858](https://pubmed.ncbi.nlm.nih.gov/3150858) | The paper describes a compartmental model for zinc metabolism in humans, but no specific quantitative parameter values (such as clearance, volume, or rate constants) are present in the provided evidence. |
 | `Guillard_1984.pdf` | Guillard O et al., Comparative pharmacokinetics of [65Zn]z…, Journal of pharmaceutical s… (1984) | popPK | 6 | [10.1002/jps.2600731139](https://doi.org/10.1002/jps.2600731139) | [6520772](https://pubmed.ncbi.nlm.nih.gov/6520772) | The study reports a two-compartment model for zinc in rabbits, but the specific numeric parameter values are not present in the provided evidence. |
 | `Chou_1993.pdf` | Chou CC et al., Separation of pH, dilution, ionic stren…, Journal of bioluminescence… (1993) | pd | 5 | [10.1002/bio.1170080108](https://doi.org/10.1002/bio.1170080108) | [8475782](https://www.ncbi.nlm.nih.gov/pubmed/8475782) | metadata signals extractable PD data (EC50) |
 | `Browning_1987.pdf` | Browning JD et al., Zinc deficiency in rats reduces the vas…, The Journal of nutrition (1987) | pd | 4 | [10.1093/jn/117.3.490](https://doi.org/10.1093/jn/117.3.490) | [2883270](https://www.ncbi.nlm.nih.gov/pubmed/2883270) | metadata signals extractable PD data (Emax) |
@@ -114,7 +114,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Peer_2016.pdf` | Peer CJ et al., UGT1A1 genotype-dependent dose adjustme…, Journal of clinical pharmac… (2016) | pgx | 8 | [10.1002/jcph.627](https://doi.org/10.1002/jcph.627) | [26637161](https://www.ncbi.nlm.nih.gov/pubmed/26637161) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
 | `Liang_1992.pdf` | Liang HC et al., "Oxidative stress" response in liver of…, Biochemical and biophysical… (1992) | pgx | 5 | [10.1016/0006-291x(92)91853-i](https://doi.org/10.1016/0006-291x(92)91853-i) | [1540161](https://www.ncbi.nlm.nih.gov/pubmed/1540161) | metadata signals extractable PGX data (CYP1A1) |
 
-<sub>queue written 2026-10-07T17:28:48.810247+00:00</sub>
+<sub>queue written 2026-10-07 17:28 UTC</sub>
 
 ## Screened and excluded
 
@@ -247,5 +247,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 17:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzinc%5D&body=Drug%3A%20zinc%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zinc/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:28 UTC</sub>

@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadoxine%5D%20pd_Nour_2006_inhibition_of_schizont_maturation_Plasmodium_falci&body=Drug%3A%20sulfadoxine%0ARecord%3A%20pd_Nour_2006_inhibition_of_schizont_maturation_Plasmodium_falci%0APaper%3A%20Nour_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadoxine/pd_Nour_2006_inhibition_of_schizont_maturation_Plasmodium_falci%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Sulfadoxine](drugs/drug_sulfadoxine/)</sub>

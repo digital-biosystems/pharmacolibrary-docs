@@ -5,7 +5,7 @@
 
 - **generic name:** glyceryl trinitrate
 - **ATC codes:** `C01DA02`, `C05AE01`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -88,7 +88,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 241 matched, 118 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -107,9 +107,9 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kwon_1992.pdf` | Kwon HR et al., Pharmacokinetics of nitroglycerin and i…, Biopharmaceutics & drug dis… (1992) | popPK | 8 | [10.1002/bdd.2510130208](https://doi.org/10.1002/bdd.2510130208) | [1550909](https://pubmed.ncbi.nlm.nih.gov/1550909) | The study reports pharmacokinetics of nitroglycerin (glyceryl trinitrate) and its metabolites in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Noonan_1986.pdf` | Noonan PK et al., The bioavailability of oral nitroglycer…, Journal of pharmaceutical s… (1986) | popPK | 8 | [10.1002/jps.2600750306](https://doi.org/10.1002/jps.2600750306) | [3084757](https://pubmed.ncbi.nlm.nih.gov/3084757) | The study reports on the pharmacokinetics (bioavailability) of oral nitroglycerin in humans, but the specific quantitative parameter values (e.g., exact bioavailability percentages, clearance, volume) are not explicitly listed in the provided abstract text, only qualitative descriptions like "less than 1%". |
 | `He_1992.pdf` | He GW et al., Inhibitory effects of glyceryl trinitra…, British journal of clinical… (1992) | pd | 5 | [10.1111/j.1365-2125.1992.tb04130.x](https://doi.org/10.1111/j.1365-2125.1992.tb04130.x) | [1356404](https://www.ncbi.nlm.nih.gov/pubmed/1356404) | metadata signals extractable PD data (EC50) |
-| `Huber_1991.pdf` | Huber T et al., [Biologic availability and hemodynamic…, Arzneimittel-Forschung (1991) | pd | 5 | not captured | [1772460](https://www.ncbi.nlm.nih.gov/pubmed/1772460) | metadata signals extractable PD data (EC50) |
+| `Huber_1991.pdf` | Huber T et al., [Biologic availability and hemodynamic…, Arzneimittel-Forschung (1991) | pd | 5 |  | [1772460](https://www.ncbi.nlm.nih.gov/pubmed/1772460) | metadata signals extractable PD data (EC50) |
 | `Ignarro_1989.pdf` | Ignarro LJ et al., Basic polyamino acids rich in arginine,…, Circulation research (1989) | pd | 5 | [10.1161/01.res.64.2.315](https://doi.org/10.1161/01.res.64.2.315) | [2492213](https://www.ncbi.nlm.nih.gov/pubmed/2492213) | metadata signals extractable PD data (EC50) |
-| `Kuhn_1989.pdf` | Kuhn M et al., Endothelium-dependent vasodilatation in…, Journal of cardiovascular p… (1989) | pd | 5 | not captured | [2484699](https://www.ncbi.nlm.nih.gov/pubmed/2484699) | metadata signals extractable PD data (EC50) |
+| `Kuhn_1989.pdf` | Kuhn M et al., Endothelium-dependent vasodilatation in…, Journal of cardiovascular p… (1989) | pd | 5 |  | [2484699](https://www.ncbi.nlm.nih.gov/pubmed/2484699) | metadata signals extractable PD data (EC50) |
 | `Argan_2022.pdf` | Argan O et al., In vitro effects of thirty-eight cardia…, Chemical biology & drug des… (2022) | pd | 4 | [10.1111/cbdd.14054](https://doi.org/10.1111/cbdd.14054) | [35395139](https://www.ncbi.nlm.nih.gov/pubmed/35395139) | metadata signals extractable PD data (IC50) |
 | `Dautov_2014.pdf` | Dautov RF et al., Hypoxic potentiation of nitrite effects…, Nitric oxide : biology and… (2014) | pd | 4 | [10.1016/j.niox.2014.05.005](https://doi.org/10.1016/j.niox.2014.05.005) | [24858215](https://www.ncbi.nlm.nih.gov/pubmed/24858215) | metadata signals extractable PD data (EC50) |
 | `De_1999.pdf` | De la Lande IS et al., Tolerance induction by transdermal glyc…, European journal of pharmac… (1999) | pd | 4 | [10.1016/s0014-2999(99)00319-2](https://doi.org/10.1016/s0014-2999(99)00319-2) | [10422642](https://www.ncbi.nlm.nih.gov/pubmed/10422642) | metadata signals extractable PD data (EC50) |
@@ -120,7 +120,7 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Torfgård_1990.pdf` | Torfgård K et al., Relaxation of bovine mesenteric arterie…, Pharmacology & toxicology (1990) | pd | 4 | [10.1111/j.1600-0773.1990.tb00816.x](https://doi.org/10.1111/j.1600-0773.1990.tb00816.x) | [2123985](https://www.ncbi.nlm.nih.gov/pubmed/2123985) | metadata signals extractable PD data (concentration-effect) |
 | `Wallis_1999.pdf` | Wallis RM et al., Tissue distribution of phosphodiesteras…, The American journal of car… (1999) | pd | 4 | [10.1016/s0002-9149(99)00042-9](https://doi.org/10.1016/s0002-9149(99)00042-9) | [10078537](https://www.ncbi.nlm.nih.gov/pubmed/10078537) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T10:06:37.536000+00:00</sub>
+<sub>queue written 2026-10-06 10:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -260,5 +260,5 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 10:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglyceryl_trinitrate%5D&body=Drug%3A%20glyceryl_trinitrate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glyceryl_trinitrate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 10:03 UTC</sub>

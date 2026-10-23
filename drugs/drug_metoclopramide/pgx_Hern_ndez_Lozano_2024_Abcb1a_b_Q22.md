@@ -78,4 +78,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetoclopramide%5D%20pgx_Hern_ndez_Lozano_2024_Abcb1a_b_Q22&body=Drug%3A%20metoclopramide%0ARecord%3A%20pgx_Hern_ndez_Lozano_2024_Abcb1a_b_Q22%0APaper%3A%20Hern%C3%A1ndez-Lozano_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metoclopramide/pgx_Hern_ndez_Lozano_2024_Abcb1a_b_Q22%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [metoclopramide](drugs/drug_metoclopramide/)</sub>

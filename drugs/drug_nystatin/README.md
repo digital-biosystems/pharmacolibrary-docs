@@ -59,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 300 matched, 118 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -71,7 +71,7 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Burkin_2022.pdf` | Burkin MA et al., Development and application of amphoter…, Journal of pharmaceutical a… (2022) | pd | 5 | [10.1016/j.jpba.2022.114875](https://doi.org/10.1016/j.jpba.2022.114875) | [35679709](https://www.ncbi.nlm.nih.gov/pubmed/35679709) | metadata signals extractable PD data (IC50) |
 | `Wang_1993.pdf` | Wang X et al., 5-(N-Ethyl-N-isopropyl)amiloride sensit…, Canadian journal of physiol… (1993) | pd | 5 | [10.1139/y93-009](https://doi.org/10.1139/y93-009) | [8390327](https://www.ncbi.nlm.nih.gov/pubmed/8390327) | metadata signals extractable PD data (IC50) |
 | `Yao_2015.pdf` | Yao JY et al., Evaluation of nystatin isolated from St…, Parasitology research (2015) | pd | 5 | [10.1007/s00436-015-4325-2](https://doi.org/10.1007/s00436-015-4325-2) | [25645004](https://www.ncbi.nlm.nih.gov/pubmed/25645004) | metadata signals extractable PD data (EC50) |
-| `Zha_2008.pdf` | Zha DJ et al., [Inhibition of gamma-aminobutyric acid…, Zhonghua er bi yan hou tou… (2008) | pd | 5 | not captured | [18666699](https://www.ncbi.nlm.nih.gov/pubmed/18666699) | metadata signals extractable PD data (EC50) |
+| `Zha_2008.pdf` | Zha DJ et al., [Inhibition of gamma-aminobutyric acid…, Zhonghua er bi yan hou tou… (2008) | pd | 5 |  | [18666699](https://www.ncbi.nlm.nih.gov/pubmed/18666699) | metadata signals extractable PD data (EC50) |
 | `Barhouchi_2017.pdf` | Barhouchi B et al., Preparations based on minerals extracts…, Journal de mycologie medica… (2017) | pd | 4 | [10.1016/j.mycmed.2017.02.003](https://doi.org/10.1016/j.mycmed.2017.02.003) | [28286025](https://www.ncbi.nlm.nih.gov/pubmed/28286025) | metadata signals extractable PD data (IC50) |
 | `Bujdáková_1993.pdf` | Bujdáková H et al., Anti-Candida activity of four antifunga…, FEMS microbiology letters (1993) | pd | 4 | [10.1111/j.1574-6968.1993.tb06471.x](https://doi.org/10.1111/j.1574-6968.1993.tb06471.x) | [8224799](https://www.ncbi.nlm.nih.gov/pubmed/8224799) | metadata signals extractable PD data (IC50) |
 | `Cascaes_2021.pdf` | Cascaes MM et al., Flavonoids, antioxidant potential and a…, Natural product research (2021) | pd | 4 | [10.1080/14786419.2019.1629912](https://doi.org/10.1080/14786419.2019.1629912) | [31526144](https://www.ncbi.nlm.nih.gov/pubmed/31526144) | metadata signals extractable PD data (IC50) |
@@ -80,14 +80,14 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Harata_1996.pdf` | Harata N et al., Two components of metabotropic glutamat…, Brain research (1996) | pd | 4 | [10.1016/0006-8993(95)01406-3](https://doi.org/10.1016/0006-8993(95)01406-3) | [8680866](https://www.ncbi.nlm.nih.gov/pubmed/8680866) | metadata signals extractable PD data (EC50) |
 | `Munakata_1998.pdf` | Munakata M et al., Characterization of electrogenic Na/K p…, Brain research (1998) | pd | 4 | [10.1016/s0006-8993(98)00533-2](https://doi.org/10.1016/s0006-8993(98)00533-2) | [9685682](https://www.ncbi.nlm.nih.gov/pubmed/9685682) | metadata signals extractable PD data (EC50) |
 | `Paxman_2017.pdf` | Paxman J et al., Drunken Membranes: Short-Chain Alcohols…, Biophysical journal (2017) | pd | 4 | [10.1016/j.bpj.2016.11.3205](https://doi.org/10.1016/j.bpj.2016.11.3205) | [28076803](https://www.ncbi.nlm.nih.gov/pubmed/28076803) | metadata signals extractable PD data (IC50) |
-| `Seki_2002.pdf` | Seki M, [Hydrocortisone inhibits nicotinic acet…, Fukuoka igaku zasshi = Huku… (2002) | pd | 4 | not captured | [11968738](https://www.ncbi.nlm.nih.gov/pubmed/11968738) | metadata signals extractable PD data (EC50) |
+| `Seki_2002.pdf` | Seki M, [Hydrocortisone inhibits nicotinic acet…, Fukuoka igaku zasshi = Huku… (2002) | pd | 4 |  | [11968738](https://www.ncbi.nlm.nih.gov/pubmed/11968738) | metadata signals extractable PD data (EC50) |
 | `Semplicini_1989.pdf` | Semplicini A et al., Kinetics and stoichiometry of the human…, The Journal of membrane bio… (1989) | pd | 4 | [10.1007/BF01871937](https://doi.org/10.1007/BF01871937) | [2541250](https://www.ncbi.nlm.nih.gov/pubmed/2541250) | metadata signals extractable PD data (sigmoid) |
-| `Shibata_2001.pdf` | Shibata K et al., [Excitatory effect of noradrenaline on…, Fukuoka igaku zasshi = Huku… (2001) | pd | 4 | not captured | [11774707](https://www.ncbi.nlm.nih.gov/pubmed/11774707) | metadata signals extractable PD data (EC50) |
-| `Shimura_1999.pdf` | Shimura M et al., Na+,K+-ATPase activity in cultured bovi…, Investigative ophthalmology… (1999) | pd | 4 | not captured | [9888432](https://www.ncbi.nlm.nih.gov/pubmed/9888432) | metadata signals extractable PD data (EC50) |
+| `Shibata_2001.pdf` | Shibata K et al., [Excitatory effect of noradrenaline on…, Fukuoka igaku zasshi = Huku… (2001) | pd | 4 |  | [11774707](https://www.ncbi.nlm.nih.gov/pubmed/11774707) | metadata signals extractable PD data (EC50) |
+| `Shimura_1999.pdf` | Shimura M et al., Na+,K+-ATPase activity in cultured bovi…, Investigative ophthalmology… (1999) | pd | 4 |  | [9888432](https://www.ncbi.nlm.nih.gov/pubmed/9888432) | metadata signals extractable PD data (EC50) |
 | `Spinelli_1993.pdf` | Spinelli W et al., Cellular electrophysiology of WAY-123,3…, Cardiovascular research (1993) | pd | 4 | [10.1093/cvr/27.9.1580](https://doi.org/10.1093/cvr/27.9.1580) | [8287434](https://www.ncbi.nlm.nih.gov/pubmed/8287434) | metadata signals extractable PD data (IC50) |
 | `Tang_2005.pdf` | Tang G et al., Direct stimulation of K(ATP) channels b…, Molecular pharmacology (2005) | pd | 4 | [10.1124/mol.105.017467](https://doi.org/10.1124/mol.105.017467) | [16150926](https://www.ncbi.nlm.nih.gov/pubmed/16150926) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-04T18:23:13.026038+00:00</sub>
+<sub>queue written 2026-10-04 18:23 UTC</sub>
 
 ## Screened and excluded
 
@@ -304,5 +304,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnystatin%5D&body=Drug%3A%20nystatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nystatin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

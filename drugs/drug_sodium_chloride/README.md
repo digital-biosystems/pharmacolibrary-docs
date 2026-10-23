@@ -73,7 +73,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2796 matched, 416 returned
 - **screened:** 25  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -82,8 +82,8 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Thews_1990.pdf` | Thews O et al., A comprehensive model of the dynamic ex…, Medical progress through te… (1990) | popPK | 8 | not captured | [2146479](https://pubmed.ncbi.nlm.nih.gov/2146479) | The paper describes a compartmental pharmacokinetic model for chloride (part of sodium chloride) in humans during hemodialysis, but no specific numeric parameter values are provided in the evidence. |
-| `Blednov_1990.pdf` | Blednov IuA et al., [Interactions of GABA and Cl ionophore-…, Biulleten' eksperimental'no… (1990) | pd | 5 | not captured | [2167136](https://www.ncbi.nlm.nih.gov/pubmed/2167136) | metadata signals extractable PD data (IC50) |
+| `Thews_1990.pdf` | Thews O et al., A comprehensive model of the dynamic ex…, Medical progress through te… (1990) | popPK | 8 |  | [2146479](https://pubmed.ncbi.nlm.nih.gov/2146479) | The paper describes a compartmental pharmacokinetic model for chloride (part of sodium chloride) in humans during hemodialysis, but no specific numeric parameter values are provided in the evidence. |
+| `Blednov_1990.pdf` | Blednov IuA et al., [Interactions of GABA and Cl ionophore-…, Biulleten' eksperimental'no… (1990) | pd | 5 |  | [2167136](https://www.ncbi.nlm.nih.gov/pubmed/2167136) | metadata signals extractable PD data (IC50) |
 | `Chou_1993.pdf` | Chou CC et al., Separation of pH, dilution, ionic stren…, Journal of bioluminescence… (1993) | pd | 5 | [10.1002/bio.1170080108](https://doi.org/10.1002/bio.1170080108) | [8475782](https://www.ncbi.nlm.nih.gov/pubmed/8475782) | metadata signals extractable PD data (EC50) |
 | `Dailianis_2023.pdf` | Dailianis S et al., Different isoforms of parabens into mar…, The Science of the total en… (2023) | pd | 5 | [10.1016/j.scitotenv.2023.165902](https://doi.org/10.1016/j.scitotenv.2023.165902) | [37524175](https://www.ncbi.nlm.nih.gov/pubmed/37524175) | metadata signals extractable PD data (EC50) |
 | `Fang_2025.pdf` | Fang Z et al., Combined toxicity of polyethylene micro…, Journal of hazardous materi… (2025) | pd | 5 | [10.1016/j.jhazmat.2025.138843](https://doi.org/10.1016/j.jhazmat.2025.138843) | [40499421](https://www.ncbi.nlm.nih.gov/pubmed/40499421) | metadata signals extractable PD data (EC50) |
@@ -100,13 +100,13 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Dehghan_2025.pdf` | Dehghan R et al., Effect of solution type and volume toxi…, Journal of water and health (2025) | pd | 4 | [10.2166/wh.2025.295](https://doi.org/10.2166/wh.2025.295) | [41312979](https://www.ncbi.nlm.nih.gov/pubmed/41312979) | metadata signals extractable PD data (EC50) |
 | `Dongmulati_2024.pdf` | Dongmulati N et al., Comparative extraction of antioxidant p…, Analytical methods : advanc… (2024) | pd | 4 | [10.1039/d4ay01636j](https://doi.org/10.1039/d4ay01636j) | [39564664](https://www.ncbi.nlm.nih.gov/pubmed/39564664) | metadata signals extractable PD data (IC50) |
 | `Ehrlich_1991.pdf` | Ehrlich HJ et al., Functional interaction of plasminogen a…, Biochemistry (1991) | pd | 4 | [10.1021/bi00218a020](https://doi.org/10.1021/bi00218a020) | [1703436](https://www.ncbi.nlm.nih.gov/pubmed/1703436) | metadata signals extractable PD data (IC50) |
-| `Gerstin_1992.pdf` | Gerstin EH et al., Heparin, dextran and trypan blue allost…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1281880](https://www.ncbi.nlm.nih.gov/pubmed/1281880) | metadata signals extractable PD data (EC50) |
+| `Gerstin_1992.pdf` | Gerstin EH et al., Heparin, dextran and trypan blue allost…, The Journal of pharmacology… (1992) | pd | 4 |  | [1281880](https://www.ncbi.nlm.nih.gov/pubmed/1281880) | metadata signals extractable PD data (EC50) |
 | `Griffith_1994.pdf` | Griffith DA et al., Characterization of a sodium-dependent…, The Biochemical journal (1994) | pd | 4 | [10.1042/bj3030901](https://doi.org/10.1042/bj3030901) | [7980460](https://www.ncbi.nlm.nih.gov/pubmed/7980460) | metadata signals extractable PD data (sigmoid) |
 | `Gu_2026.pdf` | Gu Y et al., Porcine bone-derived umami-enhancing pe…, Food chemistry (2026) | pd | 4 | [10.1016/j.foodchem.2026.148848](https://doi.org/10.1016/j.foodchem.2026.148848) | [41830891](https://www.ncbi.nlm.nih.gov/pubmed/41830891) | metadata signals extractable PD data (sigmoid) |
 | `Jeng_1995.pdf` | Jeng AY et al., Mouse macrophage metalloelastase expres…, Journal of biochemistry (1995) | pd | 4 | [10.1093/oxfordjournals.jbchem.a124713](https://doi.org/10.1093/oxfordjournals.jbchem.a124713) | [7775392](https://www.ncbi.nlm.nih.gov/pubmed/7775392) | metadata signals extractable PD data (IC50) |
 | `Kamarudheen_2021.pdf` | Kamarudheen N et al., Unraveling a natural protease inhibitor…, Microbiological research (2021) | pd | 4 | [10.1016/j.micres.2021.126858](https://doi.org/10.1016/j.micres.2021.126858) | [34509708](https://www.ncbi.nlm.nih.gov/pubmed/34509708) | metadata signals extractable PD data (EC50) |
 | `Karstoft_1994.pdf` | Karstoft J et al., Effects of vasoconstrictors on rabbit c…, Investigative radiology (1994) | pd | 4 | [10.1097/00004424-199412000-00001](https://doi.org/10.1097/00004424-199412000-00001) | [7721541](https://www.ncbi.nlm.nih.gov/pubmed/7721541) | metadata signals extractable PD data (Emax) |
-| `Lorenzen_1993.pdf` | Lorenzen A et al., Measurement of guanine nucleotide-bindi…, Molecular pharmacology (1993) | pd | 4 | not captured | [8341267](https://www.ncbi.nlm.nih.gov/pubmed/8341267) | metadata signals extractable PD data (EC50) |
+| `Lorenzen_1993.pdf` | Lorenzen A et al., Measurement of guanine nucleotide-bindi…, Molecular pharmacology (1993) | pd | 4 |  | [8341267](https://www.ncbi.nlm.nih.gov/pubmed/8341267) | metadata signals extractable PD data (EC50) |
 | `Masuda_1995.pdf` | Masuda K et al., Pharmacological activity of the C-termi…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb15892.x](https://doi.org/10.1111/j.1476-5381.1995.tb15892.x) | [7582515](https://www.ncbi.nlm.nih.gov/pubmed/7582515) | metadata signals extractable PD data (IC50) |
 | `May_1985.pdf` | May JM et al., Binding of agonists and antagonists to…, Naunyn-Schmiedeberg's archi… (1985) | pd | 4 | [10.1007/BF00500814](https://doi.org/10.1007/BF00500814) | [2869414](https://www.ncbi.nlm.nih.gov/pubmed/2869414) | metadata signals extractable PD data (EC50) |
 | `McPhee_1995.pdf` | McPhee I et al., Identification, characterization and re…, The Biochemical journal (1995) | pd | 4 | [10.1042/bj3100965](https://doi.org/10.1042/bj3100965) | [7575434](https://www.ncbi.nlm.nih.gov/pubmed/7575434) | metadata signals extractable PD data (IC50) |
@@ -117,17 +117,17 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Rodionova_2019.pdf` | Rodionova IA et al., A Riboflavin Transporter in Bdellovibri…, Journal of molecular microb… (2019) | pd | 4 | [10.1159/000501354](https://doi.org/10.1159/000501354) | [31509826](https://www.ncbi.nlm.nih.gov/pubmed/31509826) | metadata signals extractable PD data (EC50) |
 | `Souness_1993.pdf` | Souness JE et al., Stereospecificity of rolipram actions o…, The Biochemical journal (1993) | pd | 4 | [10.1042/bj2910389](https://doi.org/10.1042/bj2910389) | [8387267](https://www.ncbi.nlm.nih.gov/pubmed/8387267) | metadata signals extractable PD data (IC50) |
 | `Venmarath_2024.pdf` | Venmarath A et al., Extraction optimization, partial purifi…, International journal of bi… (2024) | pd | 4 | [10.1016/j.ijbiomac.2024.133462](https://doi.org/10.1016/j.ijbiomac.2024.133462) | [38942403](https://www.ncbi.nlm.nih.gov/pubmed/38942403) | metadata signals extractable PD data (EC50) |
-| `Watanabe_1990.pdf` | Watanabe K et al., The effect of sodium intake on ventricu…, Journal of cardiovascular p… (1990) | pd | 4 | not captured | [1706039](https://www.ncbi.nlm.nih.gov/pubmed/1706039) | metadata signals extractable PD data (Emax) |
+| `Watanabe_1990.pdf` | Watanabe K et al., The effect of sodium intake on ventricu…, Journal of cardiovascular p… (1990) | pd | 4 |  | [1706039](https://www.ncbi.nlm.nih.gov/pubmed/1706039) | metadata signals extractable PD data (Emax) |
 | `Zhang_2016.pdf` | Zhang Z et al., Structural characterization, α-glucosid…, Carbohydrate polymers (2016) | pd | 4 | [10.1016/j.carbpol.2016.02.030](https://doi.org/10.1016/j.carbpol.2016.02.030) | [27083799](https://www.ncbi.nlm.nih.gov/pubmed/27083799) | metadata signals extractable PD data (EC50) |
 | `Zhao_2024.pdf` | Zhao Y et al., Characterisation and skin protection ac…, Natural product research (2024) | pd | 4 | [10.1080/14786419.2023.2280791](https://doi.org/10.1080/14786419.2023.2280791) | [37971904](https://www.ncbi.nlm.nih.gov/pubmed/37971904) | metadata signals extractable PD data (IC50) |
-| `Zozulia_1986.pdf` | Zozulia AA et al., [Interaction of thymosin fraction 3 wit…, Biulleten' eksperimental'no… (1986) | pd | 4 | not captured | [3006826](https://www.ncbi.nlm.nih.gov/pubmed/3006826) | metadata signals extractable PD data (EC50) |
+| `Zozulia_1986.pdf` | Zozulia AA et al., [Interaction of thymosin fraction 3 wit…, Biulleten' eksperimental'no… (1986) | pd | 4 |  | [3006826](https://www.ncbi.nlm.nih.gov/pubmed/3006826) | metadata signals extractable PD data (EC50) |
 | `de-Carvalho_2022.pdf` | de-Carvalho RR et al., Evaluation of the developmental toxicit…, Journal of toxicology and e… (2022) | pd | 4 | [10.1080/15287394.2022.2089413](https://doi.org/10.1080/15287394.2022.2089413) | [35723169](https://www.ncbi.nlm.nih.gov/pubmed/35723169) | metadata signals extractable PD data (EC50) |
 | `Brochard_2009.pdf` | Brochard K et al., Phenotype-genotype correlation in anten…, Nephrology, dialysis, trans… (2009) | pgx | 8 | [10.1093/ndt/gfn689](https://doi.org/10.1093/ndt/gfn689) | [19096086](https://www.ncbi.nlm.nih.gov/pubmed/19096086) | metadata signals extractable PGX data (SLC12A1, PK/PD-context) |
-| `Otterness_1987.pdf` | Otterness DM et al., Mouse thiopurine methyltransferase phar…, The Journal of pharmacology… (1987) | pgx | 8 | not captured | [3668849](https://www.ncbi.nlm.nih.gov/pubmed/3668849) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
+| `Otterness_1987.pdf` | Otterness DM et al., Mouse thiopurine methyltransferase phar…, The Journal of pharmacology… (1987) | pgx | 8 |  | [3668849](https://www.ncbi.nlm.nih.gov/pubmed/3668849) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
 | `Li_2021.pdf` | Li S et al., Effects of paeoniflorin on the activiti…, Xenobiotica; the fate of fo… (2021) | pgx | 7 | [10.1080/00498254.2017.1404659](https://doi.org/10.1080/00498254.2017.1404659) | [29160125](https://www.ncbi.nlm.nih.gov/pubmed/29160125) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Zhang_2014.pdf` | Zhang XF et al., Effects of triptolide on the pharmacoki…, Chinese journal of integrat… (2014) | pgx | 7 | [10.1007/s11655-014-1710-0](https://doi.org/10.1007/s11655-014-1710-0) | [24420925](https://www.ncbi.nlm.nih.gov/pubmed/24420925) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T17:21:34.397204+00:00</sub>
+<sub>queue written 2026-10-07 17:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -602,5 +602,5 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_chloride%5D&body=Drug%3A%20sodium_chloride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_chloride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

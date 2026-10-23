@@ -115,7 +115,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 65 matched, 40 returned
 - **screened:** 7  ·  **relevant:** 6
-- **records:** 6  ·  extracted 2  ·  needs_review 1  ·  rejected 3  ·  stale 1
+- **records:** 6  ·  extracted 2  ·  needs review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -124,9 +124,9 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Calvo_1979.pdf` | Calvo MV et al., Pharmacokinetics of naproxen in healthy…, International journal of cl… (1979) | popPK | 10 | not captured | [528094](https://pubmed.ncbi.nlm.nih.gov/528094) | The evidence explicitly reports quantitative two-compartment pharmacokinetic parameters (Ka, alpha, beta, K12, K21, K13) for naproxen in humans. |
+| `Calvo_1979.pdf` | Calvo MV et al., Pharmacokinetics of naproxen in healthy…, International journal of cl… (1979) | popPK | 10 |  | [528094](https://pubmed.ncbi.nlm.nih.gov/528094) | The evidence explicitly reports quantitative two-compartment pharmacokinetic parameters (Ka, alpha, beta, K12, K21, K13) for naproxen in humans. |
 | `Li_2017.pdf` | Li X et al., Modeling Sex Differences in Pharmacokin…, Drug metabolism and disposi… (2017) | popPK | 10 | [10.1124/dmd.116.074526](https://doi.org/10.1124/dmd.116.074526) | [28246127](https://pubmed.ncbi.nlm.nih.gov/28246127) | The paper describes a PBPK model for naproxen in rats and reports qualitative findings (e.g., reduced clearances) but does not contain the specific numeric parameter values in the provided text. |
-| `Soma_1995.pdf` | Soma LR et al., Plasma and synovial fluid kinetics, dis…, American journal of veterin… (1995) | popPK | 10 | not captured | [8533980](https://pubmed.ncbi.nlm.nih.gov/8533980) | The paper reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-lives) for naproxen in horses directly in the abstract. |
+| `Soma_1995.pdf` | Soma LR et al., Plasma and synovial fluid kinetics, dis…, American journal of veterin… (1995) | popPK | 10 |  | [8533980](https://pubmed.ncbi.nlm.nih.gov/8533980) | The paper reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-lives) for naproxen in horses directly in the abstract. |
 | `Välitalo_2012.pdf` | Välitalo P et al., Plasma and cerebrospinal fluid pharmaco…, Journal of clinical pharmac… (2012) | popPK | 10 | [10.1177/0091270011418658](https://doi.org/10.1177/0091270011418658) | [22067196](https://pubmed.ncbi.nlm.nih.gov/22067196) | The abstract explicitly provides quantitative values for CL/F and Vss/F from a population PK model of naproxen in children. |
 | `Balap_2017.pdf` | Balap A et al., Herb-drug interaction of Andrographis p…, Journal of ethnopharmacology (2017) | popPK | 9 | [10.1016/j.jep.2016.11.022](https://doi.org/10.1016/j.jep.2016.11.022) | [27847337](https://pubmed.ncbi.nlm.nih.gov/27847337) | The study is a pharmacokinetic study of naproxen in rats that reports parameters like CL and Vd, but the specific numeric values are not present in the provided evidence text. |
 | `Sahota_2014.pdf` | Sahota T et al., Model-based analysis of thromboxane B₂…, Toxicology and applied phar… (2014) | popPK | 9 | [10.1016/j.taap.2014.03.010](https://doi.org/10.1016/j.taap.2014.03.010) | [24667227](https://pubmed.ncbi.nlm.nih.gov/24667227) | The study is a population PK/PD analysis of naproxen in rats, but the specific numeric parameter values (CL, V, etc.) are described qualitatively (e.g., "one-compartmental model") without listing the actual estimates in the provided text. |
@@ -134,13 +134,13 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yellepeddi_2018.pdf` | Yellepeddi VK et al., Penetration and pharmacokinetics of non…, The Prostate (2018) | popPK | 8 | [10.1002/pros.23447](https://doi.org/10.1002/pros.23447) | [29105796](https://pubmed.ncbi.nlm.nih.gov/29105796) | The study is a pharmacokinetic investigation in rats that includes naproxen, but the extracted evidence only provides specific AUC values for celecoxib and lacks the specific numeric PK parameters (CL, V, half-life) for naproxen. |
 | `Li_2017_2.pdf` | Li X et al., Effect of Disease-Related Changes in Pl…, Drug metabolism and disposi… (2017) | popPK | 7 | [10.1124/dmd.116.074500](https://doi.org/10.1124/dmd.116.074500) | [28246126](https://pubmed.ncbi.nlm.nih.gov/28246126) | The study describes a PK model for naproxen in rats, but no numeric parameter values are present in the provided text. |
 | `Satterwhite_1995.pdf` | Satterwhite JH et al., Effects of age on the pharmacodynamics…, Experimental gerontology (1995) | popPK | 7 | [10.1016/0531-5565(95)00012-6](https://doi.org/10.1016/0531-5565(95)00012-6) | [8557098](https://pubmed.ncbi.nlm.nih.gov/8557098) | The study reports pharmacokinetic parameters (clearance, volume of distribution) for naproxen in rats, but the specific numeric values are not present in the provided text. |
-| `Josa_2001.pdf` | Josa M et al., Pharmacokinetic/pharmacodynamic modelin…, The Journal of pharmacology… (2001) | popPK | 6 | not captured | [11259545](https://pubmed.ncbi.nlm.nih.gov/11259545) | The study focuses on PK/PD modeling for efficacy (antipyretic/anti-inflammatory) and reports IC50 values, but does not provide numeric values for standard disposition parameters like clearance, volume, or half-life in the provided text. |
-| `Marzo_1998.pdf` | Marzo A et al., Bioavailability, food effect and tolera…, Arzneimittel-Forschung (1998) | popPK | 6 | not captured | [9793622](https://pubmed.ncbi.nlm.nih.gov/9793622) | The study reports non-compartmental pharmacokinetic parameters (Cmax, Cmin, AUC) for naproxen in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Josa_2001.pdf` | Josa M et al., Pharmacokinetic/pharmacodynamic modelin…, The Journal of pharmacology… (2001) | popPK | 6 |  | [11259545](https://pubmed.ncbi.nlm.nih.gov/11259545) | The study focuses on PK/PD modeling for efficacy (antipyretic/anti-inflammatory) and reports IC50 values, but does not provide numeric values for standard disposition parameters like clearance, volume, or half-life in the provided text. |
+| `Marzo_1998.pdf` | Marzo A et al., Bioavailability, food effect and tolera…, Arzneimittel-Forschung (1998) | popPK | 6 |  | [9793622](https://pubmed.ncbi.nlm.nih.gov/9793622) | The study reports non-compartmental pharmacokinetic parameters (Cmax, Cmin, AUC) for naproxen in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Huntjens_2010.pdf` | Huntjens DR et al., Impact of chronic inflammation on the p…, European journal of pain (L… (2010) | popPK | 5 | [10.1016/j.ejpain.2009.05.017](https://doi.org/10.1016/j.ejpain.2009.05.017) | [19679500](https://pubmed.ncbi.nlm.nih.gov/19679500) | The study models naproxen PK in rats, but the provided evidence only lists PD potency (IC50) values, lacking explicit numeric disposition parameters like clearance or volume. |
 | `Loisios-Konstantinidis_2020.pdf` | Loisios-Konstantinidis I et al., Establishing virtual bioequivalence and…, European journal of pharmac… (2020) | popPK | 5 | [10.1016/j.ejps.2019.105170](https://doi.org/10.1016/j.ejps.2019.105170) | [31783158](https://pubmed.ncbi.nlm.nih.gov/31783158) | The paper describes a physiologically-based population PK (popPBPK) modeling study for naproxen, but the specific quantitative parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text, only implied within the model validation or simulation context. |
 | `Nielsen-Kudsk_1981.pdf` | Nielsen-Kudsk F, Pharmacokinetic analysis and calculatio…, International journal of bi… (1981) | popPK | 5 | [10.1016/0020-7101(81)90028-3](https://doi.org/10.1016/0020-7101(81)90028-3) | [7239706](https://pubmed.ncbi.nlm.nih.gov/7239706) | The paper describes a PK program using naproxen as a demonstration case, but no specific numeric parameter values are provided in the evidence. |
 
-<sub>queue written 2026-10-07T08:21:07.661742+00:00</sub>
+<sub>queue written 2026-10-07 08:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -182,5 +182,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 08:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaproxen%5D&body=Drug%3A%20naproxen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naproxen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:21 UTC</sub>

@@ -33,20 +33,18 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer/substrate | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor/substrate | DrugBank actor |
 | distribution | placenta | `ABCB1` inducer/substrate, `SLC22A3` inhibitor/substrate | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor/substrate | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | testis | `ABCB1` inducer/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor, `SLC22A7` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `FMO3` substrate, `SLC22A1` inhibitor/substrate, `SLC22A7` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCB1` inducer/substrate, `SLC22A2` inhibitor/substrate, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` inducer/substrate, `SLC22A2` inhibitor/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCB1` inducer/substrate, `ABCB11` inhibitor, `SLC47A1` inhibitor/substrate | DrugBank actor |
 | — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
 
@@ -70,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1048 matched, 221 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -79,7 +77,7 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Katrukha_1986.pdf` | Katrukha SP et al., [Cimetidine pharmacokinetics], Farmakologiia i toksikologi… (1986) | popPK | 10 | not captured | [3770173](https://pubmed.ncbi.nlm.nih.gov/3770173) | The evidence explicitly lists quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance, bioavailability) for cimetidine in patients. |
+| `Katrukha_1986.pdf` | Katrukha SP et al., [Cimetidine pharmacokinetics], Farmakologiia i toksikologi… (1986) | popPK | 10 |  | [3770173](https://pubmed.ncbi.nlm.nih.gov/3770173) | The evidence explicitly lists quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance, bioavailability) for cimetidine in patients. |
 | `Smyth_1990.pdf` | Smyth GB et al., Pharmacokinetic studies of cimetidine h…, Equine veterinary journal (1990) | popPK | 10 | [10.1111/j.2042-3306.1990.tb04206.x](https://doi.org/10.1111/j.2042-3306.1990.tb04206.x) | [2298190](https://pubmed.ncbi.nlm.nih.gov/2298190) | The study reports quantitative pharmacokinetic parameters (CL, Vss, Vc, half-lives) for cimetidine in horses, with all numeric values explicitly provided in the abstract. |
 | `Suttle_1992.pdf` | Suttle AB et al., Use of a pharmacokinetic model incorpor…, Pharmaceutical research (1992) | popPK | 8 | [10.1023/a:1015890918883](https://doi.org/10.1023/a:1015890918883) | [1614968](https://pubmed.ncbi.nlm.nih.gov/1614968) | The study fits cimetidine data to a PK model and reports obtaining realistic parameters, but the specific numeric values are not present in the provided evidence text. |
 | `Emami_1986.pdf` | Emami S et al., Desensitization by histamine of H2 rece…, Agents and actions (1986) | pd | 5 | [10.1007/BF01988002](https://doi.org/10.1007/BF01988002) | [2942011](https://www.ncbi.nlm.nih.gov/pubmed/2942011) | metadata signals extractable PD data (EC50) |
@@ -99,18 +97,18 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Larsson_1984.pdf` | Larsson H et al., Effects of omeprazole and cimetidine on…, Digestion (1984) | pd | 4 | [10.1159/000199002](https://doi.org/10.1159/000199002) | [6327439](https://www.ncbi.nlm.nih.gov/pubmed/6327439) | metadata signals extractable PD data (EC50) |
 | `Lo_1987.pdf` | Lo WW et al., Histamine stimulates inositol phosphate…, Biochemical and biophysical… (1987) | pd | 4 | [10.1016/0006-291x(87)91074-6](https://doi.org/10.1016/0006-291x(87)91074-6) | [3675593](https://www.ncbi.nlm.nih.gov/pubmed/3675593) | metadata signals extractable PD data (EC50) |
 | `Mishra_1994.pdf` | Mishra Y et al., In-vitro interaction between H2 antagon…, The Journal of pharmacy and… (1994) | pd | 4 | [10.1111/j.2042-7158.1994.tb03779.x](https://doi.org/10.1111/j.2042-7158.1994.tb03779.x) | [7913133](https://www.ncbi.nlm.nih.gov/pubmed/7913133) | metadata signals extractable PD data (EC50) |
-| `Sanchis_1993.pdf` | Sanchis Closa A et al., Lack of effect of cimetidine on furosem…, International journal of cl… (1993) | pd | 4 | not captured | [8225696](https://www.ncbi.nlm.nih.gov/pubmed/8225696) | metadata signals extractable PD data (Emax) |
+| `Sanchis_1993.pdf` | Sanchis Closa A et al., Lack of effect of cimetidine on furosem…, International journal of cl… (1993) | pd | 4 |  | [8225696](https://www.ncbi.nlm.nih.gov/pubmed/8225696) | metadata signals extractable PD data (Emax) |
 | `Westerveld_1995.pdf` | Westerveld GJ et al., Anti-oxidant actions of oxymethazoline…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0922-4106(95)90185-x](https://doi.org/10.1016/0922-4106(95)90185-x) | [8549644](https://www.ncbi.nlm.nih.gov/pubmed/8549644) | metadata signals extractable PD data (IC50) |
 | `Arnold_1997.pdf` | Arnold GL et al., Dextromethorphan in nonketotic hypergly…, Journal of inherited metabo… (1997) | pgx | 8 | [10.1023/A:1005301321635](https://doi.org/10.1023/A:1005301321635) | [9061564](https://www.ncbi.nlm.nih.gov/pubmed/9061564) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Furuta_2001.pdf` | Furuta S et al., Inhibition of drug metabolism in human…, Xenobiotica; the fate of fo… (2001) | pgx | 7 | [10.1080/00498250110035615](https://doi.org/10.1080/00498250110035615) | [11334262](https://www.ncbi.nlm.nih.gov/pubmed/11334262) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Hanioka_1998.pdf` | Hanioka N et al., In vitro biotransformation of atrazine…, Chemico-biological interact… (1998) | pgx | 7 | [10.1016/s0009-2797(98)00086-6](https://doi.org/10.1016/s0009-2797(98)00086-6) | [9920461](https://www.ncbi.nlm.nih.gov/pubmed/9920461) | metadata signals extractable PGX data (CYP2B1, PK/PD-context) |
 | `Hirota_2001.pdf` | Hirota N et al., In vitro/in vivo scaling of alprazolam…, Biopharmaceutics & drug dis… (2001) | pgx | 7 | [10.1002/bdd.261](https://doi.org/10.1002/bdd.261) | [11745908](https://www.ncbi.nlm.nih.gov/pubmed/11745908) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 | not captured | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
+| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 |  | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Rao_2007.pdf` | Rao N, The clinical pharmacokinetics of escita…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746040-00002](https://doi.org/10.2165/00003088-200746040-00002) | [17375980](https://www.ncbi.nlm.nih.gov/pubmed/17375980) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-04T10:23:08.621194+00:00</sub>
+<sub>queue written 2026-10-04 10:23 UTC</sub>
 
 ## Screened and excluded
 
@@ -346,5 +344,5 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcimetidine%5D&body=Drug%3A%20cimetidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cimetidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -52,7 +52,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 810 matched, 124 returned
 - **screened:** 5  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -66,7 +66,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Jahnel_1992.pdf` | Jahnel U et al., Electrophysiologic and inotropic effect…, Naunyn-Schmiedeberg's archi… (1992) | pd | 4 | [10.1007/BF00167575](https://doi.org/10.1007/BF00167575) | [1328895](https://www.ncbi.nlm.nih.gov/pubmed/1328895) | metadata signals extractable PD data (EC50) |
 | `Love_1999.pdf` | Love JA et al., Veratridine-stimulated amylase secretio…, Pancreas (1999) | pd | 4 | [10.1097/00006676-199910000-00003](https://doi.org/10.1097/00006676-199910000-00003) | [10505753](https://www.ncbi.nlm.nih.gov/pubmed/10505753) | metadata signals extractable PD data (EC50) |
 | `Lønning_1995.pdf` | Lønning K et al., The bovine central adrenomedullary vein…, Acta physiologica Scandinav… (1995) | pd | 4 | [10.1111/j.1748-1716.1995.tb09991.x](https://doi.org/10.1111/j.1748-1716.1995.tb09991.x) | [8719261](https://www.ncbi.nlm.nih.gov/pubmed/8719261) | metadata signals extractable PD data (EC50) |
-| `Musso_1989.pdf` | Musso MJ et al., [Renal vasodilator effect of parathormo…, Archives des maladies du co… (1989) | pd | 4 | not captured | [2510651](https://www.ncbi.nlm.nih.gov/pubmed/2510651) | metadata signals extractable PD data (EC50) |
+| `Musso_1989.pdf` | Musso MJ et al., [Renal vasodilator effect of parathormo…, Archives des maladies du co… (1989) | pd | 4 |  | [2510651](https://www.ncbi.nlm.nih.gov/pubmed/2510651) | metadata signals extractable PD data (EC50) |
 | `Nörenberg_1997.pdf` | Nörenberg W et al., Subtype determination of soma-dendritic…, Naunyn-Schmiedeberg's archi… (1997) | pd | 4 | [10.1007/pl00005036](https://doi.org/10.1007/pl00005036) | [9272720](https://www.ncbi.nlm.nih.gov/pubmed/9272720) | metadata signals extractable PD data (IC50) |
 | `Ong_1992.pdf` | Ong J et al., Actions of thienyl analogs of baclofen…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90189-b](https://doi.org/10.1016/0014-2999(92)90189-b) | [1330601](https://www.ncbi.nlm.nih.gov/pubmed/1330601) | metadata signals extractable PD data (EC50) |
 | `Patil_2007.pdf` | Patil PN, The classical competitive antagonism of…, Autonomic & autacoid pharma… (2007) | pd | 4 | [10.1111/j.1474-8673.2006.00386.x](https://doi.org/10.1111/j.1474-8673.2006.00386.x) | [17199878](https://www.ncbi.nlm.nih.gov/pubmed/17199878) | metadata signals extractable PD data (IC50) |
@@ -74,11 +74,11 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Scheibner_2001.pdf` | Scheibner J et al., Alpha2-adrenoceptors modulating neurona…, British journal of pharmaco… (2001) | pd | 4 | [10.1038/sj.bjp.0703882](https://doi.org/10.1038/sj.bjp.0703882) | [11181434](https://www.ncbi.nlm.nih.gov/pubmed/11181434) | metadata signals extractable PD data (EC50) |
 | `Sharif_1994.pdf` | Sharif SI, Dopamine contracts the rat isolated sem…, Pharmacology (1994) | pd | 4 | [10.1159/000139196](https://doi.org/10.1159/000139196) | [7912441](https://www.ncbi.nlm.nih.gov/pubmed/7912441) | metadata signals extractable PD data (EC50) |
 | `Vázquez_1999.pdf` | Vázquez SM et al., Alpha2-adrenergic effect on human breas…, Breast cancer research and… (1999) | pd | 4 | [10.1023/a:1006196308001](https://doi.org/10.1023/a:1006196308001) | [10472778](https://www.ncbi.nlm.nih.gov/pubmed/10472778) | metadata signals extractable PD data (EC50) |
-| `Wang_1993.pdf` | Wang YX et al., Functional integrity of the central and…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [7682612](https://www.ncbi.nlm.nih.gov/pubmed/7682612) | metadata signals extractable PD data (Emax) |
-| `Wang_2009.pdf` | Wang M et al., [Pharmacological characteristics of con…, Yao xue xue bao = Acta phar… (2009) | pd | 4 | not captured | [19618721](https://www.ncbi.nlm.nih.gov/pubmed/19618721) | metadata signals extractable PD data (EC50) |
+| `Wang_1993.pdf` | Wang YX et al., Functional integrity of the central and…, The Journal of pharmacology… (1993) | pd | 4 |  | [7682612](https://www.ncbi.nlm.nih.gov/pubmed/7682612) | metadata signals extractable PD data (Emax) |
+| `Wang_2009.pdf` | Wang M et al., [Pharmacological characteristics of con…, Yao xue xue bao = Acta phar… (2009) | pd | 4 |  | [19618721](https://www.ncbi.nlm.nih.gov/pubmed/19618721) | metadata signals extractable PD data (EC50) |
 | `Xu_2020.pdf` | Xu G et al., Molecular and pharmacological character…, Insect biochemistry and mol… (2020) | pd | 4 | [10.1016/j.ibmb.2020.103337](https://doi.org/10.1016/j.ibmb.2020.103337) | [32109588](https://www.ncbi.nlm.nih.gov/pubmed/32109588) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T20:24:33.841459+00:00</sub>
+<sub>queue written 2026-10-06 20:24 UTC</sub>
 
 ## Screened and excluded
 
@@ -258,5 +258,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphentolamine%5D&body=Drug%3A%20phentolamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phentolamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

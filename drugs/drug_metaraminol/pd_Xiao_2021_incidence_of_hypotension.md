@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;metaraminol&quot;,&quot;href&quot;:&quot;drugs/drug_metaraminol/&quot;},{&quot;label&quot;:&quot;Xiao_2021 \u00b7 PD incidence of hypotension&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# incidence of hypotension — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.333), einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
+# incidence of hypotension — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -43,21 +43,17 @@ Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmaco
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `ollama:gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
-| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 2.00 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 0.64 |  | only_one_extracted |
 | `ollama:gpt-oss:120b` | `driver_compound` | metaraminol | metaraminol infusion rate | mismatch |
 | `ollama:gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
 | `ollama:gpt-oss:120b` | `parameters[Q100]` | 2.00 |  | only_one_extracted |
@@ -94,4 +90,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetaraminol%5D%20pd_Xiao_2021_incidence_of_hypotension&body=Drug%3A%20metaraminol%0ARecord%3A%20pd_Xiao_2021_incidence_of_hypotension%0APaper%3A%20Xiao_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metaraminol/pd_Xiao_2021_incidence_of_hypotension%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [metaraminol](drugs/drug_metaraminol/)</sub>

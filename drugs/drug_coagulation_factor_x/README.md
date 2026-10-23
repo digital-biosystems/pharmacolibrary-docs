@@ -4,7 +4,7 @@
 
 - **generic name:** coagulation factor X
 - **ATC codes:** `B02BD13`
-- **DrugBank:** [DB13148](https://go.drugbank.com/drugs/DB13148) · **PubChem:** not captured
+- **DrugBank:** [DB13148](https://go.drugbank.com/drugs/DB13148) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -35,7 +35,7 @@ _not available_
 
 - **PubMed hits:** 251 matched, 132 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -45,17 +45,17 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Sarode_2020.pdf` | Sarode R et al., Pharmacometric modeling to explore 4F-P…, Blood advances (2020) | popPK | 9 | [10.1182/bloodadvances.2020002267](https://doi.org/10.1182/bloodadvances.2020002267) | [32898246](https://pubmed.ncbi.nlm.nih.gov/32898246) | The paper describes a pharmacometric model for Factor X (FX) levels following 4F-PCC dosing, but specific numeric PK parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
-| `Koppelman_1995.pdf` | Koppelman SJ et al., Inhibition of the intrinsic factor X ac…, Blood (1995) | pd | 5 | not captured | [7620160](https://www.ncbi.nlm.nih.gov/pubmed/7620160) | metadata signals extractable PD data (IC50) |
+| `Koppelman_1995.pdf` | Koppelman SJ et al., Inhibition of the intrinsic factor X ac…, Blood (1995) | pd | 5 |  | [7620160](https://www.ncbi.nlm.nih.gov/pubmed/7620160) | metadata signals extractable PD data (IC50) |
 | `Leclerc_1995.pdf` | Leclerc NE et al., Inhibitors of phosphodiesterase (pentox…, Journal of cardiovascular p… (1995) | pd | 5 | [10.1097/00005344-199500252-00019](https://doi.org/10.1097/00005344-199500252-00019) | [8699870](https://www.ncbi.nlm.nih.gov/pubmed/8699870) | metadata signals extractable PD data (EC50) |
 | `Song_2014.pdf` | Song S et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2014) | pd | 5 | [10.1002/jcph.306](https://doi.org/10.1002/jcph.306) | [24706516](https://www.ncbi.nlm.nih.gov/pubmed/24706516) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Ueshima_2019.pdf` | Ueshima S et al., Population Pharmacokinetics and Pharmac…, The AAPS journal (2019) | pd | 5 | [10.1208/s12248-019-0353-7](https://doi.org/10.1208/s12248-019-0353-7) | [31236790](https://www.ncbi.nlm.nih.gov/pubmed/31236790) | metadata signals extractable PD data (IC50) |
 | `Zou_2025.pdf` | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | pd | 5 | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) | [39526427](https://www.ncbi.nlm.nih.gov/pubmed/39526427) | metadata signals extractable PD data (PK-PD) |
-| `Barrow_1994.pdf` | Barrow RT et al., Inhibition by heparin of the human bloo…, The Journal of biological c… (1994) | pd | 4 | not captured | [7929416](https://www.ncbi.nlm.nih.gov/pubmed/7929416) | metadata signals extractable PD data (IC50) |
+| `Barrow_1994.pdf` | Barrow RT et al., Inhibition by heparin of the human bloo…, The Journal of biological c… (1994) | pd | 4 |  | [7929416](https://www.ncbi.nlm.nih.gov/pubmed/7929416) | metadata signals extractable PD data (IC50) |
 | `Brinkman_1994.pdf` | Brinkman HJ et al., The activation of human blood coagulati…, British journal of haematol… (1994) | pd | 4 | [10.1111/j.1365-2141.1994.tb04918.x](https://doi.org/10.1111/j.1365-2141.1994.tb04918.x) | [7947276](https://www.ncbi.nlm.nih.gov/pubmed/7947276) | metadata signals extractable PD data (IC50) |
 | `Dennis_2001.pdf` | Dennis MS et al., Selection and characterization of a new…, Biochemistry (2001) | pd | 4 | [10.1021/bi010591l](https://doi.org/10.1021/bi010591l) | [11583150](https://www.ncbi.nlm.nih.gov/pubmed/11583150) | metadata signals extractable PD data (IC50) |
 | `Dockal_2014.pdf` | Dockal M et al., Small peptides blocking inhibition of f…, The Journal of biological c… (2014) | pd | 4 | [10.1074/jbc.M113.533836](https://doi.org/10.1074/jbc.M113.533836) | [24275667](https://www.ncbi.nlm.nih.gov/pubmed/24275667) | metadata signals extractable PD data (EC50) |
 | `Hawthorne_1994.pdf` | Hawthorne TR et al., Isolation and characterization of recom…, Journal of biotechnology (1994) | pd | 4 | [10.1016/0168-1656(94)90049-3](https://doi.org/10.1016/0168-1656(94)90049-3) | [7765233](https://www.ncbi.nlm.nih.gov/pubmed/7765233) | metadata signals extractable PD data (IC50) |
-| `Jesty_1990.pdf` | Jesty J, Analysis of the generation and inhibiti…, The Journal of biological c… (1990) | pd | 4 | not captured | [2211647](https://www.ncbi.nlm.nih.gov/pubmed/2211647) | metadata signals extractable PD data (Emax) |
+| `Jesty_1990.pdf` | Jesty J, Analysis of the generation and inhibiti…, The Journal of biological c… (1990) | pd | 4 |  | [2211647](https://www.ncbi.nlm.nih.gov/pubmed/2211647) | metadata signals extractable PD data (Emax) |
 | `London_1996.pdf` | London F et al., Annexin V inhibition of factor IXa-cata…, Biochemistry (1996) | pd | 4 | [10.1021/bi960712v](https://doi.org/10.1021/bi960712v) | [8988028](https://www.ncbi.nlm.nih.gov/pubmed/8988028) | metadata signals extractable PD data (IC50) |
 | `Mathur_1997.pdf` | Mathur A et al., Interaction of factor IXa with factor V…, The Journal of biological c… (1997) | pd | 4 | [10.1074/jbc.272.37.23418](https://doi.org/10.1074/jbc.272.37.23418) | [9287357](https://www.ncbi.nlm.nih.gov/pubmed/9287357) | metadata signals extractable PD data (EC50) |
 | `Orning_1998.pdf` | Orning L et al., A peptide sequence from mouse tissue fa…, Thrombosis research (1998) | pd | 4 | [10.1016/s0049-3848(98)00119-4](https://doi.org/10.1016/s0049-3848(98)00119-4) | [9806365](https://www.ncbi.nlm.nih.gov/pubmed/9806365) | metadata signals extractable PD data (IC50) |
@@ -66,7 +66,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Gegu_2013.pdf` | Gegu M et al., [General characteristics of the new ora…, Geriatrie et psychologie ne… (2013) | pgx | 7 | [10.1684/pnv.2013.0446](https://doi.org/10.1684/pnv.2013.0446) | [24463058](https://www.ncbi.nlm.nih.gov/pubmed/24463058) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Scholz_2021.pdf` | Scholz I et al., Effects of Hypericum perforatum (St Joh…, British journal of clinical… (2021) | pgx | 7 | [10.1111/bcp.14553](https://doi.org/10.1111/bcp.14553) | [32959922](https://www.ncbi.nlm.nih.gov/pubmed/32959922) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T18:50:48.659193+00:00</sub>
+<sub>queue written 2026-10-05 18:50 UTC</sub>
 
 ## Screened and excluded
 
@@ -225,5 +225,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcoagulation_factor_x%5D&body=Drug%3A%20coagulation_factor_x%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_coagulation_factor_x/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

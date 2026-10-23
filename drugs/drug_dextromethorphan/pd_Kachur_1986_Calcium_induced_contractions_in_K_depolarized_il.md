@@ -66,4 +66,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdextromethorphan%5D%20pd_Kachur_1986_Calcium_induced_contractions_in_K_depolarized_il&body=Drug%3A%20dextromethorphan%0ARecord%3A%20pd_Kachur_1986_Calcium_induced_contractions_in_K_depolarized_il%0APaper%3A%20Kachur_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dextromethorphan/pd_Kachur_1986_Calcium_induced_contractions_in_K_depolarized_il%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dextromethorphan](drugs/drug_dextromethorphan/)</sub>

@@ -89,7 +89,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4080 matched, 268 returned
 - **screened:** 45  ·  **relevant:** 7
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -105,12 +105,12 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lowe_1993.pdf` | Lowe NM et al., Studies of human zinc kinetics using th…, Clinical science (London, E… (1993) | popPK | 9 | [10.1042/cs0840113](https://doi.org/10.1042/cs0840113) | [8382129](https://pubmed.ncbi.nlm.nih.gov/8382129) | The paper reports quantitative compartmental kinetic parameters (pool sizes and fractional turnover rates) for zinc in humans using stable isotope tracing. |
 | `Crofton_1990.pdf` | Crofton RW et al., Zinc metabolism in celiac disease, The American journal of cli… (1990) | popPK | 8 | [10.1093/ajcn/52.2.379](https://doi.org/10.1093/ajcn/52.2.379) | [2375305](https://pubmed.ncbi.nlm.nih.gov/2375305) | The paper reports quantitative pharmacokinetic parameters (biological half-life and absorption percentage) for zinc in a human population using a compartmental model. |
 | `Pinna_2001.pdf` | Pinna K et al., Exchangeable zinc pool masses and turno…, The Journal of nutrition (2001) | popPK | 8 | [10.1093/jn/131.9.2288](https://doi.org/10.1093/jn/131.9.2288) | [11533268](https://pubmed.ncbi.nlm.nih.gov/11533268) | The study reports quantitative compartmental pharmacokinetic parameters (pool masses, turnover rates) for zinc in humans using stable isotope tracers. |
-| `Wastney_1988.pdf` | Wastney ME et al., Development and application of a model…, Progress in food & nutritio… (1988) | popPK | 7 | not captured | [3150858](https://pubmed.ncbi.nlm.nih.gov/3150858) | The paper describes a compartmental model of zinc metabolism but provides no quantitative parameter values in the abstract or extracted evidence. |
+| `Wastney_1988.pdf` | Wastney ME et al., Development and application of a model…, Progress in food & nutritio… (1988) | popPK | 7 |  | [3150858](https://pubmed.ncbi.nlm.nih.gov/3150858) | The paper describes a compartmental model of zinc metabolism but provides no quantitative parameter values in the abstract or extracted evidence. |
 | `Dunn_1989.pdf` | Dunn MA et al., Kinetics of zinc metabolism in the rat:…, The American journal of phy… (1989) | popPK | 6 | [10.1152/ajpendo.1989.256.3.E420](https://doi.org/10.1152/ajpendo.1989.256.3.E420) | [2538073](https://pubmed.ncbi.nlm.nih.gov/2538073) | The study describes compartmental pharmacokinetic models for zinc in rats, but no specific numeric parameter values (CL, V, etc.) are present in the provided text. |
 | `Guillard_1984.pdf` | Guillard O et al., Comparative pharmacokinetics of [65Zn]z…, Journal of pharmaceutical s… (1984) | popPK | 5 | [10.1002/jps.2600731139](https://doi.org/10.1002/jps.2600731139) | [6520772](https://pubmed.ncbi.nlm.nih.gov/6520772) | The paper describes a pharmacokinetic study with a two-compartment model for zinc in rabbits, but no specific numeric parameter values (CL, V, etc.) are provided in the evidence text. |
 | `Anderson_1999.pdf` | Anderson RS et al., Oyster metallothionein as an oxyradical…, Developmental and comparati… (1999) | pd | 5 | [10.1016/s0145-305x(99)00029-4](https://doi.org/10.1016/s0145-305x(99)00029-4) | [10512455](https://www.ncbi.nlm.nih.gov/pubmed/10512455) | metadata signals extractable PD data (EC50) |
 | `Chou_1993.pdf` | Chou CC et al., Separation of pH, dilution, ionic stren…, Journal of bioluminescence… (1993) | pd | 5 | [10.1002/bio.1170080108](https://doi.org/10.1002/bio.1170080108) | [8475782](https://www.ncbi.nlm.nih.gov/pubmed/8475782) | metadata signals extractable PD data (EC50) |
-| `Franklin_2002.pdf` | Franklin NM et al., Toxicity of metal mixtures to a tropica…, Environmental toxicology an… (2002) | pd | 5 | not captured | [12389921](https://www.ncbi.nlm.nih.gov/pubmed/12389921) | metadata signals extractable PD data (EC50) |
+| `Franklin_2002.pdf` | Franklin NM et al., Toxicity of metal mixtures to a tropica…, Environmental toxicology an… (2002) | pd | 5 |  | [12389921](https://www.ncbi.nlm.nih.gov/pubmed/12389921) | metadata signals extractable PD data (EC50) |
 | `Chiem_2015.pdf` | Chiem K et al., Inhibition of aminoglycoside 6'-N-acety…, Antimicrobial agents and ch… (2015) | pd | 4 | [10.1128/AAC.01106-15](https://doi.org/10.1128/AAC.01106-15) | [26169410](https://www.ncbi.nlm.nih.gov/pubmed/26169410) | metadata signals extractable PD data (IC50) |
 | `Daniel_1995.pdf` | Daniel H et al., Selective effect of zinc on uphill tran…, FASEB journal : official pu… (1995) | pd | 4 | [10.1096/fasebj.9.11.7649411](https://doi.org/10.1096/fasebj.9.11.7649411) | [7649411](https://www.ncbi.nlm.nih.gov/pubmed/7649411) | metadata signals extractable PD data (EC50) |
 | `Dong_1995.pdf` | Dong CJ et al., Zinc downmodulates thf GABAc receptor c…, Journal of neurophysiology (1995) | pd | 4 | [10.1152/jn.1995.73.2.916](https://doi.org/10.1152/jn.1995.73.2.916) | [7760150](https://www.ncbi.nlm.nih.gov/pubmed/7760150) | metadata signals extractable PD data (EC50) |
@@ -122,7 +122,7 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lin_2014.pdf` | Lin DL et al., Inhibition of aminoglycoside 6'-N-acety…, Antimicrobial agents and ch… (2014) | pd | 4 | [10.1128/AAC.00129-14](https://doi.org/10.1128/AAC.00129-14) | [24820083](https://www.ncbi.nlm.nih.gov/pubmed/24820083) | metadata signals extractable PD data (IC50) |
 | `Marcińczyk_2023.pdf` | Marcińczyk M et al., Ecotoxicological characteristics and pr…, Chemosphere (2023) | pd | 4 | [10.1016/j.chemosphere.2022.137690](https://doi.org/10.1016/j.chemosphere.2022.137690) | [36584820](https://www.ncbi.nlm.nih.gov/pubmed/36584820) | metadata signals extractable PD data (EC50) |
 | `Mugumbate_2013.pdf` | Mugumbate G et al., Novel anti-plasmodial hits identified b…, Journal of computer-aided m… (2013) | pd | 4 | [10.1007/s10822-013-9685-z](https://doi.org/10.1007/s10822-013-9685-z) | [24158745](https://www.ncbi.nlm.nih.gov/pubmed/24158745) | metadata signals extractable PD data (IC50) |
-| `Qin_2004.pdf` | Qin YW et al., Adsorption of zinc on manganite (gamma-…, Journal of environmental sc… (2004) | pd | 4 | not captured | [15495969](https://www.ncbi.nlm.nih.gov/pubmed/15495969) | metadata signals extractable PD data (concentrationeffect) |
+| `Qin_2004.pdf` | Qin YW et al., Adsorption of zinc on manganite (gamma-…, Journal of environmental sc… (2004) | pd | 4 |  | [15495969](https://www.ncbi.nlm.nih.gov/pubmed/15495969) | metadata signals extractable PD data (concentrationeffect) |
 | `Soudek_2010.pdf` | Soudek P et al., Effect of heavy metals on inhibition of…, Archives of environmental c… (2010) | pd | 4 | [10.1007/s00244-010-9480-y](https://doi.org/10.1007/s00244-010-9480-y) | [20174789](https://www.ncbi.nlm.nih.gov/pubmed/20174789) | metadata signals extractable PD data (EC50) |
 | `Spurgeon_1994.pdf` | Spurgeon DJ et al., Effects of cadmium, copper, lead and zi…, Environmental pollution (Ba… (1994) | pd | 4 | [10.1016/0269-7491(94)90094-9](https://doi.org/10.1016/0269-7491(94)90094-9) | [15091707](https://www.ncbi.nlm.nih.gov/pubmed/15091707) | metadata signals extractable PD data (EC50) |
 | `Steele_1989.pdf` | Steele JE et al., The N-methyl-D-aspartate receptor compl…, Brain research (1989) | pd | 4 | [10.1016/0006-8993(89)90333-8](https://doi.org/10.1016/0006-8993(89)90333-8) | [2557962](https://www.ncbi.nlm.nih.gov/pubmed/2557962) | metadata signals extractable PD data (IC50) |
@@ -134,7 +134,7 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Liang_1992.pdf` | Liang HC et al., "Oxidative stress" response in liver of…, Biochemical and biophysical… (1992) | pgx | 5 | [10.1016/0006-291x(92)91853-i](https://doi.org/10.1016/0006-291x(92)91853-i) | [1540161](https://www.ncbi.nlm.nih.gov/pubmed/1540161) | metadata signals extractable PGX data (CYP1A1) |
 | `Lu_2026.pdf` | Lu MY et al., Impact of SNP Variants in PON-1 or UGT1…, Biological trace element re… (2026) | pgx | 5 | [10.1007/s12011-025-04823-7](https://doi.org/10.1007/s12011-025-04823-7) | [40986213](https://www.ncbi.nlm.nih.gov/pubmed/40986213) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-10-07T14:34:41.739796+00:00</sub>
+<sub>queue written 2026-10-07 14:34 UTC</sub>
 
 ## Screened and excluded
 
@@ -395,5 +395,5 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 14:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzinc_preparations%5D&body=Drug%3A%20zinc_preparations%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zinc_preparations/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 14:28 UTC</sub>

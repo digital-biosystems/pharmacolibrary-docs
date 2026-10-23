@@ -59,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 221 matched, 84 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -71,15 +71,15 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Hochhaus_1992_2.pdf` | Hochhaus G et al., Pharmacokinetic/dynamic correlation of…, Pharmaceutical research (1992) | popPK | 10 | [10.1023/a:1015839430269](https://doi.org/10.1023/a:1015839430269) | [1614958](https://pubmed.ncbi.nlm.nih.gov/1614958) | The study reports quantitative PK parameters (half-life, Vss, CL, bioavailability) for fenoterol in humans within the text. |
 | `Warnke_1992.pdf` | Warnke K et al., The pharmacokinetics of the beta 2-adre…, European journal of clinica… (1992) | popPK | 10 | [10.1007/BF02284970](https://doi.org/10.1007/BF02284970) | [1493852](https://pubmed.ncbi.nlm.nih.gov/1493852) | The study reports quantitative disposition parameters (clearance, volume of distribution, and half-lives) for fenoterol in healthy women, with all numeric values present in the text. |
 | `Bouillon_1996.pdf` | Bouillon T et al., Concentration-effect relationship of th…, European journal of clinica… (1996) | popPK | 9 | [10.1007/s002280050177](https://doi.org/10.1007/s002280050177) | [8911881](https://pubmed.ncbi.nlm.nih.gov/8911881) | The study reports a linear two-compartment PK model for fenoterol, but the abstract provides specific numeric values only for pharmacodynamic parameters (heart rate, potassium), while the specific PK parameter estimates (CL, V, etc.) are described as "estimated" without explicit numerical listing in the provided text. |
-| `Schmidt_1998.pdf` | Schmidt EW, Pharmacokinetics of beta2-sympathomimet…, Wiadomosci lekarskie (Warsa… (1998) | popPK | 5 | not captured | [9608824](https://pubmed.ncbi.nlm.nih.gov/9608824) | The paper describes a three-compartmental model and qualitative PK concepts for fenoterol, but the provided evidence contains no specific numeric parameter values (CL, V, t1/2, ka). |
+| `Schmidt_1998.pdf` | Schmidt EW, Pharmacokinetics of beta2-sympathomimet…, Wiadomosci lekarskie (Warsa… (1998) | popPK | 5 |  | [9608824](https://pubmed.ncbi.nlm.nih.gov/9608824) | The paper describes a three-compartmental model and qualitative PK concepts for fenoterol, but the provided evidence contains no specific numeric parameter values (CL, V, t1/2, ka). |
 | `Boulton_1996.pdf` | Boulton DW et al., Enantioselective disposition of albuter…, Clinical reviews in allergy… (1996) | pd | 5 | [10.1007/BF02772207](https://doi.org/10.1007/BF02772207) | [8866176](https://www.ncbi.nlm.nih.gov/pubmed/8866176) | metadata signals extractable PD data (concentration-effect) |
 | `Advenier_1985.pdf` | Advenier C et al., The guinea-pig isolated bronchus for th…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb08905.x](https://doi.org/10.1111/j.1476-5381.1985.tb08905.x) | [4052734](https://www.ncbi.nlm.nih.gov/pubmed/4052734) | metadata signals extractable PD data (EC50) |
 | `Bremner_1996.pdf` | Bremner P et al., Partial vs full beta-receptor agonism.…, Chest (1996) | pd | 4 | [10.1378/chest.109.4.957](https://doi.org/10.1378/chest.109.4.957) | [8635377](https://www.ncbi.nlm.nih.gov/pubmed/8635377) | metadata signals extractable PD data (Emax) |
 | `Burgaud_1992.pdf` | Burgaud JL et al., Bronchodilator action of an agonist for…, Lung (1992) | pd | 4 | [10.1007/BF00175981](https://doi.org/10.1007/BF00175981) | [1323735](https://www.ncbi.nlm.nih.gov/pubmed/1323735) | metadata signals extractable PD data (Emax) |
 | `Henry_1990.pdf` | Henry PJ et al., Beta 1-adrenoceptors mediate smooth mus…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14666.x](https://doi.org/10.1111/j.1476-5381.1990.tb14666.x) | [2158831](https://www.ncbi.nlm.nih.gov/pubmed/2158831) | metadata signals extractable PD data (EC50) |
 | `Klukovits_2004.pdf` | Klukovits A et al., Beta 2-agonist treatment enhances uteri…, Molecular reproduction and… (2004) | pd | 4 | [10.1002/mrd.20158](https://doi.org/10.1002/mrd.20158) | [15278905](https://www.ncbi.nlm.nih.gov/pubmed/15278905) | metadata signals extractable PD data (EC50) |
-| `Krief_1994.pdf` | Krief S et al., Transcriptional modulation by n-butyric…, The Journal of biological c… (1994) | pd | 4 | not captured | [8120022](https://www.ncbi.nlm.nih.gov/pubmed/8120022) | metadata signals extractable PD data (EC50) |
-| `Naline_1994.pdf` | Naline E et al., Relaxant effects and durations of actio…, The European respiratory jo… (1994) | pd | 4 | not captured | [7914176](https://www.ncbi.nlm.nih.gov/pubmed/7914176) | metadata signals extractable PD data (EC50) |
+| `Krief_1994.pdf` | Krief S et al., Transcriptional modulation by n-butyric…, The Journal of biological c… (1994) | pd | 4 |  | [8120022](https://www.ncbi.nlm.nih.gov/pubmed/8120022) | metadata signals extractable PD data (EC50) |
+| `Naline_1994.pdf` | Naline E et al., Relaxant effects and durations of actio…, The European respiratory jo… (1994) | pd | 4 |  | [7914176](https://www.ncbi.nlm.nih.gov/pubmed/7914176) | metadata signals extractable PD data (EC50) |
 | `Nials_1993.pdf` | Nials AT et al., Effects of beta-adrenoceptor agonists i…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb13929.x](https://doi.org/10.1111/j.1476-5381.1993.tb13929.x) | [7905340](https://www.ncbi.nlm.nih.gov/pubmed/7905340) | metadata signals extractable PD data (EC50) |
 | `Rhoden_1994.pdf` | Rhoden KJ et al., Stimulation of GTP hydrolysis in guinea…, Lung (1994) | pd | 4 | [10.1007/BF00172849](https://doi.org/10.1007/BF00172849) | [7815828](https://www.ncbi.nlm.nih.gov/pubmed/7815828) | metadata signals extractable PD data (EC50) |
 | `Seldon_1998.pdf` | Seldon PM et al., Albuterol does not antagonize the inhib…, American journal of respira… (1998) | pd | 4 | [10.1164/ajrccm.157.3.9707116](https://doi.org/10.1164/ajrccm.157.3.9707116) | [9517594](https://www.ncbi.nlm.nih.gov/pubmed/9517594) | metadata signals extractable PD data (EC50) |
@@ -88,7 +88,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Gilibili_2026.pdf` | Gilibili RR et al., Investigating organic cation transporte…, Drug metabolism and disposi… (2026) | pgx | 8 | [10.1016/j.dmd.2025.100220](https://doi.org/10.1016/j.dmd.2025.100220) | [41529637](https://www.ncbi.nlm.nih.gov/pubmed/41529637) | metadata signals extractable PGX data (SLC22A1, PK/PD-context) |
 | `Morse_2020.pdf` | Morse BL et al., Pharmacokinetics of Organic Cation Tran…, Drug metabolism and disposi… (2020) | pgx | 8 | [10.1124/dmd.119.088781](https://doi.org/10.1124/dmd.119.088781) | [31771949](https://www.ncbi.nlm.nih.gov/pubmed/31771949) | metadata signals extractable PGX data (SLC22A1, PK/PD-context) |
 
-<sub>queue written 2026-10-07T08:23:44.922063+00:00</sub>
+<sub>queue written 2026-10-07 08:23 UTC</sub>
 
 ## Screened and excluded
 
@@ -137,5 +137,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 08:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfenoterol%5D&body=Drug%3A%20fenoterol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fenoterol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:23 UTC</sub>

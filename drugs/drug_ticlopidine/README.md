@@ -66,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 351 matched, 145 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -77,8 +77,8 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Onyeji_1999.pdf` | Onyeji CO et al., Pharmacokinetics of ticlopidine in the…, The Journal of pharmacy and… (1999) | popPK | 10 | [10.1211/0022357991772583](https://doi.org/10.1211/0022357991772583) | [10385210](https://pubmed.ncbi.nlm.nih.gov/10385210) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance) for ticlopidine in rabbits with specific numeric values provided in the text. |
 | `Knudsen_1992.pdf` | Knudsen JB et al., Pharmacokinetics of ticlopidine during…, Xenobiotica; the fate of fo… (1992) | popPK | 9 | [10.3109/00498259209053121](https://doi.org/10.3109/00498259209053121) | [1413873](https://pubmed.ncbi.nlm.nih.gov/1413873) | The study reports quantitative pharmacokinetic parameters (Cmax, AUC, half-life) for ticlopidine in humans, though specific clearance and volume values are not explicitly listed in the text. |
-| `Shah_1991.pdf` | Shah J et al., Single and multiple dose pharmacokineti…, British journal of clinical… (1991) | popPK | 9 | not captured | [1768571](https://pubmed.ncbi.nlm.nih.gov/1768571) | The study reports quantitative PK parameters (AUC, t1/2) for ticlopidine in humans, though specific clearance or volume values are not explicitly listed in the provided text. |
-| `Desager_1990.pdf` | Desager JP et al., Pharmacokinetic profile and bioavailabi…, International journal of cl… (1990) | popPK | 8 | not captured | [2079383](https://pubmed.ncbi.nlm.nih.gov/2079383) | The study reports a pharmacokinetic comparison of ticlopidine formulations in humans, but the specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided evidence, only the bioequivalence percentage. |
+| `Shah_1991.pdf` | Shah J et al., Single and multiple dose pharmacokineti…, British journal of clinical… (1991) | popPK | 9 |  | [1768571](https://pubmed.ncbi.nlm.nih.gov/1768571) | The study reports quantitative PK parameters (AUC, t1/2) for ticlopidine in humans, though specific clearance or volume values are not explicitly listed in the provided text. |
+| `Desager_1990.pdf` | Desager JP et al., Pharmacokinetic profile and bioavailabi…, International journal of cl… (1990) | popPK | 8 |  | [2079383](https://pubmed.ncbi.nlm.nih.gov/2079383) | The study reports a pharmacokinetic comparison of ticlopidine formulations in humans, but the specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided evidence, only the bioequivalence percentage. |
 | `Katashima_1999.pdf` | Katashima M et al., Analysis of antiplatelet effect of ticl…, Journal of pharmacokinetics… (1999) | popPK | 8 | [10.1023/a:1020995013200](https://doi.org/10.1023/a:1020995013200) | [10728490](https://pubmed.ncbi.nlm.nih.gov/10728490) | The paper reports a two-compartment PK model for ticlopidine in humans and provides specific numeric values for PD parameters (K, kr, ke) and platelet lifespan, but does not explicitly list the standard PK parameters (CL, V, ka) in the provided text. |
 | `Shah_1990.pdf` | Shah J et al., Effect of food and antacid on absorptio…, Journal of clinical pharmac… (1990) | popPK | 8 | [10.1002/j.1552-4604.1990.tb03635.x](https://doi.org/10.1002/j.1552-4604.1990.tb03635.x) | [2401752](https://pubmed.ncbi.nlm.nih.gov/2401752) | The study reports quantitative absorption parameters (Tmax, AUC) for ticlopidine in humans, but lacks explicit clearance or volume values. |
 | `Bansal_2022.pdf` | Bansal S et al., Comprehensive Predictions of Cytochrome…, Drug metabolism and disposi… (2022) | pd | 5 | [10.1124/dmd.121.000734](https://doi.org/10.1124/dmd.121.000734) | [35115300](https://www.ncbi.nlm.nih.gov/pubmed/35115300) | metadata signals extractable PD data (IC50) |
@@ -92,7 +92,7 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Casabar_2006.pdf` | Casabar RC et al., Metabolism of endosulfan-alpha by human…, Drug metabolism and disposi… (2006) | pgx | 7 | [10.1124/dmd.106.010199](https://doi.org/10.1124/dmd.106.010199) | [16855053](https://www.ncbi.nlm.nih.gov/pubmed/16855053) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Donahue_1999.pdf` | Donahue S et al., Ticlopidine inhibits phenytoin clearance, Clinical pharmacology and t… (1999) | pgx | 7 | [10.1053/cp.1999.v66.103277001](https://doi.org/10.1053/cp.1999.v66.103277001) | [10613611](https://www.ncbi.nlm.nih.gov/pubmed/10613611) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Kharasch_2013.pdf` | Kharasch ED et al., Role of cytochrome P4502B6 in methadone…, Journal of clinical pharmac… (2013) | pgx | 7 | [10.1002/jcph.1](https://doi.org/10.1002/jcph.1) | [23361846](https://www.ncbi.nlm.nih.gov/pubmed/23361846) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
-| `Mankowski_1999.pdf` | Mankowski DC, The role of CYP2C19 in the metabolism o…, Drug metabolism and disposi… (1999) | pgx | 7 | not captured | [10460802](https://www.ncbi.nlm.nih.gov/pubmed/10460802) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Mankowski_1999.pdf` | Mankowski DC, The role of CYP2C19 in the metabolism o…, Drug metabolism and disposi… (1999) | pgx | 7 |  | [10460802](https://www.ncbi.nlm.nih.gov/pubmed/10460802) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Nishihara_2019.pdf` | Nishihara M et al., In Vitro Assessment of Potential for CY…, European journal of drug me… (2019) | pgx | 7 | [10.1007/s13318-018-0521-7](https://doi.org/10.1007/s13318-018-0521-7) | [30361928](https://www.ncbi.nlm.nih.gov/pubmed/30361928) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Nishiya_2009.pdf` | Nishiya Y et al., Comparison of mechanism-based inhibitio…, Xenobiotica; the fate of fo… (2009) | pgx | 7 | [10.3109/00498250903191427](https://doi.org/10.3109/00498250903191427) | [19845434](https://www.ncbi.nlm.nih.gov/pubmed/19845434) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Paragas_2021.pdf` | Paragas EM et al., Complex Cytochrome P450 Kinetics Due to…, Drug metabolism and disposi… (2021) | pgx | 7 | [10.1124/dmd.121.000554](https://doi.org/10.1124/dmd.121.000554) | [34503953](https://www.ncbi.nlm.nih.gov/pubmed/34503953) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -104,7 +104,7 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Larsen_2015.pdf` | Larsen PD et al., Prevalence and significance of CYP2C19*…, Internal medicine journal (2015) | pgx | 5 | [10.1111/imj.12698](https://doi.org/10.1111/imj.12698) | [25583161](https://www.ncbi.nlm.nih.gov/pubmed/25583161) | metadata signals extractable PGX data (CYP2C19*2) |
 | `Maeda_2011.pdf` | Maeda A et al., Differential impacts of CYP2C19 gene po…, Clinical pharmacology and t… (2011) | pgx | 5 | [10.1038/clpt.2010.268](https://doi.org/10.1038/clpt.2010.268) | [21178986](https://www.ncbi.nlm.nih.gov/pubmed/21178986) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-05T16:43:36.576585+00:00</sub>
+<sub>queue written 2026-10-05 16:43 UTC</sub>
 
 ## Screened and excluded
 
@@ -278,5 +278,5 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-05 16:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bticlopidine%5D&body=Drug%3A%20ticlopidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ticlopidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 16:43 UTC</sub>

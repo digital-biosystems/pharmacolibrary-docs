@@ -65,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 224 matched, 152 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -74,18 +74,18 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lang_1979.pdf` | Lang A et al., [Determination and comparison of the pl…, Arzneimittel-Forschung (1979) | popPK | 8 | not captured | [582109](https://pubmed.ncbi.nlm.nih.gov/582109) | Human crossover PK study of tranylcypromine stereoisomers with plasma/urine disposition data, but no numeric parameter values appear in the evidence. |
+| `Lang_1979.pdf` | Lang A et al., [Determination and comparison of the pl…, Arzneimittel-Forschung (1979) | popPK | 8 |  | [582109](https://pubmed.ncbi.nlm.nih.gov/582109) | Human crossover PK study of tranylcypromine stereoisomers with plasma/urine disposition data, but no numeric parameter values appear in the evidence. |
 | `Mallinger_1986.pdf` | Mallinger AG et al., Pharmacokinetics of tranylcypromine in…, Clinical pharmacology and t… (1986) | popPK | 7 | [10.1038/clpt.1986.205](https://doi.org/10.1038/clpt.1986.205) | [3757407](https://pubmed.ncbi.nlm.nih.gov/3757407) | Human PK study of tranylcypromine with t1/2 and Tmax ranges reported in abstract, but no CL/V values and full parameter values likely in tables not provided. |
-| `Mallinger_1990.pdf` | Mallinger AG et al., Plasma tranylcypromine: relationship to…, Journal of clinical psychop… (1990) | popPK | 6 | not captured | [2376618](https://pubmed.ncbi.nlm.nih.gov/2376618) | Human PK study of tranylcypromine reporting t1/2, Vd, AUC, Tpeak, but numeric values are largely absent from the evidence (only example concentrations). |
+| `Mallinger_1990.pdf` | Mallinger AG et al., Plasma tranylcypromine: relationship to…, Journal of clinical psychop… (1990) | popPK | 6 |  | [2376618](https://pubmed.ncbi.nlm.nih.gov/2376618) | Human PK study of tranylcypromine reporting t1/2, Vd, AUC, Tpeak, but numeric values are largely absent from the evidence (only example concentrations). |
 | `Weber-Grandke_1993.pdf` | Weber-Grandke H et al., The pharmacokinetics of tranylcypromine…, British journal of clinical… (1993) | popPK | 6 | [10.1111/j.1365-2125.1993.tb00377.x](https://doi.org/10.1111/j.1365-2125.1993.tb00377.x) | [12959316](https://pubmed.ncbi.nlm.nih.gov/12959316) | Human PK study of tranylcypromine enantiomers with AUC, Cmax, lambda-z and renal clearance values reported in the abstract, though no CL/V compartmental parameters are given. |
 | `Dinger_2014.pdf` | Dinger J et al., Development of an in vitro cytochrome P…, Toxicology letters (2014) | pd | 4 | [10.1016/j.toxlet.2014.08.004](https://doi.org/10.1016/j.toxlet.2014.08.004) | [25111188](https://www.ncbi.nlm.nih.gov/pubmed/25111188) | metadata signals extractable PD data (IC50) |
 | `Finberg_1985.pdf` | Finberg JP et al., Reduced peripheral presynaptic adrenoce…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb16140.x](https://doi.org/10.1111/j.1476-5381.1985.tb16140.x) | [2985158](https://www.ncbi.nlm.nih.gov/pubmed/2985158) | metadata signals extractable PD data (EC50) |
 | `Glinka_1995.pdf` | Glinka YY et al., Inhibition of mitochondrial complexes I…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0926-6917(95)90040-3](https://doi.org/10.1016/0926-6917(95)90040-3) | [7796873](https://www.ncbi.nlm.nih.gov/pubmed/7796873) | metadata signals extractable PD data (IC50) |
 | `Gryglewski_1976.pdf` | Gryglewski RJ et al., Arterial walls are protected against de…, Prostaglandins (1976) | pd | 4 | [10.1016/0090-6980(76)90047-2](https://doi.org/10.1016/0090-6980(76)90047-2) | [824685](https://www.ncbi.nlm.nih.gov/pubmed/824685) | metadata signals extractable PD data (IC50) |
-| `Muramatsu_1988.pdf` | Muramatsu I et al., Distinctive actions of epidermal growth…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [3259262](https://www.ncbi.nlm.nih.gov/pubmed/3259262) | metadata signals extractable PD data (EC50) |
+| `Muramatsu_1988.pdf` | Muramatsu I et al., Distinctive actions of epidermal growth…, The Journal of pharmacology… (1988) | pd | 4 |  | [3259262](https://www.ncbi.nlm.nih.gov/pubmed/3259262) | metadata signals extractable PD data (EC50) |
 | `Murray_2016.pdf` | Murray J et al., Significant inhibitory impact of dibenz…, Fitoterapia (2016) | pd | 4 | [10.1016/j.fitote.2016.04.011](https://doi.org/10.1016/j.fitote.2016.04.011) | [27105957](https://www.ncbi.nlm.nih.gov/pubmed/27105957) | metadata signals extractable PD data (IC50) |
 | `Weaver_2003.pdf` | Weaver R et al., Cytochrome P450 inhibition using recomb…, Drug metabolism and disposi… (2003) | pd | 4 | [10.1124/dmd.31.7.955](https://doi.org/10.1124/dmd.31.7.955) | [12814974](https://www.ncbi.nlm.nih.gov/pubmed/12814974) | metadata signals extractable PD data (IC50) |
-| `Liu_2000.pdf` | Liu XQ et al., Enzyme kinetics and inhibition of nimod…, Acta pharmacologica Sinica (2000) | pgx | 8 | not captured | [11501176](https://www.ncbi.nlm.nih.gov/pubmed/11501176) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Liu_2000.pdf` | Liu XQ et al., Enzyme kinetics and inhibition of nimod…, Acta pharmacologica Sinica (2000) | pgx | 8 |  | [11501176](https://www.ncbi.nlm.nih.gov/pubmed/11501176) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Zi_2010.pdf` | Zi J et al., Effects of CYP2C9*3 and CYP2C9*13 on Di…, Drug metabolism and pharmac… (2010) | pgx | 8 | [10.2133/dmpk.dmpk-10-rg-009](https://doi.org/10.2133/dmpk.dmpk-10-rg-009) | [20814155](https://www.ncbi.nlm.nih.gov/pubmed/20814155) | metadata signals extractable PGX data (CYP2C9*3, PK/PD-context) |
 | `Polasek_2006.pdf` | Polasek TM et al., An evaluation of potential mechanism-ba…, British journal of clinical… (2006) | pgx | 7 | [10.1111/j.1365-2125.2006.02627.x](https://doi.org/10.1111/j.1365-2125.2006.02627.x) | [16669850](https://www.ncbi.nlm.nih.gov/pubmed/16669850) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Castrignanò_2014.pdf` | Castrignanò S et al., Electrochemical detection of human cyto…, Analytical chemistry (2014) | pgx | 5 | [10.1021/ac4041839](https://doi.org/10.1021/ac4041839) | [24527722](https://www.ncbi.nlm.nih.gov/pubmed/24527722) | metadata signals extractable PGX data (CYP2A6) |
@@ -94,7 +94,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sellers_2000.pdf` | Sellers EM et al., Mimicking gene defects to treat drug de…, Annals of the New York Acad… (2000) | pgx | 5 | [10.1111/j.1749-6632.2000.tb06685.x](https://doi.org/10.1111/j.1749-6632.2000.tb06685.x) | [10911933](https://www.ncbi.nlm.nih.gov/pubmed/10911933) | metadata signals extractable PGX data (CYP2D6*10) |
 | `Ueng_2011.pdf` | Ueng YF et al., Mechanism-based inhibition of cytochrom…, British journal of pharmaco… (2011) | pgx | 5 | [10.1111/j.1476-5381.2011.01341.x](https://doi.org/10.1111/j.1476-5381.2011.01341.x) | [21418183](https://www.ncbi.nlm.nih.gov/pubmed/21418183) | metadata signals extractable PGX data (CYP2A6) |
 
-<sub>queue written 2026-10-06T23:59:58.685263+00:00</sub>
+<sub>queue written 2026-10-06 23:59 UTC</sub>
 
 ## Screened and excluded
 
@@ -238,5 +238,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btranylcypromine%5D&body=Drug%3A%20tranylcypromine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tranylcypromine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -2,7 +2,7 @@
 - [Index](/)
 - [Ask the data](/query)
 - [Sites & interactions](/sites)
-- [How it is made](/pipeline)
+- [About this site](/pipeline)
 - [Extraction ledger](/ledger)
 - [Data & downloads](/data)
 - <span class="pk-sb-legend">(popPK/PD/PGx) extracted records, rejected ones not counted</span>

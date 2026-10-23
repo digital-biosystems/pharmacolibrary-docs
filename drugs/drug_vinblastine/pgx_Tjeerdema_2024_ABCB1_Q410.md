@@ -79,4 +79,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20pgx_Tjeerdema_2024_ABCB1_Q410&body=Drug%3A%20vinblastine%0ARecord%3A%20pgx_Tjeerdema_2024_ABCB1_Q410%0APaper%3A%20Tjeerdema_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/pgx_Tjeerdema_2024_ABCB1_Q410%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [vinblastine](drugs/drug_vinblastine/)</sub>

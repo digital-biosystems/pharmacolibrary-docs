@@ -72,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 80 matched, 54 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -83,19 +83,19 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Huitema_2001.pdf` | Huitema AD et al., Population pharmacokinetics of thioTEPA…, British journal of clinical… (2001) | popPK | 10 | [10.1046/j.1365-2125.2001.01301.x](https://doi.org/10.1046/j.1365-2125.2001.01301.x) | [11167666](https://pubmed.ncbi.nlm.nih.gov/11167666) | The abstract explicitly reports quantitative population PK parameters (CL, V, metabolite elimination) for thiotepa in human patients. |
 | `Huitema_2002.pdf` | Huitema AD et al., Relationship between exposure and toxic…, Annals of oncology : offici… (2002) | popPK | 10 | [10.1093/annonc/mdf052](https://doi.org/10.1093/annonc/mdf052) | [11996467](https://pubmed.ncbi.nlm.nih.gov/11996467) | The paper is a population pharmacokinetic study of thiotepa in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text excerpt. |
-| `Przepiorka_1995.pdf` | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | popPK | 10 | not captured | [7497586](https://pubmed.ncbi.nlm.nih.gov/7497586) | The abstract provides explicit numeric values for thiotepa's central volume (Vc), half-lives (alpha and beta), and plasma clearance derived from a two-compartment model. |
+| `Przepiorka_1995.pdf` | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | popPK | 10 |  | [7497586](https://pubmed.ncbi.nlm.nih.gov/7497586) | The abstract provides explicit numeric values for thiotepa's central volume (Vc), half-lives (alpha and beta), and plasma clearance derived from a two-compartment model. |
 | `de_2004.pdf` | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | popPK | 10 | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) | [15379382](https://pubmed.ncbi.nlm.nih.gov/15379382) | The abstract explicitly reports quantitative population PK parameters for thiotepa, including inducible clearance (12.4 l/hr), non-inducible clearance (17.0 l/hr), and enzyme elimination rate constant (0.0343 hr-1). |
 | `Ekhart_2009.pdf` | Ekhart C et al., Polymorphisms of drug-metabolizing enzy…, British journal of clinical… (2009) | pgx | 8 | [10.1111/j.1365-2125.2008.03321.x](https://doi.org/10.1111/j.1365-2125.2008.03321.x) | [19076156](https://www.ncbi.nlm.nih.gov/pubmed/19076156) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Li_2013.pdf` | Li Y et al., The CYP2B6*6 allele significantly alter…, Drug metabolism and disposi… (2013) | pgx | 8 | [10.1124/dmd.113.051631](https://doi.org/10.1124/dmd.113.051631) | [23550066](https://www.ncbi.nlm.nih.gov/pubmed/23550066) | metadata signals extractable PGX data (CYP2B6*6, PK/PD-context) |
 | `Rae_2002.pdf` | Rae JM et al., Triethylenethiophosphoramide is a speci…, Drug metabolism and disposi… (2002) | pgx | 7 | [10.1124/dmd.30.5.525](https://doi.org/10.1124/dmd.30.5.525) | [11950782](https://www.ncbi.nlm.nih.gov/pubmed/11950782) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
-| `Ramírez_2004.pdf` | Ramírez J et al., CYP2B6, CYP3A4, and CYP2C19 are respons…, Drug metabolism and disposi… (2004) | pgx | 7 | not captured | [15319333](https://www.ncbi.nlm.nih.gov/pubmed/15319333) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `Ramírez_2004.pdf` | Ramírez J et al., CYP2B6, CYP3A4, and CYP2C19 are respons…, Drug metabolism and disposi… (2004) | pgx | 7 |  | [15319333](https://www.ncbi.nlm.nih.gov/pubmed/15319333) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Richter_2005.pdf` | Richter T et al., Inhibition of human CYP2B6 by N,N',N''-…, Biochemical pharmacology (2005) | pgx | 7 | [10.1016/j.bcp.2004.10.008](https://doi.org/10.1016/j.bcp.2004.10.008) | [15652242](https://www.ncbi.nlm.nih.gov/pubmed/15652242) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Seo_2008.pdf` | Seo KA et al., The monoterpenoids citral and geraniol…, Chemico-biological interact… (2008) | pgx | 7 | [10.1016/j.cbi.2008.06.003](https://doi.org/10.1016/j.cbi.2008.06.003) | [18611395](https://www.ncbi.nlm.nih.gov/pubmed/18611395) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Ward_2003.pdf` | Ward BA et al., The cytochrome P450 2B6 (CYP2B6) is the…, The Journal of pharmacology… (2003) | pgx | 7 | [10.1124/jpet.103.049601](https://doi.org/10.1124/jpet.103.049601) | [12676886](https://www.ncbi.nlm.nih.gov/pubmed/12676886) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Ekhart_2008.pdf` | Ekhart C et al., Relations between polymorphisms in drug…, Pharmacogenetics and genomi… (2008) | pgx | 5 | [10.1097/FPC.0b013e328313aaa4](https://doi.org/10.1097/FPC.0b013e328313aaa4) | [18854779](https://www.ncbi.nlm.nih.gov/pubmed/18854779) | metadata signals extractable PGX data (CYP2B6) |
 | `Zhou_2018.pdf` | Zhou X et al., CYP1A1 genetic polymorphism is a promis…, Cancer chemotherapy and pha… (2018) | pgx | 5 | [10.1007/s00280-017-3500-9](https://doi.org/10.1007/s00280-017-3500-9) | [29242966](https://www.ncbi.nlm.nih.gov/pubmed/29242966) | metadata signals extractable PGX data (CYP1A1) |
 
-<sub>queue written 2026-10-07T16:31:56.466344+00:00</sub>
+<sub>queue written 2026-10-07 16:31 UTC</sub>
 
 ## Screened and excluded
 
@@ -143,5 +143,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 16:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiotepa%5D&body=Drug%3A%20thiotepa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiotepa/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:32 UTC</sub>

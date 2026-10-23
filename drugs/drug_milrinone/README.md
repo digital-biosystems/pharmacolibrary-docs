@@ -124,7 +124,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 297 matched, 111 returned
 - **screened:** 15  ·  **relevant:** 15
-- **records:** 17  ·  extracted 4  ·  needs_review 8  ·  rejected 5  ·  stale 1
+- **records:** 17  ·  extracted 4  ·  needs review 8  ·  rejected 5  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -137,7 +137,7 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bailey_2004.pdf` | Bailey JM et al., A population pharmacokinetic analysis o…, Journal of pharmacokinetics… (2004) | popPK | 10 | [10.1023/b:jopa.0000029488.45177.48](https://doi.org/10.1023/b:jopa.0000029488.45177.48) | [15346851](https://pubmed.ncbi.nlm.nih.gov/15346851) | The study reports quantitative population PK parameters (Vd and CL equation) for milrinone in pediatric patients. |
 | `Benotti_1985.pdf` | Benotti JR et al., Pharmacokinetics and pharmacodynamics o…, The American journal of car… (1985) | popPK | 10 | [10.1016/0002-9149(85)91036-7](https://doi.org/10.1016/0002-9149(85)91036-7) | [4050707](https://pubmed.ncbi.nlm.nih.gov/4050707) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for milrinone in humans, with values explicitly stated in the text. |
 | `Butterworth_1995.pdf` | Butterworth JF et al., A pharmacokinetic and pharmacodynamic e…, Anesthesia and analgesia (1995) | popPK | 10 | [10.1097/00000539-199510000-00022](https://doi.org/10.1097/00000539-199510000-00022) | [7574011](https://pubmed.ncbi.nlm.nih.gov/7574011) | The abstract explicitly reports quantitative three-compartment pharmacokinetic parameters (V1, V2, V3, Cl1, Cl2, Cl3) for milrinone in humans. |
-| `Edelson_1986.pdf` | Edelson J et al., Pharmacokinetics of the bipyridines amr…, Circulation (1986) | popPK | 10 | not captured | [3510771](https://pubmed.ncbi.nlm.nih.gov/3510771) | The abstract explicitly reports quantitative PK parameters (half-life, Vd, CL) for milrinone in human patients. |
+| `Edelson_1986.pdf` | Edelson J et al., Pharmacokinetics of the bipyridines amr…, Circulation (1986) | popPK | 10 |  | [3510771](https://pubmed.ncbi.nlm.nih.gov/3510771) | The abstract explicitly reports quantitative PK parameters (half-life, Vd, CL) for milrinone in human patients. |
 | `Giaccone_2017.pdf` | Giaccone A et al., Milrinone Pharmacokinetics and Pharmaco…, American journal of perinat… (2017) | popPK | 10 | [10.1055/s-0036-1597996](https://doi.org/10.1055/s-0036-1597996) | [28099979](https://pubmed.ncbi.nlm.nih.gov/28099979) | The study reports a quantitative population PK model for milrinone in neonates, with specific clearance values provided in the abstract. |
 | `Hornik_2019.pdf` | Hornik CP et al., Population Pharmacokinetics of Milrinon…, Journal of clinical pharmac… (2019) | popPK | 10 | [10.1002/jcph.1499](https://doi.org/10.1002/jcph.1499) | [31317556](https://pubmed.ncbi.nlm.nih.gov/31317556) | The paper reports a population pharmacokinetic model for milrinone in humans with explicit numeric values for clearance and volume of distribution parameters in the text. |
 | `Paradisis_2007.pdf` | Paradisis M et al., Population pharmacokinetics and dosing…, Archives of disease in chil… (2007) | popPK | 10 | [10.1136/adc.2005.092817](https://doi.org/10.1136/adc.2005.092817) | [16690639](https://pubmed.ncbi.nlm.nih.gov/16690639) | The abstract explicitly reports quantitative population PK parameters (clearance, volume of distribution, half-life) for milrinone in preterm infants. |
@@ -149,7 +149,7 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Hallik_2017.pdf` | Hallik M et al., Dosing of Milrinone in Preterm Neonates…, Neonatology (2017) | popPK | 8 | [10.1159/000447049](https://doi.org/10.1159/000447049) | [27490706](https://pubmed.ncbi.nlm.nih.gov/27490706) | The study is a simulation based on a population PK model for milrinone in neonates, but the specific numeric parameter values (CL, V) are cited from a previous study (Paradisis et al.) rather than reported as original data in this text. |
 | `Paradisis_2006.pdf` | Paradisis M et al., Pilot study of milrinone for low system…, The Journal of pediatrics (2006) | popPK | 8 | [10.1016/j.jpeds.2005.11.030](https://doi.org/10.1016/j.jpeds.2005.11.030) | [16615956](https://pubmed.ncbi.nlm.nih.gov/16615956) | The study explicitly uses population pharmacokinetic modeling for milrinone in infants, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract or evidence text. |
 
-<sub>queue written 2026-10-06T08:56:24.945173+00:00</sub>
+<sub>queue written 2026-10-06 08:56 UTC</sub>
 
 ## Screened and excluded
 
@@ -223,5 +223,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 08:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmilrinone%5D&body=Drug%3A%20milrinone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_milrinone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 08:57 UTC</sub>

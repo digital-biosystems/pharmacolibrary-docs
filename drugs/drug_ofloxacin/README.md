@@ -92,14 +92,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCC2` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
@@ -122,7 +121,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 62 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 8  ·  extracted 1  ·  needs_review 6  ·  rejected 1  ·  stale 0
+- **records:** 8  ·  extracted 1  ·  needs review 6  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -133,12 +132,12 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Lode_1988.pdf` | Lode H et al., Comparative pharmacokinetics of intrave…, The Journal of antimicrobia… (1988) | popPK | 10 | [10.1093/jac/22.supplement_c.73](https://doi.org/10.1093/jac/22.supplement_c.73) | [3182465](https://pubmed.ncbi.nlm.nih.gov/3182465) | The text provides specific quantitative PK parameters (volume of distribution, renal/extrarenal elimination percentages, half-life description) for ofloxacin in a three-compartment model, although full table values for CL and ka are not explicitly listed. |
 | `Stambaugh_2002.pdf` | Stambaugh JJ et al., Ofloxacin population pharmacokinetics i…, The international journal o… (2002) | popPK | 10 | [10.5588/09640569513011](https://doi.org/10.5588/09640569513011) | [12068983](https://pubmed.ncbi.nlm.nih.gov/12068983) | The paper reports on a population PK study of ofloxacin, but the provided abstract only contains qualitative descriptions (e.g., "concentrations increased linearly") and lacks specific numeric parameter values (CL, V, ka, etc.). |
-| `Zhuo_1994.pdf` | Zhuo HT et al., Pharmacokinetics of ofloxacin through t…, Zhongguo yao li xue bao = A… (1994) | popPK | 10 | not captured | [7717063](https://pubmed.ncbi.nlm.nih.gov/7717063) | The paper reports specific quantitative pharmacokinetic parameters (CL, V, T1/2, etc.) for ofloxacin in humans, and all numeric values are present in the evidence. |
+| `Zhuo_1994.pdf` | Zhuo HT et al., Pharmacokinetics of ofloxacin through t…, Zhongguo yao li xue bao = A… (1994) | popPK | 10 |  | [7717063](https://pubmed.ncbi.nlm.nih.gov/7717063) | The paper reports specific quantitative pharmacokinetic parameters (CL, V, T1/2, etc.) for ofloxacin in humans, and all numeric values are present in the evidence. |
 | `Nix_1997.pdf` | Nix DE et al., Pharmacodynamic modeling of the in vivo…, Antimicrobial agents and ch… (1997) | popPK | 9 | [10.1128/AAC.41.5.1108](https://doi.org/10.1128/AAC.41.5.1108) | [9145877](https://pubmed.ncbi.nlm.nih.gov/9145877) | The study reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for ofloxacin in healthy adults, with specific numeric values provided in the text. |
 | `Mukherjee_2025.pdf` | Mukherjee A et al., Pharmacokinetic-Pharmacodynamic (PK-PD)…, Indian journal of pediatrics (2025) | popPK | 7 | [10.1007/s12098-024-05135-9](https://doi.org/10.1007/s12098-024-05135-9) | [38802673](https://pubmed.ncbi.nlm.nih.gov/38802673) | The paper is a PK-PD study of ofloxacin in children, but the provided abstract contains no specific numeric PK parameter values (CL, V, ka, etc.) for ofloxacin, only qualitative descriptions of Cmax/AUC targets. |
-| `Lu_2000.pdf` | Lu Y et al., [Antituberculosis effect of levofloxaci…, Zhonghua jie he he hu xi za… (2000) | popPK | 6 | not captured | [11778184](https://pubmed.ncbi.nlm.nih.gov/11778184) | The study reports a one-compartment PK model for ofloxacin in humans, but the specific numeric parameter values are not provided in the extracted evidence. |
+| `Lu_2000.pdf` | Lu Y et al., [Antituberculosis effect of levofloxaci…, Zhonghua jie he he hu xi za… (2000) | popPK | 6 |  | [11778184](https://pubmed.ncbi.nlm.nih.gov/11778184) | The study reports a one-compartment PK model for ofloxacin in humans, but the specific numeric parameter values are not provided in the extracted evidence. |
 
-<sub>queue written 2026-10-07T11:38:33.749916+00:00</sub>
+<sub>queue written 2026-10-07 11:38 UTC</sub>
 
 ## Screened and excluded
 
@@ -164,5 +163,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bofloxacin%5D&body=Drug%3A%20ofloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ofloxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:38 UTC</sub>

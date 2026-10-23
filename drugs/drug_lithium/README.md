@@ -5,7 +5,7 @@
 
 - **generic name:** lithium
 - **ATC codes:** `N05AN01`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -146,7 +146,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1568 matched, 214 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 18  ·  extracted 5  ·  needs_review 8  ·  rejected 5  ·  stale 0
+- **records:** 18  ·  extracted 5  ·  needs review 8  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -156,19 +156,19 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Alqahtani_2020.pdf` | Alqahtani S et al., Estimation of lithium clearance in pati…, International clinical psyc… (2020) | popPK | 10 | [10.1097/YIC.0000000000000301](https://doi.org/10.1097/YIC.0000000000000301) | [31851034](https://pubmed.ncbi.nlm.nih.gov/31851034) | Population PK of lithium in bipolar patients with a two-compartment model, but the numeric CL/F, V1/F, V2/F, Q/F values are not shown in the evidence provided. |
-| `Jermain_1991.pdf` | Jermain DM et al., Population pharmacokinetics of lithium, Clinical pharmacy (1991) | popPK | 10 | not captured | [2049899](https://pubmed.ncbi.nlm.nih.gov/2049899) | Population PK (NONMEM) of lithium in psychiatric patients with numeric CL (1.36 L/hr) and V (32.8 L) reported directly in the abstract. |
+| `Jermain_1991.pdf` | Jermain DM et al., Population pharmacokinetics of lithium, Clinical pharmacy (1991) | popPK | 10 |  | [2049899](https://pubmed.ncbi.nlm.nih.gov/2049899) | Population PK (NONMEM) of lithium in psychiatric patients with numeric CL (1.36 L/hr) and V (32.8 L) reported directly in the abstract. |
 | `Pérez-Castelló_2016.pdf` | Pérez-Castelló I et al., Population pharmacokinetic model of lit…, European neuropsychopharmac… (2016) | popPK | 10 | [10.1016/j.euroneuro.2016.11.005](https://doi.org/10.1016/j.euroneuro.2016.11.005) | [27865605](https://pubmed.ncbi.nlm.nih.gov/27865605) | Population PK model of lithium with full parameter values (CL/F, V1/F, Q/F, V2/F) reported directly in the abstract. |
 | `Wing_1997.pdf` | Wing YK et al., Lithium pharmacokinetics in Chinese man…, Journal of clinical psychop… (1997) | popPK | 10 | [10.1097/00004714-199706000-00007](https://doi.org/10.1097/00004714-199706000-00007) | [9169962](https://pubmed.ncbi.nlm.nih.gov/9169962) | Population PK of lithium in patients with numeric Vss and CL values reported directly in the abstract. |
 | `Yamaguchi_2019.pdf` | Yamaguchi D et al., Population Pharmacokinetics and Exposur…, European journal of drug me… (2019) | popPK | 10 | [10.1007/s13318-018-0536-0](https://doi.org/10.1007/s13318-018-0536-0) | [30536114](https://pubmed.ncbi.nlm.nih.gov/30536114) | Population PK model of lithium in 214 patients, but numeric CL/V values are not shown in the abstract (likely in tables/supplement not provided). |
 | `Yu_2016.pdf` | Yu W et al., Population Pharmacokinetics of Lithium…, Pharmacopsychiatry (2016) | popPK | 10 | [10.1055/s-0042-103329](https://doi.org/10.1055/s-0042-103329) | [27124003](https://pubmed.ncbi.nlm.nih.gov/27124003) | Population PK two-compartment model in humans with full numeric parameters (CL/F, V2/F, Q/F, V3/F) reported in the abstract. |
-| `Kersten_1979.pdf` | Kersten L, [Pharmacokinetics of lithium in rats of…, Acta biologica et medica Ge… (1979) | popPK | 8 | not captured | [550669](https://pubmed.ncbi.nlm.nih.gov/550669) | Original rat PK study with two-compartment parameters (t1/2, Vd, rate constants, clearance) reported, but only half-lives appear numerically in the abstract; other values may be in the full text/tables not provided. |
+| `Kersten_1979.pdf` | Kersten L, [Pharmacokinetics of lithium in rats of…, Acta biologica et medica Ge… (1979) | popPK | 8 |  | [550669](https://pubmed.ncbi.nlm.nih.gov/550669) | Original rat PK study with two-compartment parameters (t1/2, Vd, rate constants, clearance) reported, but only half-lives appear numerically in the abstract; other values may be in the full text/tables not provided. |
 | `Millischer_2022.pdf` | Millischer V et al., Improving lithium dose prediction using…, The lancet. Psychiatry (2022) | popPK | 8 | [10.1016/S2215-0366(22)00100-6](https://doi.org/10.1016/S2215-0366(22)00100-6) | [35569502](https://pubmed.ncbi.nlm.nih.gov/35569502) | Population PK study of lithium clearance (CLLi) in humans, but the abstract only reports variance-explained R² values, not the actual CL parameter estimates, which likely reside in the full paper or supplementary material. |
 | `Rosenthal_1986.pdf` | Rosenthal RC et al., Pharmacokinetics of lithium in the dog, Journal of veterinary pharm… (1986) | popPK | 8 | [10.1111/j.1365-2885.1986.tb00015.x](https://doi.org/10.1111/j.1365-2885.1986.tb00015.x) | [3009841](https://pubmed.ncbi.nlm.nih.gov/3009841) | Original PK study in dogs with two-compartment model reporting t1/2, V'c, and bioavailability numerically, though CL and other parameters may be in the full text/tables not shown. |
 | `Yoshida_2018.pdf` | Yoshida K et al., Prediction Model of Serum Lithium Conce…, Pharmacopsychiatry (2018) | popPK | 8 | [10.1055/s-0043-116855](https://doi.org/10.1055/s-0043-116855) | [28768341](https://pubmed.ncbi.nlm.nih.gov/28768341) | Reports a 1-compartment PK model for lithium with numeric Li-CL, fixed V (0.79 L/kg), and ka (1.5/h) directly in the abstract. |
 | `Swann_1990.pdf` | Swann AC et al., Lithium distribution in mania: single-d…, Psychiatry research (1990) | popPK | 7 | [10.1016/0165-1781(90)90137-t](https://doi.org/10.1016/0165-1781(90)90137-t) | [2112261](https://pubmed.ncbi.nlm.nih.gov/2112261) | Human single-dose lithium three-compartment PK with rate constants, but numeric values are not present in the evidence text. |
 | `Methaneethorn_2018.pdf` | Methaneethorn J, Population Pharmacokinetic Analyses of…, European journal of drug me… (2018) | popPK | 6 | [10.1007/s13318-017-0421-2](https://doi.org/10.1007/s13318-017-0421-2) | [28555320](https://pubmed.ncbi.nlm.nih.gov/28555320) | A systematic review of population PK models of lithium with some numeric values (CL range 0.41–9.39 L/h, IIV 12.7–25.1%) in the abstract, but full parameter tables likely not included. |
 
-<sub>queue written 2026-10-06T16:25:21.294436+00:00</sub>
+<sub>queue written 2026-10-06 16:25 UTC</sub>
 
 ## Screened and excluded
 
@@ -333,5 +333,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 16:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D&body=Drug%3A%20lithium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 16:25 UTC</sub>

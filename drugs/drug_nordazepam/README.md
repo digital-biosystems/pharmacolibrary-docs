@@ -5,7 +5,7 @@
 
 - **generic name:** nordazepam
 - **ATC codes:** `N05BA16`
-- **DrugBank:** [DB14028](https://go.drugbank.com/drugs/DB14028) · **PubChem:** not captured
+- **DrugBank:** [DB14028](https://go.drugbank.com/drugs/DB14028) · **PubChem:** none
 - **molar mass:** 270.714 g/mol (C15H11ClN2O) — DrugBank
 - **groups:** investigational
 
@@ -86,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 77 matched, 74 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -97,15 +97,15 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Wilensky_1978.pdf` | Wilensky AJ et al., Clorazepate kinetics in treated epilept…, Clinical pharmacology and t… (1978) | popPK | 9 | [10.1002/cpt197824122](https://doi.org/10.1002/cpt197824122) | [26493](https://pubmed.ncbi.nlm.nih.gov/26493) | Nordazepam (desmethyldiazepam) is the measured analyte after clorazepate dosing, with full numeric PK parameters (t1/2, V/F, CL, two-compartment model) reported directly in the abstract. |
 | `Wang_2020_2.pdf` | Wang LL et al., An Experimental Pharmacokinetics Study…, Journal of analytical toxic… (2020) | popPK | 8 | [10.1093/jat/bkz101](https://doi.org/10.1093/jat/bkz101) | [31965188](https://pubmed.ncbi.nlm.nih.gov/31965188) | Nordazepam PK parameters (one-compartment model, k01_HL and k10_HL half-lives) are reported numerically in the abstract, measured in human oral fluid after diazepam dosing. |
-| `Yeates_1986.pdf` | Yeates RA et al., Preliminary study of the pharmacokineti…, Arzneimittel-Forschung (1986) | popPK | 8 | not captured | [3082341](https://pubmed.ncbi.nlm.nih.gov/3082341) | Nordazepam (desmethyldiazepam) PK in volunteers with half-lives and clearance ranges reported in the abstract; V and full model parameters not given. |
-| `Löscher_1981.pdf` | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | popPK | 7 | not captured | [7337498](https://pubmed.ncbi.nlm.nih.gov/7337498) | Nordazepam (desmethyldiazepam) is quantified as the active metabolite of diazepam in dogs, with an elimination half-life (3.6 hr) reported in the abstract, though no CL/V values are given. |
+| `Yeates_1986.pdf` | Yeates RA et al., Preliminary study of the pharmacokineti…, Arzneimittel-Forschung (1986) | popPK | 8 |  | [3082341](https://pubmed.ncbi.nlm.nih.gov/3082341) | Nordazepam (desmethyldiazepam) PK in volunteers with half-lives and clearance ranges reported in the abstract; V and full model parameters not given. |
+| `Löscher_1981.pdf` | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | popPK | 7 |  | [7337498](https://pubmed.ncbi.nlm.nih.gov/7337498) | Nordazepam (desmethyldiazepam) is quantified as the active metabolite of diazepam in dogs, with an elimination half-life (3.6 hr) reported in the abstract, though no CL/V values are given. |
 | `Wang_2020.pdf` | Wang LL et al., Study on the Pharmacokinetics of Diazep…, European journal of drug me… (2020) | popPK | 7 | [10.1007/s13318-020-00614-8](https://doi.org/10.1007/s13318-020-00614-8) | [32219697](https://pubmed.ncbi.nlm.nih.gov/32219697) | Nordazepam PK (as diazepam metabolite) is quantitatively reported with Tmax, Cmax, and elimination half-life in the abstract; no CL/V or compartmental model, but numeric values are present. |
-| `Wretlind_1977.pdf` | Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977) | popPK | 7 | not captured | [15399](https://pubmed.ncbi.nlm.nih.gov/15399) | Nordazepam (N-desmethyldiazepam) is quantified as the metabolite of diazepam with a two-compartment model fitted; terminal half-life (62 h) and absorption half-life are given, but CL/V and full fitted parameters are not shown numerically. |
+| `Wretlind_1977.pdf` | Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977) | popPK | 7 |  | [15399](https://pubmed.ncbi.nlm.nih.gov/15399) | Nordazepam (N-desmethyldiazepam) is quantified as the metabolite of diazepam with a two-compartment model fitted; terminal half-life (62 h) and absorption half-life are given, but CL/V and full fitted parameters are not shown numerically. |
 | `Bertler_1983.pdf` | Bertler A et al., Pharmacokinetics of chlorazepate after…, Psychopharmacology (1983) | popPK | 6 | [10.1007/BF00436160](https://doi.org/10.1007/BF00436160) | [6137019](https://pubmed.ncbi.nlm.nih.gov/6137019) | Nordazepam (desmethyldiazepam) is quantified as the metabolite of clorazepate with half-lives reported, but no CL/V or full compartmental parameter values are given. |
-| `Klotz_1977.pdf` | Klotz U, [Important factors determining human di…, Fortschritte der Medizin (1977) | popPK | 6 | not captured | [334648](https://pubmed.ncbi.nlm.nih.gov/334648) | Nordazepam (desmethyldiazepam) PK is modeled as the active metabolite of diazepam in humans, but the abstract gives only qualitative comparisons (e.g., eliminated ~3x slower) with no numeric CL/V/T1/2 values, which likely reside in tables/figures not provided. |
-| `Crevat-Pisano_1987.pdf` | Crevat-Pisano P et al., Validation of a radioreceptor assay tec…, International journal of cl… (1987) | popPK | 5 | not captured | [3114154](https://pubmed.ncbi.nlm.nih.gov/3114154) | Nordazepam (desmethyldiazepam) plasma concentrations are reported as the active metabolite of diazepam in two patients, but the kinetic parameters (half-lives, two-compartment model) are given for diazepam and global RRA activity, not specifically for nordazepam. |
+| `Klotz_1977.pdf` | Klotz U, [Important factors determining human di…, Fortschritte der Medizin (1977) | popPK | 6 |  | [334648](https://pubmed.ncbi.nlm.nih.gov/334648) | Nordazepam (desmethyldiazepam) PK is modeled as the active metabolite of diazepam in humans, but the abstract gives only qualitative comparisons (e.g., eliminated ~3x slower) with no numeric CL/V/T1/2 values, which likely reside in tables/figures not provided. |
+| `Crevat-Pisano_1987.pdf` | Crevat-Pisano P et al., Validation of a radioreceptor assay tec…, International journal of cl… (1987) | popPK | 5 |  | [3114154](https://pubmed.ncbi.nlm.nih.gov/3114154) | Nordazepam (desmethyldiazepam) plasma concentrations are reported as the active metabolite of diazepam in two patients, but the kinetic parameters (half-lives, two-compartment model) are given for diazepam and global RRA activity, not specifically for nordazepam. |
 
-<sub>queue written 2026-10-06T19:43:36.223652+00:00</sub>
+<sub>queue written 2026-10-06 19:43 UTC</sub>
 
 ## Screened and excluded
 
@@ -138,5 +138,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 19:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D&body=Drug%3A%20nordazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 19:44 UTC</sub>

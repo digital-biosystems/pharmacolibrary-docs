@@ -96,17 +96,15 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | blood | `BCHE` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor, `CYP2D6` metabolism/substrate, `NAT2` metabolism, `SLC22A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `NAT2` metabolism | PGx paper |
-| excretion | kidney | `SLC22A2` inhibitor, `SLC47A1` substrate, `SLC47A2` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLC47A1` substrate, `SLC47A2` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: DNMT1 (other), KCNH2 (inhibitor), SCN5A (inhibitor).</sub>
@@ -129,7 +127,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 80 matched, 60 returned
 - **screened:** 30  ·  **relevant:** 6
-- **records:** 13  ·  extracted 2  ·  needs_review 0  ·  rejected 11  ·  stale 3
+- **records:** 13  ·  extracted 2  ·  needs review 0  ·  rejected 11  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -138,12 +136,12 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Papich_1986.pdf` | Papich MG et al., Pharmacokinetics of procainamide hydroc…, American journal of veterin… (1986) | popPK | 10 | not captured | [2431636](https://pubmed.ncbi.nlm.nih.gov/2431636) | The study reports quantitative pharmacokinetic parameters (CL, V, t1/2, ka) for procainamide in dogs, with all numeric values explicitly provided in the text. |
-| `Lu_1991.pdf` | Lu H et al., [Combined pharmacokinetic-pharmacodynam…, Yao xue xue bao = Acta phar… (1991) | popPK | 9 | not captured | [1725230](https://pubmed.ncbi.nlm.nih.gov/1725230) | The study reports a PK/PD model for procainamide in rabbits, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Liu_1991.pdf` | Liu XQ et al., [Combined pharmacokinetic and pharmacod…, Zhongguo yao li xue bao = A… (1991) | popPK | 8 | not captured | [1719744](https://pubmed.ncbi.nlm.nih.gov/1719744) | The study reports a combined PK/PD model for procainamide in rabbits, but the evidence only lists pharmacodynamic parameters (Keo, S, Ce50, Emax) and lacks specific numeric values for PK parameters like clearance or volume. |
-| `Huang_1990.pdf` | Huang SK et al., [Combined pharmacokinetic--pharmacodyna…, Yao xue xue bao = Acta phar… (1990) | pd | 5 | not captured | [1707209](https://www.ncbi.nlm.nih.gov/pubmed/1707209) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Papich_1986.pdf` | Papich MG et al., Pharmacokinetics of procainamide hydroc…, American journal of veterin… (1986) | popPK | 10 |  | [2431636](https://pubmed.ncbi.nlm.nih.gov/2431636) | The study reports quantitative pharmacokinetic parameters (CL, V, t1/2, ka) for procainamide in dogs, with all numeric values explicitly provided in the text. |
+| `Lu_1991.pdf` | Lu H et al., [Combined pharmacokinetic-pharmacodynam…, Yao xue xue bao = Acta phar… (1991) | popPK | 9 |  | [1725230](https://pubmed.ncbi.nlm.nih.gov/1725230) | The study reports a PK/PD model for procainamide in rabbits, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Liu_1991.pdf` | Liu XQ et al., [Combined pharmacokinetic and pharmacod…, Zhongguo yao li xue bao = A… (1991) | popPK | 8 |  | [1719744](https://pubmed.ncbi.nlm.nih.gov/1719744) | The study reports a combined PK/PD model for procainamide in rabbits, but the evidence only lists pharmacodynamic parameters (Keo, S, Ce50, Emax) and lacks specific numeric values for PK parameters like clearance or volume. |
+| `Huang_1990.pdf` | Huang SK et al., [Combined pharmacokinetic--pharmacodyna…, Yao xue xue bao = Acta phar… (1990) | pd | 5 |  | [1707209](https://www.ncbi.nlm.nih.gov/pubmed/1707209) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-08T20:19:58.312037+00:00</sub>
+<sub>queue written 2026-10-08 20:19 UTC</sub>
 
 ## Screened and excluded
 
@@ -199,5 +197,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-08 20:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprocainamide%5D&body=Drug%3A%20procainamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_procainamide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-08 20:24 UTC</sub>

@@ -5,7 +5,7 @@
 
 - **generic name:** Metamizole
 - **ATC codes:** `N02BB02`, `N02BB52`, `N02BB72`
-- **DrugBank:** [DB04817](https://go.drugbank.com/drugs/DB04817) · **PubChem:** not captured
+- **DrugBank:** [DB04817](https://go.drugbank.com/drugs/DB04817) · **PubChem:** none
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -111,7 +111,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 165 matched, 84 returned
 - **screened:** 5  ·  **relevant:** 4
-- **records:** 9  ·  extracted 2  ·  needs_review 2  ·  rejected 5  ·  stale 2
+- **records:** 9  ·  extracted 2  ·  needs review 2  ·  rejected 5  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -123,7 +123,7 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Asmardi_1985.pdf` | Asmardi G et al., Pharmacokinetics of dipyrone in man; ro…, European journal of drug me… (1985) | popPK | 10 | [10.1007/BF03189705](https://doi.org/10.1007/BF03189705) | [4043141](https://pubmed.ncbi.nlm.nih.gov/4043141) | The study reports quantitative pharmacokinetic parameters (half-life, concentration ranges, urine excretion) for the active metabolite MAA following metamizole (dipyrone) administration in humans. |
 | `Levy_2010.pdf` | Levy M et al., Population pharmacokinetic analysis of…, International journal of cl… (2010) | popPK | 10 | [10.5414/cpp48791](https://doi.org/10.5414/cpp48791) | [21084034](https://pubmed.ncbi.nlm.nih.gov/21084034) | Study reports population PK of MAA (active metabolite of metamizole/dipyrone) in humans, but specific numeric parameter values are not present in the provided abstract/evidence. |
 | `Ziesenitz_2019.pdf` | Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journal of clinica… (2019) | popPK | 10 | [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2) | [31388703](https://pubmed.ncbi.nlm.nih.gov/31388703) | The paper reports a population PK study for metamizole metabolites in children, but the extracted evidence only provides AUC values and covariate information, lacking specific numeric estimates for clearance, volume, or intercompartmental clearance. |
-| `Geisslinger_1996.pdf` | Geisslinger G et al., The effects on platelet aggregation and…, Thrombosis and haemostasis (1996) | popPK | 5 | not captured | [8903001](https://pubmed.ncbi.nlm.nih.gov/8903001) | The study analyzes the pharmacokinetics of dipyrone (metamizole) and its metabolites in humans to correlate with platelet function, but the evidence provided does not contain any quantitative disposition parameters (e.g., clearance, volume, half-life); it only lists pharmacodynamic EC50 values. |
+| `Geisslinger_1996.pdf` | Geisslinger G et al., The effects on platelet aggregation and…, Thrombosis and haemostasis (1996) | popPK | 5 |  | [8903001](https://pubmed.ncbi.nlm.nih.gov/8903001) | The study analyzes the pharmacokinetics of dipyrone (metamizole) and its metabolites in humans to correlate with platelet function, but the evidence provided does not contain any quantitative disposition parameters (e.g., clearance, volume, half-life); it only lists pharmacodynamic EC50 values. |
 | `Brune_1983.pdf` | Brune K et al., Non-acidic pyrazoles: inhibition of pro…, Agents and actions (1983) | pd | 4 | [10.1007/BF01971489](https://doi.org/10.1007/BF01971489) | [6604402](https://www.ncbi.nlm.nih.gov/pubmed/6604402) | metadata signals extractable PD data (IC50) |
 | `de_2017.pdf` | de Oliveira Schwaickhardt R et al., Combined use of VUV and UVC photoreacto…, The Science of the total en… (2017) | pd | 4 | [10.1016/j.scitotenv.2017.02.218](https://doi.org/10.1016/j.scitotenv.2017.02.218) | [28283289](https://www.ncbi.nlm.nih.gov/pubmed/28283289) | metadata signals extractable PD data (EC50) |
 | `Fortuny_2006.pdf` | Fortuny J et al., Use of analgesics and nonsteroidal anti…, Cancer epidemiology, biomar… (2006) | pgx | 5 | [10.1158/1055-9965.EPI-06-0038](https://doi.org/10.1158/1055-9965.EPI-06-0038) | [16985032](https://www.ncbi.nlm.nih.gov/pubmed/16985032) | metadata signals extractable PGX data (CYP2E1) |
@@ -131,7 +131,7 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Martínez_2014.pdf` | Martínez C et al., Gender and functional CYP2C and NAT2 po…, Biochemical pharmacology (2014) | pgx | 5 | [10.1016/j.bcp.2014.09.005](https://doi.org/10.1016/j.bcp.2014.09.005) | [25241292](https://www.ncbi.nlm.nih.gov/pubmed/25241292) | metadata signals extractable PGX data (CYP2C) |
 | `Stamer_2003.pdf` | Stamer UM et al., Impact of CYP2D6 genotype on postoperat…, Pain (2003) | pgx | 5 | [10.1016/s0304-3959(03)00212-4](https://doi.org/10.1016/s0304-3959(03)00212-4) | [14499440](https://www.ncbi.nlm.nih.gov/pubmed/14499440) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-07T06:17:30.358508+00:00</sub>
+<sub>queue written 2026-10-07 06:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -217,5 +217,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 06:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetamizole%5D&body=Drug%3A%20metamizole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metamizole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:17 UTC</sub>

@@ -1,6 +1,6 @@
 <!-- AUTOGEN:intro START — spliced from docs/README-template.md; edit THAT file, not this region -->
 # Pharmacolibrary
-v26.09 (built 23/10/2026 08:24:38 UTC)
+v26.09 (built 23/10/2026 15:34:08 UTC)
 
 Pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx) models extracted from the
 published literature, with downloads and a simulator you can run in the browser.

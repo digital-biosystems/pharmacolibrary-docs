@@ -92,7 +92,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 82 matched, 72 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 1  ·  needs_review 4  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 1  ·  needs review 4  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -101,18 +101,18 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Drugeon_1984.pdf` | Drugeon HB et al., [Pharmacokinetics of azlocillin in the…, Presse medicale (Paris, Fra… (1984) | popPK | 10 | not captured | [6231599](https://pubmed.ncbi.nlm.nih.gov/6231599) | The study reports specific pharmacokinetic parameters (half-life, renal clearance) for azlocillin in human burn patients based on a two-compartment model. |
-| `Krupp_1990.pdf` | Krupp A et al., [The effect of continuous arteriovenous…, Der Anaesthesist (1990) | popPK | 10 | not captured | [2192573](https://pubmed.ncbi.nlm.nih.gov/2192573) | Reports quantitative PK parameters (half-life, volume of distribution) and compartmental modeling for azlocillin in anuric patients. |
+| `Drugeon_1984.pdf` | Drugeon HB et al., [Pharmacokinetics of azlocillin in the…, Presse medicale (Paris, Fra… (1984) | popPK | 10 |  | [6231599](https://pubmed.ncbi.nlm.nih.gov/6231599) | The study reports specific pharmacokinetic parameters (half-life, renal clearance) for azlocillin in human burn patients based on a two-compartment model. |
+| `Krupp_1990.pdf` | Krupp A et al., [The effect of continuous arteriovenous…, Der Anaesthesist (1990) | popPK | 10 |  | [2192573](https://pubmed.ncbi.nlm.nih.gov/2192573) | Reports quantitative PK parameters (half-life, volume of distribution) and compartmental modeling for azlocillin in anuric patients. |
 | `Lander_1989.pdf` | Lander RD et al., Pharmacokinetic comparison of 5 g of az…, Antimicrobial agents and ch… (1989) | popPK | 10 | [10.1128/AAC.33.5.710](https://doi.org/10.1128/AAC.33.5.710) | [2751284](https://pubmed.ncbi.nlm.nih.gov/2751284) | The paper reports quantitative pharmacokinetic parameters (clearance, rate constants, concentrations) for azlocillin in humans with numeric values provided in the abstract. |
-| `Millart_1984.pdf` | Millart H et al., [Bone and blood levels of azlocillin af…, Presse medicale (Paris, Fra… (1984) | popPK | 10 | not captured | [6231598](https://pubmed.ncbi.nlm.nih.gov/6231598) | The paper reports a two-compartment pharmacokinetic model for azlocillin in dogs, providing specific half-lives and compartmental rate constants in the text, though derived parameters like total clearance (CL) are not explicitly stated. |
+| `Millart_1984.pdf` | Millart H et al., [Bone and blood levels of azlocillin af…, Presse medicale (Paris, Fra… (1984) | popPK | 10 |  | [6231598](https://pubmed.ncbi.nlm.nih.gov/6231598) | The paper reports a two-compartment pharmacokinetic model for azlocillin in dogs, providing specific half-lives and compartmental rate constants in the text, though derived parameters like total clearance (CL) are not explicitly stated. |
 | `Modr_1982.pdf` | Modr Z et al., [Azlocillin--a new anti-pseudomonas pen…, Infection 10 Suppl (1982) | popPK | 10 | [10.1007/BF01640668](https://doi.org/10.1007/BF01640668) | [7152688](https://pubmed.ncbi.nlm.nih.gov/7152688) | The evidence provides explicit quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for azlocillin in humans derived from a two-compartment model. |
 | `Voigt_1985.pdf` | Voigt R et al., Pharmacokinetic studies of azlocillin a…, Chemotherapy (1985) | popPK | 10 | [10.1159/000238369](https://doi.org/10.1159/000238369) | [3908007](https://pubmed.ncbi.nlm.nih.gov/3908007) | The paper describes a PK study of azlocillin in humans using a two-compartment model, but the specific quantitative parameter values (CL, V, etc.) are not provided in the extracted evidence. |
-| `Voigt_1988.pdf` | Voigt R et al., [The pharmacokinetics of azlocillin aft…, Zentralblatt fur Gynakologie (1988) | popPK | 10 | not captured | [3055753](https://pubmed.ncbi.nlm.nih.gov/3055753) | The paper describes a PK study of azlocillin in humans using a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence snippet. |
-| `Voigt_1985_2.pdf` | Voigt R et al., [Pharmacokinetic studies of azlocillin…, Zeitschrift fur Geburtshilf… (1985) | popPK | 9 | not captured | [4013451](https://pubmed.ncbi.nlm.nih.gov/4013451) | The paper describes a population PK study of azlocillin using a two-compartment model, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, likely residing in tables or figures not included. |
-| `Heimann_1979.pdf` | Heimann G et al., [Pharmacokinetics of Azlocillin in prem…, Arzneimittel-Forschung (1979) | popPK | 8 | not captured | [543897](https://pubmed.ncbi.nlm.nih.gov/543897) | The abstract reports quantitative parameters including elimination half-life (2.6-2.5 h), model type (open two-compartment), and accumulation rates for azlocillin in newborns, although specific volume or clearance values are not explicitly listed. |
+| `Voigt_1988.pdf` | Voigt R et al., [The pharmacokinetics of azlocillin aft…, Zentralblatt fur Gynakologie (1988) | popPK | 10 |  | [3055753](https://pubmed.ncbi.nlm.nih.gov/3055753) | The paper describes a PK study of azlocillin in humans using a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence snippet. |
+| `Voigt_1985_2.pdf` | Voigt R et al., [Pharmacokinetic studies of azlocillin…, Zeitschrift fur Geburtshilf… (1985) | popPK | 9 |  | [4013451](https://pubmed.ncbi.nlm.nih.gov/4013451) | The paper describes a population PK study of azlocillin using a two-compartment model, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, likely residing in tables or figures not included. |
+| `Heimann_1979.pdf` | Heimann G et al., [Pharmacokinetics of Azlocillin in prem…, Arzneimittel-Forschung (1979) | popPK | 8 |  | [543897](https://pubmed.ncbi.nlm.nih.gov/543897) | The abstract reports quantitative parameters including elimination half-life (2.6-2.5 h), model type (open two-compartment), and accumulation rates for azlocillin in newborns, although specific volume or clearance values are not explicitly listed. |
 | `Heimann_1983.pdf` | Heimann G, Pharmacokinetics and clinical aspects o…, The Journal of antimicrobia… (1983) | popPK | 8 | [10.1093/jac/11.suppl_b.127](https://doi.org/10.1093/jac/11.suppl_b.127) | [6619022](https://pubmed.ncbi.nlm.nih.gov/6619022) | The study reports an open two-compartment model and elimination half-life for azlocillin in neonates, but specific clearance, volume, and rate constants are not provided in the text, likely residing in missing tables or figures. |
 
-<sub>queue written 2026-10-07T10:53:48.929383+00:00</sub>
+<sub>queue written 2026-10-07 10:53 UTC</sub>
 
 ## Screened and excluded
 
@@ -142,5 +142,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazlocillin%5D&body=Drug%3A%20azlocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azlocillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:53 UTC</sub>

@@ -83,4 +83,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_iodide_131i%5D%20pd_Topi_2021_hyper_eu_and_hypothyroidism&body=Drug%3A%20sodium_iodide_131i%0ARecord%3A%20pd_Topi_2021_hyper_eu_and_hypothyroidism%0APaper%3A%20Topi%C4%87_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_iodide_131i/pd_Topi_2021_hyper_eu_and_hypothyroidism%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sodium iodide (131I)](drugs/drug_sodium_iodide_131i/)</sub>

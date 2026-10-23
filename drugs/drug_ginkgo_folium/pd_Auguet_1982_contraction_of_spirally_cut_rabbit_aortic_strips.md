@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bginkgo_folium%5D%20pd_Auguet_1982_contraction_of_spirally_cut_rabbit_aortic_strips&body=Drug%3A%20ginkgo_folium%0ARecord%3A%20pd_Auguet_1982_contraction_of_spirally_cut_rabbit_aortic_strips%0APaper%3A%20Auguet_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ginkgo_folium/pd_Auguet_1982_contraction_of_spirally_cut_rabbit_aortic_strips%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Ginkgo folium](drugs/drug_ginkgo_folium/)</sub>

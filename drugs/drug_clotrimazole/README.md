@@ -70,7 +70,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 336 matched, 147 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -82,18 +82,18 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Rathod_2026.pdf` | Rathod SK et al., Population pharmacokinetics, in-feed bi…, Veterinary research communi… (2026) | popPK | 10 | [10.1007/s11259-026-11145-z](https://doi.org/10.1007/s11259-026-11145-z) | [41874756](https://pubmed.ncbi.nlm.nih.gov/41874756) | The study reports population PK parameters for clotrimazole in catfish, but specific numeric values for clearance, volume, or half-life are not present in the provided abstract text. |
 | `Backhaus_2011.pdf` | Backhaus T et al., Single-substance and mixture toxicity o…, Environmental toxicology an… (2011) | pd | 4 | [10.1002/etc.586](https://doi.org/10.1002/etc.586) | [21647943](https://www.ncbi.nlm.nih.gov/pubmed/21647943) | metadata signals extractable PD data (EC50) |
 | `Beijer_2018.pdf` | Beijer K et al., Azoles additively inhibit cytochrome P4…, Aquatic toxicology (Amsterd… (2018) | pd | 4 | [10.1016/j.aquatox.2018.02.016](https://doi.org/10.1016/j.aquatox.2018.02.016) | [29522952](https://www.ncbi.nlm.nih.gov/pubmed/29522952) | metadata signals extractable PD data (IC50) |
-| `Brugnara_1995.pdf` | Brugnara C et al., Oral administration of clotrimazole and…, The Journal of pharmacology… (1995) | pd | 4 | not captured | [7714775](https://www.ncbi.nlm.nih.gov/pubmed/7714775) | metadata signals extractable PD data (IC50) |
+| `Brugnara_1995.pdf` | Brugnara C et al., Oral administration of clotrimazole and…, The Journal of pharmacology… (1995) | pd | 4 |  | [7714775](https://www.ncbi.nlm.nih.gov/pubmed/7714775) | metadata signals extractable PD data (IC50) |
 | `Daly_1995.pdf` | Daly JW et al., Maitotoxin-elicited calcium influx in c…, Biochemical pharmacology (1995) | pd | 4 | [10.1016/0006-2952(95)00257-z](https://doi.org/10.1016/0006-2952(95)00257-z) | [7488233](https://www.ncbi.nlm.nih.gov/pubmed/7488233) | metadata signals extractable PD data (IC50) |
 | `Duszyk_2001.pdf` | Duszyk M, Regulation of anion secretion by nitric…, American journal of physiol… (2001) | pd | 4 | [10.1152/ajplung.2001.281.2.L450](https://doi.org/10.1152/ajplung.2001.281.2.L450) | [11435220](https://www.ncbi.nlm.nih.gov/pubmed/11435220) | metadata signals extractable PD data (EC50) |
 | `Faucette_2004.pdf` | Faucette SR et al., Regulation of CYP2B6 in primary human h…, Drug metabolism and disposi… (2004) | pd | 4 | [10.1124/dmd.32.3.348](https://doi.org/10.1124/dmd.32.3.348) | [14977870](https://www.ncbi.nlm.nih.gov/pubmed/14977870) | metadata signals extractable PD data (EC50) |
-| `Kim_1995.pdf` | Kim SG et al., Differential expression of rat microsom…, Drug metabolism and disposi… (1995) | pd | 4 | not captured | [7600912](https://www.ncbi.nlm.nih.gov/pubmed/7600912) | metadata signals extractable PD data (EC50) |
+| `Kim_1995.pdf` | Kim SG et al., Differential expression of rat microsom…, Drug metabolism and disposi… (1995) | pd | 4 |  | [7600912](https://www.ncbi.nlm.nih.gov/pubmed/7600912) | metadata signals extractable PD data (EC50) |
 | `Mason_1987.pdf` | Mason JI et al., Imidazole antimycotics: selective inhib…, Steroids (1987) | pd | 4 | [10.1016/0039-128x(83)90070-3](https://doi.org/10.1016/0039-128x(83)90070-3) | [3504059](https://www.ncbi.nlm.nih.gov/pubmed/3504059) | metadata signals extractable PD data (IC50) |
 | `Paul_2024.pdf` | Paul A et al., Clotrimazole causes membrane depolariza…, Acta tropica (2024) | pd | 4 | [10.1016/j.actatropica.2024.107139](https://doi.org/10.1016/j.actatropica.2024.107139) | [38307362](https://www.ncbi.nlm.nih.gov/pubmed/38307362) | metadata signals extractable PD data (IC50) |
 | `Polsky-Fisher_2006.pdf` | Polsky-Fisher SL et al., Effect of cytochromes P450 chemical inh…, Drug metabolism and disposi… (2006) | pd | 4 | [10.1124/dmd.106.009704](https://doi.org/10.1124/dmd.106.009704) | [16720683](https://www.ncbi.nlm.nih.gov/pubmed/16720683) | metadata signals extractable PD data (IC50) |
 | `Smith_2005.pdf` | Smith CM et al., Modulation of UDP-glucuronosyltransfera…, Journal of biochemical and… (2005) | pd | 4 | [10.1002/jbt.20058](https://doi.org/10.1002/jbt.20058) | [15849716](https://www.ncbi.nlm.nih.gov/pubmed/15849716) | metadata signals extractable PD data (Pharmacodynamicmodel) |
 | `Wang_2026.pdf` | Wang X et al., Uncovering the Underlying Mechanism of…, Recent patents on anti-canc… (2026) | pd | 4 | [10.2174/0115748928495928260706053847](https://doi.org/10.2174/0115748928495928260706053847) | [42478651](https://www.ncbi.nlm.nih.gov/pubmed/42478651) | metadata signals extractable PD data (IC50) |
 | `Warrilow_2017.pdf` | Warrilow AGS et al., The Tetrazole VT-1161 Is a Potent Inhib…, Antimicrobial agents and ch… (2017) | pd | 4 | [10.1128/AAC.00333-17](https://doi.org/10.1128/AAC.00333-17) | [28483956](https://www.ncbi.nlm.nih.gov/pubmed/28483956) | metadata signals extractable PD data (IC50) |
-| `Wolff_1993.pdf` | Wolff DJ et al., The dual mode of inhibition of calmodul…, The Journal of biological c… (1993) | pd | 4 | not captured | [7683652](https://www.ncbi.nlm.nih.gov/pubmed/7683652) | metadata signals extractable PD data (IC50) |
+| `Wolff_1993.pdf` | Wolff DJ et al., The dual mode of inhibition of calmodul…, The Journal of biological c… (1993) | pd | 4 |  | [7683652](https://www.ncbi.nlm.nih.gov/pubmed/7683652) | metadata signals extractable PD data (IC50) |
 | `Zhao_2021.pdf` | Zhao T et al., Comparison of the Inhibitory Effects of…, Current drug metabolism (2021) | pd | 4 | [10.2174/1389200222666210210115509](https://doi.org/10.2174/1389200222666210210115509) | [33568030](https://www.ncbi.nlm.nih.gov/pubmed/33568030) | metadata signals extractable PD data (IC50) |
 | `Lalan_2014.pdf` | Lalan S et al., Effect of CYP3A5 genotype, steroids, an…, Pediatric nephrology (Berli… (2014) | pgx | 8 | [10.1007/s00467-014-2827-2](https://doi.org/10.1007/s00467-014-2827-2) | [24875272](https://www.ncbi.nlm.nih.gov/pubmed/24875272) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
 | `Uno_2019.pdf` | Uno T et al., Effects of clotrimazole on tacrolimus p…, European journal of clinica… (2019) | pgx | 8 | [10.1007/s00228-018-2558-6](https://doi.org/10.1007/s00228-018-2558-6) | [30251062](https://www.ncbi.nlm.nih.gov/pubmed/30251062) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
@@ -107,7 +107,7 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sam_2011.pdf` | Sam WJ et al., Associations of ABCB1 3435C&gt;T and IL-10…, Transplantation (2011) | pgx | 5 | [10.1097/TP.0b013e3182384ae2](https://doi.org/10.1097/TP.0b013e3182384ae2) | [22094953](https://www.ncbi.nlm.nih.gov/pubmed/22094953) | metadata signals extractable PGX data (ABCB1) |
 | `Savkur_2003.pdf` | Savkur RS et al., Alternative splicing within the ligand…, Molecular genetics and meta… (2003) | pgx | 5 | [10.1016/j.ymgme.2003.08.013](https://doi.org/10.1016/j.ymgme.2003.08.013) | [14567971](https://www.ncbi.nlm.nih.gov/pubmed/14567971) | metadata signals extractable PGX data (ABCC2) |
 
-<sub>queue written 2026-10-04T00:08:04.536292+00:00</sub>
+<sub>queue written 2026-10-04 00:08 UTC</sub>
 
 ## Screened and excluded
 
@@ -240,5 +240,5 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclotrimazole%5D&body=Drug%3A%20clotrimazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clotrimazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

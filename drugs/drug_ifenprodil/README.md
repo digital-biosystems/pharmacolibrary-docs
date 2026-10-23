@@ -53,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 164 matched, 122 returned
 - **screened:** 4  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -62,7 +62,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Legendre_1991.pdf` | Legendre P et al., Ifenprodil blocks N-methyl-D-aspartate…, Molecular pharmacology (1991) | pd | 5 | not captured | [1715017](https://www.ncbi.nlm.nih.gov/pubmed/1715017) | metadata signals extractable PD data (IC50) |
+| `Legendre_1991.pdf` | Legendre P et al., Ifenprodil blocks N-methyl-D-aspartate…, Molecular pharmacology (1991) | pd | 5 |  | [1715017](https://www.ncbi.nlm.nih.gov/pubmed/1715017) | metadata signals extractable PD data (IC50) |
 | `Abe_1993.pdf` | Abe K et al., Spermine promotes the survival of prima…, Brain research (1993) | pd | 4 | [10.1016/0006-8993(93)91759-l](https://doi.org/10.1016/0006-8993(93)91759-l) | [8481782](https://www.ncbi.nlm.nih.gov/pubmed/8481782) | metadata signals extractable PD data (concentration-effect) |
 | `Buemi_2016.pdf` | Buemi MR et al., Structure-guided design of new indoles…, Bioorganic & medicinal chem… (2016) | pd | 4 | [10.1016/j.bmc.2016.02.021](https://doi.org/10.1016/j.bmc.2016.02.021) | [26912202](https://www.ncbi.nlm.nih.gov/pubmed/26912202) | metadata signals extractable PD data (IC50) |
 | `Cahusac_2005.pdf` | Cahusac PM et al., Are unconventional NMDA receptors invol…, Neuroscience (2005) | pd | 4 | [10.1016/j.neuroscience.2005.03.018](https://doi.org/10.1016/j.neuroscience.2005.03.018) | [15908129](https://www.ncbi.nlm.nih.gov/pubmed/15908129) | metadata signals extractable PD data (IC50) |
@@ -70,19 +70,19 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Grimwood_1996.pdf` | Grimwood S et al., Modulation of 45Ca2+ influx into cells…, Journal of neurochemistry (1996) | pd | 4 | [10.1046/j.1471-4159.1996.66062589.x](https://doi.org/10.1046/j.1471-4159.1996.66062589.x) | [8632186](https://www.ncbi.nlm.nih.gov/pubmed/8632186) | metadata signals extractable PD data (IC50) |
 | `Hwang_2023.pdf` | Hwang S et al., Inhibitory effects of N-methyl-D-aspart…, Naunyn-Schmiedeberg's archi… (2023) | pd | 4 | [10.1007/s00210-023-02521-6](https://doi.org/10.1007/s00210-023-02521-6) | [37166464](https://www.ncbi.nlm.nih.gov/pubmed/37166464) | metadata signals extractable PD data (IC50) |
 | `Höfner_1996.pdf` | Höfner G et al., Characterisation of [3H]MK-801 binding…, Journal of receptor and sig… (1996) | pd | 4 | [10.3109/10799899609039953](https://doi.org/10.3109/10799899609039953) | [8968963](https://www.ncbi.nlm.nih.gov/pubmed/8968963) | metadata signals extractable PD data (EC50) |
-| `Karbon_1993.pdf` | Karbon EW et al., NPC 16377, a potent and selective sigma…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [8388461](https://www.ncbi.nlm.nih.gov/pubmed/8388461) | metadata signals extractable PD data (IC50) |
+| `Karbon_1993.pdf` | Karbon EW et al., NPC 16377, a potent and selective sigma…, The Journal of pharmacology… (1993) | pd | 4 |  | [8388461](https://www.ncbi.nlm.nih.gov/pubmed/8388461) | metadata signals extractable PD data (IC50) |
 | `Kato_1999.pdf` | Kato K et al., TAK-147, an acetylcholinesterase inhibi…, Neuroscience letters (1999) | pd | 4 | [10.1016/s0304-3940(98)00943-4](https://doi.org/10.1016/s0304-3940(98)00943-4) | [10027686](https://www.ncbi.nlm.nih.gov/pubmed/10027686) | metadata signals extractable PD data (EC50) |
 | `Kew_1996.pdf` | Kew JN et al., A novel mechanism of activity-dependent…, The Journal of physiology (1996) | pd | 4 | [10.1113/jphysiol.1996.sp021807](https://doi.org/10.1113/jphysiol.1996.sp021807) | [9003561](https://www.ncbi.nlm.nih.gov/pubmed/9003561) | metadata signals extractable PD data (IC50) |
 | `Le_1994.pdf` | Le Bourdellès B et al., Cloning, functional coexpression, and p…, Journal of neurochemistry (1994) | pd | 4 | [10.1046/j.1471-4159.1994.62062091.x](https://doi.org/10.1046/j.1471-4159.1994.62062091.x) | [8189218](https://www.ncbi.nlm.nih.gov/pubmed/8189218) | metadata signals extractable PD data (EC50) |
 | `Marvizón_1994.pdf` | Marvizón JC et al., [3H]dizocilpine association kinetics di…, Journal of neurochemistry (1994) | pd | 4 | [10.1046/j.1471-4159.1994.63030963.x](https://doi.org/10.1046/j.1471-4159.1994.63030963.x) | [7914227](https://www.ncbi.nlm.nih.gov/pubmed/7914227) | metadata signals extractable PD data (IC50) |
 | `Misra_2000.pdf` | Misra C et al., Identification of subunits contributing…, The Journal of physiology (2000) | pd | 4 | [10.1111/j.1469-7793.2000.00147.x](https://doi.org/10.1111/j.1469-7793.2000.00147.x) | [10747189](https://www.ncbi.nlm.nih.gov/pubmed/10747189) | metadata signals extractable PD data (IC50) |
 | `Priestley_1994.pdf` | Priestley T et al., Subtypes of NMDA receptor in neurones c…, Neuroreport (1994) | pd | 4 | [10.1097/00001756-199409080-00019](https://doi.org/10.1097/00001756-199409080-00019) | [7827326](https://www.ncbi.nlm.nih.gov/pubmed/7827326) | metadata signals extractable PD data (IC50) |
-| `Priestley_1995.pdf` | Priestley T et al., Pharmacological properties of recombina…, Molecular pharmacology (1995) | pd | 4 | not captured | [7476914](https://www.ncbi.nlm.nih.gov/pubmed/7476914) | metadata signals extractable PD data (IC50) |
+| `Priestley_1995.pdf` | Priestley T et al., Pharmacological properties of recombina…, Molecular pharmacology (1995) | pd | 4 |  | [7476914](https://www.ncbi.nlm.nih.gov/pubmed/7476914) | metadata signals extractable PD data (IC50) |
 | `Steele_1990.pdf` | Steele JE et al., Spermidine enhancement of [3H]MK-801 bi…, European journal of pharmac… (1990) | pd | 4 | [10.1016/0922-4106(90)90023-q](https://doi.org/10.1016/0922-4106(90)90023-q) | [1979277](https://www.ncbi.nlm.nih.gov/pubmed/1979277) | metadata signals extractable PD data (IC50) |
 | `Temme_2018.pdf` | Temme L et al., Comparative Pharmacological Study of Co…, ChemMedChem (2018) | pd | 4 | [10.1002/cmdc.201700810](https://doi.org/10.1002/cmdc.201700810) | [29377520](https://www.ncbi.nlm.nih.gov/pubmed/29377520) | metadata signals extractable PD data (IC50) |
 | `Woodward_1992.pdf` | Woodward JJ et al., The putative polyamine antagonists ifen…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90414-y](https://doi.org/10.1016/0014-2999(92)90414-y) | [1351843](https://www.ncbi.nlm.nih.gov/pubmed/1351843) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T20:15:03.751885+00:00</sub>
+<sub>queue written 2026-10-06 20:15 UTC</sub>
 
 ## Screened and excluded
 
@@ -246,5 +246,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bifenprodil%5D&body=Drug%3A%20ifenprodil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ifenprodil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

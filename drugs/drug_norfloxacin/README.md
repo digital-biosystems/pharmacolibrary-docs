@@ -79,15 +79,14 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP3A4` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A5` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
 
@@ -109,7 +108,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 47 matched, 47 returned
 - **screened:** 12  ·  **relevant:** 12
-- **records:** 5  ·  extracted 1  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -119,17 +118,17 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Anadón_1995.pdf` | Anadón A et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (1995) | popPK | 10 | [10.1111/j.1365-2885.1995.tb00582.x](https://doi.org/10.1111/j.1365-2885.1995.tb00582.x) | [7674459](https://pubmed.ncbi.nlm.nih.gov/7674459) | The study reports quantitative PK parameters (t1/2, MRT, Vd, bioavailability) for norfloxacin in pigs, though specific CL and Vd values are only described qualitatively or partially. |
-| `Chen_1990.pdf` | Chen IJ et al., [Comparative study on the pharmacokinet…, Gaoxiong yi xue ke xue za z… (1990) | popPK | 10 | not captured | [2213972](https://pubmed.ncbi.nlm.nih.gov/2213972) | The study reports quantitative pharmacokinetic parameters (Ka, Kel, T1/2, AUC) for norfloxacin in human volunteers with values explicitly provided in the text. |
+| `Chen_1990.pdf` | Chen IJ et al., [Comparative study on the pharmacokinet…, Gaoxiong yi xue ke xue za z… (1990) | popPK | 10 |  | [2213972](https://pubmed.ncbi.nlm.nih.gov/2213972) | The study reports quantitative pharmacokinetic parameters (Ka, Kel, T1/2, AUC) for norfloxacin in human volunteers with values explicitly provided in the text. |
 | `González_1997.pdf` | González F et al., Age-related differences in norfloxacin…, The veterinary quarterly (1997) | popPK | 10 | [10.1080/01652176.1997.9694760](https://doi.org/10.1080/01652176.1997.9694760) | [9413109](https://pubmed.ncbi.nlm.nih.gov/9413109) | The study is a PK model for norfloxacin in sheep, and while specific qualitative descriptors and percentages (F) are provided, the specific quantitative parameter values (CL, V, ka) are described rather than explicitly listed in the extracted text. |
 | `Park_2003.pdf` | Park SC et al., Clinical pharmacokinetics of norfloxaci…, Research in veterinary scie… (2003) | popPK | 10 | [10.1016/s0034-5288(02)00150-9](https://doi.org/10.1016/s0034-5288(02)00150-9) | [12507569](https://pubmed.ncbi.nlm.nih.gov/12507569) | The paper reports quantitative disposition parameters (Vd, half-lives, ka, F) for norfloxacin in horses with all values clearly present in the abstract. |
 | `Soback_1994.pdf` | Soback S et al., Effect of lactation on single-dose phar…, Antimicrobial agents and ch… (1994) | popPK | 10 | [10.1128/AAC.38.10.2336](https://doi.org/10.1128/AAC.38.10.2336) | [7840566](https://pubmed.ncbi.nlm.nih.gov/7840566) | The study reports quantitative non-compartmental PK parameters (CL, MRT, Vss, t1/2) for norfloxacin in ewes. |
 | `Xu_2015.pdf` | Xu N et al., Comparative pharmacokinetics of norflox…, Journal of veterinary pharm… (2015) | popPK | 10 | [10.1111/jvp.12193](https://doi.org/10.1111/jvp.12193) | [25427758](https://pubmed.ncbi.nlm.nih.gov/25427758) | The study reports specific PK parameters (t1/2, Cmax, Tmax, AUC) for norfloxacin in carp, though specific clearance (CL) and volume (V) values are not explicitly listed in the abstract text. |
 | `Fukuda_2004.pdf` | Fukuda M et al., The effect of the corneal epithelium on…, Japanese journal of ophthal… (2004) | popPK | 8 | [10.1007/s10384-003-0033-z](https://doi.org/10.1007/s10384-003-0033-z) | [15060787](https://pubmed.ncbi.nlm.nih.gov/15060787) | The study reports pharmacokinetic data for norfloxacin in rabbit eyes, with specific concentration-time points and a mention of one-compartment model parameters, though the explicit numeric values for CL, V, or t1/2 are not explicitly listed in the provided text. |
 | `Jha_1996.pdf` | Jha K et al., The effect of induced fever on the biok…, Veterinary research communi… (1996) | popPK | 8 | [10.1007/BF00419185](https://doi.org/10.1007/BF00419185) | [8908728](https://pubmed.ncbi.nlm.nih.gov/8908728) | The study reports quantitative PK parameters (Cmax, Cl, Kel, t1/2) for norfloxacin in goats, but only peak plasma levels are explicitly provided in the text while specific values for clearance and half-life are not listed numerically. |
-| `Zhang_2003.pdf` | Zhang LR et al., Neurotoxicity and toxicokinetics of nor…, Acta pharmacologica Sinica (2003) | popPK | 8 | not captured | [12791190](https://pubmed.ncbi.nlm.nih.gov/12791190) | The study is a toxicokinetic analysis of norfloxacin in rats reporting specific PK parameters (clearance, volume, half-life), but the numeric values are not provided in the extracted text or evidence. |
-| `Delon_1997.pdf` | Delon A et al., Pharmacokinetic-pharmacodynamic contrib…, The Journal of pharmacology… (1997) | popPK | 7 | not captured | [9023315](https://pubmed.ncbi.nlm.nih.gov/9023315) | The study reports pharmacokinetic data for norfloxacin in rats, specifically providing quantitative concentrations in plasma and cerebrospinal fluid at the endpoint, but lacks explicit compartmental parameters like clearance or volume. |
+| `Zhang_2003.pdf` | Zhang LR et al., Neurotoxicity and toxicokinetics of nor…, Acta pharmacologica Sinica (2003) | popPK | 8 |  | [12791190](https://pubmed.ncbi.nlm.nih.gov/12791190) | The study is a toxicokinetic analysis of norfloxacin in rats reporting specific PK parameters (clearance, volume, half-life), but the numeric values are not provided in the extracted text or evidence. |
+| `Delon_1997.pdf` | Delon A et al., Pharmacokinetic-pharmacodynamic contrib…, The Journal of pharmacology… (1997) | popPK | 7 |  | [9023315](https://pubmed.ncbi.nlm.nih.gov/9023315) | The study reports pharmacokinetic data for norfloxacin in rats, specifically providing quantitative concentrations in plasma and cerebrospinal fluid at the endpoint, but lacks explicit compartmental parameters like clearance or volume. |
 
-<sub>queue written 2026-10-07T11:33:06.120076+00:00</sub>
+<sub>queue written 2026-10-07 11:33 UTC</sub>
 
 ## Screened and excluded
 
@@ -171,5 +170,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnorfloxacin%5D&body=Drug%3A%20norfloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_norfloxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:33 UTC</sub>

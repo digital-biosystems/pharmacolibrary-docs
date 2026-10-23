@@ -82,4 +82,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bregorafenib%5D%20pd_Solms_2017_TTP&body=Drug%3A%20regorafenib%0ARecord%3A%20pd_Solms_2017_TTP%0APaper%3A%20Solms_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_regorafenib/pd_Solms_2017_TTP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [regorafenib](drugs/drug_regorafenib/)</sub>

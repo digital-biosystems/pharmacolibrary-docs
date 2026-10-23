@@ -99,7 +99,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 98 matched, 60 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 3
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -109,10 +109,10 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Ishizaki_1978.pdf` | Ishizaki T et al., Clinical pharmacologic observations on…, Journal of clinical pharmac… (1978) | popPK | 10 | [10.1002/j.1552-4604.1978.tb01580.x](https://doi.org/10.1002/j.1552-4604.1978.tb01580.x) | [721948](https://pubmed.ncbi.nlm.nih.gov/721948) | The abstract explicitly reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance) for timolol in normal individuals. |
-| `Ji_1993.pdf` | Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993) | popPK | 10 | not captured | [8285070](https://pubmed.ncbi.nlm.nih.gov/8285070) | The paper reports quantitative pharmacokinetic parameters (Vss, K, AUC, Cmax, Tmax) for timolol in humans. |
+| `Ji_1993.pdf` | Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993) | popPK | 10 |  | [8285070](https://pubmed.ncbi.nlm.nih.gov/8285070) | The paper reports quantitative pharmacokinetic parameters (Vss, K, AUC, Cmax, Tmax) for timolol in humans. |
 | `Chiang_1996.pdf` | Chiang CH et al., Pharmacokinetics and intraocular pressu…, Journal of ocular pharmacol… (1996) | popPK | 9 | [10.1089/jop.1996.12.471](https://doi.org/10.1089/jop.1996.12.471) | [8951683](https://pubmed.ncbi.nlm.nih.gov/8951683) | The study reports quantitative pharmacokinetic parameters (ka, kd, ke, AUC) for timolol in rabbit eyes using a two-compartment model. |
 | `Fayyaz_2021.pdf` | Fayyaz A et al., Ocular pharmacokinetics of atenolol, ti…, European journal of pharmac… (2021) | popPK | 8 | [10.1016/j.ejpb.2021.06.003](https://doi.org/10.1016/j.ejpb.2021.06.003) | [34139290](https://pubmed.ncbi.nlm.nih.gov/34139290) | The study reports ocular pharmacokinetics for timolol in rabbits, but the evidence only provides relative AUC ratios (e.g., 1.4 times) rather than absolute quantitative disposition parameters like clearance or volume. |
-| `McCrea_1990.pdf` | McCrea JB et al., Transdermal timolol: beta blockade and…, Pharmacotherapy (1990) | pd | 5 | not captured | [2388875](https://www.ncbi.nlm.nih.gov/pubmed/2388875) | metadata signals extractable PD data (EMAX) |
+| `McCrea_1990.pdf` | McCrea JB et al., Transdermal timolol: beta blockade and…, Pharmacotherapy (1990) | pd | 5 |  | [2388875](https://www.ncbi.nlm.nih.gov/pubmed/2388875) | metadata signals extractable PD data (EMAX) |
 | `Yoshida_1991.pdf` | Yoshida S et al., A potassium current evoked by growth ho…, The Journal of physiology (1991) | pd | 5 | [10.1113/jphysiol.1991.sp018856](https://doi.org/10.1113/jphysiol.1991.sp018856) | [1822542](https://www.ncbi.nlm.nih.gov/pubmed/1822542) | metadata signals extractable PD data (EC50) |
 | `Sharif_2024.pdf` | Sharif NA, Human experience and efficacy of omiden…, Current opinion in pharmaco… (2024) | pd | 4 | [10.1016/j.coph.2023.102426](https://doi.org/10.1016/j.coph.2023.102426) | [38168596](https://www.ncbi.nlm.nih.gov/pubmed/38168596) | metadata signals extractable PD data (EC50) |
 | `Nieminen_2005.pdf` | Nieminen T et al., Polymorphisms of genes CYP2D6, ADRB1 an…, European journal of clinica… (2005) | pgx | 8 | [10.1007/s00228-005-0052-4](https://doi.org/10.1007/s00228-005-0052-4) | [16315032](https://www.ncbi.nlm.nih.gov/pubmed/16315032) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -120,12 +120,12 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mäenpää_2014.pdf` | Mäenpää J et al., Paroxetine markedly increases plasma co…, Drug metabolism and disposi… (2014) | pgx | 7 | [10.1124/dmd.114.059576](https://doi.org/10.1124/dmd.114.059576) | [25261563](https://www.ncbi.nlm.nih.gov/pubmed/25261563) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Volotinen_2007.pdf` | Volotinen M et al., Timolol metabolism in human liver micro…, Drug metabolism and disposi… (2007) | pgx | 7 | [10.1124/dmd.106.012906](https://doi.org/10.1124/dmd.106.012906) | [17431033](https://www.ncbi.nlm.nih.gov/pubmed/17431033) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Volotinen_2010.pdf` | Volotinen M et al., Effects of selective serotonin reuptake…, Basic & clinical pharmacolo… (2010) | pgx | 7 | [10.1111/j.1742-7843.2009.00487.x](https://doi.org/10.1111/j.1742-7843.2009.00487.x) | [19912165](https://www.ncbi.nlm.nih.gov/pubmed/19912165) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Elikowski_2022.pdf` | Elikowski W et al., Bradycardia during optical timolol ther…, Polski merkuriusz lekarski… (2022) | pgx | 5 | not captured | [35278294](https://www.ncbi.nlm.nih.gov/pubmed/35278294) | metadata signals extractable PGX data (CYP2D6) |
+| `Elikowski_2022.pdf` | Elikowski W et al., Bradycardia during optical timolol ther…, Polski merkuriusz lekarski… (2022) | pgx | 5 |  | [35278294](https://www.ncbi.nlm.nih.gov/pubmed/35278294) | metadata signals extractable PGX data (CYP2D6) |
 | `Epperla_2014.pdf` | Epperla N et al., Topical timolol for treatment of epista…, BMJ case reports (2014) | pgx | 5 | [10.1136/bcr-2013-203056](https://doi.org/10.1136/bcr-2013-203056) | [24518395](https://www.ncbi.nlm.nih.gov/pubmed/24518395) | metadata signals extractable PGX data (CYP2D6) |
 | `He_2016.pdf` | He A et al., Genotyping for CYP2D6 in Patients with…, Pediatric dermatology (2016) | pgx | 5 | [10.1111/pde.12942](https://doi.org/10.1111/pde.12942) | [27882672](https://www.ncbi.nlm.nih.gov/pubmed/27882672) | metadata signals extractable PGX data (CYP2D6) |
 | `Volotinen_2011.pdf` | Volotinen M et al., Metabolism of ophthalmic timolol: new a…, Basic & clinical pharmacolo… (2011) | pgx | 5 | [10.1111/j.1742-7843.2011.00694.x](https://doi.org/10.1111/j.1742-7843.2011.00694.x) | [21385322](https://www.ncbi.nlm.nih.gov/pubmed/21385322) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-07T01:29:24.348443+00:00</sub>
+<sub>queue written 2026-10-07 01:29 UTC</sub>
 
 ## Screened and excluded
 
@@ -173,5 +173,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 01:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btimolol%5D&body=Drug%3A%20timolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_timolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:29 UTC</sub>

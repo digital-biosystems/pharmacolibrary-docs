@@ -73,7 +73,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3349 matched, 279 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -82,13 +82,13 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Frennby_1995.pdf` | Frennby B et al., The use of iohexol clearance to determi…, Clinical nephrology (1995) | popPK | 5 | not captured | [7697934](https://pubmed.ncbi.nlm.nih.gov/7697934) | The study uses iohexol (iodinated contrast) as a probe to determine GFR and reports specific clearance values for iohexol/iodine in patients, though it is primarily a comparative renal function study rather than a dedicated PK characterization of iodine. |
+| `Frennby_1995.pdf` | Frennby B et al., The use of iohexol clearance to determi…, Clinical nephrology (1995) | popPK | 5 |  | [7697934](https://pubmed.ncbi.nlm.nih.gov/7697934) | The study uses iohexol (iodinated contrast) as a probe to determine GFR and reports specific clearance values for iohexol/iodine in patients, though it is primarily a comparative renal function study rather than a dedicated PK characterization of iodine. |
 | `Kirchner_1994.pdf` | Kirchner G, Transport of iodine and cesium via the…, Health physics (1994) | popPK | 5 | [10.1097/00004032-199406000-00005](https://doi.org/10.1097/00004032-199406000-00005) | [8181940](https://pubmed.ncbi.nlm.nih.gov/8181940) | The study reports quantitative compartmental modeling parameters (weathering half-lives and feed-to-milk transfer coefficients) for iodine in cows. |
 | `Latif_2015.pdf` | Latif R et al., New small molecule agonists to the thyr…, Thyroid : official journal… (2015) | pd | 5 | [10.1089/thy.2014.0119](https://doi.org/10.1089/thy.2014.0119) | [25333622](https://www.ncbi.nlm.nih.gov/pubmed/25333622) | metadata signals extractable PD data (EC50) |
 | `Li_2022.pdf` | Li J et al., Halocyclopentadienes: An Emerging Class…, Environmental science & tec… (2022) | pd | 5 | [10.1021/acs.est.2c02490](https://doi.org/10.1021/acs.est.2c02490) | [35938673](https://www.ncbi.nlm.nih.gov/pubmed/35938673) | metadata signals extractable PD data (EC50) |
 | `Musch_1987.pdf` | Musch MW et al., Homologous desensitization to prostagla…, The American journal of phy… (1987) | pd | 5 | [10.1152/ajpgi.1987.252.1.G120](https://doi.org/10.1152/ajpgi.1987.252.1.G120) | [3812680](https://www.ncbi.nlm.nih.gov/pubmed/3812680) | metadata signals extractable PD data (EC50) |
 | `Asquith_2022.pdf` | Asquith CRM et al., Identification of 4-Anilinoquin(az)olin…, ChemMedChem (2022) | pd | 4 | [10.1002/cmdc.202200161](https://doi.org/10.1002/cmdc.202200161) | [35403825](https://www.ncbi.nlm.nih.gov/pubmed/35403825) | metadata signals extractable PD data (IC50) |
-| `Badio_1994.pdf` | Badio B et al., Epibatidine, a potent analgetic and nic…, Molecular pharmacology (1994) | pd | 4 | not captured | [8183234](https://www.ncbi.nlm.nih.gov/pubmed/8183234) | metadata signals extractable PD data (EC50) |
+| `Badio_1994.pdf` | Badio B et al., Epibatidine, a potent analgetic and nic…, Molecular pharmacology (1994) | pd | 4 |  | [8183234](https://www.ncbi.nlm.nih.gov/pubmed/8183234) | metadata signals extractable PD data (EC50) |
 | `Ding_2023.pdf` | Ding S et al., Leaching of organic matter and iodine,…, Journal of hazardous materi… (2023) | pd | 4 | [10.1016/j.jhazmat.2023.132241](https://doi.org/10.1016/j.jhazmat.2023.132241) | [37567136](https://www.ncbi.nlm.nih.gov/pubmed/37567136) | metadata signals extractable PD data (EC50) |
 | `Fujita_1995.pdf` | Fujita H et al., Isolation and characterization of ovoki…, Peptides (1995) | pd | 4 | [10.1016/0196-9781(95)00054-n](https://doi.org/10.1016/0196-9781(95)00054-n) | [7479316](https://www.ncbi.nlm.nih.gov/pubmed/7479316) | metadata signals extractable PD data (EC50) |
 | `Hou_2022.pdf` | Hou X et al., Construction of a 124I-Labeled Specific…, Molecular pharmaceutics (2022) | pd | 4 | [10.1021/acs.molpharmaceut.2c00342](https://doi.org/10.1021/acs.molpharmaceut.2c00342) | [35904514](https://www.ncbi.nlm.nih.gov/pubmed/35904514) | metadata signals extractable PD data (EC50) |
@@ -96,13 +96,13 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Maletti_1987.pdf` | Maletti M et al., Evidence of functional gastric inhibito…, Diabetes (1987) | pd | 4 | [10.2337/diab.36.11.1336](https://doi.org/10.2337/diab.36.11.1336) | [2822518](https://www.ncbi.nlm.nih.gov/pubmed/2822518) | metadata signals extractable PD data (IC50) |
 | `Rajasekaran_2014.pdf` | Rajasekaran D et al., Targeting distinct tautomerase sites of…, FASEB journal : official pu… (2014) | pd | 4 | [10.1096/fj.14-256636](https://doi.org/10.1096/fj.14-256636) | [25016026](https://www.ncbi.nlm.nih.gov/pubmed/25016026) | metadata signals extractable PD data (EC50) |
 | `Schiebinger_1988.pdf` | Schiebinger RJ et al., The adrenal capsule alters the response…, Endocrinology (1988) | pd | 4 | [10.1210/endo-123-1-492](https://doi.org/10.1210/endo-123-1-492) | [2968238](https://www.ncbi.nlm.nih.gov/pubmed/2968238) | metadata signals extractable PD data (IC50) |
-| `Wong_1990.pdf` | Wong SK et al., Chimeric muscarinic cholinergic: beta-a…, The Journal of biological c… (1990) | pd | 4 | not captured | [2156845](https://www.ncbi.nlm.nih.gov/pubmed/2156845) | metadata signals extractable PD data (EC50) |
+| `Wong_1990.pdf` | Wong SK et al., Chimeric muscarinic cholinergic: beta-a…, The Journal of biological c… (1990) | pd | 4 |  | [2156845](https://www.ncbi.nlm.nih.gov/pubmed/2156845) | metadata signals extractable PD data (EC50) |
 | `Kim_2022.pdf` | Kim H et al., Association of the SLC47A1 Gene Variant…, The Journal of clinical end… (2022) | pgx | 8 | [10.1210/clinem/dgac333](https://doi.org/10.1210/clinem/dgac333) | [35639991](https://www.ncbi.nlm.nih.gov/pubmed/35639991) | metadata signals extractable PGX data (SLC47A1, PK/PD-context) |
 | `Low_2026.pdf` | Low XY et al., Influence of transporter polymorphisms…, Pharmacogenomics (2026) | pgx | 8 | [10.1080/14622416.2026.2641750](https://doi.org/10.1080/14622416.2026.2641750) | [41811250](https://www.ncbi.nlm.nih.gov/pubmed/41811250) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Shi_2023.pdf` | Shi J et al., Effect of Genotype on the Pharmacokinet…, Journal of clinical pharmac… (2023) | pgx | 8 | [10.1002/jcph.2168](https://doi.org/10.1002/jcph.2168) | [36309848](https://www.ncbi.nlm.nih.gov/pubmed/36309848) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Masimirembwa_1995.pdf` | Masimirembwa CM et al., Low CYP1A2 activity in rural Shona chil…, Clinical pharmacology and t… (1995) | pgx | 5 | [10.1016/0009-9236(95)90262-7](https://doi.org/10.1016/0009-9236(95)90262-7) | [7828378](https://www.ncbi.nlm.nih.gov/pubmed/7828378) | metadata signals extractable PGX data (CYP1A2) |
 
-<sub>queue written 2026-10-07T21:51:58.118330+00:00</sub>
+<sub>queue written 2026-10-07 21:51 UTC</sub>
 
 ## Screened and excluded
 
@@ -411,5 +411,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 21:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodine%5D&body=Drug%3A%20iodine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:52 UTC</sub>

@@ -57,4 +57,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminobutyric_acid%5D%20pd_Gonz_lez_1994_CAPs&body=Drug%3A%20aminobutyric_acid%0ARecord%3A%20pd_Gonz_lez_1994_CAPs%0APaper%3A%20Gonz%C3%A1lez_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminobutyric_acid/pd_Gonz_lez_1994_CAPs%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [aminobutyric acid](drugs/drug_aminobutyric_acid/)</sub>

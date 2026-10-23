@@ -105,11 +105,10 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC15A1` inhibitor/unknown, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` other/unknown | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor/unknown | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor/unknown, `SLC22A5` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: SLC16A1 (unknown).</sub>
 
@@ -131,7 +130,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1219 matched, 187 returned
 - **screened:** 8  ·  **relevant:** 9
-- **records:** 13  ·  extracted 3  ·  needs_review 7  ·  rejected 3  ·  stale 0
+- **records:** 13  ·  extracted 3  ·  needs review 7  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -149,7 +148,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Reeder_2023.pdf` | Reeder JA et al., Model-Informed Clinical Practice - Dete…, Antimicrobial agents and ch… (2023) | popPK | 10 | [10.1128/aac.01248-22](https://doi.org/10.1128/aac.01248-22) | [36920230](https://pubmed.ncbi.nlm.nih.gov/36920230) | The paper reports a population PK model for ampicillin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Tremoulet_2014.pdf` | Tremoulet A et al., Characterization of the population phar…, Antimicrobial agents and ch… (2014) | popPK | 10 | [10.1128/AAC.02374-13](https://doi.org/10.1128/AAC.02374-13) | [24614374](https://pubmed.ncbi.nlm.nih.gov/24614374) | The abstract describes a relevant population PK study for ampicillin in neonates but reports qualitative covariate results and dosing regimens rather than specific numeric parameter values (CL, V, etc.) in the provided text. |
 | `Chamberlain_1993.pdf` | Chamberlain A et al., Pharmacokinetics of ampicillin and sulb…, American journal of obstetr… (1993) | popPK | 9 | [10.1016/0002-9378(93)90515-k](https://doi.org/10.1016/0002-9378(93)90515-k) | [8438948](https://pubmed.ncbi.nlm.nih.gov/8438948) | The study is a primary PK study on ampicillin in humans reporting relevant parameters, but the specific numeric values are not provided in the abstract or text evidence. |
-| `Foulds_1985.pdf` | Foulds G et al., The parenteral kinetics of ampicillin/s…, International journal of cl… (1985) | popPK | 9 | not captured | [2991150](https://pubmed.ncbi.nlm.nih.gov/2991150) | The study reports PK parameters for ampicillin, but only half-life, peak concentration, and renal recovery are provided; specific numerical values for clearance, volume, and rate constants are not present in the text. |
+| `Foulds_1985.pdf` | Foulds G et al., The parenteral kinetics of ampicillin/s…, International journal of cl… (1985) | popPK | 9 |  | [2991150](https://pubmed.ncbi.nlm.nih.gov/2991150) | The study reports PK parameters for ampicillin, but only half-life, peak concentration, and renal recovery are provided; specific numerical values for clearance, volume, and rate constants are not present in the text. |
 | `English_1976.pdf` | English AR et al., Pirbenicillin: pharmacokinetic paramete…, Antimicrobial agents and ch… (1976) | popPK | 8 | [10.1128/AAC.10.3.491](https://doi.org/10.1128/AAC.10.3.491) | [984791](https://pubmed.ncbi.nlm.nih.gov/984791) | The paper describes a pharmacokinetic study of ampicillin in mice using a two-compartment model, but no numeric parameter values (CL, V, ka, etc.) are present in the provided evidence. |
 | `Hampel_1988.pdf` | Hampel B et al., Comparative pharmacokinetics of sulbact…, Drugs 35 Suppl (1988) | popPK | 8 | [10.2165/00003495-198800357-00007](https://doi.org/10.2165/00003495-198800357-00007) | [3220007](https://pubmed.ncbi.nlm.nih.gov/3220007) | The study reports pharmacokinetic parameters for ampicillin, but the specific numeric values are not included in the provided evidence text. |
 | `Le_2018.pdf` | Le J et al., Comparative Analysis of Ampicillin Plas…, Therapeutic drug monitoring (2018) | popPK | 8 | [10.1097/FTD.0000000000000466](https://doi.org/10.1097/FTD.0000000000000466) | [29271816](https://pubmed.ncbi.nlm.nih.gov/29271816) | The study is a population PK analysis of ampicillin in neonates, but specific parameter estimates (CL, V) are not listed in the abstract, only summary metrics like bias and correlation. |
@@ -157,12 +156,12 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Christensen_1996.pdf` | Christensen JM et al., The disposition of five therapeutically…, Journal of veterinary pharm… (1996) | popPK | 7 | [10.1111/j.1365-2885.1996.tb00079.x](https://doi.org/10.1111/j.1365-2885.1996.tb00079.x) | [8971671](https://pubmed.ncbi.nlm.nih.gov/8971671) | The paper describes a pharmacokinetic study of ampicillin in llamas but the evidence provided is only an abstract that lists the types of parameters calculated without giving the specific numeric values. |
 | `Pelligand_2024.pdf` | Pelligand L et al., Population pharmacokinetic meta-analysi…, Veterinary journal (London,… (2024) | popPK | 7 | [10.1016/j.tvjl.2024.106136](https://doi.org/10.1016/j.tvjl.2024.106136) | [38759725](https://pubmed.ncbi.nlm.nih.gov/38759725) | The paper describes a population PK meta-analysis for ampicillin in dogs and provides dosing recommendations, but the specific quantitative PK parameter values (CL, V, ka) are not listed in the provided evidence text. |
 | `Tung_2025.pdf` | Tung N et al., Dosing Recommendations for Ampicillin a…, The journal of pediatric ph… (2025) | popPK | 6 | [10.5863/JPPT-24-00069](https://doi.org/10.5863/JPPT-24-00069) | [40534929](https://pubmed.ncbi.nlm.nih.gov/40534929) | The study performs population PK simulations for ampicillin in humans, but the specific numeric PK parameter values (CL, V, etc.) are not explicitly listed in the abstract, likely residing in the full text or supplementary materials. |
-| `Carbon_1978.pdf` | Carbon C et al., Tissue cage experiments with beta-lacta…, Scandinavian journal of inf… (1978) | popPK | 5 | not captured | [279966](https://pubmed.ncbi.nlm.nih.gov/279966) | The study uses an animal model (rabbits) to measure antibiotic concentrations in interstitial fluid, but no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for ampicillin are provided in the evidence. |
+| `Carbon_1978.pdf` | Carbon C et al., Tissue cage experiments with beta-lacta…, Scandinavian journal of inf… (1978) | popPK | 5 |  | [279966](https://pubmed.ncbi.nlm.nih.gov/279966) | The study uses an animal model (rabbits) to measure antibiotic concentrations in interstitial fluid, but no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for ampicillin are provided in the evidence. |
 | `Clarke_1974.pdf` | Clarke JT et al., Human pharmacokinetics of BL-P1654 comp…, Antimicrobial agents and ch… (1974) | popPK | 5 | [10.1128/AAC.6.6.729](https://doi.org/10.1128/AAC.6.6.729) | [4455125](https://pubmed.ncbi.nlm.nih.gov/4455125) | Ampicillin is a comparator to BL-P1654, and while half-life and renal clearance values are mentioned in the text, the study does not provide a full compartmental PK model (V, Q, ka) for ampicillin. |
 | `Jimenez-Toro_2023.pdf` | Jimenez-Toro I et al., Pharmacokinetic/Pharmacodynamic Index L…, Antimicrobial agents and ch… (2023) | popPK | 5 | [10.1128/aac.00966-22](https://doi.org/10.1128/aac.00966-22) | [36695584](https://pubmed.ncbi.nlm.nih.gov/36695584) | The study is a mouse PK/PD efficacy study with simulations, but no quantitative disposition parameters (CL, V, etc.) for ampicillin are reported in the text provided. |
 | `Urakami_2014.pdf` | Urakami T et al., Enterococcal endocarditis complicated w…, Journal of infection and ch… (2014) | popPK | 5 | [10.1016/j.jiac.2014.07.011](https://doi.org/10.1016/j.jiac.2014.07.011) | [25153621](https://pubmed.ncbi.nlm.nih.gov/25153621) | The paper reports individual serum concentration measurements (peak, median, trough) for ampicillin in a human patient, which supports PK/PD documentation but lacks derived compartmental parameters (CL, Vd, t1/2). |
 
-<sub>queue written 2026-10-07T10:20:14.578280+00:00</sub>
+<sub>queue written 2026-10-07 10:20 UTC</sub>
 
 ## Screened and excluded
 
@@ -286,5 +285,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bampicillin%5D&body=Drug%3A%20ampicillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ampicillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:21 UTC</sub>

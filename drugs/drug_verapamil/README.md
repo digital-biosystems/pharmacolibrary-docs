@@ -54,21 +54,20 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` blocker/inhibitor/substrate/transport, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor | DrugBank actor |
 | distribution | placenta | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | distribution | testis | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` activator/substrate, `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/metabolism, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
-| excretion | kidney | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC4` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC4` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC3` inhibitor, `ABCC4` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
 | — | brain | `SLC6A4` unknown | DrugBank actor |
@@ -94,7 +93,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1464 matched, 81 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -104,24 +103,24 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Gupta_2002.pdf` | Gupta S et al., Pharmacokinetics of controlled-release…, Biopharmaceutics & drug dis… (2002) | popPK | 10 | [10.1002/bdd.289](https://doi.org/10.1002/bdd.289) | [11891670](https://pubmed.ncbi.nlm.nih.gov/11891670) | The paper reports a population PK model for verapamil but only describes trends and relative comparisons (e.g., 4-fold greater clearance) without providing the specific numeric parameter values (CL, V, Ka) in the provided evidence. |
-| `Koike_1979.pdf` | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | popPK | 10 | not captured | [432439](https://pubmed.ncbi.nlm.nih.gov/432439) | The study reports quantitative compartmental PK parameters (CL, Vd, t1/2) for verapamil in humans, with all values explicitly stated in the text. |
-| `Lemmer_1997.pdf` | Lemmer B, Chronopharmacological aspects of PK/PD…, International journal of cl… (1997) | pd | 5 | not captured | [9352396](https://www.ncbi.nlm.nih.gov/pubmed/9352396) | metadata signals extractable PD data (PK/PD) |
+| `Koike_1979.pdf` | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | popPK | 10 |  | [432439](https://pubmed.ncbi.nlm.nih.gov/432439) | The study reports quantitative compartmental PK parameters (CL, Vd, t1/2) for verapamil in humans, with all values explicitly stated in the text. |
+| `Lemmer_1997.pdf` | Lemmer B, Chronopharmacological aspects of PK/PD…, International journal of cl… (1997) | pd | 5 |  | [9352396](https://www.ncbi.nlm.nih.gov/pubmed/9352396) | metadata signals extractable PD data (PK/PD) |
 | `Zimmerman_2004.pdf` | Zimmerman JJ, Exposure-response relationships and dru…, The AAPS journal (2004) | pd | 5 | [10.1208/aapsj060428](https://doi.org/10.1208/aapsj060428) | [15760093](https://www.ncbi.nlm.nih.gov/pubmed/15760093) | metadata signals extractable PD data (Exposure-response) |
-| `Harder_1992.pdf` | Harder S et al., Concentration/effect relationship and e…, Journal of cardiovascular p… (1992) | pd | 4 | not captured | [1381762](https://www.ncbi.nlm.nih.gov/pubmed/1381762) | metadata signals extractable PD data (sigmoid) |
+| `Harder_1992.pdf` | Harder S et al., Concentration/effect relationship and e…, Journal of cardiovascular p… (1992) | pd | 4 |  | [1381762](https://www.ncbi.nlm.nih.gov/pubmed/1381762) | metadata signals extractable PD data (sigmoid) |
 | `Pan_2008.pdf` | Pan W et al., Dietary salt does not influence the dis…, Xenobiotica; the fate of fo… (2008) | pgx | 8 | [10.1080/00498250701832446](https://doi.org/10.1080/00498250701832446) | [18340565](https://www.ncbi.nlm.nih.gov/pubmed/18340565) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Botsch_1993.pdf` | Botsch S et al., Identification and characterization of…, Molecular pharmacology (1993) | pgx | 7 | not captured | [8423765](https://www.ncbi.nlm.nih.gov/pubmed/8423765) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Botsch_1993.pdf` | Botsch S et al., Identification and characterization of…, Molecular pharmacology (1993) | pgx | 7 |  | [8423765](https://www.ncbi.nlm.nih.gov/pubmed/8423765) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Busse_1995.pdf` | Busse D et al., Cytochromes of the P450 2C subfamily ar…, Naunyn-Schmiedeberg's archi… (1995) | pgx | 7 | [10.1007/BF00168924](https://doi.org/10.1007/BF00168924) | [8750925](https://www.ncbi.nlm.nih.gov/pubmed/8750925) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Dadashzadeh_2006.pdf` | Dadashzadeh S et al., The effect of gender on the pharmacokin…, Biopharmaceutics & drug dis… (2006) | pgx | 7 | [10.1002/bdd.512](https://doi.org/10.1002/bdd.512) | [16892180](https://www.ncbi.nlm.nih.gov/pubmed/16892180) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Djebli_2021.pdf` | Djebli N et al., Physiologically-Based Pharmacokinetic M…, European journal of drug me… (2021) | pgx | 7 | [10.1007/s13318-021-00714-z](https://doi.org/10.1007/s13318-021-00714-z) | [34495458](https://www.ncbi.nlm.nih.gov/pubmed/34495458) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Hassan_2007.pdf` | Hassan HE et al., Oxycodone induces overexpression of P-g…, Journal of pharmaceutical s… (2007) | pgx | 7 | [10.1002/jps.20893](https://doi.org/10.1002/jps.20893) | [17593551](https://www.ncbi.nlm.nih.gov/pubmed/17593551) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Jamali_2026.pdf` | Jamali H et al., Targeting ABC transporters in glioma: f…, Neurogenetics (2026) | pgx | 7 | [10.1007/s10048-026-00881-8](https://doi.org/10.1007/s10048-026-00881-8) | [41831170](https://www.ncbi.nlm.nih.gov/pubmed/41831170) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
-| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 | not captured | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 |  | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Oshida_2017.pdf` | Oshida K et al., Identification of Transporters Involved…, European journal of drug me… (2017) | pgx | 7 | [10.1007/s13318-016-0327-4](https://doi.org/10.1007/s13318-016-0327-4) | [26961540](https://www.ncbi.nlm.nih.gov/pubmed/26961540) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Othman_2007.pdf` | Othman AA et al., Transport, metabolism, and in vivo popu…, The Journal of pharmacology… (2007) | pgx | 7 | [10.1124/jpet.106.111245](https://doi.org/10.1124/jpet.106.111245) | [17003230](https://www.ncbi.nlm.nih.gov/pubmed/17003230) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Suroowan_2019.pdf` | Suroowan S et al., Herbal Medicine of the 21st Century: A…, Current topics in medicinal… (2019) | pgx | 7 | [10.2174/1568026619666191112121330](https://doi.org/10.2174/1568026619666191112121330) | [31721714](https://www.ncbi.nlm.nih.gov/pubmed/31721714) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Tomita_2020.pdf` | Tomita Y et al., Prediction methods of drug-drug interac…, Drug metabolism and pharmac… (2020) | pgx | 7 | [10.1016/j.dmpk.2020.03.006](https://doi.org/10.1016/j.dmpk.2020.03.006) | [32660818](https://www.ncbi.nlm.nih.gov/pubmed/32660818) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T15:21:58.243663+00:00</sub>
+<sub>queue written 2026-10-07 15:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -210,5 +209,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 15:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bverapamil%5D&body=Drug%3A%20verapamil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_verapamil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:22 UTC</sub>

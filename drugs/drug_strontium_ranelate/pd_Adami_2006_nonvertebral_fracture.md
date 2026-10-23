@@ -72,4 +72,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bstrontium_ranelate%5D%20pd_Adami_2006_nonvertebral_fracture&body=Drug%3A%20strontium_ranelate%0ARecord%3A%20pd_Adami_2006_nonvertebral_fracture%0APaper%3A%20Adami_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_strontium_ranelate/pd_Adami_2006_nonvertebral_fracture%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [strontium ranelate](drugs/drug_strontium_ranelate/)</sub>

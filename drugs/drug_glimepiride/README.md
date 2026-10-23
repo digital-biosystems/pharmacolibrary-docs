@@ -98,7 +98,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 231 matched, 170 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -107,7 +107,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Antonesi_2011.pdf` | Antonesi IM et al., Pharmacokinetic modeling of glimepiride…, Revista medico-chirurgicala… (2011) | popPK | 9 | not captured | [22046814](https://pubmed.ncbi.nlm.nih.gov/22046814) | The paper reports a compartmental PK model for glimepiride in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, likely residing in tables or results sections not fully extracted. |
+| `Antonesi_2011.pdf` | Antonesi IM et al., Pharmacokinetic modeling of glimepiride…, Revista medico-chirurgicala… (2011) | popPK | 9 |  | [22046814](https://pubmed.ncbi.nlm.nih.gov/22046814) | The paper reports a compartmental PK model for glimepiride in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, likely residing in tables or results sections not fully extracted. |
 | `Yoo_2011.pdf` | Yoo HD et al., Population pharmacokinetic analysis of…, European journal of clinica… (2011) | popPK | 9 | [10.1007/s00228-011-1035-2](https://doi.org/10.1007/s00228-011-1035-2) | [21476064](https://pubmed.ncbi.nlm.nih.gov/21476064) | The paper reports a population PK model for glimepiride, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only relative effects (1.60-fold). |
 | `Niemi_2001_2.pdf` | Niemi M et al., Effect of gemfibrozil on the pharmacoki…, Clinical pharmacology and t… (2001) | popPK | 8 | [10.1067/mcp.2001.119723](https://doi.org/10.1067/mcp.2001.119723) | [11719730](https://pubmed.ncbi.nlm.nih.gov/11719730) | The study reports glimepiride pharmacokinetic data in humans with some quantitative values (half-life, AUC change) but lacks specific clearance or volume parameters required for robust population modeling. |
 | `Viana_2018_2.pdf` | Viana ALM et al., Pharmacokinetics and pharmacodynamics o…, International journal of ph… (2018) | popPK | 8 | [10.1016/j.ijpharm.2018.10.050](https://doi.org/10.1016/j.ijpharm.2018.10.050) | [30359686](https://pubmed.ncbi.nlm.nih.gov/30359686) | Study reports PK of glimepiride in rats, but no numeric parameter values (CL, V, t1/2, etc.) are present in the provided text. |
@@ -115,7 +115,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mohsen_2017.pdf` | Mohsen AM et al., Enhanced oral bioavailability and susta…, Drug development and indust… (2017) | popPK | 5 | [10.1080/03639045.2017.1310224](https://doi.org/10.1080/03639045.2017.1310224) | [28330377](https://pubmed.ncbi.nlm.nih.gov/28330377) | The study evaluates the pharmacokinetics of glimepiride in rats and reports a 7-fold enhancement in bioavailability, but specific quantitative disposition parameters (CL, V, ka) are not present in the provided text. |
 | `Zhou_2020.pdf` | Zhou D et al., Interaction of Organic Anion Transporte…, Journal of agricultural and… (2020) | pd | 5 | [10.1021/acs.jafc.9b05808](https://doi.org/10.1021/acs.jafc.9b05808) | [31760750](https://www.ncbi.nlm.nih.gov/pubmed/31760750) | metadata signals extractable PD data (IC50) |
 | `Inoue_1995.pdf` | Inoue Y et al., Characterization of the binding sites f…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00368-u](https://doi.org/10.1016/0014-2999(95)00368-u) | [8549639](https://www.ncbi.nlm.nih.gov/pubmed/8549639) | metadata signals extractable PD data (IC50) |
-| `Müller_1998.pdf` | Müller G et al., Convergence and divergence of the signa…, Molecular medicine (Cambrid… (1998) | pd | 4 | not captured | [9642681](https://www.ncbi.nlm.nih.gov/pubmed/9642681) | metadata signals extractable PD data (EC50) |
+| `Müller_1998.pdf` | Müller G et al., Convergence and divergence of the signa…, Molecular medicine (Cambrid… (1998) | pd | 4 |  | [9642681](https://www.ncbi.nlm.nih.gov/pubmed/9642681) | metadata signals extractable PD data (EC50) |
 | `Pandit_2017.pdf` | Pandit S et al., Evaluation of herb-drug interaction of…, Journal of ethnopharmacology (2017) | pd | 4 | [10.1016/j.jep.2016.07.061](https://doi.org/10.1016/j.jep.2016.07.061) | [27457692](https://www.ncbi.nlm.nih.gov/pubmed/27457692) | metadata signals extractable PD data (IC50) |
 | `Rosati_1998.pdf` | Rosati B et al., Sulfonylureas blockade of neural and ca…, FEBS letters (1998) | pd | 4 | [10.1016/s0014-5793(98)01444-6](https://doi.org/10.1016/s0014-5793(98)01444-6) | [9862440](https://www.ncbi.nlm.nih.gov/pubmed/9862440) | metadata signals extractable PD data (IC50) |
 | `Shao_2016.pdf` | Shao H et al., Metabolic Interaction Potential between…, Pharmacology (2016) | pd | 4 | [10.1159/000441230](https://doi.org/10.1159/000441230) | [26569597](https://www.ncbi.nlm.nih.gov/pubmed/26569597) | metadata signals extractable PD data (IC50) |
@@ -134,7 +134,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kim_2007.pdf` | Kim YM et al., Identifying drugs needing pharmacogenet…, American journal of health-… (2007) | pgx | 5 | [10.2146/ajhp050490](https://doi.org/10.2146/ajhp050490) | [17215467](https://www.ncbi.nlm.nih.gov/pubmed/17215467) | metadata signals extractable PGX data (CYP2C9) |
 | `Ragia_2022.pdf` | Ragia G et al., SLCO1B1 c.521T&gt;C gene polymorphism decr…, Drug metabolism and persona… (2022) | pgx | 5 | [10.1515/dmpt-2022-0131](https://doi.org/10.1515/dmpt-2022-0131) | [36169244](https://www.ncbi.nlm.nih.gov/pubmed/36169244) | metadata signals extractable PGX data (SLCO1B1) |
 
-<sub>queue written 2026-10-22T14:20:17.255388+00:00</sub>
+<sub>queue written 2026-10-22 14:20 UTC</sub>
 
 ## Screened and excluded
 
@@ -268,5 +268,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 14:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglimepiride%5D&body=Drug%3A%20glimepiride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glimepiride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 14:17 UTC</sub>

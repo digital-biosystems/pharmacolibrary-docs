@@ -66,4 +66,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcitalopram%5D%20pd_Bareggi_2004_Y_BOCS&body=Drug%3A%20citalopram%0ARecord%3A%20pd_Bareggi_2004_Y_BOCS%0APaper%3A%20Bareggi_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_citalopram/pd_Bareggi_2004_Y_BOCS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [citalopram](drugs/drug_citalopram/)</sub>

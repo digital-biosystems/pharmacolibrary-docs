@@ -100,7 +100,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 90 matched, 20 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 8  ·  extracted 4  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 8  ·  extracted 4  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -112,13 +112,13 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Borsuk_2017.pdf` | Borsuk A et al., Flip-Flop Phenomenon in Epidural Sufent…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.912](https://doi.org/10.1002/jcph.912) | [28510304](https://pubmed.ncbi.nlm.nih.gov/28510304) | The paper reports a population PK model for sufentanil in children with explicit numeric values for clearance, volume, and absorption rate. |
 | `Pokorná_2021.pdf` | Pokorná P et al., Sufentanil Disposition and Pharmacokine…, Pharmacology (2021) | popPK | 10 | [10.1159/000515787](https://doi.org/10.1159/000515787) | [34077940](https://pubmed.ncbi.nlm.nih.gov/34077940) | The paper reports quantitative population PK parameters (Vdc, CL) and dosage regimens for sufentanil in ventilated full-term neonates with values clearly stated in the abstract. |
 | `Pypendop_2014.pdf` | Pypendop BH et al., Pharmacokinetics of fentanyl, alfentani…, Journal of veterinary pharm… (2014) | popPK | 10 | [10.1111/jvp.12047](https://doi.org/10.1111/jvp.12047) | [23895731](https://pubmed.ncbi.nlm.nih.gov/23895731) | The study explicitly reports quantitative compartmental PK parameters (Vc, Vss, CL, t1/2) for sufentanil in the abstract text. |
-| `Schwartz_1991.pdf` | Schwartz AE et al., Pharmacokinetics of sufentanil in obese…, Anesthesia and analgesia (1991) | popPK | 10 | not captured | [1835321](https://pubmed.ncbi.nlm.nih.gov/1835321) | The study reports quantitative compartmental pharmacokinetic parameters (volume of distribution, elimination half-life, and clearance) for sufentanil in humans with specific numeric values. |
+| `Schwartz_1991.pdf` | Schwartz AE et al., Pharmacokinetics of sufentanil in obese…, Anesthesia and analgesia (1991) | popPK | 10 |  | [1835321](https://pubmed.ncbi.nlm.nih.gov/1835321) | The study reports quantitative compartmental pharmacokinetic parameters (volume of distribution, elimination half-life, and clearance) for sufentanil in humans with specific numeric values. |
 | `Groenendaal_2008.pdf` | Groenendaal D et al., Pharmacokinetic/pharmacodynamic modelli…, European journal of pharmac… (2008) | popPK | 9 | [10.1016/j.ejps.2008.03.003](https://doi.org/10.1016/j.ejps.2008.03.003) | [18467078](https://pubmed.ncbi.nlm.nih.gov/18467078) | The study reports quantitative PK/PD parameters for sufentanil (biophase rate constants k1e/keo and potency EC50), but specific numeric values for sufentanil are not explicitly itemized in the provided text, only range contexts and morphine specifics. |
-| `Cox_1998.pdf` | Cox EH et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1998) | popPK | 6 | not captured | [9495871](https://pubmed.ncbi.nlm.nih.gov/9495871) | The study describes PK/PD modeling of sufentanil in rats, but the specific quantitative disposition parameters (CL, V, etc.) are not listed in the provided evidence. |
+| `Cox_1998.pdf` | Cox EH et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1998) | popPK | 6 |  | [9495871](https://pubmed.ncbi.nlm.nih.gov/9495871) | The study describes PK/PD modeling of sufentanil in rats, but the specific quantitative disposition parameters (CL, V, etc.) are not listed in the provided evidence. |
 | `Davis_1986.pdf` | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | popPK | 5 | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) | [3512140](https://pubmed.ncbi.nlm.nih.gov/3512140) | Review article citing quantitative parameters for sufentanil (CL, t1/2, compartment model) in humans. |
 | `Nielsen_2014.pdf` | Nielsen BN et al., Intranasal sufentanil/ketamine analgesi…, Paediatric anaesthesia (2014) | popPK | 5 | [10.1111/pan.12268](https://doi.org/10.1111/pan.12268) | [24118506](https://pubmed.ncbi.nlm.nih.gov/24118506) | The study characterizes the pharmacokinetic profile of intranasal sufentanil, but the abstract only provides descriptive statistics (Cmax, Tmax, bioavailability) and lacks the specific quantitative disposition parameters (clearance, volume of distribution, intercompartmental clearance) required for a compartmental or population-PK model extraction. |
 
-<sub>queue written 2026-10-07T04:33:39.404186+00:00</sub>
+<sub>queue written 2026-10-07 04:33 UTC</sub>
 
 ## Screened and excluded
 
@@ -141,5 +141,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsufentanil%5D&body=Drug%3A%20sufentanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sufentanil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:34 UTC</sub>

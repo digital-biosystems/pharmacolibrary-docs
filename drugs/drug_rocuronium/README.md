@@ -5,7 +5,7 @@
 
 - **generic name:** Rocuronium
 - **ATC codes:** `M03AC09`
-- **DrugBank:** [DB00728](https://go.drugbank.com/drugs/DB00728) · **PubChem:** not captured
+- **DrugBank:** [DB00728](https://go.drugbank.com/drugs/DB00728) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -123,7 +123,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 494 matched, 71 returned
 - **screened:** 10  ·  **relevant:** 10
-- **records:** 7  ·  extracted 2  ·  needs_review 3  ·  rejected 2  ·  stale 0
+- **records:** 7  ·  extracted 2  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -134,7 +134,7 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Khalil_1994.pdf` | Khalil M et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1994) | popPK | 10 | [10.1097/00000542-199406000-00011](https://doi.org/10.1097/00000542-199406000-00011) | [8010470](https://pubmed.ncbi.nlm.nih.gov/8010470) | The study reports quantitative pharmacokinetic parameters (central volume of distribution and elimination half-life) for rocuronium in humans, with values explicitly stated in the abstract and results sections. |
 | `Magorian_1995.pdf` | Magorian T et al., The pharmacokinetics and neuromuscular…, Anesthesia and analgesia (1995) | popPK | 10 | [10.1097/00000539-199504000-00018](https://doi.org/10.1097/00000539-199504000-00018) | [7893030](https://pubmed.ncbi.nlm.nih.gov/7893030) | The paper reports quantitative PK parameters (CL, Vc, Vss, t1/2) for rocuronium in humans with specific numeric values provided in the text. |
-| `OKelly_1994.pdf` | O'Kelly B et al., Pharmacokinetics of rocuronium bromide…, European journal of anaesth… (1994) | popPK | 10 | not captured | [7925210](https://pubmed.ncbi.nlm.nih.gov/7925210) | The study reports a two-compartment PK model for rocuronium in humans, but the specific numeric parameter values are not listed in the provided evidence, only described qualitatively. |
+| `OKelly_1994.pdf` | O'Kelly B et al., Pharmacokinetics of rocuronium bromide…, European journal of anaesth… (1994) | popPK | 10 |  | [7925210](https://pubmed.ncbi.nlm.nih.gov/7925210) | The study reports a two-compartment PK model for rocuronium in humans, but the specific numeric parameter values are not listed in the provided evidence, only described qualitatively. |
 | `Reynolds_1997.pdf` | Reynolds LM et al., Bioavailability of intramuscular rocuro…, Anesthesiology (1997) | popPK | 10 | [10.1097/00000542-199711000-00014](https://doi.org/10.1097/00000542-199711000-00014) | [9366462](https://pubmed.ncbi.nlm.nih.gov/9366462) | The study reports quantitative pharmacokinetic parameters for rocuronium, specifically bioavailability (82.6%) and absorption rate constant (0.105 min⁻¹), derived from a mixed-effects population analysis. |
 | `Szenohradszky_1992.pdf` | Szenohradszky J et al., Pharmacokinetics of rocuronium bromide…, Anesthesiology (1992) | popPK | 10 | [10.1097/00000542-199211000-00010](https://doi.org/10.1097/00000542-199211000-00010) | [1443743](https://pubmed.ncbi.nlm.nih.gov/1443743) | The paper reports a population PK analysis for rocuronium in humans with specific numeric values for clearance, volumes, and half-life provided in the abstract. |
 | `Vuksanaj_1995.pdf` | Vuksanaj D et al., Pharmacokinetics of rocuronium in child…, Anesthesiology (1995) | popPK | 10 | [10.1097/00000542-199505000-00003](https://doi.org/10.1097/00000542-199505000-00003) | [7741284](https://pubmed.ncbi.nlm.nih.gov/7741284) | The study reports specific numeric population PK parameters for rocuronium (clearance, volume of distribution) directly in the abstract. |
@@ -146,7 +146,7 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Proost_2007.pdf` | Proost JH et al., Simultaneous versus sequential pharmaco…, Biopharmaceutics & drug dis… (2007) | popPK | 8 | [10.1002/bdd.575](https://doi.org/10.1002/bdd.575) | [17847121](https://pubmed.ncbi.nlm.nih.gov/17847121) | The paper describes a population PK-PD analysis for rocuronium but the specific numeric parameter values are not present in the provided abstract or text evidence. |
 | `Weiss_2016.pdf` | Weiss M, Comparison of distributed and compartme…, Journal of pharmacokinetics… (2016) | popPK | 8 | [10.1007/s10928-016-9484-y](https://doi.org/10.1007/s10928-016-9484-y) | [27534939](https://pubmed.ncbi.nlm.nih.gov/27534939) | The study analyzes the pharmacokinetics of rocuronium in patients, but the specific numeric parameter values are likely in figures or supplementary material not fully provided in the evidence text. |
 | `Shanks_1995.pdf` | Shanks CA et al., Calculation of an effect compartment ra…, British journal of anaesthe… (1995) | popPK | 7 | [10.1093/bja/75.1.109](https://doi.org/10.1093/bja/75.1.109) | [7669449](https://pubmed.ncbi.nlm.nih.gov/7669449) | The study calculates the effect compartment rate constant (ke0) for rocuronium using published T25-T75 values, representing a pharmacokinetic parameter derived from a compartmental model, though the primary output is a rate constant rather than standard clearance/volume. |
-| `Wierda_1995.pdf` | Wierda JM et al., Structure-pharmacodynamic-pharmacokinet…, European journal of anaesth… (1995) | popPK | 7 | not captured | [8557006](https://pubmed.ncbi.nlm.nih.gov/8557006) | The paper describes structure-pharmacokinetic relationships for a series of drugs including rocuronium but does not provide specific numeric disposition parameter values for rocuronium in the provided text. |
+| `Wierda_1995.pdf` | Wierda JM et al., Structure-pharmacodynamic-pharmacokinet…, European journal of anaesth… (1995) | popPK | 7 |  | [8557006](https://pubmed.ncbi.nlm.nih.gov/8557006) | The paper describes structure-pharmacokinetic relationships for a series of drugs including rocuronium but does not provide specific numeric disposition parameter values for rocuronium in the provided text. |
 | `Fawcett_1993.pdf` | Fawcett WJ et al., Comparison of recovery index of rocuron…, Anaesthesia (1993) | pd | 5 | [10.1111/j.1365-2044.1993.tb06900.x](https://doi.org/10.1111/j.1365-2044.1993.tb06900.x) | [8096371](https://www.ncbi.nlm.nih.gov/pubmed/8096371) | metadata signals extractable PD data (effectcompartment) |
 | `Plaud_1995.pdf` | Plaud B et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1995) | pd | 5 | [10.1016/0009-9236(95)90196-5](https://doi.org/10.1016/0009-9236(95)90196-5) | [7648768](https://www.ncbi.nlm.nih.gov/pubmed/7648768) | metadata signals extractable PD data (effectcompartment) |
 | `Wierda_1997.pdf` | Wierda JM et al., Pharmacokinetics and pharmacokinetic-dy…, British journal of anaesthe… (1997) | pd | 5 | [10.1093/bja/78.6.690](https://doi.org/10.1093/bja/78.6.690) | [9215021](https://www.ncbi.nlm.nih.gov/pubmed/9215021) | metadata signals extractable PD data (effectcompartment) |
@@ -155,7 +155,7 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mei_2015.pdf` | Mei Y et al., Role of SLCO1B1, ABCB1, and CHRNA1 gene…, Journal of clinical pharmac… (2015) | pgx | 5 | [10.1002/jcph.405](https://doi.org/10.1002/jcph.405) | [25279974](https://www.ncbi.nlm.nih.gov/pubmed/25279974) | metadata signals extractable PGX data (SLCO1B1) |
 | `Qi_2016.pdf` | Qi TL et al., Effect of ABCB1 rs12720464 and rs105530…, International journal of cl… (2016) | pgx | 5 | [10.5414/CP202547](https://doi.org/10.5414/CP202547) | [27087154](https://www.ncbi.nlm.nih.gov/pubmed/27087154) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-07T02:47:10.699202+00:00</sub>
+<sub>queue written 2026-10-07 02:47 UTC</sub>
 
 ## Screened and excluded
 
@@ -197,5 +197,5 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 02:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brocuronium%5D&body=Drug%3A%20rocuronium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rocuronium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:47 UTC</sub>

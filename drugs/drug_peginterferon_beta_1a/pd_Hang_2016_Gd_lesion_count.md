@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeginterferon_beta_1a%5D%20pd_Hang_2016_Gd_lesion_count&body=Drug%3A%20peginterferon_beta_1a%0ARecord%3A%20pd_Hang_2016_Gd_lesion_count%0APaper%3A%20Hang_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [peginterferon beta-1a](drugs/drug_peginterferon_beta_1a/)</sub>

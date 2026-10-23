@@ -4,7 +4,7 @@
 
 - **generic name:** urokinase
 - **ATC codes:** `B01AD04`
-- **DrugBank:** [DB00013](https://go.drugbank.com/drugs/DB00013) · **PubChem:** not captured
+- **DrugBank:** [DB00013](https://go.drugbank.com/drugs/DB00013) · **PubChem:** none
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -59,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 353 matched, 126 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -69,20 +69,20 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Köhler_1991.pdf` | Köhler M et al., Half-life of single-chain urokinase-typ…, Thrombosis research (1991) | popPK | 10 | [10.1016/0049-3848(91)90670-r](https://doi.org/10.1016/0049-3848(91)90670-r) | [1906642](https://pubmed.ncbi.nlm.nih.gov/1906642) | The study reports quantitative pharmacokinetic parameters (half-lives and compartmental model details) for urokinase in humans, with specific numeric values provided in the abstract. |
-| `Stump_1987.pdf` | Stump DC et al., Pharmacokinetics of single chain forms…, The Journal of pharmacology… (1987) | popPK | 10 | not captured | [3612530](https://pubmed.ncbi.nlm.nih.gov/3612530) | The abstract explicitly reports quantitative two-compartment pharmacokinetic parameters (half-lives, volumes, clearance) for urokinase-type plasminogen activator in rabbits and squirrel monkeys. |
+| `Stump_1987.pdf` | Stump DC et al., Pharmacokinetics of single chain forms…, The Journal of pharmacology… (1987) | popPK | 10 |  | [3612530](https://pubmed.ncbi.nlm.nih.gov/3612530) | The abstract explicitly reports quantitative two-compartment pharmacokinetic parameters (half-lives, volumes, clearance) for urokinase-type plasminogen activator in rabbits and squirrel monkeys. |
 | `Huang_2022.pdf` | Huang Z et al., A versatile insertion point on albumin…, International journal of bi… (2022) | pd | 5 | [10.1016/j.ijbiomac.2022.02.002](https://doi.org/10.1016/j.ijbiomac.2022.02.002) | [35134454](https://www.ncbi.nlm.nih.gov/pubmed/35134454) | metadata signals extractable PD data (IC50) |
-| `Rijken_2002.pdf` | Rijken DC et al., Characterization of the binding of urok…, Thrombosis and haemostasis (2002) | pd | 5 | not captured | [12152683](https://www.ncbi.nlm.nih.gov/pubmed/12152683) | metadata signals extractable PD data (EC50) |
+| `Rijken_2002.pdf` | Rijken DC et al., Characterization of the binding of urok…, Thrombosis and haemostasis (2002) | pd | 5 |  | [12152683](https://www.ncbi.nlm.nih.gov/pubmed/12152683) | metadata signals extractable PD data (EC50) |
 | `Li_2019.pdf` | Li L et al., Rapid identification of urokinase plasm…, Journal of pharmaceutical a… (2019) | pd | 4 | [10.1016/j.jpba.2018.10.036](https://doi.org/10.1016/j.jpba.2018.10.036) | [30396051](https://www.ncbi.nlm.nih.gov/pubmed/30396051) | metadata signals extractable PD data (IC50) |
 | `Mao_2016.pdf` | Mao D et al., [Effect of jianpi-jiedu formula on tumo…, Zhong nan da xue xue bao. Y… (2016) | pd | 4 | [10.11817/j.issn.1672-7347.2016.12.008](https://doi.org/10.11817/j.issn.1672-7347.2016.12.008) | [28070042](https://www.ncbi.nlm.nih.gov/pubmed/28070042) | metadata signals extractable PD data (IC50) |
 | `Martin_1993.pdf` | Martin U et al., Differential fibrinolytic properties of…, Blood coagulation & fibrino… (1993) | pd | 4 | [10.1097/00001721-199304000-00004](https://doi.org/10.1097/00001721-199304000-00004) | [8388740](https://www.ncbi.nlm.nih.gov/pubmed/8388740) | metadata signals extractable PD data (Emax) |
 | `Niemetz_1988.pdf` | Niemetz J et al., A streptokinase dependent plasma factor…, British journal of haematol… (1988) | pd | 4 | [10.1111/j.1365-2141.1988.tb02512.x](https://doi.org/10.1111/j.1365-2141.1988.tb02512.x) | [2975501](https://www.ncbi.nlm.nih.gov/pubmed/2975501) | metadata signals extractable PD data (sigmoid) |
-| `Nykjaer_1994.pdf` | Nykjaer A et al., Regions involved in binding of urokinas…, The Journal of biological c… (1994) | pd | 4 | not captured | [7929271](https://www.ncbi.nlm.nih.gov/pubmed/7929271) | metadata signals extractable PD data (EC50) |
+| `Nykjaer_1994.pdf` | Nykjaer A et al., Regions involved in binding of urokinas…, The Journal of biological c… (1994) | pd | 4 |  | [7929271](https://www.ncbi.nlm.nih.gov/pubmed/7929271) | metadata signals extractable PD data (EC50) |
 | `Rovelli_1990.pdf` | Rovelli G et al., Specific interaction of vitronectin wit…, European journal of biochem… (1990) | pd | 4 | [10.1111/j.1432-1033.1990.tb19293.x](https://doi.org/10.1111/j.1432-1033.1990.tb19293.x) | [1698627](https://www.ncbi.nlm.nih.gov/pubmed/1698627) | metadata signals extractable PD data (EC50) |
 | `Yang_2016.pdf` | Yang MD et al., Inhibitory Effects of AVEMAR on Prolife…, Nutrition and cancer (2016) | pd | 4 | [10.1080/01635581.2016.1153668](https://doi.org/10.1080/01635581.2016.1153668) | [27007465](https://www.ncbi.nlm.nih.gov/pubmed/27007465) | metadata signals extractable PD data (IC50) |
 | `Emoto_2008.pdf` | Emoto C et al., Non-invasive method to detect induction…, Xenobiotica; the fate of fo… (2008) | pgx | 7 | [10.1080/00498250701760159](https://doi.org/10.1080/00498250701760159) | [18274954](https://www.ncbi.nlm.nih.gov/pubmed/18274954) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Katoh_2007.pdf` | Katoh M et al., Application of chimeric mice with human…, Drug metabolism reviews (2007) | pgx | 7 | [10.1080/03602530601021340](https://doi.org/10.1080/03602530601021340) | [17364883](https://www.ncbi.nlm.nih.gov/pubmed/17364883) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-05T17:04:33.709055+00:00</sub>
+<sub>queue written 2026-10-05 17:04 UTC</sub>
 
 ## Screened and excluded
 
@@ -219,5 +219,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Burokinase%5D&body=Drug%3A%20urokinase%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_urokinase/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

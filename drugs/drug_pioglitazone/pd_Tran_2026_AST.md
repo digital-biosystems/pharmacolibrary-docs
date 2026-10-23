@@ -73,4 +73,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpioglitazone%5D%20pd_Tran_2026_AST&body=Drug%3A%20pioglitazone%0ARecord%3A%20pd_Tran_2026_AST%0APaper%3A%20Tran_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pioglitazone/pd_Tran_2026_AST%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pioglitazone](drugs/drug_pioglitazone/)</sub>

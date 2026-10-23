@@ -58,7 +58,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 114 matched, 53 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -67,24 +67,24 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Heptner_1984.pdf` | Heptner W et al., Kinetics and metabolism of nomifensine, The Journal of clinical psy… (1984) | popPK | 5 | not captured | [6370971](https://pubmed.ncbi.nlm.nih.gov/6370971) | A review of nomifensine PK reporting a two-compartment model with a few numeric values (t½ 2 h, 88% renal excretion) but no CL/V/ka parameters, which likely reside in the original studies rather than this text. |
+| `Heptner_1984.pdf` | Heptner W et al., Kinetics and metabolism of nomifensine, The Journal of clinical psy… (1984) | popPK | 5 |  | [6370971](https://pubmed.ncbi.nlm.nih.gov/6370971) | A review of nomifensine PK reporting a two-compartment model with a few numeric values (t½ 2 h, 88% renal excretion) but no CL/V/ka parameters, which likely reside in the original studies rather than this text. |
 | `Krueger_1990.pdf` | Krueger BK, Kinetics and block of dopamine uptake i…, Journal of neurochemistry (1990) | pd | 5 | [10.1111/j.1471-4159.1990.tb08847.x](https://doi.org/10.1111/j.1471-4159.1990.tb08847.x) | [2355221](https://www.ncbi.nlm.nih.gov/pubmed/2355221) | metadata signals extractable PD data (sigmoid) |
 | `Contreras_1990.pdf` | Contreras PC et al., GBR-12909 and fluspirilene potently inh…, Life sciences (1990) | pd | 4 | [10.1016/0024-3205(90)90446-x](https://doi.org/10.1016/0024-3205(90)90446-x) | [1980329](https://www.ncbi.nlm.nih.gov/pubmed/1980329) | metadata signals extractable PD data (IC50) |
 | `Drucker_1990.pdf` | Drucker G et al., Dopamine uptake inhibitory capacities o…, Brain research (1990) | pd | 4 | [10.1016/0006-8993(90)90318-6](https://doi.org/10.1016/0006-8993(90)90318-6) | [2137718](https://www.ncbi.nlm.nih.gov/pubmed/2137718) | metadata signals extractable PD data (IC50) |
-| `Firestone_1993.pdf` | Firestone JA et al., Actions of A-75200, a novel catecholami…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [8450458](https://www.ncbi.nlm.nih.gov/pubmed/8450458) | metadata signals extractable PD data (EC50) |
+| `Firestone_1993.pdf` | Firestone JA et al., Actions of A-75200, a novel catecholami…, The Journal of pharmacology… (1993) | pd | 4 |  | [8450458](https://www.ncbi.nlm.nih.gov/pubmed/8450458) | metadata signals extractable PD data (EC50) |
 | `Lee_1984.pdf` | Lee PH et al., Effect of steroids on the inhibition of…, European journal of pharmac… (1984) | pd | 4 | [10.1016/0014-2999(84)90712-x](https://doi.org/10.1016/0014-2999(84)90712-x) | [6529976](https://www.ncbi.nlm.nih.gov/pubmed/6529976) | metadata signals extractable PD data (IC50) |
 | `Lonart_1994.pdf` | Lonart G et al., Inhibitory effects of nitric oxide on t…, Journal of neurochemistry (1994) | pd | 4 | [10.1046/j.1471-4159.1994.63062108.x](https://doi.org/10.1046/j.1471-4159.1994.63062108.x) | [7964730](https://www.ncbi.nlm.nih.gov/pubmed/7964730) | metadata signals extractable PD data (IC50) |
 | `Nakachi_1995.pdf` | Nakachi N et al., Effects of various dopamine uptake inhi…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00246-h](https://doi.org/10.1016/0014-2999(95)00246-h) | [7589207](https://www.ncbi.nlm.nih.gov/pubmed/7589207) | metadata signals extractable PD data (IC50) |
 | `Nakanishi_1995.pdf` | Nakanishi N et al., Cyclic AMP-dependent modulation of vesi…, Journal of neurochemistry (1995) | pd | 4 | [10.1046/j.1471-4159.1995.64020600.x](https://doi.org/10.1046/j.1471-4159.1995.64020600.x) | [7830053](https://www.ncbi.nlm.nih.gov/pubmed/7830053) | metadata signals extractable PD data (EC50) |
 | `Sallés_1993.pdf` | Sallés J et al., Modulation of alpha 1-adrenoceptors and…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb12860.x](https://doi.org/10.1111/j.1476-5381.1993.tb12860.x) | [8096783](https://www.ncbi.nlm.nih.gov/pubmed/8096783) | metadata signals extractable PD data (Emax) |
 | `Schoemaker_1985.pdf` | Schoemaker H et al., Sodium dependent [3H]cocaine binding as…, Naunyn-Schmiedeberg's archi… (1985) | pd | 4 | [10.1007/BF00501873](https://doi.org/10.1007/BF00501873) | [3927176](https://www.ncbi.nlm.nih.gov/pubmed/3927176) | metadata signals extractable PD data (IC50) |
-| `Strait_1986.pdf` | Strait KA et al., Dopamine autoreceptor regulation of the…, Molecular pharmacology (1986) | pd | 4 | not captured | [2872588](https://www.ncbi.nlm.nih.gov/pubmed/2872588) | metadata signals extractable PD data (EC50) |
+| `Strait_1986.pdf` | Strait KA et al., Dopamine autoreceptor regulation of the…, Molecular pharmacology (1986) | pd | 4 |  | [2872588](https://www.ncbi.nlm.nih.gov/pubmed/2872588) | metadata signals extractable PD data (EC50) |
 | `Szász_2005.pdf` | Szász BK et al., Carrier-mediated release of monoamines…, Neuropharmacology (2005) | pd | 4 | [10.1016/j.neuropharm.2005.03.023](https://doi.org/10.1016/j.neuropharm.2005.03.023) | [15993437](https://www.ncbi.nlm.nih.gov/pubmed/15993437) | metadata signals extractable PD data (IC50) |
 | `Trendelenburg_1994.pdf` | Trendelenburg AU et al., Presynaptic alpha 2A-adrenoceptors inhi…, Naunyn-Schmiedeberg's archi… (1994) | pd | 4 | [10.1007/BF00173016](https://doi.org/10.1007/BF00173016) | [7870186](https://www.ncbi.nlm.nih.gov/pubmed/7870186) | metadata signals extractable PD data (EC50) |
 | `Wieczorek_1994.pdf` | Wieczorek WJ et al., A quantitative comparison on the effect…, Brain research (1994) | pd | 4 | [10.1016/0006-8993(94)90951-2](https://doi.org/10.1016/0006-8993(94)90951-2) | [7820642](https://www.ncbi.nlm.nih.gov/pubmed/7820642) | metadata signals extractable PD data (EC50) |
 | `Yeghiayan_1997.pdf` | Yeghiayan SK et al., Role of dopamine in behavioral effects…, Pharmacology, biochemistry,… (1997) | pd | 4 | [10.1016/s0091-3057(96)00217-1](https://doi.org/10.1016/s0091-3057(96)00217-1) | [9050082](https://www.ncbi.nlm.nih.gov/pubmed/9050082) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T23:27:22.896101+00:00</sub>
+<sub>queue written 2026-10-06 23:27 UTC</sub>
 
 ## Screened and excluded
 
@@ -176,5 +176,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnomifensine%5D&body=Drug%3A%20nomifensine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nomifensine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

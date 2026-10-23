@@ -53,7 +53,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 140 matched, 136 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -64,9 +64,9 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Alván_1977.pdf` | Alván G et al., Effect of pentobarbital on the disposit…, Clinical pharmacology and t… (1977) | popPK | 9 | [10.1002/cpt1977223316](https://doi.org/10.1002/cpt1977223316) | [891097](https://pubmed.ncbi.nlm.nih.gov/891097) | The study reports quantitative PK parameters (AUC, hepatic extraction ratio, clearance) for alprenolol in humans, with specific numeric values provided in the abstract. |
 | `Sager_1986.pdf` | Sager G et al., Effect of serum, alpha-1 acid glycoprot…, Acta pharmacologica et toxi… (1986) | pd | 5 | [10.1111/j.1600-0773.1986.tb00094.x](https://doi.org/10.1111/j.1600-0773.1986.tb00094.x) | [3012942](https://www.ncbi.nlm.nih.gov/pubmed/3012942) | metadata signals extractable PD data (EC50) |
-| `Unsworth_1992.pdf` | Unsworth CD et al., Regulation of the 5-hydroxytryptamine1B…, Molecular pharmacology (1992) | pd | 5 | not captured | [1328846](https://www.ncbi.nlm.nih.gov/pubmed/1328846) | metadata signals extractable PD data (EC50) |
+| `Unsworth_1992.pdf` | Unsworth CD et al., Regulation of the 5-hydroxytryptamine1B…, Molecular pharmacology (1992) | pd | 5 |  | [1328846](https://www.ncbi.nlm.nih.gov/pubmed/1328846) | metadata signals extractable PD data (EC50) |
 | `Bianchetti_1990.pdf` | Bianchetti A et al., In vitro inhibition of intestinal motil…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb14100.x](https://doi.org/10.1111/j.1476-5381.1990.tb14100.x) | [1976401](https://www.ncbi.nlm.nih.gov/pubmed/1976401) | metadata signals extractable PD data (EC50) |
-| `Bodewei_1988.pdf` | Bodewei R et al., [Calcium current effects in the presenc…, Biomedica biochimica acta (1988) | pd | 4 | not captured | [2845962](https://www.ncbi.nlm.nih.gov/pubmed/2845962) | metadata signals extractable PD data (IC50) |
+| `Bodewei_1988.pdf` | Bodewei R et al., [Calcium current effects in the presenc…, Biomedica biochimica acta (1988) | pd | 4 |  | [2845962](https://www.ncbi.nlm.nih.gov/pubmed/2845962) | metadata signals extractable PD data (IC50) |
 | `Croci_1988.pdf` | Croci T et al., Inhibition of rat colon motility by sti…, Pharmacological research co… (1988) | pd | 4 | [10.1016/s0031-6989(88)80007-9](https://doi.org/10.1016/s0031-6989(88)80007-9) | [2898155](https://www.ncbi.nlm.nih.gov/pubmed/2898155) | metadata signals extractable PD data (EC50) |
 | `De_1995.pdf` | De Ponti F et al., Functional evidence for the presence of…, Pharmacology (1995) | pd | 4 | [10.1159/000139338](https://doi.org/10.1159/000139338) | [8584580](https://www.ncbi.nlm.nih.gov/pubmed/8584580) | metadata signals extractable PD data (EC50) |
 | `Drira-Chaabane_1996.pdf` | Drira-Chaabane S et al., Lipolytic action of Buthus occitanus tu…, Biochemical and biophysical… (1996) | pd | 4 | [10.1006/bbrc.1996.1346](https://doi.org/10.1006/bbrc.1996.1346) | [8806627](https://www.ncbi.nlm.nih.gov/pubmed/8806627) | metadata signals extractable PD data (EC50) |
@@ -78,7 +78,7 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lima_1996.pdf` | Lima JJ, Relationship between beta adrenoceptor…, Journal of receptor and sig… (1996) | pd | 4 | [10.3109/10799899609039956](https://doi.org/10.3109/10799899609039956) | [8968966](https://www.ncbi.nlm.nih.gov/pubmed/8968966) | metadata signals extractable PD data (EC50) |
 | `Mazzocchi_1998.pdf` | Mazzocchi G et al., The AT2 receptor-mediated stimulation o…, Endocrine research (1998) | pd | 4 | [10.3109/07435809809031866](https://doi.org/10.3109/07435809809031866) | [9553752](https://www.ncbi.nlm.nih.gov/pubmed/9553752) | metadata signals extractable PD data (EC50) |
 | `Sager_1989.pdf` | Sager G et al., The effect of the plasticizers TBEP (tr…, Biochemical pharmacology (1989) | pd | 4 | [10.1016/0006-2952(89)90101-9](https://doi.org/10.1016/0006-2952(89)90101-9) | [2547384](https://www.ncbi.nlm.nih.gov/pubmed/2547384) | metadata signals extractable PD data (IC50) |
-| `Sawutz_1985.pdf` | Sawutz DG et al., Characterization of monoclonal antibodi…, Journal of immunology (Balt… (1985) | pd | 4 | not captured | [2993414](https://www.ncbi.nlm.nih.gov/pubmed/2993414) | metadata signals extractable PD data (IC50) |
+| `Sawutz_1985.pdf` | Sawutz DG et al., Characterization of monoclonal antibodi…, Journal of immunology (Balt… (1985) | pd | 4 |  | [2993414](https://www.ncbi.nlm.nih.gov/pubmed/2993414) | metadata signals extractable PD data (IC50) |
 | `Schumacher_1984.pdf` | Schumacher W et al., Biological maturation and beta-adrenerg…, Molecular and cellular bioc… (1984) | pd | 4 | [10.1007/BF00240617](https://doi.org/10.1007/BF00240617) | [6323958](https://www.ncbi.nlm.nih.gov/pubmed/6323958) | metadata signals extractable PD data (EC50) |
 | `Street_1984.pdf` | Street JA et al., Inhibition of synaptosomal [3H]noradren…, European journal of pharmac… (1984) | pd | 4 | [10.1016/0014-2999(84)90263-2](https://doi.org/10.1016/0014-2999(84)90263-2) | [6148250](https://www.ncbi.nlm.nih.gov/pubmed/6148250) | metadata signals extractable PD data (IC50) |
 | `Subbarao_1990.pdf` | Subbarao KV et al., Effect of adrenergic agonists on glycog…, Brain research (1990) | pd | 4 | [10.1016/0006-8993(90)90028-a](https://doi.org/10.1016/0006-8993(90)90028-a) | [2085749](https://www.ncbi.nlm.nih.gov/pubmed/2085749) | metadata signals extractable PD data (EC50) |
@@ -86,7 +86,7 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Yamamoto_2003.pdf` | Yamamoto T et al., High-throughput screening to estimate s…, Xenobiotica; the fate of fo… (2003) | pd | 4 | [10.1080/0049825031000140887](https://doi.org/10.1080/0049825031000140887) | [12936703](https://www.ncbi.nlm.nih.gov/pubmed/12936703) | metadata signals extractable PD data (IC50) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06T23:05:05.752571+00:00</sub>
+<sub>queue written 2026-10-06 23:05 UTC</sub>
 
 ## Screened and excluded
 
@@ -219,5 +219,5 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprenolol%5D&body=Drug%3A%20alprenolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprenolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

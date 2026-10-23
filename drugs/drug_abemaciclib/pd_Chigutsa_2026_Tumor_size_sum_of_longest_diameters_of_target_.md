@@ -101,4 +101,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babemaciclib%5D%20pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&body=Drug%3A%20abemaciclib%0ARecord%3A%20pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_%0APaper%3A%20Chigutsa_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [abemaciclib](drugs/drug_abemaciclib/)</sub>

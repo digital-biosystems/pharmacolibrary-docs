@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20pd_Broadbent_2020_TCID50&body=Drug%3A%20palivizumab%0ARecord%3A%20pd_Broadbent_2020_TCID50%0APaper%3A%20Broadbent_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/pd_Broadbent_2020_TCID50%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [palivizumab](drugs/drug_palivizumab/)</sub>

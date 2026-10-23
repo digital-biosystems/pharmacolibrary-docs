@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarmustine%5D%20pd_Clancy_2022_Cell_viability&body=Drug%3A%20carmustine%0ARecord%3A%20pd_Clancy_2022_Cell_viability%0APaper%3A%20Clancy_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carmustine/pd_Clancy_2022_Cell_viability%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [carmustine](drugs/drug_carmustine/)</sub>

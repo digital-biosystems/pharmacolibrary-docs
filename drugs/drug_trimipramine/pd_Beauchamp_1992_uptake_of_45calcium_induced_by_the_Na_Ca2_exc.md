@@ -50,4 +50,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrimipramine%5D%20pd_Beauchamp_1992_uptake_of_45calcium_induced_by_the_Na_Ca2_exc&body=Drug%3A%20trimipramine%0ARecord%3A%20pd_Beauchamp_1992_uptake_of_45calcium_induced_by_the_Na_Ca2_exc%0APaper%3A%20Beauchamp_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trimipramine/pd_Beauchamp_1992_uptake_of_45calcium_induced_by_the_Na_Ca2_exc%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [trimipramine](drugs/drug_trimipramine/)</sub>

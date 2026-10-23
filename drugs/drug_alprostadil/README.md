@@ -33,9 +33,9 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `SLCO2B1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `SLCO2B1` inhibitor/substrate | DrugBank actor |
 | metabolism | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `ABCC4` substrate, `SLC22A6` inhibitor/substrate | DrugBank actor |
@@ -61,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 527 matched, 186 returned
 - **screened:** 6  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -72,12 +72,12 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Bek_1999.pdf` | Bek M et al., Characterization of prostanoid receptor…, Journal of the American Soc… (1999) | pd | 5 | [10.1681/ASN.V10102084](https://doi.org/10.1681/ASN.V10102084) | [10505684](https://www.ncbi.nlm.nih.gov/pubmed/10505684) | metadata signals extractable PD data (EC50) |
 | `Chia_2021.pdf` | Chia YL et al., Exposure-response analysis for selectio…, Rheumatology (Oxford, Engla… (2021) | pd | 5 | [10.1093/rheumatology/keab176](https://doi.org/10.1093/rheumatology/keab176) | [33629110](https://www.ncbi.nlm.nih.gov/pubmed/33629110) | metadata signals extractable PD data (Exposure-response) |
-| `Gu_2007.pdf` | Gu FG et al., Pharmacodynamic comparison of prostagla…, Yao xue xue bao = Acta phar… (2007) | pd | 5 | not captured | [17882966](https://www.ncbi.nlm.nih.gov/pubmed/17882966) | metadata signals extractable PD data (Emax) |
-| `Zeng_1995.pdf` | Zeng L et al., Independent down-regulation of EP2 and…, Immunology (1995) | pd | 5 | not captured | [8567030](https://www.ncbi.nlm.nih.gov/pubmed/8567030) | metadata signals extractable PD data (IC50) |
+| `Gu_2007.pdf` | Gu FG et al., Pharmacodynamic comparison of prostagla…, Yao xue xue bao = Acta phar… (2007) | pd | 5 |  | [17882966](https://www.ncbi.nlm.nih.gov/pubmed/17882966) | metadata signals extractable PD data (Emax) |
+| `Zeng_1995.pdf` | Zeng L et al., Independent down-regulation of EP2 and…, Immunology (1995) | pd | 5 |  | [8567030](https://www.ncbi.nlm.nih.gov/pubmed/8567030) | metadata signals extractable PD data (IC50) |
 | `Adam_1994.pdf` | Adam M et al., Cloning and expression of three isoform…, FEBS letters (1994) | pd | 4 | [10.1016/0014-5793(94)80358-7](https://doi.org/10.1016/0014-5793(94)80358-7) | [8307176](https://www.ncbi.nlm.nih.gov/pubmed/8307176) | metadata signals extractable PD data (IC50) |
 | `Aikawa_1990.pdf` | Aikawa T et al., Inhibitory actions of prostaglandin E1…, British journal of pharmaco… (1990) | pd | 4 | [10.1111/j.1476-5381.1990.tb12080.x](https://doi.org/10.1111/j.1476-5381.1990.tb12080.x) | [2282455](https://www.ncbi.nlm.nih.gov/pubmed/2282455) | metadata signals extractable PD data (EC50) |
 | `Allegaert_2013.pdf` | Allegaert K et al., The paracetamol concentration-effect re…, Paediatric anaesthesia (2013) | pd | 4 | [10.1111/pan.12076](https://doi.org/10.1111/pan.12076) | [23170854](https://www.ncbi.nlm.nih.gov/pubmed/23170854) | metadata signals extractable PD data (concentration-effect) |
-| `Ashby_1986.pdf` | Ashby B, Kinetic evidence indicating separate st…, Journal of cyclic nucleotid… (1986) | pd | 4 | not captured | [2432105](https://www.ncbi.nlm.nih.gov/pubmed/2432105) | metadata signals extractable PD data (EC50) |
+| `Ashby_1986.pdf` | Ashby B, Kinetic evidence indicating separate st…, Journal of cyclic nucleotid… (1986) | pd | 4 |  | [2432105](https://www.ncbi.nlm.nih.gov/pubmed/2432105) | metadata signals extractable PD data (EC50) |
 | `Crankshaw_1994.pdf` | Crankshaw DJ et al., Effects of some naturally occurring pro…, Canadian journal of physiol… (1994) | pd | 4 | [10.1139/y94-123](https://doi.org/10.1139/y94-123) | [7834575](https://www.ncbi.nlm.nih.gov/pubmed/7834575) | metadata signals extractable PD data (Concentration-effect) |
 | `Crider_1998.pdf` | Crider JY et al., Prostaglandin-stimulated adenylyl cycla…, Journal of ocular pharmacol… (1998) | pd | 4 | [10.1089/jop.1998.14.293](https://doi.org/10.1089/jop.1998.14.293) | [9715432](https://www.ncbi.nlm.nih.gov/pubmed/9715432) | metadata signals extractable PD data (EC50) |
 | `Crider_2001.pdf` | Crider JY et al., Functional pharmacological evidence for…, Journal of ocular pharmacol… (2001) | pd | 4 | [10.1089/108076801750125658](https://doi.org/10.1089/108076801750125658) | [11322636](https://www.ncbi.nlm.nih.gov/pubmed/11322636) | metadata signals extractable PD data (EC50) |
@@ -92,14 +92,14 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Neufeld_1992.pdf` | Neufeld TK et al., In vitro formation and expansion of cys…, Kidney international (1992) | pd | 4 | [10.1038/ki.1992.184](https://doi.org/10.1038/ki.1992.184) | [1319521](https://www.ncbi.nlm.nih.gov/pubmed/1319521) | metadata signals extractable PD data (EC50) |
 | `Ohia_1991.pdf` | Ohia SE et al., Prejunctional prostaglandin receptors i…, Current eye research (1991) | pd | 4 | [10.3109/02713689109020333](https://doi.org/10.3109/02713689109020333) | [1659973](https://www.ncbi.nlm.nih.gov/pubmed/1659973) | metadata signals extractable PD data (EC50) |
 | `Umeki_1994.pdf` | Umeki S, Prostaglandin E and analogs of prostacy…, The International journal o… (1994) | pd | 4 | [10.1016/0020-711x(94)90071-x](https://doi.org/10.1016/0020-711x(94)90071-x) | [8088410](https://www.ncbi.nlm.nih.gov/pubmed/8088410) | metadata signals extractable PD data (IC50) |
-| `Virgolini_1992.pdf` | Virgolini I et al., Characterization of prostaglandin (PG)-…, The Journal of biological c… (1992) | pd | 4 | not captured | [1377673](https://www.ncbi.nlm.nih.gov/pubmed/1377673) | metadata signals extractable PD data (IC50) |
+| `Virgolini_1992.pdf` | Virgolini I et al., Characterization of prostaglandin (PG)-…, The Journal of biological c… (1992) | pd | 4 |  | [1377673](https://www.ncbi.nlm.nih.gov/pubmed/1377673) | metadata signals extractable PD data (IC50) |
 | `Wainman_1988.pdf` | Wainman BC et al., The effects of prostanoids on estrogen-…, Biology of reproduction (1988) | pd | 4 | [10.1095/biolreprod39.2.221](https://doi.org/10.1095/biolreprod39.2.221) | [2902883](https://www.ncbi.nlm.nih.gov/pubmed/2902883) | metadata signals extractable PD data (EC50) |
 | `Widomski_1997.pdf` | Widomski D et al., The prostaglandin analogs, misoprostol…, Immunopharmacology and immu… (1997) | pd | 4 | [10.3109/08923979709007656](https://doi.org/10.3109/08923979709007656) | [9130003](https://www.ncbi.nlm.nih.gov/pubmed/9130003) | metadata signals extractable PD data (IC50) |
 | `Wilson_1993.pdf` | Wilson AJ et al., Adenylate cyclase-mediated vascular res…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb13858.x](https://doi.org/10.1111/j.1476-5381.1993.tb13858.x) | [7902177](https://www.ncbi.nlm.nih.gov/pubmed/7902177) | metadata signals extractable PD data (EC50) |
 | `Funck-Brentano_2013.pdf` | Funck-Brentano C et al., Effects of rabeprazole on the antiplate…, Archives of cardiovascular… (2013) | pgx | 7 | [10.1016/j.acvd.2013.09.002](https://doi.org/10.1016/j.acvd.2013.09.002) | [24246616](https://www.ncbi.nlm.nih.gov/pubmed/24246616) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Nooney_2015.pdf` | Nooney VB et al., Post receptor determinants of acute pla…, Vascular pharmacology (2015) | pgx | 5 | [10.1016/j.vph.2014.11.003](https://doi.org/10.1016/j.vph.2014.11.003) | [25460367](https://www.ncbi.nlm.nih.gov/pubmed/25460367) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-08T11:36:48.189782+00:00</sub>
+<sub>queue written 2026-10-08 11:36 UTC</sub>
 
 ## Screened and excluded
 
@@ -323,5 +323,5 @@ _28 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprostadil%5D&body=Drug%3A%20alprostadil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprostadil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

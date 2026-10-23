@@ -71,4 +71,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20pgx_Morris_2022_HLA_A_31_01_safety&body=Drug%3A%20abacavir%0ARecord%3A%20pgx_Morris_2022_HLA_A_31_01_safety%0APaper%3A%20Morris_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/pgx_Morris_2022_HLA_A_31_01_safety%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [abacavir](drugs/drug_abacavir/)</sub>

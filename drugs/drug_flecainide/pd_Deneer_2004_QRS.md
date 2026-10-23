@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflecainide%5D%20pd_Deneer_2004_QRS&body=Drug%3A%20flecainide%0ARecord%3A%20pd_Deneer_2004_QRS%0APaper%3A%20Deneer_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flecainide/pd_Deneer_2004_QRS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [flecainide](drugs/drug_flecainide/)</sub>

@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdopamine%5D%20pd_Buchta_2017_SFA&body=Drug%3A%20dopamine%0ARecord%3A%20pd_Buchta_2017_SFA%0APaper%3A%20Buchta_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dopamine/pd_Buchta_2017_SFA%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dopamine](drugs/drug_dopamine/)</sub>

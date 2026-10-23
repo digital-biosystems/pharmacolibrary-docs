@@ -80,4 +80,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdermatan_sulfate%5D%20pd_Takeuchi_2001_arginine_amidase_activity_released_from_the_is&body=Drug%3A%20dermatan_sulfate%0ARecord%3A%20pd_Takeuchi_2001_arginine_amidase_activity_released_from_the_is%0APaper%3A%20Takeuchi_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dermatan_sulfate/pd_Takeuchi_2001_arginine_amidase_activity_released_from_the_is%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dermatan sulfate](drugs/drug_dermatan_sulfate/)</sub>

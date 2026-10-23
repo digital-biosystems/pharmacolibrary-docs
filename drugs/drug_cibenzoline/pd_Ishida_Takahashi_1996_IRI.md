@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcibenzoline%5D%20pd_Ishida_Takahashi_1996_IRI&body=Drug%3A%20cibenzoline%0ARecord%3A%20pd_Ishida_Takahashi_1996_IRI%0APaper%3A%20Ishida-Takahashi_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cibenzoline/pd_Ishida_Takahashi_1996_IRI%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [cibenzoline](drugs/drug_cibenzoline/)</sub>

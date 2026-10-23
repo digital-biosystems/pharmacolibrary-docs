@@ -190,7 +190,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2320 matched, 220 returned
 - **screened:** 44  ·  **relevant:** 7
-- **records:** 20  ·  extracted 3  ·  needs_review 14  ·  rejected 3  ·  stale 0
+- **records:** 20  ·  extracted 3  ·  needs review 14  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -199,9 +199,9 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ala_2013.pdf` | Ala S et al., Population pharmacokinetics of omeprazo…, Caspian journal of internal… (2013) | popPK | 10 | not captured | [24009966](https://pubmed.ncbi.nlm.nih.gov/24009966) | The study reports quantitative population pharmacokinetic parameters (CL/F, V/F, t1/2) for omeprazole in humans directly in the text. |
+| `Ala_2013.pdf` | Ala S et al., Population pharmacokinetics of omeprazo…, Caspian journal of internal… (2013) | popPK | 10 |  | [24009966](https://pubmed.ncbi.nlm.nih.gov/24009966) | The study reports quantitative population pharmacokinetic parameters (CL/F, V/F, t1/2) for omeprazole in humans directly in the text. |
 | `Chen_2022.pdf` | Chen K et al., Population pharmacokinetics of omeprazo…, Expert review of clinical p… (2022) | popPK | 10 | [10.1080/17512433.2022.2075343](https://doi.org/10.1080/17512433.2022.2075343) | [35522794](https://pubmed.ncbi.nlm.nih.gov/35522794) | The study describes a population PK model for omeprazole with clear relevance to obese adults, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-| `Katashima_1995.pdf` | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | popPK | 10 | not captured | [7587960](https://pubmed.ncbi.nlm.nih.gov/7587960) | The study explicitly reports quantitative PK parameters (CL, Vss, elimination pattern) for omeprazole in rats within the provided abstract text. |
+| `Katashima_1995.pdf` | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | popPK | 10 |  | [7587960](https://pubmed.ncbi.nlm.nih.gov/7587960) | The study explicitly reports quantitative PK parameters (CL, Vss, elimination pattern) for omeprazole in rats within the provided abstract text. |
 | `Marier_2004.pdf` | Marier JF et al., Pharmacokinetics of omeprazole in healt…, Therapeutic drug monitoring (2004) | popPK | 10 | [10.1097/00007691-200402000-00003](https://doi.org/10.1097/00007691-200402000-00003) | [14749542](https://pubmed.ncbi.nlm.nih.gov/14749542) | The paper reports specific population pharmacokinetic parameters (CL/F, Vss/F, lag time) for omeprazole in both adults and children. |
 | `Solana_2014.pdf` | Solana MJ et al., Population pharmacokinetics of omeprazo…, Therapeutic drug monitoring (2014) | popPK | 10 | [10.1097/FTD.0000000000000033](https://doi.org/10.1097/FTD.0000000000000033) | [24365987](https://pubmed.ncbi.nlm.nih.gov/24365987) | The study reports a full population pharmacokinetic model for omeprazole with specific numeric values for clearance, volume, and intercompartmental clearance. |
 | `Lin_2018.pdf` | Lin S et al., Evaluation of Omeprazole Limited Sampli…, Therapeutic drug monitoring (2018) | popPK | 8 | [10.1097/FTD.0000000000000554](https://doi.org/10.1097/FTD.0000000000000554) | [30045358](https://pubmed.ncbi.nlm.nih.gov/30045358) | The paper reports quantitative population PK model results (median CL/F) for omeprazole in humans, derived from simulated limited sampling strategies, though it is primarily a methodological validation rather than a standard PK characterization. |
@@ -244,9 +244,9 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Gonzalez_2003.pdf` | Gonzalez HM et al., CYP2C19- and CYP3A4-dependent omeprazol…, Journal of clinical pharmac… (2003) | pgx | 5 | [10.1177/0091270003258170](https://doi.org/10.1177/0091270003258170) | [14551175](https://www.ncbi.nlm.nih.gov/pubmed/14551175) | metadata signals extractable PGX data (CYP2C19) |
 | `Kuo_2014.pdf` | Kuo CH et al., CYP2C19 polymorphism influences Helicob…, World journal of gastroente… (2014) | pgx | 5 | [10.3748/wjg.v20.i43.16029](https://doi.org/10.3748/wjg.v20.i43.16029) | [25473155](https://www.ncbi.nlm.nih.gov/pubmed/25473155) | metadata signals extractable PGX data (CYP2C19) |
 | `Masimirembwa_1995.pdf` | Masimirembwa C et al., Phenotyping and genotyping of S-mepheny…, Clinical pharmacology and t… (1995) | pgx | 5 | [10.1016/0009-9236(95)90228-7](https://doi.org/10.1016/0009-9236(95)90228-7) | [7781265](https://www.ncbi.nlm.nih.gov/pubmed/7781265) | metadata signals extractable PGX data (CYP2C19) |
-| `Rost_1995.pdf` | Rost KL et al., Phenocopies of poor metabolizers of ome…, Journal of hepatology (1995) | pgx | 5 | not captured | [8550990](https://www.ncbi.nlm.nih.gov/pubmed/8550990) | metadata signals extractable PGX data (CYP2C19) |
+| `Rost_1995.pdf` | Rost KL et al., Phenocopies of poor metabolizers of ome…, Journal of hepatology (1995) | pgx | 5 |  | [8550990](https://www.ncbi.nlm.nih.gov/pubmed/8550990) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-22T10:34:00.896002+00:00</sub>
+<sub>queue written 2026-10-22 10:34 UTC</sub>
 
 ## Screened and excluded
 
@@ -458,5 +458,5 @@ _46 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 10:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomeprazole%5D&body=Drug%3A%20omeprazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omeprazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 10:34 UTC</sub>

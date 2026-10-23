@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20pgx_Signoretti_2026_G6PD_safety&body=Drug%3A%20bleomycin%0ARecord%3A%20pgx_Signoretti_2026_G6PD_safety%0APaper%3A%20Signoretti_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/pgx_Signoretti_2026_G6PD_safety%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [bleomycin](drugs/drug_bleomycin/)</sub>

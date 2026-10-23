@@ -54,18 +54,16 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | metabolism | brain | `COMT` substrate, `CYP2D6` metabolism, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
 | metabolism | kidney | `COMT` substrate | DrugBank actor |
 | metabolism | liver | `COMT` substrate, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `MAOA` substrate, `SLC22A1` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -89,7 +87,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7814 matched, 231 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -107,9 +105,9 @@ _45 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Shimizu_2019.pdf` | Shimizu R et al., Pharmacokinetic-Pharmacodynamic Modelin…, The Journal of pharmacology… (2019) | pd | 5 | [10.1124/jpet.118.252262](https://doi.org/10.1124/jpet.118.252262) | [30674560](https://www.ncbi.nlm.nih.gov/pubmed/30674560) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `van_2017.pdf` | van den Brink WJ et al., Multivariate pharmacokinetic/pharmacody…, European journal of pharmac… (2017) | pd | 5 | [10.1016/j.ejps.2017.08.031](https://doi.org/10.1016/j.ejps.2017.08.031) | [28882765](https://www.ncbi.nlm.nih.gov/pubmed/28882765) | metadata signals extractable PD data (PKPD) |
 | `Ahn_1979.pdf` | Ahn HS et al., Interaction of LSD and other hallucinog…, Brain research (1979) | pd | 4 | [10.1016/0006-8993(79)90757-1](https://doi.org/10.1016/0006-8993(79)90757-1) | [104775](https://www.ncbi.nlm.nih.gov/pubmed/104775) | metadata signals extractable PD data (EC50) |
-| `Arneric_1994.pdf` | Arneric SP et al., (S)-3-methyl-5-(1-methyl-2-pyrrolidinyl…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [7518514](https://www.ncbi.nlm.nih.gov/pubmed/7518514) | metadata signals extractable PD data (EC50) |
+| `Arneric_1994.pdf` | Arneric SP et al., (S)-3-methyl-5-(1-methyl-2-pyrrolidinyl…, The Journal of pharmacology… (1994) | pd | 4 |  | [7518514](https://www.ncbi.nlm.nih.gov/pubmed/7518514) | metadata signals extractable PD data (EC50) |
 | `Ayyar_2019.pdf` | Ayyar VS et al., Indirect pharmacodynamic models for res…, Journal of pharmacokinetics… (2019) | pd | 4 | [10.1007/s10928-019-09620-z](https://doi.org/10.1007/s10928-019-09620-z) | [30694437](https://www.ncbi.nlm.nih.gov/pubmed/30694437) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Badio_1994.pdf` | Badio B et al., Epibatidine, a potent analgetic and nic…, Molecular pharmacology (1994) | pd | 4 | not captured | [8183234](https://www.ncbi.nlm.nih.gov/pubmed/8183234) | metadata signals extractable PD data (EC50) |
+| `Badio_1994.pdf` | Badio B et al., Epibatidine, a potent analgetic and nic…, Molecular pharmacology (1994) | pd | 4 |  | [8183234](https://www.ncbi.nlm.nih.gov/pubmed/8183234) | metadata signals extractable PD data (EC50) |
 | `Boja_1989.pdf` | Boja JW et al., [3H]cocaine binding and inhibition of […, European journal of pharmac… (1989) | pd | 4 | [10.1016/0014-2999(89)90524-4](https://doi.org/10.1016/0014-2999(89)90524-4) | [2625137](https://www.ncbi.nlm.nih.gov/pubmed/2625137) | metadata signals extractable PD data (IC50) |
 | `Contreras_1990.pdf` | Contreras PC et al., GBR-12909 and fluspirilene potently inh…, Life sciences (1990) | pd | 4 | [10.1016/0024-3205(90)90446-x](https://doi.org/10.1016/0024-3205(90)90446-x) | [1980329](https://www.ncbi.nlm.nih.gov/pubmed/1980329) | metadata signals extractable PD data (IC50) |
 | `De_2022.pdf` | De Luca MA et al., Pharmacological characterization of nov…, Neuropharmacology (2022) | pd | 4 | [10.1016/j.neuropharm.2022.109263](https://doi.org/10.1016/j.neuropharm.2022.109263) | [36154843](https://www.ncbi.nlm.nih.gov/pubmed/36154843) | metadata signals extractable PD data (EC50) |
@@ -136,7 +134,7 @@ _45 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Nyberg_1995.pdf` | Nyberg S et al., A PET study of D2 and 5-HT2 receptor oc…, Psychopharmacology (1995) | pgx | 8 | [10.1007/BF02246302](https://doi.org/10.1007/BF02246302) | [7545821](https://www.ncbi.nlm.nih.gov/pubmed/7545821) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Han_2024.pdf` | Han L et al., Insights into the population pharmacoki…, Expert review of clinical p… (2024) | pgx | 7 | [10.1080/17512433.2023.2295428](https://doi.org/10.1080/17512433.2023.2295428) | [38108086](https://www.ncbi.nlm.nih.gov/pubmed/38108086) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kaye_2000.pdf` | Kaye CM et al., Clinical pharmacokinetics of ropinirole, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039040-00001](https://doi.org/10.2165/00003088-200039040-00001) | [11069211](https://www.ncbi.nlm.nih.gov/pubmed/11069211) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 | not captured | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
+| `Nomoto_2005.pdf` | Nomoto M et al., [Inter- and intraindividual pharmacokin…, Rinsho shinkeigaku = Clinic… (2005) | pgx | 7 |  | [16447756](https://www.ncbi.nlm.nih.gov/pubmed/16447756) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Paulzen_2011.pdf` | Paulzen M et al., Augmentative effects of fluvoxamine on…, Pharmacopsychiatry (2011) | pgx | 7 | [10.1055/s-0031-1284426](https://doi.org/10.1055/s-0031-1284426) | [21979923](https://www.ncbi.nlm.nih.gov/pubmed/21979923) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Sasabe_2021.pdf` | Sasabe H et al., In vitro evaluations for pharmacokineti…, Xenobiotica; the fate of fo… (2021) | pgx | 7 | [10.1080/00498254.2021.1897898](https://doi.org/10.1080/00498254.2021.1897898) | [33663326](https://www.ncbi.nlm.nih.gov/pubmed/33663326) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Bodenmann_2009.pdf` | Bodenmann S et al., Pharmacogenetics of modafinil after sle…, Clinical pharmacology and t… (2009) | pgx | 5 | [10.1038/clpt.2008.222](https://doi.org/10.1038/clpt.2008.222) | [19037200](https://www.ncbi.nlm.nih.gov/pubmed/19037200) | metadata signals extractable PGX data (COMT) |
@@ -144,7 +142,7 @@ _45 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sprague_2021.pdf` | Sprague BN et al., Catechol-O-methyltransferase (COMT) pol…, Journal of the American Ger… (2021) | pgx | 5 | [10.1111/jgs.17351](https://doi.org/10.1111/jgs.17351) | [34231207](https://www.ncbi.nlm.nih.gov/pubmed/34231207) | metadata signals extractable PGX data (COMT) |
 | `Zakharyan_2020.pdf` | Zakharyan R et al., Association of Genetic Variants of Dopa…, Archives of medical research (2020) | pgx | 5 | [10.1016/j.arcmed.2019.12.011](https://doi.org/10.1016/j.arcmed.2019.12.011) | [32086104](https://www.ncbi.nlm.nih.gov/pubmed/32086104) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-06T04:42:16.672163+00:00</sub>
+<sub>queue written 2026-10-06 04:42 UTC</sub>
 
 ## Screened and excluded
 
@@ -366,5 +364,5 @@ _45 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdopamine%5D&body=Drug%3A%20dopamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dopamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

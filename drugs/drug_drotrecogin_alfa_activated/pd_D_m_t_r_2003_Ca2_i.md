@@ -91,4 +91,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdrotrecogin_alfa_activated%5D%20pd_D_m_t_r_2003_Ca2_i&body=Drug%3A%20drotrecogin_alfa_activated%0ARecord%3A%20pd_D_m_t_r_2003_Ca2_i%0APaper%3A%20D%C3%B6m%C3%B6t%C3%B6r_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_drotrecogin_alfa_activated/pd_D_m_t_r_2003_Ca2_i%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [drotrecogin alfa (activated)](drugs/drug_drotrecogin_alfa_activated/)</sub>

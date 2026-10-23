@@ -172,7 +172,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1733 matched, 114 returned
 - **screened:** 51  ·  **relevant:** 11
-- **records:** 12  ·  extracted 2  ·  needs_review 3  ·  rejected 7  ·  stale 0
+- **records:** 12  ·  extracted 2  ·  needs review 3  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -181,15 +181,15 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Koehntop_1986.pdf` | Koehntop DE et al., Pharmacokinetics of fentanyl in neonates, Anesthesia and analgesia (1986) | popPK | 10 | not captured | [3954090](https://pubmed.ncbi.nlm.nih.gov/3954090) | The abstract reports specific numeric pharmacokinetic parameters (Vc, Vss, CL, t1/2) for fentanyl in a two-compartment model in human neonates. |
+| `Koehntop_1986.pdf` | Koehntop DE et al., Pharmacokinetics of fentanyl in neonates, Anesthesia and analgesia (1986) | popPK | 10 |  | [3954090](https://pubmed.ncbi.nlm.nih.gov/3954090) | The abstract reports specific numeric pharmacokinetic parameters (Vc, Vss, CL, t1/2) for fentanyl in a two-compartment model in human neonates. |
 | `Morales_2025.pdf` | Morales Castro D et al., Propofol and Fentanyl Pharmacokinetics…, Annals of the American Thor… (2025) | popPK | 10 | [10.1513/AnnalsATS.202407-795OC](https://doi.org/10.1513/AnnalsATS.202407-795OC) | [39383576](https://pubmed.ncbi.nlm.nih.gov/39383576) | The study is a quantitative PK/PD study of fentanyl in humans, but specific numeric parameter values are not present in the provided text, likely residing in missing results tables or figures. |
 | `Okada_2024.pdf` | Okada CR et al., Population Pharmacokinetics of Single B…, Anesthesia and analgesia (2024) | popPK | 10 | [10.1213/ANE.0000000000006554](https://doi.org/10.1213/ANE.0000000000006554) | [37801572](https://pubmed.ncbi.nlm.nih.gov/37801572) | The study is a population PK analysis for fentanyl in children, but specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract, appearing instead in the full text or tables not included in the evidence. |
-| `Craft_1983.pdf` | Craft JB et al., Placental passage and uterine effects o…, Anesthesia and analgesia (1983) | popPK | 9 | not captured | [6614522](https://pubmed.ncbi.nlm.nih.gov/6614522) | The study reports quantitative pharmacokinetic parameters for fentanyl in pregnant sheep, specifically a biexponential two-compartment model fit with a reported elimination half-life (42 min) and elimination rate constant, although full parameter sets (CL, V) are not explicitly listed in the abstract text. |
-| `Timcenko_1995.pdf` | Timcenko A et al., Estimation of pharmacokinetic model par…, Proceedings. Symposium on C… (1995) | popPK | 9 | not captured | [8563327](https://pubmed.ncbi.nlm.nih.gov/8563327) | The study is a population PK study for fentanyl in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| `Craft_1983.pdf` | Craft JB et al., Placental passage and uterine effects o…, Anesthesia and analgesia (1983) | popPK | 9 |  | [6614522](https://pubmed.ncbi.nlm.nih.gov/6614522) | The study reports quantitative pharmacokinetic parameters for fentanyl in pregnant sheep, specifically a biexponential two-compartment model fit with a reported elimination half-life (42 min) and elimination rate constant, although full parameter sets (CL, V) are not explicitly listed in the abstract text. |
+| `Timcenko_1995.pdf` | Timcenko A et al., Estimation of pharmacokinetic model par…, Proceedings. Symposium on C… (1995) | popPK | 9 |  | [8563327](https://pubmed.ncbi.nlm.nih.gov/8563327) | The study is a population PK study for fentanyl in humans, but the specific numeric parameter values are not present in the provided evidence. |
 | `van_2025.pdf` | van Lemmen M et al., Fentanyl-induced Ventilatory Depression…, Anesthesiology (2025) | popPK | 9 | [10.1097/ALN.0000000000005710](https://doi.org/10.1097/ALN.0000000000005710) | [40773676](https://pubmed.ncbi.nlm.nih.gov/40773676) | The study reports a population PK-PD model for fentanyl in humans with specific PD parameters (Emax, EC50, tissue volume) provided in the text, but lacks explicit numeric values for standard disposition parameters like clearance or distribution volume. |
-| `Scott_1987.pdf` | Scott JC et al., Decreased fentanyl and alfentanil dose…, The Journal of pharmacology… (1987) | popPK | 8 | not captured | [3100765](https://pubmed.ncbi.nlm.nih.gov/3100765) | The study is a relevant population-pharmacokinetic evaluation of fentanyl in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only summarizes the finding of no age-related changes. |
+| `Scott_1987.pdf` | Scott JC et al., Decreased fentanyl and alfentanil dose…, The Journal of pharmacology… (1987) | popPK | 8 |  | [3100765](https://pubmed.ncbi.nlm.nih.gov/3100765) | The study is a relevant population-pharmacokinetic evaluation of fentanyl in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only summarizes the finding of no age-related changes. |
 
-<sub>queue written 2026-10-22T13:11:48.547874+00:00</sub>
+<sub>queue written 2026-10-22 13:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -291,5 +291,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 13:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D&body=Drug%3A%20fentanyl%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 13:13 UTC</sub>

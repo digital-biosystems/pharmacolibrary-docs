@@ -105,7 +105,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 96 matched, 68 returned
 - **screened:** 32  ·  **relevant:** 12
-- **records:** 7  ·  extracted 3  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 7  ·  extracted 3  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -114,16 +114,16 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Rice_1989.pdf` | Rice TL et al., Influence of rifampin on tocainide phar…, Clinical pharmacy (1989) | popPK | 10 | not captured | [2495879](https://pubmed.ncbi.nlm.nih.gov/2495879) | The study reports quantitative PK parameters (elimination rate constant, half-life, AUC) for tocainide in humans, with specific numeric values provided in the abstract. |
-| `Venkataramanan_1980.pdf` | Venkataramanan R et al., The effect of phenobarbital and SKF 525…, The Journal of pharmacology… (1980) | popPK | 9 | not captured | [6778991](https://pubmed.ncbi.nlm.nih.gov/6778991) | The study reports quantitative PK parameters (clearance, AUC, excretion) for tocainide in rats, but the specific numeric values are not present in the provided abstract text. |
+| `Rice_1989.pdf` | Rice TL et al., Influence of rifampin on tocainide phar…, Clinical pharmacy (1989) | popPK | 10 |  | [2495879](https://pubmed.ncbi.nlm.nih.gov/2495879) | The study reports quantitative PK parameters (elimination rate constant, half-life, AUC) for tocainide in humans, with specific numeric values provided in the abstract. |
+| `Venkataramanan_1980.pdf` | Venkataramanan R et al., The effect of phenobarbital and SKF 525…, The Journal of pharmacology… (1980) | popPK | 9 |  | [6778991](https://pubmed.ncbi.nlm.nih.gov/6778991) | The study reports quantitative PK parameters (clearance, AUC, excretion) for tocainide in rats, but the specific numeric values are not present in the provided abstract text. |
 | `Christensen_1995_2.pdf` | Christensen EB et al., Assay of tocainide enantiomers in plasm…, Journal of chromatography.… (1995) | popPK | 8 | [10.1016/0378-4347(95)00183-2](https://doi.org/10.1016/0378-4347(95)00183-2) | [8548014](https://pubmed.ncbi.nlm.nih.gov/8548014) | The study reports pharmacokinetic parameters for tocainide in rabbits, but the specific numeric values are not present in the provided evidence text. |
-| `Venkataramanan_1980_2.pdf` | Venkataramanan R et al., Dose-dependent pharmacokinetics of toca…, The Journal of pharmacology… (1980) | popPK | 8 | not captured | [6778990](https://pubmed.ncbi.nlm.nih.gov/6778990) | The study reports qualitative pharmacokinetic findings (nonlinear kinetics, absorption) for tocainide in rats, but specific numeric parameter values (CL, V, t1/2) are not present in the provided evidence. |
-| `Dzimiri_1993.pdf` | Dzimiri N, Effects of procainamide, tocainide and…, Research communications in… (1993) | pd | 4 | not captured | [8488338](https://www.ncbi.nlm.nih.gov/pubmed/8488338) | metadata signals extractable PD data (IC50) |
-| `Hill_1988.pdf` | Hill RJ et al., Determinants of stereospecific binding…, Molecular pharmacology (1988) | pd | 4 | not captured | [2848186](https://www.ncbi.nlm.nih.gov/pubmed/2848186) | metadata signals extractable PD data (IC50) |
-| `Sheldon_1988.pdf` | Sheldon RS et al., Stereospecific interaction of tocainide…, Molecular pharmacology (1988) | pd | 4 | not captured | [2451117](https://www.ncbi.nlm.nih.gov/pubmed/2451117) | metadata signals extractable PD data (IC50) |
-| `Sheldon_1994.pdf` | Sheldon RS et al., Class I antiarrhythmic drugs: allosteri…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8301556](https://www.ncbi.nlm.nih.gov/pubmed/8301556) | metadata signals extractable PD data (IC50) |
+| `Venkataramanan_1980_2.pdf` | Venkataramanan R et al., Dose-dependent pharmacokinetics of toca…, The Journal of pharmacology… (1980) | popPK | 8 |  | [6778990](https://pubmed.ncbi.nlm.nih.gov/6778990) | The study reports qualitative pharmacokinetic findings (nonlinear kinetics, absorption) for tocainide in rats, but specific numeric parameter values (CL, V, t1/2) are not present in the provided evidence. |
+| `Dzimiri_1993.pdf` | Dzimiri N, Effects of procainamide, tocainide and…, Research communications in… (1993) | pd | 4 |  | [8488338](https://www.ncbi.nlm.nih.gov/pubmed/8488338) | metadata signals extractable PD data (IC50) |
+| `Hill_1988.pdf` | Hill RJ et al., Determinants of stereospecific binding…, Molecular pharmacology (1988) | pd | 4 |  | [2848186](https://www.ncbi.nlm.nih.gov/pubmed/2848186) | metadata signals extractable PD data (IC50) |
+| `Sheldon_1988.pdf` | Sheldon RS et al., Stereospecific interaction of tocainide…, Molecular pharmacology (1988) | pd | 4 |  | [2451117](https://www.ncbi.nlm.nih.gov/pubmed/2451117) | metadata signals extractable PD data (IC50) |
+| `Sheldon_1994.pdf` | Sheldon RS et al., Class I antiarrhythmic drugs: allosteri…, The Journal of pharmacology… (1994) | pd | 4 |  | [8301556](https://www.ncbi.nlm.nih.gov/pubmed/8301556) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-08T23:29:26.969066+00:00</sub>
+<sub>queue written 2026-10-08 23:29 UTC</sub>
 
 ## Screened and excluded
 
@@ -168,5 +168,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-08 23:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btocainide%5D&body=Drug%3A%20tocainide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tocainide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-08 23:12 UTC</sub>

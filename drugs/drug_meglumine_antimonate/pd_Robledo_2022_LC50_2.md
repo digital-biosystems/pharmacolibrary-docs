@@ -67,4 +67,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeglumine_antimonate%5D%20pd_Robledo_2022_LC50_2&body=Drug%3A%20meglumine_antimonate%0ARecord%3A%20pd_Robledo_2022_LC50_2%0APaper%3A%20Robledo_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meglumine_antimonate/pd_Robledo_2022_LC50_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [meglumine antimonate](drugs/drug_meglumine_antimonate/)</sub>

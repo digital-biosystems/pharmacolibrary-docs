@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexanolone%5D%20pd_Waters_1997_cytoprotection&body=Drug%3A%20brexanolone%0ARecord%3A%20pd_Waters_1997_cytoprotection%0APaper%3A%20Waters_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexanolone/pd_Waters_1997_cytoprotection%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [brexanolone](drugs/drug_brexanolone/)</sub>

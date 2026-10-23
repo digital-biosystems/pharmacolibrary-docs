@@ -109,7 +109,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 384 matched, 98 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 1  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -123,13 +123,13 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Helmy_2013.pdf` | Helmy SA, Therapeutic drug monitoring and pharmac…, Biopharmaceutics & drug dis… (2013) | popPK | 10 | [10.1002/bdd.1843](https://doi.org/10.1002/bdd.1843) | [23585286](https://pubmed.ncbi.nlm.nih.gov/23585286) | Full PK parameter values (CL/F, Vd/F, ka, t1/2, compartmental model) for sulpiride are reported directly in the abstract. |
 | `Wiesel_1980.pdf` | Wiesel FA et al., The pharmacokinetics of intravenous and…, European journal of clinica… (1980) | popPK | 10 | [10.1007/BF00558453](https://doi.org/10.1007/BF00558453) | [7418717](https://pubmed.ncbi.nlm.nih.gov/7418717) | Human PK study of sulpiride with full numeric disposition parameters (CL, Vd, half-life, bioavailability) present in the abstract. |
 | `Bressolle_1992.pdf` | Bressolle F et al., Absolute bioavailability, rate of absor…, Journal of pharmaceutical s… (1992) | popPK | 8 | [10.1002/jps.2600810106](https://doi.org/10.1002/jps.2600810106) | [1619566](https://pubmed.ncbi.nlm.nih.gov/1619566) | Human PK study of sulpiride with compartmental model, but only half-life (7.0 h) and MRT appear in the abstract; CL/V values likely in tables not provided. |
-| `Lenhard_1991.pdf` | Lenhard G et al., The importance of pharmacokinetic data…, International journal of cl… (1991) | popPK | 8 | not captured | [1869345](https://pubmed.ncbi.nlm.nih.gov/1869345) | Human bioequivalence/PK study of sulpiride reporting CL, Vd, T1/2β, MRT via compartmental models, but the abstract gives only Cmax/AUC values, not the disposition parameter numbers. |
-| `Rietbrock_1995.pdf` | Rietbrock S et al., Absorption behavior of sulpiride descri…, International journal of cl… (1995) | popPK | 8 | not captured | [7655770](https://pubmed.ncbi.nlm.nih.gov/7655770) | Population (NONMEM) absorption model of sulpiride in humans, but no numeric parameter values are present in the evidence. |
-| `Chen_1989.pdf` | Chen IJ et al., [Comparative pharmacokinetics of two su…, Gaoxiong yi xue ke xue za z… (1989) | popPK | 7 | not captured | [2769828](https://pubmed.ncbi.nlm.nih.gov/2769828) | Human bioavailability study reporting numeric PK parameters (Cmax, Tmax, t½, AUC) for sulpiride, though no CL or V values are given. |
-| `Mizuno_1986.pdf` | Mizuno N et al., Gastrointestinal absorption of sulpirid…, Archives internationales de… (1986) | popPK | 7 | not captured | [3800511](https://pubmed.ncbi.nlm.nih.gov/3800511) | Rat PK study with two-compartment model and bioavailability, but numeric CL/V/ka values are not given in the evidence text. |
+| `Lenhard_1991.pdf` | Lenhard G et al., The importance of pharmacokinetic data…, International journal of cl… (1991) | popPK | 8 |  | [1869345](https://pubmed.ncbi.nlm.nih.gov/1869345) | Human bioequivalence/PK study of sulpiride reporting CL, Vd, T1/2β, MRT via compartmental models, but the abstract gives only Cmax/AUC values, not the disposition parameter numbers. |
+| `Rietbrock_1995.pdf` | Rietbrock S et al., Absorption behavior of sulpiride descri…, International journal of cl… (1995) | popPK | 8 |  | [7655770](https://pubmed.ncbi.nlm.nih.gov/7655770) | Population (NONMEM) absorption model of sulpiride in humans, but no numeric parameter values are present in the evidence. |
+| `Chen_1989.pdf` | Chen IJ et al., [Comparative pharmacokinetics of two su…, Gaoxiong yi xue ke xue za z… (1989) | popPK | 7 |  | [2769828](https://pubmed.ncbi.nlm.nih.gov/2769828) | Human bioavailability study reporting numeric PK parameters (Cmax, Tmax, t½, AUC) for sulpiride, though no CL or V values are given. |
+| `Mizuno_1986.pdf` | Mizuno N et al., Gastrointestinal absorption of sulpirid…, Archives internationales de… (1986) | popPK | 7 |  | [3800511](https://pubmed.ncbi.nlm.nih.gov/3800511) | Rat PK study with two-compartment model and bioavailability, but numeric CL/V/ka values are not given in the evidence text. |
 | `Noh_2021.pdf` | Noh K et al., Use of Intravenous Infusion Study Desig…, Drug metabolism and disposi… (2021) | popPK | 7 | [10.1124/dmd.120.000242](https://doi.org/10.1124/dmd.120.000242) | [33262223](https://pubmed.ncbi.nlm.nih.gov/33262223) | Sulpiride is one of the studied compounds with CL, Vss and t1/2,eff determined in rats, but the actual numeric parameter values for sulpiride are not present in the evidence (they appear to live in tables/figures not provided). |
 
-<sub>queue written 2026-10-06T17:33:19.621349+00:00</sub>
+<sub>queue written 2026-10-06 17:33 UTC</sub>
 
 ## Screened and excluded
 
@@ -196,5 +196,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 17:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D&body=Drug%3A%20sulpiride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 17:33 UTC</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** micronomicin
 - **ATC codes:** `S01AA22`
-- **DrugBank:** [DB13274](https://go.drugbank.com/drugs/DB13274) · **PubChem:** not captured
+- **DrugBank:** [DB13274](https://go.drugbank.com/drugs/DB13274) · **PubChem:** none
 - **molar mass:** 463.576 g/mol (C20H41N5O7) — DrugBank
 - **groups:** approved
 
@@ -46,7 +46,7 @@ Micronomicin is an antibiotic related to gentamicin, used to treat eye infection
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -55,13 +55,13 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Inoue_1983.pdf` | Inoue A et al., [Pharmacokinetic studies on micronomici…, The Japanese journal of ant… (1983) | popPK | 10 | not captured | [6674539](https://pubmed.ncbi.nlm.nih.gov/6674539) | The paper describes a compartmental PK model for micronomicin in dogs, but the specific numeric values for the requested parameters (T1/2, Kel, Vd, Cl) are summarized in text as "not differentiated" without listing the actual numbers, which are likely in tables not provided in the evidence. |
-| `Kurimoto_1983.pdf` | Kurimoto T et al., [Pharmacokinetic studies on micronomici…, The Japanese journal of ant… (1983) | popPK | 10 | not captured | [6674538](https://pubmed.ncbi.nlm.nih.gov/6674538) | The study reports pharmacokinetic modeling for micronomicin in rats, but specific numeric parameter values (CL, V, ka) are not listed in the provided abstract text. |
-| `Watanabe_1983.pdf` | Watanabe M et al., [Clinical studies of intravenous drip i…, The Japanese journal of ant… (1983) | popPK | 10 | not captured | [6674542](https://pubmed.ncbi.nlm.nih.gov/6674542) | The abstract provides specific quantitative pharmacokinetic parameters (Cmax, T1/2, V1, Kel) for micronomicin derived from a two-compartment model in human volunteers. |
-| `Watanabe_1985.pdf` | Watanabe M et al., [Clinical studies of intravenous drip i…, The Japanese journal of ant… (1985) | popPK | 10 | not captured | [4032720](https://pubmed.ncbi.nlm.nih.gov/4032720) | The study reports quantitative PK parameters including Cmax, half-life range, and an elimination constant correlation formula for micronomicin in humans. |
-| `Yamasaku_1983.pdf` | Yamasaku F, [Pharmacokinetic studies of micronomici…, The Japanese journal of ant… (1983) | popPK | 10 | not captured | [6674541](https://pubmed.ncbi.nlm.nih.gov/6674541) | The study reports quantitative pharmacokinetic parameters for micronomicin in humans, specifically including half-lives (T1/2 beta 1.43-2.02 hours) and concentration data, although full clearance and volume parameters are not explicitly listed in the provided text. |
+| `Inoue_1983.pdf` | Inoue A et al., [Pharmacokinetic studies on micronomici…, The Japanese journal of ant… (1983) | popPK | 10 |  | [6674539](https://pubmed.ncbi.nlm.nih.gov/6674539) | The paper describes a compartmental PK model for micronomicin in dogs, but the specific numeric values for the requested parameters (T1/2, Kel, Vd, Cl) are summarized in text as "not differentiated" without listing the actual numbers, which are likely in tables not provided in the evidence. |
+| `Kurimoto_1983.pdf` | Kurimoto T et al., [Pharmacokinetic studies on micronomici…, The Japanese journal of ant… (1983) | popPK | 10 |  | [6674538](https://pubmed.ncbi.nlm.nih.gov/6674538) | The study reports pharmacokinetic modeling for micronomicin in rats, but specific numeric parameter values (CL, V, ka) are not listed in the provided abstract text. |
+| `Watanabe_1983.pdf` | Watanabe M et al., [Clinical studies of intravenous drip i…, The Japanese journal of ant… (1983) | popPK | 10 |  | [6674542](https://pubmed.ncbi.nlm.nih.gov/6674542) | The abstract provides specific quantitative pharmacokinetic parameters (Cmax, T1/2, V1, Kel) for micronomicin derived from a two-compartment model in human volunteers. |
+| `Watanabe_1985.pdf` | Watanabe M et al., [Clinical studies of intravenous drip i…, The Japanese journal of ant… (1985) | popPK | 10 |  | [4032720](https://pubmed.ncbi.nlm.nih.gov/4032720) | The study reports quantitative PK parameters including Cmax, half-life range, and an elimination constant correlation formula for micronomicin in humans. |
+| `Yamasaku_1983.pdf` | Yamasaku F, [Pharmacokinetic studies of micronomici…, The Japanese journal of ant… (1983) | popPK | 10 |  | [6674541](https://pubmed.ncbi.nlm.nih.gov/6674541) | The study reports quantitative pharmacokinetic parameters for micronomicin in humans, specifically including half-lives (T1/2 beta 1.43-2.02 hours) and concentration data, although full clearance and volume parameters are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-10-07T18:35:41.408648+00:00</sub>
+<sub>queue written 2026-10-07 18:35 UTC</sub>
 
 ## Screened and excluded
 
@@ -77,5 +77,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 18:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmicronomicin%5D&body=Drug%3A%20micronomicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_micronomicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:35 UTC</sub>

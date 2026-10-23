@@ -4,7 +4,7 @@
 
 - **generic name:** flunoxaprofen
 - **ATC codes:** `G02CC04`, `M01AE15`
-- **DrugBank:** [DB13317](https://go.drugbank.com/drugs/DB13317) · **PubChem:** not captured
+- **DrugBank:** [DB13317](https://go.drugbank.com/drugs/DB13317) · **PubChem:** none
 - **molar mass:** 285.274 g/mol (C16H12FNO3) — DrugBank
 - **groups:** experimental
 
@@ -46,7 +46,7 @@ Flunoxaprofen is a non-steroidal anti-inflammatory drug of the propionic acid ty
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -55,13 +55,13 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Palatini_1988.pdf` | Palatini P et al., Stereospecific disposition of flunoxapr…, International journal of cl… (1988) | popPK | 10 | not captured | [3403103](https://pubmed.ncbi.nlm.nih.gov/3403103) | The study is a pharmacokinetic investigation of flunoxaprofen in humans, but the provided text contains only qualitative comparisons (e.g., "significantly lower") without specific numeric values for clearance, volume, or half-life. |
-| `Segre_1987.pdf` | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | popPK | 10 | not captured | [3596866](https://pubmed.ncbi.nlm.nih.gov/3596866) | The abstract reports quantitative PK parameters including mean half-life (7.9 h), mean residence time (12.81 h), and peak plasma concentration for flunoxaprofen in humans. |
+| `Palatini_1988.pdf` | Palatini P et al., Stereospecific disposition of flunoxapr…, International journal of cl… (1988) | popPK | 10 |  | [3403103](https://pubmed.ncbi.nlm.nih.gov/3403103) | The study is a pharmacokinetic investigation of flunoxaprofen in humans, but the provided text contains only qualitative comparisons (e.g., "significantly lower") without specific numeric values for clearance, volume, or half-life. |
+| `Segre_1987.pdf` | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | popPK | 10 |  | [3596866](https://pubmed.ncbi.nlm.nih.gov/3596866) | The abstract reports quantitative PK parameters including mean half-life (7.9 h), mean residence time (12.81 h), and peak plasma concentration for flunoxaprofen in humans. |
 | `Segre_1988.pdf` | Segre G et al., Pharmacokinetics of flunoxaprofen in ra…, Journal of pharmaceutical s… (1988) | popPK | 10 | [10.1002/jps.2600770806](https://doi.org/10.1002/jps.2600770806) | [3210155](https://pubmed.ncbi.nlm.nih.gov/3210155) | The study reports quantitative pharmacokinetic parameters (CL, Vd, t1/2) for flunoxaprofen in rats, dogs, and monkeys, with all numeric values explicitly provided in the abstract text. |
-| `Bareggi_1988.pdf` | Bareggi SR et al., Pharmacokinetic study in man with the n…, Arzneimittel-Forschung (1988) | popPK | 9 | not captured | [3401272](https://pubmed.ncbi.nlm.nih.gov/3401272) | The paper is a relevant PK study of flunoxaprofen in humans, but specific numeric values for CL, V, or half-life are not provided in the extracted text (only qualitative comparisons to literature or absence of data). |
-| `Iwakawa_1991.pdf` | Iwakawa S et al., Stereoselective disposition of carprofe…, Drug metabolism and disposi… (1991) | popPK | 7 | not captured | [1686227](https://pubmed.ncbi.nlm.nih.gov/1686227) | The paper is a PK study of flunoxaprofen in rats that reports qualitative trends in clearance and volume of distribution but lacks specific numeric parameter values for flunoxaprofen in the provided evidence (only an inversion ratio is given). |
+| `Bareggi_1988.pdf` | Bareggi SR et al., Pharmacokinetic study in man with the n…, Arzneimittel-Forschung (1988) | popPK | 9 |  | [3401272](https://pubmed.ncbi.nlm.nih.gov/3401272) | The paper is a relevant PK study of flunoxaprofen in humans, but specific numeric values for CL, V, or half-life are not provided in the extracted text (only qualitative comparisons to literature or absence of data). |
+| `Iwakawa_1991.pdf` | Iwakawa S et al., Stereoselective disposition of carprofe…, Drug metabolism and disposi… (1991) | popPK | 7 |  | [1686227](https://pubmed.ncbi.nlm.nih.gov/1686227) | The paper is a PK study of flunoxaprofen in rats that reports qualitative trends in clearance and volume of distribution but lacks specific numeric parameter values for flunoxaprofen in the provided evidence (only an inversion ratio is given). |
 
-<sub>queue written 2026-10-07T08:09:12.219018+00:00</sub>
+<sub>queue written 2026-10-07 08:09 UTC</sub>
 
 ## Screened and excluded
 
@@ -80,5 +80,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 08:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunoxaprofen%5D&body=Drug%3A%20flunoxaprofen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunoxaprofen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:09 UTC</sub>

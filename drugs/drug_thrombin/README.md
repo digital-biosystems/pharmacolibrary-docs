@@ -4,7 +4,7 @@
 
 - **generic name:** thrombin
 - **ATC codes:** `B02BC06`, `B02BD30`
-- **DrugBank:** [DB11300](https://go.drugbank.com/drugs/DB11300) · **PubChem:** not captured
+- **DrugBank:** [DB11300](https://go.drugbank.com/drugs/DB11300) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -91,7 +91,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2754 matched, 273 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -111,15 +111,15 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lentz_2024.pdf` | Lentz SR et al., FRONTIER1: a partially randomized phase…, Journal of thrombosis and h… (2024) | pd | 5 | [10.1016/j.jtha.2023.12.016](https://doi.org/10.1016/j.jtha.2023.12.016) | [38142846](https://www.ncbi.nlm.nih.gov/pubmed/38142846) | metadata signals extractable PD data (PK/PD) |
 | `Monk_2020.pdf` | Monk SA et al., Clinically Negligible Pharmacokinetic a…, Journal of clinical pharmac… (2020) | pd | 5 | [10.1002/jcph.1558](https://doi.org/10.1002/jcph.1558) | [31853995](https://www.ncbi.nlm.nih.gov/pubmed/31853995) | metadata signals extractable PD data (IC50) |
 | `Ajayi_1995.pdf` | Ajayi AA et al., Testosterone increases human platelet t…, Circulation (1995) | pd | 4 | [10.1161/01.cir.91.11.2742](https://doi.org/10.1161/01.cir.91.11.2742) | [7758179](https://www.ncbi.nlm.nih.gov/pubmed/7758179) | metadata signals extractable PD data (EC50) |
-| `Albrightson_1992.pdf` | Albrightson CR et al., Effect of thrombin on proliferation, co…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1403802](https://www.ncbi.nlm.nih.gov/pubmed/1403802) | metadata signals extractable PD data (EC50) |
-| `Antonaccio_1993.pdf` | Antonaccio MJ et al., Effects of thrombin and thrombin recept…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [8331553](https://www.ncbi.nlm.nih.gov/pubmed/8331553) | metadata signals extractable PD data (EC50) |
+| `Albrightson_1992.pdf` | Albrightson CR et al., Effect of thrombin on proliferation, co…, The Journal of pharmacology… (1992) | pd | 4 |  | [1403802](https://www.ncbi.nlm.nih.gov/pubmed/1403802) | metadata signals extractable PD data (EC50) |
+| `Antonaccio_1993.pdf` | Antonaccio MJ et al., Effects of thrombin and thrombin recept…, The Journal of pharmacology… (1993) | pd | 4 |  | [8331553](https://www.ncbi.nlm.nih.gov/pubmed/8331553) | metadata signals extractable PD data (EC50) |
 | `Babich_1990.pdf` | Babich M et al., Thrombin stimulates inositol phosphate…, Endocrinology (1990) | pd | 4 | [10.1210/endo-126-2-948](https://doi.org/10.1210/endo-126-2-948) | [2153536](https://www.ncbi.nlm.nih.gov/pubmed/2153536) | metadata signals extractable PD data (EC50) |
 | `Datta_2017.pdf` | Datta D et al., Graphene oxide and DNA aptamer based su…, Nanotechnology (2017) | pd | 4 | [10.1088/1361-6528/aa79e0](https://doi.org/10.1088/1361-6528/aa79e0) | [28718456](https://www.ncbi.nlm.nih.gov/pubmed/28718456) | metadata signals extractable PD data (sigmoid) |
-| `Dorn_1992.pdf` | Dorn GW et al., Thrombin, but not thromboxane, stimulat…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1527727](https://www.ncbi.nlm.nih.gov/pubmed/1527727) | metadata signals extractable PD data (EC50) |
+| `Dorn_1992.pdf` | Dorn GW et al., Thrombin, but not thromboxane, stimulat…, The Journal of pharmacology… (1992) | pd | 4 |  | [1527727](https://www.ncbi.nlm.nih.gov/pubmed/1527727) | metadata signals extractable PD data (EC50) |
 | `Dražić_2020.pdf` | Dražić T et al., Peptide-β-lactam Inhibitors of Dengue a…, Journal of medicinal chemis… (2020) | pd | 4 | [10.1021/acs.jmedchem.9b00759](https://doi.org/10.1021/acs.jmedchem.9b00759) | [31804823](https://www.ncbi.nlm.nih.gov/pubmed/31804823) | metadata signals extractable PD data (IC50) |
 | `Jindal_2023.pdf` | Jindal S et al., Identification of thrombin inhibiting a…, Natural product research (2023) | pd | 4 | [10.1080/14786419.2023.2169919](https://doi.org/10.1080/14786419.2023.2169919) | [36705311](https://www.ncbi.nlm.nih.gov/pubmed/36705311) | metadata signals extractable PD data (IC50) |
 | `Liu_2020.pdf` | Liu H et al., Anticoagulant Decapeptide Interacts wit…, Journal of agricultural and… (2020) | pd | 4 | [10.1021/acs.jafc.9b06450](https://doi.org/10.1021/acs.jafc.9b06450) | [31850760](https://www.ncbi.nlm.nih.gov/pubmed/31850760) | metadata signals extractable PD data (IC50) |
-| `LoGrasso_1994.pdf` | LoGrasso PV et al., Cloning, expression, and characterizati…, The Journal of biological c… (1994) | pd | 4 | not captured | [8063825](https://www.ncbi.nlm.nih.gov/pubmed/8063825) | metadata signals extractable PD data (EC50) |
+| `LoGrasso_1994.pdf` | LoGrasso PV et al., Cloning, expression, and characterizati…, The Journal of biological c… (1994) | pd | 4 |  | [8063825](https://www.ncbi.nlm.nih.gov/pubmed/8063825) | metadata signals extractable PD data (EC50) |
 | `London_1996.pdf` | London F et al., Annexin V inhibition of factor IXa-cata…, Biochemistry (1996) | pd | 4 | [10.1021/bi960712v](https://doi.org/10.1021/bi960712v) | [8988028](https://www.ncbi.nlm.nih.gov/pubmed/8988028) | metadata signals extractable PD data (IC50) |
 | `Thompson_1985.pdf` | Thompson NT et al., Intracellular calcium fluxes in human p…, European journal of biochem… (1985) | pd | 4 | [10.1111/j.1432-1033.1985.tb08766.x](https://doi.org/10.1111/j.1432-1033.1985.tb08766.x) | [3918866](https://www.ncbi.nlm.nih.gov/pubmed/3918866) | metadata signals extractable PD data (EC50) |
 | `Wang_2013.pdf` | Wang JW et al., Differential effects of prostaglandin E…, Investigative ophthalmology… (2013) | pd | 4 | [10.1167/iovs.13-12363](https://doi.org/10.1167/iovs.13-12363) | [23766471](https://www.ncbi.nlm.nih.gov/pubmed/23766471) | metadata signals extractable PD data (Emax) |
@@ -131,12 +131,12 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Francis_2008.pdf` | Francis CW, New issues in oral anticoagulants, Hematology. American Societ… (2008) | pgx | 8 | [10.1182/asheducation-2008.1.259](https://doi.org/10.1182/asheducation-2008.1.259) | [19074093](https://www.ncbi.nlm.nih.gov/pubmed/19074093) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Ji_2021.pdf` | Ji Q et al., The impact of ABCB1 and CES1 polymorphi…, British journal of clinical… (2021) | pgx | 8 | [10.1111/bcp.14646](https://doi.org/10.1111/bcp.14646) | [33179295](https://www.ncbi.nlm.nih.gov/pubmed/33179295) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Bredberg_2003.pdf` | Bredberg E et al., Ximelagatran, an oral direct thrombin i…, Clinical pharmacokinetics (2003) | pgx | 7 | [10.2165/00003088-200342080-00005](https://doi.org/10.2165/00003088-200342080-00005) | [12846597](https://www.ncbi.nlm.nih.gov/pubmed/12846597) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
-| `Ordovás_2009.pdf` | Ordovás Baines JP et al., [Pharmacokinetics and pharmacodynamics…, Farmacia hospitalaria : org… (2009) | pgx | 7 | not captured | [19712596](https://www.ncbi.nlm.nih.gov/pubmed/19712596) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Ordovás_2009.pdf` | Ordovás Baines JP et al., [Pharmacokinetics and pharmacodynamics…, Farmacia hospitalaria : org… (2009) | pgx | 7 |  | [19712596](https://www.ncbi.nlm.nih.gov/pubmed/19712596) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Ufer_2010.pdf` | Ufer M, Comparative efficacy and safety of the…, Thrombosis and haemostasis (2010) | pgx | 7 | [10.1160/TH09-09-0659](https://doi.org/10.1160/TH09-09-0659) | [20135071](https://www.ncbi.nlm.nih.gov/pubmed/20135071) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Helin_2019.pdf` | Helin TA et al., Warfarin dose requirement in patients h…, British journal of clinical… (2019) | pgx | 5 | [10.1111/bcp.13948](https://doi.org/10.1111/bcp.13948) | [30933373](https://www.ncbi.nlm.nih.gov/pubmed/30933373) | metadata signals extractable PGX data (CYP2C9*2) |
 | `Olšerová_2024.pdf` | Olšerová A et al., The Effect of ABCB1 and CES1 Polymorphi…, American journal of therape… (2024) | pgx | 5 | [10.1097/MJT.0000000000001710](https://doi.org/10.1097/MJT.0000000000001710) | [38525959](https://www.ncbi.nlm.nih.gov/pubmed/38525959) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-10-05T19:42:53.474017+00:00</sub>
+<sub>queue written 2026-10-05 19:42 UTC</sub>
 
 ## Screened and excluded
 
@@ -410,5 +410,5 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthrombin%5D&body=Drug%3A%20thrombin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thrombin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

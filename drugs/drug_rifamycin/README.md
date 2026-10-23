@@ -4,7 +4,7 @@
 
 - **generic name:** rifamycin
 - **ATC codes:** `A07AA13`, `D06AX15`, `J04AB03`, `S01AA16`, `S02AA12`
-- **DrugBank:** [DB11753](https://go.drugbank.com/drugs/DB11753) · **PubChem:** not captured
+- **DrugBank:** [DB11753](https://go.drugbank.com/drugs/DB11753) · **PubChem:** none
 - **molar mass:** 697.778 g/mol (C37H47NO12) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
@@ -48,14 +48,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate/transport, `SLCO1A2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inhibitor/substrate/transport, `SLCO1A2` inhibitor | DrugBank actor |
 | distribution | placenta | `ABCB1` inhibitor/substrate/transport | DrugBank actor |
 | distribution | testis | `ABCB1` inhibitor/substrate/transport | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CES2` metabolism, `CYP1A2` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor, `SLCO1B1` inhibitor/transport, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | liver | `CES2` metabolism, `CYP1A2` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor, `SLCO1B1` inhibitor/transport, `SLCO1B3` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CES2` metabolism, `CYP3A4` inducer/inhibitor | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `ABCB1` inhibitor/substrate/transport, `SLC47A1` inhibitor | DrugBank actor |
@@ -81,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 123 matched, 125 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -94,7 +93,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Smith_2019.pdf` | Smith PB et al., Rifampin Pharmacokinetics and Safety in…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/aac.00284-19](https://doi.org/10.1128/aac.00284-19) | [30910891](https://pubmed.ncbi.nlm.nih.gov/30910891) | The study reports a population PK model for rifampin in infants, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract text. |
 | `Ziv_1974.pdf` | Ziv G et al., Evaluation of rifamycin SV and rifampin…, Antimicrobial agents and ch… (1974) | popPK | 10 | [10.1128/AAC.5.2.139](https://doi.org/10.1128/AAC.5.2.139) | [4857860](https://pubmed.ncbi.nlm.nih.gov/4857860) | The study reports quantitative PK parameters for rifamycin SV and rifampin in ewes, but the specific numeric values are not present in the provided abstract text. |
 | `Boulanger_2009.pdf` | Boulanger C et al., Pharmacokinetic evaluation of rifabutin…, Clinical infectious disease… (2009) | popPK | 9 | [10.1086/606056](https://doi.org/10.1086/606056) | [19807276](https://pubmed.ncbi.nlm.nih.gov/19807276) | The study reports population pharmacokinetic parameters for rifabutin (a rifamycin) in humans, but the specific numeric values are not present in the provided abstract text. |
-| `Gentile_1984.pdf` | Gentile S et al., Plasma clearance of nicotinic acid and…, Hepato-gastroenterology (1984) | popPK | 9 | not captured | [6724499](https://pubmed.ncbi.nlm.nih.gov/6724499) | The study reports compartmental kinetic parameters (clearance, uptake constants) for rifamycin-SV in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Gentile_1984.pdf` | Gentile S et al., Plasma clearance of nicotinic acid and…, Hepato-gastroenterology (1984) | popPK | 9 |  | [6724499](https://pubmed.ncbi.nlm.nih.gov/6724499) | The study reports compartmental kinetic parameters (clearance, uptake constants) for rifamycin-SV in humans, but the specific numeric values are not present in the provided abstract text. |
 | `Sanders_2026.pdf` | Sanders M et al., Effect of concomitant rifampin and clar…, Expert opinion on drug meta… (2026) | pd | 5 | [10.1080/17425255.2026.2689048](https://doi.org/10.1080/17425255.2026.2689048) | [42287332](https://www.ncbi.nlm.nih.gov/pubmed/42287332) | metadata signals extractable PD data (EC50) |
 | `Zhang_2019.pdf` | Zhang Y et al., Dissecting the Contribution of OATP1B1…, Molecular pharmaceutics (2019) | pd | 5 | [10.1021/acs.molpharmaceut.8b01226](https://doi.org/10.1021/acs.molpharmaceut.8b01226) | [31039308](https://www.ncbi.nlm.nih.gov/pubmed/31039308) | metadata signals extractable PD data (IC50) |
 | `Nilles_2024.pdf` | Nilles J et al., Lack of CYP3A4 protein induction despit…, Archives of toxicology (2024) | pd | 4 | [10.1007/s00204-024-03763-w](https://doi.org/10.1007/s00204-024-03763-w) | [38713375](https://www.ncbi.nlm.nih.gov/pubmed/38713375) | metadata signals extractable PD data (IC50) |
@@ -108,7 +107,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Orozco_2023.pdf` | Orozco CC et al., Characterization of Bile Acid Sulfate C…, Molecular pharmaceutics (2023) | pgx | 5 | [10.1021/acs.molpharmaceut.3c00040](https://doi.org/10.1021/acs.molpharmaceut.3c00040) | [37134201](https://www.ncbi.nlm.nih.gov/pubmed/37134201) | metadata signals extractable PGX data (SLCO1B1) |
 | `Tian_2021.pdf` | Tian X et al., Impact of CYP2C19 Phenotype and Drug-Dr…, Antimicrobial agents and ch… (2021) | pgx | 5 | [10.1128/AAC.00207-21](https://doi.org/10.1128/AAC.00207-21) | [34152823](https://www.ncbi.nlm.nih.gov/pubmed/34152823) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-04T18:10:05.586473+00:00</sub>
+<sub>queue written 2026-10-04 18:10 UTC</sub>
 
 ## Screened and excluded
 
@@ -266,5 +265,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifamycin%5D&body=Drug%3A%20rifamycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifamycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

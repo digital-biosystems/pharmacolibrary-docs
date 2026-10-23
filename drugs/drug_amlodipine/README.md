@@ -254,20 +254,18 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` transport, `SLC22A5` transport | PGx paper |
-| absorption | skeletal muscle | `SLC22A5` transport | PGx paper |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A4` transport, `SLC22A5` transport | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | liver | `SLC22A3` transport | PGx paper |
 | distribution | placenta | `ABCB1` inhibitor/substrate, `SLC22A3` transport | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` transport | PGx paper |
+| distribution | skeletal muscle | `SLC22A3` transport, `SLC22A5` transport | PGx paper |
 | distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/metabolism/substrate, `SLC22A7` transport | DrugBank actor |
 | metabolism | liver | `CYP2B6` inhibitor/substrate, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/metabolism, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` inhibitor/metabolism/substrate, `SLC22A1` transport, `SLC22A7` transport, `SLCO1B1` transport | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` inhibitor/metabolism/substrate | DrugBank actor |
-| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` transport, `SLC22A6` transport, `SLC22A8` transport | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate, `SLC22A2` transport, `SLC22A4` transport, `SLC22A5` transport, `SLC22A6` transport, `SLC22A8` transport | DrugBank actor |
 | excretion | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CA1 (inhibitor), CACNA1B (inhibitor), CACNA1C (inhibitor), CACNA1I (inhibitor), CACNA2D1 (blocker), CACNA2D1 (inhibitor), CACNA2D3 (inhibitor), CACNB1 (inhibitor), SLC22A10 (transport), SLC22A100 (transport), SLC22A11 (transport), SLC22A12 (transport), SLC22A13 (transport), SLC22A14 (transport), SLC22A15 (transport), SLC22A16 (transport), SLC22A17 (transport), SLC22A18 (transport), SLC22A19 (transport), SLC22A20 (transport), SLC22A21 (transport), SLC22A22 (transport), SLC22A23 (transport), SLC22A24 (transport), SLC22A25 (transport), SLC22A26 (transport), SLC22A27 (transport), SLC22A28 (transport), SLC22A29 (transport), SLC22A30 (transport), SLC22A31 (transport), SLC22A32 (transport), SLC22A33 (transport), SLC22A34 (transport), SLC22A35 (transport), SLC22A36 (transport), SLC22A37 (transport), SLC22A38 (transport), SLC22A39 (transport), SLC22A40 (transport), SLC22A41 (transport), SLC22A42 (transport), SLC22A43 (transport), SLC22A44 (transport), SLC22A45 (transport), SLC22A46 (transport), SLC22A47 (transport), SLC22A48 (transport), SLC22A49 (transport), SLC22A50 (transport), SLC22A51 (transport), SLC22A52 (transport), SLC22A53 (transport), SLC22A54 (transport), SLC22A55 (transport), SLC22A56 (transport), SLC22A57 (transport), SLC22A58 (transport), SLC22A59 (transport), SLC22A60 (transport), SLC22A61 (transport), SLC22A62 (transport), SLC22A63 (transport), SLC22A64 (transport), SLC22A65 (transport), SLC22A66 (transport), SLC22A67 (transport), SLC22A68 (transport), SLC22A69 (transport), SLC22A70 (transport), SLC22A71 (transport), SLC22A72 (transport), SLC22A73 (transport), SLC22A74 (transport), SLC22A75 (transport), SLC22A76 (transport), SLC22A77 (transport), SLC22A78 (transport), SLC22A79 (transport), SLC22A80 (transport), SLC22A81 (transport), SLC22A82 (transport), SLC22A83 (transport), SLC22A84 (transport), SLC22A85 (transport), SLC22A86 (transport), SLC22A87 (transport), SLC22A88 (transport), SLC22A89 (transport), SLC22A9 (transport), SLC22A90 (transport), SLC22A91 (transport), SLC22A92 (transport), SLC22A93 (transport), SLC22A94 (transport), SLC22A95 (transport), SLC22A96 (transport), SLC22A97 (transport), SLC22A98 (transport), SLC22A99 (transport), SMPD1 (inhibitor).</sub>
@@ -290,7 +288,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 582 matched, 124 returned
 - **screened:** 29  ·  **relevant:** 6
-- **records:** 17  ·  extracted 3  ·  needs_review 14  ·  rejected 0  ·  stale 0
+- **records:** 17  ·  extracted 3  ·  needs review 14  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -319,7 +317,7 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Park_2019.pdf` | Park JW et al., Pharmacokinetic and haemodynamic intera…, Basic & clinical pharmacolo… (2019) | pgx | 7 | [10.1111/bcpt.13244](https://doi.org/10.1111/bcpt.13244) | [31058419](https://www.ncbi.nlm.nih.gov/pubmed/31058419) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Sahney_2006.pdf` | Sahney S, A review of calcium channel antagonists…, Paediatric drugs (2006) | pgx | 7 | [10.2165/00148581-200608060-00004](https://doi.org/10.2165/00148581-200608060-00004) | [17154643](https://www.ncbi.nlm.nih.gov/pubmed/17154643) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-22T11:11:23.572998+00:00</sub>
+<sub>queue written 2026-10-22 11:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -437,5 +435,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 11:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D&body=Drug%3A%20amlodipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 11:11 UTC</sub>

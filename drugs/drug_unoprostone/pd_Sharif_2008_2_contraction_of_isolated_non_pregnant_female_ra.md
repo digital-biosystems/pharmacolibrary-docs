@@ -80,4 +80,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bunoprostone%5D%20pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra&body=Drug%3A%20unoprostone%0ARecord%3A%20pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra%0APaper%3A%20Sharif_2008_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_unoprostone/pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [unoprostone](drugs/drug_unoprostone/)</sub>

@@ -4,7 +4,7 @@
 
 - **generic name:** g-strophanthin
 - **ATC codes:** `C01AC01`
-- **DrugBank:** [DB01092](https://go.drugbank.com/drugs/DB01092) · **PubChem:** not captured
+- **DrugBank:** [DB01092](https://go.drugbank.com/drugs/DB01092) · **PubChem:** none
 - **groups:** approved
 
 ## About
@@ -78,7 +78,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1071 matched, 175 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -88,32 +88,32 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Lahnsteiner_2009.pdf` | Lahnsteiner F, The effect of different kinds of electr…, Journal of fish biology (2009) | pd | 5 | [10.1111/j.1095-8649.2009.02354.x](https://doi.org/10.1111/j.1095-8649.2009.02354.x) | [20738632](https://www.ncbi.nlm.nih.gov/pubmed/20738632) | metadata signals extractable PD data (EC50) |
-| `Riese_1998.pdf` | Riese K et al., Dopamine D1 stimulation of Na+,K+,Cl- c…, Investigative ophthalmology… (1998) | pd | 5 | not captured | [9660493](https://www.ncbi.nlm.nih.gov/pubmed/9660493) | metadata signals extractable PD data (EC50) |
+| `Riese_1998.pdf` | Riese K et al., Dopamine D1 stimulation of Na+,K+,Cl- c…, Investigative ophthalmology… (1998) | pd | 5 |  | [9660493](https://www.ncbi.nlm.nih.gov/pubmed/9660493) | metadata signals extractable PD data (EC50) |
 | `Weiss_2004.pdf` | Weiss M et al., Inotropic effect of digoxin in humans:…, Pharmaceutical research (2004) | pd | 5 | [10.1023/b:pham.0000016236.36210.a6](https://doi.org/10.1023/b:pham.0000016236.36210.a6) | [15032303](https://www.ncbi.nlm.nih.gov/pubmed/15032303) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Brodie_1989.pdf` | Brodie C et al., Characterization of resting membrane po…, International journal of de… (1989) | pd | 4 | [10.1016/0736-5748(89)90066-x](https://doi.org/10.1016/0736-5748(89)90066-x) | [2540625](https://www.ncbi.nlm.nih.gov/pubmed/2540625) | metadata signals extractable PD data (EC50) |
 | `Caspers_1987.pdf` | Caspers ML et al., Autoradiographic visualization and char…, Brain research (1987) | pd | 4 | [10.1016/0006-8993(87)90719-0](https://doi.org/10.1016/0006-8993(87)90719-0) | [3034380](https://www.ncbi.nlm.nih.gov/pubmed/3034380) | metadata signals extractable PD data (IC50) |
 | `Castillo_1989.pdf` | Castillo CJ et al., (+)-PN200-110 and ouabain binding sites…, Journal of neurochemistry (1989) | pd | 4 | [10.1111/j.1471-4159.1989.tb08536.x](https://doi.org/10.1111/j.1471-4159.1989.tb08536.x) | [2529351](https://www.ncbi.nlm.nih.gov/pubmed/2529351) | metadata signals extractable PD data (IC50) |
 | `Ciapa_1984.pdf` | Ciapa B et al., Sodium-potassium exchange in sea urchin…, Journal of cellular physiol… (1984) | pd | 4 | [10.1002/jcp.1041210129](https://doi.org/10.1002/jcp.1041210129) | [6090477](https://www.ncbi.nlm.nih.gov/pubmed/6090477) | metadata signals extractable PD data (IC50) |
-| `Hayes_1986.pdf` | Hayes JS et al., Molecular basis for the in vitro and in…, The Journal of pharmacology… (1986) | pd | 4 | not captured | [3021955](https://www.ncbi.nlm.nih.gov/pubmed/3021955) | metadata signals extractable PD data (EC50) |
+| `Hayes_1986.pdf` | Hayes JS et al., Molecular basis for the in vitro and in…, The Journal of pharmacology… (1986) | pd | 4 |  | [3021955](https://www.ncbi.nlm.nih.gov/pubmed/3021955) | metadata signals extractable PD data (EC50) |
 | `Hoenig_1992.pdf` | Hoenig M, The function of (Na(+)-K+)ATPase in the…, Biochemical medicine and me… (1992) | pd | 4 | [10.1016/0885-4505(92)90052-z](https://doi.org/10.1016/0885-4505(92)90052-z) | [1326302](https://www.ncbi.nlm.nih.gov/pubmed/1326302) | metadata signals extractable PD data (sigmoid) |
 | `Hunter_1985.pdf` | Hunter DD et al., Assay of muscarinic acetylcholine recep…, Analytical biochemistry (1985) | pd | 4 | [10.1016/0003-2697(85)90588-3](https://doi.org/10.1016/0003-2697(85)90588-3) | [2416241](https://www.ncbi.nlm.nih.gov/pubmed/2416241) | metadata signals extractable PD data (EC50) |
 | `Jackson_1996.pdf` | Jackson TS et al., Vasodilatory properties of recombinant…, The American journal of phy… (1996) | pd | 4 | [10.1152/ajpheart.1996.271.3.H924](https://doi.org/10.1152/ajpheart.1996.271.3.H924) | [8853326](https://www.ncbi.nlm.nih.gov/pubmed/8853326) | metadata signals extractable PD data (EC50) |
 | `Kawai_1997.pdf` | Kawai N et al., Functional characterization of endothel…, Neurochemistry international (1997) | pd | 4 | [10.1016/s0197-0186(97)00018-1](https://doi.org/10.1016/s0197-0186(97)00018-1) | [9308010](https://www.ncbi.nlm.nih.gov/pubmed/9308010) | metadata signals extractable PD data (EC50) |
-| `Lichtstein_1987.pdf` | Lichtstein D et al., The ouabain receptor in animal tissues…, Klinische Wochenschrift (1987) | pd | 4 | not captured | [3037184](https://www.ncbi.nlm.nih.gov/pubmed/3037184) | metadata signals extractable PD data (IC50) |
+| `Lichtstein_1987.pdf` | Lichtstein D et al., The ouabain receptor in animal tissues…, Klinische Wochenschrift (1987) | pd | 4 |  | [3037184](https://www.ncbi.nlm.nih.gov/pubmed/3037184) | metadata signals extractable PD data (IC50) |
 | `Lowy_1987.pdf` | Lowy RJ et al., Vasoactive intestinal peptide stimulate…, The American journal of phy… (1987) | pd | 4 | [10.1152/ajpregu.1987.253.6.R801](https://doi.org/10.1152/ajpregu.1987.253.6.R801) | [3425758](https://www.ncbi.nlm.nih.gov/pubmed/3425758) | metadata signals extractable PD data (EC50) |
 | `Masocha_2016.pdf` | Masocha W et al., Distinguishing subgroups among μ-opioid…, European journal of pharmac… (2016) | pd | 4 | [10.1016/j.ejphar.2016.01.010](https://doi.org/10.1016/j.ejphar.2016.01.010) | [26825542](https://www.ncbi.nlm.nih.gov/pubmed/26825542) | metadata signals extractable PD data (Emax) |
-| `McGoron_1996.pdf` | McGoron AJ et al., Effects of ouabain on technetium-99m-Q1…, Journal of nuclear medicine… (1996) | pd | 4 | not captured | [8965140](https://www.ncbi.nlm.nih.gov/pubmed/8965140) | metadata signals extractable PD data (Emax) |
-| `Meerdink_1989.pdf` | Meerdink DJ et al., Comparison of hypoxia and ouabain effec…, Journal of nuclear medicine… (1989) | pd | 4 | not captured | [2527973](https://www.ncbi.nlm.nih.gov/pubmed/2527973) | metadata signals extractable PD data (Emax) |
+| `McGoron_1996.pdf` | McGoron AJ et al., Effects of ouabain on technetium-99m-Q1…, Journal of nuclear medicine… (1996) | pd | 4 |  | [8965140](https://www.ncbi.nlm.nih.gov/pubmed/8965140) | metadata signals extractable PD data (Emax) |
+| `Meerdink_1989.pdf` | Meerdink DJ et al., Comparison of hypoxia and ouabain effec…, Journal of nuclear medicine… (1989) | pd | 4 |  | [2527973](https://www.ncbi.nlm.nih.gov/pubmed/2527973) | metadata signals extractable PD data (Emax) |
 | `Rocafull_2011.pdf` | Rocafull MA et al., Isolation and cloning of the K+-indepen…, Biochimica et biophysica ac… (2011) | pd | 4 | [10.1016/j.bbamem.2011.02.010](https://doi.org/10.1016/j.bbamem.2011.02.010) | [21334305](https://www.ncbi.nlm.nih.gov/pubmed/21334305) | metadata signals extractable PD data (IC50) |
 | `Sachs_1977.pdf` | Sachs JR, Kinetic evaluation of the Na-K pump rea…, The Journal of physiology (1977) | pd | 4 | [10.1113/jphysiol.1977.sp012106](https://doi.org/10.1113/jphysiol.1977.sp012106) | [599454](https://www.ncbi.nlm.nih.gov/pubmed/599454) | metadata signals extractable PD data (sigmoid) |
 | `Schwinger_1992.pdf` | Schwinger RH et al., Effect of the phosphodiesterase inhibit…, Journal of cardiovascular p… (1992) | pd | 4 | [10.1097/00005344-199206000-00019](https://doi.org/10.1097/00005344-199206000-00019) | [1376820](https://www.ncbi.nlm.nih.gov/pubmed/1376820) | metadata signals extractable PD data (EC50) |
 | `Sitte_2000.pdf` | Sitte HH et al., Characterization of carrier-mediated ef…, Journal of neurochemistry (2000) | pd | 4 | [10.1046/j.1471-4159.2000.741317.x](https://doi.org/10.1046/j.1471-4159.2000.741317.x) | [10693966](https://www.ncbi.nlm.nih.gov/pubmed/10693966) | metadata signals extractable PD data (EC50) |
-| `Sugden_1986.pdf` | Sugden AL et al., Essential role of calcium influx in the…, The Journal of biological c… (1986) | pd | 4 | not captured | [3017936](https://www.ncbi.nlm.nih.gov/pubmed/3017936) | metadata signals extractable PD data (EC50) |
+| `Sugden_1986.pdf` | Sugden AL et al., Essential role of calcium influx in the…, The Journal of biological c… (1986) | pd | 4 |  | [3017936](https://www.ncbi.nlm.nih.gov/pubmed/3017936) | metadata signals extractable PD data (EC50) |
 | `Takuma_1994.pdf` | Takuma K et al., Cultured rat astrocytes possess Na(+)-C…, Glia (1994) | pd | 4 | [10.1002/glia.440120410](https://doi.org/10.1002/glia.440120410) | [7890336](https://www.ncbi.nlm.nih.gov/pubmed/7890336) | metadata signals extractable PD data (IC50) |
 | `Wu_1989.pdf` | Wu DQ et al., Effect of ouabain on the relation betwe…, Heart and vessels (1989) | pd | 4 | [10.1007/BF02058354](https://doi.org/10.1007/BF02058354) | [2584175](https://www.ncbi.nlm.nih.gov/pubmed/2584175) | metadata signals extractable PD data (Emax) |
 | `Gozalpour_2014.pdf` | Gozalpour E et al., Convallatoxin: a new P-glycoprotein sub…, European journal of pharmac… (2014) | pgx | 7 | [10.1016/j.ejphar.2014.09.031](https://doi.org/10.1016/j.ejphar.2014.09.031) | [25264938](https://www.ncbi.nlm.nih.gov/pubmed/25264938) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 
-<sub>queue written 2026-10-06T03:01:16.218600+00:00</sub>
+<sub>queue written 2026-10-06 03:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -286,5 +286,5 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bg_strophanthin%5D&body=Drug%3A%20g_strophanthin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_g_strophanthin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

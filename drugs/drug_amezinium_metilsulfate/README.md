@@ -4,7 +4,7 @@
 
 - **generic name:** amezinium metilsulfate
 - **ATC codes:** `C01CA25`
-- **DrugBank:** [DB13330](https://go.drugbank.com/drugs/DB13330) · **PubChem:** not captured
+- **DrugBank:** [DB13330](https://go.drugbank.com/drugs/DB13330) · **PubChem:** none
 - **molar mass:** 313.33 g/mol (C12H15N3O5S) — DrugBank
 - **groups:** experimental
 
@@ -36,7 +36,7 @@ _not available_
 
 - **PubMed hits:** 2 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -45,13 +45,13 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Brode_1983.pdf` | Brode E et al., The pharmacokinetics of ameziniummetils…, Arzneimittel-Forschung (1983) | popPK | 10 | not captured | [6686052](https://pubmed.ncbi.nlm.nih.gov/6686052) | The abstract reports specific half-life values (0.6 h, 3.0 h, 12.0 h) for absorption, distribution, and elimination in humans, though full compartmental parameters (CL, V) are not explicitly listed in the provided text. |
-| `Kaumeier_1981.pdf` | Kaumeier S et al., Absolute bioavailability of amezinium.…, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197980](https://pubmed.ncbi.nlm.nih.gov/7197980) | The study reports quantitative pharmacokinetic parameters including half-lives, volume of distribution, and bioavailability for amezinium metilsulfate in humans. |
-| `Traut_1981.pdf` | Traut M et al., Pharmacokinetics of amezinium in man, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197975](https://pubmed.ncbi.nlm.nih.gov/7197975) | The paper reports quantitative pharmacokinetic parameters (bioavailability, volume of distribution, half-life) for amezinium in humans directly in the text. |
-| `Nambu_1988.pdf` | Nambu K et al., Disposition and metabolism of [14C]-ame…, Arzneimittel-Forschung (1988) | popPK | 9 | not captured | [3207436](https://pubmed.ncbi.nlm.nih.gov/3207436) | The study reports quantitative disposition parameters (Cmax, tmax, t1/2) and mass balance data for amezinium metilsulfate in rats, though specific clearance and volume values are not explicitly listed in the text. |
-| `Traut_1981_2.pdf` | Traut M et al., Pharmacokinetics of amezinium in rat an…, Arzneimittel-Forschung (1981) | popPK | 9 | not captured | [7197974](https://pubmed.ncbi.nlm.nih.gov/7197974) | The paper reports quantitative pharmacokinetic parameters (absorption half-lives, terminal half-lives, tissue distribution ratios, and clearance descriptions) for amezinium in rats and dogs. |
+| `Brode_1983.pdf` | Brode E et al., The pharmacokinetics of ameziniummetils…, Arzneimittel-Forschung (1983) | popPK | 10 |  | [6686052](https://pubmed.ncbi.nlm.nih.gov/6686052) | The abstract reports specific half-life values (0.6 h, 3.0 h, 12.0 h) for absorption, distribution, and elimination in humans, though full compartmental parameters (CL, V) are not explicitly listed in the provided text. |
+| `Kaumeier_1981.pdf` | Kaumeier S et al., Absolute bioavailability of amezinium.…, Arzneimittel-Forschung (1981) | popPK | 10 |  | [7197980](https://pubmed.ncbi.nlm.nih.gov/7197980) | The study reports quantitative pharmacokinetic parameters including half-lives, volume of distribution, and bioavailability for amezinium metilsulfate in humans. |
+| `Traut_1981.pdf` | Traut M et al., Pharmacokinetics of amezinium in man, Arzneimittel-Forschung (1981) | popPK | 10 |  | [7197975](https://pubmed.ncbi.nlm.nih.gov/7197975) | The paper reports quantitative pharmacokinetic parameters (bioavailability, volume of distribution, half-life) for amezinium in humans directly in the text. |
+| `Nambu_1988.pdf` | Nambu K et al., Disposition and metabolism of [14C]-ame…, Arzneimittel-Forschung (1988) | popPK | 9 |  | [3207436](https://pubmed.ncbi.nlm.nih.gov/3207436) | The study reports quantitative disposition parameters (Cmax, tmax, t1/2) and mass balance data for amezinium metilsulfate in rats, though specific clearance and volume values are not explicitly listed in the text. |
+| `Traut_1981_2.pdf` | Traut M et al., Pharmacokinetics of amezinium in rat an…, Arzneimittel-Forschung (1981) | popPK | 9 |  | [7197974](https://pubmed.ncbi.nlm.nih.gov/7197974) | The paper reports quantitative pharmacokinetic parameters (absorption half-lives, terminal half-lives, tissue distribution ratios, and clearance descriptions) for amezinium in rats and dogs. |
 
-<sub>queue written 2026-10-06T04:01:56.560753+00:00</sub>
+<sub>queue written 2026-10-06 04:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -75,5 +75,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamezinium_metilsulfate%5D&body=Drug%3A%20amezinium_metilsulfate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amezinium_metilsulfate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

@@ -45,7 +45,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 109 matched, 106 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -57,12 +57,12 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bottorff_1988.pdf` | Bottorff MB et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1988) | popPK | 10 | [10.1002/j.1552-4604.1988.tb05753.x](https://doi.org/10.1002/j.1552-4604.1988.tb05753.x) | [3392239](https://pubmed.ncbi.nlm.nih.gov/3392239) | The abstract explicitly reports quantitative pharmacokinetic parameters (Vz, CL, t1/2) for urapidil in human patients. |
 | `Nirogi_2011.pdf` | Nirogi R et al., Quantification of urapidil, α-1-adrenor…, Biomedical chromatography :… (2011) | popPK | 10 | [10.1002/bmc.1604](https://doi.org/10.1002/bmc.1604) | [21308707](https://pubmed.ncbi.nlm.nih.gov/21308707) | The paper reports quantitative pharmacokinetic parameters (Cmax, AUC, t1/2, Cl) for urapidil in rats, with all numeric values explicitly provided in the abstract. |
 | `Shepherd_1988.pdf` | Shepherd AM, Human pharmacology of urapidil, Drugs 35 Suppl (1988) | popPK | 9 | [10.2165/00003495-198800356-00005](https://doi.org/10.2165/00003495-198800356-00005) | [3042359](https://pubmed.ncbi.nlm.nih.gov/3042359) | The text explicitly reports quantitative pharmacokinetic parameters for urapidil in humans, including clearance (12 L/h), renal clearance (1.8 L/h), bioavailability (78%), and half-lives (35 min, 3 h). |
-| `Gielsdorf_1986.pdf` | Gielsdorf W et al., [The pharmacokinetics and bioavailabili…, Arzneimittel-Forschung (1986) | popPK | 8 | not captured | [3778565](https://pubmed.ncbi.nlm.nih.gov/3778565) | The study reports pharmacokinetic parameters for urapidil in humans, but the specific numeric values are not present in the provided evidence. |
+| `Gielsdorf_1986.pdf` | Gielsdorf W et al., [The pharmacokinetics and bioavailabili…, Arzneimittel-Forschung (1986) | popPK | 8 |  | [3778565](https://pubmed.ncbi.nlm.nih.gov/3778565) | The study reports pharmacokinetic parameters for urapidil in humans, but the specific numeric values are not present in the provided evidence. |
 | `Kirsten_1986.pdf` | Kirsten R et al., Pharmacodynamics and pharmacokinetics o…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00542413](https://doi.org/10.1007/BF00542413) | [3758142](https://pubmed.ncbi.nlm.nih.gov/3758142) | The study reports pharmacokinetics of urapidil in humans, but the evidence only provides qualitative concentration ranges (e.g., 100-200 ng/ml) and lacks specific quantitative disposition parameters like clearance or volume. |
-| `Kirsten_1989.pdf` | Kirsten R et al., Influence of food intake on the bioavai…, International journal of cl… (1989) | popPK | 8 | not captured | [2737799](https://pubmed.ncbi.nlm.nih.gov/2737799) | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for urapidil in humans, but the specific numeric values are not present in the provided text, only qualitative descriptions and relative differences. |
-| `Kirsten_1989_2.pdf` | Kirsten R et al., Improved orthostatic dysregulation reco…, International journal of cl… (1989) | popPK | 8 | not captured | [2777422](https://pubmed.ncbi.nlm.nih.gov/2777422) | The study reports pharmacokinetic parameters (Cmax, fluctuation) for urapidil in humans, but specific clearance, volume, or half-life values are not explicitly listed in the provided text. |
+| `Kirsten_1989.pdf` | Kirsten R et al., Influence of food intake on the bioavai…, International journal of cl… (1989) | popPK | 8 |  | [2737799](https://pubmed.ncbi.nlm.nih.gov/2737799) | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for urapidil in humans, but the specific numeric values are not present in the provided text, only qualitative descriptions and relative differences. |
+| `Kirsten_1989_2.pdf` | Kirsten R et al., Improved orthostatic dysregulation reco…, International journal of cl… (1989) | popPK | 8 |  | [2777422](https://pubmed.ncbi.nlm.nih.gov/2777422) | The study reports pharmacokinetic parameters (Cmax, fluctuation) for urapidil in humans, but specific clearance, volume, or half-life values are not explicitly listed in the provided text. |
 | `Sun_2015.pdf` | Sun S et al., Capillary electrophoresis with end-colu…, Journal of chromatography.… (2015) | popPK | 8 | [10.1016/j.jchromb.2015.10.011](https://doi.org/10.1016/j.jchromb.2015.10.011) | [26551206](https://pubmed.ncbi.nlm.nih.gov/26551206) | The study reports quantitative pharmacokinetic parameters (Cmax, T1/2, Tmax) for urapidil in rats, with values explicitly provided in the abstract. |
-| `Wambach_1987.pdf` | Wambach G et al., [Renal and adrenal function following a…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3675693](https://pubmed.ncbi.nlm.nih.gov/3675693) | The study reports quantitative plasma half-life values for urapidil in human subjects with varying renal function. |
+| `Wambach_1987.pdf` | Wambach G et al., [Renal and adrenal function following a…, Arzneimittel-Forschung (1987) | popPK | 8 |  | [3675693](https://pubmed.ncbi.nlm.nih.gov/3675693) | The study reports quantitative plasma half-life values for urapidil in human subjects with varying renal function. |
 | `Toklucu_2025.pdf` | Toklucu I et al., α-Adrenoreceptor blocker phentolamine i…, British journal of pharmaco… (2025) | pd | 5 | [10.1111/bph.17450](https://doi.org/10.1111/bph.17450) | [39888002](https://www.ncbi.nlm.nih.gov/pubmed/39888002) | metadata signals extractable PD data (IC50) |
 | `Aoki_1988.pdf` | Aoki K et al., Antagonism of alpha 1-adrenoceptor-medi…, Journal of cardiovascular p… (1988) | pd | 4 | [10.1097/00005344-198808000-00007](https://doi.org/10.1097/00005344-198808000-00007) | [2459548](https://www.ncbi.nlm.nih.gov/pubmed/2459548) | metadata signals extractable PD data (IC50) |
 | `Borbe_1991.pdf` | Borbe HO et al., 5-HT1A-agonistic properties of naftopid…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0014-2999(91)90779-p](https://doi.org/10.1016/0014-2999(91)90779-p) | [1839829](https://www.ncbi.nlm.nih.gov/pubmed/1839829) | metadata signals extractable PD data (IC50) |
@@ -73,7 +73,7 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Schwietert_1991.pdf` | Schwietert HR et al., Differences between full and partial al…, Naunyn-Schmiedeberg's archi… (1991) | pd | 4 | [10.1007/BF00167220](https://doi.org/10.1007/BF00167220) | [1682821](https://www.ncbi.nlm.nih.gov/pubmed/1682821) | metadata signals extractable PD data (EC50) |
 | `Williams_1995.pdf` | Williams TJ et al., Characterization of alpha 1-adrenocepto…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb13259.x](https://doi.org/10.1111/j.1476-5381.1995.tb13259.x) | [7881752](https://www.ncbi.nlm.nih.gov/pubmed/7881752) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T14:15:56.014166+00:00</sub>
+<sub>queue written 2026-10-06 14:15 UTC</sub>
 
 ## Screened and excluded
 
@@ -187,5 +187,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Burapidil%5D&body=Drug%3A%20urapidil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_urapidil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

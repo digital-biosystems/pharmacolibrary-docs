@@ -45,7 +45,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 206 matched, 88 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -54,21 +54,21 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tränkle_1996.pdf` | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | pd | 5 | not captured | [8930201](https://www.ncbi.nlm.nih.gov/pubmed/8930201) | metadata signals extractable PD data (EC50) |
+| `Tränkle_1996.pdf` | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | pd | 5 |  | [8930201](https://www.ncbi.nlm.nih.gov/pubmed/8930201) | metadata signals extractable PD data (EC50) |
 | `Akins_1990.pdf` | Akins PT et al., M1 muscarinic acetylcholine receptor in…, Journal of neurochemistry (1990) | pd | 4 | [10.1111/j.1471-4159.1990.tb13310.x](https://doi.org/10.1111/j.1471-4159.1990.tb13310.x) | [2152795](https://www.ncbi.nlm.nih.gov/pubmed/2152795) | metadata signals extractable PD data (EC50) |
 | `Cortés_1986.pdf` | Cortés R et al., Muscarinic cholinergic receptor subtype…, Brain research (1986) | pd | 4 | [10.1016/0006-8993(86)90448-8](https://doi.org/10.1016/0006-8993(86)90448-8) | [3942874](https://www.ncbi.nlm.nih.gov/pubmed/3942874) | metadata signals extractable PD data (IC50) |
 | `Daeffler_1999.pdf` | Daeffler L et al., Inverse agonist activity of pirenzepine…, British journal of pharmaco… (1999) | pd | 4 | [10.1038/sj.bjp.0702407](https://doi.org/10.1038/sj.bjp.0702407) | [10205015](https://www.ncbi.nlm.nih.gov/pubmed/10205015) | metadata signals extractable PD data (EC50) |
-| `Dickinson_1988.pdf` | Dickinson KE et al., Muscarinic cholinergic receptor subtype…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [2901489](https://www.ncbi.nlm.nih.gov/pubmed/2901489) | metadata signals extractable PD data (IC50) |
+| `Dickinson_1988.pdf` | Dickinson KE et al., Muscarinic cholinergic receptor subtype…, The Journal of pharmacology… (1988) | pd | 4 |  | [2901489](https://www.ncbi.nlm.nih.gov/pubmed/2901489) | metadata signals extractable PD data (IC50) |
 | `Eglen_1993.pdf` | Eglen RM et al., Muscarinic M3 receptors mediate total i…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0922-4106(93)90058-h](https://doi.org/10.1016/0922-4106(93)90058-h) | [8420791](https://www.ncbi.nlm.nih.gov/pubmed/8420791) | metadata signals extractable PD data (EC50) |
 | `Ellis_1990.pdf` | Ellis J et al., Muscarinic receptors and second-messeng…, Brain research (1990) | pd | 4 | [10.1016/0006-8993(90)90167-a](https://doi.org/10.1016/0006-8993(90)90167-a) | [2159358](https://www.ncbi.nlm.nih.gov/pubmed/2159358) | metadata signals extractable PD data (EC50) |
-| `Gerstin_1992.pdf` | Gerstin EH et al., Heparin, dextran and trypan blue allost…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1281880](https://www.ncbi.nlm.nih.gov/pubmed/1281880) | metadata signals extractable PD data (EC50) |
+| `Gerstin_1992.pdf` | Gerstin EH et al., Heparin, dextran and trypan blue allost…, The Journal of pharmacology… (1992) | pd | 4 |  | [1281880](https://www.ncbi.nlm.nih.gov/pubmed/1281880) | metadata signals extractable PD data (EC50) |
 | `Gup_1989.pdf` | Gup DI et al., Muscarinic cholinergic receptors in nor…, The Journal of urology (1989) | pd | 4 | [10.1016/s0022-5347(17)38827-4](https://doi.org/10.1016/s0022-5347(17)38827-4) | [2746785](https://www.ncbi.nlm.nih.gov/pubmed/2746785) | metadata signals extractable PD data (Emax) |
 | `Kukhtina_2000.pdf` | Kukhtina VV et al., Muscarinic toxin-like proteins from cob…, European journal of biochem… (2000) | pd | 4 | [10.1046/j.1432-1033.2000.01775.x](https://doi.org/10.1046/j.1432-1033.2000.01775.x) | [11082188](https://www.ncbi.nlm.nih.gov/pubmed/11082188) | metadata signals extractable PD data (IC50) |
 | `Lepor_1984.pdf` | Lepor H et al., Characterization and localization of th…, The Journal of urology (1984) | pd | 4 | [10.1016/s0022-5347(17)49636-4](https://doi.org/10.1016/s0022-5347(17)49636-4) | [6204069](https://www.ncbi.nlm.nih.gov/pubmed/6204069) | metadata signals extractable PD data (IC50) |
 | `Rupniak_1994.pdf` | Rupniak NM et al., Antinociceptive and toxic effects of (+…, British journal of pharmaco… (1994) | pd | 4 | [10.1111/j.1476-5381.1994.tb17164.x](https://doi.org/10.1111/j.1476-5381.1994.tb17164.x) | [7889306](https://www.ncbi.nlm.nih.gov/pubmed/7889306) | metadata signals extractable PD data (IC50) |
 | `Scherrer_1997.pdf` | Scherrer D et al., Glucocorticoid modulation of muscarinic…, Fundamental & clinical phar… (1997) | pd | 4 | [10.1111/j.1472-8206.1997.tb00176.x](https://doi.org/10.1111/j.1472-8206.1997.tb00176.x) | [9107555](https://www.ncbi.nlm.nih.gov/pubmed/9107555) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-04T13:29:23.418812+00:00</sub>
+<sub>queue written 2026-10-04 13:29 UTC</sub>
 
 ## Screened and excluded
 
@@ -189,5 +189,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethylscopolamine%5D&body=Drug%3A%20methylscopolamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methylscopolamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

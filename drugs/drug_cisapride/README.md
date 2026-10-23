@@ -87,7 +87,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 128 matched, 57 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 3
+- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -96,7 +96,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Michiels_1987.pdf` | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | popPK | 10 | not captured | [3435588](https://pubmed.ncbi.nlm.nih.gov/3435588) | The abstract provides specific quantitative pharmacokinetic parameters (clearance, volume of distribution, bioavailability, half-life) for cisapride in rats, rabbits, and dogs. |
+| `Michiels_1987.pdf` | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | popPK | 10 |  | [3435588](https://pubmed.ncbi.nlm.nih.gov/3435588) | The abstract provides specific quantitative pharmacokinetic parameters (clearance, volume of distribution, bioavailability, half-life) for cisapride in rats, rabbits, and dogs. |
 | `Odoul_2002.pdf` | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | popPK | 10 | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) | [12451427](https://pubmed.ncbi.nlm.nih.gov/12451427) | The paper reports a population pharmacokinetic model for cisapride in neonates with explicit numeric values for V/F and CL/F in the abstract. |
 | `Preechagoon_1999.pdf` | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | popPK | 10 | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) | [10594470](https://pubmed.ncbi.nlm.nih.gov/10594470) | The paper reports a population pharmacokinetic model for cisapride in infants with explicit numeric values for CL/F, V/F, and Ka. |
 | `Corsi_1991.pdf` | Corsi M et al., Pharmacological analysis of 5-hydroxytr…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12494.x](https://doi.org/10.1111/j.1476-5381.1991.tb12494.x) | [1797331](https://www.ncbi.nlm.nih.gov/pubmed/1797331) | metadata signals extractable PD data (EC50) |
@@ -104,16 +104,16 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ereshefsky_2000.pdf` | Ereshefsky L et al., Review of the pharmacokinetics, pharmac…, Depression and anxiety (2000) | pgx | 8 | [10.1002/1520-6394(2000)12:1+&lt;30::aid-da4&gt;3.0.co;2-g](https://doi.org/10.1002/1520-6394(2000)12:1+<30::aid-da4>3.0.co;2-g) | [11098412](https://www.ncbi.nlm.nih.gov/pubmed/11098412) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Alderman_2005.pdf` | Alderman J, Coadministration of sertraline with cis…, Clinical therapeutics (2005) | pgx | 7 | [10.1016/j.clinthera.2005.07.013](https://doi.org/10.1016/j.clinthera.2005.07.013) | [16154484](https://www.ncbi.nlm.nih.gov/pubmed/16154484) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Andersson_2001.pdf` | Andersson T et al., Drug interaction studies with esomepraz…, Clinical pharmacokinetics (2001) | pgx | 7 | [10.2165/00003088-200140070-00004](https://doi.org/10.2165/00003088-200140070-00004) | [11510629](https://www.ncbi.nlm.nih.gov/pubmed/11510629) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
-| `Desta_2000.pdf` | Desta Z et al., Interaction of cisapride with the human…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [10859153](https://www.ncbi.nlm.nih.gov/pubmed/10859153) | metadata signals extractable PGX data (CYP450s, PK/PD-context) |
+| `Desta_2000.pdf` | Desta Z et al., Interaction of cisapride with the human…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [10859153](https://www.ncbi.nlm.nih.gov/pubmed/10859153) | metadata signals extractable PGX data (CYP450s, PK/PD-context) |
 | `Furuta_2001.pdf` | Furuta S et al., Inhibition of drug metabolism in human…, Xenobiotica; the fate of fo… (2001) | pgx | 7 | [10.1080/00498250110035615](https://doi.org/10.1080/00498250110035615) | [11334262](https://www.ncbi.nlm.nih.gov/pubmed/11334262) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Furuta_2004.pdf` | Furuta S et al., Drug-drug interactions of Z-338, a nove…, European journal of pharmac… (2004) | pgx | 7 | [10.1016/j.ejphar.2004.06.040](https://doi.org/10.1016/j.ejphar.2004.06.040) | [15306208](https://www.ncbi.nlm.nih.gov/pubmed/15306208) | metadata signals extractable PGX data (UGT1A9, PK/PD-context) |
 | `Gross_1999.pdf` | Gross AS et al., Influence of grapefruit juice on cisapr…, Clinical pharmacology and t… (1999) | pgx | 7 | [10.1016/S0009-9236(99)70133-5](https://doi.org/10.1016/S0009-9236(99)70133-5) | [10223776](https://www.ncbi.nlm.nih.gov/pubmed/10223776) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kearns_2003.pdf` | Kearns GL et al., Cisapride disposition in neonates and i…, Clinical pharmacology and t… (2003) | pgx | 7 | [10.1016/S0009-9236(03)00225-X](https://doi.org/10.1016/S0009-9236(03)00225-X) | [14534518](https://www.ncbi.nlm.nih.gov/pubmed/14534518) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Michalets_2000.pdf` | Michalets EL et al., Drug interactions with cisapride: clini…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039010-00004](https://doi.org/10.2165/00003088-200039010-00004) | [10926350](https://www.ncbi.nlm.nih.gov/pubmed/10926350) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Mushiroda_2000.pdf` | Mushiroda T et al., The involvement of flavin-containing mo…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [10997945](https://www.ncbi.nlm.nih.gov/pubmed/10997945) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Mushiroda_2000.pdf` | Mushiroda T et al., The involvement of flavin-containing mo…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [10997945](https://www.ncbi.nlm.nih.gov/pubmed/10997945) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Simard_2001.pdf` | Simard C et al., Study of the drug-drug interaction betw…, European journal of clinica… (2001) | pgx | 7 | [10.1007/s002280100298](https://doi.org/10.1007/s002280100298) | [11497338](https://www.ncbi.nlm.nih.gov/pubmed/11497338) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-04T13:41:03.799410+00:00</sub>
+<sub>queue written 2026-10-04 13:41 UTC</sub>
 
 ## Screened and excluded
 
@@ -164,5 +164,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-04 13:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisapride%5D&body=Drug%3A%20cisapride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisapride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:41 UTC</sub>

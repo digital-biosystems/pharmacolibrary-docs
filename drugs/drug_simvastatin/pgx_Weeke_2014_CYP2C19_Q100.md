@@ -54,4 +54,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20pgx_Weeke_2014_CYP2C19_Q100&body=Drug%3A%20simvastatin%0ARecord%3A%20pgx_Weeke_2014_CYP2C19_Q100%0APaper%3A%20Weeke_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/pgx_Weeke_2014_CYP2C19_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [simvastatin](drugs/drug_simvastatin/)</sub>

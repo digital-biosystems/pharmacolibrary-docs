@@ -103,7 +103,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 499 matched, 141 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -112,13 +112,13 @@ _42 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kangas_1982.pdf` | Kangas L et al., A pharmacokinetic and pharmacodynamic s…, International journal of cl… (1982) | popPK | 10 | not captured | [6130046](https://pubmed.ncbi.nlm.nih.gov/6130046) | Human IV flunitrazepam PK with three-compartment volumes, half-life, and clearance reported numerically in the abstract. |
-| `Cano_1977.pdf` | Cano JP et al., Bioavailability from various galenic fo…, Arzneimittel-Forschung (1977) | popPK | 8 | not captured | [23801](https://pubmed.ncbi.nlm.nih.gov/23801) | Human PK study of flunitrazepam with a three-compartment model, but only qualitative compartment ratios and bioavailability figures are given; no CL/V/ka numeric values appear (likely in the full paper/figures). |
-| `Kanto_1981.pdf` | Kanto J et al., Effect of age on the pharmacokinetics a…, International journal of cl… (1981) | popPK | 8 | not captured | [6117521](https://pubmed.ncbi.nlm.nih.gov/6117521) | Human IV flunitrazepam PK with two-compartment model, but no numeric parameter values are present in the evidence. |
-| `Mandema_1991.pdf` | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1991) | popPK | 7 | not captured | [1850477](https://pubmed.ncbi.nlm.nih.gov/1850477) | PK-PD modeling of flunitrazepam in rats with some numeric values (EC50) present, but disposition parameters (CL, V) are not shown in the evidence and likely reside in figures/tables not provided. |
+| `Kangas_1982.pdf` | Kangas L et al., A pharmacokinetic and pharmacodynamic s…, International journal of cl… (1982) | popPK | 10 |  | [6130046](https://pubmed.ncbi.nlm.nih.gov/6130046) | Human IV flunitrazepam PK with three-compartment volumes, half-life, and clearance reported numerically in the abstract. |
+| `Cano_1977.pdf` | Cano JP et al., Bioavailability from various galenic fo…, Arzneimittel-Forschung (1977) | popPK | 8 |  | [23801](https://pubmed.ncbi.nlm.nih.gov/23801) | Human PK study of flunitrazepam with a three-compartment model, but only qualitative compartment ratios and bioavailability figures are given; no CL/V/ka numeric values appear (likely in the full paper/figures). |
+| `Kanto_1981.pdf` | Kanto J et al., Effect of age on the pharmacokinetics a…, International journal of cl… (1981) | popPK | 8 |  | [6117521](https://pubmed.ncbi.nlm.nih.gov/6117521) | Human IV flunitrazepam PK with two-compartment model, but no numeric parameter values are present in the evidence. |
+| `Mandema_1991.pdf` | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1991) | popPK | 7 |  | [1850477](https://pubmed.ncbi.nlm.nih.gov/1850477) | PK-PD modeling of flunitrazepam in rats with some numeric values (EC50) present, but disposition parameters (CL, V) are not shown in the evidence and likely reside in figures/tables not provided. |
 | `Wickstrøm_1980.pdf` | Wickstrøm E et al., Pharmacokinetic and clinical observatio…, European journal of clinica… (1980) | popPK | 7 | [10.1007/BF00561899](https://doi.org/10.1007/BF00561899) | [6102520](https://pubmed.ncbi.nlm.nih.gov/6102520) | Human PK study of flunitrazepam with a three-compartment model and beta half-life (20–36 h) reported, but no CL/V values are given numerically. |
-| `Sumirtapura_1981.pdf` | Sumirtapura Y et al., [Clinical pharmacokinetics of flunitraz…, Annales de l'anesthesiologi… (1981) | popPK | 6 | not captured | [6115606](https://pubmed.ncbi.nlm.nih.gov/6115606) | Human ICU flunitrazepam PK with a three-compartment model, but no numeric parameter values (CL, V, half-lives) are given in the evidence. |
-| `Danhof_1992.pdf` | Danhof M et al., Modelling of the pharmacodynamics and p…, International journal of cl… (1992) | pd | 5 | not captured | [1490817](https://www.ncbi.nlm.nih.gov/pubmed/1490817) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Sumirtapura_1981.pdf` | Sumirtapura Y et al., [Clinical pharmacokinetics of flunitraz…, Annales de l'anesthesiologi… (1981) | popPK | 6 |  | [6115606](https://pubmed.ncbi.nlm.nih.gov/6115606) | Human ICU flunitrazepam PK with a three-compartment model, but no numeric parameter values (CL, V, half-lives) are given in the evidence. |
+| `Danhof_1992.pdf` | Danhof M et al., Modelling of the pharmacodynamics and p…, International journal of cl… (1992) | pd | 5 |  | [1490817](https://www.ncbi.nlm.nih.gov/pubmed/1490817) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Squires_1990.pdf` | Squires RF et al., Development of benzodiazepine and picro…, Journal of neurochemistry (1990) | pd | 5 | [10.1111/j.1471-4159.1990.tb01896.x](https://doi.org/10.1111/j.1471-4159.1990.tb01896.x) | [2299347](https://www.ncbi.nlm.nih.gov/pubmed/2299347) | metadata signals extractable PD data (IC50) |
 | `Tietz_1989.pdf` | Tietz EI et al., Regional GABA/benzodiazepine receptor/c…, European journal of pharmac… (1989) | pd | 5 | [10.1016/0014-2999(89)90747-4](https://doi.org/10.1016/0014-2999(89)90747-4) | [2476326](https://www.ncbi.nlm.nih.gov/pubmed/2476326) | metadata signals extractable PD data (Emax) |
 | `Williamson_1998.pdf` | Williamson AV et al., Properties of GABA(A) receptors in cult…, Neuropharmacology (1998) | pd | 5 | [10.1016/s0028-3908(98)00016-1](https://doi.org/10.1016/s0028-3908(98)00016-1) | [9776382](https://www.ncbi.nlm.nih.gov/pubmed/9776382) | metadata signals extractable PD data (EC50) |
@@ -138,10 +138,10 @@ _42 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Supavilai_1981.pdf` | Supavilai P et al., In vitro modulation by avermectin B1a o…, Journal of neurochemistry (1981) | pd | 4 | [10.1111/j.1471-4159.1981.tb01664.x](https://doi.org/10.1111/j.1471-4159.1981.tb01664.x) | [6259289](https://www.ncbi.nlm.nih.gov/pubmed/6259289) | metadata signals extractable PD data (EC50) |
 | `Thibaut_2009.pdf` | Thibaut JP et al., The effects of 3-methylclonazepam on Sc…, European journal of pharmac… (2009) | pd | 4 | [10.1016/j.ejphar.2009.01.021](https://doi.org/10.1016/j.ejphar.2009.01.021) | [19374857](https://www.ncbi.nlm.nih.gov/pubmed/19374857) | metadata signals extractable PD data (Emax) |
 | `Vale_1997.pdf` | Vale C et al., Allosteric interactions between gamma-a…, European journal of pharmac… (1997) | pd | 4 | [10.1016/s0014-2999(96)00866-7](https://doi.org/10.1016/s0014-2999(96)00866-7) | [9042610](https://www.ncbi.nlm.nih.gov/pubmed/9042610) | metadata signals extractable PD data (EC50) |
-| `Wafford_1993.pdf` | Wafford KA et al., Differences in affinity and efficacy of…, Molecular pharmacology (1993) | pd | 4 | not captured | [8381510](https://www.ncbi.nlm.nih.gov/pubmed/8381510) | metadata signals extractable PD data (EC50) |
+| `Wafford_1993.pdf` | Wafford KA et al., Differences in affinity and efficacy of…, Molecular pharmacology (1993) | pd | 4 |  | [8381510](https://www.ncbi.nlm.nih.gov/pubmed/8381510) | metadata signals extractable PD data (EC50) |
 | `Wang_1998.pdf` | Wang XH et al., Chronic dizocilpine (MK-801) reversibly…, Journal of neurochemistry (1998) | pd | 4 | [10.1046/j.1471-4159.1998.71020693.x](https://doi.org/10.1046/j.1471-4159.1998.71020693.x) | [9681460](https://www.ncbi.nlm.nih.gov/pubmed/9681460) | metadata signals extractable PD data (EC50) |
 | `Youdim_2008.pdf` | Youdim KA et al., An automated, high-throughput, 384 well…, Journal of pharmaceutical a… (2008) | pd | 4 | [10.1016/j.jpba.2008.05.011](https://doi.org/10.1016/j.jpba.2008.05.011) | [18584988](https://www.ncbi.nlm.nih.gov/pubmed/18584988) | metadata signals extractable PD data (IC50) |
-| `de_1987.pdf` | de Vries DJ et al., Effect of ethanol on the GABA-benzodiaz…, Alcohol and alcoholism (Oxf… (1987) | pd | 4 | not captured | [2827699](https://www.ncbi.nlm.nih.gov/pubmed/2827699) | metadata signals extractable PD data (EC50) |
+| `de_1987.pdf` | de Vries DJ et al., Effect of ethanol on the GABA-benzodiaz…, Alcohol and alcoholism (Oxf… (1987) | pd | 4 |  | [2827699](https://www.ncbi.nlm.nih.gov/pubmed/2827699) | metadata signals extractable PD data (EC50) |
 | `Gafni_2003.pdf` | Gafni I et al., The role of cytochrome P450 2C19 activi…, Journal of clinical psychop… (2003) | pgx | 8 | [10.1097/00004714-200304000-00009](https://doi.org/10.1097/00004714-200304000-00009) | [12640218](https://www.ncbi.nlm.nih.gov/pubmed/12640218) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Suzuki_1998.pdf` | Suzuki A et al., Effects of various factors including th…, Psychopharmacology (1998) | pgx | 8 | [10.1007/s002130050519](https://doi.org/10.1007/s002130050519) | [9539256](https://www.ncbi.nlm.nih.gov/pubmed/9539256) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Suzuki_2011.pdf` | Suzuki T et al., Effects of the CYP2D6*10 allele on the…, Therapeutic drug monitoring (2011) | pgx | 8 | [10.1097/FTD.0b013e3182031021](https://doi.org/10.1097/FTD.0b013e3182031021) | [21157400](https://www.ncbi.nlm.nih.gov/pubmed/21157400) | metadata signals extractable PGX data (CYP2D6*10, PK/PD-context) |
@@ -155,7 +155,7 @@ _42 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Sellers_2000.pdf` | Sellers EM et al., Mimicking gene defects to treat drug de…, Annals of the New York Acad… (2000) | pgx | 5 | [10.1111/j.1749-6632.2000.tb06685.x](https://doi.org/10.1111/j.1749-6632.2000.tb06685.x) | [10911933](https://www.ncbi.nlm.nih.gov/pubmed/10911933) | metadata signals extractable PGX data (CYP2D6*10) |
 | `Suzuki_2024.pdf` | Suzuki T et al., CYP1A2*F Polymorphism Contributes at Le…, Drug metabolism and bioanal… (2024) | pgx | 5 | [10.2174/0118723128246698230921095141](https://doi.org/10.2174/0118723128246698230921095141) | [37855290](https://www.ncbi.nlm.nih.gov/pubmed/37855290) | metadata signals extractable PGX data (CYP1A2*F) |
 
-<sub>queue written 2026-10-06T20:40:49.617147+00:00</sub>
+<sub>queue written 2026-10-06 20:40 UTC</sub>
 
 ## Screened and excluded
 
@@ -246,5 +246,5 @@ _42 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 20:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunitrazepam%5D&body=Drug%3A%20flunitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunitrazepam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 20:40 UTC</sub>

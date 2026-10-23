@@ -314,7 +314,6 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A4` transport | PGx paper |
 | absorption | small intestine | `ABCB1` transport, `ABCG2` transport, `SLC22A4` transport | PGx paper |
 | distribution | blood-brain barrier | `ABCB1` transport, `ABCG2` transport | PGx paper |
 | distribution | liver | `SLC22A3` substrate/transport | DrugBank actor |
@@ -323,7 +322,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | distribution | skeletal muscle | `SLC22A3` substrate/transport | DrugBank actor |
 | distribution | testis | `ABCB1` transport, `ABCG2` transport | PGx paper |
 | metabolism | liver | `CYP2C9` safety_allele, `SLC22A1` substrate/transport, `SLCO1B1` transport | DrugBank actor |
-| excretion | kidney | `ABCB1` transport, `SLC22A2` inhibitor/substrate/transport, `SLC47A1` modulator/substrate/transport, `SLC47A2` substrate/transport | DrugBank actor |
+| excretion | kidney | `ABCB1` transport, `SLC22A2` inhibitor/substrate/transport, `SLC22A4` transport, `SLC47A1` modulator/substrate/transport, `SLC47A2` substrate/transport | DrugBank actor |
 | excretion | liver | `ABCB1` transport, `ABCG2` transport, `SLC47A1` modulator/substrate/transport | DrugBank actor |
 | — | kidney | `SLC5A2` transport | PGx paper |
 
@@ -347,7 +346,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2001 matched, 205 returned
 - **screened:** 62  ·  **relevant:** 18
-- **records:** 31  ·  extracted 3  ·  needs_review 21  ·  rejected 7  ·  stale 0
+- **records:** 31  ·  extracted 3  ·  needs review 21  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -363,7 +362,7 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Matzuka_2016.pdf` | Matzuka B et al., Stochastic nonlinear mixed effects: a m…, Journal of pharmacokinetics… (2016) | popPK | 10 | [10.1007/s10928-015-9456-7](https://doi.org/10.1007/s10928-015-9456-7) | [26585899](https://pubmed.ncbi.nlm.nih.gov/26585899) | The paper describes a population PK modeling study for metformin using SDEs, but no numeric parameter values (CL, V, etc.) are provided in the extracted evidence. |
 | `Pentikäinen_1979.pdf` | Pentikäinen PJ et al., Pharmacokinetics of metformin after int…, European journal of clinica… (1979) | popPK | 10 | [10.1007/BF00562061](https://doi.org/10.1007/BF00562061) | [499320](https://pubmed.ncbi.nlm.nih.gov/499320) | The paper reports quantitative PK parameters including volume (central compartment 9.9 L), renal clearance (454 ml/min), and half-lives for metformin in humans. |
 | `Stepensky_2002.pdf` | Stepensky D et al., Pharmacokinetic-pharmacodynamic analysi…, Drug metabolism and disposi… (2002) | popPK | 8 | [10.1124/dmd.30.8.861](https://doi.org/10.1124/dmd.30.8.861) | [12124302](https://pubmed.ncbi.nlm.nih.gov/12124302) | The study models metformin PK/PD in rats, but no specific numeric parameter values (CL, V, etc.) are provided in the extracted evidence. |
-| `Lalau_1989.pdf` | Lalau JD et al., Hemodialysis in the treatment of lactic…, International journal of cl… (1989) | popPK | 7 | not captured | [2500402](https://pubmed.ncbi.nlm.nih.gov/2500402) | Study reports metformin dialysance (clearance) and a two-compartment model fit, but specific volume, half-life, and compartmental clearance values are not listed in the provided text. |
+| `Lalau_1989.pdf` | Lalau JD et al., Hemodialysis in the treatment of lactic…, International journal of cl… (1989) | popPK | 7 |  | [2500402](https://pubmed.ncbi.nlm.nih.gov/2500402) | Study reports metformin dialysance (clearance) and a two-compartment model fit, but specific volume, half-life, and compartmental clearance values are not listed in the provided text. |
 | `Stepensky_2001.pdf` | Stepensky D et al., Preclinical evaluation of pharmacokinet…, Journal of controlled relea… (2001) | popPK | 7 | [10.1016/s0168-3659(00)00374-6](https://doi.org/10.1016/s0168-3659(00)00374-6) | [11245912](https://pubmed.ncbi.nlm.nih.gov/11245912) | The study describes quantitative PK/PD modeling and disposition characteristics (flip-flop PK) for metformin, but no specific numeric parameter values (CL, V, ka, etc.) are provided in the text. |
 | `Zhang_2021.pdf` | Zhang Y et al., Screening of Bioequivalent Extended-Rel…, The AAPS journal (2021) | popPK | 5 | [10.1208/s12248-021-00559-z](https://doi.org/10.1208/s12248-021-00559-z) | [33665728](https://pubmed.ncbi.nlm.nih.gov/33665728) | The paper focuses on an IVIVC/BE screening methodology and does not report specific quantitative PK parameters (CL, V, ka, etc.) in the provided evidence, relying instead on predicted profiles and BE comparisons. |
 | `Wang_2025.pdf` | Wang Q et al., Exposure-Response Analysis of Efsubaglu…, Clinical pharmacokinetics (2025) | pd | 5 | [10.1007/s40262-025-01569-2](https://doi.org/10.1007/s40262-025-01569-2) | [40991141](https://www.ncbi.nlm.nih.gov/pubmed/40991141) | metadata signals extractable PD data (Exposure-Response) |
@@ -372,10 +371,10 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Hakooz_2017.pdf` | Hakooz N et al., Effects of the genetic variants of orga…, Drug metabolism and persona… (2017) | pgx | 8 | [10.1515/dmpt-2017-0019](https://doi.org/10.1515/dmpt-2017-0019) | [28862982](https://www.ncbi.nlm.nih.gov/pubmed/28862982) | metadata signals extractable PGX data (SLC22A1, PK/PD-context) |
 | `Pearson_2009.pdf` | Pearson ER, Pharmacogenetics in diabetes, Current diabetes reports (2009) | pgx | 8 | [10.1007/s11892-009-0028-3](https://doi.org/10.1007/s11892-009-0028-3) | [19323963](https://www.ncbi.nlm.nih.gov/pubmed/19323963) | metadata signals extractable PGX data (ABCC8, PK/PD-context) |
 | `Nardotto_2017.pdf` | Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journal of pharmac… (2017) | pgx | 7 | [10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033) | [28522373](https://www.ncbi.nlm.nih.gov/pubmed/28522373) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Brøsen_2014.pdf` | Brøsen K et al., [The genome and pharmacology], Ugeskrift for laeger (2014) | pgx | 5 | not captured | [25394937](https://www.ncbi.nlm.nih.gov/pubmed/25394937) | metadata signals extractable PGX data (CYP2C9) |
+| `Brøsen_2014.pdf` | Brøsen K et al., [The genome and pharmacology], Ugeskrift for laeger (2014) | pgx | 5 |  | [25394937](https://www.ncbi.nlm.nih.gov/pubmed/25394937) | metadata signals extractable PGX data (CYP2C9) |
 | `Tourtourikov_2026.pdf` | Tourtourikov I et al., GLP1R and OCT1 variants modulate semagl…, Pharmacogenetics and genomi… (2026) | pgx | 5 | [10.1097/FPC.0000000000000577](https://doi.org/10.1097/FPC.0000000000000577) | [40996853](https://www.ncbi.nlm.nih.gov/pubmed/40996853) | metadata signals extractable PGX data (SLC22A1) |
 
-<sub>queue written 2026-10-19T20:10:18.651293+00:00</sub>
+<sub>queue written 2026-10-19 20:10 UTC</sub>
 
 ## Screened and excluded
 
@@ -571,5 +570,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-19 20:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetformin%5D&body=Drug%3A%20metformin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metformin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-19 20:12 UTC</sub>

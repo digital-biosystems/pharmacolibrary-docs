@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelatonin%5D%20pd_Slominski_2023_AhR&body=Drug%3A%20melatonin%0ARecord%3A%20pd_Slominski_2023_AhR%0APaper%3A%20Slominski_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melatonin/pd_Slominski_2023_AhR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [melatonin](drugs/drug_melatonin/)</sub>

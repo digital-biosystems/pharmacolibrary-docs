@@ -36,7 +36,7 @@ _not available_
 
 - **PubMed hits:** 51 matched, 51 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -45,20 +45,20 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jungers_1988.pdf` | Jungers P, Pharmacokinetics of cicletanine in pati…, Drugs under experimental an… (1988) | popPK | 10 | not captured | [3416723](https://pubmed.ncbi.nlm.nih.gov/3416723) | The study reports quantitative PK parameters for cicletanine in humans, but the specific numeric values are not present in the provided abstract text. |
-| `Pruñonosa_1992.pdf` | Pruñonosa J et al., Pharmacokinetic study of cicletanine in…, International journal of cl… (1992) | popPK | 10 | not captured | [1526688](https://pubmed.ncbi.nlm.nih.gov/1526688) | The study reports quantitative pharmacokinetic parameters (half-life, clearance) for cicletanine in healthy volunteers. |
-| `Fredj_1988.pdf` | Fredj G, Clinical pharmacokinetics of cicletanin…, Drugs under experimental an… (1988) | popPK | 9 | not captured | [3416722](https://pubmed.ncbi.nlm.nih.gov/3416722) | The text provides specific quantitative pharmacokinetic parameters (Vd, tmax, t1/2) for cicletanine in humans, although it is a review summarizing previous studies. |
+| `Jungers_1988.pdf` | Jungers P, Pharmacokinetics of cicletanine in pati…, Drugs under experimental an… (1988) | popPK | 10 |  | [3416723](https://pubmed.ncbi.nlm.nih.gov/3416723) | The study reports quantitative PK parameters for cicletanine in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Pruñonosa_1992.pdf` | Pruñonosa J et al., Pharmacokinetic study of cicletanine in…, International journal of cl… (1992) | popPK | 10 |  | [1526688](https://pubmed.ncbi.nlm.nih.gov/1526688) | The study reports quantitative pharmacokinetic parameters (half-life, clearance) for cicletanine in healthy volunteers. |
+| `Fredj_1988.pdf` | Fredj G, Clinical pharmacokinetics of cicletanin…, Drugs under experimental an… (1988) | popPK | 9 |  | [3416722](https://pubmed.ncbi.nlm.nih.gov/3416722) | The text provides specific quantitative pharmacokinetic parameters (Vd, tmax, t1/2) for cicletanine in humans, although it is a review summarizing previous studies. |
 | `Garay_1992.pdf` | Garay RP et al., Cicletanine sulfate: inhibition of anio…, Naunyn-Schmiedeberg's archi… (1992) | pd | 5 | [10.1007/BF00167580](https://doi.org/10.1007/BF00167580) | [1328892](https://www.ncbi.nlm.nih.gov/pubmed/1328892) | metadata signals extractable PD data (IC50) |
 | `Garay_1995.pdf` | Garay RP et al., Evidence for (+)-cicletanine sulfate as…, European journal of pharmac… (1995) | pd | 5 | [10.1016/0014-2999(94)00731-l](https://doi.org/10.1016/0014-2999(94)00731-l) | [7768271](https://www.ncbi.nlm.nih.gov/pubmed/7768271) | metadata signals extractable PD data (IC50) |
 | `Bagrov_1998.pdf` | Bagrov AY et al., Vasorelaxant effects of cicletanine and…, American journal of hyperte… (1998) | pd | 4 | [10.1016/s0895-7061(98)00151-4](https://doi.org/10.1016/s0895-7061(98)00151-4) | [9832185](https://www.ncbi.nlm.nih.gov/pubmed/9832185) | metadata signals extractable PD data (EC50) |
-| `Chamiot-Clerc_1999.pdf` | Chamiot-Clerc P et al., [Mechanism of action of cicletanine on…, Archives des maladies du co… (1999) | pd | 4 | not captured | [10486659](https://www.ncbi.nlm.nih.gov/pubmed/10486659) | metadata signals extractable PD data (EC50) |
-| `Deitmer_1992.pdf` | Deitmer P et al., Comparison of the relaxing effects of c…, Journal of cardiovascular p… (1992) | pd | 4 | not captured | [1383629](https://www.ncbi.nlm.nih.gov/pubmed/1383629) | metadata signals extractable PD data (EC50) |
-| `Monroy_1999.pdf` | Monroy A et al., [Lack of effect of cicletanine and its…, Archives des maladies du co… (1999) | pd | 4 | not captured | [10486654](https://www.ncbi.nlm.nih.gov/pubmed/10486654) | metadata signals extractable PD data (IC50) |
+| `Chamiot-Clerc_1999.pdf` | Chamiot-Clerc P et al., [Mechanism of action of cicletanine on…, Archives des maladies du co… (1999) | pd | 4 |  | [10486659](https://www.ncbi.nlm.nih.gov/pubmed/10486659) | metadata signals extractable PD data (EC50) |
+| `Deitmer_1992.pdf` | Deitmer P et al., Comparison of the relaxing effects of c…, Journal of cardiovascular p… (1992) | pd | 4 |  | [1383629](https://www.ncbi.nlm.nih.gov/pubmed/1383629) | metadata signals extractable PD data (EC50) |
+| `Monroy_1999.pdf` | Monroy A et al., [Lack of effect of cicletanine and its…, Archives des maladies du co… (1999) | pd | 4 |  | [10486654](https://www.ncbi.nlm.nih.gov/pubmed/10486654) | metadata signals extractable PD data (IC50) |
 | `Noack_1993.pdf` | Noack T et al., Effects of cicletanine on whole-cell cu…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb13547.x](https://doi.org/10.1111/j.1476-5381.1993.tb13547.x) | [7684299](https://www.ncbi.nlm.nih.gov/pubmed/7684299) | metadata signals extractable PD data (IC50) |
-| `Rosati_1989.pdf` | Rosati C et al., [Ionic perturbations produced by a non-…, Archives des maladies du co… (1989) | pd | 4 | not captured | [2514667](https://www.ncbi.nlm.nih.gov/pubmed/2514667) | metadata signals extractable PD data (IC50) |
+| `Rosati_1989.pdf` | Rosati C et al., [Ionic perturbations produced by a non-…, Archives des maladies du co… (1989) | pd | 4 |  | [2514667](https://www.ncbi.nlm.nih.gov/pubmed/2514667) | metadata signals extractable PD data (IC50) |
 | `Vargas_1998.pdf` | Vargas F et al., Inhibition by (-)-cicletanine of the va…, American journal of hyperte… (1998) | pd | 4 | [10.1016/s0895-7061(97)00407-x](https://doi.org/10.1016/s0895-7061(97)00407-x) | [9633794](https://www.ncbi.nlm.nih.gov/pubmed/9633794) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T17:12:57.017316+00:00</sub>
+<sub>queue written 2026-10-06 17:12 UTC</sub>
 
 ## Screened and excluded
 
@@ -114,5 +114,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcicletanine%5D&body=Drug%3A%20cicletanine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cicletanine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

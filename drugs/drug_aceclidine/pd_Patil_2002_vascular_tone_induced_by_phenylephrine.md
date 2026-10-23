@@ -82,4 +82,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baceclidine%5D%20pd_Patil_2002_vascular_tone_induced_by_phenylephrine&body=Drug%3A%20aceclidine%0ARecord%3A%20pd_Patil_2002_vascular_tone_induced_by_phenylephrine%0APaper%3A%20Patil_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aceclidine/pd_Patil_2002_vascular_tone_induced_by_phenylephrine%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [aceclidine](drugs/drug_aceclidine/)</sub>

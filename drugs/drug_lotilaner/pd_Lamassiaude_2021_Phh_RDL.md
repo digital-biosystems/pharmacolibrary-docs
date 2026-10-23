@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blotilaner%5D%20pd_Lamassiaude_2021_Phh_RDL&body=Drug%3A%20lotilaner%0ARecord%3A%20pd_Lamassiaude_2021_Phh_RDL%0APaper%3A%20Lamassiaude_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lotilaner/pd_Lamassiaude_2021_Phh_RDL%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [lotilaner](drugs/drug_lotilaner/)</sub>

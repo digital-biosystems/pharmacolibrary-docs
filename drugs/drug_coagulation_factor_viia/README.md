@@ -5,7 +5,7 @@
 
 - **generic name:** coagulation factor VIIa
 - **ATC codes:** `B02BD08`
-- **DrugBank:** [DB00036](https://go.drugbank.com/drugs/DB00036) · **PubChem:** not captured
+- **DrugBank:** [DB00036](https://go.drugbank.com/drugs/DB00036) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -125,7 +125,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 155 matched, 43 returned
 - **screened:** 11  ·  **relevant:** 11
-- **records:** 15  ·  extracted 12  ·  needs_review 2  ·  rejected 1  ·  stale 14
+- **records:** 15  ·  extracted 12  ·  needs review 2  ·  rejected 1  ·  stale 14
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -136,17 +136,17 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Agersø_2011.pdf` | Agersø H et al., Recombinant human factor VIIa (rFVIIa)…, Journal of thrombosis and h… (2011) | popPK | 10 | [10.1111/j.1538-7836.2010.04152.x](https://doi.org/10.1111/j.1538-7836.2010.04152.x) | [21114621](https://pubmed.ncbi.nlm.nih.gov/21114621) | The study reports quantitative population PK parameters (clearance, half-life) for rFVIIa in humans, with specific values provided in the abstract. |
 | `Lindley_1994.pdf` | Lindley CM et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1994) | popPK | 10 | [10.1038/clpt.1994.80](https://doi.org/10.1038/clpt.1994.80) | [8004880](https://pubmed.ncbi.nlm.nih.gov/8004880) | The study reports quantitative pharmacokinetic parameters (clearance, half-life, mean residence time, volume of distribution) for recombinant factor VIIa in humans, with specific numeric values provided in the abstract. |
-| `Thomsen_1993.pdf` | Thomsen MK et al., Pharmacokinetics of recombinant factor…, Thrombosis and haemostasis (1993) | popPK | 10 | not captured | [8259549](https://pubmed.ncbi.nlm.nih.gov/8259549) | The study reports quantitative PK parameters (CL, V1, Vss, MRT, t1/2) for rFVIIa in rats, with specific values provided in the abstract. |
+| `Thomsen_1993.pdf` | Thomsen MK et al., Pharmacokinetics of recombinant factor…, Thrombosis and haemostasis (1993) | popPK | 10 |  | [8259549](https://pubmed.ncbi.nlm.nih.gov/8259549) | The study reports quantitative PK parameters (CL, V1, Vss, MRT, t1/2) for rFVIIa in rats, with specific values provided in the abstract. |
 | `Villar_2004.pdf` | Villar A et al., Pharmacokinetics of activated recombina…, Haemophilia : the official… (2004) | popPK | 10 | [10.1111/j.1365-2516.2004.00925.x](https://doi.org/10.1111/j.1365-2516.2004.00925.x) | [15230949](https://pubmed.ncbi.nlm.nih.gov/15230949) | The study reports quantitative non-compartmental pharmacokinetic parameters (clearance and volume of distribution) for activated recombinant coagulation factor VII in humans. |
-| `Berrettini_2001.pdf` | Berrettini M et al., Pharmacokinetic evaluation of recombina…, Haematologica (2001) | popPK | 9 | not captured | [11418374](https://pubmed.ncbi.nlm.nih.gov/11418374) | The study reports pharmacokinetic parameters (CL, VdArea, MRT) for rFVIIa, but the specific numeric values are not present in the provided evidence text. |
+| `Berrettini_2001.pdf` | Berrettini M et al., Pharmacokinetic evaluation of recombina…, Haematologica (2001) | popPK | 9 |  | [11418374](https://pubmed.ncbi.nlm.nih.gov/11418374) | The study reports pharmacokinetic parameters (CL, VdArea, MRT) for rFVIIa, but the specific numeric values are not present in the provided evidence text. |
 | `Tiede_2011.pdf` | Tiede A et al., Safety and pharmacokinetics of subcutan…, Journal of thrombosis and h… (2011) | popPK | 9 | [10.1111/j.1538-7836.2011.04293.x](https://doi.org/10.1111/j.1538-7836.2011.04293.x) | [21489128](https://pubmed.ncbi.nlm.nih.gov/21489128) | The study reports quantitative pharmacokinetic parameters (Cmax, t1/2, Tmax, bioavailability) for subcutaneous rFVIIa in humans, with values explicitly listed in the abstract. |
 | `Erhardtsen_2001.pdf` | Erhardtsen E et al., Pharmacokinetics and safety of FFR-rFVI…, Journal of clinical pharmac… (2001) | popPK | 8 | [10.1177/00912700122010780](https://doi.org/10.1177/00912700122010780) | [11504276](https://pubmed.ncbi.nlm.nih.gov/11504276) | The study reports quantitative PK parameters (AUC, Cmax, half-life) for FFR-rFVIIa, a modified form of coagulation factor VIIa, in humans. |
 | `Gorkom_2020.pdf` | Gorkom BL et al., Pharmacokinetics and pharmacodynamics o…, Hematology (Amsterdam, Neth… (2020) | popPK | 8 | [10.1080/16078454.2019.1700329](https://doi.org/10.1080/16078454.2019.1700329) | [31852380](https://pubmed.ncbi.nlm.nih.gov/31852380) | The study reports PK parameters (clearance, half-life) for a Factor VIIa fusion protein (rVIIa-FP) in humans, but specific numeric values are not present in the provided abstract text. |
 | `Salas_2015.pdf` | Salas J et al., Enhanced Pharmacokinetics of Factor VII…, Thrombosis research (2015) | popPK | 8 | [10.1016/j.thromres.2014.12.018](https://doi.org/10.1016/j.thromres.2014.12.018) | [25721936](https://pubmed.ncbi.nlm.nih.gov/25721936) | The study reports pharmacokinetic parameters (half-life) for a Factor VIIa variant in mice, but specific numeric values for clearance or volume are not explicitly listed in the provided text, only a relative fold-change. |
-| `Schulman_1996.pdf` | Schulman S et al., Feasibility of using recombinant factor…, Thrombosis and haemostasis (1996) | popPK | 8 | not captured | [8701403](https://pubmed.ncbi.nlm.nih.gov/8701403) | The study reports specific clearance values (86.4 to 24.7 ml/h/kg) for recombinant factor VIIa in two patients, providing quantitative PK parameters. |
+| `Schulman_1996.pdf` | Schulman S et al., Feasibility of using recombinant factor…, Thrombosis and haemostasis (1996) | popPK | 8 |  | [8701403](https://pubmed.ncbi.nlm.nih.gov/8701403) | The study reports specific clearance values (86.4 to 24.7 ml/h/kg) for recombinant factor VIIa in two patients, providing quantitative PK parameters. |
 | `Dennis_2001.pdf` | Dennis MS et al., Selection and characterization of a new…, Biochemistry (2001) | pd | 4 | [10.1021/bi010591l](https://doi.org/10.1021/bi010591l) | [11583150](https://www.ncbi.nlm.nih.gov/pubmed/11583150) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-05T18:17:47.241206+00:00</sub>
+<sub>queue written 2026-10-05 18:17 UTC</sub>
 
 ## Screened and excluded
 
@@ -195,5 +195,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-05 18:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcoagulation_factor_viia%5D&body=Drug%3A%20coagulation_factor_viia%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_coagulation_factor_viia/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 18:18 UTC</sub>

@@ -30,13 +30,12 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCC2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | distribution | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | distribution | testis | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP3A5` inducer, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A5` inducer, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A5` inducer | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `ABCB1` inducer/inhibitor/substrate, `ABCC2` inhibitor, `SLC22A2` substrate | DrugBank actor |
@@ -62,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 568 matched, 164 returned
 - **screened:** 5  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -77,9 +76,9 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Viglione_1992.pdf` | Viglione PN et al., Comparison of acute effects of mitoxant…, General pharmacology (1992) | pd | 5 | [10.1016/0306-3623(92)90240-k](https://doi.org/10.1016/0306-3623(92)90240-k) | [1426931](https://www.ncbi.nlm.nih.gov/pubmed/1426931) | metadata signals extractable PD data (Emax) |
 | `Auguet_1982.pdf` | Auguet M et al., Effects of an extract of Ginkgo biloba…, General pharmacology (1982) | pd | 4 | [10.1016/0306-3623(82)90093-3](https://doi.org/10.1016/0306-3623(82)90093-3) | [7095401](https://www.ncbi.nlm.nih.gov/pubmed/7095401) | metadata signals extractable PD data (EC50) |
 | `Barthelmebs_1994.pdf` | Barthelmebs M et al., Vascular effects of loop diuretics: an…, Naunyn-Schmiedeberg's archi… (1994) | pd | 4 | [10.1007/BF00169839](https://doi.org/10.1007/BF00169839) | [8170505](https://www.ncbi.nlm.nih.gov/pubmed/8170505) | metadata signals extractable PD data (EC50) |
-| `Blaschke_1980.pdf` | Blaschke M et al., [Effect of reserpine on monoamine uptak…, Acta biologica et medica Ge… (1980) | pd | 4 | not captured | [7245989](https://www.ncbi.nlm.nih.gov/pubmed/7245989) | metadata signals extractable PD data (EC50) |
+| `Blaschke_1980.pdf` | Blaschke M et al., [Effect of reserpine on monoamine uptak…, Acta biologica et medica Ge… (1980) | pd | 4 |  | [7245989](https://www.ncbi.nlm.nih.gov/pubmed/7245989) | metadata signals extractable PD data (EC50) |
 | `Darchen_1988.pdf` | Darchen F et al., Characteristics of the transport of the…, Biochemical pharmacology (1988) | pd | 4 | [10.1016/0006-2952(88)90621-1](https://doi.org/10.1016/0006-2952(88)90621-1) | [3264161](https://www.ncbi.nlm.nih.gov/pubmed/3264161) | metadata signals extractable PD data (EC50) |
-| `Fedan_1980.pdf` | Fedan JS et al., Distensibility and responsiveness of th…, The Journal of pharmacology… (1980) | pd | 4 | not captured | [7400957](https://www.ncbi.nlm.nih.gov/pubmed/7400957) | metadata signals extractable PD data (EC50) |
+| `Fedan_1980.pdf` | Fedan JS et al., Distensibility and responsiveness of th…, The Journal of pharmacology… (1980) | pd | 4 |  | [7400957](https://www.ncbi.nlm.nih.gov/pubmed/7400957) | metadata signals extractable PD data (EC50) |
 | `Giuliani_1989.pdf` | Giuliani S et al., Modulatory action of galanin on respons…, European journal of pharmac… (1989) | pd | 4 | [10.1016/0014-2999(89)90399-3](https://doi.org/10.1016/0014-2999(89)90399-3) | [2472969](https://www.ncbi.nlm.nih.gov/pubmed/2472969) | metadata signals extractable PD data (EC50) |
 | `Giuliani_1997.pdf` | Giuliani S et al., Prejunctional modulation by nociceptin…, European journal of pharmac… (1997) | pd | 4 | [10.1016/s0014-2999(97)01076-5](https://doi.org/10.1016/s0014-2999(97)01076-5) | [9300254](https://www.ncbi.nlm.nih.gov/pubmed/9300254) | metadata signals extractable PD data (Emax) |
 | `Korth_1987.pdf` | Korth M et al., Muscarinic receptors mediate negative a…, British journal of pharmaco… (1987) | pd | 4 | [10.1111/j.1476-5381.1987.tb16827.x](https://doi.org/10.1111/j.1476-5381.1987.tb16827.x) | [2434180](https://www.ncbi.nlm.nih.gov/pubmed/2434180) | metadata signals extractable PD data (EC50) |
@@ -87,17 +86,17 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Muller_1990.pdf` | Muller B et al., Involvement of rolipram-sensitive cycli…, Journal of cardiovascular p… (1990) | pd | 4 | [10.1097/00005344-199011000-00016](https://doi.org/10.1097/00005344-199011000-00016) | [1703603](https://www.ncbi.nlm.nih.gov/pubmed/1703603) | metadata signals extractable PD data (EC50) |
 | `Nakanishi_1995.pdf` | Nakanishi N et al., Cyclic AMP-dependent modulation of vesi…, Journal of neurochemistry (1995) | pd | 4 | [10.1046/j.1471-4159.1995.64020600.x](https://doi.org/10.1046/j.1471-4159.1995.64020600.x) | [7830053](https://www.ncbi.nlm.nih.gov/pubmed/7830053) | metadata signals extractable PD data (EC50) |
 | `Redfern_1993.pdf` | Redfern WS et al., Modulation of central noradrenergic fun…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb12835.x](https://doi.org/10.1111/j.1476-5381.1993.tb12835.x) | [8095421](https://www.ncbi.nlm.nih.gov/pubmed/8095421) | metadata signals extractable PD data (EC50) |
-| `Rubinstein_1990.pdf` | Rubinstein M et al., Adaptive mechanisms of striatal D1 and…, The Journal of pharmacology… (1990) | pd | 4 | not captured | [2138223](https://www.ncbi.nlm.nih.gov/pubmed/2138223) | metadata signals extractable PD data (EC50) |
+| `Rubinstein_1990.pdf` | Rubinstein M et al., Adaptive mechanisms of striatal D1 and…, The Journal of pharmacology… (1990) | pd | 4 |  | [2138223](https://www.ncbi.nlm.nih.gov/pubmed/2138223) | metadata signals extractable PD data (EC50) |
 | `Ruiz-Ortega_1995.pdf` | Ruiz-Ortega JA et al., The stimulatory effect of clonidine thr…, Naunyn-Schmiedeberg's archi… (1995) | pd | 4 | [10.1007/BF00176764](https://doi.org/10.1007/BF00176764) | [7477433](https://www.ncbi.nlm.nih.gov/pubmed/7477433) | metadata signals extractable PD data (Emax) |
 | `Rump_1995.pdf` | Rump AF et al., Functional effects of adrenochrome in i…, Pharmacology & toxicology (1995) | pd | 4 | [10.1111/j.1600-0773.1995.tb00997.x](https://doi.org/10.1111/j.1600-0773.1995.tb00997.x) | [8584499](https://www.ncbi.nlm.nih.gov/pubmed/8584499) | metadata signals extractable PD data (EC50) |
-| `Scott_1994.pdf` | Scott PA et al., Differential induction of 5-HT1A-mediat…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8035316](https://www.ncbi.nlm.nih.gov/pubmed/8035316) | metadata signals extractable PD data (EC50) |
+| `Scott_1994.pdf` | Scott PA et al., Differential induction of 5-HT1A-mediat…, The Journal of pharmacology… (1994) | pd | 4 |  | [8035316](https://www.ncbi.nlm.nih.gov/pubmed/8035316) | metadata signals extractable PD data (EC50) |
 | `Sharif_1994.pdf` | Sharif SI, Dopamine contracts the rat isolated sem…, Pharmacology (1994) | pd | 4 | [10.1159/000139196](https://doi.org/10.1159/000139196) | [7912441](https://www.ncbi.nlm.nih.gov/pubmed/7912441) | metadata signals extractable PD data (EC50) |
 | `Sum_1996.pdf` | Sum CS et al., Potentiation of purinergic transmission…, British journal of pharmaco… (1996) | pd | 4 | [10.1111/j.1476-5381.1996.tb15569.x](https://doi.org/10.1111/j.1476-5381.1996.tb15569.x) | [8832081](https://www.ncbi.nlm.nih.gov/pubmed/8832081) | metadata signals extractable PD data (EC50) |
-| `Wang_1993.pdf` | Wang YX et al., Functional integrity of the central and…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [7682612](https://www.ncbi.nlm.nih.gov/pubmed/7682612) | metadata signals extractable PD data (Emax) |
+| `Wang_1993.pdf` | Wang YX et al., Functional integrity of the central and…, The Journal of pharmacology… (1993) | pd | 4 |  | [7682612](https://www.ncbi.nlm.nih.gov/pubmed/7682612) | metadata signals extractable PD data (Emax) |
 | `Yabuuchi_1977.pdf` | Yabuuchi Y, The beta-adrenoceptor stimulant propert…, British journal of pharmaco… (1977) | pd | 4 | [10.1111/j.1476-5381.1977.tb07543.x](https://doi.org/10.1111/j.1476-5381.1977.tb07543.x) | [23191](https://www.ncbi.nlm.nih.gov/pubmed/23191) | metadata signals extractable PD data (EC50) |
 | `Wang_2001.pdf` | Wang E et al., Quantitative distinctions of active sit…, Chemical research in toxico… (2001) | pgx | 7 | [10.1021/tx010125x](https://doi.org/10.1021/tx010125x) | [11743742](https://www.ncbi.nlm.nih.gov/pubmed/11743742) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06T12:45:59.438529+00:00</sub>
+<sub>queue written 2026-10-06 12:45 UTC</sub>
 
 ## Screened and excluded
 
@@ -311,5 +310,5 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Breserpine%5D&body=Drug%3A%20reserpine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_reserpine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

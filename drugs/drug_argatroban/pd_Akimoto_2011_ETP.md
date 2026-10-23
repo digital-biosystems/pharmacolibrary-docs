@@ -144,4 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bargatroban%5D%20pd_Akimoto_2011_ETP&body=Drug%3A%20argatroban%0ARecord%3A%20pd_Akimoto_2011_ETP%0APaper%3A%20Akimoto_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_argatroban/pd_Akimoto_2011_ETP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [argatroban](drugs/drug_argatroban/)</sub>

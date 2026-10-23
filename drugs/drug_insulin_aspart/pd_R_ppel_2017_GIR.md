@@ -103,4 +103,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binsulin_aspart%5D%20pd_R_ppel_2017_GIR&body=Drug%3A%20insulin_aspart%0ARecord%3A%20pd_R_ppel_2017_GIR%0APaper%3A%20R%C3%BCppel_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [insulin aspart](drugs/drug_insulin_aspart/)</sub>

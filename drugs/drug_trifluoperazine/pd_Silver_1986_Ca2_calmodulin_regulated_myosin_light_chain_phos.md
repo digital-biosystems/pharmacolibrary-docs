@@ -57,4 +57,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrifluoperazine%5D%20pd_Silver_1986_Ca2_calmodulin_regulated_myosin_light_chain_phos&body=Drug%3A%20trifluoperazine%0ARecord%3A%20pd_Silver_1986_Ca2_calmodulin_regulated_myosin_light_chain_phos%0APaper%3A%20Silver_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trifluoperazine/pd_Silver_1986_Ca2_calmodulin_regulated_myosin_light_chain_phos%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [trifluoperazine](drugs/drug_trifluoperazine/)</sub>

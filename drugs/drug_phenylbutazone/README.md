@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 164 matched, 100 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 0  ·  needs_review 2  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -96,9 +96,9 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Houck_2022.pdf` | Houck EL et al., Phenylbutazone pharmacokinetics in sout…, Journal of veterinary pharm… (2022) | popPK | 10 | [10.1111/jvp.13036](https://doi.org/10.1111/jvp.13036) | [34894412](https://pubmed.ncbi.nlm.nih.gov/34894412) | The study is a population pharmacokinetic analysis of phenylbutazone in rhinoceroses reporting key parameters (Cmax, Tmax, t1/2) in the abstract, but detailed numeric values for clearance, volume, or Q are not present in the provided evidence. |
 | `Kadir_1997.pdf` | Kadir A et al., Phenylbutazone pharmacokinetics and bio…, Journal of veterinary pharm… (1997) | popPK | 10 | [10.1046/j.1365-2885.1997.04427.x](https://doi.org/10.1046/j.1365-2885.1997.04427.x) | [9049950](https://pubmed.ncbi.nlm.nih.gov/9049950) | The study reports quantitative pharmacokinetic parameters (Vd, half-lives, bioavailability) for phenylbutazone in camels, with key values provided in the abstract text. |
-| `Lees_1987.pdf` | Lees P et al., Metabolism, excretion, pharmacokinetics…, The Cornell veterinarian (1987) | popPK | 10 | not captured | [3568689](https://pubmed.ncbi.nlm.nih.gov/3568689) | The abstract provides specific numeric pharmacokinetic parameters (beta, t1/2 beta, Vdarea, C1B) for phenylbutazone in horses. |
-| `Lees_1988.pdf` | Lees P et al., Pharmacokinetics, metabolism and excret…, Research in veterinary scie… (1988) | popPK | 10 | not captured | [3375589](https://pubmed.ncbi.nlm.nih.gov/3375589) | The abstract provides explicit quantitative PK parameters for phenylbutazone in cattle, including a three-compartment model description, mean elimination half-life (35.9 h), and clearance (2.77 ml kg-1 h-1). |
-| `Wasfi_1997.pdf` | Wasfi IA et al., Pharmacokinetics of phenylbutazone in c…, American journal of veterin… (1997) | popPK | 10 | not captured | [9185972](https://pubmed.ncbi.nlm.nih.gov/9185972) | The paper reports quantitative disposition parameters (half-life and clearance) for phenylbutazone in camels within the text. |
+| `Lees_1987.pdf` | Lees P et al., Metabolism, excretion, pharmacokinetics…, The Cornell veterinarian (1987) | popPK | 10 |  | [3568689](https://pubmed.ncbi.nlm.nih.gov/3568689) | The abstract provides specific numeric pharmacokinetic parameters (beta, t1/2 beta, Vdarea, C1B) for phenylbutazone in horses. |
+| `Lees_1988.pdf` | Lees P et al., Pharmacokinetics, metabolism and excret…, Research in veterinary scie… (1988) | popPK | 10 |  | [3375589](https://pubmed.ncbi.nlm.nih.gov/3375589) | The abstract provides explicit quantitative PK parameters for phenylbutazone in cattle, including a three-compartment model description, mean elimination half-life (35.9 h), and clearance (2.77 ml kg-1 h-1). |
+| `Wasfi_1997.pdf` | Wasfi IA et al., Pharmacokinetics of phenylbutazone in c…, American journal of veterin… (1997) | popPK | 10 |  | [9185972](https://pubmed.ncbi.nlm.nih.gov/9185972) | The paper reports quantitative disposition parameters (half-life and clearance) for phenylbutazone in camels within the text. |
 | `Zaghloul_2024.pdf` | Zaghloul IY et al., Comparative pharmacokinetics of phenylb…, American journal of veterin… (2024) | popPK | 10 | [10.2460/ajvr.24.01.0012](https://doi.org/10.2460/ajvr.24.01.0012) | [38942059](https://pubmed.ncbi.nlm.nih.gov/38942059) | The paper describes a pharmacokinetic study of phenylbutazone in horses but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
 | `Delbeke_1993.pdf` | Delbeke FT et al., The disposition of suxibuzone in the ho…, Journal of veterinary pharm… (1993) | popPK | 9 | [10.1111/j.1365-2885.1993.tb00175.x](https://doi.org/10.1111/j.1365-2885.1993.tb00175.x) | [8230399](https://pubmed.ncbi.nlm.nih.gov/8230399) | The paper reports quantitative PK parameters (half-life, terminal rate constant, peak concentration) for phenylbutazone, which is the major metabolite of the subject drug suxibuzone, fulfilling the criteria for metabolite kinetics. |
 | `Landuyt_1993.pdf` | Landuyt J et al., The intramuscular bioavailability of a…, Journal of veterinary pharm… (1993) | popPK | 8 | [10.1111/j.1365-2885.1993.tb00216.x](https://doi.org/10.1111/j.1365-2885.1993.tb00216.x) | [8126767](https://pubmed.ncbi.nlm.nih.gov/8126767) | The study reports quantitative PK parameters (bioavailability, compartment models) for phenylbutazone, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
@@ -109,7 +109,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Young_1994.pdf` | Young DB et al., Effects of phenylbutazone on thiamylal…, Journal of veterinary pharm… (1994) | popPK | 6 | [10.1111/j.1365-2885.1994.tb00265.x](https://doi.org/10.1111/j.1365-2885.1994.tb00265.x) | [7853465](https://pubmed.ncbi.nlm.nih.gov/7853465) | The study reports that phenylbutazone pharmacokinetics were described by a two-compartment model, but specific numeric parameter values (CL, V, t1/2) are not present in the provided evidence. |
 | `Maitho_1986.pdf` | Maitho TE et al., Absorption and pharmacokinetics of phen…, Journal of veterinary pharm… (1986) | popPK | 5 | [10.1111/j.1365-2885.1986.tb00009.x](https://doi.org/10.1111/j.1365-2885.1986.tb00009.x) | [3701913](https://pubmed.ncbi.nlm.nih.gov/3701913) | The study describes a compartmental model and reports bioavailability, but specific numeric values for clearance, volume of distribution, or absorption rate constants are not present in the provided evidence. |
 
-<sub>queue written 2026-10-07T01:55:24.716782+00:00</sub>
+<sub>queue written 2026-10-07 01:55 UTC</sub>
 
 ## Screened and excluded
 
@@ -171,5 +171,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 01:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylbutazone%5D&body=Drug%3A%20phenylbutazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylbutazone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:55 UTC</sub>

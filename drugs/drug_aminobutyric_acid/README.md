@@ -4,7 +4,7 @@
 
 - **generic name:** aminobutyric acid
 - **ATC codes:** `N03AG03`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -70,7 +70,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2207 matched, 287 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -79,11 +79,11 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bottemanne_2021.pdf` | Bottemanne H et al., Ketamine Augmentation of Exposure Respo…, Innovations in clinical neu… (2021) | pd | 5 | not captured | [35096475](https://www.ncbi.nlm.nih.gov/pubmed/35096475) | metadata signals extractable PD data (ExposureResponse) |
+| `Bottemanne_2021.pdf` | Bottemanne H et al., Ketamine Augmentation of Exposure Respo…, Innovations in clinical neu… (2021) | pd | 5 |  | [35096475](https://www.ncbi.nlm.nih.gov/pubmed/35096475) | metadata signals extractable PD data (ExposureResponse) |
 | `Burkat_2022.pdf` | Burkat PM, Physiologically Based Pharmacokinetic a…, Journal of clinical pharmac… (2022) | pd | 5 | [10.1002/jcph.2071](https://doi.org/10.1002/jcph.2071) | [35533144](https://www.ncbi.nlm.nih.gov/pubmed/35533144) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Louiset_2000.pdf` | Louiset E et al., Subunit composition and pharmacological…, Endocrinology (2000) | pd | 5 | [10.1210/endo.141.3.7397](https://doi.org/10.1210/endo.141.3.7397) | [10698184](https://www.ncbi.nlm.nih.gov/pubmed/10698184) | metadata signals extractable PD data (EC50) |
 | `Mandema_1992.pdf` | Mandema JW et al., Electroencephalogram effect measures an…, Clinical pharmacokinetics (1992) | pd | 5 | [10.2165/00003088-199223030-00003](https://doi.org/10.2165/00003088-199223030-00003) | [1511536](https://www.ncbi.nlm.nih.gov/pubmed/1511536) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Morrow_1988.pdf` | Morrow AL et al., Chronic ethanol administration alters g…, The Journal of pharmacology… (1988) | pd | 5 | not captured | [2839659](https://www.ncbi.nlm.nih.gov/pubmed/2839659) | metadata signals extractable PD data (EC50) |
+| `Morrow_1988.pdf` | Morrow AL et al., Chronic ethanol administration alters g…, The Journal of pharmacology… (1988) | pd | 5 |  | [2839659](https://www.ncbi.nlm.nih.gov/pubmed/2839659) | metadata signals extractable PD data (EC50) |
 | `Alba-Betancourt_2019.pdf` | Alba-Betancourt C et al., Antidiarrheal, vasorelaxant, and neurop…, Drug development research (2019) | pd | 4 | [10.1002/ddr.21578](https://doi.org/10.1002/ddr.21578) | [31343767](https://www.ncbi.nlm.nih.gov/pubmed/31343767) | metadata signals extractable PD data (EC50) |
 | `Barolet_1985.pdf` | Barolet AW et al., Antagonist actions of bicuculline methi…, Canadian journal of physiol… (1985) | pd | 4 | [10.1139/y85-240](https://doi.org/10.1139/y85-240) | [3000559](https://www.ncbi.nlm.nih.gov/pubmed/3000559) | metadata signals extractable PD data (EC50) |
 | `Bowery_1974.pdf` | Bowery NG et al., Depolarizing actions of gamma-aminobuty…, British journal of pharmaco… (1974) | pd | 4 | [10.1111/j.1476-5381.1974.tb08563.x](https://doi.org/10.1111/j.1476-5381.1974.tb08563.x) | [4154116](https://www.ncbi.nlm.nih.gov/pubmed/4154116) | metadata signals extractable PD data (sigmoid) |
@@ -96,15 +96,15 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Locock_2013.pdf` | Locock KE et al., Γ-aminobutyric acid(C) (GABAC) selectiv…, Journal of medicinal chemis… (2013) | pd | 4 | [10.1021/jm4006548](https://doi.org/10.1021/jm4006548) | [23755849](https://www.ncbi.nlm.nih.gov/pubmed/23755849) | metadata signals extractable PD data (IC50) |
 | `Olander_2018.pdf` | Olander ER et al., Delineation of the functional propertie…, Biochemical pharmacology (2018) | pd | 4 | [10.1016/j.bcp.2018.02.015](https://doi.org/10.1016/j.bcp.2018.02.015) | [29454619](https://www.ncbi.nlm.nih.gov/pubmed/29454619) | metadata signals extractable PD data (EC50) |
 | `Prince_1992.pdf` | Prince RJ et al., Temperature and anion dependence of all…, Biochemical pharmacology (1992) | pd | 4 | [10.1016/0006-2952(92)90529-r](https://doi.org/10.1016/0006-2952(92)90529-r) | [1329765](https://www.ncbi.nlm.nih.gov/pubmed/1329765) | metadata signals extractable PD data (EC50) |
-| `Raiteri_1990.pdf` | Raiteri M et al., Muscarinic receptors mediating inhibiti…, The Journal of pharmacology… (1990) | pd | 4 | not captured | [2384883](https://www.ncbi.nlm.nih.gov/pubmed/2384883) | metadata signals extractable PD data (EC50) |
+| `Raiteri_1990.pdf` | Raiteri M et al., Muscarinic receptors mediating inhibiti…, The Journal of pharmacology… (1990) | pd | 4 |  | [2384883](https://www.ncbi.nlm.nih.gov/pubmed/2384883) | metadata signals extractable PD data (EC50) |
 | `Schumacher_2009.pdf` | Schumacher PM et al., Response surface modeling of the intera…, Anesthesiology (2009) | pd | 4 | [10.1097/ALN.0b013e3181b799ef](https://doi.org/10.1097/ALN.0b013e3181b799ef) | [19741484](https://www.ncbi.nlm.nih.gov/pubmed/19741484) | metadata signals extractable PD data (Emax) |
 | `Suzdak_1992.pdf` | Suzdak PD et al., NNC-711, a novel potent and selective g…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90804-d](https://doi.org/10.1016/0014-2999(92)90804-d) | [1468507](https://www.ncbi.nlm.nih.gov/pubmed/1468507) | metadata signals extractable PD data (IC50) |
 | `Wong_1984.pdf` | Wong EH et al., gamma-Aminobutyric acid activation of 3…, Brain research (1984) | pd | 4 | [10.1016/0006-8993(84)91213-7](https://doi.org/10.1016/0006-8993(84)91213-7) | [6331574](https://www.ncbi.nlm.nih.gov/pubmed/6331574) | metadata signals extractable PD data (EC50) |
-| `Yu_1994.pdf` | Yu B et al., Interleukin-1 beta inhibits synaptic tr…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [7525939](https://www.ncbi.nlm.nih.gov/pubmed/7525939) | metadata signals extractable PD data (EC50) |
+| `Yu_1994.pdf` | Yu B et al., Interleukin-1 beta inhibits synaptic tr…, The Journal of pharmacology… (1994) | pd | 4 |  | [7525939](https://www.ncbi.nlm.nih.gov/pubmed/7525939) | metadata signals extractable PD data (EC50) |
 | `Kassab_2026.pdf` | Kassab N et al., Pharmacogenomics of commonly used intra…, Pharmacogenetics and genomi… (2026) | pgx | 8 | [10.1097/FPC.0000000000000582](https://doi.org/10.1097/FPC.0000000000000582) | [41437621](https://www.ncbi.nlm.nih.gov/pubmed/41437621) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Sherif_2016.pdf` | Sherif M et al., Human Laboratory Studies on Cannabinoid…, Biological psychiatry (2016) | pgx | 5 | [10.1016/j.biopsych.2016.01.011](https://doi.org/10.1016/j.biopsych.2016.01.011) | [26970363](https://www.ncbi.nlm.nih.gov/pubmed/26970363) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-10-07T06:49:15.586379+00:00</sub>
+<sub>queue written 2026-10-07 06:49 UTC</sub>
 
 ## Screened and excluded
 
@@ -377,5 +377,5 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminobutyric_acid%5D&body=Drug%3A%20aminobutyric_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminobutyric_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

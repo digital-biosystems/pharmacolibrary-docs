@@ -64,7 +64,7 @@ Sisomicin is an aminoglycoside antibiotic that inhibits protein synthesis in bac
 
 - **PubMed hits:** 72 matched, 53 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -74,14 +74,14 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Chung_1981.pdf` | Chung M et al., Pharmacokinetic study of sisomicin in h…, Journal of pharmacokinetics… (1981) | popPK | 10 | [10.1007/BF01061025](https://doi.org/10.1007/BF01061025) | [7334458](https://pubmed.ncbi.nlm.nih.gov/7334458) | The text explicitly reports quantitative pharmacokinetic parameters for sisomicin in humans, including two-compartment model parameters, half-life (2.6 hr), renal clearance (55 ml/min), and total body clearance (78 ml/min). |
-| `Firsov_1980.pdf` | Firsov AA et al., [Pharmacokinetic basis of the nephrotox…, Antibiotiki (1980) | popPK | 10 | not captured | [7362226](https://pubmed.ncbi.nlm.nih.gov/7362226) | The paper provides explicit numeric values for clearance, volume of distribution, and rate constants for a two-compartment model of sisomicin in rats. |
-| `Nishimura_1984.pdf` | Nishimura T et al., [A pharmacokinetic investigation of sis…, The Japanese journal of ant… (1984) | popPK | 10 | not captured | [6481958](https://pubmed.ncbi.nlm.nih.gov/6481958) | The paper reports quantitative PK parameters (ka, Vd, half-life) for sisomicin in children, with all numeric values explicitly listed in the abstract text. |
-| `Firsov_1985.pdf` | Firsov AA et al., [Sisomycin pharmacokinetics in the peri…, Antibiotiki i meditsinskaia… (1985) | popPK | 9 | not captured | [4091513](https://pubmed.ncbi.nlm.nih.gov/4091513) | Study reports PK parameters (AUC ratio, linearity) for sisomicin in guinea pigs, but specific numeric CL, V, or Ka values are not explicitly detailed in the text. |
-| `Firsov_1983.pdf` | Firsov AA et al., [Simulation of the pharmacokinetics of…, Antibiotiki (1983) | popPK | 8 | not captured | [6651271](https://pubmed.ncbi.nlm.nih.gov/6651271) | The paper describes a two-compartmental model for sisomicin in rat kidneys, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
+| `Firsov_1980.pdf` | Firsov AA et al., [Pharmacokinetic basis of the nephrotox…, Antibiotiki (1980) | popPK | 10 |  | [7362226](https://pubmed.ncbi.nlm.nih.gov/7362226) | The paper provides explicit numeric values for clearance, volume of distribution, and rate constants for a two-compartment model of sisomicin in rats. |
+| `Nishimura_1984.pdf` | Nishimura T et al., [A pharmacokinetic investigation of sis…, The Japanese journal of ant… (1984) | popPK | 10 |  | [6481958](https://pubmed.ncbi.nlm.nih.gov/6481958) | The paper reports quantitative PK parameters (ka, Vd, half-life) for sisomicin in children, with all numeric values explicitly listed in the abstract text. |
+| `Firsov_1985.pdf` | Firsov AA et al., [Sisomycin pharmacokinetics in the peri…, Antibiotiki i meditsinskaia… (1985) | popPK | 9 |  | [4091513](https://pubmed.ncbi.nlm.nih.gov/4091513) | Study reports PK parameters (AUC ratio, linearity) for sisomicin in guinea pigs, but specific numeric CL, V, or Ka values are not explicitly detailed in the text. |
+| `Firsov_1983.pdf` | Firsov AA et al., [Simulation of the pharmacokinetics of…, Antibiotiki (1983) | popPK | 8 |  | [6651271](https://pubmed.ncbi.nlm.nih.gov/6651271) | The paper describes a two-compartmental model for sisomicin in rat kidneys, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
 | `Lode_1975.pdf` | Lode H et al., Comparative clinical pharmacology of ge…, Antimicrobial agents and ch… (1975) | popPK | 8 | [10.1128/AAC.8.4.396](https://doi.org/10.1128/AAC.8.4.396) | [1103722](https://pubmed.ncbi.nlm.nih.gov/1103722) | The study describes a two-compartment PK model for sisomicin in humans and reports peak serum concentrations, but specific numeric values for clearance, volume, and half-life are described qualitatively (as having "slight differences") rather than listed explicitly in the provided text. |
-| `Firsov_1982.pdf` | Firsov AA et al., [Build up of a given concentration of t…, Antibiotiki (1982) | popPK | 5 | not captured | [6758682](https://pubmed.ncbi.nlm.nih.gov/6758682) | The study involves sisomicin pharmacokinetics but relies on adult constants for a theoretical model for children, and while infusion rates are provided, standard disposition parameters (CL, V) are not explicitly listed as calculated values in the text. |
+| `Firsov_1982.pdf` | Firsov AA et al., [Build up of a given concentration of t…, Antibiotiki (1982) | popPK | 5 |  | [6758682](https://pubmed.ncbi.nlm.nih.gov/6758682) | The study involves sisomicin pharmacokinetics but relies on adult constants for a theoretical model for children, and while infusion rates are provided, standard disposition parameters (CL, V) are not explicitly listed as calculated values in the text. |
 
-<sub>queue written 2026-10-07T11:39:51.488457+00:00</sub>
+<sub>queue written 2026-10-07 11:39 UTC</sub>
 
 ## Screened and excluded
 
@@ -102,5 +102,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsisomicin%5D&body=Drug%3A%20sisomicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sisomicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:39 UTC</sub>

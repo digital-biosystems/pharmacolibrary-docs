@@ -120,7 +120,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1648 matched, 117 returned
 - **screened:** 20  ·  **relevant:** 9
-- **records:** 9  ·  extracted 2  ·  needs_review 2  ·  rejected 5  ·  stale 0
+- **records:** 9  ·  extracted 2  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -130,20 +130,20 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Greenblatt_1989.pdf` | Greenblatt DJ et al., Pharmacokinetic and electroencephalogra…, Clinical pharmacology and t… (1989) | popPK | 10 | [10.1038/clpt.1989.41](https://doi.org/10.1038/clpt.1989.41) | [2702793](https://pubmed.ncbi.nlm.nih.gov/2702793) | The study reports specific pharmacokinetic parameters for diazepam in humans, including volume of distribution (1.2 L/kg), half-life (33 hours), and metabolic clearance (0.5 ml/min/kg). |
-| `Klotz_1976.pdf` | Klotz U et al., Pharmacokinetics and plasma binding of…, The Journal of pharmacology… (1976) | popPK | 10 | not captured | [789856](https://pubmed.ncbi.nlm.nih.gov/789856) | The abstract explicitly reports quantitative values for elimination half-life (T1/2 beta) and clearance (Cl) for multiple species including humans. |
+| `Klotz_1976.pdf` | Klotz U et al., Pharmacokinetics and plasma binding of…, The Journal of pharmacology… (1976) | popPK | 10 |  | [789856](https://pubmed.ncbi.nlm.nih.gov/789856) | The abstract explicitly reports quantitative values for elimination half-life (T1/2 beta) and clearance (Cl) for multiple species including humans. |
 | `Kumana_1987.pdf` | Kumana CR et al., Differences in diazepam pharmacokinetic…, European journal of clinica… (1987) | popPK | 10 | [10.1007/BF00542199](https://doi.org/10.1007/BF00542199) | [3108012](https://pubmed.ncbi.nlm.nih.gov/3108012) | The paper is a primary pharmacokinetic study of diazepam in humans, but the extracted text only contains statistical comparisons and qualitative descriptions (e.g., "52% larger") without listing the specific mean numeric values for parameters like CL, V, or t1/2. |
 | `McCann_2025.pdf` | McCann SM et al., Expansion of a Pharmacokinetic Model fo…, Journal of clinical pharmac… (2025) | popPK | 10 | [10.1002/jcph.70027](https://doi.org/10.1002/jcph.70027) | [40289640](https://pubmed.ncbi.nlm.nih.gov/40289640) | The study reports quantitative PK parameters (Vc, Vp, Q, CL) for diazepam, but only relative changes (e.g., 26% increase) are described in the abstract without specific numeric values. |
 | `Tsiros_2019.pdf` | Tsiros P et al., Population pharmacokinetic reanalysis o…, Journal of pharmacokinetics… (2019) | popPK | 10 | [10.1007/s10928-019-09630-x](https://doi.org/10.1007/s10928-019-09630-x) | [30949914](https://pubmed.ncbi.nlm.nih.gov/30949914) | The study describes a population pharmacokinetic reanalysis of a diazepam PBPK model, but no numeric parameter values are present in the provided evidence, which consists only of the abstract. |
 | `Burkat_2022.pdf` | Burkat PM, Physiologically Based Pharmacokinetic a…, Journal of clinical pharmac… (2022) | popPK | 9 | [10.1002/jcph.2071](https://doi.org/10.1002/jcph.2071) | [35533144](https://pubmed.ncbi.nlm.nih.gov/35533144) | The paper describes a PBPK model for diazepam and provides quantitative values for unbound interstitial brain concentrations, which are key disposition parameters derived from the model. |
 | `Jack_1983.pdf` | Jack ML et al., A pharmacokinetic/pharmacodynamic/recep…, Progress in neuro-psychopha… (1983) | popPK | 9 | [10.1016/0278-5846(83)90036-2](https://doi.org/10.1016/0278-5846(83)90036-2) | [6141606](https://pubmed.ncbi.nlm.nih.gov/6141606) | The paper describes a PK/PD model for diazepam involving human PK parameters, but the specific numeric values are not present in the provided evidence text. |
 | `Lukey_1991.pdf` | Lukey BJ et al., Pharmacokinetics of diazepam intramuscu…, Journal of pharmaceutical s… (1991) | popPK | 9 | [10.1002/jps.2600801003](https://doi.org/10.1002/jps.2600801003) | [1783998](https://pubmed.ncbi.nlm.nih.gov/1783998) | The study reports explicit numeric values for Vd, CL, and Cmax for diazepam in rhesus monkeys. |
-| `Löscher_1981.pdf` | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | popPK | 9 | not captured | [7337498](https://pubmed.ncbi.nlm.nih.gov/7337498) | Study reports quantitative PK parameters (half-lives, compartmental model) for diazepam in dogs, but specific values for CL, V, or Q are not explicitly listed in the text. |
+| `Löscher_1981.pdf` | Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981) | popPK | 9 |  | [7337498](https://pubmed.ncbi.nlm.nih.gov/7337498) | Study reports quantitative PK parameters (half-lives, compartmental model) for diazepam in dogs, but specific values for CL, V, or Q are not explicitly listed in the text. |
 | `Moore_1991.pdf` | Moore DH et al., The pharmacokinetics of atropine and di…, Biopharmaceutics & drug dis… (1991) | popPK | 9 | [10.1002/bdd.2510120706](https://doi.org/10.1002/bdd.2510120706) | [1932614](https://pubmed.ncbi.nlm.nih.gov/1932614) | Study reports PK parameters for diazepam in sheep, but the specific numeric values are not present in the provided abstract/evidence text. |
 | `Wang_2020_2.pdf` | Wang LL et al., An Experimental Pharmacokinetics Study…, Journal of analytical toxic… (2020) | popPK | 9 | [10.1093/jat/bkz101](https://doi.org/10.1093/jat/bkz101) | [31965188](https://pubmed.ncbi.nlm.nih.gov/31965188) | The study reports a two-compartment PK model for diazepam in human oral fluid with specific half-life parameters (k01_HL, k12_HL, k10_HL) provided in the text, though standard clearance and volume values are not explicitly listed. |
 | `Xiao_2026.pdf` | Xiao HL et al., Pharmacokinetics and Residue Eliminatio…, Journal of veterinary pharm… (2026) | popPK | 9 | [10.1111/jvp.70044](https://doi.org/10.1111/jvp.70044) | [41518013](https://pubmed.ncbi.nlm.nih.gov/41518013) | The study reports quantitative non-compartmental PK parameters (CL, Vd, T1/2) for diazepam in zebrafish. |
 | `Wang_2020.pdf` | Wang LL et al., Study on the Pharmacokinetics of Diazep…, European journal of drug me… (2020) | popPK | 8 | [10.1007/s13318-020-00614-8](https://doi.org/10.1007/s13318-020-00614-8) | [32219697](https://pubmed.ncbi.nlm.nih.gov/32219697) | The study reports key PK parameters (Tmax, Cmax, half-life) for diazepam in humans, but it is a non-compartmental analysis and does not report clearance, volume of distribution, or intercompartmental clearance. |
 
-<sub>queue written 2026-10-22T14:16:24.955120+00:00</sub>
+<sub>queue written 2026-10-22 14:16 UTC</sub>
 
 ## Screened and excluded
 
@@ -247,5 +247,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 14:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D&body=Drug%3A%20diazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 14:16 UTC</sub>

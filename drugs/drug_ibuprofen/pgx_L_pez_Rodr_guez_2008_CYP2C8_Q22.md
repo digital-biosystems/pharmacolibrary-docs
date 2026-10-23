@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibuprofen%5D%20pgx_L_pez_Rodr_guez_2008_CYP2C8_Q22&body=Drug%3A%20ibuprofen%0ARecord%3A%20pgx_L_pez_Rodr_guez_2008_CYP2C8_Q22%0APaper%3A%20L%C3%B3pez-Rodr%C3%ADguez_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibuprofen/pgx_L_pez_Rodr_guez_2008_CYP2C8_Q22%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ibuprofen](drugs/drug_ibuprofen/)</sub>

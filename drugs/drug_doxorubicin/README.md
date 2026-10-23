@@ -156,6 +156,878 @@ Doxorubicin is a chemotherapy drug used to treat many cancers, including breast 
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+95 reaction(s) reported in 58 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Myelosuppression | The paper states that myelosuppression occurs frequently in patients treated with cytostatic drugs, which is associated with severe discomfort and can lead to the delay or withdrawal of treatment. | occur frequently | cytostatic drug treatment; dose related; mode of administration (i.e. peak plasma concentration); ABCB1 (C1236T and C3435T) polymorphisms (ABCB1 C1236T, C3435T) | — | [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038), [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002), [Pérez-Blanco 2016](https://pubmed.ncbi.nlm.nih.gov/27447545) +5 |
+| Neutropenia | Forty-eight patients (i.e. incidence of 48%) exhibited grade 1-4 neutropenia, of which 14 patients with grade 3-4 severe neutropenia, with an incidence of 14%, and 4 patients with recurrent severe neutropenia (patients having grade 3 and/or 4 neutropenia during at least two cycles), with an… | 48% | SLC22A16 T &gt; C (rs714368); ABCB1 C3435T (ABCB1 C3435TT); AKR1C3 rs1937841; paclitaxel | laboratory: complete blood counts (CBC) with differential including ... absolute neutrophil count; laboratory: neutrophil | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Pérez-Blanco 2016](https://pubmed.ncbi.nlm.nih.gov/27447545), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693), [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) +2 |
+| Leukopenia | Between 20 and 70% of patients receiving anthracycline therapy develop grade 3 or 4 haematological toxicity, primarily neutropenia and leukopenia. | 20-70% | ALDH3A1 p.Pro329Ala rs2228100 allele G (ALDH3A1 G); CYP2C19 c.-806C&gt;A rs12248560 homozygote CC (CYP2C19 CC); SLC22A16 1226T&gt;C (SLC22A16 1226C); SLC22A16 T&gt;C (rs714368) (SLC22A16 C) | — | [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072), [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340), [Lal 2010](https://pubmed.ncbi.nlm.nih.gov/20302569) |
+| Febrile neutropenia | A polymorphic variant in the OCT6 gene (rs12210538) was found to correlate with the incidence of grade 3 or 4 febrile neutropenia in patients. | — | OCT6 gene variant rs12210538 (OCT6 rs12210538); rs4762699 (SLCO1A2) | — | [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196), [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) |
+| Thrombocytopenia | Thrombocytopenia was observed in patients treated with EPOCH, occurring in 7% of cycles at a severity level that was dose limiting (platelet count &lt; 25 x 10^9 /L). | 7% of cycles | CBR1 rs20572 (E3/Ala209=), CBR1 rs9024 (3′UTR) (CBR1 E3/Ala209=; 3′UTR) | laboratory: complete blood counts; laboratory: platelet count | [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693), Coukell 1997, [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) |
+| Anemia | The paper states that the risk of chemotherapy-induced anemia correlated with the polymorphic allele p.Asn118 = (rs11615) in the ERCC1 gene and homozygous GG polymorphism p.Val417Ile (rs2273697) of the ABCC2 gene in triple-negative breast cancer patients. | — | ERCC1 gene polymorphic allele p.Asn118 = (rs11615) (ERCC1 p.Asn118 = (rs11615)); ABCC2 gene homozygous GG polymorphism p.Val417Ile (rs2273697) (ABCC2 homozygous GG polymorphism p.Val417Ile (rs2273697)); GSTP1 rs1695 (GSTP1 rs1695 Ile105Val) | — | [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) |
+| Hematological toxicity | The paper reports an association between the CBR3 rs8133052 variant and 'Lower AUC & hematological toxicity' in a study of 99 female Asian breast cancer patients treated with DOX/DOC. | — | CBR3 rs8133052 E1/Cys4Tyr (CBR3 E1/Cys4Tyr); rs3764435 and rs168351 (ALDH1A1) (ALDH1A1 rs3764435, rs168351) | — | [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196), [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) |
+| Leucopenia | Leucopenia occurred more frequently in patients who received liposomal doxorubicin every 3 weeks (72%) than in those who received BV (51%), with severe leucopenia occurring in 29% of the liposomal doxorubicin group and 13% of the BV group. | 72% (LDX), 51% (BV); severe: 29% (LDX), 13% (BV) | liposomal doxorubicin every 3 weeks vs BV; SLC22A16 rs12210538 (E5/Met409Thr) (SLC22A16 Met409Thr) | laboratory: Leucopenia | Coukell 1997, [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) |
+| Acute hemolytic anemia | The paper classifies doxorubicin as a 'Low-to-no risk' drug for acute hemolytic anemia (AHA) in patients with G6PD deficiency, indicating no added risk of AHA in those deficient for G6PD versus those with normal G6PD status. | — | G6PD deficiency | — | [PMID36049896 2023](https://pubmed.ncbi.nlm.nih.gov/36049896) |
+| Anaemia | In 100 Egyptian female breast cancer patients treated with doxorubicin-based chemotherapy, 62 patients (62%) exhibited grade 1-4 anaemia, and 26 patients (26%) had recurrent anaemia. | incidence of 62% | SLC22A16 T &gt; C (rs714368) heterozygote TC (SLC22A16 C); baseline haemoglobin | laboratory: complete blood counts (CBC) with differential including haemoglobin | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) |
+| Bone marrow suppression | Doxorubicin has been associated with severe bone marrow suppression. | — | — | — | [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Extravasation | The paper states that care must be taken to avoid extravasation when administering the drug intravenously. | — | — | — | [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) |
+| Grade 3-4 hematological toxicities | Three ABCC1 SNPs (809+54C&gt;A, 677+1391T&gt;C, and 1988+219G&gt;T) were found to be strongly predictive of grade 3-4 hematological toxicities in a cohort of 882 breast cancer patients, although these associations did not retain statistical significance after multiple testing correction. | — | ABCC1 809+54C&gt;A (rs903880) (ABCC1 C); ABCC1 677+1391T&gt;C (rs16967126) (ABCC1 C); ABCC1 1988+219G&gt;T (rs4148350) (ABCC1 T) | — | [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Hematotoxicity | In a cohort of breast cancer patients, carriers of the CBR3 C4Y minor allele experienced greater hematotoxicity. | — | CBR3 C4Y minor allele (rs8133052) | — | [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) |
+| Hepatic failure | A case report suggests liposomal doxorubicin was the probable cause of hepatic failure in one patient who developed jaundice and ascites 2 weeks after treatment and subsequently died of hepatorenal failure. | 1 case | replication of hepatitis B virus | — | Coukell 1997 |
+| Leukopoenia | In 100 Egyptian female breast cancer patients treated with doxorubicin-based chemotherapy, 42% developed grade 1-4 leukopoenia overall, including 6% with grade 3-4 severe leukopoenia and 10% with recurrent leukopoenia. | incidence of 42% | SLC22A16 T &gt; C (rs714368) heterozygote TC (SLC22A16 C); SLC22A16 T &gt; C (rs714368) combined TC/CC (SLC22A16 C) | laboratory: complete blood counts (CBC) with differential including total leukocyte count | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) |
+| Myelotoxicity | Myelotoxicity was observed in rats and dogs following PLD administration, but at a reduced level of severity compared with animals that received the same cumulative dose of conventional doxorubicin. | — | — | — | [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) |
+| Secondary leukemia | Secondary leukemia is listed as a side effect of doxorubicin that limits the doses that can be administered. | — | — | — | [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) |
+
+<details><summary>Evidence: myelosuppression (13)</summary>
+
+> “Treatment with cytostatic drugs is often associated with severe discomfort for the patients. Nausea, vomiting, alopecia and myelosupression occur frequently. Delay or withdrawal of the treatment due to the side effects is common.” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(review)</sub>
+
+> “Between 20 and 70% of patients receiving anthracycline therapy develop grade 3 or 4 haematological toxicity, primarily neutropenia and leukopenia.” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+> “Treatment with cytostatic drugs is often associated with severe discomfort for the patients. Nausea, vomiting, alopecia and myelosupression occur frequently.” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(case series)</sub>
+
+> “At approximately 16 days after a single dose of doxorubicin the white blood cell and platelet counts reach their lowest point. Myelosuppression and alopecia are dose related, but independent of the mode of administration (i.e. peak plasma concentration).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: neutropenia (8)</summary>
+
+> “Forty-eight patients (i.e. incidence of 48%) exhibited grade 1-4 neutropenia, of which 14 patients with grade 3-4 severe neutropenia, with an incidence of 14%, and 4 patients with recurrent severe neutropenia (patients having grade 3 and/or 4 neutropenia during at least two cycles), with an incidence of 4%.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(cohort)</sub>
+
+> “More than 50% of the patients treated with the recommended doses of DOX suffer a dose-dependent neutropenia at the nadir, two weeks after drug administration. This toxicity can be delayed by up to four weeks.” — [Pérez-Blanco 2016](https://pubmed.ncbi.nlm.nih.gov/27447545) <sub>(review)</sub>
+
+> “Patients with the C3435TT genotype had higher AUC and greater overall survival compared with patients with the CC⁄CT genotype. However, the TT genotype was also associated with higher risk of neutropenia and diarrhea.” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(case series)</sub>
+
+> “The doseadjustment paradigm was designed to produce a period of shallow neutropenia, thus resulting in ANC nadirs of between 0.499 ϫ 10 9 /L and 0.1 ϫ 10 9 /L in 34% of cycles, with more severe neutropenia (ANC Ͻ 0.1 ϫ 10 9 /L) in 15% of cycles.” — [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopenia (5)</summary>
+
+> “Between 20 and 70% of patients receiving anthracycline therapy develop grade 3 or 4 haematological toxicity, primarily neutropenia and leukopenia.” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+> “Multivariate logistic regression analysis revealed that allele G of p.Pro329Ala in the ALDH3A1 gene (rs2228100) and CYP2C19 c.-806C&gt;A (rs12248560) common homozygote CC increased the risk of leukopenia [23].” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+> “Conversely, carriers of the variant allele 1226C experienced a higher incidence of dose delay and leukopenia than wild-type carriers (Bray et al., 2010).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+> “On the contrary, although no significant effect of SLC22A16 T&gt;C (rs714368) on the plasma concentration was observed, it was significantly correlated with a lower risk of neutropenia (OR 0.31, 95% CI = 0.12–0.75, p = 0.01) and leucopenia (OR 0.18, 95% CI = 0.07–0.5, p = 0.001).” — [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: Febrile neutropenia (3)</summary>
+
+> “Furthermore, the same gene was correlated with the incidence of grade 3 or 4 febrile neutropenia [67].” — [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332) <sub>(review)</sub>
+
+> “To date, only four GWAS regarding DOX clinical outcome have been conducted, one of which focused on DOX-induced febrile neutropenia in cancer patients. In this study, 16,561 SNPs in drug transporter and metabolic genes implicated in neutropenia were genotyped in 155 French breast cancer patients who were tested for association with severe neutropenia (Callens et al. 2015).” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(review)</sub>
+
+> “Severe myelosuppression, such as febrile neutropenia, is the primary cause of chemotherapy cycle delay and anthracycline dosage reduction.” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: thrombocytopenia (3)</summary>
+
+> “Thrombocytopenia was less common and was only dose limiting (platelet count Ͻ 25 ϫ 10 9 /L) in 7% of cycles.” — [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) <sub>(case report)</sub>
+
+> “Thrombocytope nia occurred in 9% of patient s.” — Coukell 1997 <sub>(review)</sub>
+
+> “(Jordheim et al., 2015) | 38 | CBR1 | 22 | rs20572 | E3/Ala209= | Severe thrombocytopenia and diarrhea | 760 | French | R-CHOP | Lymphoma” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (2)</summary>
+
+> “For instance, the risk of chemotherapy-induced anemia correlated with the polymorphic allele p.Asn118 = (rs11615) in the ERCC1 gene and homozygous GG polymorphism p.Val417Ile (rs2273697) of the ABCC2 gene in triple-negative BC patients [23].” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+> “(Tulsyan et al., 2013) | 3 | GSTP1 | 11 | rs1695 | Ile105Val | Severe anemia | 207 | Indian | Anthracycline | Breast” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Hematological toxicity (2)</summary>
+
+> “CBR3 | 21 | rs8133052 | E1/Cys4Tyr | Lower AUC & hematological toxicity | 99 (26–68) | Female Asian | DOX/DOC | Breast” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(case-control)</sub>
+
+> “Yao et al. (2014) observed in breast cancer patients that rs3764435 and rs168351 (ALDH1A1) were significantly associated with hematological toxicity (OR = 1.44, 95% CI: 1.16–1.78, p = 0.0008), and rs2889517 and rs2074087 (ABCC1) were significantly associated with gastrointestinal toxicity (OR = 0.54, 95% CI: 0.34–0.84, p = 0.006).” — [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: leucopenia (2)</summary>
+
+> “Leucopenia in 1 compari son occurred more frequently in patient s who recei ved liposom al doxorubicin every 3 wee ks than in those who received BY (72 and 51%, respectively; p &lt; 0.001 ); severe leucopenia occurred in 29 and 13% of patients (significanc e not report ed j.P U” — Coukell 1997 <sub>(cohort)</sub>
+
+> “(Bray et al., 2010) | 17 | SLC22A16 | 6 | rs12210538 | E5/Met409Thr | Leucopenia & greater incidence of dose delay | 230 | European | DOX/Cyc | Breast” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: Acute hemolytic anemia (1)</summary>
+
+> “Doxorubicin | Low-to-no | Optional” — [PMID36049896 2023](https://pubmed.ncbi.nlm.nih.gov/36049896) <sub>(guideline)</sub>
+
+</details>
+
+<details><summary>Evidence: anaemia (1)</summary>
+
+> “Sixty-two patients (i.e. incidence of 62%) exhibited grade 1-4 anaemia, of which 26 patients with recurrent anaemia (patients having anaemia of any grade during the 4 cycles of treatment), with an incidence of 26%.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: bone marrow suppression (1)</summary>
+
+> “Notably, the use of doxorubicin has been associated with severe side-effects including bone marrow suppression (Hrushesky, 1982) and cardiovascular toxicity (Doyle et al., 2005), such as arrhythmias (acute cardiotoxicity) and congestive heart failure (chronic cardiotoxicity) (Wojnowski et al., 2005).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Extravasation (1)</summary>
+
+> “Administration is intravenous, with care taken to avoid extravasation.” — [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: grade 3-4 hematological toxicities (1)</summary>
+
+> “Three ABCC1 SNPs 809+54C&gt;A (rs903880), 677+1391T&gt;C (rs16967126) and 1988+219G&gt;T (rs4148350) were strongly predictive of grade 3-4 hematological toxicities though they failed to retain significance after multiple testing correction (Yao et al., 2014).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Hematotoxicity (1)</summary>
+
+> “In the same cohort, the C4Y minor allele, in addition to an influence on doxorubicin PK and CBR expression, was associated with greater hematotoxicity and efficacy [66].” — [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: hepatic failure (1)</summary>
+
+> “The authors of a case report suggested that liposomal doxorubicin was the probable cause of hepatic failure in a patient who, 2 weeks after treatment with liposomal doxorubicin 10 mg/m? (cumulative dose 20 rng/m-) in a clinical study,13S 1 developed jaundice and ascites which became progressively worse.” — Coukell 1997 <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopoenia (1)</summary>
+
+> “According to the overall toxicity, forty-two patients (i.e. incidence of 42%) had grade 1-4 leukopoenia, of which 6 patients exhibited grade 3-4 severe leukopoenia, with an incidence of 6%, and 10 patients with recurrent leukopoenia (patients having leukopoenia of any grade in the 4 cycles of treatment), with an incidence of 10%.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Myelotoxicity (1)</summary>
+
+> “Myelotoxicity was observed in rats and dogs following PLD administration, but at a reduced level of severity compared with animals that received the same cumulative dose of conventional doxorubicin.” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: secondary leukemia (1)</summary>
+
+> “Although doxorubicin has impressive antitumor effects, the side effects of cardiotoxicity, myelosuppression and secondary leukemia limit the doses that can be administered.” — [Jamieson 2011](https://pubmed.ncbi.nlm.nih.gov/21919804) <sub>(review)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cardiotoxicity | Doxorubicin use is limited by dose-dependent cardiotoxicity which can lead to severe and irreversible cardiac dysfunction, manifesting acutely or months to years after stopping treatment, with an estimated incidence of 2%–9% in patients treated with anthracyclines. | 2%–9% | cumulative anthracycline dose; cumulative dose; very young; obesity | hospital: left ventricular ejection fraction (LVEF); hospital: NT‐proBNP | [Dabour 2026](https://pubmed.ncbi.nlm.nih.gov/42118141), [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175), [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622), [Magdy 2022](https://pubmed.ncbi.nlm.nih.gov/34874743), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), Coukell 1997 +31 |
+| Congestive heart failure | Clinically apparent anthracyline-induced cardiotoxicity characterized as congestive heart failure has been reported in up to 4% of patients in Phase III high-grade osteosarcoma treatment trials, with risk factors including age, cumulative dose, and female sex. | up to 4% | &lt; 4 and &gt; 40 years; female sex; CBR3 variants; SLC28A3 variants | hospital: electrocardiographic changes; hospital: left ventricular ejection fractions | [Kager 2015](https://pubmed.ncbi.nlm.nih.gov/25882838), [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918), [Mystridis 2022](https://pubmed.ncbi.nlm.nih.gov/35335919), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244), [Hurkmans 2022](https://pubmed.ncbi.nlm.nih.gov/36536332), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) +4 |
+| Cardiomyopathy | Doxorubicin-induced cardiotoxicity is described as the most treatment-limiting side effect, which can develop during treatment but most often manifests more than a year after treatment, leading to an increased risk of congestive heart failure in pediatric cancer survivors. | 5–15 times higher risk | RARG rs2229774 (RARG A (AA or AG genotype)); UGT1A6 rs17863783 (UGT1A6 A); HAS3 rs2232228 (HAS3 A (AA genotype)); CELF4 rs1786814 (CELF4 G (GG genotype)) | hospital: cardiac arrhythmias; hospital: left ventricular ejection fraction | [Hurkmans 2022](https://pubmed.ncbi.nlm.nih.gov/36536332), [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244), [Methaneethorn 2023](https://pubmed.ncbi.nlm.nih.gov/35415961), [Lal 2010](https://pubmed.ncbi.nlm.nih.gov/20302569), [Chang 2018](https://pubmed.ncbi.nlm.nih.gov/29713898) +1 |
+| Arrhythmias | The paper states that the use of doxorubicin is limited by dose-dependent and cumulative cardiotoxicity, leading to left ventricular dysfunction, arrhythmias, and heart failure. | — | dose-dependent and cumulative | — | [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012), [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622), [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Cardiac toxicity | Cardiac toxicity occurred in 6% of patients with node-positive breast cancer receiving adjuvant therapy with doxorubicin and paclitaxel. | 6% | Cp,max; maximum plasma concentration (Cmax); infusion time | — | [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918), [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) |
+| Heart failure | In patients treated with anthracyclines (including doxorubicin), heart failure is a common manifestation of cardiotoxicity, usually occurring within a year after completion of treatment but potentially appearing several years later, with estimated rates between 5 and 10% using modern regimens. | between 5 and 10% | cumulative dose (unknown unknown); age (unknown unknown); individual susceptibility (unknown unknown); past medical history (e.g. hypertension, coronary heart disease, etc.) (unknown unknown) | home: symptoms of heart failure; primary_care: cardiac function | [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055), [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259), [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) |
+| Cardiac damage | The paper reports that in a population of patients treated with the MAP regimen, specific genetic polymorphisms were associated with cardiac damage, but no specific symptoms, incidence, or grading are provided for this reaction in the text. | — | specific polymorphisms (unknown unknown) | — | [Ferrari 2015](https://pubmed.ncbi.nlm.nih.gov/26512909), [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) |
+| Dilated cardiomyopathy | Two women with breast cancer developed severe heart failure within months after chemotherapy, and truncations in TTN are the most common cause of familial and sporadic dilated cardiomyopathy, suggesting a genetic predisposition to dilated cardiomyopathy may contribute to chemotherapy-induced… | two women | truncating frameshift mutations in TTN (TTN truncating frameshift mutations); age; cumulative dose; past medical history (e.g. hypertension, coronary heart disease, etc.) | primary_care: TTN | [Chang 2018](https://pubmed.ncbi.nlm.nih.gov/29713898), [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) |
+| Left ventricular dysfunction | The European Society of Cardiology supported the collection and analysis of data regarding the occurrence of left ventricular dysfunction detected after Dox therapy. | — | ABCC5 gene polymorphism A1629T (TT-1629 genotype) (ABCC5 T); NOS3 gene polymorphism G894T (NOS3 T); RARG rs2229774 (p.S427L) (RARG p.S427L) | — | [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) |
+| Phlebitis | Phlebitis is frequently observed after long term intravenous infusion of doxorubicin. | frequently | long term intravenous infusion | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Acute doxorubicin-induced cardiotoxicity | A significant association was identified between the ABCC1 2012G&gt;T (rs45511401) variant and acute doxorubicin-induced cardiotoxicity in a cohort of 537 non-Hodgkin lymphoma patients, an association that remained highly significant after adjusting for age, gender, cumulative dose administered, and… | — | ABCC1 2012G&gt;T (rs45511401); age; gender | — | [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Cardiac arrhythmia | Acute doxorubicin toxicity, which includes cardiac arrhythmias, occurs after administration and is described as transient. | — | — | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Cardiac arrhythmias | Cardiac arrhythmias and electrocardiographic changes are transient manifestations of acute doxorubicin toxicity. | — | peak plasma concentration | hospital: electrocardiographic changes | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Cardiac dysfunction | In mice, doxorubicin treatment leads to cardiac dysfunction, which can be partially rescued by cardiomyocyte-specific knockout of Sting or over expression of mitochondrial tagged DNase1. | — | Sting (Myh6‐Cre/Stingflox/flox; StingCKO); mitochondrial tagged DNase1 over expression | — | [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) |
+| Cardiac fibrosis | In mice with mitochondrial transplantation, Masson's staining showed significantly reduced fibrosis levels after doxorubicin stimulation compared to controls. | — | mitochondrial copy number (unknown unknown); mitochondrial transplantation (unknown unknown) | hospital: fibrosis | [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) |
+| Cardiac iron deposition | Human studies showed that even cumulative doses of doxorubicin in the 'safe' range are capable of inducing higher iron levels in cardiac tissue, specially at the intracellular level. | — | genetic variants | — | [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) |
+| Cell death | In iPSC-derived cardiomyocytes from individuals with the RARG p.S427L variant, doxorubicin exposure is associated with an increase in cell death compared to isogenic control cells. | — | RARG p.S427L (RARG S427L) | — | [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) |
+| Chronic doxorubicin-induced cardiotoxicity | The paper identifies chronic cardiotoxicity (congestive heart failure) as a severe side effect of doxorubicin and notes that no significant genetic associations with this reaction were observed in the studied cohorts. | — | ABCC1 polymorphisms (ABCC1 2012G&gt;T (rs45511401)) | — | [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Decreased ejection fraction | A statistically significant decrease in ejection fraction was observed six months after the first cycle of doxorubicin treatment in Egyptian breast cancer patients, with a significant correlation found between cumulative dose and the percentage decrease in ejection fraction. | 4 (4%) | — | laboratory: Ejection fraction | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) |
+| Decreased left ventricular ejection fraction | In a study of minimally pretreated patients receiving intravenous doxorubicin over 30 minutes before a 3-hour paclitaxel infusion every 3 weeks, 15 patients had a significant decrease in left ventricular ejection fraction (LVEF). | 15 patients | minimally pretreated; paclitaxel | hospital: left ventricular ejection fraction (LVEF) | [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) |
+| Increased BNP levels | Elevated blood ANP and BNP levels are observed as biomarkers for late-onset cardiotoxicity in patients treated with doxorubicin, with levels significantly higher than cTnT and cTnI. | — | mitochondrial copy number in PBMCs | laboratory: BNP | [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) |
+| Left ventricular ejection fraction decline | Dose-dependent decline in left ventricular ejection fraction (LVEF) was experienced by 65% of cancer patients treated with 550 mg/m2 and 85% treated with 700 mg/m2 of doxorubicin. | 65% and 85% | rs7853758 (SLC28A3) G&gt;A, L461L (SLC28A3 A); cumulative dose | hospital: cardiac function; hospital: left ventricular ejection fraction | [Magdy 2022](https://pubmed.ncbi.nlm.nih.gov/34874743) |
+| Measureable impairment in cardiac function | Up to 65% of pediatric cancer survivors treated with DOX develop measureable impairment in cardiac function, even when treated with DOX doses less than the maximum recommended. | up to 65% | pediatric | — | [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) |
+| Myocardial dysfunction | In childhood cancers, approximately 65% of anthracycline-treated cancer survivors have evidence of myocardial dysfunction. | 65% | children; cumulative dose | laboratory: cardiac troponins; laboratory: natriuretic peptides including NT-proBNP | [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) |
+| Myocardial senescence | Doxorubicin treatment leads to mitochondrial DNA leakage which activates the cGAS-STING pathway, driving inflammation and myocardial senescence in cardiomyocytes and mice. | — | mitochondrial copy number | — | [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) |
+| Myocyte damage | In children with solid tumours or leukaemia, plasma concentrations of cardiac troponins (biomarkers of myocyte damage or death) became elevated by 2 weeks following the second cycle of chemotherapy. | — | cumulative anthracycline dose; total plasma doxorubicin plus doxorubicinol concentrations | laboratory: plasma troponins; laboratory: NT-proBNP | [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) |
+| Myocyte necrosis | In vitro studies have shown that the effect is also related with loss of structural integrity and disarray or even myocyte necrosis in a calpain-dependent way. | — | — | — | [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) |
+| Reactive oxygen species production | The paper states that the RARG p.S427L variant was associated with an increase in reactive oxygen species production in iPSC-derived cardiomyocytes. | — | RARG-S427L (RARG S427L) | — | [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) |
+| Reduced left ventricular ejection fraction | The paper states that doxorubicin's cardiotoxic effect is characterized by a spectrum of cardiac dysfunctions, including reduced left ventricular ejection fraction, which manifests in a cumulative and dose-dependent manner and severely limits its repeated or long-term clinical use. | — | — | — | [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622) |
+| Sarcomeric disarray | Exposure to anthracyclines induces an accelerated degradation of titin and depletion of CARP protein levels, leading to marked sarcomeric disarray in the myocardium. | — | V244M on the CBR3-carbonyl reductase 3 gene (CBR3 V244M) | — | [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) |
+| Torsade de pointes | Expression of the transporter OCTN1 is correlated with augmenting the blockage of HERG potassium channels, which potentiates torsade de pointes that can lead to serious cardiac arrhythmias. | — | OCTN1 (SLC22A4) expression | — | [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332) |
+
+<details><summary>Evidence: cardiotoxicity (37)</summary>
+
+> “However, the clinical utility of DOX is significantly limited by its dose‐dependent cardiotoxicity, which can lead to severe and irreversible cardiac dysfunction [2]. This adverse effect, often referred to as doxorubicin‐induced cardiotoxicity (DIC) or anthracycline‐induced cardiotoxicity, can manifest either acutely, or months to years after stopping treatment [2].” — [Dabour 2026](https://pubmed.ncbi.nlm.nih.gov/42118141) <sub>(meta-analysis)</sub>
+
+> “Myelosuppression and cardiotoxicity are the primary toxicities that limit treatment duration and/or intensity. Cardiotoxicity, particularly heart failure, is a leading cause of morbidity and mortality in cancer survivors.” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+> “Doxorubicin (Doxo), a widely used anthracycline, exemplifies the delicate balance between therapeutic efficacy and cardiotoxic risk. Despite its proven effectiveness in treating a variety of cancers, including acute leukemia, lymphomas, and various solid tumors in both adults and children, it is also associated with significant adverse effects, most notably cardiotoxicity” — [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622) <sub>(review)</sub>
+
+> “The cardiotoxicity of anthracyclines has been documented to be occur in 9% of treated adult patients1, and on average occurs in just 3.5 months after the last chemotherapy dose and 98% of patients experience cardiotoxicity within the first year1. The cardiotoxicity of doxorubicin is also well–understood to be dose–dependent, with 65% and 85% of cancer patients experiencing a decline in left ventricular ejection…” — [Magdy 2022](https://pubmed.ncbi.nlm.nih.gov/34874743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: congestive heart failure (11)</summary>
+
+> “Clinically apparent anthracyline-induced cardiotoxicity (ACT) has been reported up to 4% in Phase III HGOS treatment trials; and age (higher risk &lt; 4 and &gt; 40 years), cumulative dose and female sex are well-defined risk factors [4].” — [Kager 2015](https://pubmed.ncbi.nlm.nih.gov/25882838) <sub>(meta-analysis)</sub>
+
+> “However, a significant proportion of patients (18%) developed congestive heart failure at doxorubicin cumulative doses of 120 to 480 mg/m 2 , while the sequence of drug administration had no effect on the severity of major treatment-related toxicities.” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(case report)</sub>
+
+> “Its clinical use, however, is limited due to safety issues. The latter is correlated to the cumulative dose used and is manifested mainly as cardiotoxicity that could potentially lead to congestive heart failure (CHF) [2] causing up to 50% mortality [3].” — [Mystridis 2022](https://pubmed.ncbi.nlm.nih.gov/35335919) <sub>(review)</sub>
+
+> “Chronic cardiotoxicity is characterised clinically by congestive heart failure, with an ultimate mortality rate of 20 to 40% (Haq et al. 1985).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiomyopathy (8)</summary>
+
+> “The most treatment-limiting side effect of doxorubicin is cardiotoxicity, which can develop during treatment, but most often manifests more than a year after treatment [6]. Consequently, pediatric cancer survivors have a 5–15 times higher risk to develop congestive heart failure compared to the general population [7].” — [Hurkmans 2022](https://pubmed.ncbi.nlm.nih.gov/36536332) <sub>(review)</sub>
+
+> “Clinically, doxorubicin‐induced cardiomyopathy (DIC) is dose‐cumulative dependent and can occur long after treatment. When the cumulative doxorubicin dose reaches 600 mg m−2 risk of DIC is increased to 36%.” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(review)</sub>
+
+> “At a total cumulative doxorubicin dose of greater than 550 mg/m 2 (administered as high dose bolus injections) the incidence of chronic cardiomyopathy rapidly increases and exceeds to 1 to 5% (Von Hoff et al. 1979).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+> “At a total cumulative doxorubicin dose of greater than 550 mg/m 2 (administered as high dose bolus injections) the incidence of chronic cardiomyopathy rapidly increases and exceeds to 1 to 5% (Von Hoff et al. 1979).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: arrhythmias (3)</summary>
+
+> “However, the use of doxorubicin is limited by dose-dependent and cumulative cardiotoxicity, leading to left ventricular dysfunction, arrhythmias, and heart failure (Singal et al., 1997; Volkova and Russell, 2011).” — [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) <sub>(review)</sub>
+
+> “This cardiotoxic effect, characterized by a spectrum of cardiac dysfunctions such as congestive heart failure, arrhythmias, and reduced left ventricular ejection fraction (Csapo and Lazar, 2014), manifests in a cumulative and dose-dependent manner and severely limits its repeated or long-term clinical use.” — [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622) <sub>(review)</sub>
+
+> “Notably, the use of doxorubicin has been associated with severe side-effects including bone marrow suppression (Hrushesky, 1982) and cardiovascular toxicity (Doyle et al., 2005), such as arrhythmias (acute cardiotoxicity) and congestive heart failure (chronic cardiotoxicity) (Wojnowski et al., 2005).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiac toxicity (3)</summary>
+
+> “moreover, cardiac toxicity occurred in 6% of patients and was not related to the dose of doxorubicin or the use of paclitaxel.” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(review)</sub>
+
+> “Doxorubicin side effects reported to be decreased by a fall in Cp,max include cardiac toxicity, nausea and vomiting (1 1).” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(review)</sub>
+
+> “Side effects, reported to be related to the maximum plasma concentration (Cmax). include cardiac toxicity, nausea and vomiting, while the antitumour effect has been associated with the area under the plasma concentration time curve (AUC).” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: heart failure (3)</summary>
+
+> “Unfortunately, cardiotoxicity secondary to anthracyclines still remains a limiting factor when used, 5 being generally related to dose---response (although there are several reports of cardiotoxicity associated with lower doses, probably secondary to individual susceptibility) 6,7 and manifesting mainly as heart failure usually within a year after completion of treatment, although it is widely accepted that it can…” — [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) <sub>(review)</sub>
+
+> “Doxorubicin (Dox), a clinically used anthracycline with broad‐spectrum antitumor activity, is associated with severe cardiotoxicity, that leads to acute or late‐onset heart failure.[ 1 ] ... Clinically, doxorubicin‐induced cardiomyopathy (DIC) is dose‐cumulative dependent and can occur long after treatment. When the cumulative doxorubicin dose reaches 600 mg m−2 risk of DIC is increased to 36%.” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(review)</sub>
+
+> “The development of heart failure is strongly associated with cumulative dose, increasing from 3-5% at 400 mg/m 2 up to 26% at 550 mg/m 2.” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiac damage (2)</summary>
+
+> “In particular, the authors identified, in a population of patients treated with MAP regimen, polymorphisms associated with methotrexate toxicity, myelosuppression and cardiac damage.” — [Ferrari 2015](https://pubmed.ncbi.nlm.nih.gov/26512909) <sub>(case series)</sub>
+
+> “However, irrespective of schedule optimization, dynamic dose adjustment with bolus administration may produce unacceptable toxicity, such as cardiac damage from high peak concentrations of doxorubicin.” — [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: dilated cardiomyopathy (2)</summary>
+
+> “Linschoten et al. described two women with breast cancer who developed severe heart failure within months after chemotherapy. Genetic screen revealed truncating frameshift mutations in TTN, encoding the myofilament titin, in both women. Truncations in TTN are the most common cause of the familial and sporadic dilated cardiomyopathy. These findings suggest that a genetic predisposition to dilated cardiomyopathy may…” — [Chang 2018](https://pubmed.ncbi.nlm.nih.gov/29713898) <sub>(case report)</sub>
+
+> “Doxorubicin stimulates macrophages and monocytes with the subsequent histamine and tumoral necrosis factor alpha release; these substances have been related with architectural alterations and dilated cardiomyopathy through myocardial receptors binding.” — [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: left ventricular dysfunction (2)</summary>
+
+> “The European Society of Cardiology supported the collection and analysis of data regarding the occurrence of left ventricular dysfunction detected after Dox therapy [69,70,71].” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+> “However, the use of doxorubicin is limited by dose-dependent and cumulative cardiotoxicity, leading to left ventricular dysfunction, arrhythmias, and heart failure (Singal et al., 1997; Volkova and Russell, 2011).” — [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: phlebitis (2)</summary>
+
+> “Phlebitis is frequently observed after long term intravenous infusion (Legha et al. 1987).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+> “Phlebitis is frequently observed after long term intravenous infusion (Legha et al. 1987).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: acute doxorubicin-induced cardiotoxicity (1)</summary>
+
+> “Another study also identified significant association between ABCC1 2012G&gt;T (rs45511401) and acute doxorubicin-induced cardiotoxicity in 537 non-Hodgkin lymphoma patients, which remained highly significant after adjusting for age, gender, cumulative dose administered and dosing interval (Wojnowski et al., 2005).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiac arrhythmia (1)</summary>
+
+> “Acute doxorubicin toxicity consists of gastrointestinal complaints and cardiac arrhythmias. ... Arrhythmias and electrocardiographic changes are transient (Von Hoff et al. 1979).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiac arrhythmias (1)</summary>
+
+> “Acute doxorubicin toxicity consists of gastrointestinal complaints and cardiac arrhythmias. ... Arrhythmias and electrocardiographic changes are transient (Von Hoff et al. 1979).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Cardiac dysfunction (1)</summary>
+
+> “Cardiomyocyte‐specific knockout of Sting (Myh6‐Cre/Stingflox/flox; StingCKO) and over expression of mitochondrial tagged DNase1 in mice partially rescue doxorubicin‐induced cardiac dysfunction.” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: Cardiac fibrosis (1)</summary>
+
+> “Histologically, Masson's staining shows that mitochondrial transplanted mic exhibited significantly reduced fibrosis levels after doxorubicin stimulation (Figure 5e).” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiac iron deposition (1)</summary>
+
+> “Recently, human studies have confirmed this finding, showing that even cumulative doses of doxorubicin in the ''safe'' range are capable of inducing higher iron levels in cardiac tissue, specially at the intracellular level, opening the possibility of cardiotoxicity related with iron deposits as a new pathophysiologic mechanism” — [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: cell death (1)</summary>
+
+> “In our previous study, we identified that the presence of the RARG p.S427L variant is necessary and sufficient to increase susceptibility to doxorubicin-induced cardiotoxicity and that the presence of this variant was associated with an increase in double-stranded DNA breaks, reactive oxygen species production, and cell death in iPSC-derived cardiomyocytes (Christidi et al., 2020).” — [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: chronic doxorubicin-induced cardiotoxicity (1)</summary>
+
+> “No significant associations were observed with regards to chronic doxorubicin-induced cardiotoxicity.” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: decreased ejection fraction (1)</summary>
+
+> “Regarding cardiac toxicity, there was a significant difference between ejection fraction before (64.92 ± 5.56) and six months after (63.88 ± 4.73) the first cycle of doxorubicin treatment (p ˂ 0.001). Moreover, a statistically significant correlation was found between DOX cumulative dose and % decrease in ejection fraction six months after the first cycle of doxorubicin treatment (p = 0.017).” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: decreased left ventricular ejection fraction (1)</summary>
+
+> “The toxicities observed were grade 3/4 neutropenia, paraesthesias, nausea/vomiting, alopecia, myalgia and mucositis. 15 patients had a significant decrease in left ventricular ejection fraction (LVEF) and 6 of them (20%) developed congestive heart failure. [5]” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Increased BNP levels (1)</summary>
+
+> “Elevated blood ANP and BNP levels are common biomarkers for late‐onset cardiotoxicity, significantly higher than cTnT and cTnI levels.” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: left ventricular ejection fraction decline (1)</summary>
+
+> “The cardiotoxicity of doxorubicin is also well–understood to be dose–dependent, with 65% and 85% of cancer patients experiencing a decline in left ventricular ejection fraction (LVEF) when treated with DOX dose of 550 and 700 mg/m2, respectively2.” — [Magdy 2022](https://pubmed.ncbi.nlm.nih.gov/34874743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: measureable impairment in cardiac function (1)</summary>
+
+> “Notably, up to 65% of pediatric cancer survivors treated with DOX develop measureable impairment in cardiac function, even when treated with DOX doses less than the maximum recommended (van der Pal et al., 2010).” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myocardial dysfunction (1)</summary>
+
+> “In childhood cancers, approximately 65% of anthracycline-treated cancer survivors have evidence of myocardial dysfunction, 16 with a 30-year cumulative incidence of symptomatic or severe cardiac events of approximately 8.5%, comprising mostly of heart failure (approximately 7.5% cumulative incidence).” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Myocardial senescence (1)</summary>
+
+> “Mechanistically, doxorubicin treatment leads to mPTP opening and mitochondrial DNA (mtDNA) leakage. This mtDNA leakage event activates the cGAS‐STING pathway and drives inflammation and myocardial senescence.” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: myocyte damage (1)</summary>
+
+> “In breast cancer patients 58 and in children with solid tumours or leukaemia 59 plasma concentrations of biomarkers for ventricular wall stress (e.g. natriuretic peptides including NT-proBNP) increased significantly from baseline within 24-48 hours following the first cycle of chemotherapy, whilst plasma concentrations of cardiac troponins (biomarkers of myocyte damage or death) became elevated by 2 weeks following…” — [Sallustio 2021](https://pubmed.ncbi.nlm.nih.gov/33118175) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myocyte necrosis (1)</summary>
+
+> “In vitro studies have shown that such effect is also related with loss of structural integrity and disarray or even myocyte necrosis in a calpain-dependent way.” — [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: reactive oxygen species production (1)</summary>
+
+> “In our previous study, we identified that the presence of the RARG p.S427L variant is necessary and sufficient to increase susceptibility to doxorubicin-induced cardiotoxicity and that the presence of this variant was associated with an increase in double-stranded DNA breaks, reactive oxygen species production, and cell death in iPSC-derived cardiomyocytes (Christidi et al., 2020).” — [Huang 2022](https://pubmed.ncbi.nlm.nih.gov/35364012) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: reduced left ventricular ejection fraction (1)</summary>
+
+> “This cardiotoxic effect, characterized by a spectrum of cardiac dysfunctions such as congestive heart failure, arrhythmias, and reduced left ventricular ejection fraction (Csapo and Lazar, 2014), manifests in a cumulative and dose-dependent manner and severely limits its repeated or long-term clinical use.” — [Brescia 2026](https://pubmed.ncbi.nlm.nih.gov/41687622) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: sarcomeric disarray (1)</summary>
+
+> “Recently, a very interesting work by Chen et al. 36 studied the role of cardiac ankyrin repeat protein (CARP or ANKRD1, a transcriptional regulatory protein that may act as a nuclear transcription factor negatively regulating the expression of cardiac genes) in the pathophysiology of anthracycline cardiomyopathy. His group found that CARP is extremely sensible to doxorubicin, leading to depletion of CARP protein…” — [Salazar-Mendiguchía 2014](https://pubmed.ncbi.nlm.nih.gov/25001055) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Torsade de pointes (1)</summary>
+
+> “In addition, expression of the structurally-related transporter OCTN1 is correlated with augmenting the blockage of HERG potassium channels and potentiating torsade de pointes [37], which can lead to serious cardiac arrhythmias.” — [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nausea | Nausea was one of the most commonly reported non-hematological toxicities in Egyptian breast cancer patients treated with doxorubicin-based chemotherapy, occurring in more than 40% of the study population. | 62% | SLC22A16 T &gt; C (rs714368); Cmax; ATM p.Asp1853Asn (rs1801516) allele A (ATM A); GSTP1 p.Ile105Val (rs1695) allele A (GSTP1 A) | home: nausea; primary_care: adverse events | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038), Coukell 1997, [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Vomiting | Nausea and vomiting occurred respectively in approximately 17 and 8% of patients who received liposomal doxorubicin. | approximately 8% | ABCB1 rs2229109 E12/Ser400Asn | — | Coukell 1997, [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Mucositis | Mucositis was identified as a dose-limiting toxicity in patients receiving a combination of doxorubicin and paclitaxel, with the paper noting that neutropenia and mucositis were worse in the paclitaxel-to-doxorubicin schedule, where most patients had grade 2/3 stomatitis. | Most patients | paclitaxel; paclitaxel sequence; CYP1B1 (4326 C&gt;G) gene polymorphisms (CYP1B1 4326 C&gt;G); long term infusion regimens | — | [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918), [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865), [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207), [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Gastrointestinal toxicity | Seven dogs (14%) experienced typical anthracycline-associated gastrointestinal toxicity: five dogs (10%) experienced mild and self-limiting effects, while two (4%) experienced significant emesis and diarrhea requiring brief hospitalization and fluid replacement therapy. | 14% | CYP1B1 p.Leu432Val homozygote CC; ATM p.Asp1853Asn (rs1801516) rare allele A; GSTP1 p.Ile105Val (rs1695) common allele A; high doses and frequent administrations | — | [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604), [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) |
+| Stomatitis | Most patients given paclitaxel followed by doxorubicin had grade 2/3 stomatitis, while grade 2 stomatitis occurred in the minority of those receiving doxorubicin followed by paclitaxel, with no grade 3 cases in the latter group. | Most patients | paclitaxel; higher dose | — | [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918), Gabizon 2003, [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604), Coukell 1997 |
+| Diarrhea | Diarrhea occurred in 20% of the 100 female Egyptian breast cancer patients treated with doxorubicin-based chemotherapy. | 20 (20%) | CBR1 rs20572 (CBR1 rs20572 (E3/Ala209=)); ABCB1 C3435TT genotype (ABCB1 TT) | primary_care: cardiac | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) |
+| Anorexia | Anorexia was reported as one of the most commonly occurring non-hematological toxicities in Egyptian breast cancer patients treated with doxorubicin-based chemotherapy, with an incidence of 45%. | 45% | — | — | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) |
+| Nausea and vomiting | An association was observed between the TACR1 1323C&gt;T polymorphism and complete response in the acute phase in breast cancer patients receiving triplet antiemetic combination regimens. | — | TACR1 1323C &gt; T: TT; Cp,max | — | [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340), [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) |
+| Chemotherapy induced nausea and vomiting | In a study of 200 breast cancer patients, 34 patients experienced chemotherapy-induced nausea and vomiting (CINV) classified as severe N-HEM toxicity with grade &lt;1 after treatment with doxorubicin and paclitaxel. | 34 patients | CYP1A1 (rs1048943) A/G+G/G (CYP1A1 rs1048943 A/G+G/G) | — | [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) |
+| Diarrhoea | Mucositis and/or diarrhoea are noticed especially during long term infusion regimens. | — | long term infusion regimens | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Gastrointestinal complaints | Acute doxorubicin toxicity consists of gastrointestinal complaints, which include nausea and vomiting occurring within 4 to 8 hours of administration. | — | — | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Grade 3 gastrointestinal toxicity | Association analysis in a cohort of 882 breast cancer patients comprising predominantly European Americans found strong statistical significance between ABCC1 variants (1677+2788T&gt;C, 2115+1171G&gt;A, 2460+1108T&gt;C, and 2736-925G&gt;A) and grade 3 gastrointestinal toxicity risks, although the significance… | — | ABCC1 1677+2788T&gt;C; ABCC1 2115+1171G&gt;A; ABCC1 2460+1108T&gt;C; ABCC1 2736-925G&gt;A | — | [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) |
+| Mouth ulcer | 4 patients (4%) in the study cohort experienced mouth ulcer as a non-hematological toxicity during doxorubicin-based chemotherapy. | 4 (4%) | — | — | [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) |
+
+<details><summary>Evidence: nausea (7)</summary>
+
+> “The most commonly reported non-hematological toxicities were alopecia, fatigue, nausea and anorexia, with an occurrence of more than 40% as shown in Table 3.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(cohort)</sub>
+
+> “Side effects, reported to be related to the maximum plasma concentration (Cmax). include cardiac toxicity, nausea and vomiting, while the antitumour effect has been associated with the area under the plasma concentration time curve (AUC). Nausea, vomiting, alopecia and myelosupression occur frequently.” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(review)</sub>
+
+> “Nausea and vomiting occurred respectively in approximately 17 and 8% of patients who received liposomal doxorubicin (fig. 2) .” — Coukell 1997 <sub>(review)</sub>
+
+> “Expressions of the rare allele A of ATM p.Asp1853Asn (rs1801516) and the common allele A of GSTP1 p.Ile105Val (rs1695) were shown to increase nausea risk, although the effect was found to be significant at the threshold level [23].” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Vomiting (6)</summary>
+
+> “Nausea and vomiting occurred respectively in approximately 17 and 8% of patients who received liposomal doxorubicin (fig. 2) .” — Coukell 1997 <sub>(meta-analysis)</sub>
+
+> “Side effects, reported to be related to the maximum plasma concentration (Cmax). include cardiac toxicity, nausea and vomiting, while the antitumour effect has been associated with the area under the plasma concentration time curve (AUC).” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(review)</sub>
+
+> “ABCB1 | 7 | rs2229109 | E12/Ser400Asn | Severe vomiting and diarrhea” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(review)</sub>
+
+> “Side effects, reported to be related to the maximum plasma concentration (Cmax). include cardiac toxicity, nausea and vomiting, while the antitumour effect has been associated with the area under the plasma concentration time curve (AUC).” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: mucositis (5)</summary>
+
+> “The maximum tolerated dose (MTD) of paclitaxel was 200 mg/m 2 and the doselimiting toxicities (DLT) were neutropenia and mucositis, with myalgias and peripheral neuropa-thy being important adverse effects. ... Neutropenia and mucositis were worse in the paclitaxel → doxorubicin schedule... Most patients given paclitaxel → doxorubicin had grade 2/3 stomatitis” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(review)</sub>
+
+> “The severe N-HEM-TC with grade &lt;1 were recorded as mucositis in 16 patients, CINV in 34 patients, fatigue in 37 patients, body ache in 15 patients and peripheral neuropathy in 5 patients after treatment with doxorubicin -chemotherapy.” — [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) <sub>(case series)</sub>
+
+> “Furthermore, approximately one in four patients experiences mucositis [5].” — [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207) <sub>(review)</sub>
+
+> “Mucositis and/or diarrhoea are noticed especially during long term infusion regimens (Legha et al. 1987).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Gastrointestinal toxicity (4)</summary>
+
+> “Seven dogs (14%) experienced typical anthracycline-associated gastrointestinal toxicity: five dogs (10%) experienced mild and self-limiting effects, while two (4%) experienced significant emesis and diarrhea requiring brief hospitalization and fluid replacement therapy.” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(case series)</sub>
+
+> “The administration of anthracycline derivates, such as doxorubicin, may cause several side effects, including hematological disfunction, gastrointestinal toxicity, hepatotoxicity, nephrotoxicity, and cardiotoxicity. The homozygote CC of the CYP1B1 p.Leu432Val variant was defined as the most frequent predictor of Dox-induced GI toxicity [23]. Expressions of the rare allele A of ATM p.Asp1853Asn (rs1801516) and the…” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+> “Its short plasma half-life (≈10 min) and rapid metabolism requires high doses and frequent administrations to ensure therapeutic efficacy, which usually is associated with cardiotoxicity, hepatotoxicity, gastrointestinal toxicity, stomatitis, myelosuppression, and drug resistance (Gabizon et al., 1994).” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(review)</sub>
+
+> “Yao et al. (2014) observed in breast cancer patients that rs3764435 and rs168351 (ALDH1A1) were significantly associated with hematological toxicity (OR = 1.44, 95% CI: 1.16–1.78, p = 0.0008), and rs2889517 and rs2074087 (ABCC1) were significantly associated with gastrointestinal toxicity (OR = 0.54, 95% CI: 0.34–0.84, p = 0.006).” — [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: stomatitis (4)</summary>
+
+> “Most patients given paclitaxel → doxorubicin had grade 2/3 stomatitis, while grade 2 stomatitis occurred in the minority of those receiving doxorubicin= →= paclitaxel; none had grade 3. [32]” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(case series)</sub>
+
+> “The toxicity profile of pegylated liposomal doxorubicin is characterised by dose-limiting mucosal and cutaneous toxicities... The mucocutaneous toxicities are dose-limiting per injection” — Gabizon 2003 <sub>(review)</sub>
+
+> “Its short plasma half-life (≈10 min) and rapid metabolism requires high doses and frequent administrations to ensure therapeutic efficacy, which usually is associated with cardiotoxicity, hepatotoxicity, gastrointestinal toxicity, stomatitis, myelosuppression, and drug resistance (Gabizon et al., 1994).” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(review)</sub>
+
+> “In patients with solid tumours other than Kaposi' s sarcoma, stomatitis was dose-limiting for high single do ses of lipo somal doxorubicin (~7 0 mg/rn? every 4 week sj. P!'"""'” — Coukell 1997 <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Diarrhea (3)</summary>
+
+> “The most commonly reported non-hematological toxicities were alopecia, fatigue, nausea and anorexia, with an occurrence of more than 40% as shown in Table 3.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(in vitro)</sub>
+
+> “(Jordheim et al., 2015) | 38 | CBR1 | 22 | rs20572 | E3/Ala209= | Severe thrombocytopenia and diarrhea | 760 | French | R-CHOP | Lymphoma” — [Magdy 2016](https://pubmed.ncbi.nlm.nih.gov/27609196) <sub>(case-control)</sub>
+
+> “However, the TT genotype was also associated with higher risk of neutropenia and diarrhea.” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: anorexia (2)</summary>
+
+> “The most commonly reported non-hematological toxicities were alopecia, fatigue, nausea and anorexia, with an occurrence of more than 40% as shown in Table 3.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(review)</sub>
+
+> “However, other reports have expressed concerns regarding the drug's significant toxicity in cats, leading to renal injury, myelosuppression, anorexia, and weight loss (21).” — [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Nausea and vomiting (2)</summary>
+
+> “Tsuji et al. (2021) reported that in breast cancer patients receiving triplet antiemetic combination regimens, ABCB1 2677G&gt;T/A was not predictive of the antiemetic response. However, an association was observed between the TACR1 1323C&gt;T polymorphism and complete response in the acute phase.” — [Biswas 2025](https://pubmed.ncbi.nlm.nih.gov/41104340) <sub>(review)</sub>
+
+> “Doxorubicin side effects reported to be decreased by a fall in Cp,max include cardiac toxicity, nausea and vomiting (1 1).” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: chemotherapy induced nausea and vomiting (1)</summary>
+
+> “The severe N-HEM-TC with grade &lt;1 were recorded as mucositis in 16 patients, CINV in 34 patients, fatigue in 37 patients, body ache in 15 patients and peripheral neuropathy in 5 patients after treatment with doxorubicin -chemotherapy.” — [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: diarrhoea (1)</summary>
+
+> “Mucositis and/or diarrhoea are noticed especially during long term infusion regimens (Legha et al. 1987).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: gastrointestinal complaints (1)</summary>
+
+> “Acute doxorubicin toxicity consists of gastrointestinal complaints and cardiac arrhythmias. Nausea and vomiting occur within 4 to 8 hours of doxorubicin administration and can only be partially controlled by antiemetic drugs.” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: grade 3 gastrointestinal toxicity (1)</summary>
+
+> “Likewise, association analysis between ABCC1 1677+2788T&gt;C (rs35596), 2115+1171G&gt;A (rs4148354), 2460+1108T&gt;C (rs2889517) and 2736-925G&gt;A (rs11861115) and grade 3 gastrointestinal toxicity risks revealed strong statistical significance but was lost after correction (Yao et al., 2014).” — [Chen 2016](https://pubmed.ncbi.nlm.nih.gov/27546072) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: mouth ulcer (1)</summary>
+
+> “Non-hematological toxicities Toxicity Frequency alopecia 90 (90%) Fatigue 70 (70%) nausea 62 (62%) anorexia 45 (45%) Vomiting 35 (35%) Diarrhea 20 (20%) Mouth ulcer 4 (4%) cardiotoxicity 4 (4%)” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Fatigue | Fatigue was recorded as a severe non-hematological toxicity (N-HEM-TC) in 37 breast cancer patients receiving doxorubicin and paclitaxel chemotherapy. | 37 patients | CYP1A1 (rs1048943) A/G+G/G; CYP1B1 (rs1056836) C/G+G/G; CYP2C8*2 (rs11572103) T/A+A/A; CYP2C8*3 (rs11572080) G/A+A+A | — | [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865), [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) |
+| Body weight loss | In mice with H22 hepatocellular carcinoma treated with intratumoral injection of DOX+C/GP (20 mg/kg), the formulation caused severe weight loss, exhibiting serious toxicity, with statistical difference compared to control groups from 3 to 18 days after injection. | — | 20 mg/kg; mitochondrial transplantation | home: body weight; primary_care: body weight | [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002), [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) |
+| Cytotoxicity | CBR expression in K562 cells resulted in protection against cytotoxicity when treated with doxorubicin, whereas cells selected for doxorubicin resistance showed a 60% increase in CBR mRNA levels. | — | CBR expression | — | [Lal 2008](https://pubmed.ncbi.nlm.nih.gov/19016765), [Rasool 2026](https://pubmed.ncbi.nlm.nih.gov/41936612) |
+| Weight loss | In the survival study, mice in the DOX-L group were euthanized due to weight loss or tumor volume endpoints before 60 days. | 6/7 | — | — | [Wu 2020](https://pubmed.ncbi.nlm.nih.gov/32283210), [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) |
+| Death | In a study of H22 tumor-bearing mice receiving intratumoral injection of 20 mg/kg DOX+C/GP, 3/8 animals died within 21 days. | 37.5% of animals (3/8) | — | — | [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002) |
+| Hypersensitivity reaction | Acute hypersensitivity infusion reactions occur during the first infusion of liposomal doxorubicin in approximately 7% of patients, usually within the first few minutes after the start of the infusion, presenting with symptoms such as flushing, shortness of breath, facial swelling, headache… | approximately 7% | — | — | Coukell 1997 |
+| Infusion reaction | In a study of 51 dogs, four (8%) developed an acute reaction characterized by hypersalivation, prostration, pale mucous membranes, and sinus tachycardia during administration of PLD. | 8% | — | — | [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) |
+| Severe side effects | Doxorubicin is associated with severe side effects at high doses. | — | high dose | — | [Krasnovskaya 2019](https://pubmed.ncbi.nlm.nih.gov/30726065) |
+| Toxic effects | The activity of doxorubicin given at adequate dosages is frequently associated with marked toxic effects, especially in patients with unfavorable prognostic features such as advanced age and advanced disease. | frequently | advanced age; adequate dosages; advanced disease | — | [Könyves 1984](https://pubmed.ncbi.nlm.nih.gov/6364076) |
+| Toxicity | The paper states that the obvious drawback to IDOX is its toxicity, which prevents its use in patients with non-AL amyloidosis. | — | — | — | [Merlini 1995](https://pubmed.ncbi.nlm.nih.gov/7708755) |
+
+<details><summary>Evidence: fatigue (3)</summary>
+
+> “The severe N-HEM-TC with grade &lt;1 were recorded as mucositis in 16 patients, CINV in 34 patients, fatigue in 37 patients, body ache in 15 patients and peripheral neuropathy in 5 patients after treatment with doxorubicin -chemotherapy.” — [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) <sub>(cohort)</sub>
+
+> “The most commonly reported non-hematological toxicities were alopecia, fatigue, nausea and anorexia, with an occurrence of more than 40% as shown in Table 3. Fatigue 70 (70%)” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(cohort)</sub>
+
+> “A troubling side effect for patients was fatigue, which increased markedly in the later cycles. Fatigue was more severe during the first 2 weeks of each cycle and improved dramatically in the first month after treatment was completed.” — [Wilson 2002](https://doi.org/10.1182/blood.V99.8.2685200299:2685-2693) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: body weight loss (2)</summary>
+
+> “However, injection of DOX+C/GP caused severe weight loss, exhibiting serious toxicity. There were no statistical difference in body weight of mice treated with normal saline, blank liposome in C/GP or LipDOX+C/GP (p&gt;0.05), however, DOX+C/GP group showed statistical difference with these three groups from 3 to 18 days after injection (p&lt;0.05).” — [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002) <sub>(animal)</sub>
+
+> “Mitochondrial transplanted animals exhibited delayed doxorubicin induced body weight loss (Figure 5b).” — [Xiong 2025](https://pubmed.ncbi.nlm.nih.gov/39921259) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: cytotoxicity (2)</summary>
+
+> “CBR expression in K562 cells resulted in protection against cytotoxicity when treated with doxorubicin, (36) whereas cells selected for doxorubicin resistance showed a 60% increase in CBR mRNA levels. (37)” — [Lal 2008](https://pubmed.ncbi.nlm.nih.gov/19016765) <sub>(in vitro)</sub>
+
+> “Doxorubicin (0.1 µg/mL) served as a positive control and demonstrated expected cytotoxicity.” — [Rasool 2026](https://pubmed.ncbi.nlm.nih.gov/41936612) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: weight loss (2)</summary>
+
+> “The mice in the DOX-L group were euthanized due to weight loss or tumor volume endpoints before 60 days, with one long term survivor past the 60-day benchmark.” — [Wu 2020](https://pubmed.ncbi.nlm.nih.gov/32283210) <sub>(animal)</sub>
+
+> “However, other reports have expressed concerns regarding the drug's significant toxicity in cats, leading to renal injury, myelosuppression, anorexia, and weight loss (21).” — [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: death (1)</summary>
+
+> “The DOX+C/GP group caused so severe toxicity that 37.5% of animals (3/8) died within 21 days.” — [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hypersensitivity reaction (1)</summary>
+
+> “Acute hypersensitivity infusion reactions occur during the first infusion of liposomal doxorubicin in approximately 7% of patients, usually within the first few minutes after the start of the infusion (fig. 2)56” — Coukell 1997 <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Infusion reaction (1)</summary>
+
+> “During administration of PLD, four dogs (8%) developed an acute reaction characterized by hypersalivation, prostration, pale mucous membranes, and sinus tachycardia. 19 Slowing infusion rates and pretreating with diphenhydramine abrogated this response in subsequent treatments” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: severe side effects (1)</summary>
+
+> “Doxorubicin is highly hydrophilic, has short half-life, and its use is associated with severe side effects at high doses.” — [Krasnovskaya 2019](https://pubmed.ncbi.nlm.nih.gov/30726065) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: toxic effects (1)</summary>
+
+> “The activity is also frequently associated with marked toxic effects, especially in patients with unfavorable prognostic features such as advanced age and advanced disease.” — [Könyves 1984](https://pubmed.ncbi.nlm.nih.gov/6364076) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: toxicity (1)</summary>
+
+> “The obvious drawback to IDOX is its toxicity, which prevents its use in patients with non-AL amyloidosis.” — [Merlini 1995](https://pubmed.ncbi.nlm.nih.gov/7708755) <sub>(case series)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Anaphylactoid reaction | The paper states that anaphylactoid and hypersensitivity reactions (described as 'flare') may occur during the injection of doxorubicin, mimicking extravasation, but does not specify the patient population, frequency, or severity grade. | — | — | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Immune cell cytotoxicity | Doxorubicin treatment resulted in variation in the viability of immune cells (splenocytes) across different mouse inbred strains. | — | genetically diverse mouse inbred strains | — | [Chang 2018](https://pubmed.ncbi.nlm.nih.gov/29713898) |
+
+<details><summary>Evidence: anaphylactoid reaction (2)</summary>
+
+> “Anaphylactoid and hypersensitivity reactions ('flare') may occur during injection (Van Sloten & Aisner 1984), thus mimicking extravasation, but discontinuation of therapy is not necessary (Maral & Jouanne 1981).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(case report)</sub>
+
+> “Anaphylactoid and hypersensitivity reactions ('flare') may occur during injection (Van Sloten & Aisner 1984), thus mimicking extravasation, but discontinuation of therapy is not necessary (Maral & Jouanne 1981).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: immune cell cytotoxicity (1)</summary>
+
+> “Splenocytes were isolated from 36 isogenic strains of mice. Cells were incubated with chemotherapeutic compounds of different dosages.” — [Chang 2018](https://pubmed.ncbi.nlm.nih.gov/29713898) <sub>(in vitro)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nephrotoxicity | The paper states that the administration of anthracycline derivatives, such as doxorubicin, may cause nephrotoxicity and that expression of the polymorphic allele C of the ERCC1 gene variant was associated with an increased risk of kidney damage. | — | ERCC1 gene variant p.Asn118 = (rs11615) polymorphic allele C (ERCC1 C); dose-dependent toxicity; PLD 1.5 mg/kg; PLD vs conventional doxorubicin | — | [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854), [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002), [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002), [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332) |
+| Renal injury | The paper reports that concerns exist regarding the drug's significant toxicity in cats, which leads to renal injury. | — | — | — | [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) |
+
+<details><summary>Evidence: nephrotoxicity (4)</summary>
+
+> “The administration of anthracycline derivates, such as doxorubicin, may cause several side effects, including hematological disfunction, gastrointestinal toxicity, hepatotoxicity, nephrotoxicity, and cardiotoxicity.” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+> “However, the dose should be restricted in clinical application of DOX since its severe dose-dependent toxicity, such as cardiotoxicity, nephrotoxicity and myelosuppression, and cardiotoxicity ranks the most prominent” — [Ren 2016](https://doi.org/10.1016/j.ejps.2016.07.002) <sub>(review)</sub>
+
+> “Delayed nephrotoxicity in the cats that received PLD 1.5 mg/kg resulted in a dose reduction of PLD for cases entered after the first 16 months.” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(case series)</sub>
+
+> “In view of the predominant expression of OCT2 in the kidney, it is possible that this transport mechanism may contribute to urinary excretion of anthracyclines and to doxorubicin-induced nephrotoxicity [32,33].” — [Huang 2018](https://pubmed.ncbi.nlm.nih.gov/29991332) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Renal injury (1)</summary>
+
+> “However, other reports have expressed concerns regarding the drug's significant toxicity in cats, leading to renal injury, myelosuppression, anorexia, and weight loss (21).” — [Liu 2024](https://doi.org/10.3389/fvets.2024.1353775) <sub>(cohort)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hepatotoxicity | Hepatotoxicity is one of the toxicities usually associated with doxorubicin administration, which is mainly attributed to the production of highly reactive oxygen species that damage healthy cells. | — | — | — | [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604), [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) |
+| Oxidative stress | LCL-CURC-DOX treatment induced a statistically significant increase in malondialdehyde (MDA) levels in the liver of tumor-bearing mice compared to control treatment. | — | curcumin | laboratory: MDA; laboratory: TAC | [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) |
+
+<details><summary>Evidence: hepatotoxicity (2)</summary>
+
+> “Its short plasma half-life (≈10 min) and rapid metabolism requires high doses and frequent administrations to ensure therapeutic efficacy, which usually is associated with cardiotoxicity, hepatotoxicity, gastrointestinal toxicity, stomatitis, myelosuppression, and drug resistance (Gabizon et al., 1994).” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(review)</sub>
+
+> “The administration of anthracycline derivates, such as doxorubicin, may cause several side effects, including hematological disfunction, gastrointestinal toxicity, hepatotoxicity, nephrotoxicity, and cardiotoxicity.” — [Bagdasaryan 2022](https://pubmed.ncbi.nlm.nih.gov/36358854) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: oxidative stress (1)</summary>
+
+> “Of the three formulations containing DOX, only the LCL-CURC-DOX treatment significantly increased the pool of non-enzymatic antioxidants (TAC) compared to control, both in the heart (Fig. 5B, p&lt;0.05) and in the liver (Fig. 5B, p&lt;0.001). Our results showed that in the liver, but not in the heart, LCL-CURC-DOX determined a statistically significant increase in MDA level, compared to the control treatment, which could…” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(animal)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Body ache | 15 patients experienced body ache following treatment with doxorubicin-chemotherapy. | 15 patients | CYP1B1 (rs1056836) (CYP1B1 C/G+G/G) | — | [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) |
+| Myalgia | Myalgias were reported as important adverse effects in patients with chemotherapy-naive breast cancer receiving a combination of doxorubicin 60 mg/m2 and paclitaxel 125 to 200 mg/m2 every 3 weeks. | — | unknown | — | [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) |
+| Skeletal muscle atrophy | The paper reports that the anthracycline doxorubicin causes skeletal muscle degeneration as a severe adverse effect that offsets its therapeutic benefits in patients with malignancies. | — | — | — | [Yun 2026](https://pubmed.ncbi.nlm.nih.gov/41414677) |
+
+<details><summary>Evidence: body ache (1)</summary>
+
+> “The severe N-HEM-TC with grade &lt;1 were recorded as mucositis in 16 patients, CINV in 34 patients, fatigue in 37 patients, body ache in 15 patients and peripheral neuropathy in 5 patients after treatment with doxorubicin -chemotherapy.” — [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: myalgia (1)</summary>
+
+> “These arguments received support from a study [4] on the combination of doxorubicin 60 mg/m 2 intravenous bolus and paclitaxel 125 to 200 mg/m 2 3-hour infusion every 3 weeks; a cumulative response rate of 94% was obtained in patients with chemotherapy-naive breast cancer, with a 41% complete response rate. The maximum tolerated dose (MTD) of paclitaxel was 200 mg/m 2 and the doselimiting toxicities (DLT) were…” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Skeletal muscle atrophy (1)</summary>
+
+> “The anthracycline doxorubicin (Dox) is widely used to treat various malignancies because of its potent antitumor efficacy; however, its therapeutic benefits are often offset by adverse severe effects, including cardiotoxicity and skeletal muscle degeneration (Hiensch et al., 2020; Pigg et al., 2025).” — [Yun 2026](https://pubmed.ncbi.nlm.nih.gov/41414677) <sub>(review)</sub>
+
+</details>
+
+### Neoplasm
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Peripheral neuropathy | Peripheral neuropathy was recorded in 5 patients following treatment with doxorubicin-chemotherapy. | 5 patients | CYP1A1 (rs1048943) (A&gt;G) (CYP1A1 A&gt;G) | — | [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865), [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) |
+
+<details><summary>Evidence: peripheral neuropathy (2)</summary>
+
+> “The severe N-HEM-TC with grade &lt;1 were recorded as mucositis in 16 patients, CINV in 34 patients, fatigue in 37 patients, body ache in 15 patients and peripheral neuropathy in 5 patients after treatment with doxorubicin -chemotherapy.” — [A 2024](https://pubmed.ncbi.nlm.nih.gov/40092865) <sub>(in vitro)</sub>
+
+> “The maximum tolerated dose (MTD) of paclitaxel was 200 mg/m 2 and the doselimiting toxicities (DLT) were neutropenia and mucositis, with myalgias and peripheral neuropa-thy being important adverse effects.” — [Danesi 1999](https://pubmed.ncbi.nlm.nih.gov/10511918) <sub>(review)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Overexposure | Doxorubicin and/or its metabolite doxorubicinol overexposure (increased AUC) was observed in three patients with abnormal pretreatment serum bilirubin levels, specifically due to doxorubicin itself in two patients and doxorubicinol in one patient. | 3/28 | elevated pre-treatment serum bilirubin | laboratory: liver function | [Frenay 1989](https://pubmed.ncbi.nlm.nih.gov/2702975) |
+
+<details><summary>Evidence: overexposure (1)</summary>
+
+> “Dox and/or doxol overexposure was patent in all three patients with elevated pre-treatment serum bilirubin. ... Drug overexposure (AUC) was patent for all three patients with abnormal bilirubin levels; it was due to dox itself for two patients and doxol for one patient.” — [Frenay 1989](https://pubmed.ncbi.nlm.nih.gov/2702975) <sub>(case report)</sub>
+
+</details>
+
+### Psychiatric
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Anxiety | The paper states that doxorubicin-related toxicity can result in mental health issues due to anxiety and depression in the context of cancer survivorship. | — | — | — | [Nyangwara 2024](https://pubmed.ncbi.nlm.nih.gov/36630266) |
+| Depression | The paper states that doxorubicin-related toxicity can result in mental health issues due to anxiety and depression in cancer survivors, without specifying the frequency or population size affected. | — | — | — | [Nyangwara 2024](https://pubmed.ncbi.nlm.nih.gov/36630266) |
+
+<details><summary>Evidence: Anxiety (1)</summary>
+
+> “It also should be mentioned that cancer survivorship goes beyond disease control since doxorubicin-related toxicity can also result in mental health issues due to anxiety and depression.” — [Nyangwara 2024](https://pubmed.ncbi.nlm.nih.gov/36630266) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Depression (1)</summary>
+
+> “It also should be mentioned that cancer survivorship goes beyond disease control since doxorubicin-related toxicity can also result in mental health issues due to anxiety and depression.” — [Nyangwara 2024](https://pubmed.ncbi.nlm.nih.gov/36630266) <sub>(review)</sub>
+
+</details>
+
+### Reproductive and foetal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Tumor fibrosis | In patients with platinum-resistant ovarian cancer, doxorubicin-induced tumor fibrosis and associated changes in tissue conductivity may affect the distribution of TTFields within the tumor. | — | TTFields | — | [Fuso 2025](https://pubmed.ncbi.nlm.nih.gov/41033072) |
+
+<details><summary>Evidence: tumor fibrosis (1)</summary>
+
+> “One possible explanation for this finding is that doxorubicin-induced tumor fibrosis and associated changes in tissue conductivity may affect the distribution of TTFields within the tumor, thereby reducing their therapeutic efficacy [59,60].” — [Fuso 2025](https://pubmed.ncbi.nlm.nih.gov/41033072) <sub>(case series)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Alopecia | The paper states that the toxicity profile of pegylated liposomal doxorubicin includes minimal alopecia, which is described as having a greatly reduced incidence compared with free doxorubicin. | greatly reduced incidence | cumulative dose; dose related | — | Gabizon 2003, [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244), [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961), [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) |
+| Palmar-plantar erythrodysaesthesia | Palmar-plantar erythrodysaesthesia, characterised by ulceration, erythema and desquamation on the palms of the hands and soles of the feet with pain and inflammation, occurs in 3.4% (24/705) of patients with AIDS-related Kaposi's sarcoma treated with liposomal doxorubicin, most commonly after 6 to… | 3.4% | higher than recommended doses or shorter treatment intervals | home: palmar-plantar erythrodysaesthesia; primary_care: palmar-plantar erythrodysaesthesia | Coukell 1997, [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207) |
+| Cutaneous toxicity | Cutaneous toxicity occurred in 22% of cats. | 22% | — | — | [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) |
+| Hand-foot syndrome | The paper reports that hand-foot syndrome occurred in dogs treated with PLD, where the incidence of serious hand-foot syndrome was 4.2-fold greater in the placebo group than in the pyridoxine group, and it was described as a cumulative dose-limiting toxicity. | 4.2-fold higher incidence of HFS | pyridoxine (B6) | — | [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) |
+| Local irritation | Extravasation of liposomal doxorubicin was associated with only transient and mild local irritation at the infusion site in 8 documented cases. | 8 documented cases | — | — | Coukell 1997 |
+| Palmar plantar erythrodysaesthesia | The paper states that the lack of PEG in the Myocet formulation diminished the painful palmar plantar skin erytrodysesthesia compared to free doxorubicin and Doxil. | — | lack of PEG | — | [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) |
+| Rash | Two patients in the phase I dose-escalation trial experienced grade 2 rash. | two patients | — | — | [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207) |
+| Severe tissue necrosis | The paper states that subcutaneous, intramuscular, and intrathecal application of doxorubicin cannot be used because severe tissue necrosis results, similar to extravasation. | — | — | — | [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) |
+| Skin accumulation | Although Doxil enhanced the therapeutic efficacy of DOX and changed its biodistribution, it accumulated in the skin, limiting the use of higher doses of DOX. | — | higher doses | — | [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) |
+
+<details><summary>Evidence: alopecia (6)</summary>
+
+> “The toxicity profile of pegylated liposomal doxorubicin is characterised by dose-limiting mucosal and cutaneous toxicities, mild myelosuppression, decreased cardiotoxicity compared with free doxorubicin and minimal alopecia. ... Pegylated liposomes also accumulate in skin and mucous membranes, and when loaded with doxorubicin produce a toxicity profile that, when compared with free doxorubicin, is characterised by…” — Gabizon 2003 <sub>(review)</sub>
+
+> “Hair loss starts approximately 3 weeks after the first administration of doxorubicin; however, hair growth resumes a few weeks after the last therapy (Maral & Jouanne 1981).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+> “The most commonly reported non-hematological toxicities were alopecia, fatigue, nausea and anorexia, with an occurrence of more than 40% as shown in Table 3.” — [Ebaid 2024](https://pubmed.ncbi.nlm.nih.gov/38491961) <sub>(cohort)</sub>
+
+> “Treatment with cytostatic drugs is often associated with severe discomfort for the patients. Nausea, vomiting, alopecia and myelosupression occur frequently.” — [Eksborg 1989](https://pubmed.ncbi.nlm.nih.gov/2611038) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: palmar-plantar erythrodysaesthesia (2)</summary>
+
+> “24 of 705 patients (3.4%) who received liposomal doxorubicin (usually 20 mg/rn? every 2 to 3 weeks) experienced palmar-plantar erythrodysaesthesia; however, only 3 discontinued treatment for this reason.” — Coukell 1997 <sub>(case report)</sub>
+
+> “However, approximately 50% of patients treated with Caelyx® suffer from palmar-plantar erythrodysaesthesia (PPE) [5, 13], a painful inflammation of the palms of the hands and soles of the feet. ... In the dose escalation part of the first-in-human phase I clinical trial including 12 patients (NCT03387917), grade 2/3 cumulative PPE was observed in four patients [19].” — [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Cutaneous toxicity (1)</summary>
+
+> “Cutaneous toxicity occurred in 22% of cats.” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hand-foot syndrome (1)</summary>
+
+> “During repeat-dose toxicity testing of PLD in three animal species, dermal lesions such as hand-foot syndrome proved to be dose-limiting. 9 However, the severity of these lesions can be minimized by decreasing dosage or increasing dose interval. 51” — [Vail 2004](https://doi.org/10.1053/j.seminoncol.2004.08.002) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: local irritation (1)</summary>
+
+> “Unlike extravasation of standard doxorubicin, which may result in severe local inflammation and tissue damage, extravasation of liposomal doxorubicin was associated with only transient, mild irritation at the infusion site in the 8 documented Drugs 1997 Mar ; 53 (3) cases.” — Coukell 1997 <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: palmar plantar erythrodysaesthesia (1)</summary>
+
+> “the lack of PEG diminishing the painful palmar plantar skin erytrodysesthesia and providing a better safety profile for Myocet over free DOX and Doxil (Batist et al., 2001;Leonard et al., 2009;Tahover et al., 2015).” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: rash (1)</summary>
+
+> “Moreover, two patients experienced grade 2 mucositis and further two patients experienced grade 2 rash [19].” — [Mc 2024](https://pubmed.ncbi.nlm.nih.gov/38878207) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: severe tissue necrosis (1)</summary>
+
+> “Subcutaneous, intramuscular and intrathecal application cannot be used, as severe tissue necrosis results, as in extravasation (Maral & Jouann" 1981).” — [Speth 1988](https://pubmed.ncbi.nlm.nih.gov/3042244) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: skin accumulation (1)</summary>
+
+> “Although Doxil enhanced the therapeutic efficacy of DOX and changed its biodistribution, it accumulated in the skin, limiting the use of higher doses of DOX (Fukuda et al., 2017;Lorusso et al., 2007;Waterhouse et al., 2001).” — [Sesarman 2021](https://doi.org/10.1080/08982104.2019.1682604) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doxorubicin).
@@ -199,7 +1071,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4961 matched, 158 returned
 - **screened:** 60  ·  **relevant:** 12
-- **records:** 24  ·  extracted 7  ·  needs_review 4  ·  rejected 13  ·  stale 0
+- **records:** 24  ·  extracted 7  ·  needs review 4  ·  rejected 13  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -226,7 +1098,7 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Dalske_1988.pdf` | Dalske HF et al., Effect of low-dose doxorubicin on calci…, European journal of cancer… (1988) | pd | 4 | [10.1016/0277-5379(88)90146-0](https://doi.org/10.1016/0277-5379(88)90146-0) | [3409947](https://www.ncbi.nlm.nih.gov/pubmed/3409947) | metadata signals extractable PD data (EC50) |
 | `Roundhill_2019.pdf` | Roundhill EA et al., ABCG1 and Pgp identify drug resistant,…, Cancer letters (2019) | pd | 4 | [10.1016/j.canlet.2019.03.011](https://doi.org/10.1016/j.canlet.2019.03.011) | [30910588](https://www.ncbi.nlm.nih.gov/pubmed/30910588) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-22T12:35:11.619356+00:00</sub>
+<sub>queue written 2026-10-22 12:35 UTC</sub>
 
 ## Screened and excluded
 
@@ -378,5 +1250,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-22 12:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D&body=Drug%3A%20doxorubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 12:35 UTC</sub>

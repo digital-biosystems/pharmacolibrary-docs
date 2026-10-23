@@ -56,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 441 matched, 257 returned
 - **screened:** 19  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -65,23 +65,23 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Giulidori_1984.pdf` | Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal of clinica… (1984) | popPK | 10 | not captured | [6489422](https://pubmed.ncbi.nlm.nih.gov/6489422) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, CL) for S-adenosyl-L-methionine (ademetionine) in humans with all numeric values present in the abstract. |
+| `Giulidori_1984.pdf` | Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal of clinica… (1984) | popPK | 10 |  | [6489422](https://pubmed.ncbi.nlm.nih.gov/6489422) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, CL) for S-adenosyl-L-methionine (ademetionine) in humans with all numeric values present in the abstract. |
 | `Bhutkar_2025.pdf` | Bhutkar M et al., Structure-based identification of herba…, FEBS letters (2025) | pd | 4 | [10.1002/1873-3468.70054](https://doi.org/10.1002/1873-3468.70054) | [40353321](https://www.ncbi.nlm.nih.gov/pubmed/40353321) | metadata signals extractable PD data (IC50) |
 | `Buker_2020.pdf` | Buker SM et al., A Mass Spectrometric Assay of METTL3/ME…, SLAS discovery : advancing… (2020) | pd | 4 | [10.1177/2472555219878408](https://doi.org/10.1177/2472555219878408) | [31585521](https://www.ncbi.nlm.nih.gov/pubmed/31585521) | metadata signals extractable PD data (IC50) |
 | `Choi_2015.pdf` | Choi HJ et al., Evaluation of anti-coccidial effects of…, Archives of pharmacal resea… (2015) | pd | 4 | [10.1007/s12272-014-0400-y](https://doi.org/10.1007/s12272-014-0400-y) | [24824336](https://www.ncbi.nlm.nih.gov/pubmed/24824336) | metadata signals extractable PD data (EC50) |
 | `Cumming_1992.pdf` | Cumming P et al., Inhibition of histamine-N-methyltransfe…, Biochemical pharmacology (1992) | pd | 4 | [10.1016/0006-2952(92)90133-4](https://doi.org/10.1016/0006-2952(92)90133-4) | [1530666](https://www.ncbi.nlm.nih.gov/pubmed/1530666) | metadata signals extractable PD data (IC50) |
 | `Dorhout_1997.pdf` | Dorhout B et al., 4-Amidinoindan-1-one 2'-amidinohydrazon…, Biochimica et biophysica ac… (1997) | pd | 4 | [10.1016/s0304-4165(96)00134-1](https://doi.org/10.1016/s0304-4165(96)00134-1) | [9133651](https://www.ncbi.nlm.nih.gov/pubmed/9133651) | metadata signals extractable PD data (IC50) |
-| `Hasobe_1989.pdf` | Hasobe M et al., Elucidation of the mechanism by which h…, Molecular pharmacology (1989) | pd | 4 | not captured | [2779528](https://www.ncbi.nlm.nih.gov/pubmed/2779528) | metadata signals extractable PD data (IC50) |
+| `Hasobe_1989.pdf` | Hasobe M et al., Elucidation of the mechanism by which h…, Molecular pharmacology (1989) | pd | 4 |  | [2779528](https://www.ncbi.nlm.nih.gov/pubmed/2779528) | metadata signals extractable PD data (IC50) |
 | `Hernandez_2019.pdf` | Hernandez J et al., Optimization of a fragment linking hit…, European journal of medicin… (2019) | pd | 4 | [10.1016/j.ejmech.2018.09.056](https://doi.org/10.1016/j.ejmech.2018.09.056) | [30368131](https://www.ncbi.nlm.nih.gov/pubmed/30368131) | metadata signals extractable PD data (IC50) |
 | `Kenyon_1996.pdf` | Kenyon SH et al., Stimulation in vitro of vitamin B12-dep…, The Biochemical journal (1996) | pd | 4 | [10.1042/bj3160661](https://doi.org/10.1042/bj3160661) | [8687414](https://www.ncbi.nlm.nih.gov/pubmed/8687414) | metadata signals extractable PD data (EC50) |
 | `Nishibori_1991.pdf` | Nishibori M et al., 9-Amino-1,2,3,4-tetrahydroacridine is a…, Japanese journal of pharmac… (1991) | pd | 4 | [10.1254/jjp.55.539](https://doi.org/10.1254/jjp.55.539) | [1886293](https://www.ncbi.nlm.nih.gov/pubmed/1886293) | metadata signals extractable PD data (IC50) |
 | `Ogawa_1997.pdf` | Ogawa H et al., Recombinant expression of rat glycine N…, The Biochemical journal (1997) | pd | 4 | [10.1042/bj3270407](https://doi.org/10.1042/bj3270407) | [9359408](https://www.ncbi.nlm.nih.gov/pubmed/9359408) | metadata signals extractable PD data (sigmoid) |
 | `Porter_1984.pdf` | Porter CW et al., Growth inhibition by methionine analog…, Biochemical and biophysical… (1984) | pd | 4 | [10.1016/0006-291x(84)90482-0](https://doi.org/10.1016/0006-291x(84)90482-0) | [6743338](https://www.ncbi.nlm.nih.gov/pubmed/6743338) | metadata signals extractable PD data (IC50) |
 | `Votruba_1990.pdf` | Votruba I et al., 2-Methylpropyl ester of 3-(adenin-9-yl)…, Biochemical pharmacology (1990) | pd | 4 | [10.1016/0006-2952(90)90523-n](https://doi.org/10.1016/0006-2952(90)90523-n) | [2337414](https://www.ncbi.nlm.nih.gov/pubmed/2337414) | metadata signals extractable PD data (IC50) |
-| `Tong_2015.pdf` | Tong S et al., Effect of ademetionine on cytochrome P4…, International journal of cl… (2015) | pgx | 7 | not captured | [26309647](https://www.ncbi.nlm.nih.gov/pubmed/26309647) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+| `Tong_2015.pdf` | Tong S et al., Effect of ademetionine on cytochrome P4…, International journal of cl… (2015) | pgx | 7 |  | [26309647](https://www.ncbi.nlm.nih.gov/pubmed/26309647) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 | `Aksoy_1993.pdf` | Aksoy S et al., Catechol O-methyltransferase pharmacoge…, Pharmacogenetics (1993) | pgx | 5 | [10.1097/00008571-199304000-00008](https://doi.org/10.1097/00008571-199304000-00008) | [8518836](https://www.ncbi.nlm.nih.gov/pubmed/8518836) | metadata signals extractable PGX data (COMT) |
 | `Breen_2005.pdf` | Breen DP et al., Pharmacogenetic association with advers…, Liver transplantation : off… (2005) | pgx | 5 | [10.1002/lt.20377](https://doi.org/10.1002/lt.20377) | [15973722](https://www.ncbi.nlm.nih.gov/pubmed/15973722) | metadata signals extractable PGX data (TPMT) |
-| `Houlder_2017.pdf` | Houlder EL et al., Expression of the genes facilitating me…, Clinical and experimental r… (2017) | pgx | 5 | not captured | [28598776](https://www.ncbi.nlm.nih.gov/pubmed/28598776) | metadata signals extractable PGX data (SLC19A1) |
+| `Houlder_2017.pdf` | Houlder EL et al., Expression of the genes facilitating me…, Clinical and experimental r… (2017) | pgx | 5 |  | [28598776](https://www.ncbi.nlm.nih.gov/pubmed/28598776) | metadata signals extractable PGX data (SLC19A1) |
 | `Joshi_2026.pdf` | Joshi K et al., Structural and Functional Disruption of…, ACS omega (2026) | pgx | 5 | [10.1021/acsomega.5c08089](https://doi.org/10.1021/acsomega.5c08089) | [42396091](https://www.ncbi.nlm.nih.gov/pubmed/42396091) | metadata signals extractable PGX data (TPMT) |
 | `Larif_2013.pdf` | Larif S et al., Insight into TPMT(∗)23 mutation mis-fol…, Journal of biomolecular str… (2013) | pgx | 5 | [10.1080/07391102.2012.721495](https://doi.org/10.1080/07391102.2012.721495) | [23025308](https://www.ncbi.nlm.nih.gov/pubmed/23025308) | metadata signals extractable PGX data (TPMT) |
 | `Leclerc_2019.pdf` | Leclerc D et al., Mild Methylenetetrahydrofolate Reductas…, Molecular nutrition & food… (2019) | pgx | 5 | [10.1002/mnfr.201801001](https://doi.org/10.1002/mnfr.201801001) | [30408316](https://www.ncbi.nlm.nih.gov/pubmed/30408316) | metadata signals extractable PGX data (Cyp7a1) |
@@ -91,7 +91,7 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Van_1992.pdf` | Van Loon JA et al., Human kidney thiopurine methyltransfera…, Biochemical pharmacology (1992) | pgx | 5 | [10.1016/0006-2952(92)90416-g](https://doi.org/10.1016/0006-2952(92)90416-g) | [1510725](https://www.ncbi.nlm.nih.gov/pubmed/1510725) | metadata signals extractable PGX data (TPMT) |
 | `Wennerstrand_2017.pdf` | Wennerstrand P et al., In Vitro Protein Stability of Two Natur…, ACS omega (2017) | pgx | 5 | [10.1021/acsomega.7b00801](https://doi.org/10.1021/acsomega.7b00801) | [30023734](https://www.ncbi.nlm.nih.gov/pubmed/30023734) | metadata signals extractable PGX data (TPMT) |
 
-<sub>queue written 2026-10-05T10:21:39.704718+00:00</sub>
+<sub>queue written 2026-10-05 10:21 UTC</sub>
 
 ## Screened and excluded
 
@@ -428,5 +428,5 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bademetionine%5D&body=Drug%3A%20ademetionine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ademetionine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

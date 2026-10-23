@@ -120,7 +120,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 484 matched, 140 returned
 - **screened:** 16  ·  **relevant:** 16
-- **records:** 16  ·  extracted 2  ·  needs_review 6  ·  rejected 8  ·  stale 0
+- **records:** 16  ·  extracted 2  ·  needs review 6  ·  rejected 8  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -149,13 +149,13 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lanoiselée_2020.pdf` | Lanoiselée J et al., Pharmacokinetic Model for Cefuroxime Do…, Antimicrobial agents and ch… (2020) | popPK | 9 | [10.1128/AAC.01687-20](https://doi.org/10.1128/AAC.01687-20) | [33020154](https://pubmed.ncbi.nlm.nih.gov/33020154) | The paper describes a relevant population pharmacokinetic model for cefuroxime in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
 | `Pelligand_2024.pdf` | Pelligand L et al., Population pharmacokinetic meta-analysi…, Veterinary journal (London,… (2024) | popPK | 9 | [10.1016/j.tvjl.2024.106136](https://doi.org/10.1016/j.tvjl.2024.106136) | [38759725](https://pubmed.ncbi.nlm.nih.gov/38759725) | Study models cefuroxime PK in dogs but specific parameter values (CL, V) are not listed in the text, only dosing intervals and peak times are derived. |
 | `Wittman_1983.pdf` | Wittman DH et al., Penetration of eight beta-lactam antibi…, Archives of surgery (Chicag… (1983) | popPK | 9 | [10.1001/archsurg.1983.01390020055010](https://doi.org/10.1001/archsurg.1983.01390020055010) | [6849637](https://pubmed.ncbi.nlm.nih.gov/6849637) | The study describes a pharmacokinetic investigation using a two-compartment model for cefuroxime, but the extracted evidence contains only methods and study design, with no numeric parameter values (CL, V, t1/2) provided. |
-| `Akhtamova_1985.pdf` | Akhtamova ZM et al., [Pharmacokinetics of cefuroxime in preg…, Antibiotiki i meditsinskaia… (1985) | popPK | 8 | not captured | [4004185](https://pubmed.ncbi.nlm.nih.gov/4004185) | The study reports a one-compartment pharmacokinetic model for cefuroxime in humans but provides only qualitative descriptions (e.g., "increased") without specific numeric parameter values in the provided text. |
+| `Akhtamova_1985.pdf` | Akhtamova ZM et al., [Pharmacokinetics of cefuroxime in preg…, Antibiotiki i meditsinskaia… (1985) | popPK | 8 |  | [4004185](https://pubmed.ncbi.nlm.nih.gov/4004185) | The study reports a one-compartment pharmacokinetic model for cefuroxime in humans but provides only qualitative descriptions (e.g., "increased") without specific numeric parameter values in the provided text. |
 | `Albarellos_2020.pdf` | Albarellos GA et al., Effect of food on the pharmacokinetics…, Journal of veterinary pharm… (2020) | popPK | 8 | [10.1111/jvp.12854](https://doi.org/10.1111/jvp.12854) | [32157713](https://pubmed.ncbi.nlm.nih.gov/32157713) | The study reports pharmacokinetic parameters (bioavailability, Cmax, AUC, absorption half-life) for cefuroxime axetil in dogs, which relates to the active drug cefuroxime, but specific disposition parameters like clearance or volume of distribution are not explicitly listed in the provided text. |
-| `Eandi_1982.pdf` | Eandi M et al., Pharmacokinetics of some cephalosporins…, Methods and findings in exp… (1982) | popPK | 8 | not captured | [7121129](https://pubmed.ncbi.nlm.nih.gov/7121129) | The study reports PK parameters for cefuroxime in rabbits using a two-compartment model, but the specific numeric values are not present in the provided abstract text. |
+| `Eandi_1982.pdf` | Eandi M et al., Pharmacokinetics of some cephalosporins…, Methods and findings in exp… (1982) | popPK | 8 |  | [7121129](https://pubmed.ncbi.nlm.nih.gov/7121129) | The study reports PK parameters for cefuroxime in rabbits using a two-compartment model, but the specific numeric values are not present in the provided abstract text. |
 | `Verhagen_1994.pdf` | Verhagen CA et al., The renal clearance of cefuroxime and c…, British journal of clinical… (1994) | popPK | 8 | [10.1111/j.1365-2125.1994.tb04260.x](https://doi.org/10.1111/j.1365-2125.1994.tb04260.x) | [8186065](https://pubmed.ncbi.nlm.nih.gov/8186065) | The study reports specific quantitative renal clearance parameters (EC50, Rtub,max) for cefuroxime in healthy human subjects, with values explicitly provided in the text. |
 | `Děrgel_2021.pdf` | Děrgel M et al., Lung Collapse during Mini-Thoracotomy R…, Surgical infections (2021) | popPK | 6 | [10.1089/sur.2019.273](https://doi.org/10.1089/sur.2019.273) | [32633629](https://pubmed.ncbi.nlm.nih.gov/32633629) | Study reports PK/PD parameters (penetration factors, ratios) for cefuroxime in pigs, but specific clearance/volume values are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-10-07T11:03:56.545813+00:00</sub>
+<sub>queue written 2026-10-07 11:03 UTC</sub>
 
 ## Screened and excluded
 
@@ -221,5 +221,5 @@ _25 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 11:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefuroxime%5D&body=Drug%3A%20cefuroxime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefuroxime/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:04 UTC</sub>

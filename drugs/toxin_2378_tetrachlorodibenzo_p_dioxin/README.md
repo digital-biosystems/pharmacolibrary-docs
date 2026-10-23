@@ -3,8 +3,7 @@
 # 2,3,7,8-Tetrachlorodibenzo-p-dioxin
 
 - **generic name:** 2,3,7,8-Tetrachlorodibenzo-p-dioxin
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** [CID 15625](https://pubchem.ncbi.nlm.nih.gov/compound/15625)
+- **DrugBank:** none · **PubChem:** [CID 15625](https://pubchem.ncbi.nlm.nih.gov/compound/15625)
 - **groups:** not captured
 
 ## popPK records
@@ -31,7 +30,7 @@
 
 - **PubMed hits:** 1006 matched, 124 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -45,7 +44,7 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Parhizgari_2014.pdf` | Parhizgari Z et al., A physiologically-based pharmacokinetic…, Environmental toxicology an… (2014) | popPK | 9 | [10.1002/etc.2504](https://doi.org/10.1002/etc.2504) | [24375498](https://pubmed.ncbi.nlm.nih.gov/24375498) | The paper describes a physiologically-based pharmacokinetic model for the subject drug in fish, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Ruiz_2014.pdf` | Ruiz P et al., Application of pharmacokinetic modellin…, SAR and QSAR in environment… (2014) | popPK | 9 | [10.1080/1062936X.2014.962083](https://doi.org/10.1080/1062936X.2014.962083) | [25397879](https://pubmed.ncbi.nlm.nih.gov/25397879) | The paper describes a pharmacokinetic model for TCDD and its validation against human data, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | `Weber_1993.pdf` | Weber LW et al., Tissue distribution and toxicokinetics…, Fundamental and applied tox… (1993) | popPK | 9 | [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129) | [8253305](https://pubmed.ncbi.nlm.nih.gov/8253305) | The study reports quantitative toxicokinetic parameters, including a terminal half-life of 16 days and excretion half-life of 16.3 days, for TCDD in rats. |
-| `Birnbaum_1986.pdf` | Birnbaum LS, Distribution and excretion of 2,3,7,8-t…, Drug metabolism and disposi… (1986) | popPK | 8 | not captured | [2868862](https://pubmed.ncbi.nlm.nih.gov/2868862) | The study reports quantitative distribution and excretion data for TCDD in mice, but specific numeric PK parameters (like CL or V) are not explicitly listed in the provided abstract text. |
+| `Birnbaum_1986.pdf` | Birnbaum LS, Distribution and excretion of 2,3,7,8-t…, Drug metabolism and disposi… (1986) | popPK | 8 |  | [2868862](https://pubmed.ncbi.nlm.nih.gov/2868862) | The study reports quantitative distribution and excretion data for TCDD in mice, but specific numeric PK parameters (like CL or V) are not explicitly listed in the provided abstract text. |
 | `Kim_2002.pdf` | Kim AH et al., Impact of physiologically based pharmac…, Regulatory toxicology and p… (2002) | popPK | 8 | [10.1006/rtph.2002.1590](https://doi.org/10.1006/rtph.2002.1590) | [12473413](https://pubmed.ncbi.nlm.nih.gov/12473413) | The paper describes a PBPK model for TCDD in rats, but the specific numeric parameter values (clearance, volume, etc.) are not explicitly listed in the provided text, only the resulting body burden comparisons. |
 | `Kleeman_1986.pdf` | Kleeman JM et al., 2,3,7,8-Tetrachlorodibenzo-p-dioxin met…, Toxicology and applied phar… (1986) | popPK | 8 | [10.1016/0041-008x(86)90222-x](https://doi.org/10.1016/0041-008x(86)90222-x) | [3705070](https://pubmed.ncbi.nlm.nih.gov/3705070) | The study reports quantitative disposition parameters (half-lives for whole-body and specific organs) for TCDD in yellow perch, which are present in the text. |
 | `Boers_2012.pdf` | Boers D et al., Plasma dioxin levels and cause-specific…, Occupational and environmen… (2012) | pd | 5 | [10.1136/oem.2010.060426](https://doi.org/10.1136/oem.2010.060426) | [21810927](https://www.ncbi.nlm.nih.gov/pubmed/21810927) | metadata signals extractable PD data (exposure-response) |
@@ -68,7 +67,7 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Slezak_1999.pdf` | Slezak BP et al., 2,3,7,8-Tetrachlorodibenzo-p-dioxin-med…, Biochemical and biophysical… (1999) | pgx | 7 | [10.1006/bbrc.1999.1518](https://doi.org/10.1006/bbrc.1999.1518) | [10529372](https://www.ncbi.nlm.nih.gov/pubmed/10529372) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Wang_1997.pdf` | Wang X et al., Determination of parameters responsible…, Toxicology and applied phar… (1997) | pgx | 7 | [10.1006/taap.1997.8242](https://doi.org/10.1006/taap.1997.8242) | [9356318](https://www.ncbi.nlm.nih.gov/pubmed/9356318) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-08T10:38:54.794266+00:00</sub>
+<sub>queue written 2026-09-08 10:38 UTC</sub>
 
 ## Screened and excluded
 
@@ -182,5 +181,5 @@ _27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-09-08 05:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5B2378_tetrachlorodibenzo_p_dioxin%5D&body=Drug%3A%202378_tetrachlorodibenzo_p_dioxin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-09-08 05:55 UTC</sub>

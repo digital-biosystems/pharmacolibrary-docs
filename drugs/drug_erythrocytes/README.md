@@ -4,7 +4,7 @@
 
 - **generic name:** erythrocytes
 - **ATC codes:** `B05AX01`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -65,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 2647 matched, 215 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -79,10 +79,10 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Peterson_1985.pdf` | Peterson DP et al., Hematological responses to arsine expos…, Fundamental and applied tox… (1985) | pd | 5 | [10.1016/0272-0590(85)90097-1](https://doi.org/10.1016/0272-0590(85)90097-1) | [4007307](https://www.ncbi.nlm.nih.gov/pubmed/4007307) | metadata signals extractable PD data (exposureresponse) |
 | `Tan_2024.pdf` | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | pd | 5 | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) | [38967300](https://www.ncbi.nlm.nih.gov/pubmed/38967300) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Ciftci_2022.pdf` | Ciftci E et al., Inhibition effect of thymoquinone and l…, Journal of biomolecular str… (2022) | pd | 4 | [10.1080/07391102.2021.1939787](https://doi.org/10.1080/07391102.2021.1939787) | [34138692](https://www.ncbi.nlm.nih.gov/pubmed/34138692) | metadata signals extractable PD data (IC50) |
-| `Hollander_1972.pdf` | Hollander d' F et al., Movement of cholesterol in vitro in rat…, Journal of lipid research (1972) | pd | 4 | not captured | [4641415](https://www.ncbi.nlm.nih.gov/pubmed/4641415) | metadata signals extractable PD data (turnovermodel) |
+| `Hollander_1972.pdf` | Hollander d' F et al., Movement of cholesterol in vitro in rat…, Journal of lipid research (1972) | pd | 4 |  | [4641415](https://www.ncbi.nlm.nih.gov/pubmed/4641415) | metadata signals extractable PD data (turnovermodel) |
 | `Leinders_1992.pdf` | Leinders T et al., Single Ca(2+)-activated K+ channels in…, Biochimica et biophysica ac… (1992) | pd | 4 | [10.1016/0005-2736(92)90255-k](https://doi.org/10.1016/0005-2736(92)90255-k) | [1420271](https://www.ncbi.nlm.nih.gov/pubmed/1420271) | metadata signals extractable PD data (sigmoid) |
 | `Ruiz_1986.pdf` | Ruiz J et al., A dose-response study of forskolin, sti…, Archives of biochemistry an… (1986) | pd | 4 | [10.1016/0003-9861(86)90060-3](https://doi.org/10.1016/0003-9861(86)90060-3) | [3024568](https://www.ncbi.nlm.nih.gov/pubmed/3024568) | metadata signals extractable PD data (EC50) |
-| `Scheufler_1990.pdf` | Scheufler E et al., Uptake of catamphiphilic drugs into ery…, The Journal of pharmacology… (1990) | pd | 4 | not captured | [2299596](https://www.ncbi.nlm.nih.gov/pubmed/2299596) | metadata signals extractable PD data (EC50) |
+| `Scheufler_1990.pdf` | Scheufler E et al., Uptake of catamphiphilic drugs into ery…, The Journal of pharmacology… (1990) | pd | 4 |  | [2299596](https://www.ncbi.nlm.nih.gov/pubmed/2299596) | metadata signals extractable PD data (EC50) |
 | `Sidhaye_2016.pdf` | Sidhaye AA et al., Bio-inspired artemether-loaded human se…, Nanomedicine (London, Engla… (2016) | pd | 4 | [10.2217/nnm-2016-0235](https://doi.org/10.2217/nnm-2016-0235) | [27759489](https://www.ncbi.nlm.nih.gov/pubmed/27759489) | metadata signals extractable PD data (IC50) |
 | `Tuttle_1983.pdf` | Tuttle JV et al., Effects of acyclovir and its metabolite…, Biochemical pharmacology (1983) | pd | 4 | [10.1016/0006-2952(83)90242-3](https://doi.org/10.1016/0006-2952(83)90242-3) | [6639669](https://www.ncbi.nlm.nih.gov/pubmed/6639669) | metadata signals extractable PD data (EC50) |
 | `Alonge_2024.pdf` | Alonge M et al., Determining Plasma Tacrolimus Concentra…, Therapeutic drug monitoring (2024) | pgx | 8 | [10.1097/FTD.0000000000001135](https://doi.org/10.1097/FTD.0000000000001135) | [38193880](https://www.ncbi.nlm.nih.gov/pubmed/38193880) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
@@ -92,7 +92,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Nielsen_2015.pdf` | Nielsen SN et al., Pharmacokinetics of 6-Thioguanine and 6…, Journal of pediatric hemato… (2015) | pgx | 7 | [10.1097/MPH.0000000000000246](https://doi.org/10.1097/MPH.0000000000000246) | [25171455](https://www.ncbi.nlm.nih.gov/pubmed/25171455) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
 | `Choi_2024.pdf` | Choi R et al., Genetic polymorphisms and their associa…, European journal of pharmac… (2024) | pgx | 5 | [10.1016/j.ejps.2024.106878](https://doi.org/10.1016/j.ejps.2024.106878) | [39159789](https://www.ncbi.nlm.nih.gov/pubmed/39159789) | metadata signals extractable PGX data (TPMT) |
 | `Kröplin_1998.pdf` | Kröplin T et al., Thiopurine S-methyltransferase activity…, European journal of clinica… (1998) | pgx | 5 | [10.1007/s002280050457](https://doi.org/10.1007/s002280050457) | [9681671](https://www.ncbi.nlm.nih.gov/pubmed/9681671) | metadata signals extractable PGX data (TPMT) |
-| `Kurilovich_2015.pdf` | Kurilovich SA et al., [VISCOELASTISITY AND ELECTRICAL PARAMET…, Eksperimental'naia i klinic… (2015) | pgx | 5 | not captured | [27214984](https://www.ncbi.nlm.nih.gov/pubmed/27214984) | metadata signals extractable PGX data (UGT1A1) |
+| `Kurilovich_2015.pdf` | Kurilovich SA et al., [VISCOELASTISITY AND ELECTRICAL PARAMET…, Eksperimental'naia i klinic… (2015) | pgx | 5 |  | [27214984](https://www.ncbi.nlm.nih.gov/pubmed/27214984) | metadata signals extractable PGX data (UGT1A1) |
 | `Li_2024.pdf` | Li L et al., Determination of Thiopurine S-Methyltra…, Methods in molecular biolog… (2024) | pgx | 5 | [10.1007/978-1-0716-3541-4_43](https://doi.org/10.1007/978-1-0716-3541-4_43) | [38036847](https://www.ncbi.nlm.nih.gov/pubmed/38036847) | metadata signals extractable PGX data (TPMT) |
 | `McLeod_1994.pdf` | McLeod HL et al., Thiopurine methyltransferase activity i…, Clinical pharmacology and t… (1994) | pgx | 5 | [10.1038/clpt.1994.4](https://doi.org/10.1038/clpt.1994.4) | [8299312](https://www.ncbi.nlm.nih.gov/pubmed/8299312) | metadata signals extractable PGX data (TPMT) |
 | `McLeod_1995.pdf` | McLeod HL et al., Higher activity of polymorphic thiopuri…, Pharmacogenetics (1995) | pgx | 5 | [10.1097/00008571-199510000-00003](https://doi.org/10.1097/00008571-199510000-00003) | [8563768](https://www.ncbi.nlm.nih.gov/pubmed/8563768) | metadata signals extractable PGX data (TPMT) |
@@ -101,7 +101,7 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Stocco_2015.pdf` | Stocco G et al., Thiopurine metabolites variations durin…, World journal of gastroente… (2015) | pgx | 5 | [10.3748/wjg.v21.i12.3571](https://doi.org/10.3748/wjg.v21.i12.3571) | [25834322](https://www.ncbi.nlm.nih.gov/pubmed/25834322) | metadata signals extractable PGX data (NAT2) |
 | `Xiang_2021.pdf` | Xiang GQ et al., [Gilbert's syndrome: hyperbilirubinemia…, Zhonghua gan zang bing za z… (2021) | pgx | 5 | [10.3760/cma.j.cn501113-20200212-00041](https://doi.org/10.3760/cma.j.cn501113-20200212-00041) | [34814402](https://www.ncbi.nlm.nih.gov/pubmed/34814402) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-10-05T22:01:59.616778+00:00</sub>
+<sub>queue written 2026-10-05 22:01 UTC</sub>
 
 ## Screened and excluded
 
@@ -317,5 +317,5 @@ _26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berythrocytes%5D&body=Drug%3A%20erythrocytes%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erythrocytes/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

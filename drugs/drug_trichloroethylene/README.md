@@ -4,7 +4,7 @@
 
 - **generic name:** trichloroethylene
 - **ATC codes:** `N01AB05`
-- **DrugBank:** [DB13323](https://go.drugbank.com/drugs/DB13323) · **PubChem:** not captured
+- **DrugBank:** [DB13323](https://go.drugbank.com/drugs/DB13323) · **PubChem:** none
 - **molar mass:** 131.388 g/mol (C2HCl3) — DrugBank
 - **groups:** approved
 
@@ -57,7 +57,7 @@ Trichloroethylene is a chlorinated hydrocarbon that has been used as an inhalati
 
 - **PubMed hits:** 71 matched, 54 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -72,18 +72,18 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kim_2009.pdf` | Kim S et al., Pharmacokinetic analysis of trichloroet…, Toxicology and applied phar… (2009) | popPK | 10 | [10.1016/j.taap.2009.04.019](https://doi.org/10.1016/j.taap.2009.04.019) | [19409406](https://pubmed.ncbi.nlm.nih.gov/19409406) | The study reports specific pharmacokinetic parameters (bioavailability, half-life, clearance) for trichloroethylene and its metabolites in mice, with values explicitly listed in the abstract. |
 | `Lee_1996.pdf` | Lee KM et al., Characterization of presystemic elimina…, Toxicology and applied phar… (1996) | popPK | 9 | [10.1006/taap.1996.0165](https://doi.org/10.1006/taap.1996.0165) | [8806842](https://pubmed.ncbi.nlm.nih.gov/8806842) | The study is a PK analysis in rats with a compartmental model, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
 | `Luo_2018.pdf` | Luo YS et al., Comparative analysis of metabolism of t…, Toxicology (2018) | popPK | 9 | [10.1016/j.tox.2018.07.012](https://doi.org/10.1016/j.tox.2018.07.012) | [30053492](https://pubmed.ncbi.nlm.nih.gov/30053492) | The paper describes a quantitative multi-compartment toxicokinetic model for trichloroethylene in mice, but specific numeric parameter values (CL, V, Q) are not listed in the provided evidence. |
-| `Staats_1991.pdf` | Staats DA et al., Gastrointestinal absorption of xenobiot…, Drug metabolism and disposi… (1991) | popPK | 8 | not captured | [1673388](https://pubmed.ncbi.nlm.nih.gov/1673388) | The study reports a PK model for trichloroethylene in rats with specific rate constant values (KAS, KAD, KT) described in text, but exact numeric values are not explicitly listed in the provided evidence snippet. |
+| `Staats_1991.pdf` | Staats DA et al., Gastrointestinal absorption of xenobiot…, Drug metabolism and disposi… (1991) | popPK | 8 |  | [1673388](https://pubmed.ncbi.nlm.nih.gov/1673388) | The study reports a PK model for trichloroethylene in rats with specific rate constant values (KAS, KAD, KT) described in text, but exact numeric values are not explicitly listed in the provided evidence snippet. |
 | `Filser_1992.pdf` | Filser JG, The closed chamber technique--uptake, e…, Archives of toxicology (1992) | popPK | 7 | [10.1007/BF02307263](https://doi.org/10.1007/BF02307263) | [1580790](https://pubmed.ncbi.nlm.nih.gov/1580790) | The paper describes the application of the closed chamber technique to trichloroethylene, indicating a pharmacokinetic study, but no specific numeric parameter values (CL, V, etc.) are provided in the evidence. |
 | `el-Masri_1996.pdf` | el-Masri HA et al., Physiologically based pharmacodynamic m…, Toxicology and applied phar… (1996) | popPK | 5 | [10.1006/taap.1996.0268](https://doi.org/10.1006/taap.1996.0268) | [8917684](https://pubmed.ncbi.nlm.nih.gov/8917684) | The paper describes a PBPD model and mentions PBPK modeling but does not provide quantitative disposition parameters (CL, V, etc.) for trichloroethylene in the evidence. |
 | `McDaniel_2004.pdf` | McDaniel TV et al., Effects of chlorinated solvents on four…, Archives of environmental c… (2004) | pd | 5 | [10.1007/s00244-004-3015-3](https://doi.org/10.1007/s00244-004-3015-3) | [15346783](https://www.ncbi.nlm.nih.gov/pubmed/15346783) | metadata signals extractable PD data (EC50) |
 | `Byczkowski_1999.pdf` | Byczkowski JZ et al., A biologically based pharmacodynamic mo…, Journal of biochemical and… (1999) | pd | 4 | [10.1002/(sici)1099-0461(1999)13:3/4&lt;205::aid-jbt11&gt;3.0.co;2-b](https://doi.org/10.1002/(sici)1099-0461(1999)13:3/4<205::aid-jbt11>3.0.co;2-b) | [10098906](https://www.ncbi.nlm.nih.gov/pubmed/10098906) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Kumar_2009.pdf` | Kumar M et al., Study of genetic polymorphism in solven…, Journal of environmental bi… (2009) | pgx | 8 | not captured | [20136049](https://www.ncbi.nlm.nih.gov/pubmed/20136049) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
+| `Kumar_2009.pdf` | Kumar M et al., Study of genetic polymorphism in solven…, Journal of environmental bi… (2009) | pgx | 8 |  | [20136049](https://www.ncbi.nlm.nih.gov/pubmed/20136049) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
 | `Liu_2021.pdf` | Liu Z et al., Maternal trichloroethylene exposure and…, Reproductive toxicology (El… (2021) | pgx | 8 | [10.1016/j.reprotox.2021.09.010](https://doi.org/10.1016/j.reprotox.2021.09.010) | [34555461](https://www.ncbi.nlm.nih.gov/pubmed/34555461) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
 | `Wang_2020.pdf` | Wang H et al., Increased risk of occupational trichlor…, Environmental research (2020) | pgx | 8 | [10.1016/j.envres.2020.109972](https://doi.org/10.1016/j.envres.2020.109972) | [32758551](https://www.ncbi.nlm.nih.gov/pubmed/32758551) | metadata signals extractable PGX data (HLA-B*13, PK/PD-context) |
 | `Liao_2016.pdf` | Liao RY et al., [Toxic effect of trichloroethylene on l…, Zhonghua lao dong wei sheng… (2016) | pgx | 7 | [10.3760/cma.j.issn.1001-9391.2016.06.005](https://doi.org/10.3760/cma.j.issn.1001-9391.2016.06.005) | [27514549](https://www.ncbi.nlm.nih.gov/pubmed/27514549) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kim_2006.pdf` | Kim D et al., Comparative metabolism and disposition…, Drug metabolism and disposi… (2006) | pgx | 5 | [10.1124/dmd.106.010538](https://doi.org/10.1124/dmd.106.010538) | [16959879](https://www.ncbi.nlm.nih.gov/pubmed/16959879) | metadata signals extractable PGX data (Cyp2e1) |
 
-<sub>queue written 2026-10-07T05:09:40.958382+00:00</sub>
+<sub>queue written 2026-10-07 05:09 UTC</sub>
 
 ## Screened and excluded
 
@@ -138,5 +138,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 05:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrichloroethylene%5D&body=Drug%3A%20trichloroethylene%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trichloroethylene/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:09 UTC</sub>

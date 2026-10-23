@@ -5,7 +5,7 @@
 
 - **generic name:** gallamine
 - **ATC codes:** `M03AC02`
-- **DrugBank:** [DB13584](https://go.drugbank.com/drugs/DB13584) · **PubChem:** not captured
+- **DrugBank:** [DB13584](https://go.drugbank.com/drugs/DB13584) · **PubChem:** none
 - **molar mass:** 423.642 g/mol (C24H45N3O3) — DrugBank
 - **groups:** experimental
 
@@ -68,7 +68,7 @@ Gallamine is a peripherally acting muscle relaxant that was used to relax muscle
 
 - **PubMed hits:** 139 matched, 68 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -79,10 +79,10 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 |---|---|---|---|---|---|---|
 | `Ramzan_1980.pdf` | Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980) | popPK | 10 | [10.1007/BF00562622](https://doi.org/10.1007/BF00562622) | [7371705](https://pubmed.ncbi.nlm.nih.gov/7371705) | The study reports quantitative two-compartment pharmacokinetic parameters (clearance, volume of distribution, half-lives) for gallamine in humans. |
 | `Ramzan_1981_3.pdf` | Ramzan MI et al., Gallamine disposition in surgical patie…, British journal of clinical… (1981) | popPK | 10 | [10.1111/j.1365-2125.1981.tb01192.x](https://doi.org/10.1111/j.1365-2125.1981.tb01192.x) | [7306428](https://pubmed.ncbi.nlm.nih.gov/7306428) | The study reports a two-compartment model and discusses changes in clearance, volume, and half-life for gallamine, but specific numeric values are not provided in the evidence. |
-| `Shanks_1982.pdf` | Shanks CA et al., Gallamine administered by combined bolu…, Anesthesia and analgesia (1982) | popPK | 10 | not captured | [6289700](https://pubmed.ncbi.nlm.nih.gov/6289700) | The study reports quantitative pharmacokinetic parameters for gallamine in humans, including a specific elimination half-life (247 minutes) and compartmental model fit, but does not provide explicit values for clearance or volume of distribution in the text. |
-| `Henthorn_1982.pdf` | Henthorn TK et al., Heterogeneity of interstitial fluid spa…, The Journal of pharmacology… (1982) | popPK | 9 | not captured | [7097559](https://pubmed.ncbi.nlm.nih.gov/7097559) | Study reports pharmacokinetic modeling of gallamine in dogs with specific intercompartmental parameters, but most numeric values are in the full text/table not fully provided in the evidence snippet. |
+| `Shanks_1982.pdf` | Shanks CA et al., Gallamine administered by combined bolu…, Anesthesia and analgesia (1982) | popPK | 10 |  | [6289700](https://pubmed.ncbi.nlm.nih.gov/6289700) | The study reports quantitative pharmacokinetic parameters for gallamine in humans, including a specific elimination half-life (247 minutes) and compartmental model fit, but does not provide explicit values for clearance or volume of distribution in the text. |
+| `Henthorn_1982.pdf` | Henthorn TK et al., Heterogeneity of interstitial fluid spa…, The Journal of pharmacology… (1982) | popPK | 9 |  | [7097559](https://pubmed.ncbi.nlm.nih.gov/7097559) | Study reports pharmacokinetic modeling of gallamine in dogs with specific intercompartmental parameters, but most numeric values are in the full text/table not fully provided in the evidence snippet. |
 | `Ramzan_1981.pdf` | Ramzan MI et al., Clinical pharmacokinetics of the non-de…, Clinical pharmacokinetics (1981) | pd | 5 | [10.2165/00003088-198106010-00002](https://doi.org/10.2165/00003088-198106010-00002) | [7018787](https://www.ncbi.nlm.nih.gov/pubmed/7018787) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Tränkle_1996.pdf` | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | pd | 5 | not captured | [8930201](https://www.ncbi.nlm.nih.gov/pubmed/8930201) | metadata signals extractable PD data (EC50) |
+| `Tränkle_1996.pdf` | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | pd | 5 |  | [8930201](https://www.ncbi.nlm.nih.gov/pubmed/8930201) | metadata signals extractable PD data (EC50) |
 | `Al-Jafari_1997.pdf` | Al-Jafari AA, The inhibitory effect of the neuromuscu…, Toxicology letters (1997) | pd | 4 | [10.1016/s0378-4274(96)03828-3](https://doi.org/10.1016/s0378-4274(96)03828-3) | [9020401](https://www.ncbi.nlm.nih.gov/pubmed/9020401) | metadata signals extractable PD data (IC50) |
 | `Birmingham_1980.pdf` | Birmingham AT et al., A comparison of the skeletal neuromuscu…, British journal of pharmaco… (1980) | pd | 4 | [10.1111/j.1476-5381.1980.tb08730.x](https://doi.org/10.1111/j.1476-5381.1980.tb08730.x) | [6108148](https://www.ncbi.nlm.nih.gov/pubmed/6108148) | metadata signals extractable PD data (concentration-effect) |
 | `Eglen_1993.pdf` | Eglen RM et al., Muscarinic M3 receptors mediate total i…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0922-4106(93)90058-h](https://doi.org/10.1016/0922-4106(93)90058-h) | [8420791](https://www.ncbi.nlm.nih.gov/pubmed/8420791) | metadata signals extractable PD data (EC50) |
@@ -92,14 +92,14 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kurkinen_1997.pdf` | Kurkinen KM et al., [Gamma-35S]GTP autoradiography allows r…, Brain research (1997) | pd | 4 | [10.1016/s0006-8993(97)00663-x](https://doi.org/10.1016/s0006-8993(97)00663-x) | [9374269](https://www.ncbi.nlm.nih.gov/pubmed/9374269) | metadata signals extractable PD data (EC50) |
 | `Lau_1992.pdf` | Lau WM et al., A pharmacological profile of glycopyrro…, General pharmacology (1992) | pd | 4 | [10.1016/0306-3623(92)90306-5](https://doi.org/10.1016/0306-3623(92)90306-5) | [1283139](https://www.ncbi.nlm.nih.gov/pubmed/1283139) | metadata signals extractable PD data (EC50) |
 | `Lee_1990.pdf` | Lee NH et al., The allosteric binding profile of himba…, European journal of pharmac… (1990) | pd | 4 | [10.1016/0014-2999(90)90424-5](https://doi.org/10.1016/0014-2999(90)90424-5) | [2364985](https://www.ncbi.nlm.nih.gov/pubmed/2364985) | metadata signals extractable PD data (IC50) |
-| `Leppik_1994.pdf` | Leppik RA et al., Role of acidic amino acids in the allos…, Molecular pharmacology (1994) | pd | 4 | not captured | [8190113](https://www.ncbi.nlm.nih.gov/pubmed/8190113) | metadata signals extractable PD data (IC50) |
+| `Leppik_1994.pdf` | Leppik RA et al., Role of acidic amino acids in the allos…, Molecular pharmacology (1994) | pd | 4 |  | [8190113](https://www.ncbi.nlm.nih.gov/pubmed/8190113) | metadata signals extractable PD data (IC50) |
 | `Min_2000.pdf` | Min KT et al., Nondepolarizing neuromuscular blockers…, Anesthesia and analgesia (2000) | pd | 4 | [10.1097/00000539-200002000-00044](https://doi.org/10.1097/00000539-200002000-00044) | [10648343](https://www.ncbi.nlm.nih.gov/pubmed/10648343) | metadata signals extractable PD data (IC50) |
 | `Monsma_1988.pdf` | Monsma FJ et al., Inhibition of phosphoinositide turnover…, Biochemical pharmacology (1988) | pd | 4 | [10.1016/0006-2952(88)90371-1](https://doi.org/10.1016/0006-2952(88)90371-1) | [2839194](https://www.ncbi.nlm.nih.gov/pubmed/2839194) | metadata signals extractable PD data (EC50) |
 | `Pöch_1992.pdf` | Pöch G et al., Construction of antagonist dose-respons…, British journal of pharmaco… (1992) | pd | 4 | [10.1111/j.1476-5381.1992.tb14399.x](https://doi.org/10.1111/j.1476-5381.1992.tb14399.x) | [1504755](https://www.ncbi.nlm.nih.gov/pubmed/1504755) | metadata signals extractable PD data (Emax) |
 | `Schoffelmeer_1986.pdf` | Schoffelmeer AN et al., Muscarine receptor-mediated modulation…, European journal of pharmac… (1986) | pd | 4 | [10.1016/0014-2999(86)90781-8](https://doi.org/10.1016/0014-2999(86)90781-8) | [3792444](https://www.ncbi.nlm.nih.gov/pubmed/3792444) | metadata signals extractable PD data (EC50) |
-| `Schuh_1981.pdf` | Schuh FT, [On dose-response curves and the recept…, Der Anaesthesist (1981) | pd | 4 | not captured | [6455927](https://www.ncbi.nlm.nih.gov/pubmed/6455927) | metadata signals extractable PD data (Emax) |
+| `Schuh_1981.pdf` | Schuh FT, [On dose-response curves and the recept…, Der Anaesthesist (1981) | pd | 4 |  | [6455927](https://www.ncbi.nlm.nih.gov/pubmed/6455927) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-07T02:36:39.363309+00:00</sub>
+<sub>queue written 2026-10-07 02:36 UTC</sub>
 
 ## Screened and excluded
 
@@ -147,5 +147,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 02:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgallamine%5D&body=Drug%3A%20gallamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gallamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:36 UTC</sub>

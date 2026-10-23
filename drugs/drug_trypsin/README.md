@@ -4,7 +4,7 @@
 
 - **generic name:** trypsin
 - **ATC codes:** `B06AA07`, `D03BA01`
-- **DrugBank:** [DB11237](https://go.drugbank.com/drugs/DB11237) · **PubChem:** not captured
+- **DrugBank:** [DB11237](https://go.drugbank.com/drugs/DB11237) · **PubChem:** none
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -35,7 +35,7 @@ _not available_
 
 - **PubMed hits:** 1927 matched, 250 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -49,27 +49,27 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ming_2026.pdf` | Ming C et al., Development of a SMEDDS for oral delive…, Journal of pharmaceutical s… (2026) | pd | 5 | [10.1016/j.xphs.2026.104356](https://doi.org/10.1016/j.xphs.2026.104356) | [42250802](https://www.ncbi.nlm.nih.gov/pubmed/42250802) | metadata signals extractable PD data (PK/PD) |
 | `Ryan_2011.pdf` | Ryan SM et al., PK/PD modelling of comb-shaped PEGylate…, Journal of controlled relea… (2011) | pd | 5 | [10.1016/j.jconrel.2010.10.004](https://doi.org/10.1016/j.jconrel.2010.10.004) | [20946924](https://www.ncbi.nlm.nih.gov/pubmed/20946924) | metadata signals extractable PD data (PK/PD) |
 | `Sahin_2021.pdf` | Sahin S et al., Investigation of binding interaction be…, Spectrochimica acta. Part A… (2021) | pd | 5 | [10.1016/j.saa.2021.119817](https://doi.org/10.1016/j.saa.2021.119817) | [33901946](https://www.ncbi.nlm.nih.gov/pubmed/33901946) | metadata signals extractable PD data (IC50) |
-| `Wang_1995.pdf` | Wang DW et al., Voltage dependent inhibition of ATP sen…, Cardiovascular research (1995) | pd | 5 | not captured | [7796446](https://www.ncbi.nlm.nih.gov/pubmed/7796446) | metadata signals extractable PD data (IC50) |
+| `Wang_1995.pdf` | Wang DW et al., Voltage dependent inhibition of ATP sen…, Cardiovascular research (1995) | pd | 5 |  | [7796446](https://www.ncbi.nlm.nih.gov/pubmed/7796446) | metadata signals extractable PD data (IC50) |
 | `Allshire_1984.pdf` | Allshire AP et al., Uptake, retention, and efflux of Ca2+ b…, Archives of biochemistry an… (1984) | pd | 4 | [10.1016/0003-9861(84)90076-6](https://doi.org/10.1016/0003-9861(84)90076-6) | [6421235](https://www.ncbi.nlm.nih.gov/pubmed/6421235) | metadata signals extractable PD data (sigmoid) |
 | `Begum_1993.pdf` | Begum N et al., Protein phosphatase-1 and -2a activitie…, Endocrinology (1993) | pd | 4 | [10.1210/endo.133.5.8404657](https://doi.org/10.1210/endo.133.5.8404657) | [8404657](https://www.ncbi.nlm.nih.gov/pubmed/8404657) | metadata signals extractable PD data (EC50) |
 | `Cai_2014.pdf` | Cai MY et al., Pilot-scale production of soybean oligo…, Journal of food science and… (2014) | pd | 4 | [10.1007/s13197-012-0701-4](https://doi.org/10.1007/s13197-012-0701-4) | [25190841](https://www.ncbi.nlm.nih.gov/pubmed/25190841) | metadata signals extractable PD data (IC50) |
 | `Cordeiro_2024.pdf` | Cordeiro IH et al., Protease inhibitors characterisation by…, Natural product research (2024) | pd | 4 | [10.1080/14786419.2023.2246278](https://doi.org/10.1080/14786419.2023.2246278) | [37615635](https://www.ncbi.nlm.nih.gov/pubmed/37615635) | metadata signals extractable PD data (IC50) |
 | `Dražić_2020.pdf` | Dražić T et al., Peptide-β-lactam Inhibitors of Dengue a…, Journal of medicinal chemis… (2020) | pd | 4 | [10.1021/acs.jmedchem.9b00759](https://doi.org/10.1021/acs.jmedchem.9b00759) | [31804823](https://www.ncbi.nlm.nih.gov/pubmed/31804823) | metadata signals extractable PD data (IC50) |
-| `Herbert_1992.pdf` | Herbert JM et al., Biochemical and pharmacological activit…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1738126](https://www.ncbi.nlm.nih.gov/pubmed/1738126) | metadata signals extractable PD data (IC50) |
+| `Herbert_1992.pdf` | Herbert JM et al., Biochemical and pharmacological activit…, The Journal of pharmacology… (1992) | pd | 4 |  | [1738126](https://www.ncbi.nlm.nih.gov/pubmed/1738126) | metadata signals extractable PD data (IC50) |
 | `Jin_2020.pdf` | Jin R et al., Identification of novel DPP-IV inhibito…, Food research international… (2020) | pd | 4 | [10.1016/j.foodres.2020.109161](https://doi.org/10.1016/j.foodres.2020.109161) | [32466942](https://www.ncbi.nlm.nih.gov/pubmed/32466942) | metadata signals extractable PD data (IC50) |
 | `Kawabata_1991.pdf` | Kawabata K et al., ONO-5046, a novel inhibitor of human ne…, Biochemical and biophysical… (1991) | pd | 4 | [10.1016/0006-291x(91)91862-7](https://doi.org/10.1016/0006-291x(91)91862-7) | [2049103](https://www.ncbi.nlm.nih.gov/pubmed/2049103) | metadata signals extractable PD data (IC50) |
-| `Lawler_1983.pdf` | Lawler J et al., Cooperative binding of calcium to throm…, The Journal of biological c… (1983) | pd | 4 | not captured | [6630182](https://www.ncbi.nlm.nih.gov/pubmed/6630182) | metadata signals extractable PD data (sigmoid) |
+| `Lawler_1983.pdf` | Lawler J et al., Cooperative binding of calcium to throm…, The Journal of biological c… (1983) | pd | 4 |  | [6630182](https://www.ncbi.nlm.nih.gov/pubmed/6630182) | metadata signals extractable PD data (sigmoid) |
 | `Li_2023.pdf` | Li Z et al., Purification identification and functio…, Food chemistry (2023) | pd | 4 | [10.1016/j.foodchem.2022.134127](https://doi.org/10.1016/j.foodchem.2022.134127) | [36096005](https://www.ncbi.nlm.nih.gov/pubmed/36096005) | metadata signals extractable PD data (IC50) |
-| `Mary_1984.pdf` | Mary A et al., [In vitro aggregation of rat platelets…, Comptes rendus des seances… (1984) | pd | 4 | not captured | [6085483](https://www.ncbi.nlm.nih.gov/pubmed/6085483) | metadata signals extractable PD data (Emax) |
-| `Müller_1998.pdf` | Müller G et al., Convergence and divergence of the signa…, Molecular medicine (Cambrid… (1998) | pd | 4 | not captured | [9642681](https://www.ncbi.nlm.nih.gov/pubmed/9642681) | metadata signals extractable PD data (EC50) |
+| `Mary_1984.pdf` | Mary A et al., [In vitro aggregation of rat platelets…, Comptes rendus des seances… (1984) | pd | 4 |  | [6085483](https://www.ncbi.nlm.nih.gov/pubmed/6085483) | metadata signals extractable PD data (Emax) |
+| `Müller_1998.pdf` | Müller G et al., Convergence and divergence of the signa…, Molecular medicine (Cambrid… (1998) | pd | 4 |  | [9642681](https://www.ncbi.nlm.nih.gov/pubmed/9642681) | metadata signals extractable PD data (EC50) |
 | `Okomo_2023.pdf` | Okomo Aloo S et al., Impacts of germination and lactic acid…, Food chemistry (2023) | pd | 4 | [10.1016/j.foodchem.2023.136722](https://doi.org/10.1016/j.foodchem.2023.136722) | [37429240](https://www.ncbi.nlm.nih.gov/pubmed/37429240) | metadata signals extractable PD data (IC50) |
 | `Petit_1989.pdf` | Petit A et al., Angiotensin II stimulates both inositol…, The Journal of clinical end… (1989) | pd | 4 | [10.1210/jcem-69-2-280](https://doi.org/10.1210/jcem-69-2-280) | [2546960](https://www.ncbi.nlm.nih.gov/pubmed/2546960) | metadata signals extractable PD data (EC50) |
 | `Pribilla_1988.pdf` | Pribilla I et al., Heat-resistant inhibitors of protein ki…, European journal of biochem… (1988) | pd | 4 | [10.1111/j.1432-1033.1988.tb14420.x](https://doi.org/10.1111/j.1432-1033.1988.tb14420.x) | [3058479](https://www.ncbi.nlm.nih.gov/pubmed/3058479) | metadata signals extractable PD data (EC50) |
 | `Ribeiro_1991.pdf` | Ribeiro P et al., Serotonin stimulates protein phosphoryl…, Comparative biochemistry an… (1991) | pd | 4 | [10.1016/0742-8413(91)90027-q](https://doi.org/10.1016/0742-8413(91)90027-q) | [1687544](https://www.ncbi.nlm.nih.gov/pubmed/1687544) | metadata signals extractable PD data (EC50) |
 | `Shamsi_2018.pdf` | Shamsi TN et al., Trypsin Inhibitors from Cajanus cajan a…, Journal of dietary suppleme… (2018) | pd | 4 | [10.1080/19390211.2017.1407383](https://doi.org/10.1080/19390211.2017.1407383) | [29345972](https://www.ncbi.nlm.nih.gov/pubmed/29345972) | metadata signals extractable PD data (IC50) |
 | `Sirisha_2018.pdf` | Sirisha GVD et al., Molecular docking and in vitro studies…, International journal of bi… (2018) | pd | 4 | [10.1016/j.ijbiomac.2018.03.139](https://doi.org/10.1016/j.ijbiomac.2018.03.139) | [29578020](https://www.ncbi.nlm.nih.gov/pubmed/29578020) | metadata signals extractable PD data (IC50) |
-| `Souness_1985.pdf` | Souness JE et al., Adipocyte cyclic nucleotide phosphodies…, Journal of cyclic nucleotid… (1985) | pd | 4 | not captured | [2993388](https://www.ncbi.nlm.nih.gov/pubmed/2993388) | metadata signals extractable PD data (EC50) |
-| `Srinivasan_1994.pdf` | Srinivasan M et al., Regulation of protein phosphatase 1 and…, The Journal of biological c… (1994) | pd | 4 | not captured | [8175660](https://www.ncbi.nlm.nih.gov/pubmed/8175660) | metadata signals extractable PD data (EC50) |
+| `Souness_1985.pdf` | Souness JE et al., Adipocyte cyclic nucleotide phosphodies…, Journal of cyclic nucleotid… (1985) | pd | 4 |  | [2993388](https://www.ncbi.nlm.nih.gov/pubmed/2993388) | metadata signals extractable PD data (EC50) |
+| `Srinivasan_1994.pdf` | Srinivasan M et al., Regulation of protein phosphatase 1 and…, The Journal of biological c… (1994) | pd | 4 |  | [8175660](https://www.ncbi.nlm.nih.gov/pubmed/8175660) | metadata signals extractable PD data (EC50) |
 | `Tamura_1990.pdf` | Tamura M et al., Effect of divalent cations on NADH-depe…, Archives of biochemistry an… (1990) | pd | 4 | [10.1016/0003-9861(90)90335-v](https://doi.org/10.1016/0003-9861(90)90335-v) | [2369123](https://www.ncbi.nlm.nih.gov/pubmed/2369123) | metadata signals extractable PD data (EC50) |
 | `Wang_2021.pdf` | Wang K et al., Novel antioxidant and ACE inhibitory pe…, Food research international… (2021) | pd | 4 | [10.1016/j.foodres.2020.109908](https://doi.org/10.1016/j.foodres.2020.109908) | [33509476](https://www.ncbi.nlm.nih.gov/pubmed/33509476) | metadata signals extractable PD data (EC50) |
 | `White_2022.pdf` | White AM et al., Late-Stage Functionalization with Cyste…, Journal of medicinal chemis… (2022) | pd | 4 | [10.1021/acs.jmedchem.2c00793](https://doi.org/10.1021/acs.jmedchem.2c00793) | [36167503](https://www.ncbi.nlm.nih.gov/pubmed/36167503) | metadata signals extractable PD data (EC50) |
@@ -81,7 +81,7 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Komura_2002.pdf` | Komura H et al., Species difference in nisoldipine oxida…, Drug metabolism and pharmac… (2002) | pgx | 7 | [10.2133/dmpk.17.427](https://doi.org/10.2133/dmpk.17.427) | [15618694](https://www.ncbi.nlm.nih.gov/pubmed/15618694) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Tian_2022.pdf` | Tian Q et al., Investigating the Metabolic Mechanisms…, Current drug metabolism (2022) | pgx | 7 | [10.2174/1389200223666220520115014](https://doi.org/10.2174/1389200223666220520115014) | [35619304](https://www.ncbi.nlm.nih.gov/pubmed/35619304) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
 
-<sub>queue written 2026-10-06T01:34:07.492877+00:00</sub>
+<sub>queue written 2026-10-06 01:34 UTC</sub>
 
 ## Screened and excluded
 
@@ -361,5 +361,5 @@ _36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrypsin%5D&body=Drug%3A%20trypsin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trypsin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

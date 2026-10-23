@@ -82,7 +82,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCC2` substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
 | distribution | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCC1` substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
@@ -92,7 +92,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | distribution | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
 | excretion | kidney | `ABCB1` inducer/inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
@@ -116,7 +116,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 477 matched, 174 returned
 - **screened:** 5  ·  **relevant:** 4
-- **records:** 5  ·  extracted 2  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -135,10 +135,10 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Lunn_1998.pdf` | Lunn DJ et al., The pharmacokinetics of saquinavir: a M…, Journal of pharmacokinetics… (1998) | popPK | 8 | [10.1023/a:1023224824228](https://doi.org/10.1023/a:1023224824228) | [9773392](https://pubmed.ncbi.nlm.nih.gov/9773392) | Population PK (two-compartment, zero-order absorption) of saquinavir in healthy human volunteers, but no numeric parameter values are present in the evidence. |
 | `von_2009.pdf` | von Hentig N et al., Cytochrome P450 3A inhibition by atazan…, Antimicrobial agents and ch… (2009) | popPK | 8 | [10.1128/AAC.00025-09](https://doi.org/10.1128/AAC.00025-09) | [19528289](https://pubmed.ncbi.nlm.nih.gov/19528289) | Population PK (NONMEM) of saquinavir in 136 HIV+ adults with CL as key parameter, but numeric CL values are not shown in the abstract/evidence provided. |
 | `Autar_2004.pdf` | Autar RS et al., Pharmacokinetic study of saquinavir har…, The Journal of antimicrobia… (2004) | popPK | 6 | [10.1093/jac/dkh415](https://doi.org/10.1093/jac/dkh415) | [15329366](https://pubmed.ncbi.nlm.nih.gov/15329366) | Human PK study of saquinavir reporting AUC/Cmax/Cmin/half-life, but no actual numeric parameter values appear in the evidence (only percent changes). |
-| `Boffito_2004.pdf` | Boffito M et al., Pharmacokinetics of once-daily saquinav…, Antiviral therapy (2004) | popPK | 6 | not captured | [15259905](https://pubmed.ncbi.nlm.nih.gov/15259905) | Human steady-state saquinavir PK study, but only Cmax/Ctrough values are given; CL/V/t½ and other disposition parameters are not present in the evidence. |
-| `Cardiello_2003.pdf` | Cardiello PG et al., Pharmacokinetics of lower doses of saqu…, Antiviral therapy (2003) | popPK | 6 | not captured | [12924542](https://pubmed.ncbi.nlm.nih.gov/12924542) | Human PK study of saquinavir with AUC and Cmin values present, but no CL/V or half-life values reported. |
+| `Boffito_2004.pdf` | Boffito M et al., Pharmacokinetics of once-daily saquinav…, Antiviral therapy (2004) | popPK | 6 |  | [15259905](https://pubmed.ncbi.nlm.nih.gov/15259905) | Human steady-state saquinavir PK study, but only Cmax/Ctrough values are given; CL/V/t½ and other disposition parameters are not present in the evidence. |
+| `Cardiello_2003.pdf` | Cardiello PG et al., Pharmacokinetics of lower doses of saqu…, Antiviral therapy (2003) | popPK | 6 |  | [12924542](https://pubmed.ncbi.nlm.nih.gov/12924542) | Human PK study of saquinavir with AUC and Cmin values present, but no CL/V or half-life values reported. |
 
-<sub>queue written 2026-10-07T17:11:20.592274+00:00</sub>
+<sub>queue written 2026-10-07 17:11 UTC</sub>
 
 ## Screened and excluded
 
@@ -258,5 +258,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 17:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaquinavir%5D&body=Drug%3A%20saquinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saquinavir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:11 UTC</sub>

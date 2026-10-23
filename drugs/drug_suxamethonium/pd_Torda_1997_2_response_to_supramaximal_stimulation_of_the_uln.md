@@ -66,4 +66,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuxamethonium%5D%20pd_Torda_1997_2_response_to_supramaximal_stimulation_of_the_uln&body=Drug%3A%20suxamethonium%0ARecord%3A%20pd_Torda_1997_2_response_to_supramaximal_stimulation_of_the_uln%0APaper%3A%20Torda_1997_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suxamethonium/pd_Torda_1997_2_response_to_supramaximal_stimulation_of_the_uln%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [suxamethonium](drugs/drug_suxamethonium/)</sub>

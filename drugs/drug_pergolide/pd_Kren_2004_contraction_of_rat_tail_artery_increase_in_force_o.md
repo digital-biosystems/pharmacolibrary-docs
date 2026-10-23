@@ -81,4 +81,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpergolide%5D%20pd_Kren_2004_contraction_of_rat_tail_artery_increase_in_force_o&body=Drug%3A%20pergolide%0ARecord%3A%20pd_Kren_2004_contraction_of_rat_tail_artery_increase_in_force_o%0APaper%3A%20Kren_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pergolide/pd_Kren_2004_contraction_of_rat_tail_artery_increase_in_force_o%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pergolide](drugs/drug_pergolide/)</sub>

@@ -79,4 +79,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdigitoxin%5D%20pd_Urtizberea_1991_RBC_K&body=Drug%3A%20digitoxin%0ARecord%3A%20pd_Urtizberea_1991_RBC_K%0APaper%3A%20Urtizberea_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_digitoxin/pd_Urtizberea_1991_RBC_K%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [digitoxin](drugs/drug_digitoxin/)</sub>

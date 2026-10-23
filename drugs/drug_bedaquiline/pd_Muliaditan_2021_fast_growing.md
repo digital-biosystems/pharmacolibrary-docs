@@ -85,4 +85,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbedaquiline%5D%20pd_Muliaditan_2021_fast_growing&body=Drug%3A%20bedaquiline%0ARecord%3A%20pd_Muliaditan_2021_fast_growing%0APaper%3A%20Muliaditan_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bedaquiline/pd_Muliaditan_2021_fast_growing%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [bedaquiline](drugs/drug_bedaquiline/)</sub>

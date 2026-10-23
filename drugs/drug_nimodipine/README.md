@@ -77,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 122 matched, 58 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -87,22 +87,22 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Bellapart_2026.pdf` | Bellapart J et al., Nimodipine dosing and pharmacokinetic v…, Journal of clinical neurosc… (2026) | popPK | 10 | [10.1016/j.jocn.2026.111940](https://doi.org/10.1016/j.jocn.2026.111940) | [41712995](https://pubmed.ncbi.nlm.nih.gov/41712995) | The paper describes a population PK model for nimodipine in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Terziivanov_1999.pdf` | Terziivanov D et al., Pharmacokinetic variability of nimodipi…, International journal of cl… (1999) | popPK | 10 | not captured | [10475143](https://pubmed.ncbi.nlm.nih.gov/10475143) | The study is a population PK analysis of nimodipine in humans, but the evidence only provides variability metrics (CVs) and model validation statistics, lacking the specific central parameter estimates (CL, V, ka) required for extraction. |
-| `Yan_1993.pdf` | Yan XF et al., [Studies on the bioavailability and pha…, Yao xue xue bao = Acta phar… (1993) | popPK | 10 | not captured | [8328270](https://pubmed.ncbi.nlm.nih.gov/8328270) | The study reports quantitative pharmacokinetic parameters (ka, t1/2, Vd, AUC) for nimodipine in humans, with all numeric values explicitly provided in the text. |
-| `Shi_1997.pdf` | Shi XJ et al., [Comparison of bioavailability between…, Yao xue xue bao = Acta phar… (1997) | popPK | 9 | not captured | [11596299](https://pubmed.ncbi.nlm.nih.gov/11596299) | The study reports a two-compartment PK model for nimodipine in humans, but the specific numeric parameter values are located in Table 1 and Figure 1, which are not included in the provided evidence. |
+| `Terziivanov_1999.pdf` | Terziivanov D et al., Pharmacokinetic variability of nimodipi…, International journal of cl… (1999) | popPK | 10 |  | [10475143](https://pubmed.ncbi.nlm.nih.gov/10475143) | The study is a population PK analysis of nimodipine in humans, but the evidence only provides variability metrics (CVs) and model validation statistics, lacking the specific central parameter estimates (CL, V, ka) required for extraction. |
+| `Yan_1993.pdf` | Yan XF et al., [Studies on the bioavailability and pha…, Yao xue xue bao = Acta phar… (1993) | popPK | 10 |  | [8328270](https://pubmed.ncbi.nlm.nih.gov/8328270) | The study reports quantitative pharmacokinetic parameters (ka, t1/2, Vd, AUC) for nimodipine in humans, with all numeric values explicitly provided in the text. |
+| `Shi_1997.pdf` | Shi XJ et al., [Comparison of bioavailability between…, Yao xue xue bao = Acta phar… (1997) | popPK | 9 |  | [11596299](https://pubmed.ncbi.nlm.nih.gov/11596299) | The study reports a two-compartment PK model for nimodipine in humans, but the specific numeric parameter values are located in Table 1 and Figure 1, which are not included in the provided evidence. |
 | `Seker_2017.pdf` | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | popPK | 8 | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) | [26350588](https://pubmed.ncbi.nlm.nih.gov/26350588) | The paper presents a pharmacokinetic model for nimodipine and explicitly states a clearance value of 70 l/h in the results, although it is a simulation study rather than a primary population PK analysis of new data. |
 | `Wu_2014.pdf` | Wu C et al., Effect of natural borneol on the pharma…, European journal of drug me… (2014) | popPK | 8 | [10.1007/s13318-013-0135-z](https://doi.org/10.1007/s13318-013-0135-z) | [23673491](https://pubmed.ncbi.nlm.nih.gov/23673491) | The study reports quantitative PK parameters (AUC) for nimodipine in mice, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only percentage changes. |
 | `Diochot_1995.pdf` | Diochot S et al., Dihydropyridines, phenylalkylamines and…, Pflugers Archiv : European… (1995) | pd | 4 | [10.1007/BF00374372](https://doi.org/10.1007/BF00374372) | [8584405](https://www.ncbi.nlm.nih.gov/pubmed/8584405) | metadata signals extractable PD data (EC50) |
-| `Hamilton_1987.pdf` | Hamilton SL et al., A comparison between the binding and el…, Molecular pharmacology (1987) | pd | 4 | not captured | [2436031](https://www.ncbi.nlm.nih.gov/pubmed/2436031) | metadata signals extractable PD data (EC50) |
+| `Hamilton_1987.pdf` | Hamilton SL et al., A comparison between the binding and el…, Molecular pharmacology (1987) | pd | 4 |  | [2436031](https://www.ncbi.nlm.nih.gov/pubmed/2436031) | metadata signals extractable PD data (EC50) |
 | `Hu_2022.pdf` | Hu X et al., The effect of CYP3A4 genetic polymorphi…, Chemico-biological interact… (2022) | pgx | 8 | [10.1016/j.cbi.2022.110123](https://doi.org/10.1016/j.cbi.2022.110123) | [36007633](https://www.ncbi.nlm.nih.gov/pubmed/36007633) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Liu_2000.pdf` | Liu XQ et al., Enzyme kinetics and inhibition of nimod…, Acta pharmacologica Sinica (2000) | pgx | 8 | not captured | [11501176](https://www.ncbi.nlm.nih.gov/pubmed/11501176) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Liu_2000.pdf` | Liu XQ et al., Enzyme kinetics and inhibition of nimod…, Acta pharmacologica Sinica (2000) | pgx | 8 |  | [11501176](https://www.ncbi.nlm.nih.gov/pubmed/11501176) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Ye_2024.pdf` | Ye F et al., Gene Polymorphisms and Drug-Drug Intera…, The Journal of pharmacology… (2024) | pgx | 8 | [10.1124/jpet.123.001767](https://doi.org/10.1124/jpet.123.001767) | [37863485](https://www.ncbi.nlm.nih.gov/pubmed/37863485) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Zhao_2009.pdf` | Zhao Y et al., Effects of CYP3A5, MDR1 and CACNA1C pol…, European journal of clinica… (2009) | pgx | 8 | [10.1007/s00228-009-0619-6](https://doi.org/10.1007/s00228-009-0619-6) | [19205682](https://www.ncbi.nlm.nih.gov/pubmed/19205682) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
 | `Bailey_2004.pdf` | Bailey DG et al., Interactions between grapefruit juice a…, American journal of cardiov… (2004) | pgx | 7 | [10.2165/00129784-200404050-00002](https://doi.org/10.2165/00129784-200404050-00002) | [15449971](https://www.ncbi.nlm.nih.gov/pubmed/15449971) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chen_2025.pdf` | Chen X et al., Inhibitory effects of nimodipine, nitre…, Biochemical pharmacology (2025) | pgx | 7 | [10.1016/j.bcp.2025.116854](https://doi.org/10.1016/j.bcp.2025.116854) | [40054784](https://www.ncbi.nlm.nih.gov/pubmed/40054784) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Cho_2011.pdf` | Cho YA et al., Effects of the antioxidant baicalein on…, Pharmacological reports : PR (2011) | pgx | 7 | [10.1016/s1734-1140(11)70624-7](https://doi.org/10.1016/s1734-1140(11)70624-7) | [22001996](https://www.ncbi.nlm.nih.gov/pubmed/22001996) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07T04:39:09.658058+00:00</sub>
+<sub>queue written 2026-10-07 04:39 UTC</sub>
 
 ## Screened and excluded
 
@@ -159,5 +159,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 04:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnimodipine%5D&body=Drug%3A%20nimodipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nimodipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:39 UTC</sub>

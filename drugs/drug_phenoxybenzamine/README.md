@@ -51,7 +51,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 331 matched, 159 returned
 - **screened:** 1  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -64,26 +64,26 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Rhee_1998.pdf` | Rhee JW et al., Functional determination of oxytocin af…, European journal of pharmac… (1998) | pd | 5 | [10.1016/s0014-2999(98)00504-4](https://doi.org/10.1016/s0014-2999(98)00504-4) | [9761418](https://www.ncbi.nlm.nih.gov/pubmed/9761418) | metadata signals extractable PD data (EMAX) |
 | `Toklucu_2025.pdf` | Toklucu I et al., α-Adrenoreceptor blocker phentolamine i…, British journal of pharmaco… (2025) | pd | 5 | [10.1111/bph.17450](https://doi.org/10.1111/bph.17450) | [39888002](https://www.ncbi.nlm.nih.gov/pubmed/39888002) | metadata signals extractable PD data (IC50) |
 | `Yin_2018.pdf` | Yin A et al., Quantitative systems pharmacology analy…, British journal of pharmaco… (2018) | pd | 5 | [10.1111/bph.14385](https://doi.org/10.1111/bph.14385) | [29859008](https://www.ncbi.nlm.nih.gov/pubmed/29859008) | metadata signals extractable PD data (exposure-response) |
-| `Aceto_1989.pdf` | Aceto JF et al., Effects of chronic treatment with verap…, Archives internationales de… (1989) | pd | 4 | not captured | [2757461](https://www.ncbi.nlm.nih.gov/pubmed/2757461) | metadata signals extractable PD data (Emax) |
+| `Aceto_1989.pdf` | Aceto JF et al., Effects of chronic treatment with verap…, Archives internationales de… (1989) | pd | 4 |  | [2757461](https://www.ncbi.nlm.nih.gov/pubmed/2757461) | metadata signals extractable PD data (Emax) |
 | `Chin_1992.pdf` | Chin JP et al., Classification of the beta-adrenoceptor…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90330-7](https://doi.org/10.1016/0014-2999(92)90330-7) | [1350995](https://www.ncbi.nlm.nih.gov/pubmed/1350995) | metadata signals extractable PD data (IC50) |
-| `Claro_1987.pdf` | Claro E et al., Histamine-stimulated phosphoinositide h…, Molecular pharmacology (1987) | pd | 4 | not captured | [2823091](https://www.ncbi.nlm.nih.gov/pubmed/2823091) | metadata signals extractable PD data (concentration-effect) |
+| `Claro_1987.pdf` | Claro E et al., Histamine-stimulated phosphoinositide h…, Molecular pharmacology (1987) | pd | 4 |  | [2823091](https://www.ncbi.nlm.nih.gov/pubmed/2823091) | metadata signals extractable PD data (concentration-effect) |
 | `Cordellini_1999.pdf` | Cordellini S et al., Denervation supersensitivity to phenyle…, General pharmacology (1999) | pd | 4 | [10.1016/s0306-3623(98)00222-5](https://doi.org/10.1016/s0306-3623(98)00222-5) | [10211596](https://www.ncbi.nlm.nih.gov/pubmed/10211596) | metadata signals extractable PD data (EC50) |
 | `Dantas_2014.pdf` | Dantas da Silva Júnior E et al., Effects of clonidine in the isolated ra…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.01.027](https://doi.org/10.1016/j.ejphar.2014.01.027) | [24485887](https://www.ncbi.nlm.nih.gov/pubmed/24485887) | metadata signals extractable PD data (Emax) |
 | `Darroch_1991.pdf` | Darroch SA et al., Effect of temperature reduction on resp…, Journal of autonomic pharma… (1991) | pd | 4 | [10.1111/j.1474-8673.1991.tb00250.x](https://doi.org/10.1111/j.1474-8673.1991.tb00250.x) | [1710620](https://www.ncbi.nlm.nih.gov/pubmed/1710620) | metadata signals extractable PD data (EC50) |
-| `Deighton_1992.pdf` | Deighton NM et al., Characterization of the beta adrenocept…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1354251](https://www.ncbi.nlm.nih.gov/pubmed/1354251) | metadata signals extractable PD data (Emax) |
+| `Deighton_1992.pdf` | Deighton NM et al., Characterization of the beta adrenocept…, The Journal of pharmacology… (1992) | pd | 4 |  | [1354251](https://www.ncbi.nlm.nih.gov/pubmed/1354251) | metadata signals extractable PD data (Emax) |
 | `Elliott_1997.pdf` | Elliott J, Alpha-adrenoceptors in equine digital v…, Journal of veterinary pharm… (1997) | pd | 4 | [10.1046/j.1365-2885.1997.00078.x](https://doi.org/10.1046/j.1365-2885.1997.00078.x) | [9280371](https://www.ncbi.nlm.nih.gov/pubmed/9280371) | metadata signals extractable PD data (EC50) |
 | `Gardiner_1988.pdf` | Gardiner PJ et al., Characterisation of the leukotriene rec…, Agents and actions. Supplem… (1988) | pd | 4 | [10.1007/978-3-0348-9156-1_8](https://doi.org/10.1007/978-3-0348-9156-1_8) | [2845748](https://www.ncbi.nlm.nih.gov/pubmed/2845748) | metadata signals extractable PD data (EC50) |
 | `Germann_1994.pdf` | Germann P et al., Barbiturate attenuation of agonist affi…, Canadian journal of physiol… (1994) | pd | 4 | [10.1139/y94-134](https://doi.org/10.1139/y94-134) | [7842394](https://www.ncbi.nlm.nih.gov/pubmed/7842394) | metadata signals extractable PD data (EC50) |
 | `Hamilton_1982.pdf` | Hamilton C et al., Recovery in vivo and in vitro of alpha-…, Journal of cardiovascular p… (1982) | pd | 4 | [10.1097/00005344-198200041-00025](https://doi.org/10.1097/00005344-198200041-00025) | [6175825](https://www.ncbi.nlm.nih.gov/pubmed/6175825) | metadata signals extractable PD data (EC50) |
 | `Hamilton_1984.pdf` | Hamilton CA et al., The recovery of alpha-adrenoceptor func…, Naunyn-Schmiedeberg's archi… (1984) | pd | 4 | [10.1007/BF00507051](https://doi.org/10.1007/BF00507051) | [6324006](https://www.ncbi.nlm.nih.gov/pubmed/6324006) | metadata signals extractable PD data (EC50) |
 | `Jarrott_1970.pdf` | Jarrott B, Uptake and metabolism of catecholamines…, British journal of pharmaco… (1970) | pd | 4 | [10.1111/j.1476-5381.1970.tb09890.x](https://doi.org/10.1111/j.1476-5381.1970.tb09890.x) | [5441793](https://www.ncbi.nlm.nih.gov/pubmed/5441793) | metadata signals extractable PD data (IC50) |
-| `McDonough_1986.pdf` | McDonough PM et al., Further characterization of the presyna…, The Journal of pharmacology… (1986) | pd | 4 | not captured | [2874215](https://www.ncbi.nlm.nih.gov/pubmed/2874215) | metadata signals extractable PD data (IC50) |
+| `McDonough_1986.pdf` | McDonough PM et al., Further characterization of the presyna…, The Journal of pharmacology… (1986) | pd | 4 |  | [2874215](https://www.ncbi.nlm.nih.gov/pubmed/2874215) | metadata signals extractable PD data (IC50) |
 | `Medhurst_1997.pdf` | Medhurst AD et al., Characterization of NK3 receptors in ra…, British journal of pharmaco… (1997) | pd | 4 | [10.1038/sj.bjp.0700867](https://doi.org/10.1038/sj.bjp.0700867) | [9117105](https://www.ncbi.nlm.nih.gov/pubmed/9117105) | metadata signals extractable PD data (concentration-effect) |
-| `Meller_1992.pdf` | Meller E et al., Comparative effects of receptor inactiv…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1359107](https://www.ncbi.nlm.nih.gov/pubmed/1359107) | metadata signals extractable PD data (EC50) |
+| `Meller_1992.pdf` | Meller E et al., Comparative effects of receptor inactiv…, The Journal of pharmacology… (1992) | pd | 4 |  | [1359107](https://www.ncbi.nlm.nih.gov/pubmed/1359107) | metadata signals extractable PD data (EC50) |
 | `Oridupa_2020.pdf` | Oridupa OA et al., Persea Americana Seeds Cause Ileal Smoo…, Drug research (2020) | pd | 4 | [10.1055/a-1076-0703](https://doi.org/10.1055/a-1076-0703) | [31896158](https://www.ncbi.nlm.nih.gov/pubmed/31896158) | metadata signals extractable PD data (EC50) |
 | `Parker_1999.pdf` | Parker C et al., Non-specific action of methoxamine on I…, British journal of pharmaco… (1999) | pd | 4 | [10.1038/sj.bjp.0702335](https://doi.org/10.1038/sj.bjp.0702335) | [10188969](https://www.ncbi.nlm.nih.gov/pubmed/10188969) | metadata signals extractable PD data (EC50) |
 | `Powis_1987.pdf` | Powis DA, Alpha 2-adrenoceptor blockade prevents…, British journal of pharmaco… (1987) | pd | 4 | [10.1111/j.1476-5381.1987.tb11314.x](https://doi.org/10.1111/j.1476-5381.1987.tb11314.x) | [2889493](https://www.ncbi.nlm.nih.gov/pubmed/2889493) | metadata signals extractable PD data (EC50) |
-| `Savino_1999.pdf` | Savino EA et al., Influence of moderate cooling (37 degre…, Acta physiologica, pharmaco… (1999) | pd | 4 | not captured | [10797852](https://www.ncbi.nlm.nih.gov/pubmed/10797852) | metadata signals extractable PD data (concentration-effect) |
+| `Savino_1999.pdf` | Savino EA et al., Influence of moderate cooling (37 degre…, Acta physiologica, pharmaco… (1999) | pd | 4 |  | [10797852](https://www.ncbi.nlm.nih.gov/pubmed/10797852) | metadata signals extractable PD data (concentration-effect) |
 | `Sharif_1994.pdf` | Sharif SI, Dopamine contracts the rat isolated sem…, Pharmacology (1994) | pd | 4 | [10.1159/000139196](https://doi.org/10.1159/000139196) | [7912441](https://www.ncbi.nlm.nih.gov/pubmed/7912441) | metadata signals extractable PD data (EC50) |
 | `Svoboda_1986.pdf` | Svoboda P et al., Effect of catecholamines and metal chel…, Comparative biochemistry an… (1986) | pd | 4 | [10.1016/0742-8413(86)90095-2](https://doi.org/10.1016/0742-8413(86)90095-2) | [2874945](https://www.ncbi.nlm.nih.gov/pubmed/2874945) | metadata signals extractable PD data (EC50) |
 | `Trendelenburg_1993.pdf` | Trendelenburg AU et al., Presynaptic alpha 2-autoreceptors in br…, Naunyn-Schmiedeberg's archi… (1993) | pd | 4 | [10.1007/BF00168534](https://doi.org/10.1007/BF00168534) | [8397342](https://www.ncbi.nlm.nih.gov/pubmed/8397342) | metadata signals extractable PD data (EC50) |
@@ -91,7 +91,7 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Vega_1995.pdf` | Vega T et al., Effects of omega-toxins on noradrenergi…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00032-g](https://doi.org/10.1016/0014-2999(95)00032-g) | [7601208](https://www.ncbi.nlm.nih.gov/pubmed/7601208) | metadata signals extractable PD data (IC50) |
 | `Ma_2024.pdf` | Ma Q et al., Exploring the impact of Cyp2C19 genetic…, Minerva medica (2024) | pgx | 5 | [10.23736/S0026-4806.24.09294-2](https://doi.org/10.23736/S0026-4806.24.09294-2) | [39078202](https://www.ncbi.nlm.nih.gov/pubmed/39078202) | metadata signals extractable PGX data (Cyp2C19) |
 
-<sub>queue written 2026-10-06T20:20:51.310595+00:00</sub>
+<sub>queue written 2026-10-06 20:20 UTC</sub>
 
 ## Screened and excluded
 
@@ -302,5 +302,5 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenoxybenzamine%5D&body=Drug%3A%20phenoxybenzamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenoxybenzamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

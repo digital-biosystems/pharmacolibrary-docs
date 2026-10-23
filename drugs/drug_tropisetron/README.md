@@ -76,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 157 matched, 118 returned
 - **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -97,19 +97,19 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Potenza_1998.pdf` | Potenza MA et al., Functional evaluation of 5-hydroxytrypt…, Journal of autonomic pharma… (1998) | pd | 4 | [10.1046/j.1365-2680.1998.1820075.x](https://doi.org/10.1046/j.1365-2680.1998.1820075.x) | [9730261](https://www.ncbi.nlm.nih.gov/pubmed/9730261) | metadata signals extractable PD data (EC50) |
 | `Slánský_1994.pdf` | Slánský J et al., The effect of immunomodulator muramyl d…, Pharmacology (1994) | pd | 4 | [10.1159/000139157](https://doi.org/10.1159/000139157) | [8309983](https://www.ncbi.nlm.nih.gov/pubmed/8309983) | metadata signals extractable PD data (EC50) |
 | `Tam_1994.pdf` | Tam FS et al., Characterization of the 5-hydroxytrypta…, British journal of pharmaco… (1994) | pd | 4 | [10.1111/j.1476-5381.1994.tb16186.x](https://doi.org/10.1111/j.1476-5381.1994.tb16186.x) | [7812604](https://www.ncbi.nlm.nih.gov/pubmed/7812604) | metadata signals extractable PD data (EC50) |
-| `Yang_1998.pdf` | Yang X et al., Prejunctional 5-HT receptors enhance ch…, Yan ke xue bao = Eye science (1998) | pd | 4 | not captured | [12580024](https://www.ncbi.nlm.nih.gov/pubmed/12580024) | metadata signals extractable PD data (EC50) |
-| `Yang_2001.pdf` | Yang X et al., [Presynaptic 5-hydroxytryptamine recept…, [Zhonghua yan ke za zhi] Ch… (2001) | pd | 4 | not captured | [11770411](https://www.ncbi.nlm.nih.gov/pubmed/11770411) | metadata signals extractable PD data (EC50) |
+| `Yang_1998.pdf` | Yang X et al., Prejunctional 5-HT receptors enhance ch…, Yan ke xue bao = Eye science (1998) | pd | 4 |  | [12580024](https://www.ncbi.nlm.nih.gov/pubmed/12580024) | metadata signals extractable PD data (EC50) |
+| `Yang_2001.pdf` | Yang X et al., [Presynaptic 5-hydroxytryptamine recept…, [Zhonghua yan ke za zhi] Ch… (2001) | pd | 4 |  | [11770411](https://www.ncbi.nlm.nih.gov/pubmed/11770411) | metadata signals extractable PD data (EC50) |
 | `Yildiz_1996.pdf` | Yildiz O et al., 5-HT1-like receptor-mediated contractio…, Journal of cardiovascular p… (1996) | pd | 4 | [10.1097/00005344-199607000-00002](https://doi.org/10.1097/00005344-199607000-00002) | [8797129](https://www.ncbi.nlm.nih.gov/pubmed/8797129) | metadata signals extractable PD data (Concentration-effect) |
 | `Firkusny_1995.pdf` | Firkusny L et al., In vitro characterization of cytochrome…, Biochemical pharmacology (1995) | pgx | 8 | [10.1016/0006-2952(95)00021-q](https://doi.org/10.1016/0006-2952(95)00021-q) | [7598739](https://www.ncbi.nlm.nih.gov/pubmed/7598739) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Hassan_2011.pdf` | Hassan BA et al., Genetic polymorphisms in the three mala…, Asian Pacific journal of ca… (2011) | pgx | 8 | not captured | [21517255](https://www.ncbi.nlm.nih.gov/pubmed/21517255) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hassan_2011.pdf` | Hassan BA et al., Genetic polymorphisms in the three mala…, Asian Pacific journal of ca… (2011) | pgx | 8 |  | [21517255](https://www.ncbi.nlm.nih.gov/pubmed/21517255) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kim_2003.pdf` | Kim MK et al., Effect of the CYP2D6 genotype on the ph…, European journal of clinica… (2003) | pgx | 8 | [10.1007/s00228-003-0595-1](https://doi.org/10.1007/s00228-003-0595-1) | [12728290](https://www.ncbi.nlm.nih.gov/pubmed/12728290) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Morse_2020.pdf` | Morse BL et al., Pharmacokinetics of Organic Cation Tran…, Drug metabolism and disposi… (2020) | pgx | 8 | [10.1124/dmd.119.088781](https://doi.org/10.1124/dmd.119.088781) | [31771949](https://www.ncbi.nlm.nih.gov/pubmed/31771949) | metadata signals extractable PGX data (SLC22A1, PK/PD-context) |
 | `Babaoglu_2005.pdf` | Babaoglu MO et al., Association of the ABCB1 3435C&gt;T polymo…, Clinical pharmacology and t… (2005) | pgx | 5 | [10.1016/j.clpt.2005.08.015](https://doi.org/10.1016/j.clpt.2005.08.015) | [16338277](https://www.ncbi.nlm.nih.gov/pubmed/16338277) | metadata signals extractable PGX data (ABCB1) |
-| `Janicki_2005.pdf` | Janicki PK, Cytochrome P450 2D6 metabolism and 5-hy…, Medical science monitor : i… (2005) | pgx | 5 | not captured | [16192915](https://www.ncbi.nlm.nih.gov/pubmed/16192915) | metadata signals extractable PGX data (CYP2D6) |
+| `Janicki_2005.pdf` | Janicki PK, Cytochrome P450 2D6 metabolism and 5-hy…, Medical science monitor : i… (2005) | pgx | 5 |  | [16192915](https://www.ncbi.nlm.nih.gov/pubmed/16192915) | metadata signals extractable PGX data (CYP2D6) |
 | `Kaiser_2002.pdf` | Kaiser R et al., Patient-tailored antiemetic treatment w…, Journal of clinical oncolog… (2002) | pgx | 5 | [10.1200/JCO.2002.09.064](https://doi.org/10.1200/JCO.2002.09.064) | [12065557](https://www.ncbi.nlm.nih.gov/pubmed/12065557) | metadata signals extractable PGX data (CYP2D6) |
 | `Späth_2004.pdf` | Späth M et al., Treatment of fibromyalgia with tropiset…, Scandinavian journal of rhe… (2004) | pgx | 5 | [10.1080/03009740410007087](https://doi.org/10.1080/03009740410007087) | [15515418](https://www.ncbi.nlm.nih.gov/pubmed/15515418) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-04T14:57:31.689232+00:00</sub>
+<sub>queue written 2026-10-04 14:57 UTC</sub>
 
 ## Screened and excluded
 
@@ -243,5 +243,5 @@ _23 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09)</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btropisetron%5D&body=Drug%3A%20tropisetron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tropisetron/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09</sub>

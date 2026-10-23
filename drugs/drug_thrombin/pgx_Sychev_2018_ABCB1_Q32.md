@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthrombin%5D%20pgx_Sychev_2018_ABCB1_Q32&body=Drug%3A%20thrombin%0ARecord%3A%20pgx_Sychev_2018_ABCB1_Q32%0APaper%3A%20Sychev_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thrombin/pgx_Sychev_2018_ABCB1_Q32%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [thrombin](drugs/drug_thrombin/)</sub>

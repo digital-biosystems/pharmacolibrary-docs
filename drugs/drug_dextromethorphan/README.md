@@ -4,7 +4,7 @@
 
 - **generic name:** dextromethorphan
 - **ATC codes:** `N06AX62`, `R05DA09`
-- **DrugBank:** [DB00514](https://go.drugbank.com/drugs/DB00514) · **PubChem:** not captured
+- **DrugBank:** [DB00514](https://go.drugbank.com/drugs/DB00514) · **PubChem:** none
 - **groups:** approved, investigational
 
 ## About
@@ -127,7 +127,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1930 matched, 135 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 8  ·  extracted 0  ·  needs_review 4  ·  rejected 4  ·  stale 1
+- **records:** 8  ·  extracted 0  ·  needs review 4  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -140,7 +140,7 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Moghadamnia_2003.pdf` | Moghadamnia AA et al., Physiologically based modelling of inhi…, British journal of clinical… (2003) | popPK | 9 | [10.1046/j.1365-2125.2003.01853.x](https://doi.org/10.1046/j.1365-2125.2003.01853.x) | [12848776](https://pubmed.ncbi.nlm.nih.gov/12848776) | Human PK-PD modelling of dextromethorphan with quantitative parameters (CLint range, ke0, Ki) reported in the abstract; full parameter set may be in tables not shown. |
 | `Corado_2017.pdf` | Corado CR et al., Pharmacokinetics of dextromethorphan an…, Drug testing and analysis (2017) | popPK | 7 | [10.1002/dta.2060](https://doi.org/10.1002/dta.2060) | [27580591](https://pubmed.ncbi.nlm.nih.gov/27580591) | Non-compartmental PK of dextromethorphan in horses with numeric Cmax, Tmax, t1/2, and AUC values reported directly in the abstract. |
 | `Gundeti_2024.pdf` | Gundeti M et al., Evaluating gender effect in the generic…, Biopharmaceutics & drug dis… (2024) | popPK | 7 | [10.1002/bdd.2389](https://doi.org/10.1002/bdd.2389) | [38776407](https://pubmed.ncbi.nlm.nih.gov/38776407) | PBPK/population PK modeling of dextromethorphan MR tablets in humans, but the abstract contains no numeric parameter values, which likely reside in tables/figures not provided. |
-| `Liu_2004.pdf` | Liu D et al., [Determination of dextrorphan in human…, Yao xue xue bao = Acta phar… (2004) | popPK | 6 | not captured | [15491104](https://pubmed.ncbi.nlm.nih.gov/15491104) | Reports numeric PK parameters (Tmax, Cmax, T1/2, AUC) for dextrorphan, the active metabolite of dextromethorphan, in humans; no CL/V but metabolite half-life and exposure values are present. |
+| `Liu_2004.pdf` | Liu D et al., [Determination of dextrorphan in human…, Yao xue xue bao = Acta phar… (2004) | popPK | 6 |  | [15491104](https://pubmed.ncbi.nlm.nih.gov/15491104) | Reports numeric PK parameters (Tmax, Cmax, T1/2, AUC) for dextrorphan, the active metabolite of dextromethorphan, in humans; no CL/V but metabolite half-life and exposure values are present. |
 | `AlRabiah_2018.pdf` | AlRabiah H et al., Effect of Naltrexone Hydrochloride on C…, European journal of drug me… (2018) | pd | 5 | [10.1007/s13318-018-0482-x](https://doi.org/10.1007/s13318-018-0482-x) | [29744741](https://www.ncbi.nlm.nih.gov/pubmed/29744741) | metadata signals extractable PD data (IC50) |
 | `Li_2019.pdf` | Li Z et al., Atipamezole is a promising non-discrimi…, European journal of pharmac… (2019) | pd | 5 | [10.1016/j.ejps.2019.01.010](https://doi.org/10.1016/j.ejps.2019.01.010) | [30690186](https://www.ncbi.nlm.nih.gov/pubmed/30690186) | metadata signals extractable PD data (IC50) |
 | `Tan_2021.pdf` | Tan BH et al., In vitro inhibitory effects of glucosam…, Drug metabolism and persona… (2021) | pd | 5 | [10.1515/dmpt-2020-0182](https://doi.org/10.1515/dmpt-2020-0182) | [34821124](https://www.ncbi.nlm.nih.gov/pubmed/34821124) | metadata signals extractable PD data (IC50) |
@@ -150,7 +150,7 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mangano_1991.pdf` | Mangano TJ et al., Inhibition of K(+)-evoked [3H]D-asparta…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0014-2999(91)90062-u](https://doi.org/10.1016/0014-2999(91)90062-u) | [1645678](https://www.ncbi.nlm.nih.gov/pubmed/1645678) | metadata signals extractable PD data (IC50) |
 | `Vaghela_2018.pdf` | Vaghela M et al., In vitro Inhibitory Effect of Gymnema s…, European journal of drug me… (2018) | pd | 4 | [10.1007/s13318-017-0443-9](https://doi.org/10.1007/s13318-017-0443-9) | [29019074](https://www.ncbi.nlm.nih.gov/pubmed/29019074) | metadata signals extractable PD data (IC50) |
 | `Antunes_2015.pdf` | Antunes MV et al., Influence of CYP2D6 and CYP3A4 Phenotyp…, Therapeutic drug monitoring (2015) | pgx | 8 | [10.1097/FTD.0000000000000212](https://doi.org/10.1097/FTD.0000000000000212) | [25853922](https://www.ncbi.nlm.nih.gov/pubmed/25853922) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
-| `Bagli_1995.pdf` | Bagli M et al., Bioequivalence and absolute bioavailabi…, International journal of cl… (1995) | pgx | 8 | not captured | [8963481](https://www.ncbi.nlm.nih.gov/pubmed/8963481) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Bagli_1995.pdf` | Bagli M et al., Bioequivalence and absolute bioavailabi…, International journal of cl… (1995) | pgx | 8 |  | [8963481](https://www.ncbi.nlm.nih.gov/pubmed/8963481) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Chow_2001.pdf` | Chow MS et al., Evaluation of CYP2D6 oxidation of dextr…, Journal of clinical pharmac… (2001) | pgx | 8 | [10.1177/00912700122009737](https://doi.org/10.1177/00912700122009737) | [11144999](https://www.ncbi.nlm.nih.gov/pubmed/11144999) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Funck-Brentano_1994.pdf` | Funck-Brentano C et al., Variable disposition kinetics and elect…, Clinical pharmacology and t… (1994) | pgx | 8 | [10.1038/clpt.1994.26](https://doi.org/10.1038/clpt.1994.26) | [8143391](https://www.ncbi.nlm.nih.gov/pubmed/8143391) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Huang_1993.pdf` | Huang ML et al., Pharmacokinetics of the novel antipsych…, Clinical pharmacology and t… (1993) | pgx | 8 | [10.1038/clpt.1993.146](https://doi.org/10.1038/clpt.1993.146) | [7690693](https://www.ncbi.nlm.nih.gov/pubmed/7690693) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -175,13 +175,13 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Walzer_2012.pdf` | Walzer M et al., Pharmacokinetic drug interactions betwe…, Pharmacotherapy (2012) | pgx | 7 | [10.1002/j.1875-9114.2012.01028.x](https://doi.org/10.1002/j.1875-9114.2012.01028.x) | [22422635](https://www.ncbi.nlm.nih.gov/pubmed/22422635) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `ter_2014.pdf` | ter Heine R et al., Population pharmacokinetic modelling to…, British journal of clinical… (2014) | pgx | 7 | [10.1111/bcp.12388](https://doi.org/10.1111/bcp.12388) | [24697814](https://www.ncbi.nlm.nih.gov/pubmed/24697814) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Gaedigk_2017.pdf` | Gaedigk A et al., In vivo characterization of CYP2D6*12,…, Pharmacogenomics (2017) | pgx | 5 | [10.2217/pgs-2016-0192](https://doi.org/10.2217/pgs-2016-0192) | [28290770](https://www.ncbi.nlm.nih.gov/pubmed/28290770) | metadata signals extractable PGX data (CYP2D6*12) |
-| `Jacqz-Aigrain_1992.pdf` | Jacqz-Aigrain E et al., Cytochrome P450-dependent metabolism of…, Developmental pharmacology… (1992) | pgx | 5 | not captured | [1306804](https://www.ncbi.nlm.nih.gov/pubmed/1306804) | metadata signals extractable PGX data (CYP2D6) |
+| `Jacqz-Aigrain_1992.pdf` | Jacqz-Aigrain E et al., Cytochrome P450-dependent metabolism of…, Developmental pharmacology… (1992) | pgx | 5 |  | [1306804](https://www.ncbi.nlm.nih.gov/pubmed/1306804) | metadata signals extractable PGX data (CYP2D6) |
 | `Montané_2018.pdf` | Montané Jaime LK et al., Impact of CYP2D6 on venlafaxine metabol…, Pharmacogenomics (2018) | pgx | 5 | [10.2217/pgs-2017-0142](https://doi.org/10.2217/pgs-2017-0142) | [29327975](https://www.ncbi.nlm.nih.gov/pubmed/29327975) | metadata signals extractable PGX data (CYP2D6) |
 | `Vandel_2004.pdf` | Vandel P et al., Clomipramine, fluoxetine and CYP2D6 met…, Human psychopharmacology (2004) | pgx | 5 | [10.1002/hup.598](https://doi.org/10.1002/hup.598) | [15252821](https://www.ncbi.nlm.nih.gov/pubmed/15252821) | metadata signals extractable PGX data (CYP2D6) |
 | `Wadelius_1997.pdf` | Wadelius M et al., Induction of CYP2D6 in pregnancy, Clinical pharmacology and t… (1997) | pgx | 5 | [10.1016/S0009-9236(97)90118-1](https://doi.org/10.1016/S0009-9236(97)90118-1) | [9357391](https://www.ncbi.nlm.nih.gov/pubmed/9357391) | metadata signals extractable PGX data (CYP2D6) |
 | `Zhao_2024.pdf` | Zhao Y et al., Effect of isotretinoin on CYP2D6 and CY…, British journal of clinical… (2024) | pgx | 5 | [10.1111/bcp.15938](https://doi.org/10.1111/bcp.15938) | [37864393](https://www.ncbi.nlm.nih.gov/pubmed/37864393) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-06T22:25:49.253147+00:00</sub>
+<sub>queue written 2026-10-06 22:25 UTC</sub>
 
 ## Screened and excluded
 
@@ -273,5 +273,5 @@ _44 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-06 22:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdextromethorphan%5D&body=Drug%3A%20dextromethorphan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dextromethorphan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:25 UTC</sub>

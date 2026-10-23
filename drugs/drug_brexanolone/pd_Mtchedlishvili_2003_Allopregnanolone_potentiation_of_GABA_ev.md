@@ -68,4 +68,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexanolone%5D%20pd_Mtchedlishvili_2003_Allopregnanolone_potentiation_of_GABA_ev&body=Drug%3A%20brexanolone%0ARecord%3A%20pd_Mtchedlishvili_2003_Allopregnanolone_potentiation_of_GABA_ev%0APaper%3A%20Mtchedlishvili_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexanolone/pd_Mtchedlishvili_2003_Allopregnanolone_potentiation_of_GABA_ev%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [brexanolone](drugs/drug_brexanolone/)</sub>

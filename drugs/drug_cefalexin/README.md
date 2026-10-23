@@ -5,7 +5,7 @@
 
 - **generic name:** cefalexin
 - **ATC codes:** `J01DB01`
-- **DrugBank:** [DB00567](https://go.drugbank.com/drugs/DB00567) · **PubChem:** not captured
+- **DrugBank:** [DB00567](https://go.drugbank.com/drugs/DB00567) · **PubChem:** none
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -62,11 +62,10 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC15A1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor, `SLC47A1` substrate | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A5` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor, `SLC47A1` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` substrate | DrugBank actor |
 
 <details class="legend">
@@ -87,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 19 matched, 15 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -98,13 +97,13 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Haynes_2025.pdf` | Haynes AS et al., Oral Cephalexin Population Pharmacokine…, Journal of the Pediatric In… (2025) | popPK | 10 | [10.1093/jpids/piaf088](https://doi.org/10.1093/jpids/piaf088) | [40995926](https://pubmed.ncbi.nlm.nih.gov/40995926) | The study is a population PK analysis of cephalexin in infants, but the specific numeric parameter estimates (CL, V, ka) are not listed in the provided abstract text, likely residing in the full results tables or figures not included. |
 | `Haynes_2024.pdf` | Haynes AS et al., Cefadroxil and cephalexin pharmacokinet…, Antimicrobial agents and ch… (2024) | popPK | 9 | [10.1128/aac.00182-24](https://doi.org/10.1128/aac.00182-24) | [38597672](https://pubmed.ncbi.nlm.nih.gov/38597672) | The study reports population PK modeling for cephalexin, but the specific numeric parameter values (CL, V) are not listed in the provided abstract, only the half-life and qualitative model structure are mentioned. |
-| `Koroleva_1981.pdf` | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | popPK | 9 | not captured | [7235651](https://pubmed.ncbi.nlm.nih.gov/7235651) | The study reports quantitative PK parameters (Tmax, half-absorption time) for cephalexin in rats and dogs using a one-compartment model. |
+| `Koroleva_1981.pdf` | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | popPK | 9 |  | [7235651](https://pubmed.ncbi.nlm.nih.gov/7235651) | The study reports quantitative PK parameters (Tmax, half-absorption time) for cephalexin in rats and dogs using a one-compartment model. |
 | `Pelligand_2024.pdf` | Pelligand L et al., Population pharmacokinetic meta-analysi…, Veterinary journal (London,… (2024) | popPK | 9 | [10.1016/j.tvjl.2024.106136](https://doi.org/10.1016/j.tvjl.2024.106136) | [38759725](https://pubmed.ncbi.nlm.nih.gov/38759725) | The paper reports a population PK meta-analysis for cefalexin in dogs, but the evidence text only contains simulation results (timing, re-administration intervals) and dosing regimens, lacking the specific numeric PK parameter values (CL, V, ka) which are likely in the full text or supplementary materials not provided. |
 | `Yamada_2022.pdf` | Yamada T et al., Probability of target attainment of ora…, Diagnostic microbiology and… (2022) | popPK | 9 | [10.1016/j.diagmicrobio.2022.115662](https://doi.org/10.1016/j.diagmicrobio.2022.115662) | [35321800](https://pubmed.ncbi.nlm.nih.gov/35321800) | The study performs Monte Carlo simulations using a population PK model for cefalexin to assess target attainment, but specific numeric PK parameter values (CL, V) are not listed in the provided text. |
 | `Gwee_2020.pdf` | Gwee A et al., Twice- and Thrice-daily Cephalexin Dosi…, The Pediatric infectious di… (2020) | popPK | 8 | [10.1097/INF.0000000000002646](https://doi.org/10.1097/INF.0000000000002646) | [32412727](https://pubmed.ncbi.nlm.nih.gov/32412727) | The paper describes a population PK model of cefalexin in children, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract evidence. |
 | `Lv_2021.pdf` | Lv X et al., Bioequivalence of cefalexin in healthy…, International journal of cl… (2021) | popPK | 5 | [10.5414/CP203986](https://doi.org/10.5414/CP203986) | [34448694](https://pubmed.ncbi.nlm.nih.gov/34448694) | Study reports non-compartmental bioequivalence statistics (Cmax, AUC) but lacks compartmental PK parameters (CL, V, ka) required for population pharmacokinetic modeling. |
 
-<sub>queue written 2026-10-07T10:44:28.317924+00:00</sub>
+<sub>queue written 2026-10-07 10:44 UTC</sub>
 
 ## Screened and excluded
 
@@ -128,5 +127,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 10:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefalexin%5D&body=Drug%3A%20cefalexin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefalexin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:44 UTC</sub>

@@ -109,7 +109,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17480 matched, 132 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 5  ·  needs_review 0  ·  rejected 1  ·  stale 6
+- **records:** 6  ·  extracted 5  ·  needs review 0  ·  rejected 1  ·  stale 6
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -118,7 +118,7 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Durisová_1985.pdf` | Durisová M et al., The rate and extent of calcium bioavail…, General physiology and biop… (1985) | popPK | 9 | not captured | [4065541](https://pubmed.ncbi.nlm.nih.gov/4065541) | The study reports a compartmental PK model for calcium in rats, but no specific numeric parameter values (CL, V, ka, etc.) are present in the provided evidence. |
+| `Durisová_1985.pdf` | Durisová M et al., The rate and extent of calcium bioavail…, General physiology and biop… (1985) | popPK | 9 |  | [4065541](https://pubmed.ncbi.nlm.nih.gov/4065541) | The study reports a compartmental PK model for calcium in rats, but no specific numeric parameter values (CL, V, ka, etc.) are present in the provided evidence. |
 | `Fukazawa-Shinotsuka_2022.pdf` | Fukazawa-Shinotsuka M et al., Maxacalcitol Pharmacokinetic-Pharmacody…, Drug research (2022) | pd | 5 | [10.1055/a-1581-7609](https://doi.org/10.1055/a-1581-7609) | [34488237](https://www.ncbi.nlm.nih.gov/pubmed/34488237) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Han_2025.pdf` | Han LY et al., Applying exposure-response analysis to…, European journal of pharmac… (2025) | pd | 5 | [10.1016/j.ejps.2025.107146](https://doi.org/10.1016/j.ejps.2025.107146) | [40447059](https://www.ncbi.nlm.nih.gov/pubmed/40447059) | metadata signals extractable PD data (exposure-response) |
 | `Lalonde_1999.pdf` | Lalonde RL et al., Mixed-effects modeling of the pharmacod…, Clinical pharmacology and t… (1999) | pd | 5 | [10.1016/S0009-9236(99)70120-7](https://doi.org/10.1016/S0009-9236(99)70120-7) | [9951429](https://www.ncbi.nlm.nih.gov/pubmed/9951429) | metadata signals extractable PD data (Emax) |
@@ -127,23 +127,23 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Shen_2014.pdf` | Shen J et al., A pharmacokinetic/pharmacodynamic model…, Journal of clinical pharmac… (2014) | pd | 5 | [10.1002/jcph.314](https://doi.org/10.1002/jcph.314) | [24752908](https://www.ncbi.nlm.nih.gov/pubmed/24752908) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Venuto_2021.pdf` | Venuto CS et al., Isradipine plasma pharmacokinetics and…, Annals of clinical and tran… (2021) | pd | 5 | [10.1002/acn3.51300](https://doi.org/10.1002/acn3.51300) | [33460320](https://www.ncbi.nlm.nih.gov/pubmed/33460320) | metadata signals extractable PD data (exposure-response) |
 | `Ziółkowski_2014.pdf` | Ziółkowski H et al., Influence of oral co-administration of…, Research in veterinary scie… (2014) | pd | 5 | [10.1016/j.rvsc.2014.05.005](https://doi.org/10.1016/j.rvsc.2014.05.005) | [24875062](https://www.ncbi.nlm.nih.gov/pubmed/24875062) | metadata signals extractable PD data (PK/PD) |
-| `Bril_1995.pdf` | Bril A et al., Electrophysiological effect of BRL-3287…, The Journal of pharmacology… (1995) | pd | 4 | not captured | [7791099](https://www.ncbi.nlm.nih.gov/pubmed/7791099) | metadata signals extractable PD data (EC50) |
+| `Bril_1995.pdf` | Bril A et al., Electrophysiological effect of BRL-3287…, The Journal of pharmacology… (1995) | pd | 4 |  | [7791099](https://www.ncbi.nlm.nih.gov/pubmed/7791099) | metadata signals extractable PD data (EC50) |
 | `Grudt_1993.pdf` | Grudt TJ et al., kappa-Opioid receptors also increase po…, Proceedings of the National… (1993) | pd | 4 | [10.1073/pnas.90.23.11429](https://doi.org/10.1073/pnas.90.23.11429) | [7902584](https://www.ncbi.nlm.nih.gov/pubmed/7902584) | metadata signals extractable PD data (EC50) |
 | `Klöckner_1987.pdf` | Klöckner U et al., Calmodulin antagonists depress calcium…, The American journal of phy… (1987) | pd | 4 | [10.1152/ajpheart.1987.253.6.H1601](https://doi.org/10.1152/ajpheart.1987.253.6.H1601) | [2447792](https://www.ncbi.nlm.nih.gov/pubmed/2447792) | metadata signals extractable PD data (EC50) |
-| `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
+| `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 |  | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
 | `Walker_2010.pdf` | Walker JS et al., Analysing force-pCa curves, Journal of muscle research… (2010) | pd | 4 | [10.1007/s10974-010-9208-7](https://doi.org/10.1007/s10974-010-9208-7) | [20490629](https://www.ncbi.nlm.nih.gov/pubmed/20490629) | metadata signals extractable PD data (sigmoid) |
 | `Wehling_1995.pdf` | Wehling M et al., Nongenomic effects of aldosterone on in…, Circulation research (1995) | pd | 4 | [10.1161/01.res.76.6.973](https://doi.org/10.1161/01.res.76.6.973) | [7758168](https://www.ncbi.nlm.nih.gov/pubmed/7758168) | metadata signals extractable PD data (EC50) |
 | `Wilkes_1991.pdf` | Wilkes JM et al., Second messengers in the gastric gland:…, Scandinavian journal of gas… (1991) | pd | 4 | [10.3109/00365529109093181](https://doi.org/10.3109/00365529109093181) | [2042037](https://www.ncbi.nlm.nih.gov/pubmed/2042037) | metadata signals extractable PD data (IC50) |
-| `Cuciureanu_2010.pdf` | Cuciureanu M et al., Grapefruit juice--drug interactions: im…, Revista medico-chirurgicala… (2010) | pgx | 8 | not captured | [21235125](https://www.ncbi.nlm.nih.gov/pubmed/21235125) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Cuciureanu_2010.pdf` | Cuciureanu M et al., Grapefruit juice--drug interactions: im…, Revista medico-chirurgicala… (2010) | pgx | 8 |  | [21235125](https://www.ncbi.nlm.nih.gov/pubmed/21235125) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Hu_2022.pdf` | Hu X et al., The effect of CYP3A4 genetic polymorphi…, Chemico-biological interact… (2022) | pgx | 8 | [10.1016/j.cbi.2022.110123](https://doi.org/10.1016/j.cbi.2022.110123) | [36007633](https://www.ncbi.nlm.nih.gov/pubmed/36007633) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Misra_2026.pdf` | Misra A et al., Pharmacology and Pharmacogenomics of An…, CNS & neurological disorder… (2026) | pgx | 8 | [10.2174/0118715273402957251210064344](https://doi.org/10.2174/0118715273402957251210064344) | [41833043](https://www.ncbi.nlm.nih.gov/pubmed/41833043) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 | not captured | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 |  | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Niemi_2003.pdf` | Niemi M et al., Pharmacokinetic interactions with rifam…, Clinical pharmacokinetics (2003) | pgx | 7 | [10.2165/00003088-200342090-00003](https://doi.org/10.2165/00003088-200342090-00003) | [12882588](https://www.ncbi.nlm.nih.gov/pubmed/12882588) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Robinson_2017.pdf` | Robinson BL et al., Cyclosporine exacerbates ketamine toxic…, Journal of applied toxicolo… (2017) | pgx | 7 | [10.1002/jat.3488](https://doi.org/10.1002/jat.3488) | [28569378](https://www.ncbi.nlm.nih.gov/pubmed/28569378) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Sadaka_2022.pdf` | Sadaka Y et al., Combined Use of Calcium-channel Blocker…, Anticancer research (2022) | pgx | 7 | [10.21873/anticanres.15690](https://doi.org/10.21873/anticanres.15690) | [35347032](https://www.ncbi.nlm.nih.gov/pubmed/35347032) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Sugiyama_2007.pdf` | Sugiyama Y et al., Effect of benidipine on simvastatin met…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.199](https://doi.org/10.2133/dmpk.22.199) | [17603221](https://www.ncbi.nlm.nih.gov/pubmed/17603221) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T04:04:36.081822+00:00</sub>
+<sub>queue written 2026-10-05 04:04 UTC</sub>
 
 ## Screened and excluded
 
@@ -279,5 +279,5 @@ _24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-05 04:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcalcium%5D&body=Drug%3A%20calcium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_calcium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 04:04 UTC</sub>

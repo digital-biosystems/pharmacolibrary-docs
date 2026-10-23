@@ -5,7 +5,7 @@
 
 - **generic name:** atracurium
 - **ATC codes:** `M03AC04`
-- **DrugBank:** [DB13295](https://go.drugbank.com/drugs/DB13295) · **PubChem:** not captured
+- **DrugBank:** [DB13295](https://go.drugbank.com/drugs/DB13295) · **PubChem:** none
 - **groups:** approved, investigational, withdrawn
 
 ## About
@@ -110,7 +110,7 @@ Atracurium is a muscle relaxant used to relax muscles during surgery and to help
 
 - **PubMed hits:** 264 matched, 109 returned
 - **screened:** 10  ·  **relevant:** 10
-- **records:** 8  ·  extracted 4  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 8  ·  extracted 4  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -122,7 +122,7 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Boyd_1996.pdf` | Boyd AH et al., Comparison of the pharmacodynamics and…, British journal of anaesthe… (1996) | popPK | 10 | [10.1093/bja/76.3.382](https://doi.org/10.1093/bja/76.3.382) | [8785138](https://pubmed.ncbi.nlm.nih.gov/8785138) | The study reports quantitative population pharmacokinetic parameters (V, Cl, T1/2) for atracurium isomers using a NONMEM single-compartment model. |
 | `Fahey_1984.pdf` | Fahey MR et al., The pharmacokinetics and pharmacodynami…, Anesthesiology (1984) | popPK | 10 | [10.1097/00000542-198412000-00011](https://doi.org/10.1097/00000542-198412000-00011) | [6239574](https://pubmed.ncbi.nlm.nih.gov/6239574) | The study reports a two-compartment model and laudanosine metabolite data for atracurium in humans, but the specific quantitative PK parameters (CL, V, ka) for atracurium itself are not explicitly listed in the provided evidence text. |
 | `Farenc_2001.pdf` | Farenc C et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | popPK | 10 | [10.1177/00912700122009827](https://doi.org/10.1177/00912700122009827) | [11144993](https://pubmed.ncbi.nlm.nih.gov/11144993) | The text explicitly reports quantitative pharmacokinetic parameters for atracurium in humans, including mean volume of distribution (217 ml/kg), plasma clearance (550 ml/min), and elimination half-life (22 minutes). |
-| `Fisher_1986.pdf` | Fisher DM et al., Elimination of atracurium in humans: co…, Anesthesiology (1986) | popPK | 10 | not captured | [3755306](https://pubmed.ncbi.nlm.nih.gov/3755306) | The study reports quantitative pharmacokinetic parameters for atracurium in humans, including total, organ-based, and non-organ clearance values. |
+| `Fisher_1986.pdf` | Fisher DM et al., Elimination of atracurium in humans: co…, Anesthesiology (1986) | popPK | 10 |  | [3755306](https://pubmed.ncbi.nlm.nih.gov/3755306) | The study reports quantitative pharmacokinetic parameters for atracurium in humans, including total, organ-based, and non-organ clearance values. |
 | `Fisher_1990.pdf` | Fisher DM et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1990) | popPK | 10 | [10.1097/00000542-199007000-00006](https://doi.org/10.1097/00000542-199007000-00006) | [2360737](https://pubmed.ncbi.nlm.nih.gov/2360737) | The paper reports quantitative PK parameters (Vss, CL, t1/2) for atracurium in humans, with values clearly present in the text. |
 | `Schopfer_1989.pdf` | Schopfer C et al., Pharmacokinetics of atracurium besylate…, European journal of drug me… (1989) | popPK | 10 | [10.1007/BF03190115](https://doi.org/10.1007/BF03190115) | [2633924](https://pubmed.ncbi.nlm.nih.gov/2633924) | The study reports explicit numeric values for clearance, volume of distribution, and half-life for atracurium in pigs. |
 | `Smith_1997.pdf` | Smith CE et al., A comparison of the infusion pharmacoki…, Anaesthesia (1997) | popPK | 10 | [10.1111/j.1365-2044.1997.195-az0331.x](https://doi.org/10.1111/j.1365-2044.1997.195-az0331.x) | [9349062](https://pubmed.ncbi.nlm.nih.gov/9349062) | Reports quantitative pharmacokinetic parameters (clearance, half-life, compartmental model) for atracurium besylate in humans. |
@@ -134,7 +134,7 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Warwick_1995.pdf` | Warwick NR et al., Pharmacokinetic analysis of the time co…, Clinical pharmacology and t… (1995) | popPK | 8 | [10.1016/0009-9236(95)90207-4](https://doi.org/10.1016/0009-9236(95)90207-4) | [7712666](https://pubmed.ncbi.nlm.nih.gov/7712666) | The study reports quantitative pharmacokinetic parameters (effect compartment half-lives) and pharmacodynamic parameters (ED50/ED95) for atracurium in humans, with values present in the abstract. |
 | `De_1996.pdf` | De Wolf AM et al., Pharmacokinetics and pharmacodynamics o…, British journal of anaesthe… (1996) | popPK | 7 | [10.1093/bja/76.5.624](https://doi.org/10.1093/bja/76.5.624) | [8688259](https://pubmed.ncbi.nlm.nih.gov/8688259) | The study reports quantitative non-compartmental PK parameters (Cl, Vss, t1/2) for cisatracurium, a specific isomer of atracurium, in humans. |
 | `Jaklitsch_1990.pdf` | Jaklitsch RR et al., A simulation of neuromuscular function…, Journal of clinical monitor… (1990) | popPK | 7 | [10.1007/BF02832179](https://doi.org/10.1007/BF02832179) | [2404085](https://pubmed.ncbi.nlm.nih.gov/2404085) | The study is a simulation model based on pharmacodynamic data (twitch depression) rather than reporting extractable quantitative pharmacokinetic parameter values (CL, V, etc.) in the provided evidence. |
-| `Wright_1994.pdf` | Wright PM et al., Cumulative characteristics of atracuriu…, Anesthesiology (1994) | popPK | 6 | not captured | [7913801](https://pubmed.ncbi.nlm.nih.gov/7913801) | The study reports half-life and effect-compartment concentrations for atracurium, but primary disposition parameters (CL, Vd) are not explicitly listed in the text provided. |
+| `Wright_1994.pdf` | Wright PM et al., Cumulative characteristics of atracuriu…, Anesthesiology (1994) | popPK | 6 |  | [7913801](https://pubmed.ncbi.nlm.nih.gov/7913801) | The study reports half-life and effect-compartment concentrations for atracurium, but primary disposition parameters (CL, Vd) are not explicitly listed in the text provided. |
 | `Eastwood_1995.pdf` | Eastwood NB et al., Pharmacokinetics of 1R-cis 1'R-cis atra…, British journal of anaesthe… (1995) | popPK | 5 | [10.1093/bja/75.4.431](https://doi.org/10.1093/bja/75.4.431) | [7488483](https://pubmed.ncbi.nlm.nih.gov/7488483) | The study reports PK parameters (Clearance, T1/2) for a specific stereoisomer of atracurium (51W89) in humans, but it is not the standard racemic atracurium, and exact numeric values for all parameters are not fully provided. |
 | `Nigrovic_1996.pdf` | Nigrovic V et al., A pharmacokinetic-pharmacodynamic model…, European journal of clinica… (1996) | popPK | 5 | [10.1007/BF00226335](https://doi.org/10.1007/BF00226335) | [8857080](https://pubmed.ncbi.nlm.nih.gov/8857080) | The paper describes a PK-PD model for atracurium, but it relies on previously published clinical data and only reports specific effect compartment values (14%, 7.6 min) without providing the standard disposition parameters (CL, V) or the full numeric set of rate constants in the evidence. |
 | `Fisher_1993.pdf` | Fisher DM, Pharmacokinetic/pharmacodynamic modelli…, British journal of anaesthe… (1993) | pd | 5 | [10.1093/bja/70.1.110-a](https://doi.org/10.1093/bja/70.1.110-a) | [8431315](https://www.ncbi.nlm.nih.gov/pubmed/8431315) | metadata signals extractable PD data (pharmacodynamicmodel) |
@@ -150,7 +150,7 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Parker_1992.pdf` | Parker CJ et al., Relationship of the train-of-four ratio…, British journal of anaesthe… (1992) | pd | 4 | [10.1093/bja/69.3.274](https://doi.org/10.1093/bja/69.3.274) | [1327041](https://www.ncbi.nlm.nih.gov/pubmed/1327041) | metadata signals extractable PD data (effectcompartment) |
 | `Rimaniol_1996.pdf` | Rimaniol JM et al., A comparison of the neuromuscular block…, Anesthesia and analgesia (1996) | pd | 4 | [10.1097/00000539-199610000-00027](https://doi.org/10.1097/00000539-199610000-00027) | [8831326](https://www.ncbi.nlm.nih.gov/pubmed/8831326) | metadata signals extractable PD data (EMAX) |
 
-<sub>queue written 2026-10-07T02:10:15.963122+00:00</sub>
+<sub>queue written 2026-10-07 02:10 UTC</sub>
 
 ## Screened and excluded
 
@@ -222,5 +222,5 @@ _30 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 02:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batracurium%5D&body=Drug%3A%20atracurium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atracurium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:10 UTC</sub>

@@ -89,4 +89,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfasudil%5D%20pd_Scherer_2005_reversal_of_ET_1_mediated_vasoconstriction_vasc&body=Drug%3A%20fasudil%0ARecord%3A%20pd_Scherer_2005_reversal_of_ET_1_mediated_vasoconstriction_vasc%0APaper%3A%20Scherer_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fasudil/pd_Scherer_2005_reversal_of_ET_1_mediated_vasoconstriction_vasc%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fasudil](drugs/drug_fasudil/)</sub>

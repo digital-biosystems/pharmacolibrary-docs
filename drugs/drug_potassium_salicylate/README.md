@@ -5,7 +5,7 @@
 
 - **generic name:** potassium salicylate
 - **ATC codes:** `N02BA12`
-- **DrugBank:** not captured · **PubChem:** not captured
+- **DrugBank:** none · **PubChem:** none
 - **groups:** not captured
 
 ## About
@@ -82,7 +82,7 @@ Potassium salicylate is a salicylic acid derivative classified as an analgesic a
 
 - **PubMed hits:** 1047 matched, 315 returned
 - **screened:** 45  ·  **relevant:** 3
-- **records:** 7  ·  extracted 0  ·  needs_review 4  ·  rejected 3  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 4  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
@@ -91,7 +91,7 @@ _39 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wójcicki_1981.pdf` | Wójcicki J et al., Effect of unilateral nephrectomy in rab…, Polish journal of pharmacol… (1981) | popPK | 8 | not captured | [7335555](https://pubmed.ncbi.nlm.nih.gov/7335555) | The study reports quantitative PK parameters (AUC, t0.5, kel) for salicylate in rabbits. |
+| `Wójcicki_1981.pdf` | Wójcicki J et al., Effect of unilateral nephrectomy in rab…, Polish journal of pharmacol… (1981) | popPK | 8 |  | [7335555](https://pubmed.ncbi.nlm.nih.gov/7335555) | The study reports quantitative PK parameters (AUC, t0.5, kel) for salicylate in rabbits. |
 | `Yoshida_2007.pdf` | Yoshida D et al., Dermatopharmacokinetics of salicylate f…, International journal of ph… (2007) | popPK | 7 | [10.1016/j.ijpharm.2006.12.040](https://doi.org/10.1016/j.ijpharm.2006.12.040) | [17280809](https://pubmed.ncbi.nlm.nih.gov/17280809) | The study reports pharmacokinetic parameters (compartmental models, absorption rates) for salicylate (the active ion of potassium salicylate) in rats, but specific numerical values for clearance, volume, or half-life are not explicitly present in the provided text. |
 | `Mukherjee_2025.pdf` | Mukherjee A et al., Pharmacokinetic-Pharmacodynamic (PK-PD)…, Indian journal of pediatrics (2025) | pd | 5 | [10.1007/s12098-024-05135-9](https://doi.org/10.1007/s12098-024-05135-9) | [38802673](https://www.ncbi.nlm.nih.gov/pubmed/38802673) | metadata signals extractable PD data (PK-PD) |
 | `Pinder_2019.pdf` | Pinder N et al., Continuous infusion of physostigmine in…, Biomedicine & pharmacothera… (2019) | pd | 5 | [10.1016/j.biopha.2019.109318](https://doi.org/10.1016/j.biopha.2019.109318) | [31398669](https://www.ncbi.nlm.nih.gov/pubmed/31398669) | metadata signals extractable PD data (sigmoid) |
@@ -105,7 +105,7 @@ _39 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Costa_2014.pdf` | Costa SP et al., Automated evaluation of pharmaceuticall…, Journal of hazardous materi… (2014) | pd | 4 | [10.1016/j.jhazmat.2013.11.052](https://doi.org/10.1016/j.jhazmat.2013.11.052) | [24355776](https://www.ncbi.nlm.nih.gov/pubmed/24355776) | metadata signals extractable PD data (EC50) |
 | `Dunstan_1998.pdf` | Dunstan C et al., Alphitol, a phenolic substance from Alp…, Phytochemistry (1998) | pd | 4 | [10.1016/s0031-9422(97)00827-3](https://doi.org/10.1016/s0031-9422(97)00827-3) | [9654777](https://www.ncbi.nlm.nih.gov/pubmed/9654777) | metadata signals extractable PD data (IC50) |
 | `Gu_2018.pdf` | Gu CB et al., Characterization, culture medium optimi…, Journal of applied microbio… (2018) | pd | 4 | [10.1111/jam.13928](https://doi.org/10.1111/jam.13928) | [29791772](https://www.ncbi.nlm.nih.gov/pubmed/29791772) | metadata signals extractable PD data (EC50) |
-| `Hurni_1993.pdf` | Hurni MA et al., Permeability enhancement in Caco-2 cell…, The Journal of pharmacology… (1993) | pd | 4 | not captured | [7504101](https://www.ncbi.nlm.nih.gov/pubmed/7504101) | metadata signals extractable PD data (EC50) |
+| `Hurni_1993.pdf` | Hurni MA et al., Permeability enhancement in Caco-2 cell…, The Journal of pharmacology… (1993) | pd | 4 |  | [7504101](https://www.ncbi.nlm.nih.gov/pubmed/7504101) | metadata signals extractable PD data (EC50) |
 | `Iguchi_2022.pdf` | Iguchi T et al., Chemical constituents and aldose reduct…, Natural product research (2022) | pd | 4 | [10.1080/14786419.2020.1839455](https://doi.org/10.1080/14786419.2020.1839455) | [33121272](https://www.ncbi.nlm.nih.gov/pubmed/33121272) | metadata signals extractable PD data (IC50) |
 | `Khatua_2022.pdf` | Khatua S et al., Exploring the Chemical Composition and…, International journal of me… (2022) | pd | 4 | [10.1615/IntJMedMushrooms.2022043758](https://doi.org/10.1615/IntJMedMushrooms.2022043758) | [35695590](https://www.ncbi.nlm.nih.gov/pubmed/35695590) | metadata signals extractable PD data (EC50) |
 | `Li_2024.pdf` | Li W et al., Endocrine-Disrupting Effects of Salicyl…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.4c04265](https://doi.org/10.1021/acs.jafc.4c04265) | [39454092](https://www.ncbi.nlm.nih.gov/pubmed/39454092) | metadata signals extractable PD data (IC50) |
@@ -113,12 +113,12 @@ _39 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Mitchell_1993.pdf` | Mitchell JA et al., Selectivity of nonsteroidal antiinflamm…, Proceedings of the National… (1993) | pd | 4 | [10.1073/pnas.90.24.11693](https://doi.org/10.1073/pnas.90.24.11693) | [8265610](https://www.ncbi.nlm.nih.gov/pubmed/8265610) | metadata signals extractable PD data (IC50) |
 | `Pacifici_1991.pdf` | Pacifici GM et al., Conjugation of benzoic acid with glycin…, Developmental pharmacology… (1991) | pd | 4 | [10.1159/000457499](https://doi.org/10.1159/000457499) | [1811921](https://www.ncbi.nlm.nih.gov/pubmed/1811921) | metadata signals extractable PD data (IC50) |
 | `Picone_2021.pdf` | Picone M et al., Fragrance materials (FMs) affect the la…, Ecotoxicology and environme… (2021) | pd | 4 | [10.1016/j.ecoenv.2021.112146](https://doi.org/10.1016/j.ecoenv.2021.112146) | [33744517](https://www.ncbi.nlm.nih.gov/pubmed/33744517) | metadata signals extractable PD data (EC50) |
-| `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
+| `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 |  | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
 | `Rolli_2016.pdf` | Rolli E et al., Phytotoxic Effects and Phytochemical Fi…, Chemistry & biodiversity (2016) | pd | 4 | [10.1002/cbdv.201500010](https://doi.org/10.1002/cbdv.201500010) | [26765353](https://www.ncbi.nlm.nih.gov/pubmed/26765353) | metadata signals extractable PD data (EC50) |
 | `Saeed_2019.pdf` | Saeed KM et al., Comparative assessment of phytochemical…, Journal of food biochemistry (2019) | pd | 4 | [10.1111/jfbc.13025](https://doi.org/10.1111/jfbc.13025) | [31456236](https://www.ncbi.nlm.nih.gov/pubmed/31456236) | metadata signals extractable PD data (EC50) |
 | `Zhang_2024.pdf` | Zhang T et al., Quinolizidine Alkaloids and Isoflavones…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.3c09529](https://doi.org/10.1021/acs.jafc.3c09529) | [38394631](https://www.ncbi.nlm.nih.gov/pubmed/38394631) | metadata signals extractable PD data (EC50) |
-| `de_1988.pdf` | de la Cruz JP et al., Effect of triflusal and acetylsalicylic…, Methods and findings in exp… (1988) | pd | 4 | not captured | [3412046](https://www.ncbi.nlm.nih.gov/pubmed/3412046) | metadata signals extractable PD data (IC50) |
-| `Allegaert_2008.pdf` | Allegaert K et al., Neonatal clinical pharmacology: recent…, Acta anaesthesiologica Belg… (2008) | pgx | 8 | not captured | [19235528](https://www.ncbi.nlm.nih.gov/pubmed/19235528) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `de_1988.pdf` | de la Cruz JP et al., Effect of triflusal and acetylsalicylic…, Methods and findings in exp… (1988) | pd | 4 |  | [3412046](https://www.ncbi.nlm.nih.gov/pubmed/3412046) | metadata signals extractable PD data (IC50) |
+| `Allegaert_2008.pdf` | Allegaert K et al., Neonatal clinical pharmacology: recent…, Acta anaesthesiologica Belg… (2008) | pgx | 8 |  | [19235528](https://www.ncbi.nlm.nih.gov/pubmed/19235528) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Chen_2007.pdf` | Chen Y et al., UGT1A6 polymorphism and salicylic acid…, Pharmacogenetics and genomi… (2007) | pgx | 8 | [10.1097/01.fpc.0000236339.79916.07](https://doi.org/10.1097/01.fpc.0000236339.79916.07) | [17622933](https://www.ncbi.nlm.nih.gov/pubmed/17622933) | metadata signals extractable PGX data (UGT1A6, PK/PD-context) |
 | `Colizza_2007.pdf` | Colizza K et al., Metabolism, pharmacokinetics, and excre…, Drug metabolism and disposi… (2007) | pgx | 8 | [10.1124/dmd.106.014266](https://doi.org/10.1124/dmd.106.014266) | [17360832](https://www.ncbi.nlm.nih.gov/pubmed/17360832) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Lennard_1998.pdf` | Lennard L, Clinical implications of thiopurine met…, Therapeutic drug monitoring (1998) | pgx | 8 | [10.1097/00007691-199810000-00014](https://doi.org/10.1097/00007691-199810000-00014) | [9780130](https://www.ncbi.nlm.nih.gov/pubmed/9780130) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
@@ -131,7 +131,7 @@ _39 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Kuehl_2006.pdf` | Kuehl GE et al., Glucuronidation of the aspirin metaboli…, Drug metabolism and disposi… (2006) | pgx | 5 | [10.1124/dmd.105.005652](https://doi.org/10.1124/dmd.105.005652) | [16258079](https://www.ncbi.nlm.nih.gov/pubmed/16258079) | metadata signals extractable PGX data (UGT1A6) |
 | `Wang_2016.pdf` | Wang SH et al., Comparison of the antiplatelet effect o…, Genetics and molecular rese… (2016) | pgx | 5 | [10.4238/gmr.15027136](https://doi.org/10.4238/gmr.15027136) | [27173230](https://www.ncbi.nlm.nih.gov/pubmed/27173230) | metadata signals extractable PGX data (CYP2C19*2) |
 
-<sub>queue written 2026-10-07T07:06:44.851924+00:00</sub>
+<sub>queue written 2026-10-07 07:06 UTC</sub>
 
 ## Screened and excluded
 
@@ -497,5 +497,5 @@ _39 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions.</sub>  
-<sub>Generated by `docs.py` (scholarv2, release v26.09) · newest extraction 2026-10-07 07:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_salicylate%5D&body=Drug%3A%20potassium_salicylate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_salicylate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:06 UTC</sub>
