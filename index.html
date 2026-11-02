@@ -464,6 +464,16 @@
     .sidebar .pk-sb-legend { font-size: 12px; color: #6b7280; }
     .sidebar .pk-sb-toggle { font-size: 12px; cursor: pointer; }
     body.pk-hide-norec .sidebar-nav li.pk-sb-norec { display: none; }
+    /* group labels over the flat page links (Ask / Explore / Site / Drugs): small caps, not folders */
+    .sidebar-nav li.pk-sb-grouprow { margin-top: 10px; }
+    .sidebar .pk-sb-group { font-size: 11px; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase; color: #94a3b8; }
+    /* drugs without a page (plain text) and drugs with a page but no counted record (0/0/0):
+       both grey, the linked ones keep a link's hover so they still read as clickable */
+    .sidebar-nav li.pk-sb-nopage { color: #a8b0b8; }
+    .sidebar-nav li.pk-sb-norec > a { color: #8a9199; }
+    .sidebar-nav li.pk-sb-norec > a:hover { color: var(--theme-color, #0074d9); }
+    .sidebar-nav li.pk-sb-nopage sub, .sidebar-nav li.pk-sb-norec sub { color: #b8bec5; }
     .markdown-section .pk-rf-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
     .markdown-section .pk-rf-bar select { font-size: 13px; padding: 3px 4px; }
     .markdown-section .pk-rf-count { font-size: 12px; color: #6b7280; }
@@ -1837,6 +1847,27 @@
         }
         clicked = null;
         snapshot();
+      });
+    });
+  </script>
+  <script>
+    // ── sidebar rows: group labels, drugs without a page, drugs without a record ──────────
+    // The generated _sidebar.md lists every drug of an ATC class: with a page (a link) or
+    // without one (plain text), with counted records or (0/0/0). Both kinds without results
+    // stay listed and are greyed by the .pk-sb-nopage / .pk-sb-norec rules above; the group
+    // labels (Ask / Explore / Site / Drugs) get a little space above them.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      hook.doneEach(function () {
+        var nav = document.querySelector('.sidebar-nav'); if (!nav) return;
+        nav.querySelectorAll('li').forEach(function (li) {
+          if (li.querySelector('ul')) return;                       // a folder, not an entry
+          var label = !!li.querySelector('.pk-sb-group, .pk-sb-legend');
+          li.classList.toggle('pk-sb-grouprow', !!li.querySelector('.pk-sb-group'));
+          var t = li.textContent || '';
+          var drug = !label && /\(\d+\/\d+\/\d+\)\s*$/.test(t);  // a drug entry ends with its counts
+          li.classList.toggle('pk-sb-norec', drug && /\(0\/0\/0\)\s*$/.test(t));
+          li.classList.toggle('pk-sb-nopage', drug && !li.querySelector('a'));
+        });
       });
     });
   </script>
