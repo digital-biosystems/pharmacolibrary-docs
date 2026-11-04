@@ -39,6 +39,23 @@ window.$docsify = window.$docsify || {};
     var sim = wrap.querySelector('.pk-demo-sim');
     var anat = wrap.querySelector('.pk-demo-anat');
     if (!sim || !anat) return;
+    placeholders();
+
+    // ── placeholders ─────────────────────────────────────────────────────
+    // Both tiles take a few seconds (the model's WebAssembly, the 7 MB ADME database), so
+    // each opens with a faded screenshot of its own finished view (assets/img/demo-*-
+    // preview.webp, 60 kB together; retake them when the tile's look changes) and a
+    // "loading" note. The real view replaces it whole (build() and runAnat() clear the
+    // tile); an error replaces it too. width/height keep the tile's height from jumping.
+    function placeholders() {
+      var ph = function (src, w, h, what) {
+        return '<div class="pk-demo-ph" role="status">' +
+          '<img src="' + src + '" width="' + w + '" height="' + h + '" alt="" decoding="async">' +
+          '<span class="pk-demo-ph-msg">Loading the ' + what + '…</span></div>';
+      };
+      sim.innerHTML = ph('assets/img/demo-sim-preview.webp', 694, 430, 'simulation');
+      anat.innerHTML = ph('assets/img/demo-anat-preview.webp', 333, 323, 'anatomogram');
+    }
 
     // ── anatomogram tile ─────────────────────────────────────────────────
     function runAnat() {

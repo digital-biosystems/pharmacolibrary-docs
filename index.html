@@ -27,8 +27,9 @@
   <script src="assets/js/pk-record-tabs.js" defer></script>
   <!-- The official docsify search plugin is NOT loaded. It caches its index in localStorage
        (~5 MB) and paths:'auto' crawls 8283 pages holding 62 MB of text, so it threw
-       QuotaExceededError and stored nothing. The sidebar box (pk-sidebar-search.js) searches
-       the database instead — 11k entities, kept in the Cache API, which has no such limit. -->
+       QuotaExceededError and stored nothing. The sidebar box and the cover's search
+       (pk-sidebar-search.js) search the database's drugs instead — by name, synonym or brand,
+       kept in the Cache API, which has no such limit. -->
   <script src="assets/js/pk-sidebar-search.js" defer></script>
   <script src="assets/js/pk-query-page.js" defer></script>
   <script src="assets/js/pk-sites-page.js" defer></script>

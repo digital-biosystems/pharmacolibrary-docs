@@ -1,158 +1,144 @@
-// ── sidebar search, over the database ──────────────────────────────────────
+// ── drug search, over the database: the sidebar box and the cover's search ────
 // docsify's plugin indexed rendered pages into localStorage and blew its quota. This
-// searches 11k ENTITIES — every ATC drug the KB knows (not only the extracted ones), the
-// ATC classes by code and by name, paper titles, genes, parameter names, and the brands
-// and salts the manifests list (plavix → clopidogrel's page) — from the same file the
-// query page uses. The database loads on the first keystroke, never on page load, so no
-// page pays for a search nobody performed. A drug with no page of its own resolves to its
-// ATC level-3 class page, which lists it with its (zero) counts: not a dead end, a
-// worklist.
+// searches the DRUGS in the same file the query page uses: every ATC drug the KB knows
+// (not only the extracted ones), found by its name, a salt or synonym, or a brand
+// (plavix → clopidogrel). Only drugs are listed — a brand or synonym hit shows as its drug,
+// with the name that matched beside it; papers, genes, parameters and ATC classes stay out
+// of the list (the cover's free text goes to the query page for those). The database loads
+// on the first keystroke, never on page load, so no page pays for a search nobody
+// performed. A drug with no page of its own resolves to its ATC level-3 class page, which
+// lists it with its (zero) counts: not a dead end, a worklist.
 //
-// The box is a WAI-ARIA combobox: the results are a listbox of options moved with
-// ↓/↑/Home/End, Enter opens, Escape clears; aria-activedescendant tracks the option and
-// the hint is a live status. Typing a drug's own name, salt or brand verbatim puts a
-// header card for the drug's PAGE first — name, ATC, which alias matched — above the
-// papers that mention it. The card is one more option, so the keyboard reaches it the
-// same way.
-(window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
-  var box, res, hint, timer;
-  var active = -1;                       // the option the arrow keys point at
+// Each box is a WAI-ARIA combobox: the results are a listbox of options moved with
+// ↓/↑/Home/End, Escape clears; aria-activedescendant tracks the option and the hint is a
+// live status. Choosing a drug (click, or Enter on a highlighted option) opens its page.
+// Enter with nothing highlighted: the sidebar opens the first drug; the cover submits its
+// form, i.e. asks the query page.
+window.pkSearch = (function () {
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[<>&"]/g, ''); };
+  var sq = function (s) { return String(s).replace(/'/g, "''"); };
 
-  function collapse() {
-    active = -1;
-    res.innerHTML = '';
+  // The drugs matching `term`, best first: exact name/alias, then prefix, then contains;
+  // each drug once, carrying the alias that found it (if the name itself did not).
+  function drugs(db, term, max) {
+    var t = sq(term);
+    var rows = db.exec(
+      "SELECT kind, label, detail, href FROM search_doc " +
+      "WHERE kind IN ('drug', 'brand', 'synonym') AND label LIKE '%" + t + "%' " +
+      "ORDER BY (CASE WHEN lower(label) = lower('" + t + "') THEN 0 " +
+      "          WHEN lower(label) LIKE lower('" + t + "%') THEN 1 ELSE 2 END), " +
+      "         (kind = 'drug') DESC, length(label) LIMIT 400");
+    var out = [], byName = {};
+    ((rows[0] || {}).values || []).forEach(function (r) {
+      // an alias's detail names its drug: 'brand name · clopidogrel'
+      var name = r[0] === 'drug' ? r[1]
+        : String(r[2] || '').replace(/^(?:brand|synonym) name · /, '');
+      if (!name) return;
+      var key = name.toLowerCase();
+      var hit = byName[key];
+      if (!hit) {
+        if (out.length >= max) return;
+        hit = byName[key] = { name: name, href: r[3], detail: '', via: null };
+        out.push(hit);
+      }
+      if (r[0] === 'drug') { hit.detail = r[2] || ''; hit.href = r[3]; hit.via = null; hit.own = true; }
+      else if (!hit.own && !hit.via) hit.via = (r[0] === 'brand' ? 'brand ' : 'synonym ') + r[1];
+    });
+    // an alias found the drug, not its row: fetch the ATC / "not extracted" detail
+    var need = out.filter(function (h) { return !h.own; });
+    if (need.length) {
+      var q = db.exec("SELECT label, detail, href FROM search_doc WHERE kind = 'drug' AND " +
+        "lower(label) IN (" + need.map(function (h) { return "lower('" + sq(h.name) + "')"; }).join(',') + ")");
+      var det = {};
+      ((q[0] || {}).values || []).forEach(function (r) { det[r[0].toLowerCase()] = r; });
+      need.forEach(function (h) {
+        var d = det[h.name.toLowerCase()];
+        if (d) { h.detail = d[1] || ''; h.href = d[2] || h.href; }
+      });
+    }
+    return out;
+  }
+
+  // Turn `box` (an <input>) into the combobox. opts: id (unique prefix), owner (the element
+  // a click outside of folds the list), list (the <ul>), hint (the status element), onFree
+  // — set: Enter with no option highlighted leaves the form to submit; absent: Enter opens
+  // the first drug.
+  function attach(box, opts) {
+    var res = opts.list, hint = opts.hint, timer, active = -1, seq = 0;
+    var owner = opts.owner || box.parentNode;
+    box.setAttribute('role', 'combobox');
     box.setAttribute('aria-expanded', 'false');
-    box.removeAttribute('aria-activedescendant');
-  }
+    box.setAttribute('aria-controls', res.id);
+    box.setAttribute('aria-autocomplete', 'list');
+    box.setAttribute('autocomplete', 'off');
+    res.setAttribute('role', 'listbox');
 
-  function open(item) {                  // open one option (header cards included)
-    var link = item && item.querySelector('a');
-    if (!link || !link.getAttribute('href')) return;
-    location.hash = link.getAttribute('href');
-    collapse();
-    box.value = '';
-    box.blur();                          // the page navigated; the reader moves on
-  }
-
-  function point(li) {                   // highlight + announce one option
-    Array.prototype.forEach.call(res.children, function (o) {
-      var on = o === li;
-      o.setAttribute('aria-selected', String(on));
-    });
-    if (!li) { box.removeAttribute('aria-activedescendant'); return; }
-    box.setAttribute('aria-activedescendant', li.id);
-    li.scrollIntoView({ block: 'nearest' });
-  }
-
-  function go(term) {
-    term = (term || '').trim();
-    if (!res) return;
-    if (term.length < 2) { collapse(); hint.textContent = ''; return; }
-    var db = window.pkdb.get();
-    if (!db) {
-      hint.textContent = 'loading the index…';
-      window.pkdb.load(function (m) { hint.textContent = m; })
-        .then(function () { hint.textContent = ''; go(box.value); })
-        .catch(function (e) { hint.textContent = String(e.message || e); });
-      return;
+    function collapse() {
+      active = -1;
+      res.innerHTML = '';
+      res.hidden = true;
+      box.setAttribute('aria-expanded', 'false');
+      box.removeAttribute('aria-activedescendant');
     }
-    var like = '%' + term.replace(/'/g, "''") + '%';
-    var rows;
-    try {
-      // Exact prefix first, then contains — so typing "clop" puts the drug above the
-      // thirty papers whose titles mention it.
-      rows = db.exec(
-        "SELECT kind, label, detail, href FROM search_doc WHERE label LIKE '" + like + "' " +
-        "ORDER BY (CASE WHEN lower(label) = lower('" + term.replace(/'/g, "''") + "') THEN 0 " +
-        "          WHEN lower(label) LIKE lower('" + term.replace(/'/g, "''") + "%') THEN 1 " +
-        "          ELSE 2 END), kind, length(label) LIMIT 40");
-    } catch (e) { hint.textContent = String(e.message || e); return; }
-
-    res.innerHTML = '';
-    active = -1;
-    if (!rows[0]) { hint.textContent = 'no match'; collapse(); return; }
-    var hits = [];
-    var seen = {};
-    rows[0].values.forEach(function (r) {
-      var key = r[0] + '|' + r[1] + '|' + r[3];
-      if (seen[key]) return;                 // a gene appears once per drug; show each once
-      seen[key] = 1;
-      hits.push(r);
-    });
-
-    // Exact drug name, salt or brand → the drug page's header, above everything else.
-    // Several drugs sharing one alias (a multivitamin brand) stay a plain list: no card
-    // can claim a reader's intent. Rows the KB knows but has not extracted point to the
-    // ATC worklist, not a page — they never get a card.
-    var exact = hits.filter(function (r) {
-      return r[1].toLowerCase() === term.toLowerCase() &&
-             /^drugs\//.test(r[3]) && !/not extracted/.test(String(r[2] || ''));
-    });
-    var one = {};
-    exact.forEach(function (r) { one[r[3]] = (one[r[3]] || 0) + 1; });
-    var keys = Object.keys(one);
-    var head = null;
-    if (exact.length === 1) {
-      head = exact[0];
-    } else if (keys.length === 1 && one[keys[0]] === exact.length) {
-      head = exact[0];                       // one drug, named many ways (name + salt)
+    function open(li) {
+      var link = li && li.querySelector('a');
+      if (!link || !link.getAttribute('href')) return;
+      location.hash = link.getAttribute('href');
+      collapse();
+      hint.textContent = '';
+      box.value = '';
+      box.blur();                          // the page navigated; the reader moves on
+    }
+    function point(li) {
+      Array.prototype.forEach.call(res.children, function (o) {
+        o.setAttribute('aria-selected', String(o === li));
+      });
+      if (!li) { box.removeAttribute('aria-activedescendant'); return; }
+      box.setAttribute('aria-activedescendant', li.id);
+      li.scrollIntoView({ block: 'nearest' });
     }
 
-    var i = 0;
-    function option(html, href, cls) {
-      var li = document.createElement('li');
-      li.setAttribute('role', 'option');
-      li.setAttribute('aria-selected', 'false');
-      li.id = 'pks-opt-' + (i++);
-      if (cls) li.className = cls;
-      var a = document.createElement('a');
-      a.href = '#/' + href;
-      a.innerHTML = html;
-      li.appendChild(a);
-      res.appendChild(li);
-      return li;
+    function go(term) {
+      term = (term || '').trim();
+      if (term.length < 2) { collapse(); hint.textContent = ''; return; }
+      var db = window.pkdb.get();
+      if (!db) {
+        hint.textContent = 'loading the index…';
+        window.pkdb.load(function (m) { hint.textContent = m; })
+          .then(function () { hint.textContent = ''; go(box.value); })
+          .catch(function (e) { hint.textContent = String(e.message || e); });
+        return;
+      }
+      var hits;
+      try { hits = drugs(db, term, 25); } catch (e) { hint.textContent = String(e.message || e); return; }
+      res.innerHTML = '';
+      active = -1;
+      box.removeAttribute('aria-activedescendant');
+      if (!hits.length) {
+        collapse();
+        hint.textContent = opts.onFree ? 'no drug of that name — Enter asks the query page'
+                                       : 'no drug of that name';
+        return;
+      }
+      hits.forEach(function (h) {
+        var li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.setAttribute('aria-selected', 'false');
+        li.id = opts.id + '-opt-' + (seq++);
+        var a = document.createElement('a');
+        a.href = '#/' + h.href;
+        a.tabIndex = -1;
+        var d = [h.detail, h.via].filter(Boolean).join(' · ');
+        a.innerHTML = '<span class="name">' + esc(h.name) + '</span>' +
+                      (d ? ' <span class="d">' + esc(d) + '</span>' : '');
+        li.appendChild(a);
+        res.appendChild(li);
+      });
+      res.hidden = false;
+      box.setAttribute('aria-expanded', 'true');
+      hint.textContent = hits.length + (hits.length === 1 ? ' drug' : ' drugs') +
+        (opts.onFree ? ' · ↓ to choose one, Enter alone asks the query page' : '');
     }
-    var esc = function (s) { return String(s == null ? '' : s).replace(/[<>&]/g, ''); };
-
-    if (head) {
-      // an alias hit carries its drug's generic name in the detail ('brand name ·
-      // clopidogrel'); the card reads like the drug page's own header
-      var generic = head[0] === 'drug' ? head[1]
-        : String(head[2] || '').replace(/^(?:brand|synonym) name · /, '');
-      var name = esc(generic);
-      name = name.charAt(0).toUpperCase() + name.slice(1);
-      var meta = head[0] === 'drug' ? 'ATC ' + esc(head[2])
-        : '— you typed the ' + head[0] + ' ' + esc(head[1]);
-      option('<span class="name">' + name + '</span>' +
-             '<span class="d">' + meta + '</span>' +
-             '<span class="pks-go">open the drug page</span>',
-             head[3], 'pks-drughead');
-      hint.textContent = 'the drug page is the first result' +
-        (hits.length > 1 ? ' · ' + (hits.length - 1) + ' other match(es)' : '');
-    } else {
-      hint.textContent = hits.length + ' match(es)';
-    }
-    hits.forEach(function (r) {
-      if (head && r === head) return;        // the card carries it
-      option('<span class="k">' + esc(r[0]) + '</span>' + esc(r[1]) +
-             (r[2] ? ' <span class="d">' + esc(r[2]) + '</span>' : ''), r[3]);
-    });
-    box.setAttribute('aria-expanded', 'true');
-  }
-
-  hook.doneEach(function () {
-    var nav = document.querySelector('.sidebar');
-    if (!nav || nav.querySelector('.pks')) return;   // built once, survives navigation
-    var wrap = document.createElement('div');
-    wrap.className = 'pks';
-    wrap.innerHTML = '<input type="search" placeholder="Search drugs, ATC classes, papers, genes…" ' +
-                     'aria-label="Search the knowledge base" autocomplete="off" role="combobox" ' +
-                     'aria-expanded="false" aria-controls="pks-res" aria-autocomplete="list">' +
-                     '<div class="pks-hint" role="status"></div><ul class="pks-res" role="listbox" id="pks-res"></ul>';
-    nav.insertBefore(wrap, nav.firstChild);
-    box = wrap.querySelector('input');
-    hint = wrap.querySelector('.pks-hint');
-    res = wrap.querySelector('.pks-res');
 
     var LISTKEYS = { ArrowDown: 1, ArrowUp: 1, Home: 1, End: 1 };
     box.addEventListener('input', function () {
@@ -160,40 +146,85 @@
       timer = setTimeout(function () { go(box.value); }, 160);
     });
     box.addEventListener('keydown', function (ev) {
-      var opts = Array.prototype.slice.call(res.querySelectorAll('[role="option"]'));
+      var all = Array.prototype.slice.call(res.querySelectorAll('[role="option"]'));
       if (ev.key === 'Escape') {
         ev.preventDefault();
         box.value = '';
+        hint.textContent = '';
         collapse();
         return;
       }
-      if (!opts.length) return;
       if (ev.key === 'Enter') {
+        if (active >= 0 && all[active]) { ev.preventDefault(); open(all[active]); return; }
+        if (opts.onFree) { clearTimeout(timer); collapse(); return; }   // the form submits
         ev.preventDefault();
-        open(opts[Math.max(active, 0)]);
+        if (all.length) open(all[0]);
         return;
       }
-      if (!LISTKEYS[ev.key]) return;
+      if (!all.length || !LISTKEYS[ev.key]) return;
       ev.preventDefault();
       if (ev.key === 'Home') active = 0;
-      else if (ev.key === 'End') active = opts.length - 1;
-      else active = active < 0 ? (ev.key === 'ArrowDown' ? 0 : opts.length - 1)
-                               : (active + (ev.key === 'ArrowDown' ? 1 : -1) + opts.length) % opts.length;
-      var li = opts[active];
-      point(li);
-      if (li.classList.contains('pks-drughead')) {   // header already shown as first option
-        hint.textContent = 'Enter opens this drug page';
-      }
+      else if (ev.key === 'End') active = all.length - 1;
+      else active = active < 0 ? (ev.key === 'ArrowDown' ? 0 : all.length - 1)
+                               : (active + (ev.key === 'ArrowDown' ? 1 : -1) + all.length) % all.length;
+      point(all[active]);
     });
-    // leaving the box (Tab, a click elsewhere) folds the popup like any combobox
-    box.addEventListener('blur', function () { setTimeout(function () {
-      if (!wrap.contains(document.activeElement)) {
-        res.querySelectorAll('[role="option"]').forEach(function (o) { o.setAttribute('aria-selected', 'false'); });
-        active = -1;
-      }
-    }, 0); });
+    // mousedown, not click: it lands before the box's blur folds the list
+    res.addEventListener('mousedown', function (ev) {
+      var li = ev.target.closest && ev.target.closest('[role="option"]');
+      if (!li) return;
+      ev.preventDefault();
+      open(li);
+    });
     document.addEventListener('click', function (ev) {
-      if (!wrap.contains(ev.target)) collapse();
+      if (!owner.contains(ev.target)) collapse();
     });
+    box.addEventListener('blur', function () { setTimeout(function () {
+      if (!owner.contains(document.activeElement)) collapse();
+    }, 0); });
+    collapse();
+  }
+
+  return { attach: attach, drugs: drugs };
+})();
+
+(window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook, vm) {
+  hook.doneEach(function () {
+    // the sidebar box: built once, survives navigation
+    var nav = document.querySelector('.sidebar');
+    if (nav && !nav.querySelector('.pks')) {
+      var wrap = document.createElement('div');
+      wrap.className = 'pks';
+      wrap.innerHTML = '<input type="search" placeholder="Search drugs and brands…" ' +
+                       'aria-label="Search drugs by name or brand">' +
+                       '<div class="pks-hint" role="status"></div><ul class="pks-res" id="pks-res"></ul>';
+      nav.insertBefore(wrap, nav.firstChild);
+      window.pkSearch.attach(wrap.querySelector('input'), {
+        id: 'pks', owner: wrap, list: wrap.querySelector('.pks-res'),
+        hint: wrap.querySelector('.pks-hint')
+      });
+    }
+
+    // the cover's search: the same drug list, dropped under the box; free text still goes
+    // to the query page through the form's own submit
+    var path = (vm && vm.route && vm.route.path) || '';
+    var form = path === '/' && document.querySelector('.pk-home-search');
+    if (!form || form.dataset.pks) return;
+    var box = form.querySelector('input[name="q"]');
+    if (!box) return;
+    form.dataset.pks = '1';
+    var field = document.createElement('div');
+    field.className = 'pkh-field';
+    box.parentNode.insertBefore(field, box);
+    field.appendChild(box);
+    var list = document.createElement('ul');
+    list.className = 'pks-res pkh-res';
+    list.id = 'pkh-res';
+    field.appendChild(list);
+    var hint = document.createElement('div');
+    hint.className = 'pks-hint pkh-hint';
+    hint.setAttribute('role', 'status');
+    field.appendChild(hint);
+    window.pkSearch.attach(box, { id: 'pkh', owner: form, list: list, hint: hint, onFree: true });
   });
 });
