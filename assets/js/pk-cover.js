@@ -1,7 +1,7 @@
 // ── the home route's cover presentation ────────────────────────────────────
 // '/' shows README.md — the whole front page — but WITHOUT the sidebar, and instead with
 // the section line (Drugs · Ask · Simulate · Downloads · About) on the title's row, at its
-// right end: the page's h1 and the line share one flex row (.pk-cover-head), which wraps
+// right end: the page's first heading and the line share one flex row (.pk-cover-head), which wraps
 // the line under the title on a phone. It scrolls with the page, not fixed over it. Any
 // other route brings the sidebar back: that is the navigation on subpages. The body class
 // is what the CSS keys on.
@@ -20,7 +20,10 @@ window.$docsify = window.$docsify || {};
     document.body.classList.toggle('pk-cover-route', onHome);
     var old = document.querySelector('.pk-covernav');
     if (old) old.remove();
-    var h1 = onHome && document.querySelector('.markdown-section h1');
+    // the site name is the page's FIRST heading, whatever its level (the template makes it
+    // an h3 above the h1 lead line); querySelector returns the first in document order
+    var h1 = onHome && document.querySelector('.markdown-section h1, .markdown-section h2, ' +
+                                              '.markdown-section h3');
     if (h1) {
       var nav = document.createElement('nav');
       nav.className = 'pk-covernav';

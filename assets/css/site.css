@@ -126,11 +126,11 @@ body.pk-cover-route .sidebar-pin { display: none; }
    sidebar-collapse's pin button, which writes translateX(300px) INLINE on .content (hence
    !important; the pin itself is hidden here, so it cannot slide the cover either). */
 body.pk-cover-route .content { left: 0; transform: none !important; }
-/* the section line shares the title's row, at its right end (pk-cover.js wraps the h1 and
-   the line in .pk-cover-head); on a narrow screen it wraps under the title */
+/* the section line shares the title's row, at its right end (pk-cover.js wraps the first
+   heading and the line in .pk-cover-head); on a narrow screen it wraps under the title */
 .markdown-section .pk-cover-head { display: flex; flex-wrap: wrap; align-items: baseline;
   justify-content: space-between; gap: 4px 24px; }
-.markdown-section .pk-cover-head h1 { margin-right: auto; }
+.markdown-section .pk-cover-head > :first-child { margin-right: auto; }
 .pk-covernav { display: flex; align-items: baseline; gap: 10px; margin-left: auto; }
 .pk-covernav a { color: #334155; text-decoration: none; font-size: 15.5px;
   line-height: 22px; font-weight: 500; }

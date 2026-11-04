@@ -74,4 +74,5 @@
 .pklg .tile b { display:block; font-size:20px; font-variant-numeric:tabular-nums; }
 .pklg .tile i { display:block; font-style:normal; font-size:11px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--pklg-faint); }
-.pklg .tile em { font-style:normal; font-size:12px; color:var(--pklg-faint); }
+.pklg .tile em { font-style:normal; font-size:12px; color:var(--pklg-faint);
+  overflow-wrap:anywhere; }   /* a long slash-joined phrase must not run out of the tile */

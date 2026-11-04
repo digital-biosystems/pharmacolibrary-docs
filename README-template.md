@@ -1,8 +1,8 @@
 <!-- Icons: Tabler Icons v3.50.0, MIT licence, (c) Paweł Kuna, https://tabler.io/icons -->
-# Pharmacolibrary
+### Pharmacolibrary
 
-<p class="pk-home-lead">Mechanistic pharmacology from the literature, open and runnable.</p>
-<p class="pk-home-sublead">Built for model-informed drug development, precision dosing research and teaching.</p>
+# Mechanistic pharmacology from the literature, open and runnable.
+Built for model-informed drug development, precision dosing research and teaching.
 
 <form class="pk-home-search" role="search" onsubmit="location.hash = '#/query?ask=' + encodeURIComponent(this.q.value); return false;">
   <input name="q" type="search" placeholder="A drug, brand name, gene or question: Glucophage, CYP2C19, metformin in kidney disease" aria-label="Search drugs, genes and models">
@@ -16,10 +16,7 @@
   <a href="#/sites?drugs=simvastatin,clopidogrel">Do simvastatin and clopidogrel share enzymes?</a>
 </p>
 
-<p class="pk-home-numbers">{{numbers}}.</p>
-
-## Start where you are
-
+## I am ...
 <div class="pk-home-cards pk-home-roles">
   <div class="pk-home-card">
     <b><svg class="pk-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="M7 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 7a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M12 15a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M10.16 10.62l2.34 2.88"/><path d="M15.088 13.328l2.837 -4.586"/></svg> Pharmacometricians</b>
@@ -42,8 +39,7 @@
     <span>Parameter ranges by therapeutic class, PBPK building blocks and models you can drop into your own pipelines.</span>
     <ul>
       <li><a href="#/atc/README">Browse by ATC class</a></li>
-      <li><a href="#/atc/C10A">Compare a drug class: statins</a></li>
-      <li><a href="https://github.com/pharmacolibrary">Use the Modelica library and FMUs</a></li>
+      <li><a href="#/atc/C10A">Compare a drug class: statins</a></li>      
     </ul>
   </div>
   <div class="pk-home-card">
@@ -52,7 +48,6 @@
     <ul>
       <li><a href="#/sites?drugs=paracetamol">Follow paracetamol through the body</a></li>
       <li><a href="#/drugs/drug_metformin/">Explore metformin, a well-checked example</a></li>
-      <li><a href="#/pipeline">How the models were made</a></li>
     </ul>
   </div>
 </div>
@@ -65,10 +60,8 @@
 <p class="pk-demo-note">Left: only the active metabolite (clopidogrel H4) is drawn on a logarithmic axis, 5 days of daily dosing — the dashed light-blue curve is the default run (normal metaboliser, the paper dose of 75 mg a day); the solid blue curve starts as a CYP2C19 poor metaboliser at the same dose; move the dose or pick another phenotype and it answers, with the difference in Cmax and AUC underneath. Right: where this drug's acting sites sit, with the ADME view loading on first look. Nothing in either tile downloads until it is scrolled into view.</p>
 
 
-## numbers
-
 <div class="pklg">
-<div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>{{drugs}}</b><em>drugs and toxins in the shipped database; every one has a page</em></div><div class="tile"><i>Papers behind the records</i><b>{{papers_records}}</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>{{parameters}}</b><em>parameter values the records carry, with units</em></div></div>
+<div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>{{drugs}}</b><em>drugs and toxins; every one has a page</em></div>
+<div class="tile"><i>popPK/PD/PGx records</i><b>{{popPK}}/{{PD}}/{{PGx}}</b><em>extracted population pharmacokinetics/pharmacodynamics/pharmacogenomics records</em></div>
+<div class="tile"><i>Papers behind the records</i><b>{{papers_records}}</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>{{parameters}}</b><em>parameter values the records carry, with units</em></div></div>
 </div>
-
-
