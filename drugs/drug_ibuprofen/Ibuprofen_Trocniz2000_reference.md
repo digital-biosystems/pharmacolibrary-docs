@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Troc\u00f3niz_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Aranda1997_reference&quot;,&quot;label&quot;:&quot;Aranda_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Aranda1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Gonzalez1987_reference&quot;,&quot;label&quot;:&quot;Gonzalez_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_ibu_eff_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_ibu_eff_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_ibu_eff_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_std_ibu_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_std_ibu_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_std_ibu_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Trocniz2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 5.09); f use library defaults, not estimates from this paper (+1 more).
+> This record was reviewed on 2026-10-20 21:21 UTC (Needs review), but the paper was screened again on 2026-11-03 11:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="needs_review" stale="false" population="healthy adults and febrile children" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="extracted" stale="true" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pharmacokinetic-Pharmacodynamic Modelling of the antipyretic effect of two oral formulations of ibuprofen. Clinical pharmacokinetics 38(6):505–518 (2000).
@@ -17,7 +17,7 @@ Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pha
 
 ## Population and dosing
 
-**Population:** healthy adults and febrile children · age group mixed · n = ... (omitted).
+**Population:** healthy adults · condition febrile · age group adult · n = &gt;=25kg.
 
 **Dosing:** 400 mg, oral, single.
 
@@ -31,13 +31,11 @@ Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pha
 <figure class="pk-models-diagram"><img src="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference.svg" alt="Ibuprofen_Trocniz2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | kₐ,susp (h⁻¹) | kabs | 0.82 | h⁻¹ | 31 (None% RSE) |
 | tₗag (h) | tlag | 1.33 | h | 16 (None% RSE) |
-| F₁ | Fab | 0.63 | % | 19 (None% RSE) |
+| F₁ | Fab | 0.63 |  | 19 (None% RSE) |
 | V1 (L)ᵇ | V1 | 4.4 | L |  |
 | CL (L/h)ᵇ | CLb | 4.05 | L/h | 24 (None% RSE) |
 | CLd (L/h)ᵇ | Q | 2.09 | L/h | 46 (None% RSE) |
@@ -45,7 +43,7 @@ Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.917). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +57,7 @@ Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pha
 
 Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — ibuprofen: kabs 0.82 h⁻¹, tlag 1.33 h, Fab 0.63 %, V1 4.4 L, CLb 4.05 L/h, Q 2.09 L/h, V2 6.62 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cld (l/h)b].parameter_id`: this record has Q30, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -69,7 +67,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|---|
 | kₐ,susp (h⁻¹) | `Q49` · kabs | 0.82 | h⁻¹ | 0.0002278 | 1/s | 1/h | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row0:col1 | 31 (None% RSE) |
 | tₗag (h) | `Q83` · tlag | 1.33 | h | 4788 | s | h | exact (1) | Trocóniz_2000_table_p6_1:row3:col1 | 16 (None% RSE) |
-| F₁ | `Q40` · Fab | 0.63 | % |  |  | % | exact (1) | Trocóniz_2000_table_p6_1:row4:col1 | 19 (None% RSE) |
+| F₁ | `Q40` · Fab | 0.63 |  | 0.63 |  |  | exact (1) | Trocóniz_2000_table_p6_1:row4:col1 | 19 (None% RSE) |
 | V1 (L)ᵇ | `Q63` · V1 | 4.4 | L | 0.0044 | m3 | l | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row5:col1 |  |
 | CL (L/h)ᵇ | `Q23` · CLb | 4.05 | L/h | 1.125e-06 | m3/s | l/h | space_fold (0.95) | Trocóniz_2000_table_p6_1:row6:col1 | 24 (None% RSE) |
 | CLd (L/h)ᵇ | `Q30` · Q | 2.09 | L/h | 5.806e-07 | m3/s | l/h | llm_confirmed (0.6) | Trocóniz_2000_table_p6_1:row7:col1 | 46 (None% RSE) |
@@ -96,22 +94,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped duplicate Q49 ('kₐ,grn1 (h⁻¹)', value '0.61') — already have one for this compound
 - dropped duplicate Q49 ('kₐ,grn2 (h⁻¹)', value '2.26') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibuprofen
+- unit re-normalised: Fab '' now converts (value unchanged)
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.917 (11/12 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cld (l/h)b].parameter_id` | Q30 | Q22 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | ibuprofen | unknown | mismatch |
 
 </details>
 
@@ -208,13 +206,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pharmacokinetic-Pharmacodynamic Modelling of the antipyretic effect of two oral formulations of ibuprofen. Clinical pharmacokinetics 38(6):505–518 (2000). [doi:10.2165/00003088-200038060-00004](https://doi.org/10.2165/00003088-200038060-00004)
 
-**This record:** Pharmacolibrary v26.09, model `Ibuprofen_Trocniz2000_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference>
+**This record:** Pharmacolibrary, model `Ibuprofen_Trocniz2000_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference>
 
 ```bibtex
 @misc{pharmacolibrary_IbuprofenTrocniz2000reference,
   title  = {{Pharmacolibrary model Ibuprofen_Trocniz2000_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference},
   note   = {Parameters from doi:10.2165/00003088-200038060-00004},
 }
@@ -233,5 +230,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibuprofen%5D%20Ibuprofen_Trocniz2000_reference&body=Drug%3A%20ibuprofen%0ARecord%3A%20Ibuprofen_Trocniz2000_reference%0APaper%3A%20Troc%C3%B3niz_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 17:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibuprofen%5D%20Ibuprofen_Trocniz2000_reference&body=Drug%3A%20ibuprofen%0ARecord%3A%20Ibuprofen_Trocniz2000_reference%0APaper%3A%20Troc%C3%B3niz_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 11:27 UTC</sub>

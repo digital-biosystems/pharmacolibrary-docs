@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of λ: this record has 1.30, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has oxypurinol, the second reading unknown; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,18 +71,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | primary re-run | 0.6 (3/5 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[λ]` | 1.30 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[λ]` |  | 1.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[predicted oxypurinol clearance]` |  | 0.23 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
 
 </details>
 
@@ -121,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2016_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2016_reference%0APaper%3A%20Wright_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2016_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2016_reference%0APaper%3A%20Wright_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:13 UTC</sub>

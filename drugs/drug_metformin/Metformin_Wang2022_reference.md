@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;metformin&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metformin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jin2025_reference&quot;,&quot;label&quot;:&quot;Jin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jin2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Ailabouni2026_reference&quot;,&quot;label&quot;:&quot;Ailabouni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Ailabouni2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Cantor2026_reference&quot;,&quot;label&quot;:&quot;Cantor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Cantor2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chae2012_reference&quot;,&quot;label&quot;:&quot;Chae_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chae2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Fujimoto2025_reference&quot;,&quot;label&quot;:&quot;Fujimoto_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Fujimoto2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Hong2008_reference&quot;,&quot;label&quot;:&quot;Hong_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Hong2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Liang2017_reference&quot;,&quot;label&quot;:&quot;Liang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Liang2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_focei_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_focei_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_focei_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_saem_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_saem_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_saem_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_base&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_final&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_StanisawiakRudowicz2024_reference&quot;,&quot;label&quot;:&quot;Stanis\u0142awiak-Rudowicz_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metformin_Ailabouni2026_reference&quot;,&quot;label&quot;:&quot;Ailabouni_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Ailabouni2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Cantor2026_reference&quot;,&quot;label&quot;:&quot;Cantor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Cantor2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jin2025_reference&quot;,&quot;label&quot;:&quot;Jin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jin2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Li2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Matzuka2016_2_cpt_fast_slow&quot;,&quot;label&quot;:&quot;Matzuka_2016_2_cpt_fast_slow&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Matzuka2016_2_cpt_fast_slow.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Matzuka2016_2_cpt_oral&quot;,&quot;label&quot;:&quot;Matzuka_2016_2_cpt_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Matzuka2016_2_cpt_oral.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Nikolaidis2026_base&quot;,&quot;label&quot;:&quot;Nikolaidis_2026_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Nikolaidis2026_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Bardin2012_reference&quot;,&quot;label&quot;:&quot;Bardin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Bardin2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Chae2012_reference&quot;,&quot;label&quot;:&quot;Chae_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Chae2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Hong2008_reference&quot;,&quot;label&quot;:&quot;Hong_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Hong2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Lee2004_reference&quot;,&quot;label&quot;:&quot;Lee_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Lee2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_focei_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_focei_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_focei_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Mak2023_saem_estimates&quot;,&quot;label&quot;:&quot;Mak_2023_saem_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Mak2023_saem_estimates.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Stage2019_reference&quot;,&quot;label&quot;:&quot;Stage_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Stage2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_StanisawiakRudowicz2024_reference&quot;,&quot;label&quot;:&quot;Stanis\u0142awiak-Rudowicz_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_Stepensky2002_pd_parameters_estimate&quot;,&quot;label&quot;:&quot;Stepensky_2002_pd_parameters_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_Stepensky2002_pd_parameters_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metformin_de2011_reference&quot;,&quot;label&quot;:&quot;de_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/Metformin_de2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chae_2012_FPG&quot;,&quot;label&quot;:&quot;Chae_2012 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/pd_Chae_2012_FPG.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_2016_E&quot;,&quot;label&quot;:&quot;Li_2016 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/pd_Li_2016_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parween_2020_MC2R_signaling&quot;,&quot;label&quot;:&quot;Parween_2020 \u00b7 MC2R signaling&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/pd_Parween_2020_MC2R_signaling.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metformin — `Metformin_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rejected because the two-compartment model structure includes a peripheral compartment that is not connected to the central compartment by an exchange rate.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Wang2022_reference" status="rejected" stale="false" population="" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Wang2022_reference" status="needs_review" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wang X, Tang J, Shen C, Wang X, Hu H, Xie H. Research Progress of Population Pharmacokinetic of Metformin. BioMed research international 2022:4071111 (2022).
@@ -17,29 +17,23 @@ Wang X, Tang J, Shen C, Wang X, Hu H, Xie H. Research Progress of Population Pha
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** adults with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group mixed.
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL/F | CL/F | 102.0 | L/h |
-| Vc/F | V1/F | 76.8 | L |
-| V2 | V2 | 190.0 | L/70 kg |
-| Vp/F | V2/F | 413.0 | L |
-| Ka | kabs | 0.3 | /h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,53 +43,56 @@ Wang X, Tang J, Shen C, Wang X, Hu H, Xie H. Research Progress of Population Pha
 
 ### Reviewer guidance
 
-**Rejected because the two-compartment model structure includes a peripheral compartment that is not connected to the central compartment by an exchange rate.**
+**Only clearance was extracted — no volume.**
 
-The rejection reason indicates an unreachable or orphan compartment in the model topology, meaning the peripheral compartment has no path from the dose. This structural flaw invalidates the pharmacokinetic interpretation of parameters like V2 and CL/F, regardless of their numerical values. A second reader disagreed with specific parameter values, such as identifying the total clearance as 79.0 L/h instead of 102.0 L/h, but the structural error remains the primary cause for refusal. Extracted — metformin: CL/F 102 L/h, V1/F 76.8 L, V2 190 L/70 kg, V2/F 413 L, kabs 0.3 /h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q355: this record has none, the second reading 0.49; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
+### Unresolved rows _(no Q-code or no value — not parameters)_
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 102.0 | L/h | 2.833e-05 | m3/s | L/h | review (0.7) | Wang_2022:review |
-| Vc/F | `Q290` · V1/F | 76.8 | L | 0.0768 | m3 | L | review (0.7) | Wang_2022:review |
-| V2 | `Q64` · V2 | 190.0 | L/70 kg | 0.19 | m3 | L | review (0.7) | Wang_2022:review |
-| Vp/F | `Q82` · V2/F | 413.0 | L | 0.413 | m3 | L | review (0.7) | Wang_2022:review |
-| Ka | `Q49` · kabs | 0.3 | /h | 8.333e-05 | 1/s | 1/h | review (0.7) | Wang_2022:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+| label (paper) | Q-code | link |
+|---|---|---|
+| CL/F | Q27 | exact |
+| Vd/F (Vc/F) | Q76 | exact |
+| CL | Q22 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Wang_2022) — secondary source
-- volume reported by review
+- column '2014 goswami [20]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_unknown: 'Vc/F' (V/F)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metformin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- bound model equation to Q22 (CL): CL = 79.0 L/h;CL/F = 79.0 * (CLCR/80)^0.822;V = 648 L (13.8%); Ka = 2.15/h
+- bound model equation to Q27 (CL/F): CL/F = 79.0(CLCR/80)^0.822
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
+- Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F'; equation kept verbatim
+- status held at "Needs review" — not promoted
+- population split: '2014 goswami [20]' subgroup of Wang_2022 (paper reports 3 populations: 2013 duong [19], 2013 yoon [22], 2014 goswami [20])
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- re-normalised: unit 'Vc/F' of V/F is a parameter symbol — dropped
+
+**Extraction notes:**
+- transposed table tab4: logical view retains original source coordinates
+- table Wang_2022_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (19 record(s))
+- LLM selected parameter table(s) 2, 4
+- captured model equation CL = 79.0 L/h;CL/F = 79.0 * (CLCR/80)^0.822;V = 648 L (13.8%); Ka = 2.15/h
+- captured model equation CL/F = 79.0(CLCR/80)^0.822
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q355]` |  | 0.49 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q77]` | 48.6 | 48.6 | mismatch |
-| `gpt-oss-120b` | `values[Q79]` | 0.49 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -105,22 +102,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Wang_2022:review'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Wang_2022:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Wang_2022:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Wang_2022:review'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Wang_2022:review'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 102 L/h | ['Wang_2022:review'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 76.8 L | ['Wang_2022:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 190 L | ['Wang_2022:review'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 413 L | ['Wang_2022:review'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | pass | 2 |
+| C0b_disposition_core | pass |  |
+| C0c_disposition_complete | fail |  |
+| C7_apparent_coherence | pass |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,9 +120,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -143,5 +141,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetformin%5D%20Metformin_Wang2022_reference&body=Drug%3A%20metformin%0ARecord%3A%20Metformin_Wang2022_reference%0APaper%3A%20Wang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metformin/Metformin_Wang2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-19 20:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetformin%5D%20Metformin_Wang2022_reference&body=Drug%3A%20metformin%0ARecord%3A%20Metformin_Wang2022_reference%0APaper%3A%20Wang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metformin/Metformin_Wang2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:37 UTC</sub>

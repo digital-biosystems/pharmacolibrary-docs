@@ -41,7 +41,7 @@ Yata M, DeFrancesco TC, Bonagura JD, Papich MG. Population Pharmacokinetics of S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +55,7 @@ Yata M, DeFrancesco TC, Bonagura JD, Papich MG. Population Pharmacokinetics of S
 
 The model uses apparent parameters (CL/F and V/F) while explicitly assuming bioavailability F=1 and fraction absorbed Fm=1, masking the true underlying clearance and volume. Additionally, the absorption lag time (Tlag) was not extracted from the source, so a standard library placeholder would have been used instead of an estimated value. Extracted — clopidogrel: CL/F 0.97 L/kg/h, V/F 4.03 L/kg, kabs 0.62 /h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 1.1, the second reading 2.89. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -84,14 +84,20 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q57]` | 1.1 | 2.89 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -179,13 +185,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yata M, DeFrancesco TC, Bonagura JD, Papich MG. Population Pharmacokinetics of Sildenafil in Dogs With Naturally Occurring Pulmonary Hypertension. Journal of veterinary pharmacology and therapeutics 49(3):267-273 (2026). [doi:10.1111/jvp.70057](https://doi.org/10.1111/jvp.70057)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Yata2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Yata2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelYata2026reference,
   title  = {{Pharmacolibrary model Clopidogrel_Yata2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference},
   note   = {Parameters from doi:10.1111/jvp.70057},
 }
@@ -204,5 +209,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Yata2026_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Yata2026_reference%0APaper%3A%20Yata_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Yata2026_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Yata2026_reference%0APaper%3A%20Yata_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:45 UTC</sub>

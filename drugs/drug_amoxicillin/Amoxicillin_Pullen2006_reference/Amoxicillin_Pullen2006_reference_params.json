@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amoxicillin_Pullen2006_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  280.0,
+  315.0,
+  350.0,
+  3500.0,
+  7000.0
+ ],
+ "parameters": {
+  "Cl": 1.8666666666666667e-06,
+  "F": 1.0,
+  "MM": 0.365404,
+  "VdPerKg": 0.0006500000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00028,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662076
+ },
+ "reference_peaks": {
+  "central.C": 0.006078724132610318
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

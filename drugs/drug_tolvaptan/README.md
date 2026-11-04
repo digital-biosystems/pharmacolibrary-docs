@@ -121,11 +121,11 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-20 19:07 | 16:41 | 6/2/0 | 1/0/0 | 1/0/5 | 671,678/79,490 | einfracz / qwen3.8-27b | 33 | 25/13 | 16/17 | 0 |
+| 2026-11-02 22:08 | 11:38 | 6/2/0 | 1/0/0 | 1/0/5 | 183,460/75,356 | einfracz / qwen3.8-27b | 37 | 25/13 | 18/19 | 0 |
 
 ## Coverage
 
-- **PubMed hits:** 115 matched, 63 returned
+- **PubMed hits:** 119 matched, 69 returned
 - **screened:** 25  ·  **relevant:** 4
 - **records:** 8  ·  extracted 0  ·  needs review 6  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
@@ -147,7 +147,9 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | PGx | Dixon_2008 | not_relevant | 0 | 0 | The paper is a review discussing the clinical efficacy and mechanism of tolvaptan but does not report any pharmacogenomic studies linking specific gene variants to PK or PD parameters. |
 | PD | Dumont_2025 | not_relevant | 2 | 1 | The paper reports dose-response data (IC50s) for the novel compound GLPG2737, but for tolvaptan it only provides qualitative comparisons and single-dose effect percentages without deriving specific PD parameters like Emax or EC50. |
 | PGx | Fang_2016 | not_relevant | 0 | 0 | The paper reports on enzyme isoforms (SULTs) affecting in vitro cytotoxicity (PD), not human genetic variants. |
+| PGx | Figueredo_2026 | not_relevant | 0 | 0 | This is a clinical case report regarding the use of oral urea for SIADH; it does not report pharmacogenomic effects of tolvaptan. |
 | PD | Golestaneh_2004 | not_relevant | 1 | 0 | The text is a narrative review discussing mechanisms of diuretic resistance and the general efficacy of vaptans, but it does not report any specific numeric PD parameters (e.g., Emax, EC50) or exposure-response data for tolvaptan. |
+| popPK | Groothof_2025 | irrelevant | 0 | 0 | The paper is a perspective article discussing methodological biases in eGFR measurement and trial interpretation for tolvaptan, without reporting any pharmacokinetic parameters. |
 | PGx | Hadla_2026 | not_relevant | 0 | 0 | The paper investigates a pharmacodynamic interaction (drug-drug) where probenecid modulates the effect of tolvaptan, not a pharmacogenomic effect (genotype-dependent PK/PD) of tolvaptan. |
 | popPK | Helmlinger_2019 | irrelevant | 0 | 0 | The paper is a review on quantitative systems pharmacology (QSP) workflows using SGLT2 inhibitors and immuno-oncology as case studies; tolvaptan is mentioned only in passing without any PK data. |
 | PD | Helmlinger_2019 | not_relevant | 0 | 0 | The paper is a review of QSP modeling workflows and case studies for SGLT2 inhibitors and immuno-oncology drugs; it does not contain any data, analysis, or parameters for tolvaptan. |
@@ -159,7 +161,8 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 | PD | Lanke_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tolvaptan, including dose-dependent bioavailability, but does not include any pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Marshall_2026 | irrelevant | 0 | 0 | This is a clinical outcome study measuring eGFR slope and treatment discontinuation rates, containing no pharmacokinetic parameters or compartmental models. |
 | PD | Mekahli_2023 | not_relevant | 0 | 0 | The paper is a clinical trial report focusing on efficacy (kidney volume, eGFR) and safety; it does not report a pharmacodynamic model, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50) for tolvaptan. |
-| PGx | Nguyen_2023 | not_relevant | 3 | 5 | The paper reports a specific clinical adverse event (isolated bilirubin elevation) in a patient with a specific genotype (Gilbert syndrome/UGT1A1), but it is a case report documenting a phenotype/reaction rather than a pharmacogenomic study quantifying the effect of the genotype on a standard PK/PD parameter of the drug. |
+| popPK | Morris_2018 | irrelevant | 0 | 0 | The study analyzes clinical outcomes (rate of serum sodium correction) and predictors of hyponatremia response in humans, reporting no quantitative pharmacokinetic parameters (CL, V, etc.) for tolvaptan. |
+| PGx | Nguyen_2023 | not_relevant | 3 | 1 | The paper is a case report of a safety event (adverse drug reaction) in a patient with a specific genotype, but it does not report changes in standard pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., Emax, EC50) parameters resulting from the genotype. |
 | popPK | Oka_2021 | irrelevant | 0 | 0 | This is a clinical outcomes study assessing renal function and diuretic dosing, not a pharmacokinetic study, so no disposition parameters are reported. |
 | popPK | Oruc_2026 | irrelevant | 0 | 0 | The study is a clinical retrospective analysis of inflammatory markers and kidney volume progression in ADPKD patients and contains no pharmacokinetic parameters or population-PK modeling for tolvaptan. |
 | PD | Perrone_2020 | not_relevant | 2 | 1 | The paper is a clinical trial comparing formulations that reports group-level mean changes in efficacy endpoints (TKV, urine volume) but does not provide individual subject concentration data or fit a pharmacodynamic model to derive numeric PD parameters like Emax or EC50. |
@@ -188,5 +191,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D&body=Drug%3A%20tolvaptan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-20 18:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D&body=Drug%3A%20tolvaptan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-20 18:54 UTC</sub>

@@ -39,7 +39,7 @@ Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individual
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individual
 
 The model builder left the lag time at its library placeholder instead of using an explicit estimate from the paper. Furthermore, the clearance and volume of distribution were treated as apparent parameters with bioavailability set to unity. A second reader also disagreed on the extracted values for the lag time and absorption rate constant. Extracted — clopidogrel: CL/F 21.6 L/h, V/F 140 L, kabs 1.3 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.168; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has 0.218, the second reading 0.218; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,19 +82,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` |  | 0.168 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q315]` | 0.218 | 0.218 | mismatch |
 | `gpt-oss-120b` | `values[Q49]` | 1.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q95]` | 1.3 |  | only_one_extracted |
 
 </details>
 
@@ -184,13 +185,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jiang L, Zhang Y, Wang J, Zhang C, Wang D. Drug-Drug Interactions and Individualized Clozapine Therapy in Patients with Depression: Insights from Real-World Data. Drug design, development and therapy 19:9809-9823 (2025). [doi:10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Jiang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Jiang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelJiang2025reference,
   title  = {{Pharmacolibrary model Clopidogrel_Jiang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference},
   note   = {Parameters from doi:10.2147/dddt.s547878},
 }
@@ -209,5 +209,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jiang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jiang2025_reference%0APaper%3A%20Jiang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jiang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jiang2025_reference%0APaper%3A%20Jiang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:43 UTC</sub>

@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Metformin_Stage2019_reference",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 7.083333333333334e-06,
+  "F": 0.9,
+  "MM": 0.1291636,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00055,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 6.435786435786436e-05,
+  "k21": 7.140569964777457e-06,
+  "ka": 8.944444444444444e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9349.899799599198
+ },
+ "reference_peaks": {
+  "central.C": 0.0005597784639464315
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

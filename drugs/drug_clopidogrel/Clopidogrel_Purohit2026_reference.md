@@ -39,7 +39,7 @@ Purohit D, van Wijk R, Kafeero P, Kibengo F, Zimmerman M, D'artois V et al. Impa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Purohit D, van Wijk R, Kafeero P, Kibengo F, Zimmerman M, D'artois V et al. Impa
 
 The record includes specific estimates for clearance (6.01 L/h) and volume of distribution (27.7 L). However, the bioavailability parameter F and the lag time Tlag were assigned default values instead of being estimated from the data. The second reader disagreed on specific internal value mappings, noting discrepancies in null versus numeric assignments. Consequently, the model was held back because these defaulted parameters affect the simulated profile without support from the paper's explicit estimates. Extracted — clopidogrel: CL 6.01 L/h, V 27.7 L, kabs 0.4 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q303: this record has none, the second reading 0.383; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 17.7, the second reading 17.7; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,19 +82,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q303]` |  | 0.383 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q410]` | 0.535 | 0.535 | mismatch |
-| `gpt-oss-120b` | `values[Q48]` | 0.383 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 17.7 | 17.7 | mismatch |
 | `gpt-oss-120b` | `values[Q87]` | 1 | 1 | mismatch |
 
 </details>
@@ -184,13 +182,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Purohit D, van Wijk R, Kafeero P, Kibengo F, Zimmerman M, D'artois V et al. Impact of High-Dose Rifampicin on Linezolid Pharmacokinetics in Tuberculous Meningitis. Open forum infectious diseases 13(4):ofag154 (2026). [doi:10.1093/ofid/ofag154](https://doi.org/10.1093/ofid/ofag154)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Purohit2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Purohit2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelPurohit2026reference,
   title  = {{Pharmacolibrary model Clopidogrel_Purohit2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference},
   note   = {Parameters from doi:10.1093/ofid/ofag154},
 }
@@ -209,5 +206,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Purohit2026_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Purohit2026_reference%0APaper%3A%20Purohit_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Purohit2026_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Purohit2026_reference%0APaper%3A%20Purohit_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:44 UTC</sub>

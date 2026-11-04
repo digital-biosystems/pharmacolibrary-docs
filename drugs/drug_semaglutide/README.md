@@ -146,25 +146,26 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-20 18:50 | 23:04 | 9/3/0 | 5/0/0 | 0/0/5 | 1,028,860/51,878 | einfracz / qwen3.8-27b | 48 | 5/43 | 48/0 | 0 |
+| 2026-11-02 21:56 | 18:20 | 9/3/0 | 5/0/0 | 0/0/5 | 272,154/66,869 | einfracz / qwen3.8-27b | 61 | 5/43 | 58/3 | 0 |
 
 ## Coverage
 
-- **PubMed hits:** 168 matched, 80 returned
+- **PubMed hits:** 205 matched, 94 returned
 - **screened:** 23  ·  **relevant:** 4
 - **records:** 12  ·  extracted 2  ·  needs review 7  ·  rejected 3  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Ding_2026.pdf` | Ding W et al., A Biweekly GLP-1R Agonist Designed With…, Diabetes, obesity & metabol… (2026) | popPK | 5 | [10.1111/dom.71304](https://doi.org/10.1111/dom.71304) | [42712076](https://pubmed.ncbi.nlm.nih.gov/42712076) | The paper reports a comparative half-life for semaglutide in rats, but does not provide full compartmental PK parameters or absolute numeric values for semaglutide in the evidence. |
 | `Yu_2025.pdf` | Yu H et al., Pharmacokinetic-pharmacodynamic (PK/PD)…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70093](https://doi.org/10.1002/bcp.70093) | [40344607](https://www.ncbi.nlm.nih.gov/pubmed/40344607) | metadata signals extractable PD data (PK/PD) |
 | `Tourtourikov_2026.pdf` | Tourtourikov I et al., GLP1R and OCT1 variants modulate semagl…, Pharmacogenetics and genomi… (2026) | pgx | 5 | [10.1097/FPC.0000000000000577](https://doi.org/10.1097/FPC.0000000000000577) | [40996853](https://www.ncbi.nlm.nih.gov/pubmed/40996853) | metadata signals extractable PGX data (SLC22A1) |
 
-<sub>queue written 2026-10-20 18:34 UTC</sub>
+<sub>queue written 2026-11-02 21:46 UTC</sub>
 
 ## Screened and excluded
 
@@ -178,9 +179,11 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Bosch_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cotadutide and liraglutide using a systems model; semaglutide is mentioned only as a comparable class of drugs, not as the subject of the PK analysis. |
 | PD | Carlsson_2018 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis only, with no pharmacodynamic (PD) or exposure-response modeling or numeric PD parameters. |
 | PGx | Carlsson_2018 | not_relevant | 0 | 10 | The paper analyzes demographic and clinical covariates (e.g., body weight, renal function) but does not report any pharmacogenomic effects or gene variant associations on semaglutide PK/PD parameters. |
+| PGx | Chaturvedi_2026 | not_relevant | 0 | 0 | The paper is a review on endocrine mechanisms of MASLD and does not report any pharmacogenomic studies linking gene variants to pharmacokinetic or pharmacodynamic parameters of semaglutide. |
 | popPK | Chigutsa_2025 | irrelevant | 0 | 0 | The paper models the pharmacokinetics and pharmacodynamics of tirzepatide, not semaglutide. |
 | popPK | Choi_2025 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of efpeglenatide, a different GLP-1 receptor agonist, not semaglutide. |
 | PD | Choi_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis of efpeglenatide, not semaglutide, and contains no pharmacodynamic (PD) or exposure-response modeling. |
+| PGx | Crespo_2026 | not_relevant | 0 | 0 | The paper is a review of genetics in MASLD and mentions semaglutide only in the context of its approval for MASH, without reporting any pharmacogenomic effect on semaglutide's PK or PD parameters. |
 | PGx | Cronenberger_2026 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (lotiglipron/semaglutide with midazolam), not the effect of genetic variants on pharmacokinetics. |
 | popPK | Dai_2025 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological efficacy of Exendin-4 bioconjugates, with semaglutide mentioned only as a comparator for efficacy, not as the subject of a PK parameter extraction. |
 | PD | Dai_2025 | not_relevant | 3 | 2 | The paper reports an EC50 for the novel Ex4-rhamnolipid conjugate, not for semaglutide, and only provides qualitative comparisons to semaglutide without numeric PD parameters or exposure-response data for the reference drug. |
@@ -188,14 +191,18 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Daoud_2026 | irrelevant | 0 | 0 | This is a clinical trial protocol for a non-interventional observational study focused on glycemic control (HbA1c) and quality of life, containing no pharmacokinetic parameters. |
 | popPK | Demircan_2026 | irrelevant | 0 | 0 | The paper is a clinical risk prediction study for obesity complications using machine learning, not a pharmacokinetic study, and contains no PK parameters for semaglutide. |
 | PD | Demircan_2026 | not_relevant | 0 | 0 | The paper describes a machine learning risk prediction model (OBSCORE) for obesity complications and does not report any pharmacodynamic, exposure-response, or dose-response analysis for semaglutide. |
+| popPK | Ding_2026 | relevant | 5 | 0 | The paper reports a comparative half-life for semaglutide in rats, but does not provide full compartmental PK parameters or absolute numeric values for semaglutide in the evidence. |
 | popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of synthetic sulfonamides and antioxidants for diabetes management; semaglutide is only listed as a class example in a list of oral therapies and no pharmacokinetic parameters for it are reported. |
 | PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not contain any pharmacodynamic or exposure-response data for semaglutide. |
+| PGx | Dumitru_2026 | not_relevant | 0 | 0 | The paper is a review of berberine-drug interactions and does not report any pharmacogenomic effects on semaglutide pharmacokinetics or pharmacodynamics. |
 | popPK | Duncan_2025 | irrelevant | 0 | 0 | The paper is a retrospective clinical analysis of weight loss outcomes and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
 | PD | Enebo_2021 | not_relevant | 3 | 2 | The paper reports dose-response data for cagrilintide (weight loss) in the presence of fixed-dose semaglutide, but does not provide a concentration-effect relationship or numeric PD parameters (Emax, EC50) for semaglutide itself. |
 | popPK | Fadini_2026 | relevant | 4 | 5 | The study reports pharmacodynamic exposure-response parameters (EC50) for semaglutide and utilizes a population PK model equation for exposure estimation, but does not report direct PK disposition parameters (CL, V, ka) for semaglutide itself. |
 | PGx | Francis_2025 | not_relevant | 0 | 0 | The study investigates general GLP-1 receptor signaling pathways and gene-protein interactions, providing no pharmacogenomic evidence or quantitative data for semaglutide PK/PD. |
 | PD | Frias_2023 | not_relevant | 0 | 0 | The paper is a clinical trial for orforglipron, not semaglutide, and reports clinical dose-response outcomes (HbA1c/weight) rather than pharmacodynamic parameters (Emax, EC50) or exposure-response modeling. |
+| popPK | Gil_2026 | irrelevant | 0 | 0 | The study focuses on behavioral neuroscience and an acoustic feeding tool in mice, using semaglutide only as a pharmacological agent to alter food intake, and does not report pharmacokinetic parameters. |
 | popPK | Gonzalez_2026 | irrelevant | 0 | 0 | This is a clinical cohort study reporting efficacy outcomes (weight, HbA1c, insulin dose) rather than quantitative pharmacokinetic parameters. |
+| popPK | Goryanin_2026 | irrelevant | 1 | 0 | The paper is a quantitative systems pharmacology (QSP) modeling study focused on aging and combination therapy, not a pharmacokinetic study; it reports pharmacodynamic endpoints (weight, HbA1c) and meta-analysis results, but does not report quantitative PK parameters (CL, V, ka) for semaglutide. |
 | popPK | Guo_2023 | irrelevant | 2 | 6 | The study focuses on the pharmacokinetics of a new analog, ecnoglutide, with semaglutide serving only as a comparator with basic terminal half-life data in rats and no detailed population model parameters. |
 | PD | Guo_2023 | not_relevant | 2 | 1 | The paper focuses on ecnoglutide; semaglutide is used only as a comparator in rodent efficacy studies and PK tables, with no exposure-response or dose-response modeling or numeric PD parameters reported for semaglutide. |
 | popPK | Guo_2025 | irrelevant | 0 | 0 | The study is a meta-analysis of pharmacodynamic efficacy (weight loss) and safety, not a pharmacokinetic study, so it does not report PK parameters like clearance or volume for semaglutide. |
@@ -207,11 +214,13 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Ismaiel_2025 | not_relevant | 1 | 0 | The paper is a systematic review and network meta-analysis of adverse event risks (relative risks) and does not report pharmacokinetic or pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50) for semaglutide. |
 | PD | Kalra_2025 | not_relevant | 1 | 0 | The paper is a qualitative review discussing pharmacological paradoxes and general dose-response trends (e.g., oral vs. subcutaneous weight loss percentages) without providing specific numeric PD parameters (Emax, EC50) or extractable concentration-effect curves for semaglutide. |
 | popPK | Kan_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy outcomes (liver histology, biomarkers) for semaglutide in MASH, and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Kuryłowicz_2026 | not_relevant | 2 | 0 | Narrative review mentioning unreplicated GWAS associations but providing no quantitative pharmacokinetic or pharmacodynamic data for semaglutide. |
 | popPK | Langeskov_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for paracetamol and atorvastatin (probe drugs), while semaglutide is used only as a co-administered agent to evaluate its effect on gastric emptying, not as the subject drug. |
 | PD | Liu_2023 | not_relevant | 2 | 1 | The paper is a systematic review and meta-analysis that reports aggregate mean differences in weight loss and qualitatively mentions a nonlinear dose-response relationship, but it does not provide specific numeric PD parameters (e.g., Emax, EC50) or an extractable concentration-effect curve for semaglutide. |
 | popPK | Long_2024 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis assessing safety and efficacy (weight loss, A1c), reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Ludwig_2026 | irrelevant | 0 | 0 | The study is a neuroanatomical and transcriptomic analysis of cagrilintide's mechanism of action in the dorsal vagal complex, and semaglutide is only used as a comparator agent in one experiment; no pharmacokinetic parameters for semaglutide are reported. |
 | PD | Ludwig_2026 | not_relevant | 0 | 0 | The paper focuses on the neural mechanisms (transcriptomics and cell populations) mediating cagrilintide's effects and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for semaglutide. |
+| PGx | Malluhi_2026 | not_relevant | 0 | 0 | The paper is a review of ocular safety (NAION, DR) and discusses pharmacokinetic differences between formulations (exposure) but does not report any pharmacogenomic effect of gene variants on PK/PD parameters. |
 | PD | Mayendraraj_2022 | not_relevant | 1 | 0 | The paper is a mechanistic review of receptor signaling pathways and does not report any quantitative pharmacodynamic or exposure-response data for semaglutide. |
 | PGx | Merrild_2026 | not_relevant | 2 | 2 | The study investigates sex differences and FGF21 gene knockout effects on glucagon receptor agonism, and while it compares the drug to semaglutide as a control, it does not analyze a specific genetic variant's effect on semaglutide's pharmacokinetics or pharmacodynamics. |
 | popPK | Min_2025 | irrelevant | 2 | 1 | This is a review article that summarizes pharmacokinetic data from other sources, and the provided evidence lacks specific quantitative population PK parameters (CL, V, Q) or model definitions for semaglutide. |
@@ -228,6 +237,8 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Posada_2025 | not_relevant | 4 | 5 | The paper models the effect of dulaglutide on gastric emptying (a PK parameter) to predict drug-drug interactions, but does not report a pharmacodynamic exposure-response relationship for semaglutide or any other drug's therapeutic effect (e.g., glucose lowering). |
 | PD | Purcell_2026 | not_relevant | 1 | 0 | The paper is a systematic review and meta-analysis reporting pooled mean differences in clinical outcomes (weight, HbA1c) without any pharmacokinetic data, concentration-effect modeling, or derivable PD parameters like Emax or EC50. |
 | PD | Pérez_2025 | not_relevant | 1 | 0 | The text is a review article summarizing clinical efficacy and safety in specific populations, containing no specific pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for semaglutide. |
+| popPK | Qin_2026 | irrelevant | 1 | 0 | The paper uses semaglutide only as one of many proof-of-concept drugs to validate an AI drug delivery design framework, reporting only prediction errors (MAE/R2) for release profiles rather than quantitative compartmental PK parameters (CL, V, ka). |
+| popPK | Salvatore_2026 | irrelevant | 0 | 0 | The study is a phenome-wide association study of clinical health outcomes (diagnoses) and does not report any pharmacokinetic parameters. |
 | PGx | Sharafshah_2025 | not_relevant | 0 | 0 | The paper is an in silico study proposing a mechanism for semaglutide-induced depression/suicidal ideation via gene networks but does not measure or report changes in PK/PD parameters (like AUC, Cmax, receptor occupancy, or efficacy metrics) based on genotypes. |
 | PD | Stark_2025 | not_relevant | 2 | 0 | The paper is a case series reporting a qualitative temporal and dose-response association for an adverse event (allodynia) but provides no numeric PD parameters, concentration-effect data, or quantitative dose-response curve. |
 | popPK | Stefanakis_2026 | irrelevant | 0 | 0 | The study is a proteomic analysis of liraglutide with semaglutide used only as a comparator reference for protein signatures, and no pharmacokinetic parameters (CL, V, ka, etc.) for semaglutide are reported. |
@@ -237,8 +248,10 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Taylor_2023_2 | not_relevant | 5 | 5 | The study investigates the pharmacodynamic effects of exenatide (not semaglutide) and reports genotype-stratified responses for GIPR/GCGR variants, but does not report a pharmacogenomic effect for semaglutide. |
 | popPK | Tham_2022 | relevant | 6 | 1 | The study uses a population PK model for semaglutide to simulate switching to dulaglutide, but specific numeric PK parameter values (CL, V, etc.) are not reported in the text or provided supplementary content (only model schematics). |
 | PGx | Tourtourikov_2026 | not_relevant | 4 | 3 | The reported significant effect is for metformin, while the nominal trends for semaglutide did not survive multiple testing correction and are not presented as a confirmed pharmacogenomic effect. |
+| PGx | Trocchia_2026 | not_relevant | 2 | 2 | The paper describes a clinical case where semaglutide caused hypoglycemia in a patient with a rare genetic disorder (GSD Ia), but it does not report a study quantifying pharmacokinetic or pharmacodynamic parameters based on specific gene variants. |
 | popPK | Trott_2026 | irrelevant | 0 | 0 | The paper is a systematic review of clinical efficacy and safety outcomes (weight, glucose, adverse events) and does not report pharmacokinetic parameters like clearance or volume. |
 | PD | Trott_2026 | not_relevant | 1 | 0 | The paper is a systematic review and meta-analysis of clinical outcomes (weight, HbA1c) and does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters like Emax or EC50. |
+| popPK | Vasović_2026 | irrelevant | 0 | 0 | This is a review article on oral peptide delivery technologies that mentions semaglutide only as a commercial product example, without reporting any original quantitative pharmacokinetic parameters or population-PK model values. |
 | popPK | Vidmar_2026 | irrelevant | 0 | 0 | The study is a clinical trial analyzing weight loss outcomes in pediatric patients, not a pharmacokinetic study, and contains no PK parameter values for semaglutide. |
 | PD | Xie_2024 | not_relevant | 3 | 2 | The paper reports dose-dependent PK and significant changes in PD endpoints (weight, glucose) but does not provide a concentration-effect model, Emax/EC50 parameters, or a quantitative exposure-response relationship. |
 | popPK | Yu_2024 | irrelevant | 0 | 0 | The study focuses on cotadutide, a different drug (GLP-1/glucagon dual agonist), and does not report pharmacokinetic parameters for semaglutide. |
@@ -250,5 +263,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D&body=Drug%3A%20semaglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-20 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D&body=Drug%3A%20semaglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-20 18:34 UTC</sub>

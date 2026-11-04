@@ -37,7 +37,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -48,7 +48,7 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_i | indirect_response_iv | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_ii | indirect_response_iv | mismatch |
 
 </details>
 
@@ -71,5 +71,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20pd_Liu_2020_IPA&body=Drug%3A%20clopidogrel%0ARecord%3A%20pd_Liu_2020_IPA%0APaper%3A%20Liu_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/pd_Liu_2020_IPA%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20pd_Liu_2020_IPA&body=Drug%3A%20clopidogrel%0ARecord%3A%20pd_Liu_2020_IPA%0APaper%3A%20Liu_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/pd_Liu_2020_IPA%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [clopidogrel](drugs/drug_clopidogrel/)</sub>

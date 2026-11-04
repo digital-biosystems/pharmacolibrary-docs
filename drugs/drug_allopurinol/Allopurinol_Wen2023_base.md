@@ -44,7 +44,7 @@ Wen YF, Brundage RC, Roman YM, Culhane-Pera KA, Straka RJ. Population pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-5.6-luna (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455), gpt-5.6-luna (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +58,7 @@ Wen YF, Brundage RC, Roman YM, Culhane-Pera KA, Straka RJ. Population pharmacoki
 
 The model predicted parent concentration instead of the measured metabolite oxypurinol. The apparent clearance and volume parameters were used without explicit bioavailability estimates. The model builder defaulted the lag time and assumed unit bioavailability and metabolite formation fraction. Extracted — oxypurinol: CLm/F 1 L/h, V1/F 47.7 L, kfm 1.1 /h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[kfm].parameter_id`: this record has Q49, the second reading Q305; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has oxypurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -102,19 +102,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 | `gpt-5.6-luna` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[kfm].parameter_id` | Q49 | Q305 | mismatch |
-| `gpt-oss-120b` | `parameters[v/fm].parameter_id` | Q76 | Q367 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['allopurinol', 'oxypurinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fm].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fm].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[slc22a12]` | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fm].parameter_id` | Q290 | Q76 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
 
 </details>
 
@@ -177,5 +181,5 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wen2023_base&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wen2023_base%0APaper%3A%20Wen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wen2023_base%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wen2023_base&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wen2023_base%0APaper%3A%20Wen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wen2023_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:13 UTC</sub>

@@ -38,9 +38,9 @@ Danielak D, Karaźniewicz-Łada M, Komosa A, Burchardt P, Lesiak M, Kruszyna Ł 
 | FM | fm | 0.045 |  | 3.6 | 71.4 (7.9% RSE) |
 | V3/F [L] | V1/F | 4.89 | L | 4.5 |  |
 | Q2/F [L/h] | Q2/F | 252 | L/h | 4.2 |  |
-| CL/F (L/h) | CL/F | 21.6 | L/h |  |  |
 | CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |
 | CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |
+| CL/F (L/h) | CL/F | 21.6 | L/h |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -68,12 +68,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 |---|---|---|---|---|---|---|---|---|---|---|
 | k12 [1/h] | `Q49` · kabs | 0.592 | 1/h | 0.0001644 | 1/s | 1/h | 3.53 | exact (1) | Tab2:row2:col1 |  |
 | V2/F [L] | `Q290` · V1/F | 7660 | L | 7.66 | m3 | l | 4.3 | exact (1) | Tab2:row3:col1 |  |
-| FM | `Q45` · fm | 0.045 |  |  |  |  | 3.6 | exact (1) | Tab2:row5:col1 | 71.4 (7.9% RSE) |
+| FM | `Q45` · fm | 0.045 |  | 0.045 |  |  | 3.6 | exact (1) | Tab2:row5:col1 | 71.4 (7.9% RSE) |
 | V3/F [L] | `Q290` · V1/F | 4.89 | L | 0.00489 | m3 | l | 4.5 | exact (1) | Tab2:row6:col1 |  |
 | Q2/F [L/h] | `Q80` · Q2/F | 252 | L/h | 7e-05 | m3/s | l/h | 4.2 | llm_confirmed (0.6) | Tab2:row7:col1 |  |
-| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | m3/s | L/h |  | review_gapfill (0.7) | Jiang_2025:review |  |
 | CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |  |  |  | pgx |  |
 | CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |  |  |  | pgx |  |
+| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | m3/s | L/h |  | review_gapfill (0.7) | Jiang_2025:review |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -108,6 +108,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- unit re-normalised: fm '' now converts (value unchanged)
 
 **Extraction notes:**
 - table Tab2: ambiguous_numeric_format
@@ -198,5 +199,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Danielak2017_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Danielak2017_reference%0APaper%3A%20Danielak_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Danielak2017_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Danielak2017_reference%0APaper%3A%20Danielak_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

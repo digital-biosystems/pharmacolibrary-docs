@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Metformin_Stepensky2002_pd_parameters_estimate",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  14000.0,
+  31500.0
+ ],
+ "parameters": {
+  "Cl": 0.0005806079999999999,
+  "F": 0.9,
+  "MM": 0.1291636,
+  "Tlag": 1224.0,
+  "VdPerKg": 0.001024,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.014,
+  "ka": 0.00011388888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2223.329699008552
+ },
+ "reference_peaks": {
+  "central.C": 0.002298442388325156
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

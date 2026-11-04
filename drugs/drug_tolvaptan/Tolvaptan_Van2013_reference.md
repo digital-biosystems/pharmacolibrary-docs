@@ -60,7 +60,7 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.974). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,7 +74,7 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 
 The simulated terminal half-life deviates significantly from the paper's reported range, with ratios between 0.3189 and 0.5645 for expected values like 10.0, 11.5, and 17.7 h. This discrepancy persists because relative oral bioavailability was not extracted, so the model was held back rather than published. Additionally, the record defines multiple covariate effects, but the simulation only exercised the reference individual, leaving these clinical scenarios untested. Extracted — tolvaptan: tlag 0.154 h, kabs 0.832 h^-1, CL/F 16 l/h, V1/F 111 l, Q/F 2.93 l/h, V2/F 31.2 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2_for_cl_d_f: this record has 0.381, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -129,6 +129,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
+- re-normalised: unit 'F' read from the label of Frel
 
 **Extraction notes:**
 - table Van_2013_table_p8_1: unbound_uncertainty
@@ -136,18 +137,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.974 (37/38 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.786 (33/42 fields) | 9 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[2_for_cl_d_f]` | 0.381 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_chf_nyha_class_1_or_2]` |  | -6.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q312_category].rse_percent` | 5.79 | 26.0 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q312_category].value` | 0.271 | 0.244 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q313_category]` | 0.230 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_category]` | 0.244 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_weight_power]` |  | 0.678 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_c/f].covariate_forms` | ['additive_shift', 'additive_shift', 'additive_shift'] | ['additive_shift', 'additive_shift', 'additive_shift', 'power'] | mismatch |
 
 </details>
 
@@ -281,13 +290,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of tolvaptan in healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis. Biopharmaceutics & drug disposition 34(6):336–347 (2013). [doi:10.1002/bdd.1849](https://doi.org/10.1002/bdd.1849)
 
-**This record:** Pharmacolibrary v26.09, model `Tolvaptan_Van2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference>
+**This record:** Pharmacolibrary, model `Tolvaptan_Van2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TolvaptanVan2013reference,
   title  = {{Pharmacolibrary model Tolvaptan_Van2013_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference},
   note   = {Parameters from doi:10.1002/bdd.1849},
 }
@@ -306,5 +314,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Van2013_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Van2013_reference%0APaper%3A%20Van_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Van2013_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Van2013_reference%0APaper%3A%20Van_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:54 UTC</sub>

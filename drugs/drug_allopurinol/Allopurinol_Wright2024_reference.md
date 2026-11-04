@@ -21,7 +21,7 @@ Wright DFB, Hishe HZ, Stocker SL, Dalbeth N, Horne A, Drake J et al. The develop
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted, plus 1 covariate effect.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Wright2024_reference/Allopurinol_Wright2024_reference.svg" alt="Allopurinol_Wright2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -31,7 +31,6 @@ Wright DFB, Hishe HZ, Stocker SL, Dalbeth N, Horne A, Drake J et al. The develop
 |---|---|---|---|
 | θ CL (L/h) a | CL | 0.85 | L/h |
 | θ V (L) b | V | 59.3 | L |
-| SLC22A12 | SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -55,7 +54,6 @@ Wright DFB, Hishe HZ, Stocker SL, Dalbeth N, Horne A, Drake J et al. The develop
 |---|---|---|---|---|---|---|---|---|
 | θ CL (L/h) a | `Q22` · CL | 0.85 | L/h | 2.361e-07 | m3/s | L/h | review (0.7) | Wright_2024:review |
 | θ V (L) b | `Q61` · V | 59.3 | L | 0.0593 | m3 | L | review (0.7) | Wright_2024:review |
-| SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -92,7 +90,6 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wright_2024:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wright_2024:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.85 | ['Wright_2024:review'] |
@@ -162,13 +159,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wright DFB, Hishe HZ, Stocker SL, Dalbeth N, Horne A, Drake J et al. The development and evaluation of dose-prediction tools for allopurinol therapy (Easy-Allo tools). British journal of clinical pharmacology 90(5):1268–1279 (2024). [doi:10.1111/bcp.16005](https://doi.org/10.1111/bcp.16005)
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Wright2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2024_reference>
+**This record:** Pharmacolibrary, model `Allopurinol_Wright2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolWright2024reference,
   title  = {{Pharmacolibrary model Allopurinol_Wright2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2024_reference},
   note   = {Parameters from doi:10.1111/bcp.16005},
 }
@@ -187,5 +183,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2024_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2024_reference%0APaper%3A%20Wright_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2024_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2024_reference%0APaper%3A%20Wright_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:10 UTC</sub>

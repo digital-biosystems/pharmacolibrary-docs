@@ -15,18 +15,6 @@
   850.0,
   1000.0
  ],
- "paper_reference": {
-  "cmax": [
-   {
-    "source": "Ailabouni_2026:results_prose",
-    "value_si": 0.0007866
-   },
-   {
-    "source": "Ailabouni_2026:results_prose",
-    "value_si": 0.0012439999999999999
-   }
-  ]
- },
  "parameters": {
   "Cl": 1.7222222222222224e-06,
   "F": 1.0,

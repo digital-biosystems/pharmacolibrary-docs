@@ -34,7 +34,7 @@ Wang H, Shen Y, Luo X, Jin L, Zhu H, Wang J. Population pharmacokinetics and dos
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Wang H, Shen Y, Luo X, Jin L, Zhu H, Wang J. Population pharmacokinetics and dos
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has none, the second reading 72; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has none, the second reading 72; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,19 +70,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q310]` |  | 72 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q357]` | 5.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q311]` | 72 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q318]` | 58 | 58 | mismatch |
+| `gpt-oss-120b` | `values[Q357]` |  | 5.13 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 96 | 96 | mismatch |
 
 </details>
 
@@ -168,13 +173,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wang H, Shen Y, Luo X, Jin L, Zhu H, Wang J. Population pharmacokinetics and dose optimization of voriconazole in patients with COVID-19-associated pulmonary aspergillosis. Frontiers in pharmacology 16:1554370 (2025). [doi:10.3389/fphar.2025.1554370](https://doi.org/10.3389/fphar.2025.1554370)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Wang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Wang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelWang2025reference,
   title  = {{Pharmacolibrary model Clopidogrel_Wang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference},
   note   = {Parameters from doi:10.3389/fphar.2025.1554370},
 }
@@ -193,5 +197,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Wang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Wang2025_reference%0APaper%3A%20Wang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Wang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Wang2025_reference%0APaper%3A%20Wang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:45 UTC</sub>

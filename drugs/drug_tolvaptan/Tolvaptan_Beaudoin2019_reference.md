@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,6 +48,8 @@ _No resolved parameters._
 **The paper reports none of the model's key parameters.**
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tolvaptan → dm-4103 (metabolism); tolvaptan → dm-4107 (metabolism), the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,6 +66,28 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 - final table tab_0: no supported point estimates; targeted recovery unresolved
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.6 (3/5 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tolvaptan', 'dm-4103', 'metabolism'], ['tolvaptan', 'dm-4107', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[biliary clearance value of tvp (cl bile) was significantly decreased in pck compared to wt ipls]` |  | 2.19 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -94,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Beaudoin2019_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Beaudoin2019_reference%0APaper%3A%20Beaudoin_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Beaudoin2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Beaudoin2019_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Beaudoin2019_reference%0APaper%3A%20Beaudoin_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Beaudoin2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:52 UTC</sub>

@@ -39,7 +39,7 @@ Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of 
 
 The record includes apparent parameters for clopidogrel but left the lag time at default values rather than using an explicit estimate. The model builder explicitly assumed full bioavailability (F=1) to define the apparent clearance and volume. A disagreement exists regarding the absorption rate constant, where the record retains a value of 0.861 h-1 while the second reader provided no value. Additionally, the second reader identified a missing lag time value of 0.434 that this record did not capture. Extracted — clopidogrel: CL/F 19.6 L/h, V/F 197 L, kabs 0.861 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.434. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,20 +82,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q314]` |  | 0.434 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -183,13 +177,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of paroxetine on olanzapine and initial dosage optimization in patients with major depressive disorder based on population pharmacokinetics. Frontiers in psychiatry 16:1538996 (2025). [doi:10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Zhang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Zhang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelZhang2025reference,
   title  = {{Pharmacolibrary model Clopidogrel_Zhang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference},
   note   = {Parameters from doi:10.3389/fpsyt.2025.1538996},
 }
@@ -208,5 +201,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Zhang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Zhang2025_reference%0APaper%3A%20Zhang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Zhang2025_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Zhang2025_reference%0APaper%3A%20Zhang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:45 UTC</sub>

@@ -36,13 +36,13 @@ Jung YS, Jin BH, Park MS, Kim CO, Chae D. Population pharmacokinetic-pharmacodyn
 | fmH4 | fm | 0.034 |  |
 | fmcarbo | fm | 0.644 |  |
 | fmothers | fmothers | 0.322 |  |
+| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |
+| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |
+| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |
+| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |
 | CL (L/h) | CL | 8.51 | L/h |
 | V: volume of distribution, L | V | 27.7 | L |
 | ka (1/h) | kabs | 5.95 | 1/h |
-| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |
-| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |
-| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |
-| CYP2C19 | CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |
 
 ## Caveats
 
@@ -74,16 +74,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | fm1 | `Q900` · fm1 | 0.050 |  |  |  |  |  | Jung_2024_table_3:row2:col1 |
 | fm2 | `Q900` · fm2 | 0.678 |  |  |  |  |  | Jung_2024_table_3:row2:col2 |
-| fmH4 | `Q45` · fm | 0.034 |  |  |  |  | phenotype_fm (0.9) | Jung_2024_table_3:row2:col3 |
-| fmcarbo | `Q45` · fm | 0.644 |  |  |  |  | phenotype_fm (0.9) | Jung_2024_table_3:row2:col4 |
+| fmH4 | `Q45` · fm | 0.034 |  | 0.034 |  |  | phenotype_fm (0.9) | Jung_2024_table_3:row2:col3 |
+| fmcarbo | `Q45` · fm | 0.644 |  | 0.644 |  |  | phenotype_fm (0.9) | Jung_2024_table_3:row2:col4 |
 | fmothers | `Q900` · fmothers | 0.322 |  |  |  |  |  | Jung_2024_table_3:row2:col5 |
+| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |  |  | pgx |
+| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |  |  | pgx |
+| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |  |  | pgx |
+| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |  |  | pgx |
 | CL (L/h) | `Q22` · CL | 8.51 | L/h | 2.364e-06 | m3/s | L/h | review_gapfill (0.7) | Henrich_2021:review |
 | V: volume of distribution, L | `Q61` · V | 27.7 | L | 0.0277 | m3 | L | review_gapfill (0.7) | Purohit_2026:review |
 | ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.001653 | 1/s | 1/h | review_gapfill (0.7) | Henrich_2021:review |
-| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |  |  | pgx |
-| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.45, 'PM': -0.996} |  |  |  |  |  | pgx |
-| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |  |  | pgx |
-| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} |  |  |  |  |  | pgx |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -103,6 +103,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
+- unit re-normalised: fm '' now converts (value unchanged)
 - compound tags: 1 row(s) → clopidogrel carboxylic acid (m_suffix 1)
 - table representations disagree for 'V c (=VH) (L)'; source reconciliation required
 - table representations disagree for 'V p (L)'; source reconciliation required
@@ -222,6 +223,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `Q64` · V2 | match | 2823.98 L | 2823.98 L | 1.0 |
 | `Q64@clopidogrel carboxylic acid` | match | 51.89 L | 51.89 L | 1.0 |
 | `Q83` · tlag | match | 0.196 h | 0.196 h | 1.0 |
+| `Q900:CYP2C19` | extra_in_extraction | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} | None |  |
 | `Q900:fm1` | match | 0.125 | 0.125 | 1.0 |
 | `Q900:fm1_im@clopidogrel h4` | extra_in_extraction | -0.450 | None |  |
 | `Q900:fm1_pm@clopidogrel h4` | extra_in_extraction | -0.996 | None |  |
@@ -318,13 +320,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jung YS, Jin BH, Park MS, Kim CO, Chae D. Population pharmacokinetic-pharmacodynamic modeling of clopidogrel for dose regimen optimization based on CYP2C19 phenotypes: A proof of concept study. CPT: pharmacometrics & systems pharmacology 13(1):29–40 (2024). [doi:10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Jung2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Jung2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelJung2024reference,
   title  = {{Pharmacolibrary model Clopidogrel_Jung2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference},
   note   = {Parameters from doi:10.1002/psp4.13053},
 }
@@ -343,5 +344,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jung2024_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jung2024_reference%0APaper%3A%20Jung_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jung2024_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jung2024_reference%0APaper%3A%20Jung_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

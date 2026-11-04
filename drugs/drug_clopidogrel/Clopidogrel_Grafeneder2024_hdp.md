@@ -70,10 +70,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax,CLO [ng/ml] | `Q32` · Cmax | 7.7 | ng/ml |  |  | ng/ml | llm_confirmed (0.6) | tbl2:row2:col2 |
-| Cmax ratio CAM:CLO | `Q33` · Cmax_ratio | 1.5 |  |  |  |  | llm_corrected (0.6) | tbl2:row4:col2 |
-| AUClast_CLO [ng/ml·min] | `Q74` · AUClast | 629 | ng/ml·min |  |  | ng/(min·ml) | llm (0.6) | tbl2:row5:col2 |
-| AUCinf_CLO [ng/ml·min] | `Q17` · AUC∞ | 810 | ng/ml·min |  |  | ng/(min·ml) | llm (0.6) | tbl2:row6:col2, tbl2:row8:col2 |
+| Cmax,CLO [ng/ml] | `Q32` · Cmax | 7.7 | ng/ml | 7.7e-06 | kg/m3 | ng/ml | llm_confirmed (0.6) | tbl2:row2:col2 |
+| Cmax ratio CAM:CLO | `Q33` · Cmax_ratio | 1.5 |  | 1.5 |  |  | llm_corrected (0.6) | tbl2:row4:col2 |
+| AUClast_CLO [ng/ml·min] | `Q74` · AUClast | 629 | ng/ml·min | 0.03774 | kg*s/m3 | ng/(min·ml) | llm (0.6) | tbl2:row5:col2 |
+| AUCinf_CLO [ng/ml·min] | `Q17` · AUC∞ | 810 | ng/ml·min | 0.0486 | kg*s/m3 | ng/(min·ml) | llm (0.6) | tbl2:row6:col2, tbl2:row8:col2 |
 | t1/2_CLO [min] | `Q57` · t1/2z | 127 | min | 7620 | s | min | llm (0.6) | tbl2:row9:col2 |
 | Clearance [ml/min] | `Q22` · CL | 83.9 | ml/min | 1.398e-06 | m3/s | ml/min | llm_confirmed (0.6) | tbl2:row16:col2 |
 | intermediate_metabolizer | `Q900` · intermediate_metabolizer | 3 |  |  |  |  |  | tbl2:row20:col2 |
@@ -112,6 +112,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
+- unit re-normalised: Cmax 'ng/ml' now converts (value unchanged)
+- unit re-normalised: Cmax_ratio '' now converts (value unchanged)
+- unit re-normalised: AUClast 'ng/ml·min' now converts (value unchanged)
+- unit re-normalised: AUC∞ 'ng/ml·min' now converts (value unchanged)
 
 **Extraction notes:**
 - table tbl2: ambiguous_numeric_format
@@ -212,5 +216,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Grafeneder2024_hdp&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Grafeneder2024_hdp%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Grafeneder2024_hdp&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Grafeneder2024_hdp%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

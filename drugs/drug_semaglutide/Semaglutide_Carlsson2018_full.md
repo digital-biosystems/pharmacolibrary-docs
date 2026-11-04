@@ -58,7 +58,7 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-5.6-luna (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.763), gpt-5.6-luna (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -72,7 +72,7 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 
 The record applies apparent parameterization by fixing bioavailability and metabolic bioavailability at 1.0 without molar correction. Additionally, the simulation restricted to the reference individual failed to exercise the extensive list of covariate effects included in the model structure. Extracted — semaglutide: kabs 0.0286 h-1, CL/F 0.0478 L/h, V/F 12.2 L.
 
-Independently confirmed by `gpt-oss-120b`, `gpt-5.6-luna`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'power'], the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -146,15 +146,29 @@ Independently confirmed by `gpt-oss-120b`, `gpt-5.6-luna`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (36/36 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.763 (29/38 fields) | 9 |
 | `gpt-5.6-luna` | confirmed | 1.0 (36/36 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[maintenance dose]` |  | 634 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maintenance_dose_0.5_mg]` | 1.00 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal function b]` |  | 997 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal_mild_impairment]` | 0.948 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal_moderate_impairment]` | 0.955 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_renal_mild_impairment]` |  | 0.948 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q79_renal_moderate_impairment]` |  | 0.955 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_maintenance_dose_0.5_mg]` |  | 1.00 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -243,13 +257,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c. Once-Weekly in Type 2 Diabetes: A Population Pharmacokinetic Analysis. Diabetes therapy : research, treatment and education of diabetes and related disorders 9(4):1533–1547 (2018). [doi:10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5)
 
-**This record:** Pharmacolibrary v26.09, model `Semaglutide_Carlsson2018_full`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Carlsson2018_full>
+**This record:** Pharmacolibrary, model `Semaglutide_Carlsson2018_full`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Carlsson2018_full>
 
 ```bibtex
 @misc{pharmacolibrary_SemaglutideCarlsson2018full,
   title  = {{Pharmacolibrary model Semaglutide_Carlsson2018_full}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Carlsson2018_full},
   note   = {Parameters from doi:10.1007/s13300-018-0458-5},
 }
@@ -268,5 +281,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Carlsson2018_full&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Carlsson2018_full%0APaper%3A%20Carlsson_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Carlsson2018_full%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Carlsson2018_full&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Carlsson2018_full%0APaper%3A%20Carlsson_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Carlsson2018_full%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>

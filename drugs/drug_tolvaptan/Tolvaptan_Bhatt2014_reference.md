@@ -38,7 +38,7 @@ Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Phar
 
 The record notes that the absorption rate constant and lag time were left at library defaults rather than being extracted from the source. This means the simulated absorption profile relies on generic conventions not found in the paper. The model was held back because these placeholder values affect the predicted concentration-time profile without justification from the cited evidence. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 9, the second reading 1360; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 74.2, the second reading 1460; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -83,20 +83,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q19]` | 9 | 1360 | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 74.2 | 1460 | mismatch |
+| `gpt-oss-120b` | `values[Q19]` | 9 | 74.3 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` |  | 74.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 5.63 | 0.97 | mismatch |
+| `gpt-oss-120b` | `values[Q23]` |  | 5.63 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 28 | 29 | mismatch |
-| `gpt-oss-120b` | `values[Q56]` | 3.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q75]` | 315 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` |  | 88.9 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` |  | 315 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 56 | 56 | mismatch |
+| `gpt-oss-120b` | `values[Q75]` | 20 |  | only_one_extracted |
 
 </details>
 
@@ -185,13 +191,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Pharmacokinetic and Pharmacodynamic Properties and Drug Interactions. Journal of clinical medicine 3(4):1276–1290 (2014). [doi:10.3390/jcm3041276](https://doi.org/10.3390/jcm3041276)
 
-**This record:** Pharmacolibrary v26.09, model `Tolvaptan_Bhatt2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference>
+**This record:** Pharmacolibrary, model `Tolvaptan_Bhatt2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TolvaptanBhatt2014reference,
   title  = {{Pharmacolibrary model Tolvaptan_Bhatt2014_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference},
   note   = {Parameters from doi:10.3390/jcm3041276},
 }
@@ -210,5 +215,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Bhatt2014_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Bhatt2014_reference%0APaper%3A%20Bhatt_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-17 08:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Bhatt2014_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Bhatt2014_reference%0APaper%3A%20Bhatt_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-17 08:32 UTC</sub>

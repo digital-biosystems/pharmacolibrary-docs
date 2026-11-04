@@ -75,10 +75,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax,CLO [ng/ml] | `Q32` · Cmax | 2.3 | ng/ml |  |  | ng/ml | llm_confirmed (0.6) | tbl2:row2:col1 |
-| Cmax ratio CAM:CLO | `Q33` · Cmax_ratio | 12.8 |  |  |  |  | llm_corrected (0.6) | tbl2:row4:col1 |
-| AUClast_CLO [ng/ml·min] | `Q74` · AUClast | 188 | ng/ml·min |  |  | ng/(min·ml) | llm (0.6) | tbl2:row5:col1 |
-| AUCinf_CLO [ng/ml·min] | `Q17` · AUC∞ | 227 | ng/ml·min |  |  | ng/(min·ml) | llm (0.6) | tbl2:row6:col1, tbl2:row8:col1 |
+| Cmax,CLO [ng/ml] | `Q32` · Cmax | 2.3 | ng/ml | 2.3e-06 | kg/m3 | ng/ml | llm_confirmed (0.6) | tbl2:row2:col1 |
+| Cmax ratio CAM:CLO | `Q33` · Cmax_ratio | 12.8 |  | 12.8 |  |  | llm_corrected (0.6) | tbl2:row4:col1 |
+| AUClast_CLO [ng/ml·min] | `Q74` · AUClast | 188 | ng/ml·min | 0.01128 | kg*s/m3 | ng/(min·ml) | llm (0.6) | tbl2:row5:col1 |
+| AUCinf_CLO [ng/ml·min] | `Q17` · AUC∞ | 227 | ng/ml·min | 0.01362 | kg*s/m3 | ng/(min·ml) | llm (0.6) | tbl2:row6:col1, tbl2:row8:col1 |
 | t1/2_CLO [min] | `Q57` · t1/2z | 87.5 | min | 5250 | s | min | llm (0.6) | tbl2:row9:col1 |
 | Clearance [ml/min] | `Q22` · CL | 85.7 | ml/min | 1.428e-06 | m3/s | ml/min | llm_confirmed (0.6) | tbl2:row16:col1 |
 | VD [ml] | `Q61` · V | 7528 | ml | 0.007528 | m3 | ml | llm_confirmed (0.6) | tbl2:row17:col1 |
@@ -117,6 +117,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
+- unit re-normalised: Cmax 'ng/ml' now converts (value unchanged)
+- unit re-normalised: Cmax_ratio '' now converts (value unchanged)
+- unit re-normalised: AUClast 'ng/ml·min' now converts (value unchanged)
+- unit re-normalised: AUC∞ 'ng/ml·min' now converts (value unchanged)
 
 **Extraction notes:**
 - table tbl2: ambiguous_numeric_format
@@ -251,13 +255,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann MD et al. Prospective Trial on the Pharmacokinetics of Clopidogrel in Hemodialysis Patients. Kidney international reports 9(10):2970–2980 (2024). [doi:10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Grafeneder2024_hv`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv>
+**This record:** Pharmacolibrary, model `Clopidogrel_Grafeneder2024_hv`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelGrafeneder2024hv,
   title  = {{Pharmacolibrary model Clopidogrel_Grafeneder2024_hv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv},
   note   = {Parameters from doi:10.1016/j.ekir.2024.07.029},
 }
@@ -276,5 +279,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Grafeneder2024_hv&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Grafeneder2024_hv%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Grafeneder2024_hv&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Grafeneder2024_hv%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

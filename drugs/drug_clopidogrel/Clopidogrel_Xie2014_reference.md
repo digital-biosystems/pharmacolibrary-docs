@@ -63,7 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | K12 | `Q301` · k12 | 0.259 | h(-1) | 7.194e-05 | 1/s | 1/h | exact (1) | Xie_2014:abstract |
-| CL/F | `Q351` · CLm/F | 179 | L x h(-1) |  |  | l/h | exact (1) | Xie_2014:abstract |
+| CL/F | `Q351` · CLm/F | 179 | L x h(-1) | 4.972e-05 | m3/s | L/h | exact (1) | Xie_2014:abstract |
 | V/F | `Q367` · Vm/F | 632 | L | 0.632 | m3 | l | exact (1) | Xie_2014:abstract |
 | K(in) | `Q47` · kel | 4.29 | unit |  |  | unit | exact (1) | Xie_2014:abstract |
 | E(max) | `Q38` · E | 0.664 | unit |  |  | unit | exact (1) | Xie_2014:abstract |
@@ -88,6 +88,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - row roles (LLM): model_class=turnover; 6/6 row label(s) assigned, 2 linked by role; re-tagged clopidogrel active metabolite→parent ×3, clopidogrel active metabolite→VASP-PRI ×3
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'clopidogrel active metabolite', not clopidogrel — the review values are the parent's
+- unit re-normalised: CLm/F 'L x h(-1)' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Xie_2014_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -135,9 +136,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Xie_2014:abstract'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | ['Xie_2014:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Xie_2014:abstract'] |
 | C5_dimension_Q367 | pass | [length] ** 3 |  | ['Xie_2014:abstract'] |
-| C5_dimension_Q47 | fail | [luminosity] / [length] ** 2 | unit | ['Xie_2014:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | unit ([luminosity] / [length] ** 2) | ['Xie_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -162,5 +163,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Xie2014_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Xie2014_reference%0APaper%3A%20Xie_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Xie2014_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Xie2014_reference%0APaper%3A%20Xie_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

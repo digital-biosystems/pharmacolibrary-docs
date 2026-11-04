@@ -42,7 +42,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 The record lists allopurinol clearance and volume as apparent (/F) units, yet the builder substituted F=1 and Fm=1, removing the bioavailability correction. The model uses a first-order depot input, implying extravascular dosing, which contradicts the assumption that bioavailability equals one. These deviations caused the adjudication rule to flag the record as not acceptable. Extracted — oxypurinol: CLm/F 1.59 l h⁻¹, V/F 32.6 l, kfm 0.19 1/h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of slc22a12: this record has {'CC': 0.0, 'CT': 0.32, 'TT': 0.64}, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -103,14 +103,22 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/fm (l h-)*].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[slc22a12]` | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fm (l)].parameter_id` | Q76 | Q367 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -198,13 +206,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al. The pharmacokinetics of oxypurinol in people with gout. British journal of clinical pharmacology 74(3):477–489 (2012). [doi:10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x)
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Stocker2012_base`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Stocker2012_base>
+**This record:** Pharmacolibrary, model `Allopurinol_Stocker2012_base`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Stocker2012_base>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolStocker2012base,
   title  = {{Pharmacolibrary model Allopurinol_Stocker2012_base}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Stocker2012_base},
   note   = {Parameters from doi:10.1111/j.1365-2125.2012.04207.x},
 }
@@ -223,5 +230,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Stocker2012_base&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Stocker2012_base%0APaper%3A%20Stocker_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Stocker2012_base%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Stocker2012_base&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Stocker2012_base%0APaper%3A%20Stocker_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Stocker2012_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:11 UTC</sub>

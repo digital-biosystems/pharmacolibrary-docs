@@ -38,7 +38,7 @@ Shoaf SE, Bricmont P, Dandurand A. Low-dose tolvaptan PK/PD: comparison of patie
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Shoaf SE, Bricmont P, Dandurand A. Low-dose tolvaptan PK/PD: comparison of patie
 
 The record relies on library defaults for absorption rate and lag time rather than estimates from the study. The apparent parameterization assumes full bioavailability, but the specific absorption values are not supported by the source text. A second reader disagreed on the reported absorption rate value, further highlighting the lack of explicit data. Extracted — tolvaptan: CL/F 4.81 mL/min/kg, V/F 125 L.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q335: this record has 1.02, the second reading none. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,14 +82,20 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q335]` | 1.02 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -176,13 +182,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Shoaf SE, Bricmont P, Dandurand A. Low-dose tolvaptan PK/PD: comparison of patients with hyponatremia due to syndrome of inappropriate antidiuretic hormone secretion to healthy adults. European journal of clinical pharmacology 73(11):1399–1408 (2017). [doi:10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7)
 
-**This record:** Pharmacolibrary v26.09, model `Tolvaptan_Shoaf2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference>
+**This record:** Pharmacolibrary, model `Tolvaptan_Shoaf2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TolvaptanShoaf2017reference,
   title  = {{Pharmacolibrary model Tolvaptan_Shoaf2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference},
   note   = {Parameters from doi:10.1007/s00228-017-2302-7},
 }
@@ -201,5 +206,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Shoaf2017_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Shoaf2017_reference%0APaper%3A%20Shoaf_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Shoaf2017_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Shoaf2017_reference%0APaper%3A%20Shoaf_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:51 UTC</sub>

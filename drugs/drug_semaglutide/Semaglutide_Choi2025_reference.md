@@ -38,7 +38,7 @@ Choi S, Seo J, Park S, Kim NY, Kim H, Lim HS. Population pharmacokinetics of efp
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Choi S, Seo J, Park S, Kim NY, Kim H, Lim HS. Population pharmacokinetics of efp
 
 The record describes a two-compartment structure but lacks a distribution rate constant, meaning the peripheral compartment is unreachable from the absorption site. Additionally, a second reader disagreed on extracted values, citing 2.68 L for a volume parameter instead of the recorded 46.27, and noting a missing value for a clearance parameter. Extracted — semaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.059, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 21, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -79,19 +79,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q18]` | 21 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q22]` | 0.059 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q315]` | 66.93 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 24.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q81]` | 46.27 | 2.68 | mismatch |
-| `gpt-oss-120b` | `values[Q87]` |  | 24.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 75.2 | only_one_extracted |
 
 </details>
 
@@ -139,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Choi2025_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Choi2025_reference%0APaper%3A%20Choi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Choi2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Choi2025_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Choi2025_reference%0APaper%3A%20Choi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Choi2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:28 UTC</sub>

@@ -39,7 +39,7 @@ Zhang C, Jiang L, Hu K, Chen L, Zhang YJ, Shi HZ et al. Effects of Aripiprazole 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Zhang C, Jiang L, Hu K, Chen L, Zhang YJ, Shi HZ et al. Effects of Aripiprazole 
 
 No value was extracted for the absorption lag time, so a library placeholder would have been used. The absorption rate constant of 0.861 h−1 is present, but a second reader recorded this field as missing. Extracted — clopidogrel: CL/F 27.6 L/h, V/F 854 L, kabs 0.861 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.316. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.316; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -83,17 +83,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q314]` |  | 0.316 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` |  | 0.316 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 0.861 |  | only_one_extracted |
 
 </details>
 
@@ -183,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang C, Jiang L, Hu K, Chen L, Zhang YJ, Shi HZ et al. Effects of Aripiprazole on Olanzapine Population Pharmacokinetics and Initial Dosage Optimization in Schizophrenia Patients. Neuropsychiatric disease and treatment 20:479-490 (2024). [doi:10.2147/ndt.s455183](https://doi.org/10.2147/ndt.s455183)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Zhang2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Zhang2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelZhang2024reference,
   title  = {{Pharmacolibrary model Clopidogrel_Zhang2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference},
   note   = {Parameters from doi:10.2147/ndt.s455183},
 }
@@ -208,5 +208,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Zhang2024_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Zhang2024_reference%0APaper%3A%20Zhang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Zhang2024_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Zhang2024_reference%0APaper%3A%20Zhang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:45 UTC</sub>

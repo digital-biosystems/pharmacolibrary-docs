@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/&quot;},{&quot;label&quot;:&quot;Vincent_1983 \u00b7 PD fall in systolic blood pressure (after 5 min standing)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fall in systolic blood pressure (after 5 min standing) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Doxazosin (concentrations from this paper's PK model) drives fall in systolic blood pressure (after 5 min standing) (in mmHg): delayed effect through an effect compartment.
+**As extracted:** Doxazosin (concentrations from this paper's PK model) drives fall in systolic blood pressure (after 5 min standing) (in mmHg): direct linear effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -23,7 +23,7 @@
 > <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Vincent_1983`
-- **model family:** `effect_compartment`
+- **model family:** `linear`
 - **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/additive
@@ -35,8 +35,9 @@ Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | slope | `Q335` ·  | -2.53 | mmHg[ng/ml] | llm | Vincent_1983:pdv3 |
-| — | intercept | `Q100` ·  | 1.0 | mmHg | nil | Vincent_1983:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.0108 | min-1 | llm | Vincent_1983:pdv3 |
+| PD (effect) | Slope | `Q335` ·  | -2.53 | mmHg/(ng/ml) | llm | Vincent_1983:pdv3 |
+| — | i | `Q100` ·  | 1.0 | mmHg | nil | Vincent_1983:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,14 +52,13 @@ Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | -2.53 mmHg[ng/ml] | — |
+| slope | -2.53 mmHg/(ng/ml) | — |
 
 Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -2.53
 
 Deviations:
 
 - `defaulted_parameters` — E0
-- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
 
 ## Review
 
@@ -109,25 +109,24 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_modelica.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_modelica.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_matlab.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_sbml.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_cellml.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_cellml.zip" download>Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft`. <https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft>
+**This record:** Pharmacolibrary, model `Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft`. <https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft>
 
 ```bibtex
 @misc{pharmacolibrary_DoxazosinVincent1983PDfallinsystolicbloodpressureaft,
   title  = {{Pharmacolibrary model Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxazosin/Doxazosin_Vincent1983_PD_fall_in_systolic_blood_pressure_aft},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta&body=Drug%3A%20doxazosin%0ARecord%3A%20pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta%0APaper%3A%20Vincent_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta&body=Drug%3A%20doxazosin%0ARecord%3A%20pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta%0APaper%3A%20Vincent_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/pd_Vincent_1983_fall_in_systolic_blood_pressure_after_5_min_sta%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [doxazosin](drugs/drug_doxazosin/)</sub>

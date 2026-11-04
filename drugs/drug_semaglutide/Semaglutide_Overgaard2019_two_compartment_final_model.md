@@ -156,13 +156,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Population Pharmacokinetics of Semaglutide for Type 2 Diabetes. Diabetes therapy : research, treatment and education of diabetes and related disorders 10(2):649–662 (2019). [doi:10.1007/s13300-019-0581-y](https://doi.org/10.1007/s13300-019-0581-y)
 
-**This record:** Pharmacolibrary v26.09, model `Semaglutide_Overgaard2019_two_compartment_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model>
+**This record:** Pharmacolibrary, model `Semaglutide_Overgaard2019_two_compartment_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model>
 
 ```bibtex
 @misc{pharmacolibrary_SemaglutideOvergaard2019twocompartmentfinalmodel,
   title  = {{Pharmacolibrary model Semaglutide_Overgaard2019_two_compartment_final_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model},
   note   = {Parameters from doi:10.1007/s13300-019-0581-y},
 }
@@ -177,5 +176,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_two_compartment_final_model&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_two_compartment_final_model%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_two_compartment_final_model&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_two_compartment_final_model%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>

@@ -40,7 +40,7 @@ Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on th
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on th
 
 The record provides no estimates for the absorption rate constant or lag time, so standard library defaults were applied. The second reader disagreed with the recorded compartment and metabolite counts, identifying discrepancies in the structural definitions. Extracted — semaglutide: CL/F 9.1 L/h, V/F 28.3 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 2, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.6, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -85,18 +85,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 2 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q56]` | 12 | 2 | mismatch |
+| `gpt-oss-120b` | `values[Q40]` | 55 | 55 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 11.0 |  | only_one_extracted |
 
 </details>
 
@@ -185,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on the Pharmacokinetics and Drug-Drug Interactions of Approved GLP-1 Receptor Agonists and a Dual GLP-1/GIP Receptor Agonist. Drug design, development and therapy 19:3509-3537 (2025). [doi:10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957)
 
-**This record:** Pharmacolibrary v26.09, model `Semaglutide_Min2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Min2025_reference>
+**This record:** Pharmacolibrary, model `Semaglutide_Min2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Min2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SemaglutideMin2025reference,
   title  = {{Pharmacolibrary model Semaglutide_Min2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Min2025_reference},
   note   = {Parameters from doi:10.2147/dddt.s506957},
 }
@@ -210,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Min2025_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Min2025_reference%0APaper%3A%20Min_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Min2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Min2025_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Min2025_reference%0APaper%3A%20Min_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Min2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:32 UTC</sub>

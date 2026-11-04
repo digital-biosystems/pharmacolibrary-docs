@@ -37,7 +37,7 @@ Castro-Suárez N, Trame MN, Ramos-Suzarte M, Dávalos JM, Bacallao-Mendez RA, Ma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,6 +50,8 @@ Castro-Suárez N, Trame MN, Ramos-Suzarte M, Dávalos JM, Bacallao-Mendez RA, Ma
 **Tolvaptan's peripheral compartment volume of distribution was rejected because that compartment was unreachable from the dose.**
 
 The record describes a two-compartment model for tolvaptan with a central volume of 2.63 L and a peripheral volume of 9.92 L. A structural integrity check failed, identifying that the peripheral compartment has no path from the administration site. Consequently, the peripheral volume parameter represents an orphan compartment that cannot be populated by the drug. Extracted — tolvaptan: CL 9.64 L/h, V1 2.63 L, V2 9.92 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 9.64, the second reading 0.21; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -73,6 +75,28 @@ The record describes a two-compartment model for tolvaptan with a central volume
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 9.64 | 0.21 | mismatch |
+| `gpt-oss-120b` | `values[Q64]` | 9.92 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -111,5 +135,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_CastroSurez2020_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_CastroSurez2020_reference%0APaper%3A%20Castro-Su%C3%A1rez_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_CastroSurez2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_CastroSurez2020_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_CastroSurez2020_reference%0APaper%3A%20Castro-Su%C3%A1rez_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_CastroSurez2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:50 UTC</sub>

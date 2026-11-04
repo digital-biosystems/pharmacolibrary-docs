@@ -44,7 +44,7 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,6 +57,8 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 **Semaglutide's total clearance and absorption lag time were left at library placeholders, causing the model to be quarantined.**
 
 The record lists semaglutide total clearance without an extracted value, despite the structure requiring it. Similarly, no value was provided for the absorption lag time. These missing parameters defaulted to library placeholders, preventing publication. Extracted — semaglutide: V1 3.4 L, V2 3.9 L, Vss 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, t1/2z 158 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has none, the second reading 0.033; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -110,6 +112,30 @@ The record lists semaglutide total clearance without an extracted value, despite
 - captured model equation F = (weight/85)^θ
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.733 (11/15 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].value` |  | 0.033 | mismatch |
+| `gpt-oss-120b` | `parameters[f].value` |  | 0.76 | mismatch |
+| `gpt-oss-120b` | `parameters[v]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtotal].parameter_id` | Q65 | Q61 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -172,5 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2021_healthy_subjects&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2021_healthy_subjects%0APaper%3A%20Overgaard_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2021_healthy_subjects&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2021_healthy_subjects%0APaper%3A%20Overgaard_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>

@@ -46,7 +46,7 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611), gpt-5.6-luna (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.72), gpt-5.6-luna (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,7 +60,7 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 The record lists the absorption rate constant (kabs) with a value of 0.0253 and a reported unit of 'ka', which is invalid. This missing valid unit prevented the parameter from being converted to standard SI units, triggering a dimension mismatch check on a structural parameter. Although a second reader disagreed on the extraction of several values, the unit issue on kabs remains the primary technical reason for rejection. Extracted — semaglutide: kabs 0.0253 ka, CL 0.0348 L/h, V1 3.59 L, Q 0.304 L/h, V2 4.1 L, Fab 0.847 F, t1/2ka 0.0346 1 mg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_effect_on_cl_and_q: this record has 1.01, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of body_weight_effect_on_cl_and_q: this record has 1.01, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.611 (11/18 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.72 (18/25 fields) | 7 |
 | `gpt-5.6-luna` | not confirmed | 0.647 (11/17 fields) | 6 |
 
 <details><summary>13 field discrepancies</summary>
@@ -130,10 +130,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-5.6-luna` | `parameters[theta_q319_body_weight]` |  | 1.01 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q87_injection_site]` |  | 0.883 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[body_weight_effect_on_cl_and_q]` | 1.01 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[body_weight_effect_on_vc_and_vp]` | 0.923 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance (cl)].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[injection_site_effect_on_f]` | 0.883 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` |  | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[drug product strength effects on ka, 1 mg]` | 0.0346 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_body_weight]` |  | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 0.923 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q44_injection_site]` | 0.883 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q61_body_weight]` |  | 0.923 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q87_injection_site]` |  | 0.883 | only_one_extracted |
 
@@ -155,10 +155,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab4:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab4:row4:col1'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['Tab4:row1:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['Tab4:row1:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab4:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab4:row5:col1'] |
-| C5_dimension_Q95 | fail | [mass] | 1 mg | ['Tab4:row11:col1'] |
+| C5_dimension_Q95 | fail | [time] | 1 mg ([mass]) | ['Tab4:row11:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0348 | ['Tab4:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0348 L/h | ['Tab4:row2:col1'] |
@@ -186,5 +186,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_estimate&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_estimate%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_estimate&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_estimate%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>

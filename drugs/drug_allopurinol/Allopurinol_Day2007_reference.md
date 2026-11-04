@@ -23,7 +23,7 @@ Day RO, Graham GG, Hicks M, McLachlan AJ, Stocker SL, Williams KM. Clinical phar
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted, plus 1 covariate effect.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Day2007_reference/Allopurinol_Day2007_reference.svg" alt="Allopurinol_Day2007_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,11 +35,10 @@ Day RO, Graham GG, Hicks M, McLachlan AJ, Stocker SL, Williams KM. Clinical phar
 |---|---|---|---|
 | CL or CL/F | CL/F | 11.4 | mL/min/kg |
 | Vd or Vd/F | V/F | 0.58 | L/kg |
-| SLC22A12 | SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +52,7 @@ Day RO, Graham GG, Hicks M, McLachlan AJ, Stocker SL, Williams KM. Clinical phar
 
 These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.4, the second reading 15.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.4, the second reading 15.8; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -63,7 +62,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|
 | CL or CL/F | `Q27` · CL/F | 11.4 | mL/min/kg | 1.33e-05 | m3/s | L/h | review (0.7) | Day_2007:review |
 | Vd or Vd/F | `Q76` · V/F | 0.58 | L/kg | 0.0406 | m3 | L | review (0.7) | Day_2007:review |
-| SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,16 +87,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q27]` | 11.4 | 15.8 | mismatch |
 | `gpt-oss-120b` | `values[Q31]` |  | 0.19 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` |  | 79 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 0.8 | 1.2 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 0.8 | 23.3 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` |  | 1.2 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q76]` | 0.58 | 1.31 | mismatch |
 
 </details>
@@ -116,7 +115,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Day_2007:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Day_2007:review'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -189,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Day RO, Graham GG, Hicks M, McLachlan AJ, Stocker SL, Williams KM. Clinical pharmacokinetics and pharmacodynamics of allopurinol and oxypurinol. Clinical pharmacokinetics 46(8):623–644 (2007). [doi:10.2165/00003088-200746080-00001](https://doi.org/10.2165/00003088-200746080-00001)
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Day2007_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2007_reference>
+**This record:** Pharmacolibrary, model `Allopurinol_Day2007_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2007_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolDay2007reference,
   title  = {{Pharmacolibrary model Allopurinol_Day2007_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2007_reference},
   note   = {Parameters from doi:10.2165/00003088-200746080-00001},
 }
@@ -214,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Day2007_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Day2007_reference%0APaper%3A%20Day_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Day2007_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-17 08:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Day2007_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Day2007_reference%0APaper%3A%20Day_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Day2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-17 08:56 UTC</sub>

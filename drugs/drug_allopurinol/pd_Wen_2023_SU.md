@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Stocker2012_final&quot;,&quot;label&quot;:&quot;Stocker_2012_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_final.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_base&quot;,&quot;label&quot;:&quot;Stocker_2012_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_plasma_urate_concentration&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 plasma urate concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_plasma_urate_concentration.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum urate — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.481). Primary extraction retained.">cross-check: disputed 0/2</span>
+# serum urate — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -38,8 +38,6 @@ Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of cl
 | PD (effect) | BLurate | `Q324` ·  | 9.0 | mg/dL | llm | Wen_2023:pdv3 |
 | PD (effect) | Imax | `Q323` ·  | 7.6 | mg/dL | llm | Wen_2023:pdv3 |
 | PD (effect) | IC50 | `Q322` ·  | 17.6 | mg/L | llm | Wen_2023:pdv3 |
-| model term | BCRP | `Q900` · BCRP | {'AA': 0.244, 'CA': 0.354, 'CC': 0.0} |  |  | pgx |
-| model term | PDZK1 | `Q900` · PDZK1 | {'AA': -0.54, 'GA': -0.27, 'GG': 0.0} |  |  | pgx |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,34 +81,21 @@ Advisory:
 - defaulted: gamma (convention)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.8 (8/10 fields) | 2 |
-| `gpt-oss:120b` | not confirmed | 0.481 (13/27 fields) | 14 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | oxypurinol | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `effect_form` | additive | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | emax | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 27.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 27.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 27.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 1.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 1.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q305]` |  | 1.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q351]` |  | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q351]` |  | 1.05 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q367]` |  | 47.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q367]` |  | 59.3 | only_one_extracted |
-| `openai:gpt-6-luna` | `model_family` | sigmoid_emax | emax | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q312]` | 71.8 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 17.6 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 7.6 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 9.0 | unit": "mg/dL", | mismatch |
 
 </details>
 
@@ -157,13 +142,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Wen2023_PD_su`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wen2023_PD_su>
+**This record:** Pharmacolibrary, model `Allopurinol_Wen2023_PD_su`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wen2023_PD_su>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolWen2023PDsu,
   title  = {{Pharmacolibrary model Allopurinol_Wen2023_PD_su}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wen2023_PD_su},
 }
 ```
@@ -179,5 +163,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20pd_Wen_2023_SU&body=Drug%3A%20allopurinol%0ARecord%3A%20pd_Wen_2023_SU%0APaper%3A%20Wen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/pd_Wen_2023_SU%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20pd_Wen_2023_SU&body=Drug%3A%20allopurinol%0ARecord%3A%20pd_Wen_2023_SU%0APaper%3A%20Wen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/pd_Wen_2023_SU%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [allopurinol](drugs/drug_allopurinol/)</sub>

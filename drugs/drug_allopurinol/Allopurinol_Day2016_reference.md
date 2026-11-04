@@ -23,7 +23,7 @@ Day RO, Kamel B, Kannangara DR, Williams KM, Graham GG. Xanthine oxidoreductase 
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted, plus 1 covariate effect.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Day2016_reference/Allopurinol_Day2016_reference.svg" alt="Allopurinol_Day2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,7 +35,6 @@ Day RO, Kamel B, Kannangara DR, Williams KM, Graham GG. Xanthine oxidoreductase 
 |---|---|---|---|
 | The apparent oral clearance | CL/F | 11.0 | l/h |
 | The apparent volume of distribution | V/F | 50.0 | litres |
-| SLC22A12 | SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -63,7 +62,6 @@ Independently confirmed by `gpt-oss-120b`.
 |---|---|---|---|---|---|---|---|---|
 | The apparent oral clearance | `Q27` · CL/F | 11.0 | l/h | 3.056e-06 | m3/s | L/h | review (0.7) | Day_2016:review |
 | The apparent volume of distribution | `Q76` · V/F | 50.0 | litres | 0.05 | m3 | L | review (0.7) | Day_2016:review |
-| SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -106,7 +104,6 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Day_2016:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Day_2016:review'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -179,13 +176,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Day RO, Kamel B, Kannangara DR, Williams KM, Graham GG. Xanthine oxidoreductase and its inhibitors: relevance for gout. Clinical science (London, England : 1979) 130(23):2167–2180 (2016). [doi:10.1042/CS20160010](https://doi.org/10.1042/CS20160010)
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Day2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2016_reference>
+**This record:** Pharmacolibrary, model `Allopurinol_Day2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolDay2016reference,
   title  = {{Pharmacolibrary model Allopurinol_Day2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Day2016_reference},
   note   = {Parameters from doi:10.1042/CS20160010},
 }
@@ -204,5 +200,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Day2016_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Day2016_reference%0APaper%3A%20Day_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Day2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-17 08:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Day2016_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Day2016_reference%0APaper%3A%20Day_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Day2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-17 08:57 UTC</sub>

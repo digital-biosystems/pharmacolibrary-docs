@@ -35,7 +35,7 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q36: this record has 6148, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q36: this record has 6148, the second reading none. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,18 +77,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q36]` | 6148 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q56]` | 24 |  | only_one_extracted |
 
 </details>
 
@@ -178,13 +177,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response modeling for nausea incidence for cotadutide using a Markov modeling approach. CPT: pharmacometrics & systems pharmacology 13(9):1582-1594 (2024). [doi:10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194)
 
-**This record:** Pharmacolibrary v26.09, model `Semaglutide_Yu2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Yu2024_reference>
+**This record:** Pharmacolibrary, model `Semaglutide_Yu2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Yu2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SemaglutideYu2024reference,
   title  = {{Pharmacolibrary model Semaglutide_Yu2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Yu2024_reference},
   note   = {Parameters from doi:10.1002/psp4.13194},
 }
@@ -203,5 +201,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Yu2024_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Yu2024_reference%0APaper%3A%20Yu_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Yu2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Yu2024_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Yu2024_reference%0APaper%3A%20Yu_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Yu2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:33 UTC</sub>

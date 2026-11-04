@@ -41,7 +41,7 @@ Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +55,7 @@ Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic 
 
 The record flags oral bioavailability and lag time as defaulted, meaning no specific estimates were extracted for these absorption drivers. The review notes that these placeholders affect the simulated profile but are not supported by the paper. A second reader also disagreed on multiple statistical values, reporting nulls where the record listed numbers like 2.49, and proposing values like 0.0071 where the record was empty. Extracted — clopidogrel: CL 8.51 L/h, V1 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 0.14; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 0.278, the second reading 0.278; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -86,25 +86,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (7/21 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q316]` |  | 0.14 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q317]` |  | 3.65 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q321]` | 0.278 | 0.278 | mismatch |
 | `gpt-oss-120b` | `values[Q328]` | 0.00641 | 0.00641 | mismatch |
+| `gpt-oss-120b` | `values[Q329]` |  | 6.57 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q331]` | 11.0 | 11.0 | mismatch |
-| `gpt-oss-120b` | `values[Q334]` |  | 6.57 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q334]` |  | 0.0071 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q336]` | 1 | 1 | mismatch |
-| `gpt-oss-120b` | `values[Q343]` |  | 2.49 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q47]` | 0.0082 | 0.0082 | mismatch |
+| `gpt-oss-120b` | `values[Q47]` | 0.0082 | 3.63 | mismatch |
 | `gpt-oss-120b` | `values[Q50]` | 0.0473 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q60]` | 0.17 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q77]` | 448 | 448 | mismatch |
@@ -203,13 +201,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic modeling of drug interactions at the P2Y. CPT: pharmacometrics & systems pharmacology 10(7):735–747 (2021). [doi:10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Henrich2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Henrich2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelHenrich2021reference,
   title  = {{Pharmacolibrary model Clopidogrel_Henrich2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference},
   note   = {Parameters from doi:10.1002/psp4.12641},
 }
@@ -228,5 +225,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Henrich2021_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Henrich2021_reference%0APaper%3A%20Henrich_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Henrich2021_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Henrich2021_reference%0APaper%3A%20Henrich_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:42 UTC</sub>

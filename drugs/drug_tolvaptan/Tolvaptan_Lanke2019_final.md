@@ -49,7 +49,7 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133), gpt-5.6-luna (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +63,7 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 The recorded duration of the zero-order input for tolvaptan, D1, is 0.58 hours. This specific value was adjudicated as not acceptable by a review rule. Additionally, the model contains covariate effects for eGFR and weight, but these scenarios were not simulated during the review. Extracted — tolvaptan: CL/F 12.6 L/h, V/F 110 L, D1 0.58 h, kabs 1.34 h -1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolvaptan, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dosemax: this record has none, the second reading 182; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -119,37 +119,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
-| `gpt-5.6-luna` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 
-<details><summary>19 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-5.6-luna` | `parameters[cl/f].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-5.6-luna` | `parameters[k a]` | 1.34 |  | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[theta_cl_f_egfr_power]` |  | 0.54 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[theta_q319_egfr_power]` | 0.54 |  | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[theta_v_f_wt_power]` |  | 0.44 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[vd/f].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f]` | 13.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 13.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[d1]` | 0.78 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[d1]` |  | 0.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dosemax]` |  | 182 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k a]` | 1.34 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_egfr_power]` | 0.54 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` | -0.35 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` |  | -0.35 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v_f_wt_power]` |  | 0.44 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd/f]` | 120 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd/f]` |  | 120 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | tolvaptan | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | tolvaptan | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[power_coefficient_egfr_on_cl_f]` | 0.52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[power_coefficient_wt_on_vd_f]` | 0.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_egfr_power]` |  | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_wt_power]` |  | -0.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` | -0.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_wt_power]` |  | 0.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f].covariate_forms` | [] | ['power'] | mismatch |
 
 </details>
 
@@ -246,13 +235,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of Tolvaptan in Subjects With Autosomal Dominant Polycystic Kidney Disease. Journal of clinical pharmacology 59(5):763–770 (2019). [doi:10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370)
 
-**This record:** Pharmacolibrary v26.09, model `Tolvaptan_Lanke2019_final`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final>
+**This record:** Pharmacolibrary, model `Tolvaptan_Lanke2019_final`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final>
 
 ```bibtex
 @misc{pharmacolibrary_TolvaptanLanke2019final,
   title  = {{Pharmacolibrary model Tolvaptan_Lanke2019_final}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final},
   note   = {Parameters from doi:10.1002/jcph.1370},
 }
@@ -271,5 +259,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Lanke2019_final&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Lanke2019_final%0APaper%3A%20Lanke_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Lanke2019_final&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Lanke2019_final%0APaper%3A%20Lanke_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:54 UTC</sub>

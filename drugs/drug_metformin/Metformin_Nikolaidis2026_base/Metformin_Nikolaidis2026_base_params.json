@@ -12,6 +12,34 @@
  "paper_doses_mg": [
   1000.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.9
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 2.7
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 2.1
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.66
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.23
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.35
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.9861111111111114e-05,
   "F": 1.0,

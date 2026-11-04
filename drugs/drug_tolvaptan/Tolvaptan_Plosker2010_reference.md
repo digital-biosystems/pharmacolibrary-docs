@@ -38,7 +38,7 @@ Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
 
 The model was held back because the absorption rate constant and lag time were not reported in the source text and were substituted with library defaults. This deviation means the simulated pharmacokinetic profile relies on assumed absorption kinetics that are not supported by the tolvaptan data. The second reader’s value disagreements concern other extracted fields and do not address the missing absorption parameters. Extracted — tolvaptan: CLu 6 mL/min, V/F 3 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1460, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1460, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -83,25 +83,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.4 (6/15 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.444 (8/18 fields) | 10 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `values[Q17]` | 1460 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q18]` |  | 3087 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q19]` | 3087 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q34]` | 48 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q36]` |  | 48 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` |  | 56 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 9.4 | 12 | mismatch |
-| `gpt-oss-120b` | `values[Q60]` |  | 9.4 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q71]` |  | 129 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q88]` |  | 3087 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q24]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q301]` | 12.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q373]` | 0.43 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 56 | 56 | mismatch |
+| `gpt-oss-120b` | `values[Q46]` | 98 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` |  | 1460 | only_one_extracted |
 
 </details>
 
@@ -190,13 +191,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010). [doi:10.2165/11204630-000000000-00000](https://doi.org/10.2165/11204630-000000000-00000)
 
-**This record:** Pharmacolibrary v26.09, model `Tolvaptan_Plosker2010_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference>
+**This record:** Pharmacolibrary, model `Tolvaptan_Plosker2010_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TolvaptanPlosker2010reference,
   title  = {{Pharmacolibrary model Tolvaptan_Plosker2010_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference},
   note   = {Parameters from doi:10.2165/11204630-000000000-00000},
 }
@@ -215,5 +215,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Plosker2010_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Plosker2010_reference%0APaper%3A%20Plosker_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-17 08:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Plosker2010_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Plosker2010_reference%0APaper%3A%20Plosker_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-17 08:33 UTC</sub>

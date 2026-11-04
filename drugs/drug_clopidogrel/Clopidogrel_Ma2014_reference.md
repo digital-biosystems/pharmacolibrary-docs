@@ -40,7 +40,7 @@ Ma S, Ju W, Dai G, Zhao W, Cheng X, Fang Z et al. Synergistic effects of clopido
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Ma S, Ju W, Dai G, Zhao W, Cheng X, Fang Z et al. Synergistic effects of clopido
 
 The record lacks reported values for absorption rate and lag time, forcing the model builder to substitute library defaults for an extravascular dosing structure. This substitution was explicitly flagged as an unacceptable deviation from the source data, as the apparent clearance and volume parameters could not be supported without defined absorption kinetics. Extracted — clopidogrel: CL/F 0.309 L/h/kg, V/F 5.08 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 15.127, the second reading 10.146. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 104.965, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -85,17 +85,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 104.965 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 90.529 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 15.127 | 10.146 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` |  | 90.529 | only_one_extracted |
 
 </details>
 
@@ -184,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Ma S, Ju W, Dai G, Zhao W, Cheng X, Fang Z et al. Synergistic effects of clopidogrel and fufang danshen dripping pills by modulation of the metabolism target and pharmacokinetics. Evidence-based complementary and alternative medicine : eCAM 2014:789142 (2014). [doi:10.1155/2014/789142](https://doi.org/10.1155/2014/789142)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Ma2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference>
+**This record:** Pharmacolibrary, model `Clopidogrel_Ma2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelMa2014reference,
   title  = {{Pharmacolibrary model Clopidogrel_Ma2014_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference},
   note   = {Parameters from doi:10.1155/2014/789142},
 }
@@ -209,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Ma2014_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Ma2014_reference%0APaper%3A%20Ma_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Ma2014_reference&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Ma2014_reference%0APaper%3A%20Ma_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:43 UTC</sub>

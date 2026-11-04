@@ -169,6 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `Q64` · V2 | match | 2823.98 L | 2823.98 L | 1.0 |
 | `Q64@clopidogrel carboxylic acid` | match | 51.89 L | 51.89 L | 1.0 |
 | `Q83` · tlag | match | 0.196 h | 0.196 h | 1.0 |
+| `Q900:CYP2C19` | extra_in_extraction | {'EM': 0.0, 'IM': -1.428, 'PM': -2.432} | None |  |
 | `Q900:fm1` | match | 0.125 | 0.125 | 1.0 |
 | `Q900:fm1_im@clopidogrel h4` | extra_in_extraction | -0.450 | None |  |
 | `Q900:fm1_pm@clopidogrel h4` | extra_in_extraction | -0.996 | None |  |
@@ -244,13 +245,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jung YS, Jin BH, Park MS, Kim CO, Chae D. Population pharmacokinetic-pharmacodynamic modeling of clopidogrel for dose regimen optimization based on CYP2C19 phenotypes: A proof of concept study. CPT: pharmacometrics & systems pharmacology 13(1):29–40 (2024). [doi:10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053)
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Jung2024`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024>
+**This record:** Pharmacolibrary, model `Clopidogrel_Jung2024`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelJung2024,
   title  = {{Pharmacolibrary model Clopidogrel_Jung2024}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Jung2024},
   note   = {Parameters from doi:10.1002/psp4.13053},
 }
@@ -269,5 +269,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jung2024&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jung2024%0APaper%3A%20Jung_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jung2024%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20Clopidogrel_Jung2024&body=Drug%3A%20clopidogrel%0ARecord%3A%20Clopidogrel_Jung2024%0APaper%3A%20Jung_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/Clopidogrel_Jung2024%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:48 UTC</sub>

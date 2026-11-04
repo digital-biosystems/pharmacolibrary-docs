@@ -71,13 +71,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19>
+**This record:** Pharmacolibrary, model `Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19`. <https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19>
 
 ```bibtex
 @misc{pharmacolibrary_ClopidogrelGrafeneder2024hvPGxCYP2C19,
   title  = {{Pharmacolibrary model Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv_PGx_CYP2C19},
 }
 ```
@@ -97,5 +96,5 @@ _The CYP2C19 phenotype acts on the paper's popPK model ([Clopidogrel_Grafeneder2
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20pgx_Grafeneder_2024_CYP2C19_Q27&body=Drug%3A%20clopidogrel%0ARecord%3A%20pgx_Grafeneder_2024_CYP2C19_Q27%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/pgx_Grafeneder_2024_CYP2C19_Q27%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclopidogrel%5D%20pgx_Grafeneder_2024_CYP2C19_Q27&body=Drug%3A%20clopidogrel%0ARecord%3A%20pgx_Grafeneder_2024_CYP2C19_Q27%0APaper%3A%20Grafeneder_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clopidogrel/pgx_Grafeneder_2024_CYP2C19_Q27%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [clopidogrel](drugs/drug_clopidogrel/)</sub>

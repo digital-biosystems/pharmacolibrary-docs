@@ -48,7 +48,7 @@ Wright DF, Stamp LK, Merriman TR, Barclay ML, Duffull SB, Holford NH. The popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-5.6-luna (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.389), gpt-5.6-luna (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,7 +62,7 @@ Wright DF, Stamp LK, Merriman TR, Barclay ML, Duffull SB, Holford NH. The popula
 
 The record defines oxypurinol apparent clearance using a clearance divided by the conversion fraction, but also lists oxypurinol bioavailability as 0.85. This combination double corrects the apparent parameters, violating coherence. The review also noted that one unit could not be converted to SI and disagreements on the dose compound and peripheral volume values. Extracted — allopurinol: CLm/F 49.6 L/h, V1 11.4 L, V2 90.7 L, Q 142 L/h, kabs 1.6 h−1; oxypurinol: V 41.4 L, Fab 0.85.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which molecule was measured: this record has oxypurinol, the second reading allopurinol. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -76,7 +76,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Q (L/h) | `Q30` · Q | 142 | L/h | 3.944e-05 | m3/s | l/h | exact (1) | Wright_2013_table_p5_1:row3:col2 |
 | ka (h−1) | `Q49` · kabs | 1.6 | h−1 | 0.0004444 | 1/s | 1/h | exact (1) | Wright_2013_table_p5_1:row4:col2 |
 | Voxy (L) | `Q61` · V | 41.4 | L | 0.0414 | m3 | l | exact (1) | Wright_2013_table_p5_1:row8:col2 |
-| F | `Q40` · Fab | 0.85 |  |  |  |  | exact (1) | Wright_2013_table_p5_1:row9:col2 |
+| F | `Q40` · Fab | 0.85 |  | 0.85 |  |  | exact (1) | Wright_2013_table_p5_1:row9:col2 |
 | Oxypurinol εadd (µmol/L) | `Q900` · equation variable | 0.21 | µmol/L |  |  | (µM·ol)/l | llm (0.6) | Wright_2013_table_p5_1:row17:col2 |
 | SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
 | SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
@@ -108,6 +108,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - molar mass: none of 1 PubChem candidate(s) is 'oxypurinol' (LLM) — left in mass units
 - molar mass: none found for 'oxypurinol' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
+- unit re-normalised: Fab '' now converts (value unchanged)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -115,21 +116,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.389 (7/18 fields) | 11 |
 | `gpt-5.6-luna` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `screen.primary_analyte` | oxypurinol | allopurinol | mismatch |
-| `gpt-oss-120b` | `model.links` | [['allopurinol', 'oxypurinol', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | allopurinol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[clallo]` | 49.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cloxy]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cloxy]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 0.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 0.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oxypurinol εadd]` | 0.21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slc22a12]` | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1allo]` | 11.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2allo]` | 90.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[voxy]` |  | 41.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[voxy]` | 41.4 |  | only_one_extracted |
 
 </details>
 
@@ -181,5 +190,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2013_final&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2013_final%0APaper%3A%20Wright_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2013_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2013_final&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2013_final%0APaper%3A%20Wright_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2013_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:13 UTC</sub>

@@ -47,7 +47,7 @@ Wright DF, Doogue MP, Barclay ML, Chapman PT, Cross NB, Irvine JH et al. A popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-5.6-luna (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-5.6-luna (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +61,7 @@ Wright DF, Doogue MP, Barclay ML, Chapman PT, Cross NB, Irvine JH et al. A popul
 
 The model builder explicitly assumed apparent parameterization (F=1, Fm=1, no molar correction) rather than a mechanistic structural estimate. Covariate scenarios were not simulated during review, leaving the record's covariate effects unverified against the reference individual. The second reader disagreed on the primary analyte, parameterization, and the specific identity of the clearance parameter. Extracted — oxypurinol: CLm,norm/F 1.2 L/h, V 48.7 L, kabs 0.941 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -112,14 +112,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 | `gpt-5.6-luna` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -128,8 +128,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-5.6-luna` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q22 | Q354 | mismatch |
 | `gpt-5.6-luna` | `parameters[θ rfexp].parameter_id` | Q900 | Q319 | mismatch |
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q375 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[θ clhd]` |  | 8.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slc22a12]` | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θcl].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[θcl].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[θka]` |  | 0.941 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θka]` | 0.941 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θrfp].parameter_id` | Q900 | Q45 | mismatch |
+| `gpt-oss-120b` | `parameters[θrfp].rse_percent` |  | 9.0 | mismatch |
 
 </details>
 
@@ -231,13 +236,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wright DF, Doogue MP, Barclay ML, Chapman PT, Cross NB, Irvine JH et al. A population pharmacokinetic model to predict oxypurinol exposure in patients on haemodialysis. European journal of clinical pharmacology 73(1):71–78 (2017). [doi:10.1007/s00228-016-2133-y](https://doi.org/10.1007/s00228-016-2133-y)
 
-**This record:** Pharmacolibrary v26.09, model `Allopurinol_Wright2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2017_reference>
+**This record:** Pharmacolibrary, model `Allopurinol_Wright2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AllopurinolWright2017reference,
   title  = {{Pharmacolibrary model Allopurinol_Wright2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_allopurinol/Allopurinol_Wright2017_reference},
   note   = {Parameters from doi:10.1007/s00228-016-2133-y},
 }
@@ -256,5 +260,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2017_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2017_reference%0APaper%3A%20Wright_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Wright2017_reference&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Wright2017_reference%0APaper%3A%20Wright_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Wright2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 19:13 UTC</sub>

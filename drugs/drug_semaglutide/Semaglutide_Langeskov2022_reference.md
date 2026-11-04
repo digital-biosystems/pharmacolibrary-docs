@@ -37,7 +37,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,11 +81,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
@@ -94,9 +94,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-oss-120b` | `values[Q22]` | 17 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q27]` | 11.1 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q290]` | 3250 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q306]` | 7.28 | 0.791 | mismatch |
 | `gpt-oss-120b` | `values[Q312]` | 0.66 | 0.66 | mismatch |
 | `gpt-oss-120b` | `values[Q318]` | 25 | 34 | mismatch |
+| `gpt-oss-120b` | `values[Q364]` |  | 1500 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q69]` | 199 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q82]` | 2170 |  | only_one_extracted |
 
@@ -193,13 +193,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorvastatin with co-administration of semaglutide. Pharmacology research & perspectives 10(4):e00962 (2022). [doi:10.1002/prp2.962](https://doi.org/10.1002/prp2.962)
 
-**This record:** Pharmacolibrary v26.09, model `Semaglutide_Langeskov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference>
+**This record:** Pharmacolibrary, model `Semaglutide_Langeskov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SemaglutideLangeskov2022reference,
   title  = {{Pharmacolibrary model Semaglutide_Langeskov2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference},
   note   = {Parameters from doi:10.1002/prp2.962},
 }
@@ -218,5 +217,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Langeskov2022_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Langeskov2022_reference%0APaper%3A%20Langeskov_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-20 18:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Langeskov2022_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Langeskov2022_reference%0APaper%3A%20Langeskov_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-20 18:30 UTC</sub>
