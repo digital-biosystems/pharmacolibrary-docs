@@ -123,7 +123,14 @@ body.pk-hide-norec .sidebar-nav li.pk-sb-norec { display: none; }
    '/' shows README.md without the sidebar (pk-cover.js's body class), with the flying
    section line fixed at the top. The line shares the page's own background and does not
    shift the content: docsify's top padding already clears the bar's height. */
-body.pk-cover-route .sidebar, body.pk-cover-route .sidebar-toggle { display: none; }
+body.pk-cover-route .sidebar, body.pk-cover-route .sidebar-toggle,
+body.pk-cover-route .sidebar-pin { display: none; }
+/* No sidebar, so nothing sits beside the content: drop docsify's desktop offset (.content
+   left: 15rem, the sidebar's width) and the mobile slides left over when the reader opened
+   the sidebar on a subpage before coming home — docsify's body.close → translateX(16rem) and
+   sidebar-collapse's pin button, which writes translateX(300px) INLINE on .content (hence
+   !important; the pin itself is hidden here, so it cannot slide the cover either). */
+body.pk-cover-route .content { left: 0; transform: none !important; }
 .pk-covernav { position: fixed; top: 0; left: 0; right: 0; z-index: 60;
   display: flex; justify-content: flex-end; align-items: center; gap: 26px;
   /* fits docsify's empty 22 px top strip exactly: the bar overlays it and the content
@@ -150,3 +157,8 @@ body.pk-cover-route .sidebar, body.pk-cover-route .sidebar-toggle { display: non
 .pk-demo-note { font-size: 13px; color: #64748b; margin: 6px 0 14px; }
 .pkq-status.err { color: #b91c1c; }
 @media (max-width: 760px) { .pk-demo { grid-template-columns: 1fr; } }
+/* a phone: the section line centres and may scroll sideways rather than overflow the page */
+@media (max-width: 480px) {
+  .pk-covernav { justify-content: center; gap: 16px; padding: 2px 10px; overflow-x: auto;
+    white-space: nowrap; }
+}

@@ -17,7 +17,7 @@
   <a href="#/sites?drugs=simvastatin,clopidogrel">Do simvastatin and clopidogrel share enzymes?</a>
 </p>
 
-<p class="pk-home-numbers">2,758 drugs · 3,442 popPK, 3,701 PD and 478 PGx records extracted (rejected ones not counted) · [how they were made](pipeline.md).</p>
+<p class="pk-home-numbers">2,758 drugs · 3,442 popPK, 3,701 PD and 478 PGx records extracted (rejected ones not counted) · <a href="#/pipeline">how they were made</a>.</p>
 
 ## Start where you are
 
