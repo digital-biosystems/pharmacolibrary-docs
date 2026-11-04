@@ -84,8 +84,11 @@
 });
 
 // ── "only drugs with records" ───────────────────────────────────────────────
-// The ATC tree lists every drug of a class, most with (0/0/0). The checkbox on the legend
-// line hides those (on by default); a drug with a page but no counted record stays. The
+// The ATC tree lists every drug of a class, most with (0/0/0). Both drugs without a page
+// (plain text) and drugs with a page but no counted record (0/0/0) stay listed and are
+// greyed by the .pk-sb-nopage / .pk-sb-norec rules; the group labels (Ask / Explore /
+// Site / Drugs) get a little space above them. The checkbox on the legend line hides the
+// (0/0/0) ones (on by default); a drug with a page but no counted record stays. The
 // choice is a per-viewer convenience in localStorage; without storage it is simply on.
 (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
   var KEY = 'pk-sidebar-has-records';
@@ -98,9 +101,13 @@
   hook.doneEach(function () {
     var nav = document.querySelector('.sidebar-nav'); if (!nav) return;
     nav.querySelectorAll('li').forEach(function (li) {
-      if (li.querySelector('ul')) return;                     // a folder, not a drug
+      if (li.querySelector('ul')) return;                       // a folder, not an entry
+      var label = !!li.querySelector('.pk-sb-group, .pk-sb-legend');
+      li.classList.toggle('pk-sb-grouprow', !!li.querySelector('.pk-sb-group'));
       var t = li.textContent || '';
-      li.classList.toggle('pk-sb-norec', /\(0\/0\/0\)\s*$/.test(t));
+      var drug = !label && /\(\d+\/\d+\/\d+\)\s*$/.test(t);     // a drug entry ends with its counts
+      li.classList.toggle('pk-sb-norec', drug && /\(0\/0\/0\)\s*$/.test(t));
+      li.classList.toggle('pk-sb-nopage', drug && !li.querySelector('a'));
     });
     var legend = nav.querySelector('.pk-sb-legend');
     if (legend && !legend.querySelector('input')) {

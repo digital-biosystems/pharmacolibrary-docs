@@ -163,6 +163,19 @@
       }
       old.replaceWith(link);
     });
+    // the collapsed bar is a keyboard tablist (roving tabindex, arrows); manual mode —
+    // the switches repaint their charts, so selection stays on the button's own click.
+    // The bar element persists across switches while its tab links are rebuilt, so the
+    // listeners wire once and every rebuild re-syncs the rover.
+    if (!expanded && window.pkTablist) {
+      if (bar.getAttribute('data-pktablist') === 'wired') pkTablist.sync(bar);
+      else pkTablist.wire(bar, {
+        panels: Array.prototype.map.call(bs, function (b) {
+          return wrap.querySelector('[data-pkspanel="' + b.dataset.pkstab + '"]');
+        }),
+        label: 'views of this set', idp: 'pks', mode: 'manual'
+      });
+    }
     var toggle = el('pks-view-toggle');
     if (toggle) {
       toggle.textContent = expanded ? 'Use tabs' : 'Show all sections';

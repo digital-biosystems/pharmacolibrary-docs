@@ -3,10 +3,10 @@
 # Ask the data
 
 <div id="pkq" class="pkq-chat">
-  <div id="pkq-status" class="pkq-status">Loading the knowledge database…</div>
+  <div id="pkq-status" class="pkq-status" role="status" aria-live="polite">Loading the knowledge database…</div>
   <div id="pkq-ui" hidden>
     <div id="pkq-log" class="pkq-log" aria-live="polite"></div>
-    <div class="pkq-bar">
+    <div class="pkq-bar" role="search">
       <select id="pkq-mode" class="pkq-mode" aria-label="Query interpretation"><option value="">Keyword search (no LLM)</option></select>
       <label id="pkq-thinking-control" class="pkq-thinking-control" hidden><input id="pkq-thinking" type="checkbox"> Thinking</label>
       <input id="pkq-ask" type="text" enterkeyhint="send" placeholder="Ask about a drug, a parameter, a gene…" autocomplete="off" aria-label="Your question">

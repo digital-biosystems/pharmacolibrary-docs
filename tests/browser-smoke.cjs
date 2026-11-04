@@ -14,9 +14,53 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     page.on('pageerror', e => errors.push(e.message));
     page.on('response', r => {if (r.status() >= 400 && r.url().startsWith(base)) failed.push(`${r.status()} ${r.url()}`);});
     await page.goto(base);
+    // the home route IS README.md — the whole front page, no sidebar — with the flying
+    // section line instead (pk-cover.js); a content route brings the sidebar back
+    await page.goto(base);
+    await page.waitForSelector('.markdown-section h1');
+    assert.match(await page.locator('.markdown-section h1').first().innerText(), /Pharmacolibrary/,
+      'the home route renders the README front page');
+    assert.ok((await page.locator('.markdown-section .pk-home-card').count()) >= 3,
+      'the home route carries the intro\'s tiles, not only a hero');
+    assert.equal(await page.locator('.pk-covernav a').count(), 5, 'the flying line carries five links');
+    assert.equal(await page.locator('.sidebar').evaluate(el => getComputedStyle(el).display), 'none',
+      'the sidebar must be hidden on the home route');
+    assert.equal(await page.locator('script:not([src])').count(), 0);
+    assert.equal(await page.locator('.markdown-section style').count(), 0);
+    const heavy = await page.evaluate(() => performance.getEntriesByType('resource').map(r=>r.name).filter(n=>/dbs-bundle|vendor\/dbs-components/.test(n)));
+    assert.deepEqual(heavy, [], 'the home route never loads the record simulator\'s component bundle');
+    // (the demo tiles may load pk-sim / the ADME database — only when the tiles are in
+    // view, which on this viewport they are)
+    // a flying-line link navigates to a content route and the sidebar comes back
+    await page.locator('.pk-covernav a', { hasText: 'Drugs' }).first().click();
+    await page.waitForSelector('.markdown-section .pklg');
+    assert.notEqual(await page.locator('.sidebar').evaluate(el => getComputedStyle(el).display), 'none',
+      'a content route must show the sidebar again');
+    assert.equal(await page.locator('.pk-covernav').count(), 0,
+      'the flying line leaves with the home route');
+    console.log('PASS cover presentation (README without sidebar) and content routes');
+
+    // the demo tiles: pk-sim.js drives the clopidogrel record (active metabolite only,
+    // dose + CYP2C19 controls, the default run beside it) and pk-sites draws the anatomy
+    await page.goto(base);
+    await page.locator('.pk-demo-anat').scrollIntoViewIfNeeded();
+    await page.waitForSelector('.pk-demo-plot svg path', {timeout: 90000});
+    assert.equal(await page.locator('.pk-demo-svg path').count(), 2);
+    assert.match(await page.locator('.pk-demo-delta').innerText(), /±0/);
+    await page.locator('.pk-demo-bar select').selectOption('Poor');
+    await page.waitForFunction(
+      () => !/±0/.test(document.querySelector('.pk-demo-delta')?.innerText || 'x'));
+    assert.ok((await page.locator('.pk-demo-anat svg .organ').count()) > 0, 'anatomogram organs drawn');
+    console.log('PASS demo tiles: active-metabolite simulator and anatomogram');
+
+    await page.goto(base + '/#/atc/B01A');
+    await page.waitForSelector('.markdown-section .pklg');
+    // the ledger tiles live on the About page (pipeline.md) in the v26.09 layout; the ledger
+    // stylesheet must present them as the grid layout
+    await page.goto(base + '/#/pipeline');
     await page.waitForSelector('.pklg .tiles');
     assert.equal(await page.locator('.pklg .tiles').evaluate(el => getComputedStyle(el).display), 'grid',
-      'homepage tiles must use the ledger grid layout');
+      'ledger tiles must use the ledger grid layout');
     for (const selector of ['.pklg .tile', '.pklg .cbox']) {
       const boxes = await page.locator(selector).evaluateAll(elements => elements.map(el => {
         const style = getComputedStyle(el);
@@ -27,16 +71,28 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
       assert.ok(boxes.every(box => box.border === 'solid' && box.width >= 1 && box.padding > 0),
         `${selector} boxes must have visible borders and padding`);
     }
-    assert.equal(await page.locator('script:not([src])').count(), 0);
-    assert.equal(await page.locator('.markdown-section style').count(), 0);
-    const heavy = await page.evaluate(() => performance.getEntriesByType('resource').map(r=>r.name).filter(n=>/sqlite|sql-wasm|vendor\/dbs-components|dbs-bundle/.test(n)));
-    assert.deepEqual(heavy, [], 'homepage must not fetch simulation or database payloads');
-    console.log('PASS homepage and lazy resources');
+    console.log('PASS homepage, ledger tiles on the About page and lazy resources');
 
     await page.locator('.pks input').fill('clopidogrel');
     await page.waitForSelector('.pks-res a');
     assert.match(await page.locator('.pks-res').innerText(), /clopidogrel/i);
     console.log('PASS database-backed sidebar search');
+
+    // the HOME page's search box drives the whole brand chain; the sidebar search below
+    // needs a content route (on the home route the sidebar is hidden)
+    await page.locator('.pks input').fill('plavix');
+    await page.waitForFunction(
+      () => document.querySelector('.pks-res li.pks-drughead')?.textContent.includes('brand plavix'));
+    assert.match(await page.locator('.pks-res li.pks-drughead').innerText(), /Clopidogrel/);
+    await page.locator('.pks input').press('ArrowDown');
+    assert.equal(await page.locator('.pks input').getAttribute('aria-activedescendant'), 'pks-opt-0');
+    await page.locator('.pks input').press('Enter');
+    await page.waitForFunction(() => location.hash === '#/drugs/drug_clopidogrel/');
+    await page.waitForSelector('.markdown-section h1');
+    await page.locator('.pks input').fill('aspirin');
+    await page.locator('.pks input').press('Escape');
+    assert.equal(await page.locator('.pks input').getAttribute('aria-expanded'), 'false');
+    console.log('PASS sidebar brand → drug header card (combobox keys)');
 
     await page.goto(base + '/#/atc/B01A');
     await page.waitForSelector('.markdown-section .pklg');
@@ -61,11 +117,38 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     await page.waitForSelector('.markdown-section .pklg details');
     await page.locator('.markdown-section .pklg summary').first().click();
     assert.ok(await page.locator('.markdown-section .pklg details[open]').count() > 0);
+    assert.match(await page.evaluate(() => location.hash), /#\/ledger\/$/,
+      'the legacy #/ledger route must be redirected to the sharded overview');
+    // a run-group link in the overview's index navigates as a ROUTE, not as a same-page
+    // anchor (docsify rewrites '#/…' markdown links into ?id= anchors; the generator
+    // therefore writes '/ledger/…' markdown links)
+    await page.locator('.markdown-section a[href*="#/ledger/dg-"]').first().click();
+    await page.waitForFunction(() => /^#\/ledger\/dg-/.test(location.hash));
+    await page.waitForSelector('.markdown-section .pklg details[open]');
     console.log('PASS external ledger styling and ATC/ledger pages');
+
+    // a link may name the tab (the drug page's "Start here" links use ?tab=)
+    await page.goto(base + record + '?tab=Models');
+    await page.waitForSelector('.pk-tabbar');
+    assert.match(await page.locator('.pk-tabbar [aria-selected="true"]').innerText(), /Models/,
+      'the ?tab= deep-link must open the named tab');
 
     await page.goto(base + record);
     await page.waitForSelector('.pk-tabbar');
     assert.equal(await page.locator('.pk-tabbar [role=tab]').count(), 3);
+    // WAI-ARIA tabs (pk-tablist.js, auto mode): the rover follows focus and arrows move
+    // selection with it
+    const tabs = page.locator('.pk-tabbar [role=tab]');
+    await tabs.nth(0).focus();
+    assert.equal(await tabs.nth(0).evaluate(el => el.tabIndex), 0);
+    assert.equal(await tabs.nth(1).evaluate(el => el.tabIndex), -1);
+    await page.keyboard.press('ArrowRight');
+    assert.match(await page.locator('.pk-tabbar [aria-selected="true"]').innerText(), /Models/);
+    await page.keyboard.press('Home');
+    assert.match(await page.locator('.pk-tabbar [aria-selected="true"]').innerText(), /Information/);
+    await page.keyboard.press('End');
+    assert.match(await page.locator('.pk-tabbar [aria-selected="true"]').innerText(), /Simulation/);
+    console.log('PASS tab keyboard: roving tabindex and arrows');
     await page.getByRole('tab', {name:'Simulation',exact:true}).click();
     await page.waitForFunction(() => document.querySelector('dbs-fmusim')?.shadowRoot?.querySelectorAll('.ref tr td').length > 0);
     const rows = await page.locator('dbs-fmusim').first().locator('.ref tbody tr').allTextContents();
@@ -115,6 +198,18 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     assert.ok((await page.locator('.pkq-a').innerText()).length > 30);
     console.log('PASS query UI and deterministic answer');
 
+    // an exact drug name / brand asked verbatim opens the turn with the drug quick-card
+    await page.locator("#pkq-ask").fill("plavix");
+    await page.locator("#pkq-ask").press("Enter");
+    await page.waitForFunction(
+      () => [...document.querySelectorAll('.pkq-turn .pkq-drughead a')].some(a => a.href.endsWith('#/drugs/drug_clopidogrel/')));
+    assert.match(await page.locator('.pkq-turn .pkq-drughead .d').last().innerText(), /brand plavix/i);
+    assert.equal(await page.locator('#pkq-status').getAttribute('role'), 'status');
+    // the answer must settle before the flow leaves: ask() drops questions while BUSY
+    await page.waitForFunction(
+      () => { const t = document.querySelector('.pkq-a .pkq-text'); return t && !t.classList.contains('pending'); });
+    console.log('PASS query drug quick-card (status live region, Enter to ask)');
+
     await page.goto(base + '/#/sites');
     await page.waitForSelector('#pks-ui:not([hidden])');
     await page.locator('#pks-pick').fill('clopidogrel');
@@ -127,7 +222,18 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     assert.equal(await page.locator('[data-pkspanel="heatmap"]').isVisible(), false);
     await page.locator('button[data-pkstab="heatmap"]').click();
     assert.equal(await page.locator('[data-pkspanel="heatmap"]').isVisible(), true);
-    console.log('PASS sites selection and PGx controls');
+    // manual tablist on the Sites views (pk-tablist.js): arrows move FOCUS only, Enter
+    // activates through the button's native click
+    await page.locator("button[data-pkstab='help']").focus();
+    await page.keyboard.press('ArrowRight');
+    const moved = await page.evaluate(() => document.activeElement?.dataset?.pkstab || '');
+    assert.ok(moved && moved !== 'help', 'arrow must move focus to the next tab');
+    const sel = await page.evaluate(() =>
+      document.querySelector('#pks-views .pk-tabbar [aria-selected="true"]')?.dataset?.pkstab);
+    assert.equal(sel, 'heatmap', 'manual mode: focus alone must not select');
+    await page.keyboard.press('Enter');
+    assert.match(await page.locator('#pks-views .pk-tabbar [aria-selected="true"]').innerText(), /diagnosis|table|ddi|body|shared|help/i);
+    console.log('PASS sites views tablist keyboard');
 
     await page.goto(base + record);
     await page.waitForSelector('dbs-fmusim .ref tr td');
@@ -138,6 +244,16 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     await page.getByRole('tab',{name:'Simulation',exact:true}).click();
     assert.equal(await page.locator('.pk-tabs').count(), 1);
     console.log('PASS route revisit and mobile tabs');
+
+    // the front-page box is a pure redirect (no data on the landing page); it lives in the
+    // intro at #/README now that #/ is the cover, and resolution happens at /query
+    await page.goto(base + '/#/README');
+    await page.locator('.pk-home-search input').fill('Glucophage');
+    await page.locator('.pk-home-search input').press('Enter');
+    await page.waitForFunction(() => /^#\/query\?ask=Glucophage/.test(location.hash));
+    await page.waitForFunction(
+      () => [...document.querySelectorAll('.pkq-turn .pkq-drughead .name')].pop()?.textContent === 'Metformin');
+    console.log('PASS front-page redirect → drug quick-card');
     assert.deepEqual(errors, [], 'browser JavaScript errors');
     assert.deepEqual(failed, [], 'failed local resources');
     console.log('All browser smoke checks passed');

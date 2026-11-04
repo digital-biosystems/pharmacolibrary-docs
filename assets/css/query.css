@@ -93,3 +93,13 @@ button.pkq-chip:hover { border-color: var(--theme-color, #0074d9); }
   .pkq-bar { flex-wrap: wrap; }
   .pkq-mode { order: -1; flex: 1 0 100%; max-width: none; }
 }
+/* the quick-card: an exact drug name / brand on the ask box pins the drug page's header
+   above the answer (pk-query-page.js) */
+.pkq-turn .pkq-drughead { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  border: 1px solid rgba(128,128,128,.3); border-left: 3px solid var(--theme-color, #0074d9);
+  border-radius: 6px; padding: 8px 12px; margin: 0 0 10px; background: #f8fafc; }
+.pkq-turn .pkq-drughead .name { font-weight: 700; font-size: 15px; color: #0f172a; }
+.pkq-turn .pkq-drughead .d { color: #64748b; font-size: 12.5px; }
+.pkq-turn .pkq-drughead .pkq-go { font-size: 13px; }
+.pkq-bar input:focus-visible { outline: 2px solid var(--theme-color, #0074d9); outline-offset: 1px; }
+.pkq-bar button:focus-visible { outline: 2px solid var(--theme-color, #0074d9); outline-offset: 2px; }

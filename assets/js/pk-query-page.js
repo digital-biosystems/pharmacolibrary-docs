@@ -202,6 +202,45 @@
     scrollDown();
   }
 
+  // "plavix" IS clopidogrel: an exact drug name, salt or brand resolves to one drug page
+  // and the turn opens with its header card above the deterministic answer (the name is
+  // still a data question — both ship). Resolved from search_doc/drug, both already in the
+  // loaded database; aliases land there via the export's alias pass.
+  function quickCardFor(question) {
+    var t = String(question || '').trim().toLowerCase().replace(/'/g, "''");
+    if (!t || !DB) return null;
+    var rows;
+    try {
+      rows = DB.exec("SELECT kind, label, href FROM search_doc WHERE lower(label) = '" + t + "' " +
+                     "AND kind IN ('drug','brand','synonym')")[0];
+    } catch (e) { return null; }
+    if (!rows || !rows.values.length) return null;
+    var hrefs = {};
+    rows.values.forEach(function (r) { hrefs[r[2]] = (hrefs[r[2]] || 0) + 1; });
+    var keys = Object.keys(hrefs);
+    if (keys.length !== 1) return null;      // an alias shared by several drugs stays a question
+    var href = keys[0];
+    var slug = href.replace(/^drugs\//, '').replace(/\/$/, '');
+    var kind = rows.values[0][0];
+    var alias = rows.values.filter(function (r) { return r[0] !== 'drug'; })[0];
+    var meta;
+    try {
+      meta = DB.exec("SELECT generic_name, atc_codes FROM drug WHERE slug='" + slug + "'")[0].values[0];
+    } catch (e) { return null; }
+    if (!meta) return null;
+    var generic = String(meta[0] || '');
+    var c = node('div', 'pkq-drughead');
+    var name = node('span', 'name', generic.charAt(0).toUpperCase() + generic.slice(1));
+    var d = node('span', 'd', (meta[1] ? 'ATC ' + meta[1] : '') +
+      (kind !== 'drug' ? ' — you typed the ' + kind + ' ' + (alias ? alias[1] : t) : ''));
+    var link = node('a', 'pkq-go', 'open the drug page');
+    link.href = '#/' + href;
+    c.appendChild(name); c.appendChild(d); c.appendChild(link);
+    c.setAttribute('role', 'note');
+    c.setAttribute('aria-label', generic + ' — the drug page is one link away');
+    return c;
+  }
+
   function ask(question) {
     var q = String(question || '').trim();
     var log = el('pkq-log');
@@ -227,6 +266,9 @@
     }
     turn.appendChild(node('div', 'pkq-q', q));
     a.appendChild(chips); a.appendChild(text); turn.appendChild(a);
+    var card = quickCardFor(q);
+    if (card) a.insertBefore(card, a.firstChild);
+    if (card) a.insertBefore(card, a.firstChild);
     TURNS.push(turn); log.appendChild(turn); scrollDown();
 
     askScript().then(glossary).then(function () {
@@ -300,11 +342,11 @@
         a.appendChild(node('span', 'pkq-sub', answerEngine.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
       }
       if (ans.explanation && !ans.general) {
-        a.appendChild(node('span', 'pkq-sub', 'Numbers from the database; prose by ' + answerEngine.name +
+        a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + answerEngine.name +
           ', its numbers checked against the rows' +
           (ans.passages && ans.passages.length ? ' and the ' + ans.passages.length + ' passage(s) below' : '') + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
           (gl.length ? '; the why draws on the site glossary — ' + titles : '') +
-          (stats ? ' · ' + stats : '') + '. Database summary: ' + ans.summary));
+          (stats ? ' · ' + stats : '') + '.'));
       }
       // a simulation: the curves, the numbers per model, the record's own simulator
       if (ans.sim && ans.sim.runs.length) {
@@ -509,7 +551,11 @@
   }
 
   function boot() {
-    if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; attach(); modeList(); llmStatus(ENGINE ? ENGINE.name + ' is on — answers in prose.' : ''); return; }
+    // a re-render carrying a prefilled question is a QUESTION, not a rerun: the front
+    // page's search box redirects to #/query?ask=… on an already-loaded page, where this
+    // branch (DB in memory) used to return without ever reading the hash
+    if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; attach(); modeList();
+      llmStatus(ENGINE ? ENGINE.name + ' is on — answers in prose.' : ''); askFromHash(); return; }
     if (loading) return;
     loading = true;
     window.pkdb.load(status).then(function (db) {

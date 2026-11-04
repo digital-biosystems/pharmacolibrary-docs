@@ -62,6 +62,7 @@ window.$docsify = window.$docsify || {};
         b.panel.hidden = b.i !== i;
       });
       try { sessionStorage.setItem('pk-tab', built[i].btn.textContent); } catch (e) {}
+      window.pkTablist && pkTablist.sync(bar);
     }
     built.forEach(function (b) { b.btn.addEventListener('click', function () { select(b.i); }); });
 
@@ -72,6 +73,16 @@ window.$docsify = window.$docsify || {};
       var saved = sessionStorage.getItem('pk-tab');
       built.forEach(function (b) { if (b.btn.textContent === saved) want = b.i; });
     } catch (e) {}
+    // A link may name the tab (…/Model_id?tab=Simulation — the drug page's "Start here").
+    var asked = /[?&]tab=([^&]+)/.exec(location.hash || '');
+    if (asked) built.forEach(function (b) { if (b.btn.textContent === decodeURIComponent(asked[1])) want = b.i; });
     select(want);
+    // the tabs' keyboard half — roving tabindex, arrows — is pk-tablist.js's; select() is
+    // handed to it so a focused arrow key activates through the same persistence path
+    window.pkTablist && pkTablist.wire(bar, {
+      panels: built.map(function (b) { return b.panel; }),
+      label: 'record sections', idp: 'pk-record', mode: 'auto',
+      onSelect: select
+    });
   });
 });

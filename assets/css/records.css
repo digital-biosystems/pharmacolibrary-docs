@@ -126,3 +126,21 @@ aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; 
     color: #4b2a86;
     border: 1px solid #c6b3ee;
 }
+
+/* the record page's diagram now sits in the Information tab, outside .pk-models-grid */
+.markdown-section > figure.pk-models-diagram { max-width: 420px; margin: 8px 0 16px; }
+.markdown-section > figure.pk-models-diagram img { max-width: 100%; height: auto; }
+/* evidence & pipeline folds on the Information tab (build.py) */
+.markdown-section details.pk-evidence, .markdown-section details.pk-pipeline {
+    border: 1px solid rgba(128,128,128,.3); border-radius: 6px; padding: 6px 12px; margin: 18px 0; }
+.markdown-section details.pk-evidence > summary, .markdown-section details.pk-pipeline > summary {
+    font-weight: 600; cursor: pointer; padding: 4px 0; }
+/* the filter bar pk-record-panel.js builds over a drug page's popPK record table, and its
+   forest plot of paper reference values */
+.markdown-section .pk-rf-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
+.markdown-section .pk-rf-bar select { font-size: 13px; padding: 3px 4px; }
+.markdown-section .pk-rf-count { font-size: 12px; color: #6b7280; }
+.markdown-section .pk-forest-row { display: flex; flex-wrap: wrap; gap: 12px; overflow-x: auto; }
+.markdown-section svg.pk-forest { max-width: 100%; height: auto; }
+/* keyboard arrival on the tab bar (pk-tablist.js moves focus among the tabs) */
+.markdown-section .pk-tabbar button:focus-visible { outline: 2px solid var(--theme-color, #0074d9); outline-offset: -2px; }

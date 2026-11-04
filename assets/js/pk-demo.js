@@ -1,0 +1,248 @@
+// ── the home page's demo tiles ─────────────────────────────────────────────
+// README's "Demo" section: two tiles the generator's template stamps with data-* URLs
+// (the well-checked clopidogrel record). Both boot LAZILY: nothing in the tile fetches
+// until it scrolls near the viewport, so the landing page stays light.
+//
+//   ① simulator (2/3): runs the record's own model with pk-sim.js — the same engine the
+//      Query page's "simulate" answers use — drawing ONLY the active metabolite (C_M1),
+//      with two curves: the DEFAULT run (the paper's parameters, reference phenotype)
+//      and the reader's run, plus the numeric difference. Controls: dose + CYP2C19
+//      phenotype, nothing else.
+//   ② anatomogram (1/3): pk-sites.js's body view for this drug over the ADME database
+//      (loaded on first view, cached by the shared Cache API).
+//
+// dbs-fmusim (the record-page component) always draws every observable curve with
+// view-model internals out of reach, so the compact tile drives pk-sim directly and
+// keeps the component untouched for the pages it belongs to.
+window.$docsify = window.$docsify || {};
+(window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook, vm) {
+  var ctx = null;                                 // the simulator tile's loaded model
+  var script = function (src) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    return new Promise(function (ok, no) {
+      s.onload = ok;
+      s.onerror = function () { no(new Error('could not load ' + src)); };
+      document.head.appendChild(s);
+    });
+  };
+
+  hook.doneEach(function () {
+    var path = (vm && vm.route && vm.route.path) || '';
+    if (path !== '/') return;                       // the demo lives on the front page
+    var wrap = document.querySelector('.pk-demo');
+    if (!wrap || wrap.dataset.ready) return;
+    wrap.dataset.ready = '1';
+
+    var sim = wrap.querySelector('.pk-demo-sim');
+    var anat = wrap.querySelector('.pk-demo-anat');
+    if (!sim || !anat) return;
+
+    // ── anatomogram tile ─────────────────────────────────────────────────
+    function runAnat() {
+      // pk-sites.js is normally pulled by the /sites route; the tile loads it itself
+      Promise.all([script('assets/js/pk-sites.js'),
+                   pkdb.loadAdme(function () {})]).then(function (res) {
+        var db = res[1];
+        // resolve() turns slugs into adme_drug rows — compute()'s drugs must be rows
+        var M = pkSites.compute(db, pkSites.resolve(db, [anat.dataset.drug]), { text: false });
+        var root = document.createElement('div');
+        // render() fills whatever containers exist; with only the anatomogram present the
+        // heatmap, DDI box, PGx panel and table stay out
+        root.innerHTML = '<div class="pks-anatomogram"></div>';
+        pkSites.render(root, M, { ddi: false, pgx: false, table: false });
+        var body = root.querySelector('.pks-anatomogram');
+        if (!body) throw new Error('no site evidence for this drug');
+        anat.innerHTML = '';
+        anat.appendChild(body);
+      }).catch(function (e) {
+        anat.innerHTML = '<p class="pkq-status err">' + String(e.message || e) + '</p>';
+      });
+    }
+
+    // ── simulator tile ───────────────────────────────────────────────────
+    function runSim() {
+      var base = sim.dataset.paramsurl;
+      Promise.all([
+        fetch(base).then(function (r) { if (!r.ok) throw new Error(base + ': ' + r.status); return r.json(); }),
+        fetch(base.replace('_params.json', '_sim_controls.json')).then(function (r) { return r.json(); }),
+        fetch(sim.dataset.metaurl).then(function (r) { return r.json(); }),
+        script('assets/js/pk-sim.js')
+      ]).then(function (all) {
+        ctx = { params: all[0], controls: all[1], meta: all[2] };
+        return pkSim.load(ctx.meta, sim.dataset.wasmurl);
+      }).then(function (M) {
+        ctx.M = M;
+        build(ctx);
+      }).catch(function (e) {
+        sim.innerHTML = '<p class="pkq-status err">' + String(e.message || e) + '</p>';
+      });
+    }
+
+    function build(ctx) {
+      var params = ctx.params, pg = params.pgx || {}, P = params.parameters;
+      var DAYS = 5, STOP_H = DAYS * 24;    // every run: 5 days of daily dosing
+      var KEY = anat.dataset.observable || 'C_M1';
+      var label = params.observable_labels[KEY];
+      var doseDef = ctx.controls.filter(function (c) { return c.key === 'adminMass'; })[0] ||
+                    { label: 'Dose', unit: 'mg', scale: 1e6, min: 0.1, max: 4, step: 0.05, mult: true };
+      var mgDefault = Math.round(P.adminMass * doseDef.scale);         // kg → mg
+      var mgOf = function (mult) { return mult * mgDefault; };
+
+      sim.innerHTML = '';
+      var bar = document.createElement('div');
+      bar.className = 'pk-demo-bar';
+      var dose = document.createElement('input');
+      dose.type = 'range';
+      dose.min = doseDef.min; dose.max = doseDef.max; dose.step = doseDef.step;
+      dose.value = 1;                                               // the extract, unchanged
+      dose.setAttribute('aria-label', doseDef.label + ' as a multiple of the paper dose');
+      var doseOut = document.createElement('output');
+      doseOut.textContent = mgOf(1) + ' mg';
+      bar.appendChild(dose); bar.appendChild(doseOut);
+      var gen = document.createElement('select');
+      gen.setAttribute('aria-label', 'CYP2C19 phenotype');
+      (pg.order || ['Normal']).forEach(function (ph) {
+        var o = document.createElement('option');
+        o.value = ph; o.textContent = (pg.labels || {})[ph] || ph;
+        if (ph === pg.reference) o.selected = true;
+        gen.appendChild(o);
+      });
+      bar.appendChild(gen);
+      sim.appendChild(bar);
+      var plot = document.createElement('div');
+      plot.className = 'pk-demo-plot';
+      plot.setAttribute('role', 'img');
+      plot.setAttribute('aria-label', label + ': the default run vs this run');
+      sim.appendChild(plot);
+      var delta = document.createElement('p');
+      delta.className = 'pk-demo-delta';
+      sim.appendChild(delta);
+
+      // the phenotype's overrides are straight parameter swaps, exactly like the record
+      // page's component applies them
+      // the runs: the DEFAULT is the paper's dose every day for 5 days; the reader's run
+      // is the same regimen with its dose multiplied and its phenotype swapped
+      function paramsNow(mg, ph) {
+        var p = JSON.parse(JSON.stringify(params));
+        p.parameters = Object.assign({}, P, (pg.phenotypes || {})[ph] || {});
+        return pkSim.withRegimen(p, ctx.meta, { dose_mg: mg, interval_h: 24, duration_h: STOP_H });
+      }
+
+      var u = function (v) { return v * 1e3; };        // model kg/m³ → mg/L
+      var peak = function (y) { return Math.max.apply(null, y); };
+      var auc = function (t, y) {
+        var s = 0;
+        for (var i = 1; i < t.length; i++) s += (t[i] - t[i - 1]) * (y[i] + y[i - 1]) / 2;
+        return s;
+      };
+      var pct = function (cur, def) {
+        var v = Math.round((cur / def - 1) * 100);
+        return v === 0 ? '±0' : (v > 0 ? '+' : '') + v + '%';
+      };
+      var KEY = anat.dataset.observable || 'C_M1';
+      var label = params.observable_labels[KEY];
+      var fmt = function (v) {                          // decade labels: 0.1, 0.01, 1e-4 …
+        if (v >= 0.01) return +v.toPrecision(2).toString();
+        return v.toExponential(0);
+      };
+
+      // the plot: log y (a daily regimen runs over decades of trough), daily x ticks; the
+      // legend sits top-right, small; the default curve is dashed light blue, this run solid
+      function draw(def, cur) {
+        var W = 560, H = 300, L = 58, R = 14, T = 16, B = 40;
+        var td = def.t.map(function (x) { return x / 3600; });
+        var tc = cur.t.map(function (x) { return x / 3600; });
+        var yD = def.series[KEY].map(u), yC = cur.series[KEY].map(u);
+        var xmax = STOP_H;
+        var pos = yD.concat(yC).filter(function (v) { return v > 0; });
+        var ymax = Math.max.apply(null, pos) * 1.5 || 1;
+        var ymin = ymax / 1e4;                          // four decades of log
+        var lmin = Math.log10(ymin), lmax = Math.log10(ymax);
+        var sx = function (h) { return L + (W - L - R) * h / xmax; };
+        var sy = function (y) {                          // clamped: t=0 has no concentration
+          var l = Math.log10(y > ymin ? y : ymin);
+          return H - B - (H - T - B) * (l - lmin) / (lmax - lmin);
+        };
+        var NS = 'http://www.w3.org/2000/svg';
+        var svg = document.createElementNS(NS, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+        svg.setAttribute('class', 'pk-demo-svg');
+        function el2(tag, at, txt) {
+          var e = document.createElementNS(NS, tag);
+          Object.keys(at).forEach(function (k) { e.setAttribute(k, at[k]); });
+          if (txt != null) e.textContent = txt;
+          svg.appendChild(e); return e;
+        }
+        var i;
+        for (var d = Math.ceil(lmin); d <= Math.floor(lmax); d++) {
+          var y = sy(Math.pow(10, d));
+          el2('line', { x1: L, x2: W - R, y1: y, y2: y, stroke: '#e2e8f0' });
+          el2('text', { x: L - 8, y: y + 4, 'text-anchor': 'end', 'font-size': 10.5,
+                        fill: '#64748b' }, fmt(Math.pow(10, d)));
+        }
+        for (i = 0; i <= DAYS; i++) {
+          el2('text', { x: (L + (W - L - R) * i / DAYS).toFixed(1), y: H - B + 15,
+                        'text-anchor': (i ? 'middle' : 'start'), 'font-size': 10.5,
+                        fill: '#64748b' }, i ? 'day ' + (i + 1) : '0 h');
+        }
+        el2('text', { x: (L + W - R) / 2, y: H - 6, 'text-anchor': 'middle', 'font-size': 12,
+                      fill: '#475569' }, 'time — 5 days of daily dosing');
+        el2('text', { x: 10, y: (T + H - B) / 2, 'font-size': 11, fill: '#475569',
+                      transform: 'rotate(-90 10 ' + (T + H - B) / 2 + ')' },
+             label + ' (mg/L, log)');
+        function line(t, y, color, dash) {
+          var d = t.map(function (h, j) {
+            return (j ? 'L' : 'M') + sx(h).toFixed(1) + ' ' + sy(y[j]).toFixed(2);
+          }).join(' ');
+          el2('path', { d: d, fill: 'none', stroke: color, 'stroke-width': 2,
+                        'stroke-dasharray': dash || '' });
+        }
+        line(td, yD, '#7fb3e6', '5 4');                     // THE DEFAULT: dashed, light blue
+        line(tc, yC, '#0074d9');
+        // the legend, right-aligned and small
+        var lx = W - R, ly = T + 6;
+        el2('text', { x: lx - 10, y: ly, 'text-anchor': 'end', 'font-size': 10.5,
+                      fill: '#475569' }, 'the default — 75 mg a day, Normal');
+        el2('circle', { cx: lx - 4, cy: ly - 3.5, r: 3.5, fill: '#7fb3e6' });
+        el2('text', { x: lx - 10, y: ly + 15, 'text-anchor': 'end', 'font-size': 10.5,
+                      fill: '#475569' }, 'this run — ' + (pg.labels || {})[gen.value] +
+             ', dose ×' + (+dose.value).toFixed(2));
+        el2('circle', { cx: lx - 4, cy: ly + 11.5, r: 3.5, fill: '#0074d9' });
+        plot.innerHTML = '';
+        plot.appendChild(svg);
+      }
+
+      function redraw() {
+        var mult = +dose.value, mg = mgOf(mult), ph = gen.value;
+        doseOut.textContent = Math.round(mg) + ' mg/day';
+        var def = pkSim.run(ctx.M, ctx.meta, paramsNow(mgDefault, pg.reference || 'Normal'));
+        var cur = pkSim.run(ctx.M, ctx.meta, paramsNow(mg, ph));
+        draw(def, cur);
+        var tD = def.t.map(function (x) { return x / 3600; });
+        var tC = cur.t.map(function (x) { return x / 3600; });
+        var dC = pct(peak(cur.series[KEY]), peak(def.series[KEY]));
+        var dA = pct(auc(tC, cur.series[KEY].map(u)), auc(tD, def.series[KEY].map(u)));
+        delta.textContent = 'this run vs the default: Cmax ' + dC + ' · AUC ' + dA;
+      }
+
+      dose.addEventListener('input', redraw);
+      gen.addEventListener('change', redraw);
+      redraw();                                     // both runs default: a ±0 curve
+    }
+
+    // boot when the tiles actually enter the viewport, not near it: the landing page
+    // otherwise starts pulling the 7 MB ADME database on tall monitors
+    var booted = false;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting || booted) return;
+        booted = true;
+        io.disconnect();
+        runAnat(); runSim();
+      });
+    }, { threshold: 0.1 });
+    io.observe(wrap);
+  });
+});

@@ -10,16 +10,50 @@
 | `dbs-components` | Matched component releases and component documentation |
 | `pharmacolibrary.github.io` | Deployment mirror |
 
-Edit `index.html` and `assets/css/*.css` / `assets/js/pk-*.js` directly in this repository.
-The feature scripts register Docsify hooks before its deferred startup. Preserve the
-order in `index.html`; sidebar-collapse prepends its hook, before sidebar restoration.
-`pk-db.js` resolves database URLs through `data/*latest.json`; content updates do not
-require changing the shell. Query/LLM engines, databases and simulator payloads remain
-on-demand resources.
+## The shell's modules: one behavior, one file
 
-`README.md`, `ledger.md`, `_sidebar.md`, `atc/`, `drugs/` and `toxins/` contain generated
-content. Edit `README-template.md` for the introduction. The generator preserves text
-outside its marked regions. Scientific downloads and database exports remain pipeline
+`index.html` carries markup only — no inline `<script>`, no inline `<style>`
+(`scripts/check-site.py` fails the build otherwise). Every piece of shell behavior lives
+in exactly one module under `assets/js/pk-*.js` (config in `docsify-config.js`), loaded
+at the end of the body in the pinned order: deferred scripts execute in document order,
+and docsify runs the registered hooks at its init — so the order in `index.html` IS
+behavior, and `check-site.py` asserts it. Load-bearing positions: `pk-legacy-routes.js`
+redirects old `#/ledger` and `#/review` links before docsify fetches anything;
+`docsify-sidebar-collapse.min.js` (vendored, pinned 1.3.5) registers its hook before
+`pk-sidebar-state.js` restores the sidebar as the reader left it.
+
+| module | behavior | loads anything on demand |
+|---|---|---|
+| `pk-legacy-routes.js` | `#/ledger`, `#/review` → their sharded overviews | — |
+| `pk-disclaimer.js` | research-use banner on drug, record, Sites routes | — |
+| `pk-page-title.js` | browser-tab title from the page's h1 | — |
+| `pk-demo.js` | the demo section's two tiles: `pk-sim.js` runs the clopidogrel record (active metabolite only; dose + CYP2C19 controls; the default run drawn beside for the difference) and `pk-sites.js` draws the anatomogram — both fetch only when scrolled into view; the tiles live in `README-template.md`'s demo section | — |
+| `pk-cover.js` | the home route's first screen: `#/` shows README.md's whole front page **without the sidebar**, replaced by the fixed section line (`Drugs · Ask · Simulate · Downloads · About`); every content route restores the sidebar | — |
+| `pk-tablist.js` | the tabs' keyboard half (WAI-ARIA Tabs: roving tabindex, `←`/`→`/`Home`/`End`, ids + `aria-controls`/`aria-labelledby`), shared by the record tabs (selection follows focus) and the Sites views (manual: arrows move focus, Enter activates) | — |
+| `pk-record-tabs.js` | slices record pages at the build's sentinels into 3 tabs; remembers the tab; honors `…?tab=Models` links | — |
+| `pk-sidebar-search.js` | the sidebar search box, over the database (loads it on the first keystroke) | `pk-db.js` |
+| `pk-query-page.js` | the `/query` chat page; engines are fetched on first use | `pk-ask.js`, `pk-sim.js`, `pk-ask-llm.js`, DOMPurify from CDN |
+| `pk-sites-page.js` | the `/sites` ADME page | `pk-sites.js`
+| `pk-breadcrumbs.js` | renders the `.pk-crumbs` trail the builder stamped | — |
+| `pk-record-panel.js` | the floating simulatable-models panel + the record-table filters (`pk-rf`, `pk-forest`) | — |
+| `pk-db.js` | the SQLite engine and its Cache-API caching; database URLs resolve through `data/*latest.json`, so content updates never change the shell | `assets/sqljs/*`, `data/*` |
+| `pk-sidebar-state.js` | keeps the sidebar as the reader left it; marks non-page / no-record rows; the has-records filter | — |
+| `pk-components-loader.js` | loads `<dbs-fmusim>` (and hides legacy `<dbs-pgx>` tags) from the pinned component release, on the first page that uses one | the pinned `assets/vendor/dbs-components/<sha>/` files |
+
+The dbs-* web components themselves (implementation and styles) come only from the
+pinned release `components.lock.json` pins; never hand-copy a component file into
+`assets/js/` — two copies of an 8.6 MB wasm bundle drifting apart is what happens then.
+When module and shell ever differ, the module wins: fix the module, never re-inline.
+Query/LLM engines, databases and simulator payloads remain on-demand resources.
+
+`README.md`, `ledger/` (an overview plus one small page per curated panel and run group,
+with `ledger.md` as a stub for old links), `review/` (one page per curator-queue reason,
+with `review.md` as a stub), `_sidebar.md`, `atc/`, `drugs/` and `toxins/` contain generated
+content. No generated page may exceed the shard budget enforced by
+`scripts/check-site.py --generated` (2.5 MB): a bigger unit is split into a new page, not
+shipped as a freeze-the-tab route. Edit `README-template.md` for the introduction. The
+generator preserves text outside its marked regions. Scientific downloads and database
+exports remain pipeline
 outputs; correct their source records rather than editing generated numbers here.
 The `{{built_at}}` placeholder in `README-template.md` is replaced with the current UTC
 date and time whenever the generator refreshes the homepage introduction.

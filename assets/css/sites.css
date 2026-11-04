@@ -154,3 +154,6 @@ table.pks-pgx td i { display: inline-block; width: 10px; height: 10px; border-ra
 .pks-tbl .pks-quote { display: inline-block; max-width: 26em; overflow: hidden; text-overflow: ellipsis;
   vertical-align: bottom; color: #475569; font-style: italic; cursor: help; }
 .pks-empty, .pks-meta { color: #64748b; font-size: 12.5px; }
+/* keyboard arrival on the views bar (pk-tablist.js moves focus among the tabs) */
+.pks .pk-tabbar button:focus-visible { outline: 2px solid var(--pks-page, #fff); outline-offset: -2px; }
+.pks .pk-tabbar button[aria-selected="true"]:focus-visible { outline-color: var(--pks-page, #fff); }
