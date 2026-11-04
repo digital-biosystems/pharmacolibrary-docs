@@ -7,7 +7,8 @@
 //      Query page's "simulate" answers use — drawing ONLY the active metabolite (C_M1),
 //      with two curves: the DEFAULT run (the paper's parameters, reference phenotype)
 //      and the reader's run, plus the numeric difference. Controls: dose + CYP2C19
-//      phenotype, nothing else.
+//      phenotype, nothing else. The reader's run starts as a poor metabolizer, so the
+//      difference shows on arrival.
 //   ② anatomogram (1/3): pk-sites.js's body view for this drug over the ADME database
 //      (loaded on first view, cached by the shared Cache API).
 //
@@ -103,10 +104,18 @@ window.$docsify = window.$docsify || {};
       bar.appendChild(dose); bar.appendChild(doseOut);
       var gen = document.createElement('select');
       gen.setAttribute('aria-label', 'CYP2C19 phenotype');
-      (pg.order || ['Normal']).forEach(function (ph) {
+      // the reader's run STARTS at a non-reference phenotype, so the tile shows the gene's
+      // effect before anyone touches it: data-phenotype on the tile, else 'Poor', else the
+      // first phenotype that is not the reference (the default curve stays the reference)
+      var order = pg.order || ['Normal'];
+      var notRef = order.filter(function (ph) { return ph !== pg.reference; });
+      var start = [sim.dataset.phenotype, 'Poor'].filter(function (ph) {
+        return ph && notRef.indexOf(ph) >= 0;
+      })[0] || notRef[0] || pg.reference || order[0];
+      order.forEach(function (ph) {
         var o = document.createElement('option');
         o.value = ph; o.textContent = (pg.labels || {})[ph] || ph;
-        if (ph === pg.reference) o.selected = true;
+        if (ph === start) o.selected = true;
         gen.appendChild(o);
       });
       bar.appendChild(gen);
@@ -229,7 +238,7 @@ window.$docsify = window.$docsify || {};
 
       dose.addEventListener('input', redraw);
       gen.addEventListener('change', redraw);
-      redraw();                                     // both runs default: a ±0 curve
+      redraw();                                     // reference vs the start phenotype
     }
 
     // boot when the tiles actually enter the viewport, not near it: the landing page
