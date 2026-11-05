@@ -193,13 +193,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Stott KE, Ahmadu A, Kajanga C, Moyo M, Gondwe E, Chimang'anga W et al. Population pharmacokinetics and CSF penetration of flucytosine in adults with HIV-associated cryptococcal meningoencephalitis. The Journal of antimicrobial chemotherapy 78(4):1015–1022 (2023). [doi:10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038)
 
-**This record:** Pharmacolibrary v26.09, model `Flucytosine_Stott2023_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_flucytosine/Flucytosine_Stott2023_mean>
+**This record:** Pharmacolibrary, model `Flucytosine_Stott2023_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_flucytosine/Flucytosine_Stott2023_mean>
 
 ```bibtex
 @misc{pharmacolibrary_FlucytosineStott2023mean,
   title  = {{Pharmacolibrary model Flucytosine_Stott2023_mean}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_flucytosine/Flucytosine_Stott2023_mean},
   note   = {Parameters from doi:10.1093/jac/dkad038},
 }
@@ -218,5 +217,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflucytosine%5D%20Flucytosine_Stott2023_mean&body=Drug%3A%20flucytosine%0ARecord%3A%20Flucytosine_Stott2023_mean%0APaper%3A%20Stott_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flucytosine/Flucytosine_Stott2023_mean%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 13:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflucytosine%5D%20Flucytosine_Stott2023_mean&body=Drug%3A%20flucytosine%0ARecord%3A%20Flucytosine_Stott2023_mean%0APaper%3A%20Stott_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flucytosine/Flucytosine_Stott2023_mean%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 13:10 UTC</sub>

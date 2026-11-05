@@ -22,16 +22,6 @@ Phenylephrine is a decongestant and vasoconstrictor used for conditions such as 
 |---|---|---|---|---|---|---|
 | phenylephrine | parent | 167.205 | C9H13NO2 | DrugBank | [6041](https://pubchem.ncbi.nlm.nih.gov/compound/6041) | Anderson_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 160 | L/h | 160 L h-1 | children and adults | : 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anderson_2017_reference](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) |
-| V | V1 | 13.3 | L | 13.3 L | children and adults | : 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anderson_2017_reference](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) |
-| F | Fab | 0.183 ‡ |  | 0.183 Allometry, scaled to a 70-kg person, was used for PK size standardization. | children and adults | : 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anderson_2017_reference](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -159,5 +149,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylephrine%5D&body=Drug%3A%20phenylephrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylephrine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 10:05 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylephrine%5D&body=Drug%3A%20phenylephrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylephrine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 10:05 UTC</sub>

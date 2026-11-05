@@ -31,22 +31,9 @@ Indinavir is a protease inhibitor that was used to treat HIV infection and AIDS.
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 10.5 | L/h | 10.5 l h -1 | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kappelhoff_2005_reference](drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md) |
-| CL | CL | 32.4 | L/h | 32.4 liters/h | patients infected with human immunodeficiency virus | 239 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Csajka_2004_reference](drugs/drug_indinavir/Indinavir_Csajka2004_reference.md) |
-| CL | CL/F | 21.3 ‡ | L/h | 21.3 L/h/70 kg | HIV-infected Thai adults |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cressey_2011_reference](drugs/drug_indinavir/Indinavir_Cressey2011_reference.md) |
-| V | V | 90.7 ‡ | L | 90.7 L/70 kg | HIV-infected Thai adults |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cressey_2011_reference](drugs/drug_indinavir/Indinavir_Cressey2011_reference.md) |
-| V | V | 96.6 | L | 96.6 l | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kappelhoff_2005_reference](drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md) |
-| V | V/F | 65.7 | L | 65.7 liters | patients infected with human immunodeficiency virus | 239 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Csajka_2004_reference](drugs/drug_indinavir/Indinavir_Csajka2004_reference.md) |
-| ka | kabs | 0.871 | 1/h | 0.871 h -1 | HIV-infected Thai adults |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cressey_2011_reference](drugs/drug_indinavir/Indinavir_Cressey2011_reference.md) |
-| ka | kabs | 0.871 | 1/h | 0.871 h -1 | patients infected with human immunodeficiency virus | 239 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Csajka_2004_reference](drugs/drug_indinavir/Indinavir_Csajka2004_reference.md) |
-| ka | kabs | 0.871 | 1/h | 0.871 h -1 | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kappelhoff_2005_reference](drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference.md) |
-| F | Fab | 1 |  | 1.0 h(-1) | patients infected with human immunodeficiency virus | 239 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Csajka_2004_reference](drugs/drug_indinavir/Indinavir_Csajka2004_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kappelhoff_2005 · CL</text><circle cx="197.4" cy="30.0" r="4" fill="#ef6c00"><title>Kappelhoff_2005 · CL: 10.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Csajka_2004 · CL</text><circle cx="368.7" cy="46.0" r="4" fill="#2e7d32"><title>Csajka_2004 · CL: 32.4 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Cressey_2011 · CL/F ·/kg</text><circle cx="304.9" cy="62.0" r="4" fill="#2e7d32"><title>Cressey_2011 · CL/F ·/kg: 21.3 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cressey_2011 · V ·/kg</text><circle cx="525.2" cy="30.0" r="4" fill="#2e7d32"><title>Cressey_2011 · V ·/kg: 90.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kappelhoff_2005 · V</text><circle cx="534.7" cy="46.0" r="4" fill="#ef6c00"><title>Kappelhoff_2005 · V: 96.6 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Csajka_2004 · V/F</text><circle cx="476.1" cy="62.0" r="4" fill="#2e7d32"><title>Csajka_2004 · V/F: 65.7 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -207,5 +194,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindinavir%5D&body=Drug%3A%20indinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indinavir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 13:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindinavir%5D&body=Drug%3A%20indinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indinavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 13:01 UTC</sub>

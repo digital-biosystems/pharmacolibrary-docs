@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Pignon_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_Pignon1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The bioavailability parameter for methotrexate was not extracted from the abstract-only source, so a library placeholder was used instead of an estimate.
+> This record was reviewed on 2026-10-22 15:33 UTC (Needs review), but the paper was screened again on 2026-11-04 02:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The bioavailability parameter for methotrexate was not extracted from the abstract-only source, so a library placeholder was used instead of an estimate.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Pignon1994_reference" status="needs_review" stale="false" population="adults with osteosarcoma" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Pignon1994_reference" status="needs_review" stale="true" population="adults with osteosarcoma" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pignon T, Lacarelle B, Duffaud F, Guillet P, Catalin J, Durand A et al. Pharmacokinetics of high-dose methotrexate in adult osteogenic sarcoma. Cancer chemotherapy and pharmacology 33(5):420–424 (1994).
@@ -17,13 +17,15 @@ Pignon T, Lacarelle B, Duffaud F, Guillet P, Catalin J, Durand A et al. Pharmaco
 
 ## Population and dosing
 
-**Population:** adults with osteosarcoma · condition osteosarcoma · age group adult.
+**Population:** adults with osteosarcoma · condition osteosarcoma · age group adult · n = 22.
+
+**Dosing:** 13.2 g/m2, iv, multiple.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Pignon1994_reference/Methotrexate_Pignon1994_reference.svg" alt="Methotrexate_Pignon1994_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,16 +35,14 @@ Pignon T, Lacarelle B, Duffaud F, Guillet P, Catalin J, Durand A et al. Pharmaco
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 49.1 | L/h |
-| t1/2 alpha | t1/2α | 2.66 | h |
-| t1/2 beta | t1/2β | 15.69 | h |
-| volume of distribution | V | 0.32 | l/kg |
-| absorption rate ka6MP | kabs | 21.07 | 1/day |
+| CL | CL | 6 | l/h |
+| mean total volume of distribution (Vd) | V | 0.32 | 1/ks |
+| ka (/day) | kabs | 0.268 | /day |
 | t lag,oral | tlag | 0.36 | hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Pignon T, Lacarelle B, Duffaud F, Guillet P, Catalin J, Durand A et al. Pharmaco
 
 The record includes an absorption rate constant of 21.07 1/day and a lag time of 0.36 hours, indicating an oral pathway, yet no value for bioavailability was provided in the abstract. Consequently, the model relied on a default value rather than a paper-specific estimate. Since the data came only from the abstract, summary statistics like the 49.1 L/h clearance stand in for a fitted model, leaving the bioavailability unsupported by the source text. Extracted — methotrexate: CL 49.1 L/h, t1/2α 2.66 h, t1/2β 15.7 h, V 0.32 l/kg, kabs 21.1 1/day, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.268, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 6, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -64,11 +64,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 49.1 | L/h | 1.364e-05 | m3/s | L/h | exact (1) | Pignon_1994:abstract |
-| t1/2 alpha | `Q59` · t1/2α | 2.66 | h | 9576 | s | h | exact (1) | Pignon_1994:abstract |
-| t1/2 beta | `Q60` · t1/2β | 15.69 | h | 5.648e+04 | s | h | exact (1) | Pignon_1994:abstract |
-| volume of distribution | `Q61` · V | 0.32 | l/kg | 0.0224 | m3 | l/kg | exact (1) | Pignon_1994:abstract |
-| absorption rate ka6MP | `Q49` · kabs | 21.07 | 1/day | 0.0002439 | 1/s | 1/h | review_gapfill (0.7) | Gebhard_2023:review |
+| CL | `Q22` · CL | 6 | l/h | 1.667e-06 | m3/s | L/h | exact (1) | Pignon_1994:other_prose |
+| mean total volume of distribution (Vd) | `Q61` · V | 0.32 | 1/ks |  |  | 1/ks | boundary (0.8) | Pignon_1994:results_prose |
+| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.102e-06 | 1/s | 1/h | review_gapfill (0.7) | Pan_2026:review |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296 | s | h | review_gapfill (0.7) | Tan_2024:review |
 
 <details class="legend">
@@ -82,34 +80,44 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml min-1 m-2' (CL)
-- implicit units: 'clearance' → L/h (from the popPK convention: 'Clearance parameters in population pharmacokinetics are most commonly expressed in L/h. The value 49.1 is consistent wit')
+- dropped unlinked row (NIL): 'Number of infusions' — extend the ontology if this is a real PK parameter (source ['Pignon_1994_table_4:row1:col1', 'Pignon_1994_table_4:row1:col2', 'Pignon_1994_table_4:row1:col3', 'Pignon_1994_table_4:row1:col4'])
+- salvaged Q22 ('CL'=6) from results prose — parameter table was unreadable
+- salvaged Q61 ('mean total volume of distribution (Vd)'=0.32) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methotrexate
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gebhard_2023's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Pan_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
+- unit_dimension_unknown: 'ml min-1 m-2' (CL)
+- implicit units: 'clearance' → L/h (from the popPK convention: 'Clearance parameters in population pharmacokinetics are most commonly expressed in L/h. The value 49.1 is consistent wit')
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q49 (kabs) from Gebhard_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Pignon_1994_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
+- table Pignon_1994_table_1: unknown_column_role
+- table Pignon_1994_table_1: missing_label
+- table Pignon_1994_table_4: unbound_uncertainty
+- table Pignon_1994_table_4: unparsed_numeric_cell
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka]` | 0.268 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag,oral]` | 0.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 6 | only_one_extracted |
 
 </details>
 
@@ -123,19 +131,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Pignon_1994:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gebhard_2023:review'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Pignon_1994:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Pignon_1994:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Pignon_1994:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tan_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 49.1 | ['Pignon_1994:abstract'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | 1/ks | ['Pignon_1994:results_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6 | ['Pignon_1994:other_prose'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 49.1 L/h | ['Pignon_1994:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 22.4 L | ['Pignon_1994:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6 L/h | ['Pignon_1994:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -201,13 +205,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pignon T, Lacarelle B, Duffaud F, Guillet P, Catalin J, Durand A et al. Pharmacokinetics of high-dose methotrexate in adult osteogenic sarcoma. Cancer chemotherapy and pharmacology 33(5):420–424 (1994). [doi:10.1007/BF00686272](https://doi.org/10.1007/BF00686272)
 
-**This record:** Pharmacolibrary v26.09, model `Methotrexate_Pignon1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pignon1994_reference>
+**This record:** Pharmacolibrary, model `Methotrexate_Pignon1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pignon1994_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MethotrexatePignon1994reference,
   title  = {{Pharmacolibrary model Methotrexate_Pignon1994_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pignon1994_reference},
   note   = {Parameters from doi:10.1007/BF00686272},
 }
@@ -226,5 +229,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Pignon1994_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Pignon1994_reference%0APaper%3A%20Pignon_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Pignon1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Pignon1994_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Pignon1994_reference%0APaper%3A%20Pignon_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Pignon1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:28 UTC</sub>

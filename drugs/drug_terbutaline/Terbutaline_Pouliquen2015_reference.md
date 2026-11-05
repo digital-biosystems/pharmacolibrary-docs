@@ -161,13 +161,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pouliquen IJ, Kornmann O, Barton SV, Price JA, Ortega HG. Characterization of the relationship between dose and blood eosinophil response following subcutaneous administration of mepolizumab. International journal of clinical pharmacology and therapeutics 53(12):1015-1027 (2015). [doi:10.5414/cp202446](https://doi.org/10.5414/cp202446)
 
-**This record:** Pharmacolibrary v26.09, model `Terbutaline_Pouliquen2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference>
+**This record:** Pharmacolibrary, model `Terbutaline_Pouliquen2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TerbutalinePouliquen2015reference,
   title  = {{Pharmacolibrary model Terbutaline_Pouliquen2015_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference},
   note   = {Parameters from doi:10.5414/cp202446},
 }
@@ -186,5 +185,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterbutaline%5D%20Terbutaline_Pouliquen2015_reference&body=Drug%3A%20terbutaline%0ARecord%3A%20Terbutaline_Pouliquen2015_reference%0APaper%3A%20Pouliquen_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterbutaline%5D%20Terbutaline_Pouliquen2015_reference&body=Drug%3A%20terbutaline%0ARecord%3A%20Terbutaline_Pouliquen2015_reference%0APaper%3A%20Pouliquen_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:47 UTC</sub>

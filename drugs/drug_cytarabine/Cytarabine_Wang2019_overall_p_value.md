@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies (AML, ALL, MDS)" measured-compound="cytarabine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies (AML, ALL, MDS)" measured-compound="cytarabine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang Q, Banerjee K, Vasilinin G, Marier JF, Gibbons JA. Population Pharmacokinetics and Exposure-Response Analyses for CPX-351 in Patients With Hematologic Malignancies. Journal of clinical pharmacology 59(5):748–762 (2019).
@@ -22,7 +22,7 @@ Wang Q, Banerjee K, Vasilinin G, Marier JF, Gibbons JA. Population Pharmacokinet
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
@@ -60,11 +60,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - dropped unlinked row (NIL): 'Platelet category' — extend the ontology if this is a real PK parameter (source ['jcph1366-tbl-0004:row7:col4'])
 - dropped unlinked row (NIL): 'WBC category' — extend the ontology if this is a real PK parameter (source ['jcph1366-tbl-0004:row17:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cytarabine
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - model equation 'θi = θ× exp (ηi)where θ' not bound — neither LHS nor base term 'θ' linked to an ontology parameter
-- status held at "Needs review" — not promoted
 - population split: 'overall p‐value' subgroup of Wang_2019 (paper reports 2 populations: overall p‐value, total cytarabine)
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - unparsed cell jcph1366-tbl-0004:row2:col2 = '64/262 (24.4)'
@@ -113,11 +111,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,5 +138,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcytarabine%5D%20Cytarabine_Wang2019_overall_p_value&body=Drug%3A%20cytarabine%0ARecord%3A%20Cytarabine_Wang2019_overall_p_value%0APaper%3A%20Wang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcytarabine%5D%20Cytarabine_Wang2019_overall_p_value&body=Drug%3A%20cytarabine%0ARecord%3A%20Cytarabine_Wang2019_overall_p_value%0APaper%3A%20Wang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:40 UTC</sub>

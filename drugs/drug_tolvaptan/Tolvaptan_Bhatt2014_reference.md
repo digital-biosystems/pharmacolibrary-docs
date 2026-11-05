@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Bhatt_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No absorption rate constant was reported for tolvaptan, so the model used unsupported placeholder values instead of estimates from the Bhatt_2014 paper.
+> Tolvaptan absorption parameters used library defaults because the source lacked explicit estimates, holding the model back.
 
-<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="needs_review" stale="false" population="adults with hyponatremia" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="needs_review" stale="false" population="adults with hyponatremia" measured-compound="" parameterization="" topology=""></div>
 
 ## Citation
 Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Pharmacokinetic and Pharmacodynamic Properties and Drug Interactions. Journal of clinical medicine 3(4):1276–1290 (2014).
@@ -17,13 +17,12 @@ Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Phar
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** adults with hyponatremia.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference.svg" alt="Tolvaptan_Bhatt2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -31,10 +30,7 @@ Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Phar
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| mean CL/F | CL/F | 5.36 | mL/min/kg |
-| V/F (derived from CL·t½/ln2) | V/F | 370.2486 | L |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -48,25 +44,13 @@ Bhatt PR, McNeely EB, Lin TE, Adams KF, Patterson JH. Review of Tolvaptan's Phar
 
 ### Reviewer guidance
 
-**No absorption rate constant was reported for tolvaptan, so the model used unsupported placeholder values instead of estimates from the Bhatt_2014 paper.**
+**Tolvaptan absorption parameters used library defaults because the source lacked explicit estimates, holding the model back.**
 
-The record notes that the absorption rate constant and lag time were left at library defaults rather than being extracted from the source. This means the simulated absorption profile relies on generic conventions not found in the paper. The model was held back because these placeholder values affect the predicted concentration-time profile without justification from the cited evidence. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
+The record reports only oral clearance and volume of distribution, leaving the absorption rate constant and lag time unreported. As a result, standard placeholders were applied to these absorption terms rather than derived from the paper. This reliance on generic defaults for missing absorption characteristics prevented the record from being approved. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 74.2, the second reading 1460; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| mean CL/F | `Q27` · CL/F | 5.36 | mL/min/kg | 6.253e-06 | m3/s | L/h | review (0.7) | Bhatt_2014:review |
-| V/F (derived from CL·t½/ln2) | `Q76` · V/F | 370.2486 | L | 0.3702 | m3 | L | review (0.7) | Bhatt_2014:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ## Departures & gaps
 
@@ -136,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable | pass | C_central (measured=tolvaptan) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

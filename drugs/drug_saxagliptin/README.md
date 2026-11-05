@@ -23,15 +23,6 @@ Saxagliptin is a dipeptidyl peptidase-4 inhibitor used to lower blood sugar in a
 | saxagliptin | parent | 315.41 | C18H25N3O2 | DrugBank | [11243969](https://pubchem.ncbi.nlm.nih.gov/compound/11243969) | Wang_2024 |
 | 5-hydroxy saxagliptin | metabolite | 331.416 | C18H25N3O3 | PubChem | [23645678](https://pubchem.ncbi.nlm.nih.gov/compound/23645678) | Wang_2024 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 227.2 ‡ | L/h | 3245.80 mL/h/kg | rats with Type 2 Diabetes Mellitus | , 3 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) |
-| V | V | 161.5 ‡ | L | 2307.24 mL/kg | rats with Type 2 Diabetes Mellitus | , 3 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -130,5 +121,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaxagliptin%5D&body=Drug%3A%20saxagliptin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saxagliptin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaxagliptin%5D&body=Drug%3A%20saxagliptin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saxagliptin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:14 UTC</sub>

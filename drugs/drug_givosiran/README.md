@@ -20,16 +20,6 @@ Givosiran is a small interfering RNA medicine used to treat hepatic porphyria. I
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 23.8 | L/h | 23.8 L/h | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-| V | V1/F | 18.1 | L | 18.1 L | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-| ka | kabs | 0.157 | 1/h | 0.157 1/h | adults with acute intermittent porphyria | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -130,5 +120,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgivosiran%5D&body=Drug%3A%20givosiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_givosiran/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 10:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgivosiran%5D&body=Drug%3A%20givosiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_givosiran/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 10:38 UTC</sub>

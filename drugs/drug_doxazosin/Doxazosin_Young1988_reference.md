@@ -30,11 +30,11 @@ Young RA, Brogden RN. Doxazosin. A review of its pharmacodynamic and pharmacokin
 | label | parameter | value | unit |
 |---|---|---|---|
 | Total plasma clearance of doxazosin | CL | 4.98 | L/h |
-| V (derived from CL·t½/ln2) | V | 17.9616 | L |
+| V (derived from CL·t½/ln2) | V | 64.6616 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ Young RA, Brogden RN. Doxazosin. A review of its pharmacodynamic and pharmacokin
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has none, the second reading 62; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 62, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -55,7 +55,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Total plasma clearance of doxazosin | `Q22` · CL | 4.98 | L/h | 1.383e-06 | m3/s | L/h | review (0.7) | Young_1988:review |
-| V (derived from CL·t½/ln2) | `Q61` · V | 17.9616 | L | 0.01796 | m3 | L | review (0.7) | Young_1988:review |
+| V (derived from CL·t½/ln2) | `Q61` · V | 64.6616 | L | 0.06466 | m3 | L | review (0.7) | Young_1988:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,19 +71,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q40]` |  | 62 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 2.5 | 9 | mismatch |
-| `gpt-oss-120b` | `values[Q60]` |  | 22 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 62 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 9 | 16 | mismatch |
 
 </details>
 
@@ -105,7 +104,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.98 | ['Young_1988:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.98 L/h | ['Young_1988:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 18 L | ['Young_1988:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 64.7 L | ['Young_1988:review'] |
 
 **Reviewer per-scenario checks:**
 

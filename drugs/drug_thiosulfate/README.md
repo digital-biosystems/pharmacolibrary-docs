@@ -20,15 +20,6 @@ Thiosulfate (sodium thiosulfate) is an antidote used to treat cyanide poisoning.
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 56.15 | L/h | 56.15 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Petric_2023_reference](drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md) |
-| V | V/F | 114 | L | 114.0 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Petric_2023_reference](drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -144,5 +135,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiosulfate%5D&body=Drug%3A%20thiosulfate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiosulfate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiosulfate%5D&body=Drug%3A%20thiosulfate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiosulfate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:54 UTC</sub>

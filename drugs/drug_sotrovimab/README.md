@@ -22,17 +22,9 @@ Sotrovimab is a monoclonal antibody used to treat COVID-19. It has been approved
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.003375 | L/h | 81.0 mL/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sánchez-Pearson_2025_reference](drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md) |
-| CL | CL | 0.05542 | L/h | 1.33 L/day | patients with mild to moderate COVID-19 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Sager_2023_reference](drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md) |
-| V | V | 6.06 | L | 6.06 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sánchez-Pearson_2025_reference](drugs/drug_sotrovimab/Sotrovimab_SnchezPearson2025_reference.md) |
-| V | V1 | 2.2 | L | 2.20 L | patients with mild to moderate COVID-19 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Sager_2023_reference](drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md) |
-| F | Fab | 0.0264 |  | 2.64 | patients with mild to moderate COVID-19 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Sager_2023_reference](drugs/drug_sotrovimab/Sotrovimab_Sager2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sánchez-Pearson_2025 · CL</text><circle cx="282.4" cy="30.0" r="4" fill="#2e7d32"><title>Sánchez-Pearson_2025 · CL: 0.003375 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sager_2023 · CL</text><circle cx="495.1" cy="46.0" r="4" fill="#66bb6a"><title>Sager_2023 · CL: 0.05542 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sánchez-Pearson_2025 · V</text><circle cx="463.9" cy="30.0" r="4" fill="#2e7d32"><title>Sánchez-Pearson_2025 · V: 6.06 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sager_2023 · V1</text><circle cx="309.8" cy="46.0" r="4" fill="#66bb6a"><title>Sager_2023 · V1: 2.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -79,5 +71,5 @@ Sotrovimab is a monoclonal antibody used to treat COVID-19. It has been approved
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsotrovimab%5D&body=Drug%3A%20sotrovimab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sotrovimab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 14:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsotrovimab%5D&body=Drug%3A%20sotrovimab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sotrovimab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 14:54 UTC</sub>

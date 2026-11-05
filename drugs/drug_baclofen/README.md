@@ -31,20 +31,9 @@ Baclofen is a centrally acting muscle relaxant used for spasticity and related n
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 22.11 ‡ | L/h | 315.9 mL/h/kg | pediatric patients with gastroesophageal reflux disease |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiersma_2003_reference](drugs/drug_baclofen/Baclofen_Wiersma2003_reference.md) |
-| CL | CL/F | 11.6 | L/h | 11.6 L/h | adults with alcohol use disorder | ? 57 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Simon_2018_reference](drugs/drug_baclofen/Baclofen_Simon2018_reference.md) |
-| CL | CL/F | 13.5 | L/h | 13.5 l/h | ICU patients with unhealthy alcohol use | &gt;=20 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vourch_2019_reference](drugs/drug_baclofen/Baclofen_Vourch2019_reference.md) |
-| V | V | 180.6 ‡ | L | 2.58 L/kg | pediatric patients with gastroesophageal reflux disease |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiersma_2003_reference](drugs/drug_baclofen/Baclofen_Wiersma2003_reference.md) |
-| V | V/F | 72.8 | L | 72.8 L | adults with alcohol use disorder | ? 57 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Simon_2018_reference](drugs/drug_baclofen/Baclofen_Simon2018_reference.md) |
-| V | V/F | 105 | L | 105 L | ICU patients with unhealthy alcohol use | &gt;=20 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vourch_2019_reference](drugs/drug_baclofen/Baclofen_Vourch2019_reference.md) |
-| ka | kabs | 1.64 | 1/h | 1.64 1/h | adults with alcohol use disorder | ? 57 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Simon_2018_reference](drugs/drug_baclofen/Baclofen_Simon2018_reference.md) |
-| ka | kabs | 2.2 | 1/h | 2.2 h-1 | ICU patients with unhealthy alcohol use | &gt;=20 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vourch_2019_reference](drugs/drug_baclofen/Baclofen_Vourch2019_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wiersma_2003 · CL ·/kg</text><circle cx="310.6" cy="30.0" r="4" fill="#ef6c00"><title>Wiersma_2003 · CL ·/kg: 22.11 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Simon_2018 · CL/F</text><circle cx="212.6" cy="46.0" r="4" fill="#2e7d32"><title>Simon_2018 · CL/F: 11.6 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Vourch_2019 · CL/F</text><circle cx="235.6" cy="62.0" r="4" fill="#2e7d32"><title>Vourch_2019 · CL/F: 13.5 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wiersma_2003 · V ·/kg</text><circle cx="409.9" cy="30.0" r="4" fill="#ef6c00"><title>Wiersma_2003 · V ·/kg: 180.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Simon_2018 · V/F</text><circle cx="340.9" cy="46.0" r="4" fill="#2e7d32"><title>Simon_2018 · V/F: 72.8 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Vourch_2019 · V/F</text><circle cx="368.7" cy="62.0" r="4" fill="#2e7d32"><title>Vourch_2019 · V/F: 105 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -198,5 +187,5 @@ _11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D&body=Drug%3A%20baclofen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D&body=Drug%3A%20baclofen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:25 UTC</sub>

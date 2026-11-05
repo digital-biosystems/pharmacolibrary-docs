@@ -212,13 +212,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesic efficacy of sodium salicylate in an amphotericin B-induced bovine synovitis-arthritis model. Journal of dairy science 92(8):3731–3743 (2009). [doi:10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058)
 
-**This record:** Pharmacolibrary v26.09, model `PotassiumSalicylate_Kotschwar2009_period_2`. <https://pharmacolibrary.github.io/#/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2>
+**This record:** Pharmacolibrary, model `PotassiumSalicylate_Kotschwar2009_period_2`. <https://pharmacolibrary.github.io/#/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2>
 
 ```bibtex
 @misc{pharmacolibrary_PotassiumSalicylateKotschwar2009period2,
   title  = {{Pharmacolibrary model PotassiumSalicylate_Kotschwar2009_period_2}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2},
   note   = {Parameters from doi:10.3168/jds.2009-2058},
 }
@@ -237,5 +236,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_salicylate%5D%20PotassiumSalicylate_Kotschwar2009_period_2&body=Drug%3A%20potassium_salicylate%0ARecord%3A%20PotassiumSalicylate_Kotschwar2009_period_2%0APaper%3A%20Kotschwar_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_salicylate%5D%20PotassiumSalicylate_Kotschwar2009_period_2&body=Drug%3A%20potassium_salicylate%0ARecord%3A%20PotassiumSalicylate_Kotschwar2009_period_2%0APaper%3A%20Kotschwar_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:06 UTC</sub>

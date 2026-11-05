@@ -22,23 +22,9 @@ Benralizumab is a monoclonal antibody used as an antiasthmatic drug for obstruct
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.01212 | L/h | 0.291 L/day | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_final](drugs/drug_benralizumab/Benralizumab_Yan2019_final.md) |
-| CL | CL | 0.01488 | L/h | 0.357 L/day | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_base](drugs/drug_benralizumab/Benralizumab_Yan2019_base.md) |
-| CL | CL | 0.257 | L/h | 0.257 L/h | children with severe eosinophilic asthma | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wedner_2024_reference](drugs/drug_benralizumab/Benralizumab_Wedner2024_reference.md) |
-| CL | CL/F | 0.01695 | L/h | 406.8 mL/day | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cheung_2023_reference](drugs/drug_benralizumab/Benralizumab_Cheung2023_reference.md) |
-| V | V/F | 8.9 | L | 8.9 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cheung_2023_reference](drugs/drug_benralizumab/Benralizumab_Cheung2023_reference.md) |
-| V | V1 | 3.13 | L | 3.13 L | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_final](drugs/drug_benralizumab/Benralizumab_Yan2019_final.md) |
-| V | V1 | 3.82 | L | 3.82 L | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_base](drugs/drug_benralizumab/Benralizumab_Yan2019_base.md) |
-| ka | kabs | — | 1/h | 3.35 Model 5 | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_base](drugs/drug_benralizumab/Benralizumab_Yan2019_base.md) |
-| t½ | t1/2z | 348 | h | 14.5 days | children with severe eosinophilic asthma | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wedner_2024_reference](drugs/drug_benralizumab/Benralizumab_Wedner2024_reference.md) |
-| F | Fab | 0.589 |  | 0.589 Model 9 | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_final](drugs/drug_benralizumab/Benralizumab_Yan2019_final.md) |
-| F | Fab | 0.671 |  | 0.671 Model 5 | adult and adolescent patients with asthma | 2317 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yan_2019_base](drugs/drug_benralizumab/Benralizumab_Yan2019_base.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Yan_2019 · CL</text><circle cx="204.6" cy="30.0" r="4" fill="#ef6c00"><title>Yan_2019 · CL: 0.01212 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2019 · CL</text><circle cx="220.2" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2019 · CL: 0.01488 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wedner_2024 · CL</text><circle cx="436.7" cy="62.0" r="4" fill="#ef6c00"><title>Wedner_2024 · CL: 0.257 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cheung_2023 · CL/F</text><circle cx="230.1" cy="78.0" r="4" fill="#ef6c00"><title>Cheung_2023 · CL/F: 0.01695 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cheung_2023 · V/F</text><circle cx="522.3" cy="30.0" r="4" fill="#ef6c00"><title>Cheung_2023 · V/F: 8.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yan_2019 · V1</text><circle cx="363.4" cy="46.0" r="4" fill="#ef6c00"><title>Yan_2019 · V1: 3.13 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yan_2019 · V1</text><circle cx="393.7" cy="62.0" r="4" fill="#ef6c00"><title>Yan_2019 · V1: 3.82 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -111,5 +97,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenralizumab%5D&body=Drug%3A%20benralizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benralizumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-08 00:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenralizumab%5D&body=Drug%3A%20benralizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benralizumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-08 00:22 UTC</sub>

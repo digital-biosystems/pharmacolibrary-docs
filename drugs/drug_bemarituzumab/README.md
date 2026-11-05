@@ -15,16 +15,9 @@ Bemarituzumab is an investigational monoclonal antibody being studied as an anti
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.01379 | L/h | 0.331 L/day | phase 1 patients with solid tumors, including gastric and gastroesophageal junction adenocarcinoma | 75 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Xiang_2020_reference](drugs/drug_bemarituzumab/Bemarituzumab_Xiang2020_reference.md) |
-| CL | CL | — | L/h | 4.03 µg/day | patients from phase 1 to phase 2 trials | 173 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiang_2021_reference](drugs/drug_bemarituzumab/Bemarituzumab_Xiang2021_reference.md) |
-| V | V1 | 3.38 | L | 3.38 L | patients from phase 1 to phase 2 trials | 173 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiang_2021_reference](drugs/drug_bemarituzumab/Bemarituzumab_Xiang2021_reference.md) |
-| V | V1 | 3.43 | L | 3.43 L | phase 1 patients with solid tumors, including gastric and gastroesophageal junction adenocarcinoma | 75 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Xiang_2020_reference](drugs/drug_bemarituzumab/Bemarituzumab_Xiang2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Xiang_2021 · V1</text><circle cx="375.1" cy="30.0" r="4" fill="#ef6c00"><title>Xiang_2021 · V1: 3.38 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Xiang_2020 · V1</text><circle cx="377.4" cy="46.0" r="4" fill="#78909c"><title>Xiang_2020 · V1: 3.43 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -58,5 +51,5 @@ Bemarituzumab is an investigational monoclonal antibody being studied as an anti
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbemarituzumab%5D&body=Drug%3A%20bemarituzumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bemarituzumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbemarituzumab%5D&body=Drug%3A%20bemarituzumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bemarituzumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:08 UTC</sub>

@@ -177,13 +177,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Eriksen PL, Djernes L, Vilstrup H, Ott P. Clearance and production of ammonia quantified in humans by constant ammonia infusion - the effects of cirrhosis and ammonia-targeting treatments. Journal of hepatology 79(2):340–348 (2023). [doi:10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042)
 
-**This record:** Pharmacolibrary v26.09, model `SodiumPhenylbutyrate_Eriksen2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference>
+**This record:** Pharmacolibrary, model `SodiumPhenylbutyrate_Eriksen2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SodiumPhenylbutyrateEriksen2023reference,
   title  = {{Pharmacolibrary model SodiumPhenylbutyrate_Eriksen2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference},
   note   = {Parameters from doi:10.1016/j.jhep.2023.03.042},
 }
@@ -202,5 +201,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_phenylbutyrate%5D%20SodiumPhenylbutyrate_Eriksen2023_reference&body=Drug%3A%20sodium_phenylbutyrate%0ARecord%3A%20SodiumPhenylbutyrate_Eriksen2023_reference%0APaper%3A%20Eriksen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 11:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_phenylbutyrate%5D%20SodiumPhenylbutyrate_Eriksen2023_reference&body=Drug%3A%20sodium_phenylbutyrate%0ARecord%3A%20SodiumPhenylbutyrate_Eriksen2023_reference%0APaper%3A%20Eriksen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 11:34 UTC</sub>

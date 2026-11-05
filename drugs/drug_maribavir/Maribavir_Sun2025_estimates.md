@@ -235,13 +235,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sun K, Jomphe C, Gosselin NH, Pheng L, Durairaj C, Hang Y et al. Population Pharmacokinetics and Exposure-Response Relationships of Maribavir in Transplant Recipients With First Episode or Refractory Cytomegalovirus. CPT: pharmacometrics & systems pharmacology 14(8):1346–1358 (2025). [doi:10.1002/psp4.70054](https://doi.org/10.1002/psp4.70054)
 
-**This record:** Pharmacolibrary v26.09, model `Maribavir_Sun2025_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Sun2025_estimates>
+**This record:** Pharmacolibrary, model `Maribavir_Sun2025_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Sun2025_estimates>
 
 ```bibtex
 @misc{pharmacolibrary_MaribavirSun2025estimates,
   title  = {{Pharmacolibrary model Maribavir_Sun2025_estimates}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Sun2025_estimates},
   note   = {Parameters from doi:10.1002/psp4.70054},
 }
@@ -260,5 +259,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20Maribavir_Sun2025_estimates&body=Drug%3A%20maribavir%0ARecord%3A%20Maribavir_Sun2025_estimates%0APaper%3A%20Sun_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/Maribavir_Sun2025_estimates%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20Maribavir_Sun2025_estimates&body=Drug%3A%20maribavir%0ARecord%3A%20Maribavir_Sun2025_estimates%0APaper%3A%20Sun_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/Maribavir_Sun2025_estimates%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:08 UTC</sub>

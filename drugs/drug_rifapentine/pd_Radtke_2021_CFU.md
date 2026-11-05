@@ -124,13 +124,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Rifapentine_Radtke2021_PD_cfu`. <https://pharmacolibrary.github.io/#/drugs/drug_rifapentine/Rifapentine_Radtke2021_PD_cfu>
+**This record:** Pharmacolibrary, model `Rifapentine_Radtke2021_PD_cfu`. <https://pharmacolibrary.github.io/#/drugs/drug_rifapentine/Rifapentine_Radtke2021_PD_cfu>
 
 ```bibtex
 @misc{pharmacolibrary_RifapentineRadtke2021PDcfu,
   title  = {{Pharmacolibrary model Rifapentine_Radtke2021_PD_cfu}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rifapentine/Rifapentine_Radtke2021_PD_cfu},
 }
 ```
@@ -144,5 +143,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D%20pd_Radtke_2021_CFU&body=Drug%3A%20rifapentine%0ARecord%3A%20pd_Radtke_2021_CFU%0APaper%3A%20Radtke_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/pd_Radtke_2021_CFU%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D%20pd_Radtke_2021_CFU&body=Drug%3A%20rifapentine%0ARecord%3A%20pd_Radtke_2021_CFU%0APaper%3A%20Radtke_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/pd_Radtke_2021_CFU%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [rifapentine](drugs/drug_rifapentine/)</sub>

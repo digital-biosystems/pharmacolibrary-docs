@@ -125,13 +125,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Axitinib_Ma2019_PD_tv`. <https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Ma2019_PD_tv>
+**This record:** Pharmacolibrary, model `Axitinib_Ma2019_PD_tv`. <https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Ma2019_PD_tv>
 
 ```bibtex
 @misc{pharmacolibrary_AxitinibMa2019PDtv,
   title  = {{Pharmacolibrary model Axitinib_Ma2019_PD_tv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Ma2019_PD_tv},
 }
 ```
@@ -145,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20pd_Ma_2019_TV&body=Drug%3A%20axitinib%0ARecord%3A%20pd_Ma_2019_TV%0APaper%3A%20Ma_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/pd_Ma_2019_TV%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20pd_Ma_2019_TV&body=Drug%3A%20axitinib%0ARecord%3A%20pd_Ma_2019_TV%0APaper%3A%20Ma_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/pd_Ma_2019_TV%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [axitinib](drugs/drug_axitinib/)</sub>

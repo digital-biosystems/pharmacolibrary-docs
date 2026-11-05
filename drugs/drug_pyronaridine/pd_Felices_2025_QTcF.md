@@ -124,13 +124,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Pyronaridine_Felices2025_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf>
+**This record:** Pharmacolibrary, model `Pyronaridine_Felices2025_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf>
 
 ```bibtex
 @misc{pharmacolibrary_PyronaridineFelices2025PDqtcf,
   title  = {{Pharmacolibrary model Pyronaridine_Felices2025_PD_qtcf}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pyronaridine/Pyronaridine_Felices2025_PD_qtcf},
 }
 ```
@@ -144,5 +143,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyronaridine%5D%20pd_Felices_2025_QTcF&body=Drug%3A%20pyronaridine%0ARecord%3A%20pd_Felices_2025_QTcF%0APaper%3A%20Felices_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyronaridine/pd_Felices_2025_QTcF%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyronaridine%5D%20pd_Felices_2025_QTcF&body=Drug%3A%20pyronaridine%0ARecord%3A%20pd_Felices_2025_QTcF%0APaper%3A%20Felices_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyronaridine/pd_Felices_2025_QTcF%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Pyronaridine](drugs/drug_pyronaridine/)</sub>

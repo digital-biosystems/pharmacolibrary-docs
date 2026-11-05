@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Bischoff_1971 \u00b7 mouse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -38,8 +38,8 @@ Methotrexate pharmacokinetics (1971).
 | Q_M | Q | 0.5 |  |
 | Transit time, min. | MTT | 100 |  |
 | b, ml./min. | Qb | 0.001 |  |
-| CL = | CL | 7.63 | L/hour |
-| absorption rate ka6MP | kabs | 21.07 | 1/day |
+| CMTX | CL | 2.04 | ml/min |
+| ka (/day) | kabs | 0.268 | /day |
 | t lag,oral | tlag | 0.36 | hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -72,8 +72,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | Q_M | `Q30` · Q | 0.5 |  |  |  |  | llm (0.6) | Bischoff_1971_table_1:row9:col1 |
 | Transit time, min. | `Q81` · MTT | 100 |  |  |  |  | llm (0.6) | Bischoff_1971_table_1:row30:col1 |
 | b, ml./min. | `Q54` · Qb | 0.001 |  |  |  |  | llm (0.6) | Bischoff_1971_table_1:row34:col1 |
-| CL = | `Q22` · CL | 7.63 | L/hour | 2.119e-06 | m3/s | L/h | review_gapfill (0.7) | Blackman_2026:review |
-| absorption rate ka6MP | `Q49` · kabs | 21.07 | 1/day | 0.0002439 | 1/s | 1/h | review_gapfill (0.7) | Gebhard_2023:review |
+| CMTX | `Q22` · CL | 2.04 | ml/min | 3.4e-08 | m3/s | L/h | review_gapfill (0.7) | Kristensen_1975:review |
+| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.102e-06 | 1/s | 1/h | review_gapfill (0.7) | Pan_2026:review |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296 | s | h | review_gapfill (0.7) | Tan_2024:review |
 
 <details class="legend">
@@ -106,8 +106,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped unlinked row (NIL): 'K_G, mcg./ml.' — extend the ontology if this is a real PK parameter (source ['Bischoff_1971_table_1:row33:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methotrexate
 - population split: 'mouse' subgroup of Bischoff_1971 (paper reports 5 populations: 17 kg., dog, 5 kg., dog/monkey, man, mouse, rat)
-- gap-filled Q22 (CL) from Blackman_2026's review values (primary lacked it)
-- gap-filled Q49 (kabs) from Gebhard_2023's review values (primary lacked it)
+- gap-filled Q22 (CL) from Kristensen_1975's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Pan_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
 
 **Extraction notes:**
@@ -198,17 +198,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Blackman_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gebhard_2023:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kristensen_1975:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tan_2024:review'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['Bischoff_1971_table_1:row9:col1'] |
 | C5_unit_missing_Q54 | fail | [length] ** 3 / [time] |  | ['Bischoff_1971_table_1:row34:col1'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Bischoff_1971_table_1:row5:col1'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 |  | ['Bischoff_1971_table_1:row2:col1'] |
 | C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Bischoff_1971_table_1:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.63 | ['Blackman_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.04 | ['Kristensen_1975:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.63 L/h | ['Blackman_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.122 L/h | ['Kristensen_1975:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -241,5 +241,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Bischoff1971_mouse&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Bischoff1971_mouse%0APaper%3A%20Bischoff_1971%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Bischoff1971_mouse%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-15 06:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Bischoff1971_mouse&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Bischoff1971_mouse%0APaper%3A%20Bischoff_1971%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Bischoff1971_mouse%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-15 06:21 UTC</sub>

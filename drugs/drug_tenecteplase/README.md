@@ -15,15 +15,9 @@ Tenecteplase is a fibrinolytic (clot-dissolving) drug used to treat acute myocar
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 5.478 | L/h | 91.3 mL/min | patients with acute myocardial infarction | &gt;=103 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tang_2023_final_model_value](drugs/drug_tenecteplase/Tenecteplase_Tang2023_final_model_value.md) |
-| CL | CL | 5.94 | L/h | 99 mL/min | patients with acute myocardial infarction | &gt;=103 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tang_2023_shr](drugs/drug_tenecteplase/Tenecteplase_Tang2023_shr.md) |
-| V | V1 | 3.61 | L | 3610 mL | patients with acute myocardial infarction | &gt;=103 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tang_2023_final_model_value](drugs/drug_tenecteplase/Tenecteplase_Tang2023_final_model_value.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tang_2023 · CL</text><circle cx="448.5" cy="30.0" r="4" fill="#ef6c00"><title>Tang_2023 · CL: 5.478 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tang_2023 · CL</text><circle cx="460.8" cy="46.0" r="4" fill="#ef6c00"><title>Tang_2023 · CL: 5.94 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -153,5 +147,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenecteplase%5D&body=Drug%3A%20tenecteplase%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenecteplase/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenecteplase%5D&body=Drug%3A%20tenecteplase%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenecteplase/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:23 UTC</sub>

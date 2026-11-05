@@ -24,18 +24,9 @@ Atenolol is a selective beta blocker used to treat high blood pressure and other
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 18.15 | L/h | 18.15 L/h | healthy adults | , 19 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Baek_2008_atenolol_50_mg](drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md) |
-| CL | CL/F | — | L/h | 11.15 L/hr/1.73 m² | young and elderly healthy men | &gt;=12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sowinski_1995_reference](drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md) |
-| V | V/F | 81.9 ‡ | L | 1.17 L/kg | young and elderly healthy men | &gt;=12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sowinski_1995_reference](drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md) |
-| V | V/F | 157.7 | L | 157.71 L | healthy adults | , 19 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Baek_2008_atenolol_50_mg](drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md) |
-| ka | kabs | 0.91 | 1/h | 0.91 h⁻¹ | healthy adults | , 19 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Baek_2008_atenolol_50_mg](drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md) |
-| ka | kabs | 1.32 | 1/h | 1.32 hr⁻¹ | young and elderly healthy men | &gt;=12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sowinski_1995_reference](drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sowinski_1995 · V/F ·/kg</text><circle cx="349.8" cy="30.0" r="4" fill="#ef6c00"><title>Sowinski_1995 · V/F ·/kg: 81.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Baek_2008 · V/F</text><circle cx="399.6" cy="46.0" r="4" fill="#ef6c00"><title>Baek_2008 · V/F: 157.7 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -210,5 +201,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batenolol%5D&body=Drug%3A%20atenolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atenolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batenolol%5D&body=Drug%3A%20atenolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atenolol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:09 UTC</sub>

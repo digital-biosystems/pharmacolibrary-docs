@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Pan_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_Pan2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Pan2026_reference" status="curated_candidate" stale="false" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:33 UTC (Reproduces paper), but the paper was screened again on 2026-11-04 02:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Pan2026_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Pan S, Tsakok T, Wei R, Dand N, Loeff FC, Bloem K et al. Evaluation of a Therapeutic Drug Monitoring Strategy for Adalimumab in Psoriasis: A Prospective Pharmacokinetic-Pharmacodynamic Study. Clinical and translational science 19(5):e70563 (2026).
@@ -35,7 +37,7 @@ Pan S, Tsakok T, Wei R, Dand N, Loeff FC, Bloem K et al. Evaluation of a Therape
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +49,7 @@ Pan S, Tsakok T, Wei R, Dand N, Loeff FC, Bloem K et al. Evaluation of a Therape
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q317: this record has none, the second reading 1.78. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -76,20 +78,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.917 (11/12 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q317]` |  | 1.78 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -177,13 +173,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pan S, Tsakok T, Wei R, Dand N, Loeff FC, Bloem K et al. Evaluation of a Therapeutic Drug Monitoring Strategy for Adalimumab in Psoriasis: A Prospective Pharmacokinetic-Pharmacodynamic Study. Clinical and translational science 19(5):e70563 (2026). [doi:10.1111/cts.70563](https://doi.org/10.1111/cts.70563)
 
-**This record:** Pharmacolibrary v26.09, model `Methotrexate_Pan2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pan2026_reference>
+**This record:** Pharmacolibrary, model `Methotrexate_Pan2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pan2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MethotrexatePan2026reference,
   title  = {{Pharmacolibrary model Methotrexate_Pan2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Pan2026_reference},
   note   = {Parameters from doi:10.1111/cts.70563},
 }
@@ -202,5 +197,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Pan2026_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Pan2026_reference%0APaper%3A%20Pan_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Pan2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Pan2026_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Pan2026_reference%0APaper%3A%20Pan_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Pan2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:20 UTC</sub>

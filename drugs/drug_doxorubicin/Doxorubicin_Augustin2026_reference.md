@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Augustin_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_m_mg_h_l&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_total_ng_ml&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Augustin2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because an orphan compartment exists in the doxorubicin model structure.
+> This record was reviewed on 2026-10-22 14:28 UTC (Rejected), but the paper was screened again on 2026-11-03 15:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because an orphan compartment exists in the doxorubicin model structure.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Augustin2026_reference" status="rejected" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Augustin2026_reference" status="rejected" stale="true" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Augustin A, Avignon B, Boetsch C, Breous-Nystrom E, Broders O, Cabon L et al. Translational strategy to support the first-in-human study of a TCR-like T cell bispecific with an &lt;i&gt;in vitro&lt;/i&gt;-based safety approach. Frontiers in immunology 17:1736584 (2026).
@@ -37,7 +37,7 @@ Augustin A, Avignon B, Boetsch C, Breous-Nystrom E, Broders O, Cabon L et al. Tr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.167). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Augustin A, Avignon B, Boetsch C, Breous-Nystrom E, Broders O, Cabon L et al. Tr
 
 The two-compartment structure includes a peripheral compartment, but the extracted parameters list no inter-compartmental clearance value connecting it to the central compartment. Consequently, the peripheral volume of 4.1 L represents a compartment with no path from the dose. No alternative explanation for the rejection is provided in the record. Extracted — doxorubicin: CL 350 mL/day, V1 3.1 L, V2 4.1 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q319: this record has 0.98, the second reading 0.98. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has 0.98, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -76,18 +76,22 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q319]` | 0.98 | 0.98 | mismatch |
+| `gpt-oss-120b` | `values[Q319]` | 0.98 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 0.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 0.06 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 3.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 4.1 |  | only_one_extracted |
 
 </details>
 
@@ -134,5 +138,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Augustin2026_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Augustin2026_reference%0APaper%3A%20Augustin_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Augustin2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Augustin2026_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Augustin2026_reference%0APaper%3A%20Augustin_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Augustin2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 15:23 UTC</sub>

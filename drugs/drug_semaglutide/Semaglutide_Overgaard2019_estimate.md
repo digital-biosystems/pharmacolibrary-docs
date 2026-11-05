@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2019 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Overgaard2019_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant parameter uses the unit 'ka', which is not a valid physical unit and cannot be converted to SI, causing a dimension mismatch.
+> This record was reviewed on 2026-11-03 16:21 UTC (Rejected), but the paper was screened again on 2026-11-03 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The semaglutide record was rejected because the unit '1 mg' for the absorption half-life parameter conflicts with the required time dimension.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate" status="rejected" stale="false" population="healthy adults and adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate" status="rejected" stale="true" population="healthy subjects and type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Population Pharmacokinetics of Semaglutide for Type 2 Diabetes. Diabetes therapy : research, treatment and education of diabetes and related disorders 10(2):649–662 (2019).
@@ -17,9 +17,9 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ## Population and dosing
 
-**Population:** healthy adults and adults with type 2 diabetes · condition healthy | type 2 diabetes · age group adult · n = 353.
+**Population:** healthy subjects and type 2 diabetes · condition type 2 diabetes · age group adult.
 
-**Dosing:** 0.25, 0.5, 1 mg, sc, single.
+**Dosing:** 0.25, 0.5, 1, 1.5 mg, subcutaneous, multiple, every 168 h.
 
 ## Model
 
@@ -39,14 +39,14 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 | Intercompartmental clearance (Q), L/h | Q | 0.304 | L/h | 9.19 |
 | Peripheral volume (Vp), L | V2 | 4.10 | L | 3.97 |
 | Absolute bioavailability (F) | Fab | 0.847 | F | 2.96 |
-| body_weight_effect_on_cl_and_q | body_weight_effect_on_cl_and_q | 1.01 |  | 4.71 |
-| Drug product strength effects on ka, 1 mg | t1/2ka | 0.0346 | 1 mg | 6.53 |
-| theta_q319_body_weight | theta_q319_body_weight | 0.923 |  | 4.96 |
-| theta_q44_injection_site | theta_q44_injection_site | 0.883 |  | 2.24 |
+| injection_site_effect_on_f | injection_site_effect_on_f | 0.883 |  | 2.24 |
+| Drug product strength effects on ka, 3 mg | t1/2ka | 0.0526 | 3 mg | 8.58 |
+| theta_q314_body_weight | theta_q314_body_weight | 1.01 |  | 4.71 |
+| theta_q1_body_weight | theta_q1_body_weight | 0.923 |  | 4.96 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.72), gpt-5.6-luna (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.72), gpt-5.6-luna (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,9 +56,9 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ### Reviewer guidance
 
-**The absorption rate constant parameter uses the unit 'ka', which is not a valid physical unit and cannot be converted to SI, causing a dimension mismatch.**
+**The semaglutide record was rejected because the unit '1 mg' for the absorption half-life parameter conflicts with the required time dimension.**
 
-The record lists the absorption rate constant (kabs) with a value of 0.0253 and a reported unit of 'ka', which is invalid. This missing valid unit prevented the parameter from being converted to standard SI units, triggering a dimension mismatch check on a structural parameter. Although a second reader disagreed on the extraction of several values, the unit issue on kabs remains the primary technical reason for rejection. Extracted — semaglutide: kabs 0.0253 ka, CL 0.0348 L/h, V1 3.59 L, Q 0.304 L/h, V2 4.1 L, Fab 0.847 F, t1/2ka 0.0346 1 mg.
+The reported unit '1 mg' indicates dose strength rather than a time interval, causing a dimension mismatch for the absorption half-life. This non-standard unit prevented the parameter from being converted to a standard international time unit, so the model could not be processed. The second reader also failed to identify several key parameters, including clearance, central volume, and absolute bioavailability. Extracted — semaglutide: kabs 0.0253 ka, CL 0.0348 L/h, V1 3.59 L, Q 0.304 L/h, V2 4.1 L, Fab 0.847 F, t1/2ka 0.0346 1 mg.
 
 A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of body_weight_effect_on_cl_and_q: this record has 1.01, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -74,10 +74,10 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the val
 | Intercompartmental clearance (Q), L/h | `Q30` · Q | 0.304 | L/h | 8.444e-08 | m3/s | l/h | 9.19 | llm_confirmed (0.6) | Tab4:row4:col1 |
 | Peripheral volume (Vp), L | `Q64` · V2 | 4.10 | L | 0.0041 | m3 | l | 3.97 | llm_confirmed (0.6) | Tab4:row5:col1 |
 | Absolute bioavailability (F) | `Q40` · Fab | 0.847 | F |  |  |  | 2.96 | exact (1) | Tab4:row6:col1 |
-| body_weight_effect_on_cl_and_q | `Q900` · body_weight_effect_on_cl_and_q | 1.01 |  |  |  |  | 4.71 |  | Tab4:row7:col1 |
-| Drug product strength effects on ka, 1 mg | `Q95` · t1/2ka | 0.0346 | 1 mg |  |  | 1mg | 6.53 | llm_corrected (0.6) | Tab4:row11:col1 |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.923 |  |  |  |  | 4.96 |  | Tab4:row8:col1 |
-| theta_q44_injection_site | `Q900` · theta_q44_injection_site | 0.883 |  |  |  |  | 2.24 |  | Tab4:row10:col1 |
+| injection_site_effect_on_f | `Q900` · injection_site_effect_on_f | 0.883 |  |  |  |  | 2.24 |  | Tab4:row10:col1 |
+| Drug product strength effects on ka, 3 mg | `Q95` · t1/2ka | 0.0526 | 3 mg |  |  | 3mg | 8.58 | llm_corrected (0.6) | Tab4:row12:col1 |
+| theta_q314_body_weight | `Q900` · theta_q314_body_weight | 1.01 |  |  |  |  | 4.71 |  | Tab4:row7:col1 |
+| theta_q1_body_weight | `Q900` · theta_q1_body_weight | 0.923 |  |  |  |  | 4.96 |  | Tab4:row8:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -88,20 +88,20 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the val
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'Absorption rate constant (ka), h−1' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
-- covariate level 'Body weight effect on CL and Q' → Q900:body_weight_effect_on_cl_and_q = 1.01 (linear_fractional on Q22)
-- dropped duplicate Q22 ('T2D effect on CL', value '1.12') — already have one for this compound
-- unit_dimension_mismatch: 'Drug product strength effects on ka, 1 mg' → Q95 (unit '[mass]' vs ontology '[time]') — route to review
-- unit_dimension_unknown: '3 mg' (kabs)
-- dropped duplicate Q49 ('Drug product strength effects on ka, 3 mg', value '0.0526') — already have one for this compound
+- dropped unlinked row (NIL): 'T2D effect on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row9:col1'])
+- covariate level 'Injection site effect on F' → Q900:injection_site_effect_on_f = 0.883 (linear_fractional on Q22)
+- unit_dimension_mismatch: 'Drug product strength effects on ka, 1 mg' → Q49 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Drug product strength effects on ka, 1 mg', value '0.0346') — already have one for this compound
+- unit_dimension_unknown: '3 mg' (t1/2ka )
 - unit_dimension_unknown: '10 mg' (kabs)
 - dropped duplicate Q49 ('Drug product strength effects on ka, 10 mg', value '0.139') — already have one for this compound
 - dropped duplicate Q49 ('T2D effect on ka', value '0.544') — already have one for this compound
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q44 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=semaglutide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: 'estimate' subgroup of Overgaard_2019 (paper reports 3 populations: estimate, one-compartment model from phase 3a trialsa, two-compartment final model)
+- population split: 'estimate' subgroup of Overgaard_2019 (paper reports 4 populations: estimate, one-compartment model, one-compartment model from phase 3a trialsa, two-compartment final model)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -129,11 +129,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | `gpt-5.6-luna` | `parameters[injection_site_effect_on_f]` | 0.883 |  | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q319_body_weight]` |  | 1.01 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q87_injection_site]` |  | 0.883 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[body_weight_effect_on_cl_and_q]` | 1.01 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[drug product strength effects on ka, 1 mg]` | 0.0346 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[drug product strength effects on ka, 3 mg]` | 0.0526 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[injection_site_effect_on_f]` | 0.883 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_body_weight]` |  | 1.01 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 0.923 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q44_injection_site]` | 0.883 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_body_weight]` | 0.923 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_body_weight]` | 1.01 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q61_body_weight]` |  | 0.923 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q87_injection_site]` |  | 0.883 | only_one_extracted |
 
@@ -155,10 +155,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab4:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab4:row4:col1'] |
-| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['Tab4:row1:col1'] |
+| C5_dimension_Q49 | fail | [time] | ka | ['Tab4:row1:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab4:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab4:row5:col1'] |
-| C5_dimension_Q95 | fail | [time] | 1 mg ([mass]) | ['Tab4:row11:col1'] |
+| C5_unit_missing_Q95 | fail | [time] | 3 mg | ['Tab4:row12:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0348 | ['Tab4:row2:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0348 L/h | ['Tab4:row2:col1'] |
@@ -187,4 +187,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_estimate&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_estimate%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 16:53 UTC</sub>

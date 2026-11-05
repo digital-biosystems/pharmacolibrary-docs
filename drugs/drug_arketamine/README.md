@@ -23,7 +23,7 @@
 |---|---|---|---|---|---|---|
 | arketamine | parent | 237.73 | C13H16ClNO | DrugBank | — | Kaka_1979, Stojanova_2026, Weiss_2023 |
 | cyclohexene metabolite | metabolite | — (mass units only) | — | — | — | — |
-| ketamine | metabolite | 237.727 | C13H16ClNO | PubChem | [3821](https://pubchem.ncbi.nlm.nih.gov/compound/3821) | Weiss_2023 |
+| ketamine | metabolite | 237.727 | C13H16ClNO | PubChem | [644025](https://pubchem.ncbi.nlm.nih.gov/compound/644025) | Weiss_2023 |
 | N-demethylketamine | metabolite | — (mass units only) | — | — | — | — |
 
 ## Start here
@@ -31,15 +31,6 @@
 > **Fux_2022_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> review reference. [Run it in the simulator](drugs/drug_arketamine/Arketamine_Fux2022_reference.md?tab=Simulation) · [record](drugs/drug_arketamine/Arketamine_Fux2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.42 ‡ | L/h | 0.1 ml/min/kg | review reference | cattle | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fux_2022_reference](drugs/drug_arketamine/Arketamine_Fux2022_reference.md) |
-| V | V | 5.375 | L | 5.3746 L | review reference | cattle | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fux_2022_reference](drugs/drug_arketamine/Arketamine_Fux2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -50,9 +41,9 @@
 | <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Heavner_1979_reference](drugs/drug_arketamine/Arketamine_Heavner1979_reference.md) | — | 1-compartment (no model) | 0 | Heavner JE et al., Ketamine kinetics: decerebrate vs. inta…, Canadian journal of physiol… (1979) | [10.1139/y79-134](https://doi.org/10.1139/y79-134) |
 | <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kaka_1980_reference](drugs/drug_arketamine/Arketamine_Kaka1980_reference.md) | — | general linear (no model) | 0 | Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacokinetics… (1980) | [10.1007/BF01065193](https://doi.org/10.1007/BF01065193) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Stojanova_2026_reference](drugs/drug_arketamine/Arketamine_Stojanova2026_reference.md) | — | 2-compartment (no model) | 8 | Stojanova J et al., Continuous Subcutaneous Ketamine Infusi…, Pharmacotherapy (2026) | [10.1002/phar.70150](https://doi.org/10.1002/phar.70150) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Weiss_2023_ketamine](drugs/drug_arketamine/Arketamine_Weiss2023_ketamine.md) | — | general linear (no model) | 1 | Weiss M, Is the One-Compartment Model with First…, Pharmaceutical research (2023) | [10.1007/s11095-023-03582-1](https://doi.org/10.1007/s11095-023-03582-1) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ propiverine](drugs/drug_arketamine/Arketamine_Weiss2023_propiverine.md) | — | general linear (no model) | 1 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ trospium](drugs/drug_arketamine/Arketamine_Weiss2023_trospium.md) | — | general linear (no model) | 1 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Weiss_2023_ketamine](drugs/drug_arketamine/Arketamine_Weiss2023_ketamine.md) | — | 1-compartment (no model) | 0 | Weiss M, Is the One-Compartment Model with First…, Pharmaceutical research (2023) | [10.1007/s11095-023-03582-1](https://doi.org/10.1007/s11095-023-03582-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ propiverine](drugs/drug_arketamine/Arketamine_Weiss2023_propiverine.md) | — | 1-compartment (no model) | 1 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ trospium](drugs/drug_arketamine/Arketamine_Weiss2023_trospium.md) | — | 1-compartment (no model) | 1 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wieber_1975_reference](drugs/drug_arketamine/Arketamine_Wieber1975_reference.md) | — | 1-compartment (no model) | 0 | Wieber J et al., Pharmacokinetics of ketamine in man, Der Anaesthesist (1975) | — |
 
 ## Pharmacodynamics (PD)
@@ -220,5 +211,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D&body=Drug%3A%20arketamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 09:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D&body=Drug%3A%20arketamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 09:34 UTC</sub>

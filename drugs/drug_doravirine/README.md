@@ -29,16 +29,6 @@ Doravirine is an antiviral medicine used to treat HIV infections, acting as a no
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.98 | L/h | 3.98 L/h | real-world people with HIV | 146 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) |
-| V | V | 82.2 | L | 82.2 L | real-world people with HIV | 146 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) |
-| ka | kabs | 1.9 | 1/h | 1.9 h⁻¹ | real-world people with HIV | 146 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -109,5 +99,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoravirine%5D&body=Drug%3A%20doravirine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doravirine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoravirine%5D&body=Drug%3A%20doravirine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doravirine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:31 UTC</sub>

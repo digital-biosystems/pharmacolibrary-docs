@@ -203,13 +203,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Ward RM, Drover DR, Hammer GB, Stemland CJ, Kern S, Tristani-Firouzi M et al. The pharmacokinetics of methadone and its metabolites in neonates, infants, and children. Paediatric anaesthesia 24(6):591–601 (2014). [doi:10.1111/pan.12385](https://doi.org/10.1111/pan.12385)
 
-**This record:** Pharmacolibrary v26.09, model `Methadone_Ward2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methadone/Methadone_Ward2014_reference>
+**This record:** Pharmacolibrary, model `Methadone_Ward2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methadone/Methadone_Ward2014_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MethadoneWard2014reference,
   title  = {{Pharmacolibrary model Methadone_Ward2014_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methadone/Methadone_Ward2014_reference},
   note   = {Parameters from doi:10.1111/pan.12385},
 }
@@ -224,5 +223,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Ward2014_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Ward2014_reference%0APaper%3A%20Ward_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Ward2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 03:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Ward2014_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Ward2014_reference%0APaper%3A%20Ward_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Ward2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 03:33 UTC</sub>

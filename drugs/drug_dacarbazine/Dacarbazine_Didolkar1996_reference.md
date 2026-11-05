@@ -4,11 +4,11 @@
 
 # dacarbazine — `Dacarbazine_Didolkar1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 14:39 UTC (Rejected), but the paper was screened again on 2026-11-03 12:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Didolkar1996_reference" status="rejected" stale="false" population="adults with melanoma" measured-compound="dacarbazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Didolkar1996_reference" status="rejected" stale="true" population="adults with melanoma" measured-compound="dacarbazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Didolkar MS, Jackson AJ, Lesko LJ, Fitzpatrick JL, Buda BS, Johnston GS et al. Pharmacokinetics of dacarbazine in the regional perfusion of extremities with melanoma. Journal of surgical oncology 63(3):148–158 (1996).
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,5 +130,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Didolkar1996_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Didolkar1996_reference%0APaper%3A%20Didolkar_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Didolkar1996_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Didolkar1996_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Didolkar1996_reference%0APaper%3A%20Didolkar_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Didolkar1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 12:42 UTC</sub>

@@ -57,7 +57,7 @@ Built for model-informed drug development, precision dosing research and teachin
   <div class="pk-demo-anat" data-drug="clopidogrel"></div>
 </div>
 
-<p class="pk-demo-note">Left: only the active metabolite (clopidogrel H4) is drawn on a logarithmic axis, 5 days of daily dosing — the dashed light-blue curve is the default run (normal metaboliser, the paper dose of 75 mg a day); the solid blue curve starts as a CYP2C19 poor metaboliser at the same dose; move the dose or pick another phenotype and it answers, with the difference in Cmax and AUC underneath. Right: where this drug's acting sites sit, with the ADME view loading on first look. Nothing in either tile downloads until it is scrolled into view.</p>
+<p class="pk-demo-note">Left: only the active metabolite (clopidogrel H4) is drawn on a logarithmic axis, 5 days of daily dosing — the dashed grey curve is the default run (normal metaboliser, the paper dose of 75 mg a day); the solid blue curve starts as a CYP2C19 poor metaboliser at the same dose; move the dose or pick another phenotype and it answers, with the difference in Cmax and AUC underneath. Right: where this drug's acting sites sit, with the ADME view loading on first look. Nothing in either tile downloads until it is scrolled into view.</p>
 
 
 <div class="pklg">

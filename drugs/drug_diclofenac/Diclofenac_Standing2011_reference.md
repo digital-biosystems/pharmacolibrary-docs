@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Standing_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Standing2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-10-22 15:34 UTC (Needs review), but the paper was screened again on 2026-11-03 22:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="needs_review" stale="false" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="rejected" stale="true" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Standing JF, Tibboel D, Korpela R, Olkkola KT. Diclofenac pharmacokinetic meta-analysis and dose recommendations for surgical pain in children aged 1-12 years. Paediatric anaesthesia 21(3):316–324 (2011).
@@ -17,27 +17,35 @@ Standing JF, Tibboel D, Korpela R, Olkkola KT. Diclofenac pharmacokinetic meta-a
 
 ## Population and dosing
 
-**Population:** children aged 1-12 years · condition surgical pain · age group child · n = 111.
+**Population:** children aged 1-12 years · condition surgical pain · age group child · n = &lt;integer&gt;.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 11 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 16.5 | l·h(-1) ·70 kg(-1) |
-| bioavailability | Fab | 0.36 | suspension |
-| Vd AREA (CPB) | V | 0.51 | l/kg |
+| CL (lAEh )1 AE70 kg )1 ) | CL | 16.9 | L/h/70kg |
+| V1 (lAE70 kg )1 ) | V1 | 20.1 | L/70kg |
+| Q2 (lAEh )1 AE70 kg )1 ) | Q2 | 37.5 | L/h/70kg |
+| V2 (lAE70 kg )1 ) | V2 | 32.7 | L/70kg |
+| Q3 (lAEh )1 .70 kg )1 ) | Q3 | 53.1 | L/h/70kg |
+| V3 (lAE70 kg )1 ) | V3 | 35.4 | L/70kg |
+| ALAG 1(susp) (h) | tlag | 15.0 | h |
+| Ka 1(susp) (h )1 ) | kabs | 57.4 | h |
+| F 1FR(susp) | FR | 0.17 | susp |
+| F (susp) | Fab | 0.02 | susp |
+| flow rate | Q | 1.0 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +59,7 @@ Standing JF, Tibboel D, Korpela R, Olkkola KT. Diclofenac pharmacokinetic meta-a
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Auler_1997) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diclofenac: CL 16.5 l·h(-1) ·70 kg(-1), Fab 0.36 suspension, V 0.51 l/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 0.36; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.02, the second reading 0.36; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,9 +67,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 16.5 | l·h(-1) ·70 kg(-1) | 0.0003208 | m3/s | l/(h·kg) | exact (1) | Standing_2011:abstract |
-| bioavailability | `Q40` · Fab | 0.36 | suspension |  |  |  | exact (1) | Standing_2011:abstract, Standing_2011:abstract, Standing_2011:abstract |
-| Vd AREA (CPB) | `Q61` · V | 0.51 | l/kg | 0.0357 | m3 | L | review_gapfill (0.7) | Auler_1997:review |
+| CL (lAEh )1 AE70 kg )1 ) | `Q22` · CL | 16.9 | L/h/70kg | 4.694e-06 | m3/s | L/h | llm_confirmed (0.6) | tab_1:row5:col1, tab_1:row5:col2 |
+| V1 (lAE70 kg )1 ) | `Q63` · V1 | 20.1 | L/70kg | 0.0201 | m3 | L | llm_confirmed (0.6) | tab_1:row6:col1, tab_1:row6:col2 |
+| Q2 (lAEh )1 AE70 kg )1 ) | `Q99` · Q2 | 37.5 | L/h/70kg | 1.042e-05 | m3/s | L/h | llm_confirmed (0.6) | tab_1:row7:col1, tab_1:row7:col2 |
+| V2 (lAE70 kg )1 ) | `Q64` · V2 | 32.7 | L/70kg | 0.0327 | m3 | L | llm_confirmed (0.6) | tab_1:row8:col1, tab_1:row8:col2 |
+| Q3 (lAEh )1 .70 kg )1 ) | `Q308` · Q3 | 53.1 | L/h/70kg | 1.475e-05 | m3/s | L/h | llm_confirmed (0.6) | tab_1:row9:col1, tab_1:row9:col2 |
+| V3 (lAE70 kg )1 ) | `Q77` · V3 | 35.4 | L/70kg | 0.0354 | m3 | L | llm_confirmed (0.6) | tab_1:row10:col1, tab_1:row10:col2 |
+| ALAG 1(susp) (h) | `Q83` · tlag | 15.0 | h | 5.4e+04 | s | h | llm_confirmed (0.6) | tab_1:row12:col1, tab_1:row12:col2 |
+| Ka 1(susp) (h )1 ) | `Q49` · kabs | 57.4 | h |  |  | h | llm_confirmed (0.6) | tab_1:row14:col1, tab_1:row14:col2 |
+| F 1FR(susp) | `Q43` · FR | 0.17 | susp |  |  | s·usp | llm (0.6) | tab_1:row16:col1, tab_1:row16:col2 |
+| F (susp) | `Q40` · Fab | 0.02 | susp |  |  |  | exact (1) | tab_1:row17:col1, tab_1:row17:col2 |
+| flow rate | `Q30` · Q | 1.0 | mL/min | 1.667e-08 | m3/s | L/h | review_gapfill (0.7) | Matharoo_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,38 +87,66 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '111 children' — extend the ontology if this is a real PK parameter (source ['Standing_2011:abstract'])
-- dropped unlinked row (NIL): '375 samples' — extend the ontology if this is a real PK parameter (source ['Standing_2011:abstract'])
-- dropped unlinked row (NIL): 'Single doses' — extend the ontology if this is a real PK parameter (source ['Standing_2011:abstract', 'Standing_2011:abstract', 'Standing_2011:abstract'])
+- dropped duplicate Q83 ('ALAG 2(susp) (h)', value '67.5') — already have one for this compound
+- unit_dimension_mismatch: 'Ka 1(susp) (h )1 )' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'Ka 2(susp) (h )1 )' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Ka 2(susp) (h )1 )', value '75.5') — already have one for this compound
+- unit_dimension_unknown: 'susp' (FR)
+- dropped duplicate Q83 ('ALAG 1(supp) (h)', value '15.0') — already have one for this compound
+- unit_dimension_mismatch: 'Ka 1(supp) (h )1 )' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Ka 1(supp) (h )1 )', value '22.0') — already have one for this compound
+- dropped duplicate Q83 ('ALAG 1(disptab) (h)', value '15.0') — already have one for this compound
+- dropped duplicate Q83 ('ALAG 2(disptab) (h)', value '43.4') — already have one for this compound
+- unit_dimension_mismatch: 'Ka 1(disptab) (h )1 )' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Ka 1(disptab) (h )1 )', value '43.5') — already have one for this compound
+- unit_dimension_mismatch: 'Ka 2(disptab) (h )1 )' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Ka 2(disptab) (h )1 )', value '27.5') — already have one for this compound
+- unit_dimension_unknown: 'disptab' (FR)
+- dropped duplicate Q43 ('F 1FR(disptab)', value '0.0019') — already have one for this compound
+- dropped unlinked row (NIL): 'Intravenous (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row30:col1'])
+- dropped unlinked row (NIL): 'Suspension (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row31:col1'])
+- dropped unlinked row (NIL): 'Suppository (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row32:col1'])
+- dropped unlinked row (NIL): 'Dispersible tablet (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row33:col1'])
+- implicit units: 'CL (lAEh )1 AE70 kg )1 )' → L/h/70kg (from the paper text: "Table 2 header text (in the provided prompt context) states: 'clearance (CL) (lAEh )1 AE70 kg )1 )', where lAEh )1 AE70 ")
+- implicit units: 'V1 (lAE70 kg )1 )' → L/70kg (from the paper text: "Table 2 header text states: 'central volume (V1) (lAE70 kg )1 )', where lAE70 kg )1 represents L/70kg.")
+- implicit units: 'Q2 (lAEh )1 AE70 kg )1 )' → L/h/70kg (from the paper text: "Table 2 header text states: 'inter-compartmental CLs (Q2 and Q3) ... (lAEh )1 AE70 kg )1 )', where lAEh )1 AE70 kg )1 re")
+- implicit units: 'V2 (lAE70 kg )1 )' → L/70kg (from the paper text: "Table 2 header text states: 'peripheral compartment volumes (V2 and V3) ... (lAE70 kg )1 )', where lAE70 kg )1 represent")
+- implicit units: 'Q3 (lAEh )1 .70 kg )1 )' → L/h/70kg (from the paper text: "Table 2 header text states: 'inter-compartmental CLs (Q2 and Q3) ... (lAEh )1 AE70 kg )1 )', where lAEh )1 AE70 kg )1 re")
+- implicit units: 'V3 (lAE70 kg )1 )' → L/70kg (from the paper text: "Table 2 header text states: 'peripheral compartment volumes (V2 and V3) ... (lAE70 kg )1 )', where lAE70 kg )1 represent")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Auler_1997's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q30 (Q) from Matharoo_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Standing_2011_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | primary re-run | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (4/16 fields) | 12 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` |  | 0.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` |  | 0.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equivalent area under diclofenac concentration-time curve (auc) to a]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimate of clearance was]` |  | 16.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[single dose]` |  | 0.3 | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.02 | 0.36 | mismatch |
+| `gpt-oss-120b` | `parameters[alag 1(susp)].value` | 15.0 | 0.12 | mismatch |
+| `gpt-oss-120b` | `parameters[cl (laeh )1 ae70 kg )1 )].value` | 16.9 | 16.5 | mismatch |
+| `gpt-oss-120b` | `parameters[f 1fr].value` | 0.17 | 0.31 | mismatch |
+| `gpt-oss-120b` | `parameters[f].value` | 0.02 | 0.36 | mismatch |
+| `gpt-oss-120b` | `parameters[intravenous]` |  | 8.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka 1(susp) (h )1 )].value` | 57.4 | 1.65 | mismatch |
+| `gpt-oss-120b` | `parameters[q2 (laeh )1 ae70 kg )1 )].value` | 37.5 | 1.75 | mismatch |
+| `gpt-oss-120b` | `parameters[q3 (laeh )1 .70 kg )1 )].value` | 53.1 | 7.21 | mismatch |
+| `gpt-oss-120b` | `parameters[v1 (lae70 kg )1 )].value` | 20.1 | 3.68 | mismatch |
+| `gpt-oss-120b` | `parameters[v2 (lae70 kg )1 )].value` | 32.7 | 7.48 | mismatch |
+| `gpt-oss-120b` | `parameters[v3 (lae70 kg )1 )].value` | 35.4 | 3.79 | mismatch |
 
 </details>
 
@@ -116,15 +160,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 10 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Standing_2011:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Auler_1997:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.5 | ['Standing_2011:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Matharoo_2025:review'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
+| C5_dimension_Q49 | fail | [time] | h | ['tab_1:row14:col1', 'tab_1:row14:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_1:row8:col1', 'tab_1:row8:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_1:row10:col1', 'tab_1:row10:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['tab_1:row12:col1', 'tab_1:row12:col2'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.9 | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.16e+03 L/h | ['Standing_2011:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 35.7 L | ['Auler_1997:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 16.9 L/h | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 20.1 L | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 32.7 L | ['tab_1:row8:col1', 'tab_1:row8:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,19 +188,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -157,5 +199,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_Standing2011_reference&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_Standing2011_reference%0APaper%3A%20Standing_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_Standing2011_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_Standing2011_reference&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_Standing2011_reference%0APaper%3A%20Standing_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_Standing2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 22:55 UTC</sub>

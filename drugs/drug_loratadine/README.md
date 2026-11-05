@@ -22,15 +22,6 @@ Loratadine is a non-sedating antihistamine used to treat allergies such as seaso
 |---|---|---|---|---|---|---|
 | loratadine | parent | 382.883 | C22H23ClN2O2 | DrugBank | [3957](https://pubchem.ncbi.nlm.nih.gov/compound/3957) | Salem_2010 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| ka | kabs | 1.31 | 1/h | 1.31 hours(-1) | healthy white Jordanian males | : | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2010_reference](drugs/drug_loratadine/Loratadine_Salem2010_reference.md) |
-| t½ | t1/2z | 3.65 | h | 3.65 hours | healthy white Jordanian males | : | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2010_reference](drugs/drug_loratadine/Loratadine_Salem2010_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +95,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bloratadine%5D&body=Drug%3A%20loratadine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_loratadine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bloratadine%5D&body=Drug%3A%20loratadine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_loratadine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:20 UTC</sub>

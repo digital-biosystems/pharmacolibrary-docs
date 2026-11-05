@@ -191,13 +191,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Larsson P, Nordlinder A, Bergendahl HT, Lönnqvist PA, Eksborg S, Almenrader N et al. Oral bioavailability of clonidine in children. Paediatric anaesthesia 21(3):335–340 (2011). [doi:10.1111/j.1460-9592.2010.03397.x](https://doi.org/10.1111/j.1460-9592.2010.03397.x)
 
-**This record:** Pharmacolibrary v26.09, model `Clonidine_Larsson2011_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clonidine/Clonidine_Larsson2011_reference>
+**This record:** Pharmacolibrary, model `Clonidine_Larsson2011_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clonidine/Clonidine_Larsson2011_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClonidineLarsson2011reference,
   title  = {{Pharmacolibrary model Clonidine_Larsson2011_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clonidine/Clonidine_Larsson2011_reference},
   note   = {Parameters from doi:10.1111/j.1460-9592.2010.03397.x},
 }
@@ -212,5 +211,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclonidine%5D%20Clonidine_Larsson2011_reference&body=Drug%3A%20clonidine%0ARecord%3A%20Clonidine_Larsson2011_reference%0APaper%3A%20Larsson_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clonidine/Clonidine_Larsson2011_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-09 06:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclonidine%5D%20Clonidine_Larsson2011_reference&body=Drug%3A%20clonidine%0ARecord%3A%20Clonidine_Larsson2011_reference%0APaper%3A%20Larsson_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clonidine/Clonidine_Larsson2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-09 06:08 UTC</sub>

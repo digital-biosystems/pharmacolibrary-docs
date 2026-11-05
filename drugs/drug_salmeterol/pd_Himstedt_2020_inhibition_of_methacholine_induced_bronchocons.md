@@ -127,13 +127,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce`. <https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce>
+**This record:** Pharmacolibrary, model `Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce`. <https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce>
 
 ```bibtex
 @misc{pharmacolibrary_SalmeterolHimstedt2020PDinhibitionofmethacholineinduce,
   title  = {{Pharmacolibrary model Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_PD_inhibition_of_methacholine_induce},
 }
 ```
@@ -147,5 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalmeterol%5D%20pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons&body=Drug%3A%20salmeterol%0ARecord%3A%20pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons%0APaper%3A%20Himstedt_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salmeterol/pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalmeterol%5D%20pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons&body=Drug%3A%20salmeterol%0ARecord%3A%20pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons%0APaper%3A%20Himstedt_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salmeterol/pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [salmeterol](drugs/drug_salmeterol/)</sub>

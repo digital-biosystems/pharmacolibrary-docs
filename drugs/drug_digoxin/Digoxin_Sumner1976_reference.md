@@ -152,13 +152,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Sumner DJ, Russell AJ. Digoxin pharmacokinetics: multicompartmental analysis and its clinical implications. British journal of clinical pharmacology 3(2):221–229 (1976). [doi:10.1111/j.1365-2125.1976.tb00596.x](https://doi.org/10.1111/j.1365-2125.1976.tb00596.x)
 
-**This record:** Pharmacolibrary v26.09, model `Digoxin_Sumner1976_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Sumner1976_reference>
+**This record:** Pharmacolibrary, model `Digoxin_Sumner1976_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Sumner1976_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DigoxinSumner1976reference,
   title  = {{Pharmacolibrary model Digoxin_Sumner1976_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Sumner1976_reference},
   note   = {Parameters from doi:10.1111/j.1365-2125.1976.tb00596.x},
 }
@@ -173,5 +172,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdigoxin%5D%20Digoxin_Sumner1976_reference&body=Drug%3A%20digoxin%0ARecord%3A%20Digoxin_Sumner1976_reference%0APaper%3A%20Sumner_1976%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_digoxin/Digoxin_Sumner1976_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 02:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdigoxin%5D%20Digoxin_Sumner1976_reference&body=Drug%3A%20digoxin%0ARecord%3A%20Digoxin_Sumner1976_reference%0APaper%3A%20Sumner_1976%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_digoxin/Digoxin_Sumner1976_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 02:12 UTC</sub>

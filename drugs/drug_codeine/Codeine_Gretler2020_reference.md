@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Gretler_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Gretler2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-10-22 15:26 UTC (Rejected), but the paper was screened again on 2026-11-03 19:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetics and selected pharmacodynamic effects of codeine following a single oral administration to horses. Veterinary anaesthesia and analgesia 47(5):694–704 (2020).
@@ -17,15 +17,17 @@ Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetic
 
 ## Population and dosing
 
-**Population:** Thoroughbred horses · age group adult · n = &gt;= 100.
+**Population:** Thoroughbred horses · condition healthy · age group adult.
+
+**Dosing:** 42 mg, oral, single.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 12 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +35,23 @@ Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetic
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Cmax | Cmax | 270.7 | ng mL-1 |
-| tmax | tmax | 0.438 | hours |
-| elimination t½ | t1/2z | 2.0 | hours |
+| Ka (hour−1) | kabs | 19.3 | hour−1 |
+| CL/F (mL minute−1 kg−1) | CL/F | 45.9 | mL minute−1 kg−1 |
+| CL2/F (mL minute−1 kg−1) | Q/F | 6.98 | mL minute−1 kg−1 |
+| V/F (L kg−1) | V1/F | 2.07 | L kg−1 |
+| V2/F (L kg−1) | V2/F | 0.916 | L kg−1 |
+| Cmax (ng mL−1) | Cmax | 270.7 | ng mL−1 |
+| tmax (hour) | tmax | 0.438 | hour |
+| AUC (ng hour mL−1) | AUC | 286.5 | ng hour mL−1 |
+| A (ng mL−1) | equation variable | 534.9 | ng mL−1 |
+| α (hour−1) | λ1 | 1.76 | hour−1 |
+| β (hour−1) | kel | 0.365 | hour−1 |
+| t½α (hour) | t1/2α | 0.407 | hour |
+| t½β (hour) | t1/2β | 2.00 | hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +65,7 @@ Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetic
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of anti-clfa cl: this record has 0.18, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 534.9, the second reading none. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +73,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax | `Q32` · Cmax | 270.7 | ng mL-1 |  |  | ng/ml | exact (1) | Gretler_2020:abstract |
-| tmax | `Q56` · tmax | 0.438 | hours | 1577 | s | h | exact (1) | Gretler_2020:abstract |
-| elimination t½ | `Q57` · t1/2z | 2.0 | hours | 7200 | s | h | llm_confirmed (0.6) | Gretler_2020:abstract |
+| Ka (hour−1) | `Q49` · kabs | 19.3 | hour−1 | 0.005361 | 1/s | 1/h | exact (1) | T4:row1:col1 |
+| CL/F (mL minute−1 kg−1) | `Q27` · CL/F | 45.9 | mL minute−1 kg−1 |  |  | (ml·min-)/kg | exact (1) | T4:row2:col1 |
+| CL2/F (mL minute−1 kg−1) | `Q69` · Q/F | 6.98 | mL minute−1 kg−1 |  |  | (ml·min-)/kg | exact (1) | T4:row3:col1 |
+| V/F (L kg−1) | `Q290` · V1/F | 2.07 | L kg−1 | 0.1449 | m3 | l/kg | exact (1) | T4:row4:col1 |
+| V2/F (L kg−1) | `Q82` · V2/F | 0.916 | L kg−1 | 0.06412 | m3 | l/kg | exact (1) | T4:row5:col1 |
+| Cmax (ng mL−1) | `Q32` · Cmax | 270.7 | ng mL−1 |  |  | ng/ml | exact (1) | T4:row6:col1 |
+| tmax (hour) | `Q56` · tmax | 0.438 | hour | 1577 | s | h | exact (1) | T4:row7:col1 |
+| AUC (ng hour mL−1) | `Q88` · AUC | 286.5 | ng hour mL−1 |  |  | (h·ng)/ml | exact (1) | T4:row8:col1 |
+| A (ng mL−1) | `Q900` · equation variable | 534.9 | ng mL−1 |  |  | ng/ml | llm (0.6) | T4:row9:col1 |
+| α (hour−1) | `Q67` · λ1 | 1.76 | hour−1 |  |  | 1/h | exact (1) | T4:row11:col1 |
+| β (hour−1) | `Q47` · kel | 0.365 | hour−1 | 0.0001014 | 1/s | 1/h | exact (1) | T4:row12:col1 |
+| t½α (hour) | `Q59` · t1/2α | 0.407 | hour | 1465 | s | h | llm (0.6) | T4:row13:col1 |
+| t½β (hour) | `Q60` · t1/2β | 2.00 | hour | 7200 | s | h | llm (0.6) | T4:row14:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,35 +95,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q32 ('M3G Cmax', value 492.7) — already have one for this compound
-- dropped duplicate Q32 ('C6G Cmax', value 96.1) — already have one for this compound
-- dropped duplicate Q32 ('M6G Cmax', value 22.3) — already have one for this compound
-- dropped duplicate Q32 ('Morphine Cmax', value 3.17) — already have one for this compound
-- dropped duplicate Q32 ('norcodeine Cmax', value 1.42) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL from Capparelli_2005: its label names a different analyte ('anti-clfa') — 'For anti-ClfA and anti-SdrG, the final PK model estimates for CL were 0.18 ml/h and 0.21 ml/h, respectively; those for V 1 were 66 ml and 73 ml, respectively; those for V ss were 179 ml and 204 ml, respectively; and those for the elimination half-life were 719 h and 701 h, respectively.'
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- compound tags: 6 row(s) → morphine (name 6)
+- unit_dimension_unknown: 'mL minute−1 kg−1' (CL/F)
+- unit_dimension_unknown: 'mL minute−1 kg−1' (Q/F)
+- unit_dimension_unknown: 'ng hour mL−1' (AUC)
+- dropped unlinked row (NIL): 'B (ng mL−1)' — extend the ontology if this is a real PK parameter (source ['T4:row10:col1'])
+- unit_dimension_mismatch: 'α (hour−1)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=codeine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — 5 metabolites — the templates hold two
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 6 linked by role
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Gretler_2020_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- companion parameter table 5 transcribed (30 record(s))
+- LLM selected parameter table(s) 4, 5
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.941 (16/17 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[anti-clfa cl]` | 0.18 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[anti-sdrg v 1]` | 73.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a]` | 534.9 |  | only_one_extracted |
 
 </details>
 
@@ -115,12 +140,25 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Gretler_2020:abstract'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Gretler_2020:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Gretler_2020:abstract'] |
-| C8_topology | pass |  |  |  |
+| C0_has_structural_params | pass |  | 12 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['T4:row4:col1'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['T4:row6:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['T4:row12:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['T4:row1:col1'] |
+| C5_dimension_Q56 | pass | [time] |  | ['T4:row7:col1'] |
+| C5_dimension_Q59 | pass | [time] |  | ['T4:row13:col1'] |
+| C5_dimension_Q60 | pass | [time] |  | ['T4:row14:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hour−1 | ['T4:row11:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['T4:row5:col1'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | mL minute−1 kg−1 | ['T4:row2:col1'] |
+| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | mL minute−1 kg−1 | ['T4:row3:col1'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng hour mL−1 | ['T4:row8:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none', 'none', 'none'] |  |
+| C9_phys_window_Q290 | pass | volume within physiological range | 145 L | ['T4:row4:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 64.1 L | ['T4:row5:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,5 +181,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Gretler2020_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Gretler2020_reference%0APaper%3A%20Gretler_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Gretler2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Gretler2020_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Gretler2020_reference%0APaper%3A%20Gretler_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Gretler2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 19:30 UTC</sub>

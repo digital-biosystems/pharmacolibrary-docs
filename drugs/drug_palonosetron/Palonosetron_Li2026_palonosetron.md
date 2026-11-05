@@ -204,13 +204,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and population pharmacokinetic profiles of Ritanine. Frontiers in pharmacology 17:1833170 (2026). [doi:10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
 
-**This record:** Pharmacolibrary v26.09, model `Palonosetron_Li2026_palonosetron`. <https://pharmacolibrary.github.io/#/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron>
+**This record:** Pharmacolibrary, model `Palonosetron_Li2026_palonosetron`. <https://pharmacolibrary.github.io/#/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron>
 
 ```bibtex
 @misc{pharmacolibrary_PalonosetronLi2026palonosetron,
   title  = {{Pharmacolibrary model Palonosetron_Li2026_palonosetron}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron},
   note   = {Parameters from doi:10.3389/fphar.2026.1833170},
 }
@@ -225,5 +224,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalonosetron%5D%20Palonosetron_Li2026_palonosetron&body=Drug%3A%20palonosetron%0ARecord%3A%20Palonosetron_Li2026_palonosetron%0APaper%3A%20Li_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 14:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalonosetron%5D%20Palonosetron_Li2026_palonosetron&body=Drug%3A%20palonosetron%0ARecord%3A%20Palonosetron_Li2026_palonosetron%0APaper%3A%20Li_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 14:23 UTC</sub>

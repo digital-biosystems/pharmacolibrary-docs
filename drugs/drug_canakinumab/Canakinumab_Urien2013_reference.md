@@ -177,13 +177,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Urien S, Bardin C, Bader-Meunier B, Mouy R, Compeyrot-Lacassagne S, Foissac F et al. Anakinra pharmacokinetics in children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes. BMC pharmacology & toxicology 14:40 (2013). [doi:10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40)
 
-**This record:** Pharmacolibrary v26.09, model `Canakinumab_Urien2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_canakinumab/Canakinumab_Urien2013_reference>
+**This record:** Pharmacolibrary, model `Canakinumab_Urien2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_canakinumab/Canakinumab_Urien2013_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CanakinumabUrien2013reference,
   title  = {{Pharmacolibrary model Canakinumab_Urien2013_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_canakinumab/Canakinumab_Urien2013_reference},
   note   = {Parameters from doi:10.1186/2050-6511-14-40},
 }
@@ -202,5 +201,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcanakinumab%5D%20Canakinumab_Urien2013_reference&body=Drug%3A%20canakinumab%0ARecord%3A%20Canakinumab_Urien2013_reference%0APaper%3A%20Urien_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_canakinumab/Canakinumab_Urien2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcanakinumab%5D%20Canakinumab_Urien2013_reference&body=Drug%3A%20canakinumab%0ARecord%3A%20Canakinumab_Urien2013_reference%0APaper%3A%20Urien_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_canakinumab/Canakinumab_Urien2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:49 UTC</sub>

@@ -22,16 +22,6 @@ Avatrombopag is a medicine used to treat thrombocytopenia, a shortage of blood p
 |---|---|---|---|---|---|---|
 | avatrombopag | parent | 649.65 | C29H34Cl2N6O3S2 | DrugBank | [9852519](https://pubchem.ncbi.nlm.nih.gov/compound/9852519) | Liu_2025_2 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 7.85 | L/h | 7.85 L/h | healthy Chinese adults | &gt;=92 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) |
-| V | V/F | 199 | L | 199 L | healthy Chinese adults | &gt;=92 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) |
-| ka | kabs | 0.582 | 1/h | 0.582 /h | healthy Chinese adults | &gt;=92 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -126,5 +116,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavatrombopag%5D&body=Drug%3A%20avatrombopag%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avatrombopag/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 17:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavatrombopag%5D&body=Drug%3A%20avatrombopag%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avatrombopag/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 17:23 UTC</sub>

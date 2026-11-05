@@ -24,14 +24,9 @@ Vindesine is a vinca alkaloid that was used as an anticancer (antineoplastic) dr
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| V | V | 58.2 | L | 58.2 liters | humans | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Owellen_1977_reference](drugs/drug_vindesine/Vindesine_Owellen1977_reference.md) |
-| V | V1 | 4.81 | L | 4.81 liters | humans | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Owellen_1977_reference](drugs/drug_vindesine/Vindesine_Owellen1977_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Owellen_1977 · V</text><circle cx="498.9" cy="30.0" r="4" fill="#ef6c00"><title>Owellen_1977 · V: 58.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Owellen_1977 · V1</text><circle cx="309.4" cy="46.0" r="4" fill="#ef6c00"><title>Owellen_1977 · V1: 4.81 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -103,5 +98,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvindesine%5D&body=Drug%3A%20vindesine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vindesine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 15:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvindesine%5D&body=Drug%3A%20vindesine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vindesine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:10 UTC</sub>

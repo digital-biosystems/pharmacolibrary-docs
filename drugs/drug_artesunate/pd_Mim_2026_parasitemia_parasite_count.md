@@ -123,13 +123,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Artesunate_Mim2026_PD_parasitemia_parasite_count`. <https://pharmacolibrary.github.io/#/drugs/drug_artesunate/Artesunate_Mim2026_PD_parasitemia_parasite_count>
+**This record:** Pharmacolibrary, model `Artesunate_Mim2026_PD_parasitemia_parasite_count`. <https://pharmacolibrary.github.io/#/drugs/drug_artesunate/Artesunate_Mim2026_PD_parasitemia_parasite_count>
 
 ```bibtex
 @misc{pharmacolibrary_ArtesunateMim2026PDparasitemiaparasitecount,
   title  = {{Pharmacolibrary model Artesunate_Mim2026_PD_parasitemia_parasite_count}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_artesunate/Artesunate_Mim2026_PD_parasitemia_parasite_count},
 }
 ```
@@ -143,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D%20pd_Mim_2026_parasitemia_parasite_count&body=Drug%3A%20artesunate%0ARecord%3A%20pd_Mim_2026_parasitemia_parasite_count%0APaper%3A%20Mim_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/pd_Mim_2026_parasitemia_parasite_count%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D%20pd_Mim_2026_parasitemia_parasite_count&body=Drug%3A%20artesunate%0ARecord%3A%20pd_Mim_2026_parasitemia_parasite_count%0APaper%3A%20Mim_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/pd_Mim_2026_parasitemia_parasite_count%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [artesunate](drugs/drug_artesunate/)</sub>

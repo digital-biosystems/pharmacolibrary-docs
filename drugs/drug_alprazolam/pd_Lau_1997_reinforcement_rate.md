@@ -97,13 +97,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Alprazolam_Lau1997_PD_reinforcement_rate`. <https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Lau1997_PD_reinforcement_rate>
+**This record:** Pharmacolibrary, model `Alprazolam_Lau1997_PD_reinforcement_rate`. <https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Lau1997_PD_reinforcement_rate>
 
 ```bibtex
 @misc{pharmacolibrary_AlprazolamLau1997PDreinforcementrate,
   title  = {{Pharmacolibrary model Alprazolam_Lau1997_PD_reinforcement_rate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Lau1997_PD_reinforcement_rate},
 }
 ```
@@ -117,5 +116,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprazolam%5D%20pd_Lau_1997_reinforcement_rate&body=Drug%3A%20alprazolam%0ARecord%3A%20pd_Lau_1997_reinforcement_rate%0APaper%3A%20Lau_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprazolam/pd_Lau_1997_reinforcement_rate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprazolam%5D%20pd_Lau_1997_reinforcement_rate&body=Drug%3A%20alprazolam%0ARecord%3A%20pd_Lau_1997_reinforcement_rate%0APaper%3A%20Lau_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprazolam/pd_Lau_1997_reinforcement_rate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [alprazolam](drugs/drug_alprazolam/)</sub>

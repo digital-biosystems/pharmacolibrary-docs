@@ -31,20 +31,9 @@ Cefaclor is a second-generation cephalosporin antibiotic used to treat bacterial
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 20.82 | L/h | 347.0 ml/min | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2009_reference](drugs/drug_cefaclor/Cefaclor_Li2009_reference.md) |
-| CL | CL/F | 27.17 | L/h | 27166.883 mL/h | healthy adults | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jeong_2021_estimate](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimate.md) |
-| CL | CL/F | 27.19 | L/h | 27188.46 mL/h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeong_2021_estimates](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimates.md) |
-| V | V/F | 22.59 | L | 22593.260 mL | healthy adults | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jeong_2021_estimate](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimate.md) |
-| V | V/F | 26.12 | L | 26116.39 mL | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeong_2021_estimates](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimates.md) |
-| V | V/F | 28.9 | L | 28.9 liters | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2009_reference](drugs/drug_cefaclor/Cefaclor_Li2009_reference.md) |
-| ka | kabs | 5.203 | 1/h | 5.203 1/h | healthy adults | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jeong_2021_estimate](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimate.md) |
-| t½ | t1/2z | 0.68 | h | 0.68 h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeong_2021_estimates](drugs/drug_cefaclor/Cefaclor_Jeong2021_estimates.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2009 · CL/F</text><circle cx="301.5" cy="30.0" r="4" fill="#ef6c00"><title>Li_2009 · CL/F: 20.82 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jeong_2021 · CL/F</text><circle cx="341.9" cy="46.0" r="4" fill="#2e7d32"><title>Jeong_2021 · CL/F: 27.17 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jeong_2021 · CL/F</text><circle cx="342.0" cy="62.0" r="4" fill="#ef6c00"><title>Jeong_2021 · CL/F: 27.19 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jeong_2021 · V/F</text><circle cx="313.9" cy="30.0" r="4" fill="#2e7d32"><title>Jeong_2021 · V/F: 22.59 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jeong_2021 · V/F</text><circle cx="335.9" cy="46.0" r="4" fill="#ef6c00"><title>Jeong_2021 · V/F: 26.12 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Li_2009 · V/F</text><circle cx="351.3" cy="62.0" r="4" fill="#ef6c00"><title>Li_2009 · V/F: 28.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -125,5 +114,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefaclor%5D&body=Drug%3A%20cefaclor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefaclor/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefaclor%5D&body=Drug%3A%20cefaclor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefaclor/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:34 UTC</sub>

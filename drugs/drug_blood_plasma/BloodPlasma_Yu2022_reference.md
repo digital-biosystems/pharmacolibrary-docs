@@ -194,13 +194,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pharmacokinetic-B Cell Modeling for Ofatumumab in Patients with Relapsing Multiple Sclerosis. CNS drugs 36(3):283-300 (2022). [doi:10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w)
 
-**This record:** Pharmacolibrary v26.09, model `BloodPlasma_Yu2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference>
+**This record:** Pharmacolibrary, model `BloodPlasma_Yu2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BloodPlasmaYu2022reference,
   title  = {{Pharmacolibrary model BloodPlasma_Yu2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference},
   note   = {Parameters from doi:10.1007/s40263-021-00895-w},
 }
@@ -219,5 +218,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bblood_plasma%5D%20BloodPlasma_Yu2022_reference&body=Drug%3A%20blood_plasma%0ARecord%3A%20BloodPlasma_Yu2022_reference%0APaper%3A%20Yu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 21:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bblood_plasma%5D%20BloodPlasma_Yu2022_reference&body=Drug%3A%20blood_plasma%0ARecord%3A%20BloodPlasma_Yu2022_reference%0APaper%3A%20Yu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 21:31 UTC</sub>

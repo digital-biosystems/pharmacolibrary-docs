@@ -126,13 +126,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Cefazolin_Smith2024_PD_kmax_sc`. <https://pharmacolibrary.github.io/#/drugs/drug_cefazolin/Cefazolin_Smith2024_PD_kmax_sc>
+**This record:** Pharmacolibrary, model `Cefazolin_Smith2024_PD_kmax_sc`. <https://pharmacolibrary.github.io/#/drugs/drug_cefazolin/Cefazolin_Smith2024_PD_kmax_sc>
 
 ```bibtex
 @misc{pharmacolibrary_CefazolinSmith2024PDkmaxsc,
   title  = {{Pharmacolibrary model Cefazolin_Smith2024_PD_kmax_sc}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefazolin/Cefazolin_Smith2024_PD_kmax_sc},
 }
 ```
@@ -146,5 +145,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefazolin%5D%20pd_Smith_2024_Kmax_SC&body=Drug%3A%20cefazolin%0ARecord%3A%20pd_Smith_2024_Kmax_SC%0APaper%3A%20Smith_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefazolin%5D%20pd_Smith_2024_Kmax_SC&body=Drug%3A%20cefazolin%0ARecord%3A%20pd_Smith_2024_Kmax_SC%0APaper%3A%20Smith_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefazolin/pd_Smith_2024_Kmax_SC%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [cefazolin](drugs/drug_cefazolin/)</sub>

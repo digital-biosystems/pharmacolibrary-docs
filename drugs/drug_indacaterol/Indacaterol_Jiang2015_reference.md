@@ -182,13 +182,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jiang J, Li L, Yin H, Woessner R, Emotte C, Li R et al. Single- and multiple-dose pharmacokinetics of inhaled indacaterol in healthy Chinese volunteers. European journal of drug metabolism and pharmacokinetics 40(2):203–208 (2015). [doi:10.1007/s13318-014-0197-6](https://doi.org/10.1007/s13318-014-0197-6)
 
-**This record:** Pharmacolibrary v26.09, model `Indacaterol_Jiang2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_indacaterol/Indacaterol_Jiang2015_reference>
+**This record:** Pharmacolibrary, model `Indacaterol_Jiang2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_indacaterol/Indacaterol_Jiang2015_reference>
 
 ```bibtex
 @misc{pharmacolibrary_IndacaterolJiang2015reference,
   title  = {{Pharmacolibrary model Indacaterol_Jiang2015_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_indacaterol/Indacaterol_Jiang2015_reference},
   note   = {Parameters from doi:10.1007/s13318-014-0197-6},
 }
@@ -207,5 +206,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindacaterol%5D%20Indacaterol_Jiang2015_reference&body=Drug%3A%20indacaterol%0ARecord%3A%20Indacaterol_Jiang2015_reference%0APaper%3A%20Jiang_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indacaterol/Indacaterol_Jiang2015_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindacaterol%5D%20Indacaterol_Jiang2015_reference&body=Drug%3A%20indacaterol%0ARecord%3A%20Indacaterol_Jiang2015_reference%0APaper%3A%20Jiang_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indacaterol/Indacaterol_Jiang2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:04 UTC</sub>

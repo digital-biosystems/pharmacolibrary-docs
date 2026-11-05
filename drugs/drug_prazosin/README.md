@@ -33,18 +33,9 @@ Prazosin is an alpha-blocker used to treat high blood pressure, and has also bee
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.14 | L/h | 0.14 L/h | patients with hypertension | &gt;=8 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Grahnén_1981_reference](drugs/drug_prazosin/Prazosin_Grahnn1981_reference.md) |
-| CL | CL | 19.62 | L/h | 327 ml/min | normotensive volunteers |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Meredith_1985_reference](drugs/drug_prazosin/Prazosin_Meredith1985_reference.md) |
-| V | V/F | 42 ‡ | L | 0.6 l/kg | patients with hypertension | &gt;=8 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Grahnén_1981_reference](drugs/drug_prazosin/Prazosin_Grahnn1981_reference.md) |
-| t½ | t1/2z | 2 | h | 2.0 h | normotensive volunteers |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Meredith_1985_reference](drugs/drug_prazosin/Prazosin_Meredith1985_reference.md) |
-| t½ | t1/2z | 2.55 | h | 153 min | dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Rubin_1979_reference](drugs/drug_prazosin/Prazosin_Rubin1979_reference.md) |
-| F | Fab | 0.38 |  | 0.38 | dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Rubin_1979_reference](drugs/drug_prazosin/Prazosin_Rubin1979_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Grahnén_1981 · CL</text><circle cx="207.0" cy="30.0" r="4" fill="#78909c"><title>Grahnén_1981 · CL: 0.14 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Meredith_1985 · CL</text><circle cx="457.5" cy="46.0" r="4" fill="#ef6c00"><title>Meredith_1985 · CL: 19.62 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -171,5 +162,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprazosin%5D&body=Drug%3A%20prazosin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prazosin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 14:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprazosin%5D&body=Drug%3A%20prazosin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prazosin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 14:04 UTC</sub>

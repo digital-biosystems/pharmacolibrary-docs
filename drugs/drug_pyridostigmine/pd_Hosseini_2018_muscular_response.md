@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Pyridostigmine_Hosseini2018_PD_muscular_response`. <https://pharmacolibrary.github.io/#/drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_PD_muscular_response>
+**This record:** Pharmacolibrary, model `Pyridostigmine_Hosseini2018_PD_muscular_response`. <https://pharmacolibrary.github.io/#/drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_PD_muscular_response>
 
 ```bibtex
 @misc{pharmacolibrary_PyridostigmineHosseini2018PDmuscularresponse,
   title  = {{Pharmacolibrary model Pyridostigmine_Hosseini2018_PD_muscular_response}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_PD_muscular_response},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyridostigmine%5D%20pd_Hosseini_2018_muscular_response&body=Drug%3A%20pyridostigmine%0ARecord%3A%20pd_Hosseini_2018_muscular_response%0APaper%3A%20Hosseini_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyridostigmine/pd_Hosseini_2018_muscular_response%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyridostigmine%5D%20pd_Hosseini_2018_muscular_response&body=Drug%3A%20pyridostigmine%0ARecord%3A%20pd_Hosseini_2018_muscular_response%0APaper%3A%20Hosseini_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyridostigmine/pd_Hosseini_2018_muscular_response%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pyridostigmine](drugs/drug_pyridostigmine/)</sub>

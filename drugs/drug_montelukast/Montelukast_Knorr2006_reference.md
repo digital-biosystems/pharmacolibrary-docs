@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Knorr_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # montelukast — `Montelukast_Knorr2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; aUC has no unit.
+> This record was reviewed on 2026-10-22 15:35 UTC (Needs review), but the paper was screened again on 2026-11-04 04:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Knorr2006_reference" status="needs_review" stale="false" population="children aged 3 to 6 months" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Knorr2006_reference" status="" stale="true" population="infants aged 3 to 6 months" measured-compound="" parameterization="" topology=""></div>
 
 ## Citation
 Knorr B, Maganti L, Ramakrishnan R, Tozzi CA, Migoya E, Kearns G. Pharmacokinetics and safety of montelukast in children aged 3 to 6 months. Journal of clinical pharmacology 46(6):620–627 (2006).
@@ -17,27 +17,22 @@ Knorr B, Maganti L, Ramakrishnan R, Tozzi CA, Migoya E, Kearns G. Pharmacokineti
 
 ## Population and dosing
 
-**Population:** children aged 3 to 6 months · condition healthy · age group infant.
+**Population:** infants aged 3 to 6 months.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "not captured": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| AUC(pop) | AUC | 3644.3 | ng x h/mL |
-| Montelukast clearance (L/h) | CL | 0.87 | L/h |
-| Ka | kabs | 0.357 | h−1 |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,34 +50,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| AUC(pop) | `Q88` · AUC | 3644.3 | ng x h/mL |  |  | (h·ng)/ml | exact (1) | Knorr_2006:abstract, Knorr_2006:abstract |
-| Montelukast clearance (L/h) | `Q22` · CL | 0.87 | L/h | 2.417e-07 | m3/s | L/h | review_gapfill (0.7) | Li_2019:review |
-| Ka | `Q49` · kabs | 0.357 | h−1 | 9.917e-05 | 1/s | 1/h | review_gapfill (0.7) | Zhu_2024:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
 ## Departures & gaps
 
-**Interpretation flags:**
-- unit_dimension_unknown: 'ng x h/mL' (AUC)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=montelukast
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Li_2019's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Zhu_2024's review values (primary lacked it)
-
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Knorr_2006_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 2, 3
+- table Knorr_2006_table_2: unbound_uncertainty
+- table Knorr_2006_table_2: units_need_context
+- table Knorr_2006_table_2: unparsed_numeric_cell
+- table Knorr_2006_table_3: unparsed_numeric_cell
+- transposed table Knorr_2006_table_3: logical view retains original source coordinates
 
 ## Validation
 
@@ -111,19 +88,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_2019:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Zhu_2024:review'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng x h/mL | ['Knorr_2006:abstract', 'Knorr_2006:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.87 | ['Li_2019:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.87 L/h | ['Li_2019:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Knorr2006_reference&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Knorr2006_reference%0APaper%3A%20Knorr_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Knorr2006_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Knorr2006_reference&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Knorr2006_reference%0APaper%3A%20Knorr_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Knorr2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 04:47 UTC</sub>

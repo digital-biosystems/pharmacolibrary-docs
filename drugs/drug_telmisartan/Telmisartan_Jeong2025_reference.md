@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Jeong_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Jeong2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model for telmisartan was rejected because a structural parameter lacked a valid SI unit.
+> This record was reviewed on 2026-10-22 14:34 UTC (Rejected), but the paper was screened again on 2026-11-04 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model for telmisartan was rejected because a structural parameter lacked a valid SI unit.
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="rejected" stale="false" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="rejected" stale="true" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Jeong IH, Ryu S, Han N, Staatz CE, Baek IH. Population Pharmacokinetics of Telmisartan in Healthy Subjects and Hypertensive Patients. Clinical pharmacokinetics 64(2):285–295 (2025).
@@ -17,7 +17,7 @@ Jeong IH, Ryu S, Han N, Staatz CE, Baek IH. Population Pharmacokinetics of Telmi
 
 ## Population and dosing
 
-**Population:** healthy subjects and hypertensive patients · condition healthy and hypertension · age group adult · n = 879.
+**Population:** healthy subjects and hypertensive patients · condition healthy and hypertension · age group adult.
 
 **Dosing:** 10, 120 mg, oral, multiple, every 24 h.
 
@@ -44,7 +44,7 @@ Jeong IH, Ryu S, Han N, Staatz CE, Baek IH. Population Pharmacokinetics of Telmi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +58,7 @@ Jeong IH, Ryu S, Han N, Staatz CE, Baek IH. Population Pharmacokinetics of Telmi
 
 The record contains a one-compartment structural parameter that could not be converted to SI units, causing a dimension mismatch. A second reader disagreed with the recorded dose compound and several parameter values, such as the absorption lag time and apparent clearance. Extracted — telmisartan: Cmax/dose 4 ng/mL/mg, AUCt 30.4 ng•h/mL/mg, AUC∞ 40.3 ng•h/mL/mg, t1/2z 20.9 h, CL/F 552 mL/min, V/F 1.33e+03 L, kabs 4.53 /h, tlag 0.25 h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose-normalized auc inf: this record has 40.26, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -83,7 +83,6 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'pooled estimates (95% cis)' classified 'ci' by the LLM but kept as the estimate: the header names the point value
 - unit_dimension_mismatch: 'Dose-normalized C max (ng/mL/mg)' → Q174 (unit '1 / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - unit_dimension_unknown: 'ng•h/mL/mg' (AUCt)
 - unit_dimension_unknown: 'ng•h/mL/mg' (AUC∞)
@@ -104,14 +103,21 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose-normalized auc inf]` | 40.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose-normalized auc t].parameter_id` | Q19 | Q189 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -160,5 +166,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Jeong2025_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Jeong2025_reference%0APaper%3A%20Jeong_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Jeong2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Jeong2025_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Jeong2025_reference%0APaper%3A%20Jeong_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Jeong2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 16:53 UTC</sub>

@@ -95,13 +95,12 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ketamine_Douglas2025_PD_pain_score`. <https://pharmacolibrary.github.io/#/drugs/drug_ketamine/Ketamine_Douglas2025_PD_pain_score>
+**This record:** Pharmacolibrary, model `Ketamine_Douglas2025_PD_pain_score`. <https://pharmacolibrary.github.io/#/drugs/drug_ketamine/Ketamine_Douglas2025_PD_pain_score>
 
 ```bibtex
 @misc{pharmacolibrary_KetamineDouglas2025PDpainscore,
   title  = {{Pharmacolibrary model Ketamine_Douglas2025_PD_pain_score}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ketamine/Ketamine_Douglas2025_PD_pain_score},
 }
 ```
@@ -115,5 +114,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketamine%5D%20pd_Douglas_2025_PAIN_SCORE&body=Drug%3A%20ketamine%0ARecord%3A%20pd_Douglas_2025_PAIN_SCORE%0APaper%3A%20Douglas_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketamine/pd_Douglas_2025_PAIN_SCORE%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketamine%5D%20pd_Douglas_2025_PAIN_SCORE&body=Drug%3A%20ketamine%0ARecord%3A%20pd_Douglas_2025_PAIN_SCORE%0APaper%3A%20Douglas_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketamine/pd_Douglas_2025_PAIN_SCORE%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ketamine](drugs/drug_ketamine/)</sub>

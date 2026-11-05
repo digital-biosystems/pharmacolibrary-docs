@@ -122,13 +122,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc`. <https://pharmacolibrary.github.io/#/drugs/drug_ampicillin/Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc>
+**This record:** Pharmacolibrary, model `Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc`. <https://pharmacolibrary.github.io/#/drugs/drug_ampicillin/Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc>
 
 ```bibtex
 @misc{pharmacolibrary_AmpicillinJimenezToro2020PDampcro375vsefaecalisatc,
   title  = {{Pharmacolibrary model Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ampicillin/Ampicillin_JimenezToro2020_PD_amp_cro_37_5_vs_e_faecalis_atc},
 }
 ```
@@ -142,5 +141,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bampicillin%5D%20pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212&body=Drug%3A%20ampicillin%0ARecord%3A%20pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212%0APaper%3A%20Jimenez-Toro_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bampicillin%5D%20pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212&body=Drug%3A%20ampicillin%0ARecord%3A%20pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212%0APaper%3A%20Jimenez-Toro_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ampicillin/pd_Jimenez_Toro_2020_AMP_CRO_37_5_vs_E_faecalis_ATCC_29212%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ampicillin](drugs/drug_ampicillin/)</sub>

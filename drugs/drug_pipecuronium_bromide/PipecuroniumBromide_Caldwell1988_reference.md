@@ -9,7 +9,7 @@
 
 > The pipecuronium parent and metabolite compartments were rejected because the metabolite link had no defined path from the dose.
 
-<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="rejected" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="rejected" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pipecuronium and pancuronium: comparison of pharmacokinetics and duration of action. British journal of anaesthesia 61(6):693–697 (1988).
@@ -23,7 +23,7 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
@@ -120,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Caldwell_1988:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Caldwell_1988:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.4 | ['Caldwell_1988:abstract'] |
-| C8_topology | fail | linked Kfm/Fm/formation clearance |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.1 L/h | ['Caldwell_1988:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 21.6 L | ['Caldwell_1988:abstract'] |
 
@@ -145,5 +145,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpipecuronium_bromide%5D%20PipecuroniumBromide_Caldwell1988_reference&body=Drug%3A%20pipecuronium_bromide%0ARecord%3A%20PipecuroniumBromide_Caldwell1988_reference%0APaper%3A%20Caldwell_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpipecuronium_bromide%5D%20PipecuroniumBromide_Caldwell1988_reference&body=Drug%3A%20pipecuronium_bromide%0ARecord%3A%20PipecuroniumBromide_Caldwell1988_reference%0APaper%3A%20Caldwell_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pipecuronium_bromide/PipecuroniumBromide_Caldwell1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:35 UTC</sub>

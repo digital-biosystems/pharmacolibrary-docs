@@ -23,15 +23,6 @@ Fludarabine is a purine analogue anticancer drug used to treat certain blood can
 | fludarabine | parent | 285.235 | C10H12FN5O4 | DrugBank | [657237](https://pubchem.ncbi.nlm.nih.gov/compound/657237) | Ivaturi_2017, Varela-González-Aller_2025 |
 | f-ara-ATP | metabolite | 525.172 | C10H15FN5O13P3 | PubChem | [22842095](https://pubchem.ncbi.nlm.nih.gov/compound/22842095) | Ivaturi_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.1 | L/h | 3.1 L/h | pediatric hematopoietic cell transplant recipients | 133 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) |
-| V | V1 | 938 ‡ | L | 13.4 L/kg | pediatric hematopoietic cell transplant recipients | 133 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -157,5 +148,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludarabine%5D&body=Drug%3A%20fludarabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludarabine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludarabine%5D&body=Drug%3A%20fludarabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludarabine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:51 UTC</sub>

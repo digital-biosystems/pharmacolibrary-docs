@@ -171,13 +171,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Martínez J, Escudero E, Badillo E, Yuste MT, Galecio JS, Marin P. Pharmacokinetics of Doxycycline in Plasma and Milk after Intravenous and Intramuscular Administration in Dairy Goats. Animals : an open access journal from MDPI 14(16) (2024). [doi:10.3390/ani14162416](https://doi.org/10.3390/ani14162416)
 
-**This record:** Pharmacolibrary v26.09, model `Tetracycline_Martnez2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tetracycline/Tetracycline_Martnez2024_reference>
+**This record:** Pharmacolibrary, model `Tetracycline_Martnez2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tetracycline/Tetracycline_Martnez2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TetracyclineMartnez2024reference,
   title  = {{Pharmacolibrary model Tetracycline_Martnez2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tetracycline/Tetracycline_Martnez2024_reference},
   note   = {Parameters from doi:10.3390/ani14162416},
 }
@@ -196,5 +195,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracycline%5D%20Tetracycline_Martnez2024_reference&body=Drug%3A%20tetracycline%0ARecord%3A%20Tetracycline_Martnez2024_reference%0APaper%3A%20Mart%C3%ADnez_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracycline/Tetracycline_Martnez2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracycline%5D%20Tetracycline_Martnez2024_reference&body=Drug%3A%20tetracycline%0ARecord%3A%20Tetracycline_Martnez2024_reference%0APaper%3A%20Mart%C3%ADnez_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracycline/Tetracycline_Martnez2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

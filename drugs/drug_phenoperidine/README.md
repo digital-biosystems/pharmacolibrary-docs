@@ -29,14 +29,6 @@ Phenoperidine is an opioid used as an analgesic component of general anesthesia.
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 22 | L/h | 22 L/h | anaesthetized patients undergoing general surgery | The mean distribution half-life (T1/2 alpha) for the five patients was short (2.2 min); the mean elimination half-life (T1/2 beta) was 193 min. The mean whole body clearance was 22 ml min-1 kg-1 and the apparent steady state distribution volume (VSS) was 5.7 litre kg-1. Secondary concentration peaks occurred in all patients; in two patients these were substantial and occurred 80 min after injection. | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -93,5 +85,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenoperidine%5D&body=Drug%3A%20phenoperidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenoperidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenoperidine%5D&body=Drug%3A%20phenoperidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenoperidine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:27 UTC</sub>

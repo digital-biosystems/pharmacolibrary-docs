@@ -217,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et al. A multicentre evaluation of pharmacokinetic/pharmacodynamic target attainment of piperacillin and tazobactam and the association with clinical outcomes in critically ill patients with sepsis and septic shock. The Journal of antimicrobial chemotherapy 81(7) (2026). [doi:10.1093/jac/dkag199](https://doi.org/10.1093/jac/dkag199)
 
-**This record:** Pharmacolibrary v26.09, model `Piperacillin_Sulaiman2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference>
+**This record:** Pharmacolibrary, model `Piperacillin_Sulaiman2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PiperacillinSulaiman2026reference,
   title  = {{Pharmacolibrary model Piperacillin_Sulaiman2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference},
   note   = {Parameters from doi:10.1093/jac/dkag199},
 }
@@ -242,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperacillin%5D%20Piperacillin_Sulaiman2026_reference&body=Drug%3A%20piperacillin%0ARecord%3A%20Piperacillin_Sulaiman2026_reference%0APaper%3A%20Sulaiman_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperacillin%5D%20Piperacillin_Sulaiman2026_reference&body=Drug%3A%20piperacillin%0ARecord%3A%20Piperacillin_Sulaiman2026_reference%0APaper%3A%20Sulaiman_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:15 UTC</sub>

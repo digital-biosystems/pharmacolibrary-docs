@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 remdesivir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Abouellil2023_remdesivir`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model’s terminal half-life is 4.3 hours, failing to reproduce the paper’s reported 29.4 hours for remdesivir in healthy adults.
+> This record was reviewed on 2026-10-22 14:39 UTC (Needs review), but the paper was screened again on 2026-11-04 11:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of remdesivir and its major metabolites based on published mean values from healthy subjects. Naunyn-Schmiedeberg's archives of pharmacology 396(1):73–82 (2023).
@@ -19,7 +19,7 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 **Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 3, 10, 30, 75, 150, 225 mg, iv, multiple, every 24 h.
+**Dosing:** 3, 10, 30, 75, 150, 225 mg, iv, single.
 
 ## Model
 
@@ -29,8 +29,6 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Central compartment volume of distribution (L) | V1 | 4.89 | L |
@@ -40,7 +38,7 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +52,7 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 The calculated terminal half-life of 4.3 hours deviates from the paper’s value of 29.4 hours, exceeding the acceptable tolerance. Additionally, the central and peripheral volume of distribution parameters were not extracted from the record, leaving them at placeholder defaults. These two central volume values are absent from the parameter coverage, indicating incomplete data extraction for the compartmental structure. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -78,8 +76,12 @@ Independently confirmed by `gpt-oss:120b`.
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — a metabolite is formed from another metabolite (a chain)
-- population split: 'remdesivir' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
+- population split: 'remdesivir' subgroup of Abouellil_2023 (paper reports 2 populations: gs‐441524, remdesivir)
 - row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
+- population split: 'remdesivir' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -88,7 +90,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -160,13 +162,12 @@ _All readers agree on the compared fields of this record._
 
 **Source paper** (the parameters are its): Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of remdesivir and its major metabolites based on published mean values from healthy subjects. Naunyn-Schmiedeberg's archives of pharmacology 396(1):73–82 (2023). [doi:10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
-**This record:** Pharmacolibrary v26.09, model `Remdesivir_Abouellil2023_remdesivir`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir>
+**This record:** Pharmacolibrary, model `Remdesivir_Abouellil2023_remdesivir`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir>
 
 ```bibtex
 @misc{pharmacolibrary_RemdesivirAbouellil2023remdesivir,
   title  = {{Pharmacolibrary model Remdesivir_Abouellil2023_remdesivir}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir},
   note   = {Parameters from doi:10.1007/s00210-022-02292-6},
 }
@@ -181,5 +182,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Abouellil2023_remdesivir&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Abouellil2023_remdesivir%0APaper%3A%20Abouellil_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Abouellil2023_remdesivir&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Abouellil2023_remdesivir%0APaper%3A%20Abouellil_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:18 UTC</sub>

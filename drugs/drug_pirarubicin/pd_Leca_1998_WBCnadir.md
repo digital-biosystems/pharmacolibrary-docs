@@ -119,13 +119,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Pirarubicin_Leca1998_PD_wbcnadir`. <https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Leca1998_PD_wbcnadir>
+**This record:** Pharmacolibrary, model `Pirarubicin_Leca1998_PD_wbcnadir`. <https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Leca1998_PD_wbcnadir>
 
 ```bibtex
 @misc{pharmacolibrary_PirarubicinLeca1998PDwbcnadir,
   title  = {{Pharmacolibrary model Pirarubicin_Leca1998_PD_wbcnadir}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Leca1998_PD_wbcnadir},
 }
 ```
@@ -139,5 +138,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D%20pd_Leca_1998_WBCnadir&body=Drug%3A%20pirarubicin%0ARecord%3A%20pd_Leca_1998_WBCnadir%0APaper%3A%20Leca_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/pd_Leca_1998_WBCnadir%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D%20pd_Leca_1998_WBCnadir&body=Drug%3A%20pirarubicin%0ARecord%3A%20pd_Leca_1998_WBCnadir%0APaper%3A%20Leca_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/pd_Leca_1998_WBCnadir%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [pirarubicin](drugs/drug_pirarubicin/)</sub>

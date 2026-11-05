@@ -9,7 +9,7 @@
 
 > The vaborbactam model was rejected because the parameter tmax, reported as 43.4 weeks, could not be converted to standard units.
 
-<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Fornari C, Arrieta A, Bradley JS, Tout M, Magalhaes P, Auriol FK et al. Dose rationale for the use of meropenem/vaborbactam combination in paediatric patients with Gram-negative bacterial infections. British journal of clinical pharmacology 90(10):2597–2610 (2024).
@@ -23,9 +23,9 @@ Fornari C, Arrieta A, Bradley JS, Tout M, Magalhaes P, Auriol FK et al. Dose rat
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
-**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted, plus 1 covariate effect.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,12 +34,10 @@ Fornari C, Arrieta A, Bradley JS, Tout M, Magalhaes P, Auriol FK et al. Dose rat
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL (L/h) | CL | 9.84 | L/h | 0.561 (None% RSE) |
-| PMA50 (weeks) | tmax | 43.4 | weeks |  |
+| theta_cl_cr_cl | theta_cl_cr_cl | 0.83 |  |  |
 | V1 (L) | V1 | 14.4 | L | 0.565 (None% RSE) |
-| βBW_V1 | V1/F | 1 |  |  |
 | Q (L/h) | Q | 1.96 | L/h | 0.195 (None% RSE) |
 | V2 (L) | V2 | 2.56 | L | 0.29 (None% RSE) |
-| b | equation variable | 0.282 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -66,12 +64,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 9.84 | L/h | 2.733e-06 | m3/s | l/h | exact (1) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col4, tab_2:row4:col5, tab_2:row28:col1, tab_2:row28:col2, tab_2:row28:col4, tab_2:row28:col5 | 0.561 (None% RSE) |
-| PMA50 (weeks) | `Q56` · tmax | 43.4 | weeks |  |  | weeks | llm (0.6) | tab_2:row8:col4, tab_2:row32:col4 |  |
+| theta_cl_cr_cl | `Q900` · theta_cl_cr_cl | 0.83 |  |  |  |  |  | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col4, tab_2:row5:col5, tab_2:row29:col1, tab_2:row29:col2, tab_2:row29:col4, tab_2:row29:col5 |  |
 | V1 (L) | `Q63` · V1 | 14.4 | L | 0.0144 | m3 | l | exact (1) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col4, tab_2:row9:col5, tab_2:row33:col1, tab_2:row33:col2, tab_2:row33:col4, tab_2:row33:col5 | 0.565 (None% RSE) |
-| βBW_V1 | `Q290` · V1/F | 1 |  |  |  |  | llm (0.6) | tab_2:row10:col1, tab_2:row10:col4, tab_2:row34:col1, tab_2:row34:col4 |  |
 | Q (L/h) | `Q30` · Q | 1.96 | L/h | 5.444e-07 | m3/s | l/h | exact (1) | tab_2:row11:col1, tab_2:row11:col2, tab_2:row11:col4, tab_2:row11:col5, tab_2:row35:col1, tab_2:row35:col2, tab_2:row35:col4, tab_2:row35:col5 | 0.195 (None% RSE) |
 | V2 (L) | `Q64` · V2 | 2.56 | L | 0.00256 | m3 | l | exact (1) | tab_2:row13:col1, tab_2:row13:col2, tab_2:row13:col4, tab_2:row13:col5, tab_2:row37:col1, tab_2:row37:col2, tab_2:row37:col4, tab_2:row37:col5 | 0.29 (None% RSE) |
-| b | `Q900` · equation variable | 0.282 |  |  |  |  | llm (0.6) | tab_2:row23:col1, tab_2:row23:col2, tab_2:row23:col4, tab_2:row23:col5 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,15 +77,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'βCLcr_CL' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row29:col1', 'tab_2:row29:col2', 'tab_2:row29:col4', 'tab_2:row29:col5'])
+- covariate level 'βCLcr_CL' → Q900:theta_cl_cr_cl = 0.83 (linear_fractional on Q22)
 - dropped duplicate Q22 ('βBW_CL', value '0.75') — already have one for this compound
 - dropped PD-category row 'Hill' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row7:col4', 'tab_2:row31:col4'])
-- dropped duplicate Q30 ('βBW_Q', value '0.75') — already have one for this compound
+- dropped unlinked row (NIL): 'PMA50 (weeks)' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col4', 'tab_2:row32:col4'])
+- dropped duplicate Q63 ('βBW_V1', value '1') — already have one for this compound
+- dropped unlinked row (NIL): 'βBW_Q' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col1', 'tab_2:row12:col4', 'tab_2:row36:col1', 'tab_2:row36:col4'])
 - dropped duplicate Q64 ('βBW_V2', value '1') — already have one for this compound
-- dropped duplicate Q22 ('corr V1 CL', value '0.787') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vaborbactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
+- dropped unlinked row (NIL): 'b' — extend the ontology if this is a real PK parameter (source ['tab_2:row23:col1', 'tab_2:row23:col2', 'tab_2:row23:col4', 'tab_2:row23:col5'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vaborbactam
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -125,17 +121,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col4', 'tab_2:row28:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row11:col1', 'tab_2:row11:col2', 'tab_2:row11:col4', 'tab_2:row11:col5', 'tab_2:row35:col1', 'tab_2:row35:col2', 'tab_2:row35:col4', 'tab_2:row35:col5'] |
-| C5_dimension_Q56 | pass | [time] |  | ['tab_2:row8:col4', 'tab_2:row32:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col4', 'tab_2:row9:col5', 'tab_2:row33:col1', 'tab_2:row33:col2', 'tab_2:row33:col4', 'tab_2:row33:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row13:col1', 'tab_2:row13:col2', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row37:col1', 'tab_2:row37:col2', 'tab_2:row37:col4', 'tab_2:row37:col5'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 |  | ['tab_2:row10:col1', 'tab_2:row10:col4', 'tab_2:row34:col1', 'tab_2:row34:col4'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.84 | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col4', 'tab_2:row28:col5'] |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.84 L/h | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col5', 'tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col4', 'tab_2:row28:col5'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 14.4 L | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col4', 'tab_2:row9:col5', 'tab_2:row33:col1', 'tab_2:row33:col2', 'tab_2:row33:col4', 'tab_2:row33:col5'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.56 L | ['tab_2:row13:col1', 'tab_2:row13:col2', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row37:col1', 'tab_2:row37:col2', 'tab_2:row37:col4', 'tab_2:row37:col5'] |
@@ -161,5 +156,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvaborbactam%5D%20Vaborbactam_Fornari2024_reference&body=Drug%3A%20vaborbactam%0ARecord%3A%20Vaborbactam_Fornari2024_reference%0APaper%3A%20Fornari_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvaborbactam%5D%20Vaborbactam_Fornari2024_reference&body=Drug%3A%20vaborbactam%0ARecord%3A%20Vaborbactam_Fornari2024_reference%0APaper%3A%20Fornari_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:49 UTC</sub>

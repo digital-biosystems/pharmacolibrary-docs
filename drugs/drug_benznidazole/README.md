@@ -31,20 +31,9 @@ Benznidazole is an antiparasitic medicine used to treat trypanosomiasis (Chagas 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.1 | L/h | 2.1 L/h | neonates, infants and children with Chagas disease | 81 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Altcheh_2023_reference](drugs/drug_benznidazole/Benznidazole_Altcheh2023_reference.md) |
-| CL | CL | 6.32 | L/h | 6.32 L/h | Brazilian patients with chronic Chagas disease | 8 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Frade_2022_reference](drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md) |
-| CL | CL/F | 1.73 | L/h | 1.73 liters/h | adults with chronic Chagas disease | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Soy_2015_reference](drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md) |
-| CL | CL/F | 5.642 ‡ | L/h | 0.0806 L/Kg/hr | children 2-12 years with Chagas disease (with adult literature data) | 38 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Altcheh_2014_reference](drugs/drug_benznidazole/Benznidazole_Altcheh2014_reference.md) |
-| V | V | 37.66 | L | 37.66 L | Brazilian patients with chronic Chagas disease | 8 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Frade_2022_reference](drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md) |
-| V | V/F | 89.6 | L | 89.6 liters | adults with chronic Chagas disease | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Soy_2015_reference](drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md) |
-| ka | kabs | 1.15 | 1/h | 1.15 h(-1) | adults with chronic Chagas disease | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Soy_2015_reference](drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md) |
-| ka | kabs | 1.67 | 1/h | 1.67 h-1 | Brazilian patients with chronic Chagas disease | 8 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Frade_2022_reference](drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Altcheh_2023 · CL</text><circle cx="302.8" cy="30.0" r="4" fill="#ef6c00"><title>Altcheh_2023 · CL: 2.1 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Frade_2022 · CL</text><circle cx="470.3" cy="46.0" r="4" fill="#ef6c00"><title>Frade_2022 · CL: 6.32 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Soy_2015 · CL/F</text><circle cx="273.3" cy="62.0" r="4" fill="#2e7d32"><title>Soy_2015 · CL/F: 1.73 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Altcheh_2014 · CL/F ·/kg</text><circle cx="453.0" cy="78.0" r="4" fill="#ef6c00"><title>Altcheh_2014 · CL/F ·/kg: 5.642 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Frade_2022 · V</text><circle cx="391.6" cy="30.0" r="4" fill="#ef6c00"><title>Frade_2022 · V: 37.66 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Soy_2015 · V/F</text><circle cx="523.3" cy="46.0" r="4" fill="#2e7d32"><title>Soy_2015 · V/F: 89.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -131,5 +120,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenznidazole%5D&body=Drug%3A%20benznidazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benznidazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenznidazole%5D&body=Drug%3A%20benznidazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benznidazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:36 UTC</sub>

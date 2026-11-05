@@ -96,13 +96,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Buprenorphine_EudyByrne2021_PD_mother_nas_score`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_EudyByrne2021_PD_mother_nas_score>
+**This record:** Pharmacolibrary, model `Buprenorphine_EudyByrne2021_PD_mother_nas_score`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_EudyByrne2021_PD_mother_nas_score>
 
 ```bibtex
 @misc{pharmacolibrary_BuprenorphineEudyByrne2021PDmothernasscore,
   title  = {{Pharmacolibrary model Buprenorphine_EudyByrne2021_PD_mother_nas_score}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_EudyByrne2021_PD_mother_nas_score},
 }
 ```
@@ -116,5 +115,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Eudy_Byrne_2021_MOTHER_NAS_score&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Eudy_Byrne_2021_MOTHER_NAS_score%0APaper%3A%20Eudy-Byrne_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Eudy_Byrne_2021_MOTHER_NAS_score%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Eudy_Byrne_2021_MOTHER_NAS_score&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Eudy_Byrne_2021_MOTHER_NAS_score%0APaper%3A%20Eudy-Byrne_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Eudy_Byrne_2021_MOTHER_NAS_score%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [buprenorphine](drugs/drug_buprenorphine/)</sub>

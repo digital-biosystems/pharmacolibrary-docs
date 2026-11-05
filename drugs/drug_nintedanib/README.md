@@ -30,15 +30,6 @@ Nintedanib is a protein kinase inhibitor used to treat idiopathic pulmonary fibr
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 994 | L/h | 994 L/h | patients with idiopathic pulmonary fibrosis | 933 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Schmid_2018_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md) |
-| ka | kabs | 0.0814 | 1/h | 0.0814 h-1 | patients with idiopathic pulmonary fibrosis | 933 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Schmid_2018_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -131,5 +122,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnintedanib%5D&body=Drug%3A%20nintedanib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nintedanib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnintedanib%5D&body=Drug%3A%20nintedanib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nintedanib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:19 UTC</sub>

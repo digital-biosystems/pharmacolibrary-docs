@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This record was reviewed on 2026-09-28 14:39 UTC (Needs review), but the paper was screened again on 2026-10-07 05:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No value for morphine's clearance and volume of distribution.
+> This record was reviewed on 2026-09-28 14:39 UTC (Needs review), but the paper was screened again on 2026-11-04 10:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No value for morphine's clearance and volume of distribution.
 
 <div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Yalcin2022_reference" status="rejected" stale="true" population="critically ill neonates and infants undergoing extracorporeal membrane oxygenation" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
@@ -60,10 +60,7 @@ The model was built, but morphine's clearance and volume of distribution had no 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 't 1/2 (hours) Recommended dose' — extend the ontology if this is a real PK parameter (source ['tab_11:row0:col3', 'tab_11:row0:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=unknown
-- gap-filled Q22 (CL) from Bardol_2025's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- removed gap-filled parent disposition (Q22): this record measures 'unknown', not morphine, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
+- review gap-fill skipped: this record measures 'unknown', not morphine — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell tab_11:row1:col3 = '↓38%'
@@ -123,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Yalcin2022_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Yalcin2022_reference%0APaper%3A%20Yalcin_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Yalcin2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmorphine%5D%20Morphine_Yalcin2022_reference&body=Drug%3A%20morphine%0ARecord%3A%20Morphine_Yalcin2022_reference%0APaper%3A%20Yalcin_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_morphine/Morphine_Yalcin2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 10:15 UTC</sub>

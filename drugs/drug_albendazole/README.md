@@ -33,22 +33,9 @@ Albendazole is an anthelmintic and antiparasitic medicine used to treat worm and
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 7.698 | L/h | 7.698 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fimbo_2023_reference](drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md) |
-| CL | CL | 21 | L/h | 21.0 L/h | review reference |  | cattle | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Formentini_2001_reference](drugs/drug_albendazole/Albendazole_Formentini2001_reference.md) |
-| CL | CL/F | 3.6 | L/h | 3.6 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chhonker_2023_reference](drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md) |
-| CL | CL/F | 14.27 | L/h | 14.27 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Algorta_2022_reference](drugs/drug_albendazole/Albendazole_Algorta2022_reference.md) |
-| V | V/F | 410.8 | L | 410.8 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chhonker_2023_reference](drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md) |
-| V | V/F | 881 | L | 881.0 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Algorta_2022_reference](drugs/drug_albendazole/Albendazole_Algorta2022_reference.md) |
-| V | V1 | 27.8 | L | 27.8 L | review reference |  | cattle | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Formentini_2001_reference](drugs/drug_albendazole/Albendazole_Formentini2001_reference.md) |
-| V | V1 | 146.1 | L | 146.1 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fimbo_2023_reference](drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md) |
-| ka | kabs | 0.7082 | 1/h | 0.7082 /h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fimbo_2023_reference](drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md) |
-| F | Fab | 0.28 |  | 28 % | patients with neurocysticercosis | 90 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Castro_2009_reference](drugs/drug_albendazole/Albendazole_Castro2009_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fimbo_2023 · CL</text><circle cx="345.1" cy="30.0" r="4" fill="#ef6c00"><title>Fimbo_2023 · CL: 7.698 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Formentini_2001 · CL</text><circle cx="421.4" cy="46.0" r="4" fill="#2e7d32"><title>Formentini_2001 · CL: 21 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Chhonker_2023 · CL/F</text><circle cx="287.4" cy="62.0" r="4" fill="#ef6c00"><title>Chhonker_2023 · CL/F: 3.6 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Algorta_2022 · CL/F</text><circle cx="392.0" cy="78.0" r="4" fill="#ef6c00"><title>Algorta_2022 · CL/F: 14.27 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chhonker_2023 · V/F</text><circle cx="472.4" cy="30.0" r="4" fill="#ef6c00"><title>Chhonker_2023 · V/F: 410.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Algorta_2022 · V/F</text><circle cx="530.4" cy="46.0" r="4" fill="#ef6c00"><title>Algorta_2022 · V/F: 881 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Formentini_2001 · V1</text><circle cx="267.7" cy="62.0" r="4" fill="#2e7d32"><title>Formentini_2001 · V1: 27.8 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Fimbo_2023 · V1</text><circle cx="393.8" cy="78.0" r="4" fill="#ef6c00"><title>Fimbo_2023 · V1: 146.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -147,5 +134,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbendazole%5D&body=Drug%3A%20albendazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albendazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbendazole%5D&body=Drug%3A%20albendazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albendazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:02 UTC</sub>

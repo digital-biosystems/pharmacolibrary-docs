@@ -22,17 +22,6 @@ Tiapride is a benzamide antipsychotic used for psychiatric and neurological cond
 |---|---|---|---|---|---|---|
 | tiapride | parent | 328.427 | C15H24N2O4S | DrugBank | [5467](https://pubchem.ncbi.nlm.nih.gov/compound/5467) | Huang_2026, Norman_1987, Rey_1982 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 16.6 | L/h | 16.6 l/h | patients with Huntington's disease | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) |
-| V | V/F | 105 ‡ | L | 1.5 L/kg | patients with Huntington's disease | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) |
-| ka | kabs | 0.219 | 1/h | 0.219 h−1 | patients with Huntington's disease | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) |
-| t½ | t1/2z | 5.3 | h | 5.3 h | patients with Huntington's disease | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -118,5 +107,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiapride%5D&body=Drug%3A%20tiapride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiapride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 17:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiapride%5D&body=Drug%3A%20tiapride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiapride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 17:39 UTC</sub>

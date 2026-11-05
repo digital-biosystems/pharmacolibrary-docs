@@ -13,14 +13,6 @@ Conestat alfa, a recombinant C1-inhibitor, is used to treat hereditary angioedem
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1124727](https://www.wikidata.org/wiki/Q1124727) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 2.86 | L | 2.86 l | healthy volunteers and hereditary angioedema patients | 133 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Farrell_2013_reference](drugs/drug_conestat_alfa/ConestatAlfa_Farrell2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -68,5 +60,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bconestat_alfa%5D&body=Drug%3A%20conestat_alfa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_conestat_alfa/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 01:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bconestat_alfa%5D&body=Drug%3A%20conestat_alfa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_conestat_alfa/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 01:18 UTC</sub>

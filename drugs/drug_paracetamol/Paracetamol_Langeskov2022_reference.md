@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Langeskov_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Langeskov2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Paracetamol parameters like CL/F 25.9 L/h were extracted from abstract-only data using an unsupported bioavailability assumption.
+> This record was reviewed on 2026-10-22 14:32 UTC (Needs review), but the paper was screened again on 2026-11-04 07:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Langeskov2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="paracetamol" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Langeskov2022_reference" status="extracted" stale="true" population="healthy obese adults" measured-compound="paracetamol" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorvastatin with co-administration of semaglutide. Pharmacology research & perspectives 10(4):e00962 (2022).
@@ -17,7 +17,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult.
+**Population:** healthy obese adults · condition healthy · age group adult · n = 29.
 
 **Dosing:** 10, 1500 mg, oral, single.
 
@@ -31,23 +31,22 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 <figure class="pk-models-diagram"><img src="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference.svg" alt="Paracetamol_Langeskov2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| ka (h−1) (Placebo) | kabs | 5.72 | h−1 | 23.5 | 0.514 (None% RSE) |
-| Θkacovariate | equation variable | 0.829 |  | 8.6 |  |
-| V1/F (L) | V1/F | 48.5 | L | 11.7 | 0.270 (None% RSE) |
-| Cl/F (L/h) | CL/F | 25.9 | L/h | 2.49 | 0.0606 (None% RSE) |
-| V2/F (L) | V2/F | 55.4 | L | 6.95 | 0.0703 (None% RSE) |
+| ka (h−1) (Placebo) | kabs | 5.72 | h−1 | 23.5 | 0.514 (35.3% RSE) |
+| V1/F (L) | V1/F | 48.5 | L | 11.7 | 0.270 (33.2% RSE) |
+| Cl/F (L/h) | CL/F | 25.9 | L/h | 2.49 | 0.0606 (27.4% RSE) |
+| V2/F (L) | V2/F | 55.4 | L | 6.95 | 0.0703 (26.8% RSE) |
 | Cl2/F (L/h) | Q/F | 199 | L/h | 9.43 |  |
-| Tlag (h) | tlag | 0.16 | h | 7.40 | 0.0586 (None% RSE) |
-| ktr (h−1) (Placebo) | ktr | 7.28 | h−1 | 22.2 | 1.82 (None% RSE) |
+| Tlag (h) | tlag | 0.16 | h | 7.40 | 0.0586 (34.7% RSE) |
+| ktr (h−1) (Placebo) | ktr | 7.28 | h−1 | 22.2 | 1.82 (35.8% RSE) |
 | Cl2/F (L/h) a | Q2/F | 873 | L/h | 15.4 |  |
+| Θkacovariate | Θkacovariate | 0.829 |  |  |  |
+| Θktrcovariate | Θktrcovariate | 0.791 |  |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +60,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 The record relies on the paper's summary statistics because only the abstract was read. The model builder assumed unit bioavailability for the apparent parameters. A second reader could not identify the dose compound or primary analyte, leaving the data source unclear. Extracted — paracetamol: kabs 5.72 h−1, V1/F 48.5 L, CL/F 25.9 L/h, V2/F 55.4 L, Q/F 199 L/h, tlag 0.16 h, ktr 7.28 h−1, Q2/F 873 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl2/f: this record has 199, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -69,15 +68,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (h−1) (Placebo) | `Q49` · kabs | 5.72 | h−1 | 0.001589 | 1/s | 1/h | 23.5 | space_fold (0.95) | prp2962-tbl-0002:row1:col1, Langeskov_2022_table_3:row0:col1 | 0.514 (None% RSE) |
-| Θkacovariate | `Q900` · equation variable | 0.829 |  |  |  |  | 8.6 | llm (0.6) | prp2962-tbl-0002:row2:col1, Langeskov_2022_table_3:row1:col1 |  |
-| V1/F (L) | `Q290` · V1/F | 48.5 | L | 0.0485 | m3 | l | 11.7 | exact (1) | prp2962-tbl-0002:row3:col1 | 0.270 (None% RSE) |
-| Cl/F (L/h) | `Q27` · CL/F | 25.9 | L/h | 7.194e-06 | m3/s | l/h | 2.49 | exact (1) | prp2962-tbl-0002:row5:col1 | 0.0606 (None% RSE) |
-| V2/F (L) | `Q82` · V2/F | 55.4 | L | 0.0554 | m3 | l | 6.95 | exact (1) | prp2962-tbl-0002:row6:col1 | 0.0703 (None% RSE) |
+| ka (h−1) (Placebo) | `Q49` · kabs | 5.72 | h−1 | 0.001589 | 1/s | 1/h | 23.5 | space_fold (0.95) | prp2962-tbl-0002:row1:col1, Langeskov_2022_table_3:row0:col1 | 0.514 (35.3% RSE) |
+| V1/F (L) | `Q290` · V1/F | 48.5 | L | 0.0485 | m3 | l | 11.7 | exact (1) | prp2962-tbl-0002:row3:col1 | 0.270 (33.2% RSE) |
+| Cl/F (L/h) | `Q27` · CL/F | 25.9 | L/h | 7.194e-06 | m3/s | l/h | 2.49 | exact (1) | prp2962-tbl-0002:row5:col1 | 0.0606 (27.4% RSE) |
+| V2/F (L) | `Q82` · V2/F | 55.4 | L | 0.0554 | m3 | l | 6.95 | exact (1) | prp2962-tbl-0002:row6:col1 | 0.0703 (26.8% RSE) |
 | Cl2/F (L/h) | `Q69` · Q/F | 199 | L/h | 5.528e-05 | m3/s | l/h | 9.43 | special_case (0.95) | prp2962-tbl-0002:row7:col1 |  |
-| Tlag (h) | `Q83` · tlag | 0.16 | h | 576 | s | h | 7.40 | exact (1) | prp2962-tbl-0002:row8:col1 | 0.0586 (None% RSE) |
-| ktr (h−1) (Placebo) | `Q306` · ktr | 7.28 | h−1 | 0.002022 | 1/s | 1/h | 22.2 | space_fold (0.95) | Langeskov_2022_table_3:row2:col1 | 1.82 (None% RSE) |
+| Tlag (h) | `Q83` · tlag | 0.16 | h | 576 | s | h | 7.40 | exact (1) | prp2962-tbl-0002:row8:col1 | 0.0586 (34.7% RSE) |
+| ktr (h−1) (Placebo) | `Q306` · ktr | 7.28 | h−1 | 0.002022 | 1/s | 1/h | 22.2 | space_fold (0.95) | Langeskov_2022_table_3:row2:col1 | 1.82 (35.8% RSE) |
 | Cl2/F (L/h) a | `Q80` · Q2/F | 873 | L/h | 0.0002425 | m3/s | l/h | 15.4 | llm (0.6) | Langeskov_2022_table_3:row7:col1 |  |
+| Θkacovariate | `Q900` · Θkacovariate | 0.829 |  |  |  |  |  |  |  |  |
+| Θktrcovariate | `Q900` · Θktrcovariate | 0.791 |  |  |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -102,37 +102,37 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section iiv: 'ω2 Cl/f' routed out of structural estimates ('Between subject variability (ω2)')
 - table section iiv: 'ω2 V2/F' routed out of structural estimates ('Between subject variability (ω2)')
 - table section iiv: 'Residual unexplained variability (Ceps)' routed out of structural estimates ('Between subject variability (ω2)')
-- dropped duplicate Q290 ('ΘV1/Fcovariate', value '0.0312') — already have one for this compound
-- dropped duplicate Q306 ('Θktrcovariate', value '0.791') — already have one for this compound
+- kept covariate coefficient Θkacovariate=0.829 (covariate kacovariate) — not an ontology parameter
+- routed 'ΘV1/Fcovariate' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- kept covariate coefficient Θktrcovariate=0.791 (covariate ktrcovariate) — not an ontology parameter
 - dropped duplicate Q290 ('V1/F (L) a', value '1843') — already have one for this compound
 - dropped duplicate Q27 ('Cl/F (L/h) a', value '620') — already have one for this compound
 - dropped duplicate Q82 ('V2/F(L) a', value '4184') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=paracetamol
+- dropped duplicate Q290 ('ΘV1/Fcovariate', value '0.0312') — already have one for this compound
+- dropped duplicate Q306 ('Θktrcovariate', value '0.791') — already have one for this compound
 
 **Extraction notes:**
-- table prp2962-tbl-0002: unparsed_numeric_cell
-- table Langeskov_2022_table_3: unparsed_numeric_cell
-- companion parameter table 3 transcribed (36 record(s), model stage 'final')
+- companion parameter table 3 transcribed (42 record(s), model stage 'final')
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.818 (18/22 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl2/f]` | 199 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka (h-1)].value` | 9.4 | 5.72 | mismatch |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.16 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θkacovariate]` | 0.525 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θkacovariate]` | 0.829 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[θktrcovariate]` | 0.791 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | paracetamol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol | unknown | mismatch |
 
 </details>
 
@@ -230,13 +230,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorvastatin with co-administration of semaglutide. Pharmacology research & perspectives 10(4):e00962 (2022). [doi:10.1002/prp2.962](https://doi.org/10.1002/prp2.962)
 
-**This record:** Pharmacolibrary v26.09, model `Paracetamol_Langeskov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference>
+**This record:** Pharmacolibrary, model `Paracetamol_Langeskov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ParacetamolLangeskov2022reference,
   title  = {{Pharmacolibrary model Paracetamol_Langeskov2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference},
   note   = {Parameters from doi:10.1002/prp2.962},
 }
@@ -255,5 +254,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Langeskov2022_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Langeskov2022_reference%0APaper%3A%20Langeskov_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Langeskov2022_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Langeskov2022_reference%0APaper%3A%20Langeskov_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 07:35 UTC</sub>

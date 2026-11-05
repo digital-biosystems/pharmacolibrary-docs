@@ -184,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kappelhoff BS, Huitema AD, Sankatsing SU, Meenhorst PL, Van Gorp EC, Mulder JW et al. Population pharmacokinetics of indinavir alone and in combination with ritonavir in HIV-1-infected patients. British journal of clinical pharmacology 60(3):276–286 (2005). [doi:10.1111/j.1365-2125.2005.02436.x](https://doi.org/10.1111/j.1365-2125.2005.02436.x)
 
-**This record:** Pharmacolibrary v26.09, model `Indinavir_Kappelhoff2005_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference>
+**This record:** Pharmacolibrary, model `Indinavir_Kappelhoff2005_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference>
 
 ```bibtex
 @misc{pharmacolibrary_IndinavirKappelhoff2005reference,
   title  = {{Pharmacolibrary model Indinavir_Kappelhoff2005_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference},
   note   = {Parameters from doi:10.1111/j.1365-2125.2005.02436.x},
 }
@@ -209,5 +208,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindinavir%5D%20Indinavir_Kappelhoff2005_reference&body=Drug%3A%20indinavir%0ARecord%3A%20Indinavir_Kappelhoff2005_reference%0APaper%3A%20Kappelhoff_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindinavir%5D%20Indinavir_Kappelhoff2005_reference&body=Drug%3A%20indinavir%0ARecord%3A%20Indinavir_Kappelhoff2005_reference%0APaper%3A%20Kappelhoff_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indinavir/Indinavir_Kappelhoff2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

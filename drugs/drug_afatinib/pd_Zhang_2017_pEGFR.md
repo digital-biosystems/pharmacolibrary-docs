@@ -120,13 +120,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Afatinib_Zhang2017_PD_pegfr`. <https://pharmacolibrary.github.io/#/drugs/drug_afatinib/Afatinib_Zhang2017_PD_pegfr>
+**This record:** Pharmacolibrary, model `Afatinib_Zhang2017_PD_pegfr`. <https://pharmacolibrary.github.io/#/drugs/drug_afatinib/Afatinib_Zhang2017_PD_pegfr>
 
 ```bibtex
 @misc{pharmacolibrary_AfatinibZhang2017PDpegfr,
   title  = {{Pharmacolibrary model Afatinib_Zhang2017_PD_pegfr}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_afatinib/Afatinib_Zhang2017_PD_pegfr},
 }
 ```
@@ -140,5 +139,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bafatinib%5D%20pd_Zhang_2017_pEGFR&body=Drug%3A%20afatinib%0ARecord%3A%20pd_Zhang_2017_pEGFR%0APaper%3A%20Zhang_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_afatinib/pd_Zhang_2017_pEGFR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bafatinib%5D%20pd_Zhang_2017_pEGFR&body=Drug%3A%20afatinib%0ARecord%3A%20pd_Zhang_2017_pEGFR%0APaper%3A%20Zhang_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_afatinib/pd_Zhang_2017_pEGFR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [afatinib](drugs/drug_afatinib/)</sub>

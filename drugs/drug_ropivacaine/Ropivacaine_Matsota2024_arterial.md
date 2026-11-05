@@ -200,13 +200,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Matsota P, Karalis V, Saranteas T, Kiospe F, Markantonis SL. Ropivacaine pharmacokinetics in the arterial and venous pools after ultrasound-guided continuous thoracic paravertebral nerve block. Journal of anaesthesiology, clinical pharmacology 40(2):283–292 (2024). [doi:10.4103/joacp.joacp_353_22](https://doi.org/10.4103/joacp.joacp_353_22)
 
-**This record:** Pharmacolibrary v26.09, model `Ropivacaine_Matsota2024_arterial`. <https://pharmacolibrary.github.io/#/drugs/drug_ropivacaine/Ropivacaine_Matsota2024_arterial>
+**This record:** Pharmacolibrary, model `Ropivacaine_Matsota2024_arterial`. <https://pharmacolibrary.github.io/#/drugs/drug_ropivacaine/Ropivacaine_Matsota2024_arterial>
 
 ```bibtex
 @misc{pharmacolibrary_RopivacaineMatsota2024arterial,
   title  = {{Pharmacolibrary model Ropivacaine_Matsota2024_arterial}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ropivacaine/Ropivacaine_Matsota2024_arterial},
   note   = {Parameters from doi:10.4103/joacp.joacp_353_22},
 }
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bropivacaine%5D%20Ropivacaine_Matsota2024_arterial&body=Drug%3A%20ropivacaine%0ARecord%3A%20Ropivacaine_Matsota2024_arterial%0APaper%3A%20Matsota_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ropivacaine/Ropivacaine_Matsota2024_arterial%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bropivacaine%5D%20Ropivacaine_Matsota2024_arterial&body=Drug%3A%20ropivacaine%0ARecord%3A%20Ropivacaine_Matsota2024_arterial%0APaper%3A%20Matsota_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ropivacaine/Ropivacaine_Matsota2024_arterial%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:39 UTC</sub>

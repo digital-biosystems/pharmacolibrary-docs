@@ -159,13 +159,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Karanam A, Pennell PB, Meador KJ, Long Y, Birnbaum AK. Characterization of lamotrigine disposition changes during and after pregnancy in women with epilepsy. Pharmacotherapy 45(1):33–42 (2025). [doi:10.1002/phar.4640](https://doi.org/10.1002/phar.4640)
 
-**This record:** Pharmacolibrary v26.09, model `Lamotrigine_Karanam2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference>
+**This record:** Pharmacolibrary, model `Lamotrigine_Karanam2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LamotrigineKaranam2025reference,
   title  = {{Pharmacolibrary model Lamotrigine_Karanam2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference},
   note   = {Parameters from doi:10.1002/phar.4640},
 }
@@ -180,5 +179,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamotrigine%5D%20Lamotrigine_Karanam2025_reference&body=Drug%3A%20lamotrigine%0ARecord%3A%20Lamotrigine_Karanam2025_reference%0APaper%3A%20Karanam_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamotrigine%5D%20Lamotrigine_Karanam2025_reference&body=Drug%3A%20lamotrigine%0ARecord%3A%20Lamotrigine_Karanam2025_reference%0APaper%3A%20Karanam_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:02 UTC</sub>

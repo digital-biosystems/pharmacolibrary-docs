@@ -186,13 +186,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Müller C, Kremer W, Harlfinger S, Doroshyenko O, Jetter A, Hering F et al. Pharmacokinetics of piritramide in newborns, infants and young children in intensive care units. European journal of pediatrics 165(4):229–239 (2006). [doi:10.1007/s00431-005-0021-z](https://doi.org/10.1007/s00431-005-0021-z)
 
-**This record:** Pharmacolibrary v26.09, model `Piritramide_Mller2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_piritramide/Piritramide_Mller2006_reference>
+**This record:** Pharmacolibrary, model `Piritramide_Mller2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_piritramide/Piritramide_Mller2006_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PiritramideMller2006reference,
   title  = {{Pharmacolibrary model Piritramide_Mller2006_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_piritramide/Piritramide_Mller2006_reference},
   note   = {Parameters from doi:10.1007/s00431-005-0021-z},
 }
@@ -211,5 +210,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiritramide%5D%20Piritramide_Mller2006_reference&body=Drug%3A%20piritramide%0ARecord%3A%20Piritramide_Mller2006_reference%0APaper%3A%20M%C3%BCller_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piritramide/Piritramide_Mller2006_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiritramide%5D%20Piritramide_Mller2006_reference&body=Drug%3A%20piritramide%0ARecord%3A%20Piritramide_Mller2006_reference%0APaper%3A%20M%C3%BCller_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piritramide/Piritramide_Mller2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 05:39 UTC</sub>

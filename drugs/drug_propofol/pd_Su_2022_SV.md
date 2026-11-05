@@ -101,13 +101,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Propofol_Su2022_PD_sv`. <https://pharmacolibrary.github.io/#/drugs/drug_propofol/Propofol_Su2022_PD_sv>
+**This record:** Pharmacolibrary, model `Propofol_Su2022_PD_sv`. <https://pharmacolibrary.github.io/#/drugs/drug_propofol/Propofol_Su2022_PD_sv>
 
 ```bibtex
 @misc{pharmacolibrary_PropofolSu2022PDsv,
   title  = {{Pharmacolibrary model Propofol_Su2022_PD_sv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_propofol/Propofol_Su2022_PD_sv},
 }
 ```
@@ -121,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropofol%5D%20pd_Su_2022_SV&body=Drug%3A%20propofol%0ARecord%3A%20pd_Su_2022_SV%0APaper%3A%20Su_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propofol/pd_Su_2022_SV%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropofol%5D%20pd_Su_2022_SV&body=Drug%3A%20propofol%0ARecord%3A%20pd_Su_2022_SV%0APaper%3A%20Su_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propofol/pd_Su_2022_SV%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [propofol](drugs/drug_propofol/)</sub>

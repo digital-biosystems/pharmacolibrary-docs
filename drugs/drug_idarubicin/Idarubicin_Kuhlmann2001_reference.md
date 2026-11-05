@@ -189,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in the rat. European journal of drug metabolism and pharmacokinetics 26(4):215–219 (2001). [doi:10.1007/BF03226374](https://doi.org/10.1007/BF03226374)
 
-**This record:** Pharmacolibrary v26.09, model `Idarubicin_Kuhlmann2001_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference>
+**This record:** Pharmacolibrary, model `Idarubicin_Kuhlmann2001_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference>
 
 ```bibtex
 @misc{pharmacolibrary_IdarubicinKuhlmann2001reference,
   title  = {{Pharmacolibrary model Idarubicin_Kuhlmann2001_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference},
   note   = {Parameters from doi:10.1007/BF03226374},
 }
@@ -214,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Kuhlmann2001_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Kuhlmann2001_reference%0APaper%3A%20Kuhlmann_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 18:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Kuhlmann2001_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Kuhlmann2001_reference%0APaper%3A%20Kuhlmann_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 18:01 UTC</sub>

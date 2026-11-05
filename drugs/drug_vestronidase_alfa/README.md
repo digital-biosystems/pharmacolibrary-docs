@@ -20,15 +20,6 @@ Vestronidase alfa is an enzyme replacement therapy used to treat mucopolysacchar
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.99 | L/h | 1.99 L/h | adult and pediatric subjects with MPS VII | &gt;=23 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) |
-| V | V1 | 1.49 | L | 1.49 L | adult and pediatric subjects with MPS VII | &gt;=23 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -83,5 +74,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvestronidase_alfa%5D&body=Drug%3A%20vestronidase_alfa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vestronidase_alfa/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 12:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvestronidase_alfa%5D&body=Drug%3A%20vestronidase_alfa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vestronidase_alfa/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 12:12 UTC</sub>

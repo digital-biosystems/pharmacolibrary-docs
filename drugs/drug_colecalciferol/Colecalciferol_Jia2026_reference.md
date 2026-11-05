@@ -183,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jia M, Chai Y, Gao Y, Jing C, Zhu K, Zhu T et al. Population pharmacokinetics of rivaroxaban after transjugular intrahepatic portosystemic shunt. European journal of clinical pharmacology 82(4):102 (2026). [doi:10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6)
 
-**This record:** Pharmacolibrary v26.09, model `Colecalciferol_Jia2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference>
+**This record:** Pharmacolibrary, model `Colecalciferol_Jia2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ColecalciferolJia2026reference,
   title  = {{Pharmacolibrary model Colecalciferol_Jia2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference},
   note   = {Parameters from doi:10.1007/s00228-026-04034-6},
 }
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcolecalciferol%5D%20Colecalciferol_Jia2026_reference&body=Drug%3A%20colecalciferol%0ARecord%3A%20Colecalciferol_Jia2026_reference%0APaper%3A%20Jia_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 07:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcolecalciferol%5D%20Colecalciferol_Jia2026_reference&body=Drug%3A%20colecalciferol%0ARecord%3A%20Colecalciferol_Jia2026_reference%0APaper%3A%20Jia_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 07:37 UTC</sub>

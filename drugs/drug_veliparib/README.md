@@ -32,17 +32,9 @@ Veliparib is a PARP inhibitor being studied as an anticancer treatment. It remai
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 19.96 | L/h | 479 L/day | adult subjects with ovarian cancer, breast cancer, or other solid tumors | 1470 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Stodtmann_2021_reference](drugs/drug_veliparib/Veliparib_Stodtmann2021_reference.md) |
-| CL | CL/F | 20.9 | L/h | 20.9 L/h | patients with non-hematologic malignancies | 325 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2014_reference](drugs/drug_veliparib/Veliparib_Salem2014_reference.md) |
-| V | V/F | 152 | L | 152 L | adult subjects with ovarian cancer, breast cancer, or other solid tumors | 1470 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Stodtmann_2021_reference](drugs/drug_veliparib/Veliparib_Stodtmann2021_reference.md) |
-| V | V/F | 173 | L | 173 L | patients with non-hematologic malignancies | 325 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2014_reference](drugs/drug_veliparib/Veliparib_Salem2014_reference.md) |
-| ka | kabs | — | 1/h | 59.4 | adult subjects with ovarian cancer, breast cancer, or other solid tumors | 1470 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Stodtmann_2021_reference](drugs/drug_veliparib/Veliparib_Stodtmann2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Stodtmann_2021 · CL/F</text><circle cx="295.0" cy="30.0" r="4" fill="#ef6c00"><title>Stodtmann_2021 · CL/F: 19.96 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Salem_2014 · CL/F</text><circle cx="302.1" cy="46.0" r="4" fill="#ef6c00"><title>Salem_2014 · CL/F: 20.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Stodtmann_2021 · V/F</text><circle cx="253.6" cy="30.0" r="4" fill="#ef6c00"><title>Stodtmann_2021 · V/F: 152 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Salem_2014 · V/F</text><circle cx="273.3" cy="46.0" r="4" fill="#ef6c00"><title>Salem_2014 · V/F: 173 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -120,5 +112,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bveliparib%5D&body=Drug%3A%20veliparib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_veliparib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 21:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bveliparib%5D&body=Drug%3A%20veliparib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_veliparib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:50 UTC</sub>

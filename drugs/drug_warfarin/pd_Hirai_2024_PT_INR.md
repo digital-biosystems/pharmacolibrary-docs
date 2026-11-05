@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Hirai_2024 \u00b7 PD prothrombin time-international normalized ratio&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# prothrombin time-international normalized ratio — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# prothrombin time-international normalized ratio — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 **As extracted:** Warfarin dose rate (the dose) drives prothrombin time-international normalized ratio: direct sigmoid Emax (Hill) effect.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > The model describes warfarin dose rate (mg/h) driving PT-INR via a sigmoid Emax effect (Emax = 1.0, γ = 1.18, EDR50 = 1.06 mg/h) that inhibits the production of the response, with the effect linked to the observed response through two transit compartments (MTT1 = 28.2 h, MTT2 - MTT1 = 88.7 h).
 >
@@ -35,11 +35,13 @@ Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of c
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q323` ·  | 1.0 |  | direction | Hirai_2024:pdv3 |
-| PD (effect) | γ | `Q325` ·  | 1.18 |  | llm | Hirai_2024:pdv3 |
-| PD (effect) | EDR 50 | `Q322` ·  | 1.06 | mg/h | llm | Hirai_2024:pdv3 |
-| PD (effect) | MTT 1 | `Q338` ·  | 28.2 | h | llm | Hirai_2024:pdv3 |
-| PD (effect) | MTT 2 - MTT 1 | `Q338` ·  | 88.7 | h | llm | Hirai_2024:pdv3 |
+| PD (effect) | Emax | `Q323` ·  | 1.0 |  | direction | Hirai_2024:pdv3 |
+| PD (effect) | gamma | `Q325` ·  | 1.18 |  | llm | Hirai_2024:pdv3 |
+| PD (effect) | EDR50 | `Q322` ·  | 1.06 | mg/h | llm | Hirai_2024:pdv3 |
+| — | MTT1 | `Q100` ·  | 28.2 | h | nil | Hirai_2024:pdv3 |
+| — | MTT2 - MTT1 | `Q100` ·  | 88.7 | h | nil | Hirai_2024:pdv3 |
+| variability | ωEDR50 | `Q312` ·  | 0.476 |  | llm | Hirai_2024:pdv3 |
+| variability | σ | `Q315` ·  | 0.263 |  | llm | Hirai_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,58 +49,23 @@ Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of c
 </details>
 
 
-## Exposure-response model
-
-`Warfarin_Hirai2024_PD_pt_inr` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | -1 | — |
-| EC50 | 1.06 mg/h | 2.944e-10 kg/s |
-| gamma | 1.18 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.5, `at_inf` = -1
-
-Deviations:
-
-- `defaulted_parameters` — E0
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | warfarin | warfarin dose rate | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | 1.06 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | indirect_response_i | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100].value` | 88.7 | value | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | value | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q322]` | 1.06 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 1.0 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q338]` | 88.7 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 1.0 | value | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 1.18 | value | mismatch |
 
 </details>
 
@@ -114,58 +81,22 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_modelica.zip" download>Warfarin_Hirai2024_PD_pt_inr_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_fmi.zip" download>Warfarin_Hirai2024_PD_pt_inr_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_matlab.zip" download>Warfarin_Hirai2024_PD_pt_inr_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_sbml.zip" download>Warfarin_Hirai2024_PD_pt_inr_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_cellml.zip" download>Warfarin_Hirai2024_PD_pt_inr_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 0 |  |
-| input | model | `EC50` | 2.944e-10 |  |
-| input | model | `Emax` | -1 |  |
-| input | model | `exposure_per_s` | 2.778e-10 |  |
-| input | model | `gamma` | 1.18 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary v26.09, model `Warfarin_Hirai2024_PD_pt_inr`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr>
-
-```bibtex
-@misc{pharmacolibrary_WarfarinHirai2024PDptinr,
-  title  = {{Pharmacolibrary model Warfarin_Hirai2024_PD_pt_inr}},
-  author = {{Pharmacolibrary}},
-  version = {v26.09},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_warfarin/Warfarin_Hirai2024_PD_pt_inr/Warfarin_Hirai2024_PD_pt_inr_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Warfarin_Hirai2024_PD_pt_inr_params.json` · controls `Warfarin_Hirai2024_PD_pt_inr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20pd_Hirai_2024_PT_INR&body=Drug%3A%20warfarin%0ARecord%3A%20pd_Hirai_2024_PT_INR%0APaper%3A%20Hirai_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/pd_Hirai_2024_PT_INR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20pd_Hirai_2024_PT_INR&body=Drug%3A%20warfarin%0ARecord%3A%20pd_Hirai_2024_PT_INR%0APaper%3A%20Hirai_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/pd_Hirai_2024_PT_INR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [warfarin](drugs/drug_warfarin/)</sub>

@@ -33,18 +33,9 @@ Primaquine is an antimalarial drug used to treat malaria, including Plasmodium v
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 10.34 | L/h | 10.34 L/h | healthy volunteers and patients with hepatic or renal dysfunction | 53 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sridharan_2019_reference](drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md) |
-| CL | CL/F | 23.1 | L/h | 23.1 L/h | healthy adult volunteers | 49 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chairat_2018_reference](drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) |
-| V | V | 11.9 | L | 11.9 L | healthy volunteers and patients with hepatic or renal dysfunction | 53 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sridharan_2019_reference](drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md) |
-| V | V/F | 22.3 | L | 22.3 L | healthy adult volunteers | 49 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chairat_2018_reference](drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) |
-| ka | kabs | 18.08 | 1/h | 18.08 1/h | healthy volunteers and patients with hepatic or renal dysfunction | 53 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sridharan_2019_reference](drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md) |
-| F | Fab | 1 |  | 100 | healthy adult volunteers | 49 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chairat_2018_reference](drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sridharan_2019 · CL</text><circle cx="195.1" cy="30.0" r="4" fill="#ef6c00"><title>Sridharan_2019 · CL: 10.34 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chairat_2018 · CL/F</text><circle cx="317.3" cy="46.0" r="4" fill="#ef6c00"><title>Chairat_2018 · CL/F: 23.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sridharan_2019 · V</text><circle cx="216.4" cy="30.0" r="4" fill="#ef6c00"><title>Sridharan_2019 · V: 11.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chairat_2018 · V/F</text><circle cx="311.9" cy="46.0" r="4" fill="#ef6c00"><title>Chairat_2018 · V/F: 22.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -126,5 +117,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprimaquine%5D&body=Drug%3A%20primaquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_primaquine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprimaquine%5D&body=Drug%3A%20primaquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_primaquine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:50 UTC</sub>

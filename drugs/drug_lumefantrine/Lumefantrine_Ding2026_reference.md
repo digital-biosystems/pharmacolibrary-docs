@@ -357,13 +357,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Population pharmacokinetics of artemether-lumefantrine plus amodiaquine in patients with uncomplicated Plasmodium falciparum malaria. British journal of clinical pharmacology 92(2):589–605 (2026). [doi:10.1002/bcp.70301](https://doi.org/10.1002/bcp.70301)
 
-**This record:** Pharmacolibrary v26.09, model `Lumefantrine_Ding2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference>
+**This record:** Pharmacolibrary, model `Lumefantrine_Ding2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LumefantrineDing2026reference,
   title  = {{Pharmacolibrary model Lumefantrine_Ding2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference},
   note   = {Parameters from doi:10.1002/bcp.70301},
 }
@@ -378,5 +377,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumefantrine%5D%20Lumefantrine_Ding2026_reference&body=Drug%3A%20lumefantrine%0ARecord%3A%20Lumefantrine_Ding2026_reference%0APaper%3A%20Ding_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumefantrine%5D%20Lumefantrine_Ding2026_reference&body=Drug%3A%20lumefantrine%0ARecord%3A%20Lumefantrine_Ding2026_reference%0APaper%3A%20Ding_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumefantrine/Lumefantrine_Ding2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:11 UTC</sub>

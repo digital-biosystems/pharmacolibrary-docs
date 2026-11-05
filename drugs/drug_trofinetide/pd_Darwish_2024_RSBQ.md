@@ -107,13 +107,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Trofinetide_Darwish2024_PD_rsbq`. <https://pharmacolibrary.github.io/#/drugs/drug_trofinetide/Trofinetide_Darwish2024_PD_rsbq>
+**This record:** Pharmacolibrary, model `Trofinetide_Darwish2024_PD_rsbq`. <https://pharmacolibrary.github.io/#/drugs/drug_trofinetide/Trofinetide_Darwish2024_PD_rsbq>
 
 ```bibtex
 @misc{pharmacolibrary_TrofinetideDarwish2024PDrsbq,
   title  = {{Pharmacolibrary model Trofinetide_Darwish2024_PD_rsbq}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_trofinetide/Trofinetide_Darwish2024_PD_rsbq},
 }
 ```
@@ -127,5 +126,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrofinetide%5D%20pd_Darwish_2024_RSBQ&body=Drug%3A%20trofinetide%0ARecord%3A%20pd_Darwish_2024_RSBQ%0APaper%3A%20Darwish_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trofinetide/pd_Darwish_2024_RSBQ%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrofinetide%5D%20pd_Darwish_2024_RSBQ&body=Drug%3A%20trofinetide%0ARecord%3A%20pd_Darwish_2024_RSBQ%0APaper%3A%20Darwish_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trofinetide/pd_Darwish_2024_RSBQ%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [trofinetide](drugs/drug_trofinetide/)</sub>

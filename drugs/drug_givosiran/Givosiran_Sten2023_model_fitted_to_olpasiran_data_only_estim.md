@@ -186,13 +186,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acetylgalactosamine-Conjugated Small-Interfering Ribonucleic Acids (GalNAc-Conjugated siRNAs). Clinical pharmacokinetics 62(12):1661-1672 (2023). [doi:10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
 
-**This record:** Pharmacolibrary v26.09, model `Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`. <https://pharmacolibrary.github.io/#/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim>
+**This record:** Pharmacolibrary, model `Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`. <https://pharmacolibrary.github.io/#/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim>
 
 ```bibtex
 @misc{pharmacolibrary_GivosiranSten2023modelfittedtoolpasirandataonlyestim,
   title  = {{Pharmacolibrary model Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim},
   note   = {Parameters from doi:10.1007/s40262-023-01314-7},
 }
@@ -207,5 +206,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgivosiran%5D%20Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim&body=Drug%3A%20givosiran%0ARecord%3A%20Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim%0APaper%3A%20Sten_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 10:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgivosiran%5D%20Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim&body=Drug%3A%20givosiran%0ARecord%3A%20Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim%0APaper%3A%20Sten_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 10:38 UTC</sub>

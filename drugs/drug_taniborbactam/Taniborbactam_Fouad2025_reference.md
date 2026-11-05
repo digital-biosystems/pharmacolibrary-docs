@@ -9,7 +9,7 @@
 
 > The effluent flow rate parameter is missing a defined link to a model compartment, leaving the system topology incomplete.
 
-<div class="pk-model-meta" hidden drug="Taniborbactam" model-id="Taniborbactam_Fouad2025_reference" status="rejected" stale="false" population="CRRT patients" measured-compound="taniborbactam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Taniborbactam" model-id="Taniborbactam_Fouad2025_reference" status="rejected" stale="false" population="CRRT patients" measured-compound="cefepime, taniborbactam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fouad A, McGrath C, Buyukyanbolu E, Kuti JL. Ex vivo assessment and simulation to guide cefepime-taniborbactam dosing recommendations for patients receiving continuous renal replacement therapy. Antimicrobial agents and chemotherapy 69(6):e0006125 (2025).
@@ -17,19 +17,15 @@ Fouad A, McGrath C, Buyukyanbolu E, Kuti JL. Ex vivo assessment and simulation t
 
 ## Population and dosing
 
-**Population:** patients undergoing continuous renal replacement therapy · condition renal impairment · age group adult · n = 1000.
-
-**Dosing:** 2000 mg, other, multiple, every 8 h.
-
-**Dosed compound ≠ measured compound:** dosed cefepime, taniborbactam, measured taniborbactam.
+**Population:** CRRT patients · condition renal impairment · age group adult · n = 1000.
 
 > **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 0.20).
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -38,8 +34,6 @@ Fouad A, McGrath C, Buyukyanbolu E, Kuti JL. Ex vivo assessment and simulation t
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | Effluent flow rate (L/h)a | Q | 0.79 |  | 0.04 |
-| CL (L/h) | CL | 6.3 | L/h |  |
-| The volume of distribution (Vd) | V | 20.0 | L |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -61,29 +55,27 @@ The record defines an effluent flow rate of 0.79 L/h for taniborbactam in renal 
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| Effluent flow rate (L/h)a | `Q30` · Q | 0.79 |  |  |  |  | 0.04 | llm (0.6) | Fouad_2025_table_2:row2:col1, Fouad_2025_table_2:row2:col2, Fouad_2025_table_2:row7:col1, Fouad_2025_table_2:row7:col2 |
-| CL (L/h) | `Q22` · CL | 6.3 | L/h | 1.75e-06 | m3/s | L/h |  | review_gapfill (0.7) | Asempa_2023:review |
-| The volume of distribution (Vd) | `Q61` · V | 20.0 | L | 0.02 | m3 | L |  | review_gapfill (0.7) | Carcione_2026:review |
+| label (paper) | Q-code · name | value | unit | RSE% | link | source |
+|---|---|---|---|---|---|---|
+| Effluent flow rate (L/h)a | `Q30` · Q | 0.79 |  | 0.04 | llm (0.6) | Fouad_2025_table_2:row2:col1, Fouad_2025_table_2:row2:col2, Fouad_2025_table_2:row7:col1, Fouad_2025_table_2:row7:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'Intercept' → Q344 (logit_intercept, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Fouad_2025_table_2:row1:col1', 'Fouad_2025_table_2:row1:col2', 'Fouad_2025_table_2:row6:col1', 'Fouad_2025_table_2:row6:col2'])
+- dropped unlinked row (NIL): 'Intercept' — extend the ontology if this is a real PK parameter (source ['Fouad_2025_table_2:row1:col1', 'Fouad_2025_table_2:row1:col2', 'Fouad_2025_table_2:row6:col1', 'Fouad_2025_table_2:row6:col2'])
 - dropped unlinked row (NIL): 'Hemofilterb' — extend the ontology if this is a real PK parameter (source ['Fouad_2025_table_2:row3:col1', 'Fouad_2025_table_2:row3:col2', 'Fouad_2025_table_2:row8:col1', 'Fouad_2025_table_2:row8:col2'])
 - dropped unlinked row (NIL): 'CRRT modec' — extend the ontology if this is a real PK parameter (source ['Fouad_2025_table_2:row4:col1', 'Fouad_2025_table_2:row4:col2', 'Fouad_2025_table_2:row9:col1', 'Fouad_2025_table_2:row9:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=taniborbactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
+- implicit units: 'Effluent flow rate (L/h)a' — the LLM proposed '1/h', whose dimension does not fit Q30; left unset
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cefepime, taniborbactam
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Asempa_2023's review values (primary lacked it)
-- gap-filled Q61 (V) from Carcione_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- molar mass: none found for 'cefepime, taniborbactam' — its concentrations stay mass-only
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -99,14 +91,9 @@ The record defines an effluent flow rate of 0.79 L/h for taniborbactam in renal 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Asempa_2023:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Carcione_2026:review'] |
+| C0b_disposition_core | fail |  |  |  |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['Fouad_2025_table_2:row2:col1', 'Fouad_2025_table_2:row2:col2', 'Fouad_2025_table_2:row7:col1', 'Fouad_2025_table_2:row7:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.3 | ['Asempa_2023:review'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.3 L/h | ['Asempa_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 20 L | ['Carcione_2026:review'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -129,5 +116,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btaniborbactam%5D%20Taniborbactam_Fouad2025_reference&body=Drug%3A%20taniborbactam%0ARecord%3A%20Taniborbactam_Fouad2025_reference%0APaper%3A%20Fouad_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_taniborbactam/Taniborbactam_Fouad2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btaniborbactam%5D%20Taniborbactam_Fouad2025_reference&body=Drug%3A%20taniborbactam%0ARecord%3A%20Taniborbactam_Fouad2025_reference%0APaper%3A%20Fouad_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_taniborbactam/Taniborbactam_Fouad2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 10:29 UTC</sub>

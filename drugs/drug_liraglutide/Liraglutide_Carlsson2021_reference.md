@@ -227,13 +227,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Carlsson Petri KC, Hale PM, Hesse D, Rathor N, Mastrandrea LD. Liraglutide pharmacokinetics and exposure-response in adolescents with obesity. Pediatric obesity 16(10):e12799 (2021). [doi:10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799)
 
-**This record:** Pharmacolibrary v26.09, model `Liraglutide_Carlsson2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference>
+**This record:** Pharmacolibrary, model `Liraglutide_Carlsson2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LiraglutideCarlsson2021reference,
   title  = {{Pharmacolibrary model Liraglutide_Carlsson2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference},
   note   = {Parameters from doi:10.1111/ijpo.12799},
 }
@@ -252,5 +251,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bliraglutide%5D%20Liraglutide_Carlsson2021_reference&body=Drug%3A%20liraglutide%0ARecord%3A%20Liraglutide_Carlsson2021_reference%0APaper%3A%20Carlsson_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bliraglutide%5D%20Liraglutide_Carlsson2021_reference&body=Drug%3A%20liraglutide%0ARecord%3A%20Liraglutide_Carlsson2021_reference%0APaper%3A%20Carlsson_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 09:00 UTC</sub>

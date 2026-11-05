@@ -122,13 +122,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Mometasone_Zvidzayi2021_PD_auec`. <https://pharmacolibrary.github.io/#/drugs/drug_mometasone/Mometasone_Zvidzayi2021_PD_auec>
+**This record:** Pharmacolibrary, model `Mometasone_Zvidzayi2021_PD_auec`. <https://pharmacolibrary.github.io/#/drugs/drug_mometasone/Mometasone_Zvidzayi2021_PD_auec>
 
 ```bibtex
 @misc{pharmacolibrary_MometasoneZvidzayi2021PDauec,
   title  = {{Pharmacolibrary model Mometasone_Zvidzayi2021_PD_auec}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_mometasone/Mometasone_Zvidzayi2021_PD_auec},
 }
 ```
@@ -142,5 +141,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmometasone%5D%20pd_Zvidzayi_2021_AUEC&body=Drug%3A%20mometasone%0ARecord%3A%20pd_Zvidzayi_2021_AUEC%0APaper%3A%20Zvidzayi_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmometasone%5D%20pd_Zvidzayi_2021_AUEC&body=Drug%3A%20mometasone%0ARecord%3A%20pd_Zvidzayi_2021_AUEC%0APaper%3A%20Zvidzayi_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mometasone/pd_Zvidzayi_2021_AUEC%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [mometasone](drugs/drug_mometasone/)</sub>

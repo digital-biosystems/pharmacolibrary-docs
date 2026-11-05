@@ -41,16 +41,6 @@ Tamsulosin is an alpha-blocker used to treat prostate problems such as enlarged 
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 2.28 | L/h | 2.28 l h -1 | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
-| V | V/F | 37.5 | L | 37.5 l | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
-| ka | kabs | 0.368 | 1/h | 0.368 h -1 | paediatric patients with neuropathic and non-neuropathic bladder | ,   "condition": "neuropathic and non-neuropathic bladder",   "species": "human",   "compounds": [     {       "name": "tamsulosin",       "role": "parent",       "dosed": "yes",       "measured": "yes",       "has_parameters": "yes"     }   ],   "links": [] | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -124,5 +114,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamsulosin%5D&body=Drug%3A%20tamsulosin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamsulosin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamsulosin%5D&body=Drug%3A%20tamsulosin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamsulosin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:17 UTC</sub>

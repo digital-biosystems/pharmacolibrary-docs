@@ -141,13 +141,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Doxycycline_Zhang2016_PD_kill_rate`. <https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Zhang2016_PD_kill_rate>
+**This record:** Pharmacolibrary, model `Doxycycline_Zhang2016_PD_kill_rate`. <https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Zhang2016_PD_kill_rate>
 
 ```bibtex
 @misc{pharmacolibrary_DoxycyclineZhang2016PDkillrate,
   title  = {{Pharmacolibrary model Doxycycline_Zhang2016_PD_kill_rate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Zhang2016_PD_kill_rate},
 }
 ```
@@ -163,5 +162,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxycycline%5D%20pd_Zhang_2016_kill_rate&body=Drug%3A%20doxycycline%0ARecord%3A%20pd_Zhang_2016_kill_rate%0APaper%3A%20Zhang_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxycycline/pd_Zhang_2016_kill_rate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxycycline%5D%20pd_Zhang_2016_kill_rate&body=Drug%3A%20doxycycline%0ARecord%3A%20pd_Zhang_2016_kill_rate%0APaper%3A%20Zhang_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxycycline/pd_Zhang_2016_kill_rate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [doxycycline](drugs/drug_doxycycline/)</sub>

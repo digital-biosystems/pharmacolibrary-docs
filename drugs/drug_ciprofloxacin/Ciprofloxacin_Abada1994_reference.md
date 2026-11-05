@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Abad\u00eda_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Abada1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> This paper's disposition core is incomplete; ae  has no unit.
+> This record was reviewed on 2026-10-22 15:32 UTC (Needs review), but the paper was screened again on 2026-11-03 16:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; ae  has no unit.
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abada1994_reference" status="needs_review" stale="false" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abada1994_reference" status="needs_review" stale="true" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abadía AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Saez MP, Bregante MA. Disposition of ciprofloxacin following intravenous administration in dogs. Journal of veterinary pharmacology and therapeutics 17(5):384–388 (1994).
@@ -25,7 +25,7 @@ Abadía AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Saez MP, Bregante MA. Dispo
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -36,12 +36,13 @@ Abadía AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Saez MP, Bregante MA. Dispo
 | Vd(area) | V | 3 | l/kg |
 | t1/2(lambda 1) | t1/2z | 3 | min |
 | unchanged drug eliminated in urine | Ae | 37 | % of the administered dose |
-| CL | CL | 21.3 | L/h |
-| Ka (h−1) | kabs | 1.0 | h−1 |
+| CL | CL | 12.9 | L/h |
+| Ka | kabs | 1.9 | h−1 |
+| t LAG | tlag | 0.33 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,8 +67,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Vd(area) | `Q61` · V | 3 | l/kg | 0.21 | m3 | l/kg | exact (1) | Abadía_1994:abstract |
 | t1/2(lambda 1) | `Q57` · t1/2z | 3 | min | 180 | s | min | exact (1) | Abadía_1994:abstract |
 | unchanged drug eliminated in urine | `Q91` · Ae | 37 | % of the administered dose |  |  | %·oftheadministereddose | llm (0.6) | Abadía_1994:abstract |
-| CL | `Q22` · CL | 21.3 | L/h | 5.917e-06 | m3/s | L/h | review_gapfill (0.7) | Cattrall_2019:review |
-| Ka (h−1) | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Alonso_2021:review |
+| CL | `Q22` · CL | 12.9 | L/h | 3.583e-06 | m3/s | L/h | review_gapfill (0.7) | Alihodzic_2022:review |
+| Ka | `Q49` · kabs | 1.9 | h−1 | 0.0005278 | 1/s | 1/h | review_gapfill (0.7) | Cattrall_2019:review |
+| t LAG | `Q83` · tlag | 0.33 | h | 1188 | s | h | review_gapfill (0.7) | Papich_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,10 +86,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q22 (CL) from Alihodzic_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Alonso_2021's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Papich_2012's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Abadía_1994_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -133,14 +136,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cattrall_2019:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Alonso_2021:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Alihodzic_2022:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cattrall_2019:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Abadía_1994:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Abadía_1994:abstract'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Papich_2012:review'] |
 | C5_unit_missing_Q91 | fail | [mass] | % of the administered dose | ['Abadía_1994:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 21.3 | ['Cattrall_2019:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.9 | ['Alihodzic_2022:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 21.3 L/h | ['Cattrall_2019:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 12.9 L/h | ['Alihodzic_2022:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 210 L | ['Abadía_1994:abstract'] |
 
 <details class="legend">
@@ -171,13 +175,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Abadía AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Saez MP, Bregante MA. Disposition of ciprofloxacin following intravenous administration in dogs. Journal of veterinary pharmacology and therapeutics 17(5):384–388 (1994). [doi:10.1111/j.1365-2885.1994.tb00264.x](https://doi.org/10.1111/j.1365-2885.1994.tb00264.x)
 
-**This record:** Pharmacolibrary v26.09, model `Ciprofloxacin_Abada1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Abada1994_reference>
+**This record:** Pharmacolibrary, model `Ciprofloxacin_Abada1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Abada1994_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CiprofloxacinAbada1994reference,
   title  = {{Pharmacolibrary model Ciprofloxacin_Abada1994_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Abada1994_reference},
   note   = {Parameters from doi:10.1111/j.1365-2885.1994.tb00264.x},
 }
@@ -192,5 +195,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Abada1994_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Abada1994_reference%0APaper%3A%20Abad%C3%ADa_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Abada1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Abada1994_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Abada1994_reference%0APaper%3A%20Abad%C3%ADa_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Abada1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 16:52 UTC</sub>

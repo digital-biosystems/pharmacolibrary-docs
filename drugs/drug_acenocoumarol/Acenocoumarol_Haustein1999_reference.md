@@ -175,13 +175,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Haustein KO. Pharmacokinetic and pharmacodynamic properties of oral anticoagulants, especially phenprocoumon. Seminars in thrombosis and hemostasis 25(1):5–11 (1999). [doi:10.1055/s-2007-996417](https://doi.org/10.1055/s-2007-996417)
 
-**This record:** Pharmacolibrary v26.09, model `Acenocoumarol_Haustein1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference>
+**This record:** Pharmacolibrary, model `Acenocoumarol_Haustein1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AcenocoumarolHaustein1999reference,
   title  = {{Pharmacolibrary model Acenocoumarol_Haustein1999_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference},
   note   = {Parameters from doi:10.1055/s-2007-996417},
 }
@@ -200,5 +199,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacenocoumarol%5D%20Acenocoumarol_Haustein1999_reference&body=Drug%3A%20acenocoumarol%0ARecord%3A%20Acenocoumarol_Haustein1999_reference%0APaper%3A%20Haustein_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-06 16:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacenocoumarol%5D%20Acenocoumarol_Haustein1999_reference&body=Drug%3A%20acenocoumarol%0ARecord%3A%20Acenocoumarol_Haustein1999_reference%0APaper%3A%20Haustein_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-06 16:15 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Ding_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cilazapril — `Cilazapril_Ding2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This record was reviewed on 2026-11-03 07:57 UTC (Needs review), but the paper was screened again on 2026-11-03 11:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Ding2000_reference" status="needs_review" stale="false" population="Chinese and Caucasian subjects" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Ding2000_reference" status="needs_review" stale="true" population="Chinese and Caucasian subjects" measured-compound="" parameterization="" topology=""></div>
 
 ## Citation
 Ding PY, Hu OY, Pool PE, Liao W. Does Chinese ethnicity affect the pharmacokinetics and pharmacodynamics of angiotensin-converting enzyme inhibitors?. Journal of human hypertension 14(3):163–170 (2000).
@@ -17,26 +17,22 @@ Ding PY, Hu OY, Pool PE, Liao W. Does Chinese ethnicity affect the pharmacokinet
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** Chinese and Caucasian subjects.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Cilazaprilat 1 Chinese Single dose 28 2.5 mg CL c | CL | 270.0 | mL/kg/h |
-| V (derived from CL·t½/ln2) | V | 51.8072 | L |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,25 +40,17 @@ Ding PY, Hu OY, Pool PE, Liao W. Does Chinese ethnicity affect the pharmacokinet
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
 
-### All parameter columns
+**The clearance plausibility check could not be computed.**
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| Cilazaprilat 1 Chinese Single dose 28 2.5 mg CL c | `Q22` · CL | 270.0 | mL/kg/h | 5.25e-06 | m3/s | L/h | review (0.7) | Ding_2000:review |
-| V (derived from CL·t½/ln2) | `Q61` · V | 51.8072 | L | 0.05181 | m3 | L | review (0.7) | Ding_2000:review |
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — cilazapril: CL 270 mL/kg/h, V 51.8 L.
 
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
-**Interpretation flags:**
-- built from REVIEW reference values (Ding_2000) — secondary source
-- central volume derived from CL·t½/ln2
+_None recorded._
 
 ## Validation
 
@@ -112,4 +100,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Ding2000_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Ding2000_reference%0APaper%3A%20Ding_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Ding2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:21 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 11:08 UTC</sub>

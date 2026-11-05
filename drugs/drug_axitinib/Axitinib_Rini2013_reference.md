@@ -189,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Rini BI, Garrett M, Poland B, Dutcher JP, Rixe O, Wilding G et al. Axitinib in metastatic renal cell carcinoma: results of a pharmacokinetic and pharmacodynamic analysis. Journal of clinical pharmacology 53(5):491–504 (2013). [doi:10.1002/jcph.73](https://doi.org/10.1002/jcph.73)
 
-**This record:** Pharmacolibrary v26.09, model `Axitinib_Rini2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Rini2013_reference>
+**This record:** Pharmacolibrary, model `Axitinib_Rini2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Rini2013_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AxitinibRini2013reference,
   title  = {{Pharmacolibrary model Axitinib_Rini2013_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Rini2013_reference},
   note   = {Parameters from doi:10.1002/jcph.73},
 }
@@ -214,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20Axitinib_Rini2013_reference&body=Drug%3A%20axitinib%0ARecord%3A%20Axitinib_Rini2013_reference%0APaper%3A%20Rini_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/Axitinib_Rini2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 21:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20Axitinib_Rini2013_reference&body=Drug%3A%20axitinib%0ARecord%3A%20Axitinib_Rini2013_reference%0APaper%3A%20Rini_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/Axitinib_Rini2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 21:35 UTC</sub>

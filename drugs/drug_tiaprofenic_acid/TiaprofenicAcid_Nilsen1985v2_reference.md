@@ -206,13 +206,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Nilsen OG, Jacobsen G, Walstad RA. Steady state pharmacokinetics of tiaprofenic acid in elderly patients. Arzneimittel-Forschung 35(5):875–879 (1985).
 
-**This record:** Pharmacolibrary v26.09, model `TiaprofenicAcid_Nilsen1985v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference>
+**This record:** Pharmacolibrary, model `TiaprofenicAcid_Nilsen1985v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TiaprofenicAcidNilsen1985v2reference,
   title  = {{Pharmacolibrary model TiaprofenicAcid_Nilsen1985v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference},
 }
 ```
@@ -230,5 +229,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiaprofenic_acid%5D%20TiaprofenicAcid_Nilsen1985v2_reference&body=Drug%3A%20tiaprofenic_acid%0ARecord%3A%20TiaprofenicAcid_Nilsen1985v2_reference%0APaper%3A%20Nilsen_1985_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 01:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiaprofenic_acid%5D%20TiaprofenicAcid_Nilsen1985v2_reference&body=Drug%3A%20tiaprofenic_acid%0ARecord%3A%20TiaprofenicAcid_Nilsen1985v2_reference%0APaper%3A%20Nilsen_1985_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 01:25 UTC</sub>

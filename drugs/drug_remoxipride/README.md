@@ -22,15 +22,6 @@ Remoxipride is an antipsychotic of the benzamide class that was used to treat sc
 |---|---|---|---|---|---|---|
 | remoxipride | parent | 371.269 | C16H23BrN2O3 | DrugBank | [54477](https://pubchem.ncbi.nlm.nih.gov/compound/54477) | Widerlöv_1989 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 8.46 | L/h | 141 ml.min-1 | healthy male volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) |
-| t½ | t1/2z | 3.6 | h | 3.6 h | healthy male volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -116,5 +107,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremoxipride%5D&body=Drug%3A%20remoxipride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remoxipride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 17:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremoxipride%5D&body=Drug%3A%20remoxipride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remoxipride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 17:07 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Forrest_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Forrest1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Bioavailability and lag time were left at library defaults because the paper did not report estimates for ciprofloxacin.
+> This record was reviewed on 2026-10-22 15:32 UTC (Needs review), but the paper was screened again on 2026-11-03 16:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bioavailability and lag time were left at library defaults because the paper did not report estimates for ciprofloxacin.
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Forrest1993_reference" status="needs_review" stale="false" population="acutely ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Forrest1993_reference" status="rejected" stale="true" population="acutely ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a population pharmacokinetic model and optimal sampling strategies for intravenous ciprofloxacin. Antimicrobial agents and chemotherapy 37(5):1065–1072 (1993).
@@ -17,7 +17,7 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 ## Population and dosing
 
-**Population:** acutely ill patients · condition infection · age group adult · n = 74.
+**Population:** acutely ill patients · condition acutely ill · age group adult · n = ,.
 
 **Dosing:** 200, 300, 400 mg, iv, multiple.
 
@@ -25,27 +25,28 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference.svg" alt="Ciprofloxacin_Forrest1993_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | V1 (liters/kg) | V1 | 0.69 | liters/kg |
 | Vp (liters/kg) | V2 | 0.51 | liters/kg |
-| Vβ (liters/kg) | Vss | 2.0 | liters/kg |
-| CLD (liters/h/1.73 m2) | Q | 38 | L/h |
-| CLT (liters/h/1.73 m2) | CL | 17 | L/h |
-| t1/2β (h)a | t1/2β | 6.5 | h |
-| Ka (h−1) | kabs | 1.0 | h−1 |
+| Vβ (liters/kg) | t1/2β | 2.0 | liters/kg |
+| CLD (liters/h/1.73 m2) | Q | 38 | liters/h/1.73 m2 |
+| CLT (liters/h/1.73 m2) | CL | 17 | liters/h/1.73 m2 |
+| V ss (liters) | Vss | -2.9 | liters |
+| Ka | kabs | 1.9 | h−1 |
+| t LAG | tlag | 0.33 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +60,7 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 The record lists volumes, clearances, and rate constants, but lacks values for the bioavailability fraction and lag time. Consequently, library placeholder values were substituted for these parameters, which are required for a complete simulation. This reliance on defaults instead of paper-specific data caused the record to be held back for review. Extracted — ciprofloxacin: V1 0.69 liters/kg, V2 0.51 liters/kg, Vss 2 liters/kg, Q 38 L/h, CL 17 L/h, t1/2β 6.5 h, kabs 1 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 750 mg group 1 4/2. (h) l/xh)h): this record has 0.79, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t1/2β (h)a: this record has none, the second reading 6.5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -69,11 +70,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|
 | V1 (liters/kg) | `Q63` · V1 | 0.69 | liters/kg | 0.0483 | m3 | l/kg | exact (1) | Forrest_1993_table_2:row0:col1 |
 | Vp (liters/kg) | `Q64` · V2 | 0.51 | liters/kg | 0.0357 | m3 | l/kg | exact (1) | Forrest_1993_table_2:row1:col1 |
-| Vβ (liters/kg) | `Q65` · Vss | 2.0 | liters/kg | 0.14 | m3 | l/kg | llm (0.6) | Forrest_1993_table_2:row2:col1 |
-| CLD (liters/h/1.73 m2) | `Q30` · Q | 38 | L/h | 1.056e-05 | m3/s | L/h | exact (1) | Forrest_1993_table_2:row3:col1 |
-| CLT (liters/h/1.73 m2) | `Q22` · CL | 17 | L/h | 4.722e-06 | m3/s | L/h | exact (1) | Forrest_1993_table_2:row4:col1 |
-| t1/2β (h)a | `Q60` · t1/2β | 6.5 | h | 2.34e+04 | s | h | llm_confirmed (0.6) | Forrest_1993_table_2:row5:col1 |
-| Ka (h−1) | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Alonso_2021:review |
+| Vβ (liters/kg) | `Q60` · t1/2β | 2.0 | liters/kg |  |  | l/kg | llm (0.6) | Forrest_1993_table_2:row2:col1 |
+| CLD (liters/h/1.73 m2) | `Q30` · Q | 38 | liters/h/1.73 m2 |  |  | l/(h·1.73m2) | exact (1) | Forrest_1993_table_2:row3:col1 |
+| CLT (liters/h/1.73 m2) | `Q22` · CL | 17 | liters/h/1.73 m2 |  |  | l/(h·1.73m2) | exact (1) | Forrest_1993_table_2:row4:col1 |
+| V ss (liters) | `Q65` · Vss | -2.9 | liters | -0.0029 | m3 | l | space_fold (0.95) | Forrest_1993_table_3:row3:col1, Forrest_1993_table_3:row3:col2, Forrest_1993_table_3:row3:col3, Forrest_1993_table_3:row3:col4 |
+| Ka | `Q49` · kabs | 1.9 | h−1 | 0.0005278 | 1/s | 1/h | review_gapfill (0.7) | Cattrall_2019:review |
+| t LAG | `Q83` · tlag | 0.33 | h | 1188 | s | h | review_gapfill (0.7) | Papich_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,16 +88,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- column 'gold standard b' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'Vβ (liters/kg)' → Q60 (unit '[length] ** 3' vs ontology '[time]') — route to review
 - unit_dimension_unknown: 'liters/h/1.73 m2' (Q)
 - unit_dimension_unknown: 'liters/h/1.73 m2' (CL)
+- dropped duplicate Q60 ('t1/2β (h)a', value '6.5') — already have one for this compound
+- dropped duplicate Q22 ('CL T (liters/h)', value '0.03') — already have one for this compound
+- dropped duplicate Q30 ('CL D (liters/h)', value '11') — already have one for this compound
+- dropped duplicate Q63 ('V 1 (liters)', value '1.6') — already have one for this compound
+- implicit units: 'CLD (liters/h/1.73 m2)' — the LLM proposed 'L/h/m2', whose dimension does not fit Q30; left unset
+- implicit units: 'CLT (liters/h/1.73 m2)' — the LLM proposed 'L/h/m2', whose dimension does not fit Q22; left unset
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ciprofloxacin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- gap-filled Q49 (kabs) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Papich_2012's review values (primary lacked it)
+- column 'gold standard b' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped duplicate Q22 ('CL T (liters/h)', value '17') — already have one for this compound
 - dropped duplicate Q30 ('CL D (liters/h)', value '35') — already have one for this compound
 - dropped duplicate Q63 ('V 1 (liters)', value '46') — already have one for this compound
 - dropped duplicate Q65 ('V ss (liters)', value '113') — already have one for this compound
 - implicit units: 'CLD (liters/h/1.73 m2)' → L/h (from the popPK convention: "CLD represents intercompartmental clearance. The paper text identifies it as such ('CLD' in Figure 5 caption context imp")
 - implicit units: 'CLT (liters/h/1.73 m2)' → L/h (from the popPK convention: "CLT represents total clearance. The paper text states 'Apparent distribution volumes and clearances were significantly r")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ciprofloxacin
 - gap-filled Q49 (kabs) from Alonso_2021's review values (primary lacked it)
 
 **Extraction notes:**
@@ -105,20 +118,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[750 mg group 1 4/2. (h) l/xh)h)]` | 0.79 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl = 21.3 l/h]` | 21.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka = 1.90 (0.68) h-1 [21] a]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β (h)a]` |  | 6.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v ss]` | -2.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vβ].parameter_id` | Q60 | Q352 | mismatch |
 
 </details>
 
@@ -135,19 +148,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Forrest_1993_table_2:row4:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Forrest_1993_table_2:row3:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Alonso_2021:review'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Forrest_1993_table_2:row5:col1'] |
+| C2_base_sign_Q65 | fail |  | -2.9 |  |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cattrall_2019:review'] |
+| C5_dimension_Q60 | fail | [length] ** 3 | liters/kg | ['Forrest_1993_table_2:row2:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Forrest_1993_table_2:row0:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Forrest_1993_table_2:row1:col1'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Forrest_1993_table_2:row2:col1'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Forrest_1993_table_3:row3:col1', 'Forrest_1993_table_3:row3:col2', 'Forrest_1993_table_3:row3:col3', 'Forrest_1993_table_3:row3:col4'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Papich_2012:review'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | liters/h/1.73 m2 | ['Forrest_1993_table_2:row4:col1'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | liters/h/1.73 m2 | ['Forrest_1993_table_2:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17 | ['Forrest_1993_table_2:row4:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 17 L/h | ['Forrest_1993_table_2:row4:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 48.3 L | ['Forrest_1993_table_2:row0:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 35.7 L | ['Forrest_1993_table_2:row1:col1'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 140 L | ['Forrest_1993_table_2:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -170,64 +183,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_modelica.zip" download>Ciprofloxacin_Forrest1993_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_fmi.zip" download>Ciprofloxacin_Forrest1993_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_matlab.zip" download>Ciprofloxacin_Forrest1993_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_matlab_simbio.zip" download>Ciprofloxacin_Forrest1993_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_sbml.zip" download>Ciprofloxacin_Forrest1993_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference/Ciprofloxacin_Forrest1993_reference_cellml.zip" download>Ciprofloxacin_Forrest1993_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3313 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0002 | kg |
-| input | model | `Cl` | 4.722e-06 | m3/s |
-| input | model | `VdPerKg` | 0.00069 | m3/kg |
-| input | model | `k12` | 0.0002185 | 1/s |
-| input | model | `k21` | 0.0002957 | 1/s |
-| input | model | `ka` | 0.0002778 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a population pharmacokinetic model and optimal sampling strategies for intravenous ciprofloxacin. Antimicrobial agents and chemotherapy 37(5):1065–1072 (1993). [doi:10.1128/AAC.37.5.1065](https://doi.org/10.1128/AAC.37.5.1065)
-
-**This record:** Pharmacolibrary v26.09, model `Ciprofloxacin_Forrest1993_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference>
-
-```bibtex
-@misc{pharmacolibrary_CiprofloxacinForrest1993reference,
-  title  = {{Pharmacolibrary model Ciprofloxacin_Forrest1993_reference}},
-  author = {{Pharmacolibrary}},
-  version = {v26.09},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference},
-  note   = {Parameters from doi:10.1128/AAC.37.5.1065},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -240,5 +198,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Forrest1993_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Forrest1993_reference%0APaper%3A%20Forrest_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Forrest1993_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Forrest1993_reference%0APaper%3A%20Forrest_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 16:52 UTC</sub>

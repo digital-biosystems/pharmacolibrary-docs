@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Olivarez JD, Kreuder AJ, Tatarniuk DM, Wulf LW, Dembek KA, Mochel JP et al. Pharmacokinetics and Tissue Levels of Pantoprazole in Neonatal Calves After Intravenous Administration. Frontiers in veterinary science 7:580735 (2020). [doi:10.3389/fvets.2020.580735](https://doi.org/10.3389/fvets.2020.580735)
 
-**This record:** Pharmacolibrary v26.09, model `Pantoprazole_Olivarez2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference>
+**This record:** Pharmacolibrary, model `Pantoprazole_Olivarez2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PantoprazoleOlivarez2020reference,
   title  = {{Pharmacolibrary model Pantoprazole_Olivarez2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference},
   note   = {Parameters from doi:10.3389/fvets.2020.580735},
 }
@@ -195,5 +194,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantoprazole%5D%20Pantoprazole_Olivarez2020_reference&body=Drug%3A%20pantoprazole%0ARecord%3A%20Pantoprazole_Olivarez2020_reference%0APaper%3A%20Olivarez_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 11:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantoprazole%5D%20Pantoprazole_Olivarez2020_reference&body=Drug%3A%20pantoprazole%0ARecord%3A%20Pantoprazole_Olivarez2020_reference%0APaper%3A%20Olivarez_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 11:00 UTC</sub>

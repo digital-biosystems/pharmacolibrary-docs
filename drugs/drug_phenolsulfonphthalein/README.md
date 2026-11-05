@@ -22,15 +22,6 @@ Phenolsulfonphthalein is a diagnostic agent used in tests of kidney function and
 |---|---|---|---|---|---|---|
 | phenolsulfonphthalein | parent | 354.38 | C19H14O5S | DrugBank | — | Hinchcliff_1987, Nishida_2003 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 29.44 ‡ | L/h | 0.00701 L/min/kg | horse and pony mares | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hinchcliff_1987_reference](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Hinchcliff1987_reference.md) |
-| t½ | t1/2z | 0.2733 | h | 16.4 minutes | horse and pony mares | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hinchcliff_1987_reference](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Hinchcliff1987_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -82,5 +73,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenolsulfonphthalein%5D&body=Drug%3A%20phenolsulfonphthalein%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenolsulfonphthalein/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenolsulfonphthalein%5D&body=Drug%3A%20phenolsulfonphthalein%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenolsulfonphthalein/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:19 UTC</sub>

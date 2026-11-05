@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Roepcke S, Passarell J, Walker H, Flanagan S. Population pharmacokinetic modeling and target attainment analyses of rezafungin for the treatment of candidemia and invasive candidiasis. Antimicrobial agents and chemotherapy 67(12):e0091623 (2023). [doi:10.1128/aac.00916-23](https://doi.org/10.1128/aac.00916-23)
 
-**This record:** Pharmacolibrary v26.09, model `RezafunginAcetate_Roepcke2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference>
+**This record:** Pharmacolibrary, model `RezafunginAcetate_Roepcke2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RezafunginAcetateRoepcke2023reference,
   title  = {{Pharmacolibrary model RezafunginAcetate_Roepcke2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference},
   note   = {Parameters from doi:10.1128/aac.00916-23},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brezafungin_acetate%5D%20RezafunginAcetate_Roepcke2023_reference&body=Drug%3A%20rezafungin_acetate%0ARecord%3A%20RezafunginAcetate_Roepcke2023_reference%0APaper%3A%20Roepcke_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brezafungin_acetate%5D%20RezafunginAcetate_Roepcke2023_reference&body=Drug%3A%20rezafungin_acetate%0ARecord%3A%20RezafunginAcetate_Roepcke2023_reference%0APaper%3A%20Roepcke_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:58 UTC</sub>

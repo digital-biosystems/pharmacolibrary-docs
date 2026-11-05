@@ -31,18 +31,9 @@ Spiramycin is a macrolide antibiotic used to treat bacterial infections and has 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 47.6 ‡ | L/h | 0.68 L/h/kg | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) |
-| V | V | 231 ‡ | L | 3.30 L/kg | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) |
-| V | V | 460.6 ‡ | L | 6.58 L/kg | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) |
-| t½ | t1/2z | 3.97 | h | 3.97 h | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) |
-| t½ | t1/2z | 6.25 | h | 6.25 h | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) |
-| F | Fab | 0.7718 |  | 77.18 | chickens | &gt;= 48 | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Elazab_2021_oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Elazab_2021 · V ·/kg</text><circle cx="317.3" cy="30.0" r="4" fill="#2e7d32"><title>Elazab_2021 · V ·/kg: 231 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Elazab_2021 · V ·/kg</text><circle cx="422.2" cy="46.0" r="4" fill="#2e7d32"><title>Elazab_2021 · V ·/kg: 460.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -120,5 +111,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspiramycin%5D&body=Drug%3A%20spiramycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spiramycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspiramycin%5D&body=Drug%3A%20spiramycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spiramycin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:24 UTC</sub>

@@ -24,16 +24,9 @@ Afatinib is a protein kinase inhibitor used to treat non-small-cell lung cancer.
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 20 | L/h | 20.0 L/h | Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer | 34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nakao_2019_reference](drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) |
-| CL | CL/F | 44.04 | L/h | 734 mL/min | patients with advanced solid tumors | 927 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Freiwald_2014_reference](drugs/drug_afatinib/Afatinib_Freiwald2014_reference.md) |
-| V | V | 795.8 | L | 795.8 L | Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer | 34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nakao_2019_reference](drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) |
-| ka | kabs | 0.6 | 1/h | 0.60 1/h | Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer | 34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nakao_2019_reference](drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Nakao_2019 · CL</text><circle cx="295.4" cy="30.0" r="4" fill="#ef6c00"><title>Nakao_2019 · CL: 20 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Freiwald_2014 · CL/F</text><circle cx="415.3" cy="46.0" r="4" fill="#ef6c00"><title>Freiwald_2014 · CL/F: 44.04 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -117,5 +110,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bafatinib%5D&body=Drug%3A%20afatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_afatinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 21:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bafatinib%5D&body=Drug%3A%20afatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_afatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:07 UTC</sub>

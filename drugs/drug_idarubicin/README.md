@@ -32,19 +32,9 @@ Idarubicin is an anthracycline antibiotic used to treat cancers, mainly acute my
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.62 | L/h | 27.0 ml min(-1) | rats |  | rat | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kuhlmann_2001_reference](drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md) |
-| CL | CL | 82.3 | L/h | 82.3 L/h | patients with acute leukemia or chronic myelogenous leukemia in blastic crisis | 21 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tamura_1996_reference](drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md) |
-| CL | CL | 83.51 | L/h | 83.51 L/h | patients with acute myelogenous leukemia | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Pea_1999_reference](drugs/drug_idarubicin/Idarubicin_Pea1999_reference.md) |
-| CL | CL | 679 | L/h | 679 L/h | pediatric leukemia patients in second or subsequent relapse | 21 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Reid_1990_reference](drugs/drug_idarubicin/Idarubicin_Reid1990_reference.md) |
-| CL | CL | — | L/h | 107.9 (1 h-1 m-2) | patients with advanced malignant disease | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gillies_1987_reference](drugs/drug_idarubicin/Idarubicin_Gillies1987_reference.md) |
-| ka | kabs | 1.58 | 1/h | 1.58 1/h | patients with advanced malignant disease | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gillies_1987_reference](drugs/drug_idarubicin/Idarubicin_Gillies1987_reference.md) |
-| t½ | t1/2z | 17.6 | h | 17.6 h | pediatric leukemia patients in second or subsequent relapse | 21 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Reid_1990_reference](drugs/drug_idarubicin/Idarubicin_Reid1990_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="90" stroke="#ddd"/><text x="306.7" y="104" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="90" stroke="#ddd"/><text x="423.3" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kuhlmann_2001 · CL</text><circle cx="214.4" cy="30.0" r="4" fill="#2e7d32"><title>Kuhlmann_2001 · CL: 1.62 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tamura_1996 · CL</text><circle cx="413.5" cy="46.0" r="4" fill="#2e7d32"><title>Tamura_1996 · CL: 82.3 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Pea_1999 · CL</text><circle cx="414.2" cy="62.0" r="4" fill="#ef6c00"><title>Pea_1999 · CL: 83.51 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Reid_1990 · CL</text><circle cx="520.4" cy="78.0" r="4" fill="#ef6c00"><title>Reid_1990 · CL: 679 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -146,5 +136,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D&body=Drug%3A%20idarubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 18:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D&body=Drug%3A%20idarubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 18:02 UTC</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Stocker_2012 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Stocker2012_final&quot;,&quot;label&quot;:&quot;Stocker_2012_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_final.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_base&quot;,&quot;label&quot;:&quot;Stocker_2012_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_plasma_urate_concentration&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 plasma urate concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_plasma_urate_concentration.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_base&quot;,&quot;label&quot;:&quot;Stocker_2012_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_base.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_final&quot;,&quot;label&quot;:&quot;Stocker_2012_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_final.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wright_2024_E_ULT&quot;,&quot;label&quot;:&quot;Wright_2024 \u00b7 E ULT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wright_2024_E_ULT.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_Urate_excretion&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 Urate excretion&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_Urate_excretion.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # allopurinol — `Allopurinol_Stocker2012_final`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Stocker2012_final" status="accepted_with_caveats" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-11-03 16:22 UTC (Reproduces with caveats), but the paper was screened again on 2026-11-03 20:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Accepted with a caveat: the covariate scenarios were not simulated.
+
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Stocker2012_final" status="needs_review" stale="true" population="patients with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al. The pharmacokinetics of oxypurinol in people with gout. British journal of clinical pharmacology 74(3):477–489 (2012).
@@ -15,7 +17,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 ## Population and dosing
 
-**Population:** adults with gout · condition gout · age group adult.
+**Population:** patients with gout · condition gout · age group adult · n = $1,555$ gouty patients.
 
 **Dosed compound ≠ measured compound:** dosed allopurinol, measured oxypurinol.
 
@@ -23,20 +25,20 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted, plus 2 covariate effects.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Stocker2012_final/Allopurinol_Stocker2012_final.svg" alt="Allopurinol_Stocker2012_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/Fm (l h⁻¹)* | CLm/F | 0.595 | l h⁻¹ |
 | V/Fm (l)† | V/F | 38.1 | l |
 | Kfm | kfm | 0.447 | 1/h |
-| COV (CL/V, R | equation variable | 0.33 | R |
-| theta_q22_creatinine_power | theta_q22_creatinine_power | 0.0250 |  |
-| SLC22A12 | SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |
+| COV (CL/V, R | CL_ratio | 0.33 | R |
 
 ## Caveats
 
@@ -44,7 +46,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,7 +60,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (equation variable), so that value has no SI equivalent. None of the extracted parameters is allopurinol's own; they describe oxypurinol.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of slc22a12: this record has {'CC': 0.0, 'CT': 0.32, 'TT': 0.64}, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/fm (l h-)*].parameter_id`: this record has Q351, the second reading Q27; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,9 +71,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | CL/Fm (l h⁻¹)* | `Q351` · CLm/F | 0.595 | l h⁻¹ | 1.653e-07 | m3/s | l/h | exact (1) | Stocker_2012_table_3:row2:col2 |
 | V/Fm (l)† | `Q76` · V/F | 38.1 | l | 0.0381 | m3 | l | exact (1) | Stocker_2012_table_3:row3:col2 |
 | Kfm | `Q305` · kfm | 0.447 | 1/h | 0.0001242 | 1/s | 1/h | exact (1) | Stocker_2012_table_3:row4:col2 |
-| COV (CL/V, R | `Q900` · equation variable | 0.33 | R |  |  | r | llm (0.6) | Stocker_2012_table_3:row8:col2 |
-| theta_q22_creatinine_power | `Q900` · theta_q22_creatinine_power | 0.0250 |  |  |  |  |  | Stocker_2012_table_3:row11:col2 |
-| SLC22A12 | `Q900` · SLC22A12 | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  |  |  |  |  | pgx |
+| COV (CL/V, R | `Q31` · CL_ratio | 0.33 | R |  |  | r | llm (0.6) | Stocker_2012_table_3:row8:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,11 +89,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section residual_error: 'Additive (mg l⁻¹)' routed out of structural estimates ('Residual Error')
 - table section residual_error: 'Proportional (CV%)' routed out of structural estimates ('Residual Error')
 - dropped unlinked row (NIL): 'Objective Function Value' — extend the ontology if this is a real PK parameter (source ['Stocker_2012_table_3:row0:col2'])
-- unit_dimension_unknown: 'R' (equation variable)
+- unit_dimension_unknown: 'R' (CL_ratio)
+- dropped unlinked row (NIL): 'Creatinine clearance (θc)' — extend the ontology if this is a real PK parameter (source ['Stocker_2012_table_3:row11:col2'])
 - dropped unlinked row (NIL): 'Diuretics (θd)' — extend the ontology if this is a real PK parameter (source ['Stocker_2012_table_3:row12:col2'])
 - dropped unlinked row (NIL): 'Probenecid (θp)' — extend the ontology if this is a real PK parameter (source ['Stocker_2012_table_3:row13:col2'])
-- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Kfm' → 1/h (from the popPK convention: "The paper defines Kfm as the 'formation rate constant' in the table footnote and describes allopurinol metabolism to oxy")
+- implicit units: 'Kfm' → 1/h (from the popPK convention: "Kfm is defined in the table footnote as a 'formation rate constant'. First-order rate constants in population pharmacoki")
 - metabolite oxypurinol: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=oxypurinol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -101,8 +101,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V/Fm (l)†' is the general volume)
 - status held at "Needs review" — not promoted
 - model-stage split: 'covariate (final) model' is the final model of Stocker_2012 (paper reports 2 stages: base model, covariate (final) model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 6 linked by role
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 6 linked by role; re-tagged oxypurinol→parent ×1
 - review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
+- unit_dimension_unknown: 'R' (equation variable)
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Kfm' → 1/h (from the popPK convention: "The paper defines Kfm as the 'formation rate constant' in the table footnote and describes allopurinol metabolism to oxy")
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 6 linked by role
 
 **Extraction notes:**
 - table Stocker_2012_table_1: unbound_uncertainty
@@ -117,15 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/fm (l h-)*].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fm (l h-)*].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss-120b` | `parameters[cov (cl/v, r]` | 0.33 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slc22a12]` | {'CC': 0.0, 'CT': 0.32, 'TT': 0.64} |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_creatinine_power]` |  | 0.0250 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/fm (l)].parameter_id` | Q76 | Q367 | mismatch |
 
 </details>
@@ -140,13 +144,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Stocker_2012_table_3:row4:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Stocker_2012_table_3:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Stocker_2012_table_3:row3:col2'] |
+| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | R | ['Stocker_2012_table_3:row8:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 38.1 L | ['Stocker_2012_table_3:row3:col2'] |
@@ -241,4 +245,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Ballopurinol%5D%20Allopurinol_Stocker2012_final&body=Drug%3A%20allopurinol%0ARecord%3A%20Allopurinol_Stocker2012_final%0APaper%3A%20Stocker_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_allopurinol/Allopurinol_Stocker2012_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 19:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 20:18 UTC</sub>

@@ -201,13 +201,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Rupp SM, Shinohara Y, Fisher DM, Miller RD, Castagnoli N. Pharmacokinetics and pharmacodynamics of 4-aminopyridine in anesthetized dogs. The Journal of pharmacology and experimental therapeutics 225(2):351–354 (1983).
 
-**This record:** Pharmacolibrary v26.09, model `Fampridine_Rupp1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fampridine/Fampridine_Rupp1983_reference>
+**This record:** Pharmacolibrary, model `Fampridine_Rupp1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fampridine/Fampridine_Rupp1983_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FampridineRupp1983reference,
   title  = {{Pharmacolibrary model Fampridine_Rupp1983_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fampridine/Fampridine_Rupp1983_reference},
 }
 ```
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfampridine%5D%20Fampridine_Rupp1983_reference&body=Drug%3A%20fampridine%0ARecord%3A%20Fampridine_Rupp1983_reference%0APaper%3A%20Rupp_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fampridine/Fampridine_Rupp1983_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfampridine%5D%20Fampridine_Rupp1983_reference&body=Drug%3A%20fampridine%0ARecord%3A%20Fampridine_Rupp1983_reference%0APaper%3A%20Rupp_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fampridine/Fampridine_Rupp1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:48 UTC</sub>

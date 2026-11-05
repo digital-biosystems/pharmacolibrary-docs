@@ -150,13 +150,12 @@ _All readers agree on the compared fields of this record._
 
 **Source paper** (the parameters are its): Salehifar E, Ebrahim S, Shiran MR, Faramarzi F, Askari Rad H, Avan R et al. Pharmacokinetic Parameters and Over-Responsiveness of Iranian Population to Propranolol. Advanced pharmaceutical bulletin 7(2):195–202 (2017). [doi:10.15171/apb.2017.024](https://doi.org/10.15171/apb.2017.024)
 
-**This record:** Pharmacolibrary v26.09, model `Propranolol_Salehifar2017_this_study`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Salehifar2017_this_study>
+**This record:** Pharmacolibrary, model `Propranolol_Salehifar2017_this_study`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Salehifar2017_this_study>
 
 ```bibtex
 @misc{pharmacolibrary_PropranololSalehifar2017thisstudy,
   title  = {{Pharmacolibrary model Propranolol_Salehifar2017_this_study}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Salehifar2017_this_study},
   note   = {Parameters from doi:10.15171/apb.2017.024},
 }
@@ -171,5 +170,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Salehifar2017_this_study&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Salehifar2017_this_study%0APaper%3A%20Salehifar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Salehifar2017_this_study%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Salehifar2017_this_study&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Salehifar2017_this_study%0APaper%3A%20Salehifar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Salehifar2017_this_study%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 12:33 UTC</sub>

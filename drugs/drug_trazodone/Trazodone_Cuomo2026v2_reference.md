@@ -172,13 +172,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Cuomo A, Pompili M, Vita A, Spina E, Caraci F, Fagiolini A. A narrative review on trazodone as a multimodal and multifunctional antidepressant: clinical relevance of formulations, dosing, and pharmacokinetic/pharmacodynamic targets. Annals of general psychiatry 25(1) (2026). [doi:10.1186/s12991-026-00643-8](https://doi.org/10.1186/s12991-026-00643-8)
 
-**This record:** Pharmacolibrary v26.09, model `Trazodone_Cuomo2026v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference>
+**This record:** Pharmacolibrary, model `Trazodone_Cuomo2026v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TrazodoneCuomo2026v2reference,
   title  = {{Pharmacolibrary model Trazodone_Cuomo2026v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference},
   note   = {Parameters from doi:10.1186/s12991-026-00643-8},
 }
@@ -197,5 +196,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrazodone%5D%20Trazodone_Cuomo2026v2_reference&body=Drug%3A%20trazodone%0ARecord%3A%20Trazodone_Cuomo2026v2_reference%0APaper%3A%20Cuomo_2026_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrazodone%5D%20Trazodone_Cuomo2026v2_reference&body=Drug%3A%20trazodone%0ARecord%3A%20Trazodone_Cuomo2026v2_reference%0APaper%3A%20Cuomo_2026_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:55 UTC</sub>

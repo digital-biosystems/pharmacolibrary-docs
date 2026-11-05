@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Eleveld_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Eleveld2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Eleveld2026_reference" status="rejected" stale="false" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Eleveld2026_reference" status="rejected" stale="true" population="adults" measured-compound="fentanyl" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Eleveld DJ, Koomen JV, Stevens J, Colin PJ, Struys MMRF. OpenPMX Software for Nonlinear Mixed-Effect Models in Pharmacometrics: Precision Compared With NONMEM First-Order Conditional Estimation. CPT: pharmacometrics & systems pharmacology 15(6):e70250 (2026).
@@ -17,7 +17,7 @@ Eleveld DJ, Koomen JV, Stevens J, Colin PJ, Struys MMRF. OpenPMX Software for No
 
 ## Population and dosing
 
-**Population:** unknown.
+**Population:** adults · age group adult.
 
 **Dosing:** 10, 30, 60, 120 mg, oral, single.
 
@@ -25,7 +25,7 @@ Eleveld DJ, Koomen JV, Stevens J, Colin PJ, Struys MMRF. OpenPMX Software for No
 
 **Structure:** 3-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,13 +34,15 @@ Eleveld DJ, Koomen JV, Stevens J, Colin PJ, Struys MMRF. OpenPMX Software for No
 | label | parameter | value | unit |
 |---|---|---|---|
 | the total body clearance was | CL | 83.7 | ml/min/kg |
-| steady-state volume of distribution | V | 0.163 | L/kg |
+| V" (litre) | V | 269.7 | litre |
 | v2 | V2 | 0.9 | ml/kg |
+| Alfentanil Q 3 | Q | 1.97 | ml/min |
+| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |
 | t1pp ranged from | tlag | 15.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +56,7 @@ Eleveld DJ, Koomen JV, Stevens J, Colin PJ, Struys MMRF. OpenPMX Software for No
 
 The values on this record come from other papers. Extracted — fentanyl: ? 0, ? 6, ? 25, ? 1, ? 20, ? 125, ? 25, ? 200, … (+82).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,8 +65,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | the total body clearance was | `Q22` · CL | 83.7 | ml/min/kg | 9.765e-05 | m3/s | L/h | review_gapfill (0.7) | Andersen_1986:review |
-| steady-state volume of distribution | `Q61` · V | 0.163 | L/kg | 0.01141 | m3 | L | review_gapfill (0.7) | Davis_1986:review |
+| V" (litre) | `Q61` · V | 269.7 | litre | 0.2697 | m3 | L | review_gapfill (0.7) | Bower_1982:review |
 | v2 | `Q64` · V2 | 0.9 | ml/kg | 6.3e-05 | m3 | L | review_gapfill (0.7) | Andersen_1986:review |
+| Alfentanil Q 3 | `Q30` · Q | 1.97 | ml/min | 3.283e-08 | m3/s | L/h | review_gapfill (0.7) | Groenendaal_2008:review |
+| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Eleveld_2026:review |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h | review_gapfill (0.7) | Andersen_1986:review |
 
 <details class="legend">
@@ -215,35 +219,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - $THETA(25) has no $PK binding — index may be misassigned
 - $THETA(26) has no $PK binding — index may be misassigned
 - control_stream ADVAN11 TRANS4: topology=3C, parameterization=mechanistic (clearance)
-- theta_crosscheck: skipped (no in-paper final table to compare)
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
+- structure disagreement: deterministic 3C vs LLM 1C — review compartment count
 - gap-filled Q22 (CL) from Andersen_1986's review values (primary lacked it)
-- gap-filled Q61 (V) from Davis_1986's review values (primary lacked it)
+- gap-filled Q61 (V) from Bower_1982's review values (primary lacked it)
 - gap-filled Q64 (V2) from Andersen_1986's review values (primary lacked it)
+- gap-filled Q30 (Q) from Groenendaal_2008's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
+
+**Extraction notes:**
+- table psp470250-tbl-0001: ragged_grid
+- table psp470250-tbl-0001: representations disagree; selected evidence retained, not merged
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[buprenorphine]` | 1.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1pp ranged from]` | 15.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the total body clearance was]` | 83.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` | 0.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 56.77 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -255,16 +253,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Andersen_1986:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Davis_1986:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Groenendaal_2008:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bower_1982:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Andersen_1986:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.7 | ['Andersen_1986:review'] |
-| C8_topology | fail |  |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 352 L/h | ['Andersen_1986:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.4 L | ['Davis_1986:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 270 L | ['Bower_1982:review'] |
 | C9_phys_window_Q64 | fail | volume within physiological range | 0.063 L | ['Andersen_1986:review'] |
 
 <details class="legend">
@@ -288,5 +288,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Eleveld2026_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Eleveld2026_reference%0APaper%3A%20Eleveld_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Eleveld2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Eleveld2026_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Eleveld2026_reference%0APaper%3A%20Eleveld_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Eleveld2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 18:28 UTC</sub>

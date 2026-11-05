@@ -102,13 +102,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Cariprazine_Periclou2020_PD_panss_total`. <https://pharmacolibrary.github.io/#/drugs/drug_cariprazine/Cariprazine_Periclou2020_PD_panss_total>
+**This record:** Pharmacolibrary, model `Cariprazine_Periclou2020_PD_panss_total`. <https://pharmacolibrary.github.io/#/drugs/drug_cariprazine/Cariprazine_Periclou2020_PD_panss_total>
 
 ```bibtex
 @misc{pharmacolibrary_CariprazinePericlou2020PDpansstotal,
   title  = {{Pharmacolibrary model Cariprazine_Periclou2020_PD_panss_total}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cariprazine/Cariprazine_Periclou2020_PD_panss_total},
 }
 ```
@@ -122,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcariprazine%5D%20pd_Periclou_2020_PANSS_total&body=Drug%3A%20cariprazine%0ARecord%3A%20pd_Periclou_2020_PANSS_total%0APaper%3A%20Periclou_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cariprazine/pd_Periclou_2020_PANSS_total%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcariprazine%5D%20pd_Periclou_2020_PANSS_total&body=Drug%3A%20cariprazine%0ARecord%3A%20pd_Periclou_2020_PANSS_total%0APaper%3A%20Periclou_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cariprazine/pd_Periclou_2020_PANSS_total%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [cariprazine](drugs/drug_cariprazine/)</sub>

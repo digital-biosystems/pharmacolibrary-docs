@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Simon N, Moirand R, Dematteis M, Bordet R, Deplanque D, Rolland B. Full-Profile Pharmacokinetic Study of High Dose Baclofen in Subjects With Alcohol Use Disorder. Frontiers in psychiatry 9:385 (2018). [doi:10.3389/fpsyt.2018.00385](https://doi.org/10.3389/fpsyt.2018.00385)
 
-**This record:** Pharmacolibrary v26.09, model `Baclofen_Simon2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Simon2018_reference>
+**This record:** Pharmacolibrary, model `Baclofen_Simon2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Simon2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BaclofenSimon2018reference,
   title  = {{Pharmacolibrary model Baclofen_Simon2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Simon2018_reference},
   note   = {Parameters from doi:10.3389/fpsyt.2018.00385},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20Baclofen_Simon2018_reference&body=Drug%3A%20baclofen%0ARecord%3A%20Baclofen_Simon2018_reference%0APaper%3A%20Simon_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/Baclofen_Simon2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20Baclofen_Simon2018_reference&body=Drug%3A%20baclofen%0ARecord%3A%20Baclofen_Simon2018_reference%0APaper%3A%20Simon_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/Baclofen_Simon2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:25 UTC</sub>

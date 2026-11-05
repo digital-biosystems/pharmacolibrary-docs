@@ -198,13 +198,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Aouri M, Barcelo C, Guidi M, Rotger M, Cavassini M, Hizrel C et al. Population Pharmacokinetics and Pharmacogenetics Analysis of Rilpivirine in HIV-1-Infected Individuals. Antimicrobial agents and chemotherapy 61(1) (2017). [doi:10.1128/AAC.00899-16](https://doi.org/10.1128/AAC.00899-16)
 
-**This record:** Pharmacolibrary v26.09, model `Rilpivirine_Aouri2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference>
+**This record:** Pharmacolibrary, model `Rilpivirine_Aouri2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RilpivirineAouri2017reference,
   title  = {{Pharmacolibrary model Rilpivirine_Aouri2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference},
   note   = {Parameters from doi:10.1128/AAC.00899-16},
 }
@@ -223,5 +222,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brilpivirine%5D%20Rilpivirine_Aouri2017_reference&body=Drug%3A%20rilpivirine%0ARecord%3A%20Rilpivirine_Aouri2017_reference%0APaper%3A%20Aouri_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brilpivirine%5D%20Rilpivirine_Aouri2017_reference&body=Drug%3A%20rilpivirine%0ARecord%3A%20Rilpivirine_Aouri2017_reference%0APaper%3A%20Aouri_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:53 UTC</sub>

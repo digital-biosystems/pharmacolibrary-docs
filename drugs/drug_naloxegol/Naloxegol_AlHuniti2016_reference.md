@@ -193,13 +193,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Al-Huniti N, Chapel S, Xu H, Bui KH, Sostek M. Population pharmacokinetics of naloxegol in a population of 1247 healthy subjects and patients. British journal of clinical pharmacology 81(1):89–100 (2016). [doi:10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756)
 
-**This record:** Pharmacolibrary v26.09, model `Naloxegol_AlHuniti2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference>
+**This record:** Pharmacolibrary, model `Naloxegol_AlHuniti2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_NaloxegolAlHuniti2016reference,
   title  = {{Pharmacolibrary model Naloxegol_AlHuniti2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference},
   note   = {Parameters from doi:10.1111/bcp.12756},
 }
@@ -218,5 +217,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaloxegol%5D%20Naloxegol_AlHuniti2016_reference&body=Drug%3A%20naloxegol%0ARecord%3A%20Naloxegol_AlHuniti2016_reference%0APaper%3A%20Al-Huniti_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 16:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaloxegol%5D%20Naloxegol_AlHuniti2016_reference&body=Drug%3A%20naloxegol%0ARecord%3A%20Naloxegol_AlHuniti2016_reference%0APaper%3A%20Al-Huniti_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 16:54 UTC</sub>

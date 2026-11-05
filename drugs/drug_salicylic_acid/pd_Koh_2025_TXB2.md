@@ -122,13 +122,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `SalicylicAcid_Koh2025_PD_txb2`. <https://pharmacolibrary.github.io/#/drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_PD_txb2>
+**This record:** Pharmacolibrary, model `SalicylicAcid_Koh2025_PD_txb2`. <https://pharmacolibrary.github.io/#/drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_PD_txb2>
 
 ```bibtex
 @misc{pharmacolibrary_SalicylicAcidKoh2025PDtxb2,
   title  = {{Pharmacolibrary model SalicylicAcid_Koh2025_PD_txb2}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_PD_txb2},
 }
 ```
@@ -142,5 +141,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalicylic_acid%5D%20pd_Koh_2025_TXB2&body=Drug%3A%20salicylic_acid%0ARecord%3A%20pd_Koh_2025_TXB2%0APaper%3A%20Koh_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salicylic_acid/pd_Koh_2025_TXB2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalicylic_acid%5D%20pd_Koh_2025_TXB2&body=Drug%3A%20salicylic_acid%0ARecord%3A%20pd_Koh_2025_TXB2%0APaper%3A%20Koh_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salicylic_acid/pd_Koh_2025_TXB2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [salicylic acid](drugs/drug_salicylic_acid/)</sub>

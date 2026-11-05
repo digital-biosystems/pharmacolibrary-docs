@@ -29,17 +29,6 @@ Olaparib is a PARP inhibitor anticancer drug used to treat cancers such as ovari
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.6 | L/h | 3.60 L h−1 | BRCA-mutated ovarian cancer patients | , 22 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Velev_2021_reference](drugs/drug_olaparib/Olaparib_Velev2021_reference.md) |
-| V | V1 | 2.57 | L | 2.57 L | BRCA-mutated ovarian cancer patients | , 22 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Velev_2021_reference](drugs/drug_olaparib/Olaparib_Velev2021_reference.md) |
-| ka | kabs | 0.247 | 1/h | 0.247 1/h | BRCA-mutated ovarian cancer patients | , 22 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Velev_2021_reference](drugs/drug_olaparib/Olaparib_Velev2021_reference.md) |
-| ka | kabs | 0.71 | 1/h | 0.71 h−1 | healthy volunteers and patients | ? 66 (cobicistat) or 12 (olaparib) | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Overbeek_2025_reference](drugs/drug_olaparib/Olaparib_Overbeek2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -133,5 +122,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolaparib%5D&body=Drug%3A%20olaparib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olaparib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 21:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolaparib%5D&body=Drug%3A%20olaparib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olaparib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:16 UTC</sub>

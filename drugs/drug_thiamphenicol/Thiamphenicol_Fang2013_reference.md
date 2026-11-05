@@ -8,7 +8,7 @@
 
 > The record is an exposure paper summary lacking volume and clearance, with an unlinked metabolite and a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distribution of thiamphenicol and florfenicol in Pacific white shrimp Litopenaeus vannamei in freshwater following oral administration. Journal of aquatic animal health 25(2):83–89 (2013).
@@ -22,7 +22,7 @@ Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distributi
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
@@ -64,13 +64,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C max | `Q32` · Cmax | 7.96 | μg/mL |  |  | µg/ml | space_fold (0.95) | Fang_2013:abstract, Fang_2013:abstract |
+| C max | `Q32` · Cmax | 7.96 | μg/mL | 0.00796 | kg/m3 | µg/ml | space_fold (0.95) | Fang_2013:abstract, Fang_2013:abstract |
 | T max | `Q56` · tmax | 2 | h | 7200 | s | h | space_fold (0.95) | Fang_2013:abstract |
 | t 1/2ka | `Q95` · t1/2ka | 0.666 | h | 2398 | s | h | space_fold (0.95) | Fang_2013:abstract |
-| t 1/2β | `Q60` · t1/2β | 10.659 | h | 3.837e+04 | s | h | space_fold (0.95) | Fang_2013:abstract |
+| t 1/2β | `Q60` · t1/2β | 10.659 | h | 3.837e+04 | s | h | half_life_rule (0.95) | Fang_2013:abstract |
 | AUC0-t | `Q19` · AUCt | 29.10 | mg/kg·h |  |  | mg/(h·kg) | exact (1) | Fang_2013:abstract, Fang_2013:abstract, Fang_2013:abstract |
 | MRT0-t | `Q53` · MRT | 9.77 | h | 3.517e+04 | s | h | exact (1) | Fang_2013:abstract |
-| t 1/2z | `Q57` · t1/2z | 6.84 | h | 2.462e+04 | s | h | space_fold (0.95) | Fang_2013:abstract |
+| t 1/2z | `Q57` · t1/2z | 6.84 | h | 2.462e+04 | s | h | half_life_rule (0.95) | Fang_2013:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,8 +87,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped duplicate Q32 ('peak concentrations of FLR', value '164.22') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=thiamphenicol and florfenicol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
+- molar mass: no plausible PubChem entry for 'thiamphenicol and florfenicol' ('thiamphenicol and florfenicol') — left in mass units
 - molar mass: none found for 'thiamphenicol and florfenicol' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
@@ -139,14 +139,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q19 | fail | [mass] / [time] | mg/kg·h | ['Fang_2013:abstract', 'Fang_2013:abstract', 'Fang_2013:abstract'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | mg/kg·h ([mass] / [time]) | ['Fang_2013:abstract', 'Fang_2013:abstract', 'Fang_2013:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Fang_2013:abstract', 'Fang_2013:abstract'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Fang_2013:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Fang_2013:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Fang_2013:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Fang_2013:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Fang_2013:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,5 +169,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiamphenicol%5D%20Thiamphenicol_Fang2013_reference&body=Drug%3A%20thiamphenicol%0ARecord%3A%20Thiamphenicol_Fang2013_reference%0APaper%3A%20Fang_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiamphenicol/Thiamphenicol_Fang2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiamphenicol%5D%20Thiamphenicol_Fang2013_reference&body=Drug%3A%20thiamphenicol%0ARecord%3A%20Thiamphenicol_Fang2013_reference%0APaper%3A%20Fang_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiamphenicol/Thiamphenicol_Fang2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:12 UTC</sub>

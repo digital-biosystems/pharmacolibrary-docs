@@ -22,15 +22,6 @@ Isotretinoin is a retinoid used to treat acne, and has also been used for condit
 |---|---|---|---|---|---|---|
 | isotretinoin | parent | 300.435 | C20H28O2 | DrugBank | [5282379](https://pubchem.ncbi.nlm.nih.gov/compound/5282379) | Nulman_1998, Veal_2007 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 2 | L/h | 2 l h À1 | children with high-risk neuroblastoma | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Veal_2007_reference](drugs/drug_isotretinoin/Isotretinoin_Veal2007_reference.md) |
-| V | V/F | 2 | L | 2 l | children with high-risk neuroblastoma | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Veal_2007_reference](drugs/drug_isotretinoin/Isotretinoin_Veal2007_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -97,5 +88,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisotretinoin%5D&body=Drug%3A%20isotretinoin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isotretinoin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisotretinoin%5D&body=Drug%3A%20isotretinoin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isotretinoin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:22 UTC</sub>

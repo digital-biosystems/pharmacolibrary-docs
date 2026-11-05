@@ -13,15 +13,6 @@ Lecanemab is a monoclonal antibody used to treat Alzheimer's disease. It is auth
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q56274769](https://www.wikidata.org/wiki/Q56274769) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.6 | L/h | 1.60 L/h | subjects with early Alzheimer's disease (MCI or mild dementia) | 1619 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Majid_2024_reference](drugs/drug_lecanemab/Lecanemab_Majid2024_reference.md) |
-| V | V1 | 0.799 | L | 0.799 L | subjects with early Alzheimer's disease (MCI or mild dementia) | 1619 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Majid_2024_reference](drugs/drug_lecanemab/Lecanemab_Majid2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -92,5 +83,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blecanemab%5D&body=Drug%3A%20lecanemab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lecanemab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blecanemab%5D&body=Drug%3A%20lecanemab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lecanemab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:53 UTC</sub>

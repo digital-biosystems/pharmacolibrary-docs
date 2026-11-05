@@ -211,13 +211,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sonders RC. Pharmacokinetics of terazosin. The American journal of medicine 80(5B):20–24 (1986). [doi:10.1016/0002-9343(86)90847-8](https://doi.org/10.1016/0002-9343(86)90847-8)
 
-**This record:** Pharmacolibrary v26.09, model `Terazosin_Sonders1986_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Sonders1986_reference>
+**This record:** Pharmacolibrary, model `Terazosin_Sonders1986_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Sonders1986_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TerazosinSonders1986reference,
   title  = {{Pharmacolibrary model Terazosin_Sonders1986_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Sonders1986_reference},
   note   = {Parameters from doi:10.1016/0002-9343(86)90847-8},
 }
@@ -236,5 +235,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterazosin%5D%20Terazosin_Sonders1986_reference&body=Drug%3A%20terazosin%0ARecord%3A%20Terazosin_Sonders1986_reference%0APaper%3A%20Sonders_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terazosin/Terazosin_Sonders1986_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 09:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterazosin%5D%20Terazosin_Sonders1986_reference&body=Drug%3A%20terazosin%0ARecord%3A%20Terazosin_Sonders1986_reference%0APaper%3A%20Sonders_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terazosin/Terazosin_Sonders1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:33 UTC</sub>

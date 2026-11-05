@@ -29,15 +29,6 @@ Vorozole is an aromatase inhibitor studied as an anticancer (antineoplastic) age
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 4.8 | L/h | 4.8 l/h | healthy volunteers and breast cancer patients | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Piotrovsky_1998_reference](drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference.md) |
-| V | V1 | 30.1 ‡ | L | 0.43 l/kg | healthy volunteers and breast cancer patients | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Piotrovsky_1998_reference](drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -96,5 +87,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvorozole%5D&body=Drug%3A%20vorozole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vorozole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvorozole%5D&body=Drug%3A%20vorozole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vorozole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:28 UTC</sub>

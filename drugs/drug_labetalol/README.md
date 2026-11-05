@@ -24,18 +24,9 @@ Labetalol is a beta blocker with alpha-blocking activity used to treat high bloo
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 56.82 | L/h | 947.0 ml/min | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Elliott_1984_reference](drugs/drug_labetalol/Labetalol_Elliott1984_reference.md) |
-| CL | CL | 56.82 | L/h | 947.0 ml/min | patients with mild to moderate hypertension | &gt;=11 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Maronde_1983_reference](drugs/drug_labetalol/Labetalol_Maronde1983_reference.md) |
-| CL | CL | 97.44 ‡ | L/h | 23.2 ml/min/kg | healthy adults | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lalonde_1990_2_reference](drugs/drug_labetalol/Labetalol_Lalonde1990v2_reference.md) |
-| CL | CL/F | 246.5 ‡ | L/h | 58.7 ml/min/kg | healthy adults | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lalonde_1990_2_reference](drugs/drug_labetalol/Labetalol_Lalonde1990v2_reference.md) |
-| V | V | 1279 | L | 1278.7933 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Elliott_1984_reference](drugs/drug_labetalol/Labetalol_Elliott1984_reference.md) |
-| t½ | t1/2z | 7.65 | h | 7.65 hours | patients with mild to moderate hypertension | &gt;=11 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Maronde_1983_reference](drugs/drug_labetalol/Labetalol_Maronde1983_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Elliott_1984 · CL</text><circle cx="322.0" cy="30.0" r="4" fill="#ef6c00"><title>Elliott_1984 · CL: 56.82 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Maronde_1983 · CL</text><circle cx="322.0" cy="46.0" r="4" fill="#ef6c00"><title>Maronde_1983 · CL: 56.82 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Lalonde_1990_2 · CL ·/kg</text><circle cx="363.0" cy="62.0" r="4" fill="#ef6c00"><title>Lalonde_1990_2 · CL ·/kg: 97.44 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Lalonde_1990_2 · CL/F ·/kg</text><circle cx="433.6" cy="78.0" r="4" fill="#ef6c00"><title>Lalonde_1990_2 · CL/F ·/kg: 246.5 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -134,5 +125,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blabetalol%5D&body=Drug%3A%20labetalol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_labetalol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blabetalol%5D&body=Drug%3A%20labetalol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_labetalol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:57 UTC</sub>

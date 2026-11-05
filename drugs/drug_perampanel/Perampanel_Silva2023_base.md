@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Silva R, Colom H, Bicker J, Almeida A, Silva A, Sales F et al. Population Pharmacokinetic Analysis of Perampanel in Portuguese Patients Diagnosed with Refractory Epilepsy. Pharmaceutics 15(6) (2023). [doi:10.3390/pharmaceutics15061704](https://doi.org/10.3390/pharmaceutics15061704)
 
-**This record:** Pharmacolibrary v26.09, model `Perampanel_Silva2023_base`. <https://pharmacolibrary.github.io/#/drugs/drug_perampanel/Perampanel_Silva2023_base>
+**This record:** Pharmacolibrary, model `Perampanel_Silva2023_base`. <https://pharmacolibrary.github.io/#/drugs/drug_perampanel/Perampanel_Silva2023_base>
 
 ```bibtex
 @misc{pharmacolibrary_PerampanelSilva2023base,
   title  = {{Pharmacolibrary model Perampanel_Silva2023_base}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_perampanel/Perampanel_Silva2023_base},
   note   = {Parameters from doi:10.3390/pharmaceutics15061704},
 }
@@ -195,5 +194,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperampanel%5D%20Perampanel_Silva2023_base&body=Drug%3A%20perampanel%0ARecord%3A%20Perampanel_Silva2023_base%0APaper%3A%20Silva_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perampanel/Perampanel_Silva2023_base%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperampanel%5D%20Perampanel_Silva2023_base&body=Drug%3A%20perampanel%0ARecord%3A%20Perampanel_Silva2023_base%0APaper%3A%20Silva_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perampanel/Perampanel_Silva2023_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:16 UTC</sub>

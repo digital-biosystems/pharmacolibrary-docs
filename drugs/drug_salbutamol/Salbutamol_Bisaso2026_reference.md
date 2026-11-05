@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Bisaso_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Bisaso2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was held back because the absorption rate constant (ka) was not reported in the source and no explicit value was extracted from the data.
+> This record was reviewed on 2026-10-22 15:35 UTC (Needs review), but the paper was screened again on 2026-11-04 08:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Bisaso2026_reference" status="needs_review" stale="false" population="" measured-compound="salbutamol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Bisaso2026_reference" status="extracted" stale="true" population="" measured-compound="salbutamol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bisaso KR, Karyaburo RK, Mukonzo JK, Ette EI. Differential Impact of Pharmacokinetic and Pharmacodynamic Variability on Response to Combination Therapy. Pharmacology research & perspectives 14(4):e70281 (2026).
@@ -29,16 +29,14 @@ Bisaso KR, Karyaburo RK, Mukonzo JK, Ette EI. Differential Impact of Pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference/Salbutamol_Bisaso2026_reference.svg" alt="Salbutamol_Bisaso2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Exposure CL/F of A (L/h) | CL/F | 10.0 | L/h |
+| CL/F of A (L/h) | CL/F | 10.0 | L/h |
 | V/F (derived from CL·t½/ln2) | V/F | 346.2468 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +50,15 @@ Bisaso KR, Karyaburo RK, Mukonzo JK, Ette EI. Differential Impact of Pharmacokin
 
 The model structure requires an absorption phase, but the source text does not provide a value for ka, forcing the use of placeholder conventions instead of fitted estimates. Consequently, the apparent clearance (10.0 L/h) and volume of distribution (346.2468 L) rely on an unreported absorption mechanism. This gap prevents the model from reflecting the specific pharmacokinetic profile described in the Bisaso_2026 review. Extracted — salbutamol: CL/F 10 L/h, V/F 346 L.
 
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q362: this record has 24, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Exposure CL/F of A (L/h) | `Q27` · CL/F | 10.0 | L/h | 2.778e-06 | m3/s | L/h | review (0.7) | Bisaso_2026:review |
+| CL/F of A (L/h) | `Q27` · CL/F | 10.0 | L/h | 2.778e-06 | m3/s | L/h | review (0.7) | Bisaso_2026:review |
 | V/F (derived from CL·t½/ln2) | `Q76` · V/F | 346.2468 | L | 0.3462 | m3 | L | review (0.7) | Bisaso_2026:review |
 
 <details class="legend">
@@ -79,6 +79,28 @@ The model structure requires an absorption phase, but the source text does not p
 - central volume derived from CL·t½/ln2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (1/3 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q362]` | 24 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 24 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -159,13 +181,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bisaso KR, Karyaburo RK, Mukonzo JK, Ette EI. Differential Impact of Pharmacokinetic and Pharmacodynamic Variability on Response to Combination Therapy. Pharmacology research & perspectives 14(4):e70281 (2026). [doi:10.1002/prp2.70281](https://doi.org/10.1002/prp2.70281)
 
-**This record:** Pharmacolibrary v26.09, model `Salbutamol_Bisaso2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference>
+**This record:** Pharmacolibrary, model `Salbutamol_Bisaso2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SalbutamolBisaso2026reference,
   title  = {{Pharmacolibrary model Salbutamol_Bisaso2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference},
   note   = {Parameters from doi:10.1002/prp2.70281},
 }
@@ -184,5 +205,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Bisaso2026_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Bisaso2026_reference%0APaper%3A%20Bisaso_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Bisaso2026_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Bisaso2026_reference%0APaper%3A%20Bisaso_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 08:54 UTC</sub>

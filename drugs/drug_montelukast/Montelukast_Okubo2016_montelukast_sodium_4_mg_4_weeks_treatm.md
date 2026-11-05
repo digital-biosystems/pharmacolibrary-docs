@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Okubo_2016 \u00b7 montelukast_sodium_4_mg_4_weeks_treatmentn_15_n&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # montelukast — `Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 15:35 UTC (Rejected), but the paper was screened again on 2026-11-04 04:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm" status="rejected" stale="false" population="paediatric patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm" status="rejected" stale="true" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Okubo K, Inoue Y, Numaguchi H, Tanaka K, Saito I, Oshima N et al. Montelukast in the treatment of perennial allergic rhinitis in paediatric Japanese patients; an open-label clinical trial. Journal of drug assessment 5(1):6-14 (2016).
@@ -17,7 +17,7 @@ Okubo K, Inoue Y, Numaguchi H, Tanaka K, Saito I, Oshima N et al. Montelukast in
 
 ## Population and dosing
 
-**Population:** paediatric patients with perennial allergic rhinitis · condition perennial allergic rhinitis · age group mixed · n = 87.
+**Population:** paediatric Japanese patients with perennial allergic rhinitis · condition perennial allergic rhinitis · age group child · n = 87.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,11 +86,11 @@ Independently confirmed by `gpt-oss:120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -129,5 +129,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm%0APaper%3A%20Okubo_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm&body=Drug%3A%20montelukast%0ARecord%3A%20Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm%0APaper%3A%20Okubo_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 04:48 UTC</sub>

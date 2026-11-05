@@ -22,14 +22,6 @@ Carfilzomib is a proteasome inhibitor used to treat multiple myeloma. It is an a
 |---|---|---|---|---|---|---|
 | carfilzomib | parent | 719.91 | C40H57N5O7 | DrugBank | [11556711](https://pubchem.ncbi.nlm.nih.gov/compound/11556711) | Lin_2023 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 133 | L/h | 133 L/h | adults with relapsed/refractory diffuse large B-cell lymphoma | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lin_2023_reference](drugs/drug_carfilzomib/Carfilzomib_Lin2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -114,5 +106,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarfilzomib%5D&body=Drug%3A%20carfilzomib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carfilzomib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 22:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarfilzomib%5D&body=Drug%3A%20carfilzomib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carfilzomib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 22:18 UTC</sub>

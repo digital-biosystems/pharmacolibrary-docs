@@ -24,20 +24,9 @@ Mitomycin is a cytotoxic antibiotic used as an anticancer drug, for example agai
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.72 | L/h | 112 mL/min | beagle dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Barbhaiya_1984_reference](drugs/drug_mitomycin/Mitomycin_Barbhaiya1984_reference.md) |
-| CL | CL | 35.5 | L/h | 35.5 L/h | patients with hepatic metastases from colorectal cancer | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cerretani_2002_reference](drugs/drug_mitomycin/Mitomycin_Cerretani2002_reference.md) |
-| CL | CL | 45.42 | L/h | 757 ml/min | patients with liver metastases undergoing chemoembolization | 25 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rump_2002_reference](drugs/drug_mitomycin/Mitomycin_Rump2002_reference.md) |
-| CL | CL | 72 | L/h | 72 L/h | patients with peritoneal carcinomatosis | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cerretani_2005_reference](drugs/drug_mitomycin/Mitomycin_Cerretani2005_reference.md) |
-| V | V | 1.9 | L | 1.90 L | beagle dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Barbhaiya_1984_reference](drugs/drug_mitomycin/Mitomycin_Barbhaiya1984_reference.md) |
-| V | V | 18.9 ‡ | L | 0.27 l/kg | patients with liver metastases undergoing chemoembolization | 25 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rump_2002_reference](drugs/drug_mitomycin/Mitomycin_Rump2002_reference.md) |
-| t½ | t1/2z | 0.8833 | h | 53 min | beagle dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Barbhaiya_1984_reference](drugs/drug_mitomycin/Mitomycin_Barbhaiya1984_reference.md) |
-| t½ | t1/2z | 1.395 | h | 83.7 min | patients with peritoneal carcinomatosis | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cerretani_2005_reference](drugs/drug_mitomycin/Mitomycin_Cerretani2005_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Barbhaiya_1984 · CL</text><circle cx="334.8" cy="30.0" r="4" fill="#ef6c00"><title>Barbhaiya_1984 · CL: 6.72 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Cerretani_2002 · CL</text><circle cx="461.3" cy="46.0" r="4" fill="#ef6c00"><title>Cerretani_2002 · CL: 35.5 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rump_2002 · CL</text><circle cx="480.0" cy="62.0" r="4" fill="#ef6c00"><title>Rump_2002 · CL: 45.42 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cerretani_2005 · CL</text><circle cx="515.0" cy="78.0" r="4" fill="#ef6c00"><title>Cerretani_2005 · CL: 72 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Barbhaiya_1984 · V</text><circle cx="238.8" cy="30.0" r="4" fill="#ef6c00"><title>Barbhaiya_1984 · V: 1.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rump_2002 · V ·/kg</text><circle cx="413.4" cy="46.0" r="4" fill="#ef6c00"><title>Rump_2002 · V ·/kg: 18.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -251,5 +240,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D&body=Drug%3A%20mitomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 18:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D&body=Drug%3A%20mitomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 18:58 UTC</sub>

@@ -167,13 +167,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhou WY, Ling J, Guan MM, Qu Y, Dan YH, Chen R. Population Pharmacokinetics of Rituximab in Treatment-Naïve Chinese Patients With Diffuse Large B-cell Lymphoma During Induction Therapy: Clinical Implications. Clinical and translational science 19(8):e70683 (2026). [doi:10.1111/cts.70683](https://doi.org/10.1111/cts.70683)
 
-**This record:** Pharmacolibrary v26.09, model `Cyclophosphamide_Zhou2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference>
+**This record:** Pharmacolibrary, model `Cyclophosphamide_Zhou2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CyclophosphamideZhou2026reference,
   title  = {{Pharmacolibrary model Cyclophosphamide_Zhou2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference},
   note   = {Parameters from doi:10.1111/cts.70683},
 }
@@ -192,5 +191,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyclophosphamide%5D%20Cyclophosphamide_Zhou2026_reference&body=Drug%3A%20cyclophosphamide%0ARecord%3A%20Cyclophosphamide_Zhou2026_reference%0APaper%3A%20Zhou_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyclophosphamide%5D%20Cyclophosphamide_Zhou2026_reference&body=Drug%3A%20cyclophosphamide%0ARecord%3A%20Cyclophosphamide_Zhou2026_reference%0APaper%3A%20Zhou_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:42 UTC</sub>

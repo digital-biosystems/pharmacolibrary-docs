@@ -125,13 +125,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Tolterodine_Sano2023_PD_mcc`. <https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_PD_mcc>
+**This record:** Pharmacolibrary, model `Tolterodine_Sano2023_PD_mcc`. <https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_PD_mcc>
 
 ```bibtex
 @misc{pharmacolibrary_TolterodineSano2023PDmcc,
   title  = {{Pharmacolibrary model Tolterodine_Sano2023_PD_mcc}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_PD_mcc},
 }
 ```
@@ -145,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolterodine%5D%20pd_Sano_2023_MCC&body=Drug%3A%20tolterodine%0ARecord%3A%20pd_Sano_2023_MCC%0APaper%3A%20Sano_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolterodine/pd_Sano_2023_MCC%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolterodine%5D%20pd_Sano_2023_MCC&body=Drug%3A%20tolterodine%0ARecord%3A%20pd_Sano_2023_MCC%0APaper%3A%20Sano_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolterodine/pd_Sano_2023_MCC%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [tolterodine](drugs/drug_tolterodine/)</sub>

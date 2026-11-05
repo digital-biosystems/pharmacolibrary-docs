@@ -121,13 +121,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac`. <https://pharmacolibrary.github.io/#/drugs/drug_metipranolol/Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac>
+**This record:** Pharmacolibrary, model `Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac`. <https://pharmacolibrary.github.io/#/drugs/drug_metipranolol/Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac>
 
 ```bibtex
 @misc{pharmacolibrary_MetipranololLapka1990PDinhibitionofexerciseinducedtac,
   title  = {{Pharmacolibrary model Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_metipranolol/Metipranolol_Lapka1990_PD_inhibition_of_exercise_induced_tac},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetipranolol%5D%20pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia&body=Drug%3A%20metipranolol%0ARecord%3A%20pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia%0APaper%3A%20Lapka_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetipranolol%5D%20pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia&body=Drug%3A%20metipranolol%0ARecord%3A%20pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia%0APaper%3A%20Lapka_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [metipranolol](drugs/drug_metipranolol/)</sub>

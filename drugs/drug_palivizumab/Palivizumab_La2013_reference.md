@@ -4,11 +4,11 @@
 
 # palivizumab — `Palivizumab_La2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 14:29 UTC (Rejected), but the paper was screened again on 2026-11-04 06:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_La2013_reference" status="rejected" stale="false" population="paediatric high-risk infants and children with chronic lung disease of prematurity" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_La2013_reference" status="rejected" stale="true" population="paediatric high-risk infants and children with chronic lung disease of prematurity" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 La Via WV, Notario GF, Yu XQ, Sharma S, Noertersheuser PA, Robbie GJ. Three monthly doses of palivizumab are not adequate for 5-month protection: a population pharmacokinetic analysis. Pulmonary pharmacology & therapeutics 26(6):666–671 (2013).
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,5 +113,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_La2013_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_La2013_reference%0APaper%3A%20La_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_La2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_La2013_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_La2013_reference%0APaper%3A%20La_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_La2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 06:15 UTC</sub>

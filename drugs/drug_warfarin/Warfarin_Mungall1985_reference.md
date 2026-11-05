@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Mungall_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Mungall1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 15:25 UTC (Rejected), but the paper was screened again on 2026-11-04 15:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Mungall1985_reference" status="rejected" stale="false" population="adult hospitalized and outpatient patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Mungall1985_reference" status="rejected" stale="true" population="adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mungall DR, Ludden TM, Marshall J, Hawkins DW, Talbert RL, Crawford MH. Population pharmacokinetics of racemic warfarin in adult patients. Journal of pharmacokinetics and biopharmaceutics 13(3):213–227 (1985).
@@ -17,7 +17,9 @@ Mungall DR, Ludden TM, Marshall J, Hawkins DW, Talbert RL, Crawford MH. Populati
 
 ## Population and dosing
 
-**Population:** adult hospitalized and outpatient patients · age group adult · n = condition.
+**Population:** adult patients · condition various (DVT, PE, valve replacement, AF, CHF) · age group adult · n = ... The paper may be in a language other than English.
+
+**Dosed compound ≠ measured compound:** dosed racemic warfarin, measured warfarin.
 
 ## Model
 
@@ -33,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,19 +49,25 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.348, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic warfarin, the second reading warfarin; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Medical Center Hospital (inpatients and out-patients), San Antonio, Texas' — extend the ontology if this is a real PK parameter (source ['Mungall_1985_table_p2_1:row0:col1'])
+- dropped unlinked row (NIL): 'Brady Green Clinics (outpatients), San Antonio, Texas' — extend the ontology if this is a real PK parameter (source ['Mungall_1985_table_p2_1:row1:col1'])
+- dropped unlinked row (NIL): 'Veterans’ Administration Medical Center (out-patients), Birmingham, Alabama' — extend the ontology if this is a real PK parameter (source ['Mungall_1985_table_p2_1:row2:col1'])
+- dropped unlinked row (NIL): 'Total' — extend the ontology if this is a real PK parameter (source ['Mungall_1985_table_p2_1:row3:col1'])
+- table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=warfarin
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- status held at "Needs review" — not promoted
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Mungall_1985_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- table Mungall_1985_table_p2_1: units_need_context
 
 ## Validation
 
@@ -68,15 +76,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | primary re-run | 0.286 (2/7 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl]` | 0.348 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[phenytoin or phenobarbital effect on clearance]` |  | 30 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` | 14.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[clearance relative standard deviation]` |  | 28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution relative standard deviation]` |  | 44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[warfarin oral clearance]` |  | 14 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | racemic warfarin | warfarin | mismatch |
 
 </details>
 
@@ -115,5 +125,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Mungall1985_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Mungall1985_reference%0APaper%3A%20Mungall_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Mungall1985_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Mungall1985_reference&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Mungall1985_reference%0APaper%3A%20Mungall_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Mungall1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 15:05 UTC</sub>

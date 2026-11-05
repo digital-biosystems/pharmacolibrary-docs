@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Osawa EA, Biesenbach P, Cutuli SL, Eastwood GM, Mårtensson J, Matalanis G et al. Magnesium sulfate therapy after cardiac surgery: a before-and-after study comparing strategies involving bolus and continuous infusion. Critical care and resuscitation : journal of the Australasian Academy of Critical Care Medicine 20(3):209–216 (2018).
 
-**This record:** Pharmacolibrary v26.09, model `MagnesiumDifferentSaltsInCombination_Osawa2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference>
+**This record:** Pharmacolibrary, model `MagnesiumDifferentSaltsInCombination_Osawa2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MagnesiumDifferentSaltsInCombinationOsawa2018reference,
   title  = {{Pharmacolibrary model MagnesiumDifferentSaltsInCombination_Osawa2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference},
 }
 ```
@@ -194,5 +193,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_different_salts_in_combination%5D%20MagnesiumDifferentSaltsInCombination_Osawa2018_reference&body=Drug%3A%20magnesium_different_salts_in_combination%0ARecord%3A%20MagnesiumDifferentSaltsInCombination_Osawa2018_reference%0APaper%3A%20Osawa_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_different_salts_in_combination%5D%20MagnesiumDifferentSaltsInCombination_Osawa2018_reference&body=Drug%3A%20magnesium_different_salts_in_combination%0ARecord%3A%20MagnesiumDifferentSaltsInCombination_Osawa2018_reference%0APaper%3A%20Osawa_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:15 UTC</sub>

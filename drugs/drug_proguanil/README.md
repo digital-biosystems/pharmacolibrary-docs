@@ -33,20 +33,9 @@ Proguanil is an antimalarial drug used to treat and prevent malaria, especially 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.476 | L/h | 0.476 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cherkaoui-Rbati_2023_reference](drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md) |
-| CL | CL | 0.476 | L/h | 0.476 L/h | healthy Korean adults | 16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khwarg_2024_cc](drugs/drug_proguanil/Proguanil_Khwarg2024_cc.md) |
-| CL | CL | 0.476 | L/h | 0.476 L/h | healthy Korean adults | 16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khwarg_2024_ct](drugs/drug_proguanil/Proguanil_Khwarg2024_ct.md) |
-| CL | CL/F | 21.91 ‡ | L/h | 313 ml/h/kg | pregnant women with falciparum malaria | 24 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McGready_2003_reference](drugs/drug_proguanil/Proguanil_McGready2003_reference.md) |
-| V | V1 | 8.58 | L | 8.58 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cherkaoui-Rbati_2023_reference](drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md) |
-| t½ | t1/2z | 16.18 | h | 16.18 h | healthy Korean adults | 16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khwarg_2024_cc](drugs/drug_proguanil/Proguanil_Khwarg2024_cc.md) |
-| t½ | t1/2z | 18.04 | h | 18.04 h | healthy Korean adults | 16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Khwarg_2024_ct](drugs/drug_proguanil/Proguanil_Khwarg2024_ct.md) |
-| t½ | t1/2z | 29.1 | h | 29.1 h | pregnant women with falciparum malaria | 24 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McGready_2003_reference](drugs/drug_proguanil/Proguanil_McGready2003_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="90" stroke="#ddd"/><text x="306.7" y="104" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="90" stroke="#ddd"/><text x="423.3" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cherkaoui-Rbati_2023 · CL</text><circle cx="269.1" cy="30.0" r="4" fill="#ef6c00"><title>Cherkaoui-Rbati_2023 · CL: 0.476 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Khwarg_2024 · CL</text><circle cx="269.1" cy="46.0" r="4" fill="#ef6c00"><title>Khwarg_2024 · CL: 0.476 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Khwarg_2024 · CL</text><circle cx="269.1" cy="62.0" r="4" fill="#ef6c00"><title>Khwarg_2024 · CL: 0.476 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">McGready_2003 · CL/F ·/kg</text><circle cx="463.1" cy="78.0" r="4" fill="#ef6c00"><title>McGready_2003 · CL/F ·/kg: 21.91 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -132,5 +121,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bproguanil%5D&body=Drug%3A%20proguanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_proguanil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bproguanil%5D&body=Drug%3A%20proguanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_proguanil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:00 UTC</sub>

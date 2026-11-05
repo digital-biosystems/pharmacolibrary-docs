@@ -235,13 +235,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wade JR, Snoeck E, Duff F, Lamb M, Jorga K. Pharmacokinetics of ribavirin in patients with hepatitis C virus. British journal of clinical pharmacology 62(6):710–714 (2006). [doi:10.1111/j.1365-2125.2006.02704.x](https://doi.org/10.1111/j.1365-2125.2006.02704.x)
 
-**This record:** Pharmacolibrary v26.09, model `Ribavirin_Wade2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ribavirin/Ribavirin_Wade2006_reference>
+**This record:** Pharmacolibrary, model `Ribavirin_Wade2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ribavirin/Ribavirin_Wade2006_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RibavirinWade2006reference,
   title  = {{Pharmacolibrary model Ribavirin_Wade2006_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ribavirin/Ribavirin_Wade2006_reference},
   note   = {Parameters from doi:10.1111/j.1365-2125.2006.02704.x},
 }
@@ -260,5 +259,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribavirin%5D%20Ribavirin_Wade2006_reference&body=Drug%3A%20ribavirin%0ARecord%3A%20Ribavirin_Wade2006_reference%0APaper%3A%20Wade_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribavirin/Ribavirin_Wade2006_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribavirin%5D%20Ribavirin_Wade2006_reference&body=Drug%3A%20ribavirin%0ARecord%3A%20Ribavirin_Wade2006_reference%0APaper%3A%20Wade_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribavirin/Ribavirin_Wade2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:48 UTC</sub>

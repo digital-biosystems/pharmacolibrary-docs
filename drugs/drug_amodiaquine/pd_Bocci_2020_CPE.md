@@ -125,13 +125,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Amodiaquine_Bocci2020_PD_cpe`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Bocci2020_PD_cpe>
+**This record:** Pharmacolibrary, model `Amodiaquine_Bocci2020_PD_cpe`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Bocci2020_PD_cpe>
 
 ```bibtex
 @misc{pharmacolibrary_AmodiaquineBocci2020PDcpe,
   title  = {{Pharmacolibrary model Amodiaquine_Bocci2020_PD_cpe}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Bocci2020_PD_cpe},
 }
 ```
@@ -145,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20pd_Bocci_2020_CPE&body=Drug%3A%20amodiaquine%0ARecord%3A%20pd_Bocci_2020_CPE%0APaper%3A%20Bocci_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/pd_Bocci_2020_CPE%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20pd_Bocci_2020_CPE&body=Drug%3A%20amodiaquine%0ARecord%3A%20pd_Bocci_2020_CPE%0APaper%3A%20Bocci_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/pd_Bocci_2020_CPE%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [amodiaquine](drugs/drug_amodiaquine/)</sub>

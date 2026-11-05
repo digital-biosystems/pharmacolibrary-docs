@@ -22,16 +22,6 @@ Piretanide is a loop (high-ceiling) diuretic used to treat conditions involving 
 |---|---|---|---|---|---|---|
 | piretanide | parent | 362.4 | C17H18N2O5S | DrugBank | [4849](https://pubchem.ncbi.nlm.nih.gov/compound/4849) | Marone_1984, Trenk_1987 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 13.14 | L/h | 219 ml/min | healthy male volunteers | &gt;=10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) |
-| t½ | t1/2z | 1.29 | h | 1.29 h | healthy male volunteers | &gt;=10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) |
-| F | Fab | 0.88 |  | 0.88 | healthy male volunteers | &gt;=10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -121,5 +111,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiretanide%5D&body=Drug%3A%20piretanide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piretanide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 19:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiretanide%5D&body=Drug%3A%20piretanide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piretanide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 19:33 UTC</sub>

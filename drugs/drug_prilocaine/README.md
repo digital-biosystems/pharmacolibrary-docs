@@ -22,15 +22,6 @@ Prilocaine is an amino amide local anesthetic used to prevent or relieve pain du
 |---|---|---|---|---|---|---|
 | prilocaine | parent | 220.311 | C13H20N2O | DrugBank | [4906](https://pubchem.ncbi.nlm.nih.gov/compound/4906) | Lauven_1990 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 138.6 | L/h | 2310 ml/min | adults undergoing hand surgery | # integer or 'unknown', e.g. 150 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) |
-| V | V | 661 | L | 661 l | adults undergoing hand surgery | # integer or 'unknown', e.g. 150 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -100,5 +91,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprilocaine%5D&body=Drug%3A%20prilocaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prilocaine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprilocaine%5D&body=Drug%3A%20prilocaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prilocaine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:14 UTC</sub>

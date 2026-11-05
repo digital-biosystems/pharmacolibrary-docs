@@ -169,13 +169,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Hartman SJF, Brüggemann RJ, Orriëns L, Dia N, Schreuder MF, de Wildt SN. Pharmacokinetics and Target Attainment of Antibiotics in Critically Ill Children: A Systematic Review of Current Literature. Clinical pharmacokinetics 59(2):173-205 (2020). [doi:10.1007/s40262-019-00813-w](https://doi.org/10.1007/s40262-019-00813-w)
 
-**This record:** Pharmacolibrary v26.09, model `Cefuroxime_Hartman2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference>
+**This record:** Pharmacolibrary, model `Cefuroxime_Hartman2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CefuroximeHartman2020reference,
   title  = {{Pharmacolibrary model Cefuroxime_Hartman2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference},
   note   = {Parameters from doi:10.1007/s40262-019-00813-w},
 }
@@ -194,5 +193,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefuroxime%5D%20Cefuroxime_Hartman2020_reference&body=Drug%3A%20cefuroxime%0ARecord%3A%20Cefuroxime_Hartman2020_reference%0APaper%3A%20Hartman_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefuroxime%5D%20Cefuroxime_Hartman2020_reference&body=Drug%3A%20cefuroxime%0ARecord%3A%20Cefuroxime_Hartman2020_reference%0APaper%3A%20Hartman_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefuroxime/Cefuroxime_Hartman2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:04 UTC</sub>

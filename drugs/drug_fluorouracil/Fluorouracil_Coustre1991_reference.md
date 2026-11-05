@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Coust\u00e8re_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Coustre1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model is rejected because the extracted volume of distribution value of 0.2 mL for fluorouracil is physiologically implausible.
+> This record was reviewed on 2026-10-22 14:18 UTC (Rejected), but the paper was screened again on 2026-11-03 21:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model is rejected because the extracted volume of distribution value of 0.2 mL for fluorouracil is physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Coustre1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Coustre1991_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Coustère C, Mentré F, Sommadossi JP, Diasio RB, Steimer JL. A mathematical model of the kinetics of 5-fluorouracil and its metabolites in cancer patients. Cancer chemotherapy and pharmacology 28(2):123–129 (1991).
@@ -17,29 +17,41 @@ Coustère C, Mentré F, Sommadossi JP, Diasio RB, Steimer JL. A mathematical mod
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult · n = , 10.
+**Population:** cancer patients · condition cancer · age group adult.
+
+**Dosing:** 500 mg/m2, iv, single.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 15 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| dihydrofluorouracil (FUH2) | equation variable | 225 | min |
-| Anabolic clearance | CL | 39 | % |
-| Urinary clearance | CLu | 6.5 | % |
-| volume | V | 0.2 | mL |
+| V1 (1) | V1 | 6.3 | L |
+| V3 (1) | V2 | 227.7 | L |
+| V4 (1) | V | 33.99 | L |
+| V5 (1) | V | 6.85 | L |
+| kl-o (rain q) | CL | 0.042 | rain q |
+| kl-2 (rain -1) | Q | 0.181 | rain -1 |
+| kl 6 (min -a) | t1/2α | 0.016 | min -a |
+| k3-4 (min q, x 100) 0.645 | CLfm | 0.458 | min-* |
+| ks-7 (min -1, xl,O00) 0.188 | CL | 0 | rain q |
+| k4-5 (min -t) | Q | 0.058 | min -t |
+| k4-s (min -L, x 100) 0.904 | CL | 8.543 | rain q |
+| k5-9 (min-*) | CLfm | 0.041 | min-* |
+| ks-ll (min q, • 100) 0.t03 | CL | 0.232 | rain q |
+| k11-lo (min -1, x 100) 0.299 | CLfm | 0.619 | min-* |
 | Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.31). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +65,7 @@ Coustère C, Mentré F, Sommadossi JP, Diasio RB, Steimer JL. A mathematical mod
 
 The record reports a volume of distribution of 0.2 mL, a magnitude inconsistent with the physiological range for this drug and indicative of a unit or scale extraction error. Additionally, the record was built from the paper's abstract only, meaning the reported summary statistics stand in for a fitted model rather than reflecting a complete pharmacokinetic parameterization. These issues combined result in the rejection of the record. Extracted — fluorouracil: CL 39 %, CLu 6.5 %, V 0.2 mL, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has 5-fluorouracil → dihydrofluorouracil (metabolism); dihydrofluorouracil → alpha-fluoro-beta-ureidopropionic acid (metabolism); alpha-fluoro-beta-ureidopropionic acid → alpha-fluoro-beta-alanine (metabolism), the second reading 5-fluorouracil → dihydrofluorouracil (metabolism); 5-fluorouracil → alpha-fluoro-beta-ureidopropionic acid (metabolism); 5-fluorouracil → alpha-fluoro-beta-alanine (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-FU; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -61,10 +73,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| dihydrofluorouracil (FUH2) | `Q900` · equation variable | 225 | min |  |  | min | llm (0.6) | Coustère_1991:abstract |
-| Anabolic clearance | `Q22` · CL | 39 | % |  |  | % | exact (1) | Coustère_1991:abstract |
-| Urinary clearance | `Q24` · CLu | 6.5 | % |  |  | % | llm_corrected (0.6) | Coustère_1991:abstract, Coustère_1991:abstract, Coustère_1991:abstract, Coustère_1991:abstract |
-| volume | `Q61` · V | 0.2 | mL | 2e-07 | m3 | L | review_gapfill (0.7) | Hara_2026:review |
+| V1 (1) | `Q63` · V1 | 6.3 | L | 0.0063 | m3 | L | exact (1) | tab_0:row1:col1, tab_0:row1:col3 |
+| V3 (1) | `Q64` · V2 | 227.7 | L | 0.2277 | m3 | L | exact (1) | tab_0:row2:col1, tab_0:row2:col3 |
+| V4 (1) | `Q61` · V | 33.99 | L | 0.03399 | m3 | L | exact (1) | tab_0:row3:col1, tab_0:row3:col3 |
+| V5 (1) | `Q61` · V | 6.85 | L | 0.00685 | m3 | L | exact (1) | tab_0:row4:col1, tab_0:row4:col3 |
+| kl-o (rain q) | `Q22` · CL | 0.042 | rain q |  |  | rainq | exact (1) | tab_0:row5:col1, tab_0:row5:col3 |
+| kl-2 (rain -1) | `Q30` · Q | 0.181 | rain -1 |  |  | 1/rain | exact (1) | tab_0:row6:col1, tab_0:row6:col3 |
+| kl 6 (min -a) | `Q59` · t1/2α | 0.016 | min -a |  |  | min·a | llm (0.6) | tab_0:row7:col1, tab_0:row7:col3 |
+| k3-4 (min q, x 100) 0.645 | `Q370` · CLfm | 0.458 | min-* |  |  | min- | exact (1) | tab_0:row10:col3 |
+| ks-7 (min -1, xl,O00) 0.188 | `Q22` · CL | 0 | rain q |  |  | rainq | exact (1) | tab_0:row11:col3 |
+| k4-5 (min -t) | `Q30` · Q | 0.058 | min -t |  |  | min·t | exact (1) | tab_0:row12:col1, tab_0:row12:col3 |
+| k4-s (min -L, x 100) 0.904 | `Q22` · CL | 8.543 | rain q |  |  | rainq | exact (1) | tab_0:row13:col3 |
+| k5-9 (min-*) | `Q370` · CLfm | 0.041 | min-* |  |  | min- | exact (1) | tab_0:row14:col1, tab_0:row14:col3 |
+| ks-ll (min q, • 100) 0.t03 | `Q22` · CL | 0.232 | rain q |  |  | rainq | exact (1) | tab_0:row15:col3 |
+| k11-lo (min -1, x 100) 0.299 | `Q370` · CLfm | 0.619 | min-* |  |  | min- | exact (1) | tab_0:row16:col3 |
 | Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review_gapfill (0.7) | Bae_2026:review |
 
 <details class="legend">
@@ -72,56 +94,95 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| catabolites measured after i.v. bolus administration of 500 mg/m 2 drug | Q900 | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '5-FU' — extend the ontology if this is a real PK parameter (source ['Coustère_1991:abstract'])
-- dropped unlinked row (NIL): 'unchanged 5-FU' — extend the ontology if this is a real PK parameter (source ['Coustère_1991:abstract'])
-- dropped unlinked row (NIL): 'alpha-fluoro-beta-ureidopropionic acid (FUPA)' — extend the ontology if this is a real PK parameter (source ['Coustère_1991:abstract'])
-- dropped unlinked row (NIL): 'alpha-fluoro-beta-alanine (FBAL)' — extend the ontology if this is a real PK parameter (source ['Coustère_1991:abstract'])
-- linked 'Anabolic clearance' as 'CL' → Q22 (CL) for  — compound marker removed
-- unit_dimension_mismatch: 'Anabolic clearance' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'Urinary clearance' → Q24 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'urinary excretion of 5-FU' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('urinary excretion of 5-FU', value 64) — already have one for this compound
+- column 'wm jrl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'wm 1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- linked 'kl-o (rain q)' as 'CL' → Q22 (CL) for  — compound marker removed
+- unit_dimension_unknown: 'rain q' (CL)
+- unit_dimension_unknown: 'rain -1' (Q)
+- unit_dimension_unknown: 'min -a' (t1/2α)
+- unit_dimension_unknown: 'min q' (Q)
+- dropped duplicate Q30 ('k2 1 (min q)', value '0.116') — already have one for this compound
+- unit_dimension_unknown: 'min -l' (CL)
+- dropped duplicate Q22 ('k2-s (min -l)', value '0.114') — already have one for this compound
+- unit_dimension_unknown: 'min -t' (Q)
+- unit_dimension_unknown: 'min-*' (CLfm)
+- unit inherited for CLfm (Q370): 'min-*' from a same-Q-code sibling (this row's label had no unit)
+- unit inherited for CL (Q22): 'rain q' from a same-Q-code sibling (this row's label had no unit)
+- implicit units: 'V1 (1)' → L (from the popPK convention: 'V1 is defined as the volume of distribution of the central compartment. In population PK, volumes of distribution are co')
+- implicit units: 'V3 (1)' → L (from the popPK convention: 'The parameter label indicates it is a volume of distribution (peripheral). Volumes of distribution in PK models are conv')
+- implicit units: 'V4 (1)' → L (from the popPK convention: 'The parameter label indicates it is a volume of distribution. Volumes of distribution in PK models are conventionally ex')
+- implicit units: 'V5 (1)' → L (from the popPK convention: 'The parameter label indicates it is a volume of distribution. Volumes of distribution in PK models are conventionally ex')
+- implicit units: 'kl-o (rain q)' — the LLM proposed '1/min', whose dimension does not fit Q22; left unset
+- implicit units: 'kl-2 (rain -1)' — the LLM proposed '1/min', whose dimension does not fit Q30; left unset
+- implicit units: 'kl 6 (min -a)' — the LLM proposed '1/min', whose dimension does not fit Q59; left unset
+- implicit units: 'k3-4 (min q, x 100) 0.645' — the LLM proposed '1/min', whose dimension does not fit Q370; left unset
+- implicit units: 'ks-7 (min -1, xl,O00) 0.188' — the LLM proposed '1/min', whose dimension does not fit Q22; left unset
+- implicit units: 'k4-5 (min -t)' — the LLM proposed '1/min', whose dimension does not fit Q30; left unset
+- implicit units: 'k4-s (min -L, x 100) 0.904' — the LLM proposed '1/min', whose dimension does not fit Q22; left unset
+- implicit units: 'k5-9 (min-*)' — the LLM proposed '1/min', whose dimension does not fit Q370; left unset
+- implicit units: 'ks-ll (min q, • 100) 0.t03' — the LLM proposed '1/min', whose dimension does not fit Q22; left unset
+- implicit units: 'k11-lo (min -1, x 100) 0.299' — the LLM proposed '1/min', whose dimension does not fit Q370; left unset
+- metabolite volume: 'V4 (1)' Q63→Q61 for FUPA — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'V5 (1)' Q63→Q61 for FBAL — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 3 first-order transfer(s) across 4 compounds → general_linear
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- topology: 4 first-order transfer(s) across 5 compounds → general_linear
+- template fit: none — 4 metabolites — the templates hold two
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 8/8 row label(s) assigned, 6 linked by role; re-tagged fluorouracil→parent ×8, fluorouracil→dihydrofluorouracil ×1, fluorouracil→alpha-fluoro-beta-ureidopropionic acid ×1, fluorouracil→alpha-fluoro-beta-alanine ×1
-- molar mass: none found for 'dihydrofluorouracil' — its concentrations stay mass-only
-- molar mass: none found for 'alpha-fluoro-beta-ureidopropionic acid' — its concentrations stay mass-only
-- molar mass: none found for 'alpha-fluoro-beta-alanine' — its concentrations stay mass-only
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Hara_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 25 linked by role; re-tagged parent→FUH2 ×4, parent→FUPA ×5, parent→FBAL ×5, parent→CFBAL ×1
+- molar mass: no plausible PubChem entry for 'FUH2' ('2,4-difluorobeta-alanine') — left in mass units
+- molar mass: no plausible PubChem entry for 'CFBAL' ('conjugate of 2-fluorobeta-alanine') — left in mass units
+- molar mass: none found for 'FUH2' — its concentrations stay mass-only
+- molar mass: none found for 'CFBAL' — its concentrations stay mass-only
 - gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Coustère_1991_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
+- table tab_0: unknown_column_role
+- table tab_0: unbound_uncertainty
+- LLM selected parameter table(s) 1
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.31 (9/29 fields) | 20 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>20 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['5-fluorouracil', 'dihydrofluorouracil', 'metabolism'], ['dihydrofluorouracil', 'alpha-fluoro-beta-ureidopropionic acid', 'metabolism'], ['alpha-fluoro-beta-ureidopropionic acid', 'alpha-fluoro-beta-alanine', 'metabolism']] | [['5-fluorouracil', 'dihydrofluorouracil', 'metabolism'], ['5-fluorouracil', 'alpha-fluoro-beta-ureidopropionic acid', 'metabolism'], ['5-fluorouracil', 'alpha-fluoro-beta-alanine', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[anabolic clearance accounted for]` |  | 39 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimated mean half-life]` |  | 6.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[urinary excretion of 5-fu increased up to ... of total drug clearance]` | 64 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[urinary excretion of 5-fu increased up to]` |  | 64 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume]` | 0.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['fluorouracil', 'fuh2', 'metabolism'], ['fuh2', 'fupa', 'metabolism'], ['fupa', 'fbal', 'metabolism'], ['fbal', 'cfbal', 'metabolism']] | [['5-fu', 'fuh2', 'metabolism'], ['fuh2', 'fupa', 'metabolism'], ['fupa', 'fbal', 'metabolism'], ['fbal', 'cfbal', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[catabolites measured after i.v. bolus administration of 500 mg/m 2 drug]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k11-lo (min -1, x 100) 0.299].parameter_id` | Q370 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[k2-s]` |  | 0.114 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k3-4 (min q, x 100) 0.645].parameter_id` | Q370 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[k4-s (min -l, x 100) 0.904]` |  | 8.543 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k4-s (min -l, x 100) 0.904]` | 8.543 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl 6]` | 0.016 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl 6]` |  | 0.016 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl-o].parameter_id` | Q22 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[ks-7 (min -1, xl,o00) 0.188]` | 0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ks-7 (min -1, xl,o00) 0.188]` |  | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` |  | 227.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 227.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` |  | 33.99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4]` | 33.99 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | 6.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` |  | 6.85 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fluorouracil | 5-FU | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fluorouracil | 5-FU | mismatch |
 
 </details>
 
@@ -135,16 +196,30 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 14 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Coustère_1991:abstract'] |
-| C5_dimension_Q24 | fail | dimensionless | % | ['Coustère_1991:abstract', 'Coustère_1991:abstract', 'Coustère_1991:abstract', 'Coustère_1991:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hara_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 39 | ['Coustère_1991:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row3:col1', 'tab_0:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row4:col1', 'tab_0:row4:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_0:row1:col1', 'tab_0:row1:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_0:row2:col1', 'tab_0:row2:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | rain q | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | rain q | ['tab_0:row11:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | rain q | ['tab_0:row13:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | rain q | ['tab_0:row15:col3'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | rain -1 | ['tab_0:row6:col1', 'tab_0:row6:col3'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | min -t | ['tab_0:row12:col1', 'tab_0:row12:col3'] |
+| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | min-* | ['tab_0:row10:col3'] |
+| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | min-* | ['tab_0:row14:col1', 'tab_0:row14:col3'] |
+| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | min-* | ['tab_0:row16:col3'] |
+| C5_unit_missing_Q59 | fail | [time] | min -a | ['tab_0:row7:col1', 'tab_0:row7:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.042 | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0002 L | ['Hara_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 34 L | ['tab_0:row3:col1', 'tab_0:row3:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.85 L | ['tab_0:row4:col1', 'tab_0:row4:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 6.3 L | ['tab_0:row1:col1', 'tab_0:row1:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 228 L | ['tab_0:row2:col1', 'tab_0:row2:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,9 +231,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -167,5 +252,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Coustre1991_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Coustre1991_reference%0APaper%3A%20Coust%C3%A8re_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Coustre1991_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Coustre1991_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Coustre1991_reference%0APaper%3A%20Coust%C3%A8re_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Coustre1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:28 UTC</sub>

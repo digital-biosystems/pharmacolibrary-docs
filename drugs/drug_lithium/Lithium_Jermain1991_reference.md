@@ -205,13 +205,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jermain DM, Crismon ML, Martin ES. Population pharmacokinetics of lithium. Clinical pharmacy 10(5):376–381 (1991).
 
-**This record:** Pharmacolibrary v26.09, model `Lithium_Jermain1991_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Jermain1991_reference>
+**This record:** Pharmacolibrary, model `Lithium_Jermain1991_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Jermain1991_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LithiumJermain1991reference,
   title  = {{Pharmacolibrary model Lithium_Jermain1991_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Jermain1991_reference},
 }
 ```
@@ -229,5 +228,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D%20Lithium_Jermain1991_reference&body=Drug%3A%20lithium%0ARecord%3A%20Lithium_Jermain1991_reference%0APaper%3A%20Jermain_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/Lithium_Jermain1991_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 16:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D%20Lithium_Jermain1991_reference&body=Drug%3A%20lithium%0ARecord%3A%20Lithium_Jermain1991_reference%0APaper%3A%20Jermain_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/Lithium_Jermain1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 16:25 UTC</sub>

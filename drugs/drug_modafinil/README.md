@@ -35,16 +35,9 @@ Modafinil is a wakefulness-promoting stimulant used for sleep disorders such as 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.51 | L/h | 3.51 L/h | healthy Chinese volunteers of five ethnicities | 49 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) |
-| V | V1 | 3.85 | L | 3.85 L | healthy Chinese volunteers of five ethnicities | 49 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) |
-| V | V1 | 7.74 | L | 7.74 l | healthy volunteers from 5 ethnic groups of China | 49 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) |
-| ka | kabs | 0.697 | 1/h | 0.697 1/h | healthy volunteers from 5 ethnic groups of China | 49 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tao_2010 · V1</text><circle cx="394.9" cy="30.0" r="4" fill="#2e7d32"><title>Tao_2010 · V1: 3.85 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wu_2012 · V1</text><circle cx="501.1" cy="46.0" r="4" fill="#78909c"><title>Wu_2012 · V1: 7.74 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -125,5 +118,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D&body=Drug%3A%20modafinil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D&body=Drug%3A%20modafinil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:56 UTC</sub>

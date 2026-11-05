@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Lane_2012 \u00b7 s_warfarin_8975_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Lane2012_s_warfarin_8975_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Warfarin bioavailability, clearance, and volume of distribution had no extracted values, so the model was held back.
+> This record was reviewed on 2026-10-22 15:25 UTC (Needs review), but the paper was screened again on 2026-11-04 15:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_s_warfarin_8975_estimate" status="model_quarantined" stale="false" population="patients on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_s_warfarin_8975_estimate" status="extracted" stale="true" population="adults on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The population pharmacokinetics of R- and S-warfarin: effect of genetic and clinical factors. British journal of clinical pharmacology 73(1):66–76 (2012).
@@ -17,7 +17,7 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 ## Population and dosing
 
-**Population:** patients on long-term warfarin therapy · condition anticoagulation therapy · age group adult · n = The text mentions S-warfarin concentrations in 306 patients and R-warfarin concentrations in 309 patients. It does not explicitly state whether these are the same 309 patients with missing data for S-warfarin, or a total of more unique individuals. However, in PK studies, the 'n_subjects' typically refers to the size of the analyzed cohort. Given the phrasing 'in 306 patients... and in 309 patients', it is highly likely these refer to the number of subjects with data for each enantiomer from the same cohort, with the total cohort likely being 309 (the larger number) or potentially a union of both if they are distinct. Standard reporting usually lists the max n or total unique n. Without explicit clarification of the union, the most defensible integer for the cohort size based on the sampling numbers is 309 (the group genotyped and sampled, with a few missing S-warfarin values). Let's look closer: 'Plasma warfarin enantiomer concentrations were determined in 306 patients for S-warfarin and in 309 patients for R-warfarin'. This implies the study had at least 309 patients. It is safest to assume the cohort size is 309..
+**Population:** adults on long-term warfarin therapy · condition anticoagulation therapy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed warfarin, measured R-warfarin and S-warfarin.
 
@@ -29,8 +29,6 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL (l h-1) | CL | 0.149 | l h-1 | 49.3 (None% RSE) |
@@ -40,7 +38,7 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,6 +51,8 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 **Warfarin bioavailability, clearance, and volume of distribution had no extracted values, so the model was held back.**
 
 The record lists only absorption parameters for the enantiomers, with no numerical estimates provided for the parent compound. Consequently, bioavailability, clearance, and volume of distribution were left without explicit values. These missing fundamental pharmacokinetic constants meant the model relied on library placeholders rather than extracted data. Extracted — warfarin: CL 0.149 l h-1, V 15.2 l; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-warfarin and S-warfarin, the second reading warfarin. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -89,6 +89,27 @@ The record lists only absorption parameters for the enantiomers, with no numeric
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `screen.primary_analyte` | R-warfarin and S-warfarin | warfarin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -144,13 +165,12 @@ The record lists only absorption parameters for the enantiomers, with no numeric
 
 **Source paper** (the parameters are its): Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The population pharmacokinetics of R- and S-warfarin: effect of genetic and clinical factors. British journal of clinical pharmacology 73(1):66–76 (2012). [doi:10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x)
 
-**This record:** Pharmacolibrary v26.09, model `Warfarin_Lane2012_s_warfarin_8975_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate>
+**This record:** Pharmacolibrary, model `Warfarin_Lane2012_s_warfarin_8975_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate>
 
 ```bibtex
 @misc{pharmacolibrary_WarfarinLane2012swarfarin8975estimate,
   title  = {{Pharmacolibrary model Warfarin_Lane2012_s_warfarin_8975_estimate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate},
   note   = {Parameters from doi:10.1111/j.1365-2125.2011.04051.x},
 }
@@ -165,5 +185,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Lane2012_s_warfarin_8975_estimate&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Lane2012_s_warfarin_8975_estimate%0APaper%3A%20Lane_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Lane2012_s_warfarin_8975_estimate&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Lane2012_s_warfarin_8975_estimate%0APaper%3A%20Lane_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 15:04 UTC</sub>

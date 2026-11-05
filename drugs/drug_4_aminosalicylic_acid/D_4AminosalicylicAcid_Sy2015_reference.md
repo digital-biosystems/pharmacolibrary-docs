@@ -217,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Florida Gainesville Florida USA, LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa, AndreasHDiacon Task Applied Science Bellville Cape Town South Africa Division of Physiology Faculty of Medicine and Health Sciences MRC Centre for Tuberculosis Research Stellenbosch University Cape Town South Africa, CedricJWerely Division of Molecular Biology and Human Genetics Faculty of Medicine and Health Sciences DST-NRF Centre of Excellence for Biomedical TB Research Stellenbosch University Cape Town South Africa, HuimingXia Departments of Ophthalmology and Neuroscience Johns Hopkins University School of Medicine Baltimore Maryland USA, BerndRosenkranz Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al. N-Acetyltransferase Genotypes and the Pharmacokinetics and Tolerability of para-Aminosalicylic Acid in Patients with Drug-Resistant Pulmonary Tuberculosis (2015). [doi:10.1128/AAC.04049-14](https://doi.org/10.1128/AAC.04049-14)
 
-**This record:** Pharmacolibrary v26.09, model `D_4AminosalicylicAcid_Sy2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference>
+**This record:** Pharmacolibrary, model `D_4AminosalicylicAcid_Sy2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference>
 
 ```bibtex
 @misc{pharmacolibrary_D4AminosalicylicAcidSy2015reference,
   title  = {{Pharmacolibrary model D_4AminosalicylicAcid_Sy2015_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference},
   note   = {Parameters from doi:10.1128/AAC.04049-14},
 }
@@ -242,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5B4_aminosalicylic_acid%5D%20D_4AminosalicylicAcid_Sy2015_reference&body=Drug%3A%204_aminosalicylic_acid%0ARecord%3A%20D_4AminosalicylicAcid_Sy2015_reference%0APaper%3A%20Sy_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-07-15 09:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5B4_aminosalicylic_acid%5D%20D_4AminosalicylicAcid_Sy2015_reference&body=Drug%3A%204_aminosalicylic_acid%0ARecord%3A%20D_4AminosalicylicAcid_Sy2015_reference%0APaper%3A%20Sy_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-07-15 09:22 UTC</sub>

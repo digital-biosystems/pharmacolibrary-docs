@@ -23,17 +23,9 @@ Clofazimine is an antibacterial drug used to treat leprosy, and has also been us
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 12.2 | L/h | 12.2 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kengo_2024_reference](drugs/drug_clofazimine/Clofazimine_Kengo2024_reference.md) |
-| CL | CL/F | 6.22 | L/h | 6.22 liters/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Al-Shaer_2019_reference](drugs/drug_clofazimine/Clofazimine_AlShaer2019_reference.md) |
-| V | V | 38.7 | L | 38.7 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kengo_2024_reference](drugs/drug_clofazimine/Clofazimine_Kengo2024_reference.md) |
-| V | V/F | 60.5 | L | 60.5 liters | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Al-Shaer_2019_reference](drugs/drug_clofazimine/Clofazimine_AlShaer2019_reference.md) |
-| ka | kabs | 2.95 | 1/h | 2.95 h−1 | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Al-Shaer_2019_reference](drugs/drug_clofazimine/Clofazimine_AlShaer2019_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kengo_2024 · CL</text><circle cx="380.1" cy="30.0" r="4" fill="#2e7d32"><title>Kengo_2024 · CL: 12.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Al-Shaer_2019 · CL/F</text><circle cx="328.9" cy="46.0" r="4" fill="#2e7d32"><title>Al-Shaer_2019 · CL/F: 6.22 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kengo_2024 · V</text><circle cx="395.7" cy="30.0" r="4" fill="#2e7d32"><title>Kengo_2024 · V: 38.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Al-Shaer_2019 · V/F</text><circle cx="463.6" cy="46.0" r="4" fill="#2e7d32"><title>Al-Shaer_2019 · V/F: 60.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -148,5 +140,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclofazimine%5D&body=Drug%3A%20clofazimine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clofazimine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclofazimine%5D&body=Drug%3A%20clofazimine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clofazimine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:37 UTC</sub>

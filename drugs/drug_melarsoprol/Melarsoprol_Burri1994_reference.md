@@ -183,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Burri C, Onyango JD, Auma JE, Burudi EM, Brun R. Pharmacokinetics of melarsoprol in uninfected vervet monkeys. Acta tropica 58(1):35–49 (1994). [doi:10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1)
 
-**This record:** Pharmacolibrary v26.09, model `Melarsoprol_Burri1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference>
+**This record:** Pharmacolibrary, model `Melarsoprol_Burri1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MelarsoprolBurri1994reference,
   title  = {{Pharmacolibrary model Melarsoprol_Burri1994_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference},
   note   = {Parameters from doi:10.1016/0001-706x(94)90120-1},
 }
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelarsoprol%5D%20Melarsoprol_Burri1994_reference&body=Drug%3A%20melarsoprol%0ARecord%3A%20Melarsoprol_Burri1994_reference%0APaper%3A%20Burri_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelarsoprol%5D%20Melarsoprol_Burri1994_reference&body=Drug%3A%20melarsoprol%0ARecord%3A%20Melarsoprol_Burri1994_reference%0APaper%3A%20Burri_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:50 UTC</sub>

@@ -121,13 +121,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Vortioxetine_Naik2016v2_PD_madrs`. <https://pharmacolibrary.github.io/#/drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_PD_madrs>
+**This record:** Pharmacolibrary, model `Vortioxetine_Naik2016v2_PD_madrs`. <https://pharmacolibrary.github.io/#/drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_PD_madrs>
 
 ```bibtex
 @misc{pharmacolibrary_VortioxetineNaik2016v2PDmadrs,
   title  = {{Pharmacolibrary model Vortioxetine_Naik2016v2_PD_madrs}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_PD_madrs},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvortioxetine%5D%20pd_Naik_2016_2_MADRS&body=Drug%3A%20vortioxetine%0ARecord%3A%20pd_Naik_2016_2_MADRS%0APaper%3A%20Naik_2016_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vortioxetine/pd_Naik_2016_2_MADRS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvortioxetine%5D%20pd_Naik_2016_2_MADRS&body=Drug%3A%20vortioxetine%0ARecord%3A%20pd_Naik_2016_2_MADRS%0APaper%3A%20Naik_2016_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vortioxetine/pd_Naik_2016_2_MADRS%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [vortioxetine](drugs/drug_vortioxetine/)</sub>

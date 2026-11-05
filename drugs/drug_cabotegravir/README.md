@@ -31,21 +31,9 @@ Cabotegravir is an antiviral drug used to treat HIV infection. It is an authoris
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.201 | L/h | 0.201 L/h | people with HIV on long-acting cabotegravir/rilpivirine | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_cabotegravir/Cabotegravir_Thoueille2024_reference.md) |
-| CL | CL/F | 0.151 | L/h | 0.151 L/h | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) |
-| CL | CL/F | 0.201 | L/h | 0.201 L/h | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) |
-| V | V | 7.44 | L | 7.44 L | people with HIV on long-acting cabotegravir/rilpivirine | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_cabotegravir/Cabotegravir_Thoueille2024_reference.md) |
-| V | V/F | 7.44 | L | 7.44 L | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) |
-| V | V1/F | 5.27 | L | 5.27 L | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) |
-| ka | kabs | 1.12 | 1/h | 1.12 h−1 | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) |
-| ka | kabs | 1.12 | 1/h | 1.12 h -1 | people with HIV on long-acting cabotegravir/rilpivirine | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Thoueille_2024_reference](drugs/drug_cabotegravir/Cabotegravir_Thoueille2024_reference.md) |
-| ka | kabs | 1.41 | 1/h | 1.41 h−1 | HIV-infected adults (CARLAPOP) | 736 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Thoueille_2024 · CL</text><circle cx="296.1" cy="30.0" r="4" fill="#ef6c00"><title>Thoueille_2024 · CL: 0.201 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Renou_2026 · CL/F</text><circle cx="252.6" cy="46.0" r="4" fill="#66bb6a"><title>Renou_2026 · CL/F: 0.151 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Renou_2026 · CL/F</text><circle cx="296.1" cy="62.0" r="4" fill="#66bb6a"><title>Renou_2026 · CL/F: 0.201 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Thoueille_2024 · V</text><circle cx="495.1" cy="30.0" r="4" fill="#ef6c00"><title>Thoueille_2024 · V: 7.44 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Renou_2026 · V/F</text><circle cx="495.1" cy="46.0" r="4" fill="#66bb6a"><title>Renou_2026 · V/F: 7.44 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Renou_2026 · V1/F</text><circle cx="442.6" cy="62.0" r="4" fill="#66bb6a"><title>Renou_2026 · V1/F: 5.27 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -140,5 +128,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabotegravir%5D&body=Drug%3A%20cabotegravir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabotegravir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabotegravir%5D&body=Drug%3A%20cabotegravir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabotegravir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:57 UTC</sub>

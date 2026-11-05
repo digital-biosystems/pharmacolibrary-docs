@@ -23,16 +23,6 @@ Clobazam is a benzodiazepine used as an anticonvulsant to treat epilepsy, and al
 | clobazam | parent | 300.74 | C16H13ClN2O2 | DrugBank | [2789](https://pubchem.ncbi.nlm.nih.gov/compound/2789) | Tolbert_2019, Tuo_2025 |
 | N-desmethylclobazam | metabolite | 286.715 | C15H11ClN2O2 | PubChem | [89657](https://pubchem.ncbi.nlm.nih.gov/compound/89657) | Tolbert_2019, Tuo_2025 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 1.9 | L/h | 1.9 L/h | healthy subjects and patients with Lennox-Gastaut syndrome | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tolbert_2019_ov_101732_relative_ba](drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101732_relative_ba.md) |
-| V | V/F | 100 | L | 100 L | healthy subjects and patients with Lennox-Gastaut syndrome | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tolbert_2019_ov_101732_relative_ba](drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101732_relative_ba.md) |
-| t½ | t1/2z | 58.6 | h | 58.6 h | healthy subjects and patients with Lennox-Gastaut syndrome | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tolbert_2019_ov_101732_relative_ba](drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101732_relative_ba.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -142,5 +132,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclobazam%5D&body=Drug%3A%20clobazam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clobazam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 18:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclobazam%5D&body=Drug%3A%20clobazam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clobazam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 18:56 UTC</sub>

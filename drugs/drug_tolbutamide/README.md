@@ -31,16 +31,9 @@ Tolbutamide is a sulfonylurea blood-glucose-lowering drug used to treat type 2 d
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.97 | L/h | 0.97 l/h | healthy volunteers | &gt;=23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kirchheiner_2002_reference](drugs/drug_tolbutamide/Tolbutamide_Kirchheiner2002_reference.md) |
-| CL | CL/F | 86.1 ‡ | L/h | 1.23 L/h/kg/ | review reference |  | human + animal | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) |
-| V | V/F | 103.6 ‡ | L | 1.48 L/kg | healthy volunteers | &gt;=23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kirchheiner_2002_reference](drugs/drug_tolbutamide/Tolbutamide_Kirchheiner2002_reference.md) |
-| V | V/F | 103.6 ‡ | L | 1.48 L/kg | review reference |  | human + animal | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kirchheiner_2002 · CL/F</text><circle cx="305.1" cy="30.0" r="4" fill="#ef6c00"><title>Kirchheiner_2002 · CL/F: 0.97 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shi_2021 · CL/F ·/kg</text><circle cx="532.4" cy="46.0" r="4" fill="#78909c"><title>Shi_2021 · CL/F ·/kg: 86.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kirchheiner_2002 · V/F ·/kg</text><circle cx="195.4" cy="30.0" r="4" fill="#ef6c00"><title>Kirchheiner_2002 · V/F ·/kg: 103.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shi_2021 · V/F ·/kg</text><circle cx="195.4" cy="46.0" r="4" fill="#78909c"><title>Shi_2021 · V/F ·/kg: 103.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -140,5 +133,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolbutamide%5D&body=Drug%3A%20tolbutamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolbutamide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 05:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolbutamide%5D&body=Drug%3A%20tolbutamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolbutamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 05:02 UTC</sub>

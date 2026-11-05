@@ -102,13 +102,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Zolpidem_Perrais1999_PD_mipsc_duration`. <https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Perrais1999_PD_mipsc_duration>
+**This record:** Pharmacolibrary, model `Zolpidem_Perrais1999_PD_mipsc_duration`. <https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Perrais1999_PD_mipsc_duration>
 
 ```bibtex
 @misc{pharmacolibrary_ZolpidemPerrais1999PDmipscduration,
   title  = {{Pharmacolibrary model Zolpidem_Perrais1999_PD_mipsc_duration}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Perrais1999_PD_mipsc_duration},
 }
 ```
@@ -122,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzolpidem%5D%20pd_Perrais_1999_mIPSC_duration&body=Drug%3A%20zolpidem%0ARecord%3A%20pd_Perrais_1999_mIPSC_duration%0APaper%3A%20Perrais_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzolpidem%5D%20pd_Perrais_1999_mIPSC_duration&body=Drug%3A%20zolpidem%0ARecord%3A%20pd_Perrais_1999_mIPSC_duration%0APaper%3A%20Perrais_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [zolpidem](drugs/drug_zolpidem/)</sub>

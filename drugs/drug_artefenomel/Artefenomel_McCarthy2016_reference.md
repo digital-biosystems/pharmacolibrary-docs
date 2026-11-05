@@ -142,13 +142,12 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 
 **Source paper** (the parameters are its): McCarthy JS, Baker M, O'Rourke P, Marquart L, Griffin P, Hooft van Huijsduijnen R et al. Efficacy of OZ439 (artefenomel) against early Plasmodium falciparum blood-stage malaria infection in healthy volunteers. The Journal of antimicrobial chemotherapy 71(9):2620–2627 (2016). [doi:10.1093/jac/dkw174](https://doi.org/10.1093/jac/dkw174)
 
-**This record:** Pharmacolibrary v26.09, model `Artefenomel_McCarthy2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference>
+**This record:** Pharmacolibrary, model `Artefenomel_McCarthy2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ArtefenomelMcCarthy2016reference,
   title  = {{Pharmacolibrary model Artefenomel_McCarthy2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference},
   note   = {Parameters from doi:10.1093/jac/dkw174},
 }
@@ -163,5 +162,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D%20Artefenomel_McCarthy2016_reference&body=Drug%3A%20artefenomel%0ARecord%3A%20Artefenomel_McCarthy2016_reference%0APaper%3A%20McCarthy_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D%20Artefenomel_McCarthy2016_reference&body=Drug%3A%20artefenomel%0ARecord%3A%20Artefenomel_McCarthy2016_reference%0APaper%3A%20McCarthy_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 10:47 UTC</sub>

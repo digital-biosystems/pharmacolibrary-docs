@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Zhao_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Zhao2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The peripheral compartment for abacavir is unreachable from the dose because the intercompartmental clearance parameter is missing.
+> This record was reviewed on 2026-10-22 15:27 UTC (Rejected), but the paper was screened again on 2026-11-03 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment for abacavir is unreachable from the dose because the intercompartmental clearance parameter is missing.
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="false" population="infants, toddlers and children with HIV" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="true" population="HIV-infected infants, toddlers and children" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Zhao W, Piana C, Danhof M, Burger D, Della Pasqua O, Jacqz-Aigrain E. Population pharmacokinetics of abacavir in infants, toddlers and children. British journal of clinical pharmacology 75(6):1525–1535 (2013).
@@ -17,7 +17,7 @@ Zhao W, Piana C, Danhof M, Burger D, Della Pasqua O, Jacqz-Aigrain E. Population
 
 ## Population and dosing
 
-**Population:** infants, toddlers and children with HIV · condition HIV infection · age group child · n = 69.
+**Population:** HIV-infected infants, toddlers and children · condition HIV · age group mixed · n = &gt; 69.
 
 **Dosing:** 560, 1120 mg, oral, multiple, every 12 h.
 
@@ -35,13 +35,14 @@ Zhao W, Piana C, Danhof M, Burger D, Della Pasqua O, Jacqz-Aigrain E. Population
 |---|---|---|---|
 | Absorption rate constant, Ka (h–1) | kabs | 0.913 | h–1 |
 | Apparent systemic clearance, CL/F (l h–1) CL/F = CL/Fref × (WTi/17.6)θ1 CL/Fref | CL/F | 20.1 | l h–1 |
+| θ1 | equation variable | 0.802 |  |
 | Apparent peripheral volume of distribution, V2/F (l) | V2/F | 13.5 | l |
 | Intercompartment clearance, Q/F (l h–1) | Q/F | 2.0 | l h–1 |
 | Apparent central volume of distribution, V1/F (l) V1/F = V1/Fref × (WTi/17.6)θ2 V1/Fref | Apparent central volume of distribution, V1/F (l) V1/F = V1/Fref × (WTi/17.6)θ2 V1/Fref | 13.0 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +56,7 @@ Zhao W, Piana C, Danhof M, Burger D, Della Pasqua O, Jacqz-Aigrain E. Population
 
 The two-compartment structure defines a peripheral volume of distribution (13.5 L) but lacks a valid value for the intercompartmental clearance Q/F. Although the intercompartmental clearance label is present, its value field is empty, leaving the peripheral compartment disconnected from the central compartment. Consequently, the model contains an orphan compartment with no path from the dose. Extracted — abacavir: kabs 0.913 h–1, CL/F 20.1 l h–1, V2/F 13.5 l, Q/F 2 l h–1.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of therapeutic drug monitoring data: this record has none, the second reading 105; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -65,6 +66,7 @@ Independently confirmed by `gpt-oss-120b`.
 |---|---|---|---|---|---|---|---|---|
 | Absorption rate constant, Ka (h–1) | `Q49` · kabs | 0.913 | h–1 | 0.0002536 | 1/s | 1/h | llm_confirmed (0.6) | Zhao_2013_table_p4_1:row0:col1 |
 | Apparent systemic clearance, CL/F (l h–1) CL/F = CL/Fref × (WTi/17.6)θ1 CL/Fref | `Q27` · CL/F | 20.1 | l h–1 | 5.583e-06 | m3/s | l/h | llm_corrected (0.6) | Zhao_2013_table_p4_1:row1:col1 |
+| θ1 | `Q900` · equation variable | 0.802 |  |  |  |  | llm (0.6) | Zhao_2013_table_p4_1:row2:col1 |
 | Apparent peripheral volume of distribution, V2/F (l) | `Q82` · V2/F | 13.5 | l | 0.0135 | m3 | l | llm_confirmed (0.6) | Zhao_2013_table_p4_1:row5:col1 |
 | Intercompartment clearance, Q/F (l h–1) | `Q69` · Q/F | 2.0 | l h–1 | 5.556e-07 | m3/s | l/h | llm_corrected (0.6) | Zhao_2013_table_p4_1:row6:col1 |
 | Apparent central volume of distribution, V1/F (l) V1/F = V1/Fref × (WTi/17.6)θ2 V1/Fref | `Q900` · Apparent central volume of distribution, V1/F (l) V1/F = V1/Fref × (WTi/17.6)θ2 V1/Fref | 13.0 | l | 0.013 | m3 |  |  | Zhao_2013_table_p4_1:row3:col1 |
@@ -83,13 +85,12 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['Zhao_2013_table_p4_1:row2:col1'])
-- dropped unlinked row (NIL): 'θ2' — extend the ontology if this is a real PK parameter (source ['Zhao_2013_table_p4_1:row4:col1'])
+- dropped duplicate Q900 ('θ2', value '0.810') — already have one for this compound
 - routed 'Interindividual variability (%) Q/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - dropped duplicate Q290 ('V1/F', value '47.7') — already have one for this compound
 - dropped duplicate Q82 ('V2/F', value '57.5') — already have one for this compound
 - dropped duplicate Q27 ('CL/F', value '21.9') — already have one for this compound
-- dropped unlinked row (NIL): 'Intercorrelation variability (%) CL/F' — extend the ontology if this is a real PK parameter (source ['Zhao_2013_table_p4_1:row11:col1'])
+- dropped duplicate Q27 ('Intercorrelation variability (%) CL/F', value '20.4') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
 - bound model equation to Q290 (V1/F): V1/F = 13.0 ¥ (BW/17.6)^0.810
 - Q290 (V1/F) is equation-defined: value moved to equation-variable 'Apparent central volume of distribution, V1/F (l) V1/F = V1/Fref × (WTi/17.6)θ2 V1/Fref'; equation kept verbatim
@@ -102,14 +103,21 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[therapeutic drug monitoring data]` |  | 105 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ1]` | 0.802 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -155,5 +163,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Zhao2013_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Zhao2013_reference%0APaper%3A%20Zhao_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Zhao2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Zhao2013_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Zhao2013_reference%0APaper%3A%20Zhao_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Zhao2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:53 UTC</sub>

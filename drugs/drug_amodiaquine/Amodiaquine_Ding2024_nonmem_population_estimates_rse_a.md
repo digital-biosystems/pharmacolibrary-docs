@@ -211,13 +211,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pharmacokinetics of amodiaquine and piperaquine in African pregnant women with uncomplicated Plasmodium falciparum infections. CPT: pharmacometrics & systems pharmacology 13(11):1893–1903 (2024). [doi:10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
 
-**This record:** Pharmacolibrary v26.09, model `Amodiaquine_Ding2024_nonmem_population_estimates_rse_a`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_population_estimates_rse_a>
+**This record:** Pharmacolibrary, model `Amodiaquine_Ding2024_nonmem_population_estimates_rse_a`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_population_estimates_rse_a>
 
 ```bibtex
 @misc{pharmacolibrary_AmodiaquineDing2024nonmempopulationestimatesrsea,
   title  = {{Pharmacolibrary model Amodiaquine_Ding2024_nonmem_population_estimates_rse_a}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_population_estimates_rse_a},
   note   = {Parameters from doi:10.1002/psp4.13211},
 }
@@ -232,5 +231,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20Amodiaquine_Ding2024_nonmem_population_estimates_rse_a&body=Drug%3A%20amodiaquine%0ARecord%3A%20Amodiaquine_Ding2024_nonmem_population_estimates_rse_a%0APaper%3A%20Ding_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_population_estimates_rse_a%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20Amodiaquine_Ding2024_nonmem_population_estimates_rse_a&body=Drug%3A%20amodiaquine%0ARecord%3A%20Amodiaquine_Ding2024_nonmem_population_estimates_rse_a%0APaper%3A%20Ding_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_population_estimates_rse_a%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 05:41 UTC</sub>

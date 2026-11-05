@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Baclofen_Imbert2015_PD_ocds`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Imbert2015_PD_ocds>
+**This record:** Pharmacolibrary, model `Baclofen_Imbert2015_PD_ocds`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Imbert2015_PD_ocds>
 
 ```bibtex
 @misc{pharmacolibrary_BaclofenImbert2015PDocds,
   title  = {{Pharmacolibrary model Baclofen_Imbert2015_PD_ocds}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Imbert2015_PD_ocds},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20pd_Imbert_2015_OCDS&body=Drug%3A%20baclofen%0ARecord%3A%20pd_Imbert_2015_OCDS%0APaper%3A%20Imbert_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/pd_Imbert_2015_OCDS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20pd_Imbert_2015_OCDS&body=Drug%3A%20baclofen%0ARecord%3A%20pd_Imbert_2015_OCDS%0APaper%3A%20Imbert_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/pd_Imbert_2015_OCDS%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [baclofen](drugs/drug_baclofen/)</sub>

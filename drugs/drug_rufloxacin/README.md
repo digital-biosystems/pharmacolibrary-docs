@@ -31,20 +31,9 @@ Rufloxacin is a fluoroquinolone antibacterial that was developed to treat bacter
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.46 | L/h | 41 ml/min | patients with cirrhosis and healthy controls |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Triger_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Triger1993_reference.md) |
-| CL | CL/F | 2.7 | L/h | 45 ml/min | patients with renal impairment and normal subjects | 24 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Perry_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Perry1993_reference.md) |
-| CL | CL/F | 2.76 | L/h | 46 ml/min | healthy volunteers | 23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mattina_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md) |
-| CL | CL/F | 3.18 | L/h | 53.0 ml/min | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Imbimbo_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md) |
-| V | V/F | 111 | L | 111 liters | healthy volunteers | 23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mattina_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md) |
-| V | V/F | 155 | L | 155.0 liters | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Imbimbo_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md) |
-| V | V/F | 155 | L | 155.0 liters | patients with renal impairment and normal subjects | 24 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Perry_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Perry1993_reference.md) |
-| t½ | t1/2z | 30.1 | h | 30.1 hr | patients with cirrhosis and healthy controls |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Triger_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Triger1993_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Triger_1993 · CL</text><circle cx="326.8" cy="30.0" r="4" fill="#ef6c00"><title>Triger_1993 · CL: 2.46 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Perry_1993 · CL/F</text><circle cx="341.0" cy="46.0" r="4" fill="#ef6c00"><title>Perry_1993 · CL/F: 2.7 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Mattina_1991 · CL/F</text><circle cx="344.3" cy="62.0" r="4" fill="#ef6c00"><title>Mattina_1991 · CL/F: 2.76 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Imbimbo_1991 · CL/F</text><circle cx="365.8" cy="78.0" r="4" fill="#ef6c00"><title>Imbimbo_1991 · CL/F: 3.18 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mattina_1991 · V/F</text><circle cx="205.9" cy="30.0" r="4" fill="#ef6c00"><title>Mattina_1991 · V/F: 111 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Imbimbo_1991 · V/F</text><circle cx="256.6" cy="46.0" r="4" fill="#ef6c00"><title>Imbimbo_1991 · V/F: 155 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Perry_1993 · V/F</text><circle cx="256.6" cy="62.0" r="4" fill="#ef6c00"><title>Perry_1993 · V/F: 155 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -107,5 +96,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brufloxacin%5D&body=Drug%3A%20rufloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rufloxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brufloxacin%5D&body=Drug%3A%20rufloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rufloxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:57 UTC</sub>

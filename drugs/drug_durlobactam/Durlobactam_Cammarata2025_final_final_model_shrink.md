@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Cammarata2025_final_final_model_shrink" status="rejected" stale="false" population="adults" measured-compound="durlobactam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Cammarata2025_final_final_model_shrink" status="rejected" stale="false" population="adults" measured-compound="durlobactam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Population pharmacokinetic analyses for sulbactam-durlobactam using Phase 1, 2, and 3 data. Antimicrobial agents and chemotherapy 69(1):e0048524 (2025).
@@ -23,7 +23,7 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
@@ -64,10 +64,8 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 - table representations disagree for 'σ2plasma, Proportional'; source reconciliation required
 - table representations disagree for 'σ2plasma, Additive'; source reconciliation required
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durlobactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
 - model-stage split: 'final model / shrink.' is the final model of Cammarata_2025 (paper reports 2 stages: final model / estimate, final model / shrink.); same population, different model-building step
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - table T1: ambiguous_uncertainty_binding
@@ -82,11 +80,11 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -109,5 +107,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D%20Durlobactam_Cammarata2025_final_final_model_shrink&body=Drug%3A%20durlobactam%0ARecord%3A%20Durlobactam_Cammarata2025_final_final_model_shrink%0APaper%3A%20Cammarata_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/Durlobactam_Cammarata2025_final_final_model_shrink%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D%20Durlobactam_Cammarata2025_final_final_model_shrink&body=Drug%3A%20durlobactam%0ARecord%3A%20Durlobactam_Cammarata2025_final_final_model_shrink%0APaper%3A%20Cammarata_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/Durlobactam_Cammarata2025_final_final_model_shrink%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 10:31 UTC</sub>

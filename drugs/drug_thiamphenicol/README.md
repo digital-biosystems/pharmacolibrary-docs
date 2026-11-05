@@ -23,22 +23,13 @@ Thiamphenicol is an amphenicol antibiotic used to treat bacterial infections. It
 | thiamphenicol | parent | 356.222 | C12H15Cl2NO5S | DrugBank | [27200](https://pubchem.ncbi.nlm.nih.gov/compound/27200) | Abd_2001, Fang_2013, Yang_2011 |
 | thiamphenicol glycinate | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 10.5 ‡ | L/h | 2.5 mL/min/kg | beagle dogs | &lt;\|begin_of_text\|&gt; | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2011_reference](drugs/drug_thiamphenicol/Thiamphenicol_Yang2011_reference.md) |
-| F | Fab | 1.014 |  | 101.4 % | New Zealand white rabbits |  | rabbit | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abd_2001_reference](drugs/drug_thiamphenicol/Thiamphenicol_Abd2001_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Abd_2001_reference](drugs/drug_thiamphenicol/Thiamphenicol_Abd2001_reference.md) | — | 1-compartment (no model) | 3 | Abd El-Aty AM et al., Pharmacodisposition of thiamphenicol in…, DTW. Deutsche tierarztliche… (2001) | — |
 | <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_2011_reference](drugs/drug_thiamphenicol/Thiamphenicol_Yang2011_reference.md) | — | parent + metabolite (no model) | 4 | Yang B et al., Pharmacokinetics of the prodrug thiamph…, Xenobiotica; the fate of fo… (2011) | [10.3109/00498254.2010.535218](https://doi.org/10.3109/00498254.2010.535218) |
-| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Fang_2013_reference](drugs/drug_thiamphenicol/Thiamphenicol_Fang2013_reference.md) | — | general linear (no model) | 7 | Fang W et al., Pharmacokinetics and tissue distributio…, Journal of aquatic animal h… (2013) | [10.1080/08997659.2012.754799](https://doi.org/10.1080/08997659.2012.754799) |
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Fang_2013_reference](drugs/drug_thiamphenicol/Thiamphenicol_Fang2013_reference.md) | — | 1-compartment (no model) | 7 | Fang W et al., Pharmacokinetics and tissue distributio…, Journal of aquatic animal h… (2013) | [10.1080/08997659.2012.754799](https://doi.org/10.1080/08997659.2012.754799) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -88,5 +79,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiamphenicol%5D&body=Drug%3A%20thiamphenicol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiamphenicol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiamphenicol%5D&body=Drug%3A%20thiamphenicol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiamphenicol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:12 UTC</sub>

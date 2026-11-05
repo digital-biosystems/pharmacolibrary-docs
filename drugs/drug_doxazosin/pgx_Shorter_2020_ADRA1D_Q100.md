@@ -22,7 +22,6 @@
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
-- relevance flagged quantitative but no per-genotype θ table reached
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 

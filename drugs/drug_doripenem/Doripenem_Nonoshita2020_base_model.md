@@ -183,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Nonoshita K, Suzuki Y, Tanaka R, Kaneko T, Ohchi Y, Sato Y et al. Population pharmacokinetic analysis of doripenem for Japanese patients in intensive care unit. Scientific reports 10(1):22148 (2020). [doi:10.1038/s41598-020-79076-6](https://doi.org/10.1038/s41598-020-79076-6)
 
-**This record:** Pharmacolibrary v26.09, model `Doripenem_Nonoshita2020_base_model`. <https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model>
+**This record:** Pharmacolibrary, model `Doripenem_Nonoshita2020_base_model`. <https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model>
 
 ```bibtex
 @misc{pharmacolibrary_DoripenemNonoshita2020basemodel,
   title  = {{Pharmacolibrary model Doripenem_Nonoshita2020_base_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model},
   note   = {Parameters from doi:10.1038/s41598-020-79076-6},
 }
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoripenem%5D%20Doripenem_Nonoshita2020_base_model&body=Drug%3A%20doripenem%0ARecord%3A%20Doripenem_Nonoshita2020_base_model%0APaper%3A%20Nonoshita_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoripenem%5D%20Doripenem_Nonoshita2020_base_model&body=Drug%3A%20doripenem%0ARecord%3A%20Doripenem_Nonoshita2020_base_model%0APaper%3A%20Nonoshita_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doripenem/Doripenem_Nonoshita2020_base_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:40 UTC</sub>

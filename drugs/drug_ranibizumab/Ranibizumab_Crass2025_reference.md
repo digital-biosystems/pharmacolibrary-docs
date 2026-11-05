@@ -190,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Crass RL, Prem K, Gauderault F, Ribeiro R, Baumal CR, Smith B et al. Population Pharmacokinetics of Pegcetacoplan in Patients with Geographic Atrophy or Neovascular Age-related Macular Degeneration. Ophthalmology science 5(2):100657 (2025). [doi:10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657)
 
-**This record:** Pharmacolibrary v26.09, model `Ranibizumab_Crass2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference>
+**This record:** Pharmacolibrary, model `Ranibizumab_Crass2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RanibizumabCrass2025reference,
   title  = {{Pharmacolibrary model Ranibizumab_Crass2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference},
   note   = {Parameters from doi:10.1016/j.xops.2024.100657},
 }
@@ -215,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Branibizumab%5D%20Ranibizumab_Crass2025_reference&body=Drug%3A%20ranibizumab%0ARecord%3A%20Ranibizumab_Crass2025_reference%0APaper%3A%20Crass_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 21:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Branibizumab%5D%20Ranibizumab_Crass2025_reference&body=Drug%3A%20ranibizumab%0ARecord%3A%20Ranibizumab_Crass2025_reference%0APaper%3A%20Crass_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ranibizumab/Ranibizumab_Crass2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 21:19 UTC</sub>

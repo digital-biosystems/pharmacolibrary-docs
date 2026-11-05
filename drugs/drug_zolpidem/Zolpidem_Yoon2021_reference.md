@@ -187,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yoon S, Jeong S, Jung E, Kim KS, Jeon I, Lee Y et al. Effect of CYP3A4 metabolism on sex differences in the pharmacokinetics and pharmacodynamics of zolpidem. Scientific reports 11(1):19150 (2021). [doi:10.1038/s41598-021-98689-z](https://doi.org/10.1038/s41598-021-98689-z)
 
-**This record:** Pharmacolibrary v26.09, model `Zolpidem_Yoon2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Yoon2021_reference>
+**This record:** Pharmacolibrary, model `Zolpidem_Yoon2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Yoon2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ZolpidemYoon2021reference,
   title  = {{Pharmacolibrary model Zolpidem_Yoon2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_zolpidem/Zolpidem_Yoon2021_reference},
   note   = {Parameters from doi:10.1038/s41598-021-98689-z},
 }
@@ -212,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzolpidem%5D%20Zolpidem_Yoon2021_reference&body=Drug%3A%20zolpidem%0ARecord%3A%20Zolpidem_Yoon2021_reference%0APaper%3A%20Yoon_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zolpidem/Zolpidem_Yoon2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzolpidem%5D%20Zolpidem_Yoon2021_reference&body=Drug%3A%20zolpidem%0ARecord%3A%20Zolpidem_Yoon2021_reference%0APaper%3A%20Yoon_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zolpidem/Zolpidem_Yoon2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:10 UTC</sub>

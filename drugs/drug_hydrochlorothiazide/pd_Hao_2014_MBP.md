@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Hao_2014 \u00b7 PD Mean arterial blood pressure (MBP)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Hao_2014 \u00b7 PD mean arterial blood pressure&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Mean arterial blood pressure (MBP) — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# mean arterial blood pressure — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Hydrochlorothiazide (concentrations from the PK model of Commander_2021) drives Mean arterial blood pressure (MBP) (in mmHg): indirect response — drug stimulates the loss of Mean arterial blood pressure (MBP).
+**As extracted:** Hydrochlorothiazide (concentrations from this paper's PK model) drives mean arterial blood pressure (in mmHg): indirect response — drug stimulates the loss of mean arterial blood pressure.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -26,7 +26,7 @@
 
 - **paper:** `Hao_2014`
 - **model family:** `indirect_response_iv`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** stimulation/proportional
 
@@ -38,17 +38,9 @@ Hao K et al., Pharmacokinetic-pharmacodynamic model o…, The Journal of pharmac
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | Kin | `Q327` ·  | 63.1 | mmHg/h | llm | Hao_2014:pdv3 |
-| PD (effect) | Kin | `Q327` ·  | 64.9 | mmHg/h | llm | Hao_2014:pdv3 |
-| PD (effect) | Kin | `Q327` ·  | 66.2 | mmHg/h | llm | Hao_2014:pdv3 |
 | PD (effect) | Kout | `Q328` ·  | 0.34 | 1/h | llm | Hao_2014:pdv3 |
-| PD (effect) | Kout | `Q328` ·  | 0.31 | 1/h | llm | Hao_2014:pdv3 |
-| PD (effect) | Kout | `Q328` ·  | 0.38 | 1/h | llm | Hao_2014:pdv3 |
-| PD (effect) | SC50 | `Q321` ·  | 403.4 | ng/ml | llm | Hao_2014:pdv3 |
-| PD (effect) | SC50 | `Q321` ·  | 389.3 | ng/ml | llm | Hao_2014:pdv3 |
-| PD (effect) | SC50 | `Q321` ·  | 404.6 | ng/ml | llm | Hao_2014:pdv3 |
-| PD (effect) | Smax | `Q320` ·  | 1.23 |  | llm | Hao_2014:pdv3 |
-| PD (effect) | Smax | `Q320` ·  | 1.15 |  | llm | Hao_2014:pdv3 |
-| PD (effect) | Smax | `Q320` ·  | 1.26 |  | llm | Hao_2014:pdv3 |
+| — | SC50 | `Q100` ·  | 403.4 | ng/ml | nil | Hao_2014:pdv3 |
+| — | Smax | `Q100` ·  | 1.23 |  | nil | Hao_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -93,7 +85,7 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -103,10 +95,10 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 1.23 | 1.15 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 403.4 | 389.3 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q327].value` | 63.1 | 66.9 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q328].value` | 0.34 | 0.38 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100].value` | 1.23 | 1.15 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | 389.3 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q327].value` | 63.1 | 64.9 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q328].value` | 0.34 | 0.31 | mismatch |
 
 </details>
 
@@ -153,13 +145,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Hydrochlorothiazide_Hao2014_PD_mbp`. <https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_PD_mbp>
+**This record:** Pharmacolibrary, model `Hydrochlorothiazide_Hao2014_PD_mbp`. <https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_PD_mbp>
 
 ```bibtex
 @misc{pharmacolibrary_HydrochlorothiazideHao2014PDmbp,
   title  = {{Pharmacolibrary model Hydrochlorothiazide_Hao2014_PD_mbp}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_PD_mbp},
 }
 ```
@@ -175,5 +166,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20pd_Hao_2014_MBP&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20pd_Hao_2014_MBP%0APaper%3A%20Hao_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20pd_Hao_2014_MBP&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20pd_Hao_2014_MBP%0APaper%3A%20Hao_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [hydrochlorothiazide](drugs/drug_hydrochlorothiazide/)</sub>

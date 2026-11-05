@@ -125,13 +125,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ivermectin_Ding2024_PD_ns1`. <https://pharmacolibrary.github.io/#/drugs/drug_ivermectin/Ivermectin_Ding2024_PD_ns1>
+**This record:** Pharmacolibrary, model `Ivermectin_Ding2024_PD_ns1`. <https://pharmacolibrary.github.io/#/drugs/drug_ivermectin/Ivermectin_Ding2024_PD_ns1>
 
 ```bibtex
 @misc{pharmacolibrary_IvermectinDing2024PDns1,
   title  = {{Pharmacolibrary model Ivermectin_Ding2024_PD_ns1}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ivermectin/Ivermectin_Ding2024_PD_ns1},
 }
 ```
@@ -145,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bivermectin%5D%20pd_Ding_2024_NS1&body=Drug%3A%20ivermectin%0ARecord%3A%20pd_Ding_2024_NS1%0APaper%3A%20Ding_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ivermectin/pd_Ding_2024_NS1%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bivermectin%5D%20pd_Ding_2024_NS1&body=Drug%3A%20ivermectin%0ARecord%3A%20pd_Ding_2024_NS1%0APaper%3A%20Ding_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ivermectin/pd_Ding_2024_NS1%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ivermectin](drugs/drug_ivermectin/)</sub>

@@ -206,13 +206,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chen N, Yu X, Li L, Yang P, Dong R, Huang Y et al. Target Attainment and Population Pharmacokinetics of Nirmatrelvir/Ritonavir in Critically Ill Adult Patients. Infection and drug resistance 17:4055–4065 (2024). [doi:10.2147/IDR.S471918](https://doi.org/10.2147/IDR.S471918)
 
-**This record:** Pharmacolibrary v26.09, model `Nirmatrelvir_Chen2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference>
+**This record:** Pharmacolibrary, model `Nirmatrelvir_Chen2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_NirmatrelvirChen2024reference,
   title  = {{Pharmacolibrary model Nirmatrelvir_Chen2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference},
   note   = {Parameters from doi:10.2147/IDR.S471918},
 }
@@ -231,5 +230,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Chen2024_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Chen2024_reference%0APaper%3A%20Chen_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Chen2024_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Chen2024_reference%0APaper%3A%20Chen_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:40 UTC</sub>

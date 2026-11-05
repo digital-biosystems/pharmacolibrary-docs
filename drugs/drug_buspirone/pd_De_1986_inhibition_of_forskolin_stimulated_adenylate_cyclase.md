@@ -101,13 +101,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny`. <https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny>
+**This record:** Pharmacolibrary, model `Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny`. <https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny>
 
 ```bibtex
 @misc{pharmacolibrary_BuspironeDe1986PDinhibitionofforskolinstimulatedadeny,
   title  = {{Pharmacolibrary model Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny},
 }
 ```
@@ -121,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuspirone%5D%20pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase&body=Drug%3A%20buspirone%0ARecord%3A%20pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase%0APaper%3A%20De_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buspirone/pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuspirone%5D%20pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase&body=Drug%3A%20buspirone%0ARecord%3A%20pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase%0APaper%3A%20De_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buspirone/pd_De_1986_inhibition_of_forskolin_stimulated_adenylate_cyclase%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [buspirone](drugs/drug_buspirone/)</sub>

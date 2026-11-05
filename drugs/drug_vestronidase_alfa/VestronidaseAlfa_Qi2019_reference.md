@@ -211,13 +211,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Qi Y, McKeever K, Taylor J, Haller C, Song W, Jones SA et al. Pharmacokinetic and Pharmacodynamic Modeling to Optimize the Dose of Vestronidase Alfa, an Enzyme Replacement Therapy for Treatment of Patients with Mucopolysaccharidosis Type VII: Results from Three Trials. Clinical pharmacokinetics 58(5):673–683 (2019). [doi:10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y)
 
-**This record:** Pharmacolibrary v26.09, model `VestronidaseAlfa_Qi2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference>
+**This record:** Pharmacolibrary, model `VestronidaseAlfa_Qi2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_VestronidaseAlfaQi2019reference,
   title  = {{Pharmacolibrary model VestronidaseAlfa_Qi2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference},
   note   = {Parameters from doi:10.1007/s40262-018-0721-y},
 }
@@ -236,5 +235,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvestronidase_alfa%5D%20VestronidaseAlfa_Qi2019_reference&body=Drug%3A%20vestronidase_alfa%0ARecord%3A%20VestronidaseAlfa_Qi2019_reference%0APaper%3A%20Qi_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 12:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvestronidase_alfa%5D%20VestronidaseAlfa_Qi2019_reference&body=Drug%3A%20vestronidase_alfa%0ARecord%3A%20VestronidaseAlfa_Qi2019_reference%0APaper%3A%20Qi_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 12:12 UTC</sub>

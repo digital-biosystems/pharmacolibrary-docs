@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Kramer_1978 \u00b7 iii&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bleomycin — `Bleomycin_Kramer1978_iii`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Kramer1978_iii" status="curated_candidate" stale="false" population="patients with neoplastic disorders" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 14:38 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 08:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Kramer1978_iii" status="extracted" stale="true" population="patients with neoplastic disorders" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacokinetics of bleomycin in man. Journal of clinical pharmacology 18(7):346–352 (1978).
@@ -17,7 +19,7 @@ Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacoki
 
 **Population:** patients with neoplastic disorders · condition neoplastic disorders · age group adult · n = 15.
 
-**Dosing:** 7, 10, 15, 30 units, iv, multiple.
+**Dosing:** 7, 10, 15, 30 units, iv, multiple, every 24 h.
 
 ## Model
 
@@ -37,7 +39,7 @@ Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +51,7 @@ Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacoki
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 218.0, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 75.4; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +61,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 |---|---|---|---|---|---|---|---|---|
 | β (hr-1) | `Q47` · kel | .0532 | hr-1 | 1.478e-05 | 1/s | 1/h | exact (1) | Kramer_1978_table_2:row0:col4 |
 | t₁/₂ (hr) | `Q57` · t1/2z | 9.53 | hr | 3.431e+04 | s | h | exact (1) | Kramer_1978_table_2:row1:col4 |
-| Vdβ (liters/kg) | `Q61` · V | 1.74 | liters/kg | 0.1218 | m3 | l/kg | llm_confirmed (0.6) | Kramer_1978_table_2:row2:col4 |
+| Vdβ (liters/kg) | `Q61` · V | 1.74 | liters/kg | 0.1218 | m3 | l/kg | boundary_llm_dim_refused (0.8) | Kramer_1978_table_2:row2:col4 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,22 +79,24 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - derived CL=6.47976 L/h from Ke × V = CL (Q47 × Q61); not separately reported
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` |  | 75.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdβ].parameter_id` | Q61 | Q65 | mismatch |
 | `qwen3.8-27b` | `parameters[cl]` | 218.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[qβ]` | 128.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[t1].parameter_id` | Q59 | Q57 | mismatch |
@@ -182,13 +186,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacokinetics of bleomycin in man. Journal of clinical pharmacology 18(7):346–352 (1978). [doi:10.1002/j.1552-4604.1978.tb01604.x](https://doi.org/10.1002/j.1552-4604.1978.tb01604.x)
 
-**This record:** Pharmacolibrary v26.09, model `Bleomycin_Kramer1978_iii`. <https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Kramer1978_iii>
+**This record:** Pharmacolibrary, model `Bleomycin_Kramer1978_iii`. <https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Kramer1978_iii>
 
 ```bibtex
 @misc{pharmacolibrary_BleomycinKramer1978iii,
   title  = {{Pharmacolibrary model Bleomycin_Kramer1978_iii}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Kramer1978_iii},
   note   = {Parameters from doi:10.1002/j.1552-4604.1978.tb01604.x},
 }
@@ -207,5 +210,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Kramer1978_iii&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Kramer1978_iii%0APaper%3A%20Kramer_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Kramer1978_iii%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Kramer1978_iii&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Kramer1978_iii%0APaper%3A%20Kramer_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Kramer1978_iii%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:42 UTC</sub>

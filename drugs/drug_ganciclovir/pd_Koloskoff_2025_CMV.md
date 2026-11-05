@@ -132,13 +132,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ganciclovir_Koloskoff2025_PD_cmv`. <https://pharmacolibrary.github.io/#/drugs/drug_ganciclovir/Ganciclovir_Koloskoff2025_PD_cmv>
+**This record:** Pharmacolibrary, model `Ganciclovir_Koloskoff2025_PD_cmv`. <https://pharmacolibrary.github.io/#/drugs/drug_ganciclovir/Ganciclovir_Koloskoff2025_PD_cmv>
 
 ```bibtex
 @misc{pharmacolibrary_GanciclovirKoloskoff2025PDcmv,
   title  = {{Pharmacolibrary model Ganciclovir_Koloskoff2025_PD_cmv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ganciclovir/Ganciclovir_Koloskoff2025_PD_cmv},
 }
 ```
@@ -152,5 +151,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bganciclovir%5D%20pd_Koloskoff_2025_CMV&body=Drug%3A%20ganciclovir%0ARecord%3A%20pd_Koloskoff_2025_CMV%0APaper%3A%20Koloskoff_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ganciclovir/pd_Koloskoff_2025_CMV%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bganciclovir%5D%20pd_Koloskoff_2025_CMV&body=Drug%3A%20ganciclovir%0ARecord%3A%20pd_Koloskoff_2025_CMV%0APaper%3A%20Koloskoff_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ganciclovir/pd_Koloskoff_2025_CMV%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ganciclovir](drugs/drug_ganciclovir/)</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This record was reviewed on 2026-10-22 14:33 UTC (Rejected), but the paper was screened again on 2026-11-03 07:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-03 07:58 UTC (Rejected), but the paper was screened again on 2026-11-03 14:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Meredith1985_reference" status="rejected" stale="true" population="normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -110,4 +110,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20Doxazosin_Meredith1985_reference&body=Drug%3A%20doxazosin%0ARecord%3A%20Doxazosin_Meredith1985_reference%0APaper%3A%20Meredith_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/Doxazosin_Meredith1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 14:12 UTC</sub>

@@ -171,13 +171,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Shi Y, Yao Y, He X, Bian X, Yu X, Fang J et al. Vancomycin population pharmacokinetics in patients with burns. Frontiers in medicine 13:1829805 (2026). [doi:10.3389/fmed.2026.1829805](https://doi.org/10.3389/fmed.2026.1829805)
 
-**This record:** Pharmacolibrary v26.09, model `Calcium_Shi2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_calcium/Calcium_Shi2026_reference>
+**This record:** Pharmacolibrary, model `Calcium_Shi2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_calcium/Calcium_Shi2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CalciumShi2026reference,
   title  = {{Pharmacolibrary model Calcium_Shi2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_calcium/Calcium_Shi2026_reference},
   note   = {Parameters from doi:10.3389/fmed.2026.1829805},
 }
@@ -196,5 +195,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcalcium%5D%20Calcium_Shi2026_reference&body=Drug%3A%20calcium%0ARecord%3A%20Calcium_Shi2026_reference%0APaper%3A%20Shi_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_calcium/Calcium_Shi2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 04:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcalcium%5D%20Calcium_Shi2026_reference&body=Drug%3A%20calcium%0ARecord%3A%20Calcium_Shi2026_reference%0APaper%3A%20Shi_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_calcium/Calcium_Shi2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 04:03 UTC</sub>

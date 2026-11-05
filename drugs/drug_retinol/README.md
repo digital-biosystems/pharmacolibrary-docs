@@ -23,15 +23,6 @@ Retinol, a form of vitamin A, is used as a vitamin supplement and in skincare pr
 | polar metabolites | metabolite | — (mass units only) | — | — | — | — |
 | retinyl acetate | metabolite | 328.496 | C22H32O2 | PubChem | [638034](https://pubchem.ncbi.nlm.nih.gov/compound/638034) | Green_2024_2 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | — | L | 3.70 | rats | 8 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Adams_1995_4_hpr](drugs/drug_retinol/Retinol_Adams1995_4_hpr.md) |
-| V | V | — | L | 9.03 | rats | 8 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Adams_1995_control](drugs/drug_retinol/Retinol_Adams1995_control.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -219,5 +210,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bretinol%5D&body=Drug%3A%20retinol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_retinol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 08:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bretinol%5D&body=Drug%3A%20retinol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_retinol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 08:12 UTC</sub>

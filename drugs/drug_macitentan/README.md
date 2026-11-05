@@ -30,16 +30,6 @@ Macitentan is an endothelin receptor antagonist used to treat pulmonary arterial
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.39 | L/h | 1.39 L/h | healthy adults and adult subjects with pulmonary arterial hypertension | &gt;=452 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bartolucci_2021_reference](drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md) |
-| V | V/F | 34 | L | 34 L | healthy adults and adult subjects with pulmonary arterial hypertension | &gt;=452 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bartolucci_2021_reference](drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md) |
-| ka | kabs | 13.92 | 1/h | 13.92 h−1 | healthy adults and adult subjects with pulmonary arterial hypertension | &gt;=452 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bartolucci_2021_reference](drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -146,5 +136,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmacitentan%5D&body=Drug%3A%20macitentan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_macitentan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 15:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmacitentan%5D&body=Drug%3A%20macitentan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_macitentan/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:53 UTC</sub>

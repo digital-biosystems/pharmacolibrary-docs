@@ -167,13 +167,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Brookfield K, Galadanci H, Du L, Wenning L, Mohammed I, Suleiman M et al. Magnesium sulfate pharmacokinetics after intramuscular dosing in women with preeclampsia. AJOG global reports 1(4):100018 (2021). [doi:10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018)
 
-**This record:** Pharmacolibrary v26.09, model `MagnesiumSulfate_Brookfield2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference>
+**This record:** Pharmacolibrary, model `MagnesiumSulfate_Brookfield2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MagnesiumSulfateBrookfield2021reference,
   title  = {{Pharmacolibrary model MagnesiumSulfate_Brookfield2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference},
   note   = {Parameters from doi:10.1016/j.xagr.2021.100018},
 }
@@ -188,5 +187,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_sulfate%5D%20MagnesiumSulfate_Brookfield2021_reference&body=Drug%3A%20magnesium_sulfate%0ARecord%3A%20MagnesiumSulfate_Brookfield2021_reference%0APaper%3A%20Brookfield_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_sulfate%5D%20MagnesiumSulfate_Brookfield2021_reference&body=Drug%3A%20magnesium_sulfate%0ARecord%3A%20MagnesiumSulfate_Brookfield2021_reference%0APaper%3A%20Brookfield_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:45 UTC</sub>

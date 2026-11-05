@@ -190,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yang G, Wang Y, Zhao H, Zheng Q, Wang X, Jia L et al. Translational Model-Informed Dose Selection for Iruplinalkib, a Selective Oral ALK/ROS1 Tyrosine Kinase Inhibitor. Clinical and translational science 18(7):e70287 (2025). [doi:10.1111/cts.70287](https://doi.org/10.1111/cts.70287)
 
-**This record:** Pharmacolibrary v26.09, model `Sunitinib_Yang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sunitinib/Sunitinib_Yang2025_reference>
+**This record:** Pharmacolibrary, model `Sunitinib_Yang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sunitinib/Sunitinib_Yang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SunitinibYang2025reference,
   title  = {{Pharmacolibrary model Sunitinib_Yang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sunitinib/Sunitinib_Yang2025_reference},
   note   = {Parameters from doi:10.1111/cts.70287},
 }
@@ -215,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsunitinib%5D%20Sunitinib_Yang2025_reference&body=Drug%3A%20sunitinib%0ARecord%3A%20Sunitinib_Yang2025_reference%0APaper%3A%20Yang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sunitinib/Sunitinib_Yang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsunitinib%5D%20Sunitinib_Yang2025_reference&body=Drug%3A%20sunitinib%0ARecord%3A%20Sunitinib_Yang2025_reference%0APaper%3A%20Yang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sunitinib/Sunitinib_Yang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:30 UTC</sub>

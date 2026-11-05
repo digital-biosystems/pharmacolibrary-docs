@@ -181,13 +181,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chen Y, Zhang ZJ, Zhang XF, Peng Y, Jiao Z, Wu JX. Model-Informed Precision Dosing of Remimazolam in General Anesthesia Patients. Drug design, development and therapy 19:5099-5109 (2025). [doi:10.2147/dddt.s495604](https://doi.org/10.2147/dddt.s495604)
 
-**This record:** Pharmacolibrary v26.09, model `Rocuronium_Chen2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rocuronium/Rocuronium_Chen2025_reference>
+**This record:** Pharmacolibrary, model `Rocuronium_Chen2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_rocuronium/Rocuronium_Chen2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RocuroniumChen2025reference,
   title  = {{Pharmacolibrary model Rocuronium_Chen2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rocuronium/Rocuronium_Chen2025_reference},
   note   = {Parameters from doi:10.2147/dddt.s495604},
 }
@@ -206,5 +205,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brocuronium%5D%20Rocuronium_Chen2025_reference&body=Drug%3A%20rocuronium%0ARecord%3A%20Rocuronium_Chen2025_reference%0APaper%3A%20Chen_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rocuronium/Rocuronium_Chen2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brocuronium%5D%20Rocuronium_Chen2025_reference&body=Drug%3A%20rocuronium%0ARecord%3A%20Rocuronium_Chen2025_reference%0APaper%3A%20Chen_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rocuronium/Rocuronium_Chen2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:46 UTC</sub>

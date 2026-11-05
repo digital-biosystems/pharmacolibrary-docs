@@ -22,14 +22,6 @@ Ribociclib is a protein kinase inhibitor used to treat breast cancer. It is an a
 |---|---|---|---|---|---|---|
 | ribociclib | parent | 434.548 | C23H30N8O | DrugBank | [44631912](https://pubchem.ncbi.nlm.nih.gov/compound/44631912) | Damoiseaux_2022, Ji_2026, Patel_2019, Samant_2018 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 38.4 | L/h | 38.4 L/h | patients with early breast cancer | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ji_2026_reference](drugs/drug_ribociclib/Ribociclib_Ji2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -116,5 +108,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribociclib%5D&body=Drug%3A%20ribociclib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribociclib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribociclib%5D&body=Drug%3A%20ribociclib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribociclib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:29 UTC</sub>

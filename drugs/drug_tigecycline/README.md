@@ -31,18 +31,9 @@ Tigecycline is a tetracycline antibiotic used to treat bacterial infections, inc
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.09 | L/h | 3.09 L/h | critically ill patients | 21 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Song_2024_non_crrt](drugs/drug_tigecycline/Tigecycline_Song2024_non_crrt.md) |
-| CL | CL | 4.22 | L/h | 4.22 L/h | critically ill patients | 21 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Song_2024_crrt](drugs/drug_tigecycline/Tigecycline_Song2024_crrt.md) |
-| CL | CL | 14.8 | L/h | 14.8 L/h | critically ill patients with decompensated cirrhosis and severe infections | &lt;\|reserved_0\|&gt; | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bastida_2022_reference](drugs/drug_tigecycline/Tigecycline_Bastida2022_reference.md) |
-| V | V | 63.7 | L | 63.7 L | critically ill patients with decompensated cirrhosis and severe infections | &lt;\|reserved_0\|&gt; | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bastida_2022_reference](drugs/drug_tigecycline/Tigecycline_Bastida2022_reference.md) |
-| V | V1 | 30.9 | L | 30.9 L | critically ill patients | 21 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Song_2024_crrt](drugs/drug_tigecycline/Tigecycline_Song2024_crrt.md) |
-| V | V1 | 32.1 | L | 32.1 L | critically ill patients | 21 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Song_2024_non_crrt](drugs/drug_tigecycline/Tigecycline_Song2024_non_crrt.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Song_2024 · CL</text><circle cx="275.7" cy="30.0" r="4" fill="#2e7d32"><title>Song_2024 · CL: 3.09 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Song_2024 · CL</text><circle cx="299.4" cy="46.0" r="4" fill="#2e7d32"><title>Song_2024 · CL: 4.22 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Bastida_2022 · CL</text><circle cx="394.8" cy="62.0" r="4" fill="#2e7d32"><title>Bastida_2022 · CL: 14.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bastida_2022 · V</text><circle cx="471.4" cy="30.0" r="4" fill="#2e7d32"><title>Bastida_2022 · V: 63.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Song_2024 · V1</text><circle cx="361.5" cy="46.0" r="4" fill="#2e7d32"><title>Song_2024 · V1: 30.9 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Song_2024 · V1</text><circle cx="367.3" cy="62.0" r="4" fill="#2e7d32"><title>Song_2024 · V1: 32.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -130,5 +121,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btigecycline%5D&body=Drug%3A%20tigecycline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tigecycline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btigecycline%5D&body=Drug%3A%20tigecycline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tigecycline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:08 UTC</sub>

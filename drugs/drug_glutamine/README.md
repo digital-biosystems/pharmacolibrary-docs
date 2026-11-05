@@ -21,15 +21,6 @@ Glutamine, an amino acid, is used in the treatment of short bowel syndrome. It i
 |---|---|---|---|---|---|---|
 | glutamine | parent | 146.146 | C5H10N2O3 | PubChem | [5961](https://pubchem.ncbi.nlm.nih.gov/compound/5961) | Sadaf_2024_2 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 4.452 ‡ | L | 0.0636 L/kg | patients with sickle cell disease and healthy volunteers | &gt;= 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) |
-| ka | kabs | 0.91 | 1/h | 0.91 1/h | patients with sickle cell disease and healthy volunteers | &gt;= 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -291,5 +282,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglutamine%5D&body=Drug%3A%20glutamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glutamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglutamine%5D&body=Drug%3A%20glutamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glutamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:39 UTC</sub>

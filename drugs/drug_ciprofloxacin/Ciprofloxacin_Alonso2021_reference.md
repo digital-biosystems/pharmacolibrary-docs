@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Alonso_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Alonso2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record assumes ciprofloxacin bioavailability is one and the absorption lag time is zero, leaving that parameter unestimated.
+> This record was reviewed on 2026-10-22 15:32 UTC (Needs review), but the paper was screened again on 2026-11-03 16:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alonso2021_reference" status="needs_review" stale="false" population="patients with gonorrhea" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alonso2021_reference" status="extracted" stale="true" population="patients with gonorrhea" measured-compound="" parameterization="" topology=""></div>
 
 ## Citation
 Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-Ballesteros I, Rodríguez-Gascón A et al. Molecular Epidemiology, Antimicrobial Surveillance, and PK/PD Analysis to Guide the Treatment of. Pharmaceutics 13(10) (2021).
@@ -17,31 +17,22 @@ Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-B
 
 ## Population and dosing
 
-**Population:** review reference.
-
-**Dosed compound ≠ measured compound:** dosed ceftriaxone, cefixime, azithromycin, and ciprofloxacin, measured ciprofloxacin.
+**Population:** patients with gonorrhea.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference/Ciprofloxacin_Alonso2021_reference.svg" alt="Ciprofloxacin_Alonso2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL/F (L/h) | CL/F | 144.0 | L/h |
-| Vd (L) | V | 14.7 | L |
-| Ka (h−1) | kabs | 1.0 | h−1 |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,19 +49,6 @@ Clearance (144.0 L/h) and volume (14.7 L) are in apparent units, and the builder
 Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 144.0 | L/h | 4e-05 | m3/s | L/h | review (0.7) | Alonso_2021:review |
-| Vd (L) | `Q61` · V | 14.7 | L | 0.0147 | m3 | L | review (0.7) | Alonso_2021:review |
-| Ka (h−1) | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review (0.7) | Alonso_2021:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ## Departures & gaps
 
@@ -179,13 +157,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Alonso R, Rodríguez-Achaerandio A, Aguirre-Quiñonero A, Artetxe A, Martínez-Ballesteros I, Rodríguez-Gascón A et al. Molecular Epidemiology, Antimicrobial Surveillance, and PK/PD Analysis to Guide the Treatment of. Pharmaceutics 13(10) (2021). [doi:10.3390/pharmaceutics13101699](https://doi.org/10.3390/pharmaceutics13101699)
 
-**This record:** Pharmacolibrary v26.09, model `Ciprofloxacin_Alonso2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference>
+**This record:** Pharmacolibrary, model `Ciprofloxacin_Alonso2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CiprofloxacinAlonso2021reference,
   title  = {{Pharmacolibrary model Ciprofloxacin_Alonso2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics13101699},
 }
@@ -204,5 +181,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Alonso2021_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Alonso2021_reference%0APaper%3A%20Alonso_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Alonso2021_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Alonso2021_reference%0APaper%3A%20Alonso_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 16:43 UTC</sub>

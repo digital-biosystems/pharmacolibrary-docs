@@ -95,13 +95,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Oxcarbazepine_Faison2020_PD_pch_3`. <https://pharmacolibrary.github.io/#/drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_PD_pch_3>
+**This record:** Pharmacolibrary, model `Oxcarbazepine_Faison2020_PD_pch_3`. <https://pharmacolibrary.github.io/#/drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_PD_pch_3>
 
 ```bibtex
 @misc{pharmacolibrary_OxcarbazepineFaison2020PDpch3,
   title  = {{Pharmacolibrary model Oxcarbazepine_Faison2020_PD_pch_3}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_PD_pch_3},
 }
 ```
@@ -115,5 +114,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxcarbazepine%5D%20pd_Faison_2020_PCH_3&body=Drug%3A%20oxcarbazepine%0ARecord%3A%20pd_Faison_2020_PCH_3%0APaper%3A%20Faison_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxcarbazepine/pd_Faison_2020_PCH_3%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxcarbazepine%5D%20pd_Faison_2020_PCH_3&body=Drug%3A%20oxcarbazepine%0ARecord%3A%20pd_Faison_2020_PCH_3%0APaper%3A%20Faison_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxcarbazepine/pd_Faison_2020_PCH_3%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [oxcarbazepine](drugs/drug_oxcarbazepine/)</sub>

@@ -182,5 +182,5 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D%20Ciclesonide_Xu2010_reference&body=Drug%3A%20ciclesonide%0ARecord%3A%20Ciclesonide_Xu2010_reference%0APaper%3A%20Xu_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D%20Ciclesonide_Xu2010_reference&body=Drug%3A%20ciclesonide%0ARecord%3A%20Ciclesonide_Xu2010_reference%0APaper%3A%20Xu_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:41 UTC</sub>

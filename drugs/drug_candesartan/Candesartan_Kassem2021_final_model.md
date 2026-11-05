@@ -203,13 +203,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kassem I, Sanche S, Li J, Bonnefois G, Dubé MP, Rouleau JL et al. Population Pharmacokinetics of Candesartan in Patients with Chronic Heart Failure. Clinical and translational science 14(1):194–203 (2021). [doi:10.1111/cts.12842](https://doi.org/10.1111/cts.12842)
 
-**This record:** Pharmacolibrary v26.09, model `Candesartan_Kassem2021_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_candesartan/Candesartan_Kassem2021_final_model>
+**This record:** Pharmacolibrary, model `Candesartan_Kassem2021_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_candesartan/Candesartan_Kassem2021_final_model>
 
 ```bibtex
 @misc{pharmacolibrary_CandesartanKassem2021finalmodel,
   title  = {{Pharmacolibrary model Candesartan_Kassem2021_final_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_candesartan/Candesartan_Kassem2021_final_model},
   note   = {Parameters from doi:10.1111/cts.12842},
 }
@@ -228,5 +227,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcandesartan%5D%20Candesartan_Kassem2021_final_model&body=Drug%3A%20candesartan%0ARecord%3A%20Candesartan_Kassem2021_final_model%0APaper%3A%20Kassem_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_candesartan/Candesartan_Kassem2021_final_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcandesartan%5D%20Candesartan_Kassem2021_final_model&body=Drug%3A%20candesartan%0ARecord%3A%20Candesartan_Kassem2021_final_model%0APaper%3A%20Kassem_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_candesartan/Candesartan_Kassem2021_final_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:24 UTC</sub>

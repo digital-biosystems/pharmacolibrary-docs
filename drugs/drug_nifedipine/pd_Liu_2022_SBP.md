@@ -113,13 +113,12 @@ _All readers agree on the compared fields of this PD record._
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Nifedipine_Liu2022_PD_sbp`. <https://pharmacolibrary.github.io/#/drugs/drug_nifedipine/Nifedipine_Liu2022_PD_sbp>
+**This record:** Pharmacolibrary, model `Nifedipine_Liu2022_PD_sbp`. <https://pharmacolibrary.github.io/#/drugs/drug_nifedipine/Nifedipine_Liu2022_PD_sbp>
 
 ```bibtex
 @misc{pharmacolibrary_NifedipineLiu2022PDsbp,
   title  = {{Pharmacolibrary model Nifedipine_Liu2022_PD_sbp}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_nifedipine/Nifedipine_Liu2022_PD_sbp},
 }
 ```
@@ -133,5 +132,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnifedipine%5D%20pd_Liu_2022_SBP&body=Drug%3A%20nifedipine%0ARecord%3A%20pd_Liu_2022_SBP%0APaper%3A%20Liu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nifedipine/pd_Liu_2022_SBP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnifedipine%5D%20pd_Liu_2022_SBP&body=Drug%3A%20nifedipine%0ARecord%3A%20pd_Liu_2022_SBP%0APaper%3A%20Liu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nifedipine/pd_Liu_2022_SBP%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [nifedipine](drugs/drug_nifedipine/)</sub>

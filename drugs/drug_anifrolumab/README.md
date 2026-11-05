@@ -13,15 +13,6 @@ Anifrolumab is a monoclonal antibody used to treat systemic lupus erythematosus.
 
 <small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.008042 | L/h | 0.193 L/day | healthy volunteers and patients with systemic lupus erythematosus | # 670 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Almquist_2022_reference](drugs/drug_anifrolumab/Anifrolumab_Almquist2022_reference.md) |
-| V | V1 | 2.93 | L | 2.93 L | healthy volunteers and patients with systemic lupus erythematosus | # 670 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Almquist_2022_reference](drugs/drug_anifrolumab/Anifrolumab_Almquist2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -82,5 +73,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banifrolumab%5D&body=Drug%3A%20anifrolumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anifrolumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banifrolumab%5D&body=Drug%3A%20anifrolumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anifrolumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:38 UTC</sub>

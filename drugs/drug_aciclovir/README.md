@@ -21,17 +21,6 @@ Aciclovir is an antiviral drug used to treat infections such as chickenpox, shin
 |---|---|---|---|---|---|---|
 | aciclovir (acyclovir) | parent | 225.208 | C8H11N5O3 | PubChem | [135398513](https://pubchem.ncbi.nlm.nih.gov/compound/135398513) | DAgate_2024, Laskin_1982, Maximova_2022, Sampson_2014 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.965 | L/h | 2.965 L/h | pediatric oncology patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maximova_2022_reference](drugs/drug_aciclovir/Aciclovir_Maximova2022_reference.md) |
-| CL | CL | — | L/h | 71.0 mL/min/1.73 m2 | term and pre-term neonates with herpes | &gt;&lt;/string&gt;28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [DAgate_2024_reference](drugs/drug_aciclovir/Aciclovir_DAgate2024_reference.md) |
-| V | V | 14.95 | L | 14.945 L | pediatric oncology patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maximova_2022_reference](drugs/drug_aciclovir/Aciclovir_Maximova2022_reference.md) |
-| t½ | t1/2z | 1.364 | h | 1.364 h | pediatric oncology patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maximova_2022_reference](drugs/drug_aciclovir/Aciclovir_Maximova2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -119,5 +108,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baciclovir%5D&body=Drug%3A%20aciclovir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aciclovir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 22:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baciclovir%5D&body=Drug%3A%20aciclovir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aciclovir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 22:02 UTC</sub>

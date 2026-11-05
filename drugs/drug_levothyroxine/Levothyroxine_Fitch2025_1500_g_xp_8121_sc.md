@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Fitch_2025 \u00b7 1500_g_xp_8121_sc&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_Fitch2025_1500_g_xp_8121_sc`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-10-22 15:31 UTC (Needs review), but the paper was screened again on 2026-11-04 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_1500_g_xp_8121_sc" status="needs_review" stale="false" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_1500_g_xp_8121_sc" status="rejected" stale="true" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the Pharmacokinetics, Dose Proportionality, Bioavailability, and Tolerability of Subcutaneous Levothyroxine Sodium (XP-8121). Clinical and translational science 18(5):e70244 (2025).
@@ -17,28 +17,25 @@ Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = # number of subjects in the analysis (a plain integer), or unknown.
+**Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 0.6, 1.2, 1.5 mg, sc, single.
+**Dosing:** 0.6, 1.2, 1.5 mg, subcutaneous, single.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Mean | Ct | 46.9 | ng/mL |
-| MS437 = 24.13 mL/min/kg | CL | 24.13 | mL/min/kg |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,21 +49,9 @@ Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Latif_2015) cannot stand in for this paper's evidence. A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — levothyroxine: Ct 46.9 ng/mL, CL 24.1 mL/min/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading XP-8121 (levothyroxine for subcutaneous administration); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading levothyroxine (XP-8121). That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| Mean | `Q75` · Ct | 46.9 | ng/mL |  |  | ng/ml | llm (0.6) | Fitch_2025_table_2:row2:col4, Fitch_2025_table_2:row6:col4, Fitch_2025_table_2:row15:col4, Fitch_2025_table_2:row19:col4, Fitch_2025_table_2:row23:col4 |
-| MS437 = 24.13 mL/min/kg | `Q22` · CL | 24.13 | mL/min/kg | 2.815e-05 | m3/s | L/h | review_gapfill (0.7) | Latif_2015:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
@@ -77,12 +62,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['Fitch_2025_table_2:row2:col4', 'Fitch_2025_table_2:row6:col4', 'Fitch_2025_table_2:row15:col4', 'Fitch_2025_table_2:row19:col4', 'Fitch_2025_table_2:row23:col4'])
 - dropped unlinked row (NIL): 'SD' — extend the ontology if this is a real PK parameter (source ['Fitch_2025_table_2:row3:col4', 'Fitch_2025_table_2:row7:col4', 'Fitch_2025_table_2:row11:col4', 'Fitch_2025_table_2:row16:col4', 'Fitch_2025_table_2:row20:col4', 'Fitch_2025_table_2:row24:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levothyroxine
 - population split: '1500 μg xp‐8121 sc' subgroup of Fitch_2025 (paper reports 4 populations: 1200 μg xp‐8121 sc, 1500 μg xp‐8121 sc, 600 μg oral lt4, 600 μg xp‐8121 sc)
-- gap-filled Q22 (CL) from Latif_2015's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -93,19 +77,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['levothyroxine', 'triiodothyronine', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | levothyroxine | XP-8121 (levothyroxine for subcutaneous administration) | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | levothyroxine | levothyroxine (plasma T4) | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | levothyroxine | levothyroxine (XP-8121) | mismatch |
 
 </details>
 
@@ -119,14 +101,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Latif_2015:review'] |
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Fitch_2025_table_2:row18:col4'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Fitch_2025_table_2:row2:col4', 'Fitch_2025_table_2:row6:col4', 'Fitch_2025_table_2:row15:col4', 'Fitch_2025_table_2:row19:col4', 'Fitch_2025_table_2:row23:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.13 | ['Latif_2015:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 101 L/h | ['Latif_2015:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,19 +116,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -159,5 +127,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Fitch2025_1500_g_xp_8121_sc&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Fitch2025_1500_g_xp_8121_sc%0APaper%3A%20Fitch_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Fitch2025_1500_g_xp_8121_sc%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Fitch2025_1500_g_xp_8121_sc&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Fitch2025_1500_g_xp_8121_sc%0APaper%3A%20Fitch_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Fitch2025_1500_g_xp_8121_sc%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 00:26 UTC</sub>

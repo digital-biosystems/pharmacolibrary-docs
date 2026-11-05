@@ -22,14 +22,6 @@ Remifentanil is a potent opioid painkiller used as part of general anaesthesia t
 |---|---|---|---|---|---|---|
 | remifentanil | parent | 376.447 | C20H28N2O5 | DrugBank | [60815](https://pubchem.ncbi.nlm.nih.gov/compound/60815) | Maharaj_2025 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 60 | L/h | 1.0 L/min | adults with and without obstructive sleep apnoea | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -111,5 +103,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremifentanil%5D&body=Drug%3A%20remifentanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remifentanil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremifentanil%5D&body=Drug%3A%20remifentanil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remifentanil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:29 UTC</sub>

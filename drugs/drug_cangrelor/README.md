@@ -29,16 +29,6 @@ Cangrelor is a platelet aggregation inhibitor used to prevent blood clots in pat
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 8.51 | L/h | 8.51 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Henrich_2021_reference](drugs/drug_cangrelor/Cangrelor_Henrich2021_reference.md) |
-| V | V1 | 17 | L | 17.0 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Henrich_2021_reference](drugs/drug_cangrelor/Cangrelor_Henrich2021_reference.md) |
-| ka | kabs | 5.95 | 1/h | 5.95 1/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Henrich_2021_reference](drugs/drug_cangrelor/Cangrelor_Henrich2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -201,5 +191,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D&body=Drug%3A%20cangrelor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 12:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D&body=Drug%3A%20cangrelor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 12:22 UTC</sub>

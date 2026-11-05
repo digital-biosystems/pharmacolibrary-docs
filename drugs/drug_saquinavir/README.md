@@ -31,23 +31,9 @@ Saquinavir is a protease inhibitor antiviral drug used to treat HIV infection an
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 20 | L/h | 20.0 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ren_2022_reference](drugs/drug_saquinavir/Saquinavir_Ren2022_reference.md) |
-| CL | CL/F | 1.26 | L/h | 1.26 L/h | HIV patients | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lavielle_2007_reference](drugs/drug_saquinavir/Saquinavir_Lavielle2007_reference.md) |
-| CL | CL/F | 7.6 | L/h | 7.6 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dickinson_2009_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2009_reference.md) |
-| CL | CL/F | 49.8 | L/h | 49.8 L/h | HIV-infected adults | 97 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dickinson_2008_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2008_reference.md) |
-| V | V | 80 | L | 80.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ren_2022_reference](drugs/drug_saquinavir/Saquinavir_Ren2022_reference.md) |
-| V | V/F | 103 | L | 103.0 L | HIV-infected adults | 97 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dickinson_2008_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2008_reference.md) |
-| V | V/F | 103 | L | 103.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dickinson_2009_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2009_reference.md) |
-| V | V/F | 103 | L | 103.0 L | HIV patients | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lavielle_2007_reference](drugs/drug_saquinavir/Saquinavir_Lavielle2007_reference.md) |
-| ka | kabs | 3.5 | 1/h | 3.5 h−1 | HIV-infected adults | 97 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dickinson_2008_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2008_reference.md) |
-| ka | kabs | 3.5 | 1/h | 3.5 h−1 | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dickinson_2009_reference](drugs/drug_saquinavir/Saquinavir_Dickinson2009_reference.md) |
-| ka | kabs | 3.5 | 1/h | 3.5 h−1 | HIV patients | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lavielle_2007_reference](drugs/drug_saquinavir/Saquinavir_Lavielle2007_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ren_2022 · CL</text><circle cx="417.7" cy="30.0" r="4" fill="#2e7d32"><title>Ren_2022 · CL: 20 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lavielle_2007 · CL/F</text><circle cx="207.6" cy="46.0" r="4" fill="#ef6c00"><title>Lavielle_2007 · CL/F: 1.26 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Dickinson_2009 · CL/F</text><circle cx="344.1" cy="62.0" r="4" fill="#2e7d32"><title>Dickinson_2009 · CL/F: 7.6 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Dickinson_2008 · CL/F</text><circle cx="487.0" cy="78.0" r="4" fill="#ef6c00"><title>Dickinson_2008 · CL/F: 49.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ren_2022 · V</text><circle cx="348.0" cy="30.0" r="4" fill="#2e7d32"><title>Ren_2022 · V: 80 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Dickinson_2008 · V/F</text><circle cx="367.2" cy="46.0" r="4" fill="#ef6c00"><title>Dickinson_2008 · V/F: 103 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Dickinson_2009 · V/F</text><circle cx="367.2" cy="62.0" r="4" fill="#2e7d32"><title>Dickinson_2009 · V/F: 103 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Lavielle_2007 · V/F</text><circle cx="367.2" cy="78.0" r="4" fill="#ef6c00"><title>Lavielle_2007 · V/F: 103 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -258,5 +244,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaquinavir%5D&body=Drug%3A%20saquinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saquinavir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaquinavir%5D&body=Drug%3A%20saquinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saquinavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:11 UTC</sub>

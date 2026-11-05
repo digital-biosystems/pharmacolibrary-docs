@@ -200,13 +200,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tanaka R, Sato Y, Goto K, Yasuda N, Ohchi Y, Suzuki Y et al. Pharmacokinetic/Pharmacodynamic Analysis for Doripenem Regimens in Intensive Care Unit Patient. Biological & pharmaceutical bulletin 40(8):1226–1231 (2017). [doi:10.1248/bpb.b17-00008](https://doi.org/10.1248/bpb.b17-00008)
 
-**This record:** Pharmacolibrary v26.09, model `Doripenem_Tanaka2017_bayesian_estimated`. <https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated>
+**This record:** Pharmacolibrary, model `Doripenem_Tanaka2017_bayesian_estimated`. <https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated>
 
 ```bibtex
 @misc{pharmacolibrary_DoripenemTanaka2017bayesianestimated,
   title  = {{Pharmacolibrary model Doripenem_Tanaka2017_bayesian_estimated}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated},
   note   = {Parameters from doi:10.1248/bpb.b17-00008},
 }
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoripenem%5D%20Doripenem_Tanaka2017_bayesian_estimated&body=Drug%3A%20doripenem%0ARecord%3A%20Doripenem_Tanaka2017_bayesian_estimated%0APaper%3A%20Tanaka_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoripenem%5D%20Doripenem_Tanaka2017_bayesian_estimated&body=Drug%3A%20doripenem%0ARecord%3A%20Doripenem_Tanaka2017_bayesian_estimated%0APaper%3A%20Tanaka_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doripenem/Doripenem_Tanaka2017_bayesian_estimated%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:40 UTC</sub>

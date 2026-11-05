@@ -9,7 +9,7 @@
 
 > Chlorzoxazone's clearance parameter is unreachable because the model structure lacks a valid dose path to the compartment.
 
-<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Zhou2011_reference" status="rejected" stale="false" population="rats" measured-compound="chlorzoxazone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Zhou2011_reference" status="rejected" stale="false" population="rats" measured-compound="chlorzoxazone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhou J, Empey PE, Bies RR, Kochanek PM, Poloyac SM. Cardiac arrest and therapeutic hypothermia decrease isoform-specific cytochrome P450 drug metabolism. Drug metabolism and disposition: the biological fate of chemicals 39(12):2209–2218 (2011).
@@ -23,7 +23,7 @@ Zhou J, Empey PE, Bies RR, Kochanek PM, Poloyac SM. Cardiac arrest and therapeut
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
@@ -76,11 +76,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - dropped value-less row: 'volume of distribution of dextromethorphan (V(1))'
 - dropped value-less row: 'peripheral compartment for chlorzoxazone (V(2))'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chlorzoxazone
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Zhou_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -117,7 +113,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Zhou_2011:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 681.6 | ['Zhou_2011:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 47.7 L/h | ['Zhou_2011:abstract'] |
 
 <details class="legend">
@@ -141,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorzoxazone%5D%20Chlorzoxazone_Zhou2011_reference&body=Drug%3A%20chlorzoxazone%0ARecord%3A%20Chlorzoxazone_Zhou2011_reference%0APaper%3A%20Zhou_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorzoxazone/Chlorzoxazone_Zhou2011_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorzoxazone%5D%20Chlorzoxazone_Zhou2011_reference&body=Drug%3A%20chlorzoxazone%0ARecord%3A%20Chlorzoxazone_Zhou2011_reference%0APaper%3A%20Zhou_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorzoxazone/Chlorzoxazone_Zhou2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:37 UTC</sub>

@@ -184,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Shin W, Yang AY, Yun H, Cho DY, Park KH, Shin H et al. Bioequivalence of the pharmacokinetics between tofacitinib aspartate and tofacitinib citrate in healthy subjects. Translational and clinical pharmacology 28(3):160–167 (2020). [doi:10.12793/tcp.2020.28.e13](https://doi.org/10.12793/tcp.2020.28.e13)
 
-**This record:** Pharmacolibrary v26.09, model `Tofacitinib_Shin2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference>
+**This record:** Pharmacolibrary, model `Tofacitinib_Shin2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TofacitinibShin2020reference,
   title  = {{Pharmacolibrary model Tofacitinib_Shin2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference},
   note   = {Parameters from doi:10.12793/tcp.2020.28.e13},
 }
@@ -209,5 +208,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btofacitinib%5D%20Tofacitinib_Shin2020_reference&body=Drug%3A%20tofacitinib%0ARecord%3A%20Tofacitinib_Shin2020_reference%0APaper%3A%20Shin_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btofacitinib%5D%20Tofacitinib_Shin2020_reference&body=Drug%3A%20tofacitinib%0ARecord%3A%20Tofacitinib_Shin2020_reference%0APaper%3A%20Shin_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tofacitinib/Tofacitinib_Shin2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:55 UTC</sub>

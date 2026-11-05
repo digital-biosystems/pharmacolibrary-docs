@@ -22,17 +22,9 @@ Ramucirumab is a monoclonal antibody used as an anticancer treatment for tumours
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0148 | L/h | 0.0148 l h −1 | cancer patients |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) |
-| CL | CL | 0.02 | L/h | 0.02 L/h | patients with gastrointestinal cancers | &gt;=52 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) |
-| CL | CL | 0.02846 | L/h | 0.683 L/d | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) |
-| V | V1 | 1.43 | L | 1.43 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) |
-| V | V1 | 3.26 | L | 3.26 l | cancer patients |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">OBrien_2017 · CL</text><circle cx="249.6" cy="30.0" r="4" fill="#66bb6a"><title>OBrien_2017 · CL: 0.0148 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kaneko_2023 · CL</text><circle cx="295.4" cy="46.0" r="4" fill="#ef6c00"><title>Kaneko_2023 · CL: 0.02 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Marachelian_2016 · CL</text><circle cx="349.0" cy="62.0" r="4" fill="#2e7d32"><title>Marachelian_2016 · CL: 0.02846 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Marachelian_2016 · V1</text><circle cx="244.4" cy="30.0" r="4" fill="#2e7d32"><title>Marachelian_2016 · V1: 1.43 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">OBrien_2017 · V1</text><circle cx="369.6" cy="46.0" r="4" fill="#66bb6a"><title>OBrien_2017 · V1: 3.26 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -104,5 +96,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bramucirumab%5D&body=Drug%3A%20ramucirumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ramucirumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bramucirumab%5D&body=Drug%3A%20ramucirumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ramucirumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:24 UTC</sub>

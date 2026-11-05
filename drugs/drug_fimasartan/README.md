@@ -31,19 +31,9 @@ Fimasartan is an angiotensin II receptor blocker developed for the treatment of 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 27 | L/h | 27.0 L/h | healthy adults and adults with hepatic impairment | 18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2017_reference](drugs/drug_fimasartan/Fimasartan_Kim2017_reference.md) |
-| CL | CL | 77 | L/h | 77 L/h | patients with renal impairment and healthy volunteers | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2014_2_estimate](drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md) |
-| CL | CL | 500 | L/h | 500 L/h | rats, dogs, and healthy volunteers | &gt;100 | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kim_2015_reference](drugs/drug_fimasartan/Fimasartan_Kim2015_reference.md) |
-| V | V1 | 22 | L | 22.0 L | rats, dogs, and healthy volunteers | &gt;100 | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kim_2015_reference](drugs/drug_fimasartan/Fimasartan_Kim2015_reference.md) |
-| V | V1 | 286 | L | 286 L | patients with renal impairment and healthy volunteers | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2014_2_estimate](drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md) |
-| ka | kabs | 0.319 | 1/h | 0.319 1/h | healthy adults and adults with hepatic impairment | 18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2017_reference](drugs/drug_fimasartan/Fimasartan_Kim2017_reference.md) |
-| ka | kabs | 3.8 | 1/h | 3.8 h−1 | patients with renal impairment and healthy volunteers | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2014_2_estimate](drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kim_2017 · CL</text><circle cx="265.5" cy="30.0" r="4" fill="#ef6c00"><title>Kim_2017 · CL: 27 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kim_2014_2 · CL</text><circle cx="345.1" cy="46.0" r="4" fill="#ef6c00"><title>Kim_2014_2 · CL: 77 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kim_2015 · CL</text><circle cx="487.3" cy="62.0" r="4" fill="#ef6c00"><title>Kim_2015 · CL: 500 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kim_2015 · V1</text><circle cx="249.9" cy="30.0" r="4" fill="#ef6c00"><title>Kim_2015 · V1: 22 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kim_2014_2 · V1</text><circle cx="444.9" cy="46.0" r="4" fill="#ef6c00"><title>Kim_2014_2 · V1: 286 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -134,5 +124,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfimasartan%5D&body=Drug%3A%20fimasartan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fimasartan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfimasartan%5D&body=Drug%3A%20fimasartan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fimasartan/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:28 UTC</sub>

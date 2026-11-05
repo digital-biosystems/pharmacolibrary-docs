@@ -102,13 +102,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Etomidate_Ranna2006_PD_gaba_induced_currents`. <https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Ranna2006_PD_gaba_induced_currents>
+**This record:** Pharmacolibrary, model `Etomidate_Ranna2006_PD_gaba_induced_currents`. <https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Ranna2006_PD_gaba_induced_currents>
 
 ```bibtex
 @misc{pharmacolibrary_EtomidateRanna2006PDgabainducedcurrents,
   title  = {{Pharmacolibrary model Etomidate_Ranna2006_PD_gaba_induced_currents}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Ranna2006_PD_gaba_induced_currents},
 }
 ```
@@ -122,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betomidate%5D%20pd_Ranna_2006_GABA_induced_currents&body=Drug%3A%20etomidate%0ARecord%3A%20pd_Ranna_2006_GABA_induced_currents%0APaper%3A%20Ranna_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betomidate%5D%20pd_Ranna_2006_GABA_induced_currents&body=Drug%3A%20etomidate%0ARecord%3A%20pd_Ranna_2006_GABA_induced_currents%0APaper%3A%20Ranna_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etomidate/pd_Ranna_2006_GABA_induced_currents%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [etomidate](drugs/drug_etomidate/)</sub>

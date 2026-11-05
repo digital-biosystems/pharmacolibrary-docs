@@ -29,16 +29,6 @@ Tafamidis is a nervous system drug used to treat amyloidosis. It is authorised i
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 8.4 ‡ | L/h | 0.12 l/h/kg | review reference | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Parkinson_2013_reference](drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference.md) |
-| V | V | 7.675 | L | 7.6751 L | review reference | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Parkinson_2013_reference](drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference.md) |
-| ka | kabs | 0.41 | 1/h | 0.41 1/h | review reference | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Parkinson_2013_reference](drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -159,5 +149,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafamidis%5D&body=Drug%3A%20tafamidis%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafamidis/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafamidis%5D&body=Drug%3A%20tafamidis%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafamidis/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:51 UTC</sub>

@@ -115,13 +115,12 @@ _All readers agree on the compared fields of this PD record._
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Carvedilol_Liu2009_PD_map`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map>
+**This record:** Pharmacolibrary, model `Carvedilol_Liu2009_PD_map`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map>
 
 ```bibtex
 @misc{pharmacolibrary_CarvedilolLiu2009PDmap,
   title  = {{Pharmacolibrary model Carvedilol_Liu2009_PD_map}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map},
 }
 ```
@@ -135,5 +134,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20pd_Liu_2009_MAP&body=Drug%3A%20carvedilol%0ARecord%3A%20pd_Liu_2009_MAP%0APaper%3A%20Liu_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/pd_Liu_2009_MAP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20pd_Liu_2009_MAP&body=Drug%3A%20carvedilol%0ARecord%3A%20pd_Liu_2009_MAP%0APaper%3A%20Liu_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/pd_Liu_2009_MAP%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [carvedilol](drugs/drug_carvedilol/)</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Hannam_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Hannam2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No inter-compartmental rate parameters were defined for the paracetamol model, leaving all downstream compartments unreachable from the dose.
+> This record was reviewed on 2026-10-22 14:32 UTC (Rejected), but the paper was screened again on 2026-11-04 07:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No inter-compartmental rate parameters were defined for the paracetamol model, leaving all downstream compartments unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hannam2018_reference" status="rejected" stale="false" population="children undergoing adenotonsillectomy" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hannam2018_reference" status="needs_review" stale="true" population="children undergoing tonsillectomy" measured-compound="paracetamol, ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hannam JA, Anderson BJ, Potts A. Acetaminophen, ibuprofen, and tramadol analgesic interactions after adenotonsillectomy. Paediatric anaesthesia 28(10):841–851 (2018).
@@ -17,28 +17,30 @@ Hannam JA, Anderson BJ, Potts A. Acetaminophen, ibuprofen, and tramadol analgesi
 
 ## Population and dosing
 
-**Population:** children undergoing adenotonsillectomy · condition postoperative pain · age group child · n = 257.
+**Population:** children undergoing tonsillectomy · age group child · n = condition:.
 
-**Dosing:** 840, 1050, 1680, 2100 mg, oral, multiple, every 5 h.
+**Dosing:** 840, 1050, 1680, 2100 mg, oral, multiple, every 4 h.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL ACET (L/h.70 kg -1 ) | CL | 13.2 | L/h.70 kg -1 |
+| VOLUME OF DISTRIBUTION | V | 6.35 | liters |
+| ka | kabs | 9.76 | h -1 |
 | Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,6 +54,8 @@ Hannam JA, Anderson BJ, Potts A. Acetaminophen, ibuprofen, and tramadol analgesi
 
 The parameter list contains only total clearance (13.2 L/h.70 kg⁻¹) and absorption lag time (4.2 min). The model link section is empty, indicating no connection from the dose site to any other compartment. Consequently, the model builder could not establish paths to peripheral compartments, resulting in the refusal due to orphan compartments. Extracted — paracetamol: CL 13.2 L/h.70 kg -1, tlag 4.2 min.
 
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, ibuprofen, the second reading paracetamol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
@@ -59,6 +63,8 @@ The parameter list contains only total clearance (13.2 L/h.70 kg⁻¹) and absor
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | CL ACET (L/h.70 kg -1 ) | `Q22` · CL | 13.2 | L/h.70 kg -1 | 0.0002567 | m3/s | L/h | boundary (0.8) | Hannam_2018:other_prose |
+| VOLUME OF DISTRIBUTION | `Q61` · V | 6.35 | liters | 0.00635 | m3 | L | review_gapfill (0.7) | Albert_1984:review |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
 | Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
 
 <details class="legend">
@@ -72,12 +78,14 @@ The parameter list contains only total clearance (13.2 L/h.70 kg⁻¹) and absor
 - dropped unlinked row (NIL): 'Estimate' — extend the ontology if this is a real PK parameter (source ['Hannam_2018_table_p4_1:row0:col1', 'Hannam_2018_table_p4_1:row1:col1', 'Hannam_2018_table_p4_1:row2:col1', 'Hannam_2018_table_p4_1:row3:col1', 'Hannam_2018_table_p4_1:row4:col1', 'Hannam_2018_table_p4_1:row5:col1', 'Hannam_2018_table_p4_1:row6:col1', 'Hannam_2018_table_p4_1:row7:col1', 'Hannam_2018_table_p4_1:row8:col1', 'Hannam_2018_table_p4_1:row9:col1', 'Hannam_2018_table_p4_1:row10:col1', 'Hannam_2018_table_p4_1:row11:col1', 'Hannam_2018_table_p4_1:row12:col1'])
 - routed 'PPV' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - salvaged Q22 ('CL ACET (L/h.70 kg -1 )'=13.2) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paracetamol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paracetamol, ibuprofen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- molar mass: none found for 'paracetamol, ibuprofen' — its concentrations stay mass-only
+- gap-filled Q61 (V) from Albert_1984's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
@@ -87,17 +95,45 @@ The parameter list contains only total clearance (13.2 L/h.70 kg⁻¹) and absor
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl acet]` |  | 13.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl acet]` | 13.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | paracetamol, ibuprofen | paracetamol | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol, ibuprofen | paracetamol | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.2 | ['Hannam_2018:other_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 924 L/h | ['Hannam_2018:other_prose'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |  |  |
+| C1_half_life_beta | pass | 0.34 | 0.333 | 0.9794 | 0.25 | reported t½β |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Anderson_1998:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Albert_1984:review'] |
+| C5_dimension_Q83 | pass | [time] |  |  |  | ['Gibb_2008:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.2 |  |  | ['Hannam_2018:other_prose'] |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 924 L/h |  |  | ['Hannam_2018:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.35 L |  |  | ['Albert_1984:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -109,9 +145,19 @@ The parameter list contains only total clearance (13.2 L/h.70 kg⁻¹) and absor
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -120,5 +166,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Hannam2018_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Hannam2018_reference%0APaper%3A%20Hannam_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Hannam2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Hannam2018_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Hannam2018_reference%0APaper%3A%20Hannam_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Hannam2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 07:35 UTC</sub>

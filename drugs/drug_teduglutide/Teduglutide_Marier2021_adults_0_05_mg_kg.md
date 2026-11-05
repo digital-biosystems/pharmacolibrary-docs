@@ -132,5 +132,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteduglutide%5D%20Teduglutide_Marier2021_adults_0_05_mg_kg&body=Drug%3A%20teduglutide%0ARecord%3A%20Teduglutide_Marier2021_adults_0_05_mg_kg%0APaper%3A%20Marier_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teduglutide/Teduglutide_Marier2021_adults_0_05_mg_kg%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteduglutide%5D%20Teduglutide_Marier2021_adults_0_05_mg_kg&body=Drug%3A%20teduglutide%0ARecord%3A%20Teduglutide_Marier2021_adults_0_05_mg_kg%0APaper%3A%20Marier_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teduglutide/Teduglutide_Marier2021_adults_0_05_mg_kg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:55 UTC</sub>

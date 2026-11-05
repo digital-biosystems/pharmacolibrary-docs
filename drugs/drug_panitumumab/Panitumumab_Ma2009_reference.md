@@ -151,5 +151,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpanitumumab%5D%20Panitumumab_Ma2009_reference&body=Drug%3A%20panitumumab%0ARecord%3A%20Panitumumab_Ma2009_reference%0APaper%3A%20Ma_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_panitumumab/Panitumumab_Ma2009_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpanitumumab%5D%20Panitumumab_Ma2009_reference&body=Drug%3A%20panitumumab%0ARecord%3A%20Panitumumab_Ma2009_reference%0APaper%3A%20Ma_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_panitumumab/Panitumumab_Ma2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:04 UTC</sub>

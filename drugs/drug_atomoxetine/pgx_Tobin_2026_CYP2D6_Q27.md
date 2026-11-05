@@ -64,13 +64,12 @@ _All readers agree on the compared fields of this PGx record._
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Atomoxetine_Tobin2026_reference_PGx_CYP2D6`. <https://pharmacolibrary.github.io/#/drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference_PGx_CYP2D6>
+**This record:** Pharmacolibrary, model `Atomoxetine_Tobin2026_reference_PGx_CYP2D6`. <https://pharmacolibrary.github.io/#/drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference_PGx_CYP2D6>
 
 ```bibtex
 @misc{pharmacolibrary_AtomoxetineTobin2026referencePGxCYP2D6,
   title  = {{Pharmacolibrary model Atomoxetine_Tobin2026_reference_PGx_CYP2D6}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference_PGx_CYP2D6},
 }
 ```
@@ -90,5 +89,5 @@ _The CYP2D6 phenotype acts on the paper's popPK model ([Atomoxetine_Tobin2026_re
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batomoxetine%5D%20pgx_Tobin_2026_CYP2D6_Q27&body=Drug%3A%20atomoxetine%0ARecord%3A%20pgx_Tobin_2026_CYP2D6_Q27%0APaper%3A%20Tobin_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batomoxetine%5D%20pgx_Tobin_2026_CYP2D6_Q27&body=Drug%3A%20atomoxetine%0ARecord%3A%20pgx_Tobin_2026_CYP2D6_Q27%0APaper%3A%20Tobin_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [atomoxetine](drugs/drug_atomoxetine/)</sub>

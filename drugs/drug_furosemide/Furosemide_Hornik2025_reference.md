@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Hornik CP, Foote HP, Kendig E, Mohr J. An Adult Population Pharmacokinetic Model to Simulate Subcutaneous Administration of a Fixed Dose of Furosemide in Adolescents with Heart Failure and Volume Overload. Clinical pharmacokinetics 64(6):899–908 (2025). [doi:10.1007/s40262-025-01515-2](https://doi.org/10.1007/s40262-025-01515-2)
 
-**This record:** Pharmacolibrary v26.09, model `Furosemide_Hornik2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Hornik2025_reference>
+**This record:** Pharmacolibrary, model `Furosemide_Hornik2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Hornik2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FurosemideHornik2025reference,
   title  = {{Pharmacolibrary model Furosemide_Hornik2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Hornik2025_reference},
   note   = {Parameters from doi:10.1007/s40262-025-01515-2},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfurosemide%5D%20Furosemide_Hornik2025_reference&body=Drug%3A%20furosemide%0ARecord%3A%20Furosemide_Hornik2025_reference%0APaper%3A%20Hornik_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_furosemide/Furosemide_Hornik2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 18:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfurosemide%5D%20Furosemide_Hornik2025_reference&body=Drug%3A%20furosemide%0ARecord%3A%20Furosemide_Hornik2025_reference%0APaper%3A%20Hornik_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_furosemide/Furosemide_Hornik2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 18:18 UTC</sub>

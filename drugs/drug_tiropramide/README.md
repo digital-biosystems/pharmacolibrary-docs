@@ -22,14 +22,6 @@ Tiropramide is a synthetic antispasmodic with parasympatholytic action, studied 
 |---|---|---|---|---|---|---|
 | tiropramide | parent | 467.643 | C28H41N3O3 | DrugBank | [42262](https://pubchem.ncbi.nlm.nih.gov/compound/42262) | Arigoni_1986 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| t½ | t1/2z | 2.5 | h | 2.5 h | healthy volunteers | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Arigoni_1986_reference](drugs/drug_tiropramide/Tiropramide_Arigoni1986_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -79,5 +71,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiropramide%5D&body=Drug%3A%20tiropramide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiropramide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiropramide%5D&body=Drug%3A%20tiropramide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiropramide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 13:16 UTC</sub>

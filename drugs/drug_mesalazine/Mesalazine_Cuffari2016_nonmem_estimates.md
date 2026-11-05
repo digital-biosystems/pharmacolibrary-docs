@@ -309,13 +309,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Cuffari C, Pierce D, Korczowski B, Fyderek K, Van Heusen H, Hossack S et al. Randomized clinical trial: pharmacokinetics and safety of multimatrix mesalamine for treatment of pediatric ulcerative colitis. Drug design, development and therapy 10:593–607 (2016). [doi:10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316)
 
-**This record:** Pharmacolibrary v26.09, model `Mesalazine_Cuffari2016_nonmem_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates>
+**This record:** Pharmacolibrary, model `Mesalazine_Cuffari2016_nonmem_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates>
 
 ```bibtex
 @misc{pharmacolibrary_MesalazineCuffari2016nonmemestimates,
   title  = {{Pharmacolibrary model Mesalazine_Cuffari2016_nonmem_estimates}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates},
   note   = {Parameters from doi:10.2147/DDDT.S95316},
 }
@@ -334,5 +333,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmesalazine%5D%20Mesalazine_Cuffari2016_nonmem_estimates&body=Drug%3A%20mesalazine%0ARecord%3A%20Mesalazine_Cuffari2016_nonmem_estimates%0APaper%3A%20Cuffari_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 19:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmesalazine%5D%20Mesalazine_Cuffari2016_nonmem_estimates&body=Drug%3A%20mesalazine%0ARecord%3A%20Mesalazine_Cuffari2016_nonmem_estimates%0APaper%3A%20Cuffari_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 19:36 UTC</sub>

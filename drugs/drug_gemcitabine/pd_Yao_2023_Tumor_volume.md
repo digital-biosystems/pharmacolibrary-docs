@@ -140,13 +140,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Gemcitabine_Yao2023_PD_tumor_volume`. <https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Yao2023_PD_tumor_volume>
+**This record:** Pharmacolibrary, model `Gemcitabine_Yao2023_PD_tumor_volume`. <https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Yao2023_PD_tumor_volume>
 
 ```bibtex
 @misc{pharmacolibrary_GemcitabineYao2023PDtumorvolume,
   title  = {{Pharmacolibrary model Gemcitabine_Yao2023_PD_tumor_volume}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Yao2023_PD_tumor_volume},
 }
 ```
@@ -162,5 +161,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgemcitabine%5D%20pd_Yao_2023_Tumor_volume&body=Drug%3A%20gemcitabine%0ARecord%3A%20pd_Yao_2023_Tumor_volume%0APaper%3A%20Yao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gemcitabine/pd_Yao_2023_Tumor_volume%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgemcitabine%5D%20pd_Yao_2023_Tumor_volume&body=Drug%3A%20gemcitabine%0ARecord%3A%20pd_Yao_2023_Tumor_volume%0APaper%3A%20Yao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gemcitabine/pd_Yao_2023_Tumor_volume%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [gemcitabine](drugs/drug_gemcitabine/)</sub>

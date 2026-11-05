@@ -305,13 +305,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Ishibashi T, Shimizu R, Kubota R. Population Pharmacokinetics of Ensitrelvir in Healthy Participants and Participants with SARS-CoV-2 Infection in the SCORPIO-SR Study. Clinical pharmacokinetics 63(12):1723–1734 (2024). [doi:10.1007/s40262-024-01446-4](https://doi.org/10.1007/s40262-024-01446-4)
 
-**This record:** Pharmacolibrary v26.09, model `Ensitrelvir_Ishibashi2024_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean>
+**This record:** Pharmacolibrary, model `Ensitrelvir_Ishibashi2024_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean>
 
 ```bibtex
 @misc{pharmacolibrary_EnsitrelvirIshibashi2024mean,
   title  = {{Pharmacolibrary model Ensitrelvir_Ishibashi2024_mean}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean},
   note   = {Parameters from doi:10.1007/s40262-024-01446-4},
 }
@@ -330,5 +329,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bensitrelvir%5D%20Ensitrelvir_Ishibashi2024_mean&body=Drug%3A%20ensitrelvir%0ARecord%3A%20Ensitrelvir_Ishibashi2024_mean%0APaper%3A%20Ishibashi_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bensitrelvir%5D%20Ensitrelvir_Ishibashi2024_mean&body=Drug%3A%20ensitrelvir%0ARecord%3A%20Ensitrelvir_Ishibashi2024_mean%0APaper%3A%20Ishibashi_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:23 UTC</sub>

@@ -12,6 +12,22 @@
  "paper_doses_mg": [
   400.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Li_2012:other_prose",
+    "value_si": 49.3
+   },
+   {
+    "source": "Li_2012:other_prose",
+    "value_si": 30.7
+   },
+   {
+    "source": "Li_2012:discussion_prose",
+    "value_si": 49.3
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.0166666666666667e-06,
   "F": 1.0,

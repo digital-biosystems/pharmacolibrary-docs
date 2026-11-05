@@ -243,13 +243,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pettersen G, Mouksassi MS, Théorêt Y, Labbé L, Faure C, Nguyen B et al. Population pharmacokinetics of intravenous pantoprazole in paediatric intensive care patients. British journal of clinical pharmacology 67(2):216–227 (2009). [doi:10.1111/j.1365-2125.2008.03328.x](https://doi.org/10.1111/j.1365-2125.2008.03328.x)
 
-**This record:** Pharmacolibrary v26.09, model `Pantoprazole_Pettersen2009_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference>
+**This record:** Pharmacolibrary, model `Pantoprazole_Pettersen2009_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PantoprazolePettersen2009reference,
   title  = {{Pharmacolibrary model Pantoprazole_Pettersen2009_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference},
   note   = {Parameters from doi:10.1111/j.1365-2125.2008.03328.x},
 }
@@ -268,5 +267,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantoprazole%5D%20Pantoprazole_Pettersen2009_reference&body=Drug%3A%20pantoprazole%0ARecord%3A%20Pantoprazole_Pettersen2009_reference%0APaper%3A%20Pettersen_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 11:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantoprazole%5D%20Pantoprazole_Pettersen2009_reference&body=Drug%3A%20pantoprazole%0ARecord%3A%20Pantoprazole_Pettersen2009_reference%0APaper%3A%20Pettersen_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 11:01 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Commander_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydrochlorothiazide — `Hydrochlorothiazide_Commander2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume.
+> This record was reviewed on 2026-10-22 14:35 UTC (Needs review), but the paper was screened again on 2026-11-04 01:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Commander2021_reference" status="needs_review" stale="false" population="children" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Commander2021_reference" status="needs_review" stale="true" population="children" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Commander SJ, Wu H, Boakye-Agyeman F, Melloni C, Hornik CD, Zimmerman K et al. Pharmacokinetics of Hydrochlorothiazide in Children: A Potential Surrogate for Renal Secretion Maturation. Journal of clinical pharmacology 61(3):368–377 (2021).
@@ -17,14 +17,14 @@ Commander SJ, Wu H, Boakye-Agyeman F, Melloni C, Hornik CD, Zimmerman K et al. P
 
 ## Population and dosing
 
-**Population:** children · condition hypertension or edema · age group mixed · n = 49.
+**Population:** children · condition standard of care (hypertension/edema) · age group child · n = 49.
 
-**Dosing:** 70 mg, oral, single.
+**Dosing:** 70 mg, oral, multiple.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
@@ -35,12 +35,12 @@ Commander SJ, Wu H, Boakye-Agyeman F, Melloni C, Hornik CD, Zimmerman K et al. P
 |---|---|---|---|---|
 | Ka hr−1 | kabs | 0.43 | 1/h | 56 |
 | CL/F70kg (L/h) | CLnorm | 19.0 | L/h | 11 |
-| V/F70kg (L) | Vnorm/F | 191.0 | L | 24 |
-| CL/F | CL/F | 19.0 | L/h/70 kg |  |
+| V/F70kg (L) | V/F | 191.0 | L | 24 |
+| CLss/F(L/h) | CL/F | 10.0 | L/h |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Commander SJ, Wu H, Boakye-Agyeman F, Melloni C, Hornik CD, Zimmerman K et al. P
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — hydrochlorothiazide: kabs 0.43 1/h, CLnorm 19 L/h, Vnorm/F 191 L, CL/F 19 L/h/70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrochlorothiazide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f70kg].parameter_id`: this record has Q354, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,8 +64,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|---|
 | Ka hr−1 | `Q49` · kabs | 0.43 | 1/h | 0.0001194 | 1/s | 1/h | 56 | llm_confirmed (0.6) | T2:row1:col1 |
 | CL/F70kg (L/h) | `Q354` · CLnorm | 19.0 | L/h | 5.278e-06 | m3/s | l/h | 11 | llm_corrected (0.6) | T2:row2:col1 |
-| V/F70kg (L) | `Q353` · Vnorm/F | 191.0 | L | 0.191 | m3 | l | 24 | llm_corrected (0.6) | T2:row3:col1 |
-| CL/F | `Q27` · CL/F | 19.0 | L/h/70 kg | 5.278e-06 | m3/s | L/h |  | review_gapfill (0.7) | Commander_2021:review |
+| V/F70kg (L) | `Q76` · V/F | 191.0 | L | 0.191 | m3 | l | 24 | llm_confirmed (0.6) | T2:row3:col1 |
+| CLss/F(L/h) | `Q27` · CL/F | 10.0 | L/h | 2.778e-06 | m3/s | L/h |  | review_gapfill (0.7) | Chen_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,10 +78,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped PD-category row 'Hill factor' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row4:col1'])
 - dropped unlinked row (NIL): 'TM50 (weeks)' — extend the ontology if this is a real PK parameter (source ['T2:row5:col1'])
 - routed 'Interindividual variability, CV% CL/F (L/h)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'ɛ' — extend the ontology if this is a real PK parameter (source ['T2:row9:col1'])
-- implicit units: 'Ka hr−1' → 1/h (from the popPK convention: "The parameter Ka is an absorption rate constant. In the provided paper text, Equation (17) explicitly defines 'KA(1/h) =")
+- routed 'ɛ' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
+- implicit units: 'Ka hr−1' → 1/h (from the paper text: "The text provides the final model equation '(17)KA(1/h)=0.431' and the table footnote defines 'Ka, absorption rate const")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=hydrochlorothiazide
-- gap-filled Q27 (CL/F) from Commander_2021's review values (primary lacked it)
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V/F70kg (L)' is the general volume)
+- gap-filled Q27 (CL/F) from Chen_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -96,18 +97,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f70kg].parameter_id` | Q355 | Q27 | mismatch |
-| `gpt-oss-120b` | `parameters[fi]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f70kg].parameter_id` | Q353 | Q76 | mismatch |
-| `gpt-oss-120b` | `parameters[v]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | hydrochlorothiazide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | hydrochlorothiazide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f70kg].parameter_id` | Q354 | Q27 | mismatch |
 
 </details>
 
@@ -121,16 +117,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Commander_2021:review'] |
-| C5_dimension_Q353 | pass | [length] ** 3 |  | ['T2:row3:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Chen_2024:review'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['T2:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row1:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['T2:row3:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 19 L/h | ['Commander_2021:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 10 L/h | ['Chen_2024:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 191 L | ['T2:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,5 +160,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20Hydrochlorothiazide_Commander2021_reference&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20Hydrochlorothiazide_Commander2021_reference%0APaper%3A%20Commander_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20Hydrochlorothiazide_Commander2021_reference&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20Hydrochlorothiazide_Commander2021_reference%0APaper%3A%20Commander_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 01:30 UTC</sub>

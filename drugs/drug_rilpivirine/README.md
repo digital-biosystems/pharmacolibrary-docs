@@ -31,18 +31,9 @@ It is authorised in the European Union for HIV and is used both alone and in com
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.74 | L/h | 6.74 L/h | people with HIV in routine clinical care | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2024_reference](drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md) |
-| CL | CL | 11.7 | L/h | 11.7 liters/h | HIV-1-infected adults | 249 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Aouri_2017_reference](drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md) |
-| V | V | 14 ‡ | L | 0.2 L/kg | people with HIV in routine clinical care | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2024_reference](drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md) |
-| V | V | 401 | L | 401 liters | HIV-1-infected adults | 249 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Aouri_2017_reference](drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md) |
-| ka | kabs | 0.000215 | 1/h | 0.000215 h−1 | HIV-1-infected adults | 249 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Aouri_2017_reference](drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md) |
-| ka | kabs | 0.00214 | 1/h | 0.00214 h−1 | people with HIV in routine clinical care | 238 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2024_reference](drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Thoueille_2024 · CL</text><circle cx="335.0" cy="30.0" r="4" fill="#ef6c00"><title>Thoueille_2024 · CL: 6.74 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Aouri_2017 · CL</text><circle cx="376.9" cy="46.0" r="4" fill="#ef6c00"><title>Aouri_2017 · CL: 11.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Thoueille_2024 · V ·/kg</text><circle cx="215.6" cy="30.0" r="4" fill="#ef6c00"><title>Thoueille_2024 · V ·/kg: 14 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Aouri_2017 · V</text><circle cx="470.6" cy="46.0" r="4" fill="#ef6c00"><title>Aouri_2017 · V: 401 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -136,5 +127,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brilpivirine%5D&body=Drug%3A%20rilpivirine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rilpivirine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brilpivirine%5D&body=Drug%3A%20rilpivirine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rilpivirine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:53 UTC</sub>

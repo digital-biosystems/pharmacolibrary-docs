@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Thigpen_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Thigpen2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Thigpen2019_reference" status="curated_candidate" stale="false" population="neonates, infants, and children" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:26 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 19:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Thigpen2019_reference" status="extracted" stale="true" population="neonates, infants, and children" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 James C Thigpen, Brian L Odle, Sam Harirforoosh. Opioids: A Review of Pharmacokinetics and Pharmacodynamics in Neonates, Infants, and Children. European journal of drug metabolism and pharmacokinetics (2019).
@@ -36,7 +38,7 @@ James C Thigpen, Brian L Odle, Sam Harirforoosh. Opioids: A Review of Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +50,7 @@ James C Thigpen, Brian L Odle, Sam Harirforoosh. Opioids: A Review of Pharmacoki
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 68; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q45: this record has none, the second reading 10; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,15 +79,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q21]` |  | 68 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q310]` |  | 0.2 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q32]` |  | 16.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q45]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` |  | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 68 |  | only_one_extracted |
 
 </details>
 
@@ -171,13 +173,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): James C Thigpen, Brian L Odle, Sam Harirforoosh. Opioids: A Review of Pharmacokinetics and Pharmacodynamics in Neonates, Infants, and Children. European journal of drug metabolism and pharmacokinetics (2019). [doi:10.1007/s13318-019-00552-0](https://doi.org/10.1007/s13318-019-00552-0)
 
-**This record:** Pharmacolibrary v26.09, model `Codeine_Thigpen2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_codeine/Codeine_Thigpen2019_reference>
+**This record:** Pharmacolibrary, model `Codeine_Thigpen2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_codeine/Codeine_Thigpen2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CodeineThigpen2019reference,
   title  = {{Pharmacolibrary model Codeine_Thigpen2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_codeine/Codeine_Thigpen2019_reference},
   note   = {Parameters from doi:10.1007/s13318-019-00552-0},
 }
@@ -196,5 +197,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Thigpen2019_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Thigpen2019_reference%0APaper%3A%20Thigpen_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Thigpen2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-27 12:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine%5D%20Codeine_Thigpen2019_reference&body=Drug%3A%20codeine%0ARecord%3A%20Codeine_Thigpen2019_reference%0APaper%3A%20Thigpen_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine/Codeine_Thigpen2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 19:27 UTC</sub>

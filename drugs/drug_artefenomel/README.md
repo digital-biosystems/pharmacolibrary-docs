@@ -31,23 +31,9 @@
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 3.6 h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2016_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference.md) |
-| CL | CL/F | 1.3 | L/h | 1.3 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2020_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2020_reference.md) |
-| CL | CL/F | 40.9 | L/h | 40.9 L/h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2016_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference.md) |
-| CL | CL/F | 54.6 | L/h | 54.6 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abd-Rahman_2020_reference](drugs/drug_artefenomel/Artefenomel_AbdRahman2020_reference.md) |
-| CL | CL/F | 65 | L/h | 65.0 liters/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2019_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2019_reference.md) |
-| V | V/F | 226.7 | L | 226.7 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2020_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2020_reference.md) |
-| V | V/F | 8897 | L | 8897.0 liters | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2019_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2019_reference.md) |
-| V | V1/F | 189 | L | 189 L | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2016_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference.md) |
-| V | V1/F | 2930 | L | 2930.0 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abd-Rahman_2020_reference](drugs/drug_artefenomel/Artefenomel_AbdRahman2020_reference.md) |
-| ka | kabs | 0.18 | 1/h | 0.18 h−1 | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [McCarthy_2016_reference](drugs/drug_artefenomel/Artefenomel_McCarthy2016_reference.md) |
-| ka | kabs | 0.943 | 1/h | 0.943 hour−1 | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abd-Rahman_2020_reference](drugs/drug_artefenomel/Artefenomel_AbdRahman2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">McCarthy_2020 · CL/F</text><circle cx="209.9" cy="30.0" r="4" fill="#ef6c00"><title>McCarthy_2020 · CL/F: 1.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">McCarthy_2016 · CL/F</text><circle cx="472.1" cy="46.0" r="4" fill="#ef6c00"><title>McCarthy_2016 · CL/F: 40.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Abd-Rahman_2020 · CL/F</text><circle cx="494.0" cy="62.0" r="4" fill="#ef6c00"><title>Abd-Rahman_2020 · CL/F: 54.6 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">McCarthy_2019 · CL/F</text><circle cx="507.3" cy="78.0" r="4" fill="#ef6c00"><title>McCarthy_2019 · CL/F: 65 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">McCarthy_2020 · V/F</text><circle cx="252.2" cy="30.0" r="4" fill="#ef6c00"><title>McCarthy_2020 · V/F: 226.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">McCarthy_2019 · V/F</text><circle cx="531.1" cy="46.0" r="4" fill="#ef6c00"><title>McCarthy_2019 · V/F: 8897 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">McCarthy_2016 · V1/F</text><circle cx="238.4" cy="62.0" r="4" fill="#ef6c00"><title>McCarthy_2016 · V1/F: 189 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Abd-Rahman_2020 · V1/F</text><circle cx="446.7" cy="78.0" r="4" fill="#ef6c00"><title>Abd-Rahman_2020 · V1/F: 2930 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -128,5 +114,5 @@
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D&body=Drug%3A%20artefenomel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 10:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D&body=Drug%3A%20artefenomel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 10:47 UTC</sub>

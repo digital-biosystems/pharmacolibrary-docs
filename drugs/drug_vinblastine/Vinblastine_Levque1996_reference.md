@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Lev\u00eaque_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Levque1996_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="curated_candidate" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 14:38 UTC (Reproduces paper), but the paper was screened again on 2026-11-04 18:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="extracted" stale="true" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Levêque D, Jehl F. Clinical pharmacokinetics of vinorelbine. Clinical pharmacokinetics 31(3):184–197 (1996).
@@ -34,7 +36,7 @@ Levêque D, Jehl F. Clinical pharmacokinetics of vinorelbine. Clinical pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), qwen3.8-27b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,7 @@ Levêque D, Jehl F. Clinical pharmacokinetics of vinorelbine. Clinical pharmacok
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 90; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 1.49, the second reading 114.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,24 +73,20 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `qwen3.8-27b` | not confirmed | 0.3 (3/10 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 46.2 | 72.54 | mismatch |
-| `gpt-oss:120b` | `values[Q32]` | 1.49 | 70.9 | mismatch |
-| `gpt-oss:120b` | `values[Q56]` |  | 1.49 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` |  | 4.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 70 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q76]` |  | 70 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` |  | 90 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 1.49 | 114.3 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` |  | 1.49 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 70 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q21]` |  | 90 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q22]` | 1491 | 46.2 | mismatch |
 | `qwen3.8-27b` | `values[Q32]` | 114.3 | 70.9 | mismatch |
@@ -181,13 +179,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Levêque D, Jehl F. Clinical pharmacokinetics of vinorelbine. Clinical pharmacokinetics 31(3):184–197 (1996). [doi:10.2165/00003088-199631030-00003](https://doi.org/10.2165/00003088-199631030-00003)
 
-**This record:** Pharmacolibrary v26.09, model `Vinblastine_Levque1996_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Levque1996_reference>
+**This record:** Pharmacolibrary, model `Vinblastine_Levque1996_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Levque1996_reference>
 
 ```bibtex
 @misc{pharmacolibrary_VinblastineLevque1996reference,
   title  = {{Pharmacolibrary model Vinblastine_Levque1996_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Levque1996_reference},
   note   = {Parameters from doi:10.2165/00003088-199631030-00003},
 }
@@ -206,5 +203,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Levque1996_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Levque1996_reference%0APaper%3A%20Lev%C3%AAque_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Levque1996_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Levque1996_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Levque1996_reference%0APaper%3A%20Lev%C3%AAque_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Levque1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 18:29 UTC</sub>

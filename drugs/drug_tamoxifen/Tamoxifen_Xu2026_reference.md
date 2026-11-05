@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Xu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tamoxifen — `Tamoxifen_Xu2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Xu2026_reference" status="curated_candidate" stale="false" population="" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:27 UTC (Reproduces paper), but the paper was screened again on 2026-11-04 12:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Xu2026_reference" status="extracted" stale="true" population="" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu H, Li D, Liang J, Adamson N, Scherl A, Zou L et al. Noncanonical NF-κB pathway driven inflammation across multiple cellular compartments identifies NIK as a therapeutic target for inflammatory bowel disease. Frontiers in immunology 17:1825442 (2026).
@@ -36,7 +38,7 @@ Xu H, Li D, Liang J, Adamson N, Scherl A, Zou L et al. Noncanonical NF-κB pathw
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +50,7 @@ Xu H, Li D, Liang J, Adamson N, Scherl A, Zou L et al. Noncanonical NF-κB pathw
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 320, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 660, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,9 +85,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q321]` | 320 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q322]` | 660 | 320 | mismatch |
-| `gpt-oss-120b` | `values[Q364]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 660 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 17 | 320 | mismatch |
+| `gpt-oss-120b` | `values[Q35]` | 15 |  | only_one_extracted |
 
 </details>
 
@@ -171,13 +173,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Xu H, Li D, Liang J, Adamson N, Scherl A, Zou L et al. Noncanonical NF-κB pathway driven inflammation across multiple cellular compartments identifies NIK as a therapeutic target for inflammatory bowel disease. Frontiers in immunology 17:1825442 (2026). [doi:10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442)
 
-**This record:** Pharmacolibrary v26.09, model `Tamoxifen_Xu2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference>
+**This record:** Pharmacolibrary, model `Tamoxifen_Xu2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TamoxifenXu2026reference,
   title  = {{Pharmacolibrary model Tamoxifen_Xu2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference},
   note   = {Parameters from doi:10.3389/fimmu.2026.1825442},
 }
@@ -196,5 +197,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Xu2026_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Xu2026_reference%0APaper%3A%20Xu_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Xu2026_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Xu2026_reference%0APaper%3A%20Xu_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 12:00 UTC</sub>

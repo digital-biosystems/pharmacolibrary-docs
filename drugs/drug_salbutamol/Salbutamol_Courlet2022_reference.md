@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Courlet_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Courlet2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Salbutamol's bioavailability, volume of distribution, and lag time lacked values, forcing placeholder use and resulting in a tmax simulation error.
+> This record was reviewed on 2026-10-22 15:35 UTC (Needs review), but the paper was screened again on 2026-11-04 09:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="model_quarantined" stale="false" population="adults" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="extracted" stale="true" population="healthy adults" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Courlet P, Buclin T, Biollaz J, Mazzoni I, Rabin O, Guidi M. Model-based meta-analysis of salbutamol pharmacokinetics and practical implications for doping control. CPT: pharmacometrics & systems pharmacology 11(4):469-481 (2022).
@@ -17,20 +17,18 @@ Courlet P, Buclin T, Biollaz J, Mazzoni I, Rabin O, Guidi M. Model-based meta-an
 
 ## Population and dosing
 
-**Population:** adults · condition healthy · age group adult.
+**Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 0.2, 1.6, 4, 12 mg, other, multiple.
+**Dosing:** 0.8 mg, inhaled, single.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | F 1 | Fab | 0.2 |  |  |
@@ -38,11 +36,11 @@ Courlet P, Buclin T, Biollaz J, Mazzoni I, Rabin O, Guidi M. Model-based meta-an
 | V 3 (L) | V3 | 205 | L | 2 |
 | k 34 (h−1) | kcomp | 0.0468 | h−1 | 14 |
 | CL (L h−1) | CL | 28 | L h−1 | 8 |
-| θ physical,UR_PROD | equation variable | -0.153 |  | 43 |
+| Volume of distribution | V | 211.0 | L |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +54,7 @@ Courlet P, Buclin T, Biollaz J, Mazzoni I, Rabin O, Guidi M. Model-based meta-an
 
 The record was quarantined because salbutamol's absolute bioavailability, volume of distribution, and absorption lag time were left at library placeholders instead of using paper-derived estimates. The simulated time of the peak was 0.297 hours, deviating from the paper's reported value of 0.17 hours. Additionally, the distribution rate constant was not explicitly defined in the model structure. Extracted — salbutamol: Fab 0.2, kabs 31.6 h−1, V3 205 L, kcomp 0.0468 h−1, CL 28 L h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of logitf 2: this record has none, the second reading -0.328. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -69,7 +67,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | V 3 (L) | `Q77` · V3 | 205 | L | 0.205 | m3 | l | 2 | space_fold (0.95) | psp412773-tbl-0001:row6:col1 |
 | k 34 (h−1) | `Q48` · kcomp | 0.0468 | h−1 | 1.3e-05 | 1/s | 1/h | 14 | space_fold (0.95) | psp412773-tbl-0001:row7:col1 |
 | CL (L h−1) | `Q22` · CL | 28 | L h−1 | 7.778e-06 | m3/s | l/h | 8 | exact (1) | psp412773-tbl-0001:row8:col1 |
-| θ physical,UR_PROD | `Q900` · equation variable | -0.153 |  |  |  |  | 43 | llm (0.6) | psp412773-tbl-0001:row11:col1 |
+| Volume of distribution | `Q61` · V | 211.0 | L | 0.211 | m3 | L |  | review_gapfill (0.7) | Wen_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,8 +80,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped PD-category row 'logitF 2' → Q344 (logit_intercept, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412773-tbl-0001:row3:col1'])
 - dropped duplicate Q49 ('k a2 (h−1)', value '1.47') — already have one for this compound
 - dropped unlinked row (NIL): 'UR_PROD (L h−1)' — extend the ontology if this is a real PK parameter (source ['psp412773-tbl-0001:row10:col1'])
+- dropped unlinked row (NIL): 'θ physical,UR_PROD' — extend the ontology if this is a real PK parameter (source ['psp412773-tbl-0001:row11:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- gap-filled Q61 (V) from Wen_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -94,23 +94,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.923 (12/13 fields) | 1 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[k 34].value` | 0.0468 | 0.0432 | mismatch |
-| `gpt-oss-120b` | `parameters[logitf 2].parameter_id` | Q41 | Q87 | mismatch |
-| `gpt-oss-120b` | `parameters[ur_prod]` |  | 0.0426 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ physical,ur_prod]` | -0.153 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | salbutamol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | salbutamol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[logitf 2]` |  | -0.328 | only_one_extracted |
 
 </details>
 
@@ -130,10 +125,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412773-tbl-0001:row8:col1'] |
 | C5_dimension_Q48 | pass | 1 / [time] |  | ['psp412773-tbl-0001:row7:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp412773-tbl-0001:row4:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wen_2026:review'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['psp412773-tbl-0001:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 28 | ['psp412773-tbl-0001:row8:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 28 L/h | ['psp412773-tbl-0001:row8:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 211 L | ['Wen_2026:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -180,5 +177,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Courlet2022_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Courlet2022_reference%0APaper%3A%20Courlet_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Courlet2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Courlet2022_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Courlet2022_reference%0APaper%3A%20Courlet_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Courlet2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 09:06 UTC</sub>

@@ -23,16 +23,6 @@ Momelotinib is a kinase inhibitor used to treat myelofibrosis. It is authorised 
 | momelotinib | parent | 414.469 | C23H22N6O2 | DrugBank | [25062766](https://pubchem.ncbi.nlm.nih.gov/compound/25062766) | Rich_2026 |
 | M21 | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 64.7 | L/h | 64.7 L/h | patients with myelofibrosis and healthy or special-population participants | 661 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rich_2026_reference](drugs/drug_momelotinib/Momelotinib_Rich2026_reference.md) |
-| V | V/F | 383 | L | 383 L | patients with myelofibrosis and healthy or special-population participants | 661 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rich_2026_reference](drugs/drug_momelotinib/Momelotinib_Rich2026_reference.md) |
-| ka | kabs | 8.63 | 1/h | 8.63 1/h | patients with myelofibrosis and healthy or special-population participants | 661 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rich_2026_reference](drugs/drug_momelotinib/Momelotinib_Rich2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -106,5 +96,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmomelotinib%5D&body=Drug%3A%20momelotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_momelotinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmomelotinib%5D&body=Drug%3A%20momelotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_momelotinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:02 UTC</sub>

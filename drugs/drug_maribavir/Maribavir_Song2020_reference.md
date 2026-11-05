@@ -187,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Song IH, Ilic K, Murphy J, Lasseter K, Martin P. Effects of Maribavir on P-Glycoprotein and CYP2D6 in Healthy Volunteers. Journal of clinical pharmacology 60(1):96–106 (2020). [doi:10.1002/jcph.1504](https://doi.org/10.1002/jcph.1504)
 
-**This record:** Pharmacolibrary v26.09, model `Maribavir_Song2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2020_reference>
+**This record:** Pharmacolibrary, model `Maribavir_Song2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MaribavirSong2020reference,
   title  = {{Pharmacolibrary model Maribavir_Song2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2020_reference},
   note   = {Parameters from doi:10.1002/jcph.1504},
 }
@@ -212,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20Maribavir_Song2020_reference&body=Drug%3A%20maribavir%0ARecord%3A%20Maribavir_Song2020_reference%0APaper%3A%20Song_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/Maribavir_Song2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20Maribavir_Song2020_reference&body=Drug%3A%20maribavir%0ARecord%3A%20Maribavir_Song2020_reference%0APaper%3A%20Song_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/Maribavir_Song2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:07 UTC</sub>

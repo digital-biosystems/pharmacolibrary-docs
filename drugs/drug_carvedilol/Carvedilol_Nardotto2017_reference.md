@@ -235,13 +235,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Nardotto GHB, Lanchote VL, Coelho EB, Della Pasqua O. Population pharmacokinetics of carvedilol enantiomers and their metabolites in healthy subjects and type-2 diabetes patients. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 109S:S108–S115 (2017). [doi:10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033)
 
-**This record:** Pharmacolibrary v26.09, model `Carvedilol_Nardotto2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference>
+**This record:** Pharmacolibrary, model `Carvedilol_Nardotto2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarvedilolNardotto2017reference,
   title  = {{Pharmacolibrary model Carvedilol_Nardotto2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference},
   note   = {Parameters from doi:10.1016/j.ejps.2017.05.033},
 }
@@ -256,5 +255,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20Carvedilol_Nardotto2017_reference&body=Drug%3A%20carvedilol%0ARecord%3A%20Carvedilol_Nardotto2017_reference%0APaper%3A%20Nardotto_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20Carvedilol_Nardotto2017_reference&body=Drug%3A%20carvedilol%0ARecord%3A%20Carvedilol_Nardotto2017_reference%0APaper%3A%20Nardotto_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:33 UTC</sub>

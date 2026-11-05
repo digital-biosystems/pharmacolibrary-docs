@@ -31,19 +31,9 @@ Pemigatinib is a protein kinase inhibitor used to treat cholangiocarcinoma. It i
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 26.4 | patients with advanced malignancies | 318 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ji_2022_reference](drugs/drug_pemigatinib/Pemigatinib_Ji2022_reference.md) |
-| CL | CL/F | 2.7 | L/h | 2.7 L/h | healthy participants and patients with CCA, other solid tumors, or MLN FGFR1 | 467 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Gong_2023_reference](drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md) |
-| CL | CL/F | 3.86 | L/h | 3.86 L/h | patients with advanced malignancies | 318 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ji_2022_reference](drugs/drug_pemigatinib/Pemigatinib_Ji2022_reference.md) |
-| V | V1/F | 3.4 | L | 3.4 L | healthy participants and patients with CCA, other solid tumors, or MLN FGFR1 | 467 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Gong_2023_reference](drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md) |
-| V | V1/F | 7.08 | L | 7.08 L | patients with advanced malignancies | 318 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ji_2022_reference](drugs/drug_pemigatinib/Pemigatinib_Ji2022_reference.md) |
-| ka | kabs | 12.2 | 1/h | 12.2 1/h | healthy participants and patients with CCA, other solid tumors, or MLN FGFR1 | 467 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Gong_2023_reference](drugs/drug_pemigatinib/Pemigatinib_Gong2023_reference.md) |
-| ka | kabs | 12.3 | 1/h | 12.3 h−1 | patients with advanced malignancies | 318 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ji_2022_reference](drugs/drug_pemigatinib/Pemigatinib_Ji2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gong_2023 · CL/F</text><circle cx="341.0" cy="30.0" r="4" fill="#66bb6a"><title>Gong_2023 · CL/F: 2.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ji_2022 · CL/F</text><circle cx="395.3" cy="46.0" r="4" fill="#ef6c00"><title>Ji_2022 · CL/F: 3.86 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gong_2023 · V1/F</text><circle cx="376.0" cy="30.0" r="4" fill="#66bb6a"><title>Gong_2023 · V1/F: 3.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ji_2022 · V1/F</text><circle cx="487.5" cy="46.0" r="4" fill="#ef6c00"><title>Ji_2022 · V1/F: 7.08 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -134,5 +124,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpemigatinib%5D&body=Drug%3A%20pemigatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pemigatinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpemigatinib%5D&body=Drug%3A%20pemigatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pemigatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:14 UTC</sub>

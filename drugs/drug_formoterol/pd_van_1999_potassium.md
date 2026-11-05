@@ -98,13 +98,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Formoterol_van1999_PD_potassium`. <https://pharmacolibrary.github.io/#/drugs/drug_formoterol/Formoterol_van1999_PD_potassium>
+**This record:** Pharmacolibrary, model `Formoterol_van1999_PD_potassium`. <https://pharmacolibrary.github.io/#/drugs/drug_formoterol/Formoterol_van1999_PD_potassium>
 
 ```bibtex
 @misc{pharmacolibrary_Formoterolvan1999PDpotassium,
   title  = {{Pharmacolibrary model Formoterol_van1999_PD_potassium}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_formoterol/Formoterol_van1999_PD_potassium},
 }
 ```
@@ -118,5 +117,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bformoterol%5D%20pd_van_1999_potassium&body=Drug%3A%20formoterol%0ARecord%3A%20pd_van_1999_potassium%0APaper%3A%20van_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_formoterol/pd_van_1999_potassium%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bformoterol%5D%20pd_van_1999_potassium&body=Drug%3A%20formoterol%0ARecord%3A%20pd_van_1999_potassium%0APaper%3A%20van_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_formoterol/pd_van_1999_potassium%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [formoterol](drugs/drug_formoterol/)</sub>

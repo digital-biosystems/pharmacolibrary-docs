@@ -24,15 +24,6 @@ Tenofovir disoproxil is an antiviral used to treat HIV infection and chronic hep
 | tenofovir (tenofovir (TFV)) | metabolite | 287.216 | C9H14N5O4P | PubChem | [464205](https://pubchem.ncbi.nlm.nih.gov/compound/464205) | Bouazza_2011, Burns_2015, Rungtivasuwan_2017, Scott_2023 |
 | tenofovir-diphosphate (tenofovir diphosphate) | metabolite | 447.174 | C9H16N5O10P3 | PubChem | [5481180](https://pubchem.ncbi.nlm.nih.gov/compound/5481180) | Burns_2015, Mugwanya_2025 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V1 | 386 | L | 386 L | HIV-1-infected pediatric patients | 93 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bouazza_2011_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) |
-| ka | kabs | 0.43 | 1/h | 0.43 h⁻¹ | HIV-1-infected pediatric patients | 93 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bouazza_2011_reference](drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -124,5 +115,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenofovir_disoproxil%5D&body=Drug%3A%20tenofovir_disoproxil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenofovir_disoproxil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenofovir_disoproxil%5D&body=Drug%3A%20tenofovir_disoproxil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenofovir_disoproxil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:32 UTC</sub>

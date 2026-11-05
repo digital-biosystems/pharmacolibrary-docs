@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Zhang_2012 \u00b7 PD prostaglandin E 2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Zhang_2012 \u00b7 PD PGE 2&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# prostaglandin E 2 — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# PGE 2 — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives prostaglandin E 2 (in ng/mL): direct sigmoid Emax (Hill) effect.
+**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives PGE 2 (in ng/mL): direct sigmoid Emax (Hill) effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -37,11 +37,14 @@ Zhang J et al., Pharmacokinetic-pharmacodynamic modelin…, Acta pharmacologica 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | IC 50 | `Q322` ·  | 0.5 | µg/mL | llm | Zhang_2012:pdv3 |
-| — | IC 80 | `Q100` ·  | 2.8 | µg/mL | nil | Zhang_2012:pdv3 |
-| PD (effect) | E 0 | `Q324` ·  | 11.7 | ng/mL | llm | Zhang_2012:pdv3 |
-| PD (effect) | I max | `Q323` ·  | 11.4 | ng/mL | llm | Zhang_2012:pdv3 |
-| PD (effect) | γ | `Q325` ·  | 1.1 |  | llm | Zhang_2012:pdv3 |
+| PD (effect) | IC 50 | `Q322` ·  | 0.5±0.2 | µg/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | E 0 | `Q324` ·  | 11.7±1.3 | ng/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | I max | `Q323` ·  | 11.4±1.5 | ng/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | γ | `Q325` ·  | 1.1±0.3 |  | llm | Zhang_2012:pdv3 |
+| PD (effect) | IC 50 | `Q322` ·  | 0.7±0.3 | µg/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | E 0 | `Q324` ·  | 21.0±5.9 | ng/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | I max | `Q323` ·  | 22.1±6.0 | ng/mL | llm | Zhang_2012:pdv3 |
+| PD (effect) | γ | `Q325` ·  | 1.5±0.7 |  | llm | Zhang_2012:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -113,13 +116,12 @@ _All readers agree on the compared fields of this PD record._
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Diclofenac_Zhang2012_PD_pge_2`. <https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Zhang2012_PD_pge_2>
+**This record:** Pharmacolibrary, model `Diclofenac_Zhang2012_PD_pge_2`. <https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Zhang2012_PD_pge_2>
 
 ```bibtex
 @misc{pharmacolibrary_DiclofenacZhang2012PDpge2,
   title  = {{Pharmacolibrary model Diclofenac_Zhang2012_PD_pge_2}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Zhang2012_PD_pge_2},
 }
 ```
@@ -133,5 +135,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20pd_Zhang_2012_PGE_2&body=Drug%3A%20diclofenac%0ARecord%3A%20pd_Zhang_2012_PGE_2%0APaper%3A%20Zhang_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/pd_Zhang_2012_PGE_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20pd_Zhang_2012_PGE_2&body=Drug%3A%20diclofenac%0ARecord%3A%20pd_Zhang_2012_PGE_2%0APaper%3A%20Zhang_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/pd_Zhang_2012_PGE_2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [diclofenac](drugs/drug_diclofenac/)</sub>

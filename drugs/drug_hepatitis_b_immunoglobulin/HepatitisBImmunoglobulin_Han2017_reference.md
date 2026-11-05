@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Han S, Na GH, Kim DG. A 6-month mixed-effect pharmacokinetic model for post-transplant intravenous anti-hepatitis B immunoglobulin prophylaxis. Drug design, development and therapy 11:2099–2107 (2017). [doi:10.2147/DDDT.S134711](https://doi.org/10.2147/DDDT.S134711)
 
-**This record:** Pharmacolibrary v26.09, model `HepatitisBImmunoglobulin_Han2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference>
+**This record:** Pharmacolibrary, model `HepatitisBImmunoglobulin_Han2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_HepatitisBImmunoglobulinHan2017reference,
   title  = {{Pharmacolibrary model HepatitisBImmunoglobulin_Han2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference},
   note   = {Parameters from doi:10.2147/DDDT.S134711},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhepatitis_b_immunoglobulin%5D%20HepatitisBImmunoglobulin_Han2017_reference&body=Drug%3A%20hepatitis_b_immunoglobulin%0ARecord%3A%20HepatitisBImmunoglobulin_Han2017_reference%0APaper%3A%20Han_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhepatitis_b_immunoglobulin%5D%20HepatitisBImmunoglobulin_Han2017_reference&body=Drug%3A%20hepatitis_b_immunoglobulin%0ARecord%3A%20HepatitisBImmunoglobulin_Han2017_reference%0APaper%3A%20Han_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:16 UTC</sub>

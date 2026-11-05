@@ -31,17 +31,9 @@ It is an approved medicine included on the WHO essential medicines list and rema
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.92 | L/h | 2.92 L/h | HIV-infected Malaysian patients | 112 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mustafa_2016_reference](drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md) |
-| CL | CL/F | 2.51 | L/h | 2.51 l/h | Thai HIV-infected patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wattanakul_2014_reference](drugs/drug_nevirapine/Nevirapine_Wattanakul2014_reference.md) |
-| CL | CL/F | 3.3 | L/h | 3.3 L/hour | HIV-1 infected adults with CD4+ &lt; 200 cells/mm3 on nucleoside therapy | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sabo_2000_reference](drugs/drug_nevirapine/Nevirapine_Sabo2000_reference.md) |
-| V | V | 78.23 | L | 78.23 L | HIV-infected Malaysian patients | 112 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mustafa_2016_reference](drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md) |
-| ka | kabs | 2.55 | 1/h | 2.55 /h | HIV-infected Malaysian patients | 112 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mustafa_2016_reference](drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mustafa_2016 · CL</text><circle cx="352.9" cy="30.0" r="4" fill="#ef6c00"><title>Mustafa_2016 · CL: 2.92 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wattanakul_2014 · CL/F</text><circle cx="329.9" cy="46.0" r="4" fill="#ef6c00"><title>Wattanakul_2014 · CL/F: 2.51 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Sabo_2000 · CL/F</text><circle cx="371.5" cy="62.0" r="4" fill="#ef6c00"><title>Sabo_2000 · CL/F: 3.3 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -136,5 +128,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnevirapine%5D&body=Drug%3A%20nevirapine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nevirapine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnevirapine%5D&body=Drug%3A%20nevirapine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nevirapine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:29 UTC</sub>

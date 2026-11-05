@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Higashi_2025 \u00b7 2_mg_day&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Higashi2025_2_mg_day`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ka use library defaults, not estimates from this paper; t6_deviations.
+> This record was reviewed on 2026-10-22 14:41 UTC (Needs review), but the paper was screened again on 2026-11-03 10:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_2_mg_day" status="needs_review" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_2_mg_day" status="needs_review" stale="true" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharmacokinetics of brexpiprazole in Japanese healthy subjects and patients with schizophrenia. Drug metabolism and pharmacokinetics 62:101057 (2025).
@@ -17,15 +17,15 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 ## Population and dosing
 
-**Population:** Japanese healthy subjects and patients with schizophrenia · condition schizophrenia · age group adult · n = (46 healthy adult males, 21 adult patients with schizophrenia (Phase 1), and 331 adult patients with schizophrenia (Phase 2/3)).
+**Population:** Japanese healthy subjects and patients with schizophrenia · condition schizophrenia · age group adult · n = (398).
 
 **Dosing:** 0.2, 1, 2, 4, 6 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day/Brexpiprazole_Higashi2025_2_mg_day.svg" alt="Brexpiprazole_Higashi2025_2_mg_day diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,17 +35,14 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC 0-24,ss | AUCSS | 2170 | ng*h/mL |
+| AUC 0-24,ss | AUCSS | 2170 | ng·h/mL |
 | C max,ss | Cmax | 134 | ng/mL |
-| C trough,ss | Ctrough | 77.1 | ng/mL |
-| CL/F | CL/F | 0.74 | L/h |
-| Q/F | Q/F | 1.0 | L/h |
-| Vc/F | V1/F | 63.0 | L |
-| Vp/F | V2/F | 24.6 | L |
+| C trough,ss | Cmin | 77.1 | ng/mL |
+| the volume of distribution | V | 1.1 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +56,7 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — brexpiprazole: AUCSS 2.17e+03 ng*h/mL, Cmax 134 ng/mL, Ctrough 77.1 ng/mL, CL/F 0.74 L/h, Q/F 1 L/h, V1/F 63 L, V2/F 24.6 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brexpiprazole, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -67,13 +64,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC 0-24,ss | `Q18` · AUCSS | 2170 | ng*h/mL |  |  | ng*h/mL | llm_corrected (0.6) | Higashi_2025_table_3:row3:col1 |
+| AUC 0-24,ss | `Q18` · AUCSS | 2170 | ng·h/mL |  |  | ng·h/mL | llm_corrected (0.6) | Higashi_2025_table_3:row3:col1 |
 | C max,ss | `Q32` · Cmax | 134 | ng/mL |  |  | ng/mL | llm (0.6) | Higashi_2025_table_3:row3:col2 |
-| C trough,ss | `Q37` · Ctrough | 77.1 | ng/mL |  |  | ng/mL | llm_confirmed (0.6) | Higashi_2025_table_3:row3:col3, Higashi_2025_table_3:row3:col4 |
-| CL/F | `Q27` · CL/F | 0.74 | L/h | 2.056e-07 | m3/s | L/h | exact (1) | Higashi_2025:results_prose |
-| Q/F | `Q69` · Q/F | 1.0 | L/h | 2.778e-07 | m3/s | L/h | exact (1) | Higashi_2025:results_prose |
-| Vc/F | `Q290` · V1/F | 63.0 | L | 0.063 | m3 | L | exact (1) | Higashi_2025:results_prose |
-| Vp/F | `Q82` · V2/F | 24.6 | L | 0.0246 | m3 | L | exact (1) | Higashi_2025:results_prose |
+| C trough,ss | `Q36` · Cmin | 77.1 | ng/mL |  |  | ng/mL | llm_corrected (0.6) | Higashi_2025_table_3:row3:col3, Higashi_2025_table_3:row3:col4 |
+| the volume of distribution | `Q61` · V | 1.1 | L/kg | 0.077 | m3 | L | review_gapfill (0.7) | Mauri_2018:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,6 +83,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- implicit units: 'AUC 0-24,ss' → ng·h/mL (from the popPK convention: 'The parameter is AUC (Area Under the Curve). Standard units for AUC are concentration units multiplied by time. The pape')
+- implicit units: 'C max,ss' → ng/mL (from the popPK convention: "The parameter is Cmax (Maximum Concentration). The text explicitly states concentrations in ng/mL (e.g., 'Trough plasma ")
+- implicit units: 'C trough,ss' → ng/mL (from the paper text: "The text explicitly states: 'Trough plasma concentrations (90% prediction interval) of brexpiprazole at steady state wer")
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brexpiprazole
+- population split: '2 mg/day' subgroup of Higashi_2025 (paper reports 2 populations: 1 mg/day, 2 mg/day)
+- skipped review gap-fill of CL from Mauri_2018: its label names a different analyte ('rsp') — 'The mean plasma clearance of RSP'
+- gap-filled Q61 (V) from Mauri_2018's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - salvaged Q27 ('CL/F'=0.74) from results prose — parameter table was unreadable
 - salvaged Q69 ('Q/F'=1.0) from results prose — parameter table was unreadable
 - salvaged Q290 ('Vc/F'=63.0) from results prose — parameter table was unreadable
@@ -99,40 +102,35 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=brexpiprazole
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: '2 mg/day' subgroup of Higashi_2025 (paper reports 2 populations: 1 mg/day, 2 mg/day)
 
 **Extraction notes:**
-- table tab_2: unparsed_numeric_cell
+- table tab_2: representations disagree; selected evidence retained, not merged
 - table Higashi_2025_table_3: unbound_uncertainty
 - table Higashi_2025_table_3: units_need_context
 - table Higashi_2025_table_3: ragged_grid
 - transposed table Higashi_2025_table_3: logical view retains original source coordinates
 - companion parameter table 3 transcribed (14 record(s))
-- LLM selected parameter table(s) 2, 3
+- LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 0.74 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[c trough,ss].parameter_id` | Q36 | Q37 | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 0.74 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q/f]` | 1.0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q/f]` |  | 1.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc/f]` | 63.0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc/f]` |  | 63.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp/f]` | 24.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp/f]` |  | 24.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | brexpiprazole | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | brexpiprazole | unknown | mismatch |
 
 </details>
 
@@ -146,17 +144,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
+| C0_has_structural_params | pass |  | 3 |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 |  | ['Higashi_2025_table_3:row3:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row3:col2'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row3:col3', 'Higashi_2025_table_3:row3:col4'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Higashi_2025_table_3:row3:col3', 'Higashi_2025_table_3:row3:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Mauri_2018:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.74 L/h | ['Higashi_2025:results_prose'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 63 L | ['Higashi_2025:results_prose'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 24.6 L | ['Higashi_2025:results_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 77 L | ['Mauri_2018:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -225,13 +220,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharmacokinetics of brexpiprazole in Japanese healthy subjects and patients with schizophrenia. Drug metabolism and pharmacokinetics 62:101057 (2025). [doi:10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057)
 
-**This record:** Pharmacolibrary v26.09, model `Brexpiprazole_Higashi2025_2_mg_day`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day>
+**This record:** Pharmacolibrary, model `Brexpiprazole_Higashi2025_2_mg_day`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day>
 
 ```bibtex
 @misc{pharmacolibrary_BrexpiprazoleHigashi20252mgday,
   title  = {{Pharmacolibrary model Brexpiprazole_Higashi2025_2_mg_day}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day},
   note   = {Parameters from doi:10.1016/j.dmpk.2025.101057},
 }
@@ -250,5 +244,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Higashi2025_2_mg_day&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Higashi2025_2_mg_day%0APaper%3A%20Higashi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Higashi2025_2_mg_day&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Higashi2025_2_mg_day%0APaper%3A%20Higashi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 10:27 UTC</sub>

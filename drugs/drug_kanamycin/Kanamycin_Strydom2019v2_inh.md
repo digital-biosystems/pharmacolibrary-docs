@@ -152,5 +152,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bkanamycin%5D%20Kanamycin_Strydom2019v2_inh&body=Drug%3A%20kanamycin%0ARecord%3A%20Kanamycin_Strydom2019v2_inh%0APaper%3A%20Strydom_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_inh%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bkanamycin%5D%20Kanamycin_Strydom2019v2_inh&body=Drug%3A%20kanamycin%0ARecord%3A%20Kanamycin_Strydom2019v2_inh%0APaper%3A%20Strydom_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_inh%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 13:11 UTC</sub>

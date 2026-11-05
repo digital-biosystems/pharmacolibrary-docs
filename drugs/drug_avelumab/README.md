@@ -15,20 +15,9 @@ Avelumab is a fully human anti-PD-L1 monoclonal antibody used as cancer immunoth
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0269 | L/h | 0.0269 L/h | patients with advanced renal cell carcinoma receiving avelumab plus axitinib | 2315 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Masters_2022_reference](drugs/drug_avelumab/Avelumab_Masters2022_reference.md) |
-| CL | CL | 0.0274 | L/h | 0.0274 L/h | pediatric patients with refractory/relapsed solid tumors | 21 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vugmeyster_2022_reference](drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md) |
-| CL | CL | 0.0285 | L/h | 0.0285 L/h | patients with several tumor types |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_reference](drugs/drug_avelumab/Avelumab_van2025_reference.md) |
-| CL | CL | 0.0308 | L/h | 0.0308 L/hour | patients with 14 tumor types across three clinical studies | 1827 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wilkins_2019_reference](drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md) |
-| V | V | 3.15 | L | 3.15 L | pediatric patients with refractory/relapsed solid tumors | 21 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vugmeyster_2022_reference](drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md) |
-| V | V1 | 3.196 | L | 3.196 L | patients with advanced renal cell carcinoma receiving avelumab plus axitinib | 2315 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Masters_2022_reference](drugs/drug_avelumab/Avelumab_Masters2022_reference.md) |
-| V | V1 | 3.42 | L | 3.42 L | patients with 14 tumor types across three clinical studies | 1827 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wilkins_2019_reference](drugs/drug_avelumab/Avelumab_Wilkins2019_reference.md) |
-| t½ | t1/2z | 79 | h | 79 h | pediatric patients with refractory/relapsed solid tumors | 21 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vugmeyster_2022_reference](drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Masters_2022 · CL</text><circle cx="340.4" cy="30.0" r="4" fill="#78909c"><title>Masters_2022 · CL: 0.0269 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vugmeyster_2022 · CL</text><circle cx="343.2" cy="46.0" r="4" fill="#78909c"><title>Vugmeyster_2022 · CL: 0.0274 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">van_2025 · CL</text><circle cx="349.2" cy="62.0" r="4" fill="#ef6c00"><title>van_2025 · CL: 0.0285 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Wilkins_2019 · CL</text><circle cx="361.0" cy="78.0" r="4" fill="#78909c"><title>Wilkins_2019 · CL: 0.0308 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Vugmeyster_2022 · V</text><circle cx="364.4" cy="30.0" r="4" fill="#78909c"><title>Vugmeyster_2022 · V: 3.15 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Masters_2022 · V1</text><circle cx="366.6" cy="46.0" r="4" fill="#78909c"><title>Masters_2022 · V1: 3.196 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wilkins_2019 · V1</text><circle cx="376.9" cy="62.0" r="4" fill="#78909c"><title>Wilkins_2019 · V1: 3.42 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -95,5 +84,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavelumab%5D&body=Drug%3A%20avelumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avelumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavelumab%5D&body=Drug%3A%20avelumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avelumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:40 UTC</sub>

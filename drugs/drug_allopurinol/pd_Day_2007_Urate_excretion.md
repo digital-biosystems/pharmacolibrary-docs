@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Day_2007 \u00b7 PD Urate excretion&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Stocker2012_final&quot;,&quot;label&quot;:&quot;Stocker_2012_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_final.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_base&quot;,&quot;label&quot;:&quot;Stocker_2012_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_plasma_urate_concentration&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 plasma urate concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_plasma_urate_concentration.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_base&quot;,&quot;label&quot;:&quot;Stocker_2012_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_base.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_final&quot;,&quot;label&quot;:&quot;Stocker_2012_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_final.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wright_2024_E_ULT&quot;,&quot;label&quot;:&quot;Wright_2024 \u00b7 E ULT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wright_2024_E_ULT.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_Urate_excretion&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 Urate excretion&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_Urate_excretion.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Urate excretion — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives Urate excretion: direct sigmoid Emax (Hill) effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Oxypurinol concentrations inhibit urate excretion (measured as a reduction in plasma urate concentrations) via a sigmoid Emax mechanism, with an IC50 of 3.7 ± 1.4 mg/L, a gamma of 1.1 ± 0.1, and an Emax/E0 of 92 ± 6%.
 >
@@ -26,7 +26,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Day RO et al., Clinical pharmacokinetics and pharmacod…, Clinical pharmacokinetics (2007)
@@ -35,9 +35,9 @@ Day RO et al., Clinical pharmacokinetics and pharmacod…, Clinical pharmacokine
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` ·  | 3.7 | mg/L | llm | Day_2007:pdv3 |
-| PD (effect) | Hill | `Q325` ·  | 1.1 |  | llm | Day_2007:pdv3 |
-| PD (effect) | Emax/E0 | `Q323` ·  | 92 | % | llm | Day_2007:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 3.7 ± 1.4 | mg/L | llm | Day_2007:pdv3 |
+| PD (effect) | γ | `Q325` ·  | 1.1 ± 0.1 |  | llm | Day_2007:pdv3 |
+| PD (effect) | Emax/E0 | `Q323` ·  | 92 ± 6 | % | llm | Day_2007:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -94,11 +94,11 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `driver_compound` | oxypurinol |  | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_direction` | inhibition |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | proportional |  | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown |  | mismatch |
 | `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax |  | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 3.7 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 92 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q325]` | 1.1 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 3.7 ± 1.4 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 92 ± 6 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | 1.1 ± 0.1 |  | only_one_extracted |
 
 </details>
 
@@ -115,14 +115,33 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_modelica.zip" download>Allopurinol_Day2007_PD_urate_excretion_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_matlab.zip" download>Allopurinol_Day2007_PD_urate_excretion_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_sbml.zip" download>Allopurinol_Day2007_PD_urate_excretion_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_cellml.zip" download>Allopurinol_Day2007_PD_urate_excretion_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `EC50` | 0.0037 |  |
+| input | model | `Emax` | -0.92 |  |
+| input | model | `exposure_per_s` | 0.001 |  |
+| input | model | `gamma` | 1.1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -140,7 +159,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Day2007_PD_urate_excretion/Allopurinol_Day2007_PD_urate_excretion_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Allopurinol_Day2007_PD_urate_excretion_params.json` · controls `Allopurinol_Day2007_PD_urate_excretion_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -22,14 +22,6 @@ Ponatinib is a tyrosine-kinase inhibitor used to treat certain leukemias, includ
 |---|---|---|---|---|---|---|
 | ponatinib | parent | 532.559 | C29H27F3N6O | DrugBank | [24826799](https://pubchem.ncbi.nlm.nih.gov/compound/24826799) | Hanley_2022 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 34.28 | L/h | 34.28 L/h | healthy volunteers and patients with hematologic malignancies | 260 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hanley_2022_daily_ponatinib_dose](drugs/drug_ponatinib/Ponatinib_Hanley2022_daily_ponatinib_dose.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -112,5 +104,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bponatinib%5D&body=Drug%3A%20ponatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ponatinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bponatinib%5D&body=Drug%3A%20ponatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ponatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:23 UTC</sub>

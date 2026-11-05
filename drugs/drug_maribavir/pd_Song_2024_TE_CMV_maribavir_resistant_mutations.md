@@ -117,13 +117,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations>
+**This record:** Pharmacolibrary, model `Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations`. <https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations>
 
 ```bibtex
 @misc{pharmacolibrary_MaribavirSong2024PDtecmvmaribavirresistantmutations,
   title  = {{Pharmacolibrary model Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_maribavir/Maribavir_Song2024_PD_te_cmv_maribavir_resistant_mutations},
 }
 ```
@@ -137,5 +136,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20pd_Song_2024_TE_CMV_maribavir_resistant_mutations&body=Drug%3A%20maribavir%0ARecord%3A%20pd_Song_2024_TE_CMV_maribavir_resistant_mutations%0APaper%3A%20Song_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/pd_Song_2024_TE_CMV_maribavir_resistant_mutations%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaribavir%5D%20pd_Song_2024_TE_CMV_maribavir_resistant_mutations&body=Drug%3A%20maribavir%0ARecord%3A%20pd_Song_2024_TE_CMV_maribavir_resistant_mutations%0APaper%3A%20Song_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maribavir/pd_Song_2024_TE_CMV_maribavir_resistant_mutations%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [maribavir](drugs/drug_maribavir/)</sub>

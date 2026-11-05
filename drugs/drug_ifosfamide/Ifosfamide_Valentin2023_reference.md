@@ -23,13 +23,13 @@ Valentin T, Lambert M, Chaltiel L, Allal B, Mseddi M, Yakoubi M et al. Populatio
 links:
   -.
 
-**Dosing:** 6000, 9000 mg/m2, iv, multiple, every 24 h.
+**Dosing:** 6, 9 g/m2, iv, multiple.
 
 ## Model
 
 **Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
@@ -41,6 +41,7 @@ links:
 | Vd | V | 57.5 | L | 3.2 |
 | Effect of BSA on CL (θBSA_CL) | allometric_exponent | 1.41 | θBSA_CL | 21.4 |
 | Fm23 | fm | 0.55 |  | 5.6 |
+| Fm2 | fm | 0.34 |  | 2.4 |
 | K20 | kel | 0.14 | 1/h | 7.1 |
 | K30 | kel | 0.13 | 1/h | 5.8 |
 
@@ -71,7 +72,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | CL | `Q22` · CL | 4.0 | L/h | 1.111e-06 | m3/s | L/h | 4.5 | exact (1) | Valentin_2023_table_p16_1:row0:col2 |
 | Vd | `Q61` · V | 57.5 | L | 0.0575 | m3 | L | 3.2 | exact (1) | Valentin_2023_table_p16_1:row1:col2 |
 | Effect of BSA on CL (θBSA_CL) | `Q319` · allometric_exponent | 1.41 | θBSA_CL |  |  | cl·θbsa_ | 21.4 | llm_corrected (0.6) | Valentin_2023_table_p16_1:row5:col2 |
-| Fm23 | `Q45` · fm | 0.55 |  |  |  |  | 5.6 | exact (1) | Valentin_2023_table_p16_1:row6:col2 |
+| Fm23 | `Q45` · fm | 0.55 |  | 0.55 |  |  | 5.6 | exact (1) | Valentin_2023_table_p16_1:row6:col2 |
+| Fm2 | `Q45` · fm | 0.34 |  | 0.34 |  |  | 2.4 | exact (1) | Valentin_2023_table_p16_1:row7:col2 |
 | K20 | `Q47` · kel | 0.14 | 1/h | 3.889e-05 | 1/s | 1/h | 7.1 | exact (1) | Valentin_2023_table_p16_1:row8:col2 |
 | K30 | `Q47` · kel | 0.13 | 1/h | 3.611e-05 | 1/s | 1/h | 5.8 | exact (1) | Valentin_2023_table_p16_1:row9:col2 |
 
@@ -87,19 +89,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section iiv: 'IIV K20' routed out of structural estimates ('IIV K30')
 - table section iiv: 'IOV CL' routed out of structural estimates ('IIV K30')
 - table section iiv: 'IOV K20' routed out of structural estimates ('IIV K30')
-- column 'final model (%rse) [shrinkage]' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - dropped PD-category row 'IC50' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Valentin_2023_table_p16_1:row2:col2'])
 - dropped unlinked row (NIL): 'KENZ' — extend the ontology if this is a real PK parameter (source ['Valentin_2023_table_p16_1:row3:col2'])
 - unit_dimension_unknown: 'θBSA_vd' (V)
 - dropped duplicate Q61 ('Effect of BSA on Vd (θBSA_vd)', value '1.51') — already have one for this compound
 - unit_dimension_unknown: 'θBSA_CL' (allometric_exponent)
-- dropped duplicate Q45 ('Fm2', value '0.34') — already have one for this compound
-- unit_dimension_unknown: 'θAPR_Fm2' (fm)
-- dropped duplicate Q45 ('Effect of aripiprant on Fm2 (θAPR_Fm2)', value '1.06') — already have one for this compound
-- implicit units: 'CL' → L/h (from the popPK convention: 'Clearance in population PK models is conventionally expressed in L/h (or mL/min); the value 4.0 is consistent with L/h f')
-- implicit units: 'Vd' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 57.5 is consistent with L.')
-- implicit units: 'K20' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.14 is consistent with 1/h.')
-- implicit units: 'K30' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.13 is consistent with 1/h.')
+- 'Fm2' (Q45, value '0.34') moved from 2-dechloroifosfamide to 3-dechloroifosfamide: a second formation parameter on one metabolite while 3-dechloroifosfamide has none
+- dropped unlinked row (NIL): 'Effect of aripiprant on Fm2 (θAPR_Fm2)' — extend the ontology if this is a real PK parameter (source ['Valentin_2023_table_p16_1:row10:col2'])
+- implicit units: 'CL' → L/h (from the popPK convention: 'CL is total clearance. The value 4.0 is consistent with L/h magnitude for ifosfamide in adults (typically ~3-6 L/h). The')
+- implicit units: 'Vd' → L (from the popPK convention: 'Vd is central volume of distribution. The value 57.5 is consistent with L magnitude. The paper does not specify the unit')
+- implicit units: 'K20' → 1/h (from the popPK convention: 'K20 is an elimination rate constant. The value 0.14 is consistent with 1/h magnitude for a terminal phase elimination co')
+- implicit units: 'K30' → 1/h (from the popPK convention: 'K30 is an elimination rate constant. The value 0.13 is consistent with 1/h magnitude for a terminal phase elimination co')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ifosfamide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
@@ -110,6 +110,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - molar mass: no plausible PubChem entry for '3-dechloroifosfamide' ('3-dechloroifosfamide') — left in mass units
 - molar mass: none found for '2-dechloroifosfamide' — its concentrations stay mass-only
 - molar mass: none found for '3-dechloroifosfamide' — its concentrations stay mass-only
+- column 'final model (%rse) [shrinkage]' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- dropped duplicate Q45 ('Fm2', value '0.34') — already have one for this compound
+- unit_dimension_unknown: 'θAPR_Fm2' (fm)
+- dropped duplicate Q45 ('Effect of aripiprant on Fm2 (θAPR_Fm2)', value '1.06') — already have one for this compound
+- implicit units: 'CL' → L/h (from the popPK convention: 'Clearance in population PK models is conventionally expressed in L/h (or mL/min); the value 4.0 is consistent with L/h f')
+- implicit units: 'Vd' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 57.5 is consistent with L.')
+- implicit units: 'K20' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.14 is consistent with 1/h.')
+- implicit units: 'K30' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.13 is consistent with 1/h.')
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -146,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Valentin_2023_table_p16_1:row0:col2'] |
@@ -197,13 +205,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Valentin T, Lambert M, Chaltiel L, Allal B, Mseddi M, Yakoubi M et al. Population pharmacokinetic analysis reveals no impact of aprepitant on the pharmacokinetics of ifosfamide, 2-dechloroifosfamide, and 3-dechloroifosfamide. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 185:106420 (2023). [doi:10.1016/j.ejps.2023.106420](https://doi.org/10.1016/j.ejps.2023.106420)
 
-**This record:** Pharmacolibrary v26.09, model `Ifosfamide_Valentin2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference>
+**This record:** Pharmacolibrary, model `Ifosfamide_Valentin2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_IfosfamideValentin2023reference,
   title  = {{Pharmacolibrary model Ifosfamide_Valentin2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference},
   note   = {Parameters from doi:10.1016/j.ejps.2023.106420},
 }
@@ -218,5 +225,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bifosfamide%5D%20Ifosfamide_Valentin2023_reference&body=Drug%3A%20ifosfamide%0ARecord%3A%20Ifosfamide_Valentin2023_reference%0APaper%3A%20Valentin_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bifosfamide%5D%20Ifosfamide_Valentin2023_reference&body=Drug%3A%20ifosfamide%0ARecord%3A%20Ifosfamide_Valentin2023_reference%0APaper%3A%20Valentin_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:22 UTC</sub>

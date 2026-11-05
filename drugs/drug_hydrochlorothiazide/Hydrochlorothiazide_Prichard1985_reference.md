@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Prichard_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_2_mg_kg_or_hctz_7_5_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_and_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and_hctz_30_mg_kg_me.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea&quot;,&quot;label&quot;:&quot;Hao_2014_tel_8_mg_kg_or_hctz_30_mg_kg_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hao2014_tel_8_mg_kg_or_hctz_30_mg_kg_mea.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -31,12 +31,12 @@ Prichard BN, Brogden RN. Xipamide. A review of its pharmacodynamic and pharmacok
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| Total plasma clearance of xipamide | CL | 2.1 | L/h |
-| volume of distribution of xipamide | V | 21.0 | L |
+| Total plasma clearance | CL | 2.1 | L/h |
+| The volume of distribution | V | 21.0 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Prichard BN, Brogden RN. Xipamide. A review of its pharmacodynamic and pharmacok
 
 **Every check that could be run on this record passed.**
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 2.1, the second reading 25. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,8 +56,8 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Total plasma clearance of xipamide | `Q22` · CL | 2.1 | L/h | 5.833e-07 | m3/s | L/h | review (0.7) | Prichard_1985:review |
-| volume of distribution of xipamide | `Q61` · V | 21.0 | L | 0.021 | m3 | L | review (0.7) | Prichard_1985:review |
+| Total plasma clearance | `Q22` · CL | 2.1 | L/h | 5.833e-07 | m3/s | L/h | review (0.7) | Prichard_1985:review |
+| The volume of distribution | `Q61` · V | 21.0 | L | 0.021 | m3 | L | review (0.7) | Prichard_1985:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,14 +72,20 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 2.1 | 25 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -163,13 +169,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Prichard BN, Brogden RN. Xipamide. A review of its pharmacodynamic and pharmacokinetic properties and therapeutic efficacy. Drugs 30(4):313–332 (1985). [doi:10.2165/00003495-198530040-00002](https://doi.org/10.2165/00003495-198530040-00002)
 
-**This record:** Pharmacolibrary v26.09, model `Hydrochlorothiazide_Prichard1985_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference>
+**This record:** Pharmacolibrary, model `Hydrochlorothiazide_Prichard1985_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference>
 
 ```bibtex
 @misc{pharmacolibrary_HydrochlorothiazidePrichard1985reference,
   title  = {{Pharmacolibrary model Hydrochlorothiazide_Prichard1985_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference},
   note   = {Parameters from doi:10.2165/00003495-198530040-00002},
 }
@@ -188,5 +193,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20Hydrochlorothiazide_Prichard1985_reference&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20Hydrochlorothiazide_Prichard1985_reference%0APaper%3A%20Prichard_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-27 13:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrochlorothiazide%5D%20Hydrochlorothiazide_Prichard1985_reference&body=Drug%3A%20hydrochlorothiazide%0ARecord%3A%20Hydrochlorothiazide_Prichard1985_reference%0APaper%3A%20Prichard_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-27 13:57 UTC</sub>

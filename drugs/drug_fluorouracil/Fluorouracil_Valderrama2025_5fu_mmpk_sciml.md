@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Valderrama_2025 \u00b7 5fu_mmpk_sciml&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Valderrama2025_5fu_mmpk_sciml`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 14:21 UTC (Needs review), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Valderrama2025_5fu_mmpk_sciml" status="needs_review" stale="false" population="cancer patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Valderrama2025_5fu_mmpk_sciml" status="needs_review" stale="true" population="oncology patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et al. Comparing Scientific Machine Learning With Population Pharmacokinetic and Classical Machine Learning Approaches for Prediction of Drug Concentrations. CPT: pharmacometrics & systems pharmacology 14(4):759-769 (2025).
@@ -17,13 +17,13 @@ Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et a
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · age group adult.
+**Population:** oncology patients · condition oncology · age group adult.
 
 **Dosing:** 37.5, 50 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
@@ -39,7 +39,7 @@ Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et a
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 212 L/h, V 46.1 L, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1478, the second reading 223; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,9 +74,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0] (site presystemic: 'Presystemic formation of SU12662 was modeled via a hypothetical enzyme compartment incorporated into the central compart')
 - population split: '5fu / mmpk‐sciml' subgroup of Valderrama_2025 (paper reports 4 populations: 5fu / mmpk‐sciml, 5fu / poppk (foce‐i), 5fu / poppk (saem), 5fu / schmulenson et al. [15])
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 8 linked by role
+- molar mass: no plausible PubChem entry for 'SU12662' ('SU12662') — left in mass units
+- molar mass: none found for 'SU12662' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
 
 **Extraction notes:**
@@ -84,23 +88,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 1478 | 223 | mismatch |
-| `gpt-oss:120b` | `values[Q49]` | 0.13 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q63]` | 1820 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q88]` | 18.75 | 18.75 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -154,5 +149,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Valderrama2025_5fu_mmpk_sciml&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Valderrama2025_5fu_mmpk_sciml%0APaper%3A%20Valderrama_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Valderrama2025_5fu_mmpk_sciml%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Valderrama2025_5fu_mmpk_sciml&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Valderrama2025_5fu_mmpk_sciml%0APaper%3A%20Valderrama_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Valderrama2025_5fu_mmpk_sciml%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:29 UTC</sub>

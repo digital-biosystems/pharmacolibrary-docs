@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Wei_2014 \u00b7 PD low-density-lipoprotein cholesterol (LDL-C)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Wei_2014 \u00b7 PD low-density-lipoprotein cholesterol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# low-density-lipoprotein cholesterol (LDL-C) — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# low-density-lipoprotein cholesterol — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Simvastatin (the dose) drives low-density-lipoprotein cholesterol (LDL-C) (in mg/dl): direct Emax (saturable) effect.
+**As extracted:** Simvastatin (the dose) drives low-density-lipoprotein cholesterol (in mg/dl): direct Emax (saturable) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -26,7 +26,7 @@
 - **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Wei WQ et al., Characterization of statin dose respons…, Clinical pharmacology and t… (2014)
@@ -35,9 +35,9 @@ Wei WQ et al., Characterization of statin dose respons…, Clinical pharmacology
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q323` ·  | 61.0 | mg/dl | direction | Wei_2014:pdv3 |
-| PD (effect) | ED 50 | `Q322` ·  | 7.4 | mg/day | llm | Wei_2014:pdv3 |
-| PD (effect) | E 0 | `Q324` ·  | 138.0 | mg/dl | llm | Wei_2014:pdv3 |
+| PD (effect) | baseline LDL-C | `Q324` ·  | 138.0 | mg/dl | llm | Wei_2014:pdv3 |
+| PD (effect) | efficacy | `Q323` ·  | 61.0 | mg/dl | direction | Wei_2014:pdv3 |
+| — | mean effective dose | `Q100` ·  | 7.4 | mg/dose | nil | Wei_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,14 +81,24 @@ Advisory:
 - defaulted: gamma (convention)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-_All readers agree on the compared fields of this PD record._
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 7.4 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` |  | 7.4 ± 3.1 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 61.0 | 61.0 ± 23.1 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 138.0 | 138.0 ± 34.2 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -133,13 +143,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Simvastatin_Wei2014_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Wei2014_PD_ldl_c>
+**This record:** Pharmacolibrary, model `Simvastatin_Wei2014_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Wei2014_PD_ldl_c>
 
 ```bibtex
 @misc{pharmacolibrary_SimvastatinWei2014PDldlc,
   title  = {{Pharmacolibrary model Simvastatin_Wei2014_PD_ldl_c}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Wei2014_PD_ldl_c},
 }
 ```
@@ -155,5 +164,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20pd_Wei_2014_LDL_C&body=Drug%3A%20simvastatin%0ARecord%3A%20pd_Wei_2014_LDL_C%0APaper%3A%20Wei_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/pd_Wei_2014_LDL_C%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20pd_Wei_2014_LDL_C&body=Drug%3A%20simvastatin%0ARecord%3A%20pd_Wei_2014_LDL_C%0APaper%3A%20Wei_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/pd_Wei_2014_LDL_C%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [simvastatin](drugs/drug_simvastatin/)</sub>

@@ -29,15 +29,6 @@ Yohimbine is an alpha-2 blocker used for erectile dysfunction and hypoactive sex
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 56.7 ‡ | L/h | 13.5 mL/min/kg | healthy adult horses | No | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) |
-| t½ | t1/2z | 4.4 | h | 4.4 h | healthy adult horses | No | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -118,5 +109,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Byohimbine%5D&body=Drug%3A%20yohimbine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_yohimbine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Byohimbine%5D&body=Drug%3A%20yohimbine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_yohimbine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:17 UTC</sub>

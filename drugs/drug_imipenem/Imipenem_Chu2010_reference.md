@@ -168,13 +168,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chu YZ, Tian SF, Chen BY, Nian H, Shang H, Sun GQ. Pharmacokinetic-pharmacodynamic profiling of four antimicrobials against gram-negative bacteria collected from Shenyang, China. BMC infectious diseases 10:171 (2010). [doi:10.1186/1471-2334-10-171](https://doi.org/10.1186/1471-2334-10-171)
 
-**This record:** Pharmacolibrary v26.09, model `Imipenem_Chu2010_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_imipenem/Imipenem_Chu2010_reference>
+**This record:** Pharmacolibrary, model `Imipenem_Chu2010_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_imipenem/Imipenem_Chu2010_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ImipenemChu2010reference,
   title  = {{Pharmacolibrary model Imipenem_Chu2010_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_imipenem/Imipenem_Chu2010_reference},
   note   = {Parameters from doi:10.1186/1471-2334-10-171},
 }
@@ -193,5 +192,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimipenem%5D%20Imipenem_Chu2010_reference&body=Drug%3A%20imipenem%0ARecord%3A%20Imipenem_Chu2010_reference%0APaper%3A%20Chu_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imipenem/Imipenem_Chu2010_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimipenem%5D%20Imipenem_Chu2010_reference&body=Drug%3A%20imipenem%0ARecord%3A%20Imipenem_Chu2010_reference%0APaper%3A%20Chu_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imipenem/Imipenem_Chu2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:16 UTC</sub>

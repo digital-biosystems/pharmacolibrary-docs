@@ -13,16 +13,6 @@ Peginesatide is an antianemic drug that was developed to treat anemia. It was wi
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q3662569](https://www.wikidata.org/wiki/Q3662569) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V1 | 2.492 ‡ | L | 35.6 mL/kg | patients with chronic kidney disease on dialysis | 672 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) |
-| ka | kabs | 0.00869 | 1/h | 0.00869 1/hr | patients with chronic kidney disease on dialysis | 672 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) |
-| F | Fab | 0.499 |  | 0.499 F1 | patients with chronic kidney disease on dialysis | 672 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -70,5 +60,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeginesatide%5D&body=Drug%3A%20peginesatide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peginesatide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 21:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeginesatide%5D&body=Drug%3A%20peginesatide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peginesatide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 21:32 UTC</sub>

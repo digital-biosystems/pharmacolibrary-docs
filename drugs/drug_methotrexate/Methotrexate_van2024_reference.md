@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;van_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_van2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The methotrexate record was refused because the absorption rate constant was not reported in the source and was substituted with a library default.
+> This record was reviewed on 2026-10-22 15:33 UTC (Needs review), but the paper was screened again on 2026-11-04 02:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_van2024_reference" status="needs_review" stale="false" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_van2024_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Quantifying the Effect of Methotrexate on Adalimumab Response in Psoriasis by Pharmacokinetic-Pharmacodynamic Modeling. The Journal of investigative dermatology 144(4):794–801.e6 (2024).
@@ -29,8 +29,6 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 <figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference.svg" alt="Methotrexate_van2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 0.365 | l/day/82 kg |
@@ -38,7 +36,7 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +50,7 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 
 The source paper does not report an estimated absorption rate constant or time to maximum concentration, so standard values were substituted instead of explicit estimates. This lack of specific absorption data was flagged as an invented input for the first-order depot model. Additionally, the second reader disagreed on several unspecified numerical values extracted from the text, noting nulls where values like 37, 1, and 6.8 were recorded. Extracted — methotrexate: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 37; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 37, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,15 +85,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` |  | 37 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 37 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q319]` |  | 1 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q320]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` |  | 6.8 | only_one_extracted |
 
 </details>
 
@@ -184,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Quantifying the Effect of Methotrexate on Adalimumab Response in Psoriasis by Pharmacokinetic-Pharmacodynamic Modeling. The Journal of investigative dermatology 144(4):794–801.e6 (2024). [doi:10.1016/j.jid.2023.10.022](https://doi.org/10.1016/j.jid.2023.10.022)
 
-**This record:** Pharmacolibrary v26.09, model `Methotrexate_van2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_van2024_reference>
+**This record:** Pharmacolibrary, model `Methotrexate_van2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_van2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_Methotrexatevan2024reference,
   title  = {{Pharmacolibrary model Methotrexate_van2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_van2024_reference},
   note   = {Parameters from doi:10.1016/j.jid.2023.10.022},
 }
@@ -209,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_van2024_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_van2024_reference%0APaper%3A%20van_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_van2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_van2024_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_van2024_reference%0APaper%3A%20van_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_van2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:23 UTC</sub>

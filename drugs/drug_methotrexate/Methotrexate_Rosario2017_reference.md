@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Rosario_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_Rosario2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The peripheral compartment for methotrexate is unreachable from the dose, causing the model to be rejected.
+> This record was reviewed on 2026-10-22 15:33 UTC (Rejected), but the paper was screened again on 2026-11-04 02:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment for methotrexate is unreachable from the dose, causing the model to be rejected.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Rosario2017_reference" status="rejected" stale="false" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Rosario2017_reference" status="rejected" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Rosario M, Dirks NL, Milch C, Parikh A, Bargfrede M, Wyant T et al. A Review of the Clinical Pharmacokinetics, Pharmacodynamics, and Immunogenicity of Vedolizumab. Clinical pharmacokinetics 56(11):1287–1301 (2017).
@@ -31,13 +31,13 @@ Rosario M, Dirks NL, Milch C, Parikh A, Bargfrede M, Wyant T et al. A Review of 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL L | CL | 0.159 | L/day |
-| V c | V1 | 3.19 | L |
-| V p | V2 | 1.65 | L |
+| Population estimates of CL L | CL | 0.159 | L/day |
+| volume of distribution in the central compartment (V c ) | V1 | 3.19 | L |
+| volume of distribution in the peripheral compartment (V p ) | V2 | 1.65 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Rosario M, Dirks NL, Milch C, Parikh A, Bargfrede M, Wyant T et al. A Review of 
 
 The record defines a two-compartment structure with central volume 3.19 L and peripheral volume 1.65 L. The findings identify the peripheral compartment as unreachable, meaning there is no path from the dose to that space. Consequently, the model fails because the peripheral volume and clearance cannot be properly estimated or utilized. Extracted — methotrexate: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q37: this record has 10, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -59,9 +59,9 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL L | `Q22` · CL | 0.159 | L/day | 1.84e-09 | m3/s | L/h | review (0.7) | Rosario_2017:review |
-| V c | `Q63` · V1 | 3.19 | L | 0.00319 | m3 | L | review (0.7) | Rosario_2017:review |
-| V p | `Q64` · V2 | 1.65 | L | 0.00165 | m3 | L | review (0.7) | Rosario_2017:review |
+| Population estimates of CL L | `Q22` · CL | 0.159 | L/day | 1.84e-09 | m3/s | L/h | review (0.7) | Rosario_2017:review |
+| volume of distribution in the central compartment (V c ) | `Q63` · V1 | 3.19 | L | 0.00319 | m3 | L | review (0.7) | Rosario_2017:review |
+| volume of distribution in the peripheral compartment (V p ) | `Q64` · V2 | 1.65 | L | 0.00165 | m3 | L | review (0.7) | Rosario_2017:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,14 +76,21 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q37]` | 10 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q66]` |  | 0.265 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -128,5 +135,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Rosario2017_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Rosario2017_reference%0APaper%3A%20Rosario_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Rosario2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Rosario2017_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Rosario2017_reference%0APaper%3A%20Rosario_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Rosario2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:21 UTC</sub>

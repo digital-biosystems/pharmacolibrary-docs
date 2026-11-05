@@ -22,15 +22,6 @@ Sulfathiazole is a sulfonamide anti-infective that was used against bacterial in
 |---|---|---|---|---|---|---|
 | sulfathiazole | parent | 255.317 | C9H9N3O2S2 | DrugBank | [5340](https://pubchem.ncbi.nlm.nih.gov/compound/5340) | Bevill_1977, Vitková_2021 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 27.3 ‡ | L | 0.39 liter/kg | sheep | &gt; 12 | sheep | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bevill_1977_reference](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md) |
-| t½ | t1/2z | 1.1 | h | 1.1 hr | sheep | &gt; 12 | sheep | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bevill_1977_reference](drugs/drug_sulfathiazole/Sulfathiazole_Bevill1977_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +95,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfathiazole%5D&body=Drug%3A%20sulfathiazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfathiazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfathiazole%5D&body=Drug%3A%20sulfathiazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfathiazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:59 UTC</sub>

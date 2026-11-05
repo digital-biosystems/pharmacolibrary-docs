@@ -9,7 +9,7 @@
 
 > The metabolite lacks a link from the parent rifapentine, rendering its compartment unreachable for the model.
 
-<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Mathad2022_reference" status="rejected" stale="false" population="pregnant women" measured-compound="rifapentine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Mathad2022_reference" status="rejected" stale="false" population="pregnant women" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mathad JS, Savic R, Britto P, Jayachandran P, Wiesner L, Montepiedra G et al. Pharmacokinetics and Safety of 3 Months of Weekly Rifapentine and Isoniazid for Tuberculosis Prevention in Pregnant Women. Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 74(9):1604–1613 (2022).
@@ -23,7 +23,7 @@ Mathad JS, Savic R, Britto P, Jayachandran P, Wiesner L, Montepiedra G et al. Ph
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
@@ -74,8 +74,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rifapentine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -115,7 +113,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.56 | ['Mathad_2022:other_prose'] |
-| C8_topology | fail | linked Kfm/Fm/formation clearance |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.56 L/h | ['Mathad_2022:other_prose'] |
 
 <details class="legend">
@@ -139,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D%20Rifapentine_Mathad2022_reference&body=Drug%3A%20rifapentine%0ARecord%3A%20Rifapentine_Mathad2022_reference%0APaper%3A%20Mathad_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/Rifapentine_Mathad2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D%20Rifapentine_Mathad2022_reference&body=Drug%3A%20rifapentine%0ARecord%3A%20Rifapentine_Mathad2022_reference%0APaper%3A%20Mathad_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/Rifapentine_Mathad2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:25 UTC</sub>

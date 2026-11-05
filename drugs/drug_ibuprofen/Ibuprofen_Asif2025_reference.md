@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Asif_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Aranda1997_reference&quot;,&quot;label&quot;:&quot;Aranda_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Aranda1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Gonzalez1987_reference&quot;,&quot;label&quot;:&quot;Gonzalez_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_ibu_eff_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_ibu_eff_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_ibu_eff_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_std_ibu_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_std_ibu_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_std_ibu_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Aranda1997_reference&quot;,&quot;label&quot;:&quot;Aranda_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Aranda1997_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Gonzalez1987_reference&quot;,&quot;label&quot;:&quot;Gonzalez_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_ibu_eff_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_ibu_eff_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_ibu_eff_400_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_std_ibu_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_std_ibu_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_std_ibu_400_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Asif2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-10-20 21:20 UTC (Rejected), but the paper was screened again on 2026-11-03 11:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted clearance of 40.0 L/h is physiologically implausible for an extremely low gestational age neonate, indicating a unit or scale error.
+> This paper's disposition core is incomplete; aUCt has no unit.
 
-<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Asif2025_reference" status="needs_review" stale="true" population="extremely low gestational age neonates with patent ductus arteriosus" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Asif2025_reference" status="needs_review" stale="false" population="extremely low gestational age neonates with patent ductus arteriosus" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Asif M, Sushko K, Razak A, Borhan S, Rieder M, van den Anker J et al. A Retrospective Analysis of PK and Response of Oral Ibuprofen in the Treatment of a Patent Ductus Arteriosus in Extremely Low Gestational Age Neonates. Journal of clinical pharmacology 65(9):1157–1162 (2025).
@@ -19,13 +19,13 @@ Asif M, Sushko K, Razak A, Borhan S, Rieder M, van den Anker J et al. A Retrospe
 
 **Population:** extremely low gestational age neonates with patent ductus arteriosus · condition patent ductus arteriosus · age group neonate · n = 23.
 
-**Dosing:** 350, 700, 1400 mg, oral, multiple, every 8 h.
+**Dosing:** 700, 1400 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,13 +34,11 @@ Asif M, Sushko K, Razak A, Borhan S, Rieder M, van den Anker J et al. A Retrospe
 | label | parameter | value | unit |
 |---|---|---|---|
 | AUC0‐24 h | AUCt | 486 |  |
-| Vd | V | 62.1 | ml/kg |
-| k a | kabs | 1.1 | h -1 |
-| T lag | tlag | 0.1 | hours |
+| AUC0‐72 h | AUC | 1529 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-5.6-luna (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-5.6-luna (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,32 +48,29 @@ Asif M, Sushko K, Razak A, Borhan S, Rieder M, van den Anker J et al. A Retrospe
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted clearance of 40.0 L/h is physiologically implausible for an extremely low gestational age neonate, indicating a unit or scale error.**
+**This paper's disposition core is incomplete; aUCt has no unit.**
 
-The population consists of extremely low gestational age neonates, for whom a total body clearance of 40.0 L/h exceeds plausible physiological limits. This magnitude suggests an extraction error regarding the unit or scale of the clearance parameter. A second reader disagreed on several fields, including the primary analyte and specific parameter values, though the clearance magnitude was the primary cause of rejection. Extracted — ibuprofen: AUCt 486, CL 40 L/h, V 22.4 ml, kabs 1.1 h -1.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aranda_1997, Hong_2008, Li_2012) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — ibuprofen: AUCt 486, V 62.1 ml/kg, kabs 1.1 h -1, tlag 0.1 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| AUC0‐24 h | `Q19` · AUCt | 486 |  |  |  |  | llm (0.6) | Asif_2025_table_2:row1:col1, Asif_2025_table_2:row1:col2 |
-| Vd | `Q61` · V | 62.1 | ml/kg | 0.004347 | m3 | L | review_gapfill (0.7) | Aranda_1997:review |
-| k a | `Q49` · kabs | 1.1 | h -1 | 0.0003056 | 1/s | 1/h | review_gapfill (0.7) | Hong_2008:review |
-| T lag | `Q83` · tlag | 0.1 | hours | 360 | s | h | review_gapfill (0.7) | Li_2012:review |
+| label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|
+| AUC0‐24 h | `Q19` · AUCt | 486 |  | llm (0.6) | Asif_2025_table_2:row1:col1, Asif_2025_table_2:row1:col2 |
+| AUC0‐72 h | `Q88` · AUC | 1529 |  | llm (0.6) | Asif_2025_table_2:row2:col1, Asif_2025_table_2:row2:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q19 ('AUC0‐72 h', value '1529') — already have one for this compound
 - dropped unlinked row (NIL): 'PDA closure' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row3:col1', 'Asif_2025_table_2:row3:col2'])
 - dropped unlinked row (NIL): 'Repeat pharmacotherapy' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row4:col1', 'Asif_2025_table_2:row4:col2'])
 - dropped unlinked row (NIL): 'Ligation' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row5:col1', 'Asif_2025_table_2:row5:col2'])
@@ -92,16 +87,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped unlinked row (NIL): 'NDV disability' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row17:col1', 'Asif_2025_table_2:row17:col2'])
 - dropped unlinked row (NIL): 'BPD' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row18:col1', 'Asif_2025_table_2:row18:col2'])
 - dropped unlinked row (NIL): 'Mortality' — extend the ontology if this is a real PK parameter (source ['Asif_2025_table_2:row19:col1', 'Asif_2025_table_2:row19:col2'])
-- table mostly unlinked (16/18 table-cell rows NIL) — likely the wrong table was located, not 2 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibuprofen
-- status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Anderson_2019's review values (primary lacked it)
-- gap-filled Q61 (V) from Aranda_1997's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Li_2012's review values (primary lacked it)
-- re-normalised: 'ERR ADD' was linked to Q22 (CL) — a residual_error label, moved to residual_error
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -155,14 +141,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Hong_2008:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aranda_1997:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Li_2012:review'] |
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | fail |  |  |  |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 |  | ['Asif_2025_table_2:row1:col1', 'Asif_2025_table_2:row1:col2'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['Asif_2025_table_2:row2:col1', 'Asif_2025_table_2:row2:col2'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.35 L | ['Aranda_1997:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>

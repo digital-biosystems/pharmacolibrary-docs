@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Andersen_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Andersen1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
-> Fentanyl volumes 0.26 and 0.9 ml/kg are implausible and the peripheral compartment is unreachable from the dose.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-03 17:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fentanyl volumes 0.26 and 0.9 ml/kg are implausible and the peripheral compartment is unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Andersen1986_reference" status="rejected" stale="false" population="goats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Andersen1986_reference" status="rejected" stale="true" population="goats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Andersen HB, Christensen B, Findlay JW, Jansen JA. Pharmacokinetics of intravenous, intrathecal and epidural morphine and fentanyl in the goat. Acta anaesthesiologica Scandinavica 30(5):393–399 (1986).
@@ -42,7 +42,7 @@ Andersen HB, Christensen B, Findlay JW, Jansen JA. Pharmacokinetics of intraveno
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.111). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.125). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Andersen HB, Christensen B, Findlay JW, Jansen JA. Pharmacokinetics of intraveno
 
 The extracted central and peripheral volumes of distribution are recorded in milliliters per kilogram rather than liters, resulting in values that are three orders of magnitude smaller than physiological norms. Additionally, the two-compartment structure fails a connectivity check because the peripheral compartment has no defined path from the site of administration. Extracted — fentanyl: CL 83.7 ml/min/kg, V1 0.26 ml/kg, V2 0.9 ml/kg, tlag 15 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has 4.43, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has 4.43, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,13 +87,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q35]` |  | 90 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q3]` | 4.43 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 105 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q59]` | 4 |  | only_one_extracted |
@@ -148,5 +147,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Andersen1986_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Andersen1986_reference%0APaper%3A%20Andersen_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Andersen1986_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Andersen1986_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Andersen1986_reference%0APaper%3A%20Andersen_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Andersen1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 17:57 UTC</sub>

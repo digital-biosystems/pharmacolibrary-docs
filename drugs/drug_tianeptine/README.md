@@ -32,17 +32,9 @@ Tianeptine is a tricyclic antidepressant used to treat depression. It is not app
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 1497 ‡ | L/h | 21.39 L/h/kg | rats | 3 | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Szafarz_2018_intravenous_1_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md) |
-| V | V | 1270 ‡ | L | 18.15 L/kg | rats | 3 | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Szafarz_2018_intraperitoneal_10_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md) |
-| V | V | 2818 ‡ | L | 40.25 L/kg | rats | 3 | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Szafarz_2018_intravenous_1_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md) |
-| t½ | t1/2z | 14.03 | h | 14.03 h | rats | 3 | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Szafarz_2018_intraperitoneal_10_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md) |
-| t½ | t1/2z | 64.34 | h | 64.34 h | rats | 3 | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Szafarz_2018_intravenous_1_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Szafarz_2018 · V ·/kg</text><circle cx="226.4" cy="30.0" r="4" fill="#78909c"><title>Szafarz_2018 · V ·/kg: 1270 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Szafarz_2018 · V ·/kg</text><circle cx="347.5" cy="46.0" r="4" fill="#78909c"><title>Szafarz_2018 · V ·/kg: 2818 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -134,5 +126,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D&body=Drug%3A%20tianeptine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D&body=Drug%3A%20tianeptine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:48 UTC</sub>

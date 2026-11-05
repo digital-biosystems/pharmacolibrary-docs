@@ -32,17 +32,9 @@ Salicylic acid is a keratolytic and antifungal agent used topically for skin con
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.8 ‡ | L/h | 0.04 L/h/kg | review reference |  | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) |
-| V | V | 84 ‡ | L | 1.2 L/kg | review reference |  | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) |
-| V | V1/F | 7.5 | L | 7.5 L | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
-| V | V1/F | 23.51 | L | 23.51 L | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
-| ka | kabs | 0.22 | 1/h | 0.22 h−1 | healthy adults | &gt;=44 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mathurkar_2018 · V ·/kg</text><circle cx="526.7" cy="30.0" r="4" fill="#2e7d32"><title>Mathurkar_2018 · V ·/kg: 84 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Koh_2025 · V1/F</text><circle cx="343.1" cy="46.0" r="4" fill="#ef6c00"><title>Koh_2025 · V1/F: 7.5 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Koh_2025 · V1/F</text><circle cx="430.0" cy="62.0" r="4" fill="#ef6c00"><title>Koh_2025 · V1/F: 23.51 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -129,5 +121,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalicylic_acid%5D&body=Drug%3A%20salicylic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salicylic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 13:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalicylic_acid%5D&body=Drug%3A%20salicylic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salicylic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 13:08 UTC</sub>

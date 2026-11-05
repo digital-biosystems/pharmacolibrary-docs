@@ -190,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Vourc'h M, Dailly E, Hourmant Y, Bellouard R, Mahe PJ, Deslandes G et al. Pharmacokinetics and toxicity of high-dose baclofen in ICU patients. Progress in neuro-psychopharmacology & biological psychiatry 92:450–456 (2019). [doi:10.1016/j.pnpbp.2019.02.016](https://doi.org/10.1016/j.pnpbp.2019.02.016)
 
-**This record:** Pharmacolibrary v26.09, model `Baclofen_Vourch2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Vourch2019_reference>
+**This record:** Pharmacolibrary, model `Baclofen_Vourch2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Vourch2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BaclofenVourch2019reference,
   title  = {{Pharmacolibrary model Baclofen_Vourch2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_baclofen/Baclofen_Vourch2019_reference},
   note   = {Parameters from doi:10.1016/j.pnpbp.2019.02.016},
 }
@@ -215,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20Baclofen_Vourch2019_reference&body=Drug%3A%20baclofen%0ARecord%3A%20Baclofen_Vourch2019_reference%0APaper%3A%20Vourch_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/Baclofen_Vourch2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaclofen%5D%20Baclofen_Vourch2019_reference&body=Drug%3A%20baclofen%0ARecord%3A%20Baclofen_Vourch2019_reference%0APaper%3A%20Vourch_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baclofen/Baclofen_Vourch2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:25 UTC</sub>

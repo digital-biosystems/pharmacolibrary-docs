@@ -22,25 +22,6 @@ Cabazitaxel is a taxane anticancer drug used to treat prostate cancer, including
 |---|---|---|---|---|---|---|
 | cabazitaxel | parent | 835.932 | C45H57NO14 | DrugBank | [9854073](https://pubchem.ncbi.nlm.nih.gov/compound/9854073) | Ferron_2013, Janssen_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 119 | L/h | 119 l h−1 | men with metastatic castration-resistant prostate cancer | &gt;10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Janssen_2017_reference](drugs/drug_cabazitaxel/Cabazitaxel_Janssen2017_reference.md) |
-| CL | CL | — | L/h | 24.2 n = 170 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_all](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all.md) |
-| CL | CL | — | L/h | 12.1 n = 34 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ard6191](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191.md) |
-| CL | CL | — | L/h | 34.5 n = 21 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6188](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188.md) |
-| CL | CL | — | L/h | 25.5 n = 13 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6189](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189.md) |
-| CL | CL | — | L/h | 24.2 n = 35 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6190](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190.md) |
-| V | V | — | L | 19.6 n = 170 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_all](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all.md) |
-| V | V | — | L | 20.5 n = 34 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ard6191](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191.md) |
-| V | V | — | L | 25.2 n = 67 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_efc6193](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193.md) |
-| V | V | — | L | 17.1 n = 21 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6188](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188.md) |
-| V | V | — | L | 16.0 n = 13 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6189](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189.md) |
-| V | V | — | L | 10.8 n = 35 | patients with advanced solid tumors |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_2013_ted6190](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -116,5 +97,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabazitaxel%5D&body=Drug%3A%20cabazitaxel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabazitaxel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabazitaxel%5D&body=Drug%3A%20cabazitaxel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabazitaxel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:34 UTC</sub>

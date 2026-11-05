@@ -186,5 +186,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapecitabine%5D%20Capecitabine_SezBell2021_population_pk_model_estimates_shrin&body=Drug%3A%20capecitabine%0ARecord%3A%20Capecitabine_SezBell2021_population_pk_model_estimates_shrin%0APaper%3A%20S%C3%A1ez-Bell%C3%B3_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_shrin%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-15 06:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapecitabine%5D%20Capecitabine_SezBell2021_population_pk_model_estimates_shrin&body=Drug%3A%20capecitabine%0ARecord%3A%20Capecitabine_SezBell2021_population_pk_model_estimates_shrin%0APaper%3A%20S%C3%A1ez-Bell%C3%B3_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_shrin%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-15 06:03 UTC</sub>

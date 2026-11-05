@@ -218,13 +218,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Liu XQ, Zhang YF, Ding HY, Yan MM, Jiao Z, Zhong MK et al. Population pharmacokinetic and pharmacodynamic analysis of rivaroxaban in Chinese patients with non-valvular atrial fibrillation. Acta pharmacologica Sinica 43(10):2723–2734 (2022). [doi:10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9)
 
-**This record:** Pharmacolibrary v26.09, model `Rivaroxaban_Liu2022_sequential_modeling`. <https://pharmacolibrary.github.io/#/drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling>
+**This record:** Pharmacolibrary, model `Rivaroxaban_Liu2022_sequential_modeling`. <https://pharmacolibrary.github.io/#/drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling>
 
 ```bibtex
 @misc{pharmacolibrary_RivaroxabanLiu2022sequentialmodeling,
   title  = {{Pharmacolibrary model Rivaroxaban_Liu2022_sequential_modeling}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling},
   note   = {Parameters from doi:10.1038/s41401-022-00892-9},
 }
@@ -243,5 +242,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brivaroxaban%5D%20Rivaroxaban_Liu2022_sequential_modeling&body=Drug%3A%20rivaroxaban%0ARecord%3A%20Rivaroxaban_Liu2022_sequential_modeling%0APaper%3A%20Liu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brivaroxaban%5D%20Rivaroxaban_Liu2022_sequential_modeling&body=Drug%3A%20rivaroxaban%0ARecord%3A%20Rivaroxaban_Liu2022_sequential_modeling%0APaper%3A%20Liu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:15 UTC</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Zhang_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Zhang2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhang2015_reference" status="curated_candidate" stale="false" population="" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:27 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 08:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhang2015_reference" status="extracted" stale="true" population="" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population pharmacokinetics of dolutegravir in HIV-infected treatment-naive patients. British journal of clinical pharmacology 80(3):502–514 (2015).
@@ -31,12 +33,12 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 |---|---|---|---|
 | CL/F | CL/F | 0.901 | l h–1 |
 | V/F | V/F | 17.4 | l |
-| ka | kabs | 2.24 | h-1 |
 | absorption tlag | tlag | 0.263 | h |
+| ka | kabs | 2.24 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +50,7 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 53.6, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 53.6, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +60,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 |---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 0.901 | l h–1 | 2.503e-07 | m3/s | L/h | review (0.7) | Zhang_2015:review |
 | V/F | `Q76` · V/F | 17.4 | l | 0.0174 | m3 | L | review (0.7) | Zhang_2015:review |
-| ka | `Q49` · kabs | 2.24 | h-1 | 0.0006222 | 1/s | 1/h | review (0.7) | Zhang_2015:review |
 | absorption tlag | `Q83` · tlag | 0.263 | h | 946.8 | s | h | review (0.7) | Zhang_2015:review |
+| ka | `Q49` · kabs | 2.24 | h-1 | 0.0006222 | 1/s | 1/h | review (0.7) | Zhang_2015:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,18 +79,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q19]` | 53.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q313]` | 17.2 | 17.2 | mismatch |
 | `gpt-oss-120b` | `values[Q32]` | 3.67 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q56]` | 2 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q75]` | 1.11 |  | only_one_extracted |
@@ -182,13 +185,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population pharmacokinetics of dolutegravir in HIV-infected treatment-naive patients. British journal of clinical pharmacology 80(3):502–514 (2015). [doi:10.1111/bcp.12639](https://doi.org/10.1111/bcp.12639)
 
-**This record:** Pharmacolibrary v26.09, model `Abacavir_Zhang2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Zhang2015_reference>
+**This record:** Pharmacolibrary, model `Abacavir_Zhang2015_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Zhang2015_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AbacavirZhang2015reference,
   title  = {{Pharmacolibrary model Abacavir_Zhang2015_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Zhang2015_reference},
   note   = {Parameters from doi:10.1111/bcp.12639},
 }
@@ -207,5 +209,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Zhang2015_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Zhang2015_reference%0APaper%3A%20Zhang_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Zhang2015_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Zhang2015_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Zhang2015_reference%0APaper%3A%20Zhang_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Zhang2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:45 UTC</sub>

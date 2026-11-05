@@ -25,19 +25,9 @@ Quizartinib is a protein kinase inhibitor used to treat acute myeloid leukemia. 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.97 | L/h | 1.97 L/h | adult patients with newly diagnosed FLT3-ITD-negative AML | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) |
-| CL | CL | 4.61 | L/h | 4.61 L/h | newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Vaddady_2024_final](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md) |
-| V | V | — | L | 129.08 | adult patients with newly diagnosed FLT3-ITD-negative AML | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) |
-| V | V1 | 8.93 | L | 8.93 L | newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Vaddady_2024_final](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md) |
-| ka | kabs | 1.68 | 1/h | 1.68 1/h | adult patients with newly diagnosed FLT3-ITD-negative AML | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) |
-| t½ | t1/2z | 82.38 | h | 82.38 h | adult patients with newly diagnosed FLT3-ITD-negative AML | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) |
-| F | Fab | 0.77 |  | 0.77 | adult patients with newly diagnosed FLT3-ITD-negative AML | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Solana-Altabella_2025 · CL</text><circle cx="293.1" cy="30.0" r="4" fill="#ef6c00"><title>Solana-Altabella_2025 · CL: 1.97 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vaddady_2024 · CL</text><circle cx="422.3" cy="46.0" r="4" fill="#ef6c00"><title>Vaddady_2024 · CL: 4.61 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -109,5 +99,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquizartinib%5D&body=Drug%3A%20quizartinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quizartinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquizartinib%5D&body=Drug%3A%20quizartinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quizartinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:30 UTC</sub>

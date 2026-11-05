@@ -123,13 +123,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Dapsone_Vage1994_PD_methgb`. <https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Vage1994_PD_methgb>
+**This record:** Pharmacolibrary, model `Dapsone_Vage1994_PD_methgb`. <https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Vage1994_PD_methgb>
 
 ```bibtex
 @misc{pharmacolibrary_DapsoneVage1994PDmethgb,
   title  = {{Pharmacolibrary model Dapsone_Vage1994_PD_methgb}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Vage1994_PD_methgb},
 }
 ```
@@ -143,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapsone%5D%20pd_Vage_1994_MetHgb&body=Drug%3A%20dapsone%0ARecord%3A%20pd_Vage_1994_MetHgb%0APaper%3A%20Vage_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapsone/pd_Vage_1994_MetHgb%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapsone%5D%20pd_Vage_1994_MetHgb&body=Drug%3A%20dapsone%0ARecord%3A%20pd_Vage_1994_MetHgb%0APaper%3A%20Vage_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapsone/pd_Vage_1994_MetHgb%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [dapsone](drugs/drug_dapsone/)</sub>

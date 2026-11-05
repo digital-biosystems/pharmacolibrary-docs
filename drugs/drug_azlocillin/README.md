@@ -31,21 +31,9 @@ Azlocillin is an extended-spectrum penicillin antibiotic used to treat bacterial
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 5.46 ‡ | L/h | 1.3 mL/min/kg | anuric intensive care patients | ? | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Krupp_1990_reference](drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) |
-| CL | CL | 5.46 ‡ | L/h | 1.3 mL/min/kg | dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Millart_1984_reference](drugs/drug_azlocillin/Azlocillin_Millart1984_reference.md) |
-| CL | CL | 5.46 ‡ | L/h | 1.3 mL/min/kg | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pacifici_2010_reference](drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md) |
-| CL | CL | — | L/h | 1.869 ml/sec | healthy persons |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Modr_1982_reference](drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) |
-| V | V | 11.34 | L | 11.34 l | healthy persons |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Modr_1982_reference](drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) |
-| V | V | 25.21 | L | 25.2068 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pacifici_2010_reference](drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md) |
-| V | V | 28.5 | L | 28.5 l | anuric intensive care patients | ? | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Krupp_1990_reference](drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) |
-| t½ | t1/2z | 0.7 | h | 42 min | dogs |  | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Millart_1984_reference](drugs/drug_azlocillin/Azlocillin_Millart1984_reference.md) |
-| t½ | t1/2z | 3.647 | h | 218.8 min | anuric intensive care patients | ? | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Krupp_1990_reference](drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Krupp_1990 · CL ·/kg</text><circle cx="448.0" cy="30.0" r="4" fill="#ef6c00"><title>Krupp_1990 · CL ·/kg: 5.46 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Millart_1984 · CL ·/kg</text><circle cx="448.0" cy="46.0" r="4" fill="#ef6c00"><title>Millart_1984 · CL ·/kg: 5.46 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Pacifici_2010 · CL ·/kg</text><circle cx="448.0" cy="62.0" r="4" fill="#2e7d32"><title>Pacifici_2010 · CL ·/kg: 5.46 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Modr_1982 · V</text><circle cx="209.1" cy="30.0" r="4" fill="#ef6c00"><title>Modr_1982 · V: 11.34 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Pacifici_2010 · V</text><circle cx="330.5" cy="46.0" r="4" fill="#2e7d32"><title>Pacifici_2010 · V: 25.21 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Krupp_1990 · V</text><circle cx="349.2" cy="62.0" r="4" fill="#ef6c00"><title>Krupp_1990 · V: 28.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -142,5 +130,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazlocillin%5D&body=Drug%3A%20azlocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azlocillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazlocillin%5D&body=Drug%3A%20azlocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azlocillin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:53 UTC</sub>

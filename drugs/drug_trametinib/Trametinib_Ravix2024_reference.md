@@ -191,13 +191,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Ravix A, Bandiera C, Cardoso E, Lata-Pedreira A, Chtioui H, Decosterd LA et al. Population Pharmacokinetics of Trametinib and Impact of Nonadherence on Drug Exposure in Oncology Patients as Part of the Optimizing Oral Targeted Anticancer Therapies Study. Cancers 16(12) (2024). [doi:10.3390/cancers16122193](https://doi.org/10.3390/cancers16122193)
 
-**This record:** Pharmacolibrary v26.09, model `Trametinib_Ravix2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trametinib/Trametinib_Ravix2024_reference>
+**This record:** Pharmacolibrary, model `Trametinib_Ravix2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trametinib/Trametinib_Ravix2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TrametinibRavix2024reference,
   title  = {{Pharmacolibrary model Trametinib_Ravix2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_trametinib/Trametinib_Ravix2024_reference},
   note   = {Parameters from doi:10.3390/cancers16122193},
 }
@@ -216,5 +215,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D%20Trametinib_Ravix2024_reference&body=Drug%3A%20trametinib%0ARecord%3A%20Trametinib_Ravix2024_reference%0APaper%3A%20Ravix_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/Trametinib_Ravix2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 08:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D%20Trametinib_Ravix2024_reference&body=Drug%3A%20trametinib%0ARecord%3A%20Trametinib_Ravix2024_reference%0APaper%3A%20Ravix_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/Trametinib_Ravix2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 08:27 UTC</sub>

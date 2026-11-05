@@ -22,21 +22,9 @@ Dulaglutide is a GLP-1 analogue anti-diabetic medicine used to lower blood gluco
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 9.66 ‡ | L/h | 2.3 ml kg À1 min À1 | review reference | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ng_2018_reference](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) |
-| CL | CL | 12.3 | L/h | 12.3 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Admiraal_2023_reference](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) |
-| CL | CL/F | 1.05 | L/h | 1.05 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2024_reference](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) |
-| CL | CL/F | 9.1 | L/h | 9.1 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Min_2025_reference](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) |
-| V | V | 10 | L | 10.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Admiraal_2023_reference](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) |
-| V | V/F | 7.77 ‡ | L | 111.0 ml kg À1 | review reference | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ng_2018_reference](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) |
-| V | V/F | 20 | L | 20.0 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2024_reference](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) |
-| V | V/F | 28.3 | L | 28.3 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Min_2025_reference](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) |
-| ka | kabs | 0.38 | 1/h | 0.38 h−1 | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2024_reference](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ng_2018 · CL ·/kg</text><circle cx="362.4" cy="30.0" r="4" fill="#2e7d32"><title>Ng_2018 · CL ·/kg: 9.66 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Admiraal_2023 · CL</text><circle cx="380.7" cy="46.0" r="4" fill="#2e7d32"><title>Admiraal_2023 · CL: 12.3 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yu_2024 · CL/F</text><circle cx="193.7" cy="62.0" r="4" fill="#ef6c00"><title>Yu_2024 · CL/F: 1.05 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Min_2025 · CL/F</text><circle cx="357.8" cy="78.0" r="4" fill="#ef6c00"><title>Min_2025 · CL/F: 9.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Admiraal_2023 · V</text><circle cx="365.0" cy="30.0" r="4" fill="#2e7d32"><title>Admiraal_2023 · V: 10 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ng_2018 · V/F ·/kg</text><circle cx="345.8" cy="46.0" r="4" fill="#2e7d32"><title>Ng_2018 · V/F ·/kg: 7.77 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yu_2024 · V/F</text><circle cx="417.7" cy="62.0" r="4" fill="#ef6c00"><title>Yu_2024 · V/F: 20 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Min_2025 · V/F</text><circle cx="444.1" cy="78.0" r="4" fill="#ef6c00"><title>Min_2025 · V/F: 28.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -175,5 +163,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdulaglutide%5D&body=Drug%3A%20dulaglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dulaglutide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 09:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdulaglutide%5D&body=Drug%3A%20dulaglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dulaglutide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 09:17 UTC</sub>

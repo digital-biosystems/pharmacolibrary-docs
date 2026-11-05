@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Huang_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Huang2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absolute bioavailability and lag time were left at default values instead of using explicit estimates from the study.
+> This record was reviewed on 2026-10-22 14:34 UTC (Needs review), but the paper was screened again on 2026-11-04 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Huang2019_reference" status="needs_review" stale="false" population="Chinese patients with hypertension" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Huang2019_reference" status="extracted" stale="true" population="Chinese patients with hypertension" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymorphism, Gender and Triglyceride on the Pharmacokinetics of Telmisartan in Chinese Patients with Hypertension: A Population Pharmacokinetic Analysis. European journal of drug metabolism and pharmacokinetics 44(6):797–806 (2019).
@@ -17,7 +17,7 @@ Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymo
 
 ## Population and dosing
 
-**Population:** Chinese patients with hypertension · age group adult · n = &gt;=58.
+**Population:** Chinese patients with hypertension · condition hypertension · age group adult · n = 58.
 
 **Dosing:** 80 mg, oral, multiple, every 24 h.
 
@@ -25,24 +25,21 @@ Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymo
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted, plus 1 covariate effect.  
+**Parameters:** 6 extracted, plus 1 covariate effect.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference.svg" alt="Telmisartan_Huang2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL (L/h) | CL | 25.1 | L/h |
-| V 2 (L) | V2 | 30 | L |
-| V 3 (L) | V3 | 958 | L |
-| Q (L/h) | Q | 14.6 | L/h |
-| Ka (h -1 ) | kabs | 0.571 | h -1 |
-| ugt1a1_aa_on | ugt1a1_aa_on | 0.472 |  |
-| F1 (%) | Fab | 51.1 |  |
-| mean volume of distribution after infusion | V | 460.0 | l |
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| CL (L/h) | CL | 25.1 | L/h | 14.9 (None% RSE) |
+| V2 (L) | V2 | 30 | L | 88 (None% RSE) |
+| V3 (L) | V3 | 958 | L |  |
+| Q (L/h) | Q | 14.6 | L/h |  |
+| Ka (h-1) | kabs | 0.571 | h-1 |  |
+| ugt1a1_aa_on_f1 | ugt1a1_aa_on_f1 | 0.481 |  |  |
+| volume of distribution | V | 500.0 | L |  |
 
 ## Caveats
 
@@ -50,7 +47,7 @@ Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,26 +61,25 @@ Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymo
 
 The model builder substituted library defaults for absolute bioavailability and lag time, which are not supported by this paper's data. The record contains a covariate effect, but only the reference individual was simulated, leaving that effect unverified. A second reader disagreed with the recorded values for clearance, bioavailability, absorption rate constant, intercompartmental clearance, and both peripheral volumes of distribution. Extracted — telmisartan: CL 25.1 L/h, V2 30 L, V3 958 L, Q 14.6 L/h, kabs 0.571 h -1, Fab 51.1, V 460 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 25.1, the second reading 8.2; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 25.1 | L/h | 6.972e-06 | m3/s | l/h | exact (1) | tab_2:row2:col1, tab_2:row2:col2, tab_2:row2:col3 |
-| V 2 (L) | `Q64` · V2 | 30 | L | 0.03 | m3 | l | space_fold (0.95) | tab_2:row3:col1, tab_2:row3:col2 |
-| V 3 (L) | `Q77` · V3 | 958 | L | 0.958 | m3 | l | space_fold (0.95) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col3 |
-| Q (L/h) | `Q30` · Q | 14.6 | L/h | 4.056e-06 | m3/s | l/h | exact (1) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3 |
-| Ka (h -1 ) | `Q49` · kabs | 0.571 | h -1 | 0.0001586 | 1/s | 1/h | exact (1) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3 |
-| ugt1a1_aa_on | `Q900` · ugt1a1_aa_on | 0.472 |  |  |  |  |  | tab_2:row9:col2 |
-| F1 (%) | `Q40` · Fab | 51.1 |  |  |  |  | exact (1) | tab_2:row14:col1, tab_2:row14:col2, tab_2:row14:col3 |
-| mean volume of distribution after infusion | `Q61` · V | 460.0 | l | 0.46 | m3 | L | review_gapfill (0.7) | Deppe_2010:review |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| CL (L/h) | `Q22` · CL | 25.1 | L/h | 6.972e-06 | m3/s | l/h | exact (1) | Huang_2019_table_p5_2:row0:col1, Huang_2019_table_p5_2:row0:col2 | 14.9 (None% RSE) |
+| V2 (L) | `Q64` · V2 | 30 | L | 0.03 | m3 | l | exact (1) | Huang_2019_table_p5_2:row1:col1, Huang_2019_table_p5_2:row1:col2 | 88 (None% RSE) |
+| V3 (L) | `Q77` · V3 | 958 | L | 0.958 | m3 | l | exact (1) | Huang_2019_table_p5_2:row2:col1, Huang_2019_table_p5_2:row2:col2 |  |
+| Q (L/h) | `Q30` · Q | 14.6 | L/h | 4.056e-06 | m3/s | l/h | exact (1) | Huang_2019_table_p5_2:row3:col1, Huang_2019_table_p5_2:row3:col2 |  |
+| Ka (h-1) | `Q49` · kabs | 0.571 | h-1 | 0.0001586 | 1/s | 1/h | exact (1) | Huang_2019_table_p5_2:row4:col1, Huang_2019_table_p5_2:row4:col2 |  |
+| ugt1a1_aa_on_f1 | `Q900` · ugt1a1_aa_on_f1 | 0.481 |  |  |  |  |  | Huang_2019_table_p5_2:row7:col1, Huang_2019_table_p5_2:row7:col2 |  |
+| volume of distribution | `Q61` · V | 500.0 | L | 0.5 | m3 | L | review_gapfill (0.7) | Jeong_2025:review |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -92,55 +88,48 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
+- table section iiv: 'CL (%)' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'V2 (%)' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'F1 (%)' routed out of structural estimates ('Inter-individual variability')
+- table section residual_error: 'CV (%)' routed out of structural estimates ('Residual variability')
+- table representations disagree for 'CL (L/h)'; source reconciliation required
+- table representations disagree for 'V2 (L)'; source reconciliation required
+- table representations disagree for 'V3 (L)'; source reconciliation required
+- table representations disagree for 'Q (L/h)'; source reconciliation required
+- table representations disagree for 'Ka (h-1)'; source reconciliation required
+- table representations disagree for 'TG on CL'; source reconciliation required
+- table representations disagree for 'GNDA on CL'; source reconciliation required
+- table representations disagree for 'UGT1A1 AA on F1'; source reconciliation required
+- dropped duplicate Q22 ('TG on CL', value '21.2') — already have one for this compound
 - dropped duplicate Q22 ('GNDA on CL', value '0.67') — already have one for this compound
+- covariate level 'UGT1A1 AA on F1' → Q900:ugt1a1_aa_on_f1 = 0.481 (linear_fractional on Q22)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q64 (V2 (L)); Q30 (Q (L/h))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=telmisartan
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- pharmacogenetic covariate 'ugt1a1_aa_on_f1' (ugt1a1) — PGx domain
+- status held at "Needs review" — not promoted
+- gap-filled Q61 (V) from Jeong_2025's review values (primary lacked it)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - covariate level 'UGT1A1 AA on' → Q900:ugt1a1_aa_on = 0.472 (linear_fractional on Q22)
 - dropped duplicate Q22 ('CL (%)', value '14.9') — already have one for this compound
 - dropped duplicate Q64 ('V 2 (%)', value '88') — already have one for this compound
 - dropped unlinked row (NIL): 'CV (%)' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=telmisartan
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - gap-filled Q61 (V) from Deppe_2010's review values (primary lacked it)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_2:row2:col4 = '(20.14, 28.95)'
-- unparsed cell tab_2:row3:col3 = '30. 2'
-- unparsed cell tab_2:row3:col4 = '(18.87, 46.60)'
-- unparsed cell tab_2:row4:col4 = '(259.98, 2219.15)'
-- unparsed cell tab_2:row5:col4 = '(9.71, 20.25)'
-- unparsed cell tab_2:row6:col4 = '(0.464, 0.857)'
-- unparsed cell tab_2:row8:col4 = '(0.507, 0.910)'
-- unparsed cell tab_2:row9:col1 = '0.481 17'
-- unparsed cell tab_2:row9:col3 = '(0.330, 0.646)'
-- unparsed cell tab_2:row12:col4 = '(1.6, 39.1)'
-- unparsed cell tab_2:row13:col4 = '(15.9, 135.0)'
-- unparsed cell tab_2:row14:col4 = '(26.0,59.6)'
-- unparsed cell tab_2:row16:col2 = '5%'
-- unparsed cell tab_2:row16:col4 = '(41.5, 51.9)'
+- table tab_2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
+| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
 
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].value` | 25.1 | 8.2 | mismatch |
-| `gpt-oss-120b` | `parameters[f1].value` | 51.1 | 14 | mismatch |
-| `gpt-oss-120b` | `parameters[ka].value` | 0.571 | 9.4 | mismatch |
-| `gpt-oss-120b` | `parameters[q].value` | 14.6 | 12.6 | mismatch |
-| `gpt-oss-120b` | `parameters[v 2].value` | 30 | 20.9 | mismatch |
-| `gpt-oss-120b` | `parameters[v 3].value` | 958 | 21.7 | mismatch |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 500.0 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -152,21 +141,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Deppe_2010:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 25.1 | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Huang_2019_table_p5_2:row0:col1', 'Huang_2019_table_p5_2:row0:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Huang_2019_table_p5_2:row3:col1', 'Huang_2019_table_p5_2:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Huang_2019_table_p5_2:row4:col1', 'Huang_2019_table_p5_2:row4:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Jeong_2025:review'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Huang_2019_table_p5_2:row1:col1', 'Huang_2019_table_p5_2:row1:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['Huang_2019_table_p5_2:row2:col1', 'Huang_2019_table_p5_2:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 25.1 | ['Huang_2019_table_p5_2:row0:col1', 'Huang_2019_table_p5_2:row0:col2'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 25.1 L/h | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 460 L | ['Deppe_2010:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 30 L | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 25.1 L/h | ['Huang_2019_table_p5_2:row0:col1', 'Huang_2019_table_p5_2:row0:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 500 L | ['Jeong_2025:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 30 L | ['Huang_2019_table_p5_2:row1:col1', 'Huang_2019_table_p5_2:row1:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -232,13 +221,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymorphism, Gender and Triglyceride on the Pharmacokinetics of Telmisartan in Chinese Patients with Hypertension: A Population Pharmacokinetic Analysis. European journal of drug metabolism and pharmacokinetics 44(6):797–806 (2019). [doi:10.1007/s13318-019-00567-7](https://doi.org/10.1007/s13318-019-00567-7)
 
-**This record:** Pharmacolibrary v26.09, model `Telmisartan_Huang2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Huang2019_reference>
+**This record:** Pharmacolibrary, model `Telmisartan_Huang2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Huang2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TelmisartanHuang2019reference,
   title  = {{Pharmacolibrary model Telmisartan_Huang2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Huang2019_reference},
   note   = {Parameters from doi:10.1007/s13318-019-00567-7},
 }
@@ -257,5 +245,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Huang2019_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Huang2019_reference%0APaper%3A%20Huang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Huang2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-27 13:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Huang2019_reference&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Huang2019_reference%0APaper%3A%20Huang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Huang2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 16:53 UTC</sub>

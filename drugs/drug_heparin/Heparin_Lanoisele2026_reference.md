@@ -192,13 +192,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Lanoiselée J, Gibert A, Gouin-Thibault I, Mansour A, Pontis A, Morizot C et al. Optimising protamine dosing for heparin reversal after cardiopulmonary bypass: a population pharmacokinetic-pharmacodynamic study. British journal of anaesthesia 136(3):847–855 (2026). [doi:10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057)
 
-**This record:** Pharmacolibrary v26.09, model `Heparin_Lanoisele2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_heparin/Heparin_Lanoisele2026_reference>
+**This record:** Pharmacolibrary, model `Heparin_Lanoisele2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_heparin/Heparin_Lanoisele2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_HeparinLanoisele2026reference,
   title  = {{Pharmacolibrary model Heparin_Lanoisele2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_heparin/Heparin_Lanoisele2026_reference},
   note   = {Parameters from doi:10.1016/j.bja.2025.11.057},
 }
@@ -213,5 +212,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bheparin%5D%20Heparin_Lanoisele2026_reference&body=Drug%3A%20heparin%0ARecord%3A%20Heparin_Lanoisele2026_reference%0APaper%3A%20Lanoisel%C3%A9e_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_heparin/Heparin_Lanoisele2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bheparin%5D%20Heparin_Lanoisele2026_reference&body=Drug%3A%20heparin%0ARecord%3A%20Heparin_Lanoisele2026_reference%0APaper%3A%20Lanoisel%C3%A9e_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_heparin/Heparin_Lanoisele2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:10 UTC</sub>

@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Piwnica-Worms_1995 \u00b7 PD Tc-SESTAMIBI cellular accumulation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Tc-SESTAMIBI cellular accumulation — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# Tc-SESTAMIBI cellular accumulation — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Vinblastine (concentrations from the PK model of Levêque_1996) drives Tc-SESTAMIBI cellular accumulation (in fmol (mg of protein)-1 (nM0)-1): direct sigmoid Emax (Hill) effect.
+**As extracted:** Vinblastine (concentrations from the PK model of Chong_1988) drives Tc-SESTAMIBI cellular accumulation (in fmol (mg of protein)-' (nM,)-'): direct sigmoid Emax (Hill) effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -38,8 +38,8 @@ Piwnica-Worms D et al., Characterization of multidrug resistanc…, Biochemistry
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` ·  | 13 | pM | llm | Piwnica-Worms_1995:pdv3 |
-| PD (effect) | Cmax | `Q323` ·  | 72 | fmol (mg of protein)-1 (nM0)-1 | direction | Piwnica-Worms_1995:pdv3 |
-| PD (effect) | Hill coefficient | `Q325` ·  | 1.1 |  | llm | Piwnica-Worms_1995:pdv3 |
+| model term | Cmax | `Q900` ·  | 72 | fmol (mg of protein)-' (nM,)-' | llm | Piwnica-Worms_1995:pdv3 |
+| PD (effect) | gamma | `Q325` ·  | 1.1 |  | llm | Piwnica-Worms_1995:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,6 +85,28 @@ Advisory:
 - exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `einfracz:gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `parameters[Q32]` |  | 72 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 72 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
@@ -103,13 +125,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi>
+**This record:** Pharmacolibrary, model `Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi>
 
 ```bibtex
 @misc{pharmacolibrary_VinblastinePiwnicaWorms1995PDtcsestamibi,
   title  = {{Pharmacolibrary model Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi},
 }
 ```
@@ -123,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20pd_Piwnica_Worms_1995_Tc_SESTAMIBI&body=Drug%3A%20vinblastine%0ARecord%3A%20pd_Piwnica_Worms_1995_Tc_SESTAMIBI%0APaper%3A%20Piwnica-Worms_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/pd_Piwnica_Worms_1995_Tc_SESTAMIBI%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20pd_Piwnica_Worms_1995_Tc_SESTAMIBI&body=Drug%3A%20vinblastine%0ARecord%3A%20pd_Piwnica_Worms_1995_Tc_SESTAMIBI%0APaper%3A%20Piwnica-Worms_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/pd_Piwnica_Worms_1995_Tc_SESTAMIBI%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [vinblastine](drugs/drug_vinblastine/)</sub>

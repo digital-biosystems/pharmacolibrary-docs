@@ -207,13 +207,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Abbasi MY, Chaijamorn W, Wiwattanawongsa K, Charoensareerat T, Doungngern T. Recommendations of Gentamicin Dose Based on Different Pharmacokinetic/Pharmacodynamic Targets for Intensive Care Adult Patients: A Redefining Approach. Clinical pharmacology : advances and applications 15:67–76 (2023). [doi:10.2147/CPAA.S417298](https://doi.org/10.2147/CPAA.S417298)
 
-**This record:** Pharmacolibrary v26.09, model `Gentamicin_Abbasi2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference>
+**This record:** Pharmacolibrary, model `Gentamicin_Abbasi2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_GentamicinAbbasi2023reference,
   title  = {{Pharmacolibrary model Gentamicin_Abbasi2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference},
   note   = {Parameters from doi:10.2147/CPAA.S417298},
 }
@@ -232,5 +231,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgentamicin%5D%20Gentamicin_Abbasi2023_reference&body=Drug%3A%20gentamicin%0ARecord%3A%20Gentamicin_Abbasi2023_reference%0APaper%3A%20Abbasi_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 22:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgentamicin%5D%20Gentamicin_Abbasi2023_reference&body=Drug%3A%20gentamicin%0ARecord%3A%20Gentamicin_Abbasi2023_reference%0APaper%3A%20Abbasi_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 22:09 UTC</sub>

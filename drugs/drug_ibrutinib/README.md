@@ -31,18 +31,9 @@ Ibrutinib is a Bruton's tyrosine kinase inhibitor used to treat B-cell blood can
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 1100 | L/h | 1100 L/h | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_previous_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_previous_population_pk_model.md) |
-| CL | CL/F | 1123 | L/h | 1123 L/h | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_final_updated_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model.md) |
-| V | V/F | 7286 | L | 7286.0 L | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_final_updated_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model.md) |
-| V | V/F | 7286 | L | 7286.0 L | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_previous_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_previous_population_pk_model.md) |
-| ka | kabs | 0.451 | 1/h | 0.451 h−1 | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_previous_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_previous_population_pk_model.md) |
-| ka | kabs | 0.719 | 1/h | 0.719 h−1 | patients with previously untreated mantle cell lymphoma | 259 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_final_updated_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gisleskog_2025 · CL/F</text><circle cx="204.5" cy="30.0" r="4" fill="#ef6c00"><title>Gisleskog_2025 · CL/F: 1100 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gisleskog_2025 · CL/F</text><circle cx="207.6" cy="46.0" r="4" fill="#ef6c00"><title>Gisleskog_2025 · CL/F: 1123 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gisleskog_2025 · V/F</text><circle cx="491.9" cy="30.0" r="4" fill="#ef6c00"><title>Gisleskog_2025 · V/F: 7286 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gisleskog_2025 · V/F</text><circle cx="491.9" cy="46.0" r="4" fill="#ef6c00"><title>Gisleskog_2025 · V/F: 7286 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -144,5 +135,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibrutinib%5D&body=Drug%3A%20ibrutinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibrutinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibrutinib%5D&body=Drug%3A%20ibrutinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibrutinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:23 UTC</sub>

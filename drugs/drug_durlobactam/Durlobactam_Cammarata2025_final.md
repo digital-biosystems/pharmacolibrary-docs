@@ -9,7 +9,7 @@
 
 > Durlobactam record rejected because the HABP covariate produced a negative clearance ratio of -0.424, which is physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Cammarata2025_final" status="rejected" stale="false" population="adults" measured-compound="durlobactam" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Cammarata2025_final" status="rejected" stale="false" population="adults" measured-compound="durlobactam" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Population pharmacokinetic analyses for sulbactam-durlobactam using Phase 1, 2, and 3 data. Antimicrobial agents and chemotherapy 69(1):e0048524 (2025).
@@ -19,15 +19,15 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 
 **Population:** adults · condition infection · age group adult · n = ?432.
 
-**Dosing:** 1000 mg, iv, multiple.
+**Dosing:** 1000, 1500 mg, iv, multiple, every 6 h.
 
 **Dosed compound ≠ measured compound:** dosed sulbactam-durlobactam, measured durlobactam.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 3-compartment; no model was built for this record.  
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 10 extracted, plus 1 covariate effect.  
+**Parameters:** 9 extracted, plus 1 covariate effect.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -40,13 +40,12 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 | Q (L/h) | Q | 4.43 | L/h | 3.77 |
 | Vp (L) | V2 | 5.83 | L | 3.44 |
 | FE (%) | fe | 0.479 | % |  |
-| V1INFTYPN4 (bacteremia) | Vnorm | 3.32 | bacteremia | 53.7 |
-| V1WTKG1 | V | 0.521 | L/kg | 27.0 |
-| CLINFTYPN1 (HABP) | CL_ratio | -0.424 | HABP | 19.4 |
-| CLINFTYPN5 (AP) | equation variable | -0.382 | AP | 28.8 |
-| V3INFTYPN1 (HABP) | V3 | 0.836 | HABP | 25.3 |
-| V3INFTYPN2 (VABP) | V3/F | 1.43 | VABP | 19.5 |
-| theta_q26_weight_power | theta_q26_weight_power | 0.875 |  | 12 |
+| V1INFTYPN3 (cUTI) | V | 0.343 | L | 62.3 |
+| BCLCRNLT30 | CLR | -0.58 |  | 8.15 |
+| CLINFTYPN1 (HABP) | equation variable | -0.424 | HABP | 19.4 |
+| V3INFTYPN2 (VABP) | V3/F | 1.43 | L | 19.5 |
+| V3INFTYPN4 (bacteremia) | V3 | 1.85 | L | 44.7 |
+| theta_clr_weight_power | theta_clr_weight_power | 0.875 |  | 12 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -74,14 +73,13 @@ The covariate effect for high arterial blood pressure (HABP) assigned a value of
 | Vc (L) | `Q63` · V1 | 12.5 | L | 0.0125 | m3 | l | 2.93 | exact (1) | T1:row5:col1, T1:row28:col1 |
 | Q (L/h) | `Q30` · Q | 4.43 | L/h | 1.231e-06 | m3/s | l/h | 3.77 | exact (1) | T1:row6:col1, T1:row29:col1 |
 | Vp (L) | `Q64` · V2 | 5.83 | L | 0.00583 | m3 | l | 3.44 | exact (1) | T1:row7:col1, T1:row30:col1 |
-| FE (%) | `Q44` · fe | 0.479 | % |  |  | % |  | exact (1) | T1:row8:col1, T1:row31:col1 |
-| V1INFTYPN4 (bacteremia) | `Q352` · Vnorm | 3.32 | bacteremia |  |  | bacteremia | 53.7 | llm (0.6) | T1:row13:col1 |
-| V1WTKG1 | `Q61` · V | 0.521 | L/kg | 0.03647 | m3 | L | 27.0 | llm (0.6) | T1:row14:col1 |
-| CLINFTYPN1 (HABP) | `Q31` · CL_ratio | -0.424 | HABP |  |  | h·abp | 19.4 | llm (0.6) | T1:row32:col1 |
-| CLINFTYPN5 (AP) | `Q900` · equation variable | -0.382 | AP |  |  | ap | 28.8 | llm (0.6) | T1:row36:col1 |
-| V3INFTYPN1 (HABP) | `Q77` · V3 | 0.836 | HABP |  |  | h·abp | 25.3 | llm (0.6) | T1:row38:col1 |
-| V3INFTYPN2 (VABP) | `Q78` · V3/F | 1.43 | VABP |  |  | vabp | 19.5 | llm (0.6) | T1:row39:col1 |
-| theta_q26_weight_power | `Q900` · theta_q26_weight_power | 0.875 |  |  |  |  | 12 |  | T1:row4:col1, T1:row27:col1 |
+| FE (%) | `Q44` · fe | 0.479 | % | 0.00479 |  | % |  | exact (1) | T1:row8:col1, T1:row31:col1 |
+| V1INFTYPN3 (cUTI) | `Q61` · V | 0.343 | L | 0.000343 | m3 | L | 62.3 | llm (0.6) | T1:row12:col1 |
+| BCLCRNLT30 | `Q26` · CLR | -0.58 |  |  |  |  | 8.15 | llm (0.6) | T1:row16:col1, T1:row44:col1 |
+| CLINFTYPN1 (HABP) | `Q900` · equation variable | -0.424 | HABP |  |  | h·abp | 19.4 | llm (0.6) | T1:row32:col1 |
+| V3INFTYPN2 (VABP) | `Q78` · V3/F | 1.43 | L | 0.00143 | m3 | L | 19.5 | llm (0.6) | T1:row39:col1 |
+| V3INFTYPN4 (bacteremia) | `Q77` · V3 | 1.85 | L | 0.00185 | m3 | L | 44.7 | llm (0.6) | T1:row41:col1 |
+| theta_clr_weight_power | `Q900` · theta_clr_weight_power | 0.875 |  |  |  |  | 12 |  | T1:row4:col1, T1:row27:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -129,28 +127,28 @@ The covariate effect for high arterial blood pressure (HABP) assigned a value of
 - dropped unlinked row (NIL): 'CLEASIAFL1' — extend the ontology if this is a real PK parameter (source ['T1:row9:col1'])
 - dropped unlinked row (NIL): 'CLWTKG1' — extend the ontology if this is a real PK parameter (source ['T1:row10:col1', 'T1:row37:col1'])
 - dropped unlinked row (NIL): 'V1INFTYPN1&2 (HABP and VABP)' — extend the ontology if this is a real PK parameter (source ['T1:row11:col1'])
-- unit_dimension_unknown: 'cUTI' (V1)
-- dropped duplicate Q63 ('V1INFTYPN3 (cUTI)', value '0.343') — already have one for this compound
-- unit_dimension_unknown: 'bacteremia' (Vnorm)
-- dropped unlinked row (NIL): 'V1EASIAFL1' — extend the ontology if this is a real PK parameter (source ['T1:row15:col1'])
-- dropped unlinked row (NIL): 'BCLCRNLT30' — extend the ontology if this is a real PK parameter (source ['T1:row16:col1', 'T1:row44:col1'])
-- unit_dimension_unknown: 'HABP' (CL_ratio)
+- unit_dimension_unknown: 'cUTI' (V)
+- dropped unlinked row (NIL): 'V1INFTYPN4 (bacteremia)' — extend the ontology if this is a real PK parameter (source ['T1:row13:col1'])
+- dropped unlinked row (NIL): 'V1WTKG1' — extend the ontology if this is a real PK parameter (source ['T1:row14:col1'])
+- dropped duplicate Q63 ('V1EASIAFL1', value '-0.263') — already have one for this compound
+- unit_dimension_unknown: 'HABP' (equation variable)
 - dropped unlinked row (NIL): 'CLINFTYPN2 (VABP)' — extend the ontology if this is a real PK parameter (source ['T1:row33:col1'])
 - dropped unlinked row (NIL): 'CLINFTYPN3 (cUTI)' — extend the ontology if this is a real PK parameter (source ['T1:row34:col1'])
 - dropped unlinked row (NIL): 'CLINFTYPN4 (bacteremia)' — extend the ontology if this is a real PK parameter (source ['T1:row35:col1'])
-- unit_dimension_unknown: 'AP' (equation variable)
-- unit_dimension_unknown: 'HABP' (V3)
+- dropped unlinked row (NIL): 'CLINFTYPN5 (AP)' — extend the ontology if this is a real PK parameter (source ['T1:row36:col1'])
+- dropped unlinked row (NIL): 'V3INFTYPN1 (HABP)' — extend the ontology if this is a real PK parameter (source ['T1:row38:col1'])
 - unit_dimension_unknown: 'VABP' (V3/F)
-- unit_dimension_unknown: 'cUTI' (V3/F)
-- dropped duplicate Q78 ('V3INFTYPN3 (cUTI)', value '0.17') — already have one for this compound
-- dropped unlinked row (NIL): 'V3INFTYPN4 (bacteremia)' — extend the ontology if this is a real PK parameter (source ['T1:row41:col1'])
-- dropped unlinked row (NIL): 'V3INFTYPN5 (AP)' — extend the ontology if this is a real PK parameter (source ['T1:row42:col1'])
+- dropped unlinked row (NIL): 'V3INFTYPN3 (cUTI)' — extend the ontology if this is a real PK parameter (source ['T1:row40:col1'])
+- unit_dimension_unknown: 'bacteremia' (V3)
+- unit_dimension_unknown: 'AP' (V3/F)
+- dropped duplicate Q78 ('V3INFTYPN5 (AP)', value '-0.704') — already have one for this compound
 - dropped duplicate Q77 ('V3WTKG1', value '0.831') — already have one for this compound
-- covariate effect for Q26 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'V1WTKG1' → L/kg (from the popPK convention: "The parameter 'V1WTKG1' represents the covariate effect of body weight (WTKG) on volume of distribution (V1). The paper ")
+- implicit units: 'V1INFTYPN3 (cUTI)' → L (from the popPK convention: 'Parameter V1INFTYPN3 represents a volume of distribution (V). Standard units for population PK volumes are liters (L). T')
+- implicit units: 'BCLCRNLT30' — the LLM proposed '1/h', whose dimension does not fit Q26; left unset
+- implicit units: 'V3INFTYPN2 (VABP)' → L (from the popPK convention: 'Parameter V3INFTYPN2 (VABP) represents the volume of distribution of the second peripheral compartment (V3). Standard un')
+- implicit units: 'V3INFTYPN4 (bacteremia)' → L (from the popPK convention: 'Parameter V3INFTYPN4 (bacteremia) represents the volume of distribution of the second peripheral compartment (V3). Stand')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=durlobactam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
 - model-stage split: 'final model / estimate' is the final model of Cammarata_2025 (paper reports 2 stages: final model / estimate, final model / shrink.); same population, different model-building step
 
@@ -169,24 +167,23 @@ The covariate effect for high arterial blood pressure (HABP) assigned a value of
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 10 |  |
+| C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q31 | fail |  | -0.424 |  |
+| C2_base_sign_Q26 | fail |  | -0.58 |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T1:row3:col1', 'T1:row26:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['T1:row6:col1', 'T1:row29:col1'] |
 | C5_dimension_Q44 | pass | dimensionless |  | ['T1:row8:col1', 'T1:row31:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['T1:row14:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['T1:row12:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['T1:row5:col1', 'T1:row28:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['T1:row7:col1', 'T1:row30:col1'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | HABP | ['T1:row32:col1'] |
-| C5_unit_missing_Q352 | fail | [length] ** 3 | bacteremia | ['T1:row13:col1'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | HABP | ['T1:row38:col1'] |
-| C5_unit_missing_Q78 | fail | [length] ** 3 | VABP | ['T1:row39:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['T1:row41:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 |  | ['T1:row39:col1'] |
+| C5_unit_missing_Q26 | fail | [length] ** 3 / [time] |  | ['T1:row16:col1', 'T1:row44:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.33 L/h | ['T1:row3:col1', 'T1:row26:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 36.5 L | ['T1:row14:col1'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.343 L | ['T1:row12:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 12.5 L | ['T1:row5:col1', 'T1:row28:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 5.83 L | ['T1:row7:col1', 'T1:row30:col1'] |
 
@@ -211,5 +208,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D%20Durlobactam_Cammarata2025_final&body=Drug%3A%20durlobactam%0ARecord%3A%20Durlobactam_Cammarata2025_final%0APaper%3A%20Cammarata_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/Durlobactam_Cammarata2025_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D%20Durlobactam_Cammarata2025_final&body=Drug%3A%20durlobactam%0ARecord%3A%20Durlobactam_Cammarata2025_final%0APaper%3A%20Cammarata_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/Durlobactam_Cammarata2025_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 10:31 UTC</sub>

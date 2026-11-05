@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Belle_2000 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A p
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -36,7 +36,9 @@ Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A p
 | label | parameter | value | unit |
 |---|---|---|---|
 | K M1 (M) | Km | 38.5 | M |
-| Clearance of the S(-) enantiomer | CL | 6.2 | ml/min/kg |
+| 0.03 | CL | 0.03 | l.min−1 |
+| VOLUME OF DISTRIBUTION | V | 6.35 | liters |
+| ka | kabs | 9.76 | h -1 |
 | Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -64,7 +66,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | K M1 (M) | `Q1` · Km | 38.5 | M |  |  | m | llm (0.6) | tab_1:row5:col2, tab_1:row5:col3, tab_1:row5:col4 |
-| Clearance of the S(-) enantiomer | `Q22` · CL | 6.2 | ml/min/kg | 7.233e-06 | m3/s | L/h | review_gapfill (0.7) | Anderson_2015:review |
+| 0.03 | `Q22` · CL | 0.03 | l.min−1 | 5e-07 | m3/s | L/h | review_gapfill (0.7) | Allegaert_2014:review |
+| VOLUME OF DISTRIBUTION | `Q61` · V | 6.35 | liters | 0.00635 | m3 | L | review_gapfill (0.7) | Albert_1984:review |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
 | Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
 
 <details class="legend">
@@ -86,9 +90,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - model-stage split: 'final model' is the final model of Belle_2000 (paper reports 2 stages: base model, final model); same population, different model-building step
-- gap-filled Q22 (CL) from Anderson_2015's review values (primary lacked it)
+- gap-filled Q22 (CL) from Allegaert_2014's review values (primary lacked it)
+- gap-filled Q61 (V) from Albert_1984's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
@@ -127,11 +133,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q1 | fail | [length] | M | ['tab_1:row5:col2', 'tab_1:row5:col3', 'tab_1:row5:col4'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Anderson_2015:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2014:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Albert_1984:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.2 | ['Anderson_2015:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.03 | ['Allegaert_2014:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 26 L/h | ['Anderson_2015:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.8 L/h | ['Allegaert_2014:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.35 L | ['Albert_1984:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,5 +163,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Belle2000_final&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Belle2000_final%0APaper%3A%20Belle_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Belle2000_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-27 13:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Belle2000_final&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Belle2000_final%0APaper%3A%20Belle_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Belle2000_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-27 13:32 UTC</sub>

@@ -172,13 +172,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Nahar S, Kanda S, Chatha U, Odoma VA, Pitliya A, AlEdani EM et al. Current Status of Endothelin Receptor Antagonists in Pulmonary Arterial Hypertension: A Combined Study Results and Pharmacology-Based Review. Cureus 15(7):e42748 (2023). [doi:10.7759/cureus.42748](https://doi.org/10.7759/cureus.42748)
 
-**This record:** Pharmacolibrary v26.09, model `Bosentan_Nahar2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bosentan/Bosentan_Nahar2023_reference>
+**This record:** Pharmacolibrary, model `Bosentan_Nahar2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bosentan/Bosentan_Nahar2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BosentanNahar2023reference,
   title  = {{Pharmacolibrary model Bosentan_Nahar2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bosentan/Bosentan_Nahar2023_reference},
   note   = {Parameters from doi:10.7759/cureus.42748},
 }
@@ -197,5 +196,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbosentan%5D%20Bosentan_Nahar2023_reference&body=Drug%3A%20bosentan%0ARecord%3A%20Bosentan_Nahar2023_reference%0APaper%3A%20Nahar_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bosentan/Bosentan_Nahar2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-30 06:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbosentan%5D%20Bosentan_Nahar2023_reference&body=Drug%3A%20bosentan%0ARecord%3A%20Bosentan_Nahar2023_reference%0APaper%3A%20Nahar_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bosentan/Bosentan_Nahar2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-30 06:40 UTC</sub>

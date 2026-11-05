@@ -22,14 +22,6 @@ Neratinib is a HER2-blocking kinase inhibitor used to treat breast cancer. It is
 |---|---|---|---|---|---|---|
 | neratinib | parent | 557.05 | C30H29ClN6O3 | DrugBank | [9915743](https://pubchem.ncbi.nlm.nih.gov/compound/9915743) | Qi_2023 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 38 | L/h | 38 L/hour | virtual HER2-positive breast cancer patients | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Qi_2023_reference](drugs/drug_neratinib/Neratinib_Qi2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -97,5 +89,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bneratinib%5D&body=Drug%3A%20neratinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_neratinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bneratinib%5D&body=Drug%3A%20neratinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_neratinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:06 UTC</sub>

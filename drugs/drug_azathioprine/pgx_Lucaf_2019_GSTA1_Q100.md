@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Lucaf\u00f2_2019 \u00b7 PGx GSTA1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# GSTA1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# GSTA1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,6 +22,7 @@
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
+- relevance flagged quantitative but no per-genotype θ table reached
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 
@@ -30,14 +31,21 @@ Lucafò M et al., Azathioprine Biotransformation in Young…, Genes (2019)
   ·  DOI: [10.3390/genes10040277](https://doi.org/10.3390/genes10040277)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-_All readers agree on the compared fields of this PGx record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `applies_to` | pk | unknown | mismatch |
+| `gpt-oss-120b` | `mechanism` | metabolism | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -68,5 +76,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20pgx_Lucaf_2019_GSTA1_Q100&body=Drug%3A%20azathioprine%0ARecord%3A%20pgx_Lucaf_2019_GSTA1_Q100%0APaper%3A%20Lucaf%C3%B2_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/pgx_Lucaf_2019_GSTA1_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20pgx_Lucaf_2019_GSTA1_Q100&body=Drug%3A%20azathioprine%0ARecord%3A%20pgx_Lucaf_2019_GSTA1_Q100%0APaper%3A%20Lucaf%C3%B2_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/pgx_Lucaf_2019_GSTA1_Q100%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [azathioprine](drugs/drug_azathioprine/)</sub>

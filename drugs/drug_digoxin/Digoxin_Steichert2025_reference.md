@@ -190,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Steichert M, Cawello W, Burckhardt BB, Suessenbach FK, Laeer S, On Behalf Of The Lena Consortium. Angiotensin II/Angiotensin I Ratio as a New Pharmacodynamic Parameter for Population Modelling in Healthy Adults and Children with Heart Failure Treated with Enalapril. Pharmaceutics 17(10):1345 (2025). [doi:10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345)
 
-**This record:** Pharmacolibrary v26.09, model `Digoxin_Steichert2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Steichert2025_reference>
+**This record:** Pharmacolibrary, model `Digoxin_Steichert2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Steichert2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DigoxinSteichert2025reference,
   title  = {{Pharmacolibrary model Digoxin_Steichert2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_digoxin/Digoxin_Steichert2025_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics17101345},
 }
@@ -215,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdigoxin%5D%20Digoxin_Steichert2025_reference&body=Drug%3A%20digoxin%0ARecord%3A%20Digoxin_Steichert2025_reference%0APaper%3A%20Steichert_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_digoxin/Digoxin_Steichert2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 02:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdigoxin%5D%20Digoxin_Steichert2025_reference&body=Drug%3A%20digoxin%0ARecord%3A%20Digoxin_Steichert2025_reference%0APaper%3A%20Steichert_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_digoxin/Digoxin_Steichert2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 02:08 UTC</sub>

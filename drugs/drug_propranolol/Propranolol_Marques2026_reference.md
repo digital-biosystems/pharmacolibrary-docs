@@ -138,13 +138,12 @@ Marques L, Vale N. Model-Based Virtual Clinical Trial Reveals Renal Impairment a
 
 **Source paper** (the parameters are its): Marques L, Vale N. Model-Based Virtual Clinical Trial Reveals Renal Impairment and Body Size as Key Determinants of Pharmacokinetic Variability and Drug-Drug Interaction Risk in Propranolol Therapy. Pharmaceutics 18(6) (2026). [doi:10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636)
 
-**This record:** Pharmacolibrary v26.09, model `Propranolol_Marques2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Marques2026_reference>
+**This record:** Pharmacolibrary, model `Propranolol_Marques2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Marques2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PropranololMarques2026reference,
   title  = {{Pharmacolibrary model Propranolol_Marques2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Marques2026_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics18060636},
 }
@@ -159,5 +158,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Marques2026_reference&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Marques2026_reference%0APaper%3A%20Marques_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Marques2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Marques2026_reference&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Marques2026_reference%0APaper%3A%20Marques_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Marques2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 12:33 UTC</sub>

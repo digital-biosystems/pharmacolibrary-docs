@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Zhang_2025_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marier2004_reference&quot;,&quot;label&quot;:&quot;Marier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marier2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_2_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009_2 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_2_pH.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Zhao_2018_CYP2C19_Q27&quot;,&quot;label&quot;:&quot;Zhao_2018 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pgx_Zhao_2018_CYP2C19_Q27.md&quot;,&quot;status&quot;:&quot;qualitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marier2004_reference&quot;,&quot;label&quot;:&quot;Marier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marier2004_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kirchheiner_2009_2_pH&quot;,&quot;label&quot;:&quot;Kirchheiner_2009_2 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pd_Kirchheiner_2009_2_pH.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Zhao_2018_CYP2C19_Q27&quot;,&quot;label&quot;:&quot;Zhao_2018 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/pgx_Zhao_2018_CYP2C19_Q27.md&quot;,&quot;status&quot;:&quot;qualitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omeprazole — `Omeprazole_Zhang2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Omeprazole record held back because lag time was not extracted, so a placeholder value would have been used.
+> This record was reviewed on 2026-10-22 15:29 UTC (Needs review), but the paper was screened again on 2026-11-04 06:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhang2025v2_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhang2025v2_reference" status="extracted" stale="true" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of paroxetine on olanzapine and initial dosage optimization in patients with major depressive disorder based on population pharmacokinetics. Frontiers in psychiatry 16:1538996 (2025).
@@ -29,8 +29,6 @@ Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of 
 <figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference/Omeprazole_Zhang2025v2_reference.svg" alt="Omeprazole_Zhang2025v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 19.6 | L/h |
@@ -39,7 +37,7 @@ Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +51,7 @@ Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of 
 
 The model builder defaulted the lag time parameter, meaning no specific value was found in the source, leading to a library placeholder. A second reader disagreed with the extraction, suggesting a lag time of 0.434 and questioning the absorption rate constant of 0.861. The record also assumes unit bioavailability for the apparent clearance and volume parameters. Extracted — omeprazole: CL/F 19.6 L/h, V/F 197 L, kabs 0.861 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.434; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,21 +80,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q314]` |  | 0.434 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q49]` | 0.861 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -184,13 +175,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang C, Chen L, Duan YY, He SM, Tian YL, Gao Y et al. Drug-drug interaction of paroxetine on olanzapine and initial dosage optimization in patients with major depressive disorder based on population pharmacokinetics. Frontiers in psychiatry 16:1538996 (2025). [doi:10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996)
 
-**This record:** Pharmacolibrary v26.09, model `Omeprazole_Zhang2025v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference>
+**This record:** Pharmacolibrary, model `Omeprazole_Zhang2025v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_OmeprazoleZhang2025v2reference,
   title  = {{Pharmacolibrary model Omeprazole_Zhang2025v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference},
   note   = {Parameters from doi:10.3389/fpsyt.2025.1538996},
 }
@@ -209,5 +199,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomeprazole%5D%20Omeprazole_Zhang2025v2_reference&body=Drug%3A%20omeprazole%0ARecord%3A%20Omeprazole_Zhang2025v2_reference%0APaper%3A%20Zhang_2025_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomeprazole%5D%20Omeprazole_Zhang2025v2_reference&body=Drug%3A%20omeprazole%0ARecord%3A%20Omeprazole_Zhang2025v2_reference%0APaper%3A%20Zhang_2025_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 06:10 UTC</sub>

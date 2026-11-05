@@ -179,13 +179,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynamic insights into monoclonal antibodies with a focus on galcanezumab, an anti-CGRP antibody. Cephalalgia : an international journal of headache 39(10):1284-1297 (2019). [doi:10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780)
 
-**This record:** Pharmacolibrary v26.09, model `Erenumab_Kielbasa2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_erenumab/Erenumab_Kielbasa2019_reference>
+**This record:** Pharmacolibrary, model `Erenumab_Kielbasa2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_erenumab/Erenumab_Kielbasa2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ErenumabKielbasa2019reference,
   title  = {{Pharmacolibrary model Erenumab_Kielbasa2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_erenumab/Erenumab_Kielbasa2019_reference},
   note   = {Parameters from doi:10.1177/0333102419840780},
 }
@@ -204,5 +203,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berenumab%5D%20Erenumab_Kielbasa2019_reference&body=Drug%3A%20erenumab%0ARecord%3A%20Erenumab_Kielbasa2019_reference%0APaper%3A%20Kielbasa_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erenumab/Erenumab_Kielbasa2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 06:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berenumab%5D%20Erenumab_Kielbasa2019_reference&body=Drug%3A%20erenumab%0ARecord%3A%20Erenumab_Kielbasa2019_reference%0APaper%3A%20Kielbasa_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erenumab/Erenumab_Kielbasa2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 06:34 UTC</sub>

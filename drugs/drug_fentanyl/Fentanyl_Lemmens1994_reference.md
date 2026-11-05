@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Lemmens_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Lemmens1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Fentanyl record rejected because the volume of distribution parameter's unit, liters, could not be converted to SI.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-03 18:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fentanyl record rejected because the volume of distribution parameter's unit, liters, could not be converted to SI.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="rejected" stale="false" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="rejected" stale="true" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic modeling in drug development: application to the investigational opioid trefentanil. Clinical pharmacology and therapeutics 56(3):261–271 (1994).
@@ -25,7 +25,7 @@ Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic mode
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -40,11 +40,12 @@ Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic mode
 | VC (L) | V | 4.5 | L |
 | Vss (L) | Vss | 39.3 | L |
 | CLC (L/min) | CL | 0.483 | L/min |
+| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |
 | t1pp ranged from | tlag | 15.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -73,6 +74,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | VC (L) | `Q61` · V | 4.5 | L | 0.0045 | m3 | l | exact (1) | Lemmens_1994_table_p7_2:row8:col1, Lemmens_1994_table_p7_2:row8:col2 |
 | Vss (L) | `Q65` · Vss | 39.3 | L | 0.0393 | m3 | l | exact (1) | Lemmens_1994_table_p7_2:row9:col1, Lemmens_1994_table_p7_2:row9:col2 |
 | CLC (L/min) | `Q22` · CL | 0.483 | L/min | 8.05e-06 | m3/s | l/min | central_subscript (0.9) | Lemmens_1994_table_p7_2:row10:col1, Lemmens_1994_table_p7_2:row10:col2 |
+| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Eleveld_2026:review |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h | review_gapfill (0.7) | Andersen_1986:review |
 
 <details class="legend">
@@ -94,6 +96,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 ## Validation
@@ -130,6 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Lemmens_1994_table_p7_2:row4:col1', 'Lemmens_1994_table_p7_2:row4:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lemmens_1994_table_p7_2:row8:col1', 'Lemmens_1994_table_p7_2:row8:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Lemmens_1994_table_p7_2:row9:col1', 'Lemmens_1994_table_p7_2:row9:col2'] |
 | C5_dimension_Q67 | fail | 1 / [time] | min-1 | ['Lemmens_1994_table_p7_2:row2:col1', 'Lemmens_1994_table_p7_2:row2:col2'] |
@@ -162,5 +166,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Lemmens1994_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Lemmens1994_reference%0APaper%3A%20Lemmens_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Lemmens1994_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Lemmens1994_reference%0APaper%3A%20Lemmens_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 18:21 UTC</sub>

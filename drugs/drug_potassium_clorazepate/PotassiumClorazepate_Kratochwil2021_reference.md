@@ -184,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kratochwil NA, Stillhart C, Diack C, Nagel S, Al Kotbi N, Frey N. Population pharmacokinetic analysis of RO5459072, a low water-soluble drug exhibiting complex food-drug interactions. British journal of clinical pharmacology 87(9):3550-3560 (2021). [doi:10.1111/bcp.14771](https://doi.org/10.1111/bcp.14771)
 
-**This record:** Pharmacolibrary v26.09, model `PotassiumClorazepate_Kratochwil2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference>
+**This record:** Pharmacolibrary, model `PotassiumClorazepate_Kratochwil2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PotassiumClorazepateKratochwil2021reference,
   title  = {{Pharmacolibrary model PotassiumClorazepate_Kratochwil2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference},
   note   = {Parameters from doi:10.1111/bcp.14771},
 }
@@ -209,5 +208,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_clorazepate%5D%20PotassiumClorazepate_Kratochwil2021_reference&body=Drug%3A%20potassium_clorazepate%0ARecord%3A%20PotassiumClorazepate_Kratochwil2021_reference%0APaper%3A%20Kratochwil_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 20:05 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_clorazepate%5D%20PotassiumClorazepate_Kratochwil2021_reference&body=Drug%3A%20potassium_clorazepate%0ARecord%3A%20PotassiumClorazepate_Kratochwil2021_reference%0APaper%3A%20Kratochwil_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 20:05 UTC</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 gs_704277&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Abouellil2023_gs_704277`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_704277" status="not_simulated" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+> This record was reviewed on 2026-10-22 14:39 UTC (Not simulated), but the paper was screened again on 2026-11-04 11:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_704277" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of remdesivir and its major metabolites based on published mean values from healthy subjects. Naunyn-Schmiedeberg's archives of pharmacology 396(1):73–82 (2023).
@@ -17,7 +19,7 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 **Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 3, 10, 30, 75, 150, 225 mg, iv, multiple, every 24 h.
+**Dosing:** 3, 10, 30, 75, 150, 225 mg, iv, single.
 
 ## Model
 
@@ -27,19 +29,17 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Central compartment volume of distribution (L) | V1 | 96.4 | L |
-| Peripheral compartment volume of distribution (L) | V2 | 8.64 | L |
-| Inter-compartmental clearance (L/h) | Q | 0.12 | L/h |
-| Total body clearance (L/h) | CL | 36.9 | L/h |
-| Central formation clearance (L/h) | CLfm | 16.9 | L/h |
+| Central compartment volume of distribution (L) | V1 | 26.2 | L |
+| Peripheral compartment volume of distribution (L) | V2 | 66.2 | L |
+| Inter-compartmental clearance (L/h) | Q | 55 | L/h |
+| Total body clearance (L/h) | CL | 4.74 | L/h |
+| Central formation clearance (L/h) | CLfm | 50.5 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,11 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Central compartment volume of distribution (L) | `Q63` · V1 | 96.4 | L | 0.0964 | m3 | l | llm_confirmed (0.6) | Tab2:row1:col2 |
-| Peripheral compartment volume of distribution (L) | `Q64` · V2 | 8.64 | L | 0.00864 | m3 | l | llm_confirmed (0.6) | Tab2:row2:col2 |
-| Inter-compartmental clearance (L/h) | `Q30` · Q | 0.12 | L/h | 3.333e-08 | m3/s | l/h | llm_confirmed (0.6) | Tab2:row3:col2 |
-| Total body clearance (L/h) | `Q22` · CL | 36.9 | L/h | 1.025e-05 | m3/s | l/h | llm_confirmed (0.6) | Tab2:row4:col2 |
-| Central formation clearance (L/h) | `Q370` · CLfm | 16.9 | L/h | 4.694e-06 | m3/s | l/h | exact (1) | Tab2:row5:col2 |
+| Central compartment volume of distribution (L) | `Q63` · V1 | 26.2 | L | 0.0262 | m3 | l | llm_confirmed (0.6) | Tab2:row1:col3 |
+| Peripheral compartment volume of distribution (L) | `Q64` · V2 | 66.2 | L | 0.0662 | m3 | l | llm_confirmed (0.6) | Tab2:row2:col3 |
+| Inter-compartmental clearance (L/h) | `Q30` · Q | 55 | L/h | 1.528e-05 | m3/s | l/h | llm_confirmed (0.6) | Tab2:row3:col3 |
+| Total body clearance (L/h) | `Q22` · CL | 4.74 | L/h | 1.317e-06 | m3/s | l/h | llm_confirmed (0.6) | Tab2:row4:col3 |
+| Central formation clearance (L/h) | `Q370` · CLfm | 50.5 | L/h | 1.403e-05 | m3/s | l/h | exact (1) | Tab2:row5:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,12 +75,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q370 ('Peripheral formation clearance (L/h)', value '18.9') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — a metabolite is formed from another metabolite (a chain)
-- population split: 'gs‐704277' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
+- population split: 'gs‐441524' subgroup of Abouellil_2023 (paper reports 2 populations: gs‐441524, remdesivir)
 - row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
+- dropped duplicate Q370 ('Peripheral formation clearance (L/h)', value '18.9') — already have one for this compound
+- population split: 'gs‐704277' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -116,16 +120,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row4:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col2'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row1:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row2:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.9 | ['Tab2:row4:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row4:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col3'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row1:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row2:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.74 | ['Tab2:row4:col3'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 36.9 L/h | ['Tab2:row4:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 96.4 L | ['Tab2:row1:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 8.64 L | ['Tab2:row2:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.74 L/h | ['Tab2:row4:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 26.2 L | ['Tab2:row1:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 66.2 L | ['Tab2:row2:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -171,13 +175,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of remdesivir and its major metabolites based on published mean values from healthy subjects. Naunyn-Schmiedeberg's archives of pharmacology 396(1):73–82 (2023). [doi:10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
-**This record:** Pharmacolibrary v26.09, model `Remdesivir_Abouellil2023_gs_704277`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277>
+**This record:** Pharmacolibrary, model `Remdesivir_Abouellil2023_gs_704277`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277>
 
 ```bibtex
 @misc{pharmacolibrary_RemdesivirAbouellil2023gs704277,
   title  = {{Pharmacolibrary model Remdesivir_Abouellil2023_gs_704277}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277},
   note   = {Parameters from doi:10.1007/s00210-022-02292-6},
 }
@@ -192,5 +195,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Abouellil2023_gs_704277&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Abouellil2023_gs_704277%0APaper%3A%20Abouellil_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Abouellil2023_gs_704277&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Abouellil2023_gs_704277%0APaper%3A%20Abouellil_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:18 UTC</sub>

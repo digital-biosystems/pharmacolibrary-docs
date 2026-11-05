@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD Total Peripheral Resistance&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD total peripheral resistance&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Total Peripheral Resistance — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+# total peripheral resistance — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Salbutamol (concentrations from the PK model of Bisaso_2026) drives Total Peripheral Resistance: indirect response — drug stimulates the production of Total Peripheral Resistance.
+**As extracted:** Salbutamol (concentrations from the PK model of Bisaso_2026) drives total peripheral resistance: indirect response — drug inhibits the loss of total peripheral resistance.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -25,10 +25,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Venkatasubramanian_2020`
-- **model family:** `indirect_response_iii`
+- **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British journal of pharmaco… (2020)
@@ -37,11 +37,8 @@ Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| — | Base TPR | `Q100` ·  | 0.49 |  | nil | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | kout, TPR | `Q328` ·  | 10 | h -1 | llm | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | E max,TPR | `Q320` ·  | 1.38 |  | llm | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | EC 50,TPR | `Q321` ·  | 131.0 |  | llm | Venkatasubramanian_2020:pdv3 |
-| variability | Base,TPR | `Q312` ·  | 0.25 |  | llm | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | Emax,TPR | `Q320` ·  | 1.38 |  | llm | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | EC50,TPR | `Q321` ·  | 131.0 |  | llm | Venkatasubramanian_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,23 +83,23 @@ Advisory:
 - exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/6 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_i | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | salbutamol |  | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation |  | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional |  | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_ii |  | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 1.38 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q321]` | 131.0 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.99 | 0.51 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 0.49 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 10 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 7.55 |  | only_one_extracted |
 
 </details>
 
@@ -130,13 +127,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Salbutamol_Venkatasubramanian2020_PD_tpr`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_tpr>
+**This record:** Pharmacolibrary, model `Salbutamol_Venkatasubramanian2020_PD_tpr`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_tpr>
 
 ```bibtex
 @misc{pharmacolibrary_SalbutamolVenkatasubramanian2020PDtpr,
   title  = {{Pharmacolibrary model Salbutamol_Venkatasubramanian2020_PD_tpr}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_tpr},
 }
 ```
@@ -150,5 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20pd_Venkatasubramanian_2020_TPR&body=Drug%3A%20salbutamol%0ARecord%3A%20pd_Venkatasubramanian_2020_TPR%0APaper%3A%20Venkatasubramanian_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20pd_Venkatasubramanian_2020_TPR&body=Drug%3A%20salbutamol%0ARecord%3A%20pd_Venkatasubramanian_2020_TPR%0APaper%3A%20Venkatasubramanian_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/pd_Venkatasubramanian_2020_TPR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [salbutamol](drugs/drug_salbutamol/)</sub>

@@ -22,14 +22,6 @@ Cefditoren is a third-generation cephalosporin antibiotic used to treat bacteria
 |---|---|---|---|---|---|---|
 | cefditoren | parent | 506.578 | C19H18N6O5S3 | DrugBank | [9870843](https://pubchem.ncbi.nlm.nih.gov/compound/9870843) | Matsumoto_2013 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| ka | kabs | 0.527 | 1/h | 0.527 hr(-1) | pediatric patients with infection | &gt;153&lt; | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Matsumoto_2013_reference](drugs/drug_cefditoren/Cefditoren_Matsumoto2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -98,5 +90,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefditoren%5D&body=Drug%3A%20cefditoren%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefditoren/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefditoren%5D&body=Drug%3A%20cefditoren%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefditoren/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:20 UTC</sub>

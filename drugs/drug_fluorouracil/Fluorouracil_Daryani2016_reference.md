@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Daryani_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Daryani2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
-> The intercompartmental clearance between central and peripheral compartments is assigned the invalid unit 'Qm', causing a dimension mismatch.
+> This record was reviewed on 2026-10-22 14:18 UTC (Rejected), but the paper was screened again on 2026-11-03 21:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance between central and peripheral compartments is assigned the invalid unit 'Qm', causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Daryani2016_reference" status="rejected" stale="false" population="children with pediatric ependymoma" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Daryani2016_reference" status="rejected" stale="true" population="pediatric patients with ependymoma" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Translational Pharmacokinetic-Pharmacodynamic Modeling and Simulation: Optimizing 5-Fluorouracil Dosing in Children With Pediatric Ependymoma. CPT: pharmacometrics & systems pharmacology 5(4):211–221 (2016).
@@ -17,9 +17,7 @@ Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Trans
 
 ## Population and dosing
 
-**Population:** children with pediatric ependymoma · condition ependymoma · age group child · n = ,.
-
-**Dosing:** 5250 mg, iv, single.
+**Population:** pediatric patients with ependymoma · condition ependymoma · age group child.
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).
 
@@ -27,7 +25,7 @@ Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Trans
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted, plus 4 covariate effects.  
+**Parameters:** 8 extracted, plus 4 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,23 +33,22 @@ Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Trans
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
-| Maximum plasma 5-FU elimination rate (V max,plasma,m) | kel | 2040 | µmol/hr/kg | 12.2 (None% RSE) |
+| Maximum plasma 5-FU elimination rate (V max,plasma,m) | Vmax | 2040 | µmol/hr/kg |  |
 | Volume of central compartment (V1,m) | V1 | 0.962 | L/kg | 22.1 (None% RSE) |
 | Intercompartmental clearance (Qm) | Q | 1.67 | Qm | 31.1 (None% RSE) |
 | Volume of peripheral compartment (V2,m) | V2 | 0.332 | L/kg | 93.9 (None% RSE) |
 | 5-FU fraction unbound in mouse plasma (fu,m) | fu | 0.37 | fu,m | 7.8 (None% RSE) |
 | Volume of tECF compartment (V3,m) | V3 | 0.001 | L/hr |  |
-| Maximum tumor 5-FU elimination rate (Vmax,tumor,m) | Vmax | 0.0063 | µmol/hr/kg |  |
 | Systemic clearance (CLp) | CL | 16.6 | L/hr/m2 | 28.8 (None% RSE) |
 | theta_q1_category | theta_q1_category | 125 |  |  |
 | theta_q303_category | theta_q303_category | 0.0043 |  |  |
 | theta_q304_category | theta_q304_category | 3.24 |  |  |
-| theta_fu_category | theta_fu_category | 1.82 | fu,m |  |
+| theta_q47_category | theta_q47_category | 1.82 |  |  |
 | Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,7 +62,7 @@ Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Trans
 
 The parameter representing apparent intercompartmental clearance has a value of 1.67 but is reported with the unit 'Qm'. This unit could not be converted to standard units, so the parameter was not available in a consistent unit for model building. Consequently, a structural dimension mismatch was identified during the review process. Extracted — fluorouracil: kel 2.04e+03 µmol/hr/kg, V1 0.962 L/kg, Q 1.67 Qm, V2 0.332 L/kg, fu 0.37 fu,m, V3 0.001 L/hr, Vmax 0.0063 µmol/hr/kg, CL 16.6 L/hr/m2, … (+1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 5-fluorouracil, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -73,18 +70,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| Maximum plasma 5-FU elimination rate (V max,plasma,m) | `Q47` · kel | 2040 | µmol/hr/kg |  |  | (µM·ol)/(h·kg) | llm_confirmed (0.6) | Daryani_2016_table_p6_1:row1:col2 | 12.2 (None% RSE) |
+| Maximum plasma 5-FU elimination rate (V max,plasma,m) | `Q66` · Vmax | 2040 | µmol/hr/kg |  |  | (µM·ol)/(h·kg) | llm_corrected (0.6) | Daryani_2016_table_p6_1:row1:col2 |  |
 | Volume of central compartment (V1,m) | `Q63` · V1 | 0.962 | L/kg | 0.06734 | m3 | l/kg | boundary_compartment (0.9) | Daryani_2016_table_p6_1:row3:col2 | 22.1 (None% RSE) |
 | Intercompartmental clearance (Qm) | `Q30` · Q | 1.67 | Qm |  |  | qm | exact (1) | Daryani_2016_table_p6_1:row4:col2 | 31.1 (None% RSE) |
 | Volume of peripheral compartment (V2,m) | `Q64` · V2 | 0.332 | L/kg | 0.02324 | m3 | l/kg | boundary_compartment (0.9) | Daryani_2016_table_p6_1:row5:col2 | 93.9 (None% RSE) |
 | 5-FU fraction unbound in mouse plasma (fu,m) | `Q46` · fu | 0.37 | fu,m |  |  | fu | llm_confirmed (0.6) | Daryani_2016_table_p6_1:row10:col2 | 7.8 (None% RSE) |
 | Volume of tECF compartment (V3,m) | `Q77` · V3 | 0.001 | L/hr | 2.778e-10 | m3/s | l/h | llm_corrected (0.6) | Daryani_2016_table_p6_1:row11:col2 |  |
-| Maximum tumor 5-FU elimination rate (Vmax,tumor,m) | `Q66` · Vmax | 0.0063 | µmol/hr/kg |  |  | (µM·ol)/(h·kg) | llm_corrected (0.6) | Daryani_2016_table_p6_1:row14:col2 |  |
 | Systemic clearance (CLp) | `Q22` · CL | 16.6 | L/hr/m2 |  |  | l/(h·m2) | llm_confirmed (0.6) | Daryani_2016_table_2:row0:col2 | 28.8 (None% RSE) |
 | theta_q1_category | `Q900` · theta_q1_category | 125 |  |  |  |  |  | Daryani_2016_table_p6_1:row2:col2 |  |
 | theta_q303_category | `Q900` · theta_q303_category | 0.0043 |  |  |  |  |  | Daryani_2016_table_p6_1:row8:col2 |  |
 | theta_q304_category | `Q900` · theta_q304_category | 3.24 |  |  |  |  |  | Daryani_2016_table_p6_1:row9:col2 |  |
-| theta_fu_category | `Q900` · theta_fu_category | 1.82 | fu,m |  |  |  |  | Daryani_2016_table_p6_1:row12:col2 |  |
+| theta_q47_category | `Q900` · theta_q47_category | 1.82 |  |  |  |  |  | Daryani_2016_table_p6_1:row12:col2 |  |
 | Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review_gapfill (0.7) | Bae_2026:review |  |
 
 <details class="legend">
@@ -109,14 +105,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'Volume of peripheral compartment (V2,p)' routed out of structural estimates ('IIV (% CV)')
 - table section residual_error: 'Proportional' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive' routed out of structural estimates ('Residual variability')
-- column 'estimate ± se' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - conflicting source units for 'Intercompartmental clearance (Qm)': [{'unit': 'L/hr/kg', 'source': 'Daryani_2016_table_p6_1:row4:col1', 'scope': 'unit_column'}, {'unit': 'Qm', 'source': 'Daryani_2016_table_p6_1:row4:col0', 'scope': 'label'}]
-- unit_dimension_mismatch: 'Maximum plasma 5-FU elimination rate (V max,plasma,m)' → Q47 (unit '[substance] / [time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'Maximum plasma 5-FU elimination rate (V max,plasma,m)' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Intercompartmental clearance (Qm)' → Q30 (unit '[length]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_unknown: 'fu,m' (fu)
 - unit_dimension_mismatch: 'Volume of tECF compartment (V3,m)' → Q77 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
 - dropped unlinked row (NIL): 'Rate parameter for intratumoral 5-FU disposition (K43,m)' — extend the ontology if this is a real PK parameter (source ['Daryani_2016_table_p6_1:row13:col2'])
 - unit_dimension_mismatch: 'Maximum tumor 5-FU elimination rate (Vmax,tumor,m)' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q66 ('Maximum tumor 5-FU elimination rate (Vmax,tumor,m)', value '0.0063') — already have one for this compound
 - unit_dimension_unknown: 'L/hr/m2' (CL)
 - unit_dimension_unknown: 'L/m2' (V1)
 - dropped duplicate Q63 ('Volume of central compartment (V1,p)', value '4.2') — already have one for this compound
@@ -127,11 +123,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q303 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q304 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q47 has no base parameter row (kept as unattached equation-variable)
 - dropped duplicate covariate effect 'category'/'' on Q1 — ambiguous identity (two shifts cannot share one category)
 - implicit units: 'Systemic clearance (CLp)' — the LLM proposed 'L/h/m2', whose dimension does not fit Q22; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
 - gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
 
@@ -146,22 +142,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.75 (12/16 fields) | 4 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rate constant transit tumor compartment]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_ktr_category]` |  | 0.334 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q48_category]` |  | 1.82 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | 5-fluorouracil | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q334_category]` |  | 1.82 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_category].value` | 1.82 | 0.334 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | fluorouracil | 5-fluorouracil | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fluorouracil | 5-fluorouracil | mismatch |
 
 </details>
 
@@ -175,16 +169,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 8 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
 | C5_dimension_Q30 | fail | [length] | Qm | ['Daryani_2016_table_p6_1:row4:col2'] |
-| C5_dimension_Q47 | fail | [substance] / [time] | µmol/hr/kg | ['Daryani_2016_table_p6_1:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Daryani_2016_table_p6_1:row3:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Daryani_2016_table_p6_1:row5:col2'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | µmol/hr/kg | ['Daryani_2016_table_p6_1:row14:col2'] |
+| C5_dimension_Q66 | fail | [substance] / [time] | µmol/hr/kg | ['Daryani_2016_table_p6_1:row1:col2'] |
 | C5_dimension_Q77 | fail | [length] ** 3 / [time] | L/hr | ['Daryani_2016_table_p6_1:row11:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/hr/m2 | ['Daryani_2016_table_2:row0:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.6 | ['Daryani_2016_table_2:row0:col2'] |
@@ -213,5 +205,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Daryani2016_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Daryani2016_reference%0APaper%3A%20Daryani_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Daryani2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Daryani2016_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Daryani2016_reference%0APaper%3A%20Daryani_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Daryani2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:28 UTC</sub>

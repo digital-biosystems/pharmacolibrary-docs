@@ -15,23 +15,9 @@
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.005917 | L/h | 0.142 L/day | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [van_2026_review reference](drugs/toxin_nickel/Nickel_van2026_reference.md) |
-| CL | CL | 0.135 | L/h | 0.135 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kwack_2026_review reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) |
-| CL | CL | 0.135 | L/h | 0.135 L/h | rat and occupational population | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2017_rat and occupational population](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) |
-| CL | CL/F | 7.48 | L/h | 7.48 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jia_2026_review reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) |
-| V | V | 7.86 | L | 7.86 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kwack_2026_review reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) |
-| V | V | 7.86 | L | 7.86 L | rat and occupational population | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2017_rat and occupational population](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) |
-| V | V/F | 4.75 | L | 4.75 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jia_2026_review reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) |
-| V | V1 | 3.94 | L | 3.94 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [van_2026_review reference](drugs/toxin_nickel/Nickel_van2026_reference.md) |
-| ka | kabs | 0.14 | 1/h | 0.14 1/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jia_2026_review reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) |
-| ka | kabs | 0.14 | 1/h | 0.14 1/h | rat and occupational population | rat | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2017_rat and occupational population](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) |
-| ka | kabs | 1.15 | 1/h | 1.15 h−1 | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kwack_2026_review reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.001</text><line x1="277.5" y1="18" x2="277.5" y2="90" stroke="#ddd"/><text x="277.5" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="452.5" y1="18" x2="452.5" y2="90" stroke="#ddd"/><text x="452.5" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2026 · CL</text><circle cx="257.6" cy="30.0" r="4" fill="#78909c"><title>van_2026 · CL: 0.005917 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kwack_2026 · CL</text><circle cx="376.4" cy="46.0" r="4" fill="#78909c"><title>Kwack_2026 · CL: 0.135 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Zhao_2017 · CL</text><circle cx="376.4" cy="62.0" r="4" fill="#78909c"><title>Zhao_2017 · CL: 0.135 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jia_2026 · CL/F</text><circle cx="529.0" cy="78.0" r="4" fill="#78909c"><title>Jia_2026 · CL/F: 7.48 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kwack_2026 · V</text><circle cx="503.4" cy="30.0" r="4" fill="#78909c"><title>Kwack_2026 · V: 7.86 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhao_2017 · V</text><circle cx="503.4" cy="46.0" r="4" fill="#78909c"><title>Zhao_2017 · V: 7.86 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jia_2026 · V/F</text><circle cx="426.8" cy="62.0" r="4" fill="#78909c"><title>Jia_2026 · V/F: 4.75 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">van_2026 · V1</text><circle cx="398.4" cy="78.0" r="4" fill="#78909c"><title>van_2026 · V1: 3.94 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -241,5 +227,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnickel%5D&body=Drug%3A%20nickel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_nickel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-09-08 15:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnickel%5D&body=Drug%3A%20nickel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_nickel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-09-08 15:42 UTC</sub>

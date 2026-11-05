@@ -123,13 +123,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Evolocumab_Kuchimanchi2018_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_evolocumab/Evolocumab_Kuchimanchi2018_PD_ldl_c>
+**This record:** Pharmacolibrary, model `Evolocumab_Kuchimanchi2018_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_evolocumab/Evolocumab_Kuchimanchi2018_PD_ldl_c>
 
 ```bibtex
 @misc{pharmacolibrary_EvolocumabKuchimanchi2018PDldlc,
   title  = {{Pharmacolibrary model Evolocumab_Kuchimanchi2018_PD_ldl_c}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_evolocumab/Evolocumab_Kuchimanchi2018_PD_ldl_c},
 }
 ```
@@ -143,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bevolocumab%5D%20pd_Kuchimanchi_2018_LDL_C&body=Drug%3A%20evolocumab%0ARecord%3A%20pd_Kuchimanchi_2018_LDL_C%0APaper%3A%20Kuchimanchi_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_evolocumab/pd_Kuchimanchi_2018_LDL_C%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bevolocumab%5D%20pd_Kuchimanchi_2018_LDL_C&body=Drug%3A%20evolocumab%0ARecord%3A%20pd_Kuchimanchi_2018_LDL_C%0APaper%3A%20Kuchimanchi_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_evolocumab/pd_Kuchimanchi_2018_LDL_C%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [evolocumab](drugs/drug_evolocumab/)</sub>

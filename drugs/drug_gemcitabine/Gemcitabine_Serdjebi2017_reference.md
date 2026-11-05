@@ -175,13 +175,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Serdjebi C, Gattacceca F, Seitz JF, Fein F, Gagnière J, François E et al. Population Pharmacokinetics of Gemcitabine and dFdU in Pancreatic Cancer Patients Using an Optimal Design, Sparse Sampling Approach. Therapeutic drug monitoring 39(3):290–296 (2017). [doi:10.1097/FTD.0000000000000399](https://doi.org/10.1097/FTD.0000000000000399)
 
-**This record:** Pharmacolibrary v26.09, model `Gemcitabine_Serdjebi2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference>
+**This record:** Pharmacolibrary, model `Gemcitabine_Serdjebi2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_GemcitabineSerdjebi2017reference,
   title  = {{Pharmacolibrary model Gemcitabine_Serdjebi2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference},
   note   = {Parameters from doi:10.1097/FTD.0000000000000399},
 }
@@ -200,5 +199,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgemcitabine%5D%20Gemcitabine_Serdjebi2017_reference&body=Drug%3A%20gemcitabine%0ARecord%3A%20Gemcitabine_Serdjebi2017_reference%0APaper%3A%20Serdjebi_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgemcitabine%5D%20Gemcitabine_Serdjebi2017_reference&body=Drug%3A%20gemcitabine%0ARecord%3A%20Gemcitabine_Serdjebi2017_reference%0APaper%3A%20Serdjebi_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:45 UTC</sub>

@@ -197,13 +197,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Khaowroongrueng V, Son KH, Lee SM, Lee J, Park CG, Lee SI et al. Population pharmacokinetic modeling of sufentanil in adult Korean patients undergoing cardiopulmonary bypass surgery. CPT: pharmacometrics & systems pharmacology 13(10):1682–1692 (2024). [doi:10.1002/psp4.13205](https://doi.org/10.1002/psp4.13205)
 
-**This record:** Pharmacolibrary v26.09, model `Sufentanil_Khaowroongrueng2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference>
+**This record:** Pharmacolibrary, model `Sufentanil_Khaowroongrueng2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SufentanilKhaowroongrueng2024reference,
   title  = {{Pharmacolibrary model Sufentanil_Khaowroongrueng2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference},
   note   = {Parameters from doi:10.1002/psp4.13205},
 }
@@ -222,5 +221,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsufentanil%5D%20Sufentanil_Khaowroongrueng2024_reference&body=Drug%3A%20sufentanil%0ARecord%3A%20Sufentanil_Khaowroongrueng2024_reference%0APaper%3A%20Khaowroongrueng_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsufentanil%5D%20Sufentanil_Khaowroongrueng2024_reference&body=Drug%3A%20sufentanil%0ARecord%3A%20Sufentanil_Khaowroongrueng2024_reference%0APaper%3A%20Khaowroongrueng_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sufentanil/Sufentanil_Khaowroongrueng2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:34 UTC</sub>

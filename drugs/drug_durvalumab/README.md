@@ -22,16 +22,9 @@ Durvalumab is a monoclonal antibody that blocks the PD-L1 protein and is used to
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.01188 | L/h | 0.285 L/day | Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Zhao_2026_reference](drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md) |
-| CL | CL | 0.01242 | L/h | 0.298 L/day | patients with advanced cancers, including biliary tract cancer | 3141 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_reference](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md) |
-| V | V1 | 3.42 | L | 3.42 L | patients with advanced cancers, including biliary tract cancer | 3141 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_reference](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md) |
-| V | V1 | 3.42 | L | 3.42 L | Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Zhao_2026_reference](drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhao_2026 · CL</text><circle cx="216.1" cy="30.0" r="4" fill="#66bb6a"><title>Zhao_2026 · CL: 0.01188 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Abegesah_2025 · CL</text><circle cx="222.9" cy="46.0" r="4" fill="#ef6c00"><title>Abegesah_2025 · CL: 0.01242 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Abegesah_2025 · V1</text><circle cx="376.9" cy="30.0" r="4" fill="#ef6c00"><title>Abegesah_2025 · V1: 3.42 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhao_2026 · V1</text><circle cx="376.9" cy="46.0" r="4" fill="#66bb6a"><title>Zhao_2026 · V1: 3.42 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -121,5 +114,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D&body=Drug%3A%20durvalumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D&body=Drug%3A%20durvalumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:18 UTC</sub>

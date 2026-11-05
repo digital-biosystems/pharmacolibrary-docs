@@ -124,13 +124,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Cangrelor_Vargas2021_PD_lta`. <https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta>
+**This record:** Pharmacolibrary, model `Cangrelor_Vargas2021_PD_lta`. <https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta>
 
 ```bibtex
 @misc{pharmacolibrary_CangrelorVargas2021PDlta,
   title  = {{Pharmacolibrary model Cangrelor_Vargas2021_PD_lta}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Vargas2021_PD_lta},
 }
 ```
@@ -144,5 +143,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D%20pd_Vargas_2021_LTA&body=Drug%3A%20cangrelor%0ARecord%3A%20pd_Vargas_2021_LTA%0APaper%3A%20Vargas_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/pd_Vargas_2021_LTA%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D%20pd_Vargas_2021_LTA&body=Drug%3A%20cangrelor%0ARecord%3A%20pd_Vargas_2021_LTA%0APaper%3A%20Vargas_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/pd_Vargas_2021_LTA%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [cangrelor](drugs/drug_cangrelor/)</sub>

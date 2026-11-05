@@ -35,19 +35,9 @@ Cisplatin is a platinum-based anticancer drug used to treat many cancers, includ
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 65 | L/h | 65.0 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Terranova_2021_reference](drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md) |
-| CL | CL | 126 | L/h | 126.0 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arshad_2020_reference](drugs/drug_cisplatin/Cisplatin_Arshad2020_reference.md) |
-| CL | CL/F | 0.659 | L/h | 0.659 L/h | patients in a phase I pazopanib-cisplatin combination study | 32 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Imbs_2016_reference](drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md) |
-| V | V/F | 24.3 | L | 24.3 L | patients in a phase I pazopanib-cisplatin combination study | 32 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Imbs_2016_reference](drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md) |
-| V | V1 | 91.9 | L | 91.9 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arshad_2020_reference](drugs/drug_cisplatin/Cisplatin_Arshad2020_reference.md) |
-| V | V1 | 118 | L | 118.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Terranova_2021_reference](drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md) |
-| ka | kabs | 1.31 | 1/h | 1.31 h -1 | patients in a phase I pazopanib-cisplatin combination study | 32 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Imbs_2016_reference](drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="277.5" y1="18" x2="277.5" y2="74" stroke="#ddd"/><text x="277.5" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="452.5" y1="18" x2="452.5" y2="74" stroke="#ddd"/><text x="452.5" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Terranova_2021 · CL</text><circle cx="436.1" cy="30.0" r="4" fill="#2e7d32"><title>Terranova_2021 · CL: 65 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Arshad_2020 · CL</text><circle cx="461.3" cy="46.0" r="4" fill="#ef6c00"><title>Arshad_2020 · CL: 126 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Imbs_2016 · CL/F</text><circle cx="261.7" cy="62.0" r="4" fill="#2e7d32"><title>Imbs_2016 · CL/F: 0.659 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Imbs_2016 · V/F</text><circle cx="257.5" cy="30.0" r="4" fill="#2e7d32"><title>Imbs_2016 · V/F: 24.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Arshad_2020 · V1</text><circle cx="358.6" cy="46.0" r="4" fill="#ef6c00"><title>Arshad_2020 · V1: 91.9 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Terranova_2021 · V1</text><circle cx="377.6" cy="62.0" r="4" fill="#2e7d32"><title>Terranova_2021 · V1: 118 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -224,5 +214,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D&body=Drug%3A%20cisplatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 22:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D&body=Drug%3A%20cisplatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 22:33 UTC</sub>

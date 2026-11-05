@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Schmulenson_2023 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Schmulenson2023_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 14:20 UTC (Needs review), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate" status="needs_review" stale="false" population="oncology patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate" status="needs_review" stale="true" population="oncology patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schmulenson E, Zimmermann N, Müller L, Kapsa S, Sihinevich I, Jaehde U. Influence of the skeletal muscle index on pharmacokinetics and toxicity of fluorouracil. Cancer medicine 12(3):2580–2589 (2023).
@@ -17,13 +17,13 @@ Schmulenson E, Zimmermann N, Müller L, Kapsa S, Sihinevich I, Jaehde U. Influen
 
 ## Population and dosing
 
-**Population:** oncology patients · condition cancer · age group adult · n = &gt;=111.
+**Population:** oncology patients · condition cancer · age group adult · n = &lt;integer&gt;.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,12 +33,11 @@ Schmulenson E, Zimmermann N, Müller L, Kapsa S, Sihinevich I, Jaehde U. Influen
 |---|---|---|---|
 | CL5FU [L/h] | CL | 209 | L/h |
 | V5FU [L] | V | 46.1 | L |
-| BSA effect on CL5FU | allometric_exponent | 0.681 |  |
 | Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +51,7 @@ Schmulenson E, Zimmermann N, Müller L, Kapsa S, Sihinevich I, Jaehde U. Influen
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 209 L/h, V 46.1 L, allometric_exponent 0.681, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka, absorption rate constant: this record has 0.757, the second reading none. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,7 +61,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|
 | CL5FU [L/h] | `Q22` · CL | 209 | L/h | 5.806e-05 | m3/s | l/h | llm (0.6) | Schmulenson_2023_table_3:row0:col1 |
 | V5FU [L] | `Q61` · V | 46.1 | L | 0.0461 | m3 | l | llm (0.6) | Schmulenson_2023_table_3:row1:col1 |
-| BSA effect on CL5FU | `Q319` · allometric_exponent | 0.681 |  |  |  |  | llm (0.6) | Schmulenson_2023_table_3:row2:col1 |
 | Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review_gapfill (0.7) | Bae_2026:review |
 
 <details class="legend">
@@ -78,6 +76,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section iiv: 'Residual variability [%CV]' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Additional error term [ng/ml]' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Proportional error term [%]' routed out of structural estimates ('Residual variability')
+- dropped duplicate Q22 ('BSA effect on CL5FU', value '0.681') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
 - population split: 'estimate' subgroup of Schmulenson_2023 (paper reports 2 populations: estimate, estimate (relative standard error, %))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -92,20 +91,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -117,7 +110,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Schmulenson_2023_table_3:row0:col1'] |
@@ -159,5 +152,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Schmulenson2023_estimate&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Schmulenson2023_estimate%0APaper%3A%20Schmulenson_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Schmulenson2023_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Schmulenson2023_estimate&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Schmulenson2023_estimate%0APaper%3A%20Schmulenson_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Schmulenson2023_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:29 UTC</sub>

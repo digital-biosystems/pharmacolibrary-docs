@@ -96,13 +96,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Mirikizumab_Chua2025_PD_endoscopic_response_composite`. <https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_endoscopic_response_composite>
+**This record:** Pharmacolibrary, model `Mirikizumab_Chua2025_PD_endoscopic_response_composite`. <https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_endoscopic_response_composite>
 
 ```bibtex
 @misc{pharmacolibrary_MirikizumabChua2025PDendoscopicresponsecomposite,
   title  = {{Pharmacolibrary model Mirikizumab_Chua2025_PD_endoscopic_response_composite}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_endoscopic_response_composite},
 }
 ```
@@ -116,5 +115,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirikizumab%5D%20pd_Chua_2025_endoscopic_response_composite&body=Drug%3A%20mirikizumab%0ARecord%3A%20pd_Chua_2025_endoscopic_response_composite%0APaper%3A%20Chua_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirikizumab/pd_Chua_2025_endoscopic_response_composite%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirikizumab%5D%20pd_Chua_2025_endoscopic_response_composite&body=Drug%3A%20mirikizumab%0ARecord%3A%20pd_Chua_2025_endoscopic_response_composite%0APaper%3A%20Chua_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirikizumab/pd_Chua_2025_endoscopic_response_composite%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [mirikizumab](drugs/drug_mirikizumab/)</sub>

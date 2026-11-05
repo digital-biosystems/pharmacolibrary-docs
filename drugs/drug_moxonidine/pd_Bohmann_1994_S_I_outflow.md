@@ -121,13 +121,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Moxonidine_Bohmann1994_PD_s_i_outflow`. <https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Bohmann1994_PD_s_i_outflow>
+**This record:** Pharmacolibrary, model `Moxonidine_Bohmann1994_PD_s_i_outflow`. <https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Bohmann1994_PD_s_i_outflow>
 
 ```bibtex
 @misc{pharmacolibrary_MoxonidineBohmann1994PDsioutflow,
   title  = {{Pharmacolibrary model Moxonidine_Bohmann1994_PD_s_i_outflow}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Bohmann1994_PD_s_i_outflow},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D%20pd_Bohmann_1994_S_I_outflow&body=Drug%3A%20moxonidine%0ARecord%3A%20pd_Bohmann_1994_S_I_outflow%0APaper%3A%20Bohmann_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D%20pd_Bohmann_1994_S_I_outflow&body=Drug%3A%20moxonidine%0ARecord%3A%20pd_Bohmann_1994_S_I_outflow%0APaper%3A%20Bohmann_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/pd_Bohmann_1994_S_I_outflow%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [moxonidine](drugs/drug_moxonidine/)</sub>

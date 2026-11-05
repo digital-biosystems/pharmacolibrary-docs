@@ -31,18 +31,9 @@ Temocillin is an antibiotic of the penicillin group with an extended spectrum, u
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.45 | L/h | 2.45 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngougni_2022_reference](drugs/drug_temocillin/Temocillin_Ngougni2022_reference.md) |
-| CL | CL | 3.69 | L/h | 3.69 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2024_reference](drugs/drug_temocillin/Temocillin_van2024_reference.md) |
-| CL | CL | 72.1 ‡ | L/h | 1.03 L/h/kg | neutropenic mice | mouse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Muller_2023_reference](drugs/drug_temocillin/Temocillin_Muller2023_reference.md) |
-| V | V | 14.36 | L | 14.36 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngougni_2022_reference](drugs/drug_temocillin/Temocillin_Ngougni2022_reference.md) |
-| V | V | 31.99 ‡ | L | 0.457 L/kg | neutropenic mice | mouse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Muller_2023_reference](drugs/drug_temocillin/Temocillin_Muller2023_reference.md) |
-| V | V1 | 14 | L | 14.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2024_reference](drugs/drug_temocillin/Temocillin_van2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ngougni_2022 · CL</text><circle cx="258.1" cy="30.0" r="4" fill="#2e7d32"><title>Ngougni_2022 · CL: 2.45 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">van_2024 · CL</text><circle cx="289.2" cy="46.0" r="4" fill="#2e7d32"><title>van_2024 · CL: 3.69 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Muller_2023 · CL ·/kg</text><circle cx="515.1" cy="62.0" r="4" fill="#2e7d32"><title>Muller_2023 · CL ·/kg: 72.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ngougni_2022 · V</text><circle cx="245.0" cy="30.0" r="4" fill="#2e7d32"><title>Ngougni_2022 · V: 14.36 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Muller_2023 · V ·/kg</text><circle cx="366.8" cy="46.0" r="4" fill="#2e7d32"><title>Muller_2023 · V ·/kg: 31.99 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">van_2024 · V1</text><circle cx="241.1" cy="62.0" r="4" fill="#2e7d32"><title>van_2024 · V1: 14 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -125,5 +116,5 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btemocillin%5D&body=Drug%3A%20temocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_temocillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btemocillin%5D&body=Drug%3A%20temocillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_temocillin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:52 UTC</sub>

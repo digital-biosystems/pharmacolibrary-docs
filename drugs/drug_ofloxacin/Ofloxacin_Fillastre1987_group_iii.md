@@ -170,5 +170,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bofloxacin%5D%20Ofloxacin_Fillastre1987_group_iii&body=Drug%3A%20ofloxacin%0ARecord%3A%20Ofloxacin_Fillastre1987_group_iii%0APaper%3A%20Fillastre_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_group_iii%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bofloxacin%5D%20Ofloxacin_Fillastre1987_group_iii&body=Drug%3A%20ofloxacin%0ARecord%3A%20Ofloxacin_Fillastre1987_group_iii%0APaper%3A%20Fillastre_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_group_iii%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:38 UTC</sub>

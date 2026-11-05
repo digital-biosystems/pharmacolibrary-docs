@@ -100,13 +100,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Haloperidol_Pilla2013_PD_panss_positive`. <https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_positive>
+**This record:** Pharmacolibrary, model `Haloperidol_Pilla2013_PD_panss_positive`. <https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_positive>
 
 ```bibtex
 @misc{pharmacolibrary_HaloperidolPilla2013PDpansspositive,
   title  = {{Pharmacolibrary model Haloperidol_Pilla2013_PD_panss_positive}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_PD_panss_positive},
 }
 ```
@@ -120,5 +119,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhaloperidol%5D%20pd_Pilla_2013_PANSS_positive&body=Drug%3A%20haloperidol%0ARecord%3A%20pd_Pilla_2013_PANSS_positive%0APaper%3A%20Pilla_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_haloperidol/pd_Pilla_2013_PANSS_positive%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhaloperidol%5D%20pd_Pilla_2013_PANSS_positive&body=Drug%3A%20haloperidol%0ARecord%3A%20pd_Pilla_2013_PANSS_positive%0APaper%3A%20Pilla_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_haloperidol/pd_Pilla_2013_PANSS_positive%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [haloperidol](drugs/drug_haloperidol/)</sub>

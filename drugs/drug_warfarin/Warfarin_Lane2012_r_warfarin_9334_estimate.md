@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Lane_2012 \u00b7 r_warfarin_9334_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hirai_2024_PT_INR&quot;,&quot;label&quot;:&quot;Hirai_2024 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Hirai_2024_PT_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_INR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Lane2012_r_warfarin_9334_estimate`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Warfarin bioavailability, clearance, and volume of distribution lacked extracted values, forcing the use of library placeholders that quarantined the model.
+> This record was reviewed on 2026-10-22 15:25 UTC (Needs review), but the paper was screened again on 2026-11-04 15:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_r_warfarin_9334_estimate" status="model_quarantined" stale="false" population="patients on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_r_warfarin_9334_estimate" status="extracted" stale="true" population="adults on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The population pharmacokinetics of R- and S-warfarin: effect of genetic and clinical factors. British journal of clinical pharmacology 73(1):66–76 (2012).
@@ -17,7 +17,7 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 ## Population and dosing
 
-**Population:** patients on long-term warfarin therapy · condition anticoagulation therapy · age group adult · n = The text mentions S-warfarin concentrations in 306 patients and R-warfarin concentrations in 309 patients. It does not explicitly state whether these are the same 309 patients with missing data for S-warfarin, or a total of more unique individuals. However, in PK studies, the 'n_subjects' typically refers to the size of the analyzed cohort. Given the phrasing 'in 306 patients... and in 309 patients', it is highly likely these refer to the number of subjects with data for each enantiomer from the same cohort, with the total cohort likely being 309 (the larger number) or potentially a union of both if they are distinct. Standard reporting usually lists the max n or total unique n. Without explicit clarification of the union, the most defensible integer for the cohort size based on the sampling numbers is 309 (the group genotyped and sampled, with a few missing S-warfarin values). Let's look closer: 'Plasma warfarin enantiomer concentrations were determined in 306 patients for S-warfarin and in 309 patients for R-warfarin'. This implies the study had at least 309 patients. It is safest to assume the cohort size is 309..
+**Population:** adults on long-term warfarin therapy · condition anticoagulation therapy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed warfarin, measured R-warfarin and S-warfarin.
 
@@ -25,18 +25,16 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL (l h-1) | CL | 0.125 | l h-1 | 43.0 (None% RSE) |
 | V (l) | V | 10.9 | l |  |
-| θwgt | allometric_exponent | 0.650 |  |  |
-| θage | θage | -0.00657 |  |  |
+| θage | equation variable | -0.00657 |  |  |
+| θwgt | θwgt | 0.65 |  |  |
 | ka (1/h) | kabs | 0.214 | 1/h |  |
 | Lag (h) | tlag | 1.29 | h |  |
 
@@ -46,7 +44,7 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,6 +58,8 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 The review confirms these primary parameters were missing, so a library placeholder stood in for each. Additionally, the defined covariate effects on R-warfarin and S-warfarin were not exercised during simulation, leaving only the reference individual's profile simulated. Extracted — warfarin: CL 0.125 l h-1, V 10.9 l, allometric_exponent 0.65; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
 
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-warfarin and S-warfarin, the second reading warfarin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
@@ -68,8 +68,8 @@ The review confirms these primary parameters were missing, so a library placehol
 |---|---|---|---|---|---|---|---|---|---|
 | CL (l h-1) | `Q22` · CL | 0.125 | l h-1 | 3.472e-08 | m3/s | l/h | exact (1) | Lane_2012_table_3:row0:col4 | 43.0 (None% RSE) |
 | V (l) | `Q61` · V | 10.9 | l | 0.0109 | m3 | l | exact (1) | Lane_2012_table_3:row1:col4 |  |
-| θwgt | `Q319` · allometric_exponent | 0.650 |  |  |  |  | llm (0.6) | Lane_2012_table_3:row3:col4 |  |
-| θage | `Q900` · θage | -0.00657 |  |  |  |  |  |  |  |
+| θage | `Q900` · equation variable | -0.00657 |  |  |  |  | llm (0.6) | Lane_2012_table_3:row4:col4 |  |
+| θwgt | `Q900` · θwgt | 0.65 |  |  |  |  |  |  |  |
 | ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Gomeni_2026:review |  |
 | Lag (h) | `Q83` · tlag | 1.29 | h | 4644 | s | h | review_gapfill (0.7) | Gomeni_2026:review |  |
 
@@ -81,7 +81,7 @@ The review confirms these primary parameters were missing, so a library placehol
 ## Departures & gaps
 
 **Interpretation flags:**
-- kept covariate coefficient θage=-0.00657 (covariate age) — not an ontology parameter
+- kept covariate coefficient θwgt=0.650 (covariate wgt) — not an ontology parameter
 - dropped unlinked row (NIL): 'Homozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row17:col4', 'Lane_2012_table_3:row22:col4'])
 - dropped unlinked row (NIL): 'Heterozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row18:col4', 'Lane_2012_table_3:row23:col4'])
 - dropped unlinked row (NIL): 'Mutant – homozygote' — extend the ontology if this is a real PK parameter (source ['Lane_2012_table_3:row19:col4', 'Lane_2012_table_3:row24:col4'])
@@ -103,11 +103,36 @@ The review confirms these primary parameters were missing, so a library placehol
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[θage]` | -0.00657 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θage]` |  | -0.00657 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θwgt]` | 0.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θwgt]` |  | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | R-warfarin and S-warfarin | warfarin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lane_2012_table_3:row0:col4'] |
@@ -157,13 +182,12 @@ The review confirms these primary parameters were missing, so a library placehol
 
 **Source paper** (the parameters are its): Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The population pharmacokinetics of R- and S-warfarin: effect of genetic and clinical factors. British journal of clinical pharmacology 73(1):66–76 (2012). [doi:10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x)
 
-**This record:** Pharmacolibrary v26.09, model `Warfarin_Lane2012_r_warfarin_9334_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate>
+**This record:** Pharmacolibrary, model `Warfarin_Lane2012_r_warfarin_9334_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate>
 
 ```bibtex
 @misc{pharmacolibrary_WarfarinLane2012rwarfarin9334estimate,
   title  = {{Pharmacolibrary model Warfarin_Lane2012_r_warfarin_9334_estimate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate},
   note   = {Parameters from doi:10.1111/j.1365-2125.2011.04051.x},
 }
@@ -178,5 +202,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Lane2012_r_warfarin_9334_estimate&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Lane2012_r_warfarin_9334_estimate%0APaper%3A%20Lane_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bwarfarin%5D%20Warfarin_Lane2012_r_warfarin_9334_estimate&body=Drug%3A%20warfarin%0ARecord%3A%20Warfarin_Lane2012_r_warfarin_9334_estimate%0APaper%3A%20Lane_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 15:04 UTC</sub>

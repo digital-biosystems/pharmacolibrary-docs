@@ -195,13 +195,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Byon W, Garonzik S, Boyd RA, Frost CE. Apixaban: A Clinical Pharmacokinetic and Pharmacodynamic Review. Clinical pharmacokinetics 58(10):1265–1279 (2019). [doi:10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z)
 
-**This record:** Pharmacolibrary v26.09, model `Apixaban_Byon2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_apixaban/Apixaban_Byon2019_reference>
+**This record:** Pharmacolibrary, model `Apixaban_Byon2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_apixaban/Apixaban_Byon2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ApixabanByon2019reference,
   title  = {{Pharmacolibrary model Apixaban_Byon2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_apixaban/Apixaban_Byon2019_reference},
   note   = {Parameters from doi:10.1007/s40262-019-00775-z},
 }
@@ -216,5 +215,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bapixaban%5D%20Apixaban_Byon2019_reference&body=Drug%3A%20apixaban%0ARecord%3A%20Apixaban_Byon2019_reference%0APaper%3A%20Byon_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_apixaban/Apixaban_Byon2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 13:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bapixaban%5D%20Apixaban_Byon2019_reference&body=Drug%3A%20apixaban%0ARecord%3A%20Apixaban_Byon2019_reference%0APaper%3A%20Byon_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_apixaban/Apixaban_Byon2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 13:43 UTC</sub>

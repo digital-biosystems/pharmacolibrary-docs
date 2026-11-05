@@ -31,15 +31,9 @@ Argatroban is a direct thrombin inhibitor used as an anticoagulant, mainly in pa
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 21 | L/h | 21 L/h | adults undergoing elective percutaneous coronary intervention | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Akimoto_2011_reference](drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md) |
-| V | V1 | 9.2 | L | 9.2 L | adults undergoing elective percutaneous coronary intervention | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Akimoto_2011_reference](drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md) |
-| V | V1 | 11 | L | 11 L | patients undergoing percutaneous coronary intervention | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cox_2004_reference](drugs/drug_argatroban/Argatroban_Cox2004_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Akimoto_2011 · V1</text><circle cx="358.7" cy="30.0" r="4" fill="#ef6c00"><title>Akimoto_2011 · V1: 9.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Cox_2004 · V1</text><circle cx="372.2" cy="46.0" r="4" fill="#2e7d32"><title>Cox_2004 · V1: 11 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -125,5 +119,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bargatroban%5D&body=Drug%3A%20argatroban%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_argatroban/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 13:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bargatroban%5D&body=Drug%3A%20argatroban%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_argatroban/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 13:52 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Tan_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_Tan2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The methotrexate record is missing a value for the oral absorption lag time and the reviewer disagrees with the extracted clearance and volume of distribution.
+> This record was reviewed on 2026-10-22 15:33 UTC (Needs review), but the paper was screened again on 2026-11-04 02:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Tan2024_reference" status="needs_review" stale="false" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Tan2024_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pharmacodynamic modelling and simulation of methotrexate dosing in patients with rheumatoid arthritis. British journal of clinical pharmacology 90(11):2763–2780 (2024).
@@ -29,8 +29,6 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 <figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference.svg" alt="Methotrexate_Tan2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL RBCs | CL | 7.74 | L.hour À1 |
@@ -39,7 +37,7 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +51,7 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 
 The record lists a lag time of 0.36 hour, but the review check found that no value was emitted or defaulted for this parameter. Additionally, the second reader reported a clearance of 8.4 instead of 7.74 and a central volume of distribution of 0.3 instead of 9.6. Several other model parameters were also disputed, with the second reader providing values where the record showed none. Extracted — methotrexate: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -83,25 +81,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.316 (6/19 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.3 (6/20 fields) | 14 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.topology_template` | 1C | 2C | mismatch |
 | `gpt-oss-120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
+| `gpt-oss-120b` | `values[Q308]` |  | 0.360 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q312]` | 31 | 12 | mismatch |
-| `gpt-oss-120b` | `values[Q316]` |  | 0.590 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` |  | 0.520 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q317]` |  | 8.260 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q327]` | 6.55 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q44]` |  | 0.470 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q47]` |  | 0.097 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` |  | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` |  | 0.141 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q49]` |  | 0.87 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q51]` |  | 0.171 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
 | `gpt-oss-120b` | `values[Q64]` |  | 0.3 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q87]` |  | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 1 | only_one_extracted |
 
 </details>
 
@@ -188,13 +187,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pharmacodynamic modelling and simulation of methotrexate dosing in patients with rheumatoid arthritis. British journal of clinical pharmacology 90(11):2763–2780 (2024). [doi:10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158)
 
-**This record:** Pharmacolibrary v26.09, model `Methotrexate_Tan2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Tan2024_reference>
+**This record:** Pharmacolibrary, model `Methotrexate_Tan2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Tan2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MethotrexateTan2024reference,
   title  = {{Pharmacolibrary model Methotrexate_Tan2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Tan2024_reference},
   note   = {Parameters from doi:10.1111/bcp.16158},
 }
@@ -213,5 +211,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Tan2024_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Tan2024_reference%0APaper%3A%20Tan_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Tan2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Tan2024_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Tan2024_reference%0APaper%3A%20Tan_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Tan2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:22 UTC</sub>

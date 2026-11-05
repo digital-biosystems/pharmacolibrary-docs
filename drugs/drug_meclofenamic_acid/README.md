@@ -24,17 +24,9 @@ Meclofenamic acid is a non-steroidal anti-inflammatory drug used to treat pain, 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 0.12 l/h kg | Standardbred horses | 7 | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johansson_1991_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Johansson1991_reference.md) |
-| V | V | 8.96 ‡ | L | 0.128 litre/kg | Thoroughbred horses and ponies |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Snow_1981_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md) |
-| V | V/F | 9.8 ‡ | L | 0.14 l/kg | Standardbred horses | 7 | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johansson_1991_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Johansson1991_reference.md) |
-| t½ | t1/2z | 0.9 | h | 0.9 h | Thoroughbred horses and ponies |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Snow_1981_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Snow1981_reference.md) |
-| t½ | t1/2z | 1.4 | h | 1.4 h | Standardbred horses | 7 | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johansson_1991_reference](drugs/drug_meclofenamic_acid/MeclofenamicAcid_Johansson1991_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Snow_1981 · V ·/kg</text><circle cx="523.3" cy="30.0" r="4" fill="#ef6c00"><title>Snow_1981 · V ·/kg: 8.96 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Johansson_1991 · V/F ·/kg</text><circle cx="536.9" cy="46.0" r="4" fill="#ef6c00"><title>Johansson_1991 · V/F ·/kg: 9.8 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -114,5 +106,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeclofenamic_acid%5D&body=Drug%3A%20meclofenamic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meclofenamic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeclofenamic_acid%5D&body=Drug%3A%20meclofenamic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meclofenamic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:56 UTC</sub>

@@ -222,13 +222,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kim T, Choi HY, Lee HS, Jung SH, Ahn JS, Kim HJ et al. Clinical response and pharmacokinetics of bendamustine as a component of salvage R-B(O)AD therapy for the treatment of primary central nervous system lymphoma (PCNSL). BMC cancer 18(1):729 (2018). [doi:10.1186/s12885-018-4632-y](https://doi.org/10.1186/s12885-018-4632-y)
 
-**This record:** Pharmacolibrary v26.09, model `Bendamustine_Kim2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bendamustine/Bendamustine_Kim2018_reference>
+**This record:** Pharmacolibrary, model `Bendamustine_Kim2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bendamustine/Bendamustine_Kim2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BendamustineKim2018reference,
   title  = {{Pharmacolibrary model Bendamustine_Kim2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bendamustine/Bendamustine_Kim2018_reference},
   note   = {Parameters from doi:10.1186/s12885-018-4632-y},
 }
@@ -247,5 +246,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbendamustine%5D%20Bendamustine_Kim2018_reference&body=Drug%3A%20bendamustine%0ARecord%3A%20Bendamustine_Kim2018_reference%0APaper%3A%20Kim_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bendamustine/Bendamustine_Kim2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbendamustine%5D%20Bendamustine_Kim2018_reference&body=Drug%3A%20bendamustine%0ARecord%3A%20Bendamustine_Kim2018_reference%0APaper%3A%20Kim_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bendamustine/Bendamustine_Kim2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:09 UTC</sub>

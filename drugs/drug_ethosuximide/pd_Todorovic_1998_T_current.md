@@ -103,13 +103,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ethosuximide_Todorovic1998_PD_t_current`. <https://pharmacolibrary.github.io/#/drugs/drug_ethosuximide/Ethosuximide_Todorovic1998_PD_t_current>
+**This record:** Pharmacolibrary, model `Ethosuximide_Todorovic1998_PD_t_current`. <https://pharmacolibrary.github.io/#/drugs/drug_ethosuximide/Ethosuximide_Todorovic1998_PD_t_current>
 
 ```bibtex
 @misc{pharmacolibrary_EthosuximideTodorovic1998PDtcurrent,
   title  = {{Pharmacolibrary model Ethosuximide_Todorovic1998_PD_t_current}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ethosuximide/Ethosuximide_Todorovic1998_PD_t_current},
 }
 ```
@@ -123,5 +122,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethosuximide%5D%20pd_Todorovic_1998_T_current&body=Drug%3A%20ethosuximide%0ARecord%3A%20pd_Todorovic_1998_T_current%0APaper%3A%20Todorovic_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethosuximide/pd_Todorovic_1998_T_current%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethosuximide%5D%20pd_Todorovic_1998_T_current&body=Drug%3A%20ethosuximide%0ARecord%3A%20pd_Todorovic_1998_T_current%0APaper%3A%20Todorovic_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethosuximide/pd_Todorovic_1998_T_current%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ethosuximide](drugs/drug_ethosuximide/)</sub>

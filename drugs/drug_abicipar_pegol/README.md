@@ -13,14 +13,6 @@ Abicipar pegol is an investigational eye medicine developed for macular degenera
 
 <small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| V | V | — | L | 40495 Human | patients with diabetic macular edema and neovascular age-related macular degeneration | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> | [Luu_2020_estimate_human](drugs/drug_abicipar_pegol/AbiciparPegol_Luu2020_estimate_human.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -65,5 +57,5 @@ Abicipar pegol is an investigational eye medicine developed for macular degenera
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babicipar_pegol%5D&body=Drug%3A%20abicipar_pegol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abicipar_pegol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babicipar_pegol%5D&body=Drug%3A%20abicipar_pegol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abicipar_pegol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:14 UTC</sub>

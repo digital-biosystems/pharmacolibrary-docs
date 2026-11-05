@@ -31,18 +31,9 @@ Pancuronium is a non-depolarising neuromuscular blocking agent used to relax mus
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.21 | L/h | 0.21 L/hour | review reference | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Roch_2011_reference](drugs/drug_pancuronium/Pancuronium_Roch2011_reference.md) |
-| CL | CL | 4.566 | L/h | 0.0761 L/min | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rantanen_2026_reference](drugs/drug_pancuronium/Pancuronium_Rantanen2026_reference.md) |
-| CL | CL/F | 34.14 | L/h | 0.569 L/min | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bienert_2020_reference](drugs/drug_pancuronium/Pancuronium_Bienert2020_reference.md) |
-| V | V | 27.1 | L | 27.1 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rantanen_2026_reference](drugs/drug_pancuronium/Pancuronium_Rantanen2026_reference.md) |
-| V | V1 | 0.96 | L | 0.96 L | review reference | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Roch_2011_reference](drugs/drug_pancuronium/Pancuronium_Roch2011_reference.md) |
-| V | V1/F | 25.8 | L | 25.8 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bienert_2020_reference](drugs/drug_pancuronium/Pancuronium_Bienert2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Roch_2011 · CL</text><circle cx="227.6" cy="30.0" r="4" fill="#2e7d32"><title>Roch_2011 · CL: 0.21 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rantanen_2026 · CL</text><circle cx="383.6" cy="46.0" r="4" fill="#2e7d32"><title>Rantanen_2026 · CL: 4.566 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Bienert_2020 · CL/F</text><circle cx="485.5" cy="62.0" r="4" fill="#ef6c00"><title>Bienert_2020 · CL/F: 34.14 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rantanen_2026 · V</text><circle cx="473.8" cy="30.0" r="4" fill="#2e7d32"><title>Rantanen_2026 · V: 27.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Roch_2011 · V1</text><circle cx="304.6" cy="46.0" r="4" fill="#2e7d32"><title>Roch_2011 · V1: 0.96 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Bienert_2020 · V1/F</text><circle cx="471.4" cy="62.0" r="4" fill="#ef6c00"><title>Bienert_2020 · V1/F: 25.8 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -198,5 +189,5 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpancuronium%5D&body=Drug%3A%20pancuronium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pancuronium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpancuronium%5D&body=Drug%3A%20pancuronium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pancuronium/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:27 UTC</sub>

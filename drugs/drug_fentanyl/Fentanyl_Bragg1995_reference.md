@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Bragg_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Bragg1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Fentanyl record rejected because compartment volumes V2 and V3 imply a three-compartment model, conflicting with the stated one-compartment structure.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-03 18:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fentanyl record rejected because compartment volumes V2 and V3 imply a three-compartment model, conflicting with the stated one-compartment structure.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bragg1995_reference" status="rejected" stale="false" population="neonatal dogs" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bragg1995_reference" status="rejected" stale="true" population="neonatal dogs" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: differences between morphine and fentanyl. Journal of applied physiology (Bethesda, Md. : 1985) 79(5):1519–1524 (1995).
@@ -17,7 +17,7 @@ Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: d
 
 ## Population and dosing
 
-**Population:** neonatal dogs · age group neonate.
+**Population:** neonatal dogs · condition healthy · age group neonate.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: d
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,11 +37,12 @@ Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: d
 | V2, l/kg | V2 | 1.43 | l/kg |
 | V3, l/kg | V3 | 5.19 | l/kg |
 | VSS, l/kg | Vss | 7.11 | l/kg |
+| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |
 | t1pp ranged from | tlag | 15.0 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +56,7 @@ Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: d
 
 The record declares a one-compartment structure yet lists values for V2 (1.43 l/kg) and V3 (5.19 l/kg), which define peripheral compartments. This structural inconsistency leaves the peripheral compartments unreachable from the dose in the declared model. The second reader also disagreed on several fields, identifying the analyte as morphine instead of fentanyl and marking all parameter values as null. Extracted — fentanyl: CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg, Vss 7.11 l/kg, tlag 15 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has unknown, the second reading morphine; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -67,6 +68,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 | V2, l/kg | `Q64` · V2 | 1.43 | l/kg | 0.1001 | m3 | l/kg | exact (1) | Bragg_1995_table_1:row5:col2 |
 | V3, l/kg | `Q77` · V3 | 5.19 | l/kg | 0.3633 | m3 | l/kg | exact (1) | Bragg_1995_table_1:row6:col2 |
 | VSS, l/kg | `Q65` · Vss | 7.11 | l/kg | 0.4977 | m3 | l/kg | exact (1) | Bragg_1995_table_1:row7:col2 |
+| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Eleveld_2026:review |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h | review_gapfill (0.7) | Andersen_1986:review |
 
 <details class="legend">
@@ -83,37 +85,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('Clrapid, ml·kg⁻¹·min⁻¹', value '182') — already have one for this compound
+- column 'fentanyl' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Clrapid, ml·kg⁻¹·min⁻¹' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row2:col2'])
 - dropped unlinked row (NIL): 'Clslow, ml·kg⁻¹·min⁻¹' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row3:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl]` | 88.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1pp ranged from]` | 15.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` | 1.43 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3]` | 5.19 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vss]` | 7.11 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | unknown | morphine | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
 
 </details>
 
@@ -131,6 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bragg_1995_table_1:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Bragg_1995_table_1:row4:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Bragg_1995_table_1:row5:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Bragg_1995_table_1:row7:col2'] |
@@ -163,5 +162,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Bragg1995_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Bragg1995_reference%0APaper%3A%20Bragg_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Bragg1995_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Bragg1995_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Bragg1995_reference%0APaper%3A%20Bragg_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Bragg1995_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 18:27 UTC</sub>

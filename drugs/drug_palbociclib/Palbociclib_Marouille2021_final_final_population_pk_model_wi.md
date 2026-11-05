@@ -177,13 +177,12 @@ _All readers agree on the compared fields of this record._
 
 **Source paper** (the parameters are its): Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. Pharmacokinetic/Pharmacodynamic Model of Neutropenia in Real-Life Palbociclib-Treated Patients. Pharmaceutics 13(10) (2021). [doi:10.3390/pharmaceutics13101708](https://doi.org/10.3390/pharmaceutics13101708)
 
-**This record:** Pharmacolibrary v26.09, model `Palbociclib_Marouille2021_final_final_population_pk_model_wi`. <https://pharmacolibrary.github.io/#/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi>
+**This record:** Pharmacolibrary, model `Palbociclib_Marouille2021_final_final_population_pk_model_wi`. <https://pharmacolibrary.github.io/#/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi>
 
 ```bibtex
 @misc{pharmacolibrary_PalbociclibMarouille2021finalfinalpopulationpkmodelwi,
   title  = {{Pharmacolibrary model Palbociclib_Marouille2021_final_final_population_pk_model_wi}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi},
   note   = {Parameters from doi:10.3390/pharmaceutics13101708},
 }
@@ -198,5 +197,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalbociclib%5D%20Palbociclib_Marouille2021_final_final_population_pk_model_wi&body=Drug%3A%20palbociclib%0ARecord%3A%20Palbociclib_Marouille2021_final_final_population_pk_model_wi%0APaper%3A%20Marouille_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalbociclib%5D%20Palbociclib_Marouille2021_final_final_population_pk_model_wi&body=Drug%3A%20palbociclib%0ARecord%3A%20Palbociclib_Marouille2021_final_final_population_pk_model_wi%0APaper%3A%20Marouille_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:09 UTC</sub>

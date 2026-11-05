@@ -26,16 +26,6 @@ Disulfiram is used as a deterrent to help people with alcohol dependence stay ab
 | DDTC-Me (M2) | metabolite | 163.297 | C6H13NS2 | PubChem | [12704](https://pubchem.ncbi.nlm.nih.gov/compound/12704) | Lee_2019 |
 | DETC-MeSO (M3) | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.53 | L/h | 0.53 L/hr | HIV+ ART-suppressed adults | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2019_reference](drugs/drug_disulfiram/Disulfiram_Lee2019_reference.md) |
-| V | V | 1.3 | L | 1.3 L | HIV+ ART-suppressed adults | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2019_reference](drugs/drug_disulfiram/Disulfiram_Lee2019_reference.md) |
-| ka | kabs | 0.08 | 1/h | 0.08 hr−1 | HIV+ ART-suppressed adults | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2019_reference](drugs/drug_disulfiram/Disulfiram_Lee2019_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -195,5 +185,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdisulfiram%5D&body=Drug%3A%20disulfiram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_disulfiram/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdisulfiram%5D&body=Drug%3A%20disulfiram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_disulfiram/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:19 UTC</sub>

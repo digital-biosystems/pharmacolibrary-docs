@@ -8,7 +8,7 @@
 
 > Etelcalcetide record rejected because the model structure contains an unreachable compartment despite abstract-only data.
 
-<div class="pk-model-meta" hidden drug="etelcalcetide" model-id="Etelcalcetide_Chen2018_reference" status="rejected" stale="false" population="patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis" measured-compound="etelcalcetide" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="etelcalcetide" model-id="Etelcalcetide_Chen2018_reference" status="rejected" stale="false" population="patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis" measured-compound="etelcalcetide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chen P, Narayanan A, Wu B, Gisleskog PO, Gibbs JP, Chow AT et al. Population Pharmacokinetic and Pharmacodynamic Modeling of Etelcalcetide in Patients with Chronic Kidney Disease and Secondary Hyperparathyroidism Receiving Hemodialysis. Clinical pharmacokinetics 57(1):71–85 (2018).
@@ -20,7 +20,7 @@ Chen P, Narayanan A, Wu B, Gisleskog PO, Gibbs JP, Chow AT et al. Population Pha
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
@@ -31,7 +31,7 @@ Chen P, Narayanan A, Wu B, Gisleskog PO, Gibbs JP, Chow AT et al. Population Pha
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 0.472 | L/h |
-| central volume of distribution (Vc) | V1 | 49.9 | L |
+| central volume of distribution (Vc) | V | 49.9 | L |
 | turnover half-lives of PTH | t1/2z | 0.36 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -59,7 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 0.472 | L/h | 1.311e-07 | m3/s | l/h | exact (1) | Chen_2018:abstract |
-| central volume of distribution (Vc) | `Q63` · V1 | 49.9 | L | 0.0499 | m3 | l | boundary_compartment (0.9) | Chen_2018:abstract |
+| central volume of distribution (Vc) | `Q61` · V | 49.9 | L | 0.0499 | m3 | l | boundary_compartment (0.9) | Chen_2018:abstract |
 | turnover half-lives of PTH | `Q57` · t1/2z | 0.36 | h | 1296 | s | h | llm (0.6) | Chen_2018:abstract |
 
 <details class="legend">
@@ -72,11 +72,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 **Interpretation flags:**
 - dropped duplicate Q57 ('turnover half-lives of Ca', value 23) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=etelcalcetide
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution (Vc)' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Chen_2018_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -115,11 +112,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chen_2018:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Chen_2018:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Chen_2018:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chen_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.472 | ['Chen_2018:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.472 L/h | ['Chen_2018:abstract'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 49.9 L | ['Chen_2018:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 49.9 L | ['Chen_2018:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,5 +139,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betelcalcetide%5D%20Etelcalcetide_Chen2018_reference&body=Drug%3A%20etelcalcetide%0ARecord%3A%20Etelcalcetide_Chen2018_reference%0APaper%3A%20Chen_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betelcalcetide%5D%20Etelcalcetide_Chen2018_reference&body=Drug%3A%20etelcalcetide%0ARecord%3A%20Etelcalcetide_Chen2018_reference%0APaper%3A%20Chen_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:27 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Bremnes_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methotrexate — `Methotrexate_Bremnes1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-10-22 15:33 UTC (Needs review), but the paper was screened again on 2026-11-04 02:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Bremnes1989_reference" status="needs_review" stale="false" population="rats" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Bremnes1989_reference" status="needs_review" stale="true" population="rats" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bremnes RM, Slørdal L, Wist E, Aarbakke J. Formation and elimination of 7-hydroxymethotrexate in the rat in vivo after methotrexate administration. Cancer research 49(9):2460–2464 (1989).
@@ -34,14 +34,14 @@ Bremnes RM, Slørdal L, Wist E, Aarbakke J. Formation and elimination of 7-hydro
 |---|---|---|---|
 | 7-OH-MTX concentrations in bile declined monophasically with a half-life of | t1/2z | 29.4 | min |
 | Serum concentration curves were analyzed according to a three-compartment open model with an initial elimination half-life of | t1/2α | 1.7 | min |
-| CL = | CL | 7.63 | L/hour |
+| CMTX | CL | 2.04 | ml/min |
 | Vd threshold | V | 5.0 | L/kg |
-| absorption rate ka6MP | kabs | 21.07 | 1/day |
+| ka (/day) | kabs | 0.268 | /day |
 | t lag,oral | tlag | 0.36 | hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,9 +65,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 |---|---|---|---|---|---|---|---|---|
 | 7-OH-MTX concentrations in bile declined monophasically with a half-life of | `Q57` · t1/2z | 29.4 | min | 1764 | s | min | llm (0.6) | Bremnes_1989:abstract |
 | Serum concentration curves were analyzed according to a three-compartment open model with an initial elimination half-life of | `Q59` · t1/2α | 1.7 | min | 102 | s | min | llm (0.6) | Bremnes_1989:abstract, Bremnes_1989:abstract |
-| CL = | `Q22` · CL | 7.63 | L/hour | 2.119e-06 | m3/s | L/h | review_gapfill (0.7) | Blackman_2026:review |
+| CMTX | `Q22` · CL | 2.04 | ml/min | 3.4e-08 | m3/s | L/h | review_gapfill (0.7) | Kristensen_1975:review |
 | Vd threshold | `Q61` · V | 5.0 | L/kg | 0.35 | m3 | L | review_gapfill (0.7) | Hernández-Gago_2026:review |
-| absorption rate ka6MP | `Q49` · kabs | 21.07 | 1/day | 0.0002439 | 1/s | 1/h | review_gapfill (0.7) | Gebhard_2023:review |
+| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.102e-06 | 1/s | 1/h | review_gapfill (0.7) | Pan_2026:review |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296 | s | h | review_gapfill (0.7) | Tan_2024:review |
 
 <details class="legend">
@@ -84,11 +84,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methotrexate
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Blackman_2026's review values (primary lacked it)
+- gap-filled Q22 (CL) from Kristensen_1975's review values (primary lacked it)
 - gap-filled Q61 (V) from Hernández-Gago_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Gebhard_2023's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Pan_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
 
 **Extraction notes:**
@@ -132,15 +132,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Blackman_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gebhard_2023:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kristensen_1975:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bremnes_1989:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Bremnes_1989:abstract', 'Bremnes_1989:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hernández-Gago_2026:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tan_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.63 | ['Blackman_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.04 | ['Kristensen_1975:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.63 L/h | ['Blackman_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.122 L/h | ['Kristensen_1975:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 350 L | ['Hernández-Gago_2026:review'] |
 
 <details class="legend">
@@ -171,13 +171,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Bremnes RM, Slørdal L, Wist E, Aarbakke J. Formation and elimination of 7-hydroxymethotrexate in the rat in vivo after methotrexate administration. Cancer research 49(9):2460–2464 (1989).
 
-**This record:** Pharmacolibrary v26.09, model `Methotrexate_Bremnes1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference>
+**This record:** Pharmacolibrary, model `Methotrexate_Bremnes1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MethotrexateBremnes1989reference,
   title  = {{Pharmacolibrary model Methotrexate_Bremnes1989_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference},
 }
 ```
@@ -191,5 +190,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Bremnes1989_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Bremnes1989_reference%0APaper%3A%20Bremnes_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethotrexate%5D%20Methotrexate_Bremnes1989_reference&body=Drug%3A%20methotrexate%0ARecord%3A%20Methotrexate_Bremnes1989_reference%0APaper%3A%20Bremnes_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:23 UTC</sub>

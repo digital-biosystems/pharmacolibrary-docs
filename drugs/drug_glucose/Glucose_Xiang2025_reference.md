@@ -171,13 +171,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Xiang Q, Yang Y, Li G, Chen S, Yang Y, Liu L et al. Population Pharmacokinetic/Pharmacodynamic Modeling of Tacrolimus in Renal Transplant Recipients: Impact of CYP3A5 Genotype and Wuzhi Capsule Co-Medication. Drug design, development and therapy 19:8375–8389 (2025). [doi:10.2147/DDDT.S542786](https://doi.org/10.2147/DDDT.S542786)
 
-**This record:** Pharmacolibrary v26.09, model `Glucose_Xiang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Xiang2025_reference>
+**This record:** Pharmacolibrary, model `Glucose_Xiang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Xiang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_GlucoseXiang2025reference,
   title  = {{Pharmacolibrary model Glucose_Xiang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Xiang2025_reference},
   note   = {Parameters from doi:10.2147/DDDT.S542786},
 }
@@ -196,5 +195,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglucose%5D%20Glucose_Xiang2025_reference&body=Drug%3A%20glucose%0ARecord%3A%20Glucose_Xiang2025_reference%0APaper%3A%20Xiang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glucose/Glucose_Xiang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglucose%5D%20Glucose_Xiang2025_reference&body=Drug%3A%20glucose%0ARecord%3A%20Glucose_Xiang2025_reference%0APaper%3A%20Xiang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glucose/Glucose_Xiang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:37 UTC</sub>

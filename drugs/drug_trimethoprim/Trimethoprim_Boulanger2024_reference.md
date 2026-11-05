@@ -9,7 +9,7 @@
 
 > The record was rejected because the trimethoprim metabolite compartment is unreachable from the dose, and the bioavailability value has a non-standard unit.
 
-<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Boulanger2024_reference" status="rejected" stale="false" population="broilers" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Boulanger2024_reference" status="rejected" stale="false" population="broilers" measured-compound="trimethoprim" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Ferran AA et al. Pharmacokinetic modeling of sulfamethoxazole-trimethoprim and sulfadiazine-trimethoprim combinations in broilers. Poultry science 103(11):104200 (2024).
@@ -19,15 +19,15 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Ferran AA et al. P
 
 **Population:** broilers · condition healthy · age group adult.
 
-**Dosing:** 448, 2240 mg, iv, single.
+**Dosing:** 2240 mg, iv, single.
 
 > **Species: bird.** This record comes from an animal study (bird), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted.  
+**Parameters:** 6 extracted, plus 4 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,13 +35,15 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Ferran AA et al. P
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| F_SDZ | Fab | 99 |  |
+| F_TMP | equation variable | 99 |  |
 | ka_SDZ | kabs | 20.10 | 1/h |
 | Vd_SDZ | V | 7.81 | L/kg |
 | CL_SDZ | CL | 6.00 | L/h/kg |
-| CL_TMP | CLmp | 4.77 |  |
-| β_Vd_SDZ_BW | V1 | 40.70 |  |
-| β_CL_TMP_BW | CLnorm | 23.10 |  |
+| CL_TMP | CLmp | 4.77 | L/h/kg |
+| theta_v_sdz_bw | theta_v_sdz_bw | 40.70 |  |
+| theta_v_smx_bw | theta_v_smx_bw | 46.40 |  |
+| theta_cl_sdz_bw | theta_cl_sdz_bw | 41.40 |  |
+| theta_cl_mp_bw | theta_cl_mp_bw | 23.10 |  |
 | T1/2β SDZ (h) | t1/2β | 2.00 | h |
 | AUC∞ SDZ (h × µg/mL) | AUC∞ | 187.00 | h × µg/mL |
 
@@ -69,15 +71,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| F_SDZ | `Q40` · Fab | 99 |  |  |  |  | llm (0.6) | tbl0001:row2:col2 |
+| F_TMP | `Q900` · equation variable | 99 |  | 99 |  |  | llm (0.6) | tbl0001:row4:col2 |
 | ka_SDZ | `Q49` · kabs | 20.10 | 1/h | 0.005583 | 1/s | 1/h | llm (0.6) | tbl0001:row5:col2, tbl0001:row5:col3 |
 | Vd_SDZ | `Q61` · V | 7.81 | L/kg | 0.5467 | m3 | L | llm (0.6) | tbl0001:row8:col2, tbl0001:row8:col3 |
 | CL_SDZ | `Q22` · CL | 6.00 | L/h/kg | 0.0001167 | m3/s | L/h | llm (0.6) | tbl0001:row11:col2, tbl0001:row11:col3 |
-| CL_TMP | `Q371` · CLmp | 4.77 |  |  |  |  | llm_confirmed (0.6) | tbl0001:row13:col2, tbl0001:row13:col3 |
-| β_Vd_SDZ_BW | `Q63` · V1 | 40.70 |  |  |  |  | llm (0.6) | tbl0001:row14:col2, tbl0001:row14:col3 |
-| β_CL_TMP_BW | `Q354` · CLnorm | 23.10 |  |  |  |  | llm (0.6) | tbl0001:row17:col2, tbl0001:row17:col3 |
-| T1/2β SDZ (h) | `Q60` · t1/2β | 2.00 | h | 7200 | s | h | llm_confirmed (0.6) | Boulanger_2024_table_2:row2:col1, Boulanger_2024_table_2:row2:col2, Boulanger_2024_table_2:row2:col3, Boulanger_2024_table_2:row2:col4 |
-| AUC∞ SDZ (h × µg/mL) | `Q17` · AUC∞ | 187.00 | h × µg/mL |  |  | (h·µg)/ml | llm_confirmed (0.6) | Boulanger_2024_table_2:row5:col1, Boulanger_2024_table_2:row5:col2, Boulanger_2024_table_2:row5:col3, Boulanger_2024_table_2:row5:col4 |
+| CL_TMP | `Q371` · CLmp | 4.77 | L/h/kg | 9.275e-05 | m3/s | L/h | llm_confirmed (0.6) | tbl0001:row13:col2, tbl0001:row13:col3 |
+| theta_v_sdz_bw | `Q900` · theta_v_sdz_bw | 40.70 |  |  |  |  |  | tbl0001:row14:col2, tbl0001:row14:col3 |
+| theta_v_smx_bw | `Q900` · theta_v_smx_bw | 46.40 |  |  |  |  |  | tbl0001:row15:col2, tbl0001:row15:col3 |
+| theta_cl_sdz_bw | `Q900` · theta_cl_sdz_bw | 41.40 |  |  |  |  |  | tbl0001:row16:col2, tbl0001:row16:col3 |
+| theta_cl_mp_bw | `Q900` · theta_cl_mp_bw | 23.10 |  |  |  |  |  | tbl0001:row17:col2, tbl0001:row17:col3 |
+| T1/2β SDZ (h) | `Q60` · t1/2β | 2.00 | h | 7200 | s | h | half_life_rule (0.95) | Boulanger_2024_table_2:row2:col1, Boulanger_2024_table_2:row2:col2, Boulanger_2024_table_2:row2:col3, Boulanger_2024_table_2:row2:col4 |
+| AUC∞ SDZ (h × µg/mL) | `Q17` · AUC∞ | 187.00 | h × µg/mL | 673.2 | kg*s/m3 | (h·µg)/ml | llm_confirmed (0.6) | Boulanger_2024_table_2:row5:col1, Boulanger_2024_table_2:row5:col2, Boulanger_2024_table_2:row5:col3, Boulanger_2024_table_2:row5:col4 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,30 +91,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q40 ('F_SMX', value '99') — already have one for this compound
-- dropped unlinked row (NIL): 'F_TMP' — extend the ontology if this is a real PK parameter (source ['tbl0001:row4:col2'])
+- dropped unlinked row (NIL): 'F_SDZ' — extend the ontology if this is a real PK parameter (source ['tbl0001:row2:col2'])
+- dropped unlinked row (NIL): 'F_SMX' — extend the ontology if this is a real PK parameter (source ['tbl0001:row3:col2'])
 - dropped duplicate Q49 ('ka_SMX', value '16.40') — already have one for this compound
 - dropped duplicate Q49 ('ka_TMP', value '11.30') — already have one for this compound
 - dropped duplicate Q61 ('Vd_SMX', value '10.10') — already have one for this compound
 - dropped duplicate Q61 ('Vd_TMP', value '5.42') — already have one for this compound
-- dropped unlinked row (NIL): 'CL_SMX' — extend the ontology if this is a real PK parameter (source ['tbl0001:row12:col2', 'tbl0001:row12:col3'])
-- dropped duplicate Q61 ('β_Vd_SMX_BW', value '46.40') — already have one for this compound
-- dropped duplicate Q22 ('β_CL_SDZ_BW', value '41.40') — already have one for this compound
+- dropped duplicate Q22 ('CL_SMX', value '8.72') — already have one for this compound
+- 'β_Vd_SDZ_BW' is a β covariate effect on _Vd_, not Q61 (llm link set aside)
+- covariate level 'β_Vd_SDZ_BW' → Q900:theta_v_sdz_bw = 40.70 (linear_fractional on Q61)
+- 'β_Vd_SMX_BW' is a β covariate effect on _Vd_, not Q352 (llm link set aside)
+- covariate level 'β_Vd_SMX_BW' → Q900:theta_v_smx_bw = 46.40 (linear_fractional on Q61)
+- 'β_CL_SDZ_BW' is a β covariate effect on _CL_, not Q22 (llm link set aside)
+- covariate level 'β_CL_SDZ_BW' → Q900:theta_cl_sdz_bw = 41.40 (linear_fractional on Q22)
+- 'β_CL_TMP_BW' is a β covariate effect on _CL_T, not Q31 (llm link set aside)
+- covariate level 'β_CL_TMP_BW' → Q900:theta_cl_mp_bw = 23.10 (linear_fractional on Q22)
 - dropped duplicate Q60 ('T1/2β SMX (h)', value '2.80') — already have one for this compound
 - dropped duplicate Q60 ('T1/2β TMP (h)', value '1.50') — already have one for this compound
-- unit_dimension_unknown: 'h × µg/mL' (AUC∞)
 - dropped duplicate Q17 ('AUC∞ SMX (h × µg/mL)', value '204.00') — already have one for this compound
 - dropped duplicate Q17 ('AUC∞ TMP (h × µg/mL)', value '4.00') — already have one for this compound
-- implicit units: 'ka_SDZ' → 1/h (from the popPK convention: 'Absorption rate constants are first-order rate constants. The paper does not explicitly state the unit for the table ent')
-- implicit units: 'Vd_SDZ' → L/kg (from the paper text: "The paper text states: 'higher volume of distribution (0.51 L/kg for SDZ...)' and 'Vd of SMX and SDZ (0.62 L/kg and 0.51")
-- implicit units: 'CL_SDZ' → L/h/kg (from the paper text: "The paper text states: 'The clearance of SMX and SDZ were found to be similar (around 0.15 L/h/kg)'. While the table val")
+- implicit units: 'ka_SDZ' → 1/h (from the popPK convention: 'The paper does not explicitly state the unit for ka in the table or text excerpts. However, ka is an absorption rate con')
+- implicit units: 'Vd_SDZ' → L/kg (from the paper text: "The text states: 'The volume of distribution of TMP was found to be 3.14 L/kg and about 6 times higher in comparison to ")
+- implicit units: 'CL_SDZ' → L/h/kg (from the paper text: "The text states: 'The clearance of SMX and SDZ were found to be similar (around 0.15 L/h/kg)'. The value 6.00 correspond")
+- implicit units: 'CL_TMP' → L/h/kg (from the paper text: "The text states: 'The population clearance of TMP (1.53 L/h/kg) was found to be 10 times higher...'. Although the parame")
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vd_SDZ); Q22 (CL_SDZ)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trimethoprim
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tbl0001:row2:col3 = '&lt;0.1'
@@ -157,19 +162,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Boulanger_2024_table_2:row5:col1', 'Boulanger_2024_table_2:row5:col2', 'Boulanger_2024_table_2:row5:col3', 'Boulanger_2024_table_2:row5:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl0001:row11:col2', 'tbl0001:row11:col3'] |
+| C5_dimension_Q371 | pass | [length] ** 3 / [time] |  | ['tbl0001:row13:col2', 'tbl0001:row13:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tbl0001:row5:col2', 'tbl0001:row5:col3'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Boulanger_2024_table_2:row2:col1', 'Boulanger_2024_table_2:row2:col2', 'Boulanger_2024_table_2:row2:col3', 'Boulanger_2024_table_2:row2:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tbl0001:row8:col2', 'tbl0001:row8:col3'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | h × µg/mL | ['Boulanger_2024_table_2:row5:col1', 'Boulanger_2024_table_2:row5:col2', 'Boulanger_2024_table_2:row5:col3', 'Boulanger_2024_table_2:row5:col4'] |
-| C5_unit_missing_Q354 | fail | [length] ** 3 / [time] |  | ['tbl0001:row17:col2', 'tbl0001:row17:col3'] |
-| C5_unit_missing_Q371 | fail | [length] ** 3 / [time] |  | ['tbl0001:row13:col2', 'tbl0001:row13:col3'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 |  | ['tbl0001:row14:col2', 'tbl0001:row14:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6 | ['tbl0001:row11:col2', 'tbl0001:row11:col3'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 420 L/h | ['tbl0001:row11:col2', 'tbl0001:row11:col3'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 547 L | ['tbl0001:row8:col2', 'tbl0001:row8:col3'] |
 
@@ -194,5 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrimethoprim%5D%20Trimethoprim_Boulanger2024_reference&body=Drug%3A%20trimethoprim%0ARecord%3A%20Trimethoprim_Boulanger2024_reference%0APaper%3A%20Boulanger_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trimethoprim/Trimethoprim_Boulanger2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrimethoprim%5D%20Trimethoprim_Boulanger2024_reference&body=Drug%3A%20trimethoprim%0ARecord%3A%20Trimethoprim_Boulanger2024_reference%0APaper%3A%20Boulanger_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trimethoprim/Trimethoprim_Boulanger2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:15 UTC</sub>

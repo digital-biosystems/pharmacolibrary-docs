@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Schober_1978_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -34,8 +34,8 @@ Schober O, Mariss P, Pertynski T, Zimmermann P, Börner P. [Studies of 57-co-ble
 | Kontrast K | Frel | 0.5 |  |
 | Exkretion | fe | 75 | % |
 | Retentionswerte | AUC | 48 | Std. |
-| CL (mL/day) | CL | 218.0 | mL/day |
-| volumes of distribution | V | 20.0 | L/kg |
+| creatinine clearance | CL | 70.0 | ml/min |
+| Vd(L) Younger Patients AVG | V | 32.17 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -64,8 +64,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 | Kontrast K | `Q87` · Frel | 0.5 |  |  |  |  | llm (0.5) | fig_7:caption, fig_7:caption, fig_7:caption |
 | Exkretion | `Q44` · fe | 75 | % |  |  | % | llm (0.5) | fig_7:caption, fig_7:caption |
 | Retentionswerte | `Q88` · AUC | 48 | Std. |  |  | s·td | llm (0.5) | fig_7:caption |
-| CL (mL/day) | `Q22` · CL | 218.0 | mL/day | 2.523e-09 | m3/s | L/h | review_gapfill (0.7) | Han_2024:review |
-| volumes of distribution | `Q61` · V | 20.0 | L/kg | 1.4 | m3 | L | review_gapfill (0.7) | Crom_1987:review |
+| creatinine clearance | `Q22` · CL | 70.0 | ml/min | 1.167e-06 | m3/s | L/h | review_gapfill (0.7) | Bitran_1985:review |
+| Vd(L) Younger Patients AVG | `Q61` · V | 32.17 | L | 0.03217 | m3 | L | review_gapfill (0.7) | Groselj_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,8 +84,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=57Co-Bleomycin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Han_2024's review values (primary lacked it)
-- gap-filled Q61 (V) from Crom_1987's review values (primary lacked it)
+- gap-filled Q22 (CL) from Bitran_1985's review values (primary lacked it)
+- gap-filled Q61 (V) from Groselj_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -134,14 +134,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Han_2024:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bitran_1985:review'] |
 | C5_dimension_Q44 | pass | dimensionless |  | ['fig_7:caption', 'fig_7:caption'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Crom_1987:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Groselj_2021:review'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | Std. | ['fig_7:caption'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 218 | ['Han_2024:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Bitran_1985:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00908 L/h | ['Han_2024:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.4e+03 L | ['Crom_1987:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.2 L/h | ['Bitran_1985:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 32.2 L | ['Groselj_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -174,5 +174,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Schober1978v2_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Schober1978v2_reference%0APaper%3A%20Schober_1978_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-08-03 08:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Schober1978v2_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Schober1978v2_reference%0APaper%3A%20Schober_1978_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-08-03 08:59 UTC</sub>

@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Gijsen M, Dreesen E, Annaert P, Nicolai J, Debaveye Y, Wauters J et al. Meropenem Pharmacokinetics and Target Attainment in Critically Ill Patients Are Not Affected by Extracorporeal Membrane Oxygenation: A Matched Cohort Analysis. Microorganisms 9(6):1310 (2021). [doi:10.3390/microorganisms9061310](https://doi.org/10.3390/microorganisms9061310)
 
-**This record:** Pharmacolibrary v26.09, model `Lithium_Gijsen2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Gijsen2021_reference>
+**This record:** Pharmacolibrary, model `Lithium_Gijsen2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Gijsen2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LithiumGijsen2021reference,
   title  = {{Pharmacolibrary model Lithium_Gijsen2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lithium/Lithium_Gijsen2021_reference},
   note   = {Parameters from doi:10.3390/microorganisms9061310},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D%20Lithium_Gijsen2021_reference&body=Drug%3A%20lithium%0ARecord%3A%20Lithium_Gijsen2021_reference%0APaper%3A%20Gijsen_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/Lithium_Gijsen2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 16:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D%20Lithium_Gijsen2021_reference&body=Drug%3A%20lithium%0ARecord%3A%20Lithium_Gijsen2021_reference%0APaper%3A%20Gijsen_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/Lithium_Gijsen2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 16:19 UTC</sub>

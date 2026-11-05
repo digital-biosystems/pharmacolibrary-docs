@@ -23,14 +23,6 @@ Ketotifen is an antihistamine used to treat allergic conditions, acting as an H1
 | ketotifen | parent | 309.425 | C19H19NOS | DrugBank | [3827](https://pubchem.ncbi.nlm.nih.gov/compound/3827) | Yagi_2002 |
 | ketotifen fumarate | metabolite | 425.499 | C23H23NO5S | PubChem | [5282408](https://pubchem.ncbi.nlm.nih.gov/compound/5282408) | Yagi_2002 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 142.8 ‡ | L/h | 2.04 l//h/kg | rabbits | rabbit | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yagi_2002_reference](drugs/drug_ketotifen/Ketotifen_Yagi2002_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -110,5 +102,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketotifen%5D&body=Drug%3A%20ketotifen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketotifen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 23:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketotifen%5D&body=Drug%3A%20ketotifen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketotifen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 23:41 UTC</sub>

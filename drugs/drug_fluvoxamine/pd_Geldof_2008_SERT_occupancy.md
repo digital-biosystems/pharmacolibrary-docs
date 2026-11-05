@@ -107,13 +107,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Fluvoxamine_Geldof2008_PD_sert_occupancy`. <https://pharmacolibrary.github.io/#/drugs/drug_fluvoxamine/Fluvoxamine_Geldof2008_PD_sert_occupancy>
+**This record:** Pharmacolibrary, model `Fluvoxamine_Geldof2008_PD_sert_occupancy`. <https://pharmacolibrary.github.io/#/drugs/drug_fluvoxamine/Fluvoxamine_Geldof2008_PD_sert_occupancy>
 
 ```bibtex
 @misc{pharmacolibrary_FluvoxamineGeldof2008PDsertoccupancy,
   title  = {{Pharmacolibrary model Fluvoxamine_Geldof2008_PD_sert_occupancy}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fluvoxamine/Fluvoxamine_Geldof2008_PD_sert_occupancy},
 }
 ```
@@ -127,5 +126,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluvoxamine%5D%20pd_Geldof_2008_SERT_occupancy&body=Drug%3A%20fluvoxamine%0ARecord%3A%20pd_Geldof_2008_SERT_occupancy%0APaper%3A%20Geldof_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluvoxamine/pd_Geldof_2008_SERT_occupancy%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluvoxamine%5D%20pd_Geldof_2008_SERT_occupancy&body=Drug%3A%20fluvoxamine%0ARecord%3A%20pd_Geldof_2008_SERT_occupancy%0APaper%3A%20Geldof_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluvoxamine/pd_Geldof_2008_SERT_occupancy%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [fluvoxamine](drugs/drug_fluvoxamine/)</sub>

@@ -21,7 +21,7 @@ Flomoxef is a second-generation cephalosporin antibiotic used to treat bacterial
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| flomoxef | parent | 496.46 | C15H18F2N6O7S2 | DrugBank | [65864](https://pubchem.ncbi.nlm.nih.gov/compound/65864) | Bekker_2026, Darlow_2022_2, Obata_1987 |
+| flomoxef | parent | 496.46 | C15H18F2N6O7S2 | DrugBank | [65864](https://pubchem.ncbi.nlm.nih.gov/compound/65864) | Bekker_2026, Darlow_2022_2, Hamada_2022, Obata_1987 |
 
 ## Start here
 
@@ -31,19 +31,9 @@ Flomoxef is a second-generation cephalosporin antibiotic used to treat bacterial
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.97 | L/h | 2.97 L/h | neonates with suspected sepsis |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bekker_2026_cohort_3fosfomycin_flomoxefn_20](drugs/drug_flomoxef/Flomoxef_Bekker2026_cohort_3fosfomycin_flomoxefn_20.md) |
-| CL | CL | 2.97 | L/h | 2.97 L/h | review reference |  | dog | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kusumoto_2024_reference](drugs/drug_flomoxef/Flomoxef_Kusumoto2024_reference.md) |
-| CL | CL | 2.97 | L/h | 2.97 L/h | women undergoing hysterectomy |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Obata_1987_reference](drugs/drug_flomoxef/Flomoxef_Obata1987_reference.md) |
-| V | V | 3.27 | L | 3.27 L | neonates with suspected sepsis |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bekker_2026_cohort_3fosfomycin_flomoxefn_20](drugs/drug_flomoxef/Flomoxef_Bekker2026_cohort_3fosfomycin_flomoxefn_20.md) |
-| V | V | 3.27 | L | 3.27 L | neonates | &gt; 146 (individual PK data), total 658 (including population-level data); final model fit to 137 babies | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Darlow_2022_2_reference](drugs/drug_flomoxef/Flomoxef_Darlow2022v2_reference.md) |
-| V | V | 3.27 | L | 3.27 L | review reference |  | dog | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kusumoto_2024_reference](drugs/drug_flomoxef/Flomoxef_Kusumoto2024_reference.md) |
-| V | V | 3.27 | L | 3.27 L | women undergoing hysterectomy |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Obata_1987_reference](drugs/drug_flomoxef/Flomoxef_Obata1987_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bekker_2026 · CL</text><circle cx="355.5" cy="30.0" r="4" fill="#ef6c00"><title>Bekker_2026 · CL: 2.97 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kusumoto_2024 · CL</text><circle cx="355.5" cy="46.0" r="4" fill="#2e7d32"><title>Kusumoto_2024 · CL: 2.97 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Obata_1987 · CL</text><circle cx="355.5" cy="62.0" r="4" fill="#ef6c00"><title>Obata_1987 · CL: 2.97 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bekker_2026 · V</text><circle cx="370.1" cy="30.0" r="4" fill="#ef6c00"><title>Bekker_2026 · V: 3.27 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Darlow_2022_2 · V</text><circle cx="370.1" cy="46.0" r="4" fill="#ef6c00"><title>Darlow_2022_2 · V: 3.27 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kusumoto_2024 · V</text><circle cx="370.1" cy="62.0" r="4" fill="#2e7d32"><title>Kusumoto_2024 · V: 3.27 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Obata_1987 · V</text><circle cx="370.1" cy="78.0" r="4" fill="#ef6c00"><title>Obata_1987 · V: 3.27 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -55,7 +45,7 @@ Flomoxef is a second-generation cephalosporin antibiotic used to treat bacterial
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ cohort_2flomoxef_amikacinn_21](drugs/drug_flomoxef/Flomoxef_Bekker2026_cohort_2flomoxef_amikacinn_21.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Darlow_2022_2_reference](drugs/drug_flomoxef/Flomoxef_Darlow2022v2_reference.md) | — | 1-compartment (no model) | 5 | Darlow CA et al., Flomoxef for neonates: extending option…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkab468](https://doi.org/10.1093/jac/dkab468) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Obata_1987_reference](drugs/drug_flomoxef/Flomoxef_Obata1987_reference.md) | — | 1-compartment (no model) | 3 | Obata T et al., [Studies on antimicrobial concentration…, The Japanese journal of ant… (1987) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hamada_2022_reference](drugs/drug_flomoxef/Flomoxef_Hamada2022_reference.md) | — | general linear (no model) | 0 | Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11040456](https://doi.org/10.3390/antibiotics11040456) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hamada_2022_reference](drugs/drug_flomoxef/Flomoxef_Hamada2022_reference.md) | — | 1-compartment (no model) | 1 | Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11040456](https://doi.org/10.3390/antibiotics11040456) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -106,5 +96,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflomoxef%5D&body=Drug%3A%20flomoxef%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flomoxef/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflomoxef%5D&body=Drug%3A%20flomoxef%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flomoxef/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:06 UTC</sub>

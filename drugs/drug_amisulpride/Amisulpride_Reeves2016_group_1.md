@@ -238,13 +238,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Reeves S, Bertrand J, D'Antonio F, McLachlan E, Nair A, Brownings S et al. A population approach to characterise amisulpride pharmacokinetics in older people and Alzheimer's disease. Psychopharmacology 233(18):3371–3381 (2016). [doi:10.1007/s00213-016-4379-6](https://doi.org/10.1007/s00213-016-4379-6)
 
-**This record:** Pharmacolibrary v26.09, model `Amisulpride_Reeves2016_group_1`. <https://pharmacolibrary.github.io/#/drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1>
+**This record:** Pharmacolibrary, model `Amisulpride_Reeves2016_group_1`. <https://pharmacolibrary.github.io/#/drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1>
 
 ```bibtex
 @misc{pharmacolibrary_AmisulprideReeves2016group1,
   title  = {{Pharmacolibrary model Amisulpride_Reeves2016_group_1}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1},
   note   = {Parameters from doi:10.1007/s00213-016-4379-6},
 }
@@ -263,5 +262,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamisulpride%5D%20Amisulpride_Reeves2016_group_1&body=Drug%3A%20amisulpride%0ARecord%3A%20Amisulpride_Reeves2016_group_1%0APaper%3A%20Reeves_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 14:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamisulpride%5D%20Amisulpride_Reeves2016_group_1&body=Drug%3A%20amisulpride%0ARecord%3A%20Amisulpride_Reeves2016_group_1%0APaper%3A%20Reeves_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 14:57 UTC</sub>

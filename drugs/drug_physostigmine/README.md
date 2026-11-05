@@ -22,17 +22,6 @@ Physostigmine is a cholinesterase inhibitor used as a miotic to treat glaucoma a
 |---|---|---|---|---|---|---|
 | physostigmine | parent | 275.346 | C15H21N3O2 | DrugBank | [5983](https://pubchem.ncbi.nlm.nih.gov/compound/5983) | Somani_1987, Somani_1989 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 80.9 | L/h | 80.9 L/h | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Somani_1989_reference](drugs/drug_physostigmine/Physostigmine_Somani1989_reference.md) |
-| ka | kabs | 6 | 1/h | 0.1 min-1 | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Somani_1989_reference](drugs/drug_physostigmine/Physostigmine_Somani1989_reference.md) |
-| t½ | t1/2z | 0.5567 | h | 33.4 min | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Somani_1989_reference](drugs/drug_physostigmine/Physostigmine_Somani1989_reference.md) |
-| F | Fab | 0.02 |  | 0.02 F | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Somani_1989_reference](drugs/drug_physostigmine/Physostigmine_Somani1989_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -155,5 +144,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphysostigmine%5D&body=Drug%3A%20physostigmine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_physostigmine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphysostigmine%5D&body=Drug%3A%20physostigmine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_physostigmine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:25 UTC</sub>

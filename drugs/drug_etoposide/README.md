@@ -31,18 +31,9 @@ Etoposide is a chemotherapy drug used to treat many cancers, including testicula
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.14 | L/h | 1.14 L/h | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) |
-| CL | CL | 1.14 | L/h | 1.14 L/h | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) |
-| V | V | 6 | L | 6.0 l | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) |
-| V | V | 6.1 | L | 6.1 l | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) |
-| F | Fab | 0.44 |  | 0.44 | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) |
-| F | Fab | 0.44 |  | 0.44 | adult patients with solid tumours | n_subjects_value | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Toffoli_2001 · CL</text><circle cx="209.9" cy="30.0" r="4" fill="#78909c"><title>Toffoli_2001 · CL: 1.14 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Toffoli_2001 · CL</text><circle cx="209.9" cy="46.0" r="4" fill="#78909c"><title>Toffoli_2001 · CL: 1.14 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Toffoli_2001 · V</text><circle cx="462.4" cy="30.0" r="4" fill="#78909c"><title>Toffoli_2001 · V: 6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Toffoli_2001 · V</text><circle cx="464.9" cy="46.0" r="4" fill="#78909c"><title>Toffoli_2001 · V: 6.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -265,5 +256,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betoposide%5D&body=Drug%3A%20etoposide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etoposide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betoposide%5D&body=Drug%3A%20etoposide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etoposide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:12 UTC</sub>

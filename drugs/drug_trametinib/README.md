@@ -33,15 +33,9 @@ Trametinib is a MEK inhibitor anticancer drug used to treat melanoma, including 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 4.2 | L/h | 4.2 L/h | adult oncology patients with solid tumours | 33 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ravix_2024_reference](drugs/drug_trametinib/Trametinib_Ravix2024_reference.md) |
-| CL | CL/F | 1.26 | L/h | 1.26 L/h | patients with BRAF V600 mutation-positive metastatic melanoma | 493 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ouellet_2016_reference](drugs/drug_trametinib/Trametinib_Ouellet2016_reference.md) |
-| V | V1 | 102 | L | 102 L | adult oncology patients with solid tumours | 33 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ravix_2024_reference](drugs/drug_trametinib/Trametinib_Ravix2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ravix_2024 · CL</text><circle cx="408.1" cy="30.0" r="4" fill="#2e7d32"><title>Ravix_2024 · CL: 4.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ouellet_2016 · CL/F</text><circle cx="225.1" cy="46.0" r="4" fill="#ef6c00"><title>Ouellet_2016 · CL/F: 1.26 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -127,5 +121,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D&body=Drug%3A%20trametinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D&body=Drug%3A%20trametinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:28 UTC</sub>

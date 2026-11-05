@@ -125,13 +125,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Riluzole_Zhao2016_PD_fmp_blue_fluorescence`. <https://pharmacolibrary.github.io/#/drugs/drug_riluzole/Riluzole_Zhao2016_PD_fmp_blue_fluorescence>
+**This record:** Pharmacolibrary, model `Riluzole_Zhao2016_PD_fmp_blue_fluorescence`. <https://pharmacolibrary.github.io/#/drugs/drug_riluzole/Riluzole_Zhao2016_PD_fmp_blue_fluorescence>
 
 ```bibtex
 @misc{pharmacolibrary_RiluzoleZhao2016PDfmpbluefluorescence,
   title  = {{Pharmacolibrary model Riluzole_Zhao2016_PD_fmp_blue_fluorescence}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_riluzole/Riluzole_Zhao2016_PD_fmp_blue_fluorescence},
 }
 ```
@@ -145,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D%20pd_Zhao_2016_FMP_blue_fluorescence&body=Drug%3A%20riluzole%0ARecord%3A%20pd_Zhao_2016_FMP_blue_fluorescence%0APaper%3A%20Zhao_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/pd_Zhao_2016_FMP_blue_fluorescence%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D%20pd_Zhao_2016_FMP_blue_fluorescence&body=Drug%3A%20riluzole%0ARecord%3A%20pd_Zhao_2016_FMP_blue_fluorescence%0APaper%3A%20Zhao_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/pd_Zhao_2016_FMP_blue_fluorescence%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [riluzole](drugs/drug_riluzole/)</sub>

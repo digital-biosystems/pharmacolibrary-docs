@@ -31,18 +31,9 @@ Paromomycin is an antibiotic used to treat intestinal infections such as amebias
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.62 | L/h | 2.62 L/h | children and adults with visceral leishmaniasis | &gt;=265 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) |
-| V | V | 69.86 ‡ | L | 0.998 liters/kg | healthy volunteers and patients with liver cirrhosis | 11 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lentzen_1981_reference](drugs/drug_paromomycin/Paromomycin_Lentzen1981_reference.md) |
-| V | V1 | 13.6 | L | 13.6 L | children and adults with visceral leishmaniasis | &gt;=265 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) |
-| ka | kabs | 2.05 | 1/h | 2.05 h−1 | children and adults with visceral leishmaniasis | &gt;=265 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) |
-| t½ | t1/2z | 2.6 | h | 2.6 h | healthy volunteers and patients with liver cirrhosis | 11 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lentzen_1981_reference](drugs/drug_paromomycin/Paromomycin_Lentzen1981_reference.md) |
-| F | Fab | 1 |  | 1 | children and adults with visceral leishmaniasis | &gt;=265 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lentzen_1981 · V ·/kg</text><circle cx="485.5" cy="30.0" r="4" fill="#ef6c00"><title>Lentzen_1981 · V ·/kg: 69.86 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Verrest_2023 · V1</text><circle cx="236.7" cy="46.0" r="4" fill="#78909c"><title>Verrest_2023 · V1: 13.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -125,5 +116,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparomomycin%5D&body=Drug%3A%20paromomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paromomycin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 18:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparomomycin%5D&body=Drug%3A%20paromomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paromomycin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 18:26 UTC</sub>

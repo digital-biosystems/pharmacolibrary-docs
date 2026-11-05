@@ -29,17 +29,6 @@ Encorafenib is a BRAF protein kinase inhibitor used to treat melanoma and colore
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 12.24 | L/h | 12.238 L/h | healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors | 1310 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2026_reference](drugs/drug_encorafenib/Encorafenib_Yang2026_reference.md) |
-| V | V1/F | 61.73 | L | 61.73 L | healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors | 1310 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2026_reference](drugs/drug_encorafenib/Encorafenib_Yang2026_reference.md) |
-| ka | kabs | 0.954 | 1/h | 0.954 h−1 | healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors | 1310 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2026_reference](drugs/drug_encorafenib/Encorafenib_Yang2026_reference.md) |
-| t½ | t1/2z | 64.28 | h | 64.279 h | healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors | 1310 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2026_reference](drugs/drug_encorafenib/Encorafenib_Yang2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -116,5 +105,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bencorafenib%5D&body=Drug%3A%20encorafenib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_encorafenib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bencorafenib%5D&body=Drug%3A%20encorafenib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_encorafenib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:38 UTC</sub>

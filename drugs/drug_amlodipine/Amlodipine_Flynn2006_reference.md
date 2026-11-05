@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Flynn_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amlodipine — `Amlodipine_Flynn2006_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Flynn2006_reference" status="curated_candidate" stale="false" population="hypertensive children and adolescents" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:30 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Flynn2006_reference" status="extracted" stale="true" population="hypertensive children and adolescents" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Flynn JT, Nahata MC, Mahan JD, Portman RJ. Population pharmacokinetics of amlodipine in hypertensive children and adolescents. Journal of clinical pharmacology 46(8):905–916 (2006).
@@ -15,13 +17,15 @@ Flynn JT, Nahata MC, Mahan JD, Portman RJ. Population pharmacokinetics of amlodi
 
 ## Population and dosing
 
-**Population:** hypertensive children and adolescents · condition hypertension · age group child · n = &gt;=74.
+**Population:** hypertensive children and adolescents · age group child · n = ... (truncated).
+
+**Dosing:** 0.17 mg/kg/d, oral, multiple, every 12 h.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_amlodipine/Amlodipine_Flynn2006_reference/Amlodipine_Flynn2006_reference.svg" alt="Amlodipine_Flynn2006_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -29,14 +33,13 @@ Flynn JT, Nahata MC, Mahan JD, Portman RJ. Population pharmacokinetics of amlodi
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| predicted apparent clearances (CL/F) | CL/F | 23.7 | L/h |
-| apparent volume of distribution (V/F) | V/F | 25.1 | L/kg |
-| Ka (h-1) | kabs | 1.46 | h-1 |
-| ALAG | tlag | 0.86 | h |
+| ka | kabs | 0.79 | h -1 |
+| CL/F, L/h | CL/F | 17.9 | L/h |
+| V/F, L | V/F | 757 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +53,7 @@ Flynn JT, Nahata MC, Mahan JD, Portman RJ. Population pharmacokinetics of amlodi
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag: this record has 0.87, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 17.9, the second reading 22.2; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,10 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| predicted apparent clearances (CL/F) | `Q27` · CL/F | 23.7 | L/h | 6.583e-06 | m3/s | l/h | llm (0.6) | Flynn_2006:abstract, Flynn_2006:abstract |
-| apparent volume of distribution (V/F) | `Q76` · V/F | 25.1 | L/kg | 1.757 | m3 | l/kg | exact (1) | Flynn_2006:abstract |
-| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.0004056 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
-| ALAG | `Q83` · tlag | 0.86 | h | 3096 | s | h | review_gapfill (0.7) | Courlet_2021:review |
+| ka | `Q49` · kabs | 0.79 | h -1 | 0.0002194 | 1/s | 1/h | exact (1) | Flynn_2006:other_prose |
+| CL/F, L/h | `Q27` · CL/F | 17.9 | L/h | 4.972e-06 | m3/s | L/h | exact (1) | Flynn_2006:discussion_prose |
+| V/F, L | `Q76` · V/F | 757 | L | 0.757 | m3 | L | exact (1) | Flynn_2006:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,35 +76,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- salvaged Q49 ('ka'=0.79) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F, L/h'=17.9) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F, L'=757) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amlodipine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Courlet_2021's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Flynn_2006_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- text-pointer recovery found no readable extracted parameter table
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag]` | 0.87 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 25.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 23.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.46 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[predicted apparent clearances]` | 23.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 25.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 17.9 | 22.2 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 757 | 1300 | mismatch |
 
 </details>
 
@@ -116,17 +121,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Flynn_2006:abstract', 'Flynn_2006:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Flynn_2006:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Courlet_2021:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 23.7 L/h | ['Flynn_2006:abstract', 'Flynn_2006:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.76e+03 L | ['Flynn_2006:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 17.9 L/h | ['Flynn_2006:discussion_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 757 L | ['Flynn_2006:discussion_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -193,13 +194,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Flynn JT, Nahata MC, Mahan JD, Portman RJ. Population pharmacokinetics of amlodipine in hypertensive children and adolescents. Journal of clinical pharmacology 46(8):905–916 (2006). [doi:10.1177/0091270006289844](https://doi.org/10.1177/0091270006289844)
 
-**This record:** Pharmacolibrary v26.09, model `Amlodipine_Flynn2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Flynn2006_reference>
+**This record:** Pharmacolibrary, model `Amlodipine_Flynn2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Flynn2006_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AmlodipineFlynn2006reference,
   title  = {{Pharmacolibrary model Amlodipine_Flynn2006_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Flynn2006_reference},
   note   = {Parameters from doi:10.1177/0091270006289844},
 }
@@ -218,5 +218,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_Flynn2006_reference&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_Flynn2006_reference%0APaper%3A%20Flynn_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_Flynn2006_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_Flynn2006_reference&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_Flynn2006_reference%0APaper%3A%20Flynn_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_Flynn2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 10:43 UTC</sub>

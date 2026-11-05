@@ -29,16 +29,6 @@ Dapoxetine is a urological drug developed for the treatment of premature ejacula
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 37.8 | L/h | 37.8 L/h | healthy Chinese male subjects | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pu_2026_reference](drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md) |
-| V | V1/F | 65.6 | L | 65.6 L | healthy Chinese male subjects | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pu_2026_reference](drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md) |
-| ka | kabs | 1.29 | 1/h | 1.29 /h | healthy Chinese male subjects | 39 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pu_2026_reference](drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -109,5 +99,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapoxetine%5D&body=Drug%3A%20dapoxetine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapoxetine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapoxetine%5D&body=Drug%3A%20dapoxetine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapoxetine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:14 UTC</sub>

@@ -193,13 +193,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Piotrovsky VK, Huang ML, Van Peer A, Langenaecken C. Effects of demographic variables on vorozole pharmacokinetics in healthy volunteers and in breast cancer patients. Cancer chemotherapy and pharmacology 42(3):221–228 (1998). [doi:10.1007/s002800050808](https://doi.org/10.1007/s002800050808)
 
-**This record:** Pharmacolibrary v26.09, model `Vorozole_Piotrovsky1998_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference>
+**This record:** Pharmacolibrary, model `Vorozole_Piotrovsky1998_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference>
 
 ```bibtex
 @misc{pharmacolibrary_VorozolePiotrovsky1998reference,
   title  = {{Pharmacolibrary model Vorozole_Piotrovsky1998_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference},
   note   = {Parameters from doi:10.1007/s002800050808},
 }
@@ -218,5 +217,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvorozole%5D%20Vorozole_Piotrovsky1998_reference&body=Drug%3A%20vorozole%0ARecord%3A%20Vorozole_Piotrovsky1998_reference%0APaper%3A%20Piotrovsky_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 22:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvorozole%5D%20Vorozole_Piotrovsky1998_reference&body=Drug%3A%20vorozole%0ARecord%3A%20Vorozole_Piotrovsky1998_reference%0APaper%3A%20Piotrovsky_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vorozole/Vorozole_Piotrovsky1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 22:28 UTC</sub>

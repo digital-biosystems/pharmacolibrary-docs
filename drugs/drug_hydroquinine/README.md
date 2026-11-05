@@ -29,16 +29,6 @@ Hydroquinine, a quinine derivative, is classified among drugs for disorders of t
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.7 | L/h | 6.7 l/h | adult patients with muscle cramps | 16 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) |
-| V | V | 86.8 ‡ | L | 1.24 l/kg | adult patients with muscle cramps | 16 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) |
-| t½ | t1/2z | 10.9 | h | 10.9 h | adult patients with muscle cramps | 16 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -80,5 +70,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroquinine%5D&body=Drug%3A%20hydroquinine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroquinine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroquinine%5D&body=Drug%3A%20hydroquinine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroquinine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:36 UTC</sub>

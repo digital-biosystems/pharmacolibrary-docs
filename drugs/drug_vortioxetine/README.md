@@ -23,16 +23,6 @@ Vortioxetine is an antidepressant used to treat major depressive disorder and, a
 | vortioxetine | parent | 298.45 | C18H22N2S | DrugBank | [71768094](https://pubchem.ncbi.nlm.nih.gov/compound/71768094) | Areberg_2014_2, Frederiksen_2021_2, Miao_2019_2, Naik_2016_2 |
 | Lu AA34443 | metabolite | 328.43 | C18H20N2O2S | PubChem | [118753351](https://pubchem.ncbi.nlm.nih.gov/compound/118753351) | Frederiksen_2021_2 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 42 | L/h | 42 L/hr | patients with major depressive disorder | 3160 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Naik_2016_2_reference](drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md) |
-| V | V1 | 1510 | L | 1510 L | adults | 1140 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frederiksen_2021_2_reference](drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md) |
-| ka | kabs | 0.16 | 1/h | 0.160 1/h | adults | 1140 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frederiksen_2021_2_reference](drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -117,5 +107,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvortioxetine%5D&body=Drug%3A%20vortioxetine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vortioxetine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:05 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvortioxetine%5D&body=Drug%3A%20vortioxetine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vortioxetine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:05 UTC</sub>

@@ -226,13 +226,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): KatjaCvan Trobec katja.cvan.trobec@gmail.com Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia, IztokGrabnar Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia, MojcaKerecKos Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia, TomazVovk Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia, JurijTrontelj Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia, StefanDAnker Department of Cardiology and Pneumology Innovative Clinical Trials University Medical Center Göttingen (UMG) Göttingen Germany et al. PHARMACOKINETICS AND DISPOSITION Bisoprolol pharmacokinetics and body composition in patients with chronic heart failure: a longitudinal study (2016). [doi:10.1007/s00228-016-2041-1](https://doi.org/10.1007/s00228-016-2041-1)
 
-**This record:** Pharmacolibrary v26.09, model `Bisoprolol_Cvan2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference>
+**This record:** Pharmacolibrary, model `Bisoprolol_Cvan2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BisoprololCvan2016reference,
   title  = {{Pharmacolibrary model Bisoprolol_Cvan2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference},
   note   = {Parameters from doi:10.1007/s00228-016-2041-1},
 }
@@ -251,5 +250,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbisoprolol%5D%20Bisoprolol_Cvan2016_reference&body=Drug%3A%20bisoprolol%0ARecord%3A%20Bisoprolol_Cvan2016_reference%0APaper%3A%20Cvan_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-07-15 10:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbisoprolol%5D%20Bisoprolol_Cvan2016_reference&body=Drug%3A%20bisoprolol%0ARecord%3A%20Bisoprolol_Cvan2016_reference%0APaper%3A%20Cvan_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-07-15 10:08 UTC</sub>

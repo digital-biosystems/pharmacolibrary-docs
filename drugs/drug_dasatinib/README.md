@@ -31,18 +31,9 @@ Dasatinib is a tyrosine-kinase inhibitor used to treat certain leukemias, includ
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.541 | L/h | 0.541 L/h | review reference |  | in vitro | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ande_2018_reference](drugs/drug_dasatinib/Dasatinib_Ande2018_reference.md) |
-| CL | CL/F | 126 | L/h | 126 L/h | Chinese patients with chronic myeloid leukemia | 140 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [He_2023_reference](drugs/drug_dasatinib/Dasatinib_He2023_reference.md) |
-| CL | CL/F | 296 | L/h | 296 L/h | patients with chronic myeloid leukemia in chronic phase across seven clinical studies | 981 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2013_reference](drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md) |
-| V | V | 25 | L | 25.0 L | review reference |  | in vitro | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ande_2018_reference](drugs/drug_dasatinib/Dasatinib_Ande2018_reference.md) |
-| V | V1/F | 1230 | L | 1230 L | patients with chronic myeloid leukemia in chronic phase across seven clinical studies | 981 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2013_reference](drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md) |
-| ka | kabs | 2.1 | 1/h | 2.1 1/h | patients with chronic myeloid leukemia in chronic phase across seven clinical studies | 981 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2013_reference](drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="277.5" y1="18" x2="277.5" y2="74" stroke="#ddd"/><text x="277.5" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="452.5" y1="18" x2="452.5" y2="74" stroke="#ddd"/><text x="452.5" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ande_2018 · CL</text><circle cx="254.2" cy="30.0" r="4" fill="#2e7d32"><title>Ande_2018 · CL: 0.541 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">He_2023 · CL/F</text><circle cx="461.3" cy="46.0" r="4" fill="#ef6c00"><title>He_2023 · CL/F: 126 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wang_2013 · CL/F</text><circle cx="493.7" cy="62.0" r="4" fill="#2e7d32"><title>Wang_2013 · CL/F: 296 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ande_2018 · V</text><circle cx="236.4" cy="30.0" r="4" fill="#2e7d32"><title>Ande_2018 · V: 25 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2013 · V1/F</text><circle cx="433.8" cy="46.0" r="4" fill="#2e7d32"><title>Wang_2013 · V1/F: 1230 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -161,5 +152,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdasatinib%5D&body=Drug%3A%20dasatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dasatinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdasatinib%5D&body=Drug%3A%20dasatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dasatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:23 UTC</sub>

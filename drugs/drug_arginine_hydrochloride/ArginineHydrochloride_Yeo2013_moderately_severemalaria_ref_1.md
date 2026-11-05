@@ -166,13 +166,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A randomized pilot study of L-arginine infusion in severe falciparum malaria: preliminary safety, efficacy and pharmacokinetics. PloS one 8(7):e69587 (2013). [doi:10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587)
 
-**This record:** Pharmacolibrary v26.09, model `ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1`. <https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1>
+**This record:** Pharmacolibrary, model `ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1`. <https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1>
 
 ```bibtex
 @misc{pharmacolibrary_ArginineHydrochlorideYeo2013moderatelyseveremalariaref1,
   title  = {{Pharmacolibrary model ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1},
   note   = {Parameters from doi:10.1371/journal.pone.0069587},
 }
@@ -187,5 +186,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barginine_hydrochloride%5D%20ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1&body=Drug%3A%20arginine_hydrochloride%0ARecord%3A%20ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1%0APaper%3A%20Yeo_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 00:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barginine_hydrochloride%5D%20ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1&body=Drug%3A%20arginine_hydrochloride%0ARecord%3A%20ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1%0APaper%3A%20Yeo_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 00:13 UTC</sub>

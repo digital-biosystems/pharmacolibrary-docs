@@ -177,13 +177,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Dings C, Lehr T, Kranke P, Vojnar B, Gaik C, Koch T et al. Pharmacometric Analysis of Cafedrine/Theodrenaline Versus Ephedrine on Maternal Hemodynamics and Neonatal Acidosis During Cesarean Section. Pharmaceutics 18(3) (2026). [doi:10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296)
 
-**This record:** Pharmacolibrary v26.09, model `Cafedrine_Dings2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cafedrine/Cafedrine_Dings2026_reference>
+**This record:** Pharmacolibrary, model `Cafedrine_Dings2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cafedrine/Cafedrine_Dings2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CafedrineDings2026reference,
   title  = {{Pharmacolibrary model Cafedrine_Dings2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cafedrine/Cafedrine_Dings2026_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics18030296},
 }
@@ -202,5 +201,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcafedrine%5D%20Cafedrine_Dings2026_reference&body=Drug%3A%20cafedrine%0ARecord%3A%20Cafedrine_Dings2026_reference%0APaper%3A%20Dings_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cafedrine/Cafedrine_Dings2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 04:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcafedrine%5D%20Cafedrine_Dings2026_reference&body=Drug%3A%20cafedrine%0ARecord%3A%20Cafedrine_Dings2026_reference%0APaper%3A%20Dings_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cafedrine/Cafedrine_Dings2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 04:30 UTC</sub>

@@ -82,5 +82,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsparteine%5D%20pd_Honerj_ger_1986_Fc&body=Drug%3A%20sparteine%0ARecord%3A%20pd_Honerj_ger_1986_Fc%0APaper%3A%20Honerj%C3%A4ger_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sparteine/pd_Honerj_ger_1986_Fc%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsparteine%5D%20pd_Honerj_ger_1986_Fc&body=Drug%3A%20sparteine%0ARecord%3A%20pd_Honerj_ger_1986_Fc%0APaper%3A%20Honerj%C3%A4ger_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sparteine/pd_Honerj_ger_1986_Fc%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sparteine](drugs/drug_sparteine/)</sub>

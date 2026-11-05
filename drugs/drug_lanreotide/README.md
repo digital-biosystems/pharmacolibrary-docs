@@ -29,15 +29,6 @@ Lanreotide is a synthetic somatostatin analogue used as a hormonal and antineopl
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 21.38 | L/h | 513 L/day | patients with gastroenteropancreatic neuroendocrine tumors | &gt;290&lt; | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) |
-| V | V/F | 18.3 | L | 18.3 L | patients with gastroenteropancreatic neuroendocrine tumors | &gt;290&lt; | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -118,5 +109,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blanreotide%5D&body=Drug%3A%20lanreotide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lanreotide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blanreotide%5D&body=Drug%3A%20lanreotide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lanreotide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:22 UTC</sub>

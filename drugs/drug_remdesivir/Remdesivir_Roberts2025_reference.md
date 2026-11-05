@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Roberts_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Roberts2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absorption parameters used library placeholders instead of reported estimates, and covariate scenarios were not simulated to verify their effects.
+> This record was reviewed on 2026-10-22 14:39 UTC (Needs review), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="needs_review" stale="false" population="unknown" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="extracted" stale="true" population="hospitalised adults with confirmed SARS-CoV-2 infection" measured-compound="GS-441524" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Pharmacokinetic Modelling of Remdesivir and Its Metabolite GS-441524 in Hospitalised Patients with COVID-19. Clinical pharmacokinetics 64(5):743–756 (2025).
@@ -17,9 +17,9 @@ Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Phar
 
 ## Population and dosing
 
-**Population:** unknown · condition COVID-19.
+**Population:** hospitalised adults with confirmed SARS-CoV-2 infection · condition COVID-19 · age group adult · n = This field cannot be an object or array; using the number of subjects contributing to the final model (model-building + external validation). The abstract states 33 patients were enrolled. The methods state 12 patients (model building) + 25 patients (GS-441524) but note the validation was ~1/4 of model building. 33 is the total cohort described in abstract. However, looking at the methods: '49 remdesivir plasma concentrations from 12 patients and 153 GS-441524 concentrations from 25 patients were used for model development.' This is a subset. The abstract says 'In total, 33 patients were enrolled'. I will use 33 as the total study population..
 
-**Dosing:** 100, 200 mg, intravenous, multiple, every 24 h.
+**Dosing:** 100, 200 mg, iv, multiple, every 24 h.
 
 **Dosed compound ≠ measured compound:** dosed remdesivir, measured GS-441524.
 
@@ -33,16 +33,14 @@ Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Phar
 <figure class="pk-models-diagram"><img src="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference.svg" alt="Remdesivir_Roberts2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| CL (L/h) | CL | 105 | L/h | 17.8 | 53.1 (29.5% RSE) |
-| V (L) | V | 121 | L | 23.7 |  |
+| CL (L/h) | CLm/F | 105 | L/h | 17.8 | 53.1 (29.5% RSE) |
+| V (L) | Vm/F | 121 | L | 23.7 |  |
 | CL/fm (L/h) | CLm/F | 15.9 | L/h | 8.39 | 36.8 (17.7% RSE) |
 | V/fm (L) | Vm/F | 429 | L | 11.4 | 46.0 (22.1% RSE) |
-| egfr_effect_on_cl | egfr_effect_on_cl | 1.12 |  | 0.02 |  |
-| theta_v_age | theta_v_age | -1.15 |  | 33.7 |  |
+| age_effect_on_v | age_effect_on_v | -1.15 |  | 33.7 |  |
+| theta_q22_egfr | theta_q22_egfr | 1.12 |  | 0.02 |  |
 
 ## Caveats
 
@@ -50,7 +48,7 @@ Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +62,7 @@ Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Phar
 
 The absorption parameters (ka, Tlag) were left at library placeholders because they were not explicitly reported in the source, affecting the simulated profile without paper support. Covariates for renal function and age were defined but not exercised, so their impact on pharmacokinetics remains unverified. Extracted — GS-441524: CL 105 L/h, V 121 L, CLm/F 15.9 L/h, Vm/F 429 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has GS-441524, the second reading remdesivir; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,12 +70,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 105 | L/h | 2.917e-05 | m3/s | l/h | 17.8 | exact (1) | Tab2:row3:col1 | 53.1 (29.5% RSE) |
-| V (L) | `Q61` · V | 121 | L | 0.121 | m3 | l | 23.7 | exact (1) | Tab2:row4:col1 |  |
+| CL (L/h) | `Q351` · CLm/F | 105 | L/h | 2.917e-05 | m3/s | l/h | 17.8 | exact (1) | Tab2:row3:col1 | 53.1 (29.5% RSE) |
+| V (L) | `Q367` · Vm/F | 121 | L | 0.121 | m3 | l | 23.7 | exact (1) | Tab2:row4:col1 |  |
 | CL/fm (L/h) | `Q351` · CLm/F | 15.9 | L/h | 4.417e-06 | m3/s | l/h | 8.39 | exact (1) | Tab2:row6:col1 | 36.8 (17.7% RSE) |
 | V/fm (L) | `Q367` · Vm/F | 429 | L | 0.429 | m3 | l | 11.4 | exact (1) | Tab2:row7:col1 | 46.0 (22.1% RSE) |
-| egfr_effect_on_cl | `Q900` · egfr_effect_on_cl | 1.12 |  |  |  |  | 0.02 |  | Tab2:row9:col1 |  |
-| theta_v_age | `Q900` · theta_v_age | -1.15 |  |  |  |  | 33.7 |  | Tab2:row8:col1 |  |
+| age_effect_on_v | `Q900` · age_effect_on_v | -1.15 |  |  |  |  | 33.7 |  | Tab2:row8:col1 |  |
+| theta_q22_egfr | `Q900` · theta_q22_egfr | 1.12 |  |  |  |  | 0.02 |  | Tab2:row9:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -93,15 +91,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- compound tags: 11 row(s) → GS-441524 (name 11)
 - table section iiv: 'Remdesivir CL' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'Remdesivir V' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'GS-441524 CL/fm' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'GS-441524 V/fm' routed out of structural estimates ('Between subject variability (%)')
-- covariate level 'eGFR effect on CL' → Q900:egfr_effect_on_cl = 1.12 (linear_fractional on Q22)
+- covariate level 'Age effect on V' → Q900:age_effect_on_v = -1.15 (linear_fractional on Q22)
 - routed 'Remdesivir proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - routed 'GS-441524 proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- metabolite gs-441524: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite gs-441524: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GS-441524
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 4 linked by role; re-tagged parent→GS-441524 ×5
 - review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
+- covariate level 'eGFR effect on CL' → Q900:egfr_effect_on_cl = 1.12 (linear_fractional on Q22)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -109,28 +114,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.5 (10/20 fields) | 10 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/fm].parameter_id` | Q351 | Q370 | mismatch |
-| `gpt-oss-120b` | `parameters[cl/fm].value` | 15.9 | 13.2 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['remdesivir', 'gs-441524', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[age_effect_on_v]` | -1.15 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss-120b` | `parameters[cl].parameter_id` | Q351 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[cl].value` | 105 | 69.3 | mismatch |
-| `gpt-oss-120b` | `parameters[egfr_effect_on_cl]` | 1.12 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q22_egfr]` |  | 0.78 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q61_age].value` | -1.15 | -1.18 | mismatch |
-| `gpt-oss-120b` | `parameters[v/fm].value` | 429 | 353 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_egfr]` |  | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_egfr]` | 1.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_age]` |  | -1.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss-120b` | `parameters[v].parameter_id` | Q367 | Q61 | mismatch |
-| `gpt-oss-120b` | `parameters[v].value` | 121 | 45.9 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | GS-441524 | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GS-441524 | remdesivir | mismatch |
 
 </details>
 
@@ -147,15 +150,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Tab2:row6:col1'] |
+| C5_dimension_Q367 | pass | [length] ** 3 |  | ['Tab2:row4:col1'] |
 | C5_dimension_Q367 | pass | [length] ** 3 |  | ['Tab2:row7:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row4:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 105 L/h | ['Tab2:row3:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 121 L | ['Tab2:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -222,13 +222,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Pharmacokinetic Modelling of Remdesivir and Its Metabolite GS-441524 in Hospitalised Patients with COVID-19. Clinical pharmacokinetics 64(5):743–756 (2025). [doi:10.1007/s40262-025-01496-2](https://doi.org/10.1007/s40262-025-01496-2)
 
-**This record:** Pharmacolibrary v26.09, model `Remdesivir_Roberts2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Roberts2025_reference>
+**This record:** Pharmacolibrary, model `Remdesivir_Roberts2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Roberts2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RemdesivirRoberts2025reference,
   title  = {{Pharmacolibrary model Remdesivir_Roberts2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Roberts2025_reference},
   note   = {Parameters from doi:10.1007/s40262-025-01496-2},
 }
@@ -247,5 +246,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Roberts2025_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Roberts2025_reference%0APaper%3A%20Roberts_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Roberts2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Roberts2025_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Roberts2025_reference%0APaper%3A%20Roberts_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Roberts2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>

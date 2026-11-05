@@ -120,13 +120,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Alemtuzumab_Mould2007_PD_wbc`. <https://pharmacolibrary.github.io/#/drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_PD_wbc>
+**This record:** Pharmacolibrary, model `Alemtuzumab_Mould2007_PD_wbc`. <https://pharmacolibrary.github.io/#/drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_PD_wbc>
 
 ```bibtex
 @misc{pharmacolibrary_AlemtuzumabMould2007PDwbc,
   title  = {{Pharmacolibrary model Alemtuzumab_Mould2007_PD_wbc}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_PD_wbc},
 }
 ```
@@ -140,5 +139,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balemtuzumab%5D%20pd_Mould_2007_WBC&body=Drug%3A%20alemtuzumab%0ARecord%3A%20pd_Mould_2007_WBC%0APaper%3A%20Mould_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alemtuzumab/pd_Mould_2007_WBC%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balemtuzumab%5D%20pd_Mould_2007_WBC&body=Drug%3A%20alemtuzumab%0ARecord%3A%20pd_Mould_2007_WBC%0APaper%3A%20Mould_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alemtuzumab/pd_Mould_2007_WBC%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [alemtuzumab](drugs/drug_alemtuzumab/)</sub>

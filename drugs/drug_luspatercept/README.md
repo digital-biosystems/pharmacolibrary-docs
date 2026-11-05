@@ -22,18 +22,9 @@ Luspatercept is an antianemic medicine used to treat anemia in people with myelo
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.01954 | L/h | 0.469 L/day | anemic patients with myelodysplastic syndromes | &gt;=260 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) |
-| CL | CL/F | 0.02217 | L/h | 0.532 L/day | adults with beta-thalassemia |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) |
-| V | V/F | 8.39 | L | 8.39 L | adults with beta-thalassemia |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) |
-| V | V/F | 9.2 | L | 9.20 L | anemic patients with myelodysplastic syndromes | &gt;=260 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) |
-| ka | kabs | 0.01708 | 1/h | 0.410 1/day | adults with beta-thalassemia |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) |
-| ka | kabs | 0.019 | 1/h | 0.456 1/day | anemic patients with myelodysplastic syndromes | &gt;=260 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chen_2020 · CL/F</text><circle cx="291.8" cy="30.0" r="4" fill="#78909c"><title>Chen_2020 · CL/F: 0.01954 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chen_2021 · CL/F</text><circle cx="311.0" cy="46.0" r="4" fill="#78909c"><title>Chen_2021 · CL/F: 0.02217 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Chen_2021 · V/F</text><circle cx="513.3" cy="30.0" r="4" fill="#78909c"><title>Chen_2021 · V/F: 8.39 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chen_2020 · V/F</text><circle cx="527.3" cy="46.0" r="4" fill="#78909c"><title>Chen_2020 · V/F: 9.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -107,5 +98,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bluspatercept%5D&body=Drug%3A%20luspatercept%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_luspatercept/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 21:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bluspatercept%5D&body=Drug%3A%20luspatercept%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_luspatercept/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 21:19 UTC</sub>

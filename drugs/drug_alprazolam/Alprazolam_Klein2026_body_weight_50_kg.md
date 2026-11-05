@@ -216,13 +216,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Klein P, Aungaroon G, Biton V, Liow KK, Phillips S, Wychowski T et al. Pharmacokinetics and tolerability of single-dose Staccato® alprazolam in adolescents with epilepsy, and population pharmacokinetic analysis to support dose selection in adolescents. Epilepsia 67(1):109–119 (2026). [doi:10.1111/epi.18643](https://doi.org/10.1111/epi.18643)
 
-**This record:** Pharmacolibrary v26.09, model `Alprazolam_Klein2026_body_weight_50_kg`. <https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg>
+**This record:** Pharmacolibrary, model `Alprazolam_Klein2026_body_weight_50_kg`. <https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg>
 
 ```bibtex
 @misc{pharmacolibrary_AlprazolamKlein2026bodyweight50kg,
   title  = {{Pharmacolibrary model Alprazolam_Klein2026_body_weight_50_kg}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg},
   note   = {Parameters from doi:10.1111/epi.18643},
 }
@@ -241,5 +240,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprazolam%5D%20Alprazolam_Klein2026_body_weight_50_kg&body=Drug%3A%20alprazolam%0ARecord%3A%20Alprazolam_Klein2026_body_weight_50_kg%0APaper%3A%20Klein_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 18:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balprazolam%5D%20Alprazolam_Klein2026_body_weight_50_kg&body=Drug%3A%20alprazolam%0ARecord%3A%20Alprazolam_Klein2026_body_weight_50_kg%0APaper%3A%20Klein_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 18:11 UTC</sub>

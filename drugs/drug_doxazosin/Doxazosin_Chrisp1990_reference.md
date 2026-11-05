@@ -36,7 +36,7 @@ Chrisp P, Goa KL. Dilevalol. A review of its pharmacodynamic and pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Chrisp P, Goa KL. Dilevalol. A review of its pharmacodynamic and pharmacokinetic
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 243, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 243, the second reading 243; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,22 +73,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q17]` | 243 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q19]` | 1465 | 77.2 | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 243 | 243 | mismatch |
+| `gpt-oss-120b` | `values[Q19]` | 54.2 | 54.2 | mismatch |
+| `gpt-oss-120b` | `values[Q322]` |  | 7.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 61.5 | 220 | mismatch |
+| `gpt-oss-120b` | `values[Q40]` |  | 30 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q44]` |  | 1.25 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q53]` |  | 48 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q56]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q88]` |  | 243 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q46]` |  | 75 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` |  | 8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` |  | 25 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 25 | 24.6 | mismatch |
 
 </details>
 

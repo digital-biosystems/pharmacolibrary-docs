@@ -24,14 +24,6 @@ Bendroflumethiazide is a thiazide diuretic used to treat high blood pressure, he
 | canrenone | metabolite | 340.463 | C22H28O3 | PubChem | [13789](https://pubchem.ncbi.nlm.nih.gov/compound/13789) | Vergin_1986 |
 | spironolactone | metabolite | 416.576 | C24H32O4S | PubChem | [5833](https://pubchem.ncbi.nlm.nih.gov/compound/5833) | Vergin_1986 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 16.16 | L/h | 269.4 ml/min | healthy volunteers | &gt;=10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vergin_1986_reference](drugs/drug_bendroflumethiazide/Bendroflumethiazide_Vergin1986_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -105,5 +97,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbendroflumethiazide%5D&body=Drug%3A%20bendroflumethiazide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bendroflumethiazide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 15:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbendroflumethiazide%5D&body=Drug%3A%20bendroflumethiazide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bendroflumethiazide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:03 UTC</sub>

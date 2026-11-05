@@ -31,18 +31,9 @@ Bedaquiline is an antituberculous drug used to treat multidrug-resistant pulmona
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 3.57 | L/h | 3.57 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shao_2023_reference](drugs/drug_bedaquiline/Bedaquiline_Shao2023_reference.md) |
-| CL | CL/F | 4.54 | L/h | 4.54 L/h | adult patients with multidrug-resistant tuberculosis | condition | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Zou_2022_reference](drugs/drug_bedaquiline/Bedaquiline_Zou2022_reference.md) |
-| V | V/F | 227 | L | 227 L | adult patients with multidrug-resistant tuberculosis | condition | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Zou_2022_reference](drugs/drug_bedaquiline/Bedaquiline_Zou2022_reference.md) |
-| V | V1/F | 337 | L | 336.97 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shao_2023_reference](drugs/drug_bedaquiline/Bedaquiline_Shao2023_reference.md) |
-| ka | kabs | 0.447 | 1/h | 0.447 h−1 | adult patients with multidrug-resistant tuberculosis | condition | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Zou_2022_reference](drugs/drug_bedaquiline/Bedaquiline_Zou2022_reference.md) |
-| ka | kabs | 1000 | 1/h | 1000.0 h-1 | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shao_2023_reference](drugs/drug_bedaquiline/Bedaquiline_Shao2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shao_2023 · CL/F</text><circle cx="383.4" cy="30.0" r="4" fill="#2e7d32"><title>Shao_2023 · CL/F: 3.57 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zou_2022 · CL/F</text><circle cx="420.0" cy="46.0" r="4" fill="#ef6c00"><title>Zou_2022 · CL/F: 4.54 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zou_2022 · V/F</text><circle cx="314.6" cy="30.0" r="4" fill="#ef6c00"><title>Zou_2022 · V/F: 227 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shao_2023 · V1/F</text><circle cx="374.7" cy="46.0" r="4" fill="#2e7d32"><title>Shao_2023 · V1/F: 337 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -126,5 +117,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbedaquiline%5D&body=Drug%3A%20bedaquiline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bedaquiline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbedaquiline%5D&body=Drug%3A%20bedaquiline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bedaquiline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:01 UTC</sub>

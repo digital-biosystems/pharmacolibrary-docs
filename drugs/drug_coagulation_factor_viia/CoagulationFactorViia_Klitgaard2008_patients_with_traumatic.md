@@ -274,13 +274,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Klitgaard T, Nielsen TG. Overview of the human pharmacokinetics of recombinant activated factor VII. British journal of clinical pharmacology 65(1):3–11 (2008). [doi:10.1111/j.1365-2125.2007.03030.x](https://doi.org/10.1111/j.1365-2125.2007.03030.x)
 
-**This record:** Pharmacolibrary v26.09, model `CoagulationFactorViia_Klitgaard2008_patients_with_traumatic`. <https://pharmacolibrary.github.io/#/drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic>
+**This record:** Pharmacolibrary, model `CoagulationFactorViia_Klitgaard2008_patients_with_traumatic`. <https://pharmacolibrary.github.io/#/drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic>
 
 ```bibtex
 @misc{pharmacolibrary_CoagulationFactorViiaKlitgaard2008patientswithtraumatic,
   title  = {{Pharmacolibrary model CoagulationFactorViia_Klitgaard2008_patients_with_traumatic}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic},
   note   = {Parameters from doi:10.1111/j.1365-2125.2007.03030.x},
 }
@@ -299,5 +298,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcoagulation_factor_viia%5D%20CoagulationFactorViia_Klitgaard2008_patients_with_traumatic&body=Drug%3A%20coagulation_factor_viia%0ARecord%3A%20CoagulationFactorViia_Klitgaard2008_patients_with_traumatic%0APaper%3A%20Klitgaard_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 18:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcoagulation_factor_viia%5D%20CoagulationFactorViia_Klitgaard2008_patients_with_traumatic&body=Drug%3A%20coagulation_factor_viia%0ARecord%3A%20CoagulationFactorViia_Klitgaard2008_patients_with_traumatic%0APaper%3A%20Klitgaard_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 18:18 UTC</sub>

@@ -9,7 +9,7 @@
 
 > The peripheral compartment for relebactam is orphaned because the intercompartmental clearance linking it to the central compartment is unassigned.
 
-<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adults with hospital-acquired/ventilator-associated bacterial pneumonia" measured-compound="relebactam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adults with hospital-acquired/ventilator-associated bacterial pneumonia" measured-compound="relebactam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Patel M, Bellanti F, Daryani NM, Noormohamed N, Hilbert DW, Young K et al. Population pharmacokinetic/pharmacodynamic assessment of imipenem/cilastatin/relebactam in patients with hospital-acquired/ventilator-associated bacterial pneumonia. Clinical and translational science 15(2):396–408 (2022).
@@ -19,11 +19,13 @@ Patel M, Bellanti F, Daryani NM, Noormohamed N, Hilbert DW, Young K et al. Popul
 
 **Population:** adults with hospital-acquired/ventilator-associated bacterial pneumonia · condition hospital-acquired/ventilator-associated bacterial pneumonia · age group adult.
 
+**Dosing:** 250, 500 mg, iv, multiple, every 6 h.
+
 **Dosed compound ≠ measured compound:** dosed imipenem/cilastatin/relebactam, measured relebactam.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
@@ -84,8 +86,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'Q' from footnote/prose loose number 10.93 (source ['cts13158-tbl-0003:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=relebactam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 
 **Extraction notes:**
 - unparsed cell cts13158-tbl-0003:row3:col2 = '12.3 to 13.1'
@@ -166,7 +166,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts13158-tbl-0003:row4:col5', 'cts13158-tbl-0003:row4:col7'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts13158-tbl-0003:row5:col5', 'cts13158-tbl-0003:row5:col7'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.23 | ['cts13158-tbl-0003:row3:col5', 'cts13158-tbl-0003:row3:col7'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.23 L/h | ['cts13158-tbl-0003:row3:col5', 'cts13158-tbl-0003:row3:col7'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 11.2 L | ['cts13158-tbl-0003:row4:col5', 'cts13158-tbl-0003:row4:col7'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.15 L | ['cts13158-tbl-0003:row5:col5', 'cts13158-tbl-0003:row5:col7'] |
@@ -192,5 +192,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brelebactam%5D%20Relebactam_Patel2022_reference&body=Drug%3A%20relebactam%0ARecord%3A%20Relebactam_Patel2022_reference%0APaper%3A%20Patel_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_relebactam/Relebactam_Patel2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brelebactam%5D%20Relebactam_Patel2022_reference&body=Drug%3A%20relebactam%0ARecord%3A%20Relebactam_Patel2022_reference%0APaper%3A%20Patel_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_relebactam/Relebactam_Patel2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:44 UTC</sub>

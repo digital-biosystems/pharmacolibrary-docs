@@ -31,21 +31,9 @@ Gadopiclenol is a gadolinium-based contrast agent used to improve images in magn
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 5.5 | L/h | 5.5 L/h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) |
-| CL | CL | 5.8 | L/h | 5.8 L/h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) |
-| CL | CL | 6 | L/h | 6.0 L/h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) |
-| V | V | 13 | L | 13.0 L | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) |
-| V | V | 13.2 | L | 13.2 L | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) |
-| V | V | 14.4 | L | 14.4 L | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) |
-| t½ | t1/2z | 1.5 | h | 1.50 h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) |
-| t½ | t1/2z | 1.65 | h | 1.65 h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) |
-| t½ | t1/2z | 1.73 | h | 1.73 h | Japanese and non-Japanese subjects, including adults and pediatric patients | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eto_2025_0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Eto_2025 · CL</text><circle cx="449.1" cy="30.0" r="4" fill="#2e7d32"><title>Eto_2025 · CL: 5.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Eto_2025 · CL</text><circle cx="457.2" cy="46.0" r="4" fill="#2e7d32"><title>Eto_2025 · CL: 5.8 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Eto_2025 · CL</text><circle cx="462.4" cy="62.0" r="4" fill="#2e7d32"><title>Eto_2025 · CL: 6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Eto_2025 · V</text><circle cx="229.9" cy="30.0" r="4" fill="#2e7d32"><title>Eto_2025 · V: 13 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Eto_2025 · V</text><circle cx="232.2" cy="46.0" r="4" fill="#2e7d32"><title>Eto_2025 · V: 13.2 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Eto_2025 · V</text><circle cx="245.4" cy="62.0" r="4" fill="#2e7d32"><title>Eto_2025 · V: 14.4 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -95,5 +83,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopiclenol%5D&body=Drug%3A%20gadopiclenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopiclenol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopiclenol%5D&body=Drug%3A%20gadopiclenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopiclenol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:14 UTC</sub>

@@ -26,7 +26,7 @@ Etelcalcetide is a calcimimetic medicine used to treat secondary hyperparathyroi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | — | general linear (no model) | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | — | 1-compartment (no model) | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -89,5 +89,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betelcalcetide%5D&body=Drug%3A%20etelcalcetide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etelcalcetide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betelcalcetide%5D&body=Drug%3A%20etelcalcetide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etelcalcetide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:27 UTC</sub>

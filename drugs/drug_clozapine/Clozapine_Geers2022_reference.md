@@ -179,13 +179,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Geers LM, Cohen D, Wehkamp LM, van Wattum HJ, Kosterink JGW, Loonen AJM et al. Population pharmacokinetic model and limited sampling strategy for clozapine using plasma and dried blood spot samples. Therapeutic advances in psychopharmacology 12:20451253211065857 (2022). [doi:10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857)
 
-**This record:** Pharmacolibrary v26.09, model `Clozapine_Geers2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clozapine/Clozapine_Geers2022_reference>
+**This record:** Pharmacolibrary, model `Clozapine_Geers2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clozapine/Clozapine_Geers2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClozapineGeers2022reference,
   title  = {{Pharmacolibrary model Clozapine_Geers2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clozapine/Clozapine_Geers2022_reference},
   note   = {Parameters from doi:10.1177/20451253211065857},
 }
@@ -204,5 +203,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclozapine%5D%20Clozapine_Geers2022_reference&body=Drug%3A%20clozapine%0ARecord%3A%20Clozapine_Geers2022_reference%0APaper%3A%20Geers_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clozapine/Clozapine_Geers2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 15:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclozapine%5D%20Clozapine_Geers2022_reference&body=Drug%3A%20clozapine%0ARecord%3A%20Clozapine_Geers2022_reference%0APaper%3A%20Geers_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clozapine/Clozapine_Geers2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 15:14 UTC</sub>

@@ -206,13 +206,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Population Pharmacokinetics/Pharmacodynamics of 3,4-Diaminopyridine Free Base in Patients With Lambert-Eaton Myasthenia. CPT: pharmacometrics & systems pharmacology 6(9):625–634 (2017). [doi:10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218)
 
-**This record:** Pharmacolibrary v26.09, model `Amifampridine_Thakkar2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference>
+**This record:** Pharmacolibrary, model `Amifampridine_Thakkar2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AmifampridineThakkar2017reference,
   title  = {{Pharmacolibrary model Amifampridine_Thakkar2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference},
   note   = {Parameters from doi:10.1002/psp4.12218},
 }
@@ -227,5 +226,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D%20Amifampridine_Thakkar2017_reference&body=Drug%3A%20amifampridine%0ARecord%3A%20Amifampridine_Thakkar2017_reference%0APaper%3A%20Thakkar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D%20Amifampridine_Thakkar2017_reference&body=Drug%3A%20amifampridine%0ARecord%3A%20Amifampridine_Thakkar2017_reference%0APaper%3A%20Thakkar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:17 UTC</sub>

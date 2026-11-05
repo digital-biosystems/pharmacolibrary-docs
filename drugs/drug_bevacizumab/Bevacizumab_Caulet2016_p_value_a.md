@@ -154,5 +154,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbevacizumab%5D%20Bevacizumab_Caulet2016_p_value_a&body=Drug%3A%20bevacizumab%0ARecord%3A%20Bevacizumab_Caulet2016_p_value_a%0APaper%3A%20Caulet_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_p_value_a%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbevacizumab%5D%20Bevacizumab_Caulet2016_p_value_a&body=Drug%3A%20bevacizumab%0ARecord%3A%20Bevacizumab_Caulet2016_p_value_a%0APaper%3A%20Caulet_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_p_value_a%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:14 UTC</sub>

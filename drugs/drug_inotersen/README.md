@@ -13,16 +13,6 @@ Inotersen is a nervous system drug used to treat amyloidosis. It is authorised i
 
 <small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.4 | L/h | 3.4 L/h | healthy volunteers and patients with hATTR-PN | 197 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) |
-| V | V1 | 20.7 | L | 20.7 L | healthy volunteers and patients with hATTR-PN | 197 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) |
-| ka | kabs | 0.261 | 1/h | 0.261 1/h | healthy volunteers and patients with hATTR-PN | 197 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -78,5 +68,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binotersen%5D&body=Drug%3A%20inotersen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inotersen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binotersen%5D&body=Drug%3A%20inotersen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inotersen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:04 UTC</sub>

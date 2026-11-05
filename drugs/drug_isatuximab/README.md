@@ -20,15 +20,6 @@ Isatuximab is a monoclonal antibody that inhibits CD38 and is used to treat mult
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.00955 | L/h | 0.00955 L/hour | patients with relapsed/refractory multiple myeloma | 476 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fau_2020_reference](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md) |
-| V | V | 5.13 | L | 5.13 L | patients with relapsed/refractory multiple myeloma | 476 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fau_2020_reference](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -95,5 +86,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisatuximab%5D&body=Drug%3A%20isatuximab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isatuximab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 13:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisatuximab%5D&body=Drug%3A%20isatuximab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isatuximab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 13:03 UTC</sub>

@@ -31,20 +31,9 @@ Fexofenadine is a non-sedating antihistamine used to treat allergic conditions s
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 38.89 | L/h | 38.89 L/h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco2b1_1457c_t_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md) |
-| CL | CL/F | 75.87 | L/h | 75.87 L/h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_mean_standard_error](drugs/drug_fexofenadine/Fexofenadine_Jang2023_mean_standard_error.md) |
-| CL | CL/F | 75.87 | L/h | 75.87 L/h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco1b1_521t_c_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md) |
-| V | V/F | 166.9 | L | 166.90 L | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco2b1_1457c_t_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md) |
-| V | V/F | 259.2 | L | 259.19 L | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_mean_standard_error](drugs/drug_fexofenadine/Fexofenadine_Jang2023_mean_standard_error.md) |
-| V | V/F | 259.2 | L | 259.19 L | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco1b1_521t_c_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md) |
-| t½ | t1/2z | 2.45 | h | 2.45 h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco1b1_521t_c_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md) |
-| t½ | t1/2z | 2.92 | h | 2.92 h | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jang_2023_slco2b1_1457c_t_genotypes](drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jang_2023 · CL/F</text><circle cx="396.4" cy="30.0" r="4" fill="#ef6c00"><title>Jang_2023 · CL/F: 38.89 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jang_2023 · CL/F</text><circle cx="498.0" cy="46.0" r="4" fill="#ef6c00"><title>Jang_2023 · CL/F: 75.87 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jang_2023 · CL/F</text><circle cx="498.0" cy="62.0" r="4" fill="#ef6c00"><title>Jang_2023 · CL/F: 75.87 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jang_2023 · V/F</text><circle cx="267.9" cy="30.0" r="4" fill="#ef6c00"><title>Jang_2023 · V/F: 166.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jang_2023 · V/F</text><circle cx="334.8" cy="46.0" r="4" fill="#ef6c00"><title>Jang_2023 · V/F: 259.2 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jang_2023 · V/F</text><circle cx="334.8" cy="62.0" r="4" fill="#ef6c00"><title>Jang_2023 · V/F: 259.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -141,5 +130,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexofenadine%5D&body=Drug%3A%20fexofenadine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexofenadine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 23:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexofenadine%5D&body=Drug%3A%20fexofenadine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexofenadine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 23:32 UTC</sub>

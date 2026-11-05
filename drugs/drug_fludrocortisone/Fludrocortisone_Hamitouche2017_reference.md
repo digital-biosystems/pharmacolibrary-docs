@@ -8,7 +8,7 @@
 
 > The fludrocortisone model record was rejected because its structure contains an unreachable compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="fludrocortisone" model-id="Fludrocortisone_Hamitouche2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fludrocortisone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fludrocortisone" model-id="Fludrocortisone_Hamitouche2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fludrocortisone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hamitouche N, Comets E, Ribot M, Alvarez JC, Bellissant E, Laviolle B. Population Pharmacokinetic-Pharmacodynamic Model of Oral Fludrocortisone and Intravenous Hydrocortisone in Healthy Volunteers. The AAPS journal 19(3):727–735 (2017).
@@ -20,7 +20,7 @@ Hamitouche N, Comets E, Ribot M, Alvarez JC, Bellissant E, Laviolle B. Populatio
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
@@ -57,7 +57,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Mean plasma half-life | `Q57` · t1/2z | 1.4 | h | 5040 | s | h | llm (0.6) | Hamitouche_2017:abstract, Hamitouche_2017:abstract |
+| Mean plasma half-life | `Q57` · t1/2z | 1.4 | h | 5040 | s | h | half_life_rule (0.95) | Hamitouche_2017:abstract, Hamitouche_2017:abstract |
 | Clearance | `Q22` · CL | 40.8 | L/h | 1.133e-05 | m3/s | l/h | exact (1) | Hamitouche_2017:abstract, Hamitouche_2017:abstract |
 
 <details class="legend">
@@ -69,11 +69,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fludrocortisone
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hamitouche_2017_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -111,7 +107,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hamitouche_2017:abstract', 'Hamitouche_2017:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hamitouche_2017:abstract', 'Hamitouche_2017:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 40.8 | ['Hamitouche_2017:abstract', 'Hamitouche_2017:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 40.8 L/h | ['Hamitouche_2017:abstract', 'Hamitouche_2017:abstract'] |
 
 <details class="legend">
@@ -135,5 +131,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludrocortisone%5D%20Fludrocortisone_Hamitouche2017_reference&body=Drug%3A%20fludrocortisone%0ARecord%3A%20Fludrocortisone_Hamitouche2017_reference%0APaper%3A%20Hamitouche_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludrocortisone/Fludrocortisone_Hamitouche2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 09:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludrocortisone%5D%20Fludrocortisone_Hamitouche2017_reference&body=Drug%3A%20fludrocortisone%0ARecord%3A%20Fludrocortisone_Hamitouche2017_reference%0APaper%3A%20Hamitouche_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludrocortisone/Fludrocortisone_Hamitouche2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:33 UTC</sub>

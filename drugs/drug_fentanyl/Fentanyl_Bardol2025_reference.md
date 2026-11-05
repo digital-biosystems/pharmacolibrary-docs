@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Bardol_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,7 +25,7 @@ Bardol M, Norman E, Lagercrantz H, Fellman V, Standing JF. Fentanyl dosage for p
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,6 +37,7 @@ Bardol M, Norman E, Lagercrantz H, Fellman V, Standing JF. Fentanyl dosage for p
 | V1 (L/70kg) | V1 | 175.1 | L/70kg | 12 | 60.2 (54% RSE) |
 | Q (L/h/70kg) | Q | 6.01 | L/h/70kg | 37 |  |
 | V2 (L/70kg) | V2 | 17.1 | L/70kg | 28 |  |
+| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |  |  |
 | t1pp ranged from | tlag | 15.0 | min |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -67,6 +68,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | V1 (L/70kg) | `Q63` · V1 | 175.1 | L/70kg | 0.1751 | m3 | l/70kg | 12 | exact (1) | tab_1:row2:col1 | 60.2 (54% RSE) |
 | Q (L/h/70kg) | `Q30` · Q | 6.01 | L/h/70kg | 1.669e-06 | m3/s | l/(h·70kg) | 37 | exact (1) | tab_1:row3:col1 |  |
 | V2 (L/70kg) | `Q64` · V2 | 17.1 | L/70kg | 0.0171 | m3 | l/70kg | 28 | exact (1) | tab_1:row4:col1 |  |
+| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h |  | review_gapfill (0.7) | Eleveld_2026:review |  |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h |  | review_gapfill (0.7) | Andersen_1986:review |  |
 
 <details class="legend">
@@ -81,6 +83,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - dropped unlinked row (NIL): 'PMA_50' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col1'])
 - dropped PD-category row 'Hill' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row9:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
@@ -125,6 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_1:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_1:row4:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
@@ -165,5 +169,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Bardol2025_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Bardol2025_reference%0APaper%3A%20Bardol_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Bardol2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-27 15:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Bardol2025_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Bardol2025_reference%0APaper%3A%20Bardol_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Bardol2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-27 15:37 UTC</sub>

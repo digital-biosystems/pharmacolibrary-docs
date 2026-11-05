@@ -32,17 +32,9 @@ Aminophylline is a bronchodilator used to treat breathing problems such as asthm
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.153 | L/h | 0.153 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Amponsah_2017_reference](drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md) |
-| CL | CL | 17.88 | L/h | 17.88 L/h | very low birth weight infants | 104 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2013_reference](drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md) |
-| V | V | 2.94 | L | 2.94 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Amponsah_2017_reference](drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md) |
-| V | V/F | 65.1 ‡ | L | 0.93 L/kg | very low birth weight infants | 104 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2013_reference](drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md) |
-| t½ | t1/2z | 28.6 | h | 28.6 h | very low birth weight infants | 104 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2013_reference](drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Amponsah_2017 · CL</text><circle cx="211.5" cy="30.0" r="4" fill="#2e7d32"><title>Amponsah_2017 · CL: 0.153 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shi_2013 · CL</text><circle cx="452.8" cy="46.0" r="4" fill="#ef6c00"><title>Shi_2013 · CL: 17.88 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Amponsah_2017 · V</text><circle cx="272.0" cy="30.0" r="4" fill="#2e7d32"><title>Amponsah_2017 · V: 2.94 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shi_2013 · V/F ·/kg</text><circle cx="507.4" cy="46.0" r="4" fill="#ef6c00"><title>Shi_2013 · V/F ·/kg: 65.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -211,5 +203,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D&body=Drug%3A%20aminophylline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 23:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D&body=Drug%3A%20aminophylline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 23:44 UTC</sub>

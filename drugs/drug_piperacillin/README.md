@@ -31,17 +31,9 @@ Piperacillin is an extended-spectrum penicillin antibiotic used to treat bacteri
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.52 | L/h | 3.52 L/h | patients with impaired renal function | 49 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dohmann_2025_reference](drugs/drug_piperacillin/Piperacillin_Dohmann2025_reference.md) |
-| CL | CL | 8.78 | L/h | 8.78 L/h | critically ill adults with sepsis or septic shock | &gt;45 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sulaiman_2026_reference](drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference.md) |
-| V | V | 15.42 | L | 15.42 L | patients with impaired renal function | 49 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dohmann_2025_reference](drugs/drug_piperacillin/Piperacillin_Dohmann2025_reference.md) |
-| V | V | 24.1 | L | 24.1 L | critically ill adults with sepsis or septic shock | &gt;45 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sulaiman_2026_reference](drugs/drug_piperacillin/Piperacillin_Sulaiman2026_reference.md) |
-| V | V | 28.56 | L | 28.56 L | ICU patients with hospital-acquired pneumonia | 35 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Zurawska_2026_reference](drugs/drug_piperacillin/Piperacillin_Zurawska2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Dohmann_2025 · CL</text><circle cx="381.3" cy="30.0" r="4" fill="#2e7d32"><title>Dohmann_2025 · CL: 3.52 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sulaiman_2026 · CL</text><circle cx="520.2" cy="46.0" r="4" fill="#2e7d32"><title>Sulaiman_2026 · CL: 8.78 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Dohmann_2025 · V</text><circle cx="255.8" cy="30.0" r="4" fill="#2e7d32"><title>Dohmann_2025 · V: 15.42 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sulaiman_2026 · V</text><circle cx="323.7" cy="46.0" r="4" fill="#2e7d32"><title>Sulaiman_2026 · V: 24.1 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Zurawska_2026 · V</text><circle cx="349.5" cy="62.0" r="4" fill="#ef6c00"><title>Zurawska_2026 · V: 28.56 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -128,5 +120,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperacillin%5D&body=Drug%3A%20piperacillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperacillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperacillin%5D&body=Drug%3A%20piperacillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperacillin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:16 UTC</sub>

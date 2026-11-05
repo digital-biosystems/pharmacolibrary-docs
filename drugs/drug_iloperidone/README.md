@@ -24,15 +24,6 @@ Iloperidone is an antipsychotic used to treat schizophrenia. It is approved in t
 | M1 (P-88) | metabolite | 428.504 | C24H29FN2O4 | PubChem | [9823904](https://pubchem.ncbi.nlm.nih.gov/compound/9823904) | Pei_2016 |
 | M2 (P-95) | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V1 | 679 | L | 679 L | Chinese schizophrenia patients | 70 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Pei_2016_estimate](drugs/drug_iloperidone/Iloperidone_Pei2016_estimate.md) |
-| ka | kabs | 2.26 | 1/h | 2.26 h -1 | Chinese schizophrenia patients | 70 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Pei_2016_estimate](drugs/drug_iloperidone/Iloperidone_Pei2016_estimate.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -93,5 +84,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biloperidone%5D&body=Drug%3A%20iloperidone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iloperidone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 15:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biloperidone%5D&body=Drug%3A%20iloperidone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iloperidone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:48 UTC</sub>

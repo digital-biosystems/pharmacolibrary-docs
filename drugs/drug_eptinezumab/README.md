@@ -35,15 +35,6 @@ Eptinezumab is a monoclonal antibody used to prevent migraine attacks. It is an 
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0062 | L/h | 0.0062 L h−1 | patients with episodic or chronic migraine | ,     "condition": "episodic or chronic migraine",     "species": "human",     "compounds": [       {         "name": "eptinezumab",         "role": "parent",         "dosed": "yes",         "measured": "yes",         "has_parameters": "yes"       }     ],     "links": "none"   },   "links": [] } | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) |
-| V | V | 3.64 | L | 3.64 L | patients with episodic or chronic migraine | ,     "condition": "episodic or chronic migraine",     "species": "human",     "compounds": [       {         "name": "eptinezumab",         "role": "parent",         "dosed": "yes",         "measured": "yes",         "has_parameters": "yes"       }     ],     "links": "none"   },   "links": [] } | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -110,5 +101,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beptinezumab%5D&body=Drug%3A%20eptinezumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eptinezumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beptinezumab%5D&body=Drug%3A%20eptinezumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eptinezumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:32 UTC</sub>

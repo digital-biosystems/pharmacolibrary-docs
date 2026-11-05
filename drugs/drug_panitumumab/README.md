@@ -15,20 +15,9 @@ Panitumumab is a monoclonal antibody that blocks EGFR and is used to treat color
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 166 µg/mL | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_mild_1_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_1_impairment.md) |
-| CL | CL | — | L/h | 166 µg/mL | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_mild_2_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_2_impairment.md) |
-| CL | CL | — | L/h | 166 µg/mL | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_moderate_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_moderate_impairment.md) |
-| CL | CL | — | L/h | 166 µg/mL | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_normal](drugs/drug_panitumumab/Panitumumab_Liao2021_normal.md) |
-| V | V1 | 3.22 | L | 3.22 L | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_mild_1_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_1_impairment.md) |
-| V | V1 | 3.22 | L | 3.22 L | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_mild_2_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_mild_2_impairment.md) |
-| V | V1 | 3.22 | L | 3.22 L | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_moderate_impairment](drugs/drug_panitumumab/Panitumumab_Liao2021_moderate_impairment.md) |
-| V | V1 | 3.22 | L | 3.22 L | patients with metastatic RAS wild-type colorectal cancer | , 349 and 351 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liao_2021_normal](drugs/drug_panitumumab/Panitumumab_Liao2021_normal.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liao_2021 · V1</text><circle cx="367.7" cy="30.0" r="4" fill="#ef6c00"><title>Liao_2021 · V1: 3.22 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Liao_2021 · V1</text><circle cx="367.7" cy="46.0" r="4" fill="#ef6c00"><title>Liao_2021 · V1: 3.22 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Liao_2021 · V1</text><circle cx="367.7" cy="62.0" r="4" fill="#ef6c00"><title>Liao_2021 · V1: 3.22 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Liao_2021 · V1</text><circle cx="367.7" cy="78.0" r="4" fill="#ef6c00"><title>Liao_2021 · V1: 3.22 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -99,5 +88,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpanitumumab%5D&body=Drug%3A%20panitumumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_panitumumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpanitumumab%5D&body=Drug%3A%20panitumumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_panitumumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:04 UTC</sub>

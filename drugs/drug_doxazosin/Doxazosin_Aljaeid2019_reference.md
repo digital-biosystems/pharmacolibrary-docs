@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> This record was reviewed on 2026-10-22 14:33 UTC (Rejected), but the paper was screened again on 2026-11-03 07:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Doxazosin clearance was 0.027 ml/h and volume 0.0001 L, failing the physiological magnitude check due to extraction error.
+> This record was reviewed on 2026-11-03 07:58 UTC (Rejected), but the paper was screened again on 2026-11-03 14:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Doxazosin clearance was 0.027 ml/h and volume 0.0001 L, failing the physiological magnitude check due to extraction error.
 
 <div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Aljaeid2019_reference" status="rejected" stale="true" population="healthy albino male rabbits" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
@@ -79,7 +79,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -135,4 +135,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20Doxazosin_Aljaeid2019_reference&body=Drug%3A%20doxazosin%0ARecord%3A%20Doxazosin_Aljaeid2019_reference%0APaper%3A%20Aljaeid_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 14:09 UTC</sub>

@@ -209,5 +209,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bitraconazole%5D%20Itraconazole_Chu2025_reference&body=Drug%3A%20itraconazole%0ARecord%3A%20Itraconazole_Chu2025_reference%0APaper%3A%20Chu_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_itraconazole/Itraconazole_Chu2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bitraconazole%5D%20Itraconazole_Chu2025_reference&body=Drug%3A%20itraconazole%0ARecord%3A%20Itraconazole_Chu2025_reference%0APaper%3A%20Chu_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_itraconazole/Itraconazole_Chu2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:32 UTC</sub>

@@ -235,13 +235,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic study of tianeptine and its active metabolite MC5 in rats following different routes of administration using a novel liquid chromatography tandem mass spectrometry analytical method. Naunyn-Schmiedeberg's archives of pharmacology 391(2):185–196 (2018). [doi:10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2)
 
-**This record:** Pharmacolibrary v26.09, model `Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg`. <https://pharmacolibrary.github.io/#/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg>
+**This record:** Pharmacolibrary, model `Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg`. <https://pharmacolibrary.github.io/#/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg>
 
 ```bibtex
 @misc{pharmacolibrary_TianeptineSzafarz2018intraperitoneal10mgkg,
   title  = {{Pharmacolibrary model Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg},
   note   = {Parameters from doi:10.1007/s00210-017-1448-2},
 }
@@ -260,5 +259,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D%20Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&body=Drug%3A%20tianeptine%0ARecord%3A%20Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg%0APaper%3A%20Szafarz_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D%20Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&body=Drug%3A%20tianeptine%0ARecord%3A%20Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg%0APaper%3A%20Szafarz_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:48 UTC</sub>

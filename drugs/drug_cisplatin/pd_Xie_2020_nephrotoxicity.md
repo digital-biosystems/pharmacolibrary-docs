@@ -128,13 +128,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Cisplatin_Xie2020_PD_nephrotoxicity`. <https://pharmacolibrary.github.io/#/drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity>
+**This record:** Pharmacolibrary, model `Cisplatin_Xie2020_PD_nephrotoxicity`. <https://pharmacolibrary.github.io/#/drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity>
 
 ```bibtex
 @misc{pharmacolibrary_CisplatinXie2020PDnephrotoxicity,
   title  = {{Pharmacolibrary model Cisplatin_Xie2020_PD_nephrotoxicity}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity},
 }
 ```
@@ -148,5 +147,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20pd_Xie_2020_nephrotoxicity&body=Drug%3A%20cisplatin%0ARecord%3A%20pd_Xie_2020_nephrotoxicity%0APaper%3A%20Xie_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/pd_Xie_2020_nephrotoxicity%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20pd_Xie_2020_nephrotoxicity&body=Drug%3A%20cisplatin%0ARecord%3A%20pd_Xie_2020_nephrotoxicity%0APaper%3A%20Xie_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/pd_Xie_2020_nephrotoxicity%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [cisplatin](drugs/drug_cisplatin/)</sub>

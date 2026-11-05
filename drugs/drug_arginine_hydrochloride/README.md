@@ -31,16 +31,9 @@ Arginine hydrochloride is an amino acid used as an additive to intravenous solut
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0015 | L/h | 36.0 mL/d | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Gaudinski_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md) |
-| CL | CL | 44.1 | L/h | 44.1 L/h | healthy Chinese volunteers | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Wang_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) |
-| V | V | 0.7791 | L | 0.7791 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Gaudinski_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md) |
-| V | V | 4.326 ‡ | L | 61.8 mL kg−1 | healthy Chinese volunteers | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Wang_2018_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="260.0" y1="18" x2="260.0" y2="58" stroke="#ddd"/><text x="260.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="330.0" y1="18" x2="330.0" y2="58" stroke="#ddd"/><text x="330.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="400.0" y1="18" x2="400.0" y2="58" stroke="#ddd"/><text x="400.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="470.0" y1="18" x2="470.0" y2="58" stroke="#ddd"/><text x="470.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gaudinski_2018 · CL</text><circle cx="202.3" cy="30.0" r="4" fill="#2e7d32"><title>Gaudinski_2018 · CL: 0.0015 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2018 · CL</text><circle cx="515.1" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2018 · CL: 44.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gaudinski_2018 · V</text><circle cx="346.0" cy="30.0" r="4" fill="#2e7d32"><title>Gaudinski_2018 · V: 0.7791 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2018 · V ·/kg</text><circle cx="476.3" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2018 · V ·/kg: 4.326 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -136,5 +129,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barginine_hydrochloride%5D&body=Drug%3A%20arginine_hydrochloride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arginine_hydrochloride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 00:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barginine_hydrochloride%5D&body=Drug%3A%20arginine_hydrochloride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arginine_hydrochloride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 00:13 UTC</sub>

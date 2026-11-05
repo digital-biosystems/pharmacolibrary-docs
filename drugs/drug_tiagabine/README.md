@@ -31,16 +31,9 @@ Tiagabine is an anticonvulsant used to treat focal epilepsy and has also been st
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 21.4 | L/h | 21.4 L/h | patients with epilepsy | 511 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Samara_1998_reference](drugs/drug_tiagabine/Tiagabine_Samara1998_reference.md) |
-| CL | CL/F | 6.1 | L/h | 6.1 l/h | adults with epilepsy on monotherapy | : 130 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ingwersen_2000_reference](drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md) |
-| V | V/F | 62 | L | 62.0 l | adults with epilepsy on monotherapy | : 130 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ingwersen_2000_reference](drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md) |
-| t½ | t1/2z | 5.72 | h | 5.72 h | adults with epilepsy on monotherapy | : 130 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ingwersen_2000_reference](drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Samara_1998 · CL</text><circle cx="422.8" cy="30.0" r="4" fill="#ef6c00"><title>Samara_1998 · CL: 21.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ingwersen_2000 · CL/F</text><circle cx="327.4" cy="46.0" r="4" fill="#ef6c00"><title>Ingwersen_2000 · CL/F: 6.1 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -129,5 +122,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiagabine%5D&body=Drug%3A%20tiagabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiagabine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btiagabine%5D&body=Drug%3A%20tiagabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tiagabine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:52 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Younis_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_Younis2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absorption rate constant and lag time for levothyroxine were unreported, so library placeholders were used instead of estimated values.
+> This record was reviewed on 2026-10-22 15:31 UTC (Needs review), but the paper was screened again on 2026-11-04 00:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Younis2018_reference" status="needs_review" stale="false" population="adults with hypothyroidism" measured-compound="levothyroxine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Younis2018_reference" status="extracted" stale="true" population="adults with hypothyroidism" measured-compound="levothyroxine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Younis IR, Ahmed MA, Burman KD, Soldin OP, Jonklaas J. Stable Isotope Pharmacokinetic Studies Provide Insight into Effects of Age, Sex, and Weight on Levothyroxine Metabolism. Thyroid : official journal of the American Thyroid Association 28(1):41–49 (2018).
@@ -29,8 +29,6 @@ Younis IR, Ahmed MA, Burman KD, Soldin OP, Jonklaas J. Stable Isotope Pharmacoki
 <figure class="pk-models-diagram"><img src="drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference/Levothyroxine_Younis2018_reference.svg" alt="Levothyroxine_Younis2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 0.712 | L/h |
@@ -38,7 +36,7 @@ Younis IR, Ahmed MA, Burman KD, Soldin OP, Jonklaas J. Stable Isotope Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -185,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Younis IR, Ahmed MA, Burman KD, Soldin OP, Jonklaas J. Stable Isotope Pharmacokinetic Studies Provide Insight into Effects of Age, Sex, and Weight on Levothyroxine Metabolism. Thyroid : official journal of the American Thyroid Association 28(1):41–49 (2018). [doi:10.1089/thy.2017.0380](https://doi.org/10.1089/thy.2017.0380)
 
-**This record:** Pharmacolibrary v26.09, model `Levothyroxine_Younis2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference>
+**This record:** Pharmacolibrary, model `Levothyroxine_Younis2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LevothyroxineYounis2018reference,
   title  = {{Pharmacolibrary model Levothyroxine_Younis2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference},
   note   = {Parameters from doi:10.1089/thy.2017.0380},
 }
@@ -210,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Younis2018_reference&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Younis2018_reference%0APaper%3A%20Younis_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevothyroxine%5D%20Levothyroxine_Younis2018_reference&body=Drug%3A%20levothyroxine%0ARecord%3A%20Levothyroxine_Younis2018_reference%0APaper%3A%20Younis_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 00:23 UTC</sub>

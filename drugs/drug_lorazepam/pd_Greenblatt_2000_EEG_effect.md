@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Lorazepam_Greenblatt2000_PD_eeg_effect`. <https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_Greenblatt2000_PD_eeg_effect>
+**This record:** Pharmacolibrary, model `Lorazepam_Greenblatt2000_PD_eeg_effect`. <https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_Greenblatt2000_PD_eeg_effect>
 
 ```bibtex
 @misc{pharmacolibrary_LorazepamGreenblatt2000PDeegeffect,
   title  = {{Pharmacolibrary model Lorazepam_Greenblatt2000_PD_eeg_effect}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_Greenblatt2000_PD_eeg_effect},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20pd_Greenblatt_2000_EEG_effect&body=Drug%3A%20lorazepam%0ARecord%3A%20pd_Greenblatt_2000_EEG_effect%0APaper%3A%20Greenblatt_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/pd_Greenblatt_2000_EEG_effect%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20pd_Greenblatt_2000_EEG_effect&body=Drug%3A%20lorazepam%0ARecord%3A%20pd_Greenblatt_2000_EEG_effect%0APaper%3A%20Greenblatt_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/pd_Greenblatt_2000_EEG_effect%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [lorazepam](drugs/drug_lorazepam/)</sub>

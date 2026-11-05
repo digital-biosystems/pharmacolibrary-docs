@@ -23,17 +23,9 @@ Gliclazide is a sulfonylurea blood glucose-lowering drug used to treat diabetes.
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.9 | L/h | 0.9 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rojanasthien_2012_reference](drugs/drug_gliclazide/Gliclazide_Rojanasthien2012_reference.md) |
-| CL | CL/F | 1.08 | L/h | 1.08 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Mim_2023_reference](drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md) |
-| V | V | 19 | L | 19.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rojanasthien_2012_reference](drugs/drug_gliclazide/Gliclazide_Rojanasthien2012_reference.md) |
-| V | V/F | 19.6 | L | 19.6 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Mim_2023_reference](drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md) |
-| ka | kabs | 1.4 | 1/h | 1.4 /h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Mim_2023_reference](drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rojanasthien_2012 · CL</text><circle cx="357.0" cy="30.0" r="4" fill="#2e7d32"><title>Rojanasthien_2012 · CL: 0.9 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Mim_2023 · CL/F</text><circle cx="370.8" cy="46.0" r="4" fill="#78909c"><title>Mim_2023 · CL/F: 1.08 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rojanasthien_2012 · V</text><circle cx="287.6" cy="30.0" r="4" fill="#2e7d32"><title>Rojanasthien_2012 · V: 19 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Mim_2023 · V/F</text><circle cx="292.3" cy="46.0" r="4" fill="#78909c"><title>Mim_2023 · V/F: 19.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -123,5 +115,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgliclazide%5D&body=Drug%3A%20gliclazide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gliclazide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgliclazide%5D&body=Drug%3A%20gliclazide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gliclazide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:15 UTC</sub>

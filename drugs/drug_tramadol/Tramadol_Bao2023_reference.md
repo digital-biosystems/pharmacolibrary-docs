@@ -196,13 +196,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bao SS, Tang PF, Gao NY, Xiao ZX, Qian JC, Zheng L et al. Effect of apatinib on the pharmacokinetics of tramadol and O-desmethyltramadol in rats. PeerJ 11:e16051 (2023). [doi:10.7717/peerj.16051](https://doi.org/10.7717/peerj.16051)
 
-**This record:** Pharmacolibrary v26.09, model `Tramadol_Bao2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Bao2023_reference>
+**This record:** Pharmacolibrary, model `Tramadol_Bao2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Bao2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TramadolBao2023reference,
   title  = {{Pharmacolibrary model Tramadol_Bao2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Bao2023_reference},
   note   = {Parameters from doi:10.7717/peerj.16051},
 }
@@ -221,5 +220,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btramadol%5D%20Tramadol_Bao2023_reference&body=Drug%3A%20tramadol%0ARecord%3A%20Tramadol_Bao2023_reference%0APaper%3A%20Bao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tramadol/Tramadol_Bao2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btramadol%5D%20Tramadol_Bao2023_reference&body=Drug%3A%20tramadol%0ARecord%3A%20Tramadol_Bao2023_reference%0APaper%3A%20Bao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tramadol/Tramadol_Bao2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

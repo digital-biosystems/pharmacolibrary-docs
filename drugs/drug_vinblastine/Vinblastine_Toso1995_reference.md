@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Toso_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Toso1995_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Toso1995_reference" status="curated_candidate" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 14:39 UTC (Reproduces paper), but the paper was screened again on 2026-11-04 18:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Toso1995_reference" status="extracted" stale="true" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Toso C, Lindley C. Vinorelbine: a novel vinca alkaloid. American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists 52(12):1287–1341 (1995).
@@ -34,7 +36,7 @@ Toso C, Lindley C. Vinorelbine: a novel vinca alkaloid. American journal of heal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), qwen3.8-27b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,7 @@ Toso C, Lindley C. Vinorelbine: a novel vinca alkaloid. American journal of heal
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 1.26, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1.26, the second reading 1.3; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,17 +72,23 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.0 (0/5 fields) | 5 |
 | `qwen3.8-27b` | not confirmed | 0.0 (0/6 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 1.26 | 1.3 | mismatch |
+| `gpt-oss-120b` | `values[Q53]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 42.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 75.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 701.2 | 414 | mismatch |
 | `qwen3.8-27b` | `values[Q22]` | 1.26 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q354]` |  | 0.9 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q54]` |  | 1.3 | only_one_extracted |
@@ -172,13 +180,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Toso C, Lindley C. Vinorelbine: a novel vinca alkaloid. American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists 52(12):1287–1341 (1995). [doi:10.1093/ajhp/52.12.1287](https://doi.org/10.1093/ajhp/52.12.1287)
 
-**This record:** Pharmacolibrary v26.09, model `Vinblastine_Toso1995_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Toso1995_reference>
+**This record:** Pharmacolibrary, model `Vinblastine_Toso1995_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Toso1995_reference>
 
 ```bibtex
 @misc{pharmacolibrary_VinblastineToso1995reference,
   title  = {{Pharmacolibrary model Vinblastine_Toso1995_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vinblastine/Vinblastine_Toso1995_reference},
   note   = {Parameters from doi:10.1093/ajhp/52.12.1287},
 }
@@ -197,5 +204,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Toso1995_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Toso1995_reference%0APaper%3A%20Toso_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Toso1995_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinblastine%5D%20Vinblastine_Toso1995_reference&body=Drug%3A%20vinblastine%0ARecord%3A%20Vinblastine_Toso1995_reference%0APaper%3A%20Toso_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinblastine/Vinblastine_Toso1995_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 18:33 UTC</sub>

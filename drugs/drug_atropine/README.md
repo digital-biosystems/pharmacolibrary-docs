@@ -29,17 +29,6 @@ Atropine is a belladonna alkaloid used for conditions such as bradycardia and ca
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.905 | L/h | 1.905 L/h | horses | 6 | horse | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) |
-| V | V1 | 45.22 ‡ | L | 0.646 L/kg | horses | 6 | horse | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) |
-| ka | kabs | 5.948 | 1/h | 5.948 1/h | horses | 6 | horse | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) |
-| F | Fab | 0.781 |  | 0.781 ilogit, eye drop | horses | 6 | horse | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -110,5 +99,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batropine%5D&body=Drug%3A%20atropine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atropine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batropine%5D&body=Drug%3A%20atropine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atropine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 13:06 UTC</sub>

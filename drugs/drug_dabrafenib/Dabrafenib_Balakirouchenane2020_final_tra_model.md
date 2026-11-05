@@ -193,13 +193,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A et al. Population Pharmacokinetics/Pharmacodynamics of Dabrafenib Plus Trametinib in Patients with BRAF-Mutated Metastatic Melanoma. Cancers 12(4) (2020). [doi:10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
-**This record:** Pharmacolibrary v26.09, model `Dabrafenib_Balakirouchenane2020_final_tra_model`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model>
+**This record:** Pharmacolibrary, model `Dabrafenib_Balakirouchenane2020_final_tra_model`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model>
 
 ```bibtex
 @misc{pharmacolibrary_DabrafenibBalakirouchenane2020finaltramodel,
   title  = {{Pharmacolibrary model Dabrafenib_Balakirouchenane2020_final_tra_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model},
   note   = {Parameters from doi:10.3390/cancers12040931},
 }
@@ -214,5 +213,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Balakirouchenane2020_final_tra_model&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Balakirouchenane2020_final_tra_model%0APaper%3A%20Balakirouchenane_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Balakirouchenane2020_final_tra_model&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Balakirouchenane2020_final_tra_model%0APaper%3A%20Balakirouchenane_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:13 UTC</sub>

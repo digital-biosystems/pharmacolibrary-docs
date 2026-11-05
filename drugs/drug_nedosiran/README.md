@@ -13,18 +13,6 @@ Nedosiran is a small interfering RNA medication used to treat primary hyperoxalu
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q123420884](https://www.wikidata.org/wiki/Q123420884) and the WHO ATC classification; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 0.969 | patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers | &gt;=148 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) |
-| CL | CL/F | 6.1 | L/h | 6.10 L/h | patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers | &gt;=148 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) |
-| V | V | — | L | 0.174 | patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers | &gt;=148 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) |
-| V | V1/F | 148 | L | 148 L | patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers | &gt;=148 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) |
-| ka | kabs | 0.212 | 1/h | 0.212 1/h | patients with primary hyperoxaluria type 1 (PH1) and healthy volunteers | &gt;=148 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -92,5 +80,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnedosiran%5D&body=Drug%3A%20nedosiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nedosiran/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnedosiran%5D&body=Drug%3A%20nedosiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nedosiran/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:53 UTC</sub>

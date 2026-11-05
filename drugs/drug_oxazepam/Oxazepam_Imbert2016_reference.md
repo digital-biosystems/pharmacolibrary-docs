@@ -189,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Dose Oxazepam in Alcohol-Dependent Patients: Is There a Risk of Accumulation?. Therapeutic drug monitoring 38(2):253–258 (2016). [doi:10.1097/FTD.0000000000000262](https://doi.org/10.1097/FTD.0000000000000262)
 
-**This record:** Pharmacolibrary v26.09, model `Oxazepam_Imbert2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference>
+**This record:** Pharmacolibrary, model `Oxazepam_Imbert2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_OxazepamImbert2016reference,
   title  = {{Pharmacolibrary model Oxazepam_Imbert2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference},
   note   = {Parameters from doi:10.1097/FTD.0000000000000262},
 }
@@ -214,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20Oxazepam_Imbert2016_reference&body=Drug%3A%20oxazepam%0ARecord%3A%20Oxazepam_Imbert2016_reference%0APaper%3A%20Imbert_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 19:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20Oxazepam_Imbert2016_reference&body=Drug%3A%20oxazepam%0ARecord%3A%20Oxazepam_Imbert2016_reference%0APaper%3A%20Imbert_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 19:56 UTC</sub>

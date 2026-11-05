@@ -4,11 +4,11 @@
 
 # palivizumab — `Palivizumab_Madhi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance parameter for palivizumab was rejected as the value 0.0128 L/d is physiologically implausible for an intravenous monoclonal antibody.
+> This record was reviewed on 2026-10-22 14:29 UTC (Rejected), but the paper was screened again on 2026-11-04 06:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter for palivizumab was rejected as the value 0.0128 L/d is physiologically implausible for an intravenous monoclonal antibody.
 
-<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="false" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="true" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Madhi SA, Simões EAF, Acevedo A, Novoa Pizarro JM, Shepard JS, Railkar RA et al. A Phase 1b/2a Trial of a Half-life Extended Respiratory Syncytial Virus Neutralizing Antibody, Clesrovimab, in Healthy Preterm and Full-term Infants. The Journal of infectious diseases 231(3):e478-e487 (2025).
@@ -30,12 +30,12 @@ Madhi SA, Simões EAF, Acevedo A, Novoa Pizarro JM, Shepard JS, Railkar RA et al
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Clesrovimab CL/F (20 mg) | CL/F | 0.0128 | L/d |
-| Clesrovimab Vz/F (20 mg) | V/F | 0.901 | L |
+| 20 mg CL/F | CL/F | 0.0128 | L/d |
+| 20 mg Vz/F | V/F | 0.901 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Madhi SA, Simões EAF, Acevedo A, Novoa Pizarro JM, Shepard JS, Railkar RA et al
 
 The record labels the clearance as CL/F, indicating oral administration, which conflicts with the known intravenous route of palivizumab. The second reader disagreed on several field values, including reporting a null value where this record has 0.91. Extracted — palivizumab: CL/F 0.0128 L/d, V/F 0.901 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 4, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q311: this record has none, the second reading 33; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -57,8 +57,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Clesrovimab CL/F (20 mg) | `Q27` · CL/F | 0.0128 | L/d | 1.481e-10 | m3/s | L/h | review (0.7) | Madhi_2025:review |
-| Clesrovimab Vz/F (20 mg) | `Q76` · V/F | 0.901 | L | 0.000901 | m3 | L | review (0.7) | Madhi_2025:review |
+| 20 mg CL/F | `Q27` · CL/F | 0.0128 | L/d | 1.481e-10 | m3/s | L/h | review (0.7) | Madhi_2025:review |
+| 20 mg Vz/F | `Q76` · V/F | 0.901 | L | 0.000901 | m3 | L | review (0.7) | Madhi_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,15 +78,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q56]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q311]` |  | 33 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q325]` |  | 40 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 4 | 4.0 | mismatch |
 | `gpt-oss-120b` | `values[Q57]` | 45 | 48.8 | mismatch |
-| `gpt-oss-120b` | `values[Q61]` | 0.91 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | 4.98 | 2.24 | mismatch |
 
 </details>
 
@@ -131,5 +133,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_Madhi2025_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_Madhi2025_reference%0APaper%3A%20Madhi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_Madhi2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpalivizumab%5D%20Palivizumab_Madhi2025_reference&body=Drug%3A%20palivizumab%0ARecord%3A%20Palivizumab_Madhi2025_reference%0APaper%3A%20Madhi_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_palivizumab/Palivizumab_Madhi2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 06:16 UTC</sub>

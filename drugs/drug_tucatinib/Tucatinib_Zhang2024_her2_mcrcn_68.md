@@ -252,13 +252,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Population Pharmacokinetic Analysis of Tucatinib in Healthy Participants and Patients with Breast Cancer or Colorectal Cancer. Clinical pharmacokinetics 63(10):1477–1487 (2024). [doi:10.1007/s40262-024-01412-0](https://doi.org/10.1007/s40262-024-01412-0)
 
-**This record:** Pharmacolibrary v26.09, model `Tucatinib_Zhang2024_her2_mcrcn_68`. <https://pharmacolibrary.github.io/#/drugs/drug_tucatinib/Tucatinib_Zhang2024_her2_mcrcn_68>
+**This record:** Pharmacolibrary, model `Tucatinib_Zhang2024_her2_mcrcn_68`. <https://pharmacolibrary.github.io/#/drugs/drug_tucatinib/Tucatinib_Zhang2024_her2_mcrcn_68>
 
 ```bibtex
 @misc{pharmacolibrary_TucatinibZhang2024her2mcrcn68,
   title  = {{Pharmacolibrary model Tucatinib_Zhang2024_her2_mcrcn_68}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tucatinib/Tucatinib_Zhang2024_her2_mcrcn_68},
   note   = {Parameters from doi:10.1007/s40262-024-01412-0},
 }
@@ -277,5 +276,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btucatinib%5D%20Tucatinib_Zhang2024_her2_mcrcn_68&body=Drug%3A%20tucatinib%0ARecord%3A%20Tucatinib_Zhang2024_her2_mcrcn_68%0APaper%3A%20Zhang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tucatinib/Tucatinib_Zhang2024_her2_mcrcn_68%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 08:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btucatinib%5D%20Tucatinib_Zhang2024_her2_mcrcn_68&body=Drug%3A%20tucatinib%0ARecord%3A%20Tucatinib_Zhang2024_her2_mcrcn_68%0APaper%3A%20Zhang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tucatinib/Tucatinib_Zhang2024_her2_mcrcn_68%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 08:33 UTC</sub>

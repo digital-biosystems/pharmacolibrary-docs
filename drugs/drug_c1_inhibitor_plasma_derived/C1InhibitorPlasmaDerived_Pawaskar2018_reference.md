@@ -217,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pawaskar D, Tortorici MA, Zuraw B, Craig T, Cicardi M, Longhurst H et al. Population pharmacokinetics of subcutaneous C1-inhibitor for prevention of attacks in patients with hereditary angioedema. Clinical and experimental allergy : journal of the British Society for Allergy and Clinical Immunology 48(10):1325–1332 (2018). [doi:10.1111/cea.13220](https://doi.org/10.1111/cea.13220)
 
-**This record:** Pharmacolibrary v26.09, model `C1InhibitorPlasmaDerived_Pawaskar2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference>
+**This record:** Pharmacolibrary, model `C1InhibitorPlasmaDerived_Pawaskar2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_C1InhibitorPlasmaDerivedPawaskar2018reference,
   title  = {{Pharmacolibrary model C1InhibitorPlasmaDerived_Pawaskar2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference},
   note   = {Parameters from doi:10.1111/cea.13220},
 }
@@ -242,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bc1_inhibitor_plasma_derived%5D%20C1InhibitorPlasmaDerived_Pawaskar2018_reference&body=Drug%3A%20c1_inhibitor_plasma_derived%0ARecord%3A%20C1InhibitorPlasmaDerived_Pawaskar2018_reference%0APaper%3A%20Pawaskar_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 00:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bc1_inhibitor_plasma_derived%5D%20C1InhibitorPlasmaDerived_Pawaskar2018_reference&body=Drug%3A%20c1_inhibitor_plasma_derived%0ARecord%3A%20C1InhibitorPlasmaDerived_Pawaskar2018_reference%0APaper%3A%20Pawaskar_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 00:58 UTC</sub>

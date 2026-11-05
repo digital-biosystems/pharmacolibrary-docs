@@ -23,18 +23,9 @@ Scopolamine is an anticholinergic used for conditions such as motion sickness, i
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 65.4 | L/h | 1.09 l min(-1) | healthy subjects |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Alvarez-Jimenez_2016_reference](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) |
-| CL | CL | 205 | L/h | 205 L/h | healthy young male volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ebert_2001_reference](drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md) |
-| CL | CL | — | L/h | 2.53 lmin-1 | healthy males | 90 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) |
-| V | V | 2.66 | L | 2.66 l | healthy subjects |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Alvarez-Jimenez_2016_reference](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) |
-| V | V | 66.3 | L | 66.3 l | healthy males | 90 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) |
-| V | V | 363 | L | 363 L | healthy young male volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ebert_2001_reference](drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Alvarez-Jimenez_2016 · CL</text><circle cx="332.7" cy="30.0" r="4" fill="#78909c"><title>Alvarez-Jimenez_2016 · CL: 65.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ebert_2001 · CL</text><circle cx="419.6" cy="46.0" r="4" fill="#ef6c00"><title>Ebert_2001 · CL: 205 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Alvarez-Jimenez_2016 · V</text><circle cx="239.6" cy="30.0" r="4" fill="#78909c"><title>Alvarez-Jimenez_2016 · V: 2.66 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Liem-Moolenaar_2011 · V</text><circle cx="402.5" cy="46.0" r="4" fill="#ef6c00"><title>Liem-Moolenaar_2011 · V: 66.3 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Ebert_2001 · V</text><circle cx="488.7" cy="62.0" r="4" fill="#ef6c00"><title>Ebert_2001 · V: 363 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -150,5 +141,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bscopolamine%5D&body=Drug%3A%20scopolamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_scopolamine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 14:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bscopolamine%5D&body=Drug%3A%20scopolamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_scopolamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 14:46 UTC</sub>

@@ -200,13 +200,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole Population Pharmacokinetic Analysis Using Nonparametric Estimation in Patients with Invasive Fungal Disease (Results from the VITAL Study). Antimicrobial agents and chemotherapy 60(8):4568–4576 (2016). [doi:10.1128/AAC.00514-16](https://doi.org/10.1128/AAC.00514-16)
 
-**This record:** Pharmacolibrary v26.09, model `Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds`. <https://pharmacolibrary.github.io/#/drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds>
+**This record:** Pharmacolibrary, model `Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds`. <https://pharmacolibrary.github.io/#/drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds>
 
 ```bibtex
 @misc{pharmacolibrary_IsavuconazoleKovanda2016otherfilamentousfungiandmolds,
   title  = {{Pharmacolibrary model Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds},
   note   = {Parameters from doi:10.1128/AAC.00514-16},
 }
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisavuconazole%5D%20Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds&body=Drug%3A%20isavuconazole%0ARecord%3A%20Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds%0APaper%3A%20Kovanda_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisavuconazole%5D%20Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds&body=Drug%3A%20isavuconazole%0ARecord%3A%20Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds%0APaper%3A%20Kovanda_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:27 UTC</sub>

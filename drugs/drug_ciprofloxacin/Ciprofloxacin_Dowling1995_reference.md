@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Dowling_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Dowling1995_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Dowling1995_reference" status="curated_candidate" stale="false" population="healthy mature ponies" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 15:32 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 16:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Every check that could be run on this record passed.
+
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Dowling1995_reference" status="rejected" stale="true" population="healthy mature ponies" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in ponies. Journal of veterinary pharmacology and therapeutics 18(1):7–12 (1995).
@@ -15,7 +17,9 @@ Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in 
 
 ## Population and dosing
 
-**Population:** healthy mature ponies · condition healthy · age group adult · n = ?6.
+**Population:** healthy mature ponies · condition healthy · age group adult · n = 6.
+
+**Dosing:** 350 mg, iv, single.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -23,24 +27,31 @@ Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in 
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 11 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference.svg" alt="Ciprofloxacin_Dowling1995_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| Mean plasma half-life, based on the terminal phase, was | t1/2z | 157.89 | min |
-| Total body clearance of ciprofloxacin was | CL | 18.12 | mL/min/kg |
-| Volume of distribution at steady-state was | Vss | 3.45 | L/kg |
-| Bioavailability of oral ciprofloxacin in ponies was | Fab | 6.8 | % |
-| Vd (L) | V | 14.7 | L |
-| Ka (h−1) | kabs | 1.0 | h−1 |
+| α | λ1 | 0.290 | min⁻¹ |
+| t½α | t1/2α | 2.39 | min |
+| β | kel | 0.0045 | min⁻¹ |
+| t½β | t1/2β | 155.42 | min |
+| AUC | AUC | 406.15 | µg/mL/min |
+| MRT | MRT | 208.61 | min |
+| Cl | CL | 12.31 | mL/min/kg |
+| Vd(ss) | V | 2.57 | L/kg |
+| F(%) | Fab | 3.10 |  |
+| Ka | kabs | 1.9 | h−1 |
+| t LAG | tlag | 0.33 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +65,7 @@ Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in 
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciprofloxacin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has none, the second reading 9.06; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,12 +73,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Mean plasma half-life, based on the terminal phase, was | `Q57` · t1/2z | 157.89 | min | 9473 | s | min | llm (0.6) | Dowling_1995:abstract |
-| Total body clearance of ciprofloxacin was | `Q22` · CL | 18.12 | mL/min/kg | 2.114e-05 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Dowling_1995:abstract |
-| Volume of distribution at steady-state was | `Q65` · Vss | 3.45 | L/kg | 0.2415 | m3 | l/kg | llm_corrected (0.6) | Dowling_1995:abstract |
-| Bioavailability of oral ciprofloxacin in ponies was | `Q40` · Fab | 6.8 | % |  |  |  | llm_confirmed (0.6) | Dowling_1995:abstract |
-| Vd (L) | `Q61` · V | 14.7 | L | 0.0147 | m3 | L | review_gapfill (0.7) | Alonso_2021:review |
-| Ka (h−1) | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Alonso_2021:review |
+| α | `Q67` · λ1 | 0.290 | min⁻¹ |  |  | 1/min | exact (1) | Dowling_1995_table_1:row1:col2, Dowling_1995_table_1:row1:col3, Dowling_1995_table_1:row1:col4, Dowling_1995_table_1:row1:col5, Dowling_1995_table_1:row1:col6, Dowling_1995_table_1:row1:col7, Dowling_1995_table_1:row1:col8 |
+| t½α | `Q59` · t1/2α | 2.39 | min | 143.4 | s | min | llm (0.6) | Dowling_1995_table_1:row2:col2, Dowling_1995_table_1:row2:col3, Dowling_1995_table_1:row2:col4, Dowling_1995_table_1:row2:col5, Dowling_1995_table_1:row2:col6, Dowling_1995_table_1:row2:col7, Dowling_1995_table_1:row2:col8 |
+| β | `Q47` · kel | 0.0045 | min⁻¹ | 7.5e-05 | 1/s | 1/min | exact (1) | Dowling_1995_table_1:row4:col2, Dowling_1995_table_1:row4:col3, Dowling_1995_table_1:row4:col4, Dowling_1995_table_1:row4:col5, Dowling_1995_table_1:row4:col6, Dowling_1995_table_1:row4:col7, Dowling_1995_table_1:row4:col8 |
+| t½β | `Q60` · t1/2β | 155.42 | min | 9325 | s | min | llm (0.6) | Dowling_1995_table_1:row5:col2, Dowling_1995_table_1:row5:col3, Dowling_1995_table_1:row5:col4, Dowling_1995_table_1:row5:col5, Dowling_1995_table_1:row5:col6, Dowling_1995_table_1:row5:col7, Dowling_1995_table_1:row5:col8 |
+| AUC | `Q88` · AUC | 406.15 | µg/mL/min |  |  | µg/(min·ml) | exact (1) | Dowling_1995_table_1:row6:col2, Dowling_1995_table_1:row6:col3, Dowling_1995_table_1:row6:col4, Dowling_1995_table_1:row6:col5, Dowling_1995_table_1:row6:col6, Dowling_1995_table_1:row6:col7, Dowling_1995_table_1:row6:col8 |
+| MRT | `Q53` · MRT | 208.61 | min | 1.252e+04 | s | min | exact (1) | Dowling_1995_table_1:row7:col2, Dowling_1995_table_1:row7:col3, Dowling_1995_table_1:row7:col4, Dowling_1995_table_1:row7:col5, Dowling_1995_table_1:row7:col6, Dowling_1995_table_1:row7:col7, Dowling_1995_table_1:row7:col8 |
+| Cl | `Q22` · CL | 12.31 | mL/min/kg | 1.436e-05 | m3/s | ml/(min·kg) | exact (1) | Dowling_1995_table_1:row8:col2, Dowling_1995_table_1:row8:col3, Dowling_1995_table_1:row8:col4, Dowling_1995_table_1:row8:col5, Dowling_1995_table_1:row8:col6, Dowling_1995_table_1:row8:col7, Dowling_1995_table_1:row8:col8 |
+| Vd(ss) | `Q61` · V | 2.57 | L/kg | 0.1799 | m3 | l/kg | exact (1) | Dowling_1995_table_1:row9:col2, Dowling_1995_table_1:row9:col3, Dowling_1995_table_1:row9:col4, Dowling_1995_table_1:row9:col5, Dowling_1995_table_1:row9:col6, Dowling_1995_table_1:row9:col7, Dowling_1995_table_1:row9:col8 |
+| F(%) | `Q40` · Fab | 3.10 |  |  |  |  | exact (1) | Dowling_1995_table_2:row2:col1, Dowling_1995_table_2:row2:col2, Dowling_1995_table_2:row2:col3, Dowling_1995_table_2:row2:col4, Dowling_1995_table_2:row2:col5, Dowling_1995_table_2:row2:col6, Dowling_1995_table_2:row2:col7 |
+| Ka | `Q49` · kabs | 1.9 | h−1 | 0.0005278 | 1/s | 1/h | review_gapfill (0.7) | Cattrall_2019:review |
+| t LAG | `Q83` · tlag | 0.33 | h | 1188 | s | h | review_gapfill (0.7) | Papich_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,44 +96,47 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
+- column 'mean ± sd' classified 'ci' by the LLM but kept as the estimate: the header names the point value
+- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['Dowling_1995_table_1:row0:col2', 'Dowling_1995_table_1:row0:col3', 'Dowling_1995_table_1:row0:col4', 'Dowling_1995_table_1:row0:col5', 'Dowling_1995_table_1:row0:col6', 'Dowling_1995_table_1:row0:col7', 'Dowling_1995_table_1:row0:col8'])
+- unit_dimension_mismatch: 'α' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Dowling_1995_table_1:row3:col2', 'Dowling_1995_table_1:row3:col3', 'Dowling_1995_table_1:row3:col4', 'Dowling_1995_table_1:row3:col5', 'Dowling_1995_table_1:row3:col6', 'Dowling_1995_table_1:row3:col7', 'Dowling_1995_table_1:row3:col8'])
+- unit_dimension_mismatch: 'AUC' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUCiv.* (µg/mL/min)' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q88 ('AUCiv.* (µg/mL/min)', value '391.12') — already have one for this compound
+- unit_dimension_mismatch: 'AUCpo.* (µg/mL/min)' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q88 ('AUCpo.* (µg/mL/min)', value '12.14') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ciprofloxacin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Cattrall_2019's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Papich_2012's review values (primary lacked it)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Alonso_2021's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Alonso_2021's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Dowling_1995_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 1, 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (14/16 fields) | 2 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[750 mg group 1 4/2. (h) l/xh)h)]` | 0.79 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability of oral ciprofloxacin in ponies]` | 6.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability of oral ciprofloxacin in ponies]` |  | 6.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka = 1.90 (0.68) h-1 [21] a]` | 1.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma half-life, based on the terminal phase]` | 157.89 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma half-life, based on the terminal phase]` |  | 157.89 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance of ciprofloxacin]` | 18.12 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance of ciprofloxacin]` |  | 18.12 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc = 38 l]` | 38.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady-state]` | 3.45 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady-state]` |  | 3.45 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ciprofloxacin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ciprofloxacin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[a]` |  | 9.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b]` |  | 1.83 | only_one_extracted |
 
 </details>
 
@@ -131,19 +150,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Dowling_1995:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Alonso_2021:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Dowling_1995:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Alonso_2021:review'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Dowling_1995:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.12 | ['Dowling_1995:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Dowling_1995_table_1:row8:col2', 'Dowling_1995_table_1:row8:col3', 'Dowling_1995_table_1:row8:col4', 'Dowling_1995_table_1:row8:col5', 'Dowling_1995_table_1:row8:col6', 'Dowling_1995_table_1:row8:col7', 'Dowling_1995_table_1:row8:col8'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Dowling_1995_table_1:row4:col2', 'Dowling_1995_table_1:row4:col3', 'Dowling_1995_table_1:row4:col4', 'Dowling_1995_table_1:row4:col5', 'Dowling_1995_table_1:row4:col6', 'Dowling_1995_table_1:row4:col7', 'Dowling_1995_table_1:row4:col8'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cattrall_2019:review'] |
+| C5_dimension_Q53 | pass | [time] |  | ['Dowling_1995_table_1:row7:col2', 'Dowling_1995_table_1:row7:col3', 'Dowling_1995_table_1:row7:col4', 'Dowling_1995_table_1:row7:col5', 'Dowling_1995_table_1:row7:col6', 'Dowling_1995_table_1:row7:col7', 'Dowling_1995_table_1:row7:col8'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Dowling_1995_table_1:row2:col2', 'Dowling_1995_table_1:row2:col3', 'Dowling_1995_table_1:row2:col4', 'Dowling_1995_table_1:row2:col5', 'Dowling_1995_table_1:row2:col6', 'Dowling_1995_table_1:row2:col7', 'Dowling_1995_table_1:row2:col8'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Dowling_1995_table_1:row5:col2', 'Dowling_1995_table_1:row5:col3', 'Dowling_1995_table_1:row5:col4', 'Dowling_1995_table_1:row5:col5', 'Dowling_1995_table_1:row5:col6', 'Dowling_1995_table_1:row5:col7', 'Dowling_1995_table_1:row5:col8'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dowling_1995_table_1:row9:col2', 'Dowling_1995_table_1:row9:col3', 'Dowling_1995_table_1:row9:col4', 'Dowling_1995_table_1:row9:col5', 'Dowling_1995_table_1:row9:col6', 'Dowling_1995_table_1:row9:col7', 'Dowling_1995_table_1:row9:col8'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Dowling_1995_table_1:row1:col2', 'Dowling_1995_table_1:row1:col3', 'Dowling_1995_table_1:row1:col4', 'Dowling_1995_table_1:row1:col5', 'Dowling_1995_table_1:row1:col6', 'Dowling_1995_table_1:row1:col7', 'Dowling_1995_table_1:row1:col8'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Papich_2012:review'] |
+| C5_dimension_Q88 | fail | [mass] / [length] ** 3 / [time] | µg/mL/min | ['Dowling_1995_table_1:row6:col2', 'Dowling_1995_table_1:row6:col3', 'Dowling_1995_table_1:row6:col4', 'Dowling_1995_table_1:row6:col5', 'Dowling_1995_table_1:row6:col6', 'Dowling_1995_table_1:row6:col7', 'Dowling_1995_table_1:row6:col8'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.31 | ['Dowling_1995_table_1:row8:col2', 'Dowling_1995_table_1:row8:col3', 'Dowling_1995_table_1:row8:col4', 'Dowling_1995_table_1:row8:col5', 'Dowling_1995_table_1:row8:col6', 'Dowling_1995_table_1:row8:col7', 'Dowling_1995_table_1:row8:col8'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 76.1 L/h | ['Dowling_1995:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 14.7 L | ['Alonso_2021:review'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 242 L | ['Dowling_1995:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 51.7 L/h | ['Dowling_1995_table_1:row8:col2', 'Dowling_1995_table_1:row8:col3', 'Dowling_1995_table_1:row8:col4', 'Dowling_1995_table_1:row8:col5', 'Dowling_1995_table_1:row8:col6', 'Dowling_1995_table_1:row8:col7', 'Dowling_1995_table_1:row8:col8'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 180 L | ['Dowling_1995_table_1:row9:col2', 'Dowling_1995_table_1:row9:col3', 'Dowling_1995_table_1:row9:col4', 'Dowling_1995_table_1:row9:col5', 'Dowling_1995_table_1:row9:col6', 'Dowling_1995_table_1:row9:col7', 'Dowling_1995_table_1:row9:col8'] |
 
 **Reviewer per-scenario checks:**
 
@@ -166,62 +189,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_modelica.zip" download>Ciprofloxacin_Dowling1995_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_fmi.zip" download>Ciprofloxacin_Dowling1995_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_matlab.zip" download>Ciprofloxacin_Dowling1995_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_matlab_simbio.zip" download>Ciprofloxacin_Dowling1995_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_sbml.zip" download>Ciprofloxacin_Dowling1995_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference/Ciprofloxacin_Dowling1995_reference_cellml.zip" download>Ciprofloxacin_Dowling1995_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3313 | kg/mol |
-| input | dosing | `F` | 6.8 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.001 | kg |
-| input | model | `Cl` | 2.114e-05 | m3/s |
-| input | model | `VdPerKg` | 0.00021 | m3/kg |
-| input | model | `ka` | 0.0002778 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in ponies. Journal of veterinary pharmacology and therapeutics 18(1):7–12 (1995). [doi:10.1111/j.1365-2885.1995.tb00543.x](https://doi.org/10.1111/j.1365-2885.1995.tb00543.x)
-
-**This record:** Pharmacolibrary v26.09, model `Ciprofloxacin_Dowling1995_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference>
-
-```bibtex
-@misc{pharmacolibrary_CiprofloxacinDowling1995reference,
-  title  = {{Pharmacolibrary model Ciprofloxacin_Dowling1995_reference}},
-  author = {{Pharmacolibrary}},
-  version = {v26.09},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference},
-  note   = {Parameters from doi:10.1111/j.1365-2885.1995.tb00543.x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -234,5 +204,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Dowling1995_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Dowling1995_reference%0APaper%3A%20Dowling_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Dowling1995_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Dowling1995_reference%0APaper%3A%20Dowling_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 16:52 UTC</sub>

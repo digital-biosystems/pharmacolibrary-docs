@@ -31,22 +31,9 @@ Gabapentin is an anticonvulsant and pain-relieving medicine used for epilepsy an
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.93 | L/h | 2.93 L/h | elderly nursing home patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ahmed_2017_reference](drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md) |
-| CL | CL | 11.25 ‡ | L/h | 160.67 mL/kg/hr | review reference |  | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Adrian_2018_reference](drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md) |
-| CL | CL | 12.6 ‡ | L/h | 3 mL/min/kg | healthy adult cats | 6 | cat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) |
-| V | V/F | 6.328 ‡ | L | 90.4 mL/kg | healthy adult cats | 6 | cat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) |
-| V | V1 | 9.036 ‡ | L | 129.09 mL/kg | review reference |  | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Adrian_2018_reference](drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md) |
-| ka | kabs | 5.24 | 1/h | 5.24 1/hr | review reference |  | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Adrian_2018_reference](drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md) |
-| ka | kabs | 5.24 | 1/h | 5.24 1/hr | elderly nursing home patients |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Ahmed_2017_reference](drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md) |
-| ka | kabs | 5.24 | 1/h | 5.24 1/hr | healthy adult cats | 6 | cat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) |
-| t½ | t1/2z | 2.833 | h | 170 minutes | healthy adult cats | 6 | cat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) |
-| F | Fab | 0.887 |  | 88.7 % | healthy adult cats | 6 | cat | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ahmed_2017 · CL</text><circle cx="271.7" cy="30.0" r="4" fill="#ef6c00"><title>Ahmed_2017 · CL: 2.93 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Adrian_2018 · CL ·/kg</text><circle cx="373.9" cy="46.0" r="4" fill="#ef6c00"><title>Adrian_2018 · CL ·/kg: 11.25 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Siao_2010 · CL ·/kg</text><circle cx="382.6" cy="62.0" r="4" fill="#78909c"><title>Siao_2010 · CL ·/kg: 12.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Siao_2010 · V/F ·/kg</text><circle cx="470.4" cy="30.0" r="4" fill="#78909c"><title>Siao_2010 · V/F ·/kg: 6.328 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Adrian_2018 · V1 ·/kg</text><circle cx="524.6" cy="46.0" r="4" fill="#ef6c00"><title>Adrian_2018 · V1 ·/kg: 9.036 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -190,5 +177,5 @@ _18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgabapentin%5D&body=Drug%3A%20gabapentin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gabapentin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgabapentin%5D&body=Drug%3A%20gabapentin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gabapentin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:11 UTC</sub>

@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Vaddady PK, Mehrotra N, Zhang X, Yates CR, Moore BM, Meibohm B. Pharmacokinetics of a combination of Δ9-tetrahydro-cannabinol and celecoxib in a porcine model of hemorrhagic shock. Biopharmaceutics & drug disposition 32(2):89–98 (2011). [doi:10.1002/bdd.740](https://doi.org/10.1002/bdd.740)
 
-**This record:** Pharmacolibrary v26.09, model `Celecoxib_Vaddady2011_shock_0_56`. <https://pharmacolibrary.github.io/#/drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56>
+**This record:** Pharmacolibrary, model `Celecoxib_Vaddady2011_shock_0_56`. <https://pharmacolibrary.github.io/#/drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56>
 
 ```bibtex
 @misc{pharmacolibrary_CelecoxibVaddady2011shock056,
   title  = {{Pharmacolibrary model Celecoxib_Vaddady2011_shock_0_56}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56},
   note   = {Parameters from doi:10.1002/bdd.740},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcelecoxib%5D%20Celecoxib_Vaddady2011_shock_0_56&body=Drug%3A%20celecoxib%0ARecord%3A%20Celecoxib_Vaddady2011_shock_0_56%0APaper%3A%20Vaddady_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcelecoxib%5D%20Celecoxib_Vaddady2011_shock_0_56&body=Drug%3A%20celecoxib%0ARecord%3A%20Celecoxib_Vaddady2011_shock_0_56%0APaper%3A%20Vaddady_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:19 UTC</sub>

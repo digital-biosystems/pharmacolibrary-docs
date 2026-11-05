@@ -128,5 +128,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamino_acids%5D%20AminoAcids_Sudarsono2026_reference&body=Drug%3A%20amino_acids%0ARecord%3A%20AminoAcids_Sudarsono2026_reference%0APaper%3A%20Sudarsono_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amino_acids/AminoAcids_Sudarsono2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 22:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamino_acids%5D%20AminoAcids_Sudarsono2026_reference&body=Drug%3A%20amino_acids%0ARecord%3A%20AminoAcids_Sudarsono2026_reference%0APaper%3A%20Sudarsono_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amino_acids/AminoAcids_Sudarsono2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 22:01 UTC</sub>

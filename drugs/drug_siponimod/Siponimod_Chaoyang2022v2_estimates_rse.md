@@ -201,13 +201,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic Characteristics of Siponimod in Healthy Volunteers and Patients With Multiple Sclerosis: Analyses of Published Clinical Trials. Frontiers in pharmacology 13:824232 (2022). [doi:10.3389/fphar.2022.824232](https://doi.org/10.3389/fphar.2022.824232)
 
-**This record:** Pharmacolibrary v26.09, model `Siponimod_Chaoyang2022v2_estimates_rse`. <https://pharmacolibrary.github.io/#/drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse>
+**This record:** Pharmacolibrary, model `Siponimod_Chaoyang2022v2_estimates_rse`. <https://pharmacolibrary.github.io/#/drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse>
 
 ```bibtex
 @misc{pharmacolibrary_SiponimodChaoyang2022v2estimatesrse,
   title  = {{Pharmacolibrary model Siponimod_Chaoyang2022v2_estimates_rse}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse},
   note   = {Parameters from doi:10.3389/fphar.2022.824232},
 }
@@ -226,5 +225,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsiponimod%5D%20Siponimod_Chaoyang2022v2_estimates_rse&body=Drug%3A%20siponimod%0ARecord%3A%20Siponimod_Chaoyang2022v2_estimates_rse%0APaper%3A%20Chaoyang_2022_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsiponimod%5D%20Siponimod_Chaoyang2022v2_estimates_rse&body=Drug%3A%20siponimod%0ARecord%3A%20Siponimod_Chaoyang2022v2_estimates_rse%0APaper%3A%20Chaoyang_2022_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:33 UTC</sub>

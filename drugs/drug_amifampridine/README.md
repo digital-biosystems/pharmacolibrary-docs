@@ -23,16 +23,6 @@ Amifampridine is a potassium channel blocker used to treat Lambert-Eaton myasthe
 | 3,4-diaminopyridine (amifampridine) | metabolite | 109.132 | C5H7N3 | PubChem | [5918](https://pubchem.ncbi.nlm.nih.gov/compound/5918) | Thakkar_2017 |
 | 3-N-acetyl-3,4-diaminopyridine (3-Ac DAP) | metabolite | 151.169 | C7H9N3O | PubChem | [11593462](https://pubchem.ncbi.nlm.nih.gov/compound/11593462) | Thakkar_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 107.7 | L/h | 107.7 L/h | patients with Lambert-Eaton myasthenia | 49 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) |
-| V | V1/F | 72.6 | L | 72.6 L | patients with Lambert-Eaton myasthenia | 49 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) |
-| ka | kabs | 1.1 | 1/h | 1.1 h−1 | patients with Lambert-Eaton myasthenia | 49 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -106,5 +96,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D&body=Drug%3A%20amifampridine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D&body=Drug%3A%20amifampridine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:17 UTC</sub>

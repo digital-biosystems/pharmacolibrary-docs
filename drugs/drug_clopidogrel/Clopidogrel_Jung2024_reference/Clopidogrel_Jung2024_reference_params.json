@@ -117,6 +117,7 @@
   "record": "Jung_2024",
   "reference": "Normal",
   "sources": [
+   "Jung_2024 covariate CYP2C19",
    "Jung_2024 covariate fm1_im",
    "Jung_2024 covariate fm1_pm",
    "Jung_2024 covariate fm2_im",

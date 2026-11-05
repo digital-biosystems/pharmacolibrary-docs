@@ -100,13 +100,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Oxazepam_Dingemanse1988_PD_ptz_threshold`. <https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Dingemanse1988_PD_ptz_threshold>
+**This record:** Pharmacolibrary, model `Oxazepam_Dingemanse1988_PD_ptz_threshold`. <https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Dingemanse1988_PD_ptz_threshold>
 
 ```bibtex
 @misc{pharmacolibrary_OxazepamDingemanse1988PDptzthreshold,
   title  = {{Pharmacolibrary model Oxazepam_Dingemanse1988_PD_ptz_threshold}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_oxazepam/Oxazepam_Dingemanse1988_PD_ptz_threshold},
 }
 ```
@@ -120,5 +119,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20pd_Dingemanse_1988_PTZ_threshold&body=Drug%3A%20oxazepam%0ARecord%3A%20pd_Dingemanse_1988_PTZ_threshold%0APaper%3A%20Dingemanse_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/pd_Dingemanse_1988_PTZ_threshold%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20pd_Dingemanse_1988_PTZ_threshold&body=Drug%3A%20oxazepam%0ARecord%3A%20pd_Dingemanse_1988_PTZ_threshold%0APaper%3A%20Dingemanse_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/pd_Dingemanse_1988_PTZ_threshold%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [oxazepam](drugs/drug_oxazepam/)</sub>

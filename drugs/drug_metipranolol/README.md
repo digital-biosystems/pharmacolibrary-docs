@@ -23,16 +23,6 @@ Metipranolol is a non-selective beta blocker that was used to treat open-angle g
 | metipranolol | parent | 309.401 | C17H27NO4 | DrugBank | [31477](https://pubchem.ncbi.nlm.nih.gov/compound/31477) | Abshagen_1982 |
 | deacetyl metipranolol | metabolite | 267.369 | C15H25NO3 | PubChem | [162812](https://pubchem.ncbi.nlm.nih.gov/compound/162812) | Abshagen_1982 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 245 ‡ | L | 3.5 l/kg | normal volunteers | &gt;=47 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) |
-| t½ | t1/2z | 0.105 | h | 6.3 min | normal volunteers | &gt;=47 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) |
-| F | Fab | 0.5 |  | 50 % | normal volunteers | &gt;=47 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -115,5 +105,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetipranolol%5D&body=Drug%3A%20metipranolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metipranolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetipranolol%5D&body=Drug%3A%20metipranolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metipranolol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:42 UTC</sub>

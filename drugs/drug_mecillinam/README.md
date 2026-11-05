@@ -31,17 +31,9 @@ Mecillinam (amdinocillin) is an extended-spectrum penicillin antibiotic used to 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 14.49 ‡ | L/h | 3.45 mL/min/kg | healthy volunteers | 12 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Koumaki_2023_reference](drugs/drug_mecillinam/Mecillinam_Koumaki2023_reference.md) |
-| CL | CL | 14.49 ‡ | L/h | 3.45 mL/min/kg | neonatal calves |  | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Soback_1986_reference](drugs/drug_mecillinam/Mecillinam_Soback1986_reference.md) |
-| V | V | 39.76 ‡ | L | 0.568 l/kg | neonatal calves |  | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Soback_1986_reference](drugs/drug_mecillinam/Mecillinam_Soback1986_reference.md) |
-| V | V1 | 8.618 ‡ | L | 123.12 mL/kg | healthy volunteers | 12 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Koumaki_2023_reference](drugs/drug_mecillinam/Mecillinam_Koumaki2023_reference.md) |
-| t½ | t1/2z | 1.083 | h | 65 min | neonatal calves |  | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Soback_1986_reference](drugs/drug_mecillinam/Mecillinam_Soback1986_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Koumaki_2023 · CL ·/kg</text><circle cx="246.4" cy="30.0" r="4" fill="#2e7d32"><title>Koumaki_2023 · CL ·/kg: 14.49 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Soback_1986 · CL ·/kg</text><circle cx="246.4" cy="46.0" r="4" fill="#ef6c00"><title>Soback_1986 · CL ·/kg: 14.49 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Soback_1986 · V ·/kg</text><circle cx="469.9" cy="30.0" r="4" fill="#ef6c00"><title>Soback_1986 · V ·/kg: 39.76 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Koumaki_2023 · V1 ·/kg</text><circle cx="353.7" cy="46.0" r="4" fill="#2e7d32"><title>Koumaki_2023 · V1 ·/kg: 8.618 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -95,5 +87,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmecillinam%5D&body=Drug%3A%20mecillinam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mecillinam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmecillinam%5D&body=Drug%3A%20mecillinam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mecillinam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:04 UTC</sub>

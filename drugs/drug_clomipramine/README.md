@@ -22,17 +22,6 @@ Clomipramine is a tricyclic antidepressant used to treat obsessive-compulsive di
 |---|---|---|---|---|---|---|
 | clomipramine | parent | 314.852 | C19H23ClN2 | DrugBank | [2801](https://pubchem.ncbi.nlm.nih.gov/compound/2801) | Nielsen-Kudsk_1980 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 0.393 L/hxkg | adult cats | 6 | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) |
-| V | V | 350 ‡ | L | 5.0 L/kg | adult cats | 6 | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) |
-| t½ | t1/2z | 12.3 | h | 12.3 h | adult cats | 6 | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) |
-| F | Fab | 0.9 |  | 90 % | adult cats | 6 | cat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -147,5 +136,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D&body=Drug%3A%20clomipramine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D&body=Drug%3A%20clomipramine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:16 UTC</sub>

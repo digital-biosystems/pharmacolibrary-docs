@@ -168,13 +168,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Matsuno VK, Campos EV, Silva Junior EMD, Silva Junior JMD, Gomez DS, Santos SRCJ. Changes in fluconazole pharmacokinetics can impact on antifungal effectiveness in critically ill burn patients: a Pharmacokinetic-Pharmacodynamic (PK/PD) approach. Clinics (Sao Paulo, Brazil) 79:100491 (2024). [doi:10.1016/j.clinsp.2024.100491](https://doi.org/10.1016/j.clinsp.2024.100491)
 
-**This record:** Pharmacolibrary v26.09, model `Fluconazole_Matsuno2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference>
+**This record:** Pharmacolibrary, model `Fluconazole_Matsuno2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FluconazoleMatsuno2024reference,
   title  = {{Pharmacolibrary model Fluconazole_Matsuno2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference},
   note   = {Parameters from doi:10.1016/j.clinsp.2024.100491},
 }
@@ -193,5 +192,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluconazole%5D%20Fluconazole_Matsuno2024_reference&body=Drug%3A%20fluconazole%0ARecord%3A%20Fluconazole_Matsuno2024_reference%0APaper%3A%20Matsuno_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluconazole%5D%20Fluconazole_Matsuno2024_reference&body=Drug%3A%20fluconazole%0ARecord%3A%20Fluconazole_Matsuno2024_reference%0APaper%3A%20Matsuno_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluconazole/Fluconazole_Matsuno2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:52 UTC</sub>

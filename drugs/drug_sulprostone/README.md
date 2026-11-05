@@ -97,5 +97,5 @@ _not available_
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulprostone%5D&body=Drug%3A%20sulprostone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulprostone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulprostone%5D&body=Drug%3A%20sulprostone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulprostone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

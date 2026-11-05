@@ -214,13 +214,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G et al. Reducing the Burden of Interaction Studies in Cancer Patients Using a Stable Isotopically Labeled Microtracer: A Proof-of-Concept Study with Alectinib. Clinical pharmacology and therapeutics 119(3):713–720 (2026). [doi:10.1002/cpt.70141](https://doi.org/10.1002/cpt.70141)
 
-**This record:** Pharmacolibrary v26.09, model `Alectinib_Mohmaed2026_fasted_geometric_mean_cv`. <https://pharmacolibrary.github.io/#/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv>
+**This record:** Pharmacolibrary, model `Alectinib_Mohmaed2026_fasted_geometric_mean_cv`. <https://pharmacolibrary.github.io/#/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv>
 
 ```bibtex
 @misc{pharmacolibrary_AlectinibMohmaed2026fastedgeometricmeancv,
   title  = {{Pharmacolibrary model Alectinib_Mohmaed2026_fasted_geometric_mean_cv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv},
   note   = {Parameters from doi:10.1002/cpt.70141},
 }
@@ -239,5 +238,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balectinib%5D%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv&body=Drug%3A%20alectinib%0ARecord%3A%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0APaper%3A%20Mohmaed_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 21:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balectinib%5D%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv&body=Drug%3A%20alectinib%0ARecord%3A%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0APaper%3A%20Mohmaed_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 21:15 UTC</sub>

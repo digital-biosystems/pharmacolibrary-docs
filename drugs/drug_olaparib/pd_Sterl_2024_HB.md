@@ -118,13 +118,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Olaparib_Sterl2024_PD_hb`. <https://pharmacolibrary.github.io/#/drugs/drug_olaparib/Olaparib_Sterl2024_PD_hb>
+**This record:** Pharmacolibrary, model `Olaparib_Sterl2024_PD_hb`. <https://pharmacolibrary.github.io/#/drugs/drug_olaparib/Olaparib_Sterl2024_PD_hb>
 
 ```bibtex
 @misc{pharmacolibrary_OlaparibSterl2024PDhb,
   title  = {{Pharmacolibrary model Olaparib_Sterl2024_PD_hb}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_olaparib/Olaparib_Sterl2024_PD_hb},
 }
 ```
@@ -138,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolaparib%5D%20pd_Sterl_2024_HB&body=Drug%3A%20olaparib%0ARecord%3A%20pd_Sterl_2024_HB%0APaper%3A%20Sterl%C3%A9_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olaparib/pd_Sterl_2024_HB%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolaparib%5D%20pd_Sterl_2024_HB&body=Drug%3A%20olaparib%0ARecord%3A%20pd_Sterl_2024_HB%0APaper%3A%20Sterl%C3%A9_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olaparib/pd_Sterl_2024_HB%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [olaparib](drugs/drug_olaparib/)</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Wilde_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bleomycin — `Bleomycin_Wilde2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Wilde2007_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></div>
+> This record was reviewed on 2026-10-22 14:38 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 08:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Wilde2007_reference" status="extracted" stale="true" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wilde S, Jetter A, Rietbrock S, Kasel D, Engert A, Josting A et al. Population pharmacokinetics of the BEACOPP polychemotherapy regimen in Hodgkin's lymphoma and its effect on myelotoxicity. Clinical pharmacokinetics 46(4):319–333 (2007).
@@ -36,7 +38,7 @@ Wilde S, Jetter A, Rietbrock S, Kasel D, Engert A, Josting A et al. Population p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), qwen3.8-27b (partly confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +50,7 @@ Wilde S, Jetter A, Rietbrock S, Kasel D, Engert A, Josting A et al. Population p
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.962, the second reading 147.6; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.962, the second reading 147.6; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,26 +77,25 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 | `qwen3.8-27b` | partly confirmed | 0.111 (1/9 fields) | 8 |
-| `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>17 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.962 | 147.6 | mismatch |
-| `gpt-oss:120b` | `values[Q301]` | 4.67 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q303]` | 3.84 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q30]` | 1.22 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q315]` |  | 20.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q347]` | 2.86 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | 1.009 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | 789.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `values[Q88]` | 0.721 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 0.962 | 147.6 | mismatch |
+| `gpt-oss-120b` | `values[Q301]` | 4.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q303]` | 3.84 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | 1.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q347]` | 2.86 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 1.009 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 789.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 0.721 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q22]` | 0.962 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q301]` | 4.67 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q303]` | 3.84 |  | only_one_extracted |
@@ -193,13 +194,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wilde S, Jetter A, Rietbrock S, Kasel D, Engert A, Josting A et al. Population pharmacokinetics of the BEACOPP polychemotherapy regimen in Hodgkin's lymphoma and its effect on myelotoxicity. Clinical pharmacokinetics 46(4):319–333 (2007). [doi:10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005)
 
-**This record:** Pharmacolibrary v26.09, model `Bleomycin_Wilde2007_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Wilde2007_reference>
+**This record:** Pharmacolibrary, model `Bleomycin_Wilde2007_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Wilde2007_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BleomycinWilde2007reference,
   title  = {{Pharmacolibrary model Bleomycin_Wilde2007_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bleomycin/Bleomycin_Wilde2007_reference},
   note   = {Parameters from doi:10.2165/00003088-200746040-00005},
 }
@@ -218,5 +218,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Wilde2007_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Wilde2007_reference%0APaper%3A%20Wilde_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Wilde2007_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Wilde2007_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Wilde2007_reference%0APaper%3A%20Wilde_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Wilde2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:38 UTC</sub>

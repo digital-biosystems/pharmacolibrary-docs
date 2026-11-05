@@ -168,13 +168,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric patients. The Journal of clinical investigation 54(5):1221–1226 (1974). [doi:10.1172/JCI107865](https://doi.org/10.1172/JCI107865)
 
-**This record:** Pharmacolibrary v26.09, model `SodiumSalicylate_Lowenthal1974_six_anephric_patients`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients>
+**This record:** Pharmacolibrary, model `SodiumSalicylate_Lowenthal1974_six_anephric_patients`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients>
 
 ```bibtex
 @misc{pharmacolibrary_SodiumSalicylateLowenthal1974sixanephricpatients,
   title  = {{Pharmacolibrary model SodiumSalicylate_Lowenthal1974_six_anephric_patients}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients},
   note   = {Parameters from doi:10.1172/JCI107865},
 }
@@ -189,5 +188,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_salicylate%5D%20SodiumSalicylate_Lowenthal1974_six_anephric_patients&body=Drug%3A%20sodium_salicylate%0ARecord%3A%20SodiumSalicylate_Lowenthal1974_six_anephric_patients%0APaper%3A%20Lowenthal_1974%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 06:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_salicylate%5D%20SodiumSalicylate_Lowenthal1974_six_anephric_patients&body=Drug%3A%20sodium_salicylate%0ARecord%3A%20SodiumSalicylate_Lowenthal1974_six_anephric_patients%0APaper%3A%20Lowenthal_1974%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 06:13 UTC</sub>

@@ -192,13 +192,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Goyal RK, Moffett BS, Gobburu JVS, Al Mohajer M. Population Pharmacokinetics of Vancomycin in Pregnant Women. Frontiers in pharmacology 13:873439 (2022). [doi:10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439)
 
-**This record:** Pharmacolibrary v26.09, model `Vancomycin_Goyal2022_population_typical_value`. <https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value>
+**This record:** Pharmacolibrary, model `Vancomycin_Goyal2022_population_typical_value`. <https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value>
 
 ```bibtex
 @misc{pharmacolibrary_VancomycinGoyal2022populationtypicalvalue,
   title  = {{Pharmacolibrary model Vancomycin_Goyal2022_population_typical_value}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value},
   note   = {Parameters from doi:10.3389/fphar.2022.873439},
 }
@@ -217,5 +216,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvancomycin%5D%20Vancomycin_Goyal2022_population_typical_value&body=Drug%3A%20vancomycin%0ARecord%3A%20Vancomycin_Goyal2022_population_typical_value%0APaper%3A%20Goyal_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 18:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvancomycin%5D%20Vancomycin_Goyal2022_population_typical_value&body=Drug%3A%20vancomycin%0ARecord%3A%20Vancomycin_Goyal2022_population_typical_value%0APaper%3A%20Goyal_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 18:41 UTC</sub>

@@ -32,16 +32,9 @@ Clevidipine is a dihydropyridine calcium channel blocker used to treat arterial 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.069 | L/h | 0.069 L/h | patients undergoing cardiac surgery | &gt;=17 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vuylsteke_2000_reference](drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md) |
-| CL | CL | 258 | L/h | 4.3 l/min | adult cardiac surgical patients |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bailey_2002_reference](drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md) |
-| V | V | 32.4 | L | 32.4 l | adult cardiac surgical patients |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bailey_2002_reference](drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md) |
-| t½ | t1/2z | 0.01 | h | 0.6 min | adult cardiac surgical patients |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bailey_2002_reference](drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="260.0" y1="18" x2="260.0" y2="58" stroke="#ddd"/><text x="260.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="330.0" y1="18" x2="330.0" y2="58" stroke="#ddd"/><text x="330.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="400.0" y1="18" x2="400.0" y2="58" stroke="#ddd"/><text x="400.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="470.0" y1="18" x2="470.0" y2="58" stroke="#ddd"/><text x="470.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Vuylsteke_2000 · CL</text><circle cx="248.7" cy="30.0" r="4" fill="#78909c"><title>Vuylsteke_2000 · CL: 0.069 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bailey_2002 · CL</text><circle cx="498.8" cy="46.0" r="4" fill="#78909c"><title>Bailey_2002 · CL: 258 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -130,5 +123,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclevidipine%5D&body=Drug%3A%20clevidipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clevidipine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclevidipine%5D&body=Drug%3A%20clevidipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clevidipine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:59 UTC</sub>

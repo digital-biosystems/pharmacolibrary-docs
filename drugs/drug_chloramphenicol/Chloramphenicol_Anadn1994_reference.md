@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Anadón A, Bringas P, Martinez-Larrañaga MR, Diaz MJ. Bioavailability, pharmacokinetics and residues of chloramphenicol in the chicken. Journal of veterinary pharmacology and therapeutics 17(1):52–58 (1994). [doi:10.1111/j.1365-2885.1994.tb00522.x](https://doi.org/10.1111/j.1365-2885.1994.tb00522.x)
 
-**This record:** Pharmacolibrary v26.09, model `Chloramphenicol_Anadn1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference>
+**This record:** Pharmacolibrary, model `Chloramphenicol_Anadn1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ChloramphenicolAnadn1994reference,
   title  = {{Pharmacolibrary model Chloramphenicol_Anadn1994_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference},
   note   = {Parameters from doi:10.1111/j.1365-2885.1994.tb00522.x},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloramphenicol%5D%20Chloramphenicol_Anadn1994_reference&body=Drug%3A%20chloramphenicol%0ARecord%3A%20Chloramphenicol_Anadn1994_reference%0APaper%3A%20Anad%C3%B3n_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 21:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloramphenicol%5D%20Chloramphenicol_Anadn1994_reference&body=Drug%3A%20chloramphenicol%0ARecord%3A%20Chloramphenicol_Anadn1994_reference%0APaper%3A%20Anad%C3%B3n_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 21:38 UTC</sub>

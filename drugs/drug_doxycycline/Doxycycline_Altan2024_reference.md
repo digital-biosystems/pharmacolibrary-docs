@@ -163,13 +163,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Altan F, Corum O, Durna Corum D, Uney K, Terzi E, Bilen S et al. Pharmacokinetic behaviour and pharmacokinetic-pharmacodynamic integration of doxycycline in rainbow trout (Oncorhynchus mykiss) after intravascular, intramuscular and oral administrations. Veterinary medicine and science 10(3):e1419 (2024). [doi:10.1002/vms3.1419](https://doi.org/10.1002/vms3.1419)
 
-**This record:** Pharmacolibrary v26.09, model `Doxycycline_Altan2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Altan2024_reference>
+**This record:** Pharmacolibrary, model `Doxycycline_Altan2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Altan2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DoxycyclineAltan2024reference,
   title  = {{Pharmacolibrary model Doxycycline_Altan2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxycycline/Doxycycline_Altan2024_reference},
   note   = {Parameters from doi:10.1002/vms3.1419},
 }
@@ -188,5 +187,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxycycline%5D%20Doxycycline_Altan2024_reference&body=Drug%3A%20doxycycline%0ARecord%3A%20Doxycycline_Altan2024_reference%0APaper%3A%20Altan_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxycycline/Doxycycline_Altan2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 00:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxycycline%5D%20Doxycycline_Altan2024_reference&body=Drug%3A%20doxycycline%0ARecord%3A%20Doxycycline_Altan2024_reference%0APaper%3A%20Altan_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxycycline/Doxycycline_Altan2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 00:40 UTC</sub>

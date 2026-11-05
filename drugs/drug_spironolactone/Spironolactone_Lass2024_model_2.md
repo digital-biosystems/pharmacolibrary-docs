@@ -184,13 +184,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokinetics of oral spironolactone in infants up to 2 years of age. European journal of clinical pharmacology 80(2):239–248 (2024). [doi:10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
 
-**This record:** Pharmacolibrary v26.09, model `Spironolactone_Lass2024_model_2`. <https://pharmacolibrary.github.io/#/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2>
+**This record:** Pharmacolibrary, model `Spironolactone_Lass2024_model_2`. <https://pharmacolibrary.github.io/#/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2>
 
 ```bibtex
 @misc{pharmacolibrary_SpironolactoneLass2024model2,
   title  = {{Pharmacolibrary model Spironolactone_Lass2024_model_2}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2},
   note   = {Parameters from doi:10.1007/s00228-023-03599-w},
 }
@@ -205,5 +204,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspironolactone%5D%20Spironolactone_Lass2024_model_2&body=Drug%3A%20spironolactone%0ARecord%3A%20Spironolactone_Lass2024_model_2%0APaper%3A%20Lass_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 18:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspironolactone%5D%20Spironolactone_Lass2024_model_2&body=Drug%3A%20spironolactone%0ARecord%3A%20Spironolactone_Lass2024_model_2%0APaper%3A%20Lass_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spironolactone/Spironolactone_Lass2024_model_2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 18:46 UTC</sub>

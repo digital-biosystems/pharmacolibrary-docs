@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Vlachou_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_drug_amlodipine&quot;,&quot;label&quot;:&quot;Karalis_2023_drug_amlodipine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_drug_amlodipine.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amlodipine — `Amlodipine_Vlachou2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> KD has no unit.
+> This record was reviewed on 2026-10-22 15:30 UTC (Needs review), but the paper was screened again on 2026-11-03 10:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="extracted" stale="true" population="virtual subjects" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction of Bioequivalence. Materials (Basel, Switzerland) 14(3):555 (2021).
@@ -17,32 +17,32 @@ Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult.
+**Population:** virtual subjects · age group adult · n = 24.
 
 **Dosing:** 10, 12.5, 300 mg, oral, single.
 
+**Dosed compound ≠ measured compound:** dosed amlodipine/irbesartan/hydrochlorothiazide, measured amlodipine.
+
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Kd | KD | 1.4954 |  |
-| Cl/F (ml/min) | CL/F | 370 | ml/min |
-| V1/F (ml) | V1/F | 1300 | ml |
+| 0.856 | MTT | 13.28 |  |
+| Cl/F (ml/min) | CL/F | 575 | ml/min |
+| V1/F (ml) | V/F | 1300 | ml |
+| Kd_R (min−1) | kel | 0.2776 | min−1 |
 | Estimated “true” absorption rate constant | kabs | 0.01347 | 1/h |
-| Q/F (ml/min) | Q/F | 295 | ml/min |
-| V2/F (ml) | V2/F | 85800 | ml |
+| Q/F (ml/min) | Q/F | 423.33 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,12 +62,12 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Kd | `Q331` · KD | 1.4954 |  |  |  |  | exact (1) | materials-14-00555-t004:row2:col1, materials-14-00555-t004:row2:col2, materials-14-00555-t004:row4:col1, materials-14-00555-t004:row4:col2, materials-14-00555-t004:row6:col1, materials-14-00555-t004:row6:col2, materials-14-00555-t004:row8:col1, materials-14-00555-t004:row8:col2, materials-14-00555-t004:row10:col1, materials-14-00555-t004:row10:col2, materials-14-00555-t004:row12:col1, materials-14-00555-t004:row12:col2, materials-14-00555-t004:row14:col1, materials-14-00555-t004:row14:col2, materials-14-00555-t004:row16:col1, materials-14-00555-t004:row16:col2, materials-14-00555-t004:row18:col1, materials-14-00555-t004:row18:col2 |
-| Cl/F (ml/min) | `Q27` · CL/F | 370 | ml/min | 6.167e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row2:col1, Vlachou_2021_table_5:row12:col1, Vlachou_2021_table_5:row24:col1 |
-| V1/F (ml) | `Q290` · V1/F | 1300 | ml | 0.0013 | m3 | ml | exact (1) | Vlachou_2021_table_5:row3:col1, Vlachou_2021_table_5:row14:col1, Vlachou_2021_table_5:row26:col1 |
+| 0.856 | `Q81` · MTT | 13.28 |  |  |  |  | llm (0.6) | materials-14-00555-t004:row3:col0, materials-14-00555-t004:row3:col3 |
+| Cl/F (ml/min) | `Q27` · CL/F | 575 | ml/min | 9.583e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row2:col1, Vlachou_2021_table_5:row12:col1, Vlachou_2021_table_5:row24:col1 |
+| V1/F (ml) | `Q76` · V/F | 1300 | ml | 0.0013 | m3 | ml | exact (1) | Vlachou_2021_table_5:row3:col1 |
+| Kd_R (min−1) | `Q47` · kel | 0.2776 | min−1 | 0.004627 | 1/s | 1/min | llm (0.6) | Vlachou_2021_table_5:row5:col1, Vlachou_2021_table_5:row17:col1, Vlachou_2021_table_5:row29:col1 |
 | Estimated “true” absorption rate constant | `Q49` · kabs | 0.01347 | 1/h | 3.742e-06 | 1/s | 1/h | llm_confirmed (0.6) | Vlachou_2021_table_5:row6:col2, Vlachou_2021_table_5:row18:col2, Vlachou_2021_table_5:row30:col2 |
-| Q/F (ml/min) | `Q69` · Q/F | 295 | ml/min | 4.917e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row13:col1, Vlachou_2021_table_5:row25:col1 |
-| V2/F (ml) | `Q82` · V2/F | 85800 | ml | 0.0858 | m3 | ml | exact (1) | Vlachou_2021_table_5:row15:col1, Vlachou_2021_table_5:row27:col1 |
+| Q/F (ml/min) | `Q69` · Q/F | 423.33 | ml/min | 7.055e-06 | m3/s | ml/min | exact (1) | Vlachou_2021_table_5:row13:col1, Vlachou_2021_table_5:row25:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,45 +78,61 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 **Interpretation flags:**
 - column 'buffer' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'parameter 4' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Amlodipine' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row1:col1', 'materials-14-00555-t004:row1:col3', 'materials-14-00555-t004:row1:col4'])
-- dropped unlinked row (NIL): '4.5' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row3:col2', 'materials-14-00555-t004:row3:col3', 'materials-14-00555-t004:row9:col2', 'materials-14-00555-t004:row9:col3', 'materials-14-00555-t004:row15:col2', 'materials-14-00555-t004:row15:col3'])
-- dropped unlinked row (NIL): '6.8' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row5:col2', 'materials-14-00555-t004:row5:col3', 'materials-14-00555-t004:row11:col2', 'materials-14-00555-t004:row11:col3', 'materials-14-00555-t004:row17:col2', 'materials-14-00555-t004:row17:col3'])
-- dropped unlinked row (NIL): 'Irbesartan' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row7:col1', 'materials-14-00555-t004:row7:col3', 'materials-14-00555-t004:row7:col4'])
-- dropped unlinked row (NIL): 'Hydrochlorthiazide' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row13:col1', 'materials-14-00555-t004:row13:col3', 'materials-14-00555-t004:row13:col4'])
+- table representations disagree for 'm0'; source reconciliation required
+- table representations disagree for '10.2'; source reconciliation required
+- column 'drug' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for '0.856'; source reconciliation required
+- table representations disagree for '7.68'; source reconciliation required
+- table representations disagree for '0.898'; source reconciliation required
+- table representations disagree for '2.93'; source reconciliation required
+- table representations disagree for '6.98'; source reconciliation required
+- table representations disagree for '0.0234'; source reconciliation required
+- table representations disagree for '4.69'; source reconciliation required
+- table representations disagree for '0.7076'; source reconciliation required
+- table representations disagree for '1.26'; source reconciliation required
+- table representations disagree for '22.78'; source reconciliation required
+- table representations disagree for '0.9476'; source reconciliation required
+- table representations disagree for '5.07'; source reconciliation required
+- table representations disagree for '0.8874'; source reconciliation required
+- table representations disagree for '3.62'; source reconciliation required
+- dropped unlinked row (NIL): 'm0' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row1:col1', 'materials-14-00555-t004:row1:col3', 'materials-14-00555-t004:row7:col1', 'materials-14-00555-t004:row7:col3', 'materials-14-00555-t004:row13:col1', 'materials-14-00555-t004:row13:col3'])
+- dropped unlinked row (NIL): '10.2' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row2:col1'])
+- dropped duplicate Q81 ('7.68', value '0.5734') — already have one for this compound
+- dropped unlinked row (NIL): '0.898' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row5:col0', 'materials-14-00555-t004:row5:col3'])
+- dropped unlinked row (NIL): '2.93' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row6:col1'])
+- dropped unlinked row (NIL): '6.98' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row8:col1'])
+- dropped duplicate Q81 ('0.0234', value '2.97') — already have one for this compound
+- dropped unlinked row (NIL): '4.69' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row10:col1'])
+- dropped unlinked row (NIL): '0.7076' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row11:col0', 'materials-14-00555-t004:row11:col3'])
+- dropped duplicate Q81 ('1.26', value '0.0811') — already have one for this compound
+- dropped duplicate Q81 ('22.78', value '0.4534') — already have one for this compound
+- dropped duplicate Q81 ('0.9476', value '3.28') — already have one for this compound
+- dropped unlinked row (NIL): '5.07' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row16:col1'])
+- dropped unlinked row (NIL): '0.8874' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row17:col0', 'materials-14-00555-t004:row17:col3'])
+- dropped unlinked row (NIL): '3.62' — extend the ontology if this is a real PK parameter (source ['materials-14-00555-t004:row18:col1'])
 - dropped unlinked row (NIL): 'Literature 1' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row1:col2'])
 - dropped unlinked row (NIL): 'In vitro fittings' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row4:col2', 'Vlachou_2021_table_5:row16:col2', 'Vlachou_2021_table_5:row28:col2'])
-- dropped unlinked row (NIL): 'Kd_R (min−1)' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row5:col1', 'Vlachou_2021_table_5:row17:col1', 'Vlachou_2021_table_5:row29:col1'])
-- dropped unlinked row (NIL): 'Kat_R (min−1)' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row7:col1', 'Vlachou_2021_table_5:row19:col1', 'Vlachou_2021_table_5:row31:col1'])
-- dropped duplicate Q49 ('Kat (min−1)', value '0.01493') — already have one for this compound
+- dropped duplicate Q49 ('Kat_R (min−1)', value '0.01351') — already have one for this compound
+- dropped duplicate Q81 ('Kat (min−1)', value '0.01349') — already have one for this compound
 - dropped unlinked row (NIL): 'Literature 2' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row10:col2'])
-- dropped duplicate Q49 ('Ka (min−1)', value '0.00507') — already have one for this compound
+- dropped duplicate Q49 ('Ka (min−1)', value '0.01288') — already have one for this compound
 - dropped unlinked row (NIL): 'Literature 3' — extend the ontology if this is a real PK parameter (source ['Vlachou_2021_table_5:row22:col2'])
-- implicit units: 'Kd' — the LLM proposed '1/h', whose dimension does not fit Q331; left unset
-- implicit units: 'Estimated “true” absorption rate constant' → 1/h (from the popPK convention: "The parameter is explicitly identified as the 'absorption rate constant' (Ka or Kat). In population pharmacokinetics, fi")
+- implicit units: 'Estimated “true” absorption rate constant' → 1/h (from the popPK convention: "The parameter is identified as the 'absorption rate constant' (Kat), which is a first-order rate constant. In population")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amlodipine
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F (ml)' is the general volume)
+- status held at "Needs review" — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell materials-14-00555-t004:row1:col2 = 'm0'
-- unparsed cell materials-14-00555-t004:row3:col1 = 'm0'
-- unparsed cell materials-14-00555-t004:row5:col1 = 'm0'
-- unparsed cell materials-14-00555-t004:row7:col2 = 'm0'
-- unparsed cell materials-14-00555-t004:row9:col1 = 'm0'
-- unparsed cell materials-14-00555-t004:row11:col1 = 'm0'
-- unparsed cell materials-14-00555-t004:row13:col2 = 'm0'
-- unparsed cell materials-14-00555-t004:row15:col1 = 'm0'
-- unparsed cell materials-14-00555-t004:row17:col1 = 'm0'
-- unparsed cell Vlachou_2021_table_5:row1:col1 = 'Ka (min−1)'
-- unparsed cell Vlachou_2021_table_5:row4:col1 = 'Kd_T (min−1)'
-- unparsed cell Vlachou_2021_table_5:row6:col1 = 'Kat_T (min−1)'
-- unparsed cell Vlachou_2021_table_5:row16:col1 = 'Kd_T (min−1)'
-- unparsed cell Vlachou_2021_table_5:row18:col1 = 'Kat_T (min−1)'
-- unparsed cell Vlachou_2021_table_5:row28:col1 = 'Kd_T (min−1)'
-- unparsed cell Vlachou_2021_table_5:row30:col1 = 'Kat_T (min−1)'
+- table materials-14-00555-t004: units_need_context
+- table materials-14-00555-t004: ragged_grid
+- table materials-14-00555-t004: representations disagree; selected evidence retained, not merged
+- table Vlachou_2021_table_5: ambiguous_numeric_format
+- table Vlachou_2021_table_5: ragged_grid
 - companion parameter table 5 transcribed (30 record(s))
-- LLM selected parameter table(s) 5
+- LLM selected parameter table(s) 4, 5
 
 ## Validation
 
@@ -128,16 +144,14 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Vlachou_2021_table_5:row2:col1', 'Vlachou_2021_table_5:row12:col1', 'Vlachou_2021_table_5:row24:col1'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Vlachou_2021_table_5:row3:col1', 'Vlachou_2021_table_5:row14:col1', 'Vlachou_2021_table_5:row26:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Vlachou_2021_table_5:row5:col1', 'Vlachou_2021_table_5:row17:col1', 'Vlachou_2021_table_5:row29:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Vlachou_2021_table_5:row6:col2', 'Vlachou_2021_table_5:row18:col2', 'Vlachou_2021_table_5:row30:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Vlachou_2021_table_5:row13:col1', 'Vlachou_2021_table_5:row25:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Vlachou_2021_table_5:row15:col1', 'Vlachou_2021_table_5:row27:col1'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['materials-14-00555-t004:row2:col1', 'materials-14-00555-t004:row2:col2', 'materials-14-00555-t004:row4:col1', 'materials-14-00555-t004:row4:col2', 'materials-14-00555-t004:row6:col1', 'materials-14-00555-t004:row6:col2', 'materials-14-00555-t004:row8:col1', 'materials-14-00555-t004:row8:col2', 'materials-14-00555-t004:row10:col1', 'materials-14-00555-t004:row10:col2', 'materials-14-00555-t004:row12:col1', 'materials-14-00555-t004:row12:col2', 'materials-14-00555-t004:row14:col1', 'materials-14-00555-t004:row14:col2', 'materials-14-00555-t004:row16:col1', 'materials-14-00555-t004:row16:col2', 'materials-14-00555-t004:row18:col1', 'materials-14-00555-t004:row18:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Vlachou_2021_table_5:row3:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 22.2 L/h | ['Vlachou_2021_table_5:row2:col1', 'Vlachou_2021_table_5:row12:col1', 'Vlachou_2021_table_5:row24:col1'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 1.3 L | ['Vlachou_2021_table_5:row3:col1', 'Vlachou_2021_table_5:row14:col1', 'Vlachou_2021_table_5:row26:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 85.8 L | ['Vlachou_2021_table_5:row15:col1', 'Vlachou_2021_table_5:row27:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 34.5 L/h | ['Vlachou_2021_table_5:row2:col1', 'Vlachou_2021_table_5:row12:col1', 'Vlachou_2021_table_5:row24:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.3 L | ['Vlachou_2021_table_5:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,13 +181,12 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 **Source paper** (the parameters are its): Vlachou M, Karalis V. An In Vitro-In Vivo Simulation Approach for the Prediction of Bioequivalence. Materials (Basel, Switzerland) 14(3):555 (2021). [doi:10.3390/ma14030555](https://doi.org/10.3390/ma14030555)
 
-**This record:** Pharmacolibrary v26.09, model `Amlodipine_Vlachou2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference>
+**This record:** Pharmacolibrary, model `Amlodipine_Vlachou2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AmlodipineVlachou2021reference,
   title  = {{Pharmacolibrary model Amlodipine_Vlachou2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference},
   note   = {Parameters from doi:10.3390/ma14030555},
 }
@@ -188,5 +201,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_Vlachou2021_reference&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_Vlachou2021_reference%0APaper%3A%20Vlachou_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamlodipine%5D%20Amlodipine_Vlachou2021_reference&body=Drug%3A%20amlodipine%0ARecord%3A%20Amlodipine_Vlachou2021_reference%0APaper%3A%20Vlachou_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 10:44 UTC</sub>

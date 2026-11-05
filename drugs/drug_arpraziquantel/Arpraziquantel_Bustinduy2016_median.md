@@ -205,13 +205,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van Dam GJ et al. Population Pharmacokinetics and Pharmacodynamics of Praziquantel in Ugandan Children with Intestinal Schistosomiasis: Higher Dosages Are Required for Maximal Efficacy. mBio 7(4) (2016). [doi:10.1128/mBio.00227-16](https://doi.org/10.1128/mBio.00227-16)
 
-**This record:** Pharmacolibrary v26.09, model `Arpraziquantel_Bustinduy2016_median`. <https://pharmacolibrary.github.io/#/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median>
+**This record:** Pharmacolibrary, model `Arpraziquantel_Bustinduy2016_median`. <https://pharmacolibrary.github.io/#/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median>
 
 ```bibtex
 @misc{pharmacolibrary_ArpraziquantelBustinduy2016median,
   title  = {{Pharmacolibrary model Arpraziquantel_Bustinduy2016_median}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median},
   note   = {Parameters from doi:10.1128/mBio.00227-16},
 }
@@ -230,5 +229,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barpraziquantel%5D%20Arpraziquantel_Bustinduy2016_median&body=Drug%3A%20arpraziquantel%0ARecord%3A%20Arpraziquantel_Bustinduy2016_median%0APaper%3A%20Bustinduy_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 09:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barpraziquantel%5D%20Arpraziquantel_Bustinduy2016_median&body=Drug%3A%20arpraziquantel%0ARecord%3A%20Arpraziquantel_Bustinduy2016_median%0APaper%3A%20Bustinduy_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:12 UTC</sub>

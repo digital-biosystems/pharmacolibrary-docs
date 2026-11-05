@@ -24,18 +24,9 @@ Peficitinib is a JAK inhibitor developed for the treatment of rheumatoid arthrit
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 91.7 | L/h | 91.7 L/h | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_estimate](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_estimate.md) |
-| CL | CL | 91.7 | L/h | 91.7 L/h | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_median](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_median.md) |
-| V | V1 | 280 | L | 280 L | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_estimate](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_estimate.md) |
-| V | V1 | 280 | L | 280 L | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_median](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_median.md) |
-| ka | kabs | — | 1/h | 5.83 L/h | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_estimate](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_estimate.md) |
-| ka | kabs | — | 1/h | 5.83 L/h | patients with rheumatoid arthritis | ,1087 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_median](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_median.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Toyoshima_2021 · CL</text><circle cx="526.8" cy="30.0" r="4" fill="#ef6c00"><title>Toyoshima_2021 · CL: 91.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Toyoshima_2021 · CL</text><circle cx="526.8" cy="46.0" r="4" fill="#ef6c00"><title>Toyoshima_2021 · CL: 91.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Toyoshima_2021 · V1</text><circle cx="346.5" cy="30.0" r="4" fill="#ef6c00"><title>Toyoshima_2021 · V1: 280 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Toyoshima_2021 · V1</text><circle cx="346.5" cy="46.0" r="4" fill="#ef6c00"><title>Toyoshima_2021 · V1: 280 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -91,5 +82,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeficitinib%5D&body=Drug%3A%20peficitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peficitinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeficitinib%5D&body=Drug%3A%20peficitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peficitinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:07 UTC</sub>

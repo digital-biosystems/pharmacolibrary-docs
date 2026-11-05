@@ -129,13 +129,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Encorafenib_Yang2026_PD_aenz`. <https://pharmacolibrary.github.io/#/drugs/drug_encorafenib/Encorafenib_Yang2026_PD_aenz>
+**This record:** Pharmacolibrary, model `Encorafenib_Yang2026_PD_aenz`. <https://pharmacolibrary.github.io/#/drugs/drug_encorafenib/Encorafenib_Yang2026_PD_aenz>
 
 ```bibtex
 @misc{pharmacolibrary_EncorafenibYang2026PDaenz,
   title  = {{Pharmacolibrary model Encorafenib_Yang2026_PD_aenz}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_encorafenib/Encorafenib_Yang2026_PD_aenz},
 }
 ```
@@ -149,5 +148,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bencorafenib%5D%20pd_Yang_2026_AENZ&body=Drug%3A%20encorafenib%0ARecord%3A%20pd_Yang_2026_AENZ%0APaper%3A%20Yang_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_encorafenib/pd_Yang_2026_AENZ%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bencorafenib%5D%20pd_Yang_2026_AENZ&body=Drug%3A%20encorafenib%0ARecord%3A%20pd_Yang_2026_AENZ%0APaper%3A%20Yang_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_encorafenib/pd_Yang_2026_AENZ%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [encorafenib](drugs/drug_encorafenib/)</sub>

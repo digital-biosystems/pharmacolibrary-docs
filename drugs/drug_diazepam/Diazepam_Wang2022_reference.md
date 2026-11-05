@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Diazepam absorption parameters ka and Tlag lack source estimates and rely on library defaults.
+> This record was reviewed on 2026-10-22 15:34 UTC (Needs review), but the paper was screened again on 2026-11-03 21:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Wang2022_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="diazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Wang2022_reference" status="extracted" stale="true" population="healthy Chinese volunteers" measured-compound="diazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam and Its Metabolites in Urine of Chinese Participants. Drugs in R&D 22(1):43–50 (2022).
@@ -29,8 +29,6 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 <figure class="pk-models-diagram"><img src="drugs/drug_diazepam/Diazepam_Wang2022_reference/Diazepam_Wang2022_reference.svg" alt="Diazepam_Wang2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLz/F (L/h) | CL/F | 65.77 | L/h |
@@ -38,7 +36,7 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +50,7 @@ Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam
 
 The record uses default values for absorption kinetics rather than estimates from Wang_2022. This unsupported assumption affects the simulated oral profile. Additionally, second-reader disagreements persist on several derived metric values. Extracted — diazepam: CL/F 65.8 L/h, V/F 1.13e+04 L.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 77.86, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -82,14 +80,30 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.083 (1/12 fields) | 11 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `values[Q19]` | 77.86 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` |  | 65.77 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` | 65.77 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 2.38 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 1.93 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 119.58 | 310.58 | mismatch |
+| `gpt-oss-120b` | `values[Q71]` |  | 101.57 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` |  | 1.17 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` |  | 41.14 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` |  | 77.86 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -176,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wang LL, Ren XX, He Y, Cui GF, Liu JJ, Jia J et al. Pharmacokinetics of Diazepam and Its Metabolites in Urine of Chinese Participants. Drugs in R&D 22(1):43–50 (2022). [doi:10.1007/s40268-021-00375-y](https://doi.org/10.1007/s40268-021-00375-y)
 
-**This record:** Pharmacolibrary v26.09, model `Diazepam_Wang2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_diazepam/Diazepam_Wang2022_reference>
+**This record:** Pharmacolibrary, model `Diazepam_Wang2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_diazepam/Diazepam_Wang2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DiazepamWang2022reference,
   title  = {{Pharmacolibrary model Diazepam_Wang2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_diazepam/Diazepam_Wang2022_reference},
   note   = {Parameters from doi:10.1007/s40268-021-00375-y},
 }
@@ -201,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Wang2022_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Wang2022_reference%0APaper%3A%20Wang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Wang2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Wang2022_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Wang2022_reference%0APaper%3A%20Wang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Wang2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:21 UTC</sub>

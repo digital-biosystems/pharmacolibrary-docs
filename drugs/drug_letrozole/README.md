@@ -31,19 +31,9 @@ Letrozole is an aromatase inhibitor used to treat breast cancer, including invas
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.751 ‡ | L/h | 39.3 ml/h/kg | Sprague-Dawley rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arora_2021_females](drugs/drug_letrozole/Letrozole_Arora2021_females.md) |
-| CL | CL | 2.751 ‡ | L/h | 39.3 ml/h/kg | Sprague-Dawley rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arora_2021_males](drugs/drug_letrozole/Letrozole_Arora2021_males.md) |
-| CL | CL/F | 1.31 | L/h | 1.31 L/h | adults with hormone receptor-positive breast cancer | 617 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Puszkiel_2024_reference](drugs/drug_letrozole/Letrozole_Puszkiel2024_reference.md) |
-| V | V/F | 207 | L | 207 L | adults with hormone receptor-positive breast cancer | 617 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Puszkiel_2024_reference](drugs/drug_letrozole/Letrozole_Puszkiel2024_reference.md) |
-| ka | kabs | 2.12 | 1/h | 2.12 h -1 | adults with hormone receptor-positive breast cancer | 617 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Puszkiel_2024_reference](drugs/drug_letrozole/Letrozole_Puszkiel2024_reference.md) |
-| t½ | t1/2z | 9.23 | h | 9.23 h | Sprague-Dawley rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arora_2021_males](drugs/drug_letrozole/Letrozole_Arora2021_males.md) |
-| t½ | t1/2z | 34 | h | 34.00 h | Sprague-Dawley rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Arora_2021_females](drugs/drug_letrozole/Letrozole_Arora2021_females.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Arora_2021 · CL ·/kg</text><circle cx="343.8" cy="30.0" r="4" fill="#ef6c00"><title>Arora_2021 · CL ·/kg: 2.751 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Arora_2021 · CL ·/kg</text><circle cx="343.8" cy="46.0" r="4" fill="#ef6c00"><title>Arora_2021 · CL ·/kg: 2.751 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Puszkiel_2024 · CL/F</text><circle cx="231.0" cy="62.0" r="4" fill="#66bb6a"><title>Puszkiel_2024 · CL/F: 1.31 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -128,5 +118,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bletrozole%5D&body=Drug%3A%20letrozole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_letrozole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bletrozole%5D&body=Drug%3A%20letrozole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_letrozole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:17 UTC</sub>

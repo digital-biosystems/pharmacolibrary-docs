@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Reed_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Reed2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Record rejected because a reported unit was not recognized, preventing conversion to SI, causing dimensional mismatch and an unreachable compartment.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because a reported unit was not recognized, preventing conversion to SI, causing dimensional mismatch and an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="true" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The pharmacokinetics and pharmacodynamics of fentanyl administered via transdermal patch in horses. Frontiers in pain research (Lausanne, Switzerland) 5:1373759 (2024).
@@ -17,9 +17,9 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 
 ## Population and dosing
 
-**Population:** healthy adult horses · condition healthy · age group adult · n = # List each compound on its own line under 'compounds', one per line, as:.
+**Population:** healthy adult horses · age group adult · n = The paper may be in a language other than English (German, French, Japanese, etc.) — read it in that language; do not treat non-English text as unreadable or irrelevant. Output ONLY flat YAML — no prose, no code fences..
 
-**Dosing:** 100, 200, 300 mcg/h, transdermal, single.
+**Dosing:** 200, 400, 600 mcg/h, transdermal, single.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -27,7 +27,7 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 11 extracted.  
+**Parameters:** 12 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -45,11 +45,12 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 | V1 (L/kg) | V1 | 0.191 | L/kg |  |
 | V2 (L/kg) | V2 | 0.185 | L/kg |  |
 | V3 (L/kg) | V3 | 0.351 | L/kg |  |
+| clearance, volumes and absorption rate | kabs | 1.0 | h−1 |  |
 | t1pp ranged from | tlag | 15.0 | min |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.852). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +64,7 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 
 The absorption lag time of 15.0 minutes lacked a standard equivalent, blocking unit conversion. This error contributed to structural inconsistencies, specifically an orphan compartment that had no path from the dose. Extracted — fentanyl: λ1 17.8 1/h, kel 2.12 1/h, t1/2α 0.039 h, t1/2β 0.327 h, t1/2γ 1.85 h, AUClast 5.24e+03 h*pg/ml, CL 722 ml/h/kg, V1 0.191 L/kg, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tvb: this record has none, the second reading 6613.1. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -81,6 +82,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | V1 (L/kg) | `Q63` · V1 | 0.191 | L/kg | 0.01337 | m3 | l/kg | exact (1) | T2:row12:col1 |  |
 | V2 (L/kg) | `Q64` · V2 | 0.185 | L/kg | 0.01295 | m3 | l/kg | exact (1) | T2:row13:col1 |  |
 | V3 (L/kg) | `Q77` · V3 | 0.351 | L/kg | 0.02457 | m3 | l/kg | exact (1) | T2:row14:col1 |  |
+| clearance, volumes and absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002778 | 1/s | 1/h | review_gapfill (0.7) | Eleveld_2026:review |  |
 | t1pp ranged from | `Q83` · tlag | 15.0 | min | 900 | s | h | review_gapfill (0.7) | Andersen_1986:review |  |
 
 <details class="legend">
@@ -96,48 +98,39 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'C' routed out of structural estimates ('Between subject variability (%CV)')
 - table section iiv: 'Beta' routed out of structural estimates ('Between subject variability (%CV)')
 - table section iiv: 'Gamma' routed out of structural estimates ('Between subject variability (%CV)')
-- column 'target dose(mg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'tvA (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row1:col1'])
 - dropped unlinked row (NIL): 'tvB (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row2:col1'])
 - dropped unlinked row (NIL): 'tvC (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row3:col1'])
 - unit_dimension_mismatch: 'tvAlpha (1/h)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - dropped PD-category row 'tvGamma (1/h)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row6:col1'])
 - dropped unlinked row (NIL): 'stdev0' — extend the ontology if this is a real PK parameter (source ['T2:row15:col1'])
-- dropped unlinked row (NIL): 'LDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row0:col1', 'Reed_2024_table_3:row0:col2', 'Reed_2024_table_3:row0:col3'])
-- dropped unlinked row (NIL): 'MDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row1:col1', 'Reed_2024_table_3:row1:col2', 'Reed_2024_table_3:row1:col3'])
-- dropped unlinked row (NIL): 'HDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row2:col1', 'Reed_2024_table_3:row2:col2', 'Reed_2024_table_3:row2:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
 - table T2: unbound_uncertainty
 - table T2: unparsed_numeric_cell
-- table Reed_2024_table_1: unparsed_numeric_cell
-- companion parameter table 1 transcribed (21 record(s))
-- companion parameter table 3 transcribed (9 record(s))
-- LLM selected parameter table(s) 1, 2, 3
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.852 (23/27 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.933 (14/15 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[t1pp ranged from]` | 15.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tva]` |  | 12661.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvc]` |  | 528.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[tvb]` |  | 6613.1 | only_one_extracted |
 
 </details>
 
@@ -156,6 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T2:row11:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['T2:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
 | C5_dimension_Q59 | pass | [time] |  | ['T2:row7:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['T2:row8:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row12:col1'] |
@@ -192,5 +186,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Reed2024_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Reed2024_reference%0APaper%3A%20Reed_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Reed2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfentanyl%5D%20Fentanyl_Reed2024_reference&body=Drug%3A%20fentanyl%0ARecord%3A%20Fentanyl_Reed2024_reference%0APaper%3A%20Reed_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fentanyl/Fentanyl_Reed2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 18:28 UTC</sub>

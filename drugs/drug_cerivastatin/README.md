@@ -22,15 +22,6 @@ Cerivastatin is a statin that was used to lower blood lipids in conditions such 
 |---|---|---|---|---|---|---|
 | cerivastatin | parent | 459.55 | C26H34FNO5 | DrugBank | [446156](https://pubchem.ncbi.nlm.nih.gov/compound/446156) | Mück_1997 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.6 | L/h | 110.0 mL/min | healthy young male volunteers | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mück_1997_reference](drugs/drug_cerivastatin/Cerivastatin_Mck1997_reference.md) |
-| F | Fab | 0.6 |  | 60.0 % | healthy young male volunteers | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mück_1997_reference](drugs/drug_cerivastatin/Cerivastatin_Mck1997_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -180,5 +171,5 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcerivastatin%5D&body=Drug%3A%20cerivastatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cerivastatin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcerivastatin%5D&body=Drug%3A%20cerivastatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cerivastatin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:19 UTC</sub>

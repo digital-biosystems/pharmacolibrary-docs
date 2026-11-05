@@ -9,7 +9,7 @@
 
 > The record lacks distribution volume and clearance parameters, preventing identification as a compartmental population PK model for arketamine.
 
-<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Weiss2023_propiverine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Weiss2023_propiverine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Weiss M. Is the One-Compartment Model with First Order Absorption a Useful Approximation?. Pharmaceutical research 40(9):2147–2153 (2023).
@@ -21,7 +21,7 @@ Weiss M. Is the One-Compartment Model with First Order Absorption a Useful Appro
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
@@ -31,7 +31,7 @@ Weiss M. Is the One-Compartment Model with First Order Absorption a Useful Appro
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| ka1C | kabs | -1.5 | n = 10 |
+| ka1C | kabs | -1.5 | 1/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -53,29 +53,34 @@ The extraction assigns an absorption rate constant of -1.5 to propiverine rather
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| ka1C | `Q49` · kabs | -1.5 | n = 10 | n=10 | llm (0.6) | Tab2:row2:col3, Tab2:row2:col4, Weiss_2023_table_1:row2:col2, Weiss_2023_table_1:row2:col3 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| ka1C | `Q49` · kabs | -1.5 | 1/h | -0.0004167 | 1/s | 1/h | llm (0.6) | Tab2:row2:col3, Tab2:row2:col4, Weiss_2023_table_1:row2:col2, Weiss_2023_table_1:row2:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Model | Q900 | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Model' — extend the ontology if this is a real PK parameter (source ['Tab2:row0:col3', 'Tab2:row0:col4'])
+- unit_dimension_unknown: 'n = 10' (equation variable)
 - unit_dimension_unknown: 'n = 10' (kabs)
 - dropped unlinked row (NIL): 'IG1C' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col3', 'Tab2:row4:col4', 'Weiss_2023_table_1:row3:col2', 'Weiss_2023_table_1:row3:col3'])
 - dropped PD-category row 'Gamma' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row6:col3', 'Tab2:row6:col4', 'Weiss_2023_table_1:row4:col2', 'Weiss_2023_table_1:row4:col3'])
-- dropped unlinked row (NIL): '2IG3C' — extend the ontology if this is a real PK parameter (source ['Weiss_2023_table_1:row1:col2', 'Weiss_2023_table_1:row1:col3'])
+- dropped duplicate Q900 ('2IG3C', value '-1222') — already have one for this compound
+- implicit units: 'ka1C' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (ka). In pharmacokinetics, first-order rate constants are conventionally ex')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ketamine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- population split: 'propiverine (n = 10)' subgroup of Weiss_2023 (paper reports 3 populations: ketamine (n = 15), propiverine (n = 10), trospium (n = 12))
-- review gap-fill skipped: this record measures 'ketamine', not arketamine — the review values are the parent's
+- population split: 'propiverine (n = 10)' subgroup of Weiss_2023 (paper reports 2 populations: ketamine (n = 15), propiverine (n = 10))
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (20 record(s))
@@ -89,8 +94,8 @@ The extraction assigns an absorption rate constant of -1.5 to propiverine rather
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_unit_missing_Q49 | fail | 1 / [time] | n = 10 | ['Tab2:row2:col3', 'Tab2:row2:col4', 'Weiss_2023_table_1:row2:col2', 'Weiss_2023_table_1:row2:col3'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col3', 'Tab2:row2:col4', 'Weiss_2023_table_1:row2:col2', 'Weiss_2023_table_1:row2:col3'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -113,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D%20Arketamine_Weiss2023_propiverine&body=Drug%3A%20arketamine%0ARecord%3A%20Arketamine_Weiss2023_propiverine%0APaper%3A%20Weiss_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/Arketamine_Weiss2023_propiverine%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-09 08:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D%20Arketamine_Weiss2023_propiverine&body=Drug%3A%20arketamine%0ARecord%3A%20Arketamine_Weiss2023_propiverine%0APaper%3A%20Weiss_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/Arketamine_Weiss2023_propiverine%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-09 08:45 UTC</sub>

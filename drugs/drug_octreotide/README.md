@@ -30,20 +30,9 @@ Octreotide, a somatostatin analogue, is used to treat acromegaly and various neu
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 5 | L/h | 5.0 L/hr | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) |
-| CL | CL/F | 8 | L/h | 8.0 L/h | patients with active acromegaly | : 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ma_2005_reference](drugs/drug_octreotide/Octreotide_Ma2005_reference.md) |
-| CL | CL/F | 9.1 | L/h | 9.1 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Min_2025_reference](drugs/drug_octreotide/Octreotide_Min2025_reference.md) |
-| V | V/F | 28.3 | L | 28.3 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Min_2025_reference](drugs/drug_octreotide/Octreotide_Min2025_reference.md) |
-| V | V/F | 100 | L | 100.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) |
-| V | V/F | 100 | L | 100.0 L | patients with active acromegaly | : 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ma_2005_reference](drugs/drug_octreotide/Octreotide_Ma2005_reference.md) |
-| ka | kabs | 1 | 1/h | 1.0 hr-1 | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) |
-| ka | kabs | 1 | 1/h | 1.0 hr-1 | patients with active acromegaly | : 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ma_2005_reference](drugs/drug_octreotide/Octreotide_Ma2005_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Choe_2017 · CL/F</text><circle cx="434.6" cy="30.0" r="4" fill="#2e7d32"><title>Choe_2017 · CL/F: 5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ma_2005 · CL/F</text><circle cx="506.1" cy="46.0" r="4" fill="#ef6c00"><title>Ma_2005 · CL/F: 8 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Min_2025 · CL/F</text><circle cx="525.7" cy="62.0" r="4" fill="#ef6c00"><title>Min_2025 · CL/F: 9.1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Min_2025 · V/F</text><circle cx="348.1" cy="30.0" r="4" fill="#ef6c00"><title>Min_2025 · V/F: 28.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Choe_2017 · V/F</text><circle cx="540.0" cy="46.0" r="4" fill="#2e7d32"><title>Choe_2017 · V/F: 100 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Ma_2005 · V/F</text><circle cx="540.0" cy="62.0" r="4" fill="#ef6c00"><title>Ma_2005 · V/F: 100 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -193,5 +182,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boctreotide%5D&body=Drug%3A%20octreotide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_octreotide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boctreotide%5D&body=Drug%3A%20octreotide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_octreotide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:41 UTC</sub>

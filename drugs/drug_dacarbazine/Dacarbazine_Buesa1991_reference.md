@@ -4,11 +4,11 @@
 
 # dacarbazine — `Dacarbazine_Buesa1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 14:39 UTC (Rejected), but the paper was screened again on 2026-11-03 12:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Buesa JM, Urréchaga E. Clinical pharmacokinetics of high-dose DTIC. Cancer chemotherapy and pharmacology 28(6):475–479 (1991).
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Buesa1991_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Buesa1991_reference%0APaper%3A%20Buesa_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdacarbazine%5D%20Dacarbazine_Buesa1991_reference&body=Drug%3A%20dacarbazine%0ARecord%3A%20Dacarbazine_Buesa1991_reference%0APaper%3A%20Buesa_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 12:41 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Min_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Min2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Semaglutide model was held back because absorption rate constants and lag time lacked source values and used library placeholders.
+> This record was reviewed on 2026-11-03 16:18 UTC (Needs review), but the paper was screened again on 2026-11-03 16:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Min2025_reference" status="needs_review" stale="false" population="unknown" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Min2025_reference" status="extracted" stale="true" population="unknown" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on the Pharmacokinetics and Drug-Drug Interactions of Approved GLP-1 Receptor Agonists and a Dual GLP-1/GIP Receptor Agonist. Drug design, development and therapy 19:3509-3537 (2025).
@@ -31,16 +31,14 @@ Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on th
 <figure class="pk-models-diagram"><img src="drugs/drug_semaglutide/Semaglutide_Min2025_reference/Semaglutide_Min2025_reference.svg" alt="Semaglutide_Min2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| In humans, exenatide has a dose-independent mean apparent clearance | CL/F | 9.1 | L/h |
-| The mean apparent volume of distribution for exenatide after a single dose administered twice daily | V/F | 28.3 | L |
+| dose-independent mean apparent clearance | CL/F | 9.1 | L/h |
+| mean apparent volume of distribution for exenatide | V/F | 28.3 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +48,11 @@ Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on th
 
 ### Reviewer guidance
 
-**Semaglutide model was held back because absorption rate constants and lag time lacked source values and used library placeholders.**
+**Semaglutide absorption parameters were not reported and defaulted, while clearance and volume values describe exenatide, rendering the record unsupportable.**
 
-The record provides no estimates for the absorption rate constant or lag time, so standard library defaults were applied. The second reader disagreed with the recorded compartment and metabolite counts, identifying discrepancies in the structural definitions. Extracted — semaglutide: CL/F 9.1 L/h, V/F 28.3 L.
+The absorption rate constant and lag time were assigned placeholder values because they were absent from the source text. The extracted clearance and volume parameters explicitly refer to exenatide in the source description, not semaglutide. Second-reader disagreements on multiple field values further indicate inconsistencies in the extracted data. Extracted — semaglutide: CL/F 9.1 L/h, V/F 28.3 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.6, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -62,8 +60,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| In humans, exenatide has a dose-independent mean apparent clearance | `Q27` · CL/F | 9.1 | L/h | 2.528e-06 | m3/s | L/h | review (0.7) | Min_2025:review |
-| The mean apparent volume of distribution for exenatide after a single dose administered twice daily | `Q76` · V/F | 28.3 | L | 0.0283 | m3 | L | review (0.7) | Min_2025:review |
+| dose-independent mean apparent clearance | `Q27` · CL/F | 9.1 | L/h | 2.528e-06 | m3/s | L/h | review (0.7) | Min_2025:review |
+| mean apparent volume of distribution for exenatide | `Q76` · V/F | 28.3 | L | 0.0283 | m3 | L | review (0.7) | Min_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,21 +82,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q22]` | 0.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 2 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` | 55 | 55 | mismatch |
-| `gpt-oss-120b` | `values[Q61]` | 11.0 |  | only_one_extracted |
 
 </details>
 
@@ -212,4 +207,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Min2025_reference&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Min2025_reference%0APaper%3A%20Min_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Min2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 16:49 UTC</sub>

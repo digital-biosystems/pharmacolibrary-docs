@@ -150,5 +150,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bajmaline%5D%20Ajmaline_Yasuhara1987_dog_3&body=Drug%3A%20ajmaline%0ARecord%3A%20Ajmaline_Yasuhara1987_dog_3%0APaper%3A%20Yasuhara_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_3%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-08 15:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bajmaline%5D%20Ajmaline_Yasuhara1987_dog_3&body=Drug%3A%20ajmaline%0ARecord%3A%20Ajmaline_Yasuhara1987_dog_3%0APaper%3A%20Yasuhara_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_3%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-08 15:33 UTC</sub>

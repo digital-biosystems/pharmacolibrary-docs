@@ -200,13 +200,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Aoyama T, Ishida Y, Kaneko M, Miyamoto A, Saito Y, Tohkin M et al. Pharmacokinetics and Pharmacodynamics of Meloxicam in East Asian Populations: The Role of Ethnicity on Drug Response. CPT: pharmacometrics & systems pharmacology 6(12):823–832 (2017). [doi:10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259)
 
-**This record:** Pharmacolibrary v26.09, model `Meloxicam_Aoyama2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference>
+**This record:** Pharmacolibrary, model `Meloxicam_Aoyama2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MeloxicamAoyama2017reference,
   title  = {{Pharmacolibrary model Meloxicam_Aoyama2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference},
   note   = {Parameters from doi:10.1002/psp4.12259},
 }
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeloxicam%5D%20Meloxicam_Aoyama2017_reference&body=Drug%3A%20meloxicam%0ARecord%3A%20Meloxicam_Aoyama2017_reference%0APaper%3A%20Aoyama_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeloxicam%5D%20Meloxicam_Aoyama2017_reference&body=Drug%3A%20meloxicam%0ARecord%3A%20Meloxicam_Aoyama2017_reference%0APaper%3A%20Aoyama_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:49 UTC</sub>

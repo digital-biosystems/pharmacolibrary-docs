@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Giri_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Kramer1978_group_i&quot;,&quot;label&quot;:&quot;Kramer_1978_group_i&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_group_i.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Kramer1978_iii&quot;,&quot;label&quot;:&quot;Kramer_1978_iii&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Kramer1978_iii.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bleomycin — `Bleomycin_Giri1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 14:38 UTC (Needs review), but the paper was screened again on 2026-11-03 08:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="needs_review" stale="false" population="male Golden Syrian hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="rejected" stale="true" population="hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Giri SN. Pharmacokinetics, subcellular distribution, and covalent binding of [3H]bleomycin in hamsters after intratracheal administration. Experimental and molecular pathology 45(2):207–220 (1986).
@@ -17,9 +17,7 @@ Giri SN. Pharmacokinetics, subcellular distribution, and covalent binding of [3H
 
 ## Population and dosing
 
-**Population:** male Golden Syrian hamsters · n = — animals sacrificed in groups of 4 at 7 time points (0.5, 0.75, 1.5, 3, 6, 12, 24 hr). This suggests 4 animals per time point. Usually in such papers, the total n is reported or calculated as sum of animals at all time points if independent, but often it's just the group size if the same animals were sampled (impossible here as they were sacrificed). So likely 4 animals per time point. The text says 'sacrificed in groups of four'. It doesn't state total N clearly as a single integer for the 'analysis' in a poppk sense, but 28 animals (7 timepoints * 4) is a reasonable inference or 'unknown'. However, looking at the prompt example, n_subjects is a plain integer. Let's look at the text:.
-
-**Dosing:** 1 pCi, intratracheal, single.
+**Population:** hamsters · condition healthy · age group adult.
 
 > **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -31,18 +29,17 @@ Giri SN. Pharmacokinetics, subcellular distribution, and covalent binding of [3H
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Testicle | t1/2α | 3.8 | hr |
-| Brain | equation variable | 6.2 | hr |
-| CL (mL/day) | CL | 218.0 | mL/day |
-| volumes of distribution | V | 20.0 | L/kg |
+| Fat | fu_tissue | 4.3 | hr |
+| creatinine clearance | CL | 70.0 | ml/min |
+| Vd(L) Younger Patients AVG | V | 32.17 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714), gpt-oss:120b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +53,7 @@ Giri SN. Pharmacokinetics, subcellular distribution, and covalent binding of [3H
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Crom_1987, Han_2024) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — bleomycin: t1/2α 3.8 hr, CL 218 mL/day, V 20 L/kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 218.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fat: this record has 4.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,10 +61,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Testicle | `Q59` · t1/2α | 3.8 | hr | 1.368e+04 | s | h | llm (0.6) | Giri_1986_table_1:row1:col1 |
-| Brain | `Q900` · equation variable | 6.2 | hr |  |  | h | llm (0.6) | Giri_1986_table_1:row5:col1 |
-| CL (mL/day) | `Q22` · CL | 218.0 | mL/day | 2.523e-09 | m3/s | L/h | review_gapfill (0.7) | Han_2024:review |
-| volumes of distribution | `Q61` · V | 20.0 | L/kg | 1.4 | m3 | L | review_gapfill (0.7) | Crom_1987:review |
+| Fat | `Q413` · fu_tissue | 4.3 | hr |  |  | h | llm (0.6) | Giri_1986_table_1:row3:col1 |
+| creatinine clearance | `Q22` · CL | 70.0 | ml/min | 1.167e-06 | m3/s | L/h | review_gapfill (0.7) | Bitran_1985:review |
+| Vd(L) Younger Patients AVG | `Q61` · V | 32.17 | L | 0.03217 | m3 | L | review_gapfill (0.7) | Groselj_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,14 +74,19 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Spleen' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row0:col1'])
+- dropped unlinked row (NIL): 'Testicle' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row1:col1'])
 - dropped unlinked row (NIL): 'Liver' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row2:col1'])
-- dropped unlinked row (NIL): 'Fat' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row3:col1'])
+- unit_dimension_mismatch: 'Fat' → Q413 (unit '[time]' vs ontology 'dimensionless') — route to review
 - dropped unlinked row (NIL): 'RBC' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row4:col1'])
+- dropped unlinked row (NIL): 'Brain' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row5:col1'])
 - dropped unlinked row (NIL): 'Adrenal' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row6:col1'])
 - dropped unlinked row (NIL): 'Kidney' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row7:col1'])
+- table mostly unlinked (7/8 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bleomycin
-- gap-filled Q22 (CL) from Han_2024's review values (primary lacked it)
-- gap-filled Q61 (V) from Crom_1987's review values (primary lacked it)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- gap-filled Q22 (CL) from Bitran_1985's review values (primary lacked it)
+- gap-filled Q61 (V) from Groselj_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -96,19 +97,19 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `qwen3.8-27b` | partly confirmed | 0.714 (5/7 fields) | 2 |
-| `gpt-oss:120b` | primary re-run | 0.667 (4/6 fields) | 2 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[fat]` |  | 4.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[spleen]` |  | 2.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fat]` | 4.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[spleen]` |  | 2.0 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` | 218.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[vz]` | 6290.0 |  | only_one_extracted |
 
@@ -126,13 +127,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Han_2024:review'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Giri_1986_table_1:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Crom_1987:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 218 | ['Han_2024:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bitran_1985:review'] |
+| C5_dimension_Q413 | fail | [time] | hr | ['Giri_1986_table_1:row3:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Groselj_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Bitran_1985:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00908 L/h | ['Han_2024:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.4e+03 L | ['Crom_1987:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.2 L/h | ['Bitran_1985:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 32.2 L | ['Groselj_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,19 +145,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,5 +156,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Giri1986_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Giri1986_reference%0APaper%3A%20Giri_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Giri1986_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbleomycin%5D%20Bleomycin_Giri1986_reference&body=Drug%3A%20bleomycin%0ARecord%3A%20Bleomycin_Giri1986_reference%0APaper%3A%20Giri_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bleomycin/Bleomycin_Giri1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:42 UTC</sub>

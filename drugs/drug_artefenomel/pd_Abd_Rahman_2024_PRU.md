@@ -94,13 +94,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Artefenomel_AbdRahman2024_PD_pru`. <https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_AbdRahman2024_PD_pru>
+**This record:** Pharmacolibrary, model `Artefenomel_AbdRahman2024_PD_pru`. <https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_AbdRahman2024_PD_pru>
 
 ```bibtex
 @misc{pharmacolibrary_ArtefenomelAbdRahman2024PDpru,
   title  = {{Pharmacolibrary model Artefenomel_AbdRahman2024_PD_pru}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_artefenomel/Artefenomel_AbdRahman2024_PD_pru},
 }
 ```
@@ -114,5 +113,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D%20pd_Abd_Rahman_2024_PRU&body=Drug%3A%20artefenomel%0ARecord%3A%20pd_Abd_Rahman_2024_PRU%0APaper%3A%20Abd-Rahman_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/pd_Abd_Rahman_2024_PRU%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartefenomel%5D%20pd_Abd_Rahman_2024_PRU&body=Drug%3A%20artefenomel%0ARecord%3A%20pd_Abd_Rahman_2024_PRU%0APaper%3A%20Abd-Rahman_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artefenomel/pd_Abd_Rahman_2024_PRU%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Artefenomel](drugs/drug_artefenomel/)</sub>

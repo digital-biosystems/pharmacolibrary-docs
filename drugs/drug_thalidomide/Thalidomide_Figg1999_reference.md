@@ -200,13 +200,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Figg WD, Raje S, Bauer KS, Tompkins A, Venzon D, Bergan R et al. Pharmacokinetics of thalidomide in an elderly prostate cancer population. Journal of pharmaceutical sciences 88(1):121–125 (1999). [doi:10.1021/js980172i](https://doi.org/10.1021/js980172i)
 
-**This record:** Pharmacolibrary v26.09, model `Thalidomide_Figg1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_thalidomide/Thalidomide_Figg1999_reference>
+**This record:** Pharmacolibrary, model `Thalidomide_Figg1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_thalidomide/Thalidomide_Figg1999_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ThalidomideFigg1999reference,
   title  = {{Pharmacolibrary model Thalidomide_Figg1999_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_thalidomide/Thalidomide_Figg1999_reference},
   note   = {Parameters from doi:10.1021/js980172i},
 }
@@ -225,5 +224,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthalidomide%5D%20Thalidomide_Figg1999_reference&body=Drug%3A%20thalidomide%0ARecord%3A%20Thalidomide_Figg1999_reference%0APaper%3A%20Figg_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thalidomide/Thalidomide_Figg1999_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthalidomide%5D%20Thalidomide_Figg1999_reference&body=Drug%3A%20thalidomide%0ARecord%3A%20Thalidomide_Figg1999_reference%0APaper%3A%20Figg_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thalidomide/Thalidomide_Figg1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:49 UTC</sub>

@@ -22,15 +22,6 @@ Olmesartan is an angiotensin II receptor blocker used to treat high blood pressu
 |---|---|---|---|---|---|---|
 | olmesartan (olmesartan_medoxomil) | parent | 446.502 | C24H26N6O3 | DrugBank | [158781](https://pubchem.ncbi.nlm.nih.gov/compound/158781) | Kodati_2017, Yoshihara_2005 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 6.66 | L/h | 6.66 L/h | healthy volunteers and hypertensive patients | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yoshihara_2005_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Yoshihara2005_reference.md) |
-| ka | kabs | 1.46 | 1/h | 1.46 h-1 | healthy volunteers and hypertensive patients | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yoshihara_2005_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Yoshihara2005_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -190,5 +181,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolmesartan_medoxomil%5D&body=Drug%3A%20olmesartan_medoxomil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olmesartan_medoxomil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolmesartan_medoxomil%5D&body=Drug%3A%20olmesartan_medoxomil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olmesartan_medoxomil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:17 UTC</sub>

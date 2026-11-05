@@ -256,13 +256,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Trang M, Seroogy JD, Van Wart SA, Bhavnani SM, Kim A, Gibbons JA et al. Population Pharmacokinetic Analyses for Plazomicin Using Pooled Data from Phase 1, 2, and 3 Clinical Studies. Antimicrobial agents and chemotherapy 63(4) (2019). [doi:10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
 
-**This record:** Pharmacolibrary v26.09, model `Plazomicin_Trang2019v2_geometric_mean_value_cv_d`. <https://pharmacolibrary.github.io/#/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d>
+**This record:** Pharmacolibrary, model `Plazomicin_Trang2019v2_geometric_mean_value_cv_d`. <https://pharmacolibrary.github.io/#/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d>
 
 ```bibtex
 @misc{pharmacolibrary_PlazomicinTrang2019v2geometricmeanvaluecvd,
   title  = {{Pharmacolibrary model Plazomicin_Trang2019v2_geometric_mean_value_cv_d}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d},
   note   = {Parameters from doi:10.1128/AAC.02329-18},
 }
@@ -281,5 +280,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bplazomicin%5D%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d&body=Drug%3A%20plazomicin%0ARecord%3A%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0APaper%3A%20Trang_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:58 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bplazomicin%5D%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d&body=Drug%3A%20plazomicin%0ARecord%3A%20Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0APaper%3A%20Trang_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:58 UTC</sub>

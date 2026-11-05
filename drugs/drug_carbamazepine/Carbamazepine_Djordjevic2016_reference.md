@@ -158,13 +158,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Djordjevic N, Milovanovic DD, Radovanovic M, Radosavljevic I, Obradovic S, Jakovljevic M et al. CYP1A2 genotype affects carbamazepine pharmacokinetics in children with epilepsy. European journal of clinical pharmacology 72(4):439–445 (2016). [doi:10.1007/s00228-015-2006-9](https://doi.org/10.1007/s00228-015-2006-9)
 
-**This record:** Pharmacolibrary v26.09, model `Carbamazepine_Djordjevic2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference>
+**This record:** Pharmacolibrary, model `Carbamazepine_Djordjevic2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarbamazepineDjordjevic2016reference,
   title  = {{Pharmacolibrary model Carbamazepine_Djordjevic2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference},
   note   = {Parameters from doi:10.1007/s00228-015-2006-9},
 }
@@ -179,5 +178,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbamazepine%5D%20Carbamazepine_Djordjevic2016_reference&body=Drug%3A%20carbamazepine%0ARecord%3A%20Carbamazepine_Djordjevic2016_reference%0APaper%3A%20Djordjevic_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-09 23:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbamazepine%5D%20Carbamazepine_Djordjevic2016_reference&body=Drug%3A%20carbamazepine%0ARecord%3A%20Carbamazepine_Djordjevic2016_reference%0APaper%3A%20Djordjevic_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-09 23:45 UTC</sub>

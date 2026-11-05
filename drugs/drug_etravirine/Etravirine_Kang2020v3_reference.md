@@ -171,13 +171,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic channel of NNIBP leads to the discovery of novel piperidine-substituted thiophene[3,2-d]pyrimidine derivatives as potent HIV-1 NNRTIs. Acta pharmaceutica Sinica. B 10(5):878–894 (2020). [doi:10.1016/j.apsb.2019.08.013](https://doi.org/10.1016/j.apsb.2019.08.013)
 
-**This record:** Pharmacolibrary v26.09, model `Etravirine_Kang2020v3_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Kang2020v3_reference>
+**This record:** Pharmacolibrary, model `Etravirine_Kang2020v3_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Kang2020v3_reference>
 
 ```bibtex
 @misc{pharmacolibrary_EtravirineKang2020v3reference,
   title  = {{Pharmacolibrary model Etravirine_Kang2020v3_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Kang2020v3_reference},
   note   = {Parameters from doi:10.1016/j.apsb.2019.08.013},
 }
@@ -196,5 +195,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Kang2020v3_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Kang2020v3_reference%0APaper%3A%20Kang_2020_3%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Kang2020v3_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Kang2020v3_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Kang2020v3_reference%0APaper%3A%20Kang_2020_3%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Kang2020v3_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:45 UTC</sub>

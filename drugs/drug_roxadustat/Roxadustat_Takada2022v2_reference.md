@@ -230,13 +230,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population pharmacokinetics of roxadustat in Japanese dialysis-dependent chronic kidney disease patients with anaemia. British journal of clinical pharmacology 88(2):787–797 (2022). [doi:10.1111/bcp.15023](https://doi.org/10.1111/bcp.15023)
 
-**This record:** Pharmacolibrary v26.09, model `Roxadustat_Takada2022v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference>
+**This record:** Pharmacolibrary, model `Roxadustat_Takada2022v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RoxadustatTakada2022v2reference,
   title  = {{Pharmacolibrary model Roxadustat_Takada2022v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference},
   note   = {Parameters from doi:10.1111/bcp.15023},
 }
@@ -255,5 +254,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Broxadustat%5D%20Roxadustat_Takada2022v2_reference&body=Drug%3A%20roxadustat%0ARecord%3A%20Roxadustat_Takada2022v2_reference%0APaper%3A%20Takada_2022_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Broxadustat%5D%20Roxadustat_Takada2022v2_reference&body=Drug%3A%20roxadustat%0ARecord%3A%20Roxadustat_Takada2022v2_reference%0APaper%3A%20Takada_2022_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:36 UTC</sub>

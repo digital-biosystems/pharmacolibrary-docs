@@ -251,13 +251,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Schlachter L, Stodtmann S, Voelkner A, Jonsson F, Lagraauw HM, Boinpally RR. Population Pharmacokinetics of Atogepant for the Prevention of Migraine. Clinical pharmacokinetics 65(1):149–164 (2026). [doi:10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
-**This record:** Pharmacolibrary v26.09, model `Atogepant_Schlachter2026_phase_2_modela`. <https://pharmacolibrary.github.io/#/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela>
+**This record:** Pharmacolibrary, model `Atogepant_Schlachter2026_phase_2_modela`. <https://pharmacolibrary.github.io/#/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela>
 
 ```bibtex
 @misc{pharmacolibrary_AtogepantSchlachter2026phase2modela,
   title  = {{Pharmacolibrary model Atogepant_Schlachter2026_phase_2_modela}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela},
   note   = {Parameters from doi:10.1007/s40262-025-01566-5},
 }
@@ -276,5 +275,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batogepant%5D%20Atogepant_Schlachter2026_phase_2_modela&body=Drug%3A%20atogepant%0ARecord%3A%20Atogepant_Schlachter2026_phase_2_modela%0APaper%3A%20Schlachter_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 06:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batogepant%5D%20Atogepant_Schlachter2026_phase_2_modela&body=Drug%3A%20atogepant%0ARecord%3A%20Atogepant_Schlachter2026_phase_2_modela%0APaper%3A%20Schlachter_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 06:23 UTC</sub>

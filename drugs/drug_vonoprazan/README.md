@@ -22,15 +22,6 @@ Vonoprazan is an acid-suppressing drug used for acid-related disorders such as p
 |---|---|---|---|---|---|---|
 | vonoprazan | parent | 345.39 | C17H16FN3O2S | DrugBank | [15981397](https://pubchem.ncbi.nlm.nih.gov/compound/15981397) | Scarpignato_2022 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 119 | L/h | 119 L/h | healthy volunteers and patients with gastroesophageal reflux disease | 1156 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Scarpignato_2022_reference](drugs/drug_vonoprazan/Vonoprazan_Scarpignato2022_reference.md) |
-| ka | kabs | 2.51 | 1/h | 2.51 1/h | healthy volunteers and patients with gastroesophageal reflux disease | 1156 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Scarpignato_2022_reference](drugs/drug_vonoprazan/Vonoprazan_Scarpignato2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +95,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvonoprazan%5D&body=Drug%3A%20vonoprazan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vonoprazan/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvonoprazan%5D&body=Drug%3A%20vonoprazan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vonoprazan/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:30 UTC</sub>

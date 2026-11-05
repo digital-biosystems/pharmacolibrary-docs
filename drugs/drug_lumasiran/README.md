@@ -22,18 +22,9 @@ Lumasiran, a small interfering RNA medicine, is used to treat primary hyperoxalu
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 23.8 | L/h | 23.8 L/h | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-| CL | CL/F | 27.7 | L/h | 27.7 L/h | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) |
-| V | V1/F | 18.1 | L | 18.1 L | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-| V | V1/F | 27.9 | L | 27.9 L | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) |
-| ka | kabs | 0.157 | 1/h | 0.157 1/h | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) |
-| ka | kabs | — | 1/h | 0.635 | healthy adults and patients with specific conditions | human + animal | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_lumasiran/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sten_2023 · CL/F</text><circle cx="321.8" cy="30.0" r="4" fill="#78909c"><title>Sten_2023 · CL/F: 23.8 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sten_2023 · CL/F</text><circle cx="344.9" cy="46.0" r="4" fill="#ef6c00"><title>Sten_2023 · CL/F: 27.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sten_2023 · V1/F</text><circle cx="280.2" cy="30.0" r="4" fill="#78909c"><title>Sten_2023 · V1/F: 18.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sten_2023 · V1/F</text><circle cx="346.0" cy="46.0" r="4" fill="#ef6c00"><title>Sten_2023 · V1/F: 27.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -117,5 +108,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumasiran%5D&body=Drug%3A%20lumasiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumasiran/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumasiran%5D&body=Drug%3A%20lumasiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumasiran/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:50 UTC</sub>

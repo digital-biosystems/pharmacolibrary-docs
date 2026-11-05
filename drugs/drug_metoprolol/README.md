@@ -22,16 +22,6 @@ Metoprolol is a selective beta blocker used for heart conditions such as high bl
 |---|---|---|---|---|---|---|
 | metoprolol | parent | 267.364 | C15H25NO3 | DrugBank | [4171](https://pubchem.ncbi.nlm.nih.gov/compound/4171) | Bortolotti_1989, Höcht_2006, Kir_2025, Taguchi_2004 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | — | L/h | 29.7 | routinely treated Japanese patients | &gt;=34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Taguchi_2004_reference](drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md) |
-| V | V | 3.4 | L | 3.4 l | spontaneously hypertensive rats and Wistar Kyoto rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Höcht_2006_reference](drugs/drug_metoprolol/Metoprolol_Hcht2006_reference.md) |
-| V | V/F | — | L | 17.1 | routinely treated Japanese patients | &gt;=34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Taguchi_2004_reference](drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -140,5 +130,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetoprolol%5D&body=Drug%3A%20metoprolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metoprolol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmetoprolol%5D&body=Drug%3A%20metoprolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_metoprolol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:08 UTC</sub>

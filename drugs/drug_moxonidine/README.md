@@ -29,15 +29,6 @@ Moxonidine is an antihypertensive drug used to treat high blood pressure. It is 
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 35 | L/h | 35 L/h | patients with hypertension | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) |
-| V | V | 132 | L | 132 L | patients with hypertension | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -129,5 +120,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D&body=Drug%3A%20moxonidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 12:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D&body=Drug%3A%20moxonidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 12:37 UTC</sub>

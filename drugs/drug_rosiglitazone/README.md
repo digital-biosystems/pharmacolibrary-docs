@@ -23,17 +23,6 @@ Rosiglitazone is an anti-diabetic medicine of the thiazolidinedione class that w
 | rosiglitazone | parent | 357.427 | C18H19N3O3S | DrugBank | [77999](https://pubchem.ncbi.nlm.nih.gov/compound/77999) | Kirchheiner_2006 |
 | desmethylrosiglitazone | metabolite | 343.401 | C17H17N3O3S | PubChem | [12000328](https://pubchem.ncbi.nlm.nih.gov/compound/12000328) | Kirchheiner_2006 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.033 | L/h | 0.033 L/h | healthy volunteers | &gt;=31 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kirchheiner_2006_reference](drugs/drug_rosiglitazone/Rosiglitazone_Kirchheiner2006_reference.md) |
-| V | V/F | 23.94 ‡ | L | 342 ml/kg | type 2 diabetic Goto-Kakizaki rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gao_2012_estimate_cv](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md) |
-| ka | kabs | 2.01 | 1/h | 2.01 h Ϫ1 | type 2 diabetic Goto-Kakizaki rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gao_2012_estimate_cv](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md) |
-| t½ | t1/2z | 4.3 | h | 4.3 hours | healthy volunteers | &gt;=31 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kirchheiner_2006_reference](drugs/drug_rosiglitazone/Rosiglitazone_Kirchheiner2006_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -100,5 +89,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brosiglitazone%5D&body=Drug%3A%20rosiglitazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rosiglitazone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 03:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brosiglitazone%5D&body=Drug%3A%20rosiglitazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rosiglitazone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 03:07 UTC</sub>

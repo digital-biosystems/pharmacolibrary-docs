@@ -202,13 +202,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Shen Y, Cai MH, Ji W, Bai J, Huang Y, Sun Y et al. Unrepaired Tetralogy of Fallot-related Pathophysiologic Changes Reduce Systemic Clearance of Etomidate in Children. Anesthesia and analgesia 123(3):722–730 (2016). [doi:10.1213/ANE.0000000000001477](https://doi.org/10.1213/ANE.0000000000001477)
 
-**This record:** Pharmacolibrary v26.09, model `Etomidate_Shen2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Shen2016_reference>
+**This record:** Pharmacolibrary, model `Etomidate_Shen2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Shen2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_EtomidateShen2016reference,
   title  = {{Pharmacolibrary model Etomidate_Shen2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_etomidate/Etomidate_Shen2016_reference},
   note   = {Parameters from doi:10.1213/ANE.0000000000001477},
 }
@@ -227,5 +226,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betomidate%5D%20Etomidate_Shen2016_reference&body=Drug%3A%20etomidate%0ARecord%3A%20Etomidate_Shen2016_reference%0APaper%3A%20Shen_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etomidate/Etomidate_Shen2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betomidate%5D%20Etomidate_Shen2016_reference&body=Drug%3A%20etomidate%0ARecord%3A%20Etomidate_Shen2016_reference%0APaper%3A%20Shen_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etomidate/Etomidate_Shen2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:52 UTC</sub>

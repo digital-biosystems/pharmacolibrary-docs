@@ -31,20 +31,9 @@ Flunitrazepam is a benzodiazepine sedative used as a hypnotic for insomnia and a
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.06 | L/h | 0.06 L/h | review reference |  | other organism | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Han_2025_reference](drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md) |
-| CL | CL | 0.255 | L/h | 0.255 L/h | review reference |  | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Gómez-Segura_2022_reference](drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md) |
-| CL | CL | 5.64 | L/h | 94 ml/min | adults undergoing otologic surgery | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kangas_1982_reference](drugs/drug_flunitrazepam/Flunitrazepam_Kangas1982_reference.md) |
-| V | V | 2.73 ‡ | L | 0.039 L/kg | review reference |  | other organism | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Han_2025_reference](drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md) |
-| V | V | 7.65 | L | 7.65 L | adults undergoing otologic surgery | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kangas_1982_reference](drugs/drug_flunitrazepam/Flunitrazepam_Kangas1982_reference.md) |
-| V | V | 23.03 ‡ | L | 0.329 L/kg | review reference |  | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Gómez-Segura_2022_reference](drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md) |
-| ka | kabs | 10 | 1/h | 10.0 h−1 | adults undergoing otologic surgery | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kangas_1982_reference](drugs/drug_flunitrazepam/Flunitrazepam_Kangas1982_reference.md) |
-| t½ | t1/2z | 25 | h | 25 h | adults undergoing otologic surgery | 12 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kangas_1982_reference](drugs/drug_flunitrazepam/Flunitrazepam_Kangas1982_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2025 · CL</text><circle cx="280.8" cy="30.0" r="4" fill="#2e7d32"><title>Han_2025 · CL: 0.06 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gómez-Segura_2022 · CL</text><circle cx="354.1" cy="46.0" r="4" fill="#2e7d32"><title>Gómez-Segura_2022 · CL: 0.255 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kangas_1982 · CL</text><circle cx="511.0" cy="62.0" r="4" fill="#ef6c00"><title>Kangas_1982 · CL: 5.64 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Han_2025 · V ·/kg</text><circle cx="266.3" cy="30.0" r="4" fill="#2e7d32"><title>Han_2025 · V ·/kg: 2.73 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kangas_1982 · V</text><circle cx="344.6" cy="46.0" r="4" fill="#ef6c00"><title>Kangas_1982 · V: 7.65 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Gómez-Segura_2022 · V ·/kg</text><circle cx="428.4" cy="62.0" r="4" fill="#2e7d32"><title>Gómez-Segura_2022 · V ·/kg: 23.03 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -246,5 +235,5 @@ _42 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunitrazepam%5D&body=Drug%3A%20flunitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunitrazepam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 20:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunitrazepam%5D&body=Drug%3A%20flunitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunitrazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 20:40 UTC</sub>

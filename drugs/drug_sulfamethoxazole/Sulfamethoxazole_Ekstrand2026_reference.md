@@ -214,13 +214,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Ekstrand C, Löwgren M, Erkas M, Devreese M, De Baere S, Vo-Thanh J et al. Comparative pharmacokinetics of trimethoprim-sulfadiazine and trimethoprim-sulfamethoxazole in dogs. BMC veterinary research 22(1) (2026). [doi:10.1186/s12917-026-05604-7](https://doi.org/10.1186/s12917-026-05604-7)
 
-**This record:** Pharmacolibrary v26.09, model `Sulfamethoxazole_Ekstrand2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference>
+**This record:** Pharmacolibrary, model `Sulfamethoxazole_Ekstrand2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SulfamethoxazoleEkstrand2026reference,
   title  = {{Pharmacolibrary model Sulfamethoxazole_Ekstrand2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference},
   note   = {Parameters from doi:10.1186/s12917-026-05604-7},
 }
@@ -239,5 +238,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfamethoxazole%5D%20Sulfamethoxazole_Ekstrand2026_reference&body=Drug%3A%20sulfamethoxazole%0ARecord%3A%20Sulfamethoxazole_Ekstrand2026_reference%0APaper%3A%20Ekstrand_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfamethoxazole%5D%20Sulfamethoxazole_Ekstrand2026_reference&body=Drug%3A%20sulfamethoxazole%0ARecord%3A%20Sulfamethoxazole_Ekstrand2026_reference%0APaper%3A%20Ekstrand_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:57 UTC</sub>

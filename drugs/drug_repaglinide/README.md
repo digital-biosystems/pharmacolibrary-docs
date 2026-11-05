@@ -24,15 +24,6 @@ Repaglinide is an oral anti-diabetic medicine used to lower blood sugar in peopl
 | gemfibrozil | metabolite | 250.338 | C15H22O3 | PubChem | [3463](https://pubchem.ncbi.nlm.nih.gov/compound/3463) | Doki_2018 |
 | gemfibrozil 1-O-β glucuronide | metabolite | 426.462 | C21H30O9 | PubChem | [88127](https://pubchem.ncbi.nlm.nih.gov/compound/88127) | Doki_2018 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| ka | kabs | 1.6 | 1/h | 1.6 1/h | healthy volunteers | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Doki_2018_reference](drugs/drug_repaglinide/Repaglinide_Doki2018_reference.md) |
-| F | Fab | 0.98 |  | 0.98 | healthy volunteers | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Doki_2018_reference](drugs/drug_repaglinide/Repaglinide_Doki2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -154,5 +145,5 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brepaglinide%5D&body=Drug%3A%20repaglinide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_repaglinide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brepaglinide%5D&body=Drug%3A%20repaglinide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_repaglinide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:12 UTC</sub>

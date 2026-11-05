@@ -29,16 +29,6 @@ Droperidol is a butyrophenone antipsychotic and antiemetic used for conditions s
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 41.9 | L/h | 41.9 l h-1 | acutely agitated patients | 41 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Foo_2016_reference](drugs/drug_droperidol/Droperidol_Foo2016_reference.md) |
-| V | V | 73.6 | L | 73.6 l | acutely agitated patients | 41 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Foo_2016_reference](drugs/drug_droperidol/Droperidol_Foo2016_reference.md) |
-| ka | kabs | 10 | 1/h | 10 h-1 | acutely agitated patients | 41 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Foo_2016_reference](drugs/drug_droperidol/Droperidol_Foo2016_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -112,5 +102,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdroperidol%5D&body=Drug%3A%20droperidol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_droperidol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 15:27 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdroperidol%5D&body=Drug%3A%20droperidol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_droperidol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:27 UTC</sub>

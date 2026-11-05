@@ -22,15 +22,6 @@ Azelastine is an antihistamine used for allergic conditions such as seasonal all
 |---|---|---|---|---|---|---|
 | azelastine | parent | 381.898 | C22H24ClN3O | DrugBank | [2267](https://pubchem.ncbi.nlm.nih.gov/compound/2267) | Dings_2022 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 32.2 % | COVID-19 patients (CARVIN study) and healthy volunteers from literature PK studies | 82 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) |
-| F | Fab | 1 |  | 100 | COVID-19 patients (CARVIN study) and healthy volunteers from literature PK studies | 82 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -125,5 +116,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazelastine%5D&body=Drug%3A%20azelastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azelastine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazelastine%5D&body=Drug%3A%20azelastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azelastine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:38 UTC</sub>

@@ -20,16 +20,6 @@ It was never approved and remains an investigational compound, so it is not in r
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.0389 | L/h | 38.9 mL/h | adults with chronic hepatitis C virus | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Riggs_2012_reference](drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md) |
-| V | V/F | 11.6 | L | 11.6 L | adults with chronic hepatitis C virus | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Riggs_2012_reference](drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md) |
-| ka | kabs | 0.0148 | 1/h | 0.0148 h(-1) | adults with chronic hepatitis C virus | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Riggs_2012_reference](drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -107,5 +97,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbinterferon_alfa_2b%5D&body=Drug%3A%20albinterferon_alfa_2b%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albinterferon_alfa_2b/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbinterferon_alfa_2b%5D&body=Drug%3A%20albinterferon_alfa_2b%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albinterferon_alfa_2b/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:19 UTC</sub>

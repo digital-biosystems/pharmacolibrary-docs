@@ -169,13 +169,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wu L, Liu J, Zheng Y, Zhai Y, Lin M, Wu G et al. Pharmacokinetic/Pharmacodynamic Evaluation of Dexlansoprazole Infusion Injection Compared with Lansoprazole in Healthy Chinese Adults. Clinical drug investigation 39(10):953–965 (2019). [doi:10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2)
 
-**This record:** Pharmacolibrary v26.09, model `Lansoprazole_Wu2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference>
+**This record:** Pharmacolibrary, model `Lansoprazole_Wu2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LansoprazoleWu2019reference,
   title  = {{Pharmacolibrary model Lansoprazole_Wu2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference},
   note   = {Parameters from doi:10.1007/s40261-019-00824-2},
 }
@@ -194,5 +193,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blansoprazole%5D%20Lansoprazole_Wu2019_reference&body=Drug%3A%20lansoprazole%0ARecord%3A%20Lansoprazole_Wu2019_reference%0APaper%3A%20Wu_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 09:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blansoprazole%5D%20Lansoprazole_Wu2019_reference&body=Drug%3A%20lansoprazole%0ARecord%3A%20Lansoprazole_Wu2019_reference%0APaper%3A%20Wu_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 09:38 UTC</sub>

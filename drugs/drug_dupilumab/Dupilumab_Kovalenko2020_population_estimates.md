@@ -220,13 +220,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kovalenko P, Davis JD, Li M, Rippley R, Ardeleanu M, Shumel B et al. Base and Covariate Population Pharmacokinetic Analyses of Dupilumab Using Phase 3 Data. Clinical pharmacology in drug development 9(6):756–767 (2020). [doi:10.1002/cpdd.780](https://doi.org/10.1002/cpdd.780)
 
-**This record:** Pharmacolibrary v26.09, model `Dupilumab_Kovalenko2020_population_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates>
+**This record:** Pharmacolibrary, model `Dupilumab_Kovalenko2020_population_estimates`. <https://pharmacolibrary.github.io/#/drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates>
 
 ```bibtex
 @misc{pharmacolibrary_DupilumabKovalenko2020populationestimates,
   title  = {{Pharmacolibrary model Dupilumab_Kovalenko2020_population_estimates}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates},
   note   = {Parameters from doi:10.1002/cpdd.780},
 }
@@ -245,5 +244,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdupilumab%5D%20Dupilumab_Kovalenko2020_population_estimates&body=Drug%3A%20dupilumab%0ARecord%3A%20Dupilumab_Kovalenko2020_population_estimates%0APaper%3A%20Kovalenko_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 08:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdupilumab%5D%20Dupilumab_Kovalenko2020_population_estimates&body=Drug%3A%20dupilumab%0ARecord%3A%20Dupilumab_Kovalenko2020_population_estimates%0APaper%3A%20Kovalenko_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 08:14 UTC</sub>

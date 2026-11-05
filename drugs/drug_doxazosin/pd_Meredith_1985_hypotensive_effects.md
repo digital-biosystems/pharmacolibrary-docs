@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Doxazosin (concentrations from this paper's PK model) drives hypotensive effects (stimulation; the model form was not identified).
+**As extracted:** Doxazosin (concentrations from this paper's PK model) drives hypotensive effects (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
@@ -25,8 +25,8 @@
 - **paper:** `Meredith_1985`
 - **model family:** `unknown`
 - **driver:** `pk_record`
-- **tier:** population
-- **effect:** stimulation/unknown
+- **tier:** descriptive
+- **effect:** inhibition/unknown
 
 ## Citation
 Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985)
@@ -37,7 +37,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

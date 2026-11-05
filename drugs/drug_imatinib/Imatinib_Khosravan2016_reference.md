@@ -189,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Khosravan R, Motzer RJ, Fumagalli E, Rini BI. Population Pharmacokinetic/Pharmacodynamic Modeling of Sunitinib by Dosing Schedule in Patients with Advanced Renal Cell Carcinoma or Gastrointestinal Stromal Tumor. Clinical pharmacokinetics 55(10):1251–1269 (2016). [doi:10.1007/s40262-016-0404-5](https://doi.org/10.1007/s40262-016-0404-5)
 
-**This record:** Pharmacolibrary v26.09, model `Imatinib_Khosravan2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_imatinib/Imatinib_Khosravan2016_reference>
+**This record:** Pharmacolibrary, model `Imatinib_Khosravan2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_imatinib/Imatinib_Khosravan2016_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ImatinibKhosravan2016reference,
   title  = {{Pharmacolibrary model Imatinib_Khosravan2016_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_imatinib/Imatinib_Khosravan2016_reference},
   note   = {Parameters from doi:10.1007/s40262-016-0404-5},
 }
@@ -214,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimatinib%5D%20Imatinib_Khosravan2016_reference&body=Drug%3A%20imatinib%0ARecord%3A%20Imatinib_Khosravan2016_reference%0APaper%3A%20Khosravan_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imatinib/Imatinib_Khosravan2016_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 01:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimatinib%5D%20Imatinib_Khosravan2016_reference&body=Drug%3A%20imatinib%0ARecord%3A%20Imatinib_Khosravan2016_reference%0APaper%3A%20Khosravan_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imatinib/Imatinib_Khosravan2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 01:33 UTC</sub>

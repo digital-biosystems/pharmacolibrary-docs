@@ -148,5 +148,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrocortisone%5D%20Hydrocortisone_Rozenveld2022_old_model_5_6&body=Drug%3A%20hydrocortisone%0ARecord%3A%20Hydrocortisone_Rozenveld2022_old_model_5_6%0APaper%3A%20Rozenveld_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrocortisone/Hydrocortisone_Rozenveld2022_old_model_5_6%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydrocortisone%5D%20Hydrocortisone_Rozenveld2022_old_model_5_6&body=Drug%3A%20hydrocortisone%0ARecord%3A%20Hydrocortisone_Rozenveld2022_old_model_5_6%0APaper%3A%20Rozenveld_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydrocortisone/Hydrocortisone_Rozenveld2022_old_model_5_6%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:13 UTC</sub>

@@ -223,13 +223,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Watson JA, Strub-Wourgraft N, Tarral A, Ribeiro I, Tarning J, White NJ. Pharmacokinetic-Pharmacodynamic Assessment of the Hepatic and Bone Marrow Toxicities of the New Trypanoside Fexinidazole. Antimicrobial agents and chemotherapy 63(4) (2019). [doi:10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18)
 
-**This record:** Pharmacolibrary v26.09, model `Fexinidazole_Watson2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference>
+**This record:** Pharmacolibrary, model `Fexinidazole_Watson2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FexinidazoleWatson2019reference,
   title  = {{Pharmacolibrary model Fexinidazole_Watson2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference},
   note   = {Parameters from doi:10.1128/AAC.02515-18},
 }
@@ -248,5 +247,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexinidazole%5D%20Fexinidazole_Watson2019_reference&body=Drug%3A%20fexinidazole%0ARecord%3A%20Fexinidazole_Watson2019_reference%0APaper%3A%20Watson_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexinidazole%5D%20Fexinidazole_Watson2019_reference&body=Drug%3A%20fexinidazole%0ARecord%3A%20Fexinidazole_Watson2019_reference%0APaper%3A%20Watson_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexinidazole/Fexinidazole_Watson2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:43 UTC</sub>

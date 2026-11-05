@@ -8,7 +8,7 @@
 
 > Sulfadimethoxine clearance was recorded in L/h/kg, a unit that could not be converted to SI, preventing model validation.
 
-<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. Population pharmacokinetic modeling of sulfadimethoxine, sulfadiazine and sulfamethoxazole combined to trimethoprim in pigs. The veterinary quarterly 45(1):2565351 (2025).
@@ -18,7 +18,7 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. P
 
 **Population:** growing pigs · condition healthy.
 
-**Dosing:** 875, 1750 mg, oral, multiple, every 12 h.
+**Dosing:** 175, 350, 875, 1750 mg, oral, im, multiple, every 12 h.
 
 **Dosed compound ≠ measured compound:** dosed sulfadimethoxine, trimethoprim, measured sulfadimethoxine.
 
@@ -26,7 +26,7 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. P
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
@@ -64,8 +64,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| T1/2β SDZ (h) | `Q60` · t1/2β | 3.7 | h | 1.332e+04 | s | h | llm_confirmed (0.6) | Boulanger_2025_table_3:row2:col1, Boulanger_2025_table_3:row2:col3 |
-| AUC∞ SDZ (h x µg/mL) | `Q17` · AUC∞ | 99.2 | h x µg/mL |  |  | (h·µg)/ml | llm_confirmed (0.6) | Boulanger_2025_table_3:row6:col1, Boulanger_2025_table_3:row6:col3 |
+| T1/2β SDZ (h) | `Q60` · t1/2β | 3.7 | h | 1.332e+04 | s | h | half_life_rule (0.95) | Boulanger_2025_table_3:row2:col1, Boulanger_2025_table_3:row2:col3 |
+| AUC∞ SDZ (h x µg/mL) | `Q17` · AUC∞ | 99.2 | h x µg/mL | 357.1 | kg*s/m3 | (h·µg)/ml | llm_confirmed (0.6) | Boulanger_2025_table_3:row6:col1, Boulanger_2025_table_3:row6:col3 |
 | clearance | `Q22` · CL | 0.015 | L/h/kg | 2.917e-07 | m3/s | L/h | exact (1) | Boulanger_2025:discussion_prose |
 
 <details class="legend">
@@ -79,17 +79,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped duplicate Q60 ('T1/2β SDMX (h)', value '14.8') — already have one for this compound
 - dropped duplicate Q60 ('T1/2β SMX (h)', value '2.2') — already have one for this compound
 - dropped duplicate Q60 ('T1/2β TMP (h)', value '2.9') — already have one for this compound
-- unit_dimension_unknown: 'h x µg/mL' (AUC∞)
 - dropped duplicate Q17 ('AUC∞ SDMX (h x µg/mL)', value '1280.3') — already have one for this compound
 - dropped duplicate Q17 ('AUC∞ SMX (h x µg/mL)', value '140.93') — already have one for this compound
 - dropped duplicate Q17 ('AUC∞ TMP (h x µg/mL)', value '6.9') — already have one for this compound
 - salvaged Q22 ('clearance'=0.015) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulfadimethoxine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell Boulanger_2025_table_3:row2:col2 = '3.1 − 4.2'
@@ -145,10 +141,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Boulanger_2025_table_3:row6:col1', 'Boulanger_2025_table_3:row6:col3'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Boulanger_2025_table_3:row2:col1', 'Boulanger_2025_table_3:row2:col3'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | h x µg/mL | ['Boulanger_2025_table_3:row6:col1', 'Boulanger_2025_table_3:row6:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.015 | ['Boulanger_2025:discussion_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.05 L/h | ['Boulanger_2025:discussion_prose'] |
 
 <details class="legend">
@@ -172,5 +168,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadimethoxine%5D%20Sulfadimethoxine_Boulanger2025_reference&body=Drug%3A%20sulfadimethoxine%0ARecord%3A%20Sulfadimethoxine_Boulanger2025_reference%0APaper%3A%20Boulanger_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadimethoxine/Sulfadimethoxine_Boulanger2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadimethoxine%5D%20Sulfadimethoxine_Boulanger2025_reference&body=Drug%3A%20sulfadimethoxine%0ARecord%3A%20Sulfadimethoxine_Boulanger2025_reference%0APaper%3A%20Boulanger_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadimethoxine/Sulfadimethoxine_Boulanger2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:49 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Zhang_2025 \u00b7 parameters_for_healthy_control_zhang_et_al_2020&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intracellular conversion rate constant for the remdesivir metabolite is 3.28E10 /h, a physically impossible value indicating a data extraction error.
+> This record was reviewed on 2026-10-22 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intracellular conversion rate constant for the remdesivir metabolite is 3.28E10 /h, a physically impossible value indicating a data extraction error.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="rejected" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="rejected" stale="true" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and its metabolites in healthy subjects and patients with renal impairment. Frontiers in pharmacology 16:1488961 (2025).
@@ -17,7 +17,7 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with renal impairment · condition renal impairment · age group adult · n = 44.
+**Population:** healthy subjects and patients with renal impairment · condition renal impairment · age group adult · n = 43.
 
 **Dosing:** 100, 200 mg, iv, multiple, every 24 h.
 
@@ -25,7 +25,7 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted, plus 2 covariate effects.  
+**Parameters:** 6 extracted, plus 2 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,7 +33,7 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| QRDV | Q | 0.19 | /h |
+| QRDV | equation variable | 0.19 | /h |
 | QIM | Q | 12.53 | /h |
 | QNUC | Q | 0.039 | /h |
 | KP,NUC | CLfm | 2.44 | /h |
@@ -41,11 +41,11 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 | CLC,RDV | CLR | 2.99 | /h |
 | theta_q370_im | theta_q370_im | 0.31 |  |
 | theta_q370_im | theta_q370_im | 0.22 |  |
-| mean volume of distribution | V | 93.0 | L |
+| RDV Vz, L | V | 92.6 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +59,7 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 The parameter governing the conversion from intermediate metabolites to nucleoside monophosphate is recorded as 3.28E10 /h. This magnitude is biologically implausible for a first-order metabolic rate constant. Furthermore, a reported unit could not be converted to standard SI units, leaving the structural parameter without a valid physical value. Extracted — remdesivir: Q 0.19 /h, CLR 2.99 /h, V 93 L; intermediate metabolites: Q 12.5 /h; nucleoside monophosphate: Q 0.039 /h, CLfm 2.44 /h, kic 3.28e+10 /h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism), the second reading remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism); remdesivir → gs-443902 (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolite (metabolism); intermediate metabolite → nucleoside monophosphate (metabolism); nucleoside monophosphate → gs-443902 (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -67,7 +67,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| QRDV | `Q30` · Q | 0.19 | /h |  |  | 1/h | exact (1) | T1:row1:col2 |
+| QRDV | `Q900` · equation variable | 0.19 | /h |  |  | 1/h | llm (0.6) | T1:row1:col2 |
 | QIM | `Q30` · Q | 12.53 | /h |  |  | 1/h | exact (1) | T1:row2:col2 |
 | QNUC | `Q30` · Q | 0.039 | /h |  |  | 1/h | exact (1) | T1:row3:col2 |
 | KP,NUC | `Q370` · CLfm | 2.44 | /h |  |  | 1/h | exact (1) | T1:row5:col2 |
@@ -75,7 +75,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 | CLC,RDV | `Q26` · CLR | 2.99 | /h |  |  | 1/h | llm (0.6) | T1:row9:col2 |
 | theta_q370_im | `Q900` · theta_q370_im | 0.31 |  |  |  |  |  | T1:row4:col2 |
 | theta_q370_im | `Q900` · theta_q370_im | 0.22 |  |  |  |  |  | T1:row8:col2 |
-| mean volume of distribution | `Q61` · V | 93.0 | L | 0.093 | m3 | L | review_gapfill (0.7) | Humeniuk_2021:review |
+| RDV Vz, L | `Q61` · V | 92.6 | L | 0.0926 | m3 | L | review_gapfill (0.7) | Humeniuk_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,8 +85,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- linked 'QRDV' as 'Q' → Q30 (Q) for  — compound marker removed
-- unit_dimension_mismatch: 'QRDV' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'QIM' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'QNUC' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'KP,NUC' → Q370 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
@@ -101,7 +99,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - pharmacogenetic covariate 'theta_q370_im' (im) — PGx domain
 - status held at "Needs review" — not promoted
 - population split: 'parameters for healthy control (zhang et al., 2020)' subgroup of Zhang_2025 (paper reports 3 populations: parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021), parameters for healthy control (zhang et al., 2020), parameters for severe renal-impaired patients (zhang et al., 2020))
-- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites ×9, parent→nucleoside monophosphate ×12
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites ×9, parent→nucleoside monophosphate ×9
 - molar mass: no plausible PubChem entry for 'nucleoside monophosphate' ('nucleoside monophosphate') — left in mass units
 - molar mass: none found for 'nucleoside monophosphate' — its concentrations stay mass-only
 - gap-filled Q61 (V) from Humeniuk_2021's review values (primary lacked it)
@@ -113,25 +111,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.353 (6/17 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['remdesivir', 'intermediate metabolites (im)', 'metabolism'], ['intermediate metabolites (im)', 'nucleoside monophosphate (nuc)', 'metabolism']] | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism'], ['remdesivir', 'gs-443902', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[kp,nuc]` |  | 2.44 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kp,nuc]` | 2.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] | [['remdesivir', 'intermediate metabolite', 'metabolism'], ['intermediate metabolite', 'nucleoside monophosphate', 'metabolism'], ['nucleoside monophosphate', 'gs-443902', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clc,rdv].parameter_id` | Q26 | Q22 | mismatch |
 | `gpt-oss-120b` | `parameters[qim]` |  | 12.53 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[qim]` | 12.53 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qnuc]` |  | 0.039 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qnuc]` | 0.039 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[qrdv].parameter_id` | Q900 | Q30 | mismatch |
-| `gpt-oss-120b` | `parameters[rdv vz]` | 92.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q370_im]` |  | 0.31 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q370_im]` | 0.31 |  | only_one_extracted |
 
@@ -147,17 +141,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q26 | fail | 1 / [time] | /h | ['T1:row9:col2'] |
-| C5_dimension_Q30 | fail | 1 / [time] | /h | ['T1:row1:col2'] |
 | C5_dimension_Q30 | fail | 1 / [time] | /h | ['T1:row2:col2'] |
 | C5_dimension_Q30 | fail | 1 / [time] | /h | ['T1:row3:col2'] |
 | C5_dimension_Q350 | pass | 1 / [time] |  | ['T1:row6:col2'] |
 | C5_dimension_Q370 | fail | 1 / [time] | /h | ['T1:row5:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Humeniuk_2021:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 93 L | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 92.6 L | ['Humeniuk_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,5 +173,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et%0APaper%3A%20Zhang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et%0APaper%3A%20Zhang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>

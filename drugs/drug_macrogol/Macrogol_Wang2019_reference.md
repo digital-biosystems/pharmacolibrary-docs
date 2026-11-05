@@ -188,13 +188,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Wang C, Cheng S, Zhang Y, Ding Y, Chong H, Xing H et al. Long-Acting HIV-1 Fusion Inhibitory Peptides and their Mechanisms of Action. Viruses 11(9) (2019). [doi:10.3390/v11090811](https://doi.org/10.3390/v11090811)
 
-**This record:** Pharmacolibrary v26.09, model `Macrogol_Wang2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_macrogol/Macrogol_Wang2019_reference>
+**This record:** Pharmacolibrary, model `Macrogol_Wang2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_macrogol/Macrogol_Wang2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MacrogolWang2019reference,
   title  = {{Pharmacolibrary model Macrogol_Wang2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_macrogol/Macrogol_Wang2019_reference},
   note   = {Parameters from doi:10.3390/v11090811},
 }
@@ -213,5 +212,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmacrogol%5D%20Macrogol_Wang2019_reference&body=Drug%3A%20macrogol%0ARecord%3A%20Macrogol_Wang2019_reference%0APaper%3A%20Wang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_macrogol/Macrogol_Wang2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 16:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmacrogol%5D%20Macrogol_Wang2019_reference&body=Drug%3A%20macrogol%0ARecord%3A%20Macrogol_Wang2019_reference%0APaper%3A%20Wang_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_macrogol/Macrogol_Wang2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 16:26 UTC</sub>

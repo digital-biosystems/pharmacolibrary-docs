@@ -197,13 +197,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chen SC, Kagedal M, Gao Y, Wang B, Harle-Yge ML, Girish S et al. Population pharmacokinetics of trastuzumab emtansine in previously treated patients with HER2-positive advanced gastric cancer (AGC). Cancer chemotherapy and pharmacology 80(6):1147–1159 (2017). [doi:10.1007/s00280-017-3443-1](https://doi.org/10.1007/s00280-017-3443-1)
 
-**This record:** Pharmacolibrary v26.09, model `TrastuzumabEmtansine_Chen2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trastuzumab_emtansine/TrastuzumabEmtansine_Chen2017_reference>
+**This record:** Pharmacolibrary, model `TrastuzumabEmtansine_Chen2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_trastuzumab_emtansine/TrastuzumabEmtansine_Chen2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TrastuzumabEmtansineChen2017reference,
   title  = {{Pharmacolibrary model TrastuzumabEmtansine_Chen2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_trastuzumab_emtansine/TrastuzumabEmtansine_Chen2017_reference},
   note   = {Parameters from doi:10.1007/s00280-017-3443-1},
 }
@@ -222,5 +221,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrastuzumab_emtansine%5D%20TrastuzumabEmtansine_Chen2017_reference&body=Drug%3A%20trastuzumab_emtansine%0ARecord%3A%20TrastuzumabEmtansine_Chen2017_reference%0APaper%3A%20Chen_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trastuzumab_emtansine/TrastuzumabEmtansine_Chen2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 21:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrastuzumab_emtansine%5D%20TrastuzumabEmtansine_Chen2017_reference&body=Drug%3A%20trastuzumab_emtansine%0ARecord%3A%20TrastuzumabEmtansine_Chen2017_reference%0APaper%3A%20Chen_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trastuzumab_emtansine/TrastuzumabEmtansine_Chen2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 21:47 UTC</sub>

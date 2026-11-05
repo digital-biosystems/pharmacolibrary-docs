@@ -22,19 +22,9 @@ Brodalumab is a monoclonal antibody used to treat psoriasis. It is authorised in
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.007917 | L/h | 0.19 L/day | patients with moderate to severe plaque psoriasis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Timmermann_2019_mean](drugs/drug_brodalumab/Brodalumab_Timmermann2019_mean.md) |
-| CL | CL | 0.007917 | L/h | 0.19 L/day | patients with moderate to severe plaque psoriasis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Timmermann_2019_median](drugs/drug_brodalumab/Brodalumab_Timmermann2019_median.md) |
-| CL | CL/F | 0.0575 | L/h | 1.38 L/d | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md) |
-| V | V/F | 24.9 | L | 24.9 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md) |
-| ka | kabs | 0.03783 | 1/h | 0.908 day−1 | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md) |
-| ka | kabs | 0.03783 | 1/h | 0.908 day−1 | patients with moderate to severe plaque psoriasis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Timmermann_2019_mean](drugs/drug_brodalumab/Brodalumab_Timmermann2019_mean.md) |
-| ka | kabs | 0.03783 | 1/h | 0.908 day−1 | patients with moderate to severe plaque psoriasis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Timmermann_2019_median](drugs/drug_brodalumab/Brodalumab_Timmermann2019_median.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.001</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Timmermann_2019 · CL</text><circle cx="347.2" cy="30.0" r="4" fill="#ef6c00"><title>Timmermann_2019 · CL: 0.007917 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Timmermann_2019 · CL</text><circle cx="347.2" cy="46.0" r="4" fill="#ef6c00"><title>Timmermann_2019 · CL: 0.007917 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rodríguez-Fernández_2022 · CL/F</text><circle cx="497.9" cy="62.0" r="4" fill="#2e7d32"><title>Rodríguez-Fernández_2022 · CL/F: 0.0575 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -104,5 +94,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrodalumab%5D&body=Drug%3A%20brodalumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brodalumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrodalumab%5D&body=Drug%3A%20brodalumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brodalumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:36 UTC</sub>

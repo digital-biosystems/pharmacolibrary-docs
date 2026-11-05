@@ -25,14 +25,6 @@ Fenbendazole is an antinematodal drug used to treat worm (nematode) infections. 
 | oxfendazole | metabolite | 315.347 | C15H13N3O3S | PubChem | [40854](https://pubchem.ncbi.nlm.nih.gov/compound/40854) | Bach_2021 |
 | oxfendazole sulfone | metabolite | 331.346 | C15H13N3O4S | PubChem | [162136](https://pubchem.ncbi.nlm.nih.gov/compound/162136) | Bach_2021 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| V | V | 789.6 ‡ | L | 11.28 l/kg | llamas | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Beier_2000_reference](drugs/drug_fenbendazole/Fenbendazole_Beier2000_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -110,5 +102,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfenbendazole%5D&body=Drug%3A%20fenbendazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fenbendazole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfenbendazole%5D&body=Drug%3A%20fenbendazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fenbendazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:19 UTC</sub>

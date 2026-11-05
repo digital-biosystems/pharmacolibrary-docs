@@ -198,13 +198,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mahar KM, Yang S, Mesic E, Post TM, Goulooze SC. Integrated Population Pharmacokinetics of Daprodustat in Patients with Chronic Kidney Disease with Anemia. Clinical pharmacokinetics 63(9):1327–1341 (2024). [doi:10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9)
 
-**This record:** Pharmacolibrary v26.09, model `Daprodustat_Mahar2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_daprodustat/Daprodustat_Mahar2024_reference>
+**This record:** Pharmacolibrary, model `Daprodustat_Mahar2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_daprodustat/Daprodustat_Mahar2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DaprodustatMahar2024reference,
   title  = {{Pharmacolibrary model Daprodustat_Mahar2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_daprodustat/Daprodustat_Mahar2024_reference},
   note   = {Parameters from doi:10.1007/s40262-024-01417-9},
 }
@@ -223,5 +222,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaprodustat%5D%20Daprodustat_Mahar2024_reference&body=Drug%3A%20daprodustat%0ARecord%3A%20Daprodustat_Mahar2024_reference%0APaper%3A%20Mahar_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daprodustat/Daprodustat_Mahar2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 20:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaprodustat%5D%20Daprodustat_Mahar2024_reference&body=Drug%3A%20daprodustat%0ARecord%3A%20Daprodustat_Mahar2024_reference%0APaper%3A%20Mahar_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daprodustat/Daprodustat_Mahar2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 20:51 UTC</sub>

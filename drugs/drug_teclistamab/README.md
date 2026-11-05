@@ -20,17 +20,6 @@ Teclistamab is a monoclonal antibody used to treat multiple myeloma. It is an ap
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.01871 | L/h | 0.449 L/day | patients with relapsed/refractory multiple myeloma | &gt;=338 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) |
-| V | V1 | 4.13 | L | 4.13 L | patients with relapsed/refractory multiple myeloma | &gt;=338 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) |
-| ka | kabs | 0.005542 | 1/h | 0.133 day–1 | patients with relapsed/refractory multiple myeloma | &gt;=338 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) |
-| F | Fab | 0.718 |  | 0.718 | patients with relapsed/refractory multiple myeloma | &gt;=338 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -81,5 +70,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteclistamab%5D&body=Drug%3A%20teclistamab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teclistamab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteclistamab%5D&body=Drug%3A%20teclistamab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teclistamab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:06 UTC</sub>

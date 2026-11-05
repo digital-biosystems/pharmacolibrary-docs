@@ -22,17 +22,9 @@ Burosumab, a monoclonal antibody, is used to treat bone-mineralisation disorders
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.012 | L/h | 0.012 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) |
-| CL | CL/F | 0.01238 | L/h | 0.297 L/day | adult and pediatric patients with X-linked hypophosphatemia | 277 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) |
-| V | V/F | 9.02 | L | 9.02 L | adult and pediatric patients with X-linked hypophosphatemia | 277 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) |
-| V | V1/F | 7.45 | L | 7.45 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) |
-| ka | kabs | 0.016 | 1/h | 0.016 /h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mehta_2025 · CL</text><circle cx="217.7" cy="30.0" r="4" fill="#ef6c00"><title>Mehta_2025 · CL: 0.012 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lee_2022 · CL/F</text><circle cx="222.4" cy="46.0" r="4" fill="#ef6c00"><title>Lee_2022 · CL/F: 0.01238 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2022 · V/F</text><circle cx="524.3" cy="30.0" r="4" fill="#ef6c00"><title>Lee_2022 · V/F: 9.02 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Mehta_2025 · V1/F</text><circle cx="495.3" cy="46.0" r="4" fill="#ef6c00"><title>Mehta_2025 · V1/F: 7.45 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -100,5 +92,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bburosumab%5D&body=Drug%3A%20burosumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_burosumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bburosumab%5D&body=Drug%3A%20burosumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_burosumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:14 UTC</sub>

@@ -181,13 +181,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Manchandani P, Thamlikitkul V, Dubrovskaya Y, Babic JT, Lye DC, Lee LS et al. Population Pharmacokinetics of Polymyxin B. Clinical pharmacology and therapeutics 104(3):534–538 (2018). [doi:10.1002/cpt.981](https://doi.org/10.1002/cpt.981)
 
-**This record:** Pharmacolibrary v26.09, model `PolymyxinB_Manchandani2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference>
+**This record:** Pharmacolibrary, model `PolymyxinB_Manchandani2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PolymyxinBManchandani2018reference,
   title  = {{Pharmacolibrary model PolymyxinB_Manchandani2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference},
   note   = {Parameters from doi:10.1002/cpt.981},
 }
@@ -206,5 +205,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpolymyxin_b%5D%20PolymyxinB_Manchandani2018_reference&body=Drug%3A%20polymyxin_b%0ARecord%3A%20PolymyxinB_Manchandani2018_reference%0APaper%3A%20Manchandani_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpolymyxin_b%5D%20PolymyxinB_Manchandani2018_reference&body=Drug%3A%20polymyxin_b%0ARecord%3A%20PolymyxinB_Manchandani2018_reference%0APaper%3A%20Manchandani_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:53 UTC</sub>

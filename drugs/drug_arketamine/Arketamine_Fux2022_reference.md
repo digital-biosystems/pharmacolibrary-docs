@@ -148,13 +148,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Fux D, Metzner M, Brandl J, Feist M, Behrendt-Wippermann M, von Thaden A et al. Pharmacokinetics of metamizole (dipyrone) as an add-on in calves undergoing umbilical surgery. PloS one 17(3):e0265305 (2022). [doi:10.1371/journal.pone.0265305](https://doi.org/10.1371/journal.pone.0265305)
 
-**This record:** Pharmacolibrary v26.09, model `Arketamine_Fux2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_arketamine/Arketamine_Fux2022_reference>
+**This record:** Pharmacolibrary, model `Arketamine_Fux2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_arketamine/Arketamine_Fux2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ArketamineFux2022reference,
   title  = {{Pharmacolibrary model Arketamine_Fux2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_arketamine/Arketamine_Fux2022_reference},
   note   = {Parameters from doi:10.1371/journal.pone.0265305},
 }
@@ -173,5 +172,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D%20Arketamine_Fux2022_reference&body=Drug%3A%20arketamine%0ARecord%3A%20Arketamine_Fux2022_reference%0APaper%3A%20Fux_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/Arketamine_Fux2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barketamine%5D%20Arketamine_Fux2022_reference&body=Drug%3A%20arketamine%0ARecord%3A%20Arketamine_Fux2022_reference%0APaper%3A%20Fux_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arketamine/Arketamine_Fux2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 09:32 UTC</sub>

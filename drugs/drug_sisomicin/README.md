@@ -22,14 +22,6 @@ Sisomicin is an aminoglycoside antibiotic that inhibits protein synthesis in bac
 |---|---|---|---|---|---|---|
 | sisomicin | parent | 447.526 | C19H37N5O7 | DrugBank | [36119](https://pubchem.ncbi.nlm.nih.gov/compound/36119) | Firsov_1980, Meyers_1976 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 72 | L | 72 l | healthy adults | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Meyers_1976_reference](drugs/drug_sisomicin/Sisomicin_Meyers1976_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -102,5 +94,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsisomicin%5D&body=Drug%3A%20sisomicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sisomicin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:39 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsisomicin%5D&body=Drug%3A%20sisomicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sisomicin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:39 UTC</sub>

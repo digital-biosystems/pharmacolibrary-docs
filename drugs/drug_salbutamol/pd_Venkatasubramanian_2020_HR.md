@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD Heart Rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD heart rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heart Rate — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+# heart rate — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Salbutamol (concentrations from the PK model of Bisaso_2026) drives Heart Rate (in bpm): indirect response — drug stimulates the production of Heart Rate.
+**As extracted:** Salbutamol (concentrations from the PK model of Bisaso_2026) drives heart rate (in bpm): indirect response — drug inhibits the loss of heart rate.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -25,10 +25,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Venkatasubramanian_2020`
-- **model family:** `indirect_response_iii`
+- **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British journal of pharmaco… (2020)
@@ -37,12 +37,8 @@ Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | BaseHR | `Q324` ·  | 79.7 | bpm | llm | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | kout, HR | `Q328` ·  | 10 | h -1 | llm | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | E max,HR | `Q320` ·  | 0.19 |  | llm | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | EC 50,HR | `Q321` ·  | 21.30 |  | llm | Venkatasubramanian_2020:pdv3 |
-| variability | Base,HR | `Q312` ·  | 0.17 |  | llm | Venkatasubramanian_2020:pdv3 |
-| variability | E Max,HR | `Q312` ·  | 0.24 |  | llm | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | Emax,HR | `Q320` ·  | 0.10 |  | llm | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | EC50,HR | `Q321` ·  | 11.3 |  | llm | Venkatasubramanian_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -88,23 +84,18 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_iii | emax | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 0.10 | . | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 11.3 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 72.6 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 10 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 0.10 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 0.61 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_ii | indirect_response_iii | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` |  | 85.6 | only_one_extracted |
 
 </details>
 
@@ -132,13 +123,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Salbutamol_Venkatasubramanian2020_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_hr>
+**This record:** Pharmacolibrary, model `Salbutamol_Venkatasubramanian2020_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_hr>
 
 ```bibtex
 @misc{pharmacolibrary_SalbutamolVenkatasubramanian2020PDhr,
   title  = {{Pharmacolibrary model Salbutamol_Venkatasubramanian2020_PD_hr}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Venkatasubramanian2020_PD_hr},
 }
 ```
@@ -152,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20pd_Venkatasubramanian_2020_HR&body=Drug%3A%20salbutamol%0ARecord%3A%20pd_Venkatasubramanian_2020_HR%0APaper%3A%20Venkatasubramanian_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/pd_Venkatasubramanian_2020_HR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20pd_Venkatasubramanian_2020_HR&body=Drug%3A%20salbutamol%0ARecord%3A%20pd_Venkatasubramanian_2020_HR%0APaper%3A%20Venkatasubramanian_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/pd_Venkatasubramanian_2020_HR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [salbutamol](drugs/drug_salbutamol/)</sub>

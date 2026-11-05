@@ -29,16 +29,6 @@ Ruxolitinib, a JAK inhibitor, is used for myeloproliferative disorders such as m
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 5.708 | L/h | 137.0 L/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Polepally_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md) |
-| V | V1/F | 38.3 | L | 38.3 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Polepally_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md) |
-| ka | kabs | 0.1958 | 1/h | 4.7 1/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Polepally_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Polepally2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -120,5 +110,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bruxolitinib%5D&body=Drug%3A%20ruxolitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ruxolitinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bruxolitinib%5D&body=Drug%3A%20ruxolitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ruxolitinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:53 UTC</sub>

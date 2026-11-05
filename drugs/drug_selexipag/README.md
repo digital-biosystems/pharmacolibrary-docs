@@ -33,17 +33,9 @@ Selexipag is a drug used to treat pulmonary hypertension. It is an approved anti
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 1.3 | L/h | 1.3 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ruehs_2021_reference](drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md) |
-| CL | CL/F | 19.1 | L/h | 19.10 L/h | patients with pulmonary arterial hypertension | , 512 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Krause_2017_reference](drugs/drug_selexipag/Selexipag_Krause2017_reference.md) |
-| V | V/F | 38.9 | L | 38.9 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ruehs_2021_reference](drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md) |
-| ka | kabs | 0.71 | 1/h | 0.71 1/h | patients with pulmonary arterial hypertension | , 512 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Krause_2017_reference](drugs/drug_selexipag/Selexipag_Krause2017_reference.md) |
-| ka | kabs | 1.5 | 1/h | 1.5 1/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ruehs_2021_reference](drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ruehs_2021 · CL/F</text><circle cx="209.9" cy="30.0" r="4" fill="#2e7d32"><title>Ruehs_2021 · CL/F: 1.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Krause_2017 · CL/F</text><circle cx="414.2" cy="46.0" r="4" fill="#ef6c00"><title>Krause_2017 · CL/F: 19.1 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -174,5 +166,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselexipag%5D&body=Drug%3A%20selexipag%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selexipag/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselexipag%5D&body=Drug%3A%20selexipag%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selexipag/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:20 UTC</sub>

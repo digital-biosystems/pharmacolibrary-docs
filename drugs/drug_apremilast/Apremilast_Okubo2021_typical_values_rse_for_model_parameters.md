@@ -191,13 +191,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population pharmacokinetic and exposure-response analysis of apremilast in Japanese subjects with moderate to severe psoriasis. The Journal of dermatology 48(11):1652–1664 (2021). [doi:10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-**This record:** Pharmacolibrary v26.09, model `Apremilast_Okubo2021_typical_values_rse_for_model_parameters`. <https://pharmacolibrary.github.io/#/drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters>
+**This record:** Pharmacolibrary, model `Apremilast_Okubo2021_typical_values_rse_for_model_parameters`. <https://pharmacolibrary.github.io/#/drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters>
 
 ```bibtex
 @misc{pharmacolibrary_ApremilastOkubo2021typicalvaluesrseformodelparameters,
   title  = {{Pharmacolibrary model Apremilast_Okubo2021_typical_values_rse_for_model_parameters}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters},
   note   = {Parameters from doi:10.1111/1346-8138.16068},
 }
@@ -216,5 +215,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bapremilast%5D%20Apremilast_Okubo2021_typical_values_rse_for_model_parameters&body=Drug%3A%20apremilast%0ARecord%3A%20Apremilast_Okubo2021_typical_values_rse_for_model_parameters%0APaper%3A%20Okubo_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bapremilast%5D%20Apremilast_Okubo2021_typical_values_rse_for_model_parameters&body=Drug%3A%20apremilast%0ARecord%3A%20Apremilast_Okubo2021_typical_values_rse_for_model_parameters%0APaper%3A%20Okubo_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_apremilast/Apremilast_Okubo2021_typical_values_rse_for_model_parameters%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:40 UTC</sub>

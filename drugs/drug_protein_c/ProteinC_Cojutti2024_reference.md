@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Cojutti PG, Tedeschi S, Zamparini E, Viale P, Pea F. Population Pharmacokinetics and Pharmacodynamics of Dalbavancin and C-Reactive Protein in Patients with Staphylococcal Osteoarticular Infections. Clinical pharmacokinetics 63(9):1271–1282 (2024). [doi:10.1007/s40262-024-01410-2](https://doi.org/10.1007/s40262-024-01410-2)
 
-**This record:** Pharmacolibrary v26.09, model `ProteinC_Cojutti2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Cojutti2024_reference>
+**This record:** Pharmacolibrary, model `ProteinC_Cojutti2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Cojutti2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ProteinCCojutti2024reference,
   title  = {{Pharmacolibrary model ProteinC_Cojutti2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Cojutti2024_reference},
   note   = {Parameters from doi:10.1007/s40262-024-01410-2},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotein_c%5D%20ProteinC_Cojutti2024_reference&body=Drug%3A%20protein_c%0ARecord%3A%20ProteinC_Cojutti2024_reference%0APaper%3A%20Cojutti_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protein_c/ProteinC_Cojutti2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 15:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotein_c%5D%20ProteinC_Cojutti2024_reference&body=Drug%3A%20protein_c%0ARecord%3A%20ProteinC_Cojutti2024_reference%0APaper%3A%20Cojutti_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protein_c/ProteinC_Cojutti2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 15:19 UTC</sub>

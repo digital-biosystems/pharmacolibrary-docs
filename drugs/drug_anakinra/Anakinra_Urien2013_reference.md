@@ -9,7 +9,7 @@
 
 > The model record for anakinra was rejected because the link to the central compartment is undefined, rendering the absorption compartment unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Urien2013_reference" status="rejected" stale="false" population="children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes" measured-compound="anakinra" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Urien2013_reference" status="rejected" stale="false" population="children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes" measured-compound="anakinra" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Urien S, Bardin C, Bader-Meunier B, Mouy R, Compeyrot-Lacassagne S, Foissac F et al. Anakinra pharmacokinetics in children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes. BMC pharmacology & toxicology 14:40 (2013).
@@ -19,13 +19,13 @@ Urien S, Bardin C, Bader-Meunier B, Mouy R, Compeyrot-Lacassagne S, Foissac F et
 
 **Population:** children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes · condition systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes · age group mixed.
 
-**Dosing:** 140, 700 mg, sc, multiple, every 24 h.
+**Dosing:** 140, 700 mg, subcutaneous, multiple, every 24 h.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 3 extracted, plus 2 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,7 +34,9 @@ Urien S, Bardin C, Bader-Meunier B, Mouy R, Compeyrot-Lacassagne S, Foissac F et
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL/F (L h-1 70 kg-1) | CL/F | 6.24 | L h-1 70 kg-1 | 8 |
+| cl_tv_cl_bw_70_cl | cl_tv_cl_bw_70_cl | 0.47 |  | 14 |
 | V/F (L) | V/F | 65.2 | L | 12 |
+| v_tv_v_bw_70_v | v_tv_v_bw_70_v | 0.76 |  | 16 |
 | Ka (h-1) | kabs | 0.38 | h-1 | 19 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -61,8 +63,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| CL/F (L h-1 70 kg-1) | `Q27` · CL/F | 6.24 | L h-1 70 kg-1 | 0.0001213 | m3/s | l/(h·kg) | 8 | exact (1) | T1:row1:col1, T1:row1:col2 |
+| CL/F (L h-1 70 kg-1) | `Q27` · CL/F | 6.24 | L h-1 70 kg-1 | 1.733e-06 | m3/s | l/(h·70kg) | 8 | exact (1) | T1:row1:col1, T1:row1:col2 |
+| cl_tv_cl_bw_70_cl | `Q900` · cl_tv_cl_bw_70_cl | 0.47 |  |  |  |  | 14 |  | T1:row2:col1, T1:row2:col2 |
 | V/F (L) | `Q76` · V/F | 65.2 | L | 0.0652 | m3 | l | 12 | exact (1) | T1:row3:col1, T1:row3:col2 |
+| v_tv_v_bw_70_v | `Q900` · v_tv_v_bw_70_v | 0.76 |  |  |  |  | 16 |  | T1:row4:col1, T1:row4:col2 |
 | Ka (h-1) | `Q49` · kabs | 0.38 | h-1 | 0.0001056 | 1/s | 1/h | 19 | exact (1) | T1:row5:col1, T1:row5:col2 |
 
 <details class="legend">
@@ -73,17 +77,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed 'βCL, TV(CL)∙(BW/70)βCL' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'βV, TV(V)∙(BW/70)βV' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'ηCL/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- 'βCL, TV(CL)∙(BW/70)βCL' is a β covariate effect on CL, not Q22 (llm_confirmed link set aside)
+- covariate level 'βCL, TV(CL)∙(BW/70)βCL' → Q900:cl_tv_cl_bw_70_cl = 0.47 (linear_fractional on Q27)
+- 'βV, TV(V)∙(BW/70)βV' is a β covariate effect on V, not Q319 (llm link set aside)
+- covariate level 'βV, TV(V)∙(BW/70)βV' → Q900:v_tv_v_bw_70_v = 0.76 (linear_fractional on Q27)
 - routed 'ϵ, mg/L' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=anakinra
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 - molar mass: none found for 'anakinra' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
@@ -121,12 +121,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T1:row1:col1', 'T1:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['T1:row5:col1', 'T1:row5:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['T1:row3:col1', 'T1:row3:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 437 L/h | ['T1:row1:col1', 'T1:row1:col2'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.24 L/h | ['T1:row1:col1', 'T1:row1:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 65.2 L | ['T1:row3:col1', 'T1:row3:col2'] |
 
 <details class="legend">
@@ -150,5 +151,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banakinra%5D%20Anakinra_Urien2013_reference&body=Drug%3A%20anakinra%0ARecord%3A%20Anakinra_Urien2013_reference%0APaper%3A%20Urien_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anakinra/Anakinra_Urien2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banakinra%5D%20Anakinra_Urien2013_reference&body=Drug%3A%20anakinra%0ARecord%3A%20Anakinra_Urien2013_reference%0APaper%3A%20Urien_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anakinra/Anakinra_Urien2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:37 UTC</sub>

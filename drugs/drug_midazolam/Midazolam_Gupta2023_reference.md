@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;midazolam&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/&quot;},{&quot;label&quot;:&quot;Gupta_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Briassoulis1998_reference&quot;,&quot;label&quot;:&quot;Briassoulis_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Briassoulis1998_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Sathe2021_reference&quot;,&quot;label&quot;:&quot;Sathe_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Sathe2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_clausen_et_al_9&quot;,&quot;label&quot;:&quot;Tolia_1991_clausen_et_al_9&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_clausen_et_al_9.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_payne_et_al_6&quot;,&quot;label&quot;:&quot;Tolia_1991_payne_et_al_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_payne_et_al_6.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_present_study&quot;,&quot;label&quot;:&quot;Tolia_1991_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Tolia1991_salonen_et_al_5&quot;,&quot;label&quot;:&quot;Tolia_1991_salonen_et_al_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Zhou2014_reference&quot;,&quot;label&quot;:&quot;Zhou_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Zhou2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Bardol_2025_COMFORT_B&quot;,&quot;label&quot;:&quot;Bardol_2025 \u00b7 COMFORT-B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Bardol_2025_COMFORT_B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_P_rez_2023_BIS&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/pd_Flores_P_rez_2023_BIS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # midazolam — `Midazolam_Gupta2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The midazolam record was held back because the absorption rate constant was unreported, forcing the use of unsupported default values.
+> This record was reviewed on 2026-10-22 14:23 UTC (Needs review), but the paper was screened again on 2026-11-04 02:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="needs_review" stale="false" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="extracted" stale="true" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Gupta N, Hanley MJ, Griffin RJ, Zhang P, Venkatakrishnan K, Sinha V. Clinical Pharmacology of Brigatinib: A Next-Generation Anaplastic Lymphoma Kinase Inhibitor. Clinical pharmacokinetics 62(8):1063–1079 (2023).
@@ -22,23 +22,21 @@ Gupta N, Hanley MJ, Griffin RJ, Zhang P, Venkatakrishnan K, Sinha V. Clinical Ph
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference.svg" alt="Midazolam_Gupta2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 10.6 | L/h |
-| V d | V | 307.0 | L |
+| apparent volume of distribution | V/F | 307.0 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.462). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +50,7 @@ Gupta N, Hanley MJ, Griffin RJ, Zhang P, Venkatakrishnan K, Sinha V. Clinical Ph
 
 The record notes that the first-order absorption rate constant and lag time were defaulted rather than reported in the source. Consequently, the model relies on library placeholder values for these parameters, which are not supported by the paper's data. This deviation means the simulated absorption profile does not reflect an estimate derived from the publication. Extracted — midazolam: CL/F 10.6 L/h, V 307 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 20276, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 20276, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -61,7 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 10.6 | L/h | 2.944e-06 | m3/s | L/h | review (0.7) | Gupta_2023:review |
-| V d | `Q61` · V | 307.0 | L | 0.307 | m3 | L | review (0.7) | Gupta_2023:review |
+| apparent volume of distribution | `Q76` · V/F | 307.0 | L | 0.307 | m3 | L | review (0.7) | Gupta_2023:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,20 +81,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q19]` | 20276 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q312]` |  | 48.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 148 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 46 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q44]` |  | 65 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` |  | 46 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q88]` | 12944 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q91]` |  | 25 | only_one_extracted |
 
 </details>
 
@@ -114,11 +115,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Gupta_2023:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gupta_2023:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Gupta_2023:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 10.6 L/h | ['Gupta_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 307 L | ['Gupta_2023:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 307 L | ['Gupta_2023:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -185,13 +186,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Gupta N, Hanley MJ, Griffin RJ, Zhang P, Venkatakrishnan K, Sinha V. Clinical Pharmacology of Brigatinib: A Next-Generation Anaplastic Lymphoma Kinase Inhibitor. Clinical pharmacokinetics 62(8):1063–1079 (2023). [doi:10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w)
 
-**This record:** Pharmacolibrary v26.09, model `Midazolam_Gupta2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_midazolam/Midazolam_Gupta2023_reference>
+**This record:** Pharmacolibrary, model `Midazolam_Gupta2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_midazolam/Midazolam_Gupta2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MidazolamGupta2023reference,
   title  = {{Pharmacolibrary model Midazolam_Gupta2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_midazolam/Midazolam_Gupta2023_reference},
   note   = {Parameters from doi:10.1007/s40262-023-01284-w},
 }
@@ -210,5 +210,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidazolam%5D%20Midazolam_Gupta2023_reference&body=Drug%3A%20midazolam%0ARecord%3A%20Midazolam_Gupta2023_reference%0APaper%3A%20Gupta_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midazolam/Midazolam_Gupta2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidazolam%5D%20Midazolam_Gupta2023_reference&body=Drug%3A%20midazolam%0ARecord%3A%20Midazolam_Gupta2023_reference%0APaper%3A%20Gupta_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midazolam/Midazolam_Gupta2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 02:57 UTC</sub>

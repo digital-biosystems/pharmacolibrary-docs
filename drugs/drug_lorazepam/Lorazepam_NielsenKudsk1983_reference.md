@@ -211,13 +211,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Nielsen-Kudsk F, Jensen TS, Magnussen I, Jakobsen P, Jensen PB, Mondrup K et al. Pharmacokinetics and bioavailability of intravenous and intramuscular lorazepam with an adjunct test of the inattention effect in humans. Acta pharmacologica et toxicologica 52(2):121–127 (1983). [doi:10.1111/j.1600-0773.1983.tb03413.x](https://doi.org/10.1111/j.1600-0773.1983.tb03413.x)
 
-**This record:** Pharmacolibrary v26.09, model `Lorazepam_NielsenKudsk1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference>
+**This record:** Pharmacolibrary, model `Lorazepam_NielsenKudsk1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference>
 
 ```bibtex
 @misc{pharmacolibrary_LorazepamNielsenKudsk1983reference,
   title  = {{Pharmacolibrary model Lorazepam_NielsenKudsk1983_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference},
   note   = {Parameters from doi:10.1111/j.1600-0773.1983.tb03413.x},
 }
@@ -236,5 +235,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_NielsenKudsk1983_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_NielsenKudsk1983_reference%0APaper%3A%20Nielsen-Kudsk_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 19:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_NielsenKudsk1983_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_NielsenKudsk1983_reference%0APaper%3A%20Nielsen-Kudsk_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 19:13 UTC</sub>

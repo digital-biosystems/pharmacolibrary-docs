@@ -31,16 +31,9 @@ Ensitrelvir is an investigational antiviral drug that works as a protease inhibi
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.198 | L/h | 0.198 L/h | healthy participants and participants infected with SARS-CoV-2 | 2060 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishibashi_2024_median](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md) |
-| CL | CL/F | 0.201 | L/h | 0.201 L/h | healthy participants and participants infected with SARS-CoV-2 | 2060 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishibashi_2024_mean](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md) |
-| V | V/F | 14.1 | L | 14.1 L | healthy participants and participants infected with SARS-CoV-2 | 2060 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishibashi_2024_median](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md) |
-| V | V/F | 14.5 | L | 14.5 L | healthy participants and participants infected with SARS-CoV-2 | 2060 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishibashi_2024_mean](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ishibashi_2024 · CL/F</text><circle cx="293.8" cy="30.0" r="4" fill="#ef6c00"><title>Ishibashi_2024 · CL/F: 0.198 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ishibashi_2024 · CL/F</text><circle cx="296.1" cy="46.0" r="4" fill="#ef6c00"><title>Ishibashi_2024 · CL/F: 0.201 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ishibashi_2024 · V/F</text><circle cx="242.2" cy="30.0" r="4" fill="#ef6c00"><title>Ishibashi_2024 · V/F: 14.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ishibashi_2024 · V/F</text><circle cx="246.5" cy="46.0" r="4" fill="#ef6c00"><title>Ishibashi_2024 · V/F: 14.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -94,5 +87,5 @@ Ensitrelvir is an investigational antiviral drug that works as a protease inhibi
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bensitrelvir%5D&body=Drug%3A%20ensitrelvir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ensitrelvir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bensitrelvir%5D&body=Drug%3A%20ensitrelvir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ensitrelvir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:23 UTC</sub>

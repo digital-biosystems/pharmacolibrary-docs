@@ -192,13 +192,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mangas-Sanjuán V, Simón M, González-Rojano E, Ochoa D, Abad-Santos F, Román M et al. Alternative Pharmacokinetic Metrics in Single-Dose Studies to Ensure Bioequivalence of Prolonged-Release Products at Steady State-A Case Study. Pharmaceutics 15(2) (2023). [doi:10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409)
 
-**This record:** Pharmacolibrary v26.09, model `Desvenlafaxine_MangasSanjun2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference>
+**This record:** Pharmacolibrary, model `Desvenlafaxine_MangasSanjun2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DesvenlafaxineMangasSanjun2023reference,
   title  = {{Pharmacolibrary model Desvenlafaxine_MangasSanjun2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics15020409},
 }
@@ -217,5 +216,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesvenlafaxine%5D%20Desvenlafaxine_MangasSanjun2023_reference&body=Drug%3A%20desvenlafaxine%0ARecord%3A%20Desvenlafaxine_MangasSanjun2023_reference%0APaper%3A%20Mangas-Sanju%C3%A1n_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 22:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesvenlafaxine%5D%20Desvenlafaxine_MangasSanjun2023_reference&body=Drug%3A%20desvenlafaxine%0ARecord%3A%20Desvenlafaxine_MangasSanjun2023_reference%0APaper%3A%20Mangas-Sanju%C3%A1n_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 22:21 UTC</sub>

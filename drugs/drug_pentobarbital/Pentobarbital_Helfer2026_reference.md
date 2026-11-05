@@ -198,13 +198,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. Population Pharmacokinetics and Dosing Simulations of Pentobarbital in the Pediatric Population. Journal of clinical pharmacology 66(5):e70204 (2026). [doi:10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204)
 
-**This record:** Pharmacolibrary v26.09, model `Pentobarbital_Helfer2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference>
+**This record:** Pharmacolibrary, model `Pentobarbital_Helfer2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PentobarbitalHelfer2026reference,
   title  = {{Pharmacolibrary model Pentobarbital_Helfer2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference},
   note   = {Parameters from doi:10.1002/jcph.70204},
 }
@@ -223,5 +222,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpentobarbital%5D%20Pentobarbital_Helfer2026_reference&body=Drug%3A%20pentobarbital%0ARecord%3A%20Pentobarbital_Helfer2026_reference%0APaper%3A%20Helfer_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 20:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpentobarbital%5D%20Pentobarbital_Helfer2026_reference&body=Drug%3A%20pentobarbital%0ARecord%3A%20Pentobarbital_Helfer2026_reference%0APaper%3A%20Helfer_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 20:43 UTC</sub>

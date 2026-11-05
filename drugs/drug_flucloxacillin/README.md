@@ -22,17 +22,6 @@ Flucloxacillin is a penicillin antibiotic that resists breakdown by bacterial be
 |---|---|---|---|---|---|---|
 | flucloxacillin | parent | 453.872 | C19H17ClFN3O5S | DrugBank | [21319](https://pubchem.ncbi.nlm.nih.gov/compound/21319) | Drennan_2021_2, Jager_2020 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 183 | L/h | 183 L h−1 | adults with staphylococcal infections and healthy adults | $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Drennan_2021_2_base](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_base.md) |
-| V | V | 144 | L | 144 L | adults with staphylococcal infections and healthy adults | $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Drennan_2021_2_base](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_base.md) |
-| ka | kabs | 0.478 | 1/h | 0.478 h−1 | adults with staphylococcal infections and healthy adults | $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Drennan_2021_2_base](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_base.md) |
-| F | Fab | 0.745 |  | 0.745 | adults with staphylococcal infections and healthy adults | $56$ $45$ $11$ (45 participants + 11 healthy volunteers) = 56 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Drennan_2021_2_base](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_base.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +93,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflucloxacillin%5D&body=Drug%3A%20flucloxacillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flucloxacillin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflucloxacillin%5D&body=Drug%3A%20flucloxacillin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flucloxacillin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:02 UTC</sub>

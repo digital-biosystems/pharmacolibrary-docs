@@ -127,13 +127,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `VonWillebrandFactor_Valke2024_PD_ntp`. <https://pharmacolibrary.github.io/#/drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_PD_ntp>
+**This record:** Pharmacolibrary, model `VonWillebrandFactor_Valke2024_PD_ntp`. <https://pharmacolibrary.github.io/#/drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_PD_ntp>
 
 ```bibtex
 @misc{pharmacolibrary_VonWillebrandFactorValke2024PDntp,
   title  = {{Pharmacolibrary model VonWillebrandFactor_Valke2024_PD_ntp}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_PD_ntp},
 }
 ```
@@ -147,5 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvon_willebrand_factor%5D%20pd_Valke_2024_NTP&body=Drug%3A%20von_willebrand_factor%0ARecord%3A%20pd_Valke_2024_NTP%0APaper%3A%20Valke_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_von_willebrand_factor/pd_Valke_2024_NTP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvon_willebrand_factor%5D%20pd_Valke_2024_NTP&body=Drug%3A%20von_willebrand_factor%0ARecord%3A%20pd_Valke_2024_NTP%0APaper%3A%20Valke_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_von_willebrand_factor/pd_Valke_2024_NTP%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [von Willebrand factor](drugs/drug_von_willebrand_factor/)</sub>

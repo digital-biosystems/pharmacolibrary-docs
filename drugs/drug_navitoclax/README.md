@@ -22,17 +22,6 @@ Navitoclax is an investigational anticancer drug being studied as a treatment fo
 |---|---|---|---|---|---|---|
 | navitoclax | parent | 974.613 | C47H55ClF3N5O6S3 | DrugBank | [24978538](https://pubchem.ncbi.nlm.nih.gov/compound/24978538) | Polepally_2026 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 5.708 | L/h | 137 L/day | patients with myelofibrosis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_navitoclax](drugs/drug_navitoclax/Navitoclax_Polepally2026_navitoclax.md) |
-| V | V1/F | 38.3 | L | 38.3 L | patients with myelofibrosis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_navitoclax](drugs/drug_navitoclax/Navitoclax_Polepally2026_navitoclax.md) |
-| ka | kabs | 0.1958 | 1/h | 4.7 1/day | patients with myelofibrosis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_population_estimate](drugs/drug_navitoclax/Navitoclax_Polepally2026_population_estimate.md) |
-| ka | kabs | — | 1/h | 4.70 | patients with myelofibrosis | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polepally_2026_navitoclax](drugs/drug_navitoclax/Navitoclax_Polepally2026_navitoclax.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -101,5 +90,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnavitoclax%5D&body=Drug%3A%20navitoclax%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_navitoclax/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 21:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnavitoclax%5D&body=Drug%3A%20navitoclax%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_navitoclax/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:07 UTC</sub>

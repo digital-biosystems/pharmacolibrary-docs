@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Na YG, Byeon JJ, Huh HW, Kim MK, Shin YG, Lee HK et al. Effect of Ticagrelor, a Cytochrome P450 3A4 Inhibitor, on the Pharmacokinetics of Tadalafil in Rats. Pharmaceutics 11(7) (2019). [doi:10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354)
 
-**This record:** Pharmacolibrary v26.09, model `Tadalafil_Na2019_group_t`. <https://pharmacolibrary.github.io/#/drugs/drug_tadalafil/Tadalafil_Na2019_group_t>
+**This record:** Pharmacolibrary, model `Tadalafil_Na2019_group_t`. <https://pharmacolibrary.github.io/#/drugs/drug_tadalafil/Tadalafil_Na2019_group_t>
 
 ```bibtex
 @misc{pharmacolibrary_TadalafilNa2019groupt,
   title  = {{Pharmacolibrary model Tadalafil_Na2019_group_t}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tadalafil/Tadalafil_Na2019_group_t},
   note   = {Parameters from doi:10.3390/pharmaceutics11070354},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btadalafil%5D%20Tadalafil_Na2019_group_t&body=Drug%3A%20tadalafil%0ARecord%3A%20Tadalafil_Na2019_group_t%0APaper%3A%20Na_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tadalafil/Tadalafil_Na2019_group_t%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 16:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btadalafil%5D%20Tadalafil_Na2019_group_t&body=Drug%3A%20tadalafil%0ARecord%3A%20Tadalafil_Na2019_group_t%0APaper%3A%20Na_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tadalafil/Tadalafil_Na2019_group_t%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 16:42 UTC</sub>

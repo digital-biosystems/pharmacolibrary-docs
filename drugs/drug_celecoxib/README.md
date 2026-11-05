@@ -29,19 +29,6 @@ Celecoxib is a non-steroidal anti-inflammatory drug (a COX-2 inhibitor) used to 
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 27 | L/h | 450.0 ml/min | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2008_reference](drugs/drug_celecoxib/Celecoxib_Shi2008_reference.md) |
-| V | V/F | 467.4 | L | 467.4332 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2008_reference](drugs/drug_celecoxib/Celecoxib_Shi2008_reference.md) |
-| t½ | t1/2z | 2.92 | h | 2.92 h | pigs in hemorrhagic shock and normotensive pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Vaddady_2011_shock_110](drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_110.md) |
-| t½ | t1/2z | 3.44 | h | 3.44 h | pigs in hemorrhagic shock and normotensive pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Vaddady_2011_normo_16](drugs/drug_celecoxib/Celecoxib_Vaddady2011_normo_16.md) |
-| t½ | t1/2z | 34.4 | h | 34.4 h | pigs in hemorrhagic shock and normotensive pigs | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vaddady_2011_shock_43](drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_43.md) |
-| t½ | t1/2z | 65 | h | 65.0 h | pigs in hemorrhagic shock and normotensive pigs | pig | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vaddady_2011_shock_0_56](drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -219,5 +206,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcelecoxib%5D&body=Drug%3A%20celecoxib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_celecoxib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcelecoxib%5D&body=Drug%3A%20celecoxib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_celecoxib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:19 UTC</sub>

@@ -97,13 +97,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Triazolam_Okada2024_PD_cognitive_function`. <https://pharmacolibrary.github.io/#/drugs/drug_triazolam/Triazolam_Okada2024_PD_cognitive_function>
+**This record:** Pharmacolibrary, model `Triazolam_Okada2024_PD_cognitive_function`. <https://pharmacolibrary.github.io/#/drugs/drug_triazolam/Triazolam_Okada2024_PD_cognitive_function>
 
 ```bibtex
 @misc{pharmacolibrary_TriazolamOkada2024PDcognitivefunction,
   title  = {{Pharmacolibrary model Triazolam_Okada2024_PD_cognitive_function}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_triazolam/Triazolam_Okada2024_PD_cognitive_function},
 }
 ```
@@ -117,5 +116,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriazolam%5D%20pd_Okada_2024_Cognitive_function&body=Drug%3A%20triazolam%0ARecord%3A%20pd_Okada_2024_Cognitive_function%0APaper%3A%20Okada_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triazolam/pd_Okada_2024_Cognitive_function%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriazolam%5D%20pd_Okada_2024_Cognitive_function&body=Drug%3A%20triazolam%0ARecord%3A%20pd_Okada_2024_Cognitive_function%0APaper%3A%20Okada_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triazolam/pd_Okada_2024_Cognitive_function%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [triazolam](drugs/drug_triazolam/)</sub>

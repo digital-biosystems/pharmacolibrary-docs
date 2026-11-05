@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic Models of Venetoclax in Hematologic Malignancies: A Systematic Review. Drug design, development and therapy 18:1771–1784 (2024). [doi:10.2147/DDDT.S458927](https://doi.org/10.2147/DDDT.S458927)
 
-**This record:** Pharmacolibrary v26.09, model `Venetoclax_Zhao2024_samineni_2022b19`. <https://pharmacolibrary.github.io/#/drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19>
+**This record:** Pharmacolibrary, model `Venetoclax_Zhao2024_samineni_2022b19`. <https://pharmacolibrary.github.io/#/drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19>
 
 ```bibtex
 @misc{pharmacolibrary_VenetoclaxZhao2024samineni2022b19,
   title  = {{Pharmacolibrary model Venetoclax_Zhao2024_samineni_2022b19}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19},
   note   = {Parameters from doi:10.2147/DDDT.S458927},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvenetoclax%5D%20Venetoclax_Zhao2024_samineni_2022b19&body=Drug%3A%20venetoclax%0ARecord%3A%20Venetoclax_Zhao2024_samineni_2022b19%0APaper%3A%20Zhao_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 21:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvenetoclax%5D%20Venetoclax_Zhao2024_samineni_2022b19&body=Drug%3A%20venetoclax%0ARecord%3A%20Venetoclax_Zhao2024_samineni_2022b19%0APaper%3A%20Zhao_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 21:52 UTC</sub>

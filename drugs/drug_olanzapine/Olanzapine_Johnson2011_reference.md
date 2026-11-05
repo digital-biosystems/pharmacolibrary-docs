@@ -204,13 +204,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Johnson M, Kozielska M, Pilla Reddy V, Vermeulen A, Li C, Grimwood S et al. Mechanism-based pharmacokinetic-pharmacodynamic modeling of the dopamine D2 receptor occupancy of olanzapine in rats. Pharmaceutical research 28(10):2490–2504 (2011). [doi:10.1007/s11095-011-0477-7](https://doi.org/10.1007/s11095-011-0477-7)
 
-**This record:** Pharmacolibrary v26.09, model `Olanzapine_Johnson2011_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_olanzapine/Olanzapine_Johnson2011_reference>
+**This record:** Pharmacolibrary, model `Olanzapine_Johnson2011_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_olanzapine/Olanzapine_Johnson2011_reference>
 
 ```bibtex
 @misc{pharmacolibrary_OlanzapineJohnson2011reference,
   title  = {{Pharmacolibrary model Olanzapine_Johnson2011_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_olanzapine/Olanzapine_Johnson2011_reference},
   note   = {Parameters from doi:10.1007/s11095-011-0477-7},
 }
@@ -229,5 +228,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolanzapine%5D%20Olanzapine_Johnson2011_reference&body=Drug%3A%20olanzapine%0ARecord%3A%20Olanzapine_Johnson2011_reference%0APaper%3A%20Johnson_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olanzapine/Olanzapine_Johnson2011_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 16:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolanzapine%5D%20Olanzapine_Johnson2011_reference&body=Drug%3A%20olanzapine%0ARecord%3A%20Olanzapine_Johnson2011_reference%0APaper%3A%20Johnson_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olanzapine/Olanzapine_Johnson2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 16:06 UTC</sub>

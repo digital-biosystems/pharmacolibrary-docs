@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Mohmaed_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_m_mg_h_l&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_a_u_c_total_ng_ml&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Mohmaed2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mohmaed2024_reference" status="curated_candidate" stale="false" population="patients with cancer (all age groups)" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></div>
+> This record was reviewed on 2026-10-22 14:28 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mohmaed2024_reference" status="extracted" stale="true" population="patients across all ages" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A Population Pharmacokinetic Study to Evaluate Doxorubicin Exposure Across All Age Groups. Clinical pharmacokinetics 63(12):1711–1722 (2024).
@@ -15,7 +17,7 @@ Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A
 
 ## Population and dosing
 
-**Population:** patients with cancer (all age groups) · condition cancer · age group mixed · n = &gt;=0.
+**Population:** patients across all ages · age group mixed.
 
 **Dosing:** 30, 60 mg/m2, iv, multiple.
 
@@ -40,7 +42,7 @@ Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +54,7 @@ Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A
 
 **Every check that could be run on this record passed.**
 
-Independently confirmed by `qwen3.8-27b`, `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,10 +79,11 @@ Independently confirmed by `qwen3.8-27b`, `gpt-oss:120b`.
 **Interpretation flags:**
 - dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Mohmaed_2024_table_p7_1:row6:col1'])
 - dropped unlinked row (NIL): 'TM50(infants) on V1 and V2 (weeks)' — extend the ontology if this is a real PK parameter (source ['Mohmaed_2024_table_p7_1:row7:col1'])
-- unit_dimension_mismatch: 'TM50(elderly) on V3 (years)' → Q77 (unit '[time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q77 ('TM50(elderly) on V3 (years)', value '57.3') — already have one for this compound
+- dropped unlinked row (NIL): 'TM50(elderly) on V3 (years)' — extend the ontology if this is a real PK parameter (source ['Mohmaed_2024_table_p7_1:row8:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- unit_dimension_mismatch: 'TM50(elderly) on V3 (years)' → Q77 (unit '[time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q77 ('TM50(elderly) on V3 (years)', value '57.3') — already have one for this compound
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -88,12 +91,12 @@ Independently confirmed by `qwen3.8-27b`, `gpt-oss:120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (16/16 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (9/9 fields) | none |
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -105,23 +108,22 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C2_base_Q22 | fail | 48.3 | 9 | 0.1863 | 0.05 | footnote reference category |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Mohmaed_2024_table_p7_1:row0:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['Mohmaed_2024_table_p7_1:row2:col1'] |
-| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  |  |  | ['Mohmaed_2024_table_p7_1:row4:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Mohmaed_2024_table_p7_1:row1:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Mohmaed_2024_table_p7_1:row3:col1'] |
-| C5_dimension_Q77 | pass | [length] ** 3 |  |  |  | ['Mohmaed_2024_table_p7_1:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.3 |  |  | ['Mohmaed_2024_table_p7_1:row0:col1'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 48.3 L/h |  |  | ['Mohmaed_2024_table_p7_1:row0:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 13.1 L |  |  | ['Mohmaed_2024_table_p7_1:row1:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 23.7 L |  |  | ['Mohmaed_2024_table_p7_1:row3:col1'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Mohmaed_2024_table_p7_1:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Mohmaed_2024_table_p7_1:row2:col1'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['Mohmaed_2024_table_p7_1:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Mohmaed_2024_table_p7_1:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Mohmaed_2024_table_p7_1:row3:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['Mohmaed_2024_table_p7_1:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.3 | ['Mohmaed_2024_table_p7_1:row0:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 48.3 L/h | ['Mohmaed_2024_table_p7_1:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 13.1 L | ['Mohmaed_2024_table_p7_1:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 23.7 L | ['Mohmaed_2024_table_p7_1:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -187,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A Population Pharmacokinetic Study to Evaluate Doxorubicin Exposure Across All Age Groups. Clinical pharmacokinetics 63(12):1711–1722 (2024). [doi:10.1007/s40262-024-01445-5](https://doi.org/10.1007/s40262-024-01445-5)
 
-**This record:** Pharmacolibrary v26.09, model `Doxorubicin_Mohmaed2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference>
+**This record:** Pharmacolibrary, model `Doxorubicin_Mohmaed2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DoxorubicinMohmaed2024reference,
   title  = {{Pharmacolibrary model Doxorubicin_Mohmaed2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference},
   note   = {Parameters from doi:10.1007/s40262-024-01445-5},
 }
@@ -212,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Mohmaed2024_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Mohmaed2024_reference%0APaper%3A%20Mohmaed_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxorubicin%5D%20Doxorubicin_Mohmaed2024_reference&body=Drug%3A%20doxorubicin%0ARecord%3A%20Doxorubicin_Mohmaed2024_reference%0APaper%3A%20Mohmaed_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 15:33 UTC</sub>

@@ -161,13 +161,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Asskali F, Förster H. [The accumulation of different substituted hydroxyethyl starches (HES) following repeated infusions in healthy volunteers]. Anasthesiologie, Intensivmedizin, Notfallmedizin, Schmerztherapie : AINS 34(9):537–541 (1999). [doi:10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208)
 
-**This record:** Pharmacolibrary v26.09, model `Hydroxyethylstarch_Asskali1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference>
+**This record:** Pharmacolibrary, model `Hydroxyethylstarch_Asskali1999_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference>
 
 ```bibtex
 @misc{pharmacolibrary_HydroxyethylstarchAsskali1999reference,
   title  = {{Pharmacolibrary model Hydroxyethylstarch_Asskali1999_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference},
   note   = {Parameters from doi:10.1055/s-1999-208},
 }
@@ -182,5 +181,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroxyethylstarch%5D%20Hydroxyethylstarch_Asskali1999_reference&body=Drug%3A%20hydroxyethylstarch%0ARecord%3A%20Hydroxyethylstarch_Asskali1999_reference%0APaper%3A%20Asskali_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 22:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroxyethylstarch%5D%20Hydroxyethylstarch_Asskali1999_reference&body=Drug%3A%20hydroxyethylstarch%0ARecord%3A%20Hydroxyethylstarch_Asskali1999_reference%0APaper%3A%20Asskali_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 22:50 UTC</sub>

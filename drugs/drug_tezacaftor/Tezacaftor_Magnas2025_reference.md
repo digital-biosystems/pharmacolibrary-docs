@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Magnas2025_reference" status="rejected" stale="false" population="adults with cystic fibrosis" measured-compound="elexacaftor, tezacaftor, ivacaftor" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Magnas2025_reference" status="rejected" stale="false" population="adults with cystic fibrosis" measured-compound="elexacaftor, tezacaftor, ivacaftor" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Magnas P, Bouazza N, Foissac F, Froelicher Bournaud L, Lui G, Carlier N et al. Population Pharmacokinetics of Elexacaftor, Tezacaftor and Ivacaftor in a Real-World Cohort of Adults with Cystic Fibrosis. Clinical pharmacokinetics 64(6):959–971 (2025).
@@ -23,7 +23,7 @@ Magnas P, Bouazza N, Foissac F, Froelicher Bournaud L, Lui G, Carlier N et al. P
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
@@ -59,10 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'AUC0-24h for elexacaftor and tezacaftor' routed out of structural estimates ('The main sources of IIV identified in the final ETI Pop-PK models were body weight, age, exocrine pancreatic insufficiency and CFTR genotype.')
 - table section iiv: 'AUC0-12h for ivacaftor' routed out of structural estimates ('The main sources of IIV identified in the final ETI Pop-PK models were body weight, age, exocrine pancreatic insufficiency and CFTR genotype.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=elexacaftor, tezacaftor, ivacaftor
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Magnas_2025_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -94,11 +91,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -121,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D%20Tezacaftor_Magnas2025_reference&body=Drug%3A%20tezacaftor%0ARecord%3A%20Tezacaftor_Magnas2025_reference%0APaper%3A%20Magnas_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/Tezacaftor_Magnas2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D%20Tezacaftor_Magnas2025_reference&body=Drug%3A%20tezacaftor%0ARecord%3A%20Tezacaftor_Magnas2025_reference%0APaper%3A%20Magnas_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/Tezacaftor_Magnas2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:22 UTC</sub>

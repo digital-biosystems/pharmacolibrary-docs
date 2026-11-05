@@ -94,13 +94,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Contezolid_Wu2020_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf>
+**This record:** Pharmacolibrary, model `Contezolid_Wu2020_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf>
 
 ```bibtex
 @misc{pharmacolibrary_ContezolidWu2020PDqtcf,
   title  = {{Pharmacolibrary model Contezolid_Wu2020_PD_qtcf}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf},
 }
 ```
@@ -114,5 +113,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcontezolid%5D%20pd_Wu_2020_QTcF&body=Drug%3A%20contezolid%0ARecord%3A%20pd_Wu_2020_QTcF%0APaper%3A%20Wu_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_contezolid/pd_Wu_2020_QTcF%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcontezolid%5D%20pd_Wu_2020_QTcF&body=Drug%3A%20contezolid%0ARecord%3A%20pd_Wu_2020_QTcF%0APaper%3A%20Wu_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_contezolid/pd_Wu_2020_QTcF%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [Contezolid](drugs/drug_contezolid/)</sub>

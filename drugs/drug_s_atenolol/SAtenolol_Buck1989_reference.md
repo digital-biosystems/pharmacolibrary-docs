@@ -188,13 +188,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Buck ML, Wiest D, Gillette PC, Trippel D, Krull J, O'Neal W. Pharmacokinetics and pharmacodynamics of atenolol in children. Clinical pharmacology and therapeutics 46(6):629–633 (1989). [doi:10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198)
 
-**This record:** Pharmacolibrary v26.09, model `SAtenolol_Buck1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_s_atenolol/SAtenolol_Buck1989_reference>
+**This record:** Pharmacolibrary, model `SAtenolol_Buck1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_s_atenolol/SAtenolol_Buck1989_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SAtenololBuck1989reference,
   title  = {{Pharmacolibrary model SAtenolol_Buck1989_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_s_atenolol/SAtenolol_Buck1989_reference},
   note   = {Parameters from doi:10.1038/clpt.1989.198},
 }
@@ -213,5 +212,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bs_atenolol%5D%20SAtenolol_Buck1989_reference&body=Drug%3A%20s_atenolol%0ARecord%3A%20SAtenolol_Buck1989_reference%0APaper%3A%20Buck_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_s_atenolol/SAtenolol_Buck1989_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 01:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bs_atenolol%5D%20SAtenolol_Buck1989_reference&body=Drug%3A%20s_atenolol%0ARecord%3A%20SAtenolol_Buck1989_reference%0APaper%3A%20Buck_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_s_atenolol/SAtenolol_Buck1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 01:01 UTC</sub>

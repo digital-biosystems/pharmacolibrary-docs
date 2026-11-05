@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Ambros_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Forrest1993_reference&quot;,&quot;label&quot;:&quot;Forrest_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Forrest1993_reference.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Ambros2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
-> Apparent clearance and metabolite clearance double-correct for bioavailability, and the Vmax link lacks a required enzyme concentration.
+> This record was reviewed on 2026-10-22 15:32 UTC (Rejected), but the paper was screened again on 2026-11-03 16:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Apparent clearance and metabolite clearance double-correct for bioavailability, and the Vmax link lacks a required enzyme concentration.
 
-<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="false" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></div>
 
 ## Citation
 Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzutti AM. Pharmacokinetic and Pharmacodynamic Modeling of Enrofloxacin and Its Metabolite Ciprofloxacin in Pregnant Goats. Veterinary sciences 12(6) (2025).
@@ -19,7 +19,7 @@ Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzu
 
 **Population:** pregnant goats · condition healthy · age group adult.
 
-**Dosing:** 525 mg, iv, single.
+**Dosing:** 525, 700 mg, iv, im, multiple.
 
 **Dosed compound ≠ measured compound:** dosed enrofloxacin, measured ciprofloxacin.
 
@@ -29,7 +29,7 @@ Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzu
 
 **Structure:** nonlinear / manual; no model was built for this record.  
 **Parameterization:** CL/F, CLm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 13 extracted.  
+**Parameters:** 14 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -49,11 +49,12 @@ Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzu
 | Km (mg/L) | Km | 0.86 | mg/L | 13.06 (None% RSE) |
 | AUC (mg/L/h) | AUC | 3.95 | mg/L/h | 37.12 (None% RSE) |
 | Vss (L/kg) | Vss | 3.65 | L/kg | 21.90 (None% RSE) |
-| CL/F (L/h) | CL/F | 144.0 | L/h |  |
+| t1/2e (h) | t1/2z | 3.15 | h | 26.89 (None% RSE) |
+| CL/F (mL/h/kg) | CL/F | 488.0 | mL/h/kg |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.652). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,6 +67,8 @@ Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzu
 **Apparent clearance and metabolite clearance double-correct for bioavailability, and the Vmax link lacks a required enzyme concentration.**
 
 The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabolite clearance (CLm/F, 4.56 L/h/kg) despite using an absolute bioavailability (Fab, 0.80), causing a dimensional coherence violation. The structural link from enrofloxacin to ciprofloxacin uses Vmax (4.61 mg/L/h) without a corresponding enzyme concentration parameter, creating a dimension mismatch. These inconsistencies, along with the manual topology, resulted in the rejection of the model. Extracted — ciprofloxacin: Fab 0.8, kabs 0.25 1/h, fu 0.39, CLm,norm/F 0.81 L/h/kg, V1 0.65 L/kg, Q 0.28 L/h/kg, V2 2.83 L/kg, CLm,norm/F 4.56 L/h/kg, … (+5).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has ciprofloxacin, the second reading enrofloxacin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -85,7 +88,8 @@ The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabol
 | Km (mg/L) | `Q1` · Km | 0.86 | mg/L |  |  | mg/l | exact (1) | vetsci-12-00588-t001:row12:col1, vetsci-12-00588-t001:row12:col4 | 13.06 (None% RSE) |
 | AUC (mg/L/h) | `Q88` · AUC | 3.95 | mg/L/h |  |  | mg/(h·l) | exact (1) | vetsci-12-00588-t001:row20:col1, vetsci-12-00588-t001:row20:col4, vetsci-12-00588-t001:row26:col1, vetsci-12-00588-t001:row26:col4 | 37.12 (None% RSE) |
 | Vss (L/kg) | `Q65` · Vss | 3.65 | L/kg | 0.2555 | m3 | l/kg | exact (1) | vetsci-12-00588-t001:row21:col1, vetsci-12-00588-t001:row21:col4 | 21.90 (None% RSE) |
-| CL/F (L/h) | `Q27` · CL/F | 144.0 | L/h | 4e-05 | m3/s | L/h | review_gapfill (0.7) | Alonso_2021:review |  |
+| t1/2e (h) | `Q57` · t1/2z | 3.15 | h | 1.134e+04 | s | h | llm_confirmed (0.6) | vetsci-12-00588-t001:row22:col1, vetsci-12-00588-t001:row22:col4 | 26.89 (None% RSE) |
+| CL/F (mL/h/kg) | `Q27` · CL/F | 488.0 | mL/h/kg | 9.489e-06 | m3/s | L/h | review_gapfill (0.7) | Xiao_2018:review |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -127,8 +131,7 @@ The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabol
 - table representations disagree for 'MR'; source reconciliation required
 - unit_dimension_mismatch: 'Vmax (mg/L/h)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'AUC (mg/L/h)' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 't1/2e (h)' — extend the ontology if this is a real PK parameter (source ['vetsci-12-00588-t001:row22:col1', 'vetsci-12-00588-t001:row22:col4'])
-- dropped unlinked row (NIL): 'MR' — extend the ontology if this is a real PK parameter (source ['vetsci-12-00588-t001:row27:col1', 'vetsci-12-00588-t001:row27:col4'])
+- dropped duplicate Q30 ('MR', value '0.20') — already have one for this compound
 - metabolite ciprofloxacin: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ciprofloxacin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -136,7 +139,7 @@ The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabol
 - template fit: none — nonlinear / manual model class
 - status held at "Needs review" — not promoted
 - row roles (LLM): model_class=compartmental; 16/16 row label(s) assigned, 14 linked by role; re-tagged parent→ciprofloxacin ×10
-- gap-filled Q27 (CL/F) from Alonso_2021's review values (primary lacked it)
+- gap-filled Q27 (CL/F) from Xiao_2018's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -145,19 +148,48 @@ The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabol
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.652 (15/23 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` |  | 3.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc].value` | 3.95 | 21.02 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[clm].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[mr]` |  | 0.20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax].parameter_id` | Q66 | Q305 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ciprofloxacin | enrofloxacin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 12 |  |
+| C0_has_structural_params | pass |  | 13 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['vetsci-12-00588-t001:row12:col1', 'vetsci-12-00588-t001:row12:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Alonso_2021:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Xiao_2018:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['vetsci-12-00588-t001:row7:col1'] |
 | C5_dimension_Q375 | pass | [length] ** 3 / [time] |  | ['vetsci-12-00588-t001:row5:col1', 'vetsci-12-00588-t001:row5:col4'] |
 | C5_dimension_Q375 | pass | [length] ** 3 / [time] |  | ['vetsci-12-00588-t001:row10:col1', 'vetsci-12-00588-t001:row10:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['vetsci-12-00588-t001:row3:col1', 'vetsci-12-00588-t001:row3:col4'] |
+| C5_dimension_Q57 | pass | [time] |  | ['vetsci-12-00588-t001:row22:col1', 'vetsci-12-00588-t001:row22:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['vetsci-12-00588-t001:row6:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['vetsci-12-00588-t001:row8:col1', 'vetsci-12-00588-t001:row8:col4'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['vetsci-12-00588-t001:row21:col1', 'vetsci-12-00588-t001:row21:col4'] |
@@ -165,7 +197,7 @@ The record lists apparent total clearance (CL/F, 144.0 L/h) and apparent metabol
 | C5_dimension_Q88 | fail | [mass] / [length] ** 3 / [time] | mg/L/h | ['vetsci-12-00588-t001:row20:col1', 'vetsci-12-00588-t001:row20:col4', 'vetsci-12-00588-t001:row26:col1', 'vetsci-12-00588-t001:row26:col4'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.8 with apparent parameterization |  |
 | C8_topology | fail |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 144 L/h | ['Alonso_2021:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 34.2 L/h | ['Xiao_2018:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 45.5 L | ['vetsci-12-00588-t001:row6:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 198 L | ['vetsci-12-00588-t001:row8:col1', 'vetsci-12-00588-t001:row8:col4'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 256 L | ['vetsci-12-00588-t001:row21:col1', 'vetsci-12-00588-t001:row21:col4'] |
@@ -191,5 +223,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Ambros2025_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Ambros2025_reference%0APaper%3A%20Ambros_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Ambros2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciprofloxacin%5D%20Ciprofloxacin_Ambros2025_reference&body=Drug%3A%20ciprofloxacin%0ARecord%3A%20Ciprofloxacin_Ambros2025_reference%0APaper%3A%20Ambros_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciprofloxacin/Ciprofloxacin_Ambros2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 16:52 UTC</sub>

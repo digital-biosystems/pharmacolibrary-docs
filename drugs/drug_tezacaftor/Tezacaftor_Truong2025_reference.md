@@ -9,7 +9,7 @@
 
 > The model was rejected because the dose link parameters are empty, leaving the absorption compartment unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Truong2025_reference" status="rejected" stale="false" population="pediatric patients with cystic fibrosis" measured-compound="tezacaftor" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Tezacaftor" model-id="Tezacaftor_Truong2025_reference" status="rejected" stale="false" population="pediatric patients with cystic fibrosis" measured-compound="tezacaftor" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Truong NH, Benaboud S, Bouazza N, Barboura M, Bardin E, Miralles M et al. Elexacaftor/Tezacaftor/Ivacaftor Population Pharmacokinetics in Pediatric Patients With Cystic Fibrosis. Clinical and translational science 18(5):e70245 (2025).
@@ -19,13 +19,13 @@ Truong NH, Benaboud S, Bouazza N, Barboura M, Bardin E, Miralles M et al. Elexac
 
 **Population:** pediatric patients with cystic fibrosis · condition cystic fibrosis · age group child · n = 96.
 
-**Dosing:** 25, 37.5, 40, 50, 59.5, 60, 75, 80, 100, 112.5, 119, 150, 200, 231.5 mg, oral, multiple, every 24 h.
+**Dosing:** 40, 50, 59.5, 75, 80, 100, 150, 200 mg, oral, multiple, every 12 h.
 
 **Dosed compound ≠ measured compound:** dosed elexacaftor/tezacaftor/ivacaftor, measured tezacaftor.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
@@ -80,10 +80,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - table section residual_error: 'σ additive (mg/L)' routed out of structural estimates ('Residual error')
 - table section residual_error: 'σ proportional' routed out of structural estimates ('Residual error')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tezacaftor
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -123,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['cts70245-tbl-0002:row6:col1', 'cts70245-tbl-0002:row6:col2', 'cts70245-tbl-0002:row6:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['cts70245-tbl-0002:row3:col1', 'cts70245-tbl-0002:row3:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 13.4 L/h | ['cts70245-tbl-0002:row5:col1', 'cts70245-tbl-0002:row5:col2', 'cts70245-tbl-0002:row5:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 183 L | ['cts70245-tbl-0002:row6:col1', 'cts70245-tbl-0002:row6:col2', 'cts70245-tbl-0002:row6:col3'] |
 
@@ -148,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D%20Tezacaftor_Truong2025_reference&body=Drug%3A%20tezacaftor%0ARecord%3A%20Tezacaftor_Truong2025_reference%0APaper%3A%20Truong_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D%20Tezacaftor_Truong2025_reference&body=Drug%3A%20tezacaftor%0ARecord%3A%20Tezacaftor_Truong2025_reference%0APaper%3A%20Truong_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:22 UTC</sub>

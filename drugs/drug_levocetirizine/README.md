@@ -22,15 +22,6 @@ Levocetirizine is an antihistamine used to treat urticaria and seasonal allergic
 |---|---|---|---|---|---|---|
 | levocetirizine | parent | 388.89 | C21H25ClN2O3 | DrugBank | [1549000](https://pubchem.ncbi.nlm.nih.gov/compound/1549000) | Hussein_2005, Jeong_2024 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| V | V/F | 33.14 | L | 33.14 L | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeong_2024_reference](drugs/drug_levocetirizine/Levocetirizine_Jeong2024_reference.md) |
-| ka | kabs | 0.095 | 1/h | 0.095 h−1 | healthy adults | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeong_2024_reference](drugs/drug_levocetirizine/Levocetirizine_Jeong2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -107,5 +98,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevocetirizine%5D&body=Drug%3A%20levocetirizine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levocetirizine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevocetirizine%5D&body=Drug%3A%20levocetirizine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levocetirizine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:17 UTC</sub>

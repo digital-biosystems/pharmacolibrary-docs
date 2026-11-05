@@ -176,13 +176,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Rodríguez-Fernández K, Mangas-Sanjuán V, Merino-Sanjuán M, Martorell-Calatayud A, Mateu-Puchades A, Climente-Martí M et al. Impact of Pharmacokinetic and Pharmacodynamic Properties of Monoclonal Antibodies in the Management of Psoriasis. Pharmaceutics 14(3) (2022). [doi:10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654)
 
-**This record:** Pharmacolibrary v26.09, model `Risankizumab_RodrguezFernndez2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference>
+**This record:** Pharmacolibrary, model `Risankizumab_RodrguezFernndez2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RisankizumabRodrguezFernndez2022reference,
   title  = {{Pharmacolibrary model Risankizumab_RodrguezFernndez2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics14030654},
 }
@@ -201,5 +200,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brisankizumab%5D%20Risankizumab_RodrguezFernndez2022_reference&body=Drug%3A%20risankizumab%0ARecord%3A%20Risankizumab_RodrguezFernndez2022_reference%0APaper%3A%20Rodr%C3%ADguez-Fern%C3%A1ndez_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brisankizumab%5D%20Risankizumab_RodrguezFernndez2022_reference&body=Drug%3A%20risankizumab%0ARecord%3A%20Risankizumab_RodrguezFernndez2022_reference%0APaper%3A%20Rodr%C3%ADguez-Fern%C3%A1ndez_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_risankizumab/Risankizumab_RodrguezFernndez2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:19 UTC</sub>

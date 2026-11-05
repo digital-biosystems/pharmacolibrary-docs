@@ -172,13 +172,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kusumoto M, Motegi T, Uno H, Yokono M, Harada K. Pharmacokinetic-pharmacodynamic analysis of cefmetazole against extended-spectrum β-lactamase-producing Enterobacteriaceae in dogs using Monte Carlo Simulation. Frontiers in veterinary science 10:1270137 (2023). [doi:10.3389/fvets.2023.1270137](https://doi.org/10.3389/fvets.2023.1270137)
 
-**This record:** Pharmacolibrary v26.09, model `Cefmetazole_Kusumoto2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference>
+**This record:** Pharmacolibrary, model `Cefmetazole_Kusumoto2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CefmetazoleKusumoto2023reference,
   title  = {{Pharmacolibrary model Cefmetazole_Kusumoto2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference},
   note   = {Parameters from doi:10.3389/fvets.2023.1270137},
 }
@@ -197,5 +196,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefmetazole%5D%20Cefmetazole_Kusumoto2023_reference&body=Drug%3A%20cefmetazole%0ARecord%3A%20Cefmetazole_Kusumoto2023_reference%0APaper%3A%20Kusumoto_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:07 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefmetazole%5D%20Cefmetazole_Kusumoto2023_reference&body=Drug%3A%20cefmetazole%0ARecord%3A%20Cefmetazole_Kusumoto2023_reference%0APaper%3A%20Kusumoto_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefmetazole/Cefmetazole_Kusumoto2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:07 UTC</sub>

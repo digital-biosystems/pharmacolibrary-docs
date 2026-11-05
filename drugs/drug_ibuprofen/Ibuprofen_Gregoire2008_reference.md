@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Gregoire_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Aranda1997_reference&quot;,&quot;label&quot;:&quot;Aranda_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Aranda1997_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Gonzalez1987_reference&quot;,&quot;label&quot;:&quot;Gonzalez_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_ibu_eff_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_ibu_eff_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_ibu_eff_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_std_ibu_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_std_ibu_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_std_ibu_400_mg.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Aranda1997_reference&quot;,&quot;label&quot;:&quot;Aranda_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Aranda1997_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Bouazza2021_reference&quot;,&quot;label&quot;:&quot;Bouazza_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Bouazza2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Gonzalez1987_reference&quot;,&quot;label&quot;:&quot;Gonzalez_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_ibu_eff_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_ibu_eff_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_ibu_eff_400_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Li2012_std_ibu_400_mg&quot;,&quot;label&quot;:&quot;Li_2012_std_ibu_400_mg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Li2012_std_ibu_400_mg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Gregoire2008_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The interconversion rate constant for R- to S-ibuprofen lacked a paper-derived value, forcing use of an unsupported placeholder.
 
-<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2008_reference" status="extracted" stale="false" population="preterm newborn infants" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2008_reference" status="needs_review" stale="false" population="preterm newborn infants" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic analysis of Ibuprofen enantiomers in preterm newborn infants. Journal of clinical pharmacology 48(12):1460–1468 (2008).
@@ -27,22 +27,22 @@ Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic
 
 **Structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | S-ibuprofen V1, mL/kg | V1 | 173 | mL/kg |
 | CL S , mL/h/kg | CL | 3.5 | mL/h/kg |
 | V2, mL/kg | V2 | 306 | mL/kg |
 | volume of distribution of R-ibuprofen | V | 306 | mL/kg |
-| k a | kabs | 1.1 | h -1 |
-| T lag | tlag | 0.1 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,13 @@ Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic
 
 ### Reviewer guidance
 
+**The interconversion rate constant for R- to S-ibuprofen lacked a paper-derived value, forcing use of an unsupported placeholder.**
+
+The model structure connects R- and S-ibuprofen via a rate constant that was not reported in the paper. Consequently, a generic default value was applied rather than an estimate from the preterm infant data. A second reader also disagreed on the primary analyte identification and several parameter extractions. Extracted — R-ibuprofen, S-ibuprofen: V1 173 mL/kg, CL 3.5 mL/h/kg, V2 306 mL/kg, V 306 mL/kg, kabs 1.1 h -1, tlag 0.1 hours.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen racemate, the second reading ibuprofen; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -64,8 +68,6 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | CL S , mL/h/kg | `Q22` · CL | 3.5 | mL/h/kg | 6.806e-08 | m3/s | L/h | boundary (0.8) | Gregoire_2008:results_prose |
 | V2, mL/kg | `Q64` · V2 | 306 | mL/kg | 0.02142 | m3 | L | exact (1) | Gregoire_2008:results_prose |
 | volume of distribution of R-ibuprofen | `Q61` · V | 306 | mL/kg | 0.02142 | m3 | L | boundary (0.8) | Gregoire_2008:discussion_prose |
-| k a | `Q49` · kabs | 1.1 | h -1 | 0.0003056 | 1/s | 1/h | review_gapfill (0.7) | Hong_2008:review |
-| T lag | `Q83` · tlag | 0.1 | hours | 360 | s | h | review_gapfill (0.7) | Li_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -137,18 +139,35 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 34.3 | 34.26 | 0.9989 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Gregoire_2008:results_prose'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Hong_2008:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Gregoire_2008:discussion_prose'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Gregoire_2008:results_prose'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Gregoire_2008:results_prose'] |
-| C5_dimension_Q83 | pass | [time] |  |  |  | ['Li_2012:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.5 |  |  | ['Gregoire_2008:results_prose'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.245 L/h |  |  | ['Gregoire_2008:results_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 21.4 L |  |  | ['Gregoire_2008:discussion_prose'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 12.1 L |  |  | ['Gregoire_2008:results_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 21.4 L |  |  | ['Gregoire_2008:results_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | K21 (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_shared_parameters |  | pass | 4 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 76 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 34.3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 34.3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 34.3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 8.3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.3 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.5 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 34 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 8 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

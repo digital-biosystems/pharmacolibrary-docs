@@ -22,15 +22,6 @@ Lactic acid is used to treat skin conditions such as dermatitis and facial derma
 |---|---|---|---|---|---|---|
 | lactic_acid | metabolite | 90.0779 | C3H6O3 | DrugBank | [612](https://pubchem.ncbi.nlm.nih.gov/compound/612) | Druml_1991 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 24.2 mL/kg body weight-min | ventilated ICU patients with neurologic or neuromuscular diseases | &gt; 2025-02-10T00:00:00Z | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Druml_1991_reference](drugs/drug_lactic_acid/LacticAcid_Druml1991_reference.md) |
-| t½ | t1/2z | — | h | 4.57 mins | ventilated ICU patients with neurologic or neuromuscular diseases | &gt; 2025-02-10T00:00:00Z | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Druml_1991_reference](drugs/drug_lactic_acid/LacticAcid_Druml1991_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -107,5 +98,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blactic_acid%5D&body=Drug%3A%20lactic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lactic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blactic_acid%5D&body=Drug%3A%20lactic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lactic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:03 UTC</sub>

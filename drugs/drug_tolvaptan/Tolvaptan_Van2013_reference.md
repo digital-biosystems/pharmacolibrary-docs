@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Van_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolvaptan — `Tolvaptan_Van2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The two-compartment tolvaptan model yields a terminal half-life of 5.64 h, failing to match the paper's reported values of 10.0 to 17.7 h.
+> This record was reviewed on 2026-11-03 16:21 UTC (Needs review), but the paper was screened again on 2026-11-03 19:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Van2013_reference" status="needs_review" stale="false" population="healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis" measured-compound="tolvaptan" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Van2013_reference" status="extracted" stale="true" population="healthy subjects, CHF patients, hepatic cirrhosis patients" measured-compound="tolvaptan" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of tolvaptan in healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis. Biopharmaceutics & drug disposition 34(6):336–347 (2013).
@@ -17,22 +17,20 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis · age group adult · n = condition:.
+**Population:** healthy subjects, CHF patients, hepatic cirrhosis patients · condition healthy, congestive heart failure, hepatic cirrhosis · age group adult · n = 745.
 
-**Dosing:** 5, 10, 15, 30, 60, 90 mg, oral, multiple, every 24 h.
+**Dosing:** 5, 10, 15, 30, 60, 90, 100 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted, plus 12 covariate effects.  
+**Parameters:** 6 extracted, plus 13 covariate effects.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference.svg" alt="Tolvaptan_Van2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | t_lag (h) | tlag | 0.154 | h | 2.28 |
@@ -42,17 +40,18 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 | CL_d/F (l/h) | Q/F | 2.93 | l/h | 8.94 |
 | V_p/F (l) | V2/F | 31.2 | l | 9.74 |
 | 2_for_cl_d_f | 2_for_cl_d_f | 0.381 |  | 18.1 |
-| theta_q319_weight_power | theta_q319_weight_power | 0.372 |  | 22.3 |
+| theta_cl_f_weight_power | theta_cl_f_weight_power | 0.372 |  | 22.3 |
+| theta_cl_f_chf_nyha_class_1_or_2 | theta_cl_f_chf_nyha_class_1_or_2 | -6.69 | l/h | 19.6 |
 | theta_cl_f_chf_nyha_class_3_or_4 | theta_cl_f_chf_nyha_class_3_or_4 | -8.72 | l/h | 13.8 |
 | theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h | theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h | -6.72 | l/h | 17.1 |
 | theta_cl_f_hyponatremia_moderate_hyponatremia | theta_cl_f_hyponatremia_moderate_hyponatremia | -2.92 | l/h | 21.2 |
-| theta_q319_weight_power | theta_q319_weight_power | 0.678 |  | 17.3 |
+| theta_q353_weight_power | theta_q353_weight_power | 0.678 |  | 17.3 |
 | theta_v1_f_chf_nyha_class_1_or_2 | theta_v1_f_chf_nyha_class_1_or_2 | -44.5 | l | 18.2 |
 | theta_v1_f_chf_nyha_class_3_or_4 | theta_v1_f_chf_nyha_class_3_or_4 | -54.1 | l | 13.9 |
 | theta_v1_f_cirrhosis_child_pugh_score_ge_10_l | theta_v1_f_cirrhosis_child_pugh_score_ge_10_l | 71.9 | l | 27.0 |
-| theta_q314_category | theta_q314_category | 0.244 |  | 26.0 |
+| theta_q313_category | theta_q313_category | 0.244 |  | 26.0 |
 | theta_q312_category | theta_q312_category | 0.271 |  | 5.79 |
-| theta_q313_category | theta_q313_category | 0.230 |  | 8.78 |
+| theta_v2_f_category | theta_v2_f_category | 1.95 | l | 13.0 |
 
 ## Caveats
 
@@ -60,7 +59,7 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,13 +69,13 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The two-compartment tolvaptan model yields a terminal half-life of 5.64 h, failing to match the paper's reported values of 10.0 to 17.7 h.**
+**The model does not reproduce the paper's terminal half-life (paper 10, model 5.64); the covariate scenarios were not simulated.**
 
-The simulated terminal half-life deviates significantly from the paper's reported range, with ratios between 0.3189 and 0.5645 for expected values like 10.0, 11.5, and 17.7 h. This discrepancy persists because relative oral bioavailability was not extracted, so the model was held back rather than published. Additionally, the record defines multiple covariate effects, but the simulation only exercised the reference individual, leaving these clinical scenarios untested. Extracted — tolvaptan: tlag 0.154 h, kabs 0.832 h^-1, CL/F 16 l/h, V1/F 111 l, Q/F 2.93 l/h, V2/F 31.2 l.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_f_chf_nyha_class_3_or_4, theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h, theta_cl_f_hyponatremia_moderate_hyponatremia and theta_v1_f_chf_nyha_class_1_or_2), so that value has no SI equivalent. Extracted — tolvaptan: tlag 0.154 h, kabs 0.832 h^-1, CL/F 16 l/h, V1/F 111 l, Q/F 2.93 l/h, V2/F 31.2 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2_for_cl_d_f: this record has 0.381, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2_for_cl_d_f: this record has 0.381, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -89,17 +88,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | CL_d/F (l/h) | `Q69` · Q/F | 2.93 | l/h | 8.139e-07 | m3/s | l/h | 8.94 | exact (1) | Van_2013_table_p8_1:row14:col1 |
 | V_p/F (l) | `Q82` · V2/F | 31.2 | l | 0.0312 | m3 | l | 9.74 | exact (1) | Van_2013_table_p8_1:row15:col1 |
 | 2_for_cl_d_f | `Q900` · 2_for_cl_d_f | 0.381 |  |  |  |  | 18.1 |  | Van_2013_table_p8_1:row21:col1 |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.372 |  |  |  |  | 22.3 |  | Van_2013_table_p8_1:row4:col1 |
+| theta_cl_f_weight_power | `Q900` · theta_cl_f_weight_power | 0.372 |  |  |  |  | 22.3 |  | Van_2013_table_p8_1:row4:col1 |
+| theta_cl_f_chf_nyha_class_1_or_2 | `Q900` · theta_cl_f_chf_nyha_class_1_or_2 | -6.69 | l/h |  |  |  | 19.6 |  | Van_2013_table_p8_1:row5:col1 |
 | theta_cl_f_chf_nyha_class_3_or_4 | `Q900` · theta_cl_f_chf_nyha_class_3_or_4 | -8.72 | l/h |  |  |  | 13.8 |  | Van_2013_table_p8_1:row6:col1 |
 | theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h | `Q900` · theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h | -6.72 | l/h |  |  |  | 17.1 |  | Van_2013_table_p8_1:row7:col1 |
 | theta_cl_f_hyponatremia_moderate_hyponatremia | `Q900` · theta_cl_f_hyponatremia_moderate_hyponatremia | -2.92 | l/h |  |  |  | 21.2 |  | Van_2013_table_p8_1:row8:col1 |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.678 |  |  |  |  | 17.3 |  | Van_2013_table_p8_1:row10:col1 |
+| theta_q353_weight_power | `Q900` · theta_q353_weight_power | 0.678 |  |  |  |  | 17.3 |  | Van_2013_table_p8_1:row10:col1 |
 | theta_v1_f_chf_nyha_class_1_or_2 | `Q900` · theta_v1_f_chf_nyha_class_1_or_2 | -44.5 | l |  |  |  | 18.2 |  | Van_2013_table_p8_1:row11:col1 |
 | theta_v1_f_chf_nyha_class_3_or_4 | `Q900` · theta_v1_f_chf_nyha_class_3_or_4 | -54.1 | l |  |  |  | 13.9 |  | Van_2013_table_p8_1:row12:col1 |
 | theta_v1_f_cirrhosis_child_pugh_score_ge_10_l | `Q900` · theta_v1_f_cirrhosis_child_pugh_score_ge_10_l | 71.9 | l |  |  |  | 27.0 |  | Van_2013_table_p8_1:row13:col1 |
-| theta_q314_category | `Q900` · theta_q314_category | 0.244 |  |  |  |  | 26.0 |  | Van_2013_table_p8_1:row16:col1 |
+| theta_q313_category | `Q900` · theta_q313_category | 0.244 |  |  |  |  | 26.0 |  | Van_2013_table_p8_1:row16:col1 |
 | theta_q312_category | `Q900` · theta_q312_category | 0.271 |  |  |  |  | 5.79 |  | Van_2013_table_p8_1:row18:col1 |
-| theta_q313_category | `Q900` · theta_q313_category | 0.230 |  |  |  |  | 8.78 |  | Van_2013_table_p8_1:row20:col1 |
+| theta_v2_f_category | `Q900` · theta_v2_f_category | 1.95 | l |  |  |  | 13.0 |  | Van_2013_table_p8_1:row23:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -118,17 +118,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Decrease in CL/F for CHF, NYHA Class 1 or 2 (l/h)' — extend the ontology if this is a real PK parameter (source ['Van_2013_table_p8_1:row5:col1'])
 - covariate level 'ω^2 for CL_d/F' → Q900:2_for_cl_d_f = 0.381 (additive_shift on Q27)
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q353 has no base parameter row (kept as unattached equation-variable)
 - theta_v1_f_cirrhosis_child_pugh_score_ge_10_l: label says 'decrease' but the reported value is 71.9 (positive) — curated as an INCREASE, per the printed number
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q313 has no base parameter row (kept as unattached equation-variable)
-- dropped duplicate covariate effect 'category'/'' on Q313 — ambiguous identity (two shifts cannot share one category)
+- covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
+- dropped duplicate covariate effect 'category'/'' on Q312 — ambiguous identity (two shifts cannot share one category)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
+- dropped unlinked row (NIL): 'Decrease in CL/F for CHF, NYHA Class 1 or 2 (l/h)' — extend the ontology if this is a real PK parameter (source ['Van_2013_table_p8_1:row5:col1'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped duplicate covariate effect 'category'/'' on Q313 — ambiguous identity (two shifts cannot share one category)
 - re-normalised: unit 'F' read from the label of Frel
 
 **Extraction notes:**
@@ -142,21 +144,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.786 (33/42 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.696 (32/46 fields) | 14 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[2_for_cl_d_f]` | 0.381 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['additive_shift', 'additive_shift', 'additive_shift', 'additive_shift', 'additive_shift', 'power'] | ['additive_shift', 'additive_shift', 'additive_shift', 'additive_shift'] | mismatch |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_f_chf_nyha_class_1_or_2]` |  | -6.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight_power]` | 0.372 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q312_category].rse_percent` | 5.79 | 26.0 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_q312_category].value` | 0.271 | 0.244 | mismatch |
-| `gpt-oss-120b` | `parameters[theta_q313_category]` | 0.230 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q314_category]` | 0.244 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q313_category]` | 0.244 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_category]` |  | 0.230 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` |  | 0.372 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q353_weight_power]` | 0.678 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v1_f_weight_power]` |  | 0.678 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_f_category]` | 1.95 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v_c/f].covariate_forms` | ['additive_shift', 'additive_shift', 'additive_shift'] | ['additive_shift', 'additive_shift', 'additive_shift', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[v_p/f].covariate_forms` | ['additive_shift'] | [] | mismatch |
 
 </details>
 
@@ -220,7 +227,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable |  | pass | C_central (measured=tolvaptan) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | apparent_assumption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | T1_t_half_alpha | reference | skipped | 3.6 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 3.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 4.5 |  |  | no simulated metric for this quantity (single reference sim) |
@@ -315,4 +322,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Van2013_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Van2013_reference%0APaper%3A%20Van_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Van2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 19:08 UTC</sub>

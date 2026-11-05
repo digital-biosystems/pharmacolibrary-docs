@@ -24,18 +24,9 @@ Mirabegron is a urological drug used to treat overactive bladder and related uri
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_1_cohort_1_adolescents_low_dose_fed_tablets](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_1_cohort_1_adolescents_low_dose.md) |
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_1_cohort_2_children_low_dose_fed_tablets](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_1_cohort_2_children_low_dose_fed.md) |
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_1_cohort_3_adolescents_high_dose_fed_tablets](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_1_cohort_3_adolescents_high_dose.md) |
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_1_cohort_4_children_high_dose_fed_tablets](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_1_cohort_4_children_high_dose_fe.md) |
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_1_cohort_5_children_high_dose_fast_tablets](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_1_cohort_5_children_high_dose_fa.md) |
-| CL | CL/F | 248 | L/h | 248 L/h | children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rittig_2020_study_2_cohort_6_high_dose_fed_oral_suspension](drugs/drug_mirabegron/Mirabegron_Rittig2020_study_2_cohort_6_high_dose_fed_oral_su.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="30.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="46.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="62.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="78.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="94.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Rittig_2020 · CL/F</text><circle cx="328.1" cy="110.0" r="4" fill="#ef6c00"><title>Rittig_2020 · CL/F: 248 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -119,5 +110,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirabegron%5D&body=Drug%3A%20mirabegron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirabegron/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirabegron%5D&body=Drug%3A%20mirabegron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirabegron/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:34 UTC</sub>

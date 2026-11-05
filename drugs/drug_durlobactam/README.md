@@ -31,22 +31,13 @@
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 7.65 | L/h | 7.65 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Onita_2026_reference](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md) |
-| V | V1 | 4.75 | L | 4.75 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Onita_2026_reference](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Onita_2026_reference](drugs/drug_durlobactam/Durlobactam_Onita2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Onita T et al., Cerebrospinal Pharmacokinetic and Pharm…, Journal of the Pediatric In… (2026) | [10.1093/jpids/piag017](https://doi.org/10.1093/jpids/piag017) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Cammarata_2025_final](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final.md) | — | general linear (no model) | 10 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ final_final_model_shrink](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final_final_model_shrink.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Cammarata_2025_final](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final.md) | — | 3-compartment (no model) | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ final_final_model_shrink](drugs/drug_durlobactam/Durlobactam_Cammarata2025_final_final_model_shrink.md) | — | 1-compartment (no model) | 0 |  |  |
 
 ## ADME sites
 
@@ -97,5 +88,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D&body=Drug%3A%20durlobactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 10:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurlobactam%5D&body=Drug%3A%20durlobactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durlobactam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 10:31 UTC</sub>

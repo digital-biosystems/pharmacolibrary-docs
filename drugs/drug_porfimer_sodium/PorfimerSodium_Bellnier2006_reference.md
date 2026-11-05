@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="porfimer sodium" model-id="PorfimerSodium_Bellnier2006_reference" status="rejected" stale="false" population="PDT patients" measured-compound="porfimer sodium" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="porfimer sodium" model-id="PorfimerSodium_Bellnier2006_reference" status="rejected" stale="false" population="PDT patients" measured-compound="porfimer sodium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bellnier DA, Greco WR, Loewen GM, Nava H, Oseroff AR, Dougherty TJ. Clinical pharmacokinetics of the PDT photosensitizers porfimer sodium (Photofrin), 2-[1-hexyloxyethyl]-2-devinyl pyropheophorbide-a (Photochlor) and 5-ALA-induced protoporphyrin IX. Lasers in surgery and medicine 38(5):439–444 (2006).
@@ -20,7 +20,7 @@ Bellnier DA, Greco WR, Loewen GM, Nava H, Oseroff AR, Dougherty TJ. Clinical pha
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
@@ -54,8 +54,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=porfimer sodium
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -87,11 +85,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -114,5 +112,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bporfimer_sodium%5D%20PorfimerSodium_Bellnier2006_reference&body=Drug%3A%20porfimer_sodium%0ARecord%3A%20PorfimerSodium_Bellnier2006_reference%0APaper%3A%20Bellnier_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_porfimer_sodium/PorfimerSodium_Bellnier2006_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 22:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bporfimer_sodium%5D%20PorfimerSodium_Bellnier2006_reference&body=Drug%3A%20porfimer_sodium%0ARecord%3A%20PorfimerSodium_Bellnier2006_reference%0APaper%3A%20Bellnier_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_porfimer_sodium/PorfimerSodium_Bellnier2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 22:48 UTC</sub>

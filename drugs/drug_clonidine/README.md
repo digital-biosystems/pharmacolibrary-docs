@@ -33,17 +33,9 @@ Clonidine is a centrally acting alpha-2 agonist used to treat high blood pressur
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 75 | L/h | 75.0 L/h | review reference |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Tang_2021_reference](drugs/drug_clonidine/Clonidine_Tang2021_reference.md) |
-| V | V | 196 ‡ | L | 2.8 L/kg | review reference |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Tang_2021_reference](drugs/drug_clonidine/Clonidine_Tang2021_reference.md) |
-| V | V1 | 81.2 | L | 81.2 L | children undergoing adenotonsillectomy | 8 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Larsson_2011_reference](drugs/drug_clonidine/Clonidine_Larsson2011_reference.md) |
-| V | V1 | 202.4 ‡ | L | 202.4 L/70 kg | mechanically ventilated children | 28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Bardol_2025_reference](drugs/drug_clonidine/Clonidine_Bardol2025_reference.md) |
-| F | Fab | 0.554 |  | 0.554 | children undergoing adenotonsillectomy | 8 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Larsson_2011_reference](drugs/drug_clonidine/Clonidine_Larsson2011_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tang_2021 · V ·/kg</text><circle cx="416.1" cy="30.0" r="4" fill="#78909c"><title>Tang_2021 · V ·/kg: 196 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Larsson_2011 · V1</text><circle cx="349.2" cy="46.0" r="4" fill="#ef6c00"><title>Larsson_2011 · V1: 81.2 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Bardol_2025 · V1 ·/kg</text><circle cx="418.6" cy="62.0" r="4" fill="#ef6c00"><title>Bardol_2025 · V1 ·/kg: 202.4 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -148,5 +140,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclonidine%5D&body=Drug%3A%20clonidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clonidine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-09 06:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclonidine%5D&body=Drug%3A%20clonidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clonidine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-09 06:09 UTC</sub>

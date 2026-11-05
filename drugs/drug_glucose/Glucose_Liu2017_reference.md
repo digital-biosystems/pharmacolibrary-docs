@@ -188,13 +188,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Liu S, Chen P, Zhao Y, Dai G, Sun B, Wang Y et al. Pharmacokinetic and pharmacodynamic modeling of oral mitiglinide on glucose lowering in healthy Chinese volunteers. BMC pharmacology & toxicology 18(1):54 (2017). [doi:10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6)
 
-**This record:** Pharmacolibrary v26.09, model `Glucose_Liu2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Liu2017_reference>
+**This record:** Pharmacolibrary, model `Glucose_Liu2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Liu2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_GlucoseLiu2017reference,
   title  = {{Pharmacolibrary model Glucose_Liu2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_glucose/Glucose_Liu2017_reference},
   note   = {Parameters from doi:10.1186/s40360-017-0161-6},
 }
@@ -213,5 +212,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglucose%5D%20Glucose_Liu2017_reference&body=Drug%3A%20glucose%0ARecord%3A%20Glucose_Liu2017_reference%0APaper%3A%20Liu_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glucose/Glucose_Liu2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglucose%5D%20Glucose_Liu2017_reference&body=Drug%3A%20glucose%0ARecord%3A%20Glucose_Liu2017_reference%0APaper%3A%20Liu_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glucose/Glucose_Liu2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:35 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Carlsson_2018 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Carlsson2018_base`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Two model deviations were flagged as unacceptable for the semaglutide record, preventing publication despite a second reader's disagreement on the analyte identity.
+> This record was reviewed on 2026-11-03 16:18 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Carlsson2018_base" status="needs_review" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Carlsson2018_base" status="extracted" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c. Once-Weekly in Type 2 Diabetes: A Population Pharmacokinetic Analysis. Diabetes therapy : research, treatment and education of diabetes and related disorders 9(4):1533–1547 (2018).
@@ -17,7 +17,7 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 
 ## Population and dosing
 
-**Population:** adults with type 2 diabetes mellitus · condition type 2 diabetes mellitus · age group adult · n = &gt;= 60, 60-69, 70-79, 80-89, &gt;= 90 years), body weight (kg), HbA1c (%), and body surface area (m2) were not significantly associated with semaglutide exposure. The final model included only age as a covariate on clearance, with older age (&gt;= 70 years) associated with a 15% lower clearance compared to younger subjects. The model was evaluated using visual predictive checks and was deemed adequate..
+**Population:** adults with type 2 diabetes · condition type 2 diabetes · age group adult.
 
 **Dosing:** 0.25, 0.5, 1 mg, sc, multiple, every 168 h.
 
@@ -31,8 +31,6 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 <figure class="pk-models-diagram"><img src="drugs/drug_semaglutide/Semaglutide_Carlsson2018_base/Semaglutide_Carlsson2018_base.svg" alt="Semaglutide_Carlsson2018_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | ka (h-1) | kabs | 0.0286 | h-1 |  |  |
@@ -41,7 +39,7 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +49,11 @@ Carlsson Petri KC, Ingwersen SH, Flint A, Zacho J, Overgaard RV. Semaglutide s.c
 
 ### Reviewer guidance
 
-**Two model deviations were flagged as unacceptable for the semaglutide record, preventing publication despite a second reader's disagreement on the analyte identity.**
+**Every check that could be run on this record passed.**
 
-The record lists the apparent clearance of 0.0480 L/h and the absorption rate constant, but the review rejected it based on two specific deviations that failed adjudication. The model builder also used default values for the time to lag and assumed oral bioavailability was one, which contributed to the flagged deviations. Although a second reader disputed that the measured compound was semaglutide, the primary cause for the hold-back was the unacceptable deviations identified in the check. Extracted — semaglutide: kabs 0.0286 h-1, CL/F 0.048 L/h, V/F 12.5 L.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of renal function b: this record has none, the second reading 997. That field does not shape the model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of maintenance dose: this record has none, the second reading 634; it also differs on 1 more field. That field does not shape the model.
-
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -81,11 +77,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - table section iiv: 'CL/F (L/h)' routed out of structural estimates ('IIV (% CV)')
 - table section iiv: 'V/F (L)' routed out of structural estimates ('IIV (% CV)')
+- table representations disagree for 'All'; source reconciliation required
+- table representations disagree for 'Sex'; source reconciliation required
+- table representations disagree for 'Age group'; source reconciliation required
+- table representations disagree for 'Race'; source reconciliation required
+- table representations disagree for 'Ethnicity'; source reconciliation required
+- table representations disagree for 'Renal function b'; source reconciliation required
+- table representations disagree for 'Maintenance dose'; source reconciliation required
+- table representations disagree for 'Body weight, kg'; source reconciliation required
+- table representations disagree for 'BMI, kg/m²'; source reconciliation required
+- table representations disagree for 'Duration of diabetes, years'; source reconciliation required
+- table representations disagree for 'HbA1c, %'; source reconciliation required
+- dropped unlinked row (NIL): 'All' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row0:col2'])
+- dropped unlinked row (NIL): 'Sex' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row1:col2', 'Carlsson_2018_table_2:row2:col2'])
+- dropped unlinked row (NIL): 'Age group' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row3:col2', 'Carlsson_2018_table_2:row4:col2', 'Carlsson_2018_table_2:row5:col2'])
+- dropped unlinked row (NIL): 'Race' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row6:col2', 'Carlsson_2018_table_2:row7:col2', 'Carlsson_2018_table_2:row8:col2', 'Carlsson_2018_table_2:row9:col2', 'Carlsson_2018_table_2:row10:col2'])
+- dropped unlinked row (NIL): 'Ethnicity' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row11:col2', 'Carlsson_2018_table_2:row12:col2'])
+- dropped unlinked row (NIL): 'Renal function b' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row13:col2', 'Carlsson_2018_table_2:row14:col2', 'Carlsson_2018_table_2:row15:col2', 'Carlsson_2018_table_2:row16:col2'])
+- dropped unlinked row (NIL): 'Maintenance dose' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row17:col2', 'Carlsson_2018_table_2:row18:col2'])
 - dropped unlinked row (NIL): 'Body weight, kg' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row19:col2'])
 - dropped unlinked row (NIL): 'BMI, kg/m²' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row21:col2'])
 - dropped unlinked row (NIL): 'Duration of diabetes, years' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row23:col2'])
 - dropped unlinked row (NIL): 'HbA1c, %' — extend the ontology if this is a real PK parameter (source ['Carlsson_2018_table_2:row25:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=semaglutide
+- status held at "Needs review" — not promoted
 - model-stage split: 'base' is the base model of Carlsson_2018 (paper reports 2 stages: base, full); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -94,12 +109,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Extraction notes:**
 - table Carlsson_2018_table_2: unbound_uncertainty
 - table Carlsson_2018_table_2: unparsed_numeric_cell
+- table Tab2: representations disagree; selected evidence retained, not merged
 - table Carlsson_2018_table_S2: unbound_uncertainty
 - companion parameter table S2 transcribed (15 record(s), model stage 'base')
 - table Carlsson_2018_table_S3: unbound_uncertainty
 - companion parameter table S3 transcribed (67 record(s), model stage 'full')
 - LLM selected parameter table(s) S2, S3
-- dropped sensitivity-analysis table(s) S4 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -108,13 +123,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[maintenance dose]` |  | 634 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[renal function b]` |  | 997 | only_one_extracted |
 
 </details>
@@ -150,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | pass | C_central (measured=semaglutide) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | dev_1: not acceptable; dev_2: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -230,4 +244,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Carlsson2018_base&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Carlsson2018_base%0APaper%3A%20Carlsson_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Carlsson2018_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 16:53 UTC</sub>

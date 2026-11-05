@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# placebo-corrected erect systolic blood pressure — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
+# placebo-corrected erect systolic blood pressure — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,12 +14,12 @@
 
 ## Record summary
 
-**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives placebo-corrected erect systolic blood pressure (in mmHg): delayed effect through an effect compartment.
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives placebo-corrected erect systolic blood pressure: direct linear effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
 - **paper:** `Meredith_1988`
-- **model family:** `effect_compartment`
+- **model family:** `linear`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/additive
@@ -31,8 +31,18 @@ Meredith PA et al., Pharmacokinetic and pharmacodynamic mod…, Xenobiotica; the
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | m | `Q335` ·  | -1.99 |  | llm | Meredith_1988:pdv3 |
-| PD (effect) | k_eo | `Q326` ·  | 0.008 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -2.05 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -1.69 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -1.59 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -1.84 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -2.02 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | slope | `Q335` ·  | -2.11 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.010 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.013 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.014 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.009 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.016 |  | llm | Meredith_1988:pdv3 |
+| PD (effect) | keq | `Q326` ·  | 0.011 |  | llm | Meredith_1988:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,6 +82,28 @@ Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to 
 Advisory:
 
 - defaulted: E0 — a row the paper has and the record lacks
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `parameters[Q326].value` | 0.011 | varies per subject (see Table 4, e.g., 0.010, 0.007, 0.008, ...) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q335].value` | -2.11 | varies per subject (see Table 4, e.g., -2.05, -1.97, -1.99, ...) | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

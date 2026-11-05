@@ -22,16 +22,6 @@ Mibefradil is a calcium channel blocker that was used to treat high blood pressu
 |---|---|---|---|---|---|---|
 | mibefradil | parent | 495.629 | C29H38FN3O3 | DrugBank | [60663](https://pubchem.ncbi.nlm.nih.gov/compound/60663) | Welker_1998, Welker_1998_2 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 26.7 | L/h | 26.7 L/h | patients with hypertension and chronic stable angina pectoris | &gt;=315 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Welker_1998_reference](drugs/drug_mibefradil/Mibefradil_Welker1998_reference.md) |
-| V | V | 180 | L | 180.0 L | adults with hypertension and chronic stable angina pectoris |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Welker_1998_2_reference](drugs/drug_mibefradil/Mibefradil_Welker1998v2_reference.md) |
-| F | Fab | 0.8 |  | 80 % | adults with hypertension and chronic stable angina pectoris |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Welker_1998_2_reference](drugs/drug_mibefradil/Mibefradil_Welker1998v2_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -154,5 +144,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmibefradil%5D&body=Drug%3A%20mibefradil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mibefradil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmibefradil%5D&body=Drug%3A%20mibefradil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mibefradil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:41 UTC</sub>

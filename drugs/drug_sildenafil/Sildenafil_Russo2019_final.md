@@ -181,13 +181,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Russo FM, Mian P, Krekels EH, Van Calsteren K, Tibboel D, Deprest J et al. Pregnancy affects the pharmacokinetics of sildenafil and its metabolite in the rabbit. Xenobiotica; the fate of foreign compounds in biological systems 49(1):98–105 (2019). [doi:10.1080/00498254.2017.1422217](https://doi.org/10.1080/00498254.2017.1422217)
 
-**This record:** Pharmacolibrary v26.09, model `Sildenafil_Russo2019_final`. <https://pharmacolibrary.github.io/#/drugs/drug_sildenafil/Sildenafil_Russo2019_final>
+**This record:** Pharmacolibrary, model `Sildenafil_Russo2019_final`. <https://pharmacolibrary.github.io/#/drugs/drug_sildenafil/Sildenafil_Russo2019_final>
 
 ```bibtex
 @misc{pharmacolibrary_SildenafilRusso2019final,
   title  = {{Pharmacolibrary model Sildenafil_Russo2019_final}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sildenafil/Sildenafil_Russo2019_final},
   note   = {Parameters from doi:10.1080/00498254.2017.1422217},
 }
@@ -202,5 +201,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsildenafil%5D%20Sildenafil_Russo2019_final&body=Drug%3A%20sildenafil%0ARecord%3A%20Sildenafil_Russo2019_final%0APaper%3A%20Russo_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sildenafil/Sildenafil_Russo2019_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 09:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsildenafil%5D%20Sildenafil_Russo2019_final&body=Drug%3A%20sildenafil%0ARecord%3A%20Sildenafil_Russo2019_final%0APaper%3A%20Russo_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sildenafil/Sildenafil_Russo2019_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:04 UTC</sub>

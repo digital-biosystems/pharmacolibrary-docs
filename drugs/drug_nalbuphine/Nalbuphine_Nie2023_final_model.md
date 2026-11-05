@@ -207,13 +207,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Nie X, Gao X, Gao J, Heng T, Zhang Y, Sun Y et al. Population pharmacokinetics of nalbuphine in patients undergoing general anesthesia surgery. Frontiers in pharmacology 14:1130287 (2023). [doi:10.3389/fphar.2023.1130287](https://doi.org/10.3389/fphar.2023.1130287)
 
-**This record:** Pharmacolibrary v26.09, model `Nalbuphine_Nie2023_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model>
+**This record:** Pharmacolibrary, model `Nalbuphine_Nie2023_final_model`. <https://pharmacolibrary.github.io/#/drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model>
 
 ```bibtex
 @misc{pharmacolibrary_NalbuphineNie2023finalmodel,
   title  = {{Pharmacolibrary model Nalbuphine_Nie2023_final_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model},
   note   = {Parameters from doi:10.3389/fphar.2023.1130287},
 }
@@ -232,5 +231,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnalbuphine%5D%20Nalbuphine_Nie2023_final_model&body=Drug%3A%20nalbuphine%0ARecord%3A%20Nalbuphine_Nie2023_final_model%0APaper%3A%20Nie_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnalbuphine%5D%20Nalbuphine_Nie2023_final_model&body=Drug%3A%20nalbuphine%0ARecord%3A%20Nalbuphine_Nie2023_final_model%0APaper%3A%20Nie_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 05:33 UTC</sub>

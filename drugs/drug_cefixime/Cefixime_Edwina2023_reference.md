@@ -176,13 +176,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. Population plasma and urine pharmacokinetics and the probability of target attainment of fosfomycin in healthy male volunteers. European journal of clinical pharmacology 79(6):775-787 (2023). [doi:10.1007/s00228-023-03477-5](https://doi.org/10.1007/s00228-023-03477-5)
 
-**This record:** Pharmacolibrary v26.09, model `Cefixime_Edwina2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Edwina2023_reference>
+**This record:** Pharmacolibrary, model `Cefixime_Edwina2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Edwina2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CefiximeEdwina2023reference,
   title  = {{Pharmacolibrary model Cefixime_Edwina2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cefixime/Cefixime_Edwina2023_reference},
   note   = {Parameters from doi:10.1007/s00228-023-03477-5},
 }
@@ -201,5 +200,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefixime%5D%20Cefixime_Edwina2023_reference&body=Drug%3A%20cefixime%0ARecord%3A%20Cefixime_Edwina2023_reference%0APaper%3A%20Edwina_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefixime/Cefixime_Edwina2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefixime%5D%20Cefixime_Edwina2023_reference&body=Drug%3A%20cefixime%0ARecord%3A%20Cefixime_Edwina2023_reference%0APaper%3A%20Edwina_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefixime/Cefixime_Edwina2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

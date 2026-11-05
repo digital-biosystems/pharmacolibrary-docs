@@ -30,20 +30,9 @@ Liraglutide is a GLP-1 analogue used as an anti-diabetic medicine to treat type 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0687 | L/h | 68.7 mL/hour | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Woodward_2014_reference](drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md) |
-| CL | CL/F | 0.86 | L/h | 0.86 L/h | overweight and obese adults | &gt;3200 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Overgaard_2016_reference](drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md) |
-| CL | CL/F | 1.07 | L/h | 1.07 L/h | children, adolescents and adults with obesity |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Carlsson_2021_reference](drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md) |
-| V | V | 12.6 | L | 12.6 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Woodward_2014_reference](drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md) |
-| V | V/F | 13.1 | L | 13.1 L | children, adolescents and adults with obesity |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Carlsson_2021_reference](drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md) |
-| V | V/F | 24.6 | L | 24.60 L | overweight and obese adults | &gt;3200 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Overgaard_2016_reference](drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md) |
-| ka | kabs | 0.0804 | 1/h | 0.0804 1/h | children, adolescents and adults with obesity |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Carlsson_2021_reference](drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md) |
-| ka | kabs | 0.09 | 1/h | 0.09 1/h | overweight and obese adults | &gt;3200 | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Overgaard_2016_reference](drugs/drug_liraglutide/Liraglutide_Overgaard2016_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Woodward_2014 · CL</text><circle cx="287.6" cy="30.0" r="4" fill="#2e7d32"><title>Woodward_2014 · CL: 0.0687 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Overgaard_2016 · CL/F</text><circle cx="415.7" cy="46.0" r="4" fill="#66bb6a"><title>Overgaard_2016 · CL/F: 0.86 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Carlsson_2021 · CL/F</text><circle cx="426.8" cy="62.0" r="4" fill="#ef6c00"><title>Carlsson_2021 · CL/F: 1.07 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Woodward_2014 · V</text><circle cx="225.1" cy="30.0" r="4" fill="#2e7d32"><title>Woodward_2014 · V: 12.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Carlsson_2021 · V/F</text><circle cx="231.0" cy="46.0" r="4" fill="#ef6c00"><title>Carlsson_2021 · V/F: 13.1 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Overgaard_2016 · V/F</text><circle cx="326.8" cy="62.0" r="4" fill="#66bb6a"><title>Overgaard_2016 · V/F: 24.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -216,5 +205,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bliraglutide%5D&body=Drug%3A%20liraglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_liraglutide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 09:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bliraglutide%5D&body=Drug%3A%20liraglutide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_liraglutide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 09:00 UTC</sub>

@@ -31,22 +31,9 @@ Trastuzumab is a monoclonal antibody used to treat HER2-positive cancers, mainly
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.015 | L/h | 0.360 L/day | patients with HER2-expressing or mutated advanced solid tumors | &gt;=645 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gao_2026_reference](drugs/drug_trastuzumab/Trastuzumab_Gao2026_reference.md) |
-| CL | CL | 0.33 | L/h | 0.33 L/h | mice and rats |  | rat | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Verma_2025_rat](drugs/drug_trastuzumab/Trastuzumab_Verma2025_rat.md) |
-| CL | CL | — | L/h | 0.21 | mice and rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Verma_2025_mouse](drugs/drug_trastuzumab/Trastuzumab_Verma2025_mouse.md) |
-| V | V1 | 2.86 | L | 2.86 L | patients with HER2-expressing or mutated advanced solid tumors | &gt;=645 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gao_2026_reference](drugs/drug_trastuzumab/Trastuzumab_Gao2026_reference.md) |
-| V | V1 | 28.86 | L | 28.86 L | mice and rats |  | rat | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Verma_2025_rat](drugs/drug_trastuzumab/Trastuzumab_Verma2025_rat.md) |
-| V | V1 | — | L | 31.68 | mice and rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Verma_2025_mouse](drugs/drug_trastuzumab/Trastuzumab_Verma2025_mouse.md) |
-| ka | kabs | 0.78 | 1/h | 0.78 1/h | mice and rats |  | rat | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Verma_2025_rat](drugs/drug_trastuzumab/Trastuzumab_Verma2025_rat.md) |
-| ka | kabs | — | 1/h | 0.78 | mice and rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Verma_2025_mouse](drugs/drug_trastuzumab/Trastuzumab_Verma2025_mouse.md) |
-| F | Fab | 0.013 |  | 0.013 | mice and rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Verma_2025_mouse](drugs/drug_trastuzumab/Trastuzumab_Verma2025_mouse.md) |
-| F | Fab | 0.025 |  | 0.025 | mice and rats |  | rat | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Verma_2025_rat](drugs/drug_trastuzumab/Trastuzumab_Verma2025_rat.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gao_2026 · CL</text><circle cx="220.8" cy="30.0" r="4" fill="#ef6c00"><title>Gao_2026 · CL: 0.015 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Verma_2025 · CL</text><circle cx="455.7" cy="46.0" r="4" fill="#2e7d32"><title>Verma_2025 · CL: 0.33 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gao_2026 · V1</text><circle cx="269.9" cy="30.0" r="4" fill="#ef6c00"><title>Gao_2026 · V1: 2.86 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Verma_2025 · V1</text><circle cx="445.6" cy="46.0" r="4" fill="#2e7d32"><title>Verma_2025 · V1: 28.86 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -130,5 +117,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrastuzumab%5D&body=Drug%3A%20trastuzumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trastuzumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrastuzumab%5D&body=Drug%3A%20trastuzumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trastuzumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:23 UTC</sub>

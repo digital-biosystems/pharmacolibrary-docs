@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Chandasana_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Chandasana2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The weight scaling check for abacavir clearance could not compute a ratio due to inconclusive data.
+> This record was reviewed on 2026-10-22 15:27 UTC (Needs review), but the paper was screened again on 2026-11-03 08:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The weight scaling check for abacavir clearance could not compute a ratio due to inconclusive data.
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="false" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="true" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Population Pharmacokinetic Modeling of Abacavir/Dolutegravir/Lamivudine to Support a Fixed-Dose Combination in Children with HIV-1. Infectious diseases and therapy 13(8):1877–1891 (2024).
@@ -19,11 +19,13 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 
 **Population:** children with HIV-1 · condition HIV-1 · age group child.
 
+**Dosed compound ≠ measured compound:** dosed ABC/DTG/3TC FDC, measured abacavir.
+
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** CL/F, Q/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 11 extracted, plus 5 covariate effects.  
+**Parameters:** 9 extracted, plus 6 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -38,19 +40,19 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 | Apparent peripheral compartment volume of distribution, V3/F [l] | V3/F | 23.0 | l | 17.4 | 91.9 (None% RSE) |
 | F, tablet ARROW PK Substudy Part 2 | Fab | 1.62 |  | 8.02 |  |
 | Apparent central volume of distribution, V/F [l] | V1/F | 23.1 | l | 4.68 |  |
-| F, fasted FCT | fe | 1.00 |  |  |  |
-| F, fasted DT/granules | FG | 1.53 |  | 3.26 |  |
-| Maturation half time, TM50 [PMA weeks] | t1/2z | 52.2 | weeks |  |  |
+| F, fasted FCT | equation variable | 1.00 |  |  |  |
+| F, fasted DT/granules | FR | 1.53 |  | 3.26 |  |
 | Lag time ALAG1 (h) | tlag | 0.297 | h | 12.1 |  |
 | theta_cl_f_wt_power | theta_cl_f_wt_power | 0.794 |  |  |  |
-| theta_q76_wt_power | theta_q76_wt_power | 0.698 |  |  |  |
-| theta_q354_wt_power | theta_q354_wt_power | 0.455 |  | 4.15 |  |
+| theta_q61_wt_power | theta_q61_wt_power | 0.698 |  |  |  |
+| theta_cl_f_wt_power | theta_cl_f_wt_power | 0.455 |  | 4.15 |  |
 | theta_q76_wt_power | theta_q76_wt_power | 0.556 |  | 3.87 |  |
 | theta_cl_f_wt_power | theta_cl_f_wt_power | 0.758 |  | 7.07 |  |
+| theta_q76_wt_power | theta_q76_wt_power | 0.677 |  | 8.98 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,7 +66,7 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 
 The automated check failed without producing a comparison value, making the result inconclusive rather than a confirmed error. Additionally, there are significant disagreements on the absorption rate constant and central volume values, with recorded values of 2.08 and 23.1 conflicting with second reader estimates. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08 h−1, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, fe 1, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine FDC, the second reading abacavir/dolutegravir/lamivudine fixed-dose combination; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ABC/DTG/3TC FDC, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -79,15 +81,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | 23.0 | l | 0.023 | m3 | l | 17.4 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | 91.9 (None% RSE) |
 | F, tablet ARROW PK Substudy Part 2 | `Q40` · Fab | 1.62 |  |  |  |  | 8.02 | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 |  |
 | Apparent central volume of distribution, V/F [l] | `Q290` · V1/F | 23.1 | l | 0.0231 | m3 | l | 4.68 | llm_confirmed (0.6) | Chandasana_2024_2_table_2:row1:col1, Chandasana_2024_2_table_3:row2:col1 |  |
-| F, fasted FCT | `Q44` · fe | 1.00 |  |  |  |  |  | llm (0.6) | Chandasana_2024_2_table_2:row4:col1 |  |
-| F, fasted DT/granules | `Q41` · FG | 1.53 |  |  |  |  | 3.26 | llm (0.6) | Chandasana_2024_2_table_2:row6:col1 |  |
-| Maturation half time, TM50 [PMA weeks] | `Q57` · t1/2z | 52.2 | weeks |  |  | weeks |  | llm (0.6) | Chandasana_2024_2_table_2:row10:col1 |  |
+| F, fasted FCT | `Q900` · equation variable | 1.00 |  |  |  |  |  | llm (0.6) | Chandasana_2024_2_table_2:row4:col1 |  |
+| F, fasted DT/granules | `Q43` · FR | 1.53 |  |  |  |  | 3.26 | llm (0.6) | Chandasana_2024_2_table_2:row6:col1 |  |
 | Lag time ALAG1 (h) | `Q83` · tlag | 0.297 | h | 1069 | s | h | 12.1 | llm_confirmed (0.6) | Chandasana_2024_2_table_3:row1:col1 |  |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.794 |  |  |  |  |  |  | Chandasana_2024_2_table_1:row7:col1 |  |
-| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.698 |  |  |  |  |  |  | Chandasana_2024_2_table_1:row8:col1 |  |
-| theta_q354_wt_power | `Q900` · theta_q354_wt_power | 0.455 |  |  |  |  | 4.15 |  | Chandasana_2024_2_table_2:row7:col1 |  |
+| theta_q61_wt_power | `Q900` · theta_q61_wt_power | 0.698 |  |  |  |  |  |  | Chandasana_2024_2_table_1:row8:col1 |  |
+| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.455 |  |  |  |  | 4.15 |  | Chandasana_2024_2_table_2:row7:col1 |  |
 | theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.556 |  |  |  |  | 3.87 |  | Chandasana_2024_2_table_2:row8:col1 |  |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.758 |  |  |  |  | 7.07 |  | Chandasana_2024_2_table_3:row6:col1 |  |
+| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.677 |  |  |  |  | 8.98 |  | Chandasana_2024_2_table_3:row7:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -113,10 +115,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iov: 'IOV-V/F' routed out of structural estimates ('Interoccasion variability')
 - table section iov: 'IOVKA' routed out of structural estimates ('Interoccasion variability')
 - table section residual_error: 'Additive error [mg/l]' routed out of structural estimates ('Residual error')
-- column 'cmax(µg/ml)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for '≥ 6 to &lt; 10 kg'; source reconciliation required
-- column 'auc0–24(µg*h/ml)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'c24(µg/ml)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for '≥ 10 to &lt; 14 kg'; source reconciliation required
 - table representations disagree for '≥ 14 to &lt; 20 kg'; source reconciliation required
 - table representations disagree for '≥ 20 to &lt; 25 kg'; source reconciliation required
@@ -129,15 +128,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped duplicate Q27 ('Apparent clearance, CL/F [l/h]', value '9.16') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA, FCT [h−1]', value '0.854') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA ~ DT and granules [h−1]', value '2.04') — already have one for this compound
+- dropped PD-category row 'Maturation half time, TM50 [PMA weeks]' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row10:col1'])
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row11:col1'])
-- dropped unlinked row (NIL): 'VL/F ~ (WT/18.5)' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_2_table_3:row7:col1'])
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['Tab4:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'AUC' from footnote/prose loose number None (source ['Tab4:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'AUC∞' from footnote/prose loose number None (source ['Tab4:footnote']); the table cell was unparseable — needs review
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q354 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Maturation half time, TM50 [PMA weeks]' → weeks (from the paper text: "The parameter definition provided in the input lists the label as 'TM50 [PMA weeks]' and the table caption states 'TM50H")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
-- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
 
 **Extraction notes:**
@@ -151,27 +148,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (22/33 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.583 (21/36 fields) | 15 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant, ka [h-1]].value` | 2.08 | 0.85 | mismatch |
-| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].covariate_forms` | [] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['none', 'none', 'none']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].covariate_forms` | [] | ['power', 'power', 'power'] | mismatch |
 | `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].parameter_id` | Q290 | Q76 | mismatch |
-| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].value` | 23.1 | 13.6 | mismatch |
-| `gpt-oss-120b` | `parameters[f, solution arrow pk substudy part 2]` |  | 1.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance, cl/f [l/h]].covariate_forms` | ['power', 'power'] | ['power', 'power', 'power'] | mismatch |
 | `gpt-oss-120b` | `parameters[f, tablet arrow pk substudy part 2].parameter_id` | Q40 | Q87 | mismatch |
-| `gpt-oss-120b` | `parameters[maturation half time, tm50 [pma weeks]]` | 52.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q353_wt_power]` | 0.556 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q76_wt_power]` | 0.677 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v_f_wt_power]` |  | 0.556 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | abacavir/dolutegravir/lamivudine FDC | abacavir/dolutegravir/lamivudine fixed-dose combination | mismatch |
+| `gpt-oss-120b` | `parameters[f, without regard to food fct].parameter_id` | Q44 | Q40 | mismatch |
+| `gpt-oss-120b` | `parameters[maturation half time, tm50 [pma weeks]].parameter_id` | Q57 | Q73 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_wt_power].rse_percent` | 4.15 |  | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_wt_power].value` | 0.455 | 0.794 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q76_wt_power]` | 0.556 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_wt_power]` | 0.698 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_wt_power]` |  | 0.698 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[≥ 6 to &lt; 10 kg]` |  | 0.012 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ABC/DTG/3TC FDC | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | abacavir | unknown | mismatch |
 
 </details>
 
@@ -185,14 +186,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 11 |  |
+| C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_center_consistency_wt | fail |  | [15.6, 18.5] |  |
+| C2_center_consistency_wt | fail |  | [15.6, 18.5, 70.0] |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Chandasana_2024_2_table_1:row0:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Chandasana_2024_2_table_2:row1:col1', 'Chandasana_2024_2_table_3:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chandasana_2024_2_table_1:row2:col1', 'Chandasana_2024_2_table_3:row0:col1'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Chandasana_2024_2_table_2:row10:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Chandasana_2024_2_table_1:row3:col1'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['Chandasana_2024_2_table_1:row4:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Chandasana_2024_2_table_1:row1:col1'] |
@@ -234,5 +234,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Chandasana2024v2_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Chandasana2024v2_reference%0APaper%3A%20Chandasana_2024_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Chandasana2024v2_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Chandasana2024v2_reference%0APaper%3A%20Chandasana_2024_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:52 UTC</sub>

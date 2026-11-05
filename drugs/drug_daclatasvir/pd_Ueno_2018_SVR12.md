@@ -123,13 +123,12 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Daclatasvir_Ueno2018_PD_svr12`. <https://pharmacolibrary.github.io/#/drugs/drug_daclatasvir/Daclatasvir_Ueno2018_PD_svr12>
+**This record:** Pharmacolibrary, model `Daclatasvir_Ueno2018_PD_svr12`. <https://pharmacolibrary.github.io/#/drugs/drug_daclatasvir/Daclatasvir_Ueno2018_PD_svr12>
 
 ```bibtex
 @misc{pharmacolibrary_DaclatasvirUeno2018PDsvr12,
   title  = {{Pharmacolibrary model Daclatasvir_Ueno2018_PD_svr12}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_daclatasvir/Daclatasvir_Ueno2018_PD_svr12},
 }
 ```
@@ -143,5 +142,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaclatasvir%5D%20pd_Ueno_2018_SVR12&body=Drug%3A%20daclatasvir%0ARecord%3A%20pd_Ueno_2018_SVR12%0APaper%3A%20Ueno_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daclatasvir/pd_Ueno_2018_SVR12%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaclatasvir%5D%20pd_Ueno_2018_SVR12&body=Drug%3A%20daclatasvir%0ARecord%3A%20pd_Ueno_2018_SVR12%0APaper%3A%20Ueno_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daclatasvir/pd_Ueno_2018_SVR12%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [daclatasvir](drugs/drug_daclatasvir/)</sub>

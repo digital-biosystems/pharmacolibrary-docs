@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;van_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The diclofenac clearance value of 33.0 l/h/kg is dimensionally inconsistent with its structural role in the model.
+> This record was reviewed on 2026-10-22 15:34 UTC (Rejected), but the paper was screened again on 2026-11-03 22:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The diclofenac clearance value of 33.0 l/h/kg is dimensionally inconsistent with its structural role in the model.
 
-<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="false" population="infants undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_van2004_reference" status="needs_review" stale="true" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 van der Marel CD, Anderson BJ, Rømsing J, Jacqz-Aigrain E, Tibboel D. Diclofenac and metabolite pharmacokinetics in children. Paediatric anaesthesia 14(6):443–451 (2004).
@@ -17,32 +17,31 @@ van der Marel CD, Anderson BJ, Rømsing J, Jacqz-Aigrain E, Tibboel D. Diclofena
 
 ## Population and dosing
 
-**Population:** infants undergoing tonsillectomy · condition postoperative pain · age group infant.
+**Population:** children undergoing tonsillectomy · condition tonsillectomy · age group child · n = 26.
+
+**Dosing:** 70, 140 mg, rectal, multiple, every 8 h.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| The formation clearance to 4'-hydroxydiclofenac | CLfm | 8.41 | l.h(-1) |
-| and to 5'-hydroxydiclofenac | CLfm | 3.41 | l.h(-1) |
-| Clearance by other routes | CL | 33.0 | l.h(-1) 70 kg(-1) |
-| Elimination clearance of hydroxyl metabolites | CL | 27.5 | l.h(-1) 70 kg(-1) |
-| absorption half-life | t1/2ka | 0.613 | h |
-| lag time | tlag | 0.188 | h |
-| diclofenac volume of distribution | V | 55 | % |
-| The relative bioavailability of the suppository compared with an enteric-coated tablet | Frel | 1.26 | relative bioavailability |
+| CL2D4OH | CLfm | 1 | L/h/70 kg |
+| Tabs | tlag | 1 | h |
+| V | V | 1 | L |
+| clearance | CL | 12.0 | ml min À1 |
+| k a (h À1 ) | kabs | 0.94 | h À1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.19). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +55,7 @@ van der Marel CD, Anderson BJ, Rømsing J, Jacqz-Aigrain E, Tibboel D. Diclofena
 
 The record defines the clearance parameter as 33.0 l.h(-1) 70 kg(-1), which is dimensionally incompatible with the model structure. The source text was abstract-only, so reported summary statistics were used instead of a fitted model. A second reader disagreed on several parameter extractions, including absorption half-time and volume of distribution. Extracted — 4'-hydroxydiclofenac: CLfm 8.41 l.h(-1), CL 27.5 l.h(-1) 70 kg(-1); 5'-hydroxydiclofenac: CLfm 3.41 l.h(-1); diclofenac: CL 33 l.h(-1) 70 kg(-1), t1/2ka 0.613 h, tlag 0.188 h, V 55 %, Frel 1.26 relative bioavailability.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading diclofenac → 4'-hydroxydiclofenac (metabolism); diclofenac → 5'-hydroxydiclofenac (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diclofenac → 4'-hydroxydiclofenac (metabolism); diclofenac → 5'-hydroxydiclofenac (metabolism), the second reading diclofenac → 4β-hydroxydiclofenac (metabolism); diclofenac → 5β-hydroxydiclofenac (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -64,14 +63,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| The formation clearance to 4'-hydroxydiclofenac | `Q370` · CLfm | 8.41 | l.h(-1) | 2.336e-06 | m3/s | l/h | exact (1) | van_2004:abstract |
-| and to 5'-hydroxydiclofenac | `Q370` · CLfm | 3.41 | l.h(-1) | 9.472e-07 | m3/s | l/h | exact (1) | van_2004:abstract |
-| Clearance by other routes | `Q22` · CL | 33.0 | l.h(-1) 70 kg(-1) | 0.0006417 | m3/s | l/(h·kg) | llm_confirmed (0.6) | van_2004:abstract |
-| Elimination clearance of hydroxyl metabolites | `Q22` · CL | 27.5 | l.h(-1) 70 kg(-1) | 0.0005347 | m3/s | l/(h·kg) | exact (1) | van_2004:abstract |
-| absorption half-life | `Q95` · t1/2ka | 0.613 | h | 2207 | s | h | llm_corrected (0.6) | van_2004:abstract |
-| lag time | `Q83` · tlag | 0.188 | h | 676.8 | s | h | exact (1) | van_2004:abstract, van_2004:abstract |
-| diclofenac volume of distribution | `Q61` · V | 55 | % |  |  | % | llm_confirmed (0.6) | van_2004:abstract |
-| The relative bioavailability of the suppository compared with an enteric-coated tablet | `Q87` · Frel | 1.26 | relative bioavailability |  |  |  | llm_confirmed (0.6) | van_2004:abstract |
+| CL2D4OH | `Q370` · CLfm | 1 | L/h/70 kg | 2.778e-07 | m3/s | L/h | exact (1) | tab_0:row1:col1 |
+| Tabs | `Q83` · tlag | 1 | h | 3600 | s | h | exact (1) | tab_0:row2:col1, tab_0:row2:col2 |
+| V | `Q61` · V | 1 | L | 0.001 | m3 | L | exact (1) | tab_0:row4:col4 |
+| clearance | `Q22` · CL | 12.0 | ml min À1 | 2e-07 | m3/s | L/h | review_gapfill (0.7) | Huntjens_2008:review |
+| k a (h À1 ) | `Q49` · kabs | 0.94 | h À1 | 0.0002611 | 1/s | 1/h | review_gapfill (0.7) | Kim_2016:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,54 +77,44 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed "Interoccasion variability of formation clearance to 4'-hydroxydiclofenac" → Q313 (IOV) to iov — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'diclofenac volume of distribution' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'absorption half-time' → Q95 (unit 'dimensionless' vs ontology '[time]') — route to review
-- dropped duplicate Q95 ('absorption half-time', value '14') — already have one for this compound
-- dropped duplicate Q22 ('total clearance', value '44.82') — already have one for this compound
+- linked 'Tabs' as 'Tlag' → Q83 (tlag) for  — compound marker removed
+- dropped duplicate Q83 ('Tlag', value '1') — already have one for this compound
+- implicit units: 'CL2D4OH' → L/h/70 kg (from the paper text: "The paper text explicitly states: 'The formation clearance to 4¢-hydroxydiclofenac (CL2D4OH) ... were ... lAEh )1 , resp")
+- implicit units: 'Tabs' → h (from the paper text: "The paper text states: 'The suppository formulation had an absorption half-life (Tabs) of 0.613 (33.2) h'. Additionally,")
+- implicit units: 'V' → L (from the paper text: "The paper text states: 'The volumes of distribution of parent diclofenac (V) ... were 22.8 (19.0) ... kg )1'. It further")
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 8 linked by role; re-tagged diclofenac→4'-hydroxydiclofenac ×3, diclofenac→5'-hydroxydiclofenac ×1, diclofenac→parent ×8
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 6 linked by role; re-tagged parent→4'-hydroxydiclofenac ×1
+- gap-filled Q22 (CL) from Huntjens_2008's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Kim_2016's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in van_2004_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- table tab_0: units_need_context
+- LLM selected parameter table(s) 1
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.19 (4/21 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>17 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ['diclofenac', "5'-hydroxydiclofenac", 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[absorption half-life]` |  | 0.613 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance by other routes]` |  | 33.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance by other routes]` | 33.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[diclofenac volume of distribution]` |  | 55 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination clearance of hydroxyl metabolites]` |  | 27.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance of the active metabolite 4'-hydroxydiclofenac contributed]` |  | 19 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance to 4'-hydroxydiclofenac]` |  | 8.41 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance to 5'-hydroxydiclofenac]` |  | 3.41 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[lag time]` |  | 0.188 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailability of the suppository compared with an enteric-coated tablet]` |  | 1.26 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the formation clearance of the active metabolite 4'-hydroxydiclofenac contributed 19% of total clearance (44.82 l.h(-1) 70 kg(-1)).]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the formation clearance to 4'-hydroxydiclofenac]` | 8.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the relative bioavailability of the suppository compared with an enteric-coated tablet]` | 1.26 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the suppository formulation had an absorption half-life of]` | 0.613 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` | 0.23 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[with a lag time of]` | 0.188 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ['diclofenac', "5'-hydroxydiclofenac", 'metabolism']] | [['diclofenac', '4β-hydroxydiclofenac', 'metabolism'], ['diclofenac', '5β-hydroxydiclofenac', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl2d4oh]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2d4oh]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tabs].parameter_id` | Q83 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[tabs].value` | 1 | 0.875 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag]` |  | 0.021 | only_one_extracted |
 
 </details>
 
@@ -142,20 +128,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 8 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2004:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2004:abstract'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['van_2004:abstract'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['van_2004:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | % | ['van_2004:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['van_2004:abstract', 'van_2004:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['van_2004:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33 | ['van_2004:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Huntjens_2008:review'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['tab_0:row1:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Kim_2016:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row4:col4'] |
+| C5_dimension_Q83 | pass | [time] |  | ['tab_0:row2:col1', 'tab_0:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12 | ['Huntjens_2008:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.31e+03 L/h | ['van_2004:abstract'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.92e+03 L/h | ['van_2004:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.72 L/h | ['Huntjens_2008:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1 L | ['tab_0:row4:col4'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,9 +151,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -178,5 +172,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_van2004_reference&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_van2004_reference%0APaper%3A%20van_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_van2004_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20Diclofenac_van2004_reference&body=Drug%3A%20diclofenac%0ARecord%3A%20Diclofenac_van2004_reference%0APaper%3A%20van_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/Diclofenac_van2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 22:55 UTC</sub>

@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhang C, Yu Z, Li X, Xu Y, Liu D. Chronopharmacodynamics and chronopharmacokinetics of pethidine in mice. PloS one 9(7):e102054 (2014). [doi:10.1371/journal.pone.0102054](https://doi.org/10.1371/journal.pone.0102054)
 
-**This record:** Pharmacolibrary v26.09, model `Pethidine_Zhang2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pethidine/Pethidine_Zhang2014_reference>
+**This record:** Pharmacolibrary, model `Pethidine_Zhang2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pethidine/Pethidine_Zhang2014_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PethidineZhang2014reference,
   title  = {{Pharmacolibrary model Pethidine_Zhang2014_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pethidine/Pethidine_Zhang2014_reference},
   note   = {Parameters from doi:10.1371/journal.pone.0102054},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpethidine%5D%20Pethidine_Zhang2014_reference&body=Drug%3A%20pethidine%0ARecord%3A%20Pethidine_Zhang2014_reference%0APaper%3A%20Zhang_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pethidine/Pethidine_Zhang2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpethidine%5D%20Pethidine_Zhang2014_reference&body=Drug%3A%20pethidine%0ARecord%3A%20Pethidine_Zhang2014_reference%0APaper%3A%20Zhang_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pethidine/Pethidine_Zhang2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

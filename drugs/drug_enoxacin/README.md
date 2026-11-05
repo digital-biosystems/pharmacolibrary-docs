@@ -22,17 +22,6 @@ Enoxacin is a fluoroquinolone antibiotic used to treat bacterial infections, inc
 |---|---|---|---|---|---|---|
 | enoxacin | parent | 320.319 | C15H17FN4O3 | DrugBank | [3229](https://pubchem.ncbi.nlm.nih.gov/compound/3229) | Marchbanks_1990, Naber_1989 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 18.42 | L/h | 307 ml/min | patients undergoing transurethral resection of the prostate | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Naber_1989_reference](drugs/drug_enoxacin/Enoxacin_Naber1989_reference.md) |
-| CL | CL | — | L/h | 2.58 ml/min per kg | elderly patients with complicated urinary tract infections |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Marchbanks_1990_reference](drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference.md) |
-| CL | CL/F | — | L/h | 3.01 ml/min per kg | elderly patients with complicated urinary tract infections |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Marchbanks_1990_reference](drugs/drug_enoxacin/Enoxacin_Marchbanks1990_reference.md) |
-| t½ | t1/2z | 6.65 | h | 6.65 h | patients undergoing transurethral resection of the prostate | 14 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Naber_1989_reference](drugs/drug_enoxacin/Enoxacin_Naber1989_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -106,5 +95,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benoxacin%5D&body=Drug%3A%20enoxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enoxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benoxacin%5D&body=Drug%3A%20enoxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enoxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:50 UTC</sub>

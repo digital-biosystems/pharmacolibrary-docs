@@ -103,13 +103,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Sertraline_Kreilgaard2008_PD_sert_occ`. <https://pharmacolibrary.github.io/#/drugs/drug_sertraline/Sertraline_Kreilgaard2008_PD_sert_occ>
+**This record:** Pharmacolibrary, model `Sertraline_Kreilgaard2008_PD_sert_occ`. <https://pharmacolibrary.github.io/#/drugs/drug_sertraline/Sertraline_Kreilgaard2008_PD_sert_occ>
 
 ```bibtex
 @misc{pharmacolibrary_SertralineKreilgaard2008PDsertocc,
   title  = {{Pharmacolibrary model Sertraline_Kreilgaard2008_PD_sert_occ}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sertraline/Sertraline_Kreilgaard2008_PD_sert_occ},
 }
 ```
@@ -123,5 +122,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsertraline%5D%20pd_Kreilgaard_2008_SERT_occ&body=Drug%3A%20sertraline%0ARecord%3A%20pd_Kreilgaard_2008_SERT_occ%0APaper%3A%20Kreilgaard_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsertraline%5D%20pd_Kreilgaard_2008_SERT_occ&body=Drug%3A%20sertraline%0ARecord%3A%20pd_Kreilgaard_2008_SERT_occ%0APaper%3A%20Kreilgaard_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sertraline](drugs/drug_sertraline/)</sub>

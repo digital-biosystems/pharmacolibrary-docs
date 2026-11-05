@@ -183,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and cardiovascular effects of a single intravenous dose of protamine in normal volunteers. Anesthesia and analgesia 94(3):514 (2002). [doi:10.1097/00000539-200203000-00008](https://doi.org/10.1097/00000539-200203000-00008)
 
-**This record:** Pharmacolibrary v26.09, model `Protamine_Butterworth2002_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_protamine/Protamine_Butterworth2002_reference>
+**This record:** Pharmacolibrary, model `Protamine_Butterworth2002_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_protamine/Protamine_Butterworth2002_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ProtamineButterworth2002reference,
   title  = {{Pharmacolibrary model Protamine_Butterworth2002_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_protamine/Protamine_Butterworth2002_reference},
   note   = {Parameters from doi:10.1097/00000539-200203000-00008},
 }
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotamine%5D%20Protamine_Butterworth2002_reference&body=Drug%3A%20protamine%0ARecord%3A%20Protamine_Butterworth2002_reference%0APaper%3A%20Butterworth_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protamine/Protamine_Butterworth2002_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotamine%5D%20Protamine_Butterworth2002_reference&body=Drug%3A%20protamine%0ARecord%3A%20Protamine_Butterworth2002_reference%0APaper%3A%20Butterworth_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protamine/Protamine_Butterworth2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:26 UTC</sub>

@@ -119,13 +119,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `DarbepoetinAlfa_Agoram2006_PD_hb`. <https://pharmacolibrary.github.io/#/drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Agoram2006_PD_hb>
+**This record:** Pharmacolibrary, model `DarbepoetinAlfa_Agoram2006_PD_hb`. <https://pharmacolibrary.github.io/#/drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Agoram2006_PD_hb>
 
 ```bibtex
 @misc{pharmacolibrary_DarbepoetinAlfaAgoram2006PDhb,
   title  = {{Pharmacolibrary model DarbepoetinAlfa_Agoram2006_PD_hb}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Agoram2006_PD_hb},
 }
 ```
@@ -139,5 +138,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdarbepoetin_alfa%5D%20pd_Agoram_2006_Hb&body=Drug%3A%20darbepoetin_alfa%0ARecord%3A%20pd_Agoram_2006_Hb%0APaper%3A%20Agoram_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_darbepoetin_alfa/pd_Agoram_2006_Hb%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdarbepoetin_alfa%5D%20pd_Agoram_2006_Hb&body=Drug%3A%20darbepoetin_alfa%0ARecord%3A%20pd_Agoram_2006_Hb%0APaper%3A%20Agoram_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_darbepoetin_alfa/pd_Agoram_2006_Hb%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [darbepoetin alfa](drugs/drug_darbepoetin_alfa/)</sub>

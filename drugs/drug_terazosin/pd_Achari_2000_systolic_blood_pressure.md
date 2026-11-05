@@ -118,13 +118,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Terazosin_Achari2000_PD_systolic_blood_pressure`. <https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Achari2000_PD_systolic_blood_pressure>
+**This record:** Pharmacolibrary, model `Terazosin_Achari2000_PD_systolic_blood_pressure`. <https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Achari2000_PD_systolic_blood_pressure>
 
 ```bibtex
 @misc{pharmacolibrary_TerazosinAchari2000PDsystolicbloodpressure,
   title  = {{Pharmacolibrary model Terazosin_Achari2000_PD_systolic_blood_pressure}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_terazosin/Terazosin_Achari2000_PD_systolic_blood_pressure},
 }
 ```
@@ -138,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterazosin%5D%20pd_Achari_2000_systolic_blood_pressure&body=Drug%3A%20terazosin%0ARecord%3A%20pd_Achari_2000_systolic_blood_pressure%0APaper%3A%20Achari_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terazosin/pd_Achari_2000_systolic_blood_pressure%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterazosin%5D%20pd_Achari_2000_systolic_blood_pressure&body=Drug%3A%20terazosin%0ARecord%3A%20pd_Achari_2000_systolic_blood_pressure%0APaper%3A%20Achari_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terazosin/pd_Achari_2000_systolic_blood_pressure%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [terazosin](drugs/drug_terazosin/)</sub>

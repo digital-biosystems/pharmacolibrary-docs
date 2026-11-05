@@ -231,13 +231,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sakaeda M, Kotani N, Yoneya T, Zheng Y, Habara Y. [Pharmacological properties and clinical development overview of pertuzumab (genetical recombination), trastuzumab (genetical recombination) and vorhyaluronidase alfa (genetical recombination) (PHESGO. Nihon yakurigaku zasshi. Folia pharmacologica Japonica 159(4):241–253 (2024). [doi:10.1254/fpj.24022](https://doi.org/10.1254/fpj.24022)
 
-**This record:** Pharmacolibrary v26.09, model `Pertuzumab_Sakaeda2024_10_mg_kg_iv`. <https://pharmacolibrary.github.io/#/drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv>
+**This record:** Pharmacolibrary, model `Pertuzumab_Sakaeda2024_10_mg_kg_iv`. <https://pharmacolibrary.github.io/#/drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv>
 
 ```bibtex
 @misc{pharmacolibrary_PertuzumabSakaeda202410mgkgiv,
   title  = {{Pharmacolibrary model Pertuzumab_Sakaeda2024_10_mg_kg_iv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv},
   note   = {Parameters from doi:10.1254/fpj.24022},
 }
@@ -256,5 +255,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpertuzumab%5D%20Pertuzumab_Sakaeda2024_10_mg_kg_iv&body=Drug%3A%20pertuzumab%0ARecord%3A%20Pertuzumab_Sakaeda2024_10_mg_kg_iv%0APaper%3A%20Sakaeda_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpertuzumab%5D%20Pertuzumab_Sakaeda2024_10_mg_kg_iv&body=Drug%3A%20pertuzumab%0ARecord%3A%20Pertuzumab_Sakaeda2024_10_mg_kg_iv%0APaper%3A%20Sakaeda_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:34 UTC</sub>

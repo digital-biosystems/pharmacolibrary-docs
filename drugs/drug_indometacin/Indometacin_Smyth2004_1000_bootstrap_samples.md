@@ -167,5 +167,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindometacin%5D%20Indometacin_Smyth2004_1000_bootstrap_samples&body=Drug%3A%20indometacin%0ARecord%3A%20Indometacin_Smyth2004_1000_bootstrap_samples%0APaper%3A%20Smyth_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indometacin/Indometacin_Smyth2004_1000_bootstrap_samples%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-30 04:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindometacin%5D%20Indometacin_Smyth2004_1000_bootstrap_samples&body=Drug%3A%20indometacin%0ARecord%3A%20Indometacin_Smyth2004_1000_bootstrap_samples%0APaper%3A%20Smyth_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indometacin/Indometacin_Smyth2004_1000_bootstrap_samples%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-30 04:29 UTC</sub>

@@ -24,15 +24,9 @@ Naldemedine is a peripheral opioid receptor antagonist used to treat constipatio
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| V | V1/F | 83.6 | L | 83.6 L | healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kubota_2018_estimate](drugs/drug_naldemedine/Naldemedine_Kubota2018_estimate.md) |
-| V | V1/F | 87.5 | L | 87.5 L | healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kubota_2018_1107v9221_phase_2b](drugs/drug_naldemedine/Naldemedine_Kubota2018_1107v9221_phase_2b.md) |
-| V | V1/F | 87.5 | L | 87.5 L | healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kubota_2018_1314v9231_1315v9232_phase_3](drugs/drug_naldemedine/Naldemedine_Kubota2018_1314v9231_1315v9232_phase_3.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kubota_2018 · V1/F</text><circle cx="512.8" cy="30.0" r="4" fill="#78909c"><title>Kubota_2018 · V1/F: 83.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kubota_2018 · V1/F</text><circle cx="519.7" cy="46.0" r="4" fill="#78909c"><title>Kubota_2018 · V1/F: 87.5 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kubota_2018 · V1/F</text><circle cx="519.7" cy="62.0" r="4" fill="#78909c"><title>Kubota_2018 · V1/F: 87.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -130,5 +124,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaldemedine%5D&body=Drug%3A%20naldemedine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naldemedine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 16:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaldemedine%5D&body=Drug%3A%20naldemedine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naldemedine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 16:42 UTC</sub>

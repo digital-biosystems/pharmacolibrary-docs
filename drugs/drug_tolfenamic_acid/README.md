@@ -31,19 +31,9 @@ Tolfenamic acid is a non-steroidal anti-inflammatory drug (a fenamate) used as a
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 2.1 ‡ | L/h | 0.03 L/h/kg | review reference | fish | <span class="pk-badge pk-badge--orange">Needs review</span> | [Corum_2024_2_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024v2_reference.md) |
-| CL | CL | 11.9 ‡ | L/h | 0.17 L/h/kg | calves | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Corum_2026_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference.md) |
-| CL | CL | 14.7 ‡ | L/h | 0.21 L/h/kg | review reference | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Corum_2024_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024_reference.md) |
-| V | V | 10.51 | L | 10.5129 L | review reference | fish | <span class="pk-badge pk-badge--orange">Needs review</span> | [Corum_2024_2_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024v2_reference.md) |
-| V | V | 46.9 ‡ | L | 0.67 L/kg | calves | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Corum_2026_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2026_reference.md) |
-| V | V | 51.11 | L | 51.1104 L | review reference | sheep | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Corum_2024_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Corum2024_reference.md) |
-| V | V | 68.6 ‡ | L | 0.98 litre kg-1 | calves | cattle | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Landoni_1996_reference](drugs/drug_tolfenamic_acid/TolfenamicAcid_Landoni1996_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Corum_2024_2 · CL ·/kg</text><circle cx="246.4" cy="30.0" r="4" fill="#ef6c00"><title>Corum_2024_2 · CL ·/kg: 2.1 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Corum_2026 · CL ·/kg</text><circle cx="378.2" cy="46.0" r="4" fill="#ef6c00"><title>Corum_2026 · CL ·/kg: 11.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Corum_2024 · CL ·/kg</text><circle cx="394.3" cy="62.0" r="4" fill="#2e7d32"><title>Corum_2024 · CL ·/kg: 14.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Corum_2024_2 · V</text><circle cx="197.6" cy="30.0" r="4" fill="#ef6c00"><title>Corum_2024_2 · V: 10.51 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Corum_2026 · V ·/kg</text><circle cx="424.9" cy="46.0" r="4" fill="#ef6c00"><title>Corum_2026 · V ·/kg: 46.9 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Corum_2024 · V</text><circle cx="438.0" cy="62.0" r="4" fill="#2e7d32"><title>Corum_2024 · V: 51.11 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Landoni_1996 · V ·/kg</text><circle cx="482.7" cy="78.0" r="4" fill="#66bb6a"><title>Landoni_1996 · V ·/kg: 68.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -133,5 +123,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolfenamic_acid%5D&body=Drug%3A%20tolfenamic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolfenamic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolfenamic_acid%5D&body=Drug%3A%20tolfenamic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolfenamic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:26 UTC</sub>

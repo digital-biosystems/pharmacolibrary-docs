@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Leegwater_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Leegwater2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 14:39 UTC (Needs review), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="false" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="true" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Leegwater E, Moes DJAR, Bosma LBE, Ottens TH, van der Meer IM, van Nieuwkoop C et al. Population Pharmacokinetics of Remdesivir and GS-441524 in Hospitalized COVID-19 Patients. Antimicrobial agents and chemotherapy 66(6):e0025422 (2022).
@@ -17,7 +17,7 @@ Leegwater E, Moes DJAR, Bosma LBE, Ottens TH, van der Meer IM, van Nieuwkoop C e
 
 ## Population and dosing
 
-**Population:** hospitalized COVID-19 patients · condition coronavirus disease 2019 (COVID-19) · age group adult · n = &gt; 17.
+**Population:** hospitalized COVID-19 patients · condition COVID-19 · age group adult · n = ..
 
 **Dosing:** 100, 200 mg, iv, multiple, every 24 h.
 
@@ -37,11 +37,11 @@ Leegwater E, Moes DJAR, Bosma LBE, Ottens TH, van der Meer IM, van Nieuwkoop C e
 | Renal CL (L/h) | CLR | 20.7 | L/h |  |  |
 | V (L) | V | 157 | L | 19 |  |
 | CL (L/h) | CL | 27.6 | L/h | 17 |  |
-| theta_cl_egfr | theta_cl_egfr | 1.76 |  | 22 |  |
+| egfr_on_cl | egfr_on_cl | 1.76 |  | 22 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +55,7 @@ Leegwater E, Moes DJAR, Bosma LBE, Ottens TH, van der Meer IM, van Nieuwkoop C e
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 207 L/h, CLR 20.7 L/h, V 157 L; GS-441524: CL 27.6 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of metabolic cl: this record has 207, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,11 +63,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Metabolic CL (L/h) | `Q22` · CL | 207 | L/h | 5.75e-05 | m3/s | l/h | 13 | llm_confirmed (0.6) | Leegwater_2022_table_p4_1:row1:col1 | 38.9 (22% RSE) |
+| Metabolic CL (L/h) | `Q22` · CL | 207 | L/h | 5.75e-05 | m3/s | l/h | 13 | boundary_llm_dim_refused (0.8) | Leegwater_2022_table_p4_1:row1:col1 | 38.9 (22% RSE) |
 | Renal CL (L/h) | `Q26` · CLR | 20.7 | L/h | 5.75e-06 | m3/s | l/h |  | llm_corrected (0.6) | Leegwater_2022_table_p4_1:row2:col1 |  |
 | V (L) | `Q61` · V | 157 | L | 0.157 | m3 | l | 19 | exact (1) | Leegwater_2022_table_p4_1:row3:col1 |  |
 | CL (L/h) | `Q22` · CL | 27.6 | L/h | 7.667e-06 | m3/s | l/h | 17 | exact (1) | Leegwater_2022_table_p4_1:row5:col1 |  |
-| theta_cl_egfr | `Q900` · theta_cl_egfr | 1.76 |  |  |  |  | 22 |  | Leegwater_2022_table_p4_1:row6:col1 |  |
+| egfr_on_cl | `Q900` · egfr_on_cl | 1.76 |  |  |  |  | 22 |  | Leegwater_2022_table_p4_1:row6:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,6 +84,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'GS-441524 V' routed out of structural estimates ('Interindividual variability (%)')
 - table section residual_error: 'Remdesivir' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'GS-441524' routed out of structural estimates ('Residual variability')
+- covariate level 'eGFR on CL' → Q900:egfr_on_cl = 1.76 (linear_fractional on Q22)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - row roles: 4 row(s) kept on the molecule their table section names, against the LLM's assignment
@@ -98,27 +99,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (4/14 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[egfr_on_cl]` | 0.31 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[metabolic cl].covariate_forms` | ['linear_fractional'] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[renal cl]` | 20.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal cl]` |  | 20.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_cl_egfr]` |  | 0.31 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 834 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` |  | 834 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | remdesivir | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[egfr_on_cl]` | 1.76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic cl]` | 207 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic cl]` |  | 207 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_egfr]` |  | 1.76 | only_one_extracted |
 
 </details>
 
@@ -178,5 +173,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Leegwater2022_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Leegwater2022_reference%0APaper%3A%20Leegwater_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Leegwater2022_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Leegwater2022_reference%0APaper%3A%20Leegwater_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>

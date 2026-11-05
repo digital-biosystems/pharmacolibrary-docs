@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Marques2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Salbutamol bioavailability, lag time, and reverse intercompartmental clearance lacked reported values, so placeholders were used instead of study estimates.
+> This record was reviewed on 2026-10-22 15:35 UTC (Needs review), but the paper was screened again on 2026-11-04 09:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="needs_review" stale="false" population="adults with asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="extracted" stale="true" population="asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Patient-Derived Population Pharmacokinetic Model with Real-World Data. Pharmaceutics 16(7) (2024).
@@ -17,7 +17,9 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ## Population and dosing
 
-**Population:** adults with asthma · condition asthma · age group adult.
+**Population:** asthma patients · condition asthma · age group adult.
+
+**Dosing:** 0.6 mg, inhaled, single.
 
 ## Model
 
@@ -29,8 +31,6 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 <figure class="pk-models-diagram"><img src="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference.svg" alt="Salbutamol_Marques2024v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | ka (h−1) | kabs | 13.55 | h−1 | 18.0 |
@@ -41,7 +41,7 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,7 +55,7 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 The record provides values for absorption rate, clearance, and central volume, but bioavailability (F), lag time, and the reverse intercompartmental clearance (k21) were not extracted. Consequently, placeholder values were applied to these parameters rather than using specific estimates from the study. The model also lists a peripheral volume of 0 L despite having a defined intercompartmental clearance. Extracted — salbutamol: kabs 13.6 h−1, CL 34.9 L/h, Q 10.6 L/h, V1 163 L, V2 0 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -101,22 +101,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[75.01-105.00]` |  | 0.00230 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | salbutamol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | salbutamol | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -206,13 +198,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Patient-Derived Population Pharmacokinetic Model with Real-World Data. Pharmaceutics 16(7) (2024). [doi:10.3390/pharmaceutics16070881](https://doi.org/10.3390/pharmaceutics16070881)
 
-**This record:** Pharmacolibrary v26.09, model `Salbutamol_Marques2024v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference>
+**This record:** Pharmacolibrary, model `Salbutamol_Marques2024v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SalbutamolMarques2024v2reference,
   title  = {{Pharmacolibrary model Salbutamol_Marques2024v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference},
   note   = {Parameters from doi:10.3390/pharmaceutics16070881},
 }
@@ -231,5 +222,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Marques2024v2_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Marques2024v2_reference%0APaper%3A%20Marques_2024_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Marques2024v2_reference&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Marques2024v2_reference%0APaper%3A%20Marques_2024_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 09:07 UTC</sub>

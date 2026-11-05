@@ -182,13 +182,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Ivaturi V, Dvorak CC, Chan D, Liu T, Cowan MJ, Wahlstrom J et al. Pharmacokinetics and Model-Based Dosing to Optimize Fludarabine Therapy in Pediatric Hematopoietic Cell Transplant Recipients. Biology of blood and marrow transplantation : journal of the American Society for Blood and Marrow Transplantation 23(10):1701–1713 (2017). [doi:10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021)
 
-**This record:** Pharmacolibrary v26.09, model `Fludarabine_Ivaturi2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference>
+**This record:** Pharmacolibrary, model `Fludarabine_Ivaturi2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FludarabineIvaturi2017reference,
   title  = {{Pharmacolibrary model Fludarabine_Ivaturi2017_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference},
   note   = {Parameters from doi:10.1016/j.bbmt.2017.06.021},
 }
@@ -203,5 +202,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludarabine%5D%20Fludarabine_Ivaturi2017_reference&body=Drug%3A%20fludarabine%0ARecord%3A%20Fludarabine_Ivaturi2017_reference%0APaper%3A%20Ivaturi_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludarabine%5D%20Fludarabine_Ivaturi2017_reference&body=Drug%3A%20fludarabine%0ARecord%3A%20Fludarabine_Ivaturi2017_reference%0APaper%3A%20Ivaturi_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:51 UTC</sub>

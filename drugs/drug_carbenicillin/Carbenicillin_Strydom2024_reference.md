@@ -191,13 +191,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Strydom N, Ernest JP, Imperial M, Solans BP, Wang Q, Tasneen R et al. Dose optimization of TBI-223 for enhanced therapeutic benefit compared to linezolid in antituberculosis regimen. Nature communications 15(1):7311 (2024). [doi:10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4)
 
-**This record:** Pharmacolibrary v26.09, model `Carbenicillin_Strydom2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference>
+**This record:** Pharmacolibrary, model `Carbenicillin_Strydom2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarbenicillinStrydom2024reference,
   title  = {{Pharmacolibrary model Carbenicillin_Strydom2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference},
   note   = {Parameters from doi:10.1038/s41467-024-50781-4},
 }
@@ -216,5 +215,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbenicillin%5D%20Carbenicillin_Strydom2024_reference&body=Drug%3A%20carbenicillin%0ARecord%3A%20Carbenicillin_Strydom2024_reference%0APaper%3A%20Strydom_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbenicillin%5D%20Carbenicillin_Strydom2024_reference&body=Drug%3A%20carbenicillin%0ARecord%3A%20Carbenicillin_Strydom2024_reference%0APaper%3A%20Strydom_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbenicillin/Carbenicillin_Strydom2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -169,13 +169,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Fau JB, El-Cheikh R, Brillac C, Koiwai K, Mace N, Campana F et al. Drug-Disease Interaction and Time-Dependent Population Pharmacokinetics of Isatuximab in Relapsed/Refractory Multiple Myeloma Patients. CPT: pharmacometrics & systems pharmacology 9(11):649–658 (2020). [doi:10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561)
 
-**This record:** Pharmacolibrary v26.09, model `Pomalidomide_Fau2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference>
+**This record:** Pharmacolibrary, model `Pomalidomide_Fau2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PomalidomideFau2020reference,
   title  = {{Pharmacolibrary model Pomalidomide_Fau2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference},
   note   = {Parameters from doi:10.1002/psp4.12561},
 }
@@ -194,5 +193,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpomalidomide%5D%20Pomalidomide_Fau2020_reference&body=Drug%3A%20pomalidomide%0ARecord%3A%20Pomalidomide_Fau2020_reference%0APaper%3A%20Fau_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpomalidomide%5D%20Pomalidomide_Fau2020_reference&body=Drug%3A%20pomalidomide%0ARecord%3A%20Pomalidomide_Fau2020_reference%0APaper%3A%20Fau_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:11 UTC</sub>

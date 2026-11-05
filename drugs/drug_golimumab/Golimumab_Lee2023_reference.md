@@ -179,13 +179,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Lee JB, Zhou W, Xu Z, Hedrick JA, Leu JH. Population Pharmacokinetics and Exposure-Response Modeling Analyses of Golimumab in Children and Young Adults With Recently Diagnosed Type 1 Diabetes. Journal of clinical pharmacology 63(6):721–731 (2023). [doi:10.1002/jcph.2217](https://doi.org/10.1002/jcph.2217)
 
-**This record:** Pharmacolibrary v26.09, model `Golimumab_Lee2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_golimumab/Golimumab_Lee2023_reference>
+**This record:** Pharmacolibrary, model `Golimumab_Lee2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_golimumab/Golimumab_Lee2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_GolimumabLee2023reference,
   title  = {{Pharmacolibrary model Golimumab_Lee2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_golimumab/Golimumab_Lee2023_reference},
   note   = {Parameters from doi:10.1002/jcph.2217},
 }
@@ -204,5 +203,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgolimumab%5D%20Golimumab_Lee2023_reference&body=Drug%3A%20golimumab%0ARecord%3A%20Golimumab_Lee2023_reference%0APaper%3A%20Lee_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_golimumab/Golimumab_Lee2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgolimumab%5D%20Golimumab_Lee2023_reference&body=Drug%3A%20golimumab%0ARecord%3A%20Golimumab_Lee2023_reference%0APaper%3A%20Lee_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_golimumab/Golimumab_Lee2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:10 UTC</sub>

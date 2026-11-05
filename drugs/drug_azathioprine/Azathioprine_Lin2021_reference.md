@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant was set to a library default rather than an extracted value, while covariate effects on 6-thioguanine nucleotides were defined but never simulated.
+> This record was reviewed on 2026-10-22 15:26 UTC (Needs review), but the paper was screened again on 2026-11-03 15:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="needs_review" stale="false" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="extracted" stale="true" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics of azathioprine active metabolite in patients with inflammatory bowel disease and dosage regimens optimisation. Basic & clinical pharmacology & toxicology 128(3):482–492 (2021).
@@ -17,9 +17,7 @@ Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** adult patients with inflammatory bowel disease · condition inflammatory bowel disease · age group adult.
-
-**Dosing:** 50 mg, oral, multiple, every 24 h.
+**Population:** adult patients with inflammatory bowel disease · condition inflammatory bowel disease · age group adult · n = 100.
 
 **Dosed compound ≠ measured compound:** dosed azathioprine, measured 6-thioguanine nucleotides.
 
@@ -33,15 +31,13 @@ Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics
 <figure class="pk-models-diagram"><img src="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference.svg" alt="Azathioprine_Lin2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CLp(L/h) | CLm/F | 11.6 | L/h | 6.4 | 0.342 (8.8% RSE) |
+| θTPMT | equation variable | 0.515 |  | 23.7 |  |
 | Vp(L) | V | 809 | L | 18.2 |  |
 | θBW | θBW | 0.625 |  |  |  |
 | θMESA | θMESA | 0.802 |  |  |  |
-| θTPMT | θTPMT | 0.515 |  |  |  |
 
 ## Caveats
 
@@ -49,7 +45,7 @@ Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +59,7 @@ Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics
 
 The record lists ka and Tlag as defaulted parameters, meaning the absorption phase uses placeholder values instead of estimates from Lin_2021. Although coefficients for body weight, mesalamine, and TPMT are defined, the simulation process only tested the reference individual, leaving these covariate effects unverified. This mismatch between the defined structural complexity and the limited simulation scope contributed to the refusal. Extracted — 6-thioguanine nucleotides: CLm/F 11.6 L/h, V 809 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,10 +68,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLp(L/h) | `Q351` · CLm/F | 11.6 | L/h | 3.222e-06 | m3/s | l/h | 6.4 | exact (1) | Lin_2021_table_p23_1:row1:col1, Lin_2021_table_p23_1:row1:col5 | 0.342 (8.8% RSE) |
+| θTPMT | `Q900` · equation variable | 0.515 |  |  |  |  | 23.7 | llm (0.6) | Lin_2021_table_p23_1:row4:col1, Lin_2021_table_p23_1:row4:col5 |  |
 | Vp(L) | `Q61` · V | 809 | L | 0.809 | m3 | l | 18.2 | exact (1) | Lin_2021_table_p23_1:row5:col1, Lin_2021_table_p23_1:row5:col5 |  |
 | θBW | `Q900` · θBW | 0.625 |  |  |  |  |  |  |  |  |
 | θMESA | `Q900` · θMESA | 0.802 |  |  |  |  |  |  |  |  |
-| θTPMT | `Q900` · θTPMT | 0.515 |  |  |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -96,13 +92,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - column 'relative bias (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - kept covariate coefficient θBW=0.625 (covariate BW) — not an ontology parameter
 - kept covariate coefficient θMESA=0.802 (covariate MESA) — not an ontology parameter
-- kept covariate coefficient θTPMT=0.515 (covariate TPMT) — not an ontology parameter
 - metabolite 6-thioguanine nucleotides: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'Vp(L)' Q63→Q61 for 6-thioguanine nucleotides — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-thioguanine nucleotides
 - template fit: none — only the metabolite is modelled — no parent compartment
 - row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 4 linked by role
+- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
+- molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures '6-thioguanine nucleotides', not azathioprine — the review values are the parent's
+- kept covariate coefficient θTPMT=0.515 (covariate TPMT) — not an ontology parameter
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -110,28 +108,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.071 (1/14 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[cl p]` |  | 11.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl p]` | 11.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tpmt]` |  | 0.515 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tpmt]` | 0.515 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v p]` |  | 809 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v p]` | 809 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ bw]` | 0.625 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ bw]` |  | 0.625 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ mesa]` | 0.802 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ mesa]` |  | 0.802 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[clp]` |  | 11.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp]` | 11.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` |  | 809 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 809 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbw]` |  | 0.625 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbw]` | 0.625 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θmesa]` | 0.802 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θmesa]` |  | 0.802 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θtpmt]` | 0.515 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θtpmt]` |  | 0.515 | only_one_extracted |
 | `gpt-oss-120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | unknown | mismatch |
 
 </details>
@@ -220,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Lin R, Lin W, Wang C, Dong J, Zheng W, Zeng D et al. Population pharmacokinetics of azathioprine active metabolite in patients with inflammatory bowel disease and dosage regimens optimisation. Basic & clinical pharmacology & toxicology 128(3):482–492 (2021). [doi:10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530)
 
-**This record:** Pharmacolibrary v26.09, model `Azathioprine_Lin2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Lin2021_reference>
+**This record:** Pharmacolibrary, model `Azathioprine_Lin2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Lin2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AzathioprineLin2021reference,
   title  = {{Pharmacolibrary model Azathioprine_Lin2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Lin2021_reference},
   note   = {Parameters from doi:10.1111/bcpt.13530},
 }
@@ -245,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20Azathioprine_Lin2021_reference&body=Drug%3A%20azathioprine%0ARecord%3A%20Azathioprine_Lin2021_reference%0APaper%3A%20Lin_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/Azathioprine_Lin2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20Azathioprine_Lin2021_reference&body=Drug%3A%20azathioprine%0ARecord%3A%20Azathioprine_Lin2021_reference%0APaper%3A%20Lin_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/Azathioprine_Lin2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 15:27 UTC</sub>

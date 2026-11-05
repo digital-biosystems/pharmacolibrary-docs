@@ -245,13 +245,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yamamoto PA, Vozmediano V, Cristofoletti R, Jiang J, Schmittgen TD, de Gaitani CM et al. Rerouting cardiovascular management following gastric bypass surgery: Dose optimization of carvedilol using population-based analysis. British journal of clinical pharmacology 90(9):2223–2235 (2024). [doi:10.1111/bcp.16129](https://doi.org/10.1111/bcp.16129)
 
-**This record:** Pharmacolibrary v26.09, model `Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim>
+**This record:** Pharmacolibrary, model `Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim`. <https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim>
 
 ```bibtex
 @misc{pharmacolibrary_CarvedilolYamamoto2024finalscarvedilolfinalmodelestim,
   title  = {{Pharmacolibrary model Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim},
   note   = {Parameters from doi:10.1111/bcp.16129},
 }
@@ -270,5 +269,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&body=Drug%3A%20carvedilol%0ARecord%3A%20Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim%0APaper%3A%20Yamamoto_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarvedilol%5D%20Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&body=Drug%3A%20carvedilol%0ARecord%3A%20Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim%0APaper%3A%20Yamamoto_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:34 UTC</sub>

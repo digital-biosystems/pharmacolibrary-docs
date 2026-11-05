@@ -101,13 +101,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Buspirone_Waeber1997_PD_35s_gtpgammas_binding`. <https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_Waeber1997_PD_35s_gtpgammas_binding>
+**This record:** Pharmacolibrary, model `Buspirone_Waeber1997_PD_35s_gtpgammas_binding`. <https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_Waeber1997_PD_35s_gtpgammas_binding>
 
 ```bibtex
 @misc{pharmacolibrary_BuspironeWaeber1997PD35sgtpgammasbinding,
   title  = {{Pharmacolibrary model Buspirone_Waeber1997_PD_35s_gtpgammas_binding}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_buspirone/Buspirone_Waeber1997_PD_35s_gtpgammas_binding},
 }
 ```
@@ -121,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuspirone%5D%20pd_Waeber_1997_35S_GTPgammaS_binding&body=Drug%3A%20buspirone%0ARecord%3A%20pd_Waeber_1997_35S_GTPgammaS_binding%0APaper%3A%20Waeber_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buspirone/pd_Waeber_1997_35S_GTPgammaS_binding%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuspirone%5D%20pd_Waeber_1997_35S_GTPgammaS_binding&body=Drug%3A%20buspirone%0ARecord%3A%20pd_Waeber_1997_35S_GTPgammaS_binding%0APaper%3A%20Waeber_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buspirone/pd_Waeber_1997_35S_GTPgammaS_binding%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [buspirone](drugs/drug_buspirone/)</sub>

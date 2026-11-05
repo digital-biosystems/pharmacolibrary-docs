@@ -183,13 +183,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population pharmacokinetic-pharmacodynamic modeling of moxonidine using 24-hour ambulatory blood pressure measurements. Clinical pharmacology and therapeutics 64(6):622–635 (1998). [doi:10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4)
 
-**This record:** Pharmacolibrary v26.09, model `Moxonidine_Hempel1998_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Hempel1998_reference>
+**This record:** Pharmacolibrary, model `Moxonidine_Hempel1998_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Hempel1998_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MoxonidineHempel1998reference,
   title  = {{Pharmacolibrary model Moxonidine_Hempel1998_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_moxonidine/Moxonidine_Hempel1998_reference},
   note   = {Parameters from doi:10.1016/S0009-9236(98)90053-4},
 }
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D%20Moxonidine_Hempel1998_reference&body=Drug%3A%20moxonidine%0ARecord%3A%20Moxonidine_Hempel1998_reference%0APaper%3A%20Hempel_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/Moxonidine_Hempel1998_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 12:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxonidine%5D%20Moxonidine_Hempel1998_reference&body=Drug%3A%20moxonidine%0ARecord%3A%20Moxonidine_Hempel1998_reference%0APaper%3A%20Hempel_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxonidine/Moxonidine_Hempel1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 12:37 UTC</sub>

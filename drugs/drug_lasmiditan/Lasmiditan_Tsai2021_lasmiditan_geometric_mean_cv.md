@@ -225,13 +225,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics, Safety, and Tolerability of Lasmiditan in Pediatric Patients with Migraine. Clinical pharmacokinetics 60(6):819-828 (2021). [doi:10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z)
 
-**This record:** Pharmacolibrary v26.09, model `Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv`. <https://pharmacolibrary.github.io/#/drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv>
+**This record:** Pharmacolibrary, model `Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv`. <https://pharmacolibrary.github.io/#/drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv>
 
 ```bibtex
 @misc{pharmacolibrary_LasmiditanTsai2021lasmiditangeometricmeancv,
   title  = {{Pharmacolibrary model Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv},
   note   = {Parameters from doi:10.1007/s40262-020-00966-z},
 }
@@ -250,5 +249,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blasmiditan%5D%20Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv&body=Drug%3A%20lasmiditan%0ARecord%3A%20Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv%0APaper%3A%20Tsai_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 06:26 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blasmiditan%5D%20Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv&body=Drug%3A%20lasmiditan%0ARecord%3A%20Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv%0APaper%3A%20Tsai_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 06:26 UTC</sub>

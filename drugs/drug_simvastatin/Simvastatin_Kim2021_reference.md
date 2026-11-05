@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Kim_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Kim2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Only clearance was extracted — no volume.
+> This record was reviewed on 2026-10-22 14:37 UTC (Needs review), but the paper was screened again on 2026-11-04 13:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kim2021_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="simvastatin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kim2021_reference" status="needs_review" stale="true" population="beagle dogs" measured-compound="simvastatin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kim MS, Baek IH. Pharmacokinetic analysis of two different doses of simvastatin following oral administration in dogs. Journal of veterinary pharmacology and therapeutics 44(3):333–341 (2021).
@@ -17,7 +17,7 @@ Kim MS, Baek IH. Pharmacokinetic analysis of two different doses of simvastatin 
 
 ## Population and dosing
 
-**Population:** beagle dogs · condition healthy · n = &gt;40.
+**Population:** beagle dogs · condition healthy · age group adult · n = ,.
 
 **Dosing:** 20, 80 mg, oral, single.
 
@@ -26,8 +26,8 @@ Kim MS, Baek IH. Pharmacokinetic analysis of two different doses of simvastatin 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -38,10 +38,11 @@ Kim MS, Baek IH. Pharmacokinetic analysis of two different doses of simvastatin 
 | Ka (h-1) | kabs | 1.83 | h-1 | 24.8 |
 | CL/F (L/h) | CL/F | 292 | L/h | 14.6 |
 | Q/F ( L/h) | Q/F | 73.2 | L/h | 37.8 |
+| Vd/F | V/F | 40.18 | L/kg |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,6 +67,7 @@ Independently confirmed by `gpt-oss-120b`.
 | Ka (h-1) | `Q49` · kabs | 1.83 | h-1 | 0.0005083 | 1/s | 1/h | 24.8 | exact (1) | Kim_2021_table_p4_2:row2:col1 |
 | CL/F (L/h) | `Q27` · CL/F | 292 | L/h | 8.111e-05 | m3/s | l/h | 14.6 | exact (1) | Kim_2021_table_p4_2:row3:col1 |
 | Q/F ( L/h) | `Q69` · Q/F | 73.2 | L/h | 2.033e-05 | m3/s | l/h | 37.8 | exact (1) | Kim_2021_table_p4_2:row5:col1 |
+| Vd/F | `Q76` · V/F | 40.18 | L/kg | 2.813 | m3 | L |  | review_gapfill (0.7) | Borijihan_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,6 +84,7 @@ Independently confirmed by `gpt-oss-120b`.
 - table section residual_error: 'Proportional (%)' routed out of structural estimates ('Residual variability')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=simvastatin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- gap-filled Q76 (V/F) from Borijihan_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -96,7 +99,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -116,9 +119,11 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Kim_2021_table_p4_2:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kim_2021_table_p4_2:row2:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Kim_2021_table_p4_2:row5:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Borijihan_2026:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 292 L/h | ['Kim_2021_table_p4_2:row3:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2.81e+03 L | ['Borijihan_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -148,13 +153,12 @@ _All readers agree on the compared fields of this record._
 
 **Source paper** (the parameters are its): Kim MS, Baek IH. Pharmacokinetic analysis of two different doses of simvastatin following oral administration in dogs. Journal of veterinary pharmacology and therapeutics 44(3):333–341 (2021). [doi:10.1111/jvp.12944](https://doi.org/10.1111/jvp.12944)
 
-**This record:** Pharmacolibrary v26.09, model `Simvastatin_Kim2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Kim2021_reference>
+**This record:** Pharmacolibrary, model `Simvastatin_Kim2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Kim2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SimvastatinKim2021reference,
   title  = {{Pharmacolibrary model Simvastatin_Kim2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Kim2021_reference},
   note   = {Parameters from doi:10.1111/jvp.12944},
 }
@@ -169,5 +173,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Kim2021_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Kim2021_reference%0APaper%3A%20Kim_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Kim2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Kim2021_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Kim2021_reference%0APaper%3A%20Kim_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Kim2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 13:02 UTC</sub>

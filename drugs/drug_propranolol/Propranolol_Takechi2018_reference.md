@@ -203,13 +203,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Takechi T, Kumokawa T, Kato R, Higuchi T, Kaneko T, Ieiri I. Population Pharmacokinetics and Pharmacodynamics of Oral Propranolol in Pediatric Patients With Infantile Hemangioma. Journal of clinical pharmacology 58(10):1361–1370 (2018). [doi:10.1002/jcph.1149](https://doi.org/10.1002/jcph.1149)
 
-**This record:** Pharmacolibrary v26.09, model `Propranolol_Takechi2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Takechi2018_reference>
+**This record:** Pharmacolibrary, model `Propranolol_Takechi2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Takechi2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PropranololTakechi2018reference,
   title  = {{Pharmacolibrary model Propranolol_Takechi2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Takechi2018_reference},
   note   = {Parameters from doi:10.1002/jcph.1149},
 }
@@ -228,5 +227,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Takechi2018_reference&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Takechi2018_reference%0APaper%3A%20Takechi_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Takechi2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20Propranolol_Takechi2018_reference&body=Drug%3A%20propranolol%0ARecord%3A%20Propranolol_Takechi2018_reference%0APaper%3A%20Takechi_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/Propranolol_Takechi2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 12:33 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Bae_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Bae2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
 
-> Bioavailability (F) and lag time (Tlag) were left at library defaults, not estimated in this 5-fluorouracil 2-compartment model, so the profile is not supported by the paper.
+> This record was reviewed on 2026-10-22 14:17 UTC (Needs review), but the paper was screened again on 2026-11-03 21:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Bae2026_reference" status="needs_review" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Bae2026_reference" status="extracted" stale="true" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Bae S, Kim E, Rhee SJ, Kim S, Yu KS, Lee S. Population Pharmacokinetic Analysis of MIT-001, a Novel Ferroptosis Inhibitor, for Dose Optimization. Journal of clinical pharmacology 66(4):e70189 (2026).
@@ -31,19 +31,17 @@ Bae S, Kim E, Rhee SJ, Kim S, Yu KS, Lee S. Population Pharmacokinetic Analysis 
 <figure class="pk-models-diagram"><img src="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference.svg" alt="Fluorouracil_Bae2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | θ1, Typical value for CL | CL | 2.17 | L/h |
 | V1, Central volume of distribution (L) | V1 | 6.89 | L |
 | θ3, Typical value for V2 | V2 | 23.6 | L/kg |
-| Q13, Intercompartmental clearance between V1 and V3 (L/h) | Q | 32.9 | L/h |
+| Q12, Intercompartmental clearance between V1 and V2 (L/h) | Q | 108.0 | L/h |
 | Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.467). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +55,7 @@ Bae S, Kim E, Rhee SJ, Kim S, Yu KS, Lee S. Population Pharmacokinetic Analysis 
 
 The 2-compartment model reports typical values for clearance (2.17 L/h), central volume (6.89 L), peripheral volume (23.6 L/kg), intercompartmental clearance (32.9 L/h), and absorption rate (0.757 h⁻¹), but F and Tlag are absent and thus defaulted. The builder’s substitution log confirms F and Tlag were set by convention rather than extracted, making the simulated profile unsupported by the paper. A second reader also flagged disagreement on several extracted numeric values (16167.4, 10777.2, 94, 2, 87) that this record lists but the reader could not confirm, compounding the uncertainty. Extracted — fluorouracil: CL 2.17 L/h, V1 6.89 L, V2 23.6 L/kg, Q 32.9 L/h, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 16167.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 16167.4, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -68,7 +66,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 | θ1, Typical value for CL | `Q22` · CL | 2.17 | L/h | 6.028e-07 | m3/s | L/h | review (0.7) | Bae_2026:review |
 | V1, Central volume of distribution (L) | `Q63` · V1 | 6.89 | L | 0.00689 | m3 | L | review (0.7) | Bae_2026:review |
 | θ3, Typical value for V2 | `Q64` · V2 | 23.6 | L/kg | 1.652 | m3 | L | review (0.7) | Bae_2026:review |
-| Q13, Intercompartmental clearance between V1 and V3 (L/h) | `Q30` · Q | 32.9 | L/h | 9.139e-06 | m3/s | L/h | review (0.7) | Bae_2026:review |
+| Q12, Intercompartmental clearance between V1 and V2 (L/h) | `Q30` · Q | 108.0 | L/h | 3e-05 | m3/s | L/h | review (0.7) | Bae_2026:review |
 | Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review (0.7) | Bae_2026:review |
 
 <details class="legend">
@@ -92,18 +90,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.467 (7/15 fields) | 8 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q19]` | 16167.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q308]` | 32.9 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q32]` | 10777.2 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 94 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q56]` | 2 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q71]` | 87 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q77]` | 68.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 16167.4 |  | only_one_extracted |
 
 </details>
 
@@ -197,13 +197,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bae S, Kim E, Rhee SJ, Kim S, Yu KS, Lee S. Population Pharmacokinetic Analysis of MIT-001, a Novel Ferroptosis Inhibitor, for Dose Optimization. Journal of clinical pharmacology 66(4):e70189 (2026). [doi:10.1002/jcph.70189](https://doi.org/10.1002/jcph.70189)
 
-**This record:** Pharmacolibrary v26.09, model `Fluorouracil_Bae2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference>
+**This record:** Pharmacolibrary, model `Fluorouracil_Bae2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FluorouracilBae2026reference,
   title  = {{Pharmacolibrary model Fluorouracil_Bae2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference},
   note   = {Parameters from doi:10.1002/jcph.70189},
 }
@@ -222,5 +221,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Bae2026_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Bae2026_reference%0APaper%3A%20Bae_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:56 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Bae2026_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Bae2026_reference%0APaper%3A%20Bae_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:13 UTC</sub>

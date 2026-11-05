@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhuo HT, Lu JZ, Xia XR, Ling SS. Pharmacokinetics of ofloxacin through three administration routes. Zhongguo yao li xue bao = Acta pharmacologica Sinica 15(5):411–413 (1994).
 
-**This record:** Pharmacolibrary v26.09, model `Ofloxacin_Zhuo1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference>
+**This record:** Pharmacolibrary, model `Ofloxacin_Zhuo1994_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference>
 
 ```bibtex
 @misc{pharmacolibrary_OfloxacinZhuo1994reference,
   title  = {{Pharmacolibrary model Ofloxacin_Zhuo1994_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference},
 }
 ```
@@ -232,5 +231,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bofloxacin%5D%20Ofloxacin_Zhuo1994_reference&body=Drug%3A%20ofloxacin%0ARecord%3A%20Ofloxacin_Zhuo1994_reference%0APaper%3A%20Zhuo_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bofloxacin%5D%20Ofloxacin_Zhuo1994_reference&body=Drug%3A%20ofloxacin%0ARecord%3A%20Ofloxacin_Zhuo1994_reference%0APaper%3A%20Zhuo_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ofloxacin/Ofloxacin_Zhuo1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:38 UTC</sub>

@@ -20,25 +20,6 @@ Emicizumab, a monoclonal antibody, is used to treat hemophilia A. It is an appro
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.272 | L/h | 0.272 L/h | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_estimate](drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md) |
-| CL | CL/F | — | L/h | 56.4 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_1_5_mg_kg_qw](drugs/drug_emicizumab/Emicizumab_Retout2020_1_5_mg_kg_qw.md) |
-| CL | CL/F | — | L/h | 56.4 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_3_mg_kg_q2w](drugs/drug_emicizumab/Emicizumab_Retout2020_3_mg_kg_q2w.md) |
-| CL | CL/F | — | L/h | 56.4 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_6_mg_kg_q4w](drugs/drug_emicizumab/Emicizumab_Retout2020_6_mg_kg_q4w.md) |
-| V | V/F | 10.4 | L | 10.4 L | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_estimate](drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md) |
-| V | V/F | — | L | 60.7 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_1_5_mg_kg_qw](drugs/drug_emicizumab/Emicizumab_Retout2020_1_5_mg_kg_qw.md) |
-| V | V/F | — | L | 60.7 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_3_mg_kg_q2w](drugs/drug_emicizumab/Emicizumab_Retout2020_3_mg_kg_q2w.md) |
-| V | V/F | — | L | 60.7 % | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_6_mg_kg_q4w](drugs/drug_emicizumab/Emicizumab_Retout2020_6_mg_kg_q4w.md) |
-| ka | kabs | 0.536 | 1/h | 0.536 1/h | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_estimate](drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md) |
-| t½ | t1/2z | 643.2 | h | 26.8 day | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_1_5_mg_kg_qw](drugs/drug_emicizumab/Emicizumab_Retout2020_1_5_mg_kg_qw.md) |
-| t½ | t1/2z | 643.2 | h | 26.8 day | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_3_mg_kg_q2w](drugs/drug_emicizumab/Emicizumab_Retout2020_3_mg_kg_q2w.md) |
-| t½ | t1/2z | 643.2 | h | 26.8 day | adult and pediatric persons with hemophilia A | 389 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Retout_2020_6_mg_kg_q4w](drugs/drug_emicizumab/Emicizumab_Retout2020_6_mg_kg_q4w.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -111,5 +92,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bemicizumab%5D&body=Drug%3A%20emicizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_emicizumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 18:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bemicizumab%5D&body=Drug%3A%20emicizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_emicizumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 18:44 UTC</sub>

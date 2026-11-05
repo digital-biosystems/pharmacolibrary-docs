@@ -33,21 +33,9 @@ Osimertinib is a third-generation EGFR tyrosine kinase inhibitor used to treat n
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 13.7 | L/h | 13.7 L/h | adults with advanced EGFR-mutant NSCLC | 87 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodier_2022_reference](drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md) |
-| CL | CL/F | 14.3 | L/h | 14.3 L/h | patients with advanced non-small cell lung cancer | 1364 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johnson_2025_reference](drugs/drug_osimertinib/Osimertinib_Johnson2025_reference.md) |
-| CL | CL/F | 19 | L/h | 19.0 L/h | patients with NSCLC in the OSIBOOST cohort | 11 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Westra_2025_reference](drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md) |
-| V | V/F | 918 | L | 918 L | patients with advanced non-small cell lung cancer | 1364 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johnson_2025_reference](drugs/drug_osimertinib/Osimertinib_Johnson2025_reference.md) |
-| V | V/F | 966 | L | 966 L | patients with NSCLC in the OSIBOOST cohort | 11 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Westra_2025_reference](drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md) |
-| V | V/F | 974 | L | 974 L | adults with advanced EGFR-mutant NSCLC | 87 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodier_2022_reference](drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md) |
-| ka | kabs | 0.196 | 1/h | 0.196 1/h | patients with advanced non-small cell lung cancer | 1364 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Johnson_2025_reference](drugs/drug_osimertinib/Osimertinib_Johnson2025_reference.md) |
-| ka | kabs | 0.24 | 1/h | 0.24 1/h | adults with advanced EGFR-mutant NSCLC | 87 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodier_2022_reference](drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md) |
-| ka | kabs | 0.24 | 1/h | 0.24 1/h | patients with NSCLC in the OSIBOOST cohort | 11 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Westra_2025_reference](drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rodier_2022 · CL/F</text><circle cx="237.9" cy="30.0" r="4" fill="#2e7d32"><title>Rodier_2022 · CL/F: 13.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Johnson_2025 · CL/F</text><circle cx="244.4" cy="46.0" r="4" fill="#ef6c00"><title>Johnson_2025 · CL/F: 14.3 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Westra_2025 · CL/F</text><circle cx="287.6" cy="62.0" r="4" fill="#2e7d32"><title>Westra_2025 · CL/F: 19 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Johnson_2025 · V/F</text><circle cx="527.0" cy="30.0" r="4" fill="#ef6c00"><title>Johnson_2025 · V/F: 918 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Westra_2025 · V/F</text><circle cx="534.7" cy="46.0" r="4" fill="#2e7d32"><title>Westra_2025 · V/F: 966 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rodier_2022 · V/F</text><circle cx="536.0" cy="62.0" r="4" fill="#2e7d32"><title>Rodier_2022 · V/F: 974 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -162,5 +150,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bosimertinib%5D&body=Drug%3A%20osimertinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_osimertinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bosimertinib%5D&body=Drug%3A%20osimertinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_osimertinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:49 UTC</sub>

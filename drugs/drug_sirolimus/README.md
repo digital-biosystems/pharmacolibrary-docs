@@ -31,20 +31,9 @@ Sirolimus is an immunosuppressive medicine used to prevent rejection of transpla
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.042 | L/h | 0.042 L/hour | neonates who underwent sirolimus-eluting stent implantation in the arterial duct | 9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lee_2015_reference](drugs/drug_sirolimus/Sirolimus_Lee2015_reference.md) |
-| CL | CL | 1.512 ‡ | L/h | 0.36 mL/kg/min | healthy adult horses | 8 | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [de_2023_reference](drugs/drug_sirolimus/Sirolimus_de2023_reference.md) |
-| CL | CL/F | 2.79 | L/h | 2.79 L/h | children with tuberous sclerosis complex | 64 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2022_reference](drugs/drug_sirolimus/Sirolimus_Li2022_reference.md) |
-| CL | CL/F | 8.9 | L/h | 8.9 L/hr | kidney transplant patients | 36 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_1997_reference](drugs/drug_sirolimus/Sirolimus_Ferron1997_reference.md) |
-| V | V | 25.98 ‡ | L | 371.2 mL/kg | healthy adult horses | 8 | horse | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [de_2023_reference](drugs/drug_sirolimus/Sirolimus_de2023_reference.md) |
-| V | V/F | 69.48 | L | 69.48 L | children with tuberous sclerosis complex | 64 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2022_reference](drugs/drug_sirolimus/Sirolimus_Li2022_reference.md) |
-| ka | kabs | 2.77 | 1/h | 2.77 hr-1 | kidney transplant patients | 36 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_1997_reference](drugs/drug_sirolimus/Sirolimus_Ferron1997_reference.md) |
-| t½ | t1/2z | 63 | h | 63 hours | kidney transplant patients | 36 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ferron_1997_reference](drugs/drug_sirolimus/Sirolimus_Ferron1997_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="306.7" y1="18" x2="306.7" y2="90" stroke="#ddd"/><text x="306.7" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="423.3" y1="18" x2="423.3" y2="90" stroke="#ddd"/><text x="423.3" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2015 · CL</text><circle cx="262.7" cy="30.0" r="4" fill="#ef6c00"><title>Lee_2015 · CL: 0.042 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">de_2023 · CL ·/kg</text><circle cx="444.3" cy="46.0" r="4" fill="#2e7d32"><title>de_2023 · CL ·/kg: 1.512 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Li_2022 · CL/F</text><circle cx="475.3" cy="62.0" r="4" fill="#ef6c00"><title>Li_2022 · CL/F: 2.79 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ferron_1997 · CL/F</text><circle cx="534.1" cy="78.0" r="4" fill="#ef6c00"><title>Ferron_1997 · CL/F: 8.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">de_2023 · V ·/kg</text><circle cx="335.1" cy="30.0" r="4" fill="#2e7d32"><title>de_2023 · V ·/kg: 25.98 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2022 · V/F</text><circle cx="484.7" cy="46.0" r="4" fill="#ef6c00"><title>Li_2022 · V/F: 69.48 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -144,5 +133,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsirolimus%5D&body=Drug%3A%20sirolimus%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sirolimus/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsirolimus%5D&body=Drug%3A%20sirolimus%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sirolimus/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:57 UTC</sub>

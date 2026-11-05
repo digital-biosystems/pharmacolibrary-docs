@@ -31,20 +31,9 @@ Ornithine is used in liver therapy, as a lipotropic agent for liver conditions. 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.006375 | L/h | 0.153 L/day | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Serkland_2026_reference](drugs/drug_ornithine/Ornithine_Serkland2026_reference.md) |
-| CL | CL | 0.133 | L/h | 0.133 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kwack_2026_reference](drugs/drug_ornithine/Ornithine_Kwack2026_reference.md) |
-| CL | CL/F | 7.48 | L/h | 7.48 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Jia_2026_reference](drugs/drug_ornithine/Ornithine_Jia2026_reference.md) |
-| V | V/F | 4.75 | L | 4.75 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Jia_2026_reference](drugs/drug_ornithine/Ornithine_Jia2026_reference.md) |
-| V | V1 | 2.58 | L | 2.58 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Serkland_2026_reference](drugs/drug_ornithine/Ornithine_Serkland2026_reference.md) |
-| V | V1 | 4.59 | L | 4.59 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kwack_2026_reference](drugs/drug_ornithine/Ornithine_Kwack2026_reference.md) |
-| ka | kabs | 0.14 | 1/h | 0.14 1/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Jia_2026_reference](drugs/drug_ornithine/Ornithine_Jia2026_reference.md) |
-| ka | kabs | 0.545 | 1/h | 0.545 h−1 | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Kwack_2026_reference](drugs/drug_ornithine/Ornithine_Kwack2026_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.001</text><line x1="277.5" y1="18" x2="277.5" y2="74" stroke="#ddd"/><text x="277.5" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="452.5" y1="18" x2="452.5" y2="74" stroke="#ddd"/><text x="452.5" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Serkland_2026 · CL</text><circle cx="260.4" cy="30.0" r="4" fill="#78909c"><title>Serkland_2026 · CL: 0.006375 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kwack_2026 · CL</text><circle cx="375.8" cy="46.0" r="4" fill="#78909c"><title>Kwack_2026 · CL: 0.133 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jia_2026 · CL/F</text><circle cx="529.0" cy="62.0" r="4" fill="#78909c"><title>Jia_2026 · CL/F: 7.48 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jia_2026 · V/F</text><circle cx="426.8" cy="30.0" r="4" fill="#78909c"><title>Jia_2026 · V/F: 4.75 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Serkland_2026 · V1</text><circle cx="334.1" cy="46.0" r="4" fill="#78909c"><title>Serkland_2026 · V1: 2.58 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kwack_2026 · V1</text><circle cx="421.6" cy="62.0" r="4" fill="#78909c"><title>Kwack_2026 · V1: 4.59 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -243,5 +232,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bornithine%5D&body=Drug%3A%20ornithine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ornithine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 19:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bornithine%5D&body=Drug%3A%20ornithine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ornithine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 19:35 UTC</sub>

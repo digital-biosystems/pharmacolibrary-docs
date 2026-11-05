@@ -22,15 +22,6 @@ Dezocine is an opioid painkiller used to treat pain. It is an approved opioid an
 |---|---|---|---|---|---|---|
 | dezocine | parent | 245.36 | C16H23NO | DrugBank | [3033053](https://pubchem.ncbi.nlm.nih.gov/compound/3033053) | Sisenwine_1982 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 230.2 ‡ | L/h | 54.8 ml/min/kg | rhesus monkeys and dogs | monkey | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sisenwine_1982_reference](drugs/drug_dezocine/Dezocine_Sisenwine1982_reference.md) |
-| t½ | t1/2z | 2.4 | h | 2.4 hr | rhesus monkeys and dogs | monkey | <span class="pk-badge pk-badge--orange">Needs review</span> | [Sisenwine_1982_reference](drugs/drug_dezocine/Dezocine_Sisenwine1982_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +95,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdezocine%5D&body=Drug%3A%20dezocine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dezocine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdezocine%5D&body=Drug%3A%20dezocine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dezocine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:23 UTC</sub>

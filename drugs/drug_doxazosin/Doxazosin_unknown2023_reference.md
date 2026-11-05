@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This record was reviewed on 2026-10-22 14:34 UTC (Needs review), but the paper was screened again on 2026-11-03 07:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> This record was reviewed on 2026-11-03 07:58 UTC (Needs review), but the paper was screened again on 2026-11-03 14:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
 <div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_unknown2023_reference" status="extracted" stale="true" population="" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,9 +47,9 @@ IPNA 2022 - Abstract Book. Pediatric nephrology (Berlin, Germany) 38(7):2255-249
 
 ### Reviewer guidance
 
-**Doxazosin bioavailability and absorption lag time lack explicit values, so placeholder values were used and the record was held for review.**
+**Bioavailability and lag time were left at library defaults, unsupported by the paper, causing the doxazosin record to require review.**
 
-The record provides estimates for clearance, volume of distribution, and absorption rate, but omits bioavailability and lag time. Library placeholders were substituted for these missing parameters instead of using paper-specific estimates or stated conventions. This deviation affected the simulated profile without direct support from the source text, leading to a needs-review verdict. Extracted — doxazosin: CL 22 L h-1, V 32.9 L 70kg-1, kabs 0.077 h-1.
+The record lists clearance, volume, and absorption rate, but omits explicit values for bioavailability (F) and lag time (Tlag). These parameters were substituted with library defaults rather than estimates from the cited review. A second reader could not identify the value for bioavailability in the source, confirming it was not explicitly reported. Extracted — doxazosin: CL 22 L h-1, V 32.9 L 70kg-1, kabs 0.077 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has 0.86, the second reading none. That field does not shape the model.
 
@@ -80,7 +80,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_output_variable | pass | C_central (measured=doxazosin) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -204,4 +204,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxazosin%5D%20Doxazosin_unknown2023_reference&body=Drug%3A%20doxazosin%0ARecord%3A%20Doxazosin_unknown2023_reference%0APaper%3A%20unknown_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxazosin/Doxazosin_unknown2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 14:14 UTC</sub>

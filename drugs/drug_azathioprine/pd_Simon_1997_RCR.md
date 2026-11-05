@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Simon_1997 \u00b7 PD respiratory control ratio&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# respiratory control ratio — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# respiratory control ratio — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Azathioprine (concentrations from the PK model of el-Yazigi_1993) drives respiratory control ratio: direct Emax (saturable) effect.
+**As extracted:** Azathioprine (concentrations from the PK model of Odlind_1986) drives respiratory control ratio: direct Emax (saturable) effect.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
 
@@ -28,7 +28,7 @@
 - **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
@@ -37,7 +37,7 @@ Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Imax | `Q323` ·  | 10.3 |  | llm | Simon_1997:pdv3 |
+| PD (effect) | maximal inhibition | `Q323` ·  | 10.3 | % | llm | Simon_1997:pdv3 |
 | PD (effect) | IC50 | `Q322` ·  | 5.8 | 10e-9 M | llm | Simon_1997:pdv3 |
 
 <details class="legend">
@@ -89,13 +89,15 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | indirect_response_i | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q322].value` | 5.8 | 5.8 × 10⁹ | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` |  | 2.97 | only_one_extracted |
 
 </details>
 
@@ -123,13 +125,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Azathioprine_Simon1997_PD_rcr`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Simon1997_PD_rcr>
+**This record:** Pharmacolibrary, model `Azathioprine_Simon1997_PD_rcr`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Simon1997_PD_rcr>
 
 ```bibtex
 @misc{pharmacolibrary_AzathioprineSimon1997PDrcr,
   title  = {{Pharmacolibrary model Azathioprine_Simon1997_PD_rcr}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_Simon1997_PD_rcr},
 }
 ```
@@ -143,5 +144,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20pd_Simon_1997_RCR&body=Drug%3A%20azathioprine%0ARecord%3A%20pd_Simon_1997_RCR%0APaper%3A%20Simon_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/pd_Simon_1997_RCR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20pd_Simon_1997_RCR&body=Drug%3A%20azathioprine%0ARecord%3A%20pd_Simon_1997_RCR%0APaper%3A%20Simon_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/pd_Simon_1997_RCR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [azathioprine](drugs/drug_azathioprine/)</sub>

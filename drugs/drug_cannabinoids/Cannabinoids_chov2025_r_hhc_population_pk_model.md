@@ -164,13 +164,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Šíchová K, Mallarino B, Janečková L, Palivec P, Vágnerová M, Vejmola Č et al. Hexahydrocannabinol: pharmacokinetics, systemic toxicity, and acute behavioral effects in Wistar rats. The international journal of neuropsychopharmacology 28(8):pyaf041 (2025). [doi:10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041)
 
-**This record:** Pharmacolibrary v26.09, model `Cannabinoids_chov2025_r_hhc_population_pk_model`. <https://pharmacolibrary.github.io/#/drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model>
+**This record:** Pharmacolibrary, model `Cannabinoids_chov2025_r_hhc_population_pk_model`. <https://pharmacolibrary.github.io/#/drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model>
 
 ```bibtex
 @misc{pharmacolibrary_Cannabinoidschov2025rhhcpopulationpkmodel,
   title  = {{Pharmacolibrary model Cannabinoids_chov2025_r_hhc_population_pk_model}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model},
   note   = {Parameters from doi:10.1093/ijnp/pyaf041},
 }
@@ -189,5 +188,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcannabinoids%5D%20Cannabinoids_chov2025_r_hhc_population_pk_model&body=Drug%3A%20cannabinoids%0ARecord%3A%20Cannabinoids_chov2025_r_hhc_population_pk_model%0APaper%3A%20%C5%A0%C3%ADchov%C3%A1_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:53 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcannabinoids%5D%20Cannabinoids_chov2025_r_hhc_population_pk_model&body=Drug%3A%20cannabinoids%0ARecord%3A%20Cannabinoids_chov2025_r_hhc_population_pk_model%0APaper%3A%20%C5%A0%C3%ADchov%C3%A1_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 05:53 UTC</sub>

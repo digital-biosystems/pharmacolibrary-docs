@@ -20,22 +20,12 @@ Anakinra, an interleukin-1 receptor antagonist, is used to treat rheumatoid arth
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.208 | L/h | 0.208 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngo_2020_reference](drugs/drug_anakinra/Anakinra_Ngo2020_reference.md) |
-| V | V1/F | 11.3 | L | 11.3 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngo_2020_reference](drugs/drug_anakinra/Anakinra_Ngo2020_reference.md) |
-| ka | kabs | 1.21 | 1/h | 1.21 1/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngo_2020_reference](drugs/drug_anakinra/Anakinra_Ngo2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ngo_2020_reference](drugs/drug_anakinra/Anakinra_Ngo2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Ngo L et al., Development of a Pharmacokinetic Model…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12555](https://doi.org/10.1002/psp4.12555) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Urien_2013_reference](drugs/drug_anakinra/Anakinra_Urien2013_reference.md) | — | general linear (no model) | 3 | Urien S et al., Anakinra pharmacokinetics in children a…, BMC pharmacology & toxicolo… (2013) | [10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Urien_2013_reference](drugs/drug_anakinra/Anakinra_Urien2013_reference.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Urien S et al., Anakinra pharmacokinetics in children a…, BMC pharmacology & toxicolo… (2013) | [10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40) |
 
 ## Pharmacodynamics (PD)
 
@@ -112,5 +102,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banakinra%5D&body=Drug%3A%20anakinra%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anakinra/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Banakinra%5D&body=Drug%3A%20anakinra%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_anakinra/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:37 UTC</sub>

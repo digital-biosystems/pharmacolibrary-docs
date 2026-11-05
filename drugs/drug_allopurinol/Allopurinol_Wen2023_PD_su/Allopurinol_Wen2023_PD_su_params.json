@@ -46,12 +46,6 @@
    "factor": 0.0009999999999999998,
    "si_unit": "kg/m3"
   },
-  "gamma": {
-   "display_only": true,
-   "display_unit": "",
-   "factor": 1.0,
-   "si_unit": "1"
-  },
   "response_unit": "mg/dL"
  },
  "x_axis": {

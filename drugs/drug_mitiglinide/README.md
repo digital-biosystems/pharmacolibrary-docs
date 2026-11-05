@@ -22,16 +22,6 @@ Mitiglinide is an anti-diabetic medication intended to lower blood sugar in peop
 |---|---|---|---|---|---|---|
 | mitiglinide | parent | 315.413 | C19H25NO3 | DrugBank | [121891](https://pubchem.ncbi.nlm.nih.gov/compound/121891) | Liu_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 7.8 | L/h | 7.8 L/h | healthy Chinese volunteers | &gt;=18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) |
-| V | V/F | 23.96 | L | 23.96 L | healthy Chinese volunteers | &gt;=18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) |
-| ka | kabs | 9.57 | 1/h | 9.57 /h | healthy Chinese volunteers | &gt;=18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -81,5 +71,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitiglinide%5D&body=Drug%3A%20mitiglinide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitiglinide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 02:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitiglinide%5D&body=Drug%3A%20mitiglinide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitiglinide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 02:34 UTC</sub>

@@ -95,13 +95,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Venlafaxine_Maringwa2025_PD_hamd`. <https://pharmacolibrary.github.io/#/drugs/drug_venlafaxine/Venlafaxine_Maringwa2025_PD_hamd>
+**This record:** Pharmacolibrary, model `Venlafaxine_Maringwa2025_PD_hamd`. <https://pharmacolibrary.github.io/#/drugs/drug_venlafaxine/Venlafaxine_Maringwa2025_PD_hamd>
 
 ```bibtex
 @misc{pharmacolibrary_VenlafaxineMaringwa2025PDhamd,
   title  = {{Pharmacolibrary model Venlafaxine_Maringwa2025_PD_hamd}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_venlafaxine/Venlafaxine_Maringwa2025_PD_hamd},
 }
 ```
@@ -115,5 +114,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvenlafaxine%5D%20pd_Maringwa_2025_HAMD&body=Drug%3A%20venlafaxine%0ARecord%3A%20pd_Maringwa_2025_HAMD%0APaper%3A%20Maringwa_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_venlafaxine/pd_Maringwa_2025_HAMD%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvenlafaxine%5D%20pd_Maringwa_2025_HAMD&body=Drug%3A%20venlafaxine%0ARecord%3A%20pd_Maringwa_2025_HAMD%0APaper%3A%20Maringwa_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_venlafaxine/pd_Maringwa_2025_HAMD%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [venlafaxine](drugs/drug_venlafaxine/)</sub>

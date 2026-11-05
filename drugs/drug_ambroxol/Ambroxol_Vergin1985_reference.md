@@ -196,13 +196,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Vergin H, Bishop-Freudling GB, Miczka M, Nitsche V, Strobel K, Matzkies F. [The pharmacokinetics and bioequivalence of various dosage forms of ambroxol]. Arzneimittel-Forschung 35(10):1591–1595 (1985).
 
-**This record:** Pharmacolibrary v26.09, model `Ambroxol_Vergin1985_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference>
+**This record:** Pharmacolibrary, model `Ambroxol_Vergin1985_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AmbroxolVergin1985reference,
   title  = {{Pharmacolibrary model Ambroxol_Vergin1985_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference},
 }
 ```
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bambroxol%5D%20Ambroxol_Vergin1985_reference&body=Drug%3A%20ambroxol%0ARecord%3A%20Ambroxol_Vergin1985_reference%0APaper%3A%20Vergin_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 13:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bambroxol%5D%20Ambroxol_Vergin1985_reference&body=Drug%3A%20ambroxol%0ARecord%3A%20Ambroxol_Vergin1985_reference%0APaper%3A%20Vergin_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 13:32 UTC</sub>

@@ -204,13 +204,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Wu KH, Guo T, Deng CH, Guan Z, Li L, Zhou TY et al. Population pharmacokinetics of modafinil acid and estimation of the metabolic conversion of modafinil into modafinil acid in 5 major ethnic groups of China. Acta pharmacologica Sinica 33(11):1401–1408 (2012). [doi:10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124)
 
-**This record:** Pharmacolibrary v26.09, model `Modafinil_Wu2012_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_modafinil/Modafinil_Wu2012_reference>
+**This record:** Pharmacolibrary, model `Modafinil_Wu2012_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_modafinil/Modafinil_Wu2012_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ModafinilWu2012reference,
   title  = {{Pharmacolibrary model Modafinil_Wu2012_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_modafinil/Modafinil_Wu2012_reference},
   note   = {Parameters from doi:10.1038/aps.2012.124},
 }
@@ -225,5 +224,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D%20Modafinil_Wu2012_reference&body=Drug%3A%20modafinil%0ARecord%3A%20Modafinil_Wu2012_reference%0APaper%3A%20Wu_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/Modafinil_Wu2012_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D%20Modafinil_Wu2012_reference&body=Drug%3A%20modafinil%0ARecord%3A%20Modafinil_Wu2012_reference%0APaper%3A%20Wu_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/Modafinil_Wu2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:55 UTC</sub>

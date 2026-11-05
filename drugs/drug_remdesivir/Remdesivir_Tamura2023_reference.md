@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Tamura_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Tamura2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 14:39 UTC (Rejected), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="rejected" stale="false" population="patients with moderate and severe COVID-19" measured-compound="GS-441524" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="rejected" stale="true" population="patients with moderate and severe COVID-19" measured-compound="GS-441524" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 ## Citation
 Tamura R, Irie K, Nakagawa A, Muroi H, Eto M, Ikesue H et al. Population pharmacokinetics and exposure-clinical outcome relationship of remdesivir major metabolite GS-441524 in patients with moderate and severe COVID-19. CPT: pharmacometrics & systems pharmacology 12(4):513–521 (2023).
@@ -25,8 +25,8 @@ Tamura R, Irie K, Nakagawa A, Muroi H, Eto M, Ikesue H et al. Population pharmac
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
-**Parameterization:** mechanistic.  
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** apparent_wrt_Fm.  
 **Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
@@ -37,7 +37,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. None of the extracted parameters is remdesivir's own; they describe GS-441524. Extracted — GS-441524: ? 0, ? 10, ? 0, ? 150, ? 1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,35 +79,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - $THETA(7) has no $PK binding — index may be misassigned
 - $THETA(8) has no $PK binding — index may be misassigned
 - control_stream: nonlinear kinetics (MM/product $DES or general ODE ADVAN) — manual_model_class, "Needs review"
-- control_stream ADVAN13: topology=manual_model_class, parameterization=mechanistic (clearance)
+- apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
-- template fit: none — nonlinear / manual model class
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=other; 13/13 row label(s) assigned, 0 linked by role
-- molar mass: PubChem entry choice failed (JSONDecodeError)
-- molar mass: none of 1 PubChem candidate(s) is 'GS-441524' (LLM) — left in mass units
-- molar mass: none found for 'GS-441524' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.0 (0/4 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['remdesivir', 'gs-441524', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent_wrt_Fm | mechanistic | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | GS-441524 | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,7 +109,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|
 | C0_has_structural_params | fail | 0 |
 | C0b_disposition_core | fail |  |
-| C8_topology | fail |  |
+| C7_apparent_coherence | pass |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,5 +133,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Tamura2023_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Tamura2023_reference%0APaper%3A%20Tamura_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Tamura2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Tamura2023_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Tamura2023_reference%0APaper%3A%20Tamura_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Tamura2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:19 UTC</sub>

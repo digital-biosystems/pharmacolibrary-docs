@@ -118,13 +118,12 @@ _All readers agree on the compared fields of this PD record._
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Propranolol_Snelder2013_PD_co`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Snelder2013_PD_co>
+**This record:** Pharmacolibrary, model `Propranolol_Snelder2013_PD_co`. <https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Snelder2013_PD_co>
 
 ```bibtex
 @misc{pharmacolibrary_PropranololSnelder2013PDco,
   title  = {{Pharmacolibrary model Propranolol_Snelder2013_PD_co}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_propranolol/Propranolol_Snelder2013_PD_co},
 }
 ```
@@ -138,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20pd_Snelder_2013_CO&body=Drug%3A%20propranolol%0ARecord%3A%20pd_Snelder_2013_CO%0APaper%3A%20Snelder_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/pd_Snelder_2013_CO%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropranolol%5D%20pd_Snelder_2013_CO&body=Drug%3A%20propranolol%0ARecord%3A%20pd_Snelder_2013_CO%0APaper%3A%20Snelder_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propranolol/pd_Snelder_2013_CO%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [propranolol](drugs/drug_propranolol/)</sub>

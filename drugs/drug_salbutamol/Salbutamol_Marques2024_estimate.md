@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Bisaso2026_reference&quot;,&quot;label&quot;:&quot;Bisaso_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Bisaso2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Marques2024_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 15:35 UTC (Needs review), but the paper was screened again on 2026-11-04 09:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_estimate" status="needs_review" stale="false" population="virtual patients with varying characteristics (age, weight, race, gender, health status)" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_estimate" status="needs_review" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population Pharmacokinetic Model for Oral Salbutamol in Virtual Patients. Pharmaceutics 17(1) (2024).
@@ -17,7 +17,7 @@ Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population P
 
 ## Population and dosing
 
-**Population:** virtual patients with varying characteristics (age, weight, race, gender, health status) · age group mixed · n = condition: healthy and cirrhosis.
+**Population:** virtual patients · condition healthy and cirrhosis · age group mixed · n = 40.
 
 **Dosing:** 4 mg, oral, multiple, every 4 h.
 
@@ -43,7 +43,7 @@ Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -83,28 +83,29 @@ Independently confirmed by `gpt-oss-120b`.
 **Interpretation flags:**
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (Cl (L/h)); Q63 (V1 (L)); Q30 (Q (L/h)); Q64 (V2 (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
-- population split: 'estimate' subgroup of Marques_2024 (paper reports 2 populations: estimate, geometric mean)
+- population split: 'estimate' subgroup of Marques_2024 (paper reports 3 populations: estimate, geometric mean, value)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - table pharmaceutics-17-00039-t006: unbound_uncertainty
 - table pharmaceutics-17-00039-t006: unparsed_numeric_cell
+- companion parameter table 3 transcribed (9 record(s))
 - transposed table Marques_2024_table_4: logical view retains original source coordinates
 - companion parameter table 4 transcribed (15 record(s))
 - table Marques_2024_table_7: unbound_uncertainty
 - table Marques_2024_table_7: units_need_context
 - table Marques_2024_table_7: ragged_grid
 - companion parameter table 7 transcribed (24 record(s))
-- LLM selected parameter table(s) 4, 6, 7
+- LLM selected parameter table(s) 3, 4, 6, 7
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (18/18 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -116,22 +117,23 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-17-00039-t006:row5:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-17-00039-t006:row7:col1'] |
-| C5_dimension_Q306 | pass | 1 / [time] |  | ['pharmaceutics-17-00039-t006:row3:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-17-00039-t006:row4:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['pharmaceutics-17-00039-t006:row6:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['pharmaceutics-17-00039-t006:row8:col1'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 140 | ['pharmaceutics-17-00039-t006:row5:col1'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 140 L/h | ['pharmaceutics-17-00039-t006:row5:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 77.5 L | ['pharmaceutics-17-00039-t006:row6:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 130 L | ['pharmaceutics-17-00039-t006:row8:col1'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 7 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_beta | pass | 2.78 | 2.598 | 0.9345 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['pharmaceutics-17-00039-t006:row5:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['pharmaceutics-17-00039-t006:row7:col1'] |
+| C5_dimension_Q306 | pass | 1 / [time] |  |  |  | ['pharmaceutics-17-00039-t006:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['pharmaceutics-17-00039-t006:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['pharmaceutics-17-00039-t006:row6:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['pharmaceutics-17-00039-t006:row8:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 140 |  |  | ['pharmaceutics-17-00039-t006:row5:col1'] |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 140 L/h |  |  | ['pharmaceutics-17-00039-t006:row5:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 77.5 L |  |  | ['pharmaceutics-17-00039-t006:row6:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 130 L |  |  | ['pharmaceutics-17-00039-t006:row8:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,5 +166,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Marques2024_estimate&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Marques2024_estimate%0APaper%3A%20Marques_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Marques2024_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:34 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalbutamol%5D%20Salbutamol_Marques2024_estimate&body=Drug%3A%20salbutamol%0ARecord%3A%20Salbutamol_Marques2024_estimate%0APaper%3A%20Marques_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salbutamol/Salbutamol_Marques2024_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 09:07 UTC</sub>

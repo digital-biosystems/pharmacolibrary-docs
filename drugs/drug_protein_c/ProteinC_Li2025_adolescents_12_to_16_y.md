@@ -213,13 +213,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intravenous protein C concentrate in protein C deficiency: implications for treatment initiation and maintenance. Research and practice in thrombosis and haemostasis 9(3):102859 (2025). [doi:10.1016/j.rpth.2025.102859](https://doi.org/10.1016/j.rpth.2025.102859)
 
-**This record:** Pharmacolibrary v26.09, model `ProteinC_Li2025_adolescents_12_to_16_y`. <https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y>
+**This record:** Pharmacolibrary, model `ProteinC_Li2025_adolescents_12_to_16_y`. <https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y>
 
 ```bibtex
 @misc{pharmacolibrary_ProteinCLi2025adolescents12to16y,
   title  = {{Pharmacolibrary model ProteinC_Li2025_adolescents_12_to_16_y}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y},
   note   = {Parameters from doi:10.1016/j.rpth.2025.102859},
 }
@@ -234,5 +233,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotein_c%5D%20ProteinC_Li2025_adolescents_12_to_16_y&body=Drug%3A%20protein_c%0ARecord%3A%20ProteinC_Li2025_adolescents_12_to_16_y%0APaper%3A%20Li_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 15:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotein_c%5D%20ProteinC_Li2025_adolescents_12_to_16_y&body=Drug%3A%20protein_c%0ARecord%3A%20ProteinC_Li2025_adolescents_12_to_16_y%0APaper%3A%20Li_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 15:21 UTC</sub>

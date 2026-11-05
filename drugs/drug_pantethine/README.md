@@ -67,5 +67,5 @@ Pantethine is a vitamin-like compound related to pantothenic acid that has been 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantethine%5D&body=Drug%3A%20pantethine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantethine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 08:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpantethine%5D&body=Drug%3A%20pantethine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pantethine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 08:04 UTC</sub>

@@ -29,17 +29,6 @@ Abrocitinib is a protein kinase inhibitor used to treat atopic dermatitis. It is
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 21.7 | L/h | 21.7 L/h | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
-| V | V1 | 86.3 | L | 86.3 L | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
-| ka | kabs | 3.99 | 1/h | 3.99 h−1 | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
-| F | Fab | 0.013 |  | 1.3 | healthy individuals and patients with psoriasis or atopic dermatitis | 995 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -120,5 +109,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babrocitinib%5D&body=Drug%3A%20abrocitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abrocitinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babrocitinib%5D&body=Drug%3A%20abrocitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abrocitinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:43 UTC</sub>

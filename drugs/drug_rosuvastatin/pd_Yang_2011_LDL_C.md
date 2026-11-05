@@ -140,13 +140,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Rosuvastatin_Yang2011_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_rosuvastatin/Rosuvastatin_Yang2011_PD_ldl_c>
+**This record:** Pharmacolibrary, model `Rosuvastatin_Yang2011_PD_ldl_c`. <https://pharmacolibrary.github.io/#/drugs/drug_rosuvastatin/Rosuvastatin_Yang2011_PD_ldl_c>
 
 ```bibtex
 @misc{pharmacolibrary_RosuvastatinYang2011PDldlc,
   title  = {{Pharmacolibrary model Rosuvastatin_Yang2011_PD_ldl_c}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rosuvastatin/Rosuvastatin_Yang2011_PD_ldl_c},
 }
 ```
@@ -162,5 +161,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brosuvastatin%5D%20pd_Yang_2011_LDL_C&body=Drug%3A%20rosuvastatin%0ARecord%3A%20pd_Yang_2011_LDL_C%0APaper%3A%20Yang_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rosuvastatin/pd_Yang_2011_LDL_C%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brosuvastatin%5D%20pd_Yang_2011_LDL_C&body=Drug%3A%20rosuvastatin%0ARecord%3A%20pd_Yang_2011_LDL_C%0APaper%3A%20Yang_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rosuvastatin/pd_Yang_2011_LDL_C%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [rosuvastatin](drugs/drug_rosuvastatin/)</sub>

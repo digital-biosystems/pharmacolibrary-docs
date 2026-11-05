@@ -181,13 +181,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Bailey JM, Lu W, Levy JH, Ramsay JG, Shore-Lesserson L, Prielipp RC et al. Clevidipine in adult cardiac surgical patients: a dose-finding study. Anesthesiology 96(5):1086–1094 (2002). [doi:10.1097/00000542-200205000-00010](https://doi.org/10.1097/00000542-200205000-00010)
 
-**This record:** Pharmacolibrary v26.09, model `Clevidipine_Bailey2002_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clevidipine/Clevidipine_Bailey2002_reference>
+**This record:** Pharmacolibrary, model `Clevidipine_Bailey2002_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_clevidipine/Clevidipine_Bailey2002_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ClevidipineBailey2002reference,
   title  = {{Pharmacolibrary model Clevidipine_Bailey2002_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clevidipine/Clevidipine_Bailey2002_reference},
   note   = {Parameters from doi:10.1097/00000542-200205000-00010},
 }
@@ -206,5 +205,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclevidipine%5D%20Clevidipine_Bailey2002_reference&body=Drug%3A%20clevidipine%0ARecord%3A%20Clevidipine_Bailey2002_reference%0APaper%3A%20Bailey_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clevidipine/Clevidipine_Bailey2002_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 02:59 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclevidipine%5D%20Clevidipine_Bailey2002_reference&body=Drug%3A%20clevidipine%0ARecord%3A%20Clevidipine_Bailey2002_reference%0APaper%3A%20Bailey_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clevidipine/Clevidipine_Bailey2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:59 UTC</sub>

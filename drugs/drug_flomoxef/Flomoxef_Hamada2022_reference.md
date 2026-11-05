@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection" measured-compound="flomoxef" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hamada Y, Kasai H, Suzuki-Ito M, Matsumura Y, Doi Y, Hayakawa K. Pharmacokinetic/Pharmacodynamic Analysis and Dose Optimization of Cefmetazole and Flomoxef against Extended-Spectrum β-Lactamase-Producing. Antibiotics (Basel, Switzerland) 11(4) (2022).
@@ -19,17 +19,21 @@ Hamada Y, Kasai H, Suzuki-Ito M, Matsumura Y, Doi Y, Hayakawa K. Pharmacokinetic
 
 **Population:** patients with invasive urinary tract infection · condition invasive urinary tract infection · age group adult.
 
+**Dosing:** 500, 1000 mg, iv, multiple.
+
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| 20 &lt; CCR ≦ 40 | CL | 10 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -51,17 +55,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| 20 &lt; CCR ≦ 40 | `Q22` · CL | 10 | L/h | 2.778e-06 | m3/s | L/h | llm (0.6) | Hamada_2022_table_3:row5:col1, Hamada_2022_table_3:row5:col2, Hamada_2022_table_3:row5:col3 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'pharmacokinetics parameter calculation formula for flomoxef by renal function; as a 1 h infusion of flomoxef 1 g' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Healthy' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row1:col2', 'Hamada_2022_table_3:row1:col3', 'Hamada_2022_table_3:row1:col4'])
-- dropped unlinked row (NIL): '20 &lt; CCR ≦ 40' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row5:col1', 'Hamada_2022_table_3:row5:col2', 'Hamada_2022_table_3:row5:col3'])
+- unit_dimension_unknown: 'severe' (CL)
 - dropped unlinked row (NIL): '40 &lt; CCR ≦ 70' — extend the ontology if this is a real PK parameter (source ['Hamada_2022_table_3:row7:col1', 'Hamada_2022_table_3:row7:col2', 'Hamada_2022_table_3:row7:col3'])
+- implicit units: '20 &lt; CCR ≦ 40' → L/h (from the popPK convention: "The parameter is identified as 'CL: Total clearance'. In population pharmacokinetic modeling, total clearance is convent")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flomoxef
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 
 **Extraction notes:**
 - companion parameter table 3 transcribed (9 record(s))
@@ -92,11 +105,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hamada_2022_table_3:row5:col1', 'Hamada_2022_table_3:row5:col2', 'Hamada_2022_table_3:row5:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10 | ['Hamada_2022_table_3:row5:col1', 'Hamada_2022_table_3:row5:col2', 'Hamada_2022_table_3:row5:col3'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10 L/h | ['Hamada_2022_table_3:row5:col1', 'Hamada_2022_table_3:row5:col2', 'Hamada_2022_table_3:row5:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,5 +136,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflomoxef%5D%20Flomoxef_Hamada2022_reference&body=Drug%3A%20flomoxef%0ARecord%3A%20Flomoxef_Hamada2022_reference%0APaper%3A%20Hamada_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flomoxef/Flomoxef_Hamada2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflomoxef%5D%20Flomoxef_Hamada2022_reference&body=Drug%3A%20flomoxef%0ARecord%3A%20Flomoxef_Hamada2022_reference%0APaper%3A%20Hamada_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flomoxef/Flomoxef_Hamada2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:06 UTC</sub>

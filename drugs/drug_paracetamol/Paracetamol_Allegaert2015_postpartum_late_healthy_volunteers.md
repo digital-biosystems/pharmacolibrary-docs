@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Allegaert_2015 \u00b7 postpartum_late_healthy_volunteers&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Paracetamol-glucuronide and paracetamol-sulphate metabolites have zero compartments and no dose path from the parent drug.
+> This record was reviewed on 2026-10-22 14:30 UTC (Rejected), but the paper was screened again on 2026-11-04 07:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Paracetamol-glucuronide and paracetamol-sulphate metabolites have zero compartments and no dose path from the parent drug.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers" status="rejected" stale="false" population="young women" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers" status="needs_review" stale="true" population="young women (delivery, postpartum, healthy volunteers)" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Allegaert K, Peeters MY, Beleyn B, Smits A, Kulo A, van Calsteren K et al. Paracetamol pharmacokinetics and metabolism in young women. BMC anesthesiology 15:163 (2015).
@@ -17,7 +17,7 @@ Allegaert K, Peeters MY, Beleyn B, Smits A, Kulo A, van Calsteren K et al. Parac
 
 ## Population and dosing
 
-**Population:** young women · condition healthy and pregnancy/postpartum · age group adult · n = &gt;=0.
+**Population:** young women (delivery, postpartum, healthy volunteers) · condition healthy (some pregnant/postpartum) · age group adult.
 
 **Dosing:** 1000, 2000 mg, iv, multiple, every 6 h.
 
@@ -25,21 +25,24 @@ Allegaert K, Peeters MY, Beleyn B, Smits A, Kulo A, van Calsteren K et al. Parac
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLPG (L/h) | CL | 7.33 | L/h |
+| CLPG (L/h) | CLfm | 7.33 | L/h |
 | Q1 (L/h) | Q2 | 61.1 | L/h |
+| 0.03 | CL | 0.03 | l.min−1 |
+| VOLUME OF DISTRIBUTION | V | 6.35 | liters |
+| ka | kabs | 9.76 | h -1 |
 | Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +56,7 @@ Allegaert K, Peeters MY, Beleyn B, Smits A, Kulo A, van Calsteren K et al. Parac
 
 The record defines two metabolites, paracetamol-glucuronide and paracetamol-sulphate, both with a compartment count of zero. Consequently, these metabolites are structurally unreachable orphans with no path from the paracetamol dose. Although links for metabolism exist, the absence of compartments prevents any valid pharmacokinetic flow. Extracted — paracetamol: CL 7.33 L/h, Q2 61.1 L/h, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -61,8 +64,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLPG (L/h) | `Q22` · CL | 7.33 | L/h | 2.036e-06 | m3/s | l/h | llm_confirmed (0.6) | Allegaert_2015_table_p5_1:row0:col3 |
+| CLPG (L/h) | `Q370` · CLfm | 7.33 | L/h | 2.036e-06 | m3/s | l/h | exact (1) | Allegaert_2015_table_p5_1:row0:col3 |
 | Q1 (L/h) | `Q99` · Q2 | 61.1 | L/h | 1.697e-05 | m3/s | l/h | exact (1) | Allegaert_2015_table_p5_1:row13:col3 |
+| 0.03 | `Q22` · CL | 0.03 | l.min−1 | 5e-07 | m3/s | L/h | review_gapfill (0.7) | Allegaert_2014:review |
+| VOLUME OF DISTRIBUTION | `Q61` · V | 6.35 | liters | 0.00635 | m3 | L | review_gapfill (0.7) | Albert_1984:review |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
 | Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
 
 <details class="legend">
@@ -77,10 +83,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
 - population split: 'postpartum, late + healthy volunteers' subgroup of Allegaert_2015 (paper reports 3 populations: mean (cv%) at delivery, postpartum, early 10 weeks later, postpartum, late + healthy volunteers)
-- row roles: 2 per-group rows of paracetamol residual_error but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 11 linked by role; re-tagged parent→paracetamol-glucuronide ×2, parent→paracetamol-sulphate ×1
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 11 linked by role; re-tagged parent→paracetamol-glucuronide ×3, parent→paracetamol-sulphate ×3
+- gap-filled Q22 (CL) from Allegaert_2014's review values (primary lacked it)
+- gap-filled Q61 (V) from Albert_1984's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
@@ -90,35 +98,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>16 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[34.4]` |  | 18.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clpu]` | 0.94 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clpu]` |  | 0.94 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q1]` | 61.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q1]` |  | 61.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | 1.34 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` |  | 1.34 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 4.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` | 1.83 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` |  | 1.83 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` | 22.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` |  | 22.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v8]` | 23.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v8]` |  | 23.9 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | paracetamol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -131,14 +118,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2015_table_p5_1:row0:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2014:review'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Allegaert_2015_table_p5_1:row0:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Albert_1984:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Allegaert_2015_table_p5_1:row13:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.33 | ['Allegaert_2015_table_p5_1:row0:col3'] |
-| C8_topology | fail |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.33 L/h | ['Allegaert_2015_table_p5_1:row0:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.03 | ['Allegaert_2014:review'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.8 L/h | ['Allegaert_2014:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.35 L | ['Albert_1984:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,9 +140,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -161,5 +161,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers%0APaper%3A%20Allegaert_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers%0APaper%3A%20Allegaert_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Allegaert2015_postpartum_late_healthy_volunteers%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 07:26 UTC</sub>

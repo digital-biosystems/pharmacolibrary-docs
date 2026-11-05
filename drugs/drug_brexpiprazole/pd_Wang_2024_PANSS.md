@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 PD PANSS total score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PANSS total score — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.909), gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
+# PANSS total score — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Brexpiprazole (concentrations from the PK model of Frederiksen_2023_3) drives PANSS total score: direct Emax (saturable) effect.
+**As extracted:** Brexpiprazole (concentrations from the PK model of Bruno_2022::extensive_metabolizer) drives PANSS total score: delayed effect through an effect compartment.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -23,7 +23,7 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2024`
-- **model family:** `emax`
+- **model family:** `effect_compartment`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -36,9 +36,13 @@ Wang X et al., Exposure-Response Modeling in Adults an…, Journal of clinical p
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | Baseline PANSS total score (BSL) | `Q324` ·  | 94.0 |  | llm | Wang_2024:pdv3 |
+| PD (effect) | Maximum placebo response (P max ) | `Q341` ·  | 0.107 |  | boundary | Wang_2024:pdv3 |
+| — | Time to reach 63.2% of P max (TD) | `Q100` ·  | 3.44 | weeks | nil | Wang_2024:pdv3 |
+| PD (effect) | Shape parameter (POW) | `Q343` ·  | 1.44 |  | exact | Wang_2024:pdv3 |
 | PD (effect) | Maximum drug effect (E max ) | `Q323` ·  | 0.173 |  | direction | Wang_2024:pdv3 |
-| PD (effect) | EC 50 , ng/mL | `Q321` ·  | 3.87 | ng/mL | llm | Wang_2024:pdv3 |
-| PD (effect) | Delayed drug effect constant (k T ), 1/week | `Q326` ·  | 0.247 | 1/week | llm | Wang_2024:pdv3 |
+| PD (effect) | EC 50 | `Q321` ·  | 3.87 | ng/mL | llm | Wang_2024:pdv3 |
+| PD (effect) | Delayed drug effect constant (k T ) | `Q326` ·  | 0.247 | 1/week | llm | Wang_2024:pdv3 |
+| variability | IIV on E max , SD [%CV] | `Q312` ·  | 0.101 |  | llm | Wang_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,23 +86,24 @@ Advisory:
 - defaulted: gamma (convention)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.909 (10/11 fields) | 1 |
-| `gpt-oss:120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | aripiprazole |  | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition |  | mismatch |
-| `gpt-oss:120b` | `effect_form` | proportional |  | mismatch |
-| `gpt-oss:120b` | `model_family` | emax |  | mismatch |
-| `openai:gpt-6-luna` | `model_family` | disease_progression | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100].value` | 3.44 | 0.247 (-0.0362, 0.530) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 3.87 | 3.87 (-7.07, 14.8) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.173 | 0.173 (0.0394, 0.306) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 94.0 | 94.0 (93.3, 94.7) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 0.247 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q341].value` | 0.107 | 0.107 (0.0761, 0.137) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q343].value` | 1.44 | 1.44 (0.800, 2.08) | mismatch |
 
 </details>
 
@@ -145,13 +150,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Brexpiprazole_Wang2024_PD_panss`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2024_PD_panss>
+**This record:** Pharmacolibrary, model `Brexpiprazole_Wang2024_PD_panss`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2024_PD_panss>
 
 ```bibtex
 @misc{pharmacolibrary_BrexpiprazoleWang2024PDpanss,
   title  = {{Pharmacolibrary model Brexpiprazole_Wang2024_PD_panss}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2024_PD_panss},
 }
 ```
@@ -167,5 +171,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20pd_Wang_2024_PANSS&body=Drug%3A%20brexpiprazole%0ARecord%3A%20pd_Wang_2024_PANSS%0APaper%3A%20Wang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/pd_Wang_2024_PANSS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20pd_Wang_2024_PANSS&body=Drug%3A%20brexpiprazole%0ARecord%3A%20pd_Wang_2024_PANSS%0APaper%3A%20Wang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/pd_Wang_2024_PANSS%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [brexpiprazole](drugs/drug_brexpiprazole/)</sub>

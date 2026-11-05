@@ -153,5 +153,5 @@ The absorption rate constant of 60.2 1/h is unrealistically fast, resulting in a
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidomafetamine%5D%20Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&body=Drug%3A%20midomafetamine%0ARecord%3A%20Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a%0APaper%3A%20Huestis_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidomafetamine%5D%20Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a&body=Drug%3A%20midomafetamine%0ARecord%3A%20Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a%0APaper%3A%20Huestis_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midomafetamine/Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 09:09 UTC</sub>

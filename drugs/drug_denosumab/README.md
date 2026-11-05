@@ -22,22 +22,9 @@ Denosumab is a monoclonal antibody used to treat bone diseases, especially postm
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 0.01032 | L/h | 247.79 mL/day | healthy adults and postmenopausal women with osteoporosis | 624 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Choi_2025_reference](drugs/drug_denosumab/Denosumab_Choi2025_reference.md) |
-| CL | CL/F | 0.01032 | L/h | 247.79 mL/day | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ding_2023_reference](drugs/drug_denosumab/Denosumab_Ding2023_reference.md) |
-| V | V | 2.641 ‡ | L | 2.49 L/66 kg | healthy subjects and postmenopausal women with osteopenia or osteoporosis |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sutjandra_2011_reference](drugs/drug_denosumab/Denosumab_Sutjandra2011_reference.md) |
-| V | V | 2.779 ‡ | L | 2.62 L/66 kg | advanced cancer patients with solid tumours and bone metastases |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gibiansky_2012_reference](drugs/drug_denosumab/Denosumab_Gibiansky2012_reference.md) |
-| V | V | 7.64 | L | 7.64 L | healthy adults and postmenopausal women with osteoporosis | 624 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Choi_2025_reference](drugs/drug_denosumab/Denosumab_Choi2025_reference.md) |
-| V | V/F | 6.537 | L | 6537.21 mL | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ding_2023_reference](drugs/drug_denosumab/Denosumab_Ding2023_reference.md) |
-| V | V1/F | 1.58 | L | 1.58 L | healthy adults and postmenopausal women with osteoporosis | 624 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Choi_2025_reference](drugs/drug_denosumab/Denosumab_Choi2025_reference.md) |
-| ka | kabs | 0.014 | 1/h | 0.014 h-1 | healthy adults and postmenopausal women with osteoporosis | 624 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Choi_2025_reference](drugs/drug_denosumab/Denosumab_Choi2025_reference.md) |
-| F | Fab | 0.61 |  | 61 % | advanced cancer patients with solid tumours and bone metastases |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gibiansky_2012_reference](drugs/drug_denosumab/Denosumab_Gibiansky2012_reference.md) |
-| F | Fab | 0.64 |  | 64 % | healthy subjects and postmenopausal women with osteopenia or osteoporosis |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sutjandra_2011_reference](drugs/drug_denosumab/Denosumab_Sutjandra2011_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Choi_2025 · CL/F</text><circle cx="194.9" cy="30.0" r="4" fill="#ef6c00"><title>Choi_2025 · CL/F: 0.01032 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ding_2023 · CL/F</text><circle cx="194.9" cy="46.0" r="4" fill="#ef6c00"><title>Ding_2023 · CL/F: 0.01032 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="106" stroke="#ddd"/><text x="190.0" y="120" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="106" stroke="#ddd"/><text x="540.0" y="120" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sutjandra_2011 · V ·/kg</text><circle cx="337.6" cy="30.0" r="4" fill="#2e7d32"><title>Sutjandra_2011 · V ·/kg: 2.641 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gibiansky_2012 · V ·/kg</text><circle cx="345.3" cy="46.0" r="4" fill="#ef6c00"><title>Gibiansky_2012 · V ·/kg: 2.779 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Choi_2025 · V</text><circle cx="499.1" cy="62.0" r="4" fill="#ef6c00"><title>Choi_2025 · V: 7.64 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ding_2023 · V/F</text><circle cx="475.4" cy="78.0" r="4" fill="#ef6c00"><title>Ding_2023 · V/F: 6.537 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Choi_2025 · V1/F</text><circle cx="259.5" cy="94.0" r="4" fill="#ef6c00"><title>Choi_2025 · V1/F: 1.58 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -119,5 +106,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdenosumab%5D&body=Drug%3A%20denosumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_denosumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 03:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdenosumab%5D&body=Drug%3A%20denosumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_denosumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:16 UTC</sub>

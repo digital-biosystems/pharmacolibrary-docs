@@ -247,13 +247,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Jang JH, Jeong SH, Lee YB. Quantitative assessment of the relevance of organic-anion-transporting-polypeptide 1B1 and 2B1 polymorphisms in fexofenadine pharmacokinetic variants via pharmacometrics. Journal of pharmaceutical analysis 13(6):660–672 (2023). [doi:10.1016/j.jpha.2023.04.001](https://doi.org/10.1016/j.jpha.2023.04.001)
 
-**This record:** Pharmacolibrary v26.09, model `Fexofenadine_Jang2023_slco1b1_521t_c_genotypes`. <https://pharmacolibrary.github.io/#/drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes>
+**This record:** Pharmacolibrary, model `Fexofenadine_Jang2023_slco1b1_521t_c_genotypes`. <https://pharmacolibrary.github.io/#/drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes>
 
 ```bibtex
 @misc{pharmacolibrary_FexofenadineJang2023slco1b1521tcgenotypes,
   title  = {{Pharmacolibrary model Fexofenadine_Jang2023_slco1b1_521t_c_genotypes}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes},
   note   = {Parameters from doi:10.1016/j.jpha.2023.04.001},
 }
@@ -272,5 +271,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexofenadine%5D%20Fexofenadine_Jang2023_slco1b1_521t_c_genotypes&body=Drug%3A%20fexofenadine%0ARecord%3A%20Fexofenadine_Jang2023_slco1b1_521t_c_genotypes%0APaper%3A%20Jang_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 23:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfexofenadine%5D%20Fexofenadine_Jang2023_slco1b1_521t_c_genotypes&body=Drug%3A%20fexofenadine%0ARecord%3A%20Fexofenadine_Jang2023_slco1b1_521t_c_genotypes%0APaper%3A%20Jang_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 23:32 UTC</sub>

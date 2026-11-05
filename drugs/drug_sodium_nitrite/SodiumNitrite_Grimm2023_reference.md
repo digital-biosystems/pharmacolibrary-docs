@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Grimm HP, Schumacher V, Schäfer M, Imhof-Jung S, Freskgård PO, Brady K et al. Delivery of the Brainshuttle™ amyloid-beta antibody fusion trontinemab to non-human primate brain and projected efficacious dose regimens in humans. mAbs 15(1):2261509 (2023). [doi:10.1080/19420862.2023.2261509](https://doi.org/10.1080/19420862.2023.2261509)
 
-**This record:** Pharmacolibrary v26.09, model `SodiumNitrite_Grimm2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference>
+**This record:** Pharmacolibrary, model `SodiumNitrite_Grimm2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SodiumNitriteGrimm2023reference,
   title  = {{Pharmacolibrary model SodiumNitrite_Grimm2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference},
   note   = {Parameters from doi:10.1080/19420862.2023.2261509},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_nitrite%5D%20SodiumNitrite_Grimm2023_reference&body=Drug%3A%20sodium_nitrite%0ARecord%3A%20SodiumNitrite_Grimm2023_reference%0APaper%3A%20Grimm_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_nitrite%5D%20SodiumNitrite_Grimm2023_reference&body=Drug%3A%20sodium_nitrite%0ARecord%3A%20SodiumNitrite_Grimm2023_reference%0APaper%3A%20Grimm_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:25 UTC</sub>

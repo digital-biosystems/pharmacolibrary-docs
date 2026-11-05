@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Wright_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cilazapril — `Cilazapril_Wright2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> This record was reviewed on 2026-11-03 07:58 UTC (Needs review), but the paper was screened again on 2026-11-03 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Wright2025_reference" status="extracted" stale="false" population="" measured-compound="cilazapril" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Wright2025_reference" status="extracted" stale="true" population="" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wright DFB, Hishe HZ, Dalbeth N, Horne A, Drake J, Haslett J et al. The Influence of Patient Factors on the Population Pharmacokinetics of Colchicine: Implications for Safe and Effective Dosing. Clinical pharmacokinetics 64(10):1517-1529 (2025).
@@ -22,8 +22,8 @@ Wright DFB, Hishe HZ, Dalbeth N, Horne A, Drake J, Haslett J et al. The Influenc
 ## Model
 
 **Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameterization:** V1/F — mechanistic, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_cilazapril/Cilazapril_Wright2025_reference/Cilazapril_Wright2025_reference.svg" alt="Cilazapril_Wright2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -31,13 +31,12 @@ Wright DFB, Hishe HZ, Dalbeth N, Horne A, Drake J, Haslett J et al. The Influenc
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| θCL (L h−1 70 kg−1) | CL | 19.1 | L h−1 70 kg−1 |
-| θV1 (L 70 kg−1) | V1 | 245.5 | L 70 kg−1 |
-| θQ (L h−1 70 kg−1) | Q | 29.9 | L h−1 70 kg−1 |
+| CLcr (mL/min) | CL | 81.0 | mL/min |
+| θV1 (L 70 kg−1) | V1/F | 245.5 | L 70 kg−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,15 +44,22 @@ Wright DFB, Hishe HZ, Dalbeth N, Horne A, Drake J, Haslett J et al. The Influenc
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The intercompartmental clearance parameter was left at library defaults rather than using the value reported for cilazapril in the paper.**
+
+The record lists an explicit intercompartmental clearance of 29.9 L h−1 70 kg−1, yet the model used library defaults for this parameter. This deviation means the simulated profile relies on values not supported by the specific estimates in this paper. The record was held back because this parameter was defaulted instead of extracted. Extracted — cilazapril: CL 19.1 L h−1 70 kg−1, V1 246 L 70 kg−1, Q 29.9 L h−1 70 kg−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 81, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| θCL (L h−1 70 kg−1) | `Q22` · CL | 19.1 | L h−1 70 kg−1 | 0.0003714 | m3/s | L/h | review (0.7) | Wright_2025:review |
-| θV1 (L 70 kg−1) | `Q63` · V1 | 245.5 | L 70 kg−1 | 17.18 | m3 | L | review (0.7) | Wright_2025:review |
-| θQ (L h−1 70 kg−1) | `Q30` · Q | 29.9 | L h−1 70 kg−1 | 0.0005814 | m3/s | L/h | review (0.7) | Wright_2025:review |
+| CLcr (mL/min) | `Q22` · CL | 81.0 | mL/min | 1.35e-06 | m3/s | L/h | review (0.7) | Wright_2025:review |
+| θV1 (L 70 kg−1) | `Q290` · V1/F | 245.5 | L 70 kg−1 | 17.18 | m3 | L | review (0.7) | Wright_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,20 +77,53 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (2/5 fields) | 3 |
+
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 81 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q290]` | 245.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q99]` | 29.9 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wright_2025:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Wright_2025:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Wright_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 19.1 | ['Wright_2025:review'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Wright_2025:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 81 | ['Wright_2025:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.34e+03 L/h | ['Wright_2025:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.72e+04 L | ['Wright_2025:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.86 L/h | ['Wright_2025:review'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 1.72e+04 L | ['Wright_2025:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cilazapril) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
+| T6_deviations | fail |  | deviation_1: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,4 +202,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Wright2025_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Wright2025_reference%0APaper%3A%20Wright_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Wright2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 11:11 UTC</sub>

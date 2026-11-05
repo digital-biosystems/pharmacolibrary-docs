@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tsyplakova A, Catic-Djorđevic A, Stefanović N, Karalis VD. Optimizing Mycophenolate Therapy in Renal Transplant Patients Using Machine Learning and Population Pharmacokinetic Modeling. Medical sciences (Basel, Switzerland) 13(4):235 (2025). [doi:10.3390/medsci13040235](https://doi.org/10.3390/medsci13040235)
 
-**This record:** Pharmacolibrary v26.09, model `Cyclophosphamide_Tsyplakova2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference>
+**This record:** Pharmacolibrary, model `Cyclophosphamide_Tsyplakova2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CyclophosphamideTsyplakova2025reference,
   title  = {{Pharmacolibrary model Cyclophosphamide_Tsyplakova2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference},
   note   = {Parameters from doi:10.3390/medsci13040235},
 }
@@ -195,5 +194,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyclophosphamide%5D%20Cyclophosphamide_Tsyplakova2025_reference&body=Drug%3A%20cyclophosphamide%0ARecord%3A%20Cyclophosphamide_Tsyplakova2025_reference%0APaper%3A%20Tsyplakova_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyclophosphamide%5D%20Cyclophosphamide_Tsyplakova2025_reference&body=Drug%3A%20cyclophosphamide%0ARecord%3A%20Cyclophosphamide_Tsyplakova2025_reference%0APaper%3A%20Tsyplakova_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:40 UTC</sub>

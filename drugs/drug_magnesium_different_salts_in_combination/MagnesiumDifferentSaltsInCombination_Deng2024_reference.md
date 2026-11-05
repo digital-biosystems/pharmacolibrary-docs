@@ -174,13 +174,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Deng J, Peng L, Wang Y, Li J, Tang L, Yu Y. Population pharmacokinetics and dose optimization of magnesium sulfate in Chinese preeclampsia population. BMC pregnancy and childbirth 24(1):424 (2024). [doi:10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x)
 
-**This record:** Pharmacolibrary v26.09, model `MagnesiumDifferentSaltsInCombination_Deng2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference>
+**This record:** Pharmacolibrary, model `MagnesiumDifferentSaltsInCombination_Deng2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MagnesiumDifferentSaltsInCombinationDeng2024reference,
   title  = {{Pharmacolibrary model MagnesiumDifferentSaltsInCombination_Deng2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference},
   note   = {Parameters from doi:10.1186/s12884-024-06620-x},
 }
@@ -199,5 +198,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_different_salts_in_combination%5D%20MagnesiumDifferentSaltsInCombination_Deng2024_reference&body=Drug%3A%20magnesium_different_salts_in_combination%0ARecord%3A%20MagnesiumDifferentSaltsInCombination_Deng2024_reference%0APaper%3A%20Deng_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_different_salts_in_combination%5D%20MagnesiumDifferentSaltsInCombination_Deng2024_reference&body=Drug%3A%20magnesium_different_salts_in_combination%0ARecord%3A%20MagnesiumDifferentSaltsInCombination_Deng2024_reference%0APaper%3A%20Deng_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:16 UTC</sub>

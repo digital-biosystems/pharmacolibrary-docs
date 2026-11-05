@@ -181,13 +181,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mulubwa M, Mugabo P. Amount of Cycloserine Emanating from Terizidone Metabolism and Relationship with Hepatic Function in Patients with Drug-Resistant Tuberculosis. Drugs in R&D 19(3):289–296 (2019). [doi:10.1007/s40268-019-00281-4](https://doi.org/10.1007/s40268-019-00281-4)
 
-**This record:** Pharmacolibrary v26.09, model `Cycloserine_Mulubwa2019v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cycloserine/Cycloserine_Mulubwa2019v2_reference>
+**This record:** Pharmacolibrary, model `Cycloserine_Mulubwa2019v2_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cycloserine/Cycloserine_Mulubwa2019v2_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CycloserineMulubwa2019v2reference,
   title  = {{Pharmacolibrary model Cycloserine_Mulubwa2019v2_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cycloserine/Cycloserine_Mulubwa2019v2_reference},
   note   = {Parameters from doi:10.1007/s40268-019-00281-4},
 }
@@ -206,5 +205,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcycloserine%5D%20Cycloserine_Mulubwa2019v2_reference&body=Drug%3A%20cycloserine%0ARecord%3A%20Cycloserine_Mulubwa2019v2_reference%0APaper%3A%20Mulubwa_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cycloserine/Cycloserine_Mulubwa2019v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcycloserine%5D%20Cycloserine_Mulubwa2019v2_reference&body=Drug%3A%20cycloserine%0ARecord%3A%20Cycloserine_Mulubwa2019v2_reference%0APaper%3A%20Mulubwa_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cycloserine/Cycloserine_Mulubwa2019v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:30 UTC</sub>

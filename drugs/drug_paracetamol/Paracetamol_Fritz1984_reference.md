@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Fritz_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Fritz1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-10-22 14:32 UTC (Needs review), but the paper was screened again on 2026-11-04 07:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Fritz1984_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Fritz1984_reference" status="rejected" stale="true" population="healthy human males" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Fritz AK, Benziger DP, Peterson JE, Park GB, Edelson J. Relative bioavailability and pharmacokinetics: a combination of pentazocine and acetaminophen. Journal of pharmaceutical sciences 73(3):326–331 (1984).
@@ -17,27 +17,34 @@ Fritz AK, Benziger DP, Peterson JE, Park GB, Edelson J. Relative bioavailability
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = &gt;.
+**Population:** healthy human males · condition healthy · age group adult · n = ?.
+
+**Dosing:** 50, 1300 mg, oral, single.
+
+**Dosed compound ≠ measured compound:** dosed pentazocine and acetaminophen, measured acetaminophen.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Relative bioavailability of the tablet relative to that of the solution | Frel | 85.0 | % |
-| Clearance of the S(-) enantiomer | CL | 6.2 | ml/min/kg |
+| tmax, obs h | tmax | 1.74 | h |
+| Cmax,obs ng/mL | Cmax | 50.0 | ng/mL |
+| 0.03 | CL | 0.03 | l.min−1 |
+| VOLUME OF DISTRIBUTION | V | 6.35 | liters |
+| ka | kabs | 9.76 | h -1 |
 | Tlag | tlag | 4.2 | min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +58,7 @@ Fritz AK, Benziger DP, Peterson JE, Park GB, Edelson J. Relative bioavailability
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Anderson_2015, Gibb_2008) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paracetamol: Frel 85 %, CL 6.2 ml/min/kg, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen, pentazocine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pentazocine and acetaminophen, the second reading acetaminophen and pentazocine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,8 +66,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Relative bioavailability of the tablet relative to that of the solution | `Q87` · Frel | 85.0 | % |  |  |  | llm_confirmed (0.6) | Fritz_1984:abstract, Fritz_1984:abstract |
-| Clearance of the S(-) enantiomer | `Q22` · CL | 6.2 | ml/min/kg | 7.233e-06 | m3/s | L/h | review_gapfill (0.7) | Anderson_2015:review |
+| tmax, obs h | `Q56` · tmax | 1.74 | h | 6264 | s | h | llm_confirmed (0.6) | Fritz_1984_table_p3_1:row0:col1, Fritz_1984_table_p3_1:row1:col1, Fritz_1984_table_p3_1:row2:col1, Fritz_1984_table_p3_1:row3:col1, Fritz_1984_table_p3_1:row4:col1, Fritz_1984_table_p3_1:row5:col1, Fritz_1984_table_p3_1:row6:col1, Fritz_1984_table_p3_1:row7:col1, Fritz_1984_table_p3_1:row8:col1, Fritz_1984_table_p3_1:row9:col1, Fritz_1984_table_p3_1:row10:col1, Fritz_1984_table_p3_1:row11:col1, Fritz_1984_table_p3_1:row12:col1, Fritz_1984_table_p3_1:row13:col1, Fritz_1984_table_p3_1:row14:col1, Fritz_1984_table_p3_1:row15:col1, Fritz_1984_table_p3_1:row16:col1, Fritz_1984_table_p3_1:row17:col1, Fritz_1984_table_p3_1:row18:col1, Fritz_1984_table_p3_1:row19:col1, Fritz_1984_table_p3_1:row20:col1, Fritz_1984_table_p3_1:row21:col1, Fritz_1984_table_p3_1:row22:col1, Fritz_1984_table_p3_1:row23:col1, Fritz_1984_table_p3_1:row24:col1, Fritz_1984_table_p3_1:row25:col1, Fritz_1984_table_p3_1:row26:col1, Fritz_1984_table_p3_1:row27:col1, Fritz_1984_table_p3_1:row28:col1, Fritz_1984_table_p3_1:row29:col1, Fritz_1984_table_p3_1:row30:col1, Fritz_1984_table_p3_1:row31:col1 |
+| Cmax,obs ng/mL | `Q32` · Cmax | 50.0 | ng/mL |  |  | ng/mL | llm_confirmed (0.6) | Fritz_1984_table_p3_1:row0:col2, Fritz_1984_table_p3_1:row1:col2, Fritz_1984_table_p3_1:row2:col2, Fritz_1984_table_p3_1:row3:col2, Fritz_1984_table_p3_1:row4:col2, Fritz_1984_table_p3_1:row5:col2, Fritz_1984_table_p3_1:row6:col2, Fritz_1984_table_p3_1:row7:col2, Fritz_1984_table_p3_1:row8:col2, Fritz_1984_table_p3_1:row9:col2, Fritz_1984_table_p3_1:row10:col2, Fritz_1984_table_p3_1:row11:col2, Fritz_1984_table_p3_1:row12:col2, Fritz_1984_table_p3_1:row13:col2, Fritz_1984_table_p3_1:row14:col2, Fritz_1984_table_p3_1:row15:col2, Fritz_1984_table_p3_1:row16:col2, Fritz_1984_table_p3_1:row17:col2, Fritz_1984_table_p3_1:row18:col2, Fritz_1984_table_p3_1:row19:col2, Fritz_1984_table_p3_1:row20:col2, Fritz_1984_table_p3_1:row21:col2, Fritz_1984_table_p3_1:row22:col2, Fritz_1984_table_p3_1:row23:col2, Fritz_1984_table_p3_1:row24:col2, Fritz_1984_table_p3_1:row25:col2, Fritz_1984_table_p3_1:row26:col2, Fritz_1984_table_p3_1:row27:col2, Fritz_1984_table_p3_1:row28:col2, Fritz_1984_table_p3_1:row29:col2, Fritz_1984_table_p3_1:row30:col2, Fritz_1984_table_p3_1:row31:col2 |
+| 0.03 | `Q22` · CL | 0.03 | l.min−1 | 5e-07 | m3/s | L/h | review_gapfill (0.7) | Allegaert_2014:review |
+| VOLUME OF DISTRIBUTION | `Q61` · V | 6.35 | liters | 0.00635 | m3 | L | review_gapfill (0.7) | Albert_1984:review |
+| ka | `Q49` · kabs | 9.76 | h -1 | 0.002711 | 1/s | 1/h | review_gapfill (0.7) | Anderson_1998:review |
 | Tlag | `Q83` · tlag | 4.2 | min | 252 | s | h | review_gapfill (0.7) | Gibb_2008:review |
 
 <details class="legend">
@@ -71,39 +81,47 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- competing summary columns for 'Model Independent'; not population strata
+- competing summary columns for 'Regression Dependent'; not population strata
+- dropped unlinked row (NIL): 'Model Independent' — extend the ontology if this is a real PK parameter (source ['Fritz_1984_table_p3_1:row0:col3', 'Fritz_1984_table_p3_1:row0:col4', 'Fritz_1984_table_p3_1:row0:col5', 'Fritz_1984_table_p3_1:row0:col6', 'Fritz_1984_table_p3_1:row1:col3', 'Fritz_1984_table_p3_1:row1:col4', 'Fritz_1984_table_p3_1:row1:col5', 'Fritz_1984_table_p3_1:row1:col6', 'Fritz_1984_table_p3_1:row2:col3', 'Fritz_1984_table_p3_1:row2:col4', 'Fritz_1984_table_p3_1:row2:col5', 'Fritz_1984_table_p3_1:row2:col6', 'Fritz_1984_table_p3_1:row3:col3', 'Fritz_1984_table_p3_1:row3:col4', 'Fritz_1984_table_p3_1:row3:col5', 'Fritz_1984_table_p3_1:row3:col6', 'Fritz_1984_table_p3_1:row4:col3', 'Fritz_1984_table_p3_1:row4:col4', 'Fritz_1984_table_p3_1:row4:col5', 'Fritz_1984_table_p3_1:row4:col6', 'Fritz_1984_table_p3_1:row5:col3', 'Fritz_1984_table_p3_1:row5:col4', 'Fritz_1984_table_p3_1:row5:col5', 'Fritz_1984_table_p3_1:row5:col6', 'Fritz_1984_table_p3_1:row6:col3', 'Fritz_1984_table_p3_1:row6:col4', 'Fritz_1984_table_p3_1:row6:col5', 'Fritz_1984_table_p3_1:row6:col6', 'Fritz_1984_table_p3_1:row7:col3', 'Fritz_1984_table_p3_1:row7:col4', 'Fritz_1984_table_p3_1:row7:col5', 'Fritz_1984_table_p3_1:row7:col6', 'Fritz_1984_table_p3_1:row8:col3', 'Fritz_1984_table_p3_1:row8:col4', 'Fritz_1984_table_p3_1:row8:col5', 'Fritz_1984_table_p3_1:row8:col6', 'Fritz_1984_table_p3_1:row9:col3', 'Fritz_1984_table_p3_1:row9:col4', 'Fritz_1984_table_p3_1:row9:col5', 'Fritz_1984_table_p3_1:row9:col6', 'Fritz_1984_table_p3_1:row10:col3', 'Fritz_1984_table_p3_1:row10:col4', 'Fritz_1984_table_p3_1:row10:col5', 'Fritz_1984_table_p3_1:row10:col6', 'Fritz_1984_table_p3_1:row11:col3', 'Fritz_1984_table_p3_1:row11:col4', 'Fritz_1984_table_p3_1:row11:col5', 'Fritz_1984_table_p3_1:row11:col6', 'Fritz_1984_table_p3_1:row12:col3', 'Fritz_1984_table_p3_1:row12:col4', 'Fritz_1984_table_p3_1:row12:col5', 'Fritz_1984_table_p3_1:row12:col6', 'Fritz_1984_table_p3_1:row13:col3', 'Fritz_1984_table_p3_1:row13:col4', 'Fritz_1984_table_p3_1:row13:col5', 'Fritz_1984_table_p3_1:row13:col6', 'Fritz_1984_table_p3_1:row14:col3', 'Fritz_1984_table_p3_1:row14:col4', 'Fritz_1984_table_p3_1:row14:col5', 'Fritz_1984_table_p3_1:row14:col6', 'Fritz_1984_table_p3_1:row15:col3', 'Fritz_1984_table_p3_1:row15:col4', 'Fritz_1984_table_p3_1:row15:col5', 'Fritz_1984_table_p3_1:row15:col6', 'Fritz_1984_table_p3_1:row16:col3', 'Fritz_1984_table_p3_1:row16:col4', 'Fritz_1984_table_p3_1:row16:col5', 'Fritz_1984_table_p3_1:row16:col6', 'Fritz_1984_table_p3_1:row17:col3', 'Fritz_1984_table_p3_1:row17:col4', 'Fritz_1984_table_p3_1:row17:col5', 'Fritz_1984_table_p3_1:row17:col6', 'Fritz_1984_table_p3_1:row18:col3', 'Fritz_1984_table_p3_1:row18:col4', 'Fritz_1984_table_p3_1:row18:col5', 'Fritz_1984_table_p3_1:row18:col6', 'Fritz_1984_table_p3_1:row19:col3', 'Fritz_1984_table_p3_1:row19:col4', 'Fritz_1984_table_p3_1:row19:col5', 'Fritz_1984_table_p3_1:row19:col6', 'Fritz_1984_table_p3_1:row20:col3', 'Fritz_1984_table_p3_1:row20:col4', 'Fritz_1984_table_p3_1:row20:col5', 'Fritz_1984_table_p3_1:row20:col6', 'Fritz_1984_table_p3_1:row21:col3', 'Fritz_1984_table_p3_1:row21:col4', 'Fritz_1984_table_p3_1:row21:col5', 'Fritz_1984_table_p3_1:row21:col6', 'Fritz_1984_table_p3_1:row22:col3', 'Fritz_1984_table_p3_1:row22:col4', 'Fritz_1984_table_p3_1:row22:col5', 'Fritz_1984_table_p3_1:row22:col6', 'Fritz_1984_table_p3_1:row23:col3', 'Fritz_1984_table_p3_1:row23:col4', 'Fritz_1984_table_p3_1:row23:col5', 'Fritz_1984_table_p3_1:row23:col6', 'Fritz_1984_table_p3_1:row24:col3', 'Fritz_1984_table_p3_1:row24:col4', 'Fritz_1984_table_p3_1:row24:col5', 'Fritz_1984_table_p3_1:row24:col6', 'Fritz_1984_table_p3_1:row25:col3', 'Fritz_1984_table_p3_1:row25:col4', 'Fritz_1984_table_p3_1:row25:col5', 'Fritz_1984_table_p3_1:row25:col6', 'Fritz_1984_table_p3_1:row26:col3', 'Fritz_1984_table_p3_1:row26:col4', 'Fritz_1984_table_p3_1:row26:col5', 'Fritz_1984_table_p3_1:row26:col6', 'Fritz_1984_table_p3_1:row27:col3', 'Fritz_1984_table_p3_1:row27:col4', 'Fritz_1984_table_p3_1:row27:col5', 'Fritz_1984_table_p3_1:row27:col6', 'Fritz_1984_table_p3_1:row28:col3', 'Fritz_1984_table_p3_1:row28:col4', 'Fritz_1984_table_p3_1:row28:col5', 'Fritz_1984_table_p3_1:row28:col6', 'Fritz_1984_table_p3_1:row29:col3', 'Fritz_1984_table_p3_1:row29:col4', 'Fritz_1984_table_p3_1:row29:col5', 'Fritz_1984_table_p3_1:row29:col6', 'Fritz_1984_table_p3_1:row30:col3', 'Fritz_1984_table_p3_1:row30:col4', 'Fritz_1984_table_p3_1:row30:col5', 'Fritz_1984_table_p3_1:row30:col6', 'Fritz_1984_table_p3_1:row31:col3', 'Fritz_1984_table_p3_1:row31:col4', 'Fritz_1984_table_p3_1:row31:col5', 'Fritz_1984_table_p3_1:row31:col6'])
+- dropped unlinked row (NIL): 'Regression Dependent' — extend the ontology if this is a real PK parameter (source ['Fritz_1984_table_p3_1:row0:col7', 'Fritz_1984_table_p3_1:row0:col8', 'Fritz_1984_table_p3_1:row0:col9', 'Fritz_1984_table_p3_1:row0:col10', 'Fritz_1984_table_p3_1:row0:col11', 'Fritz_1984_table_p3_1:row0:col12', 'Fritz_1984_table_p3_1:row0:col13', 'Fritz_1984_table_p3_1:row1:col7', 'Fritz_1984_table_p3_1:row1:col8', 'Fritz_1984_table_p3_1:row1:col9', 'Fritz_1984_table_p3_1:row1:col10', 'Fritz_1984_table_p3_1:row1:col11', 'Fritz_1984_table_p3_1:row1:col12', 'Fritz_1984_table_p3_1:row1:col13', 'Fritz_1984_table_p3_1:row2:col7', 'Fritz_1984_table_p3_1:row2:col8', 'Fritz_1984_table_p3_1:row2:col9', 'Fritz_1984_table_p3_1:row2:col10', 'Fritz_1984_table_p3_1:row2:col11', 'Fritz_1984_table_p3_1:row2:col12', 'Fritz_1984_table_p3_1:row2:col13', 'Fritz_1984_table_p3_1:row3:col7', 'Fritz_1984_table_p3_1:row3:col8', 'Fritz_1984_table_p3_1:row3:col9', 'Fritz_1984_table_p3_1:row3:col10', 'Fritz_1984_table_p3_1:row3:col11', 'Fritz_1984_table_p3_1:row3:col12', 'Fritz_1984_table_p3_1:row3:col13', 'Fritz_1984_table_p3_1:row4:col7', 'Fritz_1984_table_p3_1:row4:col8', 'Fritz_1984_table_p3_1:row4:col9', 'Fritz_1984_table_p3_1:row4:col10', 'Fritz_1984_table_p3_1:row4:col11', 'Fritz_1984_table_p3_1:row4:col12', 'Fritz_1984_table_p3_1:row4:col13', 'Fritz_1984_table_p3_1:row5:col7', 'Fritz_1984_table_p3_1:row5:col8', 'Fritz_1984_table_p3_1:row5:col9', 'Fritz_1984_table_p3_1:row5:col10', 'Fritz_1984_table_p3_1:row5:col11', 'Fritz_1984_table_p3_1:row5:col12', 'Fritz_1984_table_p3_1:row5:col13', 'Fritz_1984_table_p3_1:row6:col7', 'Fritz_1984_table_p3_1:row6:col8', 'Fritz_1984_table_p3_1:row6:col9', 'Fritz_1984_table_p3_1:row6:col10', 'Fritz_1984_table_p3_1:row6:col11', 'Fritz_1984_table_p3_1:row6:col12', 'Fritz_1984_table_p3_1:row6:col13', 'Fritz_1984_table_p3_1:row7:col7', 'Fritz_1984_table_p3_1:row7:col8', 'Fritz_1984_table_p3_1:row7:col9', 'Fritz_1984_table_p3_1:row7:col10', 'Fritz_1984_table_p3_1:row7:col11', 'Fritz_1984_table_p3_1:row7:col12', 'Fritz_1984_table_p3_1:row7:col13', 'Fritz_1984_table_p3_1:row8:col7', 'Fritz_1984_table_p3_1:row8:col8', 'Fritz_1984_table_p3_1:row8:col9', 'Fritz_1984_table_p3_1:row8:col10', 'Fritz_1984_table_p3_1:row8:col11', 'Fritz_1984_table_p3_1:row8:col12', 'Fritz_1984_table_p3_1:row8:col13', 'Fritz_1984_table_p3_1:row9:col7', 'Fritz_1984_table_p3_1:row9:col8', 'Fritz_1984_table_p3_1:row9:col9', 'Fritz_1984_table_p3_1:row9:col10', 'Fritz_1984_table_p3_1:row9:col11', 'Fritz_1984_table_p3_1:row9:col12', 'Fritz_1984_table_p3_1:row9:col13', 'Fritz_1984_table_p3_1:row10:col7', 'Fritz_1984_table_p3_1:row10:col8', 'Fritz_1984_table_p3_1:row10:col9', 'Fritz_1984_table_p3_1:row10:col10', 'Fritz_1984_table_p3_1:row10:col11', 'Fritz_1984_table_p3_1:row10:col12', 'Fritz_1984_table_p3_1:row10:col13', 'Fritz_1984_table_p3_1:row11:col7', 'Fritz_1984_table_p3_1:row11:col8', 'Fritz_1984_table_p3_1:row11:col9', 'Fritz_1984_table_p3_1:row11:col10', 'Fritz_1984_table_p3_1:row11:col11', 'Fritz_1984_table_p3_1:row11:col12', 'Fritz_1984_table_p3_1:row11:col13', 'Fritz_1984_table_p3_1:row12:col7', 'Fritz_1984_table_p3_1:row12:col8', 'Fritz_1984_table_p3_1:row12:col9', 'Fritz_1984_table_p3_1:row12:col10', 'Fritz_1984_table_p3_1:row12:col11', 'Fritz_1984_table_p3_1:row12:col12', 'Fritz_1984_table_p3_1:row12:col13', 'Fritz_1984_table_p3_1:row13:col7', 'Fritz_1984_table_p3_1:row13:col8', 'Fritz_1984_table_p3_1:row13:col9', 'Fritz_1984_table_p3_1:row13:col10', 'Fritz_1984_table_p3_1:row13:col11', 'Fritz_1984_table_p3_1:row13:col12', 'Fritz_1984_table_p3_1:row13:col13', 'Fritz_1984_table_p3_1:row14:col7', 'Fritz_1984_table_p3_1:row14:col8', 'Fritz_1984_table_p3_1:row14:col9', 'Fritz_1984_table_p3_1:row14:col10', 'Fritz_1984_table_p3_1:row14:col11', 'Fritz_1984_table_p3_1:row14:col12', 'Fritz_1984_table_p3_1:row14:col13', 'Fritz_1984_table_p3_1:row15:col7', 'Fritz_1984_table_p3_1:row15:col8', 'Fritz_1984_table_p3_1:row15:col9', 'Fritz_1984_table_p3_1:row15:col10', 'Fritz_1984_table_p3_1:row15:col11', 'Fritz_1984_table_p3_1:row15:col12', 'Fritz_1984_table_p3_1:row15:col13', 'Fritz_1984_table_p3_1:row16:col7', 'Fritz_1984_table_p3_1:row16:col8', 'Fritz_1984_table_p3_1:row16:col9', 'Fritz_1984_table_p3_1:row16:col11', 'Fritz_1984_table_p3_1:row16:col12', 'Fritz_1984_table_p3_1:row16:col13', 'Fritz_1984_table_p3_1:row17:col7', 'Fritz_1984_table_p3_1:row17:col8', 'Fritz_1984_table_p3_1:row17:col9', 'Fritz_1984_table_p3_1:row17:col10', 'Fritz_1984_table_p3_1:row17:col11', 'Fritz_1984_table_p3_1:row17:col12', 'Fritz_1984_table_p3_1:row17:col13', 'Fritz_1984_table_p3_1:row18:col7', 'Fritz_1984_table_p3_1:row18:col8', 'Fritz_1984_table_p3_1:row18:col9', 'Fritz_1984_table_p3_1:row18:col10', 'Fritz_1984_table_p3_1:row18:col11', 'Fritz_1984_table_p3_1:row18:col12', 'Fritz_1984_table_p3_1:row18:col13', 'Fritz_1984_table_p3_1:row19:col7', 'Fritz_1984_table_p3_1:row19:col8', 'Fritz_1984_table_p3_1:row19:col9', 'Fritz_1984_table_p3_1:row19:col10', 'Fritz_1984_table_p3_1:row19:col11', 'Fritz_1984_table_p3_1:row19:col12', 'Fritz_1984_table_p3_1:row19:col13', 'Fritz_1984_table_p3_1:row20:col7', 'Fritz_1984_table_p3_1:row20:col8', 'Fritz_1984_table_p3_1:row20:col9', 'Fritz_1984_table_p3_1:row20:col10', 'Fritz_1984_table_p3_1:row20:col11', 'Fritz_1984_table_p3_1:row20:col12', 'Fritz_1984_table_p3_1:row20:col13', 'Fritz_1984_table_p3_1:row21:col7', 'Fritz_1984_table_p3_1:row21:col8', 'Fritz_1984_table_p3_1:row21:col9', 'Fritz_1984_table_p3_1:row21:col10', 'Fritz_1984_table_p3_1:row21:col11', 'Fritz_1984_table_p3_1:row21:col12', 'Fritz_1984_table_p3_1:row21:col13', 'Fritz_1984_table_p3_1:row22:col7', 'Fritz_1984_table_p3_1:row22:col8', 'Fritz_1984_table_p3_1:row22:col9', 'Fritz_1984_table_p3_1:row22:col10', 'Fritz_1984_table_p3_1:row22:col11', 'Fritz_1984_table_p3_1:row22:col12', 'Fritz_1984_table_p3_1:row22:col13', 'Fritz_1984_table_p3_1:row23:col7', 'Fritz_1984_table_p3_1:row23:col8', 'Fritz_1984_table_p3_1:row23:col9', 'Fritz_1984_table_p3_1:row23:col10', 'Fritz_1984_table_p3_1:row23:col11', 'Fritz_1984_table_p3_1:row23:col12', 'Fritz_1984_table_p3_1:row23:col13', 'Fritz_1984_table_p3_1:row24:col7', 'Fritz_1984_table_p3_1:row24:col8', 'Fritz_1984_table_p3_1:row24:col9', 'Fritz_1984_table_p3_1:row24:col10', 'Fritz_1984_table_p3_1:row24:col11', 'Fritz_1984_table_p3_1:row24:col12', 'Fritz_1984_table_p3_1:row24:col13', 'Fritz_1984_table_p3_1:row25:col7', 'Fritz_1984_table_p3_1:row25:col8', 'Fritz_1984_table_p3_1:row25:col9', 'Fritz_1984_table_p3_1:row25:col10', 'Fritz_1984_table_p3_1:row25:col11', 'Fritz_1984_table_p3_1:row25:col12', 'Fritz_1984_table_p3_1:row25:col13', 'Fritz_1984_table_p3_1:row26:col7', 'Fritz_1984_table_p3_1:row26:col8', 'Fritz_1984_table_p3_1:row26:col9', 'Fritz_1984_table_p3_1:row26:col10', 'Fritz_1984_table_p3_1:row26:col11', 'Fritz_1984_table_p3_1:row26:col12', 'Fritz_1984_table_p3_1:row26:col13', 'Fritz_1984_table_p3_1:row27:col7', 'Fritz_1984_table_p3_1:row27:col8', 'Fritz_1984_table_p3_1:row27:col9', 'Fritz_1984_table_p3_1:row27:col10', 'Fritz_1984_table_p3_1:row27:col11', 'Fritz_1984_table_p3_1:row27:col12', 'Fritz_1984_table_p3_1:row27:col13', 'Fritz_1984_table_p3_1:row28:col7', 'Fritz_1984_table_p3_1:row28:col8', 'Fritz_1984_table_p3_1:row28:col9', 'Fritz_1984_table_p3_1:row28:col10', 'Fritz_1984_table_p3_1:row28:col11', 'Fritz_1984_table_p3_1:row28:col12', 'Fritz_1984_table_p3_1:row28:col13', 'Fritz_1984_table_p3_1:row29:col7', 'Fritz_1984_table_p3_1:row29:col8', 'Fritz_1984_table_p3_1:row29:col9', 'Fritz_1984_table_p3_1:row29:col10', 'Fritz_1984_table_p3_1:row29:col11', 'Fritz_1984_table_p3_1:row29:col12', 'Fritz_1984_table_p3_1:row29:col13', 'Fritz_1984_table_p3_1:row30:col7', 'Fritz_1984_table_p3_1:row30:col8', 'Fritz_1984_table_p3_1:row30:col9', 'Fritz_1984_table_p3_1:row30:col10', 'Fritz_1984_table_p3_1:row30:col11', 'Fritz_1984_table_p3_1:row30:col12', 'Fritz_1984_table_p3_1:row30:col13', 'Fritz_1984_table_p3_1:row31:col7', 'Fritz_1984_table_p3_1:row31:col8', 'Fritz_1984_table_p3_1:row31:col9', 'Fritz_1984_table_p3_1:row31:col10', 'Fritz_1984_table_p3_1:row31:col11', 'Fritz_1984_table_p3_1:row31:col12', 'Fritz_1984_table_p3_1:row31:col13'])
+- implicit units: 'tmax, obs h' → h (from the paper text: "Table caption: '...their respective I,,, values occurred a t 1.74 f 1.32 and 1.06 f 0.65 h.'")
+- implicit units: 'Cmax,obs ng/mL' → ng/mL (from the paper text: "Table caption: 'The C,,, values for the tablet and solution preparations were 50 f 34.3 and 79.3 f 61.1 ng/mL, respectiv")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetaminophen
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Anderson_2015's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q22 (CL) from Allegaert_2014's review values (primary lacked it)
+- gap-filled Q61 (V) from Albert_1984's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Anderson_1998's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Fritz_1984_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- table Fritz_1984_table_p3_1: competing_summary_estimates
+- table Fritz_1984_table_p3_1: units_need_context
+- transposed table Fritz_1984_table_p3_1: logical view retains original source coordinates
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[average (+/- sd) bioavailability of the tablet relative to that of the solution]` |  | 85.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[propofol clearance capacity]` | 0.029 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the average (+/- sd) bioavailability of the tablet relative to that of the solution was 85.0 +/- 31.1 and 88.6 +/- 13.1% for pentazocine and acetaminophen, respectively.]` | 85.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 4.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | acetaminophen, pentazocine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | acetaminophen, pentazocine | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['pentazocine', 'acetaminophen', 'none']] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 90.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[model independent]` |  | 0.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[regression dependent]` |  | 362 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | pentazocine and acetaminophen | acetaminophen and pentazocine | mismatch |
 
 </details>
 
@@ -117,13 +135,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Anderson_2015:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2014:review'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Fritz_1984_table_p3_1:row0:col2', 'Fritz_1984_table_p3_1:row1:col2', 'Fritz_1984_table_p3_1:row2:col2', 'Fritz_1984_table_p3_1:row3:col2', 'Fritz_1984_table_p3_1:row4:col2', 'Fritz_1984_table_p3_1:row5:col2', 'Fritz_1984_table_p3_1:row6:col2', 'Fritz_1984_table_p3_1:row7:col2', 'Fritz_1984_table_p3_1:row8:col2', 'Fritz_1984_table_p3_1:row9:col2', 'Fritz_1984_table_p3_1:row10:col2', 'Fritz_1984_table_p3_1:row11:col2', 'Fritz_1984_table_p3_1:row12:col2', 'Fritz_1984_table_p3_1:row13:col2', 'Fritz_1984_table_p3_1:row14:col2', 'Fritz_1984_table_p3_1:row15:col2', 'Fritz_1984_table_p3_1:row16:col2', 'Fritz_1984_table_p3_1:row17:col2', 'Fritz_1984_table_p3_1:row18:col2', 'Fritz_1984_table_p3_1:row19:col2', 'Fritz_1984_table_p3_1:row20:col2', 'Fritz_1984_table_p3_1:row21:col2', 'Fritz_1984_table_p3_1:row22:col2', 'Fritz_1984_table_p3_1:row23:col2', 'Fritz_1984_table_p3_1:row24:col2', 'Fritz_1984_table_p3_1:row25:col2', 'Fritz_1984_table_p3_1:row26:col2', 'Fritz_1984_table_p3_1:row27:col2', 'Fritz_1984_table_p3_1:row28:col2', 'Fritz_1984_table_p3_1:row29:col2', 'Fritz_1984_table_p3_1:row30:col2', 'Fritz_1984_table_p3_1:row31:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Fritz_1984_table_p3_1:row0:col1', 'Fritz_1984_table_p3_1:row1:col1', 'Fritz_1984_table_p3_1:row2:col1', 'Fritz_1984_table_p3_1:row3:col1', 'Fritz_1984_table_p3_1:row4:col1', 'Fritz_1984_table_p3_1:row5:col1', 'Fritz_1984_table_p3_1:row6:col1', 'Fritz_1984_table_p3_1:row7:col1', 'Fritz_1984_table_p3_1:row8:col1', 'Fritz_1984_table_p3_1:row9:col1', 'Fritz_1984_table_p3_1:row10:col1', 'Fritz_1984_table_p3_1:row11:col1', 'Fritz_1984_table_p3_1:row12:col1', 'Fritz_1984_table_p3_1:row13:col1', 'Fritz_1984_table_p3_1:row14:col1', 'Fritz_1984_table_p3_1:row15:col1', 'Fritz_1984_table_p3_1:row16:col1', 'Fritz_1984_table_p3_1:row17:col1', 'Fritz_1984_table_p3_1:row18:col1', 'Fritz_1984_table_p3_1:row19:col1', 'Fritz_1984_table_p3_1:row20:col1', 'Fritz_1984_table_p3_1:row21:col1', 'Fritz_1984_table_p3_1:row22:col1', 'Fritz_1984_table_p3_1:row23:col1', 'Fritz_1984_table_p3_1:row24:col1', 'Fritz_1984_table_p3_1:row25:col1', 'Fritz_1984_table_p3_1:row26:col1', 'Fritz_1984_table_p3_1:row27:col1', 'Fritz_1984_table_p3_1:row28:col1', 'Fritz_1984_table_p3_1:row29:col1', 'Fritz_1984_table_p3_1:row30:col1', 'Fritz_1984_table_p3_1:row31:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Albert_1984:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.2 | ['Anderson_2015:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 26 L/h | ['Anderson_2015:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.03 | ['Allegaert_2014:review'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.8 L/h | ['Allegaert_2014:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.35 L | ['Albert_1984:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -135,37 +158,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_modelica.zip" download>Paracetamol_Fritz1984_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_fmi.zip" download>Paracetamol_Fritz1984_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_matlab.zip" download>Paracetamol_Fritz1984_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_matlab_simbio.zip" download>Paracetamol_Fritz1984_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_sbml.zip" download>Paracetamol_Fritz1984_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Fritz1984_reference/Paracetamol_Fritz1984_reference_cellml.zip" download>Paracetamol_Fritz1984_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-</div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Fritz AK, Benziger DP, Peterson JE, Park GB, Edelson J. Relative bioavailability and pharmacokinetics: a combination of pentazocine and acetaminophen. Journal of pharmaceutical sciences 73(3):326–331 (1984). [doi:10.1002/jps.2600730311](https://doi.org/10.1002/jps.2600730311)
-
-**This record:** Pharmacolibrary v26.09, model `Paracetamol_Fritz1984_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Fritz1984_reference>
-
-```bibtex
-@misc{pharmacolibrary_ParacetamolFritz1984reference,
-  title  = {{Pharmacolibrary model Paracetamol_Fritz1984_reference}},
-  author = {{Pharmacolibrary}},
-  version = {v26.09},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Fritz1984_reference},
-  note   = {Parameters from doi:10.1002/jps.2600730311},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -174,5 +169,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Fritz1984_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Fritz1984_reference%0APaper%3A%20Fritz_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Fritz1984_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20Paracetamol_Fritz1984_reference&body=Drug%3A%20paracetamol%0ARecord%3A%20Paracetamol_Fritz1984_reference%0APaper%3A%20Fritz_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/Paracetamol_Fritz1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 07:34 UTC</sub>

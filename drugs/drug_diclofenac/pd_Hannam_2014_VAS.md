@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD visual analogue score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD Pain score&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Lucas2016_reference&quot;,&quot;label&quot;:&quot;Lucas_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Lucas2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# visual analogue score — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+# Pain score — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives visual analogue score: direct sigmoid Emax (Hill) effect.
+**As extracted:** Diclofenac (concentrations from this paper's PK model) drives Pain score (in VAS 0-10): delayed effect through an effect compartment.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -23,10 +23,10 @@
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hannam_2014`
-- **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **model family:** `effect_compartment`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesthesia (2014)
@@ -35,9 +35,10 @@ Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesth
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | EMAX | `Q323` ·  | 4.9 |  | direction | Hannam_2014:pdv3 |
-| PD (effect) | C50 | `Q321` ·  | 1.23 | mg·l(-1) | llm | Hannam_2014:pdv3 |
-| PD (effect) | equilibration half-time | `Q326` ·  | 0.23 | h | llm | Hannam_2014:pdv3 |
+| PD (effect) | E 0 | `Q324` ·  | 10.0 | VAS 0-10 | llm | Hannam_2014:pdv3 |
+| PD (effect) | E MAX | `Q320` ·  | 0.492 | VAS 0-10 | llm | Hannam_2014:pdv3 |
+| PD (effect) | T 1/2 keq D | `Q326` ·  | 0.23 | h | llm | Hannam_2014:pdv3 |
+| PD (effect) | C 50,D | `Q321` ·  | 1.22 | mgÁl À1 | llm | Hannam_2014:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,15 +87,19 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | inhibition | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 0.23 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q341]` | 6.8 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | effect_compartment | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 0.492 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 1.22 | 13.3 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` |  | 0.492 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 0.23 |  | only_one_extracted |
 
 </details>
 
@@ -141,13 +146,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Diclofenac_Hannam2014_PD_vas`. <https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Hannam2014_PD_vas>
+**This record:** Pharmacolibrary, model `Diclofenac_Hannam2014_PD_vas`. <https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Hannam2014_PD_vas>
 
 ```bibtex
 @misc{pharmacolibrary_DiclofenacHannam2014PDvas,
   title  = {{Pharmacolibrary model Diclofenac_Hannam2014_PD_vas}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_diclofenac/Diclofenac_Hannam2014_PD_vas},
 }
 ```
@@ -163,5 +167,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20pd_Hannam_2014_VAS&body=Drug%3A%20diclofenac%0ARecord%3A%20pd_Hannam_2014_VAS%0APaper%3A%20Hannam_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/pd_Hannam_2014_VAS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiclofenac%5D%20pd_Hannam_2014_VAS&body=Drug%3A%20diclofenac%0ARecord%3A%20pd_Hannam_2014_VAS%0APaper%3A%20Hannam_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diclofenac/pd_Hannam_2014_VAS%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [diclofenac](drugs/drug_diclofenac/)</sub>

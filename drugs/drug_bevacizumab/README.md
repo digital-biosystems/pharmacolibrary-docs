@@ -15,19 +15,9 @@ Bevacizumab is a monoclonal antibody that blocks tumour blood vessel growth and 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.007917 | L/h | 0.19 L/day | patients with metastatic colorectal cancer | 130 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Caulet_2016_estimate](drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md) |
-| CL | CL | 0.0086 | L/h | 8.6 mL/h | adult cancer patients | 1792 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Han_2016_reference](drugs/drug_bevacizumab/Bevacizumab_Han2016_reference.md) |
-| CL | CL | 0.19 | L/h | 0.19 L/h | patients with metastatic colorectal cancer | 130 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Caulet_2016_p_value_a](drugs/drug_bevacizumab/Bevacizumab_Caulet2016_p_value_a.md) |
-| V | V | 3.437 ‡ | L | 49.1 mL/kg | children with osteosarcoma | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Turner_2014_reference](drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md) |
-| V | V1 | 2.678 | L | 2678 mL | adult cancer patients | 1792 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Han_2016_reference](drugs/drug_bevacizumab/Bevacizumab_Han2016_reference.md) |
-| V | V1 | 4.2 | L | 4.2 L | patients with metastatic colorectal cancer | 130 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Caulet_2016_estimate](drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md) |
-| t½ | t1/2z | 292.8 | h | 12.2 days | children with osteosarcoma | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Turner_2014_reference](drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.001</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Caulet_2016 · CL</text><circle cx="294.8" cy="30.0" r="4" fill="#78909c"><title>Caulet_2016 · CL: 0.007917 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2016 · CL</text><circle cx="299.0" cy="46.0" r="4" fill="#ef6c00"><title>Han_2016 · CL: 0.0086 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Caulet_2016 · CL</text><circle cx="455.9" cy="62.0" r="4" fill="#78909c"><title>Caulet_2016 · CL: 0.19 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Turner_2014 · V ·/kg</text><circle cx="377.7" cy="30.0" r="4" fill="#ef6c00"><title>Turner_2014 · V ·/kg: 3.437 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2016 · V1</text><circle cx="339.7" cy="46.0" r="4" fill="#ef6c00"><title>Han_2016 · V1: 2.678 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Caulet_2016 · V1</text><circle cx="408.1" cy="62.0" r="4" fill="#78909c"><title>Caulet_2016 · V1: 4.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -119,5 +109,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbevacizumab%5D&body=Drug%3A%20bevacizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bevacizumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbevacizumab%5D&body=Drug%3A%20bevacizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bevacizumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:15 UTC</sub>

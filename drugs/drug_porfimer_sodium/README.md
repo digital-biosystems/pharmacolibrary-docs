@@ -17,7 +17,7 @@ Porfimer sodium is a light-activated sensitiser used in photodynamic therapy, in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bellnier_2006_reference](drugs/drug_porfimer_sodium/PorfimerSodium_Bellnier2006_reference.md) | — | general linear (no model) | 0 | Bellnier DA et al., Clinical pharmacokinetics of the PDT ph…, Lasers in surgery and medic… (2006) | [10.1002/lsm.20340](https://doi.org/10.1002/lsm.20340) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bellnier_2006_reference](drugs/drug_porfimer_sodium/PorfimerSodium_Bellnier2006_reference.md) | — | 1-compartment (no model) | 0 | Bellnier DA et al., Clinical pharmacokinetics of the PDT ph…, Lasers in surgery and medic… (2006) | [10.1002/lsm.20340](https://doi.org/10.1002/lsm.20340) |
 
 ## ADME sites
 
@@ -78,5 +78,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bporfimer_sodium%5D&body=Drug%3A%20porfimer_sodium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_porfimer_sodium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bporfimer_sodium%5D&body=Drug%3A%20porfimer_sodium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_porfimer_sodium/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:48 UTC</sub>

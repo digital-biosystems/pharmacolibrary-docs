@@ -270,13 +270,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetics and exposure-response analysis of durvalumab in combination with gemcitabine and cisplatin in patients with advanced biliary tract cancer. Cancer chemotherapy and pharmacology 95(1):23 (2025). [doi:10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8)
 
-**This record:** Pharmacolibrary v26.09, model `Durvalumab_Abegesah2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference>
+**This record:** Pharmacolibrary, model `Durvalumab_Abegesah2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DurvalumabAbegesah2025reference,
   title  = {{Pharmacolibrary model Durvalumab_Abegesah2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference},
   note   = {Parameters from doi:10.1007/s00280-024-04743-8},
 }
@@ -295,5 +294,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D%20Durvalumab_Abegesah2025_reference&body=Drug%3A%20durvalumab%0ARecord%3A%20Durvalumab_Abegesah2025_reference%0APaper%3A%20Abegesah_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D%20Durvalumab_Abegesah2025_reference&body=Drug%3A%20durvalumab%0ARecord%3A%20Durvalumab_Abegesah2025_reference%0APaper%3A%20Abegesah_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 12:18 UTC</sub>

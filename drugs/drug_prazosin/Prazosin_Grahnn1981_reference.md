@@ -201,13 +201,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Grahnén A, Seideman P, Lindström B, Haglund K, von Bahr C. Prazosin kinetics in hypertension. Clinical pharmacology and therapeutics 30(4):439–446 (1981). [doi:10.1038/clpt.1981.186](https://doi.org/10.1038/clpt.1981.186)
 
-**This record:** Pharmacolibrary v26.09, model `Prazosin_Grahnn1981_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_prazosin/Prazosin_Grahnn1981_reference>
+**This record:** Pharmacolibrary, model `Prazosin_Grahnn1981_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_prazosin/Prazosin_Grahnn1981_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PrazosinGrahnn1981reference,
   title  = {{Pharmacolibrary model Prazosin_Grahnn1981_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_prazosin/Prazosin_Grahnn1981_reference},
   note   = {Parameters from doi:10.1038/clpt.1981.186},
 }
@@ -226,5 +225,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprazosin%5D%20Prazosin_Grahnn1981_reference&body=Drug%3A%20prazosin%0ARecord%3A%20Prazosin_Grahnn1981_reference%0APaper%3A%20Grahn%C3%A9n_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prazosin/Prazosin_Grahnn1981_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 14:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprazosin%5D%20Prazosin_Grahnn1981_reference&body=Drug%3A%20prazosin%0ARecord%3A%20Prazosin_Grahnn1981_reference%0APaper%3A%20Grahn%C3%A9n_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_prazosin/Prazosin_Grahnn1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 14:04 UTC</sub>

@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on the pharmacokinetics of fimasartan: a single-dose, open-label, Phase I study. Drug design, development and therapy 8:1723–1731 (2014). [doi:10.2147/DDDT.S68784](https://doi.org/10.2147/DDDT.S68784)
 
-**This record:** Pharmacolibrary v26.09, model `Fimasartan_Kim2014v2_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate>
+**This record:** Pharmacolibrary, model `Fimasartan_Kim2014v2_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate>
 
 ```bibtex
 @misc{pharmacolibrary_FimasartanKim2014v2estimate,
   title  = {{Pharmacolibrary model Fimasartan_Kim2014v2_estimate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate},
   note   = {Parameters from doi:10.2147/DDDT.S68784},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfimasartan%5D%20Fimasartan_Kim2014v2_estimate&body=Drug%3A%20fimasartan%0ARecord%3A%20Fimasartan_Kim2014v2_estimate%0APaper%3A%20Kim_2014_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfimasartan%5D%20Fimasartan_Kim2014v2_estimate&body=Drug%3A%20fimasartan%0ARecord%3A%20Fimasartan_Kim2014v2_estimate%0APaper%3A%20Kim_2014_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:28 UTC</sub>

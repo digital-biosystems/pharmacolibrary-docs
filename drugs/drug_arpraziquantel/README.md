@@ -31,18 +31,9 @@ Arpraziquantel is the (R)-enantiomer of the anthelmintic praziquantel, developed
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 608 | L/h | 608.02 liter/h | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_mean](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_mean.md) |
-| CL | CL/F | 677.6 | L/h | 677.59 liter/h | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_median](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median.md) |
-| V | V/F | 474 | L | 473.97 liter | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_mean](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_mean.md) |
-| V | V/F | 503.9 | L | 503.90 liter | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_median](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median.md) |
-| ka | kabs | 9.88 | 1/h | 9.88 h−1 | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_median](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_median.md) |
-| ka | kabs | 14.89 | 1/h | 14.89 h−1 | Ugandan children with intestinal schistosomiasis | 59 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bustinduy_2016_mean](drugs/drug_arpraziquantel/Arpraziquantel_Bustinduy2016_mean.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bustinduy_2016 · CL/F</text><circle cx="464.4" cy="30.0" r="4" fill="#ef6c00"><title>Bustinduy_2016 · CL/F: 608 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bustinduy_2016 · CL/F</text><circle cx="480.8" cy="46.0" r="4" fill="#ef6c00"><title>Bustinduy_2016 · CL/F: 677.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bustinduy_2016 · V/F</text><circle cx="426.5" cy="30.0" r="4" fill="#ef6c00"><title>Bustinduy_2016 · V/F: 474 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bustinduy_2016 · V/F</text><circle cx="435.8" cy="46.0" r="4" fill="#ef6c00"><title>Bustinduy_2016 · V/F: 503.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -116,5 +107,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barpraziquantel%5D&body=Drug%3A%20arpraziquantel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arpraziquantel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barpraziquantel%5D&body=Drug%3A%20arpraziquantel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_arpraziquantel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:12 UTC</sub>

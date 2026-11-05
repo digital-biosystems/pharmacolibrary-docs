@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Friedrich_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Friedrich2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was held back because the first-order absorption rate constant (ka) was not reported in the paper and library placeholder values were used instead of an explicit estimate.
+> This record was reviewed on 2026-10-22 14:37 UTC (Needs review), but the paper was screened again on 2026-11-04 12:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="extracted" stale="true" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Friedrich S, Kastelein JJ, James D, Waterhouse T, Nissen SE, Nicholls SJ et al. The pharmacokinetics and pharmacokinetic/pharmacodynamic relationships of evacetrapib administered as monotherapy or in combination with statins. CPT: pharmacometrics & systems pharmacology 3(1):e94 (2014).
@@ -23,24 +23,23 @@ Friedrich S, Kastelein JJ, James D, Waterhouse T, Nissen SE, Nicholls SJ et al. 
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference.svg" alt="Simvastatin_Friedrich2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Oral clearance (CL/F) (l/hour) | CL/F | 15.3 | l/hour |
 | Central volume of distribution (V2/F) (l) | V1 | 228.0 | l |
 | Peripheral volume of distribution (V3/F) (l) | V2 | 827.0 | l |
 | Intercompartmental clearance (Q/F) (l/hour) | Q/F | 9.79 | l/hour |
+| Rate of absorption (Ka) (hour -1 ) | kabs | 0.3 | hour -1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +53,7 @@ Friedrich S, Kastelein JJ, James D, Waterhouse T, Nissen SE, Nicholls SJ et al. 
 
 The model builder defaulted ka and Tlag because these values were not found in the source text for simvastatin. The review flags this as invented absorption, noting the parameters lack support from the paper. Additionally, the record uses an apparent parameterization (dividing by bioavailability F) without explicit estimates for F or molar corrections, creating discrepancies with a second reader on several unreported parameter values. Extracted — simvastatin: CL/F 15.3 l/hour, V1 228 l, V2 827 l, Q/F 9.79 l/hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 39.4; it also differs on 3 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -66,6 +65,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 | Central volume of distribution (V2/F) (l) | `Q63` · V1 | 228.0 | l | 0.228 | m3 | L | review (0.7) | Friedrich_2014:review |
 | Peripheral volume of distribution (V3/F) (l) | `Q64` · V2 | 827.0 | l | 0.827 | m3 | L | review (0.7) | Friedrich_2014:review |
 | Intercompartmental clearance (Q/F) (l/hour) | `Q69` · Q/F | 9.79 | l/hour | 2.719e-06 | m3/s | L/h | review (0.7) | Friedrich_2014:review |
+| Rate of absorption (Ka) (hour -1 ) | `Q49` · kabs | 0.3 | hour -1 | 8.333e-05 | 1/s | 1/h | review (0.7) | Friedrich_2014:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,23 +86,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` |  | 39.4 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q314]` |  | 50.2 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q320]` |  | 177 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q321]` |  | 5380 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -114,10 +105,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Friedrich_2014:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Friedrich_2014:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Friedrich_2014:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Friedrich_2014:review'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Friedrich_2014:review'] |
@@ -194,13 +186,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Friedrich S, Kastelein JJ, James D, Waterhouse T, Nissen SE, Nicholls SJ et al. The pharmacokinetics and pharmacokinetic/pharmacodynamic relationships of evacetrapib administered as monotherapy or in combination with statins. CPT: pharmacometrics & systems pharmacology 3(1):e94 (2014). [doi:10.1038/psp.2013.70](https://doi.org/10.1038/psp.2013.70)
 
-**This record:** Pharmacolibrary v26.09, model `Simvastatin_Friedrich2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference>
+**This record:** Pharmacolibrary, model `Simvastatin_Friedrich2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SimvastatinFriedrich2014reference,
   title  = {{Pharmacolibrary model Simvastatin_Friedrich2014_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference},
   note   = {Parameters from doi:10.1038/psp.2013.70},
 }
@@ -219,5 +210,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Friedrich2014_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Friedrich2014_reference%0APaper%3A%20Friedrich_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Friedrich2014_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Friedrich2014_reference%0APaper%3A%20Friedrich_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 12:45 UTC</sub>

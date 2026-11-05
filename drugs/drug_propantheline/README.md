@@ -14,14 +14,6 @@ Propantheline is an anticholinergic (antispasmodic) drug used for functional gas
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q3275451](https://www.wikidata.org/wiki/Q3275451) and the WHO ATC classification; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 79.2 | L/h | 79.2 l h-1 | normal men | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -125,5 +117,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropantheline%5D&body=Drug%3A%20propantheline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propantheline/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 13:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropantheline%5D&body=Drug%3A%20propantheline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propantheline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 13:00 UTC</sub>

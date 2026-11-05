@@ -115,13 +115,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Scopolamine_LiemMoolenaar2011_PD_spv`. <https://pharmacolibrary.github.io/#/drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv>
+**This record:** Pharmacolibrary, model `Scopolamine_LiemMoolenaar2011_PD_spv`. <https://pharmacolibrary.github.io/#/drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv>
 
 ```bibtex
 @misc{pharmacolibrary_ScopolamineLiemMoolenaar2011PDspv,
   title  = {{Pharmacolibrary model Scopolamine_LiemMoolenaar2011_PD_spv}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv},
 }
 ```
@@ -135,5 +134,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bscopolamine%5D%20pd_Liem_Moolenaar_2011_SPV&body=Drug%3A%20scopolamine%0ARecord%3A%20pd_Liem_Moolenaar_2011_SPV%0APaper%3A%20Liem-Moolenaar_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_SPV%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bscopolamine%5D%20pd_Liem_Moolenaar_2011_SPV&body=Drug%3A%20scopolamine%0ARecord%3A%20pd_Liem_Moolenaar_2011_SPV%0APaper%3A%20Liem-Moolenaar_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_SPV%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [scopolamine](drugs/drug_scopolamine/)</sub>

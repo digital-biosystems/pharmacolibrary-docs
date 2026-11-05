@@ -9,7 +9,7 @@
 
 > Apparent clearance was doubly corrected by an explicit bioavailability parameter, and a peripheral compartment lacks a connection from the central compartment.
 
-<div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Chandasana2024_reference" status="rejected" stale="false" population="children with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Chandasana2024_reference" status="rejected" stale="false" population="children with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Population Pharmacokinetic Modeling of Abacavir/Dolutegravir/Lamivudine to Support a Fixed-Dose Combination in Children with HIV-1. Infectious diseases and therapy 13(8):1877–1891 (2024).
@@ -23,9 +23,9 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** CL/F, Q/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 9 extracted, plus 4 covariate effects.  
+**Parameters:** 10 extracted, plus 6 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -41,9 +41,12 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 | Apparent central volume of distribution, V2/F [l] | V2/F | 10.1 | l | 7.56 | 51.9 (None% RSE) |
 | Intercompartment clearance, Q/F [l/h] | Q/F | 1.69 | l/h | 7.87 | 67.9 (None% RSE) |
 | Apparent peripheral compartment volume of distribution, V3/F [l] | V3/F | 23.0 | l | 17.4 | 91.9 (None% RSE) |
-| Maturation half time, TM50 [PMA weeks] | t1/2z | 52.2 | weeks |  |  |
+| F, tablet ARROW PK Substudy Part 2 | fe | 1.62 |  | 8.02 |  |
+| F, fasted DT/granules | FG | 1.53 |  | 3.26 |  |
 | theta_cl_f_wt_power | theta_cl_f_wt_power | 0.758 |  | 7.07 |  |
-| theta_q319_wt_power | theta_q319_wt_power | 0.794 |  |  |  |
+| theta_q354_wt_power | theta_q354_wt_power | 0.677 |  | 8.98 |  |
+| theta_cl_f_wt_power | theta_cl_f_wt_power | 0.794 |  |  |  |
+| theta_q61_wt_power | theta_q61_wt_power | 0.698 |  |  |  |
 | theta_cl_f_wt_power | theta_cl_f_wt_power | 0.455 |  | 4.15 |  |
 | theta_q76_wt_power | theta_q76_wt_power | 0.556 |  | 3.87 |  |
 
@@ -79,9 +82,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Apparent central volume of distribution, V2/F [l] | `Q82` · V2/F | 10.1 | l | 0.0101 | m3 | l | 7.56 | llm_corrected (0.6) | Chandasana_2024_table_1:row1:col1 | 51.9 (None% RSE) |
 | Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | 1.69 | l/h | 4.694e-07 | m3/s | l/h | 7.87 | llm_corrected (0.6) | Chandasana_2024_table_1:row3:col1 | 67.9 (None% RSE) |
 | Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | 23.0 | l | 0.023 | m3 | l | 17.4 | llm_corrected (0.6) | Chandasana_2024_table_1:row4:col1 | 91.9 (None% RSE) |
-| Maturation half time, TM50 [PMA weeks] | `Q57` · t1/2z | 52.2 | weeks |  |  | weeks |  | llm (0.6) | Chandasana_2024_table_2:row10:col1 |  |
+| F, tablet ARROW PK Substudy Part 2 | `Q44` · fe | 1.62 |  |  |  |  | 8.02 | llm (0.6) | Chandasana_2024_table_1:row5:col1 |  |
+| F, fasted DT/granules | `Q41` · FG | 1.53 |  |  |  |  | 3.26 | llm (0.6) | Chandasana_2024_table_2:row6:col1 |  |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.758 |  |  |  |  | 7.07 |  | Tab3:row7:col1 |  |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.794 |  |  |  |  |  |  | Chandasana_2024_table_1:row7:col1 |  |
+| theta_q354_wt_power | `Q900` · theta_q354_wt_power | 0.677 |  |  |  |  | 8.98 |  | Tab3:row8:col1 |  |
+| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.794 |  |  |  |  |  |  | Chandasana_2024_table_1:row7:col1 |  |
+| theta_q61_wt_power | `Q900` · theta_q61_wt_power | 0.698 |  |  |  |  |  |  | Chandasana_2024_table_1:row8:col1 |  |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.455 |  |  |  |  | 4.15 |  | Chandasana_2024_table_2:row7:col1 |  |
 | theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.556 |  |  |  |  | 3.87 |  | Chandasana_2024_table_2:row8:col1 |  |
 
@@ -104,20 +110,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'V2/F' routed out of structural estimates ('Interindividual variability')
 - table section iiv: 'V3/F' routed out of structural estimates ('Interindividual variability')
 - table section iov: 'IOV-KA' routed out of structural estimates ('Interoccasion variability')
-- dropped unlinked row (NIL): 'VL/F ~ (WT/18.5)' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1'])
 - dropped duplicate Q27 ('Apparent clearance, CL/F [L/h]', value '16.3') — already have one for this compound
-- dropped unlinked row (NIL): 'V/2F ~ (WT/15.6)' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_table_1:row8:col1'])
 - dropped duplicate Q49 ('Absorption rate constant, KA, FCT [h−1]', value '0.854') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA ~ DT and granules [h−1]', value '2.04') — already have one for this compound
-- unit_dimension_unknown: 'FMAT' (t1/2z)
+- dropped PD-category row 'Maturation half time, TM50 [PMA weeks]' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_table_2:row10:col1'])
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_table_2:row11:col1'])
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q354 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the paper text: "Table 1 row: 'Absorption rate constant, KA [h−1]'")
-- implicit units: 'Maturation half time, TM50 [PMA weeks]' → weeks (from the paper text: "Table 2 caption/footnote: 'TM50HILL... PMA (weeks)'")
+- implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the paper text: "Table 1 lists 'Absorption rate constant, KA [h−1]' and the text states 'Absorption rate constant, KA [h−1]0.85 (2.31)'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lamivudine
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (14 record(s))
@@ -160,20 +163,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 10 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_center_consistency_wt | fail |  | [18.5, 70.0] |  |
+| C2_center_consistency_wt | fail |  | [15.6, 18.5, 70.0] |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row4:col1', 'Chandasana_2024_table_2:row0:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab3:row3:col1', 'Chandasana_2024_table_2:row1:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab3:row1:col1', 'Chandasana_2024_table_1:row2:col1'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Chandasana_2024_table_2:row10:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Chandasana_2024_table_1:row3:col1'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['Chandasana_2024_table_1:row4:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Chandasana_2024_table_1:row1:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row2:col1'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.496 with apparent parameterization |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.03 L/h | ['Tab3:row4:col1', 'Chandasana_2024_table_2:row0:col1'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 13.6 L | ['Tab3:row3:col1', 'Chandasana_2024_table_2:row1:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 10.1 L | ['Chandasana_2024_table_1:row1:col1'] |
@@ -199,5 +201,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamivudine%5D%20Lamivudine_Chandasana2024_reference&body=Drug%3A%20lamivudine%0ARecord%3A%20Lamivudine_Chandasana2024_reference%0APaper%3A%20Chandasana_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamivudine/Lamivudine_Chandasana2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 13:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamivudine%5D%20Lamivudine_Chandasana2024_reference&body=Drug%3A%20lamivudine%0ARecord%3A%20Lamivudine_Chandasana2024_reference%0APaper%3A%20Chandasana_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamivudine/Lamivudine_Chandasana2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 13:08 UTC</sub>

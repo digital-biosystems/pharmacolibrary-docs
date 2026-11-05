@@ -228,13 +228,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Kotila OA, Ajayi DT, Masimirembwa C, Thelingwani R, Odetunde A, Falusi AG et al. Non-compartmental and population pharmacokinetic analysis of dapsone in healthy NIGERIANS: A pilot study. British journal of clinical pharmacology 89(11):3454–3459 (2023). [doi:10.1111/bcp.15862](https://doi.org/10.1111/bcp.15862)
 
-**This record:** Pharmacolibrary v26.09, model `Dapsone_Kotila2023_median`. <https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Kotila2023_median>
+**This record:** Pharmacolibrary, model `Dapsone_Kotila2023_median`. <https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Kotila2023_median>
 
 ```bibtex
 @misc{pharmacolibrary_DapsoneKotila2023median,
   title  = {{Pharmacolibrary model Dapsone_Kotila2023_median}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_dapsone/Dapsone_Kotila2023_median},
   note   = {Parameters from doi:10.1111/bcp.15862},
 }
@@ -253,5 +252,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapsone%5D%20Dapsone_Kotila2023_median&body=Drug%3A%20dapsone%0ARecord%3A%20Dapsone_Kotila2023_median%0APaper%3A%20Kotila_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapsone/Dapsone_Kotila2023_median%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapsone%5D%20Dapsone_Kotila2023_median&body=Drug%3A%20dapsone%0ARecord%3A%20Dapsone_Kotila2023_median%0APaper%3A%20Kotila_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapsone/Dapsone_Kotila2023_median%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:43 UTC</sub>

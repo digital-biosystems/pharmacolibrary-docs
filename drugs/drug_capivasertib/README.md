@@ -31,20 +31,9 @@ Capivasertib is a protein kinase inhibitor used to treat breast cancer. It is au
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 59.6 | L/h | 59.6 L/h | patients with cancer from six Phase I–III trials | 851 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez_2025_reference](drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md) |
-| CL | CL/F | 62 | L/h | 62 L/h | patients with advanced or metastatic solid tumours | 441 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez-Teruel_2024_reference](drugs/drug_capivasertib/Capivasertib_FernandezTeruel2024_reference.md) |
-| V | V/F | 95.7 | L | 95.7 L | patients with advanced or metastatic solid tumours | 441 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez-Teruel_2024_reference](drugs/drug_capivasertib/Capivasertib_FernandezTeruel2024_reference.md) |
-| V | V1/F | 49 | L | 49 L | patients with cancer from six Phase I–III trials | 851 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez_2025_reference](drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md) |
-| ka | kabs | 0.408 | 1/h | 0.408 1/h | patients with advanced or metastatic solid tumours | 441 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez-Teruel_2024_reference](drugs/drug_capivasertib/Capivasertib_FernandezTeruel2024_reference.md) |
-| ka | kabs | 0.441 | 1/h | 0.441 1/h | patients with cancer from six Phase I–III trials | 851 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez_2025_reference](drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md) |
-| t½ | t1/2z | 71 | h | 71 h | patients with advanced or metastatic solid tumours | 441 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez-Teruel_2024_reference](drugs/drug_capivasertib/Capivasertib_FernandezTeruel2024_reference.md) |
-| F | Fab | 0.016 |  | 1.6 LogitF1 | patients with cancer from six Phase I–III trials | 851 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fernandez_2025_reference](drugs/drug_capivasertib/Capivasertib_Fernandez2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fernandez_2025 · CL/F</text><circle cx="461.3" cy="30.0" r="4" fill="#ef6c00"><title>Fernandez_2025 · CL/F: 59.6 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Fernandez-Teruel_2024 · CL/F</text><circle cx="467.3" cy="46.0" r="4" fill="#ef6c00"><title>Fernandez-Teruel_2024 · CL/F: 62 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Fernandez-Teruel_2024 · V/F</text><circle cx="533.3" cy="30.0" r="4" fill="#ef6c00"><title>Fernandez-Teruel_2024 · V/F: 95.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Fernandez_2025 · V1/F</text><circle cx="431.6" cy="46.0" r="4" fill="#ef6c00"><title>Fernandez_2025 · V1/F: 49 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -120,5 +109,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapivasertib%5D&body=Drug%3A%20capivasertib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capivasertib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcapivasertib%5D&body=Drug%3A%20capivasertib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_capivasertib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:20 UTC</sub>

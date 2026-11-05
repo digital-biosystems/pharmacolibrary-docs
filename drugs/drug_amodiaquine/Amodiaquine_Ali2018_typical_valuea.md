@@ -242,13 +242,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Ali AM, Penny MA, Smith TA, Workman L, Sasi P, Adjei GO et al. Population Pharmacokinetics of the Antimalarial Amodiaquine: a Pooled Analysis To Optimize Dosing. Antimicrobial agents and chemotherapy 62(10) (2018). [doi:10.1128/AAC.02193-17](https://doi.org/10.1128/AAC.02193-17)
 
-**This record:** Pharmacolibrary v26.09, model `Amodiaquine_Ali2018_typical_valuea`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea>
+**This record:** Pharmacolibrary, model `Amodiaquine_Ali2018_typical_valuea`. <https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea>
 
 ```bibtex
 @misc{pharmacolibrary_AmodiaquineAli2018typicalvaluea,
   title  = {{Pharmacolibrary model Amodiaquine_Ali2018_typical_valuea}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea},
   note   = {Parameters from doi:10.1128/AAC.02193-17},
 }
@@ -263,5 +262,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20Amodiaquine_Ali2018_typical_valuea&body=Drug%3A%20amodiaquine%0ARecord%3A%20Amodiaquine_Ali2018_typical_valuea%0APaper%3A%20Ali_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 05:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D%20Amodiaquine_Ali2018_typical_valuea&body=Drug%3A%20amodiaquine%0ARecord%3A%20Amodiaquine_Ali2018_typical_valuea%0APaper%3A%20Ali_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 05:41 UTC</sub>

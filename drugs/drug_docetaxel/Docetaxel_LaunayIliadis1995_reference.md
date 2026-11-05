@@ -189,13 +189,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Launay-Iliadis MC, Bruno R, Cosson V, Vergniol JC, Oulid-Aissa D, Marty M et al. Population pharmacokinetics of docetaxel during phase I studies using nonlinear mixed-effect modeling and nonparametric maximum-likelihood estimation. Cancer chemotherapy and pharmacology 37(1-2):47–54 (1995). [doi:10.1007/BF00685628](https://doi.org/10.1007/BF00685628)
 
-**This record:** Pharmacolibrary v26.09, model `Docetaxel_LaunayIliadis1995_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference>
+**This record:** Pharmacolibrary, model `Docetaxel_LaunayIliadis1995_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DocetaxelLaunayIliadis1995reference,
   title  = {{Pharmacolibrary model Docetaxel_LaunayIliadis1995_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference},
   note   = {Parameters from doi:10.1007/BF00685628},
 }
@@ -214,5 +213,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdocetaxel%5D%20Docetaxel_LaunayIliadis1995_reference&body=Drug%3A%20docetaxel%0ARecord%3A%20Docetaxel_LaunayIliadis1995_reference%0APaper%3A%20Launay-Iliadis_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdocetaxel%5D%20Docetaxel_LaunayIliadis1995_reference&body=Drug%3A%20docetaxel%0ARecord%3A%20Docetaxel_LaunayIliadis1995_reference%0APaper%3A%20Launay-Iliadis_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:51 UTC</sub>

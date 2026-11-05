@@ -253,13 +253,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sano Y, Shoji S, Shahin M, Sweeney K, Darekar A, Malhotra BK. Population Pharmacokinetic and Pharmacodynamic Modeling of Fesoterodine in Pediatric Patients with Neurogenic Detrusor Overactivity. European journal of drug metabolism and pharmacokinetics 48(3):257–269 (2023). [doi:10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8)
 
-**This record:** Pharmacolibrary v26.09, model `Tolterodine_Sano2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_reference>
+**This record:** Pharmacolibrary, model `Tolterodine_Sano2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TolterodineSano2023reference,
   title  = {{Pharmacolibrary model Tolterodine_Sano2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tolterodine/Tolterodine_Sano2023_reference},
   note   = {Parameters from doi:10.1007/s13318-023-00818-8},
 }
@@ -278,5 +277,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolterodine%5D%20Tolterodine_Sano2023_reference&body=Drug%3A%20tolterodine%0ARecord%3A%20Tolterodine_Sano2023_reference%0APaper%3A%20Sano_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolterodine/Tolterodine_Sano2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 09:12 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolterodine%5D%20Tolterodine_Sano2023_reference&body=Drug%3A%20tolterodine%0ARecord%3A%20Tolterodine_Sano2023_reference%0APaper%3A%20Sano_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolterodine/Tolterodine_Sano2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:12 UTC</sub>

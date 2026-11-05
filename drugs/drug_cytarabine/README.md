@@ -26,8 +26,8 @@ Cytarabine is an antineoplastic antimetabolite used to treat blood cancers such 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2019_overall_p_value](drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value.md) | — | general linear (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ total_cytarabine](drugs/drug_cytarabine/Cytarabine_Wang2019_total_cytarabine.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2019_overall_p_value](drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value.md) | — | 1-compartment (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ total_cytarabine](drugs/drug_cytarabine/Cytarabine_Wang2019_total_cytarabine.md) | — | 1-compartment (no model) | 0 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -112,5 +112,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcytarabine%5D&body=Drug%3A%20cytarabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cytarabine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 16:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcytarabine%5D&body=Drug%3A%20cytarabine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cytarabine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:40 UTC</sub>

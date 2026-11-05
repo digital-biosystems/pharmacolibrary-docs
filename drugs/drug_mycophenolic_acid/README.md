@@ -32,15 +32,9 @@ Mycophenolic acid is an immunosuppressant used to prevent organ transplant rejec
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V1/F | 6 | L | 6.0 L | pediatric patients after liver transplantation | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) |
-| V | V1/F | 24.9 | L | 24.9 L | pediatric kidney transplant patients | 30 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Heida_2024_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Heida2024_reference.md) |
-| ka | kabs | 2 | 1/h | 2.0 h−1 | pediatric patients after liver transplantation | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wei_2022 · V1/F</text><circle cx="326.2" cy="30.0" r="4" fill="#ef6c00"><title>Wei_2022 · V1/F: 6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Heida_2024 · V1/F</text><circle cx="434.3" cy="46.0" r="4" fill="#ef6c00"><title>Heida_2024 · V1/F: 24.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -131,5 +125,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmycophenolic_acid%5D&body=Drug%3A%20mycophenolic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mycophenolic_acid/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 00:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmycophenolic_acid%5D&body=Drug%3A%20mycophenolic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mycophenolic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:36 UTC</sub>

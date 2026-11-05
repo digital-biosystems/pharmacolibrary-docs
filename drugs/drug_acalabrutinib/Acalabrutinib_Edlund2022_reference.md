@@ -253,13 +253,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Edlund H, Bellanti F, Liu H, Vishwanathan K, Tomkinson H, Ware J et al. Improved characterization of the pharmacokinetics of acalabrutinib and its pharmacologically active metabolite, ACP-5862, in patients with B-cell malignancies and in healthy subjects using a population pharmacokinetic approach. British journal of clinical pharmacology 88(2):846–852 (2022). [doi:10.1111/bcp.14988](https://doi.org/10.1111/bcp.14988)
 
-**This record:** Pharmacolibrary v26.09, model `Acalabrutinib_Edlund2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference>
+**This record:** Pharmacolibrary, model `Acalabrutinib_Edlund2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AcalabrutinibEdlund2022reference,
   title  = {{Pharmacolibrary model Acalabrutinib_Edlund2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference},
   note   = {Parameters from doi:10.1111/bcp.14988},
 }
@@ -278,5 +277,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacalabrutinib%5D%20Acalabrutinib_Edlund2022_reference&body=Drug%3A%20acalabrutinib%0ARecord%3A%20Acalabrutinib_Edlund2022_reference%0APaper%3A%20Edlund_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 20:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacalabrutinib%5D%20Acalabrutinib_Edlund2022_reference&body=Drug%3A%20acalabrutinib%0ARecord%3A%20Acalabrutinib_Edlund2022_reference%0APaper%3A%20Edlund_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 20:38 UTC</sub>

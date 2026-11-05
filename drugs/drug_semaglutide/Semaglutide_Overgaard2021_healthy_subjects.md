@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2021 \u00b7 healthy_subjects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Overgaard2021_healthy_subjects`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Semaglutide's total clearance and absorption lag time were left at library placeholders, causing the model to be quarantined.
+> This record was reviewed on 2026-11-03 16:21 UTC (Needs review), but the paper was screened again on 2026-11-03 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_healthy_subjects" status="model_quarantined" stale="false" population="healthy volunteers and subjects with renal or hepatic impairment" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_healthy_subjects" status="extracted" stale="true" population="healthy volunteers and subjects with renal or hepatic impairment" measured-compound="semaglutide" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharmacokinetics of Oral Semaglutide: Analyses of Data from Clinical Pharmacology Trials. Clinical pharmacokinetics 60(10):1335–1348 (2021).
@@ -17,7 +17,7 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ## Population and dosing
 
-**Population:** healthy volunteers and subjects with renal or hepatic impairment · condition healthy · age group adult.
+**Population:** healthy volunteers and subjects with renal or hepatic impairment · condition healthy · age group adult · n = &gt;.
 
 **Dosing:** 5, 10 mg, oral, multiple, every 24 h.
 
@@ -25,26 +25,24 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
+| CL(L/h) | CL | 0.033 | L/h |
 | Vc(L) | V1 | 3.4 | L |
 | Vp(L) | V2 | 3.9 | L |
-| Vtotal(L) | Vss | 7.2 | L |
+| Vtotal(L) | V | 7.2 | L |
 | Q(L/h) | Q | 0.28 | L/h |
 | ka(h−1) | kabs | 2.09 | h−1 |
+| F(%) | Fab | 0.76 |  |
 | t½(h) | t1/2z | 158 | h |
-| CL | CL | 0.033 | L/h |
-| F | F | 0.76 | % |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +52,11 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ### Reviewer guidance
 
-**Semaglutide's total clearance and absorption lag time were left at library placeholders, causing the model to be quarantined.**
+**Semaglutide clearance and absorption lag time values were missing, forcing use of library defaults and quarantining the model.**
 
-The record lists semaglutide total clearance without an extracted value, despite the structure requiring it. Similarly, no value was provided for the absorption lag time. These missing parameters defaulted to library placeholders, preventing publication. Extracted — semaglutide: V1 3.4 L, V2 3.9 L, Vss 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, t1/2z 158 h.
+The record lists semaglutide clearance with a typical value of 0.033 L/h but no fitted estimate, and the absorption lag time is absent entirely. Because these core parameters lacked explicit values, a placeholder was used instead of a model-estimated number. A secondary reader identified the missing clearance as 0.033 L/h and the bioavailability as 0.76%, confirming the primary extraction failed to capture these specific estimates. The absence of these values prevented the model from meeting publication standards, resulting in its quarantine. Extracted — semaglutide: V1 3.4 L, V2 3.9 L, Vss 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, t1/2z 158 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has none, the second reading 0.033; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.033, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -66,40 +64,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
+| CL(L/h) | `Q22` · CL | 0.033 | L/h | 9.167e-09 | m3/s | l/h | exact (1) | Tab2:row1:col2 |
 | Vc(L) | `Q63` · V1 | 3.4 | L | 0.0034 | m3 | l | exact (1) | Tab2:row1:col3 |
 | Vp(L) | `Q64` · V2 | 3.9 | L | 0.0039 | m3 | l | exact (1) | Tab2:row1:col4 |
-| Vtotal(L) | `Q65` · Vss | 7.2 | L | 0.0072 | m3 | l | llm (0.6) | Tab2:row1:col5 |
+| Vtotal(L) | `Q61` · V | 7.2 | L | 0.0072 | m3 | l | llm (0.6) | Tab2:row1:col5 |
 | Q(L/h) | `Q30` · Q | 0.28 | L/h | 7.778e-08 | m3/s | l/h | exact (1) | Tab2:row1:col6 |
 | ka(h−1) | `Q49` · kabs | 2.09 | h−1 | 0.0005806 | 1/s | 1/h | exact (1) | Tab2:row1:col7 |
+| F(%) | `Q40` · Fab | 0.76 |  |  |  |  | exact (1) | Tab2:row1:col8 |
 | t½(h) | `Q57` · t1/2z | 158 | h | 5.688e+05 | s | h | llm (0.6) | Tab2:row1:col9 |
-| CL | `Q900` · CL | 0.033 | L/h | 9.167e-09 | m3/s |  |  | Tab2:row1:col2 |
-| F | `Q900` · F | 0.76 | % |  |  |  |  | Tab2:row1:col8 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-
-| label (paper) | Q-code | link |
-|---|---|---|
-| CL(L/h) | Q22 | exact |
-| F(%) | Q40 | exact |
-| V | Q61 | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=semaglutide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- bound model equation to Q22 (CL): CL = (weight/85)^θ
-- bound model equation to Q61 (V): V = (weight/85)^θ
-- bound model equation to Q40 (Fab): F = (weight/85)^θ
-- Q22 (CL) is equation-defined: value moved to equation-variable 'CL(L/h)'; equation kept verbatim
-- Q61 (V) is equation-defined: value moved to equation-variable 'V'; equation kept verbatim
-- Q40 (Fab) is equation-defined: value moved to equation-variable 'F(%)'; equation kept verbatim
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - population split: 'healthy subjects' subgroup of Overgaard_2021 (paper reports 2 populations: healthy subjects, subjects with t2d)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -107,9 +90,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - transposed table Tab2: logical view retains original source coordinates
 - LLM selected parameter table(s) 2
 - skipped illustrative/example figure caption(s) Fig6 — per-individual fit, not model parameters
-- captured model equation CL = (weight/85)^θ
-- captured model equation V = (weight/85)^θ
-- captured model equation F = (weight/85)^θ
 
 ## Validation
 
@@ -118,16 +98,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.733 (11/15 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].value` |  | 0.033 | mismatch |
-| `gpt-oss-120b` | `parameters[f].value` |  | 0.76 | mismatch |
-| `gpt-oss-120b` | `parameters[v]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vtotal].parameter_id` | Q65 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 0.033 |  | mismatch |
+| `gpt-oss-120b` | `parameters[f].value` | 0.76 |  | mismatch |
+| `gpt-oss-120b` | `parameters[vtotal].value` | 7.2 |  | mismatch |
 
 </details>
 
@@ -141,20 +120,22 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row1:col6'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row1:col7'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tab2:row1:col9'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row1:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row1:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row1:col4'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Tab2:row1:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.033 | ['Tab2:row1:col2'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.033 L/h | ['Tab2:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.2 L | ['Tab2:row1:col5'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.4 L | ['Tab2:row1:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 3.9 L | ['Tab2:row1:col4'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 7.2 L | ['Tab2:row1:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -199,4 +180,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2021_healthy_subjects&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2021_healthy_subjects%0APaper%3A%20Overgaard_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2021_healthy_subjects%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 16:53 UTC</sub>

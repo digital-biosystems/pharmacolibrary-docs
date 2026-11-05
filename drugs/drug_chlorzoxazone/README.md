@@ -29,21 +29,12 @@ Chlorzoxazone is a centrally acting muscle relaxant used to relieve painful musc
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 86.1 ‡ | L/h | 1.23 L/h/kg/ | review reference | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2021_reference](drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference.md) |
-| V | V/F | 103.6 ‡ | L | 1.48 L/kg | review reference | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2021_reference](drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Shi_2021_reference](drugs/drug_chlorzoxazone/Chlorzoxazone_Shi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhou_2011_reference](drugs/drug_chlorzoxazone/Chlorzoxazone_Zhou2011_reference.md) | — | general linear (no model) | 1 | Zhou J et al., Cardiac arrest and therapeutic hypother…, Drug metabolism and disposi… (2011) | [10.1124/dmd.111.040642](https://doi.org/10.1124/dmd.111.040642) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhou_2011_reference](drugs/drug_chlorzoxazone/Chlorzoxazone_Zhou2011_reference.md) | — | 1-compartment (no model) | 1 | Zhou J et al., Cardiac arrest and therapeutic hypother…, Drug metabolism and disposi… (2011) | [10.1124/dmd.111.040642](https://doi.org/10.1124/dmd.111.040642) |
 
 ## ADME sites
 
@@ -113,5 +104,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorzoxazone%5D&body=Drug%3A%20chlorzoxazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorzoxazone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 02:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorzoxazone%5D&body=Drug%3A%20chlorzoxazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorzoxazone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:37 UTC</sub>

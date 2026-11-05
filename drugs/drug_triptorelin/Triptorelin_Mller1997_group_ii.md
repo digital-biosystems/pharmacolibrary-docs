@@ -154,5 +154,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriptorelin%5D%20Triptorelin_Mller1997_group_ii&body=Drug%3A%20triptorelin%0ARecord%3A%20Triptorelin_Mller1997_group_ii%0APaper%3A%20M%C3%BCller_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 22:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriptorelin%5D%20Triptorelin_Mller1997_group_ii&body=Drug%3A%20triptorelin%0ARecord%3A%20Triptorelin_Mller1997_group_ii%0APaper%3A%20M%C3%BCller_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 22:08 UTC</sub>

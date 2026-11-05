@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Mc_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tamoxifen — `Tamoxifen_Mc2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-10-22 15:27 UTC (Rejected), but the paper was screened again on 2026-11-04 12:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="false" population="patients with breast cancer" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="true" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Mc Laughlin AM, Helland T, Klima F, Koolen SLW, van Schaik RHN, Mathijssen RHJ et al. Nonlinear Mixed-Effects Model of Z-Endoxifen Concentrations in Tamoxifen-Treated Patients from the CEPAM Cohort. Clinical pharmacology and therapeutics 116(3):690–702 (2024).
@@ -17,7 +17,7 @@ Mc Laughlin AM, Helland T, Klima F, Koolen SLW, van Schaik RHN, Mathijssen RHJ e
 
 ## Population and dosing
 
-**Population:** patients with breast cancer · condition breast cancer · age group adult.
+**Population:** tamoxifen-treated patients · condition breast cancer · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed tamoxifen, measured Z-endoxifen.
 
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - column 'parameter [unit]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - table representations disagree for 'Fixed effects'; source reconciliation required
 - table representations disagree for 'Random effects'; source reconciliation required
-- dropped unlinked row (NIL): 'Fixed effects' — extend the ontology if this is a real PK parameter (source ['Mc_2024_table_p7_1:row0:col1', 'Mc_2024_table_p7_1:row0:col3', 'Mc_2024_table_p7_1:row1:col3', 'Mc_2024_table_p7_1:row2:col3', 'Mc_2024_table_p7_1:row3:col1', 'Mc_2024_table_p7_1:row3:col3', 'Mc_2024_table_p7_1:row4:col3', 'Mc_2024_table_p7_1:row5:col1', 'Mc_2024_table_p7_1:row5:col3', 'Mc_2024_table_p7_1:row6:col1', 'Mc_2024_table_p7_1:row6:col3', 'Mc_2024_table_p7_1:row7:col1', 'Mc_2024_table_p7_1:row7:col3', 'Mc_2024_table_p7_1:row8:col1', 'Mc_2024_table_p7_1:row8:col3', 'Mc_2024_table_p7_1:row9:col1', 'Mc_2024_table_p7_1:row9:col3', 'Mc_2024_table_p7_1:row10:col1', 'Mc_2024_table_p7_1:row10:col3', 'Mc_2024_table_p7_1:row11:col1', 'Mc_2024_table_p7_1:row11:col3', 'Mc_2024_table_p7_1:row12:col1', 'Mc_2024_table_p7_1:row12:col3', 'Mc_2024_table_p7_1:row13:col1', 'Mc_2024_table_p7_1:row13:col3', 'Mc_2024_table_p7_1:row14:col3', 'Mc_2024_table_p7_1:row15:col3', 'Mc_2024_table_p7_1:row16:col3'])
+- routed 'Fixed effects' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Random effects' — extend the ontology if this is a real PK parameter (source ['Mc_2024_table_p7_1:row17:col1', 'Mc_2024_table_p7_1:row18:col1', 'Mc_2024_table_p7_1:row20:col3', 'Mc_2024_table_p7_1:row21:col3', 'Mc_2024_table_p7_1:row22:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Z-endoxifen
 - template fit: none — only the metabolite is modelled — no parent compartment
@@ -77,23 +77,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | primary re-run | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intermediate_metabolizer]` |  | 446 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[normal_metabolizer]` |  | 1100 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[poor_metabolizer]` |  | 28 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -130,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Mc2024_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Mc2024_reference%0APaper%3A%20Mc_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btamoxifen%5D%20Tamoxifen_Mc2024_reference&body=Drug%3A%20tamoxifen%0ARecord%3A%20Tamoxifen_Mc2024_reference%0APaper%3A%20Mc_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 12:05 UTC</sub>

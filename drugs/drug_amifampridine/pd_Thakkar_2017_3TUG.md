@@ -101,13 +101,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Amifampridine_Thakkar2017_PD_3tug`. <https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug>
+**This record:** Pharmacolibrary, model `Amifampridine_Thakkar2017_PD_3tug`. <https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug>
 
 ```bibtex
 @misc{pharmacolibrary_AmifampridineThakkar2017PD3tug,
   title  = {{Pharmacolibrary model Amifampridine_Thakkar2017_PD_3tug}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug},
 }
 ```
@@ -121,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D%20pd_Thakkar_2017_3TUG&body=Drug%3A%20amifampridine%0ARecord%3A%20pd_Thakkar_2017_3TUG%0APaper%3A%20Thakkar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/pd_Thakkar_2017_3TUG%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D%20pd_Thakkar_2017_3TUG&body=Drug%3A%20amifampridine%0ARecord%3A%20pd_Thakkar_2017_3TUG%0APaper%3A%20Thakkar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/pd_Thakkar_2017_3TUG%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [amifampridine](drugs/drug_amifampridine/)</sub>

@@ -29,24 +29,14 @@ Tezacaftor is a CFTR corrector used, in combination with other cystic fibrosis d
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 21.6 | L/h | 21.6 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jiang_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md) |
-| V | V/F | 140 | L | 140.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jiang_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md) |
-| ka | kabs | 1.3 | 1/h | 1.3 h−1 | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jiang_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jiang_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Jiang2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, development an… (2025) | [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Magnas_2026_reference](drugs/drug_tezacaftor/Tezacaftor_Magnas2026_reference.md) | — | 1-compartment (no model) | 3 | Magnas P et al., Pregnancy-related effect on elexacaftor…, British journal of clinical… (2026) | [10.1002/bcp.70620](https://doi.org/10.1002/bcp.70620) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Magnas_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Magnas2025_reference.md) | — | general linear (no model) | 0 | Magnas P et al., Population Pharmacokinetics of Elexacaf…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01516-1](https://doi.org/10.1007/s40262-025-01516-1) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Truong_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference.md) | — | general linear (no model) | 4 | Truong NH et al., Elexacaftor/Tezacaftor/Ivacaftor Popula…, Clinical and translational… (2025) | [10.1111/cts.70245](https://doi.org/10.1111/cts.70245) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Magnas_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Magnas2025_reference.md) | — | 1-compartment (no model) | 0 | Magnas P et al., Population Pharmacokinetics of Elexacaf…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01516-1](https://doi.org/10.1007/s40262-025-01516-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Truong_2025_reference](drugs/drug_tezacaftor/Tezacaftor_Truong2025_reference.md) | — | 1-compartment (no model) | 4 | Truong NH et al., Elexacaftor/Tezacaftor/Ivacaftor Popula…, Clinical and translational… (2025) | [10.1111/cts.70245](https://doi.org/10.1111/cts.70245) |
 
 ## Pharmacodynamics (PD)
 
@@ -216,5 +206,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D&body=Drug%3A%20tezacaftor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 18:22 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btezacaftor%5D&body=Drug%3A%20tezacaftor%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tezacaftor/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 18:22 UTC</sub>

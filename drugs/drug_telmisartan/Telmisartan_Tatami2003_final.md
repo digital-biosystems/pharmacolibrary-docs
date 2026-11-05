@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Tatami_2003 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Tatami2003_final`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Tatami2003_final" status="curated_candidate" stale="false" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></div>
+> This record was reviewed on 2026-10-22 14:34 UTC (Reproduces paper), but the paper was screened again on 2026-11-04 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Every check that could be run on this record passed.
+
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Tatami2003_final" status="needs_review" stale="true" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Tatami S, Sarashina A, Yamamura N, Igarashi T, Tanigawara Y. Population pharmacokinetics of an angiotensin II receptor antagonist, telmisartan, in healthy volunteers and hypertensive patients. Drug metabolism and pharmacokinetics 18(3):203–211 (2003).
@@ -15,32 +17,34 @@ Tatami S, Sarashina A, Yamamura N, Igarashi T, Tanigawara Y. Population pharmaco
 
 ## Population and dosing
 
-**Population:** healthy volunteers and hypertensive patients · condition hypertension · age group adult · n = 149.
+**Population:** healthy volunteers and hypertensive patients · condition healthy, hypertension · age group adult · n = 149.
 
 **Dosing:** 20, 40, 80 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 6 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_telmisartan/Telmisartan_Tatami2003_final/Telmisartan_Tatami2003_final.svg" alt="Telmisartan_Tatami2003_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLW F | CL/F | 58.8 | L/h |
 | V 1 W F | V1/F | 192.0 | L |
-| Q W F | Q | 79.7 | L/h |
 | V 2 W F | V2 | 996 | L |
 | Ka | kabs | 0.330 | 1/h |
 | Absorption lag time | tlag | 0.404 | h |
+| CL/f ss | CL/F | 766.0 | mL/min |
+| Q/F (L/h) | Q/F | 12.7 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +56,7 @@ Tatami S, Sarashina A, Yamamura N, Igarashi T, Tanigawara Y. Population pharmaco
 
 **Every check that could be run on this record passed.**
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clw f: this record has none, the second reading 58.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,12 +64,12 @@ Independently confirmed by `gpt-oss:120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLW F | `Q27` · CL/F | 58.8 | L/h | 1.633e-05 | m3/s | L/h | llm (0.6) | Tatami_2003_table_4:row0:col1 |
 | V 1 W F | `Q290` · V1/F | 192.0 | L | 0.192 | m3 | L | llm (0.6) | Tatami_2003_table_4:row1:col1 |
-| Q W F | `Q30` · Q | 79.7 | L/h | 2.214e-05 | m3/s | L/h | llm (0.6) | Tatami_2003_table_4:row2:col1 |
 | V 2 W F | `Q64` · V2 | 996 | L | 0.996 | m3 | L | llm (0.6) | Tatami_2003_table_4:row3:col1 |
 | Ka | `Q49` · kabs | 0.330 | 1/h | 9.167e-05 | 1/s | 1/h | exact (1) | Tatami_2003_table_4:row4:col1 |
 | Absorption lag time | `Q83` · tlag | 0.404 | h | 1454 | s | h | exact (1) | Tatami_2003_table_4:row5:col1 |
+| CL/f ss | `Q27` · CL/F | 766.0 | mL/min | 1.277e-05 | m3/s | L/h | review_gapfill (0.7) | Bajcetic_2007:review |
+| Q/F (L/h) | `Q69` · Q/F | 12.7 | L/h | 3.528e-06 | m3/s | L/h | review_gapfill (0.7) | Jeong_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,6 +82,17 @@ Independently confirmed by `gpt-oss:120b`.
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'CLW F' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row0:col1'])
+- dropped unlinked row (NIL): 'Q W F' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row2:col1'])
+- dropped unlinked row (NIL): 's 2' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row7:col1'])
+- implicit units: 'V 1 W F' → L (from the paper text: "Model development section states: 'volume of distribution for the central compartment (V1 W F, L)'")
+- implicit units: 'V 2 W F' → L (from the paper text: "Model development section states: 'volume of distribution for the peripheral compartment (V 2 W F, L)'")
+- implicit units: 'Ka' → 1/h (from the paper text: "Model development section states: 'first-order ab-sorption rate constant (Ka, hr -1 )'")
+- implicit units: 'Absorption lag time' → h (from the paper text: "Model development section states: 'absorption lag time (ALAG, hr)'")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
+- model-stage split: 'final estimates of the model parameters' is the final model of Tatami_2003 (paper reports 5 stages: covariates, estimated parameters, estimated value, final estimates of the model parameters, value); same population, different model-building step
+- gap-filled Q27 (CL/F) from Bajcetic_2007's review values (primary lacked it)
+- gap-filled Q69 (Q/F) from Jeong_2025's review values (primary lacked it)
 - unit_dimension_mismatch: 's 2' → Q30 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q30 ('s 2', value '0.329') — already have one for this compound
 - implicit units: 'CLW F' → L/h (from the paper text: "Model development section: 'The basic pharmacokinetic parameters were oral clearance (CL W F, L W hr)'")
@@ -86,7 +101,6 @@ Independently confirmed by `gpt-oss:120b`.
 - implicit units: 'V 2 W F' → L (from the paper text: "Model development section: 'volume of distribution for the peripheral compartment (V 2 W F, L)'")
 - implicit units: 'Ka' → 1/h (from the paper text: "Model development section: 'ˆrst-order ab- sorption rate constant (Ka, hr -1 )'")
 - implicit units: 'Absorption lag time' → h (from the paper text: "Model development section: 'and absorption lag time (ALAG, hr)'")
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
 - model-stage split: 'final estimates of the model parameters' is the final model of Tatami_2003 (paper reports 4 stages: estimated parameters, estimated value, final estimates of the model parameters, value); same population, different model-building step
 
 **Extraction notes:**
@@ -104,14 +118,22 @@ Independently confirmed by `gpt-oss:120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clw f]` |  | 58.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q w f]` |  | 79.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2 w f].parameter_id` | Q64 | Q82 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -123,18 +145,18 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tatami_2003_table_4:row0:col1'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Bajcetic_2007:review'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tatami_2003_table_4:row1:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tatami_2003_table_4:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tatami_2003_table_4:row4:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tatami_2003_table_4:row3:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Jeong_2025:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tatami_2003_table_4:row5:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 58.8 L/h | ['Tatami_2003_table_4:row0:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 46 L/h | ['Bajcetic_2007:review'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 192 L | ['Tatami_2003_table_4:row1:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 996 L | ['Tatami_2003_table_4:row3:col1'] |
 
@@ -205,13 +227,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tatami S, Sarashina A, Yamamura N, Igarashi T, Tanigawara Y. Population pharmacokinetics of an angiotensin II receptor antagonist, telmisartan, in healthy volunteers and hypertensive patients. Drug metabolism and pharmacokinetics 18(3):203–211 (2003). [doi:10.2133/dmpk.18.203](https://doi.org/10.2133/dmpk.18.203)
 
-**This record:** Pharmacolibrary v26.09, model `Telmisartan_Tatami2003_final`. <https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Tatami2003_final>
+**This record:** Pharmacolibrary, model `Telmisartan_Tatami2003_final`. <https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Tatami2003_final>
 
 ```bibtex
 @misc{pharmacolibrary_TelmisartanTatami2003final,
   title  = {{Pharmacolibrary model Telmisartan_Tatami2003_final}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_telmisartan/Telmisartan_Tatami2003_final},
   note   = {Parameters from doi:10.2133/dmpk.18.203},
 }
@@ -230,5 +251,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Tatami2003_final&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Tatami2003_final%0APaper%3A%20Tatami_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Tatami2003_final%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelmisartan%5D%20Telmisartan_Tatami2003_final&body=Drug%3A%20telmisartan%0ARecord%3A%20Telmisartan_Tatami2003_final%0APaper%3A%20Tatami_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telmisartan/Telmisartan_Tatami2003_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 16:53 UTC</sub>

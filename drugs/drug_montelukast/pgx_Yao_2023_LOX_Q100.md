@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Yao_2023 \u00b7 PGx LOX&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# LOX — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+# LOX — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,20 +31,19 @@ Yao X et al., Association of LOX gene G473A polymorph…, Cell cycle (Georgetown
   ·  DOI: [10.1080/15384101.2023.2286802](https://doi.org/10.1080/15384101.2023.2286802)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `applies_to` | pd |  | mismatch |
-| `gpt-oss-120b` | `mechanism` | target |  | mismatch |
-| `gpt-oss-120b` | `target_parameter_id` | Q100 |  | mismatch |
+| `gpt-oss-120b` | `applies_to` | pd | unknown | mismatch |
+| `gpt-oss-120b` | `mechanism` | target | unknown | mismatch |
 
 </details>
 
@@ -77,5 +76,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20pgx_Yao_2023_LOX_Q100&body=Drug%3A%20montelukast%0ARecord%3A%20pgx_Yao_2023_LOX_Q100%0APaper%3A%20Yao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/pgx_Yao_2023_LOX_Q100%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmontelukast%5D%20pgx_Yao_2023_LOX_Q100&body=Drug%3A%20montelukast%0ARecord%3A%20pgx_Yao_2023_LOX_Q100%0APaper%3A%20Yao_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_montelukast/pgx_Yao_2023_LOX_Q100%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [montelukast](drugs/drug_montelukast/)</sub>

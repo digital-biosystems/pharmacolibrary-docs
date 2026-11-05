@@ -201,13 +201,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Economou CJP, Xie J, Comadira G, Richards B, Tallott M, Wallis SC et al. Population pharmacokinetics of ticarcillin in critically ill patients receiving extended daily diafiltration. International journal of antimicrobial agents 54(3):351–355 (2019). [doi:10.1016/j.ijantimicag.2019.06.027](https://doi.org/10.1016/j.ijantimicag.2019.06.027)
 
-**This record:** Pharmacolibrary v26.09, model `Ticarcillin_Economou2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference>
+**This record:** Pharmacolibrary, model `Ticarcillin_Economou2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TicarcillinEconomou2019reference,
   title  = {{Pharmacolibrary model Ticarcillin_Economou2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference},
   note   = {Parameters from doi:10.1016/j.ijantimicag.2019.06.027},
 }
@@ -226,5 +225,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bticarcillin%5D%20Ticarcillin_Economou2019_reference&body=Drug%3A%20ticarcillin%0ARecord%3A%20Ticarcillin_Economou2019_reference%0APaper%3A%20Economou_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bticarcillin%5D%20Ticarcillin_Economou2019_reference&body=Drug%3A%20ticarcillin%0ARecord%3A%20Ticarcillin_Economou2019_reference%0APaper%3A%20Economou_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ticarcillin/Ticarcillin_Economou2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:03 UTC</sub>

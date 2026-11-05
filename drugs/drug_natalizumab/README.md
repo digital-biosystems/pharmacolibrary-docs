@@ -22,21 +22,9 @@ Natalizumab is a monoclonal antibody used to treat multiple sclerosis, including
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.007833 | L/h | 0.188 L/d | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2022_reference](drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md) |
-| CL | CL | 0.01717 | L/h | 0.412 L/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rosario_2017_reference](drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md) |
-| CL | CL | 0.03021 | L/h | 0.725 L/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Moes_2022_reference](drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md) |
-| CL | CL/F | 0.0084 | L/h | 0.0084 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Quan_2025_reference](drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md) |
-| V | V | 4.02 | L | 4.02 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rosario_2017_reference](drugs/drug_natalizumab/Natalizumab_Rosario2017_reference.md) |
-| V | V | 4.34 | L | 4.34 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Moes_2022_reference](drugs/drug_natalizumab/Natalizumab_Moes2022_reference.md) |
-| V | V | 5.804 | L | 5.8043 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2022_reference](drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md) |
-| V | V/F | 4.92 | L | 4.92 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Quan_2025_reference](drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md) |
-| ka | kabs | 2.3 | 1/h | 2.3 /h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Quan_2025_reference](drugs/drug_natalizumab/Natalizumab_Quan2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.001</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wang_2022 · CL</text><circle cx="346.4" cy="30.0" r="4" fill="#2e7d32"><title>Wang_2022 · CL: 0.007833 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rosario_2017 · CL</text><circle cx="406.1" cy="46.0" r="4" fill="#2e7d32"><title>Rosario_2017 · CL: 0.01717 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Moes_2022 · CL</text><circle cx="449.0" cy="62.0" r="4" fill="#2e7d32"><title>Moes_2022 · CL: 0.03021 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Quan_2025 · CL/F</text><circle cx="351.7" cy="78.0" r="4" fill="#2e7d32"><title>Quan_2025 · CL/F: 0.0084 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rosario_2017 · V</text><circle cx="401.5" cy="30.0" r="4" fill="#2e7d32"><title>Rosario_2017 · V: 4.02 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Moes_2022 · V</text><circle cx="413.1" cy="46.0" r="4" fill="#2e7d32"><title>Moes_2022 · V: 4.34 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wang_2022 · V</text><circle cx="457.3" cy="62.0" r="4" fill="#2e7d32"><title>Wang_2022 · V: 5.804 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Quan_2025 · V/F</text><circle cx="432.2" cy="78.0" r="4" fill="#2e7d32"><title>Quan_2025 · V/F: 4.92 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -167,5 +155,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnatalizumab%5D&body=Drug%3A%20natalizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_natalizumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnatalizumab%5D&body=Drug%3A%20natalizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_natalizumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:57 UTC</sub>

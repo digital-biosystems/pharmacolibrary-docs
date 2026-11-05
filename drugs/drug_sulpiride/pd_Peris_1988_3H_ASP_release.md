@@ -102,13 +102,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Sulpiride_Peris1988_PD_3h_asp_release`. <https://pharmacolibrary.github.io/#/drugs/drug_sulpiride/Sulpiride_Peris1988_PD_3h_asp_release>
+**This record:** Pharmacolibrary, model `Sulpiride_Peris1988_PD_3h_asp_release`. <https://pharmacolibrary.github.io/#/drugs/drug_sulpiride/Sulpiride_Peris1988_PD_3h_asp_release>
 
 ```bibtex
 @misc{pharmacolibrary_SulpiridePeris1988PD3hasprelease,
   title  = {{Pharmacolibrary model Sulpiride_Peris1988_PD_3h_asp_release}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sulpiride/Sulpiride_Peris1988_PD_3h_asp_release},
 }
 ```
@@ -122,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20pd_Peris_1988_3H_ASP_release&body=Drug%3A%20sulpiride%0ARecord%3A%20pd_Peris_1988_3H_ASP_release%0APaper%3A%20Peris_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20pd_Peris_1988_3H_ASP_release&body=Drug%3A%20sulpiride%0ARecord%3A%20pd_Peris_1988_3H_ASP_release%0APaper%3A%20Peris_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [sulpiride](drugs/drug_sulpiride/)</sub>

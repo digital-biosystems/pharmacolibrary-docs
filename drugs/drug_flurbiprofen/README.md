@@ -31,17 +31,6 @@ Flurbiprofen is a non-steroidal anti-inflammatory drug used to treat pain and in
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.75 | L/h | 1.75 L hr-1 | rheumatoid arthritis patients | &gt; | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Aarons_1991_reference](drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md) |
-| CL | CL/F | — | L/h | 74 % | healthy volunteers |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Loisios-Konstantinidis_2020_2_reference](drugs/drug_flurbiprofen/Flurbiprofen_LoisiosKonstantinidis2020v2_reference.md) |
-| V | V | 11.9 | L | 11.9 L | rheumatoid arthritis patients | &gt; | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Aarons_1991_reference](drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md) |
-| t½ | t1/2z | 4.8 | h | 4.8 hr | rheumatoid arthritis patients | &gt; | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Aarons_1991_reference](drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -141,5 +130,5 @@ _7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflurbiprofen%5D&body=Drug%3A%20flurbiprofen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flurbiprofen/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 14:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflurbiprofen%5D&body=Drug%3A%20flurbiprofen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flurbiprofen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 14:38 UTC</sub>

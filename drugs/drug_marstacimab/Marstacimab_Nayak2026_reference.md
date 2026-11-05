@@ -199,13 +199,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Nayak S, Suzuki A, Ravva P, Raje S. Clinical Pharmacokinetics and Pharmacodynamics of Marstacimab, an Anti-tissue Factor Pathway Inhibitor Monoclonal Antibody, in Adolescent and Adult Participants with Hemophilia. Clinical pharmacokinetics (2026). [doi:10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
-**This record:** Pharmacolibrary v26.09, model `Marstacimab_Nayak2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_marstacimab/Marstacimab_Nayak2026_reference>
+**This record:** Pharmacolibrary, model `Marstacimab_Nayak2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_marstacimab/Marstacimab_Nayak2026_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MarstacimabNayak2026reference,
   title  = {{Pharmacolibrary model Marstacimab_Nayak2026_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_marstacimab/Marstacimab_Nayak2026_reference},
   note   = {Parameters from doi:10.1007/s40262-026-01695-5},
 }
@@ -220,5 +219,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmarstacimab%5D%20Marstacimab_Nayak2026_reference&body=Drug%3A%20marstacimab%0ARecord%3A%20Marstacimab_Nayak2026_reference%0APaper%3A%20Nayak_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_marstacimab/Marstacimab_Nayak2026_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 19:00 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmarstacimab%5D%20Marstacimab_Nayak2026_reference&body=Drug%3A%20marstacimab%0ARecord%3A%20Marstacimab_Nayak2026_reference%0APaper%3A%20Nayak_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_marstacimab/Marstacimab_Nayak2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 19:00 UTC</sub>

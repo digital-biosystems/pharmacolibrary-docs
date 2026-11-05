@@ -53,7 +53,7 @@ window.$docsify = window.$docsify || {};
           '<img src="' + src + '" width="' + w + '" height="' + h + '" alt="" decoding="async">' +
           '<span class="pk-demo-ph-msg">Loading the ' + what + '…</span></div>';
       };
-      sim.innerHTML = ph('assets/img/demo-sim-preview.webp', 694, 430, 'simulation');
+      sim.innerHTML = ph('assets/img/demo-sim-preview.webp', 694, 383, 'simulation');
       anat.innerHTML = ph('assets/img/demo-anat-preview.webp', 333, 323, 'anatomogram');
     }
 
@@ -175,9 +175,11 @@ window.$docsify = window.$docsify || {};
       };
 
       // the plot: log y (a daily regimen runs over decades of trough), daily x ticks; the
-      // legend sits top-right, small; the default curve is dashed light blue, this run solid
+      // legend sits top-right, small; the default curve is a dashed grey, a little bolder,
+      // drawn underneath — where the runs coincide its edge still shows around this run's
+      // slimmer solid blue
       function draw(def, cur) {
-        var W = 560, H = 300, L = 58, R = 14, T = 16, B = 40;
+        var W = 560, H = 262, L = 58, R = 14, T = 16, B = 40;   // H: the tile ~10 % lower than at 300
         var td = def.t.map(function (x) { return x / 3600; });
         var tc = cur.t.map(function (x) { return x / 3600; });
         var yD = def.series[KEY].map(u), yC = cur.series[KEY].map(u);
@@ -218,20 +220,20 @@ window.$docsify = window.$docsify || {};
         el2('text', { x: 10, y: (T + H - B) / 2, 'font-size': 11, fill: '#475569',
                       transform: 'rotate(-90 10 ' + (T + H - B) / 2 + ')' },
              label + ' (mg/L, log)');
-        function line(t, y, color, dash) {
+        function line(t, y, color, width, dash) {
           var d = t.map(function (h, j) {
             return (j ? 'L' : 'M') + sx(h).toFixed(1) + ' ' + sy(y[j]).toFixed(2);
           }).join(' ');
-          el2('path', { d: d, fill: 'none', stroke: color, 'stroke-width': 2,
+          el2('path', { d: d, fill: 'none', stroke: color, 'stroke-width': width,
                         'stroke-dasharray': dash || '' });
         }
-        line(td, yD, '#7fb3e6', '5 4');                     // THE DEFAULT: dashed, light blue
-        line(tc, yC, '#0074d9');
+        line(td, yD, '#94a3b8', 2.8, '6 4');                // THE DEFAULT: dashed grey, bolder
+        line(tc, yC, '#0074d9', 1.4);
         // the legend, right-aligned and small
         var lx = W - R, ly = T + 6;
         el2('text', { x: lx - 10, y: ly, 'text-anchor': 'end', 'font-size': 10.5,
                       fill: '#475569' }, 'the default — 75 mg a day, Normal');
-        el2('circle', { cx: lx - 4, cy: ly - 3.5, r: 3.5, fill: '#7fb3e6' });
+        el2('circle', { cx: lx - 4, cy: ly - 3.5, r: 3.5, fill: '#94a3b8' });
         el2('text', { x: lx - 10, y: ly + 15, 'text-anchor': 'end', 'font-size': 10.5,
                       fill: '#475569' }, 'this run — ' + (pg.labels || {})[gen.value] +
              ', dose ×' + (+dose.value).toFixed(2));

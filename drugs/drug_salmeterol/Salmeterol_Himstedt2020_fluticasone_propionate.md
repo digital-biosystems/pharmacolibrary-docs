@@ -191,13 +191,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Himstedt A, Braun C, Wicha SG, Borghardt JM. Towards a Quantitative Mechanistic Understanding of Localized Pulmonary Tissue Retention-A Combined In Vivo/In Silico Approach Based on Four Model Drugs. Pharmaceutics 12(5):E408 (2020). [doi:10.3390/pharmaceutics12050408](https://doi.org/10.3390/pharmaceutics12050408)
 
-**This record:** Pharmacolibrary v26.09, model `Salmeterol_Himstedt2020_fluticasone_propionate`. <https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate>
+**This record:** Pharmacolibrary, model `Salmeterol_Himstedt2020_fluticasone_propionate`. <https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate>
 
 ```bibtex
 @misc{pharmacolibrary_SalmeterolHimstedt2020fluticasonepropionate,
   title  = {{Pharmacolibrary model Salmeterol_Himstedt2020_fluticasone_propionate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate},
   note   = {Parameters from doi:10.3390/pharmaceutics12050408},
 }
@@ -212,5 +211,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalmeterol%5D%20Salmeterol_Himstedt2020_fluticasone_propionate&body=Drug%3A%20salmeterol%0ARecord%3A%20Salmeterol_Himstedt2020_fluticasone_propionate%0APaper%3A%20Himstedt_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 14:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsalmeterol%5D%20Salmeterol_Himstedt2020_fluticasone_propionate&body=Drug%3A%20salmeterol%0ARecord%3A%20Salmeterol_Himstedt2020_fluticasone_propionate%0APaper%3A%20Himstedt_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 14:51 UTC</sub>

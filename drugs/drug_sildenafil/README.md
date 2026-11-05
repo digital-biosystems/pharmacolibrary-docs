@@ -33,22 +33,9 @@ Sildenafil is a medication used to treat erectile dysfunction and pulmonary arte
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.7 | L/h | 6.7 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cochius-den_2020_reference](drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md) |
-| CL | CL/F | 67.9 ‡ | L/h | 0.97 L/kg/h | dogs with pulmonary hypertension | # 20 | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yata_2026_reference](drugs/drug_sildenafil/Sildenafil_Yata2026_reference.md) |
-| V | V/F | 11.4 | L | 11.4 L | term and preterm neonates with pulmonary arterial hypertension | 19 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rhee_2022_reference](drugs/drug_sildenafil/Sildenafil_Rhee2022_reference.md) |
-| V | V/F | 282.1 ‡ | L | 4.03 L/kg | dogs with pulmonary hypertension | # 20 | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yata_2026_reference](drugs/drug_sildenafil/Sildenafil_Yata2026_reference.md) |
-| V | V1 | 32.1 | L | 32.1 L | rabbits | 31 | rabbit | <span class="pk-badge pk-badge--orange">Needs review</span> | [Russo_2019_final](drugs/drug_sildenafil/Sildenafil_Russo2019_final.md) |
-| V | V1 | 75.1 | L | 75.1 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Cochius-den_2020_reference](drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md) |
-| ka | kabs | 0.258 | 1/h | 0.258 h−1 | term and preterm neonates with pulmonary arterial hypertension | 19 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rhee_2022_reference](drugs/drug_sildenafil/Sildenafil_Rhee2022_reference.md) |
-| ka | kabs | 0.62 | 1/h | 0.62 /h | dogs with pulmonary hypertension | # 20 | dog | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yata_2026_reference](drugs/drug_sildenafil/Sildenafil_Yata2026_reference.md) |
-| ka | kabs | 25 | 1/h | 25 h-1 | rabbits | 31 | rabbit | <span class="pk-badge pk-badge--orange">Needs review</span> | [Russo_2019_final](drugs/drug_sildenafil/Sildenafil_Russo2019_final.md) |
-| ka | kabs | 25 | 1/h | 25 h-1 | rabbits | 31 | rabbit | <span class="pk-badge pk-badge--orange">Needs review</span> | [Russo_2019_final_final_model_pregnant_rabbits_rse](drugs/drug_sildenafil/Sildenafil_Russo2019_final_final_model_pregnant_rabbits_rse.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cochius-den_2020 · CL</text><circle cx="334.6" cy="30.0" r="4" fill="#2e7d32"><title>Cochius-den_2020 · CL: 6.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yata_2026 · CL/F ·/kg</text><circle cx="510.6" cy="46.0" r="4" fill="#ef6c00"><title>Yata_2026 · CL/F ·/kg: 67.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rhee_2022 · V/F</text><circle cx="200.0" cy="30.0" r="4" fill="#ef6c00"><title>Rhee_2022 · V/F: 11.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yata_2026 · V/F ·/kg</text><circle cx="443.8" cy="46.0" r="4" fill="#ef6c00"><title>Yata_2026 · V/F ·/kg: 282.1 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Russo_2019 · V1</text><circle cx="278.6" cy="62.0" r="4" fill="#ef6c00"><title>Russo_2019 · V1: 32.1 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cochius-den_2020 · V1</text><circle cx="343.2" cy="78.0" r="4" fill="#2e7d32"><title>Cochius-den_2020 · V1: 75.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -138,5 +125,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsildenafil%5D&body=Drug%3A%20sildenafil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sildenafil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsildenafil%5D&body=Drug%3A%20sildenafil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sildenafil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:06 UTC</sub>

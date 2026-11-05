@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Robert J, David M, Huet S, Chauvergne J. Pharmacokinetics and metabolism of pirarubicin in advanced cancer patients. European journal of cancer & clinical oncology 24(8):1289–1294 (1988). [doi:10.1016/0277-5379(88)90217-9](https://doi.org/10.1016/0277-5379(88)90217-9)
 
-**This record:** Pharmacolibrary v26.09, model `Pirarubicin_Robert1988_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference>
+**This record:** Pharmacolibrary, model `Pirarubicin_Robert1988_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference>
 
 ```bibtex
 @misc{pharmacolibrary_PirarubicinRobert1988reference,
   title  = {{Pharmacolibrary model Pirarubicin_Robert1988_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference},
   note   = {Parameters from doi:10.1016/0277-5379(88)90217-9},
 }
@@ -195,5 +194,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D%20Pirarubicin_Robert1988_reference&body=Drug%3A%20pirarubicin%0ARecord%3A%20Pirarubicin_Robert1988_reference%0APaper%3A%20Robert_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 19:43 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D%20Pirarubicin_Robert1988_reference&body=Drug%3A%20pirarubicin%0ARecord%3A%20Pirarubicin_Robert1988_reference%0APaper%3A%20Robert_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 19:43 UTC</sub>

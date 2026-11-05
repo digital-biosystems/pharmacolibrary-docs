@@ -251,13 +251,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chua L, Friedrich S, Zhang XC. Mirikizumab Pharmacokinetics in Patients with Moderately to Severely Active Ulcerative Colitis: Results from Phase III LUCENT Studies. Clinical pharmacokinetics 62(10):1479–1491 (2023). [doi:10.1007/s40262-023-01281-z](https://doi.org/10.1007/s40262-023-01281-z)
 
-**This record:** Pharmacolibrary v26.09, model `Mirikizumab_Chua2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference>
+**This record:** Pharmacolibrary, model `Mirikizumab_Chua2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MirikizumabChua2023reference,
   title  = {{Pharmacolibrary model Mirikizumab_Chua2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference},
   note   = {Parameters from doi:10.1007/s40262-023-01281-z},
 }
@@ -276,5 +275,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirikizumab%5D%20Mirikizumab_Chua2023_reference&body=Drug%3A%20mirikizumab%0ARecord%3A%20Mirikizumab_Chua2023_reference%0APaper%3A%20Chua_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:08 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmirikizumab%5D%20Mirikizumab_Chua2023_reference&body=Drug%3A%20mirikizumab%0ARecord%3A%20Mirikizumab_Chua2023_reference%0APaper%3A%20Chua_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:08 UTC</sub>

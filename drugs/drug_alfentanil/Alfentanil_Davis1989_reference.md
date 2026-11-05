@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Davis PJ, Killian A, Stiller RL, Cook DR, Guthrie RD, Scierka AM. Pharmacokinetics of alfentanil in newborn premature infants and older children. Developmental pharmacology and therapeutics 13(1):21–27 (1989). [doi:10.1159/000457577](https://doi.org/10.1159/000457577)
 
-**This record:** Pharmacolibrary v26.09, model `Alfentanil_Davis1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Davis1989_reference>
+**This record:** Pharmacolibrary, model `Alfentanil_Davis1989_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Davis1989_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AlfentanilDavis1989reference,
   title  = {{Pharmacolibrary model Alfentanil_Davis1989_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Davis1989_reference},
   note   = {Parameters from doi:10.1159/000457577},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balfentanil%5D%20Alfentanil_Davis1989_reference&body=Drug%3A%20alfentanil%0ARecord%3A%20Alfentanil_Davis1989_reference%0APaper%3A%20Davis_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alfentanil/Alfentanil_Davis1989_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balfentanil%5D%20Alfentanil_Davis1989_reference&body=Drug%3A%20alfentanil%0ARecord%3A%20Alfentanil_Davis1989_reference%0APaper%3A%20Davis_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alfentanil/Alfentanil_Davis1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:03 UTC</sub>

@@ -31,19 +31,9 @@ Procaine is a local anesthetic used to relieve pain, for example in procedures i
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 13.99 ‡ | L/h | 199.9 mL/h/kg | review reference |  | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Olivarez_2022_reference](drugs/drug_procaine/Procaine_Olivarez2022_reference.md) |
-| CL | CL | 13.99 ‡ | L/h | 199.9 mL/h/kg | thoroughbred mares |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) |
-| CL | CL | 336 ‡ | L/h | 0.08 L/kg/min | women undergoing hysterectomy | &gt;=12 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) |
-| V | V | 35.7 ‡ | L | 0.51 L/kg | women undergoing hysterectomy | &gt;=12 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) |
-| V | V | 35.7 ‡ | L | 0.51 L/kg | thoroughbred mares |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) |
-| V | V/F | 38.5 ‡ | L | 0.55 L/kg | review reference |  | cattle | <span class="pk-badge pk-badge--orange">Needs review</span> | [Olivarez_2022_reference](drugs/drug_procaine/Procaine_Olivarez2022_reference.md) |
-| t½ | t1/2z | 1.25 | h | 75 minutes | thoroughbred mares |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Olivarez_2022 · CL ·/kg</text><circle cx="215.5" cy="30.0" r="4" fill="#ef6c00"><title>Olivarez_2022 · CL ·/kg: 13.99 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tobin_1976 · CL ·/kg</text><circle cx="215.5" cy="46.0" r="4" fill="#ef6c00"><title>Tobin_1976 · CL ·/kg: 13.99 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Seifen_1979 · CL ·/kg</text><circle cx="457.1" cy="62.0" r="4" fill="#78909c"><title>Seifen_1979 · CL ·/kg: 336 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Seifen_1979 · V ·/kg</text><circle cx="383.4" cy="30.0" r="4" fill="#78909c"><title>Seifen_1979 · V ·/kg: 35.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tobin_1976 · V ·/kg</text><circle cx="383.4" cy="46.0" r="4" fill="#ef6c00"><title>Tobin_1976 · V ·/kg: 35.7 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Olivarez_2022 · V/F ·/kg</text><circle cx="394.9" cy="62.0" r="4" fill="#ef6c00"><title>Olivarez_2022 · V/F ·/kg: 38.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -172,5 +162,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprocaine%5D&body=Drug%3A%20procaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_procaine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprocaine%5D&body=Drug%3A%20procaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_procaine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:54 UTC</sub>

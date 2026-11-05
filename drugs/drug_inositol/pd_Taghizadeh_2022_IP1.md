@@ -127,13 +127,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Inositol_Taghizadeh2022_PD_ip1`. <https://pharmacolibrary.github.io/#/drugs/drug_inositol/Inositol_Taghizadeh2022_PD_ip1>
+**This record:** Pharmacolibrary, model `Inositol_Taghizadeh2022_PD_ip1`. <https://pharmacolibrary.github.io/#/drugs/drug_inositol/Inositol_Taghizadeh2022_PD_ip1>
 
 ```bibtex
 @misc{pharmacolibrary_InositolTaghizadeh2022PDip1,
   title  = {{Pharmacolibrary model Inositol_Taghizadeh2022_PD_ip1}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_inositol/Inositol_Taghizadeh2022_PD_ip1},
 }
 ```
@@ -147,5 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binositol%5D%20pd_Taghizadeh_2022_IP1&body=Drug%3A%20inositol%0ARecord%3A%20pd_Taghizadeh_2022_IP1%0APaper%3A%20Taghizadeh_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inositol/pd_Taghizadeh_2022_IP1%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binositol%5D%20pd_Taghizadeh_2022_IP1&body=Drug%3A%20inositol%0ARecord%3A%20pd_Taghizadeh_2022_IP1%0APaper%3A%20Taghizadeh_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inositol/pd_Taghizadeh_2022_IP1%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [inositol](drugs/drug_inositol/)</sub>

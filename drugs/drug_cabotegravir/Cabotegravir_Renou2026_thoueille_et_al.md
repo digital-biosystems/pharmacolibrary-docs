@@ -204,13 +204,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Renou Q, Néant N, Destere A, Lagoutte-Renosi J, Grégoire M, Parant F et al. External Evaluation of Population Pharmacokinetic Models of Cabotegravir, During Its Oral and Intramuscular Administration in HIV-Infected Patients. CPT: pharmacometrics & systems pharmacology 15(6):e70180 (2026). [doi:10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180)
 
-**This record:** Pharmacolibrary v26.09, model `Cabotegravir_Renou2026_thoueille_et_al`. <https://pharmacolibrary.github.io/#/drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al>
+**This record:** Pharmacolibrary, model `Cabotegravir_Renou2026_thoueille_et_al`. <https://pharmacolibrary.github.io/#/drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al>
 
 ```bibtex
 @misc{pharmacolibrary_CabotegravirRenou2026thoueilleetal,
   title  = {{Pharmacolibrary model Cabotegravir_Renou2026_thoueille_et_al}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al},
   note   = {Parameters from doi:10.1002/psp4.70180},
 }
@@ -229,5 +228,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabotegravir%5D%20Cabotegravir_Renou2026_thoueille_et_al&body=Drug%3A%20cabotegravir%0ARecord%3A%20Cabotegravir_Renou2026_thoueille_et_al%0APaper%3A%20Renou_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:57 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabotegravir%5D%20Cabotegravir_Renou2026_thoueille_et_al&body=Drug%3A%20cabotegravir%0ARecord%3A%20Cabotegravir_Renou2026_thoueille_et_al%0APaper%3A%20Renou_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:57 UTC</sub>

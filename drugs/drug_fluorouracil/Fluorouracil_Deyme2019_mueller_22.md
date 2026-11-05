@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Deyme_2019 \u00b7 mueller_22&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Deyme2019_mueller_22`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The irinotecan parameter set includes a 1387 L volume, which is physiologically implausible for an adult.
+> This record was reviewed on 2026-10-22 14:19 UTC (Rejected), but the paper was screened again on 2026-11-03 21:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The irinotecan parameter set includes a 1387 L volume, which is physiologically implausible for an adult.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_mueller_22" status="rejected" stale="false" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_mueller_22" status="rejected" stale="true" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a review of studies and parameters. Cancer chemotherapy and pharmacology 83(1):27–42 (2019).
@@ -17,15 +17,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ## Population and dosing
 
-**Population:** adults with digestive cancers · condition digestive cancer · age group adult.
-
-**Dosing:** 300, 425, 450, 2400 mg/m2, iv, multiple, every 144 h.
+**Population:** adults with digestive cancers · condition digestive cancers · age group adult.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 9 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,17 +31,19 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| V1 (L) | V1 | 153 | L |
+| V2 (L) | V2 | 147 | L |
 | V3 (L) | V3 | 300 | L |
 | Vss (L) | Vss | 1387 | L |
+| Vmax (mg/h) | Vmax | 1390 | mg/h |
+| Km (mg/L) | Km | 5.57 | mg/L |
 | Q2 (L/h) | Q2 | 67.9 | L/h |
-| Q3 (L/h) | Q3 | 5.35 | L/h |
-| CL5FU (L/h) | CL | 256.0 | L/h |
-| volume | V | 0.2 | mL |
+| kl2 (h-1) | kel | 5.69 | h-1 |
 | Ka, Absorption rate constant (h−1) | kabs | 0.757 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,20 +57,20 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 The record links irinotecan to its metabolites, but the drug fluorouracil is assigned an absorption rate constant, implying oral administration for an infusion drug. The extraction also includes parameters attributed to irinotecan that are unrelated to the fluorouracil measurement. Extracted — irinotecan: V3 300 L, Vss 1.39e+03 L, Q2 67.9 L/h, Q3 5.35 L/h; fluorouracil: CL 256 L/h, V 0.2 mL, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
+| V1 (L) | `Q63` · V1 | 153 | L | 0.153 | m3 | l | exact (1) | Deyme_2019_table_4:row1:col2, Deyme_2019_table_4:row1:col8 |
+| V2 (L) | `Q64` · V2 | 147 | L | 0.147 | m3 | l | exact (1) | Deyme_2019_table_4:row1:col3 |
 | V3 (L) | `Q77` · V3 | 300 | L | 0.3 | m3 | l | exact (1) | Deyme_2019_table_4:row1:col4 |
 | Vss (L) | `Q65` · Vss | 1387 | L | 1.387 | m3 | l | exact (1) | Deyme_2019_table_4:row1:col5 |
+| Vmax (mg/h) | `Q66` · Vmax | 1390 | mg/h |  |  | mg/h | special_case (0.95) | Deyme_2019_table_4:row1:col6 |
+| Km (mg/L) | `Q1` · Km | 5.57 | mg/L |  |  | mg/l | exact (1) | Deyme_2019_table_4:row1:col7 |
 | Q2 (L/h) | `Q99` · Q2 | 67.9 | L/h | 1.886e-05 | m3/s | l/h | exact (1) | Deyme_2019_table_4:row1:col9 |
-| Q3 (L/h) | `Q308` · Q3 | 5.35 | L/h | 1.486e-06 | m3/s | l/h | exact (1) | Deyme_2019_table_4:row1:col10 |
-| CL5FU (L/h) | `Q22` · CL | 256.0 | L/h | 7.111e-05 | m3/s | L/h | review_gapfill (0.7) | Arshad_2020:review |
-| volume | `Q61` · V | 0.2 | mL | 2e-07 | m3 | L | review_gapfill (0.7) | Hara_2026:review |
+| kl2 (h-1) | `Q47` · kel | 5.69 | h-1 | 0.001581 | 1/s | 1/h | exact (1) | Deyme_2019_table_4:row1:col11 |
 | Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002103 | 1/s | 1/h | review_gapfill (0.7) | Bae_2026:review |
 
 <details class="legend">
@@ -82,22 +82,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 **Interpretation flags:**
 - column 'mueller (2013) [22]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'Vmax (mg/h)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q99 ('Q3 (L/h)', value '5.35') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — 3 metabolites — the templates hold two
+- template fit: none — 5 metabolites — the templates hold two
 - status held at "Needs review" — not promoted
 - population split: 'mueller (2013) [22]' subgroup of Deyme_2019 (paper reports 17 populations: beaty (2010) [31], berg (2015) [37], bressolle (1999) [33], delord (2003) [25], foulladi (2006) [30], khoo (2006) [24], kimura (2010) [29], klein (2003) [38], klein (2005) [38], mueller (2013) [22], nikanjan (2015) [32], porta-oltra (2004) [34], poujol (2007) [27], terret (2000) [23], thompson (2008) [28], van kuilenburg (2012) [36], woloch (2012) [35])
-- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 52 linked by role; re-tagged parent→irinotecan ×72, parent→SN38 ×13
-- molar mass: none of 1 PubChem candidate(s) is 'APC' (LLM) — left in mass units
+- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 100 linked by role; re-tagged parent→irinotecan ×122, parent→SN38 ×22
+- molar mass: no plausible PubChem entry for '5FUH2' ('no full name in the paper') — left in mass units
+- molar mass: no plausible PubChem entry for '5FDHU' ('no full name in the paper') — left in mass units
+- molar mass: no plausible PubChem entry for 'SN38' ('SN-38') — left in mass units
+- molar mass: no plausible PubChem entry for 'SN38G' ('SN-38 glucuronide') — left in mass units
+- molar mass: no plausible PubChem entry for 'APC' ('no full name in the paper') — left in mass units
+- molar mass: none found for '5FUH2' — its concentrations stay mass-only
+- molar mass: none found for '5FDHU' — its concentrations stay mass-only
+- molar mass: none found for 'SN38' — its concentrations stay mass-only
+- molar mass: none found for 'SN38G' — its concentrations stay mass-only
 - molar mass: none found for 'APC' — its concentrations stay mass-only
-- gap-filled Q22 (CL) from Arshad_2020's review values (primary lacked it)
-- gap-filled Q61 (V) from Hara_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 4, 5, 6, 7
 - table Deyme_2019_table_4: ragged_grid
 - table Deyme_2019_table_4: unparsed_numeric_cell
@@ -112,51 +120,25 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
-
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['sn38', 'apc', 'metabolism']] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['sn38', 'apc', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[kl2]` | 5.35 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | 67.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance of ultrafiltrated platinum]` |  | 11.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2]` | 11.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | fluorouracil | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fluorouracil | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Arshad_2020:review'] |
-| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['Deyme_2019_table_4:row1:col10'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Deyme_2019_table_4:row1:col7'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Deyme_2019_table_4:row1:col11'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hara_2026:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col2', 'Deyme_2019_table_4:row1:col8'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Deyme_2019_table_4:row1:col6'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col4'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Deyme_2019_table_4:row1:col9'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 256 | ['Arshad_2020:review'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none', 'none', 'none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 256 L/h | ['Arshad_2020:review'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0002 L | ['Hara_2026:review'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 153 L | ['Deyme_2019_table_4:row1:col2', 'Deyme_2019_table_4:row1:col8'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 147 L | ['Deyme_2019_table_4:row1:col3'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 1.39e+03 L | ['Deyme_2019_table_4:row1:col5'] |
 
 <details class="legend">
@@ -180,5 +162,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Deyme2019_mueller_22&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Deyme2019_mueller_22%0APaper%3A%20Deyme_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_mueller_22%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Deyme2019_mueller_22&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Deyme2019_mueller_22%0APaper%3A%20Deyme_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_mueller_22%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:28 UTC</sub>

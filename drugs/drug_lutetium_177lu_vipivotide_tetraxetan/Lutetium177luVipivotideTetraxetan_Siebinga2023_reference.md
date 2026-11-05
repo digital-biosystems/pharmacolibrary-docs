@@ -208,13 +208,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Siebinga H, Privé BM, Peters SMB, Nagarajah J, Dorlo TPC, Huitema ADR et al. Population pharmacokinetic dosimetry model using imaging data to assess variability in pharmacokinetics of &lt;sup&gt;177&lt;/sup&gt; Lu-PSMA-617 in prostate cancer patients. CPT: pharmacometrics & systems pharmacology 12(8):1060-1071 (2023). [doi:10.1002/psp4.12914](https://doi.org/10.1002/psp4.12914)
 
-**This record:** Pharmacolibrary v26.09, model `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference>
+**This record:** Pharmacolibrary, model `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_Lutetium177luVipivotideTetraxetanSiebinga2023reference,
   title  = {{Pharmacolibrary model Lutetium177luVipivotideTetraxetan_Siebinga2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference},
   note   = {Parameters from doi:10.1002/psp4.12914},
 }
@@ -233,5 +232,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blutetium_177lu_vipivotide_tetraxetan%5D%20Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&body=Drug%3A%20lutetium_177lu_vipivotide_tetraxetan%0ARecord%3A%20Lutetium177luVipivotideTetraxetan_Siebinga2023_reference%0APaper%3A%20Siebinga_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:24 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blutetium_177lu_vipivotide_tetraxetan%5D%20Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&body=Drug%3A%20lutetium_177lu_vipivotide_tetraxetan%0ARecord%3A%20Lutetium177luVipivotideTetraxetan_Siebinga2023_reference%0APaper%3A%20Siebinga_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:24 UTC</sub>

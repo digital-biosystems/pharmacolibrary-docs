@@ -178,13 +178,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Du L, Wenning L, Migoya E, Xu Y, Carvalho B, Brookfield K et al. Population Pharmacokinetic Modeling to Evaluate Standard Magnesium Sulfate Treatments and Alternative Dosing Regimens for Women With Preeclampsia. Journal of clinical pharmacology 59(3):374–385 (2019). [doi:10.1002/jcph.1328](https://doi.org/10.1002/jcph.1328)
 
-**This record:** Pharmacolibrary v26.09, model `MagnesiumSulfate_Du2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference>
+**This record:** Pharmacolibrary, model `MagnesiumSulfate_Du2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_MagnesiumSulfateDu2019reference,
   title  = {{Pharmacolibrary model MagnesiumSulfate_Du2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference},
   note   = {Parameters from doi:10.1002/jcph.1328},
 }
@@ -199,5 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_sulfate%5D%20MagnesiumSulfate_Du2019_reference&body=Drug%3A%20magnesium_sulfate%0ARecord%3A%20MagnesiumSulfate_Du2019_reference%0APaper%3A%20Du_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 19:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmagnesium_sulfate%5D%20MagnesiumSulfate_Du2019_reference&body=Drug%3A%20magnesium_sulfate%0ARecord%3A%20MagnesiumSulfate_Du2019_reference%0APaper%3A%20Du_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 19:49 UTC</sub>

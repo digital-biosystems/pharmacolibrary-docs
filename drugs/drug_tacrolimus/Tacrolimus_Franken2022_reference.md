@@ -217,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Franken LG, Francke MI, Andrews LM, van Schaik RHN, Li Y, de Wit LEA et al. A Population Pharmacokinetic Model of Whole-Blood and Intracellular Tacrolimus in Kidney Transplant Recipients. European journal of drug metabolism and pharmacokinetics 47(4):523–535 (2022). [doi:10.1007/s13318-022-00767-8](https://doi.org/10.1007/s13318-022-00767-8)
 
-**This record:** Pharmacolibrary v26.09, model `Tacrolimus_Franken2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference>
+**This record:** Pharmacolibrary, model `Tacrolimus_Franken2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TacrolimusFranken2022reference,
   title  = {{Pharmacolibrary model Tacrolimus_Franken2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference},
   note   = {Parameters from doi:10.1007/s13318-022-00767-8},
 }
@@ -242,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btacrolimus%5D%20Tacrolimus_Franken2022_reference&body=Drug%3A%20tacrolimus%0ARecord%3A%20Tacrolimus_Franken2022_reference%0APaper%3A%20Franken_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btacrolimus%5D%20Tacrolimus_Franken2022_reference&body=Drug%3A%20tacrolimus%0ARecord%3A%20Tacrolimus_Franken2022_reference%0APaper%3A%20Franken_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tacrolimus/Tacrolimus_Franken2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:37 UTC</sub>

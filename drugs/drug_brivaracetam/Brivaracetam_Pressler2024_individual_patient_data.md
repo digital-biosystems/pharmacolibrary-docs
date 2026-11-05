@@ -214,13 +214,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Pressler R, Boylan G, Dempsey E, Klotz KA, Krauwinkel W, Will E et al. Pharmacokinetics and safety of brivaracetam in neonates with repeated electroencephalographic seizures: A multicenter, open-label, single-arm study. Epilepsia open 9(2):522-533 (2024). [doi:10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875)
 
-**This record:** Pharmacolibrary v26.09, model `Brivaracetam_Pressler2024_individual_patient_data`. <https://pharmacolibrary.github.io/#/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data>
+**This record:** Pharmacolibrary, model `Brivaracetam_Pressler2024_individual_patient_data`. <https://pharmacolibrary.github.io/#/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data>
 
 ```bibtex
 @misc{pharmacolibrary_BrivaracetamPressler2024individualpatientdata,
   title  = {{Pharmacolibrary model Brivaracetam_Pressler2024_individual_patient_data}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data},
   note   = {Parameters from doi:10.1002/epi4.12875},
 }
@@ -239,5 +238,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrivaracetam%5D%20Brivaracetam_Pressler2024_individual_patient_data&body=Drug%3A%20brivaracetam%0ARecord%3A%20Brivaracetam_Pressler2024_individual_patient_data%0APaper%3A%20Pressler_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrivaracetam%5D%20Brivaracetam_Pressler2024_individual_patient_data&body=Drug%3A%20brivaracetam%0ARecord%3A%20Brivaracetam_Pressler2024_individual_patient_data%0APaper%3A%20Pressler_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:03 UTC</sub>

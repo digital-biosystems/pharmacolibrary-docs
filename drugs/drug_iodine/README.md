@@ -21,16 +21,6 @@ Iodine is used as a topical antiseptic and disinfectant for the skin. It is an a
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 2.78 | L/h | 2.78 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Samukawa_2017_reference](drugs/drug_iodine/Iodine_Samukawa2017_reference.md) |
-| V | V1 | 21.1 | L | 21.1 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Samukawa_2017_reference](drugs/drug_iodine/Iodine_Samukawa2017_reference.md) |
-| ka | kabs | 20.3 | 1/h | 20.3 1/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Samukawa_2017_reference](drugs/drug_iodine/Iodine_Samukawa2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -411,5 +401,5 @@ _19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodine%5D&body=Drug%3A%20iodine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:52 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodine%5D&body=Drug%3A%20iodine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:52 UTC</sub>

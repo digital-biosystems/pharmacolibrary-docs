@@ -179,13 +179,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Trenque T, Simon N, Villena I, Chemla C, Quereux C, Leroux B et al. Population pharmacokinetics of pyrimethamine and sulfadoxine in children with congenital toxoplasmosis. British journal of clinical pharmacology 57(6):735–741 (2004). [doi:10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x)
 
-**This record:** Pharmacolibrary v26.09, model `Sulfadoxine_Trenque2004_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference>
+**This record:** Pharmacolibrary, model `Sulfadoxine_Trenque2004_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference>
 
 ```bibtex
 @misc{pharmacolibrary_SulfadoxineTrenque2004reference,
   title  = {{Pharmacolibrary model Sulfadoxine_Trenque2004_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference},
   note   = {Parameters from doi:10.1111/j.1365-2125.2004.02077.x},
 }
@@ -204,5 +203,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadoxine%5D%20Sulfadoxine_Trenque2004_reference&body=Drug%3A%20sulfadoxine%0ARecord%3A%20Sulfadoxine_Trenque2004_reference%0APaper%3A%20Trenque_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 08:48 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadoxine%5D%20Sulfadoxine_Trenque2004_reference&body=Drug%3A%20sulfadoxine%0ARecord%3A%20Sulfadoxine_Trenque2004_reference%0APaper%3A%20Trenque_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 08:48 UTC</sub>

@@ -31,16 +31,9 @@ Docetaxel is a taxane chemotherapy drug used to treat several cancers, including
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 22 | L/h | 22 L/h | adults and children with cancer |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Clarke_1999_reference](drugs/drug_docetaxel/Docetaxel_Clarke1999_reference.md) |
-| CL | CL | 35.6 | L/h | 35.6 l/h | patients with solid tumors | &gt;= 26 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Launay-Iliadis_1995_reference](drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference.md) |
-| CL | CL | 1980 | L/h | 1980 L/h | patients receiving IV docetaxel and oral docetaxel formulations |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yu_2020_reference](drugs/drug_docetaxel/Docetaxel_Yu2020_reference.md) |
-| V | V | 74 | L | 74 L | adults and children with cancer |  | human | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Clarke_1999_reference](drugs/drug_docetaxel/Docetaxel_Clarke1999_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="74" stroke="#ddd"/><text x="306.7" y="88" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="74" stroke="#ddd"/><text x="423.3" y="88" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Clarke_1999 · CL</text><circle cx="229.9" cy="30.0" r="4" fill="#66bb6a"><title>Clarke_1999 · CL: 22 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Launay-Iliadis_1995 · CL</text><circle cx="254.3" cy="46.0" r="4" fill="#2e7d32"><title>Launay-Iliadis_1995 · CL: 35.6 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yu_2020 · CL</text><circle cx="457.9" cy="62.0" r="4" fill="#ef6c00"><title>Yu_2020 · CL: 1980 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -256,5 +249,5 @@ _17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdocetaxel%5D&body=Drug%3A%20docetaxel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_docetaxel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdocetaxel%5D&body=Drug%3A%20docetaxel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_docetaxel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:51 UTC</sub>

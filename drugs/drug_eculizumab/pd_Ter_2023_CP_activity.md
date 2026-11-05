@@ -95,13 +95,12 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Eculizumab_Ter2023_PD_cp_activity`. <https://pharmacolibrary.github.io/#/drugs/drug_eculizumab/Eculizumab_Ter2023_PD_cp_activity>
+**This record:** Pharmacolibrary, model `Eculizumab_Ter2023_PD_cp_activity`. <https://pharmacolibrary.github.io/#/drugs/drug_eculizumab/Eculizumab_Ter2023_PD_cp_activity>
 
 ```bibtex
 @misc{pharmacolibrary_EculizumabTer2023PDcpactivity,
   title  = {{Pharmacolibrary model Eculizumab_Ter2023_PD_cp_activity}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_eculizumab/Eculizumab_Ter2023_PD_cp_activity},
 }
 ```
@@ -115,5 +114,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beculizumab%5D%20pd_Ter_2023_CP_activity&body=Drug%3A%20eculizumab%0ARecord%3A%20pd_Ter_2023_CP_activity%0APaper%3A%20Ter_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eculizumab/pd_Ter_2023_CP_activity%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beculizumab%5D%20pd_Ter_2023_CP_activity&body=Drug%3A%20eculizumab%0ARecord%3A%20pd_Ter_2023_CP_activity%0APaper%3A%20Ter_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eculizumab/pd_Ter_2023_CP_activity%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [eculizumab](drugs/drug_eculizumab/)</sub>

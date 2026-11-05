@@ -190,13 +190,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chen D, Yao Q, Chen W, Yin J, Hou S, Tian X et al. Population PK/PD model of tacrolimus for exploring the relationship between accumulated exposure and quantitative scores in myasthenia gravis patients. CPT: pharmacometrics & systems pharmacology 12(7):963–976 (2023). [doi:10.1002/psp4.12966](https://doi.org/10.1002/psp4.12966)
 
-**This record:** Pharmacolibrary v26.09, model `Tacrolimus_Chen2023_base`. <https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Chen2023_base>
+**This record:** Pharmacolibrary, model `Tacrolimus_Chen2023_base`. <https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Chen2023_base>
 
 ```bibtex
 @misc{pharmacolibrary_TacrolimusChen2023base,
   title  = {{Pharmacolibrary model Tacrolimus_Chen2023_base}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tacrolimus/Tacrolimus_Chen2023_base},
   note   = {Parameters from doi:10.1002/psp4.12966},
 }
@@ -215,5 +214,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btacrolimus%5D%20Tacrolimus_Chen2023_base&body=Drug%3A%20tacrolimus%0ARecord%3A%20Tacrolimus_Chen2023_base%0APaper%3A%20Chen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tacrolimus/Tacrolimus_Chen2023_base%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 15:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btacrolimus%5D%20Tacrolimus_Chen2023_base&body=Drug%3A%20tacrolimus%0ARecord%3A%20Tacrolimus_Chen2023_base%0APaper%3A%20Chen_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tacrolimus/Tacrolimus_Chen2023_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 15:33 UTC</sub>

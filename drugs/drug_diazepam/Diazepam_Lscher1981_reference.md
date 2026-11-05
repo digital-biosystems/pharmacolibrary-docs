@@ -1,22 +1,22 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Orphan metabolite 3-hydroxydiazepam lacks a formation link and the diazepam clearance value is not extracted.
+> This record was reviewed on 2026-10-22 15:34 UTC (Rejected), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Orphan metabolite 3-hydroxydiazepam lacks a formation link and the diazepam clearance value is not extracted.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="rejected" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="rejected" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internationales de pharmacodynamie et de therapie 254(2):180–195 (1981).
 
 ## Population and dosing
 
-**Population:** dogs · condition healthy · age group adult.
+**Population:** dogs · condition healthy.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -24,7 +24,7 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,15 +32,14 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| elimination half-life t0.5(beta) | t1/2β | 3.2 | hr |
+| t0.5(beta) | t1/2β | 3.2 | hr |
 | half-life | t1/2z | 5.7 | hr |
-| Oral bioavailability | Fab | 74-100% | % |
-| apparent total CL in a 9-year-old child weighing 29 kg | CL | 3.8 | L/h |
+| low clearance | CL | 0.651 | L/h/kg |
 | volume of distribution | V | 4.7 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +53,7 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 The metabolic network defines 3-hydroxydiazepam as a daughter metabolite but does not assign it a precursor, rendering that compartment unreachable from the dose. Furthermore, the diazepam clearance parameter has no value extracted, so a library placeholder would be used instead of the 3.8 L/h value reported in the abstract. Because the record relies solely on abstract summary statistics, these structural and parameter gaps prevent a valid model representation. Extracted — diazepam: t1/2β 3.2 hr, Fab 74-100% %, CL 3.8 L/h, V 4.7 L/kg; desmethyldiazepam: t1/2z 5.7 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -62,10 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination half-life t0.5(beta) | `Q60` · t1/2β | 3.2 | hr | 1.152e+04 | s | h | llm (0.6) | Löscher_1981:abstract |
+| t0.5(beta) | `Q60` · t1/2β | 3.2 | hr | 1.152e+04 | s | h | llm (0.6) | Löscher_1981:abstract |
 | half-life | `Q57` · t1/2z | 5.7 | hr | 2.052e+04 | s | h | llm (0.6) | Löscher_1981:abstract |
-| Oral bioavailability | `Q40` · Fab | 74-100% | % |  |  |  | exact (1) | Löscher_1981:abstract |
-| apparent total CL in a 9-year-old child weighing 29 kg | `Q22` · CL | 3.8 | L/h | 1.056e-06 | m3/s | L/h | review_gapfill (0.7) | Carrascosa-Arteaga_2025:review |
+| low clearance | `Q22` · CL | 0.651 | L/h/kg | 1.266e-05 | m3/s | L/h | review_gapfill (0.7) | Cavallaro_2026:review |
 | volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | m3 | L | review_gapfill (0.7) | Cavallaro_2026:review |
 
 <details class="legend">
@@ -76,55 +74,42 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'share of unmetabolized diazepam in the total area under curve after oral administration'
-- dropped value-less row: 'share of unmetabolized diazepam in the total area under curve after i.v.'
-- dropped value-less row: 'steady state plasma concentrations of desmethyldiazepam'
-- dropped value-less row: 'maximal diazepam concentrations'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
-- round-trip: Fab value not numeric ('74-100%')
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged diazepam→parent ×3, diazepam→desmethyldiazepam ×2
+- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 0 linked by role; re-tagged diazepam→parent ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Carrascosa-Arteaga_2025's review values (primary lacked it)
+- gap-filled Q22 (CL) from Cavallaro_2026's review values (primary lacked it)
 - gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Löscher_1981_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Löscher_1981_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` | 74-100% |  | only_one_extracted |
-| `gpt-oss-120b` | `model.links` | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[average elimination half-life t0.5]` |  | 3.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 1.236 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life t0.5]` | 3.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[dose]` |  | 2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life]` |  | 5.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life]` | 5.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[i.v. administration of]` |  | 2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka *]` | 1.03 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[maximal plasma concentrations]` |  | 100 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[share of unmetabolized diazepam in the total area under curve after i.v. administration]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[share of unmetabolized diazepam in the total area under curve after oral administration]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady state plasma concentrations of desmethyldiazepam]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to maximal plasma concentration]` |  | 2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.186 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal diazepam concentrations]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal plasma concentrations]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[share of unmetabolized diazepam]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady state plasma concentrations]` |  |  | only_one_extracted |
 
 </details>
 
@@ -140,13 +125,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Carrascosa-Arteaga_2025:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cavallaro_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Löscher_1981:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Löscher_1981:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.8 | ['Carrascosa-Arteaga_2025:review'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.8 L/h | ['Carrascosa-Arteaga_2025:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.651 | ['Cavallaro_2026:review'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 45.6 L/h | ['Cavallaro_2026:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 329 L | ['Cavallaro_2026:review'] |
 
 <details class="legend">
@@ -170,5 +155,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Lscher1981_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Lscher1981_reference%0APaper%3A%20L%C3%B6scher_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Lscher1981_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:15 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiazepam%5D%20Diazepam_Lscher1981_reference&body=Drug%3A%20diazepam%0ARecord%3A%20Diazepam_Lscher1981_reference%0APaper%3A%20L%C3%B6scher_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diazepam/Diazepam_Lscher1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:24 UTC</sub>

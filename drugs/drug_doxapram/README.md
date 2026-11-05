@@ -23,14 +23,6 @@ Doxapram is a respiratory stimulant used to treat breathing problems, and has al
 | doxapram | parent | 378.507 | C24H30N2O2 | DrugBank | [3156](https://pubchem.ncbi.nlm.nih.gov/compound/3156) | Flint_2021, Ogawa_2015 |
 | keto-doxapram | metabolite | 392.499 | C24H28N2O3 | PubChem | [162522](https://pubchem.ncbi.nlm.nih.gov/compound/162522) | Flint_2021 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 177.8 ‡ | L | 2.54 L/kg | low-birth-weight Japanese infants with apnea | 34 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ogawa_2015_reference](drugs/drug_doxapram/Doxapram_Ogawa2015_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -94,5 +86,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxapram%5D&body=Drug%3A%20doxapram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxapram/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 17:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxapram%5D&body=Drug%3A%20doxapram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxapram/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:44 UTC</sub>

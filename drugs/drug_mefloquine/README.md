@@ -33,19 +33,9 @@ Mefloquine is an antimalarial drug used to treat and prevent malaria, including 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.476 | L/h | 0.476 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cherkaoui-Rbati_2023_reference](drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md) |
-| CL | CL/F | 0.014 | L/h | 0.014 L/h | mice infected with E. multilocularis eggs | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rufener_2018_reference](drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md) |
-| CL | CL/F | 1 | L/h | 1.0 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rattanapunya_2015_reference](drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md) |
-| V | V/F | 5.8 | L | 5.7996 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rattanapunya_2015_reference](drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference.md) |
-| V | V1 | 8.58 | L | 8.58 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Cherkaoui-Rbati_2023_reference](drugs/drug_mefloquine/Mefloquine_CherkaouiRbati2023_reference.md) |
-| V | V1/F | 1.04 | L | 1.04 L | mice infected with E. multilocularis eggs | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rufener_2018_reference](drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md) |
-| ka | kabs | 0.3 | 1/h | 0.3 h -1 | mice infected with E. multilocularis eggs | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rufener_2018_reference](drugs/drug_mefloquine/Mefloquine_Rufener2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cherkaoui-Rbati_2023 · CL</text><circle cx="483.6" cy="30.0" r="4" fill="#ef6c00"><title>Cherkaoui-Rbati_2023 · CL: 0.476 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rufener_2018 · CL/F</text><circle cx="215.6" cy="46.0" r="4" fill="#ef6c00"><title>Rufener_2018 · CL/F: 0.014 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rattanapunya_2015 · CL/F</text><circle cx="540.0" cy="62.0" r="4" fill="#ef6c00"><title>Rattanapunya_2015 · CL/F: 1 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rattanapunya_2015 · V/F</text><circle cx="457.2" cy="30.0" r="4" fill="#ef6c00"><title>Rattanapunya_2015 · V/F: 5.8 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Cherkaoui-Rbati_2023 · V1</text><circle cx="516.7" cy="46.0" r="4" fill="#ef6c00"><title>Cherkaoui-Rbati_2023 · V1: 8.58 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rufener_2018 · V1/F</text><circle cx="196.0" cy="62.0" r="4" fill="#ef6c00"><title>Rufener_2018 · V1/F: 1.04 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -148,5 +138,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmefloquine%5D&body=Drug%3A%20mefloquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mefloquine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmefloquine%5D&body=Drug%3A%20mefloquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mefloquine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:25 UTC</sub>

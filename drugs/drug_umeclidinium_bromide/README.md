@@ -31,23 +31,9 @@ Umeclidinium bromide is a muscarinic antagonist used to treat chronic obstructiv
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 40.9 | L/h | 40.9 L/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_historical_model_parameter_estimates_rse](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_historical_model_parameter_est.md) |
-| CL | CL/F | 41.6 | L/h | 41.6 L/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_model_parameter_estimates_with_combined_dataset_rse](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_model_parameter_estimates_with.md) |
-| CL | CL/F | 228 | L/h | 228 L/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_model_parameter_estimates_with_combined_dataset](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_model_parameter_estimates_with.md) |
-| CL | CL/F | 230 | L/h | 230 L/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_historical_model_parameter_estimates](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_historical_model_parameter_est.md) |
-| CL | CL/F | 257 | L/h | 257 L/h | adults with asthma | 128 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2017_reference](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Yang2017_reference.md) |
-| CL | CL/F | 513 | L/h | 513 L/h | patients with COPD | 817 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2020_reference](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2020_reference.md) |
-| V | V/F | 804 | L | 804 L | adults with asthma | 128 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2017_reference](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Yang2017_reference.md) |
-| ka | kabs | 0.052 | 1/h | 0.052 1/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_historical_model_parameter_estimates](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_historical_model_parameter_est.md) |
-| ka | kabs | 0.053 | 1/h | 0.053 1/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_model_parameter_estimates_with_combined_dataset](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_model_parameter_estimates_with.md) |
-| ka | kabs | 18.8 | 1/h | 18.8 1/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_historical_model_parameter_estimates_rse](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_historical_model_parameter_est.md) |
-| ka | kabs | 19.6 | 1/h | 19.6 1/h | patients with symptomatic COPD | 74 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mehta_2018_model_parameter_estimates_with_combined_dataset_rse](drugs/drug_umeclidinium_bromide/UmeclidiniumBromide_Mehta2018_model_parameter_estimates_with.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="122" stroke="#ddd"/><text x="365.0" y="136" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Mehta_2018 · CL/F</text><circle cx="297.1" cy="30.0" r="4" fill="#ef6c00"><title>Mehta_2018 · CL/F: 40.9 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Mehta_2018 · CL/F</text><circle cx="298.3" cy="46.0" r="4" fill="#ef6c00"><title>Mehta_2018 · CL/F: 41.6 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Mehta_2018 · CL/F</text><circle cx="427.6" cy="62.0" r="4" fill="#ef6c00"><title>Mehta_2018 · CL/F: 228 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Mehta_2018 · CL/F</text><circle cx="428.3" cy="78.0" r="4" fill="#ef6c00"><title>Mehta_2018 · CL/F: 230 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Yang_2017 · CL/F</text><circle cx="436.7" cy="94.0" r="4" fill="#ef6c00"><title>Yang_2017 · CL/F: 257 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Mehta_2020 · CL/F</text><circle cx="489.3" cy="110.0" r="4" fill="#ef6c00"><title>Mehta_2020 · CL/F: 513 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -148,5 +134,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bumeclidinium_bromide%5D&body=Drug%3A%20umeclidinium_bromide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_umeclidinium_bromide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bumeclidinium_bromide%5D&body=Drug%3A%20umeclidinium_bromide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_umeclidinium_bromide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:20 UTC</sub>

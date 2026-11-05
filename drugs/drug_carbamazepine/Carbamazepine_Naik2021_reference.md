@@ -186,13 +186,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Naik H, Zhao Y, Forrestal F, Cleall S, Bockbrader H, Chapel S. Population Pharmacokinetics of Vixotrigine in Healthy Volunteers and Subjects with Trigeminal Neuralgia, Painful Lumbosacral Radiculopathy and Erythromelalgia. European journal of drug metabolism and pharmacokinetics 46(3):395–404 (2021). [doi:10.1007/s13318-021-00678-0](https://doi.org/10.1007/s13318-021-00678-0)
 
-**This record:** Pharmacolibrary v26.09, model `Carbamazepine_Naik2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference>
+**This record:** Pharmacolibrary, model `Carbamazepine_Naik2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarbamazepineNaik2021reference,
   title  = {{Pharmacolibrary model Carbamazepine_Naik2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference},
   note   = {Parameters from doi:10.1007/s13318-021-00678-0},
 }
@@ -211,5 +210,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbamazepine%5D%20Carbamazepine_Naik2021_reference&body=Drug%3A%20carbamazepine%0ARecord%3A%20Carbamazepine_Naik2021_reference%0APaper%3A%20Naik_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 10:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbamazepine%5D%20Carbamazepine_Naik2021_reference&body=Drug%3A%20carbamazepine%0ARecord%3A%20Carbamazepine_Naik2021_reference%0APaper%3A%20Naik_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 10:50 UTC</sub>

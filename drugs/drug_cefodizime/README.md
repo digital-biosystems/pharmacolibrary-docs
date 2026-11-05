@@ -31,18 +31,9 @@ Cefodizime is a third-generation cephalosporin antibiotic used against bacterial
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 3.54 | L/h | 59 ml/min | healthy male subjects | &gt;= 6 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Schäfer-Korting_1986_reference](drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md) |
-| V | V | 12.04 ‡ | L | 0.172 l/kg | healthy males and patients with liver cirrhosis and ascites | , n_subjects": "12", "condition": "liver cirrhosis and ascites", "species": "human", "compounds": ["cefodizime \| parent \| yes \| yes \| yes"], "links": | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [el_1992_reference](drugs/drug_cefodizime/Cefodizime_el1992_reference.md) |
-| V | V | 15.3 | L | 15.3 l | healthy male subjects | &gt;= 6 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Schäfer-Korting_1986_reference](drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md) |
-| t½ | t1/2z | 2.5 | h | 2.5 hours | healthy adult males |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Dagrosa_1987_reference](drugs/drug_cefodizime/Cefodizime_Dagrosa1987_reference.md) |
-| t½ | t1/2z | 2.7 | h | 2.7 h | healthy males and patients with liver cirrhosis and ascites | , n_subjects": "12", "condition": "liver cirrhosis and ascites", "species": "human", "compounds": ["cefodizime \| parent \| yes \| yes \| yes"], "links": | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [el_1992_reference](drugs/drug_cefodizime/Cefodizime_el1992_reference.md) |
-| t½ | t1/2z | 3.017 | h | 181 min | healthy male subjects | &gt;= 6 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Schäfer-Korting_1986_reference](drugs/drug_cefodizime/Cefodizime_SchferKorting1986_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">el_1992 · V ·/kg</text><circle cx="218.2" cy="30.0" r="4" fill="#ef6c00"><title>el_1992 · V ·/kg: 12.04 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Schäfer-Korting_1986 · V</text><circle cx="254.6" cy="46.0" r="4" fill="#2e7d32"><title>Schäfer-Korting_1986 · V: 15.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -105,5 +96,5 @@ _9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefodizime%5D&body=Drug%3A%20cefodizime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefodizime/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefodizime%5D&body=Drug%3A%20cefodizime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefodizime/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:14 UTC</sub>

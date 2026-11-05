@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Hannam_2018 \u00b7 PD pain score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Hannam_2018 \u00b7 PD Pain&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_1_year_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_1_year_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_1_year_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_28_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_28_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_28_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_30_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_30_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_30_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_34_weeks_pca&quot;,&quot;label&quot;:&quot;Anderson_2005_34_weeks_pca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_34_weeks_pca.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_5_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_5_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_5_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_6_months_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_6_months_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_6_months_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Anderson2005_8_years_pna&quot;,&quot;label&quot;:&quot;Anderson_2005_8_years_pna&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2005_8_years_pna.md&quot;,&quot;status&quot;:&quot;Rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pain score — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.364), gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed 0/2</span>
+# Pain — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Acetaminophen; ibuprofen; tramadol (measured concentrations) drives pain score (in pain units): delayed effect through an effect compartment.
+**As extracted:** Acetaminophen, ibuprofen, tramadol (measured concentrations) drive Pain (in pain units): direct sigmoid Emax (Hill) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -23,10 +23,10 @@
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hannam_2018`
-- **model family:** `effect_compartment`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthesia (2018)
@@ -35,15 +35,14 @@ Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthe
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | E MAX | `Q323` ·  | 0.648 |  | llm | Hannam_2018:pdv3 |
-| PD (effect) | C 50,ACET | `Q321` ·  | 7.06 | mg/L | llm | Hannam_2018:pdv3 |
-| PD (effect) | t 1/2 keo ACET | `Q326` ·  | 0.34 | h | llm | Hannam_2018:pdv3 |
-| PD (effect) | C 50,IBU | `Q321` ·  | 3.95 | mg/L | llm | Hannam_2018:pdv3 |
-| PD (effect) | t 1/2 keo IBU | `Q326` ·  | 1.04 | h | llm | Hannam_2018:pdv3 |
-| PD (effect) | C 50,TRAM | `Q321` ·  | 0.0703 | mg/L | llm | Hannam_2018:pdv3 |
-| PD (effect) | t 1/2 keo TRAM | `Q326` ·  | 1.77 | h | llm | Hannam_2018:pdv3 |
+| PD (effect) | E MAX | `Q323` ·  | 0.648 |  | direction | Hannam_2018:pdv3 |
 | PD (effect) | HILL EFFECT | `Q325` ·  | 1.48 |  | llm | Hannam_2018:pdv3 |
-| PD (effect) | E0 | `Q324` ·  | 15 | pain units | llm | Hannam_2018:pdv3 |
+| PD (effect) | t 1/2 keo ACET | `Q326` ·  | 0.34 | h | llm | Hannam_2018:pdv3 |
+| PD (effect) | C 50,ACET | `Q321` ·  | 7.06 | mg/L | llm | Hannam_2018:pdv3 |
+| PD (effect) | t 1/2 keo IBU | `Q326` ·  | 1.04 | h | llm | Hannam_2018:pdv3 |
+| PD (effect) | C 50,IBU | `Q321` ·  | 3.95 | mg/L | llm | Hannam_2018:pdv3 |
+| PD (effect) | t 1/2 keo TRAM | `Q326` ·  | 1.77 | h | llm | Hannam_2018:pdv3 |
+| PD (effect) | C 50,TRAM | `Q321` ·  | 0.0703 | mg/L | llm | Hannam_2018:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,29 +82,23 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 | `T4_defaults` | pass | nothing defaulted |
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.364 (4/11 fields) | 7 |
-| `gpt-oss:120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | acetaminophen, ibuprofen, tramadol |  | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition |  | mismatch |
-| `gpt-oss:120b` | `effect_form` | additive |  | mismatch |
-| `gpt-oss:120b` | `model_family` | emax |  | mismatch |
-| `openai:gpt-6-luna` | `driver_compound` | acetaminophen (with ibuprofen and tramadol in a Greco additive interaction model) | paracetamol | mismatch |
-| `openai:gpt-6-luna` | `model_family` | sigmoid_emax | effect_compartment | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q320].value` | 0.983 | 0.648 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q324]` | 15 |  | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q325].value` | 5.9 | 1.48 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q340]` | 46 |  | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q900]` | 0 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | acetaminophen, ibuprofen, tramadol | acetaminophen | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 0.0703 | unit | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 0.648 | value | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` |  | unit | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 1.48 | unit | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 1.77 |  | only_one_extracted |
 
 </details>
 
@@ -152,13 +145,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Paracetamol_Hannam2018_PD_pppm`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Hannam2018_PD_pppm>
+**This record:** Pharmacolibrary, model `Paracetamol_Hannam2018_PD_pppm`. <https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Hannam2018_PD_pppm>
 
 ```bibtex
 @misc{pharmacolibrary_ParacetamolHannam2018PDpppm,
   title  = {{Pharmacolibrary model Paracetamol_Hannam2018_PD_pppm}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_paracetamol/Paracetamol_Hannam2018_PD_pppm},
 }
 ```
@@ -174,5 +166,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20pd_Hannam_2018_PPPM&body=Drug%3A%20paracetamol%0ARecord%3A%20pd_Hannam_2018_PPPM%0APaper%3A%20Hannam_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/pd_Hannam_2018_PPPM%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bparacetamol%5D%20pd_Hannam_2018_PPPM&body=Drug%3A%20paracetamol%0ARecord%3A%20pd_Hannam_2018_PPPM%0APaper%3A%20Hannam_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_paracetamol/pd_Hannam_2018_PPPM%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [paracetamol](drugs/drug_paracetamol/)</sub>

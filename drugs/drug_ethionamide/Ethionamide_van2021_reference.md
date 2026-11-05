@@ -196,13 +196,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et al. Pharmacokinetics and Drug-Drug Interactions of Abacavir and Lamuvudine Co-administered With Antituberculosis Drugs in HIV-Positive Children Treated for Multidrug-Resistant Tuberculosis. Frontiers in pharmacology 12:722204 (2021). [doi:10.3389/fphar.2021.722204](https://doi.org/10.3389/fphar.2021.722204)
 
-**This record:** Pharmacolibrary v26.09, model `Ethionamide_van2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ethionamide/Ethionamide_van2021_reference>
+**This record:** Pharmacolibrary, model `Ethionamide_van2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ethionamide/Ethionamide_van2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_Ethionamidevan2021reference,
   title  = {{Pharmacolibrary model Ethionamide_van2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ethionamide/Ethionamide_van2021_reference},
   note   = {Parameters from doi:10.3389/fphar.2021.722204},
 }
@@ -221,5 +220,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethionamide%5D%20Ethionamide_van2021_reference&body=Drug%3A%20ethionamide%0ARecord%3A%20Ethionamide_van2021_reference%0APaper%3A%20van_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethionamide/Ethionamide_van2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 13:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethionamide%5D%20Ethionamide_van2021_reference&body=Drug%3A%20ethionamide%0ARecord%3A%20Ethionamide_van2021_reference%0APaper%3A%20van_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethionamide/Ethionamide_van2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 13:09 UTC</sub>

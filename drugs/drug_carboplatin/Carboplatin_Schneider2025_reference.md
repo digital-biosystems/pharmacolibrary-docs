@@ -176,13 +176,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Schneider BK, Benzekry S, Mochel JP. Optimizing First-Line Therapeutics in Non-Small Cell Lung Cancer: Insights From Joint Modeling and Large-Scale Data Analysis. CPT: pharmacometrics & systems pharmacology 14(10):1637-1649 (2025). [doi:10.1002/psp4.70079](https://doi.org/10.1002/psp4.70079)
 
-**This record:** Pharmacolibrary v26.09, model `Carboplatin_Schneider2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carboplatin/Carboplatin_Schneider2025_reference>
+**This record:** Pharmacolibrary, model `Carboplatin_Schneider2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carboplatin/Carboplatin_Schneider2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarboplatinSchneider2025reference,
   title  = {{Pharmacolibrary model Carboplatin_Schneider2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carboplatin/Carboplatin_Schneider2025_reference},
   note   = {Parameters from doi:10.1002/psp4.70079},
 }
@@ -201,5 +200,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D%20Carboplatin_Schneider2025_reference&body=Drug%3A%20carboplatin%0ARecord%3A%20Carboplatin_Schneider2025_reference%0APaper%3A%20Schneider_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/Carboplatin_Schneider2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 21:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D%20Carboplatin_Schneider2025_reference&body=Drug%3A%20carboplatin%0ARecord%3A%20Carboplatin_Schneider2025_reference%0APaper%3A%20Schneider_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/Carboplatin_Schneider2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 21:35 UTC</sub>

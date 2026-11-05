@@ -198,13 +198,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yoon S, Guk J, Lee SG, Chae D, Kim JH, Park K. Model-informed precision dosing in vancomycin treatment. Frontiers in pharmacology 14:1252757 (2023). [doi:10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757)
 
-**This record:** Pharmacolibrary v26.09, model `Vancomycin_Yoon2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Yoon2023_reference>
+**This record:** Pharmacolibrary, model `Vancomycin_Yoon2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Yoon2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_VancomycinYoon2023reference,
   title  = {{Pharmacolibrary model Vancomycin_Yoon2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vancomycin/Vancomycin_Yoon2023_reference},
   note   = {Parameters from doi:10.3389/fphar.2023.1252757},
 }
@@ -223,5 +222,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvancomycin%5D%20Vancomycin_Yoon2023_reference&body=Drug%3A%20vancomycin%0ARecord%3A%20Vancomycin_Yoon2023_reference%0APaper%3A%20Yoon_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vancomycin/Vancomycin_Yoon2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 18:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvancomycin%5D%20Vancomycin_Yoon2023_reference&body=Drug%3A%20vancomycin%0ARecord%3A%20Vancomycin_Yoon2023_reference%0APaper%3A%20Yoon_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vancomycin/Vancomycin_Yoon2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 18:41 UTC</sub>

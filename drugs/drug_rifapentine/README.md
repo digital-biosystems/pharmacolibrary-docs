@@ -29,23 +29,13 @@ Rifapentine is an antibiotic used to treat pulmonary tuberculosis. It is an appr
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 1.11 | L/h | 1.11 L/h | adults with latent tuberculosis infection | ... (n = 4,301 plasma samples). | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) |
-| V | V/F | 36.7 | L | 36.7 L | adults with latent tuberculosis infection | ... (n = 4,301 plasma samples). | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) |
-| F | Fab | 1 |  | 100 | adults with latent tuberculosis infection | ... (n = 4,301 plasma samples). | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Hibma_2020_reference](drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Hibma JE et al., Rifapentine Population Pharmacokinetics…, American journal of respira… (2020) | [10.1164/rccm.201912-2489OC](https://doi.org/10.1164/rccm.201912-2489OC) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Liu_2025_reference](drugs/drug_rifapentine/Rifapentine_Liu2025_reference.md) | — | 1-compartment (no model) | 2 | Liu W et al., Pharmacokinetics and safety of rifapent…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf029](https://doi.org/10.1093/jac/dkaf029) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Mathad_2022_reference](drugs/drug_rifapentine/Rifapentine_Mathad2022_reference.md) | — | parent + metabolite (no model) | 1 | Mathad JS et al., Pharmacokinetics and Safety of 3 Months…, Clinical infectious disease… (2022) | [10.1093/cid/ciab665](https://doi.org/10.1093/cid/ciab665) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Mathad_2022_reference](drugs/drug_rifapentine/Rifapentine_Mathad2022_reference.md) | — | 1-compartment (no model) | 1 | Mathad JS et al., Pharmacokinetics and Safety of 3 Months…, Clinical infectious disease… (2022) | [10.1093/cid/ciab665](https://doi.org/10.1093/cid/ciab665) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Savic_2017_reference](drugs/drug_rifapentine/Rifapentine_Savic2017_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacology and t… (2017) | [10.1002/cpt.634](https://doi.org/10.1002/cpt.634) |
 
 ## Pharmacodynamics (PD)
@@ -122,5 +112,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D&body=Drug%3A%20rifapentine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:25 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifapentine%5D&body=Drug%3A%20rifapentine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifapentine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:25 UTC</sub>

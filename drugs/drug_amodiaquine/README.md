@@ -24,19 +24,6 @@ Amodiaquine is an antimalarial medicine used to treat malaria. It is on the WHO 
 | desethylamodiaquine | metabolite | 327.812 | C18H18ClN3O | PubChem | [122068](https://pubchem.ncbi.nlm.nih.gov/compound/122068) | Ali_2018, Ding_2020, Ding_2024, Stepniewska_2009 |
 | dihydroartemisinin | metabolite | 284.9 | — | the paper | — | Stepniewska_2009 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V1 | 1.35e+04 | L | 13500 liters | pediatric and adult patients with uncomplicated malaria |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ali_2018_typical_valuea](drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea.md) |
-| ka | kabs | 0.589 | 1/h | 0.589 1/h | pediatric and adult patients with uncomplicated malaria |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ali_2018_typical_valuea](drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea.md) |
-| ka | kabs | 0.589 | 1/h | 0.589 1/h | pregnant women with uncomplicated Plasmodium falciparum malaria | 771 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ding_2024_nonmem_estimates_rse_a](drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a.md) |
-| ka | kabs | 2.85 | 1/h | 2.85 1/h | African children under 5 years receiving seasonal malaria chemoprevention | 136 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ding_2020_reference](drugs/drug_amodiaquine/Amodiaquine_Ding2020_reference.md) |
-| F | Fab | 1 |  | 1 | pediatric and adult patients with uncomplicated malaria |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ali_2018_typical_valuea](drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea.md) |
-| F | Fab | 1 |  | 100 | pregnant women with uncomplicated Plasmodium falciparum malaria | 771 | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ding_2024_nonmem_estimates_rse_a](drugs/drug_amodiaquine/Amodiaquine_Ding2024_nonmem_estimates_rse_a.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -137,5 +124,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D&body=Drug%3A%20amodiaquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 05:41 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamodiaquine%5D&body=Drug%3A%20amodiaquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amodiaquine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 05:41 UTC</sub>

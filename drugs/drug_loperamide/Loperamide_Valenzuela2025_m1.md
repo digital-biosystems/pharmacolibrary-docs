@@ -231,5 +231,5 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bloperamide%5D%20Loperamide_Valenzuela2025_m1&body=Drug%3A%20loperamide%0ARecord%3A%20Loperamide_Valenzuela2025_m1%0APaper%3A%20Valenzuela_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_loperamide/Loperamide_Valenzuela2025_m1%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-04 19:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bloperamide%5D%20Loperamide_Valenzuela2025_m1&body=Drug%3A%20loperamide%0ARecord%3A%20Loperamide_Valenzuela2025_m1%0APaper%3A%20Valenzuela_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_loperamide/Loperamide_Valenzuela2025_m1%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 19:01 UTC</sub>

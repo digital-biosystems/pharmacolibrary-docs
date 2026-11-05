@@ -254,13 +254,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population pharmacokinetics of vernakalant hydrochloride injection (RSD1235) in patients with atrial fibrillation or atrial flutter. Journal of clinical pharmacology 52(7):1042–1053 (2012). [doi:10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425)
 
-**This record:** Pharmacolibrary v26.09, model `Vernakalant_Mao2012_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_vernakalant/Vernakalant_Mao2012_estimate>
+**This record:** Pharmacolibrary, model `Vernakalant_Mao2012_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_vernakalant/Vernakalant_Mao2012_estimate>
 
 ```bibtex
 @misc{pharmacolibrary_VernakalantMao2012estimate,
   title  = {{Pharmacolibrary model Vernakalant_Mao2012_estimate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_vernakalant/Vernakalant_Mao2012_estimate},
   note   = {Parameters from doi:10.1177/0091270011408425},
 }
@@ -279,5 +278,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvernakalant%5D%20Vernakalant_Mao2012_estimate&body=Drug%3A%20vernakalant%0ARecord%3A%20Vernakalant_Mao2012_estimate%0APaper%3A%20Mao_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vernakalant/Vernakalant_Mao2012_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-09 00:20 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvernakalant%5D%20Vernakalant_Mao2012_estimate&body=Drug%3A%20vernakalant%0ARecord%3A%20Vernakalant_Mao2012_estimate%0APaper%3A%20Mao_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vernakalant/Vernakalant_Mao2012_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-09 00:20 UTC</sub>

@@ -24,18 +24,9 @@ Phenylbutazone is a non-steroidal anti-inflammatory drug that was used to treat 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 8.211 ‡ | L | 117.3 ml/kg | horses |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lees_1987_reference](drugs/drug_phenylbutazone/Phenylbutazone_Lees1987_reference.md) |
-| V | V | 12.18 ‡ | L | 0.174 l.kg-1 | female dromedary camels | ? | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kadir_1997_reference](drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md) |
-| ka | kabs | 1.32 | 1/h | 1.32 1/h | female dromedary camels | ? | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kadir_1997_reference](drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md) |
-| ka | kabs | 1.32 | 1/h | 1.32 1/h | horses |  | horse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lees_1987_reference](drugs/drug_phenylbutazone/Phenylbutazone_Lees1987_reference.md) |
-| t½ | t1/2z | 12.51 | h | 12.51 h | female dromedary camels | ? | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kadir_1997_reference](drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md) |
-| F | Fab | 0.97 |  | 97 % | female dromedary camels | ? | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kadir_1997_reference](drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lees_1987 · V ·/kg</text><circle cx="350.0" cy="30.0" r="4" fill="#ef6c00"><title>Lees_1987 · V ·/kg: 8.211 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kadir_1997 · V ·/kg</text><circle cx="380.0" cy="46.0" r="4" fill="#ef6c00"><title>Kadir_1997 · V ·/kg: 12.18 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -171,5 +162,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylbutazone%5D&body=Drug%3A%20phenylbutazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylbutazone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:55 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylbutazone%5D&body=Drug%3A%20phenylbutazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylbutazone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:55 UTC</sub>

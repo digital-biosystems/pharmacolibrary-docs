@@ -13,16 +13,6 @@ Peginterferon alfa-2b is an antiviral immunostimulant used to treat chronic hepa
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q7160789](https://www.wikidata.org/wiki/Q7160789) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.838 | L/h | 44.1 l day -1 | adults with chronic myelogenous leukaemia | 137 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gupta_2007_reference](drugs/drug_peginterferon_alfa_2b/PeginterferonAlfa2b_Gupta2007_reference.md) |
-| V | V | 149 | L | 149.0 l | adults with chronic myelogenous leukaemia | 137 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gupta_2007_reference](drugs/drug_peginterferon_alfa_2b/PeginterferonAlfa2b_Gupta2007_reference.md) |
-| ka | kabs | 0.07917 | 1/h | 1.90 day -1 | adults with chronic myelogenous leukaemia | 137 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gupta_2007_reference](drugs/drug_peginterferon_alfa_2b/PeginterferonAlfa2b_Gupta2007_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -102,5 +92,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeginterferon_alfa_2b%5D&body=Drug%3A%20peginterferon_alfa_2b%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peginterferon_alfa_2b/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpeginterferon_alfa_2b%5D&body=Drug%3A%20peginterferon_alfa_2b%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peginterferon_alfa_2b/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:10 UTC</sub>

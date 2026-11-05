@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Chupradit_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Chupradit2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Abacavir lag time equals absorption rate constant (0.46), conflicting with second reader value 6.54.
+> This record was reviewed on 2026-10-22 15:27 UTC (Needs review), but the paper was screened again on 2026-11-03 08:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Chupradit2024_reference" status="needs_review" stale="false" population="" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Chupradit2024_reference" status="extracted" stale="true" population="" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chupradit S, Wamalwa DC, Maleche-Obimbo E, Kekitiinwa AR, Mwanga-Amumpaire J, Bukusi EA et al. Population Pharmacokinetics of Pediatric Lopinavir/Ritonavir Oral Pellets in Children Living with HIV in Africa. Clinical pharmacology and therapeutics 115(5):1105–1113 (2024).
@@ -29,18 +29,16 @@ Chupradit S, Wamalwa DC, Maleche-Obimbo E, Kekitiinwa AR, Mwanga-Amumpaire J, Bu
 <figure class="pk-models-diagram"><img src="drugs/drug_abacavir/Abacavir_Chupradit2024_reference/Abacavir_Chupradit2024_reference.svg" alt="Abacavir_Chupradit2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h/13.6 kg) | CL/F | 1.56 | L/h/13.6 kg |
 | V/F (L/13.6 kg) | V/F | 24.1 | L/13.6 kg |
-| K a (/h) | kabs | 0.46 | /h |
 | T LAG (h) | tlag | 0.46 | h |
+| K a (/h) | kabs | 0.46 | /h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +52,7 @@ Chupradit S, Wamalwa DC, Maleche-Obimbo E, Kekitiinwa AR, Mwanga-Amumpaire J, Bu
 
 The record lists the drug absorption lag time as 0.46 h, identical to the absorption rate constant value. A second reader identified the lag time value as 6.54, creating a discrepancy in the extracted parameter. This inconsistency prevents acceptance of the model record for abacavir. Extracted — abacavir: CL/F 1.56 L/h/13.6 kg, V/F 24.1 L/13.6 kg, kabs 0.46 /h, tlag 0.46 h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has none, the second reading 15.80; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -64,8 +62,8 @@ Independently confirmed by `gpt-oss-120b`.
 |---|---|---|---|---|---|---|---|---|
 | CL/F (L/h/13.6 kg) | `Q27` · CL/F | 1.56 | L/h/13.6 kg | 2.23e-06 | m3/s | L/h | review (0.7) | Chupradit_2024:review |
 | V/F (L/13.6 kg) | `Q76` · V/F | 24.1 | L/13.6 kg | 0.124 | m3 | L | review (0.7) | Chupradit_2024:review |
-| K a (/h) | `Q49` · kabs | 0.46 | /h | 0.0001278 | 1/s | 1/h | review (0.7) | Chupradit_2024:review |
 | T LAG (h) | `Q83` · tlag | 0.46 | h | 1656 | s | h | review (0.7) | Chupradit_2024:review |
+| K a (/h) | `Q49` · kabs | 0.46 | /h | 0.0001278 | 1/s | 1/h | review (0.7) | Chupradit_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,14 +81,21 @@ Independently confirmed by `gpt-oss-120b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q315]` |  | 15.80 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | 15.8 | 51.60 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -179,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Chupradit S, Wamalwa DC, Maleche-Obimbo E, Kekitiinwa AR, Mwanga-Amumpaire J, Bukusi EA et al. Population Pharmacokinetics of Pediatric Lopinavir/Ritonavir Oral Pellets in Children Living with HIV in Africa. Clinical pharmacology and therapeutics 115(5):1105–1113 (2024). [doi:10.1002/cpt.3174](https://doi.org/10.1002/cpt.3174)
 
-**This record:** Pharmacolibrary v26.09, model `Abacavir_Chupradit2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Chupradit2024_reference>
+**This record:** Pharmacolibrary, model `Abacavir_Chupradit2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Chupradit2024_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AbacavirChupradit2024reference,
   title  = {{Pharmacolibrary model Abacavir_Chupradit2024_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_abacavir/Abacavir_Chupradit2024_reference},
   note   = {Parameters from doi:10.1002/cpt.3174},
 }
@@ -204,5 +208,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Chupradit2024_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Chupradit2024_reference%0APaper%3A%20Chupradit_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Chupradit2024_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babacavir%5D%20Abacavir_Chupradit2024_reference&body=Drug%3A%20abacavir%0ARecord%3A%20Abacavir_Chupradit2024_reference%0APaper%3A%20Chupradit_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abacavir/Abacavir_Chupradit2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 08:42 UTC</sub>

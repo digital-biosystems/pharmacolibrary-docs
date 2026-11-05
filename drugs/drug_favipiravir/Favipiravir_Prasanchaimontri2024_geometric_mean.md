@@ -228,13 +228,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Prasanchaimontri IO, Manosuthi W, Pertinez H, Owen A, Niyomnaitham S, Sirijatuphat R et al. Favipiravir pharmacokinetics in Thai adults with mild COVID-19: A sub-study of interpatient variability and ethnic differences in exposure. Pharmacology research & perspectives 12(6):e1233 (2024). [doi:10.1002/prp2.1233](https://doi.org/10.1002/prp2.1233)
 
-**This record:** Pharmacolibrary v26.09, model `Favipiravir_Prasanchaimontri2024_geometric_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean>
+**This record:** Pharmacolibrary, model `Favipiravir_Prasanchaimontri2024_geometric_mean`. <https://pharmacolibrary.github.io/#/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean>
 
 ```bibtex
 @misc{pharmacolibrary_FavipiravirPrasanchaimontri2024geometricmean,
   title  = {{Pharmacolibrary model Favipiravir_Prasanchaimontri2024_geometric_mean}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean},
   note   = {Parameters from doi:10.1002/prp2.1233},
 }
@@ -253,5 +252,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfavipiravir%5D%20Favipiravir_Prasanchaimontri2024_geometric_mean&body=Drug%3A%20favipiravir%0ARecord%3A%20Favipiravir_Prasanchaimontri2024_geometric_mean%0APaper%3A%20Prasanchaimontri_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 17:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfavipiravir%5D%20Favipiravir_Prasanchaimontri2024_geometric_mean&body=Drug%3A%20favipiravir%0ARecord%3A%20Favipiravir_Prasanchaimontri2024_geometric_mean%0APaper%3A%20Prasanchaimontri_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 17:17 UTC</sub>

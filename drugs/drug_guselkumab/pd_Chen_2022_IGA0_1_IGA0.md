@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Guselkumab_Chen2022_PD_iga0_1_iga0`. <https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Chen2022_PD_iga0_1_iga0>
+**This record:** Pharmacolibrary, model `Guselkumab_Chen2022_PD_iga0_1_iga0`. <https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Chen2022_PD_iga0_1_iga0>
 
 ```bibtex
 @misc{pharmacolibrary_GuselkumabChen2022PDiga01iga0,
   title  = {{Pharmacolibrary model Guselkumab_Chen2022_PD_iga0_1_iga0}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Chen2022_PD_iga0_1_iga0},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bguselkumab%5D%20pd_Chen_2022_IGA0_1_IGA0&body=Drug%3A%20guselkumab%0ARecord%3A%20pd_Chen_2022_IGA0_1_IGA0%0APaper%3A%20Chen_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bguselkumab%5D%20pd_Chen_2022_IGA0_1_IGA0&body=Drug%3A%20guselkumab%0ARecord%3A%20pd_Chen_2022_IGA0_1_IGA0%0APaper%3A%20Chen_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_guselkumab/pd_Chen_2022_IGA0_1_IGA0%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [guselkumab](drugs/drug_guselkumab/)</sub>

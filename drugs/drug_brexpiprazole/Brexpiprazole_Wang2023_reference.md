@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Wang2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Km has no unit.
+> This record was reviewed on 2026-10-22 14:41 UTC (Needs review), but the paper was screened again on 2026-11-03 10:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Km has no unit.
 
-<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="needs_review" stale="false" population="adults, adolescents, and children with central nervous system (CNS) disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="needs_review" stale="true" population="adults, adolescents, and children with central nervous system disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharmacokinetic Analysis of Brexpiprazole to Support its Indication and Dose Selection in Adolescents With Schizophrenia. Journal of clinical pharmacology 63(11):1290–1299 (2023).
@@ -17,15 +17,15 @@ Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharm
 
 ## Population and dosing
 
-**Population:** adults, adolescents, and children with central nervous system (CNS) disorders · condition central nervous system (CNS) disorders (including, but not limited to, schizophrenia) · age group mixed.
+**Population:** adults, adolescents, and children with central nervous system disorders · condition schizophrenia · age group mixed.
 
-**Dosing:** 1, 2, 3, 4 mg, oral, multiple, every 24 h.
+**Dosing:** 1, 2, 4 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -39,11 +39,12 @@ Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharm
 | Vc (L) | V1 | 78.0 | L | 3 |
 | Q (L/h) | Q | 0.844 | L/h | 18 |
 | Vp (L) | V2 | 27.5 | L | 11 |
+| CL_weight | allometric_exponent | 0.75 |  |  |
 | V_weight | Km | 1 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.895). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +58,7 @@ Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharm
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — brexpiprazole: D1 0.931 hour, kabs 1.49 1/h, CL 1.34 L/h, V1 78 L, Q 0.844 L/h, V2 27.5 L, Km 1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brexpiprazole, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl_weight: this record has 0.75, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,6 +72,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Vc (L) | `Q63` · V1 | 78.0 | L | 0.078 | m3 | l | 3 | exact (1) | Wang_2023_table_3:row4:col2 |
 | Q (L/h) | `Q30` · Q | 0.844 | L/h | 2.344e-07 | m3/s | l/h | 18 | exact (1) | Wang_2023_table_3:row5:col2 |
 | Vp (L) | `Q64` · V2 | 27.5 | L | 0.0275 | m3 | l | 11 | exact (1) | Wang_2023_table_3:row6:col2 |
+| CL_weight | `Q319` · allometric_exponent | 0.75 |  |  |  |  |  | llm (0.6) | Wang_2023_table_3:row7:col2 |
 | V_weight | `Q1` · Km | 1 |  |  |  |  |  | llm (0.6) | Wang_2023_table_3:row8:col2 |
 
 <details class="legend">
@@ -88,8 +90,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'IIV_Vp (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
 - table section residual_error: 'Error 1' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Error 2' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q22 ('CL_weight', value '0.75') — already have one for this compound
-- implicit units: 'V_weight' — the LLM proposed 'L', whose dimension does not fit Q1; left unset
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q63 (Vc (L)); Q30 (Q (L/h)); Q64 (Vp (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brexpiprazole
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -100,20 +100,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.778 (14/18 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.895 (17/19 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl_weight]` | 0.75 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v_weight]` | 1 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | brexpiprazole | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | brexpiprazole | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[v_weight].parameter_id` | Q1 | Q61 | mismatch |
 
 </details>
 
@@ -127,7 +125,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wang_2023_table_3:row3:col2'] |
@@ -171,13 +169,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharmacokinetic Analysis of Brexpiprazole to Support its Indication and Dose Selection in Adolescents With Schizophrenia. Journal of clinical pharmacology 63(11):1290–1299 (2023). [doi:10.1002/jcph.2307](https://doi.org/10.1002/jcph.2307)
 
-**This record:** Pharmacolibrary v26.09, model `Brexpiprazole_Wang2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference>
+**This record:** Pharmacolibrary, model `Brexpiprazole_Wang2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BrexpiprazoleWang2023reference,
   title  = {{Pharmacolibrary model Brexpiprazole_Wang2023_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference},
   note   = {Parameters from doi:10.1002/jcph.2307},
 }
@@ -192,5 +189,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Wang2023_reference&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Wang2023_reference%0APaper%3A%20Wang_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 14:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrexpiprazole%5D%20Brexpiprazole_Wang2023_reference&body=Drug%3A%20brexpiprazole%0ARecord%3A%20Brexpiprazole_Wang2023_reference%0APaper%3A%20Wang_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 10:27 UTC</sub>

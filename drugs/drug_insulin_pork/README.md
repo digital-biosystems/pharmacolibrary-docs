@@ -21,14 +21,6 @@ Insulin of pork origin is an injectable insulin used to treat diabetes mellitus.
 |---|---|---|---|---|---|---|
 | insulin_pork | metabolite | 5777.6 | C256H381N65O76S6 | PubChem | [16131098](https://pubchem.ncbi.nlm.nih.gov/compound/16131098) | Thorsteinsson_1987 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 130.2 ‡ | L/h | 31 ml.kg-1.min-1 | normal and type I diabetic subjects | &gt;=10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thorsteinsson_1987_reference](drugs/drug_insulin_pork/InsulinPork_Thorsteinsson1987_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +96,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binsulin_pork%5D&body=Drug%3A%20insulin_pork%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_insulin_pork/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 22:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binsulin_pork%5D&body=Drug%3A%20insulin_pork%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_insulin_pork/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 22:36 UTC</sub>

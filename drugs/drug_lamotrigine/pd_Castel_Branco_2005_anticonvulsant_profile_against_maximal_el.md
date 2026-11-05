@@ -101,13 +101,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again`. <https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again>
+**This record:** Pharmacolibrary, model `Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again`. <https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again>
 
 ```bibtex
 @misc{pharmacolibrary_LamotrigineCastelBranco2005PDanticonvulsantprofileagain,
   title  = {{Pharmacolibrary model Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lamotrigine/Lamotrigine_CastelBranco2005_PD_anticonvulsant_profile_again},
 }
 ```
@@ -121,5 +120,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamotrigine%5D%20pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el&body=Drug%3A%20lamotrigine%0ARecord%3A%20pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el%0APaper%3A%20Castel-Branco_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamotrigine/pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blamotrigine%5D%20pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el&body=Drug%3A%20lamotrigine%0ARecord%3A%20pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el%0APaper%3A%20Castel-Branco_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lamotrigine/pd_Castel_Branco_2005_anticonvulsant_profile_against_maximal_el%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [lamotrigine](drugs/drug_lamotrigine/)</sub>

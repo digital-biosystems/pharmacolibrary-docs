@@ -22,14 +22,6 @@ Bumetanide is a loop (high-ceiling) diuretic used to treat fluid retention and s
 |---|---|---|---|---|---|---|
 | bumetanide | parent | 364.416 | C17H20N2O5S | DrugBank | [2471](https://pubchem.ncbi.nlm.nih.gov/compound/2471) | Pentikäinen_1985 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| t½ | t1/2z | 1.9 | h | 1.9 hours | healthy subjects and patients with renal failure | &gt;=28 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Pentikäinen_1985_reference](drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -126,5 +118,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbumetanide%5D&body=Drug%3A%20bumetanide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bumetanide/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 17:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbumetanide%5D&body=Drug%3A%20bumetanide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bumetanide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 17:40 UTC</sub>

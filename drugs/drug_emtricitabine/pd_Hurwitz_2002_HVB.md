@@ -122,13 +122,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Emtricitabine_Hurwitz2002_PD_hvb`. <https://pharmacolibrary.github.io/#/drugs/drug_emtricitabine/Emtricitabine_Hurwitz2002_PD_hvb>
+**This record:** Pharmacolibrary, model `Emtricitabine_Hurwitz2002_PD_hvb`. <https://pharmacolibrary.github.io/#/drugs/drug_emtricitabine/Emtricitabine_Hurwitz2002_PD_hvb>
 
 ```bibtex
 @misc{pharmacolibrary_EmtricitabineHurwitz2002PDhvb,
   title  = {{Pharmacolibrary model Emtricitabine_Hurwitz2002_PD_hvb}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_emtricitabine/Emtricitabine_Hurwitz2002_PD_hvb},
 }
 ```
@@ -142,5 +141,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bemtricitabine%5D%20pd_Hurwitz_2002_HVB&body=Drug%3A%20emtricitabine%0ARecord%3A%20pd_Hurwitz_2002_HVB%0APaper%3A%20Hurwitz_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_emtricitabine/pd_Hurwitz_2002_HVB%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bemtricitabine%5D%20pd_Hurwitz_2002_HVB&body=Drug%3A%20emtricitabine%0ARecord%3A%20pd_Hurwitz_2002_HVB%0APaper%3A%20Hurwitz_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_emtricitabine/pd_Hurwitz_2002_HVB%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [emtricitabine](drugs/drug_emtricitabine/)</sub>

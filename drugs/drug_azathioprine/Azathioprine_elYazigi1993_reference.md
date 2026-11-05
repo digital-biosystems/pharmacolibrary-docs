@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;el-Yazigi_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_elYazigi1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-10-22 15:26 UTC (Needs review), but the paper was screened again on 2026-11-03 15:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="needs_review" stale="false" population="renal transplant patients and rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="needs_review" stale="true" population="renal transplant patients and rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el-Yazigi A, Wahab FA. Pharmacokinetics of azathioprine after repeated oral and single intravenous administration. Journal of clinical pharmacology 33(6):522–526 (1993).
@@ -40,7 +40,7 @@ el-Yazigi A, Wahab FA. Pharmacokinetics of azathioprine after repeated oral and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -161,13 +161,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): el-Yazigi A, Wahab FA. Pharmacokinetics of azathioprine after repeated oral and single intravenous administration. Journal of clinical pharmacology 33(6):522–526 (1993). [doi:10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x)
 
-**This record:** Pharmacolibrary v26.09, model `Azathioprine_elYazigi1993_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference>
+**This record:** Pharmacolibrary, model `Azathioprine_elYazigi1993_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AzathioprineelYazigi1993reference,
   title  = {{Pharmacolibrary model Azathioprine_elYazigi1993_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference},
   note   = {Parameters from doi:10.1002/j.1552-4604.1993.tb04698.x},
 }
@@ -182,5 +181,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20Azathioprine_elYazigi1993_reference&body=Drug%3A%20azathioprine%0ARecord%3A%20Azathioprine_elYazigi1993_reference%0APaper%3A%20el-Yazigi_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 09:40 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bazathioprine%5D%20Azathioprine_elYazigi1993_reference&body=Drug%3A%20azathioprine%0ARecord%3A%20Azathioprine_elYazigi1993_reference%0APaper%3A%20el-Yazigi_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 15:23 UTC</sub>

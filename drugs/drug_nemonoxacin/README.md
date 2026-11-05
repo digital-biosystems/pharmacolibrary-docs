@@ -22,17 +22,6 @@ Nemonoxacin is a quinolone antibacterial developed as an antibiotic for bacteria
 |---|---|---|---|---|---|---|
 | nemonoxacin | parent | 371.437 | C20H25N3O4 | DrugBank | — | Chen_2023 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0 | L/h | 0 L/h | Chinese patients with community-acquired pneumonia and healthy subjects | &gt;=100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2023_bias](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_bias.md) |
-| CL | CL | — | L/h | 10.3 | Chinese patients with community-acquired pneumonia and healthy subjects | &gt;=100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2023_estimate_based_on_original_dataset](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_estimate_based_on_original_dataset.md) |
-| ka | kabs | 6 | 1/h | 6 1/h | Chinese patients with community-acquired pneumonia and healthy subjects | &gt;=100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2023_bias](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_bias.md) |
-| ka | kabs | — | 1/h | 2.2 | Chinese patients with community-acquired pneumonia and healthy subjects | &gt;=100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2023_estimate_based_on_original_dataset](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_estimate_based_on_original_dataset.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -97,5 +86,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnemonoxacin%5D&body=Drug%3A%20nemonoxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nemonoxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 12:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnemonoxacin%5D&body=Drug%3A%20nemonoxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nemonoxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:37 UTC</sub>

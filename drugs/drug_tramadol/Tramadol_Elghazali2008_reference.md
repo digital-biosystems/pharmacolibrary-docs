@@ -178,13 +178,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Elghazali M, Barezaik IM, Abdel Hadi AA, Eltayeb FM, Al Masri J, Wasfi IA. The pharmacokinetics, metabolism and urinary detection time of tramadol in camels. Veterinary journal (London, England : 1997) 178(2):272–277 (2008). [doi:10.1016/j.tvjl.2007.07.008](https://doi.org/10.1016/j.tvjl.2007.07.008)
 
-**This record:** Pharmacolibrary v26.09, model `Tramadol_Elghazali2008_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Elghazali2008_reference>
+**This record:** Pharmacolibrary, model `Tramadol_Elghazali2008_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Elghazali2008_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TramadolElghazali2008reference,
   title  = {{Pharmacolibrary model Tramadol_Elghazali2008_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tramadol/Tramadol_Elghazali2008_reference},
   note   = {Parameters from doi:10.1016/j.tvjl.2007.07.008},
 }
@@ -199,5 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btramadol%5D%20Tramadol_Elghazali2008_reference&body=Drug%3A%20tramadol%0ARecord%3A%20Tramadol_Elghazali2008_reference%0APaper%3A%20Elghazali_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tramadol/Tramadol_Elghazali2008_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:13 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btramadol%5D%20Tramadol_Elghazali2008_reference&body=Drug%3A%20tramadol%0ARecord%3A%20Tramadol_Elghazali2008_reference%0APaper%3A%20Elghazali_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tramadol/Tramadol_Elghazali2008_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 11:13 UTC</sub>

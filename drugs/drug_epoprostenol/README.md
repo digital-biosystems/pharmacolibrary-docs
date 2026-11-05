@@ -32,20 +32,9 @@ Epoprostenol (prostacyclin) is used to treat pulmonary hypertension, including p
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.07 | L/h | 6.07 l h−1 | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) |
-| CL | CL/F | 13.9 | L/h | 13.9 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) |
-| CL | CL/F | 43.9 | L/h | 43.9 L/h | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) |
-| V | V/F | 237 | L | 237.0 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) |
-| V | V/F | 458 | L | 458.0 L | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) |
-| V | V1 | 11.3 | L | 11.3 l | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) |
-| ka | kabs | 0.3 | 1/h | 0.3 h-1 | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) |
-| ka | kabs | 2.16 | 1/h | 2.16 h−1 | review reference | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Keizer_2010 · CL</text><circle cx="327.1" cy="30.0" r="4" fill="#78909c"><title>Keizer_2010 · CL: 6.07 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vucicevic_2025 · CL/F</text><circle cx="390.0" cy="46.0" r="4" fill="#78909c"><title>Vucicevic_2025 · CL/F: 13.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Vizza_2017 · CL/F</text><circle cx="477.4" cy="62.0" r="4" fill="#78909c"><title>Vizza_2017 · CL/F: 43.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Vucicevic_2025 · V/F</text><circle cx="430.6" cy="30.0" r="4" fill="#78909c"><title>Vucicevic_2025 · V/F: 237 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vizza_2017 · V/F</text><circle cx="480.7" cy="46.0" r="4" fill="#78909c"><title>Vizza_2017 · V/F: 458 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Keizer_2010 · V1</text><circle cx="199.3" cy="62.0" r="4" fill="#78909c"><title>Keizer_2010 · V1: 11.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -280,5 +269,5 @@ _12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepoprostenol%5D&body=Drug%3A%20epoprostenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epoprostenol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 15:23 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepoprostenol%5D&body=Drug%3A%20epoprostenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epoprostenol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 15:23 UTC</sub>

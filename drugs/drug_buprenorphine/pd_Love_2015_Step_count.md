@@ -94,13 +94,12 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Buprenorphine_Love2015_PD_step_count`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Love2015_PD_step_count>
+**This record:** Pharmacolibrary, model `Buprenorphine_Love2015_PD_step_count`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Love2015_PD_step_count>
 
 ```bibtex
 @misc{pharmacolibrary_BuprenorphineLove2015PDstepcount,
   title  = {{Pharmacolibrary model Buprenorphine_Love2015_PD_step_count}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Love2015_PD_step_count},
 }
 ```
@@ -114,5 +113,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Love_2015_Step_count&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Love_2015_Step_count%0APaper%3A%20Love_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Love_2015_Step_count%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Love_2015_Step_count&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Love_2015_Step_count%0APaper%3A%20Love_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Love_2015_Step_count%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [buprenorphine](drugs/drug_buprenorphine/)</sub>

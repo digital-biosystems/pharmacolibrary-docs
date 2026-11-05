@@ -33,24 +33,9 @@ Rifabutin is an antibiotic used to treat tuberculosis and infections caused by M
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 14.95 | L/h | 14.95 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ding_2022_reference](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) |
-| CL | CL/F | 8.43 | L/h | 8.43 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bentley_2021_reference](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) |
-| CL | CL/F | 39.9 | L/h | 39.9 L/h | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2023_reference](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) |
-| CL | CL/F | — | L/h | 60.9 liters/h | HIV-infected patients | &gt;=40 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gatti_1998_reference](drugs/drug_rifabutin/Rifabutin_Gatti1998_reference.md) |
-| V | V | 1100 | L | 1100.0 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ding_2022_reference](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) |
-| V | V | 2660 | L | 2660.0 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2023_reference](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) |
-| V | V/F | 186 | L | 186.0 L | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bentley_2021_reference](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) |
-| V | V1 | — | L | 231 liters | HIV-infected patients | &gt;=40 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gatti_1998_reference](drugs/drug_rifabutin/Rifabutin_Gatti1998_reference.md) |
-| ka | kabs | 0.16 | 1/h | 0.16 h−1 | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bentley_2021_reference](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) |
-| ka | kabs | 0.201 | 1/h | 0.201 /h | HIV-infected patients | &gt;=40 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gatti_1998_reference](drugs/drug_rifabutin/Rifabutin_Gatti1998_reference.md) |
-| ka | kabs | 0.494 | 1/h | 0.494 h−1 | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Ding_2022_reference](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) |
-| ka | kabs | 2 | 1/h | 2.0 h−1 | review reference |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Thoueille_2023_reference](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ding_2022 · CL</text><circle cx="395.6" cy="30.0" r="4" fill="#ef6c00"><title>Ding_2022 · CL: 14.95 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bentley_2021 · CL/F</text><circle cx="352.0" cy="46.0" r="4" fill="#ef6c00"><title>Bentley_2021 · CL/F: 8.43 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Thoueille_2023 · CL/F</text><circle cx="470.2" cy="62.0" r="4" fill="#ef6c00"><title>Thoueille_2023 · CL/F: 39.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ding_2022 · V</text><circle cx="372.2" cy="30.0" r="4" fill="#ef6c00"><title>Ding_2022 · V: 1100 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Thoueille_2023 · V</text><circle cx="439.4" cy="46.0" r="4" fill="#ef6c00"><title>Thoueille_2023 · V: 2660 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Bentley_2021 · V/F</text><circle cx="237.2" cy="62.0" r="4" fill="#ef6c00"><title>Bentley_2021 · V/F: 186 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -250,5 +235,5 @@ _22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifabutin%5D&body=Drug%3A%20rifabutin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifabutin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 11:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifabutin%5D&body=Drug%3A%20rifabutin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifabutin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 11:47 UTC</sub>

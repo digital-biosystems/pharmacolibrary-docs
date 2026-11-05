@@ -31,24 +31,9 @@ Sulpiride is an antipsychotic medicine used to treat psychotic disorders such as
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 5.388 | L/h | 89.8 mL/min | healthy male subjects | 9 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bressolle_1984_reference](drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md) |
-| CL | CL | 7.668 | L/h | 127.8 mL/min | healthy adults | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Brès_1991_reference](drugs/drug_sulpiride/Sulpiride_Brs1991_reference.md) |
-| CL | CL | 24.9 | L/h | 415 ml/min | healthy volunteers | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiesel_1980_reference](drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference.md) |
-| V | V | 10.15 ‡ | L | 0.145 L/kg | healthy male subjects | 9 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bressolle_1984_reference](drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md) |
-| V | V | 190.4 ‡ | L | 2.72 l/kg | healthy volunteers | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiesel_1980_reference](drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference.md) |
-| ka | kabs | 1.66 | 1/h | 1.66 h−1 | healthy male subjects | 9 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bressolle_1984_reference](drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md) |
-| ka | kabs | 1.66 | 1/h | 1.66 h−1 | healthy adults | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Brès_1991_reference](drugs/drug_sulpiride/Sulpiride_Brs1991_reference.md) |
-| ka | kabs | 1.66 | 1/h | 1.66 h−1 | healthy volunteers | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiesel_1980_reference](drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference.md) |
-| t½ | t1/2z | 5.3 | h | 5.3 h | healthy volunteers | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiesel_1980_reference](drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference.md) |
-| t½ | t1/2z | 6.47 | h | 6.47 h | healthy adults | 27 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Brès_1991_reference](drugs/drug_sulpiride/Sulpiride_Brs1991_reference.md) |
-| F | Fab | 0.15 |  | 0.15 | healthy male subjects | 9 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bressolle_1984_reference](drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md) |
-| F | Fab | 0.27 |  | 27 % | healthy volunteers | 6 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wiesel_1980_reference](drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bressolle_1984 · CL</text><circle cx="318.0" cy="30.0" r="4" fill="#2e7d32"><title>Bressolle_1984 · CL: 5.388 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Brès_1991 · CL</text><circle cx="344.8" cy="46.0" r="4" fill="#ef6c00"><title>Brès_1991 · CL: 7.668 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wiesel_1980 · CL</text><circle cx="434.3" cy="62.0" r="4" fill="#ef6c00"><title>Wiesel_1980 · CL: 24.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Bressolle_1984 · V ·/kg</text><circle cx="191.1" cy="30.0" r="4" fill="#2e7d32"><title>Bressolle_1984 · V ·/kg: 10.15 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wiesel_1980 · V ·/kg</text><circle cx="413.9" cy="46.0" r="4" fill="#ef6c00"><title>Wiesel_1980 · V ·/kg: 190.4 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -196,5 +181,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D&body=Drug%3A%20sulpiride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 17:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D&body=Drug%3A%20sulpiride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 17:33 UTC</sub>

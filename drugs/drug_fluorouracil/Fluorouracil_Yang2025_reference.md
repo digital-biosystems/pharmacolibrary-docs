@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Yang_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Yang2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Yang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-10-22 14:21 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Yang2025_reference" status="extracted" stale="true" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacology Profile of the Claudin 18.2 Antibody Zolbetuximab. Clinical pharmacokinetics 64(10):1465–1476 (2025).
@@ -29,12 +31,12 @@ Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacol
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL ss | CL | 0.0117 | L/h |
-| volume of distribution | V | 5.53 | L |
+| population mean steady-state clearance (CL ss ) | CL | 0.0117 | L/h |
+| estimated volume of distribution | V | 5.53 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.583). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +48,7 @@ Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacol
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 57.6; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has 30, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,8 +56,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL ss | `Q22` · CL | 0.0117 | L/h | 3.25e-09 | m3/s | L/h | review (0.7) | Yang_2025:review |
-| volume of distribution | `Q61` · V | 5.53 | L | 0.00553 | m3 | L | review (0.7) | Yang_2025:review |
+| population mean steady-state clearance (CL ss ) | `Q22` · CL | 0.0117 | L/h | 3.25e-09 | m3/s | L/h | review (0.7) | Yang_2025:review |
+| estimated volume of distribution | `Q61` · V | 5.53 | L | 0.00553 | m3 | L | review (0.7) | Yang_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,22 +72,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q31]` |  | 57.6 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q33]` |  | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q174]` | 30 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q21]` | 1.96 | 1.96 | mismatch |
+| `gpt-oss-120b` | `values[Q33]` | 2 | 1.01 | mismatch |
 | `gpt-oss-120b` | `values[Q37]` | 50 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 7.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q71]` | 30 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q72]` | 24 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 34 |  | only_one_extracted |
 
 </details>
 
@@ -171,13 +176,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacology Profile of the Claudin 18.2 Antibody Zolbetuximab. Clinical pharmacokinetics 64(10):1465–1476 (2025). [doi:10.1007/s40262-025-01552-x](https://doi.org/10.1007/s40262-025-01552-x)
 
-**This record:** Pharmacolibrary v26.09, model `Fluorouracil_Yang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference>
+**This record:** Pharmacolibrary, model `Fluorouracil_Yang2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FluorouracilYang2025reference,
   title  = {{Pharmacolibrary model Fluorouracil_Yang2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference},
   note   = {Parameters from doi:10.1007/s40262-025-01552-x},
 }
@@ -196,5 +200,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Yang2025_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Yang2025_reference%0APaper%3A%20Yang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluorouracil%5D%20Fluorouracil_Yang2025_reference&body=Drug%3A%20fluorouracil%0ARecord%3A%20Fluorouracil_Yang2025_reference%0APaper%3A%20Yang_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-03 21:24 UTC</sub>

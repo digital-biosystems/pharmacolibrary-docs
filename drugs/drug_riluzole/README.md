@@ -31,19 +31,9 @@ Riluzole is a medication used to treat amyotrophic lateral sclerosis. It is an a
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.0126 | L/h | 0.0126 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Berges_2015_reference](drugs/drug_riluzole/Riluzole_Berges2015_reference.md) |
-| CL | CL | 51.4 | L/h | 51.4 L/hr | patients with amyotrophic lateral sclerosis | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bruno_1997_reference](drugs/drug_riluzole/Riluzole_Bruno1997_reference.md) |
-| CL | CL/F | 49.5 | L/h | 49.5 L/h | adults with acute spinal cord injury |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nguyen_2021_reference](drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md) |
-| V | V | 8.725 | L | 8.7254 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Berges_2015_reference](drugs/drug_riluzole/Riluzole_Berges2015_reference.md) |
-| V | V/F | 557.1 | L | 557.1 L | adults with acute spinal cord injury |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nguyen_2021_reference](drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md) |
-| ka | kabs | 5 | 1/h | 5.0 /h | patients with amyotrophic lateral sclerosis | 100 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Bruno_1997_reference](drugs/drug_riluzole/Riluzole_Bruno1997_reference.md) |
-| ka | kabs | 5 | 1/h | 5 /h | adults with acute spinal cord injury |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Nguyen_2021_reference](drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="277.5" y1="18" x2="277.5" y2="74" stroke="#ddd"/><text x="277.5" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="452.5" y1="18" x2="452.5" y2="74" stroke="#ddd"/><text x="452.5" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Berges_2015 · CL</text><circle cx="198.8" cy="30.0" r="4" fill="#2e7d32"><title>Berges_2015 · CL: 0.0126 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Bruno_1997 · CL</text><circle cx="514.7" cy="46.0" r="4" fill="#ef6c00"><title>Bruno_1997 · CL: 51.4 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Nguyen_2021 · CL/F</text><circle cx="513.3" cy="62.0" r="4" fill="#ef6c00"><title>Nguyen_2021 · CL/F: 49.5 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Berges_2015 · V</text><circle cx="299.8" cy="30.0" r="4" fill="#2e7d32"><title>Berges_2015 · V: 8.725 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Nguyen_2021 · V/F</text><circle cx="510.4" cy="46.0" r="4" fill="#ef6c00"><title>Nguyen_2021 · V/F: 557.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -212,5 +202,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D&body=Drug%3A%20riluzole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 04:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D&body=Drug%3A%20riluzole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:33 UTC</sub>

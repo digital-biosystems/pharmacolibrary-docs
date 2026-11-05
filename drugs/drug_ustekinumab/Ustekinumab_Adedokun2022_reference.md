@@ -194,13 +194,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Adedokun OJ, Xu Z, Gasink C, Kowalski K, Sandborn WJ, Feagan B. Population Pharmacokinetics and Exposure-Response Analyses of Ustekinumab in Patients With Moderately to Severely Active Crohn's Disease. Clinical therapeutics 44(10):1336–1355 (2022). [doi:10.1016/j.clinthera.2022.08.010](https://doi.org/10.1016/j.clinthera.2022.08.010)
 
-**This record:** Pharmacolibrary v26.09, model `Ustekinumab_Adedokun2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference>
+**This record:** Pharmacolibrary, model `Ustekinumab_Adedokun2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_UstekinumabAdedokun2022reference,
   title  = {{Pharmacolibrary model Ustekinumab_Adedokun2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference},
   note   = {Parameters from doi:10.1016/j.clinthera.2022.08.010},
 }
@@ -219,5 +218,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bustekinumab%5D%20Ustekinumab_Adedokun2022_reference&body=Drug%3A%20ustekinumab%0ARecord%3A%20Ustekinumab_Adedokun2022_reference%0APaper%3A%20Adedokun_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 01:03 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bustekinumab%5D%20Ustekinumab_Adedokun2022_reference&body=Drug%3A%20ustekinumab%0ARecord%3A%20Ustekinumab_Adedokun2022_reference%0APaper%3A%20Adedokun_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 01:03 UTC</sub>

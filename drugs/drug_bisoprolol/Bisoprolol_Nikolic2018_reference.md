@@ -182,13 +182,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): ValentinaNNikolic valentina@medfak.ni.ac.rs Ó Springer International Publishing Switzerland, SlobodanMJankovic Department of Pharmacology and Toxicology Faculty of Medical Sciences University of Kragujevac Kragujevac Serbia, MarinaDeljanin-Ilic Department of Cardiology Faculty of Medicine University of Nis Bulevar dr Zorana Djindjica 81 Nis Serbia Institute of Treatment and Rehabilitation Faculty of Medicine University of Nis Srpskih junaka 2 Niska Banja Serbia, SanjaSStojanovic Institute of Treatment and Rehabilitation Faculty of Medicine University of Nis Srpskih junaka 2 Niska Banja Serbia, MiroslavLjNikolic Institute of Treatment and Rehabilitation Faculty of Medicine University of Nis Srpskih junaka 2 Niska Banja Serbia, SlavoljubZivanovic Research Center for Biomedicine Faculty of Medicine Laboratory for Functional Genomics and Proteomics University of Nis Bulevar dr Zorana Djindjica 81 Nis Serbia et al. Population Pharmacokinetic Analysis of Bisoprolol in Patients with Stable Coronary Artery Disease (2017). [doi:10.1007/s13318-017-0414-1](https://doi.org/10.1007/s13318-017-0414-1)
 
-**This record:** Pharmacolibrary v26.09, model `Bisoprolol_Nikolic2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference>
+**This record:** Pharmacolibrary, model `Bisoprolol_Nikolic2018_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference>
 
 ```bibtex
 @misc{pharmacolibrary_BisoprololNikolic2018reference,
   title  = {{Pharmacolibrary model Bisoprolol_Nikolic2018_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference},
   note   = {Parameters from doi:10.1007/s13318-017-0414-1},
 }
@@ -207,5 +206,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbisoprolol%5D%20Bisoprolol_Nikolic2018_reference&body=Drug%3A%20bisoprolol%0ARecord%3A%20Bisoprolol_Nikolic2018_reference%0APaper%3A%20Nikolic_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-07-22 16:04 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbisoprolol%5D%20Bisoprolol_Nikolic2018_reference&body=Drug%3A%20bisoprolol%0ARecord%3A%20Bisoprolol_Nikolic2018_reference%0APaper%3A%20Nikolic_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-07-22 16:04 UTC</sub>

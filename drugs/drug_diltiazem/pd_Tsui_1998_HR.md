@@ -121,13 +121,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Diltiazem_Tsui1998_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_diltiazem/Diltiazem_Tsui1998_PD_hr>
+**This record:** Pharmacolibrary, model `Diltiazem_Tsui1998_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_diltiazem/Diltiazem_Tsui1998_PD_hr>
 
 ```bibtex
 @misc{pharmacolibrary_DiltiazemTsui1998PDhr,
   title  = {{Pharmacolibrary model Diltiazem_Tsui1998_PD_hr}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_diltiazem/Diltiazem_Tsui1998_PD_hr},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiltiazem%5D%20pd_Tsui_1998_HR&body=Drug%3A%20diltiazem%0ARecord%3A%20pd_Tsui_1998_HR%0APaper%3A%20Tsui_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diltiazem/pd_Tsui_1998_HR%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiltiazem%5D%20pd_Tsui_1998_HR&body=Drug%3A%20diltiazem%0ARecord%3A%20pd_Tsui_1998_HR%0APaper%3A%20Tsui_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diltiazem/pd_Tsui_1998_HR%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [diltiazem](drugs/drug_diltiazem/)</sub>

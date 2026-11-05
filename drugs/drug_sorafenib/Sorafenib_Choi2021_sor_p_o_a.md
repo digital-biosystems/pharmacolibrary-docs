@@ -131,5 +131,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsorafenib%5D%20Sorafenib_Choi2021_sor_p_o_a&body=Drug%3A%20sorafenib%0ARecord%3A%20Sorafenib_Choi2021_sor_p_o_a%0APaper%3A%20Choi_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sorafenib/Sorafenib_Choi2021_sor_p_o_a%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsorafenib%5D%20Sorafenib_Choi2021_sor_p_o_a&body=Drug%3A%20sorafenib%0ARecord%3A%20Sorafenib_Choi2021_sor_p_o_a%0APaper%3A%20Choi_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sorafenib/Sorafenib_Choi2021_sor_p_o_a%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:09 UTC</sub>

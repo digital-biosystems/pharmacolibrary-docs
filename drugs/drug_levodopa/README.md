@@ -25,18 +25,9 @@ Levodopa is a dopaminergic medicine used to treat Parkinson's disease. It is an 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| V | V | 10 | L | 10.0 L | Rhesus monkeys |  | monkey | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hammerstad_1990_reference](drugs/drug_levodopa/Levodopa_Hammerstad1990_reference.md) |
-| V | V | 10 | L | 10.0 L | adults with advanced Parkinson disease | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Westin_2011_reference](drugs/drug_levodopa/Levodopa_Westin2011_reference.md) |
-| ka | kabs | 1.2 | 1/h | 1.2 h−1 | Rhesus monkeys |  | monkey | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hammerstad_1990_reference](drugs/drug_levodopa/Levodopa_Hammerstad1990_reference.md) |
-| ka | kabs | 1.2 | 1/h | 1.2 h−1 | adults with advanced Parkinson disease | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Westin_2011_reference](drugs/drug_levodopa/Levodopa_Westin2011_reference.md) |
-| t½ | t1/2z | 1.667 | h | 100 minutes | Rhesus monkeys |  | monkey | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hammerstad_1990_reference](drugs/drug_levodopa/Levodopa_Hammerstad1990_reference.md) |
-| F | Fab | 0.88 |  | 88 % | adults with advanced Parkinson disease | 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Westin_2011_reference](drugs/drug_levodopa/Levodopa_Westin2011_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hammerstad_1990 · V</text><circle cx="190.0" cy="30.0" r="4" fill="#ef6c00"><title>Hammerstad_1990 · V: 10 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Westin_2011 · V</text><circle cx="190.0" cy="46.0" r="4" fill="#ef6c00"><title>Westin_2011 · V: 10 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -280,5 +271,5 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D&body=Drug%3A%20levodopa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 13:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D&body=Drug%3A%20levodopa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 13:32 UTC</sub>

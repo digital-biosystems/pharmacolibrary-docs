@@ -31,23 +31,9 @@ Bilastine is an antihistamine used to treat allergic conditions such as allergic
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 14.4 | L/h | 14.4 L/h | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_japanesea](drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md) |
-| CL | CL | 18.1 | L/h | 18.1 L/h | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_caucasianb_5](drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md) |
-| CL | CL | — | L/h | 8.91 | elderly subjects | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) |
-| CL | CL/F | 12.78 | L/h | 12.78 L/h | elderly subjects | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) |
-| V | V1 | 51.2 | L | 51.2 L | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_japanesea](drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md) |
-| V | V1 | 59.2 | L | 59.2 L | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_caucasianb_5](drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md) |
-| V | V1 | — | L | 10.33 | elderly subjects | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) |
-| V | V1/F | 66.88 | L | 66.88 L | elderly subjects | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) |
-| ka | kabs | 1.28 | 1/h | 1.28 1/h | elderly subjects | &gt;=16 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) |
-| ka | kabs | 1.5 | 1/h | 1.5 h−1 | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_caucasianb_5](drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md) |
-| ka | kabs | 1.7 | 1/h | 1.7 h−1 | healthy Japanese adults | 60 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Togawa_2016_japanesea](drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Togawa_2016 · CL</text><circle cx="245.4" cy="30.0" r="4" fill="#ef6c00"><title>Togawa_2016 · CL: 14.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Togawa_2016 · CL</text><circle cx="280.2" cy="46.0" r="4" fill="#ef6c00"><title>Togawa_2016 · CL: 18.1 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kim_2021 · CL/F</text><circle cx="227.3" cy="62.0" r="4" fill="#ef6c00"><title>Kim_2021 · CL/F: 12.78 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Togawa_2016 · V1</text><circle cx="438.2" cy="30.0" r="4" fill="#ef6c00"><title>Togawa_2016 · V1: 51.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Togawa_2016 · V1</text><circle cx="460.3" cy="46.0" r="4" fill="#ef6c00"><title>Togawa_2016 · V1: 59.2 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kim_2021 · V1/F</text><circle cx="478.9" cy="62.0" r="4" fill="#ef6c00"><title>Kim_2021 · V1/F: 66.88 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -123,5 +109,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbilastine%5D&body=Drug%3A%20bilastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bilastine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 22:37 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbilastine%5D&body=Drug%3A%20bilastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bilastine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 22:37 UTC</sub>

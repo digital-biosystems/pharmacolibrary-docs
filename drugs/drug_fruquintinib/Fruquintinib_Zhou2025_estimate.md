@@ -269,13 +269,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Zhou X, Yang X, Grinshpun B, Taylor A, Strong L, Dasari A et al. Population Pharmacokinetics of Fruquintinib, a Selective Oral Inhibitor of VEGFR -1, -2, and -3, in Patients with Refractory Metastatic Colorectal Cancer. Journal of clinical pharmacology 65(7):873–884 (2025). [doi:10.1002/jcph.70001](https://doi.org/10.1002/jcph.70001)
 
-**This record:** Pharmacolibrary v26.09, model `Fruquintinib_Zhou2025_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate>
+**This record:** Pharmacolibrary, model `Fruquintinib_Zhou2025_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate>
 
 ```bibtex
 @misc{pharmacolibrary_FruquintinibZhou2025estimate,
   title  = {{Pharmacolibrary model Fruquintinib_Zhou2025_estimate}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate},
   note   = {Parameters from doi:10.1002/jcph.70001},
 }
@@ -294,5 +293,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfruquintinib%5D%20Fruquintinib_Zhou2025_estimate&body=Drug%3A%20fruquintinib%0ARecord%3A%20Fruquintinib_Zhou2025_estimate%0APaper%3A%20Zhou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfruquintinib%5D%20Fruquintinib_Zhou2025_estimate&body=Drug%3A%20fruquintinib%0ARecord%3A%20Fruquintinib_Zhou2025_estimate%0APaper%3A%20Zhou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:47 UTC</sub>

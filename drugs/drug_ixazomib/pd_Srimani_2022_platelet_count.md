@@ -117,13 +117,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Ixazomib_Srimani2022_PD_platelet_count`. <https://pharmacolibrary.github.io/#/drugs/drug_ixazomib/Ixazomib_Srimani2022_PD_platelet_count>
+**This record:** Pharmacolibrary, model `Ixazomib_Srimani2022_PD_platelet_count`. <https://pharmacolibrary.github.io/#/drugs/drug_ixazomib/Ixazomib_Srimani2022_PD_platelet_count>
 
 ```bibtex
 @misc{pharmacolibrary_IxazomibSrimani2022PDplateletcount,
   title  = {{Pharmacolibrary model Ixazomib_Srimani2022_PD_platelet_count}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ixazomib/Ixazomib_Srimani2022_PD_platelet_count},
 }
 ```
@@ -137,5 +136,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bixazomib%5D%20pd_Srimani_2022_platelet_count&body=Drug%3A%20ixazomib%0ARecord%3A%20pd_Srimani_2022_platelet_count%0APaper%3A%20Srimani_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ixazomib/pd_Srimani_2022_platelet_count%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bixazomib%5D%20pd_Srimani_2022_platelet_count&body=Drug%3A%20ixazomib%0ARecord%3A%20pd_Srimani_2022_platelet_count%0APaper%3A%20Srimani_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ixazomib/pd_Srimani_2022_platelet_count%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [ixazomib](drugs/drug_ixazomib/)</sub>

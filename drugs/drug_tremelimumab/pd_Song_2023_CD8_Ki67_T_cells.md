@@ -118,13 +118,12 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Tremelimumab_Song2023_PD_cd8_ki67_t_cells`. <https://pharmacolibrary.github.io/#/drugs/drug_tremelimumab/Tremelimumab_Song2023_PD_cd8_ki67_t_cells>
+**This record:** Pharmacolibrary, model `Tremelimumab_Song2023_PD_cd8_ki67_t_cells`. <https://pharmacolibrary.github.io/#/drugs/drug_tremelimumab/Tremelimumab_Song2023_PD_cd8_ki67_t_cells>
 
 ```bibtex
 @misc{pharmacolibrary_TremelimumabSong2023PDcd8ki67tcells,
   title  = {{Pharmacolibrary model Tremelimumab_Song2023_PD_cd8_ki67_t_cells}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tremelimumab/Tremelimumab_Song2023_PD_cd8_ki67_t_cells},
 }
 ```
@@ -138,5 +137,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btremelimumab%5D%20pd_Song_2023_CD8_Ki67_T_cells&body=Drug%3A%20tremelimumab%0ARecord%3A%20pd_Song_2023_CD8_Ki67_T_cells%0APaper%3A%20Song_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btremelimumab%5D%20pd_Song_2023_CD8_Ki67_T_cells&body=Drug%3A%20tremelimumab%0ARecord%3A%20pd_Song_2023_CD8_Ki67_T_cells%0APaper%3A%20Song_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tremelimumab/pd_Song_2023_CD8_Ki67_T_cells%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [tremelimumab](drugs/drug_tremelimumab/)</sub>

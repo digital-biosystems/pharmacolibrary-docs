@@ -184,13 +184,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Levin VA, Hoffman W, Weinkam RJ. Pharmacokinetics of BCNU in man: a preliminary study of 20 patients. Cancer treatment reports 62(9):1305–1312 (1978).
 
-**This record:** Pharmacolibrary v26.09, model `Carmustine_Levin1978_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carmustine/Carmustine_Levin1978_reference>
+**This record:** Pharmacolibrary, model `Carmustine_Levin1978_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carmustine/Carmustine_Levin1978_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CarmustineLevin1978reference,
   title  = {{Pharmacolibrary model Carmustine_Levin1978_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_carmustine/Carmustine_Levin1978_reference},
 }
 ```
@@ -208,5 +207,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarmustine%5D%20Carmustine_Levin1978_reference&body=Drug%3A%20carmustine%0ARecord%3A%20Carmustine_Levin1978_reference%0APaper%3A%20Levin_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carmustine/Carmustine_Levin1978_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 16:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarmustine%5D%20Carmustine_Levin1978_reference&body=Drug%3A%20carmustine%0ARecord%3A%20Carmustine_Levin1978_reference%0APaper%3A%20Levin_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carmustine/Carmustine_Levin1978_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 16:21 UTC</sub>

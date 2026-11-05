@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Song_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Song2002_reference&quot;,&quot;label&quot;:&quot;Song_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Song2002_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cilazapril_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cilazapril — `Cilazapril_Song2002_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> This record was reviewed on 2026-11-03 07:57 UTC (Reproduces paper), but the paper was screened again on 2026-11-03 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Song2002_reference" status="extracted" stale="false" population="unknown" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Song2002_reference" status="extracted" stale="true" population="unknown" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of new angiotensin converting enzyme inhibitors: an update. Clinical pharmacokinetics 41(3):207–224 (2002).
@@ -33,12 +33,12 @@ Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of n
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| Benazeprilat CL (L/h) | CL | 1.79 | L/h |
-| Benazepril [3,4] Vd (L) | V | 97.0 | L |
+| CL (L/h) | CL | 1.54 | L/h |
+| Vd (L) | V | 1.79 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,14 +46,20 @@ Song JC, White CM. Clinical pharmacokinetics and selective pharmacodynamics of n
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 256, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Benazeprilat CL (L/h) | `Q22` · CL | 1.79 | L/h | 4.972e-07 | m3/s | L/h | review (0.7) | Song_2002:review |
-| Benazepril [3,4] Vd (L) | `Q61` · V | 97.0 | L | 0.097 | m3 | L | review (0.7) | Song_2002:review |
+| CL (L/h) | `Q22` · CL | 1.54 | L/h | 4.278e-07 | m3/s | L/h | review (0.7) | Song_2002:review |
+| Vd (L) | `Q61` · V | 1.79 | L | 0.00179 | m3 | L | review (0.7) | Song_2002:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,6 +74,36 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 256 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 0.96 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 1.54 | 1.79 | mismatch |
+| `gpt-oss-120b` | `values[Q364]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 8.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q46]` |  | 95 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 0.72 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 1.79 | 8.7 | mismatch |
+| `gpt-oss-120b` | `values[Q74]` | 147 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 1375 | 147 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -77,10 +113,21 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Song_2002:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Song_2002:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.79 | ['Song_2002:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.54 | ['Song_2002:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.79 L/h | ['Song_2002:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 97 L | ['Song_2002:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.54 L/h | ['Song_2002:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.79 L | ['Song_2002:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=cilazapril) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,4 +205,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilazapril%5D%20Cilazapril_Song2002_reference&body=Drug%3A%20cilazapril%0ARecord%3A%20Cilazapril_Song2002_reference%0APaper%3A%20Song_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilazapril/Cilazapril_Song2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-11-03 07:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 11:11 UTC</sub>

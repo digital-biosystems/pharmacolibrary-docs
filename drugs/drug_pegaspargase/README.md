@@ -20,19 +20,6 @@ Pegaspargase is a PEGylated asparaginase enzyme used as an antineoplastic drug t
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.44 ‡ | L/h | 0.44 L/h/70kg | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sassen_2017_reference](drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md) |
-| CL | CL | — | L/h | 0.084 L/day/m² | pediatric acute lymphoblastic leukemia patients | 92 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloos_2021_reference](drugs/drug_pegaspargase/Pegaspargase_Kloos2021_reference.md) |
-| CL | CL | — | L/h | 0.126 | children with acute lymphoblastic leukemia | 2545 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Würthwein_2021_reference](drugs/drug_pegaspargase/Pegaspargase_Wrthwein2021_reference.md) |
-| V | V | — | L | 0.94 L/m² | pediatric acute lymphoblastic leukemia patients | 92 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloos_2021_reference](drugs/drug_pegaspargase/Pegaspargase_Kloos2021_reference.md) |
-| V | V | — | L | 1.69 | children with acute lymphoblastic leukemia | 2545 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Würthwein_2021_reference](drugs/drug_pegaspargase/Pegaspargase_Wrthwein2021_reference.md) |
-| V | V1 | 3.2 ‡ | L | 3.2 L/70kg | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sassen_2017_reference](drugs/drug_pegaspargase/Pegaspargase_Sassen2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -132,5 +119,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpegaspargase%5D&body=Drug%3A%20pegaspargase%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pegaspargase/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 22:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpegaspargase%5D&body=Drug%3A%20pegaspargase%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pegaspargase/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:38 UTC</sub>

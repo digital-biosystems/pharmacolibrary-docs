@@ -31,15 +31,9 @@ Vaborbactam is a beta-lactamase inhibitor used in combination with a carbapenem 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.4 | L/h | 6.4 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_vaborbactam/Vaborbactam_Principe2022_reference.md) |
-| V | V | 20 | L | 20.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_vaborbactam/Vaborbactam_Principe2022_reference.md) |
-| V | V | 24.3 | L | 24.3 L | acutely ill hospitalized patients with various degrees of renal dysfunction including continuous renal replacement therapy | 18 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Reed_2025_reference](drugs/drug_vaborbactam/Vaborbactam_Reed2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Principe_2022 · V</text><circle cx="295.4" cy="30.0" r="4" fill="#2e7d32"><title>Principe_2022 · V: 20 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Reed_2025 · V</text><circle cx="325.0" cy="46.0" r="4" fill="#ef6c00"><title>Reed_2025 · V: 24.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -47,7 +41,7 @@ Vaborbactam is a beta-lactamase inhibitor used in combination with a carbapenem 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_vaborbactam/Vaborbactam_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Reed_2025_reference](drugs/drug_vaborbactam/Vaborbactam_Reed2025_reference.md) | — | 1-compartment (no model) | 5 | Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00108-25](https://doi.org/10.1128/aac.00108-25) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fornari_2024_reference](drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference.md) | — | general linear (no model) | 6 | Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024) | [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fornari_2024_reference](drugs/drug_vaborbactam/Vaborbactam_Fornari2024_reference.md) | — | 2-compartment (no model) | 4 (+1 cov.) | Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024) | [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145) |
 
 ## ADME sites
 
@@ -113,5 +107,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvaborbactam%5D&body=Drug%3A%20vaborbactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vaborbactam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:49 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvaborbactam%5D&body=Drug%3A%20vaborbactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vaborbactam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:49 UTC</sub>

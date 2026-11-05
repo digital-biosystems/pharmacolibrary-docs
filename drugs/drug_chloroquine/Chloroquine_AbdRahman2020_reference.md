@@ -217,13 +217,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Population Pharmacokinetics and Pharmacodynamics of Chloroquine in a Plasmodium vivax Volunteer Infection Study. Clinical pharmacology and therapeutics 108(5):1055–1066 (2020). [doi:10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893)
 
-**This record:** Pharmacolibrary v26.09, model `Chloroquine_AbdRahman2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference>
+**This record:** Pharmacolibrary, model `Chloroquine_AbdRahman2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference>
 
 ```bibtex
 @misc{pharmacolibrary_ChloroquineAbdRahman2020reference,
   title  = {{Pharmacolibrary model Chloroquine_AbdRahman2020_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference},
   note   = {Parameters from doi:10.1002/cpt.1893},
 }
@@ -242,5 +241,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloroquine%5D%20Chloroquine_AbdRahman2020_reference&body=Drug%3A%20chloroquine%0ARecord%3A%20Chloroquine_AbdRahman2020_reference%0APaper%3A%20Abd-Rahman_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 06:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloroquine%5D%20Chloroquine_AbdRahman2020_reference&body=Drug%3A%20chloroquine%0ARecord%3A%20Chloroquine_AbdRahman2020_reference%0APaper%3A%20Abd-Rahman_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 06:19 UTC</sub>

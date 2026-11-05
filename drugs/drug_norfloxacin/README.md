@@ -32,18 +32,9 @@ Norfloxacin is a fluoroquinolone antibiotic used to treat bacterial infections, 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 13.3 ‡ | L/h | 0.19 L/h/kg | healthy pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anadón_1995_reference](drugs/drug_norfloxacin/Norfloxacin_Anadn1995_reference.md) |
-| CL | CL | 13.3 ‡ | L/h | 0.19 L/h/kg | review reference | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Martínez_2017_reference](drugs/drug_norfloxacin/Norfloxacin_Martnez2017_reference.md) |
-| V | V | 165.2 ‡ | L | 2.36 L/kg | healthy pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anadón_1995_reference](drugs/drug_norfloxacin/Norfloxacin_Anadn1995_reference.md) |
-| V | V | 165.2 ‡ | L | 2.36 L/kg | review reference | bird | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Martínez_2017_reference](drugs/drug_norfloxacin/Norfloxacin_Martnez2017_reference.md) |
-| t½ | t1/2z | 3.65 | h | 3.65 h | healthy pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anadón_1995_reference](drugs/drug_norfloxacin/Norfloxacin_Anadn1995_reference.md) |
-| F | Fab | 0.537 |  | 53.7 % | healthy pigs | pig | <span class="pk-badge pk-badge--orange">Needs review</span> | [Anadón_1995_reference](drugs/drug_norfloxacin/Norfloxacin_Anadn1995_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Anadón_1995 · CL ·/kg</text><circle cx="233.3" cy="30.0" r="4" fill="#ef6c00"><title>Anadón_1995 · CL ·/kg: 13.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Martínez_2017 · CL ·/kg</text><circle cx="233.3" cy="46.0" r="4" fill="#2e7d32"><title>Martínez_2017 · CL ·/kg: 13.3 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Anadón_1995 · V ·/kg</text><circle cx="266.3" cy="30.0" r="4" fill="#ef6c00"><title>Anadón_1995 · V ·/kg: 165.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Martínez_2017 · V ·/kg</text><circle cx="266.3" cy="46.0" r="4" fill="#2e7d32"><title>Martínez_2017 · V ·/kg: 165.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -170,5 +161,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnorfloxacin%5D&body=Drug%3A%20norfloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_norfloxacin/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 11:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnorfloxacin%5D&body=Drug%3A%20norfloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_norfloxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:33 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Methaneethorn_2014_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Corsini1999_reference&quot;,&quot;label&quot;:&quot;Corsini_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Corsini1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Methaneethorn2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Simvastatin elimination rate constant was rejected because the hour-based unit for the 0.02 value could not be standardized.
+> This record was reviewed on 2026-10-22 14:37 UTC (Rejected), but the paper was screened again on 2026-11-04 13:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Simvastatin elimination rate constant was rejected because the hour-based unit for the 0.02 value could not be standardized.
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014v2_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014v2_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-drug interaction model of simvastatin and verapamil in humans. Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference 2014:5711–5714 (2014).
@@ -17,15 +17,15 @@ Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-d
 
 ## Population and dosing
 
-**Population:** healthy adults · age group adult · n = ... (the thought process is not to be repeated in the output).
+**Population:** healthy volunteers · condition healthy · age group adult · n = ?12.
 
 **Dosing:** 40 mg, oral, single.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted.  
+**Parameters:** 15 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -36,16 +36,22 @@ Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-d
 | F | Fab | 0.17 |  |
 | Kₐ (h⁻¹) | kabs | 0.6 | h⁻¹ |
 | VD(S) (L) | V | 150 | L |
+| VD(SM) (L) | V | 22.5 | L |
 | Vmax (μM/h) | Vmax | 4 | μM/h |
 | Km (μM) | Km | 0.726 | μM |
 | Kₑ(S) (h⁻¹) | kel | 0.02 | h⁻¹ |
+| Kₑ(SM) (h⁻¹) | kel | 0.4 | h⁻¹ |
 | Ki(V) (μM) | kic | 0.5 | μM |
+| Kₐ(lumen) (h⁻¹) | kabs | 2.6 | h⁻¹ |
+| VD(NV) (L) | V | 172.67 | L |
 | K12 (h⁻¹) | k12 | 19.4 | h⁻¹ |
 | K21 (h⁻¹) | k21 | 4.24 | h⁻¹ |
+| Kₑ(V) (h⁻¹) | kel | 1.16 | h⁻¹ |
+| Kₑ(NV) (h⁻¹) | kel | 0.6 | h⁻¹ |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.226). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +65,7 @@ Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-d
 
 The elimination rate constant is listed as 0.02 per hour, but this specific unit could not be converted to the standard scientific unit. As a result, the parameter value was unavailable for the model's structural check, causing a dimension mismatch. A second reader also failed to confirm the dose compound and primary analyte, marking them as unknown. Extracted — simvastatin: Fab 0.17, kabs 0.6 h⁻¹, V 150 L, Vmax 4 μM/h, Km 0.726 μM, kel 0.02 h⁻¹, kic 0.5 μM, k12 19.4 h⁻¹, … (+1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -70,12 +76,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | F | `Q40` · Fab | 0.17 |  |  |  |  | exact (1) | Methaneethorn_2014_2_table_1:row0:col2, Methaneethorn_2014_2_table_1:row11:col2 |
 | Kₐ (h⁻¹) | `Q49` · kabs | 0.6 | h⁻¹ | 0.0001667 | 1/s | 1/h | exact (1) | Methaneethorn_2014_2_table_1:row1:col2 |
 | VD(S) (L) | `Q61` · V | 150 | L | 0.15 | m3 | l | space_fold (0.95) | Methaneethorn_2014_2_table_1:row2:col2 |
+| VD(SM) (L) | `Q61` · V | 22.5 | L | 0.0225 | m3 | l | space_fold (0.95) | Methaneethorn_2014_2_table_1:row3:col2 |
 | Vmax (μM/h) | `Q66` · Vmax | 4 | μM/h |  |  | µM/h | special_case (0.95) | Methaneethorn_2014_2_table_1:row4:col2, Methaneethorn_2014_2_table_1:row19:col2 |
 | Km (μM) | `Q1` · Km | 0.726 | μM |  |  | µM | exact (1) | Methaneethorn_2014_2_table_1:row5:col2, Methaneethorn_2014_2_table_1:row20:col2 |
 | Kₑ(S) (h⁻¹) | `Q47` · kel | 0.02 | h⁻¹ | 5.556e-06 | 1/s | 1/h | space_fold (0.95) | Methaneethorn_2014_2_table_1:row6:col2 |
+| Kₑ(SM) (h⁻¹) | `Q47` · kel | 0.4 | h⁻¹ | 0.0001111 | 1/s | 1/h | space_fold (0.95) | Methaneethorn_2014_2_table_1:row7:col2 |
 | Ki(V) (μM) | `Q350` · kic | 0.5 | μM |  |  | µM | llm (0.6) | Methaneethorn_2014_2_table_1:row9:col2 |
+| Kₐ(lumen) (h⁻¹) | `Q49` · kabs | 2.6 | h⁻¹ | 0.0007222 | 1/s | 1/h | space_fold (0.95) | Methaneethorn_2014_2_table_1:row12:col2 |
+| VD(NV) (L) | `Q61` · V | 172.67 | L | 0.1727 | m3 | l | space_fold (0.95) | Methaneethorn_2014_2_table_1:row15:col2 |
 | K12 (h⁻¹) | `Q301` · k12 | 19.4 | h⁻¹ | 0.005389 | 1/s | 1/h | exact (1) | Methaneethorn_2014_2_table_1:row17:col2 |
 | K21 (h⁻¹) | `Q302` · k21 | 4.24 | h⁻¹ | 0.001178 | 1/s | 1/h | exact (1) | Methaneethorn_2014_2_table_1:row18:col2 |
+| Kₑ(V) (h⁻¹) | `Q47` · kel | 1.16 | h⁻¹ | 0.0003222 | 1/s | 1/h | space_fold (0.95) | Methaneethorn_2014_2_table_1:row23:col2 |
+| Kₑ(NV) (h⁻¹) | `Q47` · kel | 0.6 | h⁻¹ | 0.0001667 | 1/s | 1/h | space_fold (0.95) | Methaneethorn_2014_2_table_1:row24:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,34 +97,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('VD(SM) (L)', value '22.5') — already have one for this compound
 - unit_dimension_mismatch: 'Vmax (μM/h)' → Q66 (unit '[length] / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Km (μM)' → Q1 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q47 ('Kₑ(SM) (h⁻¹)', value '0.4') — already have one for this compound
 - unit_dimension_mismatch: 'Ki(V) (μM)' → Q350 (unit '[length]' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'Ki(NV) (μM)' — extend the ontology if this is a real PK parameter (source ['Methaneethorn_2014_2_table_1:row10:col2'])
-- dropped duplicate Q49 ('Kₐ(lumen) (h⁻¹)', value '2.6') — already have one for this compound
 - dropped duplicate Q49 ('Kₐ(wall) (h⁻¹)', value '1.4') — already have one for this compound
 - dropped duplicate Q61 ('VD(I) (L)', value '37.65') — already have one for this compound
-- dropped duplicate Q61 ('VD(NV) (L)', value '172.67') — already have one for this compound
 - dropped duplicate Q61 ('VD(2) (L)', value '7.7') — already have one for this compound
 - unit_dimension_mismatch: 'Vmax(wall) (μM/h)' → Q66 (unit '[length] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q66 ('Vmax(wall) (μM/h)', value '0.00125') — already have one for this compound
 - unit_dimension_mismatch: 'Km(wall) (μM)' → Q1 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped duplicate Q1 ('Km(wall) (μM)', value '0.726') — already have one for this compound
-- dropped duplicate Q47 ('Kₑ(V) (h⁻¹)', value '1.16') — already have one for this compound
-- dropped duplicate Q47 ('Kₑ(NV) (h⁻¹)', value '0.6') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=simvastatin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- topology: 2 first-order transfer(s) across 4 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1, 1]
 - status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 0 linked by role; re-tagged parent→simvastatin hydroxy acid ×2, parent→verapamil ×4, parent→norverapamil ×3
+- molar mass: none of 3 PubChem candidate(s) is 'norverapamil' (LLM) — left in mass units
+- molar mass: none found for 'norverapamil' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 
 ## Validation
@@ -122,18 +131,34 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.226 (7/31 fields) | 24 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>24 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['verapamil', 'norverapamil', 'metabolism']] | [['verapamil', 'norverapamil', 'metabolism'], ['simvastatin', 'simvastatin hydroxy acid', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['verapamil', 'norverapamil', 'metabolism']] | [['verapamil', 'norverapamil', 'metabolism'], ['simvastatin', 'simvastatin hydroxy acid', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | 0.17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 0.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 19.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 19.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 4.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka(lumen)]` |  | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka(lumen)]` | 2.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` |  | 0.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean systemic clearance]` | 12.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke(s)]` | 0.02 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke(s)]` |  | 0.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ki(v)]` | 0.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 0.726 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` |  | 0.726 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(2)]` |  | 7.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(i)]` |  | 37.65 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd(s)]` | 150 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` |  | 150 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(s)]` |  | 150 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` |  | 4 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
 
@@ -149,7 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 15 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | fail | [length] | μM | ['Methaneethorn_2014_2_table_1:row5:col2', 'Methaneethorn_2014_2_table_1:row20:col2'] |
@@ -157,11 +182,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row18:col2'] |
 | C5_dimension_Q350 | fail | [length] | μM | ['Methaneethorn_2014_2_table_1:row9:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row6:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row7:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row23:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row24:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row12:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row3:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row15:col2'] |
 | C5_dimension_Q66 | fail | [length] / [time] | μM/h | ['Methaneethorn_2014_2_table_1:row4:col2', 'Methaneethorn_2014_2_table_1:row19:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 150 L | ['Methaneethorn_2014_2_table_1:row2:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 22.5 L | ['Methaneethorn_2014_2_table_1:row3:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 173 L | ['Methaneethorn_2014_2_table_1:row15:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,5 +217,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Methaneethorn2014v2_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Methaneethorn2014v2_reference%0APaper%3A%20Methaneethorn_2014_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 11:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimvastatin%5D%20Simvastatin_Methaneethorn2014v2_reference&body=Drug%3A%20simvastatin%0ARecord%3A%20Simvastatin_Methaneethorn2014v2_reference%0APaper%3A%20Methaneethorn_2014_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 13:02 UTC</sub>

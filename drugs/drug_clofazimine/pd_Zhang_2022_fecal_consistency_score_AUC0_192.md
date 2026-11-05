@@ -121,13 +121,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192`. <https://pharmacolibrary.github.io/#/drugs/drug_clofazimine/Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192>
+**This record:** Pharmacolibrary, model `Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192`. <https://pharmacolibrary.github.io/#/drugs/drug_clofazimine/Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192>
 
 ```bibtex
 @misc{pharmacolibrary_ClofazimineZhang2022PDfecalconsistencyscoreauc0192,
   title  = {{Pharmacolibrary model Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_clofazimine/Clofazimine_Zhang2022_PD_fecal_consistency_score_auc0_192},
 }
 ```
@@ -141,5 +140,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclofazimine%5D%20pd_Zhang_2022_fecal_consistency_score_AUC0_192&body=Drug%3A%20clofazimine%0ARecord%3A%20pd_Zhang_2022_fecal_consistency_score_AUC0_192%0APaper%3A%20Zhang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clofazimine/pd_Zhang_2022_fecal_consistency_score_AUC0_192%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclofazimine%5D%20pd_Zhang_2022_fecal_consistency_score_AUC0_192&body=Drug%3A%20clofazimine%0ARecord%3A%20pd_Zhang_2022_fecal_consistency_score_AUC0_192%0APaper%3A%20Zhang_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clofazimine/pd_Zhang_2022_fecal_consistency_score_AUC0_192%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [clofazimine](drugs/drug_clofazimine/)</sub>

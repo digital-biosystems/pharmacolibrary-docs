@@ -132,13 +132,12 @@ Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdi
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Buprenorphine_Juul2014_PD_peakamp`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp>
+**This record:** Pharmacolibrary, model `Buprenorphine_Juul2014_PD_peakamp`. <https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp>
 
 ```bibtex
 @misc{pharmacolibrary_BuprenorphineJuul2014PDpeakamp,
   title  = {{Pharmacolibrary model Buprenorphine_Juul2014_PD_peakamp}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp},
 }
 ```
@@ -152,5 +151,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Juul_2014_PeakAmp&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Juul_2014_PeakAmp%0APaper%3A%20Juul_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Juul_2014_PeakAmp%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuprenorphine%5D%20pd_Juul_2014_PeakAmp&body=Drug%3A%20buprenorphine%0ARecord%3A%20pd_Juul_2014_PeakAmp%0APaper%3A%20Juul_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buprenorphine/pd_Juul_2014_PeakAmp%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [buprenorphine](drugs/drug_buprenorphine/)</sub>

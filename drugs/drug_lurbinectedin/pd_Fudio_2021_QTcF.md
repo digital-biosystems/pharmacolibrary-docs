@@ -120,13 +120,12 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Lurbinectedin_Fudio2021_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_lurbinectedin/Lurbinectedin_Fudio2021_PD_qtcf>
+**This record:** Pharmacolibrary, model `Lurbinectedin_Fudio2021_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_lurbinectedin/Lurbinectedin_Fudio2021_PD_qtcf>
 
 ```bibtex
 @misc{pharmacolibrary_LurbinectedinFudio2021PDqtcf,
   title  = {{Pharmacolibrary model Lurbinectedin_Fudio2021_PD_qtcf}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_lurbinectedin/Lurbinectedin_Fudio2021_PD_qtcf},
 }
 ```
@@ -140,5 +139,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blurbinectedin%5D%20pd_Fudio_2021_QTcF&body=Drug%3A%20lurbinectedin%0ARecord%3A%20pd_Fudio_2021_QTcF%0APaper%3A%20Fudio_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lurbinectedin/pd_Fudio_2021_QTcF%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blurbinectedin%5D%20pd_Fudio_2021_QTcF&body=Drug%3A%20lurbinectedin%0ARecord%3A%20pd_Fudio_2021_QTcF%0APaper%3A%20Fudio_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lurbinectedin/pd_Fudio_2021_QTcF%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [lurbinectedin](drugs/drug_lurbinectedin/)</sub>

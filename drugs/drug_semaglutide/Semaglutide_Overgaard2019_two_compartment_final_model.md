@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2019 \u00b7 two_compartment_final_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Overgaard2019_two_compartment_final_model`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-03 16:21 UTC (Needs review), but the paper was screened again on 2026-11-03 16:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_two_compartment_final_model" status="needs_review" stale="false" population="healthy adults and adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_two_compartment_final_model" status="needs_review" stale="true" population="healthy subjects and type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Population Pharmacokinetics of Semaglutide for Type 2 Diabetes. Diabetes therapy : research, treatment and education of diabetes and related disorders 10(2):649–662 (2019).
@@ -17,14 +17,14 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ## Population and dosing
 
-**Population:** healthy adults and adults with type 2 diabetes · condition healthy | type 2 diabetes · age group adult · n = 353.
+**Population:** healthy subjects and type 2 diabetes · condition type 2 diabetes · age group adult.
 
-**Dosing:** 0.25, 0.5, 1 mg, sc, single.
+**Dosing:** 0.25, 0.5, 1, 1.5 mg, subcutaneous, multiple, every 168 h.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** mechanistic.  
 **Parameters:** 3 extracted, plus 1 covariate effect.  
 **Availability:** No model was generated from this record.
 
@@ -34,13 +34,13 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 | label | parameter | value | unit |
 |---|---|---|---|
 | Absorption rate constant ka, h−1 | kabs | 0.0253 | h−1 |
-| Total volume/Fb, L | V/F | 9.08 | L |
+| Total volume/Fb, L | V | 9.08 | L |
 | theta_q27_body_weight | theta_q27_body_weight | 0.0460 |  |
-| CL/F | CL/F | 0.0478 | l/h |
+| CL | CL | 0.059 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Carlsson_2018) cannot stand in for this paper's evidence. Extracted — semaglutide: kabs 0.0253 h−1, V/F 9.08 L, CL/F 0.0478 l/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 0.0478, the second reading none. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +63,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Absorption rate constant ka, h−1 | `Q49` · kabs | 0.0253 | h−1 | 7.028e-06 | 1/s | 1/h | llm_confirmed (0.6) | Overgaard_2019_table_5:row0:col1 |
-| Total volume/Fb, L | `Q76` · V/F | 9.08 | L | 0.00908 | m3 | l | llm (0.6) | Overgaard_2019_table_5:row3:col1 |
+| Total volume/Fb, L | `Q61` · V | 9.08 | L | 0.00908 | m3 | l | llm (0.6) | Overgaard_2019_table_5:row3:col1 |
 | theta_q27_body_weight | `Q900` · theta_q27_body_weight | 0.0460 |  |  |  |  |  | Overgaard_2019_table_5:row1:col1 |
-| CL/F | `Q27` · CL/F | 0.0478 | l/h | 1.328e-08 | m3/s | L/h | review_gapfill (0.7) | Carlsson_2018:review |
+| CL | `Q22` · CL | 0.059 | L/h | 1.639e-08 | m3/s | L/h | review_gapfill (0.7) | Choi_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,10 +77,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
 - dropped duplicate covariate effect 'body weight'/'' on Q27 — ambiguous identity (two shifts cannot share one category)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=semaglutide
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Total volume/Fb, L)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=semaglutide
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- population split: 'two-compartment final model' subgroup of Overgaard_2019 (paper reports 3 populations: estimate, one-compartment model from phase 3a trialsa, two-compartment final model)
-- gap-filled Q27 (CL/F) from Carlsson_2018's review values (primary lacked it)
+- population split: 'two-compartment final model' subgroup of Overgaard_2019 (paper reports 4 populations: estimate, one-compartment model, one-compartment model from phase 3a trialsa, two-compartment final model)
+- gap-filled Q22 (CL) from Choi_2025's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -92,20 +93,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 0.0478 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -120,13 +115,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Carlsson_2018:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Choi_2025:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Overgaard_2019_table_5:row0:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Overgaard_2019_table_5:row3:col1'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Overgaard_2019_table_5:row3:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.059 | ['Choi_2025:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0478 L/h | ['Carlsson_2018:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 9.08 L | ['Overgaard_2019_table_5:row3:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.059 L/h | ['Choi_2025:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 9.08 L | ['Overgaard_2019_table_5:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,4 +172,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsemaglutide%5D%20Semaglutide_Overgaard2019_two_compartment_final_model&body=Drug%3A%20semaglutide%0ARecord%3A%20Semaglutide_Overgaard2019_two_compartment_final_model%0APaper%3A%20Overgaard_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-20 18:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 16:53 UTC</sub>

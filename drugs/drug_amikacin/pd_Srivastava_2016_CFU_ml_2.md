@@ -127,13 +127,12 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Amikacin_Srivastava2016_PD_cfu_ml_2`. <https://pharmacolibrary.github.io/#/drugs/drug_amikacin/Amikacin_Srivastava2016_PD_cfu_ml_2>
+**This record:** Pharmacolibrary, model `Amikacin_Srivastava2016_PD_cfu_ml_2`. <https://pharmacolibrary.github.io/#/drugs/drug_amikacin/Amikacin_Srivastava2016_PD_cfu_ml_2>
 
 ```bibtex
 @misc{pharmacolibrary_AmikacinSrivastava2016PDcfuml2,
   title  = {{Pharmacolibrary model Amikacin_Srivastava2016_PD_cfu_ml_2}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_amikacin/Amikacin_Srivastava2016_PD_cfu_ml_2},
 }
 ```
@@ -147,5 +146,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamikacin%5D%20pd_Srivastava_2016_CFU_ml_2&body=Drug%3A%20amikacin%0ARecord%3A%20pd_Srivastava_2016_CFU_ml_2%0APaper%3A%20Srivastava_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amikacin/pd_Srivastava_2016_CFU_ml_2%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamikacin%5D%20pd_Srivastava_2016_CFU_ml_2&body=Drug%3A%20amikacin%0ARecord%3A%20pd_Srivastava_2016_CFU_ml_2%0APaper%3A%20Srivastava_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amikacin/pd_Srivastava_2016_CFU_ml_2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [amikacin](drugs/drug_amikacin/)</sub>

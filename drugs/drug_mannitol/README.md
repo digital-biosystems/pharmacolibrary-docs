@@ -29,15 +29,6 @@ Mannitol is an osmotic diuretic used for conditions such as anuria, oliguria, ce
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 7.98 | L/h | 7.98 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) |
-| V | V | 60.2 | L | 60.2 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -98,5 +89,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmannitol%5D&body=Drug%3A%20mannitol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mannitol/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 16:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmannitol%5D&body=Drug%3A%20mannitol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mannitol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 16:19 UTC</sub>

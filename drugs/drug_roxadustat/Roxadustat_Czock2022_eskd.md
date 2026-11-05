@@ -264,13 +264,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Czock D, Keller F. Clinical Pharmacokinetics and Pharmacodynamics of Roxadustat. Clinical pharmacokinetics 61(3):347–362 (2022). [doi:10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x)
 
-**This record:** Pharmacolibrary v26.09, model `Roxadustat_Czock2022_eskd`. <https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Czock2022_eskd>
+**This record:** Pharmacolibrary, model `Roxadustat_Czock2022_eskd`. <https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Czock2022_eskd>
 
 ```bibtex
 @misc{pharmacolibrary_RoxadustatCzock2022eskd,
   title  = {{Pharmacolibrary model Roxadustat_Czock2022_eskd}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_roxadustat/Roxadustat_Czock2022_eskd},
   note   = {Parameters from doi:10.1007/s40262-021-01095-x},
 }
@@ -285,5 +284,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Broxadustat%5D%20Roxadustat_Czock2022_eskd&body=Drug%3A%20roxadustat%0ARecord%3A%20Roxadustat_Czock2022_eskd%0APaper%3A%20Czock_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_roxadustat/Roxadustat_Czock2022_eskd%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 18:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Broxadustat%5D%20Roxadustat_Czock2022_eskd&body=Drug%3A%20roxadustat%0ARecord%3A%20Roxadustat_Czock2022_eskd%0APaper%3A%20Czock_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_roxadustat/Roxadustat_Czock2022_eskd%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 18:36 UTC</sub>

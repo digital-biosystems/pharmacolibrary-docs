@@ -29,15 +29,6 @@ Icotinib is an EGFR tyrosine kinase inhibitor investigated for treating non-smal
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 29.5 | L/h | 29.5 L/h | healthy Chinese volunteers | 22 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) |
-| V | V | 18.5 | L | 18.5 L | healthy Chinese volunteers | 22 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -100,5 +91,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bicotinib%5D&body=Drug%3A%20icotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_icotinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:30 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bicotinib%5D&body=Drug%3A%20icotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_icotinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:30 UTC</sub>

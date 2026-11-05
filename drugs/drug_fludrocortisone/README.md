@@ -22,22 +22,12 @@ Fludrocortisone is a mineralocorticoid corticosteroid used to treat conditions s
 |---|---|---|---|---|---|---|
 | fludrocortisone | parent | 380.45 | C21H29FO5 | DrugBank | [31378](https://pubchem.ncbi.nlm.nih.gov/compound/31378) | Hamitouche_2017, Polito_2016 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 40 | L/h | 40 l h-1 | adults with septic shock | &gt;= 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polito_2016_reference](drugs/drug_fludrocortisone/Fludrocortisone_Polito2016_reference.md) |
-| V | V/F | 78 | L | 78 l | adults with septic shock | &gt;= 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polito_2016_reference](drugs/drug_fludrocortisone/Fludrocortisone_Polito2016_reference.md) |
-| t½ | t1/2z | 1.35 | h | 1.35 h | adults with septic shock | &gt;= 20 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Polito_2016_reference](drugs/drug_fludrocortisone/Fludrocortisone_Polito2016_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Polito_2016_reference](drugs/drug_fludrocortisone/Fludrocortisone_Polito2016_reference.md) | — | 1-compartment (no model) | 5 | Polito A et al., Pharmacokinetics of oral fludrocortison…, British journal of clinical… (2016) | [10.1111/bcp.13065](https://doi.org/10.1111/bcp.13065) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Hamitouche_2017_reference](drugs/drug_fludrocortisone/Fludrocortisone_Hamitouche2017_reference.md) | — | general linear (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Hamitouche_2017_reference](drugs/drug_fludrocortisone/Fludrocortisone_Hamitouche2017_reference.md) | — | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 
 ## Pharmacodynamics (PD)
 
@@ -108,5 +98,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludrocortisone%5D&body=Drug%3A%20fludrocortisone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludrocortisone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfludrocortisone%5D&body=Drug%3A%20fludrocortisone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fludrocortisone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:33 UTC</sub>

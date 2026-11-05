@@ -22,16 +22,6 @@ Lormetazepam is a benzodiazepine derivative used as a hypnotic and sedative, mai
 |---|---|---|---|---|---|---|
 | lormetazepam | parent | 335.185 | C16H12Cl2N2O2 | DrugBank | [13314](https://pubchem.ncbi.nlm.nih.gov/compound/13314) | le_2024 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | — | L/h | 12.9 | mechanically ventilated ICU patients with COVID-19/ARDS | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [le_2024_reference](drugs/drug_lormetazepam/Lormetazepam_le2024_reference.md) |
-| V | V/F | 13.1 | L | 13.1 L | mechanically ventilated ICU patients with COVID-19/ARDS | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [le_2024_reference](drugs/drug_lormetazepam/Lormetazepam_le2024_reference.md) |
-| ka | kabs | 39.4 | 1/h | 39.4 1/h | mechanically ventilated ICU patients with COVID-19/ARDS | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [le_2024_reference](drugs/drug_lormetazepam/Lormetazepam_le2024_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -119,5 +109,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blormetazepam%5D&body=Drug%3A%20lormetazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lormetazepam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 21:19 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blormetazepam%5D&body=Drug%3A%20lormetazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lormetazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:19 UTC</sub>

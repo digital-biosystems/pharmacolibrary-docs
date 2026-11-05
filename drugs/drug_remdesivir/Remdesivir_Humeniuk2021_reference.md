@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Humeniuk_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Humeniuk2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The clearance plausibility check could not be computed.
+> This record was reviewed on 2026-10-22 14:39 UTC (Needs review), but the paper was screened again on 2026-11-04 11:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Humeniuk R, Mathias A, Kirby BJ, Lutz JD, Cao H, Osinusi A et al. Pharmacokinetic, Pharmacodynamic, and Drug-Interaction Profile of Remdesivir, a SARS-CoV-2 Replication Inhibitor. Clinical pharmacokinetics 60(5):569–583 (2021).
@@ -24,21 +24,19 @@ Humeniuk R, Mathias A, Kirby BJ, Lutz JD, Cao H, Osinusi A et al. Pharmacokineti
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Mean total clearance | CL | 1171.0 | mL/min |
-| mean volume of distribution | V | 93.0 | L |
+| RDV CLss, L/h | CL/F | 65.1 | L/h |
+| RDV Vz, L | V | 92.6 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +50,7 @@ Humeniuk R, Mathias A, Kirby BJ, Lutz JD, Cao H, Osinusi A et al. Pharmacokineti
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 1.17e+03 mL/min, V 93 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 698, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2190, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +58,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Mean total clearance | `Q22` · CL | 1171.0 | mL/min | 1.952e-05 | m3/s | L/h | review (0.7) | Humeniuk_2021:review |
-| mean volume of distribution | `Q61` · V | 93.0 | L | 0.093 | m3 | L | review (0.7) | Humeniuk_2021:review |
+| RDV CLss, L/h | `Q27` · CL/F | 65.1 | L/h | 1.808e-05 | m3/s | L/h | review (0.7) | Humeniuk_2021:review |
+| RDV Vz, L | `Q61` · V | 92.6 | L | 0.0926 | m3 | L | review (0.7) | Humeniuk_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,25 +79,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q19]` | 698 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q21]` |  | 1.9 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q22]` | 65.1 | 1171 | mismatch |
-| `gpt-oss-120b` | `values[Q26]` |  | 129 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` |  | 100 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q44]` |  | 48.6 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 0.9 | 1 | mismatch |
-| `gpt-oss-120b` | `values[Q59]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q74]` | 2190 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 2190 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` |  | 65.1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` | 65.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` |  | 69.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 0.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 0.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | 1590 |  | only_one_extracted |
 
 </details>
 
@@ -116,12 +113,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Humeniuk_2021:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Humeniuk_2021:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Humeniuk_2021:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1171 | ['Humeniuk_2021:review'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 70.3 L/h | ['Humeniuk_2021:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 93 L | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 65.1 L/h | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 92.6 L | ['Humeniuk_2021:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,13 +148,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Humeniuk R, Mathias A, Kirby BJ, Lutz JD, Cao H, Osinusi A et al. Pharmacokinetic, Pharmacodynamic, and Drug-Interaction Profile of Remdesivir, a SARS-CoV-2 Replication Inhibitor. Clinical pharmacokinetics 60(5):569–583 (2021). [doi:10.1007/s40262-021-00984-5](https://doi.org/10.1007/s40262-021-00984-5)
 
-**This record:** Pharmacolibrary v26.09, model `Remdesivir_Humeniuk2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference>
+**This record:** Pharmacolibrary, model `Remdesivir_Humeniuk2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RemdesivirHumeniuk2021reference,
   title  = {{Pharmacolibrary model Remdesivir_Humeniuk2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference},
   note   = {Parameters from doi:10.1007/s40262-021-00984-5},
 }
@@ -172,5 +168,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Humeniuk2021_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Humeniuk2021_reference%0APaper%3A%20Humeniuk_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremdesivir%5D%20Remdesivir_Humeniuk2021_reference&body=Drug%3A%20remdesivir%0ARecord%3A%20Remdesivir_Humeniuk2021_reference%0APaper%3A%20Humeniuk_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-04 11:07 UTC</sub>

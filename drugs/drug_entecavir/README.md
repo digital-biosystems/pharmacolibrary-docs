@@ -22,14 +22,6 @@ Entecavir is an antiviral medicine used to treat chronic hepatitis B. It is auth
 |---|---|---|---|---|---|---|
 | entecavir | parent | 277.279 | C12H15N5O3 | DrugBank | [153941](https://pubchem.ncbi.nlm.nih.gov/compound/153941) | Yoshitsugu_2011 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 26.4 | L/h | 26.4 L/h | Japanese patients with chronic hepatitis B | 142 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Yoshitsugu_2011_reference](drugs/drug_entecavir/Entecavir_Yoshitsugu2011_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +96,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bentecavir%5D&body=Drug%3A%20entecavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_entecavir/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 15:33 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bentecavir%5D&body=Drug%3A%20entecavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_entecavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:33 UTC</sub>

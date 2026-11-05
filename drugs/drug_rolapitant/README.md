@@ -25,17 +25,6 @@ Rolapitant is an antiemetic used to prevent nausea and vomiting associated with 
 | fosrolapitant | metabolite | 654.497 | C27H29F6N2O8P | PubChem | [163871173](https://pubchem.ncbi.nlm.nih.gov/compound/163871173) | Li_2026 |
 | M19 | metabolite | 516.482 | C25H26F6N2O3 | PubChem | [135390916](https://pubchem.ncbi.nlm.nih.gov/compound/135390916) | Wang_2019 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| t½ | t1/2z | 0.42 | h | 0.42 hour | Chinese subjects with impaired or normal liver function | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2026_fosrolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_fosrolapitant.md) |
-| t½ | t1/2z | 264.8 | h | 264.80 hour | Chinese subjects with impaired or normal liver function | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2026_rolapitant](drugs/drug_rolapitant/Rolapitant_Li2026_rolapitant.md) |
-| t½ | t1/2z | 308.4 | h | 308.36 hour | Chinese subjects with impaired or normal liver function | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2026_healthy_control](drugs/drug_rolapitant/Rolapitant_Li2026_healthy_control.md) |
-| t½ | t1/2z | 708.8 | h | 708.81 hour | Chinese subjects with impaired or normal liver function | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2026_moderate_hepatic_impairment](drugs/drug_rolapitant/Rolapitant_Li2026_moderate_hepatic_impairment.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -123,5 +112,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brolapitant%5D&body=Drug%3A%20rolapitant%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rolapitant/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 14:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brolapitant%5D&body=Drug%3A%20rolapitant%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rolapitant/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 14:36 UTC</sub>

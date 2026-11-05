@@ -102,13 +102,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Guselkumab_Vaskeikina2026_PD_mrss`. <https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss>
+**This record:** Pharmacolibrary, model `Guselkumab_Vaskeikina2026_PD_mrss`. <https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss>
 
 ```bibtex
 @misc{pharmacolibrary_GuselkumabVaskeikina2026PDmrss,
   title  = {{Pharmacolibrary model Guselkumab_Vaskeikina2026_PD_mrss}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_guselkumab/Guselkumab_Vaskeikina2026_PD_mrss},
 }
 ```
@@ -122,5 +121,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bguselkumab%5D%20pd_Vaskeikina_2026_mRSS&body=Drug%3A%20guselkumab%0ARecord%3A%20pd_Vaskeikina_2026_mRSS%0APaper%3A%20Vaskeikina_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bguselkumab%5D%20pd_Vaskeikina_2026_mRSS&body=Drug%3A%20guselkumab%0ARecord%3A%20pd_Vaskeikina_2026_mRSS%0APaper%3A%20Vaskeikina_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_guselkumab/pd_Vaskeikina_2026_mRSS%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [guselkumab](drugs/drug_guselkumab/)</sub>

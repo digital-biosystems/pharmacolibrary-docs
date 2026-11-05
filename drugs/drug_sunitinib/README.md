@@ -32,22 +32,9 @@ Sunitinib is a protein kinase inhibitor used to treat several cancers, including
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 223 | L/h | 223.0 L/h | rats administered high-dose sunitinib | 6 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liu_2020_reference](drugs/drug_sunitinib/Sunitinib_Liu2020_reference.md) |
-| CL | CL/F | 33.7 | L/h | 33.7 L/h | review reference |  | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2025_reference](drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md) |
-| CL | CL/F | 42.7 | L/h | 42.7 L/hr | GIST patients from four phase I–III trials | 305 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [de_2014_reference](drugs/drug_sunitinib/Sunitinib_de2014_reference.md) |
-| V | V | 6148 ‡ | L | 87821.75 mL/kg | rats administered high-dose sunitinib | 6 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liu_2020_reference](drugs/drug_sunitinib/Sunitinib_Liu2020_reference.md) |
-| V | V/F | 173 | L | 173.0 L | GIST patients from four phase I–III trials | 305 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [de_2014_reference](drugs/drug_sunitinib/Sunitinib_de2014_reference.md) |
-| V | V1/F | 379 | L | 379.0 L | review reference |  | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2025_reference](drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md) |
-| ka | kabs | 0.341 | 1/h | 0.341 h−1 | review reference |  | human + animal | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2025_reference](drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md) |
-| ka | kabs | 1.14 | 1/h | 1.14 1/h | rats administered high-dose sunitinib | 6 | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Liu_2020_reference](drugs/drug_sunitinib/Sunitinib_Liu2020_reference.md) |
-| ka | kabs | 13.92 | 1/h | 13.92 h−1 | patients receiving sunitinib |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Valderrama_2025_reference](drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference.md) |
-| ka | kabs | 13.92 | 1/h | 13.92 h−1 | GIST patients from four phase I–III trials | 305 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [de_2014_reference](drugs/drug_sunitinib/Sunitinib_de2014_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2020 · CL</text><circle cx="426.0" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2020 · CL: 223 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yang_2025 · CL/F</text><circle cx="282.3" cy="46.0" r="4" fill="#2e7d32"><title>Yang_2025 · CL/F: 33.7 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">de_2014 · CL/F</text><circle cx="300.3" cy="62.0" r="4" fill="#ef6c00"><title>de_2014 · CL/F: 42.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2020 · V ·/kg</text><circle cx="503.0" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2020 · V ·/kg: 6148 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">de_2014 · V/F</text><circle cx="231.7" cy="46.0" r="4" fill="#ef6c00"><title>de_2014 · V/F: 173 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yang_2025 · V1/F</text><circle cx="291.3" cy="62.0" r="4" fill="#2e7d32"><title>Yang_2025 · V1/F: 379 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -228,5 +215,5 @@ _15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsunitinib%5D&body=Drug%3A%20sunitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sunitinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:32 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsunitinib%5D&body=Drug%3A%20sunitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sunitinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:32 UTC</sub>

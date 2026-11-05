@@ -178,13 +178,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Bhagunde P, Patel P, Lala M, Watson K, Copalu W, Xu M et al. Population Pharmacokinetic Analysis for Imipenem-Relebactam in Healthy Volunteers and Patients With Bacterial Infections. CPT: pharmacometrics & systems pharmacology 8(10):748–758 (2019). [doi:10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462)
 
-**This record:** Pharmacolibrary v26.09, model `Relebactam_Bhagunde2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference>
+**This record:** Pharmacolibrary, model `Relebactam_Bhagunde2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference>
 
 ```bibtex
 @misc{pharmacolibrary_RelebactamBhagunde2019reference,
   title  = {{Pharmacolibrary model Relebactam_Bhagunde2019_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference},
   note   = {Parameters from doi:10.1002/psp4.12462},
 }
@@ -199,5 +198,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brelebactam%5D%20Relebactam_Bhagunde2019_reference&body=Drug%3A%20relebactam%0ARecord%3A%20Relebactam_Bhagunde2019_reference%0APaper%3A%20Bhagunde_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:44 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brelebactam%5D%20Relebactam_Bhagunde2019_reference&body=Drug%3A%20relebactam%0ARecord%3A%20Relebactam_Bhagunde2019_reference%0APaper%3A%20Bhagunde_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_relebactam/Relebactam_Bhagunde2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:44 UTC</sub>

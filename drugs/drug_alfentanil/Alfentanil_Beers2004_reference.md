@@ -159,13 +159,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Beers R, Camporesi E. Remifentanil update: clinical science and utility. CNS drugs 18(15):1085–1104 (2004). [doi:10.2165/00023210-200418150-00004](https://doi.org/10.2165/00023210-200418150-00004)
 
-**This record:** Pharmacolibrary v26.09, model `Alfentanil_Beers2004_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Beers2004_reference>
+**This record:** Pharmacolibrary, model `Alfentanil_Beers2004_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Beers2004_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AlfentanilBeers2004reference,
   title  = {{Pharmacolibrary model Alfentanil_Beers2004_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_alfentanil/Alfentanil_Beers2004_reference},
   note   = {Parameters from doi:10.2165/00023210-200418150-00004},
 }
@@ -184,5 +183,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balfentanil%5D%20Alfentanil_Beers2004_reference&body=Drug%3A%20alfentanil%0ARecord%3A%20Alfentanil_Beers2004_reference%0APaper%3A%20Beers_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alfentanil/Alfentanil_Beers2004_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balfentanil%5D%20Alfentanil_Beers2004_reference&body=Drug%3A%20alfentanil%0ARecord%3A%20Alfentanil_Beers2004_reference%0APaper%3A%20Beers_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alfentanil/Alfentanil_Beers2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

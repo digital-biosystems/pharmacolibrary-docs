@@ -23,17 +23,6 @@ Tepotinib is a kinase inhibitor used to treat non-small-cell lung cancer. It is 
 | tepotinib | parent | 492.583 | C29H28N6O2 | DrugBank | — | Xiong_2022 |
 | MSC2571109A | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 20.4 | L/h | 20.4 L/h | patients with cancer and healthy participants | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiong_2022_reference](drugs/drug_tepotinib/Tepotinib_Xiong2022_reference.md) |
-| V | V1/F | 1020 | L | 1020 L | patients with cancer and healthy participants | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiong_2022_reference](drugs/drug_tepotinib/Tepotinib_Xiong2022_reference.md) |
-| ka | kabs | 0.278 | 1/h | 0.278 h−1 | patients with cancer and healthy participants | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiong_2022_reference](drugs/drug_tepotinib/Tepotinib_Xiong2022_reference.md) |
-| F | Fab | -0.0412 |  | -0.0412 | patients with cancer and healthy participants | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Xiong_2022_reference](drugs/drug_tepotinib/Tepotinib_Xiong2022_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -120,5 +109,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btepotinib%5D&body=Drug%3A%20tepotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tepotinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 08:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btepotinib%5D&body=Drug%3A%20tepotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tepotinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:14 UTC</sub>

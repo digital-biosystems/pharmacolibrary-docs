@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Remimazolam_Chae2022_PD_map`. <https://pharmacolibrary.github.io/#/drugs/drug_remimazolam/Remimazolam_Chae2022_PD_map>
+**This record:** Pharmacolibrary, model `Remimazolam_Chae2022_PD_map`. <https://pharmacolibrary.github.io/#/drugs/drug_remimazolam/Remimazolam_Chae2022_PD_map>
 
 ```bibtex
 @misc{pharmacolibrary_RemimazolamChae2022PDmap,
   title  = {{Pharmacolibrary model Remimazolam_Chae2022_PD_map}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_remimazolam/Remimazolam_Chae2022_PD_map},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremimazolam%5D%20pd_Chae_2022_MAP&body=Drug%3A%20remimazolam%0ARecord%3A%20pd_Chae_2022_MAP%0APaper%3A%20Chae_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remimazolam/pd_Chae_2022_MAP%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremimazolam%5D%20pd_Chae_2022_MAP&body=Drug%3A%20remimazolam%0ARecord%3A%20pd_Chae_2022_MAP%0APaper%3A%20Chae_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remimazolam/pd_Chae_2022_MAP%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [remimazolam](drugs/drug_remimazolam/)</sub>

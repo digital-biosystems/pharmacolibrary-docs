@@ -24,14 +24,9 @@ Eliglustat is a medicine used to treat Gaucher's disease. It is authorised in th
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 1.362 | L/h | 22.7 mL/min | adults with Gaucher disease type 1 and hepatic impairment | unknown | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2020_84_mg_bid_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_bid_a.md) |
-| CL | CL | 1.362 | L/h | 22.7 mL/min | adults with Gaucher disease type 1 and hepatic impairment | unknown | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2020_84_mg_qd_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_qd_a.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2020 · CL</text><circle cx="237.0" cy="30.0" r="4" fill="#ef6c00"><title>Li_2020 · CL: 1.362 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2020 · CL</text><circle cx="237.0" cy="46.0" r="4" fill="#ef6c00"><title>Li_2020 · CL: 1.362 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -98,5 +93,5 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beliglustat%5D&body=Drug%3A%20eliglustat%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eliglustat/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-05 10:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beliglustat%5D&body=Drug%3A%20eliglustat%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eliglustat/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 10:31 UTC</sub>

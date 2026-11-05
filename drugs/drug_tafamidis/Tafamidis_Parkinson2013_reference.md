@@ -204,13 +204,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll S et al. Modeling of age-dependent amyloid accumulation and γ-secretase inhibition of soluble and insoluble Aβ in a transgenic mouse model of amyloid deposition. Pharmacology research & perspectives 1(2):e00012 (2013). [doi:10.1002/prp2.12](https://doi.org/10.1002/prp2.12)
 
-**This record:** Pharmacolibrary v26.09, model `Tafamidis_Parkinson2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference>
+**This record:** Pharmacolibrary, model `Tafamidis_Parkinson2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TafamidisParkinson2013reference,
   title  = {{Pharmacolibrary model Tafamidis_Parkinson2013_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference},
   note   = {Parameters from doi:10.1002/prp2.12},
 }
@@ -229,5 +228,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafamidis%5D%20Tafamidis_Parkinson2013_reference&body=Drug%3A%20tafamidis%0ARecord%3A%20Tafamidis_Parkinson2013_reference%0APaper%3A%20Parkinson_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 04:51 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafamidis%5D%20Tafamidis_Parkinson2013_reference&body=Drug%3A%20tafamidis%0ARecord%3A%20Tafamidis_Parkinson2013_reference%0APaper%3A%20Parkinson_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafamidis/Tafamidis_Parkinson2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:51 UTC</sub>

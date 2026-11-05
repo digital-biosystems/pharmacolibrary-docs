@@ -22,22 +22,13 @@ Sulfadimethoxine is a long-acting sulfonamide antibiotic used to treat bacterial
 |---|---|---|---|---|---|---|
 | sulfadimethoxine | parent | 310.329 | C12H14N4O4S | DrugBank | [5323](https://pubchem.ncbi.nlm.nih.gov/compound/5323) | Boulanger_2025, Chatfield_2001, Poapolathep_2017 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| t½ | t1/2z | 11.7 | h | 11.7 hr | adult camels | # Number of subjects in the analysis (a plain integer), or unknown | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chatfield_2001_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Chatfield2001_reference.md) |
-| F | Fab | 1.03 |  | 103 % | adult camels | # Number of subjects in the analysis (a plain integer), or unknown | camelid | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chatfield_2001_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Chatfield2001_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="camelid" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [Chatfield_2001_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Chatfield2001_reference.md) | held back | 1-compartment, IV | 5 | Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo and wildlife… (2001) | [10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2](https://doi.org/10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2) |
 | <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bakal_2004_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Bakal2004_reference.md) | — | 1-compartment (no model) | 0 | Bakal RS et al., Pharmacokinetics of sulfadimethoxine an…, Journal of veterinary pharm… (2004) | [10.1046/j.0140-7783.2003.00540.x](https://doi.org/10.1046/j.0140-7783.2003.00540.x) |
-| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Boulanger_2025_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Boulanger2025_reference.md) | — | general linear (no model) | 3 | Boulanger M et al., Population pharmacokinetic modeling of…, The veterinary quarterly (2025) | [10.1080/01652176.2025.2565351](https://doi.org/10.1080/01652176.2025.2565351) |
+| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Boulanger_2025_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Boulanger2025_reference.md) | — | 1-compartment (no model) | 3 | Boulanger M et al., Population pharmacokinetic modeling of…, The veterinary quarterly (2025) | [10.1080/01652176.2025.2565351](https://doi.org/10.1080/01652176.2025.2565351) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Poapolathep_2017_reference](drugs/drug_sulfadimethoxine/Sulfadimethoxine_Poapolathep2017_reference.md) | — | 1-compartment (no model) | 1 | Poapolathep A et al., Sulfadimethoxine in giant freshwater pr…, Journal of veterinary pharm… (2017) | [10.1111/jvp.12381](https://doi.org/10.1111/jvp.12381) |
 
 ## Pharmacodynamics (PD)
@@ -113,5 +104,5 @@ _6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadimethoxine%5D&body=Drug%3A%20sulfadimethoxine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadimethoxine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 10:50 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadimethoxine%5D&body=Drug%3A%20sulfadimethoxine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadimethoxine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:50 UTC</sub>

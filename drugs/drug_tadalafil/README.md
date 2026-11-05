@@ -31,18 +31,9 @@ Tadalafil is used to treat erectile dysfunction, enlarged prostate, and pulmonar
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | — | L/h | 37 % | male rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Na_2019_group_n](drugs/drug_tadalafil/Tadalafil_Na2019_group_n.md) |
-| CL | CL/F | 10.43 ‡ | L/h | 0.149 L·h-1·kg-1 | children with pulmonary arterial hypertension | &gt;=23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kohno_2014_reference](drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md) |
-| V | V/F | 130.9 ‡ | L | 1.87 L/kg | children with pulmonary arterial hypertension | &gt;=23 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kohno_2014_reference](drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md) |
-| V | V/F | 235.2 ‡ | L | 3.36 L/kg | male rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Na_2019_group_n](drugs/drug_tadalafil/Tadalafil_Na2019_group_n.md) |
-| V | V/F | 235.2 ‡ | L | 3.36 L/kg | male rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Na_2019_group_t](drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md) |
-| ka | kabs | 1.14 | 1/h | 1.14 1/h | male rats |  | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Na_2019_group_t](drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. — the reported unit did not convert; the value is listed as reported. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kohno_2014 · V/F ·/kg</text><circle cx="230.9" cy="30.0" r="4" fill="#ef6c00"><title>Kohno_2014 · V/F ·/kg: 130.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Na_2019 · V/F ·/kg</text><circle cx="320.0" cy="46.0" r="4" fill="#ef6c00"><title>Na_2019 · V/F ·/kg: 235.2 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Na_2019 · V/F ·/kg</text><circle cx="320.0" cy="62.0" r="4" fill="#ef6c00"><title>Na_2019 · V/F ·/kg: 235.2 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -136,5 +127,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btadalafil%5D&body=Drug%3A%20tadalafil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tadalafil/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 16:42 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btadalafil%5D&body=Drug%3A%20tadalafil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tadalafil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 16:42 UTC</sub>

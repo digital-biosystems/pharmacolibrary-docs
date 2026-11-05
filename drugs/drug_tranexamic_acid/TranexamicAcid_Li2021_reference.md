@@ -194,13 +194,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharmacokinetics and pharmacodynamics of Tranexamic acid in women undergoing caesarean delivery. British journal of clinical pharmacology 87(9):3531–3541 (2021). [doi:10.1111/bcp.14767](https://doi.org/10.1111/bcp.14767)
 
-**This record:** Pharmacolibrary v26.09, model `TranexamicAcid_Li2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference>
+**This record:** Pharmacolibrary, model `TranexamicAcid_Li2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_TranexamicAcidLi2021reference,
   title  = {{Pharmacolibrary model TranexamicAcid_Li2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference},
   note   = {Parameters from doi:10.1111/bcp.14767},
 }
@@ -219,5 +218,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btranexamic_acid%5D%20TranexamicAcid_Li2021_reference&body=Drug%3A%20tranexamic_acid%0ARecord%3A%20TranexamicAcid_Li2021_reference%0APaper%3A%20Li_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 17:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btranexamic_acid%5D%20TranexamicAcid_Li2021_reference&body=Drug%3A%20tranexamic_acid%0ARecord%3A%20TranexamicAcid_Li2021_reference%0APaper%3A%20Li_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 17:02 UTC</sub>

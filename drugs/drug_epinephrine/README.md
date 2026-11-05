@@ -22,18 +22,6 @@ Epinephrine (adrenaline) is used for emergencies and conditions such as anaphyla
 |---|---|---|---|---|---|---|
 | epinephrine | parent | 183.204 | C9H13NO3 | DrugBank | [5816](https://pubchem.ncbi.nlm.nih.gov/compound/5816) | Frechen_2015 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.9 | L/h | 15.0 mL/min | healthy volunteers | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) |
-| V | V | 410.4 | L | 410.4 L | healthy volunteers | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) |
-| ka | kabs | 1.92 | 1/h | 1.92 1/h | healthy volunteers | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) |
-| t½ | t1/2z | 0.06833 | h | 4.1 min | healthy volunteers | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) |
-| F | Fab | 0.047 |  | 4.7 % | healthy volunteers | &gt;=9 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Frechen_2015_reference](drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -186,5 +174,5 @@ _13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepinephrine%5D&body=Drug%3A%20epinephrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epinephrine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-04 01:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepinephrine%5D&body=Drug%3A%20epinephrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epinephrine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 01:10 UTC</sub>

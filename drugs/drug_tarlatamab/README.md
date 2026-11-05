@@ -20,16 +20,6 @@ Tarlatamab is a bispecific monoclonal antibody used to treat small cell lung can
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.02704 | L/h | 0.649 L/day | patients with previously treated small cell lung cancer | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kong_2025_reference](drugs/drug_tarlatamab/Tarlatamab_Kong2025_reference.md) |
-| V | V | 3.44 | L | 3.44 L | patients with previously treated small cell lung cancer | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kong_2025_reference](drugs/drug_tarlatamab/Tarlatamab_Kong2025_reference.md) |
-| t½ | t1/2z | 268.8 | h | 11.2 days | patients with previously treated small cell lung cancer | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kong_2025_reference](drugs/drug_tarlatamab/Tarlatamab_Kong2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -104,5 +94,5 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btarlatamab%5D&body=Drug%3A%20tarlatamab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tarlatamab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 21:02 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btarlatamab%5D&body=Drug%3A%20tarlatamab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tarlatamab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:02 UTC</sub>

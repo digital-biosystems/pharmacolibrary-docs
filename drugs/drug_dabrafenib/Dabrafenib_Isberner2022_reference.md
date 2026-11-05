@@ -198,13 +198,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Isberner N, Gesierich A, Balakirouchenane D, Schilling B, Aghai-Trommeschlaeger F, Zimmermann S et al. Monitoring of Dabrafenib and Trametinib in Serum and Self-Sampled Capillary Blood in Patients with BRAFV600-Mutant Melanoma. Cancers 14(19) (2022). [doi:10.3390/cancers14194566](https://doi.org/10.3390/cancers14194566)
 
-**This record:** Pharmacolibrary v26.09, model `Dabrafenib_Isberner2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference>
+**This record:** Pharmacolibrary, model `Dabrafenib_Isberner2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_DabrafenibIsberner2022reference,
   title  = {{Pharmacolibrary model Dabrafenib_Isberner2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference},
   note   = {Parameters from doi:10.3390/cancers14194566},
 }
@@ -219,5 +218,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Isberner2022_reference&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Isberner2022_reference%0APaper%3A%20Isberner_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 23:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Isberner2022_reference&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Isberner2022_reference%0APaper%3A%20Isberner_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:14 UTC</sub>

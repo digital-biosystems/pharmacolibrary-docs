@@ -182,13 +182,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on the Pharmacokinetics and Drug-Drug Interactions of Approved GLP-1 Receptor Agonists and a Dual GLP-1/GIP Receptor Agonist. Drug design, development and therapy 19:3509-3537 (2025). [doi:10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957)
 
-**This record:** Pharmacolibrary v26.09, model `Furosemide_Min2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Min2025_reference>
+**This record:** Pharmacolibrary, model `Furosemide_Min2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Min2025_reference>
 
 ```bibtex
 @misc{pharmacolibrary_FurosemideMin2025reference,
   title  = {{Pharmacolibrary model Furosemide_Min2025_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_furosemide/Furosemide_Min2025_reference},
   note   = {Parameters from doi:10.2147/dddt.s506957},
 }
@@ -207,5 +206,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfurosemide%5D%20Furosemide_Min2025_reference&body=Drug%3A%20furosemide%0ARecord%3A%20Furosemide_Min2025_reference%0APaper%3A%20Min_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_furosemide/Furosemide_Min2025_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 18:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfurosemide%5D%20Furosemide_Min2025_reference&body=Drug%3A%20furosemide%0ARecord%3A%20Furosemide_Min2025_reference%0APaper%3A%20Min_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_furosemide/Furosemide_Min2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 18:11 UTC</sub>

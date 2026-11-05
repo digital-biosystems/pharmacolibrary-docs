@@ -175,13 +175,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Principe L, Lupia T, Andriani L, Campanile F, Carcione D, Corcione S et al. Microbiological, Clinical, and PK/PD Features of the New Anti-Gram-Negative Antibiotics: β-Lactam/β-Lactamase Inhibitors in Combination and Cefiderocol-An All-Inclusive Guide for Clinicians. Pharmaceuticals (Basel, Switzerland) 15(4) (2022). [doi:10.3390/ph15040463](https://doi.org/10.3390/ph15040463)
 
-**This record:** Pharmacolibrary v26.09, model `CeftarolineFosamil_Principe2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ceftaroline_fosamil/CeftarolineFosamil_Principe2022_reference>
+**This record:** Pharmacolibrary, model `CeftarolineFosamil_Principe2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_ceftaroline_fosamil/CeftarolineFosamil_Principe2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CeftarolineFosamilPrincipe2022reference,
   title  = {{Pharmacolibrary model CeftarolineFosamil_Principe2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_ceftaroline_fosamil/CeftarolineFosamil_Principe2022_reference},
   note   = {Parameters from doi:10.3390/ph15040463},
 }
@@ -200,5 +199,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bceftaroline_fosamil%5D%20CeftarolineFosamil_Principe2022_reference&body=Drug%3A%20ceftaroline_fosamil%0ARecord%3A%20CeftarolineFosamil_Principe2022_reference%0APaper%3A%20Principe_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ceftaroline_fosamil/CeftarolineFosamil_Principe2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bceftaroline_fosamil%5D%20CeftarolineFosamil_Principe2022_reference&body=Drug%3A%20ceftaroline_fosamil%0ARecord%3A%20CeftarolineFosamil_Principe2022_reference%0APaper%3A%20Principe_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ceftaroline_fosamil/CeftarolineFosamil_Principe2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:29 UTC</sub>

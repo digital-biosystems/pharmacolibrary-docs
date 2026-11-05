@@ -161,13 +161,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Ufer M. Comparative pharmacokinetics of vitamin K antagonists: warfarin, phenprocoumon and acenocoumarol. Clinical pharmacokinetics 44(12):1227–1246 (2005). [doi:10.2165/00003088-200544120-00003](https://doi.org/10.2165/00003088-200544120-00003)
 
-**This record:** Pharmacolibrary v26.09, model `Acenocoumarol_Ufer2005_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference>
+**This record:** Pharmacolibrary, model `Acenocoumarol_Ufer2005_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AcenocoumarolUfer2005reference,
   title  = {{Pharmacolibrary model Acenocoumarol_Ufer2005_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference},
   note   = {Parameters from doi:10.2165/00003088-200544120-00003},
 }
@@ -186,5 +185,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacenocoumarol%5D%20Acenocoumarol_Ufer2005_reference&body=Drug%3A%20acenocoumarol%0ARecord%3A%20Acenocoumarol_Ufer2005_reference%0APaper%3A%20Ufer_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-09-06 16:16 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacenocoumarol%5D%20Acenocoumarol_Ufer2005_reference&body=Drug%3A%20acenocoumarol%0ARecord%3A%20Acenocoumarol_Ufer2005_reference%0APaper%3A%20Ufer_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-09-06 16:16 UTC</sub>

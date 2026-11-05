@@ -99,13 +99,12 @@ Advisory:
 
 ## How to cite
 
-**This record:** Pharmacolibrary v26.09, model `Infliximab_Samuels2025_PD_albumin`. <https://pharmacolibrary.github.io/#/drugs/drug_infliximab/Infliximab_Samuels2025_PD_albumin>
+**This record:** Pharmacolibrary, model `Infliximab_Samuels2025_PD_albumin`. <https://pharmacolibrary.github.io/#/drugs/drug_infliximab/Infliximab_Samuels2025_PD_albumin>
 
 ```bibtex
 @misc{pharmacolibrary_InfliximabSamuels2025PDalbumin,
   title  = {{Pharmacolibrary model Infliximab_Samuels2025_PD_albumin}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_infliximab/Infliximab_Samuels2025_PD_albumin},
 }
 ```
@@ -119,5 +118,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binfliximab%5D%20pd_Samuels_2025_albumin&body=Drug%3A%20infliximab%0ARecord%3A%20pd_Samuels_2025_albumin%0APaper%3A%20Samuels_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_infliximab/pd_Samuels_2025_albumin%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binfliximab%5D%20pd_Samuels_2025_albumin&body=Drug%3A%20infliximab%0ARecord%3A%20pd_Samuels_2025_albumin%0APaper%3A%20Samuels_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_infliximab/pd_Samuels_2025_albumin%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
 <sub>← back to [infliximab](drugs/drug_infliximab/)</sub>

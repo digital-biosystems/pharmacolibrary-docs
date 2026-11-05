@@ -15,16 +15,9 @@ Omalizumab, a monoclonal antibody, is used to treat allergic conditions such as 
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.07 | L/h | 1.68 L/day | patients with chronic spontaneous urticaria | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) |
-| CL | CL/F | 0.01083 | L/h | 0.26 L/day | patients with chronic spontaneous urticaria | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) |
-| V | V/F | 8.92 | L | 8.92 L | patients with chronic spontaneous urticaria | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) |
-| ka | kabs | 0.03833 | 1/h | 0.92 1/day | patients with chronic spontaneous urticaria | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Oh_2023_reference](drugs/drug_omalizumab/Omalizumab_Oh2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Oh_2023 · CL</text><circle cx="485.8" cy="30.0" r="4" fill="#ef6c00"><title>Oh_2023 · CL: 0.07 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Oh_2023 · CL/F</text><circle cx="202.2" cy="46.0" r="4" fill="#ef6c00"><title>Oh_2023 · CL/F: 0.01083 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -111,5 +104,5 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomalizumab%5D&body=Drug%3A%20omalizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omalizumab/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 22:06 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bomalizumab%5D&body=Drug%3A%20omalizumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_omalizumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 22:06 UTC</sub>

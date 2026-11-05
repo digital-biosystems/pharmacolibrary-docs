@@ -24,18 +24,9 @@ Upadacitinib, a Janus kinase inhibitor, is used to treat inflammatory conditions
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL/F | 39.7 | L/h | 39.7 L/h | healthy subjects and subjects with rheumatoid arthritis | 573 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) |
-| CL | CL/F | 40.9 | L/h | 40.9 L/h | healthy subjects and subjects with rheumatoid arthritis |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) |
-| V | V1/F | 146 | L | 146 L | healthy subjects and subjects with rheumatoid arthritis | 573 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) |
-| V | V1/F | 156 | L | 156 L | healthy subjects and subjects with rheumatoid arthritis |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) |
-| ka | kabs | 0.0523 | 1/h | 0.0523 1/h | healthy subjects and subjects with rheumatoid arthritis |  | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) |
-| ka | kabs | 12.3 | 1/h | 12.3 1/h | healthy subjects and subjects with rheumatoid arthritis | 573 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · CL/F</text><circle cx="399.6" cy="30.0" r="4" fill="#ef6c00"><title>Klünder_2018 · CL/F: 39.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · CL/F</text><circle cx="404.1" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · CL/F: 40.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klünder_2018 · V1/F</text><circle cx="247.5" cy="30.0" r="4" fill="#ef6c00"><title>Klünder_2018 · V1/F: 146 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Klünder_2019 · V1/F</text><circle cx="257.6" cy="46.0" r="4" fill="#ef6c00"><title>Klünder_2019 · V1/F: 156 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -140,5 +131,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bupadacitinib%5D&body=Drug%3A%20upadacitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_upadacitinib/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 01:01 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bupadacitinib%5D&body=Drug%3A%20upadacitinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_upadacitinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:01 UTC</sub>

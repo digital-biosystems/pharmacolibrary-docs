@@ -196,13 +196,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic modeling of drug interactions at the P2Y&lt;sub&gt;12&lt;/sub&gt; receptor between selatogrel and oral P2Y&lt;sub&gt;12&lt;/sub&gt; antagonists. CPT: pharmacometrics & systems pharmacology 10(7):735-747 (2021). [doi:10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
-**This record:** Pharmacolibrary v26.09, model `Cangrelor_Henrich2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Henrich2021_reference>
+**This record:** Pharmacolibrary, model `Cangrelor_Henrich2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Henrich2021_reference>
 
 ```bibtex
 @misc{pharmacolibrary_CangrelorHenrich2021reference,
   title  = {{Pharmacolibrary model Cangrelor_Henrich2021_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_cangrelor/Cangrelor_Henrich2021_reference},
   note   = {Parameters from doi:10.1002/psp4.12641},
 }
@@ -221,5 +220,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D%20Cangrelor_Henrich2021_reference&body=Drug%3A%20cangrelor%0ARecord%3A%20Cangrelor_Henrich2021_reference%0APaper%3A%20Henrich_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/Cangrelor_Henrich2021_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-05 12:21 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcangrelor%5D%20Cangrelor_Henrich2021_reference&body=Drug%3A%20cangrelor%0ARecord%3A%20Cangrelor_Henrich2021_reference%0APaper%3A%20Henrich_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cangrelor/Cangrelor_Henrich2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-05 12:21 UTC</sub>

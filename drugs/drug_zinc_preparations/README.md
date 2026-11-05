@@ -22,14 +22,6 @@ Zinc preparations are used as a topical treatment for haemorrhoids and anal fiss
 |---|---|---|---|---|---|---|
 | zinc (zinc_preparations) | parent | 65.409 | Zn | DrugBank | [23994](https://pubchem.ncbi.nlm.nih.gov/compound/23994) | Vale_2014 |
 
-## Parameters across studies
-
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.2961 ‡ | L/h | 4.23 ml/kg/h | healthy children | &gt;=40 | human | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> | [Vale_2014_reference](drugs/drug_zinc_preparations/ZincPreparations_Vale2014_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
@@ -395,5 +387,5 @@ _35 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzinc_preparations%5D&body=Drug%3A%20zinc_preparations%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zinc_preparations/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 14:28 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzinc_preparations%5D&body=Drug%3A%20zinc_preparations%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zinc_preparations/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 14:28 UTC</sub>

@@ -158,13 +158,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Source paper** (the parameters are its): Zapadniuk VI, Korkushko OV, Bezverkhaia IS, Belyĭ AA. [Age-related characteristics of the pharmacokinetics of acetylsalicylic acid]. Farmakologiia i toksikologiia 50(2):79–82 (1987).
 
-**This record:** Pharmacolibrary v26.09, model `AcetylsalicylicAcid_Zapadniuk1987_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference>
+**This record:** Pharmacolibrary, model `AcetylsalicylicAcid_Zapadniuk1987_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference>
 
 ```bibtex
 @misc{pharmacolibrary_AcetylsalicylicAcidZapadniuk1987reference,
   title  = {{Pharmacolibrary model AcetylsalicylicAcid_Zapadniuk1987_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference},
 }
 ```
@@ -178,5 +177,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacetylsalicylic_acid%5D%20AcetylsalicylicAcid_Zapadniuk1987_reference&body=Drug%3A%20acetylsalicylic_acid%0ARecord%3A%20AcetylsalicylicAcid_Zapadniuk1987_reference%0APaper%3A%20Zapadniuk_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 12:54 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacetylsalicylic_acid%5D%20AcetylsalicylicAcid_Zapadniuk1987_reference&body=Drug%3A%20acetylsalicylic_acid%0ARecord%3A%20AcetylsalicylicAcid_Zapadniuk1987_reference%0APaper%3A%20Zapadniuk_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 12:54 UTC</sub>

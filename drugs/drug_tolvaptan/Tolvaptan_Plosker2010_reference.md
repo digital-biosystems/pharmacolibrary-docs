@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Plosker_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolvaptan — `Tolvaptan_Plosker2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record uses library defaults for absorption rate (ka) and lag time (Tlag) rather than estimates from the source paper.
+> This record was reviewed on 2026-11-03 16:21 UTC (Needs review), but the paper was screened again on 2026-11-03 18:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="needs_review" stale="false" population="patients with hyponatraemia" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="extracted" stale="true" population="patients with hyponatraemia" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
@@ -22,23 +22,21 @@ Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference/Tolvaptan_Plosker2010_reference.svg" alt="Tolvaptan_Plosker2010_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| free water clearance by »6 mL/min | CLu | 6.0 | mL/min |
-| apparent volume of distribution of tolvaptan is »3 L/kg | V/F | 3.0 | L/kg |
+| free water clearance | CL | 6.0 | mL/min |
+| The apparent volume of distribution of tolvaptan | V/F | 3.0 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.357). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +46,11 @@ Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
 
 ### Reviewer guidance
 
-**The record uses library defaults for absorption rate (ka) and lag time (Tlag) rather than estimates from the source paper.**
+**Unbound clearance 6.0 mL/min and volume 3.0 L/kg lack reported absorption parameters, forcing invalid default substitutions for tolvaptan.**
 
-The model was held back because the absorption rate constant and lag time were not reported in the source text and were substituted with library defaults. This deviation means the simulated pharmacokinetic profile relies on assumed absorption kinetics that are not supported by the tolvaptan data. The second reader’s value disagreements concern other extracted fields and do not address the missing absorption parameters. Extracted — tolvaptan: CLu 6 mL/min, V/F 3 L/kg.
+The model builder assigned library default values to absorption rate and lag time because the source text did not report them. These unspecified parameters affect the simulated plasma concentration profile but are not supported by the paper's data. Additionally, the record relies on apparent parameterization without molar correction, creating inconsistencies in how the drug's disposition is quantified. Extracted — tolvaptan: CLu 6 mL/min, V/F 3 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1460, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1460, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -60,8 +58,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| free water clearance by »6 mL/min | `Q24` · CLu | 6.0 | mL/min | 1e-07 | m3/s | L/h | review (0.7) | Plosker_2010:review |
-| apparent volume of distribution of tolvaptan is »3 L/kg | `Q76` · V/F | 3.0 | L/kg | 0.21 | m3 | L | review (0.7) | Plosker_2010:review |
+| free water clearance | `Q22` · CL | 6.0 | mL/min | 1e-07 | m3/s | L/h | review (0.7) | Plosker_2010:review |
+| The apparent volume of distribution of tolvaptan | `Q76` · V/F | 3.0 | L/kg | 0.21 | m3 | L | review (0.7) | Plosker_2010:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,27 +80,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.444 (8/18 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `values[Q17]` | 1460 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q18]` |  | 3087 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q19]` | 3087 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q24]` | 6 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q301]` | 12.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q373]` | 0.43 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q40]` | 56 | 56 | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q331]` | 12.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` | 129 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 56 |  | only_one_extracted |
 | `gpt-oss-120b` | `values[Q46]` | 98 |  | only_one_extracted |
-| `gpt-oss-120b` | `values[Q88]` |  | 1460 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q71]` |  | 129 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` |  | 3087 | only_one_extracted |
 
 </details>
 
@@ -119,11 +116,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Plosker_2010:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Plosker_2010:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Plosker_2010:review'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6 | ['Plosker_2010:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q24 | pass | clearance within physiological range | 0.36 L/h | ['Plosker_2010:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.36 L/h | ['Plosker_2010:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 210 L | ['Plosker_2010:review'] |
 
 **Reviewer per-scenario checks:**
@@ -136,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable | pass | C_central (measured=tolvaptan) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -216,4 +213,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btolvaptan%5D%20Tolvaptan_Plosker2010_reference&body=Drug%3A%20tolvaptan%0ARecord%3A%20Tolvaptan_Plosker2010_reference%0APaper%3A%20Plosker_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-09-17 08:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-03 18:47 UTC</sub>

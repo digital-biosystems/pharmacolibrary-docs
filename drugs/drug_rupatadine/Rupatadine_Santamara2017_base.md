@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokinetic modelling of rupatadine solution in 6-11 year olds and optimisation of the experimental design in younger children. PloS one 12(4):e0176091 (2017). [doi:10.1371/journal.pone.0176091](https://doi.org/10.1371/journal.pone.0176091)
 
-**This record:** Pharmacolibrary v26.09, model `Rupatadine_Santamara2017_base`. <https://pharmacolibrary.github.io/#/drugs/drug_rupatadine/Rupatadine_Santamara2017_base>
+**This record:** Pharmacolibrary, model `Rupatadine_Santamara2017_base`. <https://pharmacolibrary.github.io/#/drugs/drug_rupatadine/Rupatadine_Santamara2017_base>
 
 ```bibtex
 @misc{pharmacolibrary_RupatadineSantamara2017base,
   title  = {{Pharmacolibrary model Rupatadine_Santamara2017_base}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_rupatadine/Rupatadine_Santamara2017_base},
   note   = {Parameters from doi:10.1371/journal.pone.0176091},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brupatadine%5D%20Rupatadine_Santamara2017_base&body=Drug%3A%20rupatadine%0ARecord%3A%20Rupatadine_Santamara2017_base%0APaper%3A%20Santamar%C3%ADa_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rupatadine/Rupatadine_Santamara2017_base%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 21:35 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brupatadine%5D%20Rupatadine_Santamara2017_base&body=Drug%3A%20rupatadine%0ARecord%3A%20Rupatadine_Santamara2017_base%0APaper%3A%20Santamar%C3%ADa_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rupatadine/Rupatadine_Santamara2017_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 21:35 UTC</sub>

@@ -31,16 +31,9 @@ Tetracaine is a local anesthetic used to prevent or relieve pain, including topi
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 14.64 | L/h | 0.244 L/min | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sam_2009_reference](drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md) |
-| CL | CL/F | 326.8 ‡ | L/h | 0.0778 L/min/kg | review reference | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gapińska_2025_reference](drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md) |
-| V | V | 1.41 | L | 1.41 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Sam_2009_reference](drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md) |
-| V | V/F | 779.1 ‡ | L | 11.13 L/kg | review reference | mouse | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gapińska_2025_reference](drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sam_2009 · CL</text><circle cx="219.0" cy="30.0" r="4" fill="#2e7d32"><title>Sam_2009 · CL: 14.64 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gapińska_2025 · CL/F ·/kg</text><circle cx="455.0" cy="46.0" r="4" fill="#ef6c00"><title>Gapińska_2025 · CL/F ·/kg: 326.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sam_2009 · V</text><circle cx="207.4" cy="30.0" r="4" fill="#2e7d32"><title>Sam_2009 · V: 1.41 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Gapińska_2025 · V/F ·/kg</text><circle cx="527.4" cy="46.0" r="4" fill="#ef6c00"><title>Gapińska_2025 · V/F ·/kg: 779.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -148,5 +141,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracaine%5D&body=Drug%3A%20tetracaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracaine/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:18 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracaine%5D&body=Drug%3A%20tetracaine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracaine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:18 UTC</sub>

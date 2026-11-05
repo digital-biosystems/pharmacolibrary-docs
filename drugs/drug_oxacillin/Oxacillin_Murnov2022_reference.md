@@ -178,13 +178,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Murínová I, Švidrnoch M, Gucký T, Hlaváč J, Michálek P, Slanař O et al. Population Pharmacokinetic Analysis Proves Superiority of Continuous Infusion in PK/PD Target Attainment with Oxacillin in Staphylococcal Infections. Antibiotics (Basel, Switzerland) 11(12) (2022). [doi:10.3390/antibiotics11121736](https://doi.org/10.3390/antibiotics11121736)
 
-**This record:** Pharmacolibrary v26.09, model `Oxacillin_Murnov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_oxacillin/Oxacillin_Murnov2022_reference>
+**This record:** Pharmacolibrary, model `Oxacillin_Murnov2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_oxacillin/Oxacillin_Murnov2022_reference>
 
 ```bibtex
 @misc{pharmacolibrary_OxacillinMurnov2022reference,
   title  = {{Pharmacolibrary model Oxacillin_Murnov2022_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_oxacillin/Oxacillin_Murnov2022_reference},
   note   = {Parameters from doi:10.3390/antibiotics11121736},
 }
@@ -203,5 +202,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxacillin%5D%20Oxacillin_Murnov2022_reference&body=Drug%3A%20oxacillin%0ARecord%3A%20Oxacillin_Murnov2022_reference%0APaper%3A%20Mur%C3%ADnov%C3%A1_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxacillin/Oxacillin_Murnov2022_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:10 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxacillin%5D%20Oxacillin_Murnov2022_reference&body=Drug%3A%20oxacillin%0ARecord%3A%20Oxacillin_Murnov2022_reference%0APaper%3A%20Mur%C3%ADnov%C3%A1_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxacillin/Oxacillin_Murnov2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:10 UTC</sub>

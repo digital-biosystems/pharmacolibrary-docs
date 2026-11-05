@@ -233,13 +233,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Source paper** (the parameters are its): Pilla Reddy V, Kozielska M, Johnson M, Mafirakureva N, Vermeulen A, Liu J et al. Population pharmacokinetic-pharmacodynamic modeling of haloperidol in patients with schizophrenia using positive and negative syndrome rating scale. Journal of clinical psychopharmacology 33(6):731–739 (2013). [doi:10.1097/JCP.0b013e3182a4ee2c](https://doi.org/10.1097/JCP.0b013e3182a4ee2c)
 
-**This record:** Pharmacolibrary v26.09, model `Haloperidol_Pilla2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_reference>
+**This record:** Pharmacolibrary, model `Haloperidol_Pilla2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_reference>
 
 ```bibtex
 @misc{pharmacolibrary_HaloperidolPilla2013reference,
   title  = {{Pharmacolibrary model Haloperidol_Pilla2013_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_haloperidol/Haloperidol_Pilla2013_reference},
   note   = {Parameters from doi:10.1097/JCP.0b013e3182a4ee2c},
 }
@@ -254,5 +253,5 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhaloperidol%5D%20Haloperidol_Pilla2013_reference&body=Drug%3A%20haloperidol%0ARecord%3A%20Haloperidol_Pilla2013_reference%0APaper%3A%20Pilla_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_haloperidol/Haloperidol_Pilla2013_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-06 15:45 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhaloperidol%5D%20Haloperidol_Pilla2013_reference&body=Drug%3A%20haloperidol%0ARecord%3A%20Haloperidol_Pilla2013_reference%0APaper%3A%20Pilla_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_haloperidol/Haloperidol_Pilla2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 15:45 UTC</sub>

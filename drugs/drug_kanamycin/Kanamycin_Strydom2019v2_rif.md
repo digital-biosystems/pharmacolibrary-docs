@@ -195,13 +195,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Strydom N, Gupta SV, Fox WS, Via LE, Bang H, Lee M et al. Tuberculosis drugs' distribution and emergence of resistance in patient's lung lesions: A mechanistic model and tool for regimen and dose optimization. PLoS medicine 16(4):e1002773 (2019). [doi:10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773)
 
-**This record:** Pharmacolibrary v26.09, model `Kanamycin_Strydom2019v2_rif`. <https://pharmacolibrary.github.io/#/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_rif>
+**This record:** Pharmacolibrary, model `Kanamycin_Strydom2019v2_rif`. <https://pharmacolibrary.github.io/#/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_rif>
 
 ```bibtex
 @misc{pharmacolibrary_KanamycinStrydom2019v2rif,
   title  = {{Pharmacolibrary model Kanamycin_Strydom2019v2_rif}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_rif},
   note   = {Parameters from doi:10.1371/journal.pmed.1002773},
 }
@@ -220,5 +219,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bkanamycin%5D%20Kanamycin_Strydom2019v2_rif&body=Drug%3A%20kanamycin%0ARecord%3A%20Kanamycin_Strydom2019v2_rif%0APaper%3A%20Strydom_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_rif%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-22 13:11 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bkanamycin%5D%20Kanamycin_Strydom2019v2_rif&body=Drug%3A%20kanamycin%0ARecord%3A%20Kanamycin_Strydom2019v2_rif%0APaper%3A%20Strydom_2019_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_kanamycin/Kanamycin_Strydom2019v2_rif%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-22 13:11 UTC</sub>

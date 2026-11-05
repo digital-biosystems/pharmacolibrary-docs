@@ -263,13 +263,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Tajima T, Saiga M, Yamamoto H, Elbadawy M, Abugomaa A, Miura R et al. Oral pharmacokinetics of sulfadiazine and sulfamonomethoxine in female Holstein milking cows. The Journal of veterinary medical science 85(7):715–720 (2023). [doi:10.1292/jvms.23-0110](https://doi.org/10.1292/jvms.23-0110)
 
-**This record:** Pharmacolibrary v26.09, model `Sulfadiazine_Tajima2023v2_sdz`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz>
+**This record:** Pharmacolibrary, model `Sulfadiazine_Tajima2023v2_sdz`. <https://pharmacolibrary.github.io/#/drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz>
 
 ```bibtex
 @misc{pharmacolibrary_SulfadiazineTajima2023v2sdz,
   title  = {{Pharmacolibrary model Sulfadiazine_Tajima2023v2_sdz}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz},
   note   = {Parameters from doi:10.1292/jvms.23-0110},
 }
@@ -288,5 +287,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadiazine%5D%20Sulfadiazine_Tajima2023v2_sdz&body=Drug%3A%20sulfadiazine%0ARecord%3A%20Sulfadiazine_Tajima2023v2_sdz%0APaper%3A%20Tajima_2023_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 10:38 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadiazine%5D%20Sulfadiazine_Tajima2023v2_sdz&body=Drug%3A%20sulfadiazine%0ARecord%3A%20Sulfadiazine_Tajima2023v2_sdz%0APaper%3A%20Tajima_2023_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadiazine/Sulfadiazine_Tajima2023v2_sdz%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:38 UTC</sub>

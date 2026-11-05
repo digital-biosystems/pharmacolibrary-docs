@@ -31,16 +31,9 @@
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 6.3 | L/h | 6.3 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Asempa_2023_reference](drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md) |
-| CL | CL | 6.4 | L/h | 6.4 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md) |
-| V | V | 20 | L | 20.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md) |
-| V | V | 20.9 | L | 20.9047 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Asempa_2023_reference](drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Asempa_2023 · CL</text><circle cx="469.8" cy="30.0" r="4" fill="#2e7d32"><title>Asempa_2023 · CL: 6.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Principe_2022 · CL</text><circle cx="472.2" cy="46.0" r="4" fill="#2e7d32"><title>Principe_2022 · CL: 6.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Principe_2022 · V</text><circle cx="295.4" cy="30.0" r="4" fill="#2e7d32"><title>Principe_2022 · V: 20 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Asempa_2023 · V</text><circle cx="302.1" cy="46.0" r="4" fill="#2e7d32"><title>Asempa_2023 · V: 20.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -48,7 +41,7 @@
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Asempa_2023_reference](drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Asempa TE et al., Bronchopulmonary disposition of IV cefe…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkac447](https://doi.org/10.1093/jac/dkac447) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Principe_2022_reference](drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15040463](https://doi.org/10.3390/ph15040463) |
-| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.20).">in vitro</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fouad_2025_reference](drugs/drug_taniborbactam/Taniborbactam_Fouad2025_reference.md) | — | general linear (no model) | 3 | Fouad A et al., Ex vivo assessment and simulation to gu…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00061-25](https://doi.org/10.1128/aac.00061-25) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.20).">in vitro</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fouad_2025_reference](drugs/drug_taniborbactam/Taniborbactam_Fouad2025_reference.md) | — | 1-compartment (no model) | 1 | Fouad A et al., Ex vivo assessment and simulation to gu…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00061-25](https://doi.org/10.1128/aac.00061-25) |
 
 ## Pharmacodynamics (PD)
 
@@ -107,5 +100,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btaniborbactam%5D&body=Drug%3A%20taniborbactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_taniborbactam/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-22 10:29 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btaniborbactam%5D&body=Drug%3A%20taniborbactam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_taniborbactam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-22 10:29 UTC</sub>

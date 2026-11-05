@@ -32,24 +32,9 @@ Artesunate is an antimalarial medicine used to treat malaria, available alone or
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | species | status | record |
-|---|---|---|---|---|---|---|---|---|
-| CL | CL | 55.4 | L/h | 55.4 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ding_2024_reference](drugs/drug_artesunate/Artesunate_Ding2024_reference.md) |
-| CL | CL/F | 15.71 | L/h | 377.0 liters/day | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ayyoub_2015_reference](drugs/drug_artesunate/Artesunate_Ayyoub2015_reference.md) |
-| CL | CL/F | 16 | L/h | 16.0 L/h | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chairat_2018_reference](drugs/drug_artesunate/Artesunate_Chairat2018_reference.md) |
-| CL | CL/F | 58.3 | L/h | 58.3 L/h | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pfaffendorf_2026_reference](drugs/drug_artesunate/Artesunate_Pfaffendorf2026_reference.md) |
-| V | V | 2166 | L | 2165.9758 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ding_2024_reference](drugs/drug_artesunate/Artesunate_Ding2024_reference.md) |
-| V | V/F | 156 | L | 156.0 L | review reference | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chairat_2018_reference](drugs/drug_artesunate/Artesunate_Chairat2018_reference.md) |
-| V | V/F | 248 | L | 248.0 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pfaffendorf_2026_reference](drugs/drug_artesunate/Artesunate_Pfaffendorf2026_reference.md) |
-| V | V/F | 7179 | L | 7179.4276 L | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ayyoub_2015_reference](drugs/drug_artesunate/Artesunate_Ayyoub2015_reference.md) |
-| ka | kabs | 0.698 | 1/h | 0.698 h⁻1 | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pfaffendorf_2026_reference](drugs/drug_artesunate/Artesunate_Pfaffendorf2026_reference.md) |
-| ka | kabs | 0.7458 | 1/h | 17.9 day−1 | review reference | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ayyoub_2015_reference](drugs/drug_artesunate/Artesunate_Ayyoub2015_reference.md) |
-| t½ | t1/2z | 0.35 | h | 0.35 h | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_1998_reference](drugs/drug_artesunate/Artesunate_Li1998_reference.md) |
-| F | Fab | 1.05 |  | 105 % | rats | rat | <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_1998_reference](drugs/drug_artesunate/Artesunate_Li1998_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ding_2024 · CL</text><circle cx="450.2" cy="30.0" r="4" fill="#2e7d32"><title>Ding_2024 · CL: 55.4 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ayyoub_2015 · CL/F</text><circle cx="258.6" cy="46.0" r="4" fill="#2e7d32"><title>Ayyoub_2015 · CL/F: 15.71 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Chairat_2018 · CL/F</text><circle cx="261.4" cy="62.0" r="4" fill="#ef6c00"><title>Chairat_2018 · CL/F: 16 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Pfaffendorf_2026 · CL/F</text><circle cx="458.0" cy="78.0" r="4" fill="#2e7d32"><title>Pfaffendorf_2026 · CL/F: 58.3 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ding_2024 · V</text><circle cx="423.7" cy="30.0" r="4" fill="#2e7d32"><title>Ding_2024 · V: 2166 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Chairat_2018 · V/F</text><circle cx="223.8" cy="46.0" r="4" fill="#ef6c00"><title>Chairat_2018 · V/F: 156 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Pfaffendorf_2026 · V/F</text><circle cx="259.0" cy="62.0" r="4" fill="#2e7d32"><title>Pfaffendorf_2026 · V/F: 248 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ayyoub_2015 · V/F</text><circle cx="514.8" cy="78.0" r="4" fill="#2e7d32"><title>Ayyoub_2015 · V/F: 7179 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -152,5 +137,5 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D&body=Drug%3A%20artesunate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 06:46 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D&body=Drug%3A%20artesunate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:46 UTC</sub>

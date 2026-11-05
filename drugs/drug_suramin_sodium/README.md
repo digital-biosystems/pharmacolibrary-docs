@@ -31,18 +31,9 @@ Suramin is an antiprotozoal drug used against trypanosomiasis, and has also been
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.1302 ‡ | L/h | 1.86 mL/kg/h | dogs with naturally occurring cancers | 16 | dog | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kosarek_2006_reference](drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md) |
-| CL | CL | 0.1365 ‡ | L/h | 1.95 mL/h/kg | patients with advanced renal cell carcinoma | 26 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Motzer_1992_reference](drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md) |
-| CL | CL | 0.1365 ‡ | L/h | 1.95 mL/h/kg | children with autism spectrum disorder | 5 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Naviaux_2017_reference](drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md) |
-| V | V | 15.2 | L | 15.2 L | patients with advanced renal cell carcinoma | 26 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Motzer_1992_reference](drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md) |
-| V | V | 23.8 ‡ | L | 0.34 L/kg | dogs with naturally occurring cancers | 16 | dog | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kosarek_2006_reference](drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md) |
-| V | V | 58.1 ‡ | L | 0.83 L/kg | children with autism spectrum disorder | 5 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Naviaux_2017_reference](drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. ‡ given per kg in the paper; shown for a 70 kg adult. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kosarek_2006 · CL ·/kg</text><circle cx="230.1" cy="30.0" r="4" fill="#2e7d32"><title>Kosarek_2006 · CL ·/kg: 0.1302 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Motzer_1992 · CL ·/kg</text><circle cx="237.3" cy="46.0" r="4" fill="#ef6c00"><title>Motzer_1992 · CL ·/kg: 0.1365 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Naviaux_2017 · CL ·/kg</text><circle cx="237.3" cy="62.0" r="4" fill="#2e7d32"><title>Naviaux_2017 · CL ·/kg: 0.1365 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Motzer_1992 · V</text><circle cx="253.6" cy="30.0" r="4" fill="#ef6c00"><title>Motzer_1992 · V: 15.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kosarek_2006 · V ·/kg</text><circle cx="321.8" cy="46.0" r="4" fill="#2e7d32"><title>Kosarek_2006 · V ·/kg: 23.8 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Naviaux_2017 · V ·/kg</text><circle cx="457.5" cy="62.0" r="4" fill="#2e7d32"><title>Naviaux_2017 · V ·/kg: 58.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -211,5 +202,5 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D&body=Drug%3A%20suramin_sodium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 09:31 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D&body=Drug%3A%20suramin_sodium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:31 UTC</sub>

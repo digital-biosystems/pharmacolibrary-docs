@@ -31,19 +31,9 @@ Zopiclone is a hypnotic and sedative medicine used to treat sleep disorders such
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 21 | L/h | 21 L/hr | healthy volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) |
-| CL | CL/F | 29.6 | L/h | 29.6 L/h | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) |
-| V | V | 132 | L | 132 L | healthy volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) |
-| V | V/F | 308 | L | 308.0 L | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) |
-| ka | kabs | 1.3 | 1/h | 1.3 h-1 | review reference |  | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) |
-| ka | kabs | 1.3 | 1/h | 1.3 h-1 | healthy volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) |
-| t½ | t1/2z | 3.4 | h | 3.4 hr | healthy volunteers | 10 | human | <span class="pk-badge pk-badge--orange">Needs review</span> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Luurila_1996 · CL</text><circle cx="302.8" cy="30.0" r="4" fill="#ef6c00"><title>Luurila_1996 · CL: 21 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2025 · CL/F</text><circle cx="355.0" cy="46.0" r="4" fill="#2e7d32"><title>Han_2025 · CL/F: 29.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Luurila_1996 · V</text><circle cx="232.2" cy="30.0" r="4" fill="#ef6c00"><title>Luurila_1996 · V: 132 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2025 · V/F</text><circle cx="361.0" cy="46.0" r="4" fill="#2e7d32"><title>Han_2025 · V/F: 308 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -126,5 +116,5 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzopiclone%5D&body=Drug%3A%20zopiclone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zopiclone/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-06 23:14 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzopiclone%5D&body=Drug%3A%20zopiclone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zopiclone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:14 UTC</sub>

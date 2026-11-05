@@ -170,13 +170,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Sherwin CM, Broadbent RS, Medlicott NJ, Reith DM. Individualising netilmicin dosing in neonates. European journal of clinical pharmacology 64(12):1201–1208 (2008). [doi:10.1007/s00228-008-0536-0](https://doi.org/10.1007/s00228-008-0536-0)
 
-**This record:** Pharmacolibrary v26.09, model `Netilmicin_Sherwin2008_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference>
+**This record:** Pharmacolibrary, model `Netilmicin_Sherwin2008_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference>
 
 ```bibtex
 @misc{pharmacolibrary_NetilmicinSherwin2008reference,
   title  = {{Pharmacolibrary model Netilmicin_Sherwin2008_reference}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference},
   note   = {Parameters from doi:10.1007/s00228-008-0536-0},
 }
@@ -195,5 +194,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnetilmicin%5D%20Netilmicin_Sherwin2008_reference&body=Drug%3A%20netilmicin%0ARecord%3A%20Netilmicin_Sherwin2008_reference%0APaper%3A%20Sherwin_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 11:36 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnetilmicin%5D%20Netilmicin_Sherwin2008_reference&body=Drug%3A%20netilmicin%0ARecord%3A%20Netilmicin_Sherwin2008_reference%0APaper%3A%20Sherwin_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 11:36 UTC</sub>

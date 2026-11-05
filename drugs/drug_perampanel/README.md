@@ -31,21 +31,9 @@ Perampanel is an antiepileptic medicine used to treat epilepsy, including partia
 
 ## Parameters across studies
 
-| parameter | as named | value | unit | as reported | population | n | species | status | record |
-|---|---|---|---|---|---|---|---|---|---|
-| CL | CL | 0.419 | L/h | 0.419 L/h | adults with refractory epilepsy | 44 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Silva_2023_final](drugs/drug_perampanel/Perampanel_Silva2023_final.md) |
-| CL | CL | 0.672 | L/h | 0.672 L/h | adults with refractory epilepsy | 44 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Silva_2023_base](drugs/drug_perampanel/Perampanel_Silva2023_base.md) |
-| CL | CL/F | 0.177 | L/h | 0.177 L/h | pediatric patients with epilepsy | &gt;&gt; 151 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yu_2025_reference](drugs/drug_perampanel/Perampanel_Yu2025_reference.md) |
-| CL | CL/F | 0.471 | L/h | 7.85 mL/min | review reference |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) |
-| V | V | 29.5 | L | 29.50 L | adults with refractory epilepsy | 44 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Silva_2023_final](drugs/drug_perampanel/Perampanel_Silva2023_final.md) |
-| V | V | 33.1 | L | 33.10 L | adults with refractory epilepsy | 44 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Silva_2023_base](drugs/drug_perampanel/Perampanel_Silva2023_base.md) |
-| V | V | 227 | L | 227 L | pediatric patients with epilepsy | &gt;&gt; 151 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yu_2025_reference](drugs/drug_perampanel/Perampanel_Yu2025_reference.md) |
-| V | V/F | 71.4 | L | 71.4 L | review reference |  | human | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) |
-| ka | kabs | 3.37 | 1/h | 3.37 1/h | pediatric patients with epilepsy | &gt;&gt; 151 | human | <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yu_2025_reference](drugs/drug_perampanel/Perampanel_Yu2025_reference.md) |
-
-<sub>Values are converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Silva_2023 · CL</text><circle cx="407.8" cy="30.0" r="4" fill="#2e7d32"><title>Silva_2023 · CL: 0.419 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Silva_2023 · CL</text><circle cx="479.6" cy="46.0" r="4" fill="#2e7d32"><title>Silva_2023 · CL: 0.672 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yu_2025 · CL/F</text><circle cx="276.8" cy="62.0" r="4" fill="#2e7d32"><title>Yu_2025 · CL/F: 0.177 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jing_2023 · CL/F</text><circle cx="425.6" cy="78.0" r="4" fill="#78909c"><title>Jing_2023 · CL/F: 0.471 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Silva_2023 · V</text><circle cx="272.2" cy="30.0" r="4" fill="#2e7d32"><title>Silva_2023 · V: 29.5 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Silva_2023 · V</text><circle cx="281.0" cy="46.0" r="4" fill="#2e7d32"><title>Silva_2023 · V: 33.1 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Yu_2025 · V</text><circle cx="427.3" cy="62.0" r="4" fill="#2e7d32"><title>Yu_2025 · V: 227 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jing_2023 · V/F</text><circle cx="339.4" cy="78.0" r="4" fill="#78909c"><title>Jing_2023 · V/F: 71.4 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
@@ -127,5 +115,5 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 </details>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperampanel%5D&body=Drug%3A%20perampanel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perampanel/%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · newest extraction 2026-10-07 07:17 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperampanel%5D&body=Drug%3A%20perampanel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perampanel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:17 UTC</sub>

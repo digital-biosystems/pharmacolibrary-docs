@@ -235,5 +235,5 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfruquintinib%5D%20Fruquintinib_Zhou2025_nct01645215&body=Drug%3A%20fruquintinib%0ARecord%3A%20Fruquintinib_Zhou2025_nct01645215%0APaper%3A%20Zhou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01645215%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 00:47 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfruquintinib%5D%20Fruquintinib_Zhou2025_nct01645215&body=Drug%3A%20fruquintinib%0ARecord%3A%20Fruquintinib_Zhou2025_nct01645215%0APaper%3A%20Zhou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01645215%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 00:47 UTC</sub>

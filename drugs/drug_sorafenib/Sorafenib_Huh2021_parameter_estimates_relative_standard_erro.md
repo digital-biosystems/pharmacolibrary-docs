@@ -226,13 +226,12 @@ The parameters this record sets on the template, in the template's SI units, and
 
 **Source paper** (the parameters are its): Huh KY, Hwang S, Park SY, Lim HJ, Jin M, Oh J et al. Population Pharmacokinetic Modelling and Simulation to Determine the Optimal Dose of Nanoparticulated Sorafenib to the Reference Sorafenib. Pharmaceutics 13(5) (2021). [doi:10.3390/pharmaceutics13050629](https://doi.org/10.3390/pharmaceutics13050629)
 
-**This record:** Pharmacolibrary v26.09, model `Sorafenib_Huh2021_parameter_estimates_relative_standard_erro`. <https://pharmacolibrary.github.io/#/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro>
+**This record:** Pharmacolibrary, model `Sorafenib_Huh2021_parameter_estimates_relative_standard_erro`. <https://pharmacolibrary.github.io/#/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro>
 
 ```bibtex
 @misc{pharmacolibrary_SorafenibHuh2021parameterestimatesrelativestandarderro,
   title  = {{Pharmacolibrary model Sorafenib_Huh2021_parameter_estimates_relative_standard_erro}},
   author = {{Pharmacolibrary}},
-  version = {v26.09},
   url    = {https://pharmacolibrary.github.io/#/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro},
   note   = {Parameters from doi:10.3390/pharmaceutics13050629},
 }
@@ -251,5 +250,5 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsorafenib%5D%20Sorafenib_Huh2021_parameter_estimates_relative_standard_erro&body=Drug%3A%20sorafenib%0ARecord%3A%20Sorafenib_Huh2021_parameter_estimates_relative_standard_erro%0APaper%3A%20Huh_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro%0ABuild%3A%20v26.09%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary v26.09 · extracted 2026-10-07 07:09 UTC</sub>
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsorafenib%5D%20Sorafenib_Huh2021_parameter_estimates_relative_standard_erro&body=Drug%3A%20sorafenib%0ARecord%3A%20Sorafenib_Huh2021_parameter_estimates_relative_standard_erro%0APaper%3A%20Huh_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 07:09 UTC</sub>
