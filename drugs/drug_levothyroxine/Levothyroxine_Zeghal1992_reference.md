@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Zeghal_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Levothyroxine clearance recorded as 0.187 ml/h and volume as 3.59 ml are physiologically implausible.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Zeghal1992_reference" status="rejected" stale="false" population="" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,9 +48,13 @@ Zeghal N, Gondran F, Redjem M, Giudicelli MD, Aissouni Y, Vigouroux E. Iodide an
 
 ### Reviewer guidance
 
+**Levothyroxine clearance recorded as 0.187 ml/h and volume as 3.59 ml are physiologically implausible.**
+
+The extracted clearance and volume values are orders of magnitude smaller than typical human pharmacokinetic parameters, indicating a likely unit or scale extraction error. The record lacks a value for the primary pharmacokinetic parameter, with the second reader reporting 73.5 where the record shows null. The volume of distribution also conflicts, with the record stating 3.59 ml while the second reader identified 1.81. Extracted — levothyroxine: CL 0.187 ml/h, V 3.59 ml.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.406, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

@@ -7,14 +7,14 @@
  "parameters": {
   "E0": 3.06,
   "EC50": 6.27314814815e-10,
-  "Emax": 1.2456e-08,
+  "Emax": 3.46,
   "exposure_per_s": 1.15740740741e-11,
   "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 3.06,
-  "6.273148148148149e-10": 3.060000006228
+  "6.273148148148149e-10": 4.79
  },
  "stop_time": 550.0,
  "subtitle": "mean 24-h intragastric pH (pH) against dose",
@@ -35,10 +35,10 @@
    "si_unit": "kg/s"
   },
   "Emax": {
-   "display_only": false,
-   "display_unit": "pH",
-   "factor": 3.6e-09,
-   "si_unit": "s"
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "exposure": {
    "display_only": false,
@@ -56,8 +56,8 @@
   "variable": "exposure"
  },
  "y_axis": {
-  "display_unit": "pH",
-  "factor": 3.6e-09,
+  "display_unit": "",
+  "factor": 1.0,
   "label": "mean 24-h intragastric pH (pH)"
  }
 }

@@ -1,22 +1,12 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Disputed by a second reader"}]'></div>
 
 
-## Disputed by a second reader (3720) · rows 3601–3720 of 3720
+## Disputed by a second reader (3708) · rows 3601–3708 of 3708
 
 An independent second reading of the paper disagrees on a structural parameter.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
-| [vidarabine](/drugs/drug_vidarabine/) | [Yang_1992 · reference](/drugs/drug_vidarabine/Vidarabine_Yang1992_reference.md) | rejected | disputed |
-| [vigabatrin](/drugs/drug_vigabatrin/) | [Nøhr_2015 · reference](/drugs/drug_vigabatrin/Vigabatrin_Nhr2015_reference.md) | rejected | disputed |
-| [Vilanterol](/drugs/drug_vilanterol/) | [Mehta_2018 · reference](/drugs/drug_vilanterol/Vilanterol_Mehta2018_reference.md) | needs_review | disputed |
-| [Vilanterol](/drugs/drug_vilanterol/) | [Mehta_2020 · reference](/drugs/drug_vilanterol/Vilanterol_Mehta2020_reference.md) | needs_review | disputed |
-| [Vilanterol](/drugs/drug_vilanterol/) | [Goyal_2014 · reference](/drugs/drug_vilanterol/Vilanterol_Goyal2014_reference.md) | rejected | disputed |
-| [Vilanterol](/drugs/drug_vilanterol/) | [Siederer_2016 · reference](/drugs/drug_vilanterol/Vilanterol_Siederer2016_reference.md) | rejected | disputed |
-| [vildagliptin](/drugs/drug_vildagliptin/) | [Dias_2026 · reference](/drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference.md) | needs_review | disputed |
-| [vildagliptin](/drugs/drug_vildagliptin/) | [Landersdorfer_2012 · reference](/drugs/drug_vildagliptin/Vildagliptin_Landersdorfer2012_reference.md) | rejected | disputed |
-| [vinblastine](/drugs/drug_vinblastine/) | [Levêque_1996 · reference](/drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md) | extracted | disputed |
-| [vinblastine](/drugs/drug_vinblastine/) | [Lu_1983 · reference](/drugs/drug_vinblastine/Vinblastine_Lu1983_reference.md) | extracted | disputed |
 | [vinblastine](/drugs/drug_vinblastine/) | [Nelson_1982 · vinblastine](/drugs/drug_vinblastine/Vinblastine_Nelson1982_vinblastine.md) | extracted | disputed |
 | [vinblastine](/drugs/drug_vinblastine/) | [Toso_1995 · reference](/drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md) | extracted | disputed |
 | [vinblastine](/drugs/drug_vinblastine/) | [Zhou_1990 · reference](/drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md) | extracted | disputed |
@@ -72,14 +62,14 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [vortioxetine](/drugs/drug_vortioxetine/) | [Naik_2016_2 · reference](/drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md) | needs_review | disputed |
 | [vortioxetine](/drugs/drug_vortioxetine/) | [Miao_2019_2 · pooled_healthy_subjects_22_a](/drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md) | rejected | disputed |
 | [vortioxetine](/drugs/drug_vortioxetine/) | [Miao_2019_2 · pooled_mdd_gad_patients_23_b](/drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md) | rejected | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Davies_2010 · reference](/drugs/drug_warfarin/Warfarin_Davies2010_reference.md) | extracted | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Kwack_2026 · reference](/drugs/drug_warfarin/Warfarin_Kwack2026_reference.md) | extracted | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · r_warfarin_9334_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate.md) | extracted | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · r_warfarin_9425_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9425_estimate.md) | extracted | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · s_warfarin_8899_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8899_estimate.md) | extracted | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · s_warfarin_8975_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate.md) | extracted | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Chan_1994 · reference](/drugs/drug_warfarin/Warfarin_Chan1994_reference.md) | needs_review | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Davies_2010 · reference](/drugs/drug_warfarin/Warfarin_Davies2010_reference.md) | needs_review | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Kubo_2017 · reference](/drugs/drug_warfarin/Warfarin_Kubo2017_reference.md) | needs_review | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Kwack_2026 · reference](/drugs/drug_warfarin/Warfarin_Kwack2026_reference.md) | needs_review | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · r_warfarin_9334_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9334_estimate.md) | model_quarantined | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · r_warfarin_9425_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_9425_estimate.md) | model_quarantined | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · s_warfarin_8899_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8899_estimate.md) | model_quarantined | disputed |
+| [warfarin](/drugs/drug_warfarin/) | [Lane_2012 · s_warfarin_8975_estimate](/drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_8975_estimate.md) | model_quarantined | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Neff-Davis_1981 · reference](/drugs/drug_warfarin/Warfarin_NeffDavis1981_reference.md) | needs_review | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Ohara_2019 · african_american_patients](/drugs/drug_warfarin/Warfarin_Ohara2019_african_american_patients.md) | needs_review | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Ohara_2019 · all](/drugs/drug_warfarin/Warfarin_Ohara2019_all.md) | needs_review | disputed |
@@ -87,8 +77,6 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [warfarin](/drugs/drug_warfarin/) | [Ohara_2019 · p_values_compared_with_white_patients](/drugs/drug_warfarin/Warfarin_Ohara2019_p_values_compared_with_white_patients.md) | needs_review | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Ohara_2019 · white_patients](/drugs/drug_warfarin/Warfarin_Ohara2019_white_patients.md) | needs_review | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Yuen_2010 · parameter_estimates_estimate](/drugs/drug_warfarin/Warfarin_Yuen2010_parameter_estimates_estimate.md) | needs_review | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Ohara_2019 · reference](/drugs/drug_warfarin/Warfarin_Ohara2019_reference.md) |  | disputed |
-| [warfarin](/drugs/drug_warfarin/) | [Yuen_2010 · reference](/drugs/drug_warfarin/Warfarin_Yuen2010_reference.md) |  | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Aoyama_2022 · reference](/drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md) | rejected | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Geng_2024 · reference](/drugs/drug_warfarin/Warfarin_Geng2024_reference.md) | rejected | disputed |
 | [warfarin](/drugs/drug_warfarin/) | [Gibbons_2015 · reference](/drugs/drug_warfarin/Warfarin_Gibbons2015_reference.md) | rejected | disputed |

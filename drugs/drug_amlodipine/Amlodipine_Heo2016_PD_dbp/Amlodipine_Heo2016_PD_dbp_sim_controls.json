@@ -22,7 +22,7 @@
  {
   "key": "EC50",
   "label": "Potency EC50",
-  "unit": "ng ml-1",
+  "unit": "ng ml -1",
   "scale": 1000000.0,
   "min": 0.1,
   "max": 10,
@@ -41,7 +41,7 @@
  {
   "key": "stop_time",
   "label": "Amlodipine concentration range",
-  "unit": "ng ml-1",
+  "unit": "ng ml -1",
   "scale": 1.0,
   "min": 3.0,
   "max": 150.0,

@@ -1,22 +1,22 @@
 <div class="pklg">
 
-### Extraction ledger <sub>KB artifacts as of 2026-11-04 19:28 · one page per panel and run group</sub>
+### Extraction ledger <sub>KB artifacts as of 2026-11-05 20:40 · one page per panel and run group</sub>
 
-<div class="tiles"><div class="tile"><i>Drugs processed: ATC / non-ATC / toxins</i><b>4,683 / 24 / 25</b><em>1,758 / 17 / 5 with ≥1 popPK/PD/PGx record</em></div><div class="tile"><i>Literature (papers)</i><b>146,276</b><em>25,317 PK/PD/PGx-relevant papers (17%)</em></div><div class="tile"><i>Full text (papers)</i><b>41,271</b><em>105,005 abstract-only papers</em></div><div class="tile"><i>Full-text sources (papers)</i><b>12,507 · 28,597</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>769.9M input</b><em>69.05M output · cross-checks included</em></div><div class="tile"><i>Domain coverage (drugs)</i><b>1191 · 1564 · 153</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Accepted records by species (top 4)</i><b>4,101 · 1,714 · 660 · 310</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Projected full-text yield</i><b>12,277 · ~9,336 · 40%</b><em>Requested PDFs · expected additional records · observed record-yield rate</em></div></div>
-<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>4,257</b><span>extracted records</span></div><div class="cnum"><b class="ok">1,827</b><span>simulatable records · 42.9%</span></div><table><tr><td>topology</td><td>1C 3172 · 2C 758 · parent_metabolite 212</td></tr><tr><td>parameterisation</td><td>mechanistic 3070 · apparent 1181</td></tr><tr><td>covariate equations</td><td>579 (13.6%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>4,949</b><span>extracted records</span></div><div class="cnum"><b class="ok">809</b><span>simulatable records · 16.3%</span></div><table><tr><td>family</td><td>sigmoid_emax 1639 · emax 1149 · unknown 1008</td></tr><tr><td>driver</td><td>cited_pk 2207 · conc_no_pk 1176</td></tr><tr><td>supported structures</td><td>Emax 518 · turnover 291 · effect-cmt 241</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>170</b><span>extracted records</span></div><div class="cnum"><b class="ok">35</b><span>simulatable records · 20.6%</span></div><table><tr><td>mechanism</td><td>safety_allele 135 · metabolism 16</td></tr><tr><td>genes covered</td><td>25</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>accepted records by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">2,103</td><td class="n">1,675</td><td class="n">323</td></tr><tr><td>in vitro</td><td class="n">10</td><td class="n">1,702</td><td class="n">2</td></tr><tr><td>rat</td><td class="n">88</td><td class="n">572</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">28</td><td class="n">282</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">30</td><td class="n">150</td><td class="n">1</td></tr><tr><td>other animal</td><td class="n">3</td><td class="n">123</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">11</td><td class="n">93</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">38</td><td class="n">51</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">107</td><td class="n">287</td><td class="n">3</td></tr></table><p class="cnote"><small>Records that passed their checks (popPK: closed-form checks; PGx: including guideline-derived estimates), so they differ from the extracted-record counts beside it.</small></p></div></div>
+<div class="tiles"><div class="tile"><i>Drugs processed: ATC / non-ATC / toxins</i><b>4,699 / 24 / 25</b><em>1,780 / 17 / 5 with ≥1 popPK/PD/PGx record</em></div><div class="tile"><i>Literature (papers)</i><b>145,459</b><em>25,195 PK/PD/PGx-relevant papers (17%)</em></div><div class="tile"><i>Full text (papers)</i><b>41,158</b><em>104,301 abstract-only papers</em></div><div class="tile"><i>Full-text sources (papers)</i><b>12,561 · 28,426</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>759.4M input</b><em>69.54M output · cross-checks included</em></div><div class="tile"><i>Domain coverage (drugs)</i><b>1195 · 1574 · 152</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Accepted records by species (top 4)</i><b>4,133 · 1,706 · 657 · 313</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Projected full-text yield</i><b>12,306 · ~9,440 · 40%</b><em>Requested PDFs · expected additional records · observed record-yield rate</em></div></div>
+<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>4,307</b><span>extracted records</span></div><div class="cnum"><b class="ok">1,841</b><span>simulatable records · 42.7%</span></div><table><tr><td>topology</td><td>1C 3214 · 2C 766 · parent_metabolite 212</td></tr><tr><td>parameterisation</td><td>mechanistic 3106 · apparent 1195</td></tr><tr><td>covariate equations</td><td>584 (13.6%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>4,947</b><span>extracted records</span></div><div class="cnum"><b class="ok">810</b><span>simulatable records · 16.4%</span></div><table><tr><td>family</td><td>sigmoid_emax 1634 · emax 1141 · unknown 1009</td></tr><tr><td>driver</td><td>cited_pk 2198 · conc_no_pk 1187</td></tr><tr><td>supported structures</td><td>Emax 522 · turnover 288 · effect-cmt 241</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>170</b><span>extracted records</span></div><div class="cnum"><b class="ok">35</b><span>simulatable records · 20.6%</span></div><table><tr><td>mechanism</td><td>safety_allele 135 · metabolism 16</td></tr><tr><td>genes covered</td><td>25</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>accepted records by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">2,123</td><td class="n">1,687</td><td class="n">323</td></tr><tr><td>in vitro</td><td class="n">11</td><td class="n">1,693</td><td class="n">2</td></tr><tr><td>rat</td><td class="n">89</td><td class="n">568</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">28</td><td class="n">285</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">30</td><td class="n">152</td><td class="n">1</td></tr><tr><td>other animal</td><td class="n">3</td><td class="n">120</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">11</td><td class="n">89</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">38</td><td class="n">51</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">109</td><td class="n">288</td><td class="n">3</td></tr></table><p class="cnote"><small>Records that passed their checks (popPK: closed-form checks; PGx: including guideline-derived estimates), so they differ from the extracted-record counts beside it.</small></p></div></div>
 
 #### curated panels <sub>6 panels · a page each; e/r/o = extracted / rejected / other outcomes</sub>
 
 | panel | scope | drugs | popPK e/r/o | PD e/r/o | PGx e/r/o |
 |---|---|---|---|---|---|
-| [**dbs**](/ledger/p-dbs) | Selected drug panel | 20 | <span class="n"><b class="ok">333</b><span class="sl">/</span><b class="bad">204</b><span class="sl">/</span><span class="mut">4</span></span> | <span class="n"><b class="ok">144</b><span class="sl">/</span><b class="bad">6</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">107</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">443</span></span> |
-| [**ddd**](/ledger/p-ddd) | Curated reference panel; overlaps other panels | 7 | <span class="n"><b class="ok">151</b><span class="sl">/</span><b class="bad">66</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">38</b><span class="sl">/</span><b class="bad">2</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">61</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">252</span></span> |
+| [**dbs**](/ledger/p-dbs) | Selected drug panel | 20 | <span class="n"><b class="ok">329</b><span class="sl">/</span><b class="bad">205</b><span class="sl">/</span><span class="mut">4</span></span> | <span class="n"><b class="ok">144</b><span class="sl">/</span><b class="bad">6</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">107</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">443</span></span> |
+| [**ddd**](/ledger/p-ddd) | Curated reference panel; overlaps other panels | 7 | <span class="n"><b class="ok">146</b><span class="sl">/</span><b class="bad">68</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">37</b><span class="sl">/</span><b class="bad">3</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">61</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">252</span></span> |
 | [**dn1**](/ledger/p-dn1) | Non-ATC modelling panel | 15 | <span class="n"><b class="ok">23</b><span class="sl">/</span><b class="bad">31</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">16</b><span class="sl">/</span><b class="bad">4</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">0</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">6</span></span> |
-| [**do1**](/ledger/p-do1) | Oncology panel of the ADR records | 7 | <span class="n"><b class="ok">113</b><span class="sl">/</span><b class="bad">98</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">67</b><span class="sl">/</span><b class="bad">4</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">50</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">172</span></span> |
-| [**dph**](/ledger/p-dph) | Diverse PGx/ATC panel | 18 | <span class="n"><b class="ok">338</b><span class="sl">/</span><b class="bad">168</b><span class="sl">/</span><span class="mut">10</span></span> | <span class="n"><b class="ok">124</b><span class="sl">/</span><b class="bad">6</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">208</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">636</span></span> |
-| [**dse**](/ledger/p-dse) | Incretin/GLP-1 panel | 19 | <span class="n"><b class="ok">115</b><span class="sl">/</span><b class="bad">55</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">55</b><span class="sl">/</span><b class="bad">7</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">42</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">178</span></span> |
+| [**do1**](/ledger/p-do1) | Oncology panel of the ADR records | 7 | <span class="n"><b class="ok">112</b><span class="sl">/</span><b class="bad">99</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">68</b><span class="sl">/</span><b class="bad">4</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">50</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">172</span></span> |
+| [**dph**](/ledger/p-dph) | Diverse PGx/ATC panel | 18 | <span class="n"><b class="ok">324</b><span class="sl">/</span><b class="bad">171</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">128</b><span class="sl">/</span><b class="bad">4</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">208</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">636</span></span> |
+| [**dse**](/ledger/p-dse) | Incretin/GLP-1 panel | 19 | <span class="n"><b class="ok">115</b><span class="sl">/</span><b class="bad">55</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">54</b><span class="sl">/</span><b class="bad">8</b><span class="sl">/</span><span class="mut">0</span></span> | <span class="n"><b class="ok">42</b><span class="sl">/</span><b class="bad">0</b><span class="sl">/</span><span class="mut">178</span></span> |
 
-#### run groups <sub>409 started · 407 finished · one page each</sub>
+#### run groups <sub>408 started · 407 finished · one page each</sub>
 
 | run group | run | ATC | drugs | time | popPK · PD · PGx extracted |
 |---|---|---|---|---|---|
@@ -27,7 +27,7 @@
 | [dg-A02A-2](/ledger/dg-A02A-2) | <span class="badge b-finished">finished</span> | A02A | 10 drugs | 0.40 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-A02B-1](/ledger/dg-A02B-1) | <span class="badge b-finished">finished</span> | A02B | 14 drugs | 0.60 h | 39 popPK · 8 PD · 0 PGx |
 | [dg-A02B-2](/ledger/dg-A02B-2) | <span class="badge b-finished">finished</span> | A02B | 14 drugs | 1.11 h | 8 popPK · 8 PD · 0 PGx |
-| [dg-A02B-3](/ledger/dg-A02B-3) | <span class="badge b-finished">finished</span> | A02B | 14 drugs | 1.76 h | 28 popPK · 12 PD · 3 PGx |
+| [dg-A02B-3](/ledger/dg-A02B-3) | <span class="badge b-finished">finished</span> | A02B | 14 drugs | 1.76 h | 27 popPK · 12 PD · 3 PGx |
 | [dg-A02B-4](/ledger/dg-A02B-4) | <span class="badge b-finished">finished</span> | A02B | 14 drugs | 1.40 h | 14 popPK · 11 PD · 0 PGx |
 | [dg-A02B-5](/ledger/dg-A02B-5) | <span class="badge b-finished">finished</span> | A02B | 12 drugs | 0.65 h | 3 popPK · 2 PD · 0 PGx |
 | [dg-A03A-1](/ledger/dg-A03A-1) | <span class="badge b-finished">finished</span> | A03A | 15 drugs | 0.31 h | 0 popPK · 0 PD · 0 PGx |
@@ -62,7 +62,7 @@
 | [dg-A10B-3](/ledger/dg-A10B-3) | <span class="badge b-finished">finished</span> | A10B | 16 drugs | 0.97 h | 42 popPK · 16 PD · 7 PGx |
 | [dg-A10B-4](/ledger/dg-A10B-4) | <span class="badge b-finished">finished</span> | A10B | 16 drugs | 0.83 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-A10B-5](/ledger/dg-A10B-5) | <span class="badge b-finished">finished</span> | A10B | 16 drugs | 1.42 h | 16 popPK · 13 PD · 1 PGx |
-| [dg-A10B-6](/ledger/dg-A10B-6) | <span class="badge b-finished">finished</span> | A10B | 14 drugs | 2.83 h | 33 popPK · 21 PD · 6 PGx |
+| [dg-A10B-6](/ledger/dg-A10B-6) | <span class="badge b-finished">finished</span> | A10B | 14 drugs | 2.83 h | 33 popPK · 20 PD · 6 PGx |
 | [dg-A10X+1](/ledger/dg-A10X_1) | <span class="badge b-finished">finished</span> | A10X, A11A | 9 drugs | 0.77 h | 9 popPK · 3 PD · 2 PGx |
 | [dg-A11C](/ledger/dg-A11C) | <span class="badge b-finished">finished</span> | A11C | 10 drugs | 1.47 h | 6 popPK · 1 PD · 0 PGx |
 | [dg-A11D+1](/ledger/dg-A11D_1) | <span class="badge b-finished">finished</span> | A11D, A11G | 7 drugs | 0.43 h | 1 popPK · 1 PD · 0 PGx |
@@ -78,10 +78,10 @@
 | [dg-A16A-4](/ledger/dg-A16A-4) | <span class="badge b-finished">finished</span> | A16A | 13 drugs | 0.64 h | 3 popPK · 0 PD · 0 PGx |
 | [dg-A16A-5](/ledger/dg-A16A-5) | <span class="badge b-finished">finished</span> | A16A | 13 drugs | 0.40 h | 3 popPK · 2 PD · 0 PGx |
 | [dg-B01A-1](/ledger/dg-B01A-1) | <span class="badge b-finished">finished</span> | B01A | 16 drugs | 2.16 h | 9 popPK · 11 PD · 13 PGx |
-| [dg-B01A-2](/ledger/dg-B01A-2) | <span class="badge b-finished">finished</span> | B01A | 16 drugs | 1.11 h | 28 popPK · 14 PD · 18 PGx |
+| [dg-B01A-2](/ledger/dg-B01A-2) | <span class="badge b-finished">finished</span> | B01A | 16 drugs | 1.11 h | 27 popPK · 14 PD · 18 PGx |
 | [dg-B01A-3](/ledger/dg-B01A-3) | <span class="badge b-finished">finished</span> | B01A | 16 drugs | 2.12 h | 14 popPK · 16 PD · 0 PGx |
 | [dg-B01A-4](/ledger/dg-B01A-4) | <span class="badge b-finished">finished</span> | B01A | 16 drugs | 0.53 h | 29 popPK · 3 PD · 1 PGx |
-| [dg-B01A-5](/ledger/dg-B01A-5) | <span class="badge b-finished">finished</span> | B01A | 14 drugs | 1.16 h | 29 popPK · 25 PD · 47 PGx |
+| [dg-B01A-5](/ledger/dg-B01A-5) | <span class="badge b-finished">finished</span> | B01A | 14 drugs | 1.16 h | 27 popPK · 26 PD · 47 PGx |
 | [dg-B02A](/ledger/dg-B02A) | <span class="badge b-finished">finished</span> | B02A | 7 drugs | 0.88 h | 9 popPK · 5 PD · 0 PGx |
 | [dg-B02B-1](/ledger/dg-B02B-1) | <span class="badge b-finished">finished</span> | B02B | 13 drugs | 0.75 h | 29 popPK · 1 PD · 1 PGx |
 | [dg-B02B-2](/ledger/dg-B02B-2) | <span class="badge b-finished">finished</span> | B02B | 13 drugs | 1.84 h | 14 popPK · 13 PD · 0 PGx |
@@ -105,7 +105,7 @@
 | [dg-C01D-1](/ledger/dg-C01D-1) | <span class="badge b-finished">finished</span> | C01D | 15 drugs | 0.30 h | 2 popPK · 3 PD · 0 PGx |
 | [dg-C01D-2](/ledger/dg-C01D-2) | <span class="badge b-finished">finished</span> | C01D | 15 drugs | 0.88 h | 9 popPK · 4 PD · 0 PGx |
 | [dg-C01D-3](/ledger/dg-C01D-3) | <span class="badge b-finished">finished</span> | C01D | 13 drugs | 0.27 h | 2 popPK · 0 PD · 0 PGx |
-| [dg-C01E-1](/ledger/dg-C01E-1) | <span class="badge b-finished">finished</span> | C01E | 10 drugs | 0.64 h | 23 popPK · 11 PD · 12 PGx |
+| [dg-C01E-1](/ledger/dg-C01E-1) | <span class="badge b-finished">finished</span> | C01E | 10 drugs | 0.64 h | 22 popPK · 11 PD · 12 PGx |
 | [dg-C01E-2](/ledger/dg-C01E-2) | <span class="badge b-finished">finished</span> | C01E | 10 drugs | 0.20 h | 4 popPK · 3 PD · 0 PGx |
 | [dg-C02A-1](/ledger/dg-C02A-1) | <span class="badge b-finished">finished</span> | C02A | 9 drugs | 0.43 h | 6 popPK · 5 PD · 0 PGx |
 | [dg-C02A-2](/ledger/dg-C02A-2) | <span class="badge b-finished">finished</span> | C02A | 9 drugs | 0.47 h | 1 popPK · 3 PD · 0 PGx |
@@ -120,7 +120,7 @@
 | [dg-C03B-2](/ledger/dg-C03B-2) | <span class="badge b-finished">finished</span> | C03B | 10 drugs | 0.20 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-C03C](/ledger/dg-C03C) | <span class="badge b-finished">finished</span> | C03C | 10 drugs | 2.07 h | 17 popPK · 7 PD · 0 PGx |
 | [dg-C03D](/ledger/dg-C03D) | <span class="badge b-finished">finished</span> | C03D | 8 drugs | 1.58 h | 32 popPK · 7 PD · 0 PGx |
-| [dg-C03E+1](/ledger/dg-C03E_1) | <span class="badge b-finished">finished</span> | C03E, C03X | 16 drugs | 0.65 h | 6 popPK · 0 PD · 1 PGx |
+| [dg-C03E+1](/ledger/dg-C03E_1) | <span class="badge b-finished">finished</span> | C03E, C03X | 16 drugs | 0.65 h | 5 popPK · 0 PD · 1 PGx |
 | [dg-C04A-1](/ledger/dg-C04A-1) | <span class="badge b-finished">finished</span> | C04A | 13 drugs | 0.28 h | 2 popPK · 1 PD · 0 PGx |
 | [dg-C04A-2](/ledger/dg-C04A-2) | <span class="badge b-finished">finished</span> | C04A | 13 drugs | 0.70 h | 3 popPK · 8 PD · 0 PGx |
 | [dg-C04A-3](/ledger/dg-C04A-3) | <span class="badge b-finished">finished</span> | C04A | 11 drugs | 0.41 h | 1 popPK · 3 PD · 0 PGx |
@@ -171,7 +171,7 @@
 | [dg-D09A](/ledger/dg-D09A) | <span class="badge b-finished">finished</span> | D09A | 7 drugs | 0.07 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-D10A-1](/ledger/dg-D10A-1) | <span class="badge b-finished">finished</span> | D10A | 14 drugs | 1.08 h | 13 popPK · 10 PD · 0 PGx |
 | [dg-D10A-2](/ledger/dg-D10A-2) | <span class="badge b-finished">finished</span> | D10A, D10B | 14 drugs | 0.18 h | 1 popPK · 1 PD · 0 PGx |
-| [dg-D11A-1](/ledger/dg-D11A-1) | <span class="badge b-finished">finished</span> | D11A | 13 drugs | 0.69 h | 17 popPK · 17 PD · 4 PGx |
+| [dg-D11A-1](/ledger/dg-D11A-1) | <span class="badge b-finished">finished</span> | D11A | 13 drugs | 0.69 h | 16 popPK · 17 PD · 4 PGx |
 | [dg-D11A-2](/ledger/dg-D11A-2) | <span class="badge b-finished">finished</span> | D11A | 13 drugs | 0.92 h | 7 popPK · 14 PD · 0 PGx |
 | [dg-D11A-3](/ledger/dg-D11A-3) | <span class="badge b-finished">finished</span> | D11A | 11 drugs | 0.19 h | 10 popPK · 7 PD · 0 PGx |
 | [dg-G01A-1](/ledger/dg-G01A-1) | <span class="badge b-finished">finished</span> | G01A | 12 drugs | 0.26 h | 0 popPK · 4 PD · 0 PGx |
@@ -196,7 +196,7 @@
 | [dg-H01B](/ledger/dg-H01B) | <span class="badge b-finished">finished</span> | H01B | 7 drugs | 0.18 h | 1 popPK · 5 PD · 0 PGx |
 | [dg-H01C](/ledger/dg-H01C) | <span class="badge b-finished">finished</span> | H01C | 14 drugs | 0.64 h | 4 popPK · 13 PD · 0 PGx |
 | [dg-H02A](/ledger/dg-H02A) | <span class="badge b-finished">finished</span> | H02A | 12 drugs | 0.16 h | 1 popPK · 7 PD · 0 PGx |
-| [dg-H02B+2](/ledger/dg-H02B_2) | <span class="badge b-finished">finished</span> | H02B, H02C, H03A | 11 drugs | 0.58 h | 9 popPK · 4 PD · 0 PGx |
+| [dg-H02B+2](/ledger/dg-H02B_2) | <span class="badge b-finished">finished</span> | H02B, H02C, H03A | 11 drugs | 0.58 h | 9 popPK · 5 PD · 0 PGx |
 | [dg-H03B](/ledger/dg-H03B) | <span class="badge b-finished">finished</span> | H03B | 9 drugs | 0.33 h | 2 popPK · 5 PD · 0 PGx |
 | [dg-H04A+2](/ledger/dg-H04A_2) | <span class="badge b-finished">finished</span> | H04A, H05A, H05B | 16 drugs | 0.62 h | 3 popPK · 12 PD · 0 PGx |
 | [dg-J01A+1](/ledger/dg-J01A_1) | <span class="badge b-finished">finished</span> | J01A, J01B | 13 drugs | 0.34 h | 13 popPK · 9 PD · 0 PGx |
@@ -210,20 +210,20 @@
 | [dg-J01D-5](/ledger/dg-J01D-5) | <span class="badge b-finished">finished</span> | J01D | 16 drugs | 0.80 h | 29 popPK · 12 PD · 0 PGx |
 | [dg-J01E-1](/ledger/dg-J01E-1) | <span class="badge b-finished">finished</span> | J01E | 14 drugs | 0.51 h | 10 popPK · 1 PD · 0 PGx |
 | [dg-J01E-2](/ledger/dg-J01E-2) | <span class="badge b-finished">finished</span> | J01E | 14 drugs | 0.31 h | 3 popPK · 3 PD · 0 PGx |
-| [dg-J01F-1](/ledger/dg-J01F-1) | <span class="badge b-finished">finished</span> | J01F | 9 drugs | 0.48 h | 6 popPK · 10 PD · 8 PGx |
+| [dg-J01F-1](/ledger/dg-J01F-1) | <span class="badge b-finished">finished</span> | J01F | 9 drugs | 0.48 h | 6 popPK · 12 PD · 8 PGx |
 | [dg-J01F-2](/ledger/dg-J01F-2) | <span class="badge b-finished">finished</span> | J01F | 8 drugs | 0.98 h | 2 popPK · 4 PD · 0 PGx |
 | [dg-J01G](/ledger/dg-J01G) | <span class="badge b-finished">finished</span> | J01G | 10 drugs | 0.34 h | 15 popPK · 9 PD · 0 PGx |
-| [dg-J01M-1](/ledger/dg-J01M-1) | <span class="badge b-finished">finished</span> | J01M | 16 drugs | 0.98 h | 50 popPK · 29 PD · 1 PGx |
+| [dg-J01M-1](/ledger/dg-J01M-1) | <span class="badge b-finished">finished</span> | J01M | 16 drugs | 0.98 h | 48 popPK · 33 PD · 1 PGx |
 | [dg-J01M-2](/ledger/dg-J01M-2) | <span class="badge b-finished">finished</span> | J01M | 15 drugs | 0.95 h | 19 popPK · 11 PD · 1 PGx |
 | [dg-J01R-1](/ledger/dg-J01R-1) | <span class="badge b-finished">finished</span> | J01R | 11 drugs | 0.19 h | 0 popPK · 2 PD · 0 PGx |
 | [dg-J01R-2](/ledger/dg-J01R-2) | <span class="badge b-finished">finished</span> | J01R | 10 drugs | 0.18 h | 0 popPK · 1 PD · 0 PGx |
-| [dg-J01X-1](/ledger/dg-J01X-1) | <span class="badge b-finished">finished</span> | J01X | 9 drugs | 1.54 h | 3 popPK · 3 PD · 0 PGx |
+| [dg-J01X-1](/ledger/dg-J01X-1) | <span class="badge b-finished">finished</span> | J01X | 9 drugs | 1.54 h | 6 popPK · 6 PD · 0 PGx |
 | [dg-J01X-2](/ledger/dg-J01X-2) | <span class="badge b-finished">finished</span> | J01X | 9 drugs |  | 0 popPK · 0 PD · 0 PGx |
 | [dg-J02A](/ledger/dg-J02A) | <span class="badge b-finished">finished</span> | J02A | 11 drugs | 1.14 h | 57 popPK · 10 PD · 0 PGx |
 | [dg-J04A-1](/ledger/dg-J04A-1) | <span class="badge b-finished">finished</span> | J04A | 12 drugs | 1.35 h | 23 popPK · 8 PD · 0 PGx |
-| [dg-J04A-2](/ledger/dg-J04A-2) | <span class="badge b-finished">finished</span> | J04A | 12 drugs | 1.18 h | 0 popPK · 1 PD · 0 PGx |
+| [dg-J04A-2](/ledger/dg-J04A-2) | <span class="badge b-finished">finished</span> | J04A | 12 drugs | 1.18 h | 3 popPK · 7 PD · 0 PGx |
 | [dg-J04A-3](/ledger/dg-J04A-3) | <span class="badge b-finished">finished</span> | J04A, J04B | 14 drugs | 0.81 h | 6 popPK · 10 PD · 0 PGx |
-| [dg-J05A-1](/ledger/dg-J05A-1) | <span class="badge b-finished">finished</span> | J05A | 16 drugs | 1.27 h | 34 popPK · 14 PD · 72 PGx |
+| [dg-J05A-1](/ledger/dg-J05A-1) | <span class="badge b-finished">finished</span> | J05A | 16 drugs | 1.27 h | 33 popPK · 14 PD · 72 PGx |
 | [dg-J05A-2](/ledger/dg-J05A-2) | <span class="badge b-finished">finished</span> | J05A | 16 drugs | 1.15 h | 21 popPK · 12 PD · 0 PGx |
 | [dg-J05A-3](/ledger/dg-J05A-3) | <span class="badge b-finished">finished</span> | J05A | 16 drugs | 1.11 h | 7 popPK · 12 PD · 0 PGx |
 | [dg-J05A-4](/ledger/dg-J05A-4) | <span class="badge b-finished">finished</span> | J05A | 16 drugs | 3.00 h | 32 popPK · 20 PD · 0 PGx |
@@ -245,7 +245,7 @@
 | [dg-L01A-1](/ledger/dg-L01A-1) | <span class="badge b-finished">finished</span> | L01A | 14 drugs | 1.59 h | 23 popPK · 26 PD · 3 PGx |
 | [dg-L01A-2](/ledger/dg-L01A-2) | <span class="badge b-finished">finished</span> | L01A | 14 drugs | 0.38 h | 9 popPK · 1 PD · 0 PGx |
 | [dg-L01B-1](/ledger/dg-L01B-1) | <span class="badge b-interrupted">interrupted</span> | L01B | 12 drugs | 0.99 h | 36 popPK · 18 PD · 75 PGx |
-| [dg-L01B-2](/ledger/dg-L01B-2) | <span class="badge b-finished">finished</span> | L01B | 11 drugs | 0.93 h | 53 popPK · 16 PD · 25 PGx |
+| [dg-L01B-2](/ledger/dg-L01B-2) | <span class="badge b-finished">finished</span> | L01B | 11 drugs | 0.93 h | 49 popPK · 16 PD · 25 PGx |
 | [dg-L01C-1](/ledger/dg-L01C-1) | <span class="badge b-finished">finished</span> | L01C | 10 drugs | 0.95 h | 14 popPK · 6 PD · 1 PGx |
 | [dg-L01C-2](/ledger/dg-L01C-2) | <span class="badge b-finished">finished</span> | L01C | 9 drugs | 2.00 h | 22 popPK · 23 PD · 1 PGx |
 | [dg-L01D-1](/ledger/dg-L01D-1) | <span class="badge b-finished">finished</span> | L01D | 9 drugs | 2.52 h | 76 popPK · 44 PD · 1 PGx |
@@ -257,7 +257,7 @@
 | [dg-L01E-5](/ledger/dg-L01E-5) | <span class="badge b-finished">finished</span> | L01E | 14 drugs | 0.96 h | 23 popPK · 38 PD · 3 PGx |
 | [dg-L01E-6](/ledger/dg-L01E-6) | <span class="badge b-finished">finished</span> | L01E | 14 drugs | 1.55 h | 22 popPK · 19 PD · 1 PGx |
 | [dg-L01E-7](/ledger/dg-L01E-7) | <span class="badge b-finished">finished</span> | L01E | 14 drugs | 0.77 h | 11 popPK · 18 PD · 0 PGx |
-| [dg-L01F-1](/ledger/dg-L01F-1) | <span class="badge b-finished">finished</span> | L01F | 16 drugs | 1.27 h | 43 popPK · 26 PD · 0 PGx |
+| [dg-L01F-1](/ledger/dg-L01F-1) | <span class="badge b-finished">finished</span> | L01F | 16 drugs | 1.27 h | 44 popPK · 29 PD · 0 PGx |
 | [dg-L01F-2](/ledger/dg-L01F-2) | <span class="badge b-finished">finished</span> | L01F | 16 drugs | 0.48 h | 17 popPK · 22 PD · 0 PGx |
 | [dg-L01F-3](/ledger/dg-L01F-3) | <span class="badge b-finished">finished</span> | L01F | 16 drugs | 0.44 h | 7 popPK · 6 PD · 0 PGx |
 | [dg-L01F-4](/ledger/dg-L01F-4) | <span class="badge b-finished">finished</span> | L01F | 16 drugs | 2.50 h | 27 popPK · 14 PD · 0 PGx |
@@ -271,7 +271,7 @@
 | [dg-L01X-7](/ledger/dg-L01X-7) | <span class="badge b-finished">finished</span> | L01X | 13 drugs | 0.80 h | 10 popPK · 10 PD · 0 PGx |
 | [dg-L02A](/ledger/dg-L02A) | <span class="badge b-finished">finished</span> | L02A | 9 drugs | 0.23 h | 5 popPK · 8 PD · 0 PGx |
 | [dg-L02B-1](/ledger/dg-L02B-1) | <span class="badge b-finished">finished</span> | L02B | 10 drugs | 0.34 h | 1 popPK · 3 PD · 0 PGx |
-| [dg-L02B-2](/ledger/dg-L02B-2) | <span class="badge b-finished">finished</span> | L02B | 10 drugs | 0.39 h | 8 popPK · 12 PD · 2 PGx |
+| [dg-L02B-2](/ledger/dg-L02B-2) | <span class="badge b-finished">finished</span> | L02B | 10 drugs | 0.39 h | 7 popPK · 13 PD · 2 PGx |
 | [dg-L03A-1](/ledger/dg-L03A-1) | <span class="badge b-finished">finished</span> | L03A | 16 drugs | 1.02 h | 4 popPK · 6 PD · 0 PGx |
 | [dg-L03A-2](/ledger/dg-L03A-2) | <span class="badge b-finished">finished</span> | L03A | 16 drugs | 0.68 h | 2 popPK · 6 PD · 0 PGx |
 | [dg-L03A-3](/ledger/dg-L03A-3) | <span class="badge b-finished">finished</span> | L03A | 16 drugs | 0.52 h | 8 popPK · 12 PD · 0 PGx |
@@ -294,7 +294,7 @@
 | [dg-M03A-2](/ledger/dg-M03A-2) | <span class="badge b-finished">finished</span> | M03A | 10 drugs | 1.35 h | 24 popPK · 46 PD · 3 PGx |
 | [dg-M03B-1](/ledger/dg-M03B-1) | <span class="badge b-finished">finished</span> | M03B | 16 drugs | 0.70 h | 7 popPK · 7 PD · 0 PGx |
 | [dg-M03B-2](/ledger/dg-M03B-2) | <span class="badge b-finished">finished</span> | M03B | 15 drugs | 0.51 h | 2 popPK · 2 PD · 0 PGx |
-| [dg-M03C+1](/ledger/dg-M03C_1) | <span class="badge b-finished">finished</span> | M03C, M04A | 16 drugs | 0.68 h | 19 popPK · 21 PD · 23 PGx |
+| [dg-M03C+1](/ledger/dg-M03C_1) | <span class="badge b-finished">finished</span> | M03C, M04A | 16 drugs | 0.68 h | 17 popPK · 21 PD · 23 PGx |
 | [dg-M05B-1](/ledger/dg-M05B-1) | <span class="badge b-finished">finished</span> | M05B | 14 drugs | 0.60 h | 6 popPK · 9 PD · 0 PGx |
 | [dg-M05B-2](/ledger/dg-M05B-2) | <span class="badge b-finished">finished</span> | M05B | 13 drugs | 0.19 h | 0 popPK · 6 PD · 0 PGx |
 | [dg-M09A-1](/ledger/dg-M09A-1) | <span class="badge b-finished">finished</span> | M09A | 10 drugs | 0.06 h | 0 popPK · 1 PD · 0 PGx |
@@ -324,7 +324,7 @@
 | [dg-N05A-3](/ledger/dg-N05A-3) | <span class="badge b-finished">finished</span> | N05A | 15 drugs | 0.53 h | 10 popPK · 25 PD · 0 PGx |
 | [dg-N05A-4](/ledger/dg-N05A-4) | <span class="badge b-finished">finished</span> | N05A | 15 drugs | 0.91 h | 13 popPK · 32 PD · 0 PGx |
 | [dg-N05A-5](/ledger/dg-N05A-5) | <span class="badge b-finished">finished</span> | N05A | 11 drugs | 1.30 h | 6 popPK · 37 PD · 1 PGx |
-| [dg-N05B-1](/ledger/dg-N05B-1) | <span class="badge b-finished">finished</span> | N05B | 13 drugs | 0.54 h | 24 popPK · 44 PD · 0 PGx |
+| [dg-N05B-1](/ledger/dg-N05B-1) | <span class="badge b-finished">finished</span> | N05B | 13 drugs | 0.54 h | 23 popPK · 44 PD · 0 PGx |
 | [dg-N05B-2](/ledger/dg-N05B-2) | <span class="badge b-finished">finished</span> | N05B | 13 drugs | 0.74 h | 18 popPK · 13 PD · 0 PGx |
 | [dg-N05B-3](/ledger/dg-N05B-3) | <span class="badge b-finished">finished</span> | N05B | 13 drugs | 0.76 h | 8 popPK · 6 PD · 0 PGx |
 | [dg-N05C-1](/ledger/dg-N05C-1) | <span class="badge b-finished">finished</span> | N05C | 15 drugs | 0.30 h | 0 popPK · 5 PD · 0 PGx |
@@ -340,7 +340,7 @@
 | [dg-N06B-1](/ledger/dg-N06B-1) | <span class="badge b-finished">finished</span> | N06B | 13 drugs | 0.44 h | 5 popPK · 3 PD · 10 PGx |
 | [dg-N06B-2](/ledger/dg-N06B-2) | <span class="badge b-finished">finished</span> | N06B | 13 drugs | 0.52 h | 3 popPK · 14 PD · 0 PGx |
 | [dg-N06B-3](/ledger/dg-N06B-3) | <span class="badge b-finished">finished</span> | N06B, N06C | 15 drugs | 0.14 h | 2 popPK · 5 PD · 0 PGx |
-| [dg-N06D](/ledger/dg-N06D) | <span class="badge b-finished">finished</span> | N06D | 15 drugs | 0.59 h | 15 popPK · 33 PD · 0 PGx |
+| [dg-N06D](/ledger/dg-N06D) | <span class="badge b-finished">finished</span> | N06D | 15 drugs | 0.59 h | 15 popPK · 34 PD · 0 PGx |
 | [dg-N07A](/ledger/dg-N07A) | <span class="badge b-finished">finished</span> | N07A | 10 drugs | 0.93 h | 3 popPK · 23 PD · 0 PGx |
 | [dg-N07B](/ledger/dg-N07B) | <span class="badge b-finished">finished</span> | N07B | 14 drugs | 1.25 h | 13 popPK · 47 PD · 0 PGx |
 | [dg-N07C](/ledger/dg-N07C) | <span class="badge b-finished">finished</span> | N07C | 5 drugs | 0.30 h | 0 popPK · 18 PD · 0 PGx |
@@ -364,7 +364,7 @@
 | [dg-R01B+1](/ledger/dg-R01B_1) | <span class="badge b-finished">finished</span> | R01B, R02A | 13 drugs | 0.49 h | 1 popPK · 12 PD · 0 PGx |
 | [dg-R03A-1](/ledger/dg-R03A-1) | <span class="badge b-finished">finished</span> | R03A | 13 drugs | 0.59 h | 2 popPK · 13 PD · 0 PGx |
 | [dg-R03A-2](/ledger/dg-R03A-2) | <span class="badge b-finished">finished</span> | R03A | 13 drugs | 0.52 h | 1 popPK · 11 PD · 0 PGx |
-| [dg-R03A-3](/ledger/dg-R03A-3) | <span class="badge b-finished">finished</span> | R03A | 13 drugs | 0.98 h | 17 popPK · 40 PD · 0 PGx |
+| [dg-R03A-3](/ledger/dg-R03A-3) | <span class="badge b-finished">finished</span> | R03A | 13 drugs | 0.98 h | 17 popPK · 39 PD · 0 PGx |
 | [dg-R03A-4](/ledger/dg-R03A-4) | <span class="badge b-finished">finished</span> | R03A | 12 drugs | 0.65 h | 19 popPK · 27 PD · 0 PGx |
 | [dg-R03B+1](/ledger/dg-R03B_1) | <span class="badge b-finished">finished</span> | R03B, R03C | 13 drugs | 0.58 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-R03D-1](/ledger/dg-R03D-1) | <span class="badge b-finished">finished</span> | R03D | 13 drugs | 1.11 h | 11 popPK · 7 PD · 0 PGx |
@@ -389,7 +389,7 @@
 | [dg-RX-OA-05](/ledger/dg-RX-OA-05) | <span class="badge b-finished">finished</span> |  | 12 drugs | 0.38 h | 7 popPK · 7 PD · 0 PGx |
 | [dg-RX-OA-06](/ledger/dg-RX-OA-06) | <span class="badge b-finished">finished</span> |  | 12 drugs | 0.51 h | 31 popPK · 6 PD · 3 PGx |
 | [dg-RX-OA-07](/ledger/dg-RX-OA-07) | <span class="badge b-finished">finished</span> |  | 12 drugs | 1.68 h | 17 popPK · 13 PD · 0 PGx |
-| [dg-RX-OA-08](/ledger/dg-RX-OA-08) | <span class="badge b-finished">finished</span> |  | 12 drugs | 1.56 h | 27 popPK · 13 PD · 4 PGx |
+| [dg-RX-OA-08](/ledger/dg-RX-OA-08) | <span class="badge b-finished">finished</span> |  | 12 drugs | 1.56 h | 27 popPK · 14 PD · 4 PGx |
 | [dg-RX-OA-09](/ledger/dg-RX-OA-09) | <span class="badge b-finished">finished</span> |  | 12 drugs | 1.52 h | 36 popPK · 28 PD · 2 PGx |
 | [dg-RX-OA-10](/ledger/dg-RX-OA-10) | <span class="badge b-finished">finished</span> |  | 12 drugs | 0.34 h | 8 popPK · 14 PD · 0 PGx |
 | [dg-S01A-1](/ledger/dg-S01A-1) | <span class="badge b-finished">finished</span> | S01A | 10 drugs | 0.22 h | 0 popPK · 4 PD · 0 PGx |
@@ -427,10 +427,9 @@
 | [dg-V09I-3](/ledger/dg-V09I-3) | <span class="badge b-finished">finished</span> | V09I | 11 drugs | 0.13 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-V09X+1](/ledger/dg-V09X_1) | <span class="badge b-finished">finished</span> | V09X, V10A | 16 drugs | 0.23 h | 0 popPK · 0 PD · 0 PGx |
 | [dg-V10B+1](/ledger/dg-V10B_1) | <span class="badge b-finished">finished</span> | V10B, V10X | 13 drugs | 0.34 h | 7 popPK · 0 PD · 0 PGx |
-| [tg-AIR-1](/ledger/tg-AIR-1) | <span class="badge b-failing">failing</span> |  | 30 drugs | 0.04 h | 0 popPK · 1 PD · 0 PGx |
-| [ttd](/ledger/ttd) | <span class="badge b-finished">finished</span> |  | 5 drugs | 5.79 h | 14 popPK · 1 PD · 3 PGx |
+| [ttd](/ledger/ttd) | <span class="badge b-finished">finished</span> |  | 2 drugs | 5.79 h | 0 popPK · 0 PD · 0 PGx |
 
-<sub>The pooled [full-text requests](/ledger/wanted) list 12121 paper(s) a reader could still retrieve by hand.</sub>
+<sub>The pooled [full-text requests](/ledger/wanted) list 12306 paper(s) a reader could still retrieve by hand.</sub>
 
 ### Benchmark <sub>every model tag against the same curated truth · 9 tags</sub>
 

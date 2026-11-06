@@ -2,7 +2,7 @@
  {
   "key": "E0",
   "label": "Baseline E0",
-  "unit": "mmol L⁻¹",
+  "unit": "mmol L À1",
   "scale": 1.0000000000000002,
   "min": 0.2,
   "max": 3,
@@ -12,7 +12,7 @@
  {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "mmol L⁻¹",
+  "unit": "mmol L À1",
   "scale": 1.0000000000000002,
   "min": 0.2,
   "max": 3,
@@ -22,7 +22,7 @@
  {
   "key": "EC50",
   "label": "Potency EC50",
-  "unit": "μmol L⁻¹",
+  "unit": "μmol L À1",
   "scale": 1000.0000000000002,
   "min": 0.1,
   "max": 10,
@@ -41,7 +41,7 @@
  {
   "key": "stop_time",
   "label": "Oxypurinol concentration range",
-  "unit": "μmol L⁻¹",
+  "unit": "μmol L À1",
   "scale": 1.0000000000000002,
   "min": 140.0,
   "max": 7000.0,

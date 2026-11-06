@@ -2,8 +2,8 @@
  {
   "key": "E0",
   "label": "Baseline E0",
-  "unit": "pH",
-  "scale": 277777777.7777778,
+  "unit": "",
+  "scale": 1.0,
   "min": 0.2,
   "max": 3,
   "step": 0.05,
@@ -12,8 +12,8 @@
  {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "pH",
-  "scale": 277777777.7777778,
+  "unit": "",
+  "scale": 1.0,
   "min": 0.2,
   "max": 3,
   "step": 0.05,

@@ -6,7 +6,7 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "EC50": 2.19e-07,
+  "EC50": 8e-05,
   "Emax": 4.25,
   "exposure_per_s": 1e-06,
   "gamma": 1.0
@@ -14,10 +14,10 @@
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "2.19e-07": 2.125
+  "7.999999999999999e-05": 2.125
  },
- "stop_time": 2.2,
- "subtitle": "weight reduction (ΔΔWeight) against dose",
+ "stop_time": 800.0,
+ "subtitle": "change in weight relative to baseline (ΔΔWeight) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Dose–response simulated by the PD model",
@@ -52,6 +52,6 @@
  "y_axis": {
   "display_unit": "kg",
   "factor": 1.0,
-  "label": "weight reduction (ΔΔWeight)"
+  "label": "change in weight relative to baseline (ΔΔWeight)"
  }
 }

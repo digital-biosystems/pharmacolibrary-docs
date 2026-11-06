@@ -21,15 +21,6 @@ Built for model-informed drug development, precision dosing research and teachin
   <a href="#/sites?drugs=simvastatin,clopidogrel">Do simvastatin and clopidogrel share enzymes?</a>
 </p>
 
-<div class="pklg">
-
-<div class="tiles"><div class="tile"><i>Drugs processed: ATC / non-ATC / toxins</i><b>4,683 / 24 / 25</b><em>1,758 / 17 / 5 with ≥1 popPK/PD/PGx record</em></div><div class="tile"><i>Literature (papers)</i><b>146,276</b><em>25,317 PK/PD/PGx-relevant papers (17%)</em></div><div class="tile"><i>Full text (papers)</i><b>41,271</b><em>105,005 abstract-only papers</em></div><div class="tile"><i>Full-text sources (papers)</i><b>12,507 · 28,597</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>769.9M input</b><em>69.05M output · cross-checks included</em></div><div class="tile"><i>Domain coverage (drugs)</i><b>1191 · 1564 · 153</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Accepted records by species (top 4)</i><b>4,101 · 1,714 · 660 · 310</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Projected full-text yield</i><b>12,277 · ~9,336 · 40%</b><em>Requested PDFs · expected additional records · observed record-yield rate</em></div></div>
-<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>4,257</b><span>extracted records</span></div><div class="cnum"><b class="ok">1,827</b><span>simulatable records · 42.9%</span></div><table><tr><td>topology</td><td>1C 3172 · 2C 758 · parent_metabolite 212</td></tr><tr><td>parameterisation</td><td>mechanistic 3070 · apparent 1181</td></tr><tr><td>covariate equations</td><td>579 (13.6%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>4,949</b><span>extracted records</span></div><div class="cnum"><b class="ok">809</b><span>simulatable records · 16.3%</span></div><table><tr><td>family</td><td>sigmoid_emax 1639 · emax 1149 · unknown 1008</td></tr><tr><td>driver</td><td>cited_pk 2207 · conc_no_pk 1176</td></tr><tr><td>supported structures</td><td>Emax 518 · turnover 291 · effect-cmt 241</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>170</b><span>extracted records</span></div><div class="cnum"><b class="ok">35</b><span>simulatable records · 20.6%</span></div><table><tr><td>mechanism</td><td>safety_allele 135 · metabolism 16</td></tr><tr><td>genes covered</td><td>25</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>accepted records by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">2,103</td><td class="n">1,675</td><td class="n">323</td></tr><tr><td>in vitro</td><td class="n">10</td><td class="n">1,702</td><td class="n">2</td></tr><tr><td>rat</td><td class="n">88</td><td class="n">572</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">28</td><td class="n">282</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">30</td><td class="n">150</td><td class="n">1</td></tr><tr><td>other animal</td><td class="n">3</td><td class="n">123</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">11</td><td class="n">93</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">38</td><td class="n">51</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">107</td><td class="n">287</td><td class="n">3</td></tr></table><p class="cnote"><small>Records that passed their checks (popPK: closed-form checks; PGx: including guideline-derived estimates), so they differ from the extracted-record counts beside it.</small></p></div></div>
-
-<p class="pnote"><a href="#/ledger/">Extraction ledger by panel and run group →</a></p>
-
-</div>
-
 ## I am ...
 <div class="pk-home-cards pk-home-roles">
   <div class="pk-home-card">
@@ -66,6 +57,7 @@ Built for model-informed drug development, precision dosing research and teachin
   </div>
 </div>
 
+## Demo (pharmacokinetics and site interaction of active metabolite of clopidogrel)
 <div class="pk-demo">
   <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_params.json" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1"></div>
   <div class="pk-demo-anat" data-drug="clopidogrel"></div>
@@ -76,7 +68,7 @@ Built for model-informed drug development, precision dosing research and teachin
 
 <div class="pklg">
 <div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>2,176</b><em>drugs and toxins; every one has a page</em></div>
-<div class="tile"><i>popPK/PD/PGx records</i><b>3,749/3,806/569</b><em>extracted population pharmacokinetics/pharmacodynamics/pharmacogenomics records</em></div>
+<div class="tile"><i>popPK/PD/PGx records</i><b>3,731/3,809/569</b><em>extracted population pharmacokinetics/pharmacodynamics/pharmacogenomics records</em></div>
 <div class="tile"><i>Papers behind the records</i><b>8,222</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>38,641</b><em>parameter values the records carry, with units</em></div></div>
 </div>
 <!-- AUTOGEN:intro END -->

@@ -1,24 +1,38 @@
 {
+ "dose_source": "paper",
  "model_id": "Salbutamol_Walsh2023_random_effects",
+ "molar_masses": {
+  "central.C": 0.2393107
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.07,
+  0.35,
+  1.05
+ ],
  "parameters": {
   "Cl": 1.45e-07,
   "F": 0.9,
-  "Tlag": 0.0,
+  "MM": 0.2393107,
+  "Tlag": 5400.0,
   "VdPerKg": 2.5571428571428572e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
-  "k12": 0.001643389199255121,
-  "k21": 0.00045607235142118866,
-  "ka": 0.0010305555555555556,
+  "adminMass": 7e-08,
+  "k12": 0.0015456238361266296,
+  "k21": 0.00042894056847545225,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 44498.59719438878
+ },
  "reference_peaks": {
-  "central.C": 4.2151636744823775e-05
+  "central.C": 2.686436579062324e-07
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

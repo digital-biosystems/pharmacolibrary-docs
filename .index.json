@@ -105,84 +105,36 @@
    "J05AR04",
    "J05AR13"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 0,
    "pgx": 49,
-   "pk": 16
+   "pk": 15
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Archary_2019 \u00b7 reference",
-    "model_id": "Abacavir_Archary2019_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Cella_2011 \u00b7 model_1_mean",
-    "model_id": "Abacavir_Cella2011_model_1_mean",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Cella_2011 \u00b7 model_2_mean",
-    "model_id": "Abacavir_Cella2011_model_2_mean",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Chupradit_2023 \u00b7 reference",
-    "model_id": "Abacavir_Chupradit2023_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Chupradit_2024 \u00b7 reference",
     "model_id": "Abacavir_Chupradit2024_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
-    "label": "Fauchet_2014 \u00b7 reference",
-    "model_id": "Abacavir_Fauchet2014_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
+    "internal": "accepted_with_caveats",
     "label": "Rabie_2020 \u00b7 reference",
     "model_id": "Abacavir_Rabie2020_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "caveats",
     "xc": "unchecked"
    },
    {
-    "internal": "extracted",
-    "label": "Zhang_2015 \u00b7 reference",
-    "model_id": "Abacavir_Zhang2015_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "van_2021 \u00b7 reference",
-    "model_id": "Abacavir_van2021_reference",
+    "internal": "needs_review",
+    "label": "Archary_2019 \u00b7 reference",
+    "model_id": "Abacavir_Archary2019_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
@@ -203,24 +155,48 @@
    },
    {
     "internal": "needs_review",
-    "label": "Chandasana_2024_2 \u00b7 reference",
-    "model_id": "Abacavir_Chandasana2024v2_reference",
-    "stale": true,
+    "label": "Cella_2011 \u00b7 model_1_mean",
+    "model_id": "Abacavir_Cella2011_model_1_mean",
+    "stale": false,
     "status": "needs_review",
-    "xc": "disputed"
+    "xc": "confirmed"
    },
    {
     "internal": "needs_review",
-    "label": "Hurwitz_2008 \u00b7 reference",
-    "model_id": "Abacavir_Hurwitz2008_reference",
+    "label": "Cella_2011 \u00b7 model_2_mean",
+    "model_id": "Abacavir_Cella2011_model_2_mean",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Chandasana_2024_2 \u00b7 reference",
+    "model_id": "Abacavir_Chandasana2024v2_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
-    "label": "Ji_2024 \u00b7 reference",
-    "model_id": "Abacavir_Ji2024_reference",
+    "label": "Chupradit_2023 \u00b7 reference",
+    "model_id": "Abacavir_Chupradit2023_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Fauchet_2014 \u00b7 reference",
+    "model_id": "Abacavir_Fauchet2014_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Hurwitz_2008 \u00b7 reference",
+    "model_id": "Abacavir_Hurwitz2008_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
@@ -237,6 +213,22 @@
     "internal": "needs_review",
     "label": "Weller_2000 \u00b7 reference",
     "model_id": "Abacavir_Weller2000_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2015 \u00b7 reference",
+    "model_id": "Abacavir_Zhang2015_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "van_2021 \u00b7 reference",
+    "model_id": "Abacavir_van2021_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
@@ -261,22 +253,22 @@
     "internal": "rejected",
     "label": "Zhao_2013 \u00b7 reference",
     "model_id": "Abacavir_Zhao2013_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    }
   ],
   "dir": "drug_abacavir",
-  "extracted": 9,
-  "last_change": "2026-11-03T08:53:26.805399+00:00",
+  "extracted": 2,
+  "last_change": "2026-11-05T11:52:26.571572+00:00",
   "name": "abacavir",
-  "needs_review": 7,
-  "records": 19,
+  "needs_review": 13,
+  "records": 18,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 8,
   "slug": "abacavir",
-  "stale": 5,
+  "stale": 0,
   "tally": {
    "pd": [
     0,
@@ -289,7 +281,7 @@
     39
    ],
    "pk": [
-    16,
+    15,
     3,
     0
    ]
@@ -4822,73 +4814,33 @@
   "counts": {
    "pd": 7,
    "pgx": 23,
-   "pk": 12
+   "pk": 10
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Ekobena_2025 \u00b7 reference",
-    "model_id": "Allopurinol_Ekobena2025_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Lei_2026 \u00b7 reference",
     "model_id": "Allopurinol_Lei2026_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Liu_2026 \u00b7 reference",
-    "model_id": "Allopurinol_Liu2026_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Wen_2023 \u00b7 base",
-    "model_id": "Allopurinol_Wen2023_base",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Wen_2023 \u00b7 final",
-    "model_id": "Allopurinol_Wen2023_final",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Wright_2017 \u00b7 reference",
     "model_id": "Allopurinol_Wright2017_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Wright_2024 \u00b7 reference",
     "model_id": "Allopurinol_Wright2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "van_2006 \u00b7 reference",
-    "model_id": "Allopurinol_van2006_reference",
     "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
+    "status": "reproduces",
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -4908,9 +4860,25 @@
    },
    {
     "internal": "needs_review",
+    "label": "Ekobena_2025 \u00b7 reference",
+    "model_id": "Allopurinol_Ekobena2025_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Liu_2026 \u00b7 reference",
+    "model_id": "Allopurinol_Liu2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
     "label": "Stocker_2012 \u00b7 base",
     "model_id": "Allopurinol_Stocker2012_base",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -4918,15 +4886,23 @@
     "internal": "needs_review",
     "label": "Stocker_2012 \u00b7 final",
     "model_id": "Allopurinol_Stocker2012_final",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "van_2006 \u00b7 reference",
+    "model_id": "Allopurinol_van2006_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
    },
    {
     "internal": "rejected",
     "label": "Chu_2022 \u00b7 reference",
     "model_id": "Allopurinol_Chu2022_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -4934,7 +4910,7 @@
     "internal": "rejected",
     "label": "Chu_2024 \u00b7 reference",
     "model_id": "Allopurinol_Chu2024_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -4942,7 +4918,7 @@
     "internal": "rejected",
     "label": "Hishe_2023 \u00b7 reference",
     "model_id": "Allopurinol_Hishe2023_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -4950,7 +4926,23 @@
     "internal": "rejected",
     "label": "Vora_2021 \u00b7 reference",
     "model_id": "Allopurinol_Vora2021_reference",
-    "stale": true,
+    "stale": false,
+    "status": "rejected",
+    "xc": "disputed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Wen_2023 \u00b7 base",
+    "model_id": "Allopurinol_Wen2023_base",
+    "stale": false,
+    "status": "rejected",
+    "xc": "disputed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Wen_2023 \u00b7 final",
+    "model_id": "Allopurinol_Wen2023_final",
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -4958,7 +4950,7 @@
     "internal": "rejected",
     "label": "Wright_2013 \u00b7 base",
     "model_id": "Allopurinol_Wright2013_base",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -4966,7 +4958,7 @@
     "internal": "rejected",
     "label": "Wright_2013 \u00b7 final",
     "model_id": "Allopurinol_Wright2013_final",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -4974,7 +4966,7 @@
     "internal": "rejected",
     "label": "Wright_2016 \u00b7 reference",
     "model_id": "Allopurinol_Wright2016_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -4988,16 +4980,16 @@
    }
   ],
   "dir": "drug_allopurinol",
-  "extracted": 8,
-  "last_change": "2026-11-03T20:52:12.612639+00:00",
+  "extracted": 3,
+  "last_change": "2026-11-05T11:47:45.328229+00:00",
   "name": "allopurinol",
-  "needs_review": 4,
+  "needs_review": 7,
   "records": 20,
-  "rejected": 8,
+  "rejected": 10,
   "rendered": true,
-  "simulatable": 15,
+  "simulatable": 16,
   "slug": "allopurinol",
-  "stale": 13,
+  "stale": 0,
   "tally": {
    "pd": [
     7,
@@ -5010,8 +5002,8 @@
     24
    ],
    "pk": [
-    12,
-    8,
+    10,
+    10,
     0
    ]
   }
@@ -7418,7 +7410,7 @@
   "records": 18,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 8,
   "slug": "amiodarone",
   "stale": 0,
   "tally": {
@@ -7766,155 +7758,75 @@
     "xc": "confirmed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Chen_2024 \u00b7 reference",
     "model_id": "Amlodipine_Chen2024_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Choi_2020 \u00b7 reference",
     "model_id": "Amlodipine_Choi2020_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Courlet_2021 \u00b7 reference",
-    "model_id": "Amlodipine_Courlet2021_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Flynn_2006 \u00b7 reference",
     "model_id": "Amlodipine_Flynn2006_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Hong_2021 \u00b7 mb1_estimates",
     "model_id": "Amlodipine_Hong2021_mb1_estimates",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Hong_2021 \u00b7 mb2_estimates",
-    "model_id": "Amlodipine_Hong2021_mb2_estimates",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Karalis_2023 \u00b7 drug_amlodipine",
-    "model_id": "Amlodipine_Karalis2023_drug_amlodipine",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Mao_2024 \u00b7 reference",
     "model_id": "Amlodipine_Mao2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Rohatagi_2008 \u00b7 population_mean_se",
-    "model_id": "Amlodipine_Rohatagi2008_population_mean_se",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
     "internal": "extracted",
-    "label": "Snelder_2014 \u00b7 reference",
-    "model_id": "Amlodipine_Snelder2014_reference",
+    "label": "Rohatagi_2008 \u00b7 reference",
+    "model_id": "Amlodipine_Rohatagi2008_reference",
     "stale": true,
     "status": "not_simulated",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Vlachou_2021 \u00b7 reference",
-    "model_id": "Amlodipine_Vlachou2021_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "unchecked"
-   },
-   {
-    "internal": "extracted",
-    "label": "Wright_2025 \u00b7 reference",
-    "model_id": "Amlodipine_Wright2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Zhang_2025 \u00b7 reference",
     "model_id": "Amlodipine_Zhang2025_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Zheng_2024 \u00b7 reference",
-    "model_id": "Amlodipine_Zheng2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zuo_2014 \u00b7 reference",
-    "model_id": "Amlodipine_Zuo2014_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "van_2020 \u00b7 1_to_3_years",
-    "model_id": "Amlodipine_van2020_1_to_3_years",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "van_2020 \u00b7 8_to_10_years",
-    "model_id": "Amlodipine_van2020_8_to_10_years",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "van_2020 \u00b7 point_estimate",
     "model_id": "Amlodipine_van2020_point_estimate",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "confirmed"
    },
    {
-    "internal": "extracted",
-    "label": "van_2020 \u00b7 total",
-    "model_id": "Amlodipine_van2020_total",
+    "internal": "needs_review",
+    "label": "Courlet_2021 \u00b7 reference",
+    "model_id": "Amlodipine_Courlet2021_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
@@ -7935,9 +7847,17 @@
    },
    {
     "internal": "needs_review",
+    "label": "Hong_2021 \u00b7 mb2_estimates",
+    "model_id": "Amlodipine_Hong2021_mb2_estimates",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Jeppesen_1998 \u00b7 reference",
     "model_id": "Amlodipine_Jeppesen1998_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -7951,9 +7871,17 @@
    },
    {
     "internal": "needs_review",
+    "label": "Karalis_2023 \u00b7 drug_amlodipine",
+    "model_id": "Amlodipine_Karalis2023_drug_amlodipine",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Karalis_2023 \u00b7 drug_donepezil",
     "model_id": "Amlodipine_Karalis2023_drug_donepezil",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -7961,7 +7889,7 @@
     "internal": "needs_review",
     "label": "Karalis_2023 \u00b7 drug_hydrochlorothiazide",
     "model_id": "Amlodipine_Karalis2023_drug_hydrochlorothiazide",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -7969,7 +7897,7 @@
     "internal": "needs_review",
     "label": "Morgan_2018 \u00b7 reference",
     "model_id": "Amlodipine_Morgan2018_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -7977,17 +7905,73 @@
     "internal": "needs_review",
     "label": "Mukherjee_2018 \u00b7 reference",
     "model_id": "Amlodipine_Mukherjee2018_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
    {
-    "internal": "",
-    "label": "Heo_2016 \u00b7 reference",
-    "model_id": "Amlodipine_Heo2016_reference",
-    "stale": true,
-    "status": null,
+    "internal": "needs_review",
+    "label": "Rohatagi_2008 \u00b7 population_mean_se",
+    "model_id": "Amlodipine_Rohatagi2008_population_mean_se",
+    "stale": false,
+    "status": "needs_review",
     "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Snelder_2014 \u00b7 reference",
+    "model_id": "Amlodipine_Snelder2014_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Vlachou_2021 \u00b7 reference",
+    "model_id": "Amlodipine_Vlachou2021_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zheng_2024 \u00b7 reference",
+    "model_id": "Amlodipine_Zheng2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zuo_2014 \u00b7 reference",
+    "model_id": "Amlodipine_Zuo2014_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "van_2020 \u00b7 1_to_3_years",
+    "model_id": "Amlodipine_van2020_1_to_3_years",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "van_2020 \u00b7 8_to_10_years",
+    "model_id": "Amlodipine_van2020_8_to_10_years",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "van_2020 \u00b7 total",
+    "model_id": "Amlodipine_van2020_total",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
@@ -7996,27 +7980,19 @@
     "stale": false,
     "status": "rejected",
     "xc": "partial"
-   },
-   {
-    "internal": "rejected",
-    "label": "Rohatagi_2008 \u00b7 reference",
-    "model_id": "Amlodipine_Rohatagi2008_reference",
-    "stale": false,
-    "status": "rejected",
-    "xc": "partial"
    }
   ],
   "dir": "drug_amlodipine",
-  "extracted": 20,
-  "last_change": "2026-11-03T10:53:54.808533+00:00",
+  "extracted": 9,
+  "last_change": "2026-11-05T11:48:29.450776+00:00",
   "name": "amlodipine",
-  "needs_review": 8,
-  "records": 31,
-  "rejected": 2,
+  "needs_review": 19,
+  "records": 29,
+  "rejected": 1,
   "rendered": true,
-  "simulatable": 11,
+  "simulatable": 24,
   "slug": "amlodipine",
-  "stale": 16,
+  "stale": 1,
   "tally": {
    "pd": [
     14,
@@ -8030,8 +8006,8 @@
    ],
    "pk": [
     28,
-    2,
-    1
+    1,
+    0
    ]
   }
  },
@@ -8326,11 +8302,11 @@
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Abulfathi_2021 \u00b7 reference",
     "model_id": "Amoxicillin_Abulfathi2021_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
@@ -8382,20 +8358,12 @@
     "xc": "confirmed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Isla_2011 \u00b7 reference",
     "model_id": "Amoxicillin_Isla2011_reference",
     "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "curated_candidate",
-    "label": "Mellon_2020 \u00b7 reference",
-    "model_id": "Amoxicillin_Mellon2020_reference",
-    "stale": false,
     "status": "reproduces",
-    "xc": "unchecked"
+    "xc": "disputed"
    },
    {
     "internal": "curated_candidate",
@@ -8414,27 +8382,11 @@
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Park_2016 \u00b7 reference",
-    "model_id": "Amoxicillin_Park2016_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
     "internal": "curated_candidate",
     "label": "Pullen_2006 \u00b7 reference",
     "model_id": "Amoxicillin_Pullen2006_reference",
     "stale": false,
     "status": "reproduces",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Qiao_2026 \u00b7 reference",
-    "model_id": "Amoxicillin_Qiao2026_reference",
-    "stale": false,
-    "status": "not_simulated",
     "xc": "partial"
    },
    {
@@ -8604,6 +8556,30 @@
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Mellon_2020 \u00b7 reference",
+    "model_id": "Amoxicillin_Mellon2020_reference",
+    "stale": true,
+    "status": "needs_review",
+    "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Park_2016 \u00b7 reference",
+    "model_id": "Amoxicillin_Park2016_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Qiao_2026 \u00b7 reference",
+    "model_id": "Amoxicillin_Qiao2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
     "internal": "needs_review",
@@ -8855,16 +8831,16 @@
    }
   ],
   "dir": "drug_amoxicillin",
-  "extracted": 19,
-  "last_change": "2026-11-03T16:17:47.775399+00:00",
+  "extracted": 16,
+  "last_change": "2026-11-05T11:27:58.902118+00:00",
   "name": "amoxicillin",
-  "needs_review": 19,
+  "needs_review": 22,
   "records": 66,
   "rejected": 28,
   "rendered": true,
-  "simulatable": 21,
+  "simulatable": 25,
   "slug": "amoxicillin",
-  "stale": 0,
+  "stale": 1,
   "tally": {
    "pd": [
     1,
@@ -12888,7 +12864,7 @@
    "C10BX08",
    "C10BX15"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 6,
    "pgx": 5,
@@ -12897,44 +12873,20 @@
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Chen_2025 \u00b7 reference",
     "model_id": "Atorvastatin_Chen2025_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Jadhav_2023 \u00b7 reference",
     "model_id": "Atorvastatin_Jadhav2023_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
     "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Langeskov_2022 \u00b7 reference",
-    "model_id": "Atorvastatin_Langeskov2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Li_2024 \u00b7 reference",
-    "model_id": "Atorvastatin_Li2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Malekinejad_2014 \u00b7 reference",
-    "model_id": "Atorvastatin_Malekinejad2014_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
    },
    {
     "internal": "needs_review",
@@ -12946,9 +12898,33 @@
    },
    {
     "internal": "needs_review",
+    "label": "Langeskov_2022 \u00b7 reference",
+    "model_id": "Atorvastatin_Langeskov2022_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Li_2024 \u00b7 reference",
+    "model_id": "Atorvastatin_Li2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Malekinejad_2014 \u00b7 reference",
+    "model_id": "Atorvastatin_Malekinejad2014_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
     "label": "Park_2017 \u00b7 reference",
     "model_id": "Atorvastatin_Park2017_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -12956,7 +12932,7 @@
     "internal": "needs_review",
     "label": "Stillemans_2022 \u00b7 reference",
     "model_id": "Atorvastatin_Stillemans2022_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -13036,22 +13012,22 @@
     "internal": "rejected",
     "label": "Tsamandouras_2017 \u00b7 reference",
     "model_id": "Atorvastatin_Tsamandouras2017_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    }
   ],
   "dir": "drug_atorvastatin",
-  "extracted": 5,
-  "last_change": "2026-11-03T13:00:37.472456+00:00",
+  "extracted": 1,
+  "last_change": "2026-11-05T11:47:46.069440+00:00",
   "name": "atorvastatin",
-  "needs_review": 3,
+  "needs_review": 7,
   "records": 18,
   "rejected": 10,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 8,
   "slug": "atorvastatin",
-  "stale": 7,
+  "stale": 0,
   "tally": {
    "pd": [
     6,
@@ -13959,7 +13935,7 @@
   "atc_codes": [
    "L04AX01"
   ],
-  "best_status": "not_simulated",
+  "best_status": "caveats",
   "counts": {
    "pd": 2,
    "pgx": 53,
@@ -13968,11 +13944,11 @@
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Lin_2021 \u00b7 reference",
     "model_id": "Azathioprine_Lin2021_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
@@ -13987,7 +13963,7 @@
     "internal": "needs_review",
     "label": "Yang_2015 \u00b7 reference",
     "model_id": "Azathioprine_Yang2015_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -13995,7 +13971,7 @@
     "internal": "needs_review",
     "label": "el-Yazigi_1993 \u00b7 reference",
     "model_id": "Azathioprine_elYazigi1993_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -14003,22 +13979,22 @@
     "internal": "rejected",
     "label": "Ding_1979 \u00b7 reference",
     "model_id": "Azathioprine_Ding1979_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    }
   ],
   "dir": "drug_azathioprine",
-  "extracted": 1,
-  "last_change": "2026-11-03T15:27:57.208950+00:00",
+  "extracted": 0,
+  "last_change": "2026-11-05T15:50:14.555503+00:00",
   "name": "azathioprine",
-  "needs_review": 3,
+  "needs_review": 4,
   "records": 5,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "azathioprine",
-  "stale": 4,
+  "stale": 0,
   "tally": {
    "pd": [
     2,
@@ -34516,101 +34492,21 @@
    "S02AA15",
    "S03AA07"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
-   "pd": 9,
+   "pd": 11,
    "pgx": 1,
-   "pk": 39
+   "pk": 37
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Abdulla_2020 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Abdulla2020_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Alihodzic_2022 \u00b7 base",
-    "model_id": "Ciprofloxacin_Alihodzic2022_base",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Alihodzic_2022 \u00b7 final",
-    "model_id": "Ciprofloxacin_Alihodzic2022_final",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Alonso_2021 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Alonso2021_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Balbas-Martinez_2019 \u00b7 reference",
     "model_id": "Ciprofloxacin_BalbasMartinez2019_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Breilh_2001 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Breilh2001_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Conil_2008 \u00b7 basic_model_mean_s_d",
-    "model_id": "Ciprofloxacin_Conil2008_basic_model_mean_s_d",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Conil_2008 \u00b7 final",
-    "model_id": "Ciprofloxacin_Conil2008_final",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "El_2026 \u00b7 reference",
-    "model_id": "Ciprofloxacin_El2026_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Guo_2022 \u00b7 base",
-    "model_id": "Ciprofloxacin_Guo2022_base",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Guo_2022 \u00b7 final",
-    "model_id": "Ciprofloxacin_Guo2022_final",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
    },
    {
     "internal": "extracted",
@@ -34621,66 +34517,58 @@
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Haefliger_2025 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Haefliger2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Hirt_2021 \u00b7 building_dataset",
-    "model_id": "Ciprofloxacin_Hirt2021_building_dataset",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Hirt_2021 \u00b7 building_validation",
-    "model_id": "Ciprofloxacin_Hirt2021_building_validation",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Montgomery_2001 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Montgomery2001_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Saleem_2021 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Saleem2021_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Zhu_2026 \u00b7 reference",
     "model_id": "Ciprofloxacin_Zhu2026_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
     "label": "Abad\u00eda_1994 \u00b7 reference",
     "model_id": "Ciprofloxacin_Abada1994_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
+    "label": "Abdulla_2020 \u00b7 reference",
+    "model_id": "Ciprofloxacin_Abdulla2020_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Alihodzic_2022 \u00b7 base",
+    "model_id": "Ciprofloxacin_Alihodzic2022_base",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Alihodzic_2022 \u00b7 final",
+    "model_id": "Ciprofloxacin_Alihodzic2022_final",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Breilh_2001 \u00b7 reference",
+    "model_id": "Ciprofloxacin_Breilh2001_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Cattrall_2019 \u00b7 reference",
     "model_id": "Ciprofloxacin_Cattrall2019_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -34694,6 +34582,22 @@
    },
    {
     "internal": "needs_review",
+    "label": "Conil_2008 \u00b7 basic_model_mean_s_d",
+    "model_id": "Ciprofloxacin_Conil2008_basic_model_mean_s_d",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Conil_2008 \u00b7 final",
+    "model_id": "Ciprofloxacin_Conil2008_final",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Di_2004 \u00b7 reference",
     "model_id": "Ciprofloxacin_Di2004_reference",
     "stale": false,
@@ -34702,9 +34606,17 @@
    },
    {
     "internal": "needs_review",
+    "label": "El_2026 \u00b7 reference",
+    "model_id": "Ciprofloxacin_El2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
     "label": "Felix_2025 \u00b7 reference",
     "model_id": "Ciprofloxacin_Felix2025_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -34712,7 +34624,7 @@
     "internal": "needs_review",
     "label": "Garg_2024 \u00b7 reference",
     "model_id": "Ciprofloxacin_Garg2024_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -34742,9 +34654,41 @@
    },
    {
     "internal": "needs_review",
+    "label": "Guo_2022 \u00b7 base",
+    "model_id": "Ciprofloxacin_Guo2022_base",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Guo_2022 \u00b7 final",
+    "model_id": "Ciprofloxacin_Guo2022_final",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Hirt_2021 \u00b7 building_dataset",
+    "model_id": "Ciprofloxacin_Hirt2021_building_dataset",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Hirt_2021 \u00b7 building_validation",
+    "model_id": "Ciprofloxacin_Hirt2021_building_validation",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 100_mg",
     "model_id": "Ciprofloxacin_Hffken1985_100_mg",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -34752,7 +34696,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 100_mg_i_v",
     "model_id": "Ciprofloxacin_Hffken1985_100_mg_i_v",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
    },
@@ -34760,7 +34704,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 100_mg_orally",
     "model_id": "Ciprofloxacin_Hffken1985_100_mg_orally",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
    },
@@ -34768,7 +34712,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 50_mg",
     "model_id": "Ciprofloxacin_Hffken1985_50_mg",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -34776,7 +34720,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 50_mg_i_v",
     "model_id": "Ciprofloxacin_Hffken1985_50_mg_i_v",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
    },
@@ -34784,7 +34728,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 50_mg_orally",
     "model_id": "Ciprofloxacin_Hffken1985_50_mg_orally",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
    },
@@ -34792,7 +34736,7 @@
     "internal": "needs_review",
     "label": "H\u00f6ffken_1985 \u00b7 750_mg_orally",
     "model_id": "Ciprofloxacin_Hffken1985_750_mg_orally",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
    },
@@ -34800,9 +34744,17 @@
     "internal": "needs_review",
     "label": "Junkert_2024 \u00b7 reference",
     "model_id": "Ciprofloxacin_Junkert2024_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Montgomery_2001 \u00b7 reference",
+    "model_id": "Ciprofloxacin_Montgomery2001_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
    },
    {
     "internal": "needs_review",
@@ -34816,9 +34768,17 @@
     "internal": "needs_review",
     "label": "Papich_2017 \u00b7 reference",
     "model_id": "Ciprofloxacin_Papich2017_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Saleem_2021 \u00b7 reference",
+    "model_id": "Ciprofloxacin_Saleem2021_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
     "internal": "needs_review",
@@ -34837,26 +34797,10 @@
     "xc": "disputed"
    },
    {
-    "internal": "",
-    "label": "Alihodzic_2022 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Alihodzic2022_reference",
-    "stale": true,
-    "status": null,
-    "xc": "unchecked"
-   },
-   {
-    "internal": "",
-    "label": "Lode_1988 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Lode1988_reference",
-    "stale": true,
-    "status": null,
-    "xc": "disputed"
-   },
-   {
     "internal": "rejected",
     "label": "Abadia_1995 \u00b7 reference",
     "model_id": "Ciprofloxacin_Abadia1995_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -34864,7 +34808,7 @@
     "internal": "rejected",
     "label": "Ambros_2025 \u00b7 reference",
     "model_id": "Ciprofloxacin_Ambros2025_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -34872,7 +34816,7 @@
     "internal": "rejected",
     "label": "Dowling_1995 \u00b7 reference",
     "model_id": "Ciprofloxacin_Dowling1995_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -34880,7 +34824,7 @@
     "internal": "rejected",
     "label": "Forrest_1993 \u00b7 reference",
     "model_id": "Ciprofloxacin_Forrest1993_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -34912,7 +34856,7 @@
     "internal": "rejected",
     "label": "Santavy_2023 \u00b7 reference",
     "model_id": "Ciprofloxacin_Santavy2023_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -34926,20 +34870,20 @@
    }
   ],
   "dir": "drug_ciprofloxacin",
-  "extracted": 18,
-  "last_change": "2026-11-03T16:54:02.640146+00:00",
+  "extracted": 3,
+  "last_change": "2026-11-05T11:39:03.878266+00:00",
   "name": "ciprofloxacin",
-  "needs_review": 21,
-  "records": 50,
+  "needs_review": 34,
+  "records": 46,
   "rejected": 9,
   "rendered": true,
-  "simulatable": 8,
+  "simulatable": 30,
   "slug": "ciprofloxacin",
-  "stale": 24,
+  "stale": 1,
   "tally": {
    "pd": [
-    9,
-    2,
+    11,
+    0,
     0
    ],
    "pgx": [
@@ -34948,9 +34892,9 @@
     4
    ],
    "pk": [
-    39,
+    37,
     9,
-    2
+    0
    ]
   }
  },
@@ -37115,7 +37059,7 @@
   "counts": {
    "pd": 8,
    "pgx": 18,
-   "pk": 21
+   "pk": 20
   },
   "curated": 1,
   "details": [
@@ -37129,129 +37073,57 @@
    },
    {
     "internal": "extracted",
-    "label": "Danielak_2017 \u00b7 reference",
-    "model_id": "Clopidogrel_Danielak2017_reference",
+    "label": "Grafeneder_2024 \u00b7 reference",
+    "model_id": "Clopidogrel_Grafeneder2024_reference",
     "stale": true,
     "status": "not_simulated",
-    "xc": "disputed"
+    "xc": "unchecked"
    },
    {
-    "internal": "extracted",
-    "label": "Grafeneder_2024 \u00b7 hv",
-    "model_id": "Clopidogrel_Grafeneder2024_hv",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Henrich_2021 \u00b7 reference",
-    "model_id": "Clopidogrel_Henrich2021_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Jiang_2025 \u00b7 reference",
     "model_id": "Clopidogrel_Jiang2025_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "confirmed"
    },
    {
-    "internal": "extracted",
-    "label": "Kim_2009 \u00b7 reference",
-    "model_id": "Clopidogrel_Kim2009_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Lv_2025 \u00b7 reference",
     "model_id": "Clopidogrel_Lv2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Ma_2014 \u00b7 reference",
-    "model_id": "Clopidogrel_Ma2014_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Purohit_2026 \u00b7 reference",
-    "model_id": "Clopidogrel_Purohit2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Simon_2015 \u00b7 reference",
-    "model_id": "Clopidogrel_Simon2015_reference",
     "stale": false,
-    "status": "not_simulated",
-    "xc": "unchecked"
+    "status": "reproduces",
+    "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Wang_2025 \u00b7 reference",
     "model_id": "Clopidogrel_Wang2025_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Yata_2026 \u00b7 reference",
     "model_id": "Clopidogrel_Yata2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Yousef_2013 \u00b7 reference",
-    "model_id": "Clopidogrel_Yousef2013_reference",
     "stale": false,
-    "status": "not_simulated",
-    "xc": "unchecked"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhang_2024 \u00b7 reference",
-    "model_id": "Clopidogrel_Zhang2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhang_2025 \u00b7 reference",
-    "model_id": "Clopidogrel_Zhang2025_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhang_2026_2 \u00b7 reference",
-    "model_id": "Clopidogrel_Zhang2026v2_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
    },
    {
     "internal": "needs_review",
     "label": "Grafeneder_2024 \u00b7 hdp",
     "model_id": "Clopidogrel_Grafeneder2024_hdp",
-    "stale": true,
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Grafeneder_2024 \u00b7 hv",
+    "model_id": "Clopidogrel_Grafeneder2024_hv",
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -37259,7 +37131,7 @@
     "internal": "needs_review",
     "label": "Jung_2024 \u00b7 em",
     "model_id": "Clopidogrel_Jung2024_em",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -37267,7 +37139,7 @@
     "internal": "needs_review",
     "label": "Jung_2024 \u00b7 im",
     "model_id": "Clopidogrel_Jung2024_im",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -37275,7 +37147,7 @@
     "internal": "needs_review",
     "label": "Jung_2024 \u00b7 pm",
     "model_id": "Clopidogrel_Jung2024_pm",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -37285,6 +37157,78 @@
     "model_id": "Clopidogrel_Jung2024_reference",
     "stale": true,
     "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Kim_2009 \u00b7 reference",
+    "model_id": "Clopidogrel_Kim2009_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Ma_2014 \u00b7 reference",
+    "model_id": "Clopidogrel_Ma2014_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Purohit_2026 \u00b7 reference",
+    "model_id": "Clopidogrel_Purohit2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Simon_2015 \u00b7 reference",
+    "model_id": "Clopidogrel_Simon2015_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Yousef_2013 \u00b7 reference",
+    "model_id": "Clopidogrel_Yousef2013_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2024 \u00b7 reference",
+    "model_id": "Clopidogrel_Zhang2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2025 \u00b7 reference",
+    "model_id": "Clopidogrel_Zhang2025_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2026_2 \u00b7 reference",
+    "model_id": "Clopidogrel_Zhang2026v2_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Danielak_2017 \u00b7 reference",
+    "model_id": "Clopidogrel_Danielak2017_reference",
+    "stale": false,
+    "status": "rejected",
     "xc": "disputed"
    },
    {
@@ -37323,7 +37267,7 @@
     "internal": "rejected",
     "label": "Lee_2012 \u00b7 reference",
     "model_id": "Clopidogrel_Lee2012_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -37331,7 +37275,7 @@
     "internal": "rejected",
     "label": "Xie_2014 \u00b7 reference",
     "model_id": "Clopidogrel_Xie2014_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -37339,22 +37283,22 @@
     "internal": "rejected",
     "label": "Zhou_2021 \u00b7 reference",
     "model_id": "Clopidogrel_Zhou2021_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    }
   ],
   "dir": "drug_clopidogrel",
-  "extracted": 15,
-  "last_change": "2026-11-03T23:02:26.723686+00:00",
+  "extracted": 5,
+  "last_change": "2026-11-05T12:22:27.624472+00:00",
   "name": "clopidogrel",
-  "needs_review": 5,
+  "needs_review": 14,
   "records": 28,
-  "rejected": 7,
+  "rejected": 8,
   "rendered": true,
-  "simulatable": 18,
+  "simulatable": 21,
   "slug": "clopidogrel",
-  "stale": 19,
+  "stale": 2,
   "tally": {
    "pd": [
     8,
@@ -37367,8 +37311,8 @@
     98
    ],
    "pk": [
-    21,
-    7,
+    20,
+    8,
     0
    ]
   }
@@ -38537,7 +38481,7 @@
    "N02AJ08",
    "R05DA04"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 2,
    "pgx": 9,
@@ -38546,44 +38490,36 @@
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Ashraf_2024 \u00b7 reference",
-    "model_id": "Codeine_Ashraf2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Guay_1987 \u00b7 reference",
     "model_id": "Codeine_Guay1987_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "KuKanich_2016 \u00b7 reference",
-    "model_id": "Codeine_KuKanich2016_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Thigpen_2019 \u00b7 reference",
     "model_id": "Codeine_Thigpen2019_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Thigpen_2019_2 \u00b7 reference",
     "model_id": "Codeine_Thigpen2019v2_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Ashraf_2024 \u00b7 reference",
+    "model_id": "Codeine_Ashraf2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -38597,15 +38533,23 @@
     "internal": "needs_review",
     "label": "Findlay_1986 \u00b7 reference",
     "model_id": "Codeine_Findlay1986_reference",
-    "stale": false,
+    "stale": true,
     "status": "needs_review",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
+    "label": "KuKanich_2016 \u00b7 reference",
+    "model_id": "Codeine_KuKanich2016_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
     "label": "Shah_1990 \u00b7 reference",
     "model_id": "Codeine_Shah1990_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -38629,7 +38573,7 @@
     "internal": "rejected",
     "label": "Anderson_2026 \u00b7 reference",
     "model_id": "Codeine_Anderson2026_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -38645,7 +38589,7 @@
     "internal": "rejected",
     "label": "Gretler_2020 \u00b7 reference",
     "model_id": "Codeine_Gretler2020_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -38683,16 +38627,16 @@
    }
   ],
   "dir": "drug_codeine",
-  "extracted": 5,
-  "last_change": "2026-11-03T19:37:50.067241+00:00",
+  "extracted": 3,
+  "last_change": "2026-11-05T11:33:09.248427+00:00",
   "name": "codeine",
-  "needs_review": 5,
+  "needs_review": 7,
   "records": 17,
   "rejected": 7,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "codeine",
-  "stale": 5,
+  "stale": 1,
   "tally": {
    "pd": [
     2,
@@ -45591,77 +45535,53 @@
   "atc_codes": [
    "N05BA01"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 7,
    "pgx": 0,
-   "pk": 12
+   "pk": 11
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Cavallaro_2026 \u00b7 reference",
     "model_id": "Diazepam_Cavallaro2026_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "confirmed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Greenblatt_1989 \u00b7 reference",
     "model_id": "Diazepam_Greenblatt1989_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Helfer_2026 \u00b7 reference",
-    "model_id": "Diazepam_Helfer2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Huang_2025_2 \u00b7 reference",
     "model_id": "Diazepam_Huang2025v2_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Jahn_2018 \u00b7 reference",
     "model_id": "Diazepam_Jahn2018_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Norman_1997 \u00b7 reference",
     "model_id": "Diazepam_Norman1997_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Wang_2020 \u00b7 reference",
-    "model_id": "Diazepam_Wang2020_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Wang_2022 \u00b7 reference",
-    "model_id": "Diazepam_Wang2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -45683,7 +45603,7 @@
     "internal": "needs_review",
     "label": "Klotz_1976 \u00b7 reference",
     "model_id": "Diazepam_Klotz1976_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -45696,10 +45616,26 @@
     "xc": "partial"
    },
    {
+    "internal": "needs_review",
+    "label": "Wang_2020 \u00b7 reference",
+    "model_id": "Diazepam_Wang2020_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Wang_2022 \u00b7 reference",
+    "model_id": "Diazepam_Wang2022_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
     "internal": "rejected",
     "label": "Klotz_1975 \u00b7 reference",
     "model_id": "Diazepam_Klotz1975_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -45707,7 +45643,7 @@
     "internal": "rejected",
     "label": "Ku_2018 \u00b7 reference",
     "model_id": "Diazepam_Ku2018_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -45715,7 +45651,7 @@
     "internal": "rejected",
     "label": "L\u00f6scher_1981 \u00b7 reference",
     "model_id": "Diazepam_Lscher1981_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -45723,22 +45659,22 @@
     "internal": "rejected",
     "label": "Wang_2020_2 \u00b7 reference",
     "model_id": "Diazepam_Wang2020v2_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    }
   ],
   "dir": "drug_diazepam",
-  "extracted": 8,
-  "last_change": "2026-11-03T21:24:57.491257+00:00",
+  "extracted": 5,
+  "last_change": "2026-11-05T11:37:15.111294+00:00",
   "name": "diazepam",
-  "needs_review": 4,
-  "records": 16,
+  "needs_review": 6,
+  "records": 15,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 9,
   "slug": "diazepam",
-  "stale": 9,
+  "stale": 0,
   "tally": {
    "pd": [
     7,
@@ -45751,7 +45687,7 @@
     2
    ],
    "pk": [
-    12,
+    11,
     4,
     0
    ]
@@ -46060,39 +45996,31 @@
   "counts": {
    "pd": 8,
    "pgx": 4,
-   "pk": 5
+   "pk": 4
   },
   "curated": 0,
   "details": [
    {
     "internal": "curated_candidate",
-    "label": "Lucas_2016 \u00b7 reference",
-    "model_id": "Diclofenac_Lucas2016_reference",
-    "stale": false,
-    "status": "reproduces",
-    "xc": "unchecked"
-   },
-   {
-    "internal": "extracted",
     "label": "Rodriguez-Cruz_2021 \u00b7 reference",
     "model_id": "Diclofenac_RodriguezCruz2021_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Yuan_2017 \u00b7 reference",
     "model_id": "Diclofenac_Yuan2017_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
     "label": "Rahal_2008 \u00b7 reference",
     "model_id": "Diclofenac_Rahal2008_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -46100,7 +46028,7 @@
     "internal": "needs_review",
     "label": "van_2004 \u00b7 reference",
     "model_id": "Diclofenac_van2004_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -46108,7 +46036,7 @@
     "internal": "rejected",
     "label": "Evans_1993 \u00b7 reference",
     "model_id": "Diclofenac_Evans1993_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -46138,17 +46066,9 @@
    },
    {
     "internal": "rejected",
-    "label": "Singh_2026 \u00b7 reference",
-    "model_id": "Diclofenac_Singh2026_reference",
-    "stale": true,
-    "status": "rejected",
-    "xc": "disputed"
-   },
-   {
-    "internal": "rejected",
     "label": "Standing_2008 \u00b7 reference",
     "model_id": "Diclofenac_Standing2008_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -46156,7 +46076,7 @@
     "internal": "rejected",
     "label": "Standing_2011 \u00b7 reference",
     "model_id": "Diclofenac_Standing2011_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -46210,16 +46130,16 @@
    }
   ],
   "dir": "drug_diclofenac",
-  "extracted": 3,
-  "last_change": "2026-11-03T22:55:43.255163+00:00",
+  "extracted": 2,
+  "last_change": "2026-11-05T12:18:57.704338+00:00",
   "name": "diclofenac",
   "needs_review": 2,
-  "records": 18,
-  "rejected": 13,
+  "records": 16,
+  "rejected": 12,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "diclofenac",
-  "stale": 7,
+  "stale": 0,
   "tally": {
    "pd": [
     8,
@@ -46232,8 +46152,8 @@
     11
    ],
    "pk": [
-    5,
-    13,
+    4,
+    12,
     0
    ]
   }
@@ -51478,7 +51398,7 @@
   "records": 7,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "dulaglutide",
   "stale": 0,
   "tally": {
@@ -71401,7 +71321,7 @@
     "internal": "rejected",
     "label": "Rambiritch_2016_2 \u00b7 reference",
     "model_id": "Glibenclamide_Rambiritch2016v2_reference",
-    "stale": false,
+    "stale": true,
     "status": "rejected",
     "xc": "unchecked"
    }
@@ -71414,9 +71334,9 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 6,
   "slug": "glibenclamide",
-  "stale": 0,
+  "stale": 1,
   "tally": {
    "pd": [
     1,
@@ -71597,7 +71517,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 6,
   "slug": "glimepiride",
   "stale": 0,
   "tally": {
@@ -76477,7 +76397,7 @@
   "counts": {
    "pd": 6,
    "pgx": 12,
-   "pk": 23
+   "pk": 22
   },
   "curated": 0,
   "details": [
@@ -76642,16 +76562,8 @@
     "xc": "confirmed"
    },
    {
-    "internal": "needs_review",
-    "label": "Morse_2022 \u00b7 estimate",
-    "model_id": "Ibuprofen_Morse2022_reference",
-    "stale": false,
-    "status": "needs_review",
-    "xc": "disputed"
-   },
-   {
     "internal": "model_quarantined",
-    "label": "Morse_2022 \u00b7 sh_documentclass_12pt_minimal_usepackage_amsmath_usepackage_wasysym_usepackage_amsfonts_usepackage_amssymb_usepackage_amsbsy_usepackage_mathrsfs_usepackage_upgreek_setlength_oddsidemargin_69pt_begin_document_eta_end_document",
+    "label": "Morse_2022 \u00b7 reference",
     "model_id": "Ibuprofen_Morse2022_reference",
     "stale": false,
     "status": "needs_review",
@@ -76664,14 +76576,6 @@
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
-   },
-   {
-    "internal": "rejected",
-    "label": "Albert_1984 \u00b7 reference",
-    "model_id": "Ibuprofen_Albert1984_reference",
-    "stale": false,
-    "status": "rejected",
-    "xc": "unchecked"
    },
    {
     "internal": "rejected",
@@ -76724,13 +76628,13 @@
   ],
   "dir": "drug_ibuprofen",
   "extracted": 7,
-  "last_change": "2026-11-03T16:15:48.324443+00:00",
+  "last_change": "2026-11-05T11:29:50.031779+00:00",
   "name": "ibuprofen",
-  "needs_review": 16,
-  "records": 30,
-  "rejected": 7,
+  "needs_review": 15,
+  "records": 28,
+  "rejected": 6,
   "rendered": true,
-  "simulatable": 11,
+  "simulatable": 13,
   "slug": "ibuprofen",
   "stale": 0,
   "tally": {
@@ -76745,8 +76649,8 @@
     25
    ],
    "pk": [
-    23,
-    7,
+    22,
+    6,
     0
    ]
   }
@@ -83518,7 +83422,7 @@
   "records": 8,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 8,
   "slug": "kanamycin",
   "stale": 0,
   "tally": {
@@ -87878,25 +87782,17 @@
   ],
   "best_status": "not_simulated",
   "counts": {
-   "pd": 2,
+   "pd": 3,
    "pgx": 0,
    "pk": 3
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Younis_2018 \u00b7 reference",
-    "model_id": "Levothyroxine_Younis2018_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
     "internal": "needs_review",
     "label": "Fitch_2025 \u00b7 600_g_xp_8121_sc",
     "model_id": "Levothyroxine_Fitch2025_600_g_xp_8121_sc",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -87909,18 +87805,18 @@
     "xc": "disputed"
    },
    {
-    "internal": "",
-    "label": "Inada_1975 \u00b7 reference",
-    "model_id": "Levothyroxine_Inada1975_reference",
-    "stale": true,
-    "status": null,
-    "xc": "unchecked"
+    "internal": "needs_review",
+    "label": "Younis_2018 \u00b7 reference",
+    "model_id": "Levothyroxine_Younis2018_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
     "label": "Fitch_2025 \u00b7 1200_g_xp_8121_sc",
     "model_id": "Levothyroxine_Fitch2025_1200_g_xp_8121_sc",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -87928,7 +87824,7 @@
     "internal": "rejected",
     "label": "Fitch_2025 \u00b7 1500_g_xp_8121_sc",
     "model_id": "Levothyroxine_Fitch2025_1500_g_xp_8121_sc",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -87936,7 +87832,7 @@
     "internal": "rejected",
     "label": "Fitch_2025 \u00b7 600_g_oral_lt4",
     "model_id": "Levothyroxine_Fitch2025_600_g_oral_lt4",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -87952,7 +87848,7 @@
     "internal": "rejected",
     "label": "Katzeff_1991 \u00b7 reference",
     "model_id": "Levothyroxine_Katzeff1991_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "unchecked"
    },
@@ -87992,7 +87888,7 @@
     "internal": "rejected",
     "label": "Miralles-Garc\u00eda_1981 \u00b7 reference",
     "model_id": "Levothyroxine_MirallesGarca1981_reference",
-    "stale": false,
+    "stale": true,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -88000,7 +87896,7 @@
     "internal": "rejected",
     "label": "Nicoloff_1968 \u00b7 reference",
     "model_id": "Levothyroxine_Nicoloff1968_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -88014,19 +87910,19 @@
    }
   ],
   "dir": "drug_levothyroxine",
-  "extracted": 1,
-  "last_change": "2026-11-04T00:27:09.864123+00:00",
+  "extracted": 0,
+  "last_change": "2026-11-05T15:44:37.265653+00:00",
   "name": "Levothyroxine",
-  "needs_review": 2,
-  "records": 16,
+  "needs_review": 3,
+  "records": 15,
   "rejected": 12,
   "rendered": true,
   "simulatable": 1,
   "slug": "levothyroxine",
-  "stale": 8,
+  "stale": 1,
   "tally": {
    "pd": [
-    2,
+    3,
     0,
     0
    ],
@@ -88038,7 +87934,7 @@
    "pk": [
     3,
     12,
-    1
+    0
    ]
   }
  },
@@ -96111,7 +96007,7 @@
     "internal": "rejected",
     "label": "Blaser_2021 \u00b7 reference",
     "model_id": "MetamizoleSodium_Blaser2021_reference",
-    "stale": false,
+    "stale": true,
     "status": "rejected",
     "xc": "unchecked"
    },
@@ -96142,7 +96038,7 @@
   "rendered": true,
   "simulatable": 2,
   "slug": "metamizole_sodium",
-  "stale": 0,
+  "stale": 1,
   "tally": {
    "pd": [
     1,
@@ -96526,7 +96422,7 @@
     "internal": "needs_review",
     "label": "Stage_2019 \u00b7 reference",
     "model_id": "Metformin_Stage2019_reference",
-    "stale": false,
+    "stale": true,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -96606,7 +96502,7 @@
     "internal": "needs_review",
     "label": "Wang_2022 \u00b7 reference",
     "model_id": "Metformin_Wang2022_reference",
-    "stale": false,
+    "stale": true,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -96715,9 +96611,9 @@
   "records": 49,
   "rejected": 10,
   "rendered": true,
-  "simulatable": 26,
+  "simulatable": 27,
   "slug": "metformin",
-  "stale": 0,
+  "stale": 2,
   "tally": {
    "pd": [
     9,
@@ -97297,122 +97193,10 @@
   "counts": {
    "pd": 4,
    "pgx": 10,
-   "pk": 37
+   "pk": 33
   },
   "curated": 0,
   "details": [
-   {
-    "internal": "extracted",
-    "label": "Faltaos_2006 \u00b7 reference",
-    "model_id": "Methotrexate_Faltaos2006_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Gao_2021 \u00b7 reference",
-    "model_id": "Methotrexate_Gao2021_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Iven_1985 \u00b7 12_mg_kg",
-    "model_id": "Methotrexate_Iven1985_12_mg_kg",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Iven_1985 \u00b7 1_33_mg_kg",
-    "model_id": "Methotrexate_Iven1985_1_33_mg_kg",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Iven_1985 \u00b7 4_mg_kg",
-    "model_id": "Methotrexate_Iven1985_4_mg_kg",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Mei_2018 \u00b7 reference",
-    "model_id": "Methotrexate_Mei2018_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Olivo_2024 \u00b7 reference",
-    "model_id": "Methotrexate_Olivo2024_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Pan_2026 \u00b7 reference",
-    "model_id": "Methotrexate_Pan2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Tan_2024 \u00b7 reference",
-    "model_id": "Methotrexate_Tan2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Taylor_2026 \u00b7 reference",
-    "model_id": "Methotrexate_Taylor2026_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Yu_2025 \u00b7 reference",
-    "model_id": "Methotrexate_Yu2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zang_2019 \u00b7 reference",
-    "model_id": "Methotrexate_Zang2019_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhan_2022 \u00b7 reference",
-    "model_id": "Methotrexate_Zhan2022_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "van_2024 \u00b7 reference",
-    "model_id": "Methotrexate_van2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
    {
     "internal": "needs_review",
     "label": "Bischoff_1971 \u00b7 17_kg_dog",
@@ -97457,7 +97241,7 @@
     "internal": "needs_review",
     "label": "Blackman_2026 \u00b7 base",
     "model_id": "Methotrexate_Blackman2026_base",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -97465,7 +97249,7 @@
     "internal": "needs_review",
     "label": "Blackman_2026 \u00b7 final",
     "model_id": "Methotrexate_Blackman2026_final",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -97473,9 +97257,25 @@
     "internal": "needs_review",
     "label": "Bremnes_1989 \u00b7 reference",
     "model_id": "Methotrexate_Bremnes1989_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Faltaos_2006 \u00b7 reference",
+    "model_id": "Methotrexate_Faltaos2006_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Gao_2021 \u00b7 reference",
+    "model_id": "Methotrexate_Gao2021_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
    },
    {
     "internal": "needs_review",
@@ -97505,7 +97305,7 @@
     "internal": "needs_review",
     "label": "Kamel_1988 \u00b7 reference",
     "model_id": "Methotrexate_Kamel1988_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -97527,9 +97327,33 @@
    },
    {
     "internal": "needs_review",
+    "label": "Mei_2018 \u00b7 reference",
+    "model_id": "Methotrexate_Mei2018_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Olivo_2024 \u00b7 reference",
+    "model_id": "Methotrexate_Olivo2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Pan_2026 \u00b7 reference",
+    "model_id": "Methotrexate_Pan2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Pignon_1994 \u00b7 reference",
     "model_id": "Methotrexate_Pignon1994_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -97553,25 +97377,17 @@
     "internal": "needs_review",
     "label": "Shi_2020 \u00b7 reference",
     "model_id": "Methotrexate_Shi2020_reference",
-    "stale": false,
+    "stale": true,
     "status": "needs_review",
     "xc": "unchecked"
    },
    {
     "internal": "needs_review",
-    "label": "Simon_2013 \u00b7 mean",
+    "label": "Simon_2013 \u00b7 reference",
     "model_id": "Methotrexate_Simon2013_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
-    "xc": "partial"
-   },
-   {
-    "internal": "needs_review",
-    "label": "Simon_2013 \u00b7 mean_s_e",
-    "model_id": "Methotrexate_Simon2013_reference",
-    "stale": true,
-    "status": "needs_review",
-    "xc": "partial"
+    "xc": "confirmed"
    },
    {
     "internal": "needs_review",
@@ -97583,11 +97399,51 @@
    },
    {
     "internal": "needs_review",
+    "label": "Tan_2024 \u00b7 reference",
+    "model_id": "Methotrexate_Tan2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Taylor_2026 \u00b7 reference",
+    "model_id": "Methotrexate_Taylor2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Wei_2025 \u00b7 reference",
     "model_id": "Methotrexate_Wei2025_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Yu_2025 \u00b7 reference",
+    "model_id": "Methotrexate_Yu2025_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zang_2019 \u00b7 reference",
+    "model_id": "Methotrexate_Zang2019_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhan_2022 \u00b7 reference",
+    "model_id": "Methotrexate_Zhan2022_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
    },
    {
     "internal": "needs_review",
@@ -97598,12 +97454,44 @@
     "xc": "confirmed"
    },
    {
+    "internal": "needs_review",
+    "label": "van_2024 \u00b7 reference",
+    "model_id": "Methotrexate_van2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
     "internal": "rejected",
     "label": "Bruno_1985 \u00b7 reference",
     "model_id": "Methotrexate_Bruno1985_reference",
     "stale": false,
     "status": "rejected",
     "xc": "confirmed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Iven_1985 \u00b7 12_mg_kg",
+    "model_id": "Methotrexate_Iven1985_12_mg_kg",
+    "stale": false,
+    "status": "rejected",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Iven_1985 \u00b7 1_33_mg_kg",
+    "model_id": "Methotrexate_Iven1985_1_33_mg_kg",
+    "stale": false,
+    "status": "rejected",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Iven_1985 \u00b7 4_mg_kg",
+    "model_id": "Methotrexate_Iven1985_4_mg_kg",
+    "stale": false,
+    "status": "rejected",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
@@ -97617,7 +97505,7 @@
     "internal": "rejected",
     "label": "Jung_2024 \u00b7 reference",
     "model_id": "Methotrexate_Jung2024_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -97641,7 +97529,7 @@
     "internal": "rejected",
     "label": "Rega_2026 \u00b7 reference",
     "model_id": "Methotrexate_Rega2026_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "unchecked"
    },
@@ -97649,7 +97537,7 @@
     "internal": "rejected",
     "label": "Rosario_2017 \u00b7 reference",
     "model_id": "Methotrexate_Rosario2017_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -97665,7 +97553,7 @@
     "internal": "rejected",
     "label": "Simon_2026 \u00b7 reference",
     "model_id": "Methotrexate_Simon2026_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -97719,16 +97607,16 @@
    }
   ],
   "dir": "drug_methotrexate",
-  "extracted": 14,
-  "last_change": "2026-11-04T02:29:06.914920+00:00",
+  "extracted": 0,
+  "last_change": "2026-11-05T11:42:09.916449+00:00",
   "name": "methotrexate",
-  "needs_review": 23,
-  "records": 52,
-  "rejected": 15,
+  "needs_review": 33,
+  "records": 51,
+  "rejected": 18,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 17,
   "slug": "methotrexate",
-  "stale": 16,
+  "stale": 2,
   "tally": {
    "pd": [
     4,
@@ -97741,8 +97629,8 @@
     38
    ],
    "pk": [
-    37,
-    15,
+    33,
+    18,
     0
    ]
   }
@@ -103424,36 +103312,20 @@
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Graff_2003 \u00b7 reference",
-    "model_id": "Montelukast_Graff2003_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Ramakrishnan_2005 \u00b7 reference",
-    "model_id": "Montelukast_Ramakrishnan2005_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhu_2024 \u00b7 reference",
-    "model_id": "Montelukast_Zhu2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
     "internal": "needs_review",
     "label": "Friesen_2004 \u00b7 reference",
     "model_id": "Montelukast_Friesen2004_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Graff_2003 \u00b7 reference",
+    "model_id": "Montelukast_Graff2003_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -103544,26 +103416,26 @@
     "xc": "confirmed"
    },
    {
-    "internal": "",
-    "label": "Knorr_2006 \u00b7 reference",
-    "model_id": "Montelukast_Knorr2006_reference",
-    "stale": true,
-    "status": null,
-    "xc": "disputed"
+    "internal": "needs_review",
+    "label": "Ramakrishnan_2005 \u00b7 reference",
+    "model_id": "Montelukast_Ramakrishnan2005_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
-    "internal": "",
-    "label": "Li_2019 \u00b7 reference",
-    "model_id": "Montelukast_Li2019_reference",
-    "stale": true,
-    "status": null,
-    "xc": "partial"
+    "internal": "needs_review",
+    "label": "Zhu_2024 \u00b7 reference",
+    "model_id": "Montelukast_Zhu2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 10_15_years_old",
     "model_id": "Montelukast_Okubo2016_10_15_years_old",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103571,7 +103443,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 1_5_years_old",
     "model_id": "Montelukast_Okubo2016_1_5_years_old",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103579,7 +103451,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 6_9_years_old",
     "model_id": "Montelukast_Okubo2016_6_9_years_old",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103587,7 +103459,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 all",
     "model_id": "Montelukast_Okubo2016_all",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103595,7 +103467,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 montelukast_sodium_4_mg_12_weeks_treatmentn_36_n",
     "model_id": "Montelukast_Okubo2016_montelukast_sodium_4_mg_12_weeks_treat",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103603,7 +103475,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 montelukast_sodium_4_mg_4_weeks_treatmentn_15_n",
     "model_id": "Montelukast_Okubo2016_montelukast_sodium_4_mg_4_weeks_treatm",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103611,7 +103483,7 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 montelukast_sodium_5_mg_12_weeks_treatmentn_36_n",
     "model_id": "Montelukast_Okubo2016_montelukast_sodium_5_mg_12_weeks_treat",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -103619,22 +103491,22 @@
     "internal": "rejected",
     "label": "Okubo_2016 \u00b7 totaln_58_n",
     "model_id": "Montelukast_Okubo2016_totaln_58_n",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    }
   ],
   "dir": "drug_montelukast",
-  "extracted": 3,
-  "last_change": "2026-11-04T04:48:15.157577+00:00",
+  "extracted": 0,
+  "last_change": "2026-11-05T11:45:31.883635+00:00",
   "name": "montelukast",
-  "needs_review": 12,
-  "records": 25,
+  "needs_review": 15,
+  "records": 23,
   "rejected": 8,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "montelukast",
-  "stale": 11,
+  "stale": 0,
   "tally": {
    "pd": [
     3,
@@ -103649,7 +103521,7 @@
    "pk": [
     15,
     8,
-    2
+    0
    ]
   }
  },
@@ -112050,125 +111922,29 @@
   "atc_codes": [
    "A02BC01"
   ],
-  "best_status": "caveats",
+  "best_status": "reproduces",
   "counts": {
    "pd": 11,
    "pgx": 3,
-   "pk": 25
+   "pk": 24
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Chung_2022 \u00b7 reference",
-    "model_id": "Omeprazole_Chung2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Gao_2025 \u00b7 reference",
-    "model_id": "Omeprazole_Gao2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Gaspar_2025 \u00b7 reference",
-    "model_id": "Omeprazole_Gaspar2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Khan-Asa_2020 \u00b7 reference",
-    "model_id": "Omeprazole_KhanAsa2020_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Li_2022 \u00b7 reference",
-    "model_id": "Omeprazole_Li2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Litalien_2005 \u00b7 reference",
-    "model_id": "Omeprazole_Litalien2005_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Liu_2022 \u00b7 reference",
-    "model_id": "Omeprazole_Liu2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Marques_2026 \u00b7 reference",
     "model_id": "Omeprazole_Marques2026_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "McCann_2023 \u00b7 reference",
-    "model_id": "Omeprazole_McCann2023_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Panetta_2024 \u00b7 reference",
     "model_id": "Omeprazole_Panetta2024_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Rao_2007 \u00b7 reference",
-    "model_id": "Omeprazole_Rao2007_reference",
     "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhang_2025_2 \u00b7 reference",
-    "model_id": "Omeprazole_Zhang2025v2_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhang_2025_3 \u00b7 reference",
-    "model_id": "Omeprazole_Zhang2025v3_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Zhao_2018 \u00b7 reference",
-    "model_id": "Omeprazole_Zhao2018_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
+    "status": "reproduces",
+    "xc": "partial"
    },
    {
     "internal": "needs_review",
@@ -112206,9 +111982,25 @@
     "internal": "needs_review",
     "label": "Chen_2022_2 \u00b7 reference",
     "model_id": "Omeprazole_Chen2022v2_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Gao_2025 \u00b7 reference",
+    "model_id": "Omeprazole_Gao2025_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Gaspar_2025 \u00b7 reference",
+    "model_id": "Omeprazole_Gaspar2025_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -112222,7 +112014,15 @@
     "internal": "needs_review",
     "label": "Katashima_1995 \u00b7 reference",
     "model_id": "Omeprazole_Katashima1995_reference",
-    "stale": true,
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Khan-Asa_2020 \u00b7 reference",
+    "model_id": "Omeprazole_KhanAsa2020_reference",
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
    },
@@ -112230,9 +112030,33 @@
     "internal": "needs_review",
     "label": "Leucuta_2004 \u00b7 reference",
     "model_id": "Omeprazole_Leucuta2004_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Li_2022 \u00b7 reference",
+    "model_id": "Omeprazole_Li2022_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Litalien_2005 \u00b7 reference",
+    "model_id": "Omeprazole_Litalien2005_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Liu_2022 \u00b7 reference",
+    "model_id": "Omeprazole_Liu2022_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
@@ -112252,25 +112076,57 @@
    },
    {
     "internal": "needs_review",
-    "label": "Yang_2026_2 \u00b7 reference",
-    "model_id": "Omeprazole_Yang2026v2_reference",
-    "stale": true,
+    "label": "McCann_2023 \u00b7 reference",
+    "model_id": "Omeprazole_McCann2023_reference",
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
    {
-    "internal": "",
-    "label": "Marier_2004 \u00b7 reference",
-    "model_id": "Omeprazole_Marier2004_reference",
-    "stale": true,
-    "status": null,
-    "xc": "partial"
+    "internal": "needs_review",
+    "label": "Rao_2007 \u00b7 reference",
+    "model_id": "Omeprazole_Rao2007_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Yang_2026_2 \u00b7 reference",
+    "model_id": "Omeprazole_Yang2026v2_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2025_2 \u00b7 reference",
+    "model_id": "Omeprazole_Zhang2025v2_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Zhang_2025_3 \u00b7 reference",
+    "model_id": "Omeprazole_Zhang2025v3_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Zhao_2018 \u00b7 reference",
+    "model_id": "Omeprazole_Zhao2018_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
     "label": "Ala_2013 \u00b7 reference",
     "model_id": "Omeprazole_Ala2013_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -112334,7 +112190,7 @@
     "internal": "rejected",
     "label": "Lin_2018 \u00b7 reference",
     "model_id": "Omeprazole_Lin2018_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -112350,22 +112206,22 @@
     "internal": "rejected",
     "label": "Solana_2014 \u00b7 reference",
     "model_id": "Omeprazole_Solana2014_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    }
   ],
   "dir": "drug_omeprazole",
-  "extracted": 14,
-  "last_change": "2026-11-04T06:16:45.056960+00:00",
+  "extracted": 2,
+  "last_change": "2026-11-05T11:45:29.020598+00:00",
   "name": "omeprazole",
-  "needs_review": 11,
-  "records": 37,
+  "needs_review": 22,
+  "records": 35,
   "rejected": 11,
   "rendered": true,
-  "simulatable": 15,
+  "simulatable": 16,
   "slug": "omeprazole",
-  "stale": 20,
+  "stale": 0,
   "tally": {
    "pd": [
     11,
@@ -112378,9 +112234,9 @@
     29
    ],
    "pk": [
-    25,
+    24,
     11,
-    1
+    0
    ]
   }
  },
@@ -137567,7 +137423,7 @@
   ],
   "best_status": "reproduces",
   "counts": {
-   "pd": 14,
+   "pd": 13,
    "pgx": 0,
    "pk": 12
   },
@@ -137575,50 +137431,34 @@
   "details": [
    {
     "internal": "extracted",
-    "label": "Bisaso_2026 \u00b7 reference",
-    "model_id": "Salbutamol_Bisaso2026_reference",
+    "label": "Heuberger_2018 \u00b7 reference",
+    "model_id": "Salbutamol_Heuberger2018_reference",
     "stale": true,
     "status": "not_simulated",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Courlet_2022 \u00b7 reference",
-    "model_id": "Salbutamol_Courlet2022_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Heuberger_2018 \u00b7 original_value",
-    "model_id": "Salbutamol_Heuberger2018_original_value",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Marques_2024_2 \u00b7 reference",
-    "model_id": "Salbutamol_Marques2024v2_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Walsh_2023 \u00b7 fixed_effects",
     "model_id": "Salbutamol_Walsh2023_fixed_effects",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
-    "label": "Walsh_2023 \u00b7 random_effects",
-    "model_id": "Salbutamol_Walsh2023_random_effects",
+    "internal": "needs_review",
+    "label": "Bisaso_2026 \u00b7 reference",
+    "model_id": "Salbutamol_Bisaso2026_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
+    "xc": "partial"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Courlet_2022 \u00b7 reference",
+    "model_id": "Salbutamol_Courlet2022_reference",
+    "stale": false,
+    "status": "needs_review",
     "xc": "partial"
    },
    {
@@ -137630,18 +137470,18 @@
     "xc": "confirmed"
    },
    {
-    "internal": "needs_review",
-    "label": "Heuberger_2018 \u00b7 reference",
-    "model_id": "Salbutamol_Heuberger2018_reference",
+    "internal": "model_quarantined",
+    "label": "Heuberger_2018 \u00b7 original_value",
+    "model_id": "Salbutamol_Heuberger2018_original_value",
     "stale": false,
     "status": "needs_review",
-    "xc": "partial"
+    "xc": "disputed"
    },
    {
     "internal": "needs_review",
     "label": "Marques_2024 \u00b7 estimate",
     "model_id": "Salbutamol_Marques2024_estimate",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -137649,7 +137489,7 @@
     "internal": "needs_review",
     "label": "Marques_2024 \u00b7 geometric_mean",
     "model_id": "Salbutamol_Marques2024_geometric_mean",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -137670,18 +137510,26 @@
     "xc": "unchecked"
    },
    {
-    "internal": "",
-    "label": "Walsh_2023 \u00b7 reference",
-    "model_id": "Salbutamol_Walsh2023_reference",
-    "stale": true,
-    "status": null,
-    "xc": "disputed"
+    "internal": "needs_review",
+    "label": "Marques_2024_2 \u00b7 reference",
+    "model_id": "Salbutamol_Marques2024v2_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Walsh_2023 \u00b7 random_effects",
+    "model_id": "Salbutamol_Walsh2023_random_effects",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
     "internal": "rejected",
     "label": "Valenzuela_2006 \u00b7 reference",
     "model_id": "Salbutamol_Valenzuela2006_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -137689,7 +137537,7 @@
     "internal": "rejected",
     "label": "Vet_2020 \u00b7 reference",
     "model_id": "Salbutamol_Vet2020_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -137703,20 +137551,20 @@
    }
   ],
   "dir": "drug_salbutamol",
-  "extracted": 6,
-  "last_change": "2026-11-04T09:13:28.073212+00:00",
+  "extracted": 2,
+  "last_change": "2026-11-05T12:25:02.249691+00:00",
   "name": "salbutamol",
-  "needs_review": 6,
-  "records": 16,
+  "needs_review": 10,
+  "records": 15,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 13,
   "slug": "salbutamol",
-  "stale": 9,
+  "stale": 2,
   "tally": {
    "pd": [
-    14,
-    0,
+    13,
+    1,
     0
    ],
    "pgx": [
@@ -137727,7 +137575,7 @@
    "pk": [
     12,
     3,
-    1
+    0
    ]
   }
  },
@@ -139193,84 +139041,60 @@
   "atc_codes": [
    "A10BJ06"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
-   "pd": 7,
+   "pd": 6,
    "pgx": 0,
    "pk": 12
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Carlsson_2018 \u00b7 base",
     "model_id": "Semaglutide_Carlsson2018_base",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Carlsson_2018 \u00b7 full",
     "model_id": "Semaglutide_Carlsson2018_full",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Guo_2023 \u00b7 reference",
     "model_id": "Semaglutide_Guo2023_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Jensen_2017 \u00b7 reference",
     "model_id": "Semaglutide_Jensen2017_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "needs_review",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Langeskov_2022 \u00b7 reference",
     "model_id": "Semaglutide_Langeskov2022_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
+    "internal": "needs_review",
     "label": "Min_2025 \u00b7 reference",
     "model_id": "Semaglutide_Min2025_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Overgaard_2021 \u00b7 healthy_subjects",
-    "model_id": "Semaglutide_Overgaard2021_healthy_subjects",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Overgaard_2021 \u00b7 subjects_with_t2d",
-    "model_id": "Semaglutide_Overgaard2021_subjects_with_t2d",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Yu_2024 \u00b7 reference",
-    "model_id": "Semaglutide_Yu2024_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "needs_review",
     "xc": "partial"
    },
    {
@@ -139285,7 +139109,7 @@
     "internal": "needs_review",
     "label": "Overgaard_2019 \u00b7 one_compartment_model_from_phase_3a_trialsa",
     "model_id": "Semaglutide_Overgaard2019_one_compartment_model_from_phase_3",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
    },
@@ -139293,15 +139117,39 @@
     "internal": "needs_review",
     "label": "Overgaard_2019 \u00b7 two_compartment_final_model",
     "model_id": "Semaglutide_Overgaard2019_two_compartment_final_model",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Overgaard_2021 \u00b7 healthy_subjects",
+    "model_id": "Semaglutide_Overgaard2021_healthy_subjects",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Overgaard_2021 \u00b7 subjects_with_t2d",
+    "model_id": "Semaglutide_Overgaard2021_subjects_with_t2d",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Yu_2024 \u00b7 reference",
+    "model_id": "Semaglutide_Yu2024_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
     "internal": "rejected",
     "label": "Choi_2025 \u00b7 reference",
     "model_id": "Semaglutide_Choi2025_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -139309,7 +139157,7 @@
     "internal": "rejected",
     "label": "Overgaard_2019 \u00b7 estimate",
     "model_id": "Semaglutide_Overgaard2019_estimate",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -139317,26 +139165,26 @@
     "internal": "rejected",
     "label": "Overgaard_2021_2 \u00b7 reference",
     "model_id": "Semaglutide_Overgaard2021v2_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    }
   ],
   "dir": "drug_semaglutide",
-  "extracted": 9,
-  "last_change": "2026-11-03T16:54:00.307870+00:00",
+  "extracted": 1,
+  "last_change": "2026-11-05T11:53:25.734508+00:00",
   "name": "semaglutide",
-  "needs_review": 3,
+  "needs_review": 11,
   "records": 15,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 11,
   "slug": "semaglutide",
-  "stale": 12,
+  "stale": 0,
   "tally": {
    "pd": [
-    7,
-    0,
+    6,
+    1,
     0
    ],
    "pgx": [
@@ -147689,43 +147537,35 @@
   "atc_codes": [
    "L02BA01"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
-   "pd": 9,
+   "pd": 10,
    "pgx": 1,
-   "pk": 4
+   "pk": 3
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Bosch_2023 \u00b7 reference",
     "model_id": "Tamoxifen_Bosch2023_reference",
     "stale": false,
-    "status": "not_simulated",
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
-    "internal": "extracted",
-    "label": "Mueller-Schoell_2020 \u00b7 reference",
-    "model_id": "Tamoxifen_MuellerSchoell2020_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Xu_2026 \u00b7 reference",
     "model_id": "Tamoxifen_Xu2026_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
     "label": "Dilli_2022 \u00b7 reference",
     "model_id": "Tamoxifen_Dilli2022_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -147749,9 +147589,17 @@
     "internal": "rejected",
     "label": "Mc_2024 \u00b7 reference",
     "model_id": "Tamoxifen_Mc2024_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
+   },
+   {
+    "internal": "rejected",
+    "label": "Mueller-Schoell_2020 \u00b7 reference",
+    "model_id": "Tamoxifen_MuellerSchoell2020_reference",
+    "stale": false,
+    "status": "rejected",
+    "xc": "disputed"
    },
    {
     "internal": "rejected",
@@ -147789,7 +147637,7 @@
     "internal": "rejected",
     "label": "Yuan_2017 \u00b7 reference",
     "model_id": "Tamoxifen_Yuan2017_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "unchecked"
    },
@@ -147797,25 +147645,25 @@
     "internal": "rejected",
     "label": "ter_2014 \u00b7 reference",
     "model_id": "Tamoxifen_ter2014_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    }
   ],
   "dir": "drug_tamoxifen",
-  "extracted": 3,
-  "last_change": "2026-11-04T12:05:58.697454+00:00",
+  "extracted": 2,
+  "last_change": "2026-11-05T15:45:14.164598+00:00",
   "name": "tamoxifen",
   "needs_review": 1,
   "records": 13,
-  "rejected": 9,
+  "rejected": 10,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "tamoxifen",
-  "stale": 6,
+  "stale": 0,
   "tally": {
    "pd": [
-    9,
+    10,
     0,
     0
    ],
@@ -147825,8 +147673,8 @@
     64
    ],
    "pk": [
-    4,
-    9,
+    3,
+    10,
     0
    ]
   }
@@ -156316,58 +156164,50 @@
   "atc_codes": [
    "C03XA01"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 0,
    "pgx": 1,
-   "pk": 6
+   "pk": 5
   },
   "curated": 0,
   "details": [
    {
-    "internal": "extracted",
-    "label": "Lanke_2019 \u00b7 base",
-    "model_id": "Tolvaptan_Lanke2019_base",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
-   {
-    "internal": "extracted",
-    "label": "Lanke_2019 \u00b7 final",
-    "model_id": "Tolvaptan_Lanke2019_final",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
+    "internal": "curated_candidate",
     "label": "Plosker_2010 \u00b7 reference",
     "model_id": "Tolvaptan_Plosker2010_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "stale": false,
+    "status": "reproduces",
     "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Shoaf_2017 \u00b7 reference",
-    "model_id": "Tolvaptan_Shoaf2017_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
+    "internal": "needs_review",
+    "label": "Lanke_2019 \u00b7 base",
+    "model_id": "Tolvaptan_Lanke2019_base",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "partial"
    },
    {
-    "internal": "extracted",
-    "label": "Van_2013 \u00b7 reference",
-    "model_id": "Tolvaptan_Van2013_reference",
-    "stale": true,
-    "status": "not_simulated",
+    "internal": "needs_review",
+    "label": "Lanke_2019 \u00b7 final",
+    "model_id": "Tolvaptan_Lanke2019_final",
+    "stale": false,
+    "status": "needs_review",
     "xc": "disputed"
    },
    {
     "internal": "needs_review",
-    "label": "Bhatt_2014 \u00b7 reference",
-    "model_id": "Tolvaptan_Bhatt2014_reference",
+    "label": "Shoaf_2017 \u00b7 reference",
+    "model_id": "Tolvaptan_Shoaf2017_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Van_2013 \u00b7 reference",
+    "model_id": "Tolvaptan_Van2013_reference",
     "stale": false,
     "status": "needs_review",
     "xc": "disputed"
@@ -156376,7 +156216,7 @@
     "internal": "rejected",
     "label": "Beaudoin_2019 \u00b7 reference",
     "model_id": "Tolvaptan_Beaudoin2019_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "confirmed"
    },
@@ -156384,7 +156224,7 @@
     "internal": "rejected",
     "label": "Castro-Su\u00e1rez_2020 \u00b7 reference",
     "model_id": "Tolvaptan_CastroSurez2020_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -156398,16 +156238,16 @@
    }
   ],
   "dir": "drug_tolvaptan",
-  "extracted": 5,
-  "last_change": "2026-11-03T19:08:18.155730+00:00",
+  "extracted": 1,
+  "last_change": "2026-11-05T15:49:23.662821+00:00",
   "name": "tolvaptan",
-  "needs_review": 1,
-  "records": 9,
+  "needs_review": 4,
+  "records": 8,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 5,
   "slug": "tolvaptan",
-  "stale": 7,
+  "stale": 0,
   "tally": {
    "pd": [
     0,
@@ -156420,7 +156260,7 @@
     5
    ],
    "pk": [
-    6,
+    5,
     3,
     0
    ]
@@ -157056,7 +156896,7 @@
   "records": 20,
   "rejected": 11,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 8,
   "slug": "tramadol",
   "stale": 0,
   "tally": {
@@ -163057,7 +162897,7 @@
   "records": 4,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "venlafaxine",
   "stale": 0,
   "tally": {
@@ -165497,102 +165337,14 @@
   "atc_codes": [
    "B01AA03"
   ],
-  "best_status": "not_simulated",
+  "best_status": "caveats",
   "counts": {
-   "pd": 15,
+   "pd": 16,
    "pgx": 46,
-   "pk": 22
+   "pk": 20
   },
   "curated": 0,
   "details": [
-   {
-    "internal": "extracted",
-    "label": "Davies_2010 \u00b7 reference",
-    "model_id": "Warfarin_Davies2010_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Ferrari_2017 \u00b7 reference",
-    "model_id": "Warfarin_Ferrari2017_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "unchecked"
-   },
-   {
-    "internal": "extracted",
-    "label": "Gomeni_2026 \u00b7 deep_learning",
-    "model_id": "Warfarin_Gomeni2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Gomeni_2026 \u00b7 one_compartment",
-    "model_id": "Warfarin_Gomeni2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Kwack_2026 \u00b7 reference",
-    "model_id": "Warfarin_Kwack2026_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Lane_2012 \u00b7 r_warfarin_9334_estimate",
-    "model_id": "Warfarin_Lane2012_r_warfarin_9334_estimate",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Lane_2012 \u00b7 r_warfarin_9425_estimate",
-    "model_id": "Warfarin_Lane2012_r_warfarin_9425_estimate",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Lane_2012 \u00b7 s_warfarin_8899_estimate",
-    "model_id": "Warfarin_Lane2012_s_warfarin_8899_estimate",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Lane_2012 \u00b7 s_warfarin_8975_estimate",
-    "model_id": "Warfarin_Lane2012_s_warfarin_8975_estimate",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "disputed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Ooi_2017 \u00b7 reference",
-    "model_id": "Warfarin_Ooi2017_reference",
-    "stale": false,
-    "status": "not_simulated",
-    "xc": "confirmed"
-   },
-   {
-    "internal": "extracted",
-    "label": "Sridharan_2021 \u00b7 reference",
-    "model_id": "Warfarin_Sridharan2021_reference",
-    "stale": true,
-    "status": "not_simulated",
-    "xc": "partial"
-   },
    {
     "internal": "needs_review",
     "label": "Chan_1994 \u00b7 reference",
@@ -165603,9 +165355,73 @@
    },
    {
     "internal": "needs_review",
+    "label": "Davies_2010 \u00b7 reference",
+    "model_id": "Warfarin_Davies2010_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Ferrari_2017 \u00b7 reference",
+    "model_id": "Warfarin_Ferrari2017_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "unchecked"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Gomeni_2026 \u00b7 reference",
+    "model_id": "Warfarin_Gomeni2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Kubo_2017 \u00b7 reference",
     "model_id": "Warfarin_Kubo2017_reference",
-    "stale": true,
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "needs_review",
+    "label": "Kwack_2026 \u00b7 reference",
+    "model_id": "Warfarin_Kwack2026_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Lane_2012 \u00b7 r_warfarin_9334_estimate",
+    "model_id": "Warfarin_Lane2012_r_warfarin_9334_estimate",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Lane_2012 \u00b7 r_warfarin_9425_estimate",
+    "model_id": "Warfarin_Lane2012_r_warfarin_9425_estimate",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Lane_2012 \u00b7 s_warfarin_8899_estimate",
+    "model_id": "Warfarin_Lane2012_s_warfarin_8899_estimate",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "disputed"
+   },
+   {
+    "internal": "model_quarantined",
+    "label": "Lane_2012 \u00b7 s_warfarin_8975_estimate",
+    "model_id": "Warfarin_Lane2012_s_warfarin_8975_estimate",
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -165621,7 +165437,7 @@
     "internal": "needs_review",
     "label": "Neff-Davis_1981 \u00b7 reference",
     "model_id": "Warfarin_NeffDavis1981_reference",
-    "stale": true,
+    "stale": false,
     "status": "needs_review",
     "xc": "disputed"
    },
@@ -165667,6 +165483,14 @@
    },
    {
     "internal": "needs_review",
+    "label": "Ooi_2017 \u00b7 reference",
+    "model_id": "Warfarin_Ooi2017_reference",
+    "stale": false,
+    "status": "needs_review",
+    "xc": "confirmed"
+   },
+   {
+    "internal": "needs_review",
     "label": "Yuen_2010 \u00b7 parameter_estimates_estimate",
     "model_id": "Warfarin_Yuen2010_parameter_estimates_estimate",
     "stale": false,
@@ -165682,26 +165506,10 @@
     "xc": "unchecked"
    },
    {
-    "internal": "",
-    "label": "Ohara_2019 \u00b7 reference",
-    "model_id": "Warfarin_Ohara2019_reference",
-    "stale": true,
-    "status": null,
-    "xc": "disputed"
-   },
-   {
-    "internal": "",
-    "label": "Yuen_2010 \u00b7 reference",
-    "model_id": "Warfarin_Yuen2010_reference",
-    "stale": true,
-    "status": null,
-    "xc": "disputed"
-   },
-   {
     "internal": "rejected",
     "label": "Aoyama_2022 \u00b7 reference",
     "model_id": "Warfarin_Aoyama2022_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -165725,7 +165533,7 @@
     "internal": "rejected",
     "label": "Hirai_2024 \u00b7 estimates",
     "model_id": "Warfarin_Hirai2024_estimates",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -165733,7 +165541,7 @@
     "internal": "rejected",
     "label": "Hirai_2024 \u00b7 prior_values",
     "model_id": "Warfarin_Hirai2024_prior_values",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "disputed"
    },
@@ -165757,7 +165565,7 @@
     "internal": "rejected",
     "label": "Mungall_1985 \u00b7 reference",
     "model_id": "Warfarin_Mungall1985_reference",
-    "stale": true,
+    "stale": false,
     "status": "rejected",
     "xc": "partial"
    },
@@ -165827,20 +165635,20 @@
    }
   ],
   "dir": "drug_warfarin",
-  "extracted": 11,
-  "last_change": "2026-11-04T15:06:18.962361+00:00",
+  "extracted": 0,
+  "last_change": "2026-11-05T11:43:31.569119+00:00",
   "name": "warfarin",
-  "needs_review": 11,
-  "records": 40,
+  "needs_review": 20,
+  "records": 36,
   "rejected": 16,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 8,
   "slug": "warfarin",
-  "stale": 16,
+  "stale": 0,
   "tally": {
    "pd": [
-    15,
-    1,
+    16,
+    0,
     0
    ],
    "pgx": [
@@ -165849,9 +165657,9 @@
     61
    ],
    "pk": [
-    22,
+    20,
     16,
-    2
+    0
    ]
   }
  },

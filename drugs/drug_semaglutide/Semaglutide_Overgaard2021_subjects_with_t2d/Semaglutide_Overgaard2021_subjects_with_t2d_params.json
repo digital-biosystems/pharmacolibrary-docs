@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Semaglutide_Overgaard2021_subjects_with_t2d",
+ "molar_masses": {
+  "central.C": 4.113640999999999
+ },
+ "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  10.0
+ ],
+ "parameters": {
+  "Cl": 1.0833333333333333e-08,
+  "F": 0.69,
+  "MM": 4.113640999999999,
+  "Tlag": 0.0,
+  "VdPerKg": 5.285714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "k12": 2.3273273273273272e-05,
+  "k21": 2.05026455026455e-05,
+  "ka": 0.0005805555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3810.769279460108
+ },
+ "reference_peaks": {
+  "central.C": 2.774953999853548e-05
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_3C_enteral",
+ "template_fmu": "PK_3C_enteral.fmu"
+}

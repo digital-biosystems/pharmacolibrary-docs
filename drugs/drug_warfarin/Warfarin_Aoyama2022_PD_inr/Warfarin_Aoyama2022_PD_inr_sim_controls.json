@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "S-warfarin concentration range",
+  "label": "Dose range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 4.1,

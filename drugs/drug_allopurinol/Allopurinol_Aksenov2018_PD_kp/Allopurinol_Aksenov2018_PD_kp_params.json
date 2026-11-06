@@ -5,7 +5,7 @@
   "response"
  ],
  "parameters": {
-  "E0": 0.0,
+  "E0": 1.40277777778e-08,
   "EC50": 0.014,
   "Emax": -2.33333333333e-10,
   "exposure_per_s": 1e-06,
@@ -13,8 +13,8 @@
  },
  "reference_peaks": {},
  "reference_points": {
-  "0": 0.0,
-  "0.013999999999999999": -1.1666666666666665e-10
+  "0": 1.4027777777777777e-08,
+  "0.013999999999999999": 1.391111111111111e-08
  },
  "stop_time": 140000.0,
  "subtitle": "production rate of uric acid (kP) against oxypurinol concentration",
@@ -22,6 +22,12 @@
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
  "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "mg/h",
+   "factor": 2.7777777777777777e-10,
+   "si_unit": "kg/s"
+  },
   "EC50": {
    "display_only": false,
    "display_unit": "ng/mL",

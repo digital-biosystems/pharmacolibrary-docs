@@ -7,20 +7,20 @@
  "parameters": {
   "E0": 0.0,
   "EC50": 0.0041,
-  "Emax": -1.0,
+  "Emax": 20.0,
   "exposure_per_s": 0.001,
   "gamma": 1.15
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "0.004099999999999999": -0.5
+  "0.004099999999999999": 10.0
  },
  "stop_time": 41.0,
- "subtitle": "PT-INR (INR) against S-warfarin concentration",
+ "subtitle": "PT-INR (INR) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
- "title": "Exposure–response simulated by the PD model",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,
@@ -51,7 +51,7 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
-  "label": "S-warfarin concentration",
+  "label": "dose",
   "per_s": 0.001,
   "variable": "exposure"
  },

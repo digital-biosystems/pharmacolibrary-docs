@@ -17,10 +17,10 @@
   "15.9": -0.28
  },
  "stop_time": 160.0,
- "subtitle": "inhibition of platelet aggregation (IPA, %) (IPA) against dose",
+ "subtitle": "inhibition of platelet aggregation (IPA) against Clopi-H4 AUC concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
- "title": "Dose–response simulated by the PD model",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,
@@ -51,13 +51,13 @@
  "x_axis": {
   "display_unit": "h*μg/L",
   "factor": 1.0,
-  "label": "dose",
+  "label": "Clopi-H4 AUC concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "inhibition of platelet aggregation (IPA, %) (IPA)"
+  "label": "inhibition of platelet aggregation (IPA)"
  }
 }

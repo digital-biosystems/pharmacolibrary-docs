@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Dose range",
+  "label": "Clopi-H4 AUC concentration range",
   "unit": "h*μg/L",
   "scale": 1.0,
   "min": 16.0,

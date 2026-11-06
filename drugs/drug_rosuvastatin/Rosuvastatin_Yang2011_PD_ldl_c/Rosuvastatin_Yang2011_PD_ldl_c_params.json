@@ -17,7 +17,7 @@
   "1.7399999999999999e-06": -0.29302000000000006
  },
  "stop_time": 18.0,
- "subtitle": "LDL-C reduction (%) (LDL-C) against dose",
+ "subtitle": "LDL-C reduction (LDL-C) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Dose–response simulated by the PD model",
@@ -46,6 +46,12 @@
    "factor": 1e-06,
    "si_unit": "kg"
   },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
   "response_unit": "%"
  },
  "x_axis": {
@@ -58,6 +64,6 @@
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "LDL-C reduction (%) (LDL-C)"
+  "label": "LDL-C reduction (LDL-C)"
  }
 }

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;venlafaxine&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venlafaxine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venlafaxine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Maringwa_2025_HAMD&quot;,&quot;label&quot;:&quot;Maringwa_2025 \u00b7 HAMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/pd_Maringwa_2025_HAMD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,10 +23,12 @@ Wang Z, Li L, Huang S, Wang X, Liu S, Li X et al. Joint population pharmacokinet
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite O-desmethyl venlafaxine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 7 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference.svg" alt="Venlafaxine_Wang2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -80,6 +82,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['q12/q21 (hepatic flow, 90 L/h)', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - compound tags: 4 row(s) → O-desmethyl venlafaxine (m_suffix 4)
 - table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability, %CV')
@@ -97,6 +103,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- implicit units: 'θamisulpride on CLM/F' → L/h (from the paper text: "The paper states 'The population-predicted clearance in healthy Chinese subjects was 81 L/h for VEN and 22 L/h for ODV' ")
 
 **Extraction notes:**
 - table T2: conflicting_units
@@ -167,14 +174,46 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_modelica.zip" download>Venlafaxine_Wang2022_reference_modelica.zip</a> <span class="pk-size">(5.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_fmi.zip" download>Venlafaxine_Wang2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_fmi.zip" download>Venlafaxine_Wang2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_matlab.zip" download>Venlafaxine_Wang2022_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_sbml.zip" download>Venlafaxine_Wang2022_reference_sbml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_cellml.zip" download>Venlafaxine_Wang2022_reference_cellml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_3M_3C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 5e-05 | kg |
+| input | model | `CL1` | 2.139e-05 | m3/s |
+| input | model | `CLm1` | 6.139e-06 | m3/s |
+| input | model | `MW` | 0.2774 |  |
+| input | model | `MW_m1` | 0.2634 |  |
+| input | model | `Vd1` | 0.628 |  |
+| input | model | `Vd1m1` | 0.238 | m3 |
+| input | model | `Vd2` | 0.628 |  |
+| input | model | `ka` | 0.000175 | 1/s |
+| input | model | `q12` | 2.5e-05 |  |
+| input | model | `q1_m11` | 1.079e-06 | m3/s |
+| input | model | `q21` | 2.5e-05 |  |
+| output | concentration | `central.C` |  | kg/m3 |
+| output | concentration | `C_M1` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_3M_3C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- Parent–metabolite exports (MATLAB, SBML, CellML) are checked against OpenModelica, Octave and roadrunner to 1e-5 in the generator's test suite (`test/test_three_m_formats.py`).
 
 ## How to cite
 
@@ -195,7 +234,11 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+**Administration: oral** — 50 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 0.63 /h, F 1). Dose in the paper: 50 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference/Venlafaxine_Wang2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_3M_3C` · parameters `Venlafaxine_Wang2022_reference_params.json` · controls `Venlafaxine_Wang2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg oral (J01MA02)",
+ "model_id": "Ciprofloxacin_Hirt2021_building_validation",
+ "molar_masses": {
+  "central.C": 0.3313415
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.5194444444444444e-06,
+  "F": 0.374,
+  "MM": 0.3313415,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0023,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "ka": 0.00018527777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14951.58602393234
+ },
+ "reference_peaks": {
+  "central.C": 0.001849300188096036
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

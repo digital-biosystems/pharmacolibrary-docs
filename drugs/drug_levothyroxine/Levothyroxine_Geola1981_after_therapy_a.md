@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Geola_1981 \u00b7 after_therapy_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="false" population="hypothyroid patient with Hashimoto&#39;s thyroiditis" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,9 +49,13 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 ### Reviewer guidance
 
+**The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.**
+
+The record lists the total clearance as 24.13 mL/min/kg, a mass-normalized unit that conflicts with the system volume of 47.0 liters. This specific unit mismatch caused the structural parameter check to fail, leading to the record's rejection. Additionally, the reviewer identified unextracted T3 concentration and T3 uptake parameters with values of 96 and 0.88 respectively. Extracted — levothyroxine: kmet 1.02 liters/day, CL 24.1 mL/min/kg, V 47 liter.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

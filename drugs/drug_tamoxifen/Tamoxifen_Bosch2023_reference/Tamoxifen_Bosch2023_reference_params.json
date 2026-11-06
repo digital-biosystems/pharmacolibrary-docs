@@ -1,22 +1,30 @@
 {
+ "dose_source": "library default",
  "model_id": "Tamoxifen_Bosch2023_reference",
+ "molar_masses": {
+  "central.C": 0.3715146
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
-  "Cl": 8.333333333333332e-07,
+  "Cl": 8.888888888888888e-06,
   "F": 1.0,
-  "VdPerKg": 0.0007419574496000383,
+  "MM": 0.3715146,
+  "VdPerKg": 0.007914212795733741,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.0019161705179552677
+ "reference_peak_times": {
+  "central.C": 660.0000000662128
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 1.796411309222683e-05
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

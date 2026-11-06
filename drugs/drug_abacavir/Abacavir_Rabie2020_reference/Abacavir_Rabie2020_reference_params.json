@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Abacavir_Rabie2020_reference",
+ "molar_masses": {
+  "central.C": 0.2863323
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  560.0
+ ],
+ "parameters": {
+  "Cl": 2.686111111111111e-06,
+  "F": 1.0,
+  "MM": 0.2863323,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00012514285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00056,
+  "k12": 4.280821917808219e-05,
+  "k21": 0.00011295180722891567,
+  "ka": 0.0006166666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3634.935854965048
+ },
+ "reference_peaks": {
+  "central.C": 0.01236271630987982
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

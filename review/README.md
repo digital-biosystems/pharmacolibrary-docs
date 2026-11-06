@@ -6,8 +6,8 @@ PopPK records that need a person: a second reader disagrees, the verdict is olde
 
 | reason | records | page(s) |
 |---|---|---|
-| Disputed by a second reader | 3,720 | [1](/review/disputed-1), [2](/review/disputed-2), [3](/review/disputed-3), [4](/review/disputed-4) |
-| Stale verdict | 659 | [stale](/review/stale) |
+| Disputed by a second reader | 3,708 | [1](/review/disputed-1), [2](/review/disputed-2), [3](/review/disputed-3), [4](/review/disputed-4) |
+| Stale verdict | 564 | [stale](/review/stale) |
 | Quarantined models | 57 | [quarantined](/review/quarantined) |
-| Needs review | 686 | [needs_review](/review/needs_review) |
+| Needs review | 768 | [needs_review](/review/needs_review) |
 

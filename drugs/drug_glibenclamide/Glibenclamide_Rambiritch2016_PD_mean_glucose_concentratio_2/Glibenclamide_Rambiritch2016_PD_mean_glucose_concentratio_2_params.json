@@ -35,10 +35,10 @@
    "si_unit": "kg/m3"
   },
   "Emax": {
-   "display_only": false,
-   "display_unit": "mmol/L",
-   "factor": 0.9999999999999999,
-   "si_unit": "mol/m3"
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "exposure": {
    "display_only": false,
@@ -46,7 +46,7 @@
    "factor": 0.0009999999999999998,
    "si_unit": "kg/m3"
   },
-  "response_unit": "mmol/L"
+  "response_unit": ""
  },
  "x_axis": {
   "display_unit": "mg/L",

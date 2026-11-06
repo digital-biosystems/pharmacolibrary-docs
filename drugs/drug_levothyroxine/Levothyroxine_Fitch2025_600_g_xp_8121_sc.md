@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Fitch_2025 \u00b7 600_g_xp_8121_sc&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_Fitch2025_600_g_xp_8121_sc`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-10-22 15:31 UTC (Rejected), but the paper was screened again on 2026-11-04 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_600_g_xp_8121_sc" status="needs_review" stale="true" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_600_g_xp_8121_sc" status="needs_review" stale="false" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the Pharmacokinetics, Dose Proportionality, Bioavailability, and Tolerability of Subcutaneous Levothyroxine Sodium (XP-8121). Clinical and translational science 18(5):e70244 (2025).
@@ -39,7 +39,7 @@ Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Fitch R, Mould DR, Conoscenti V, Huang R, Harper D. Phase 1 Study Evaluating the
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**This paper's disposition core is incomplete.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Inada_1975, Latif_2015) cannot stand in for this paper's evidence. A reported unit could not be converted (Cavg), so that value has no SI equivalent. Extracted — levothyroxine: Cavg 21.6 ng/mL, CL 24.1 mL/min/kg, V 47 liter.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading levothyroxine (XP-8121); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

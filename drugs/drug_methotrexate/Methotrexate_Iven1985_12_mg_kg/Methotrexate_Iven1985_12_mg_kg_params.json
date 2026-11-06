@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Methotrexate_Iven1985_12_mg_kg",
+ "molar_masses": {
+  "central.C": 0.4544393
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  93.1,
+  280.0,
+  840.0
+ ],
+ "parameters": {
+  "Cl": 7.968333333333333e-06,
+  "F": 0.9,
+  "MM": 0.4544393,
+  "Tlag": 1296.0,
+  "VdPerKg": 0.000154,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9.31e-05,
+  "ka": 3.101851851851852e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8311.022044088177
+ },
+ "reference_peaks": {
+  "central.C": 3.184345148215731e-05
+ },
+ "stop_time": 1036800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

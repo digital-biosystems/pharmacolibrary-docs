@@ -1,10 +1,10 @@
 {
- "dose_source": "WHO ATC DDD 30 mg oral (C03XA01)",
+ "dose_source": "library default",
  "model_id": "Tolvaptan_Plosker2010_reference",
  "molar_masses": {
   "central.C": 0.448941
  },
- "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
@@ -12,21 +12,19 @@
   "Cl": 1.0000000000000001e-07,
   "F": 1.0,
   "MM": 0.448941,
-  "Tlag": 0.0,
   "VdPerKg": 0.003,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3e-05,
-  "ka": 0.0001388888888888889,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 47268.9378757515
+  "central.C": 660.0000000662063
  },
  "reference_peaks": {
-  "central.C": 0.0001399698470124705
+  "central.C": 4.761224432468566e-05
  },
  "stop_time": 7862400.0,
- "template": "PK_1C_enteral",
- "template_fmu": "PK_1C_enteral.fmu"
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
 }
