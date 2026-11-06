@@ -7,7 +7,7 @@
   hook.doneEach(function () {
     var old = document.querySelector('aside.pk-recpanel');
     if (old) old.remove();
-    // the room the content leaves for the panel (CSS above) follows its state
+    // body classes mirror the panel state (the content no longer makes room: it floats over)
     function room() {
       var b = document.querySelector('aside.pk-recpanel');
       document.body.classList.toggle('pk-recpanel-open', !!b && !b.classList.contains('closed'));

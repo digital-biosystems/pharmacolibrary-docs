@@ -245,8 +245,12 @@ window.$docsify = window.$docsify || {};
       function redraw() {
         var mult = +dose.value, mg = mgOf(mult), ph = gen.value;
         doseOut.textContent = Math.round(mg) + ' mg/day';
-        var def = pkSim.run(ctx.M, ctx.meta, paramsNow(mgDefault, pg.reference || 'Normal'));
-        var cur = pkSim.run(ctx.M, ctx.meta, paramsNow(mg, ph));
+        // steps 10x wider than the exact grid: each run takes about 80 ms, not 650, so the
+        // slider keeps up. Peak, AUC and trough read at most 1 % high; both curves share that,
+        // so the tile's difference stays (Poor vs Normal: -72 % at either step).
+        var fast = { widen: 10 };
+        var def = pkSim.run(ctx.M, ctx.meta, paramsNow(mgDefault, pg.reference || 'Normal'), fast);
+        var cur = pkSim.run(ctx.M, ctx.meta, paramsNow(mg, ph), fast);
         draw(def, cur);
         var tD = def.t.map(function (x) { return x / 3600; });
         var tC = cur.t.map(function (x) { return x / 3600; });

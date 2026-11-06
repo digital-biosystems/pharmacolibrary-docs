@@ -41,13 +41,16 @@
   // repeated dose, +10 % at a 60 s step. The error is the step at the pulse's end, so each pulse
   // (and a little after it) is walked in adminDuration/1000 steps, the time between doses in
   // steps of at most 30 s that land exactly on the next pulse's start (0.1 % per dose).
-  function grid(p, meta, stop) {
+  // widen (default 1) multiplies both steps, trading that accuracy for speed: the home page's
+  // demo tile redraws on every slider move (opts.widen in run()).
+  function grid(p, meta, stop, widen) {
+    var w = widen || 1;
     var dur = p.adminDuration != null ? p.adminDuration : paramDefault(meta, 'adminDuration', 600);
     var first = (p.adminTime != null ? p.adminTime : paramDefault(meta, 'adminTime', 60)) +
                 ('Tlag' in p ? p.Tlag : paramDefault(meta, 'Tlag', 0));
     var period = p.adminPeriod != null ? p.adminPeriod : paramDefault(meta, 'adminPeriod', 0);
     var count = p.adminCount != null ? Math.round(p.adminCount) : 1;
-    var fine = dur / 1000, coarse = Math.min(30, dur), pts = [0];
+    var fine = w * dur / 1000, coarse = Math.min(w * 30, dur), pts = [0];
     var fill = function (a, b, h) {
       if (b <= a) return;
       var n = Math.max(1, Math.ceil((b - a) / h - 1e-9));
@@ -131,7 +134,7 @@
       var q = alloc(outs.map(function (o) { return meta.vr[o]; }), Uint32Array);
       var vp = M._malloc(outs.length * 8); ptrs.push(vp);
       // opts.step: the uniform n*step grid of check-wasm-fmu.mjs and dbs-fmusim (for comparisons)
-      var pts = opts && opts.step ? null : grid(params.parameters, meta, stop);
+      var pts = opts && opts.step ? null : grid(params.parameters, meta, stop, opts && opts.widen);
       var total = pts ? pts.length - 1 : Math.ceil(stop / step), every = Math.max(1, Math.floor(total / MAX_POINTS));
       var res = { t: [0], series: {}, peak: {}, trough: {}, final: {}, step: pts ? null : step, n: 0, stop: stop };
       outs.forEach(function (o) { res.series[o] = [0]; res.peak[o] = 0; });

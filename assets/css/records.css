@@ -20,7 +20,7 @@
    returning to the drug page. */
 .pk-recnav { display: none; }
 aside.pk-recpanel {
-  position: fixed; top: 64px; right: 18px; z-index: 30;
+  position: fixed; top: 64px; right: 18px; z-index: 35;   /* over the content, under tooltips (40) */
   max-width: 300px; max-height: calc(100vh - 90px); overflow: auto;
   background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
   box-shadow: 0 6px 22px rgba(15, 23, 42, .10);
@@ -49,14 +49,9 @@ aside.pk-recpanel a:hover { color: var(--theme-color, #0074d9); text-decoration:
 aside.pk-recpanel li.here a { font-weight: 700; }
 aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; }
 @media (max-width: 1100px) { aside.pk-recpanel { display: none; } }
-/* The panel is fixed over the page, so the content makes room for it: without this it sat
-   over the right edge of whatever was there — the simulator's legend on a ~1300 px window,
-   where a click on the legend followed a record link instead. Collapsed it is only its
-   header, so it needs less room. */
-@media (min-width: 1101px) {
-  body.pk-recpanel-open .content { right: 320px; }
-  body.pk-recpanel-closed .content { right: 200px; }
-}
+/* The panel floats ABOVE the page and may cover its right edge: the content keeps its full
+   width (2026-11-05; reserving 320 px / 200 px for the panel squeezed every drug page).
+   Collapse it to its header to reach what lies beneath. */
 /* The search box the official plugin injects at the top of the sidebar. */
 .sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
 .sidebar .search input { font-size: 14px; padding: 7px 8px; }

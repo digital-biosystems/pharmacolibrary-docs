@@ -22,6 +22,10 @@
 .sidebar-nav li.folder { color: #34495e; }
 .sidebar-nav li.folder > strong { font-weight: 600; }
 .sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before { border-color: #8a9199; }
+/* The plugin's CSS draws the arrow on every item NOT yet marked .file, and it marks items
+   only once a page has rendered (doneEach): until then — a slow page, or a hook that failed
+   before it — Home, Ask the data, Downloads … carried arrows too. Draw it on folders only. */
+.sidebar-nav ul:not(.app-sub-sidebar) > li:not(.folder)::before { display: none; }
 .sidebar-nav > ul { padding-left: 8px; }   /* room for the top level's arrows */
 /* Collapsed column legends under the Parameters / Validation tables on a record page.
    Built as raw HTML by docs/build.py because docsify does not re-enter markdown inside

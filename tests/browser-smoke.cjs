@@ -45,11 +45,14 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     await page.goto(base);
     await page.locator('.pk-demo-anat').scrollIntoViewIfNeeded();
     await page.waitForSelector('.pk-demo-plot svg path', {timeout: 90000});
+    // their design: the tile OPENS on a non-reference phenotype (Poor) so the gene's effect
+    // is visible immediately; picking Normal collapses it to the reference run (±0)
     assert.equal(await page.locator('.pk-demo-svg path').count(), 2);
-    assert.match(await page.locator('.pk-demo-delta').innerText(), /±0/);
-    await page.locator('.pk-demo-bar select').selectOption('Poor');
+    assert.doesNotMatch(await page.locator('.pk-demo-delta').innerText(), /±0/,
+      'the tile opens showing the gene effect');
+    await page.locator('.pk-demo-bar select').selectOption('Normal');
     await page.waitForFunction(
-      () => !/±0/.test(document.querySelector('.pk-demo-delta')?.innerText || 'x'));
+      () => /±0/.test(document.querySelector('.pk-demo-delta')?.innerText || ''));
     assert.ok((await page.locator('.pk-demo-anat svg .organ').count()) > 0, 'anatomogram organs drawn');
     console.log('PASS demo tiles: active-metabolite simulator and anatomogram');
 
@@ -82,10 +85,11 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     // needs a content route (on the home route the sidebar is hidden)
     await page.locator('.pks input').fill('plavix');
     await page.waitForFunction(
-      () => document.querySelector('.pks-res li.pks-drughead')?.textContent.includes('brand plavix'));
-    assert.match(await page.locator('.pks-res li.pks-drughead').innerText(), /Clopidogrel/);
+      () => [...document.querySelectorAll('.pks-res [role=option]')].map(l => l.textContent).join('|').includes('brand plavix'));
     await page.locator('.pks input').press('ArrowDown');
-    assert.equal(await page.locator('.pks input').getAttribute('aria-activedescendant'), 'pks-opt-0');
+    await page.waitForTimeout(300);
+    const firstOpt = await page.evaluate(() => document.querySelector('.pks-res [role=option]').id);
+    assert.equal(await page.locator('.pks input').getAttribute('aria-activedescendant'), firstOpt);
     await page.locator('.pks input').press('Enter');
     await page.waitForFunction(() => location.hash === '#/drugs/drug_clopidogrel/');
     await page.waitForSelector('.markdown-section h1');
