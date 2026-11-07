@@ -4,7 +4,7 @@
    Link = the same theme blue the index uses; no page = muted. */
 .sidebar ul li a { color: var(--theme-color, #0074d9); }
 .sidebar ul li a:hover { text-decoration: underline; }
-.sidebar ul li { color: #8a9199; }
+.sidebar ul li { color: var(--pk-faint, #8a9199); }
 /* the theme's own .sidebar li.active a (0,2,2) outranks the rule above (0,1,3),
    so the CURRENT page's entry needs a selector that beats it, or it reverts to grey */
 .sidebar ul li.active > a,
@@ -21,7 +21,7 @@
 .sidebar-nav li.folder > strong,
 .sidebar-nav li.folder { color: #34495e; }
 .sidebar-nav li.folder > strong { font-weight: 600; }
-.sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before { border-color: #8a9199; }
+.sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before { border-color: var(--pk-faint, #8a9199); }
 /* The plugin's CSS draws the arrow on every item NOT yet marked .file, and it marks items
    only once a page has rendered (doneEach): until then — a slow page, or a hook that failed
    before it — Home, Ask the data, Downloads … carried arrows too. Draw it on folders only. */
@@ -38,7 +38,7 @@
 .markdown-section details.legend[open] > summary { margin-bottom: 8px; }
 .markdown-section details.legend table { margin: 0; font-size: 13px; }
 .markdown-section details.legend td:first-child { white-space: nowrap; vertical-align: top; }
-.markdown-section details.legend td:last-child { color: #4b5563; }
+.markdown-section details.legend td:last-child { color: var(--pk-muted, #4b5563); }
 .markdown-section details.legend th { text-align: left; }
 /* ── record tabs ──────────────────────────────────────────────────────────
    build.py emits <div class="pk-tab-mark" data-tab="..."> sentinels and closes with
@@ -47,65 +47,65 @@
    wrapping the panels in the markdown would print the first tab as literal text. */
 /* ── database-backed sidebar search ───────────────────────────────────────
    Replaces the docsify search plugin, which could not index this corpus. */
-.pks { padding: 0 0 10px; border-bottom: 1px solid #eaecef; margin-bottom: 10px; }
+.pks { padding: 0 0 10px; border-bottom: 1px solid var(--pk-line, #eaecef); margin-bottom: 10px; }
 .pks input { width: 100%; box-sizing: border-box; font: inherit; font-size: 14px;
-  padding: 7px 9px; border: 1px solid #cbd5e1; border-radius: 6px; }
-.pks-hint { font-size: 11.5px; color: #94a3b8; padding: 4px 2px 0; }
+  padding: 7px 9px; border: 1px solid var(--pk-line, #cbd5e1); border-radius: 6px; }
+.pks-hint { font-size: 11.5px; color: var(--pk-faint, #94a3b8); padding: 4px 2px 0; }
 .pks-res { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow-y: auto; }
 .pks-res li { padding: 0; margin: 0; }
 .pks-res a { display: block; padding: 5px 7px; border-radius: 5px; font-size: 13px;
-  color: #334155; text-decoration: none; }
-.pks-res a:hover { background: #f1f5f9; color: var(--theme-color, #0074d9); }
+  color: var(--pk-ink, #334155); text-decoration: none; }
+.pks-res a:hover { background: var(--pk-surface-2, #f1f5f9); color: var(--theme-color, #0074d9); }
 .pks-res .k { display: inline-block; min-width: 62px; font-size: 10.5px;
-  text-transform: uppercase; letter-spacing: .04em; color: #94a3b8; }
-.pks-res .d { color: #94a3b8; font-size: 11.5px; }
+  text-transform: uppercase; letter-spacing: .04em; color: var(--pk-faint, #94a3b8); }
+.pks-res .d { color: var(--pk-faint, #94a3b8); font-size: 11.5px; }
 
 /* front page: question box and the three entry cards (README-template.md) */
 .markdown-section .pk-home-search { display: flex; gap: 8px; margin: 18px 0; }
 .markdown-section .pk-home-search input { flex: 1; min-width: 0; font-size: 16px; padding: 9px 10px;
-  border: 1px solid #c9ced6; border-radius: 4px; }
+  border: 1px solid var(--pk-line, #c9ced6); border-radius: 4px; }
 .markdown-section .pk-home-search button { padding: 9px 16px; font-size: 15px; }
 .markdown-section .pk-home-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px; margin: 0 0 18px; }
 .markdown-section .pk-home-card { display: block; border: 1px solid rgba(128,128,128,.3); border-radius: 6px;
   padding: 12px 14px; text-decoration: none; color: inherit; }
 .markdown-section .pk-home-card b { display: block; font-size: 17px; margin-bottom: 4px; color: var(--theme-color, #42b983); }
-.markdown-section .pk-home-card span { font-size: 13px; color: #5c6670; }
+.markdown-section .pk-home-card span { font-size: 13px; color: var(--pk-muted, #5c6670); }
 /* research-use banner on drug, record and Sites pages (pk-disclaimer.js) */
 .pk-disclaimer { background: #fff8e1; border: 1px solid #f0d68a; color: #5a4a12; border-radius: 4px;
   padding: 6px 10px; font-size: 13px; margin: 0 0 14px; }
 /* sidebar: the counts legend and the has-records filter */
-.sidebar .pk-sb-legend { font-size: 12px; color: #6b7280; }
+.sidebar .pk-sb-legend { font-size: 12px; color: var(--pk-muted, #6b7280); }
 .sidebar .pk-sb-toggle { font-size: 12px; cursor: pointer; }
 body.pk-hide-norec .sidebar-nav li.pk-sb-norec { display: none; }
 /* group labels over the flat page links (Ask / Explore / Site / Drugs): small caps, not folders */
 .sidebar-nav li.pk-sb-grouprow { margin-top: 10px; }
 .sidebar .pk-sb-group { font-size: 11px; font-weight: 600; letter-spacing: .06em;
-  text-transform: uppercase; color: #94a3b8; }
+  text-transform: uppercase; color: var(--pk-faint, #94a3b8); }
 /* drugs without a page (plain text) and drugs with a page but no counted record (0/0/0):
    both grey, the linked ones keep a link's hover so they still read as clickable */
-.sidebar-nav li.pk-sb-nopage { color: #a8b0b8; }
-.sidebar-nav li.pk-sb-norec > a { color: #8a9199; }
+.sidebar-nav li.pk-sb-nopage { color: var(--pk-faint, #a8b0b8); }
+.sidebar-nav li.pk-sb-norec > a { color: var(--pk-faint, #8a9199); }
 .sidebar-nav li.pk-sb-norec > a:hover { color: var(--theme-color, #0074d9); }
-.sidebar-nav li.pk-sb-nopage sub, .sidebar-nav li.pk-sb-norec sub { color: #b8bec5; }
+.sidebar-nav li.pk-sb-nopage sub, .sidebar-nav li.pk-sb-norec sub { color: var(--pk-faint, #b8bec5); }
 
 /* Landing page additions: paste next to the existing .pk-home-* rules in index.html */
 .markdown-section .pk-home-lead { font-size: 20px; line-height: 1.45; max-width: 46em; margin: 6px 0 4px; }
-.markdown-section .pk-home-try { font-size: 13px; color: #5c6670; margin: -6px 0 14px; }
+.markdown-section .pk-home-try { font-size: 13px; color: var(--pk-muted, #5c6670); margin: -6px 0 14px; }
 .markdown-section .pk-home-try a { display: inline-block; margin: 4px 6px 0 0; padding: 3px 10px;
   border: 1px solid rgba(128,128,128,.3); border-radius: 999px; text-decoration: none; }
-.markdown-section .pk-home-numbers { font-size: 14px; color: #5c6670; margin: 0 0 8px; }
-.markdown-section .pk-home-sub { color: #5c6670; margin-top: -6px; }
+.markdown-section .pk-home-numbers { font-size: 14px; color: var(--pk-muted, #5c6670); margin: 0 0 8px; }
+.markdown-section .pk-home-sub { color: var(--pk-muted, #5c6670); margin-top: -6px; }
 .markdown-section .pk-home-roles .pk-home-card ul { margin: 10px 0 0; padding-left: 18px; font-size: 13px; }
 .markdown-section .pk-home-roles .pk-home-card li { margin: 3px 0; }
 .markdown-section .pk-home-examples { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
 .markdown-section .pk-home-steps .pk-home-card b { color: inherit; }
-.markdown-section .pk-home-note { font-size: 14px; color: #5c6670; border-left: 3px solid rgba(128,128,128,.4);
+.markdown-section .pk-home-note { font-size: 14px; color: var(--pk-muted, #5c6670); border-left: 3px solid rgba(128,128,128,.4);
   padding-left: 12px; }
-.markdown-section .pk-home-foot { font-size: 13px; color: #5c6670; margin-top: 28px; }
+.markdown-section .pk-home-foot { font-size: 13px; color: var(--pk-muted, #5c6670); margin-top: 28px; }
 /* the drug-header card: typing a drug's name, salt or brand pins the drug page's own
    header above the matches (pk-sidebar-search.js) */
-.pks-res li[aria-selected="true"] a { background: #eef6ff; color: #1e293b; border-radius: 4px; }
+.pks-res li[aria-selected="true"] a { background: var(--pk-hilite, #eef6ff); color: var(--pk-ink, #1e293b); border-radius: 4px; }
 .pks input:focus-visible { outline: 2px solid var(--theme-color, #0074d9); outline-offset: 1px; }
 .pks-res a:focus-visible { outline: 2px solid var(--theme-color, #0074d9); }
 /* the front-page box gets the same visible focus as the query page (the README form is a
@@ -117,7 +117,7 @@ body.pk-hide-norec .sidebar-nav li.pk-sb-norec { display: none; }
    beside, coloured by it, never focusable (decorative) */
 .markdown-section .pk-ic, .pk-ic { width: 1.15em; height: 1.15em;
   vertical-align: -0.22em; margin-right: 3px; flex: 0 0 auto; }
-.markdown-section .pk-home-sublead { font-size: 16.5px; color: #475569;
+.markdown-section .pk-home-sublead { font-size: 16.5px; color: var(--pk-muted, #475569);
   max-width: 46em; margin: 0 0 14px; }
 /* ── the cover route ──────────────────────────────────────────────────────
    '/' shows README.md without the sidebar (pk-cover.js's body class), with the section
@@ -136,29 +136,29 @@ body.pk-cover-route .content { left: 0; transform: none !important; }
   justify-content: space-between; gap: 4px 24px; }
 .markdown-section .pk-cover-head > :first-child { margin-right: auto; }
 .pk-covernav { display: flex; align-items: baseline; gap: 10px; margin-left: auto; }
-.pk-covernav a { color: #334155; text-decoration: none; font-size: 15.5px;
+.pk-covernav a { color: var(--pk-ink, #334155); text-decoration: none; font-size: 15.5px;
   line-height: 22px; font-weight: 500; }
 .pk-covernav a:hover { color: var(--theme-color, #0074d9); text-decoration: underline; }
-.pk-covernav a:focus-visible { outline: 2px solid #334155; outline-offset: 3px; }
-.pk-covernav-sep { color: #94a3b8; font-size: 15.5px; line-height: 22px; user-select: none; }
+.pk-covernav a:focus-visible { outline: 2px solid var(--pk-ink, #334155); outline-offset: 3px; }
+.pk-covernav-sep { color: var(--pk-faint, #94a3b8); font-size: 15.5px; line-height: 22px; user-select: none; }
 /* ── the front page's demo tiles ──────────────────────────────────────────
    2/3 simulator + 1/3 anatomogram (README-template's demo section), both lazy: no fetch
    until pk-demo.js sees them in the viewport. The tiles share the home-card border. */
 .pk-demo { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 14px;
   align-items: stretch; margin: 14px 0 8px; }
 .pk-demo-sim, .pk-demo-anat { border: 1px solid rgba(128,128,128,.3); border-radius: 6px;
-  padding: 12px 14px; background: #fff; min-width: 0; overflow: hidden; }
+  padding: 12px 14px; background: var(--pk-surface, #fff); min-width: 0; overflow: hidden; }
 .pk-demo-bar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 0 0 10px; }
 .pk-demo-bar input[type="range"] { flex: 1 1 160px; min-width: 120px; }
-.pk-demo-bar output { font: 600 13px ui-monospace, Menlo, monospace; color: #334155; min-width: 52px; }
+.pk-demo-bar output { font: 600 13px ui-monospace, Menlo, monospace; color: var(--pk-ink, #334155); min-width: 52px; }
 .pk-demo-plot svg, .pk-demo-anat svg { display: block; max-width: 100%; height: auto; }
 .pk-demo-anat .pks-body { max-width: 100%; margin: 0 auto; }
-.pk-demo-delta { font-size: 13px; color: #475569; margin: 6px 0 0;
+.pk-demo-delta { font-size: 13px; color: var(--pk-muted, #475569); margin: 6px 0 0;
   font-variant-numeric: tabular-nums; }
-.pk-demo-src { font-size: 13px; color: #475569; margin: 4px 0 0; }
-.pk-demo-note { font-size: 13px; color: #64748b; margin: 6px 0 14px; }
+.pk-demo-src { font-size: 13px; color: var(--pk-muted, #475569); margin: 4px 0 0; }
+.pk-demo-note { font-size: 13px; color: var(--pk-muted, #64748b); margin: 6px 0 14px; }
 /* the home page's footer (README-template): citation, licences, source, contact, build date */
-.pk-home-foot { font-size: 13px; color: #5c6670; margin: 18px 0 8px; padding-top: 10px;
+.pk-home-foot { font-size: 13px; color: var(--pk-muted, #5c6670); margin: 18px 0 8px; padding-top: 10px;
   border-top: 1px solid rgba(128,128,128,.3); }
 .pkq-status.err { color: #b91c1c; }
 /* the cover search's drug list (pk-sidebar-search.js): dropped under the box, over the
@@ -167,13 +167,13 @@ body.pk-cover-route .content { left: 0; transform: none !important; }
   display: flex; }
 .markdown-section .pk-home-search .pkh-field input { flex: 1; }
 .pkh-hint { position: absolute; top: 100%; left: 0; right: 0; z-index: 30; height: 20px;
-  box-sizing: border-box; padding: 3px 4px 0; font-size: 12px; background: #fff; }
+  box-sizing: border-box; padding: 3px 4px 0; font-size: 12px; background: var(--pk-surface, #fff); }
 .pkh-hint:empty { display: none; }
 .pks-res.pkh-res { position: absolute; top: calc(100% + 20px); left: 0; right: 0; z-index: 30;
-  margin: 0; padding: 4px; background: #fff; border: 1px solid #cbd5e1; border-radius: 6px;
+  margin: 0; padding: 4px; background: var(--pk-surface, #fff); border: 1px solid var(--pk-line, #cbd5e1); border-radius: 6px;
   box-shadow: 0 6px 18px rgba(15,23,42,.12); max-height: 50vh; }
 .pkh-res a { font-size: 14px; }
-.pks-res .name { color: #0f172a; }
+.pks-res .name { color: var(--pk-ink, #0f172a); }
 /* the tiles' placeholder (pk-demo.js): a faded screenshot of the finished tile with a note,
    pulsing until the real view replaces it */
 .pk-demo-ph { position: relative; }

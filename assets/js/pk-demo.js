@@ -179,12 +179,9 @@ window.$docsify = window.$docsify || {};
         a.href = href; a.textContent = text;
         return a;
       };
-      var paper = link(sim.dataset.sourceurl, sim.dataset.source);
-      paper.target = '_blank'; paper.rel = 'noopener';
+      // the paper's name opens its model page, which carries the DOI
       src.appendChild(document.createTextNode('Model: '));
-      src.appendChild(paper);
-      src.appendChild(document.createTextNode(' · '));
-      src.appendChild(link(sim.dataset.record, 'open record'));
+      src.appendChild(link(sim.dataset.record, sim.dataset.source));
       sim.appendChild(src);
 
       // the phenotype's overrides are straight parameter swaps, exactly like the record

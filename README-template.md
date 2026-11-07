@@ -55,7 +55,7 @@ Built for model-informed drug development, precision dosing research and teachin
 ## Demo (pharmacokinetics and site interaction of active metabolite of clopidogrel)
 <div class="pk-disclaimer" role="note">Research data extracted by software from published papers. Not clinically validated; not for dosing decisions.</div>
 <div class="pk-demo">
-  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-source="Jung et al. 2024" data-sourceurl="https://doi.org/10.1002/psp4.13053" data-record="#/drugs/drug_clopidogrel/Clopidogrel_Jung2024"></div>
+  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-source="Jung et al. 2024" data-record="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45"></div>
   <div class="pk-demo-anat" data-drug="clopidogrel"></div>
 </div>
 

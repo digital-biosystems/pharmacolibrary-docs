@@ -1,10 +1,9 @@
 .pklg { --pklg-ok:#2C7A57; --pklg-bad:#A8452F; --pklg-warn:#96690C; --pklg-faint:#8B9994;
   --pklg-s1:#186A55; --pklg-s2:#6FB49B; --pklg-s3:#C9A227; --pklg-s4:#C8D2CF; --pklg-s5:#B08A6A;
   --pklg-rule:var(--theme-color, #DBE3E0); }
-@media (prefers-color-scheme: dark) {
-  .pklg { --pklg-ok:#63BE94; --pklg-bad:#E08A72; --pklg-warn:#D9AA4C; --pklg-faint:#748480;
+/* the dark palette follows the site's theme switch (assets/css/theme.css), not the OS */
+html[data-theme="dark"] .pklg { --pklg-ok:#63BE94; --pklg-bad:#E08A72; --pklg-warn:#D9AA4C; --pklg-faint:#748480;
     --pklg-s1:#5FC3A4; --pklg-s2:#2F7E67; --pklg-s3:#B99329; --pklg-s4:#2A3733; --pklg-s5:#8A6A50; }
-}
 .pklg table { border-collapse:collapse; width:100%; min-width:max-content; font-size:13px; }
 .pklg th, .pklg td { padding:7px 10px; text-align:left; white-space:nowrap;
   border-top:1px solid rgba(128,128,128,.18); }

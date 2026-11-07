@@ -1,0 +1,140 @@
+/* ── Pharmacolibrary theme: light (default) and dark ──────────────────────────
+   One switch: <html data-theme="dark">, set by assets/js/pk-theme.js before the page paints
+   (pkTheme.set('dark' | 'light'), pkTheme.toggle(); the choice is kept in localStorage).
+
+   Light is the stylesheets' own colours: site.css, records.css, query.css and sites.css write
+   each neutral colour as var(--pk-role, <light colour>), and the variables below exist only in
+   the dark theme. A new rule that should follow the theme uses the same roles:
+
+     --pk-bg         page            --pk-ink    headings, strong text
+     --pk-surface    cards, panels   --pk-muted  secondary text
+     --pk-surface-2  subtle fills    --pk-faint  hints, separators
+     --pk-hilite     selected rows   --pk-line   borders, rules
+
+   The docsify theme (buble.css), badges and tinted notes get their dark colours here. Charts
+   keep their exact colours on a light card: their colours carry data (phenotype, evidence,
+   status), and a re-coloured chart would no longer match its legend or the paper. */
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --pk-bg: #0f141a;
+  --pk-surface: #161c24;
+  --pk-surface-2: #1d2530;
+  --pk-hilite: #1e2d47;
+  --pk-ink: #e6edf3;
+  --pk-text: #ccd5de;
+  --pk-muted: #a3afbb;
+  --pk-faint: #7f8a96;
+  --pk-line: #313b47;
+  --pk-card: #f8fafc;                 /* the light card under a chart */
+  --theme-color: #5aa9ff;             /* links and accents; docsify's own variable */
+  --pks-page: var(--pk-surface);
+}
+
+/* ── docsify theme (buble.css) ── */
+html[data-theme="dark"] body { background: var(--pk-bg); color: var(--pk-text); }
+html[data-theme="dark"] .sidebar { background: var(--pk-surface); color: var(--pk-text);
+  border-right-color: var(--pk-line); }
+html[data-theme="dark"] .sidebar a { color: var(--pk-muted); }
+html[data-theme="dark"] .sidebar li.active { background: var(--pk-surface-2); }
+html[data-theme="dark"] .sidebar li.active a { color: var(--pk-ink); }
+html[data-theme="dark"] .sidebar-nav li.folder,
+html[data-theme="dark"] .sidebar-nav li.folder > strong { color: var(--pk-text); }
+html[data-theme="dark"] .sidebar-toggle,
+html[data-theme="dark"] body.close .sidebar-toggle { background-color: rgba(22, 28, 36, .85); }
+html[data-theme="dark"] .markdown-section h1,
+html[data-theme="dark"] .markdown-section h2,
+html[data-theme="dark"] .markdown-section h3,
+html[data-theme="dark"] .markdown-section h4,
+html[data-theme="dark"] .markdown-section h5,
+html[data-theme="dark"] .markdown-section strong,
+html[data-theme="dark"] .anchor span { color: var(--pk-ink); }
+html[data-theme="dark"] .markdown-section h6,
+html[data-theme="dark"] .markdown-section em,
+html[data-theme="dark"] .markdown-section blockquote { color: var(--pk-muted); }
+html[data-theme="dark"] .markdown-section hr { border-bottom-color: var(--pk-line); }
+html[data-theme="dark"] .markdown-section td,
+html[data-theme="dark"] .markdown-section th { border-color: var(--pk-line); }
+html[data-theme="dark"] .markdown-section tr { border-top-color: var(--pk-line); }
+html[data-theme="dark"] .markdown-section tr:nth-child(2n) { background-color: var(--pk-surface); }
+html[data-theme="dark"] .markdown-section code,
+html[data-theme="dark"] .markdown-section pre,
+html[data-theme="dark"] .markdown-section pre > code { background-color: var(--pk-surface-2);
+  color: var(--pk-ink); }
+html[data-theme="dark"] .markdown-section pre { border-left-color: var(--pk-line); }
+html[data-theme="dark"] .markdown-section p.tip { background-color: var(--pk-surface); }
+html[data-theme="dark"] .markdown-section p.tip code { background-color: var(--pk-surface-2); }
+html[data-theme="dark"] .markdown-section p.warn { background: rgba(231, 175, 6, .12); }
+html[data-theme="dark"] .app-nav li ul { background-color: var(--pk-surface);
+  border-color: var(--pk-line); }
+html[data-theme="dark"] kbd { border-color: var(--pk-line); }
+html[data-theme="dark"] .token.punctuation { color: #9aa7b4; }
+html[data-theme="dark"] .token.atrule,
+html[data-theme="dark"] .token.attr-value,
+html[data-theme="dark"] .token.keyword { color: #ff7b72; }
+html[data-theme="dark"] .token.entity { background: transparent; }
+html[data-theme="dark"] .sidebar .search input,
+html[data-theme="dark"] .markdown-section input,
+html[data-theme="dark"] .markdown-section select,
+html[data-theme="dark"] .markdown-section textarea { background: var(--pk-surface-2);
+  color: var(--pk-ink); border-color: var(--pk-line); }
+
+/* ── status badges and tinted notes: same hue, dark ground ── */
+html[data-theme="dark"] .pk-badge--green { background: #12301d; color: #9ee6b3; border-color: #2c6b43; }
+html[data-theme="dark"] .pk-badge--orange { background: #3a2610; color: #f8c27a; border-color: #7a5122; }
+html[data-theme="dark"] .pk-badge--red { background: #3b1515; color: #fca5a5; border-color: #7f2d2d; }
+html[data-theme="dark"] .pk-badge--neutral,
+html[data-theme="dark"] .pk-badge--stale { background: #262e38; color: #c5ced7; border-color: #3d4752; }
+html[data-theme="dark"] .pk-badge--blue { background: #16284a; color: #a8caff; border-color: #2f5596; }
+html[data-theme="dark"] .pk-badge--species { background: #261d3f; color: #cdb8f6; border-color: #4f3d82; }
+html[data-theme="dark"] .pk-disclaimer { background: #2b2410; border-color: #6b5a1f; color: #f1dc97; }
+html[data-theme="dark"] .pkq-status.err,
+html[data-theme="dark"] .pkq-sqlbox .err,
+html[data-theme="dark"] .pks-chip .x:hover { color: #fca5a5; }
+html[data-theme="dark"] .pkq-status.err { background: #3b1515; }
+html[data-theme="dark"] .pkq-chip { background: #1f2547; color: #c3c8ff; border-color: #3b4486; }
+html[data-theme="dark"] .pkq-chip.warn { background: #33270f; color: #f6cf86; border-color: #6e5320; }
+html[data-theme="dark"] .pkq-mode.on { background: #12301d; color: #9ee6b3; border-color: #2c6b43; }
+html[data-theme="dark"] .pkq-llmnote .pkq-llmstatus { color: #9ee6b3; }
+html[data-theme="dark"] .pks-role.inhibitor,
+html[data-theme="dark"] .pks-role.inducer { background: #3a2610; }
+html[data-theme="dark"] .pkq-q,
+html[data-theme="dark"] .pkq-send,
+html[data-theme="dark"] .pkq-btn.pkq-run { background: #1f6feb; }   /* white text stays legible */
+html[data-theme="dark"] .pks-ddi th i.pgx { border-color: #a99cf0; }
+html[data-theme="dark"] .pks-sexbtn[aria-pressed="true"] { background: var(--pk-ink);
+  color: var(--pk-bg); border-color: var(--pk-ink); }
+html[data-theme="dark"] .pk-demo-ph img { opacity: .25; }
+html[data-theme="dark"] .pk-demo-ph-msg { background: rgba(22, 28, 36, .92); color: var(--pk-ink);
+  border-color: var(--pk-line); }
+
+/* ── charts keep their colours, on a light card ── */
+html[data-theme="dark"] svg.pk-forest,
+html[data-theme="dark"] svg.pk-demo-svg,
+html[data-theme="dark"] svg.pkq-simchart,
+html[data-theme="dark"] .pks-anatomogram,
+html[data-theme="dark"] .pks-hm,
+html[data-theme="dark"] dbs-fmusim,
+html[data-theme="dark"] .markdown-section img.pk-diagram,
+html[data-theme="dark"] .markdown-section figure img {
+  background: var(--pk-card); color: #1e293b; color-scheme: light; border-radius: 6px;
+}
+html[data-theme="dark"] dbs-fmusim { display: block; padding: 8px; }
+/* inside a card the role variables are unset, so every var(--pk-role, light) falls back to its
+   light colour: the chart's labels read as they do in the light theme */
+html[data-theme="dark"] :is(svg.pk-forest, svg.pk-demo-svg, svg.pkq-simchart, .pks-anatomogram,
+                            .pks-hm, dbs-fmusim) {
+  --pk-ink: initial; --pk-text: initial; --pk-muted: initial; --pk-faint: initial;
+  --pk-line: initial; --pk-surface: initial; --pk-surface-2: initial; --pk-hilite: initial;
+}
+
+/* ── the switch on the cover's section line ── */
+.pk-theme-toggle {
+  display: inline-flex; align-items: center; gap: 5px; margin-left: 14px;
+  padding: 3px 9px; font: inherit; font-size: 13px; line-height: 1.4; cursor: pointer;
+  color: var(--pk-muted, #475569); background: transparent;
+  border: 1px solid var(--pk-line, #cbd5e1); border-radius: 999px;
+}
+.pk-theme-toggle:hover { color: var(--theme-color, #0074d9); border-color: currentColor; }
+.pk-theme-toggle:focus-visible { outline: 2px solid var(--theme-color, #0074d9); outline-offset: 2px; }
+.pk-theme-toggle svg { width: 14px; height: 14px; }

@@ -5,13 +5,13 @@
 .pk-crumbs { display: none; }
 .markdown-section nav.pk-crumbtrail {
   display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
-  margin: -8px 0 18px; font-size: 13px; color: #64748b;
+  margin: -8px 0 18px; font-size: 13px; color: var(--pk-muted, #64748b);
 }
-.markdown-section nav.pk-crumbtrail a { color: #64748b; text-decoration: none; }
+.markdown-section nav.pk-crumbtrail a { color: var(--pk-muted, #64748b); text-decoration: none; }
 .markdown-section nav.pk-crumbtrail a:hover { color: var(--theme-color, #0074d9);
   text-decoration: underline; }
-.markdown-section nav.pk-crumbtrail .sep { color: #cbd5e1; }
-.markdown-section nav.pk-crumbtrail .here { color: #334155; font-weight: 600; }
+.markdown-section nav.pk-crumbtrail .sep { color: var(--pk-faint, #cbd5e1); }
+.markdown-section nav.pk-crumbtrail .here { color: var(--pk-ink, #334155); font-weight: 600; }
 /* ── floating record panel ────────────────────────────────────────────────
    build.py stamps <div class="pk-recnav" data-items="[…]"> on every page of a drug:
    the drug's SIMULATABLE records (model + in-browser simulator) — popPK, PD, PGx — one
@@ -22,27 +22,27 @@
 aside.pk-recpanel {
   position: fixed; top: 64px; right: 18px; z-index: 35;   /* over the content, under tooltips (40) */
   max-width: 300px; max-height: calc(100vh - 90px); overflow: auto;
-  background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+  background: var(--pk-surface, #fff); border: 1px solid var(--pk-line, #e2e8f0); border-radius: 8px;
   box-shadow: 0 6px 22px rgba(15, 23, 42, .10);
   font-size: 12px; line-height: 1.35;
 }
 aside.pk-recpanel > button.hd {
   display: flex; align-items: center; gap: 6px; width: 100%;
-  padding: 6px 10px; border: 0; background: #f8fafc; cursor: pointer;
-  font: inherit; font-weight: 600; color: #334155; text-align: left;
-  border-bottom: 1px solid #e2e8f0; border-radius: 8px 8px 0 0;
+  padding: 6px 10px; border: 0; background: var(--pk-surface-2, #f8fafc); cursor: pointer;
+  font: inherit; font-weight: 600; color: var(--pk-ink, #334155); text-align: left;
+  border-bottom: 1px solid var(--pk-line, #e2e8f0); border-radius: 8px 8px 0 0;
 }
-aside.pk-recpanel > button.hd .n { color: #94a3b8; font-weight: 400; }
-aside.pk-recpanel > button.hd .tg { margin-left: auto; color: #94a3b8; }
+aside.pk-recpanel > button.hd .n { color: var(--pk-faint, #94a3b8); font-weight: 400; }
+aside.pk-recpanel > button.hd .tg { margin-left: auto; color: var(--pk-faint, #94a3b8); }
 aside.pk-recpanel.closed > ul { display: none; }
 aside.pk-recpanel.closed > button.hd { border-bottom: 0; border-radius: 8px; }
 aside.pk-recpanel > ul { list-style: none; margin: 0; padding: 4px 0; }
 aside.pk-recpanel > ul > li { display: flex; align-items: center; gap: 8px;
   padding: 3px 10px; white-space: nowrap; }
-aside.pk-recpanel > ul > li.here { background: #eef6ff; }
-aside.pk-recpanel > ul > li.grp { padding: 6px 10px 2px; color: #94a3b8; font-size: 10px;
+aside.pk-recpanel > ul > li.here { background: var(--pk-hilite, #eef6ff); }
+aside.pk-recpanel > ul > li.grp { padding: 6px 10px 2px; color: var(--pk-faint, #94a3b8); font-size: 10px;
   font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
-aside.pk-recpanel a { color: #334155; text-decoration: none;
+aside.pk-recpanel a { color: var(--pk-ink, #334155); text-decoration: none;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px;
   overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
 aside.pk-recpanel a:hover { color: var(--theme-color, #0074d9); text-decoration: underline; }
@@ -53,18 +53,18 @@ aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; 
    width (2026-11-05; reserving 320 px / 200 px for the panel squeezed every drug page).
    Collapse it to its header to reach what lies beneath. */
 /* The search box the official plugin injects at the top of the sidebar. */
-.sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
+.sidebar .search { margin-bottom: 12px; border-bottom: 1px solid var(--pk-line, #eaecef); }
 .sidebar .search input { font-size: 14px; padding: 7px 8px; }
 .sidebar .search .results-panel { font-size: 13px; }
 .pk-tab-mark, .pk-tab-end { display: none; }
 .markdown-section .pk-tabbar {
-  display: flex; gap: 4px; border-bottom: 1px solid #e3e7eb;
+  display: flex; gap: 4px; border-bottom: 1px solid var(--pk-line, #e3e7eb);
   margin: 4px 0 16px; padding: 0;
 }
 .markdown-section .pk-tabbar button {
   appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
   margin-bottom: -1px; padding: 9px 16px; cursor: pointer;
-  font: inherit; font-size: 15px; color: #6b7280;
+  font: inherit; font-size: 15px; color: var(--pk-muted, #6b7280);
 }
 .markdown-section .pk-tabbar button:hover { color: var(--theme-color, #0074d9); }
 .markdown-section .pk-tabbar button[aria-selected="true"] {
@@ -76,17 +76,17 @@ aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; 
    selected one is white like the page and merges with its panel (no line between them —
    its bottom border is the page colour, over the bar's rule). Pure CSS on aria-selected. */
 .markdown-section .pks-tabs .pk-tabbar {
-  gap: 3px; margin: 14px 0 0; padding: 0 6px; border-bottom: 1px solid #cbd5e1; flex-wrap: wrap; }
+  gap: 3px; margin: 14px 0 0; padding: 0 6px; border-bottom: 1px solid var(--pk-line, #cbd5e1); flex-wrap: wrap; }
 .markdown-section .pks-tabs .pk-tabbar button {
-  background: #eef0f3; color: #475569; font-size: 14px; padding: 7px 16px;
-  border: 1px solid #cbd5e1; border-bottom: 1px solid #cbd5e1; border-radius: 8px 8px 0 0;
+  background: var(--pk-surface-2, #eef0f3); color: var(--pk-muted, #475569); font-size: 14px; padding: 7px 16px;
+  border: 1px solid var(--pk-line, #cbd5e1); border-bottom: 1px solid var(--pk-line, #cbd5e1); border-radius: 8px 8px 0 0;
   margin-bottom: -1px; transition: background .12s, color .12s; }
-.markdown-section .pks-tabs .pk-tabbar button:hover { background: #e2e6ea; color: #1e293b; }
+.markdown-section .pks-tabs .pk-tabbar button:hover { background: var(--pk-surface-2, #e2e6ea); color: var(--pk-ink, #1e293b); }
 .markdown-section .pks-tabs .pk-tabbar button[aria-selected="true"] {
-  background: var(--pks-page, #fff); color: #1e293b; font-weight: 600;
+  background: var(--pks-page, #fff); color: var(--pk-ink, #1e293b); font-weight: 600;
   border-bottom-color: var(--pks-page, #fff); }
 .markdown-section .pks-tabs .pk-tabpanel {
-  border: 1px solid #cbd5e1; border-top: 0; border-radius: 0 0 8px 8px; padding: 14px 16px; }
+  border: 1px solid var(--pk-line, #cbd5e1); border-top: 0; border-radius: 0 0 8px 8px; padding: 14px 16px; }
 .markdown-section .pks-help table { font-size: 13px; }
 .markdown-section .pks-help h3 { margin-top: 18px; }
 /* first heading in a panel: the tab bar already provides the separation. The record
@@ -99,20 +99,20 @@ aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; 
 .markdown-section .pk-models-grid { display: flex; flex-wrap: wrap; gap: 8px 24px;
   align-items: flex-start; }
 .markdown-section .pk-models-grid .pk-models-table { flex: 1 1 460px; min-width: 0; }
-.markdown-section .pk-models-grid .pk-models-table > p { font-size: 13px; color: #4b5563; }
+.markdown-section .pk-models-grid .pk-models-table > p { font-size: 13px; color: var(--pk-muted, #4b5563); }
 .markdown-section .pk-models-grid figure.pk-models-diagram { flex: 0 1 380px;
   max-width: 380px; margin: 0; }
 .markdown-section .pk-models-grid figure.pk-models-diagram img { display: block;
   width: 100%; height: auto; max-height: 420px; object-fit: contain;
-  background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px; }
+  background: var(--pk-surface, #fff); border: 1px solid var(--pk-line, #e5e7eb); border-radius: 6px; padding: 8px; }
 .markdown-section .pk-models-grid figure.pk-models-diagram figcaption {
-  font-size: 12px; color: #6b7280; margin-top: 6px; }
+  font-size: 12px; color: var(--pk-muted, #6b7280); margin-top: 6px; }
 /* Simulation tab: the element is the first thing in the panel */
 .markdown-section .pk-tabpanel > dbs-fmusim:first-child { display: block; margin-top: 0; }
 .markdown-section table.pk-models { width: 100%; }
 .markdown-section table.pk-models td:first-child { white-space: nowrap; }
-.markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
-.markdown-section .pk-size { color: #6b7280; font-size: 13px; }
+.markdown-section .pk-missing { color: var(--pk-faint, #9aa1a9); font-style: italic; }
+.markdown-section .pk-size { color: var(--pk-muted, #6b7280); font-size: 13px; }
 
 /* A record from an animal or in-vitro study (docs.build._species_badge): kept, modelled and
    simulated, but visibly not human data. */
@@ -134,7 +134,7 @@ aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; 
    forest plot of paper reference values */
 .markdown-section .pk-rf-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
 .markdown-section .pk-rf-bar select { font-size: 13px; padding: 3px 4px; }
-.markdown-section .pk-rf-count { font-size: 12px; color: #6b7280; }
+.markdown-section .pk-rf-count { font-size: 12px; color: var(--pk-muted, #6b7280); }
 .markdown-section .pk-forest-row { display: flex; flex-wrap: wrap; gap: 12px; overflow-x: auto; }
 .markdown-section svg.pk-forest { max-width: 100%; height: auto; }
 /* keyboard arrival on the tab bar (pk-tablist.js moves focus among the tabs) */

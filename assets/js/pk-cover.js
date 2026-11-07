@@ -14,6 +14,31 @@ window.$docsify = window.$docsify || {};
     ['Downloads', 'data'],
     ['About', 'pipeline']
   ];
+  // the light/dark switch at the end of the section line (pk-theme.js keeps the choice; the
+  // other pages follow it). Icons: Tabler moon and sun, MIT.
+  var MOON = '<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>';
+  var SUN = '<path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1' +
+            'm-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/>';
+  function themeToggle() {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pk-theme-toggle';
+    function show() {
+      var dark = window.pkTheme && pkTheme.get() === 'dark';
+      // the button names what it switches TO
+      b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+        'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' +
+        (dark ? SUN : MOON) + '</svg>' + (dark ? 'Light' : 'Dark');
+      b.setAttribute('aria-label', dark ? 'Switch to the light theme' : 'Switch to the dark theme');
+    }
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      if (window.pkTheme) pkTheme.toggle();
+      show();
+    });
+    show();
+    return b;
+  }
   var wasHome = false;
   hook.doneEach(function () {
     var path = (vm && vm.route && vm.route.path) || '';
@@ -50,6 +75,7 @@ window.$docsify = window.$docsify || {};
         head.appendChild(h1);
       }
       head.appendChild(nav);
+      head.appendChild(themeToggle());
     }
   });
 });
