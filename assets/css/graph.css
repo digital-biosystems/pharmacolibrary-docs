@@ -1,0 +1,31 @@
+/* ── graph explorer ─────────────────────────────────────────────────────────
+   Only the /graph route uses these (pk-graph.js, fetched by pk-graph-page.js). */
+#pk-graph [hidden] { display: none !important; }   /* .pkq-row's flex would show a hidden row */
+.pkg-conn { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 6px 0 10px; font-size: 14px; }
+.pkg-conn select { font: inherit; font-size: 13px; padding: 3px 6px; }
+.pkg-login { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 13px; }
+.pkg-login input { font: inherit; font-size: 13px; padding: 3px 6px; }
+.pkg-views { display: flex; flex-wrap: wrap; gap: 6px; }
+.pkg-views button[aria-pressed="true"] { border-color: #1e293b; box-shadow: inset 0 0 0 1px #1e293b; font-weight: 600; }
+.pkg-cy { height: 520px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fbfbf9; margin: 8px 0; }
+.pkg-cy-small { height: 300px; }
+.pkg-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; margin: 10px 0; background: #fff; }
+.pkg-card h3 { margin: 0 0 6px; }
+.pkg-card h3 small { font-weight: 400; color: #64748b; font-size: 13px; }
+.pkg-facts { display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; font-size: 13px; margin: 8px 0; }
+.pkg-facts dt { color: #64748b; }
+.pkg-facts dd { margin: 0; }
+.pkg-cats { color: #475569; }
+.pkg-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: #475569; margin: 4px 0; }
+.pkg-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+.pkg-table { font-size: 13px; width: 100%; }
+.pkg-table td { vertical-align: top; }
+.pkg-table ul { margin: 4px 0 0; padding-left: 16px; }
+.pkg-lic { font-size: 12px; padding: 1px 6px; border-radius: 999px; background: #f1f0eb; color: #475569; }
+.pkg-lic.open { background: #e6f4ea; color: #1e6b34; }
+.pkg-chip { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid #cbd5e1; color: #334155; margin: 0 3px 3px 0; }
+.pkg-chip.rel-indication { border-color: #559de0; }
+.pkg-chip.rel-toxicity { border-color: #d94a4a; color: #a3201f; }
+.pkg-chip.rel-response { border-color: #2f9e44; }
+.pkg-cypher { margin: 10px 0; font-size: 12px; }
+.pkg-cypher pre { white-space: pre-wrap; font-size: 12px; }

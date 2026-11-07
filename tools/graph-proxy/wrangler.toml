@@ -1,0 +1,18 @@
+# Read-only proxy for the /graph page (see README.md). Secrets are set with
+#   wrangler secret put NEO4J_QUERY_URL
+#   wrangler secret put NEO4J_PASSWORD
+name = "pharmacolibrary-graph-proxy"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+
+[vars]
+NEO4J_USER = "neo4j"
+ALLOWED_ORIGINS = "https://pharmacolibrary.github.io,http://localhost:3000,http://127.0.0.1:3000"
+
+# Optional: a per-IP limit (Workers rate limiting). Check the binding syntax against
+# Cloudflare's current documentation before enabling it.
+# [[unsafe.bindings]]
+# name = "LIMITER"
+# type = "ratelimit"
+# namespace_id = "1001"
+# simple = { limit = 60, period = 60 }

@@ -34,6 +34,7 @@ redirects old `#/ledger` and `#/review` links before docsify fetches anything;
 | `pk-sidebar-search.js` | the sidebar search box, over the database (loads it on the first keystroke) | `pk-db.js` |
 | `pk-query-page.js` | the `/query` chat page; engines are fetched on first use | `pk-ask.js`, `pk-sim.js`, `pk-ask-llm.js`, DOMPurify from CDN |
 | `pk-sites-page.js` | the `/sites` ADME page | `pk-sites.js`
+| `pk-graph-page.js` | the `/graph` explorer: asks the evidence graph (a local Neo4j on its default ports, else the public read-only proxy) the queries of `assets/graph/catalogue.mjs` | `pk-graph.js`, `assets/graph/*`, `assets/vendor/cytoscape/3.34.4/` |
 | `pk-breadcrumbs.js` | renders the `.pk-crumbs` trail the builder stamped | — |
 | `pk-record-panel.js` | the floating simulatable-models panel + the record-table filters (`pk-rf`, `pk-forest`) | — |
 | `pk-db.js` | the SQLite engine and its Cache-API caching; database URLs resolve through `data/*latest.json`, so content updates never change the shell | `assets/sqljs/*`, `data/*` |

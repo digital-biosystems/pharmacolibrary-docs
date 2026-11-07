@@ -11,12 +11,20 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 
 
+# The one script that must run before the page paints: it puts the stored light/dark theme
+# on <html> (assets/css/theme.css); deferred, a dark page would flash light first.
+BLOCKING_SCRIPTS = ('assets/js/pk-theme.js',)
+
+
 class Shell(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == 'style':
             raise ValueError('Inline stylesheet in index.html')
         if tag == 'script':
+            if attrs.get('src') in BLOCKING_SCRIPTS:
+                assert (ROOT / attrs['src']).is_file(), attrs['src']
+                return
             if not attrs.get('src') or 'defer' not in attrs:
                 raise ValueError('Shell scripts must be external and deferred')
             assert (ROOT / attrs['src']).is_file(), attrs['src']
@@ -43,6 +51,7 @@ MODULE_ORDER = (
     'assets/js/pk-sidebar-search.js',
     'assets/js/pk-query-page.js',
     'assets/js/pk-sites-page.js',
+    'assets/js/pk-graph-page.js',
     'assets/js/pk-breadcrumbs.js',
     'assets/js/pk-record-panel.js',
     'assets/js/pk-db.js',
@@ -123,7 +132,7 @@ def check_shell():
     # every assets/js module is referenced by index.html, or fetched by another module
     # (pk-ask.js etc. are the query/sim engines, loaded on first use)
     on_disk = {f'assets/js/{p.name}' for p in (ROOT / 'assets/js').glob('*.js')}
-    loaded = set(srcs)
+    loaded = set(srcs) | {s for s in BLOCKING_SCRIPTS if f'<script src="{s}"></script>' in src}
     lazy = set()
     for p in (ROOT / 'assets/js').glob('*.js'):
         lazy |= set(re.findall(r"assets/js/([\w.-]+\.js)", p.read_text(encoding='utf8')))
