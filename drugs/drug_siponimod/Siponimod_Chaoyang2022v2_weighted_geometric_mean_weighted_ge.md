@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;siponimod&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/&quot;},{&quot;label&quot;:&quot;Chaoyang_2022_2 \u00b7 weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_estimates_rse&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_estimates_rse&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_estimates_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_estimates_rse.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge&quot;,&quot;label&quot;:&quot;Chaoyang_2022_2_weighted_geometric_mean_weighted_geometric_coefficient_of_variation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # siponimod — `Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="siponimod" model-id="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge" status="curated_candidate" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></div>
+> Record held back because apparent clearance 3.17 L/h and absorption constant 0.38 h−1 were not independently verified by the second reader.
+
+<div class="pk-model-meta" hidden drug="siponimod" model-id="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge" status="needs_review" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic Characteristics of Siponimod in Healthy Volunteers and Patients With Multiple Sclerosis: Analyses of Published Clinical Trials. Frontiers in pharmacology 13:824232 (2022).
@@ -29,6 +31,8 @@ Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic 
 <figure class="pk-models-diagram"><img src="drugs/drug_siponimod/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge/Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge.svg" alt="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 3.17 | L/h |
@@ -37,21 +41,23 @@ Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Record held back because apparent clearance 3.17 L/h and absorption constant 0.38 h−1 were not independently verified by the second reader.**
+
+The review flagged model builder deviations, specifically assuming bioavailability of 1 and defaulting the absorption delay (Tlag) to a standard value. A second review pass returned 'unknown' or null for the dose compound, primary analyte, and all parameter values. Consequently, the extracted values for siponimod clearance, volume of distribution, and absorption rate could not be confirmed against the source. Extracted — siponimod: CL/F 3.17 L/h, V/F 113 L, kabs 0.38 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has siponimod, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -162,7 +168,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=siponimod) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | dev_01: not acceptable | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | 2.04 | 1.802e-06 | unresolved concentration unit (exp 'times', sim 'kg/m3') |
 
 <details class="legend">

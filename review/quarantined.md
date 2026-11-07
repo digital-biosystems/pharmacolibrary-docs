@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Quarantined models"}]'></div>
 
 
-## Quarantined models (57)
+## Quarantined models (63)
 
 The model was built but held back: its simulation failed a hard check.
 
@@ -11,12 +11,15 @@ The model was built but held back: its simulation failed a hard check.
 | [albendazole](/drugs/drug_albendazole/) | [Li_2024 · reference](/drugs/drug_albendazole/Albendazole_Li2024_reference.md) | model_quarantined | unchecked |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · parameter_estimates_flucloxacillin_model](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_flucloxacillin_mo.md) | model_quarantined | unchecked |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Keij_2023 · reference](/drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md) | model_quarantined | partial |
-| [atazanavir](/drugs/drug_atazanavir/) | [Punyawudho_2017 · reference](/drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md) | model_quarantined | partial |
 | [azithromycin](/drugs/drug_azithromycin/) | [Methaneethorn_2025 · reference](/drugs/drug_azithromycin/Azithromycin_Methaneethorn2025_reference.md) | model_quarantined | partial |
 | [azlocillin](/drugs/drug_azlocillin/) | [Modr_1982 · reference](/drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) | model_quarantined | partial |
-| [bisoprolol](/drugs/drug_bisoprolol/) | [Nikolic_2013 · reference](/drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md) | model_quarantined | partial |
-| [caplacizumab](/drugs/drug_caplacizumab/) | [Sargentini-Maier_2019 · reference](/drugs/drug_caplacizumab/Caplacizumab_SargentiniMaier2019_reference.md) | model_quarantined | partial |
+| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · adc_changeb](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_adc_changeb.md) | model_quarantined | unchecked |
+| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · covariate_valuesa](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_covariate_valuesa.md) | model_quarantined | unchecked |
+| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · cys_mcmmaf_changeb](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_cys_mcmmaf_changeb.md) | model_quarantined | unchecked |
+| [bevacizumab](/drugs/drug_bevacizumab/) | [Caulet_2016 · p_value_a](/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_p_value_a.md) | model_quarantined | confirmed |
+| [camrelizumab](/drugs/drug_camrelizumab/) | [Shang_2022 · reference](/drugs/drug_camrelizumab/Camrelizumab_Shang2022_reference.md) | model_quarantined | partial |
 | [cefuroxime](/drugs/drug_cefuroxime/) | [Schouwenburg_2026 · reference](/drugs/drug_cefuroxime/Cefuroxime_Schouwenburg2026_reference.md) | model_quarantined | partial |
+| [clopidogrel](/drugs/drug_clopidogrel/) | [Grafeneder_2024 · reference](/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_reference.md) | model_quarantined | unchecked |
 | [everolimus](/drugs/drug_everolimus/) | [Park_2023 · final](/drugs/drug_everolimus/Everolimus_Park2023_final.md) | model_quarantined | partial |
 | [fluconazole](/drugs/drug_fluconazole/) | [Tanzawa_2022 · base](/drugs/drug_fluconazole/Fluconazole_Tanzawa2022_base.md) | model_quarantined | partial |
 | [fluconazole](/drugs/drug_fluconazole/) | [Tanzawa_2022 · final](/drugs/drug_fluconazole/Fluconazole_Tanzawa2022_final.md) | model_quarantined | partial |
@@ -55,12 +58,15 @@ The model was built but held back: its simulation failed a hard check.
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · zhao_et_al_2013_44](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_zhao_et_al_2013_44.md) | model_quarantined | partial |
 | [glibenclamide](/drugs/drug_glibenclamide/) | [Rambiritch_2016_2 · final_final_two_compartment_model_estimate](/drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_final_final_two_compartment_m.md) | model_quarantined | unchecked |
 | [iloperidone](/drugs/drug_iloperidone/) | [Pei_2016 · estimate](/drugs/drug_iloperidone/Iloperidone_Pei2016_estimate.md) | model_quarantined | confirmed |
+| [magnesium sulfate](/drugs/drug_magnesium_sulfate/) | [Du_2019 · reference](/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md) | model_quarantined | partial |
 | [melagatran](/drugs/drug_melagatran/) | [Cullberg_2005 · reference](/drugs/drug_melagatran/Melagatran_Cullberg2005_reference.md) | model_quarantined | partial |
 | [meropenem](/drugs/drug_meropenem/) | [Rančić_2024 · reference](/drugs/drug_meropenem/Meropenem_Rani2024_reference.md) | model_quarantined | partial |
+| [nadroparin](/drugs/drug_nadroparin/) | [Mast_2023 · final](/drugs/drug_nadroparin/Nadroparin_Mast2023_final.md) | model_quarantined | partial |
 | [ospemifene](/drugs/drug_ospemifene/) | [Kubota_2017 · reference](/drugs/drug_ospemifene/Ospemifene_Kubota2017_reference.md) | model_quarantined | confirmed |
 | [palbociclib](/drugs/drug_palbociclib/) | [Marouille_2021 · final_final_population_pk_model_with_covariates](/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi.md) | model_quarantined | confirmed |
 | [salmeterol](/drugs/drug_salmeterol/) | [Himstedt_2020 · fluticasone_propionate](/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate.md) | model_quarantined | partial |
 | [secukinumab](/drugs/drug_secukinumab/) | [Bruin_2017 · reference](/drugs/drug_secukinumab/Secukinumab_Bruin2017_reference.md) | model_quarantined | confirmed |
 | [sunitinib](/drugs/drug_sunitinib/) | [Valderrama_2025 · reference](/drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference.md) | model_quarantined | partial |
 | [talazoparib](/drugs/drug_talazoparib/) | [Guo_2022 · estimate](/drugs/drug_talazoparib/Talazoparib_Guo2022_estimate.md) | model_quarantined | partial |
+| [tenofovir disoproxil](/drugs/drug_tenofovir_disoproxil/) | [Bouazza_2011 · reference](/drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) | model_quarantined | confirmed |
 | [tralokinumab](/drugs/drug_tralokinumab/) | [Soehoel_2022 · reference](/drugs/drug_tralokinumab/Tralokinumab_Soehoel2022_reference.md) | model_quarantined | partial |

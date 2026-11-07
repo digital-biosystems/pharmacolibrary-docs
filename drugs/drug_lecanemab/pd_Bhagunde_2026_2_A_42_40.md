@@ -7,7 +7,7 @@
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Lecanemab serum concentration (µg/mL) stimulates the production of the plasma Aβ42/40 ratio in an indirect response model (dR/dt = Kin·(1 + SLOPE·Conc) − R·Kout), with baseline ratio 0.0864, Kout 1.51 1/year (t½ ≈ 0.5 years), and SLOPE 0.000704 1/µg/mL; no Imax/IC50/EC50/Emax or ke0 is reported.
+> Lecanemab plasma concentrations stimulate the production of the plasma Aβ42/40 ratio via a proportional indirect response model, where the linear slope parameter of 0.000704 1/µg/mL modifies the input against a first-order elimination rate (Kout) of 1.51 1/year. The model assumes a baseline ratio of 0.0864, and while the paper notes the drug increases the ratio, it does not explicitly state the underlying biological mechanism for this stimulation beyond the model structure.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bhagunde_2026_2`
 - **model family:** `indirect_response_iii`
@@ -35,10 +35,10 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | Baseline plasma Aβ42/40 ratio | `Q324` ·  | 0.0864 |  | llm | Bhagunde_2026_2:pdv3 |
-| PD (effect) | K out | `Q328` ·  | 1.51 | 1/year | llm | Bhagunde_2026_2:pdv3 |
-| PD (effect) | Slope for lecanemab exposure effect | `Q335` ·  | 0.000704 | 1/µg/mL | llm | Bhagunde_2026_2:pdv3 |
-| variability | Baseline IIV | `Q312` ·  | 7.21 | %CV | llm | Bhagunde_2026_2:pdv3 |
-| variability | Slope IIV | `Q312` ·  | 71.7 | %CV | llm | Bhagunde_2026_2:pdv3 |
+| PD (effect) | K out (1/year) | `Q328` ·  | 1.51 | 1/year | llm | Bhagunde_2026_2:pdv3 |
+| PD (effect) | Slope for lecanemab exposure effect (1/µg/mL) | `Q335` ·  | 0.000704 | 1/µg/mL | llm | Bhagunde_2026_2:pdv3 |
+| variability | Baseline | `Q312` ·  | 7.21 | %CV | llm | Bhagunde_2026_2:pdv3 |
+| variability | Slope | `Q312` ·  | 71.7 | %CV | llm | Bhagunde_2026_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -47,7 +47,7 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

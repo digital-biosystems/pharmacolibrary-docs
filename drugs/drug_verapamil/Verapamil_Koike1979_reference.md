@@ -4,11 +4,11 @@
 
 # verapamil — `Verapamil_Koike1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-09-29 19:13 UTC (Rejected), but the paper was screened again on 2026-10-07 15:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The verapamil record was rejected because the apparent volume of distribution unit (1/kg) is dimensionally inconsistent with the reported value.
+> Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.
 
-<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Research communications in chemical pathology and pharmacology 24(1):37–47 (1979).
@@ -39,23 +39,23 @@ Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The verapamil record was rejected because the apparent volume of distribution unit (1/kg) is dimensionally inconsistent with the reported value.**
+**Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.**
 
-The record lists an apparent volume of distribution of 2.51 with the unit 1/kg, which is dimensionally invalid for a volume parameter. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the parameterization, identifying it as mechanistic rather than apparent, and noted that several parameters were missing from the primary record. Extracted — verapamil: t1/2α 0.23 hour, t1/2β 4.21 hour, V/F 2.51 1/kg, CLb 501 ml/min, tmax 1.84 hour, Cmax 219 ng/ml, Fab 22.5 %.
+The volume of distribution (V/F) value of 2.51 uses the unit '1/kg', which is dimensionally inconsistent with volume and cannot be converted to standard SI units. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model without proper unit validation. A second reader disagreed on whether the model was apparent or mechanistic and failed to identify the dose compound, but the primary rejection is the invalid volume unit. Extracted — verapamil: t1/2α 0.23 hour, t1/2β 4.21 hour, V/F 2.51 1/kg, CL 501 ml/min, tmax 1.84 hour, Cmax 219 ng/ml, Fab 22.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

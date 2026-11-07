@@ -4,11 +4,11 @@
 
 # dextran — `Dextran_Schwarz1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-09-28 14:37 UTC (Rejected), but the paper was screened again on 2026-10-05 21:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for dextran 1 was rejected because the terminal half-life parameter (24 h) is dimensionally mismatched — its label refers to dextran 60 (Macrodex), not dextran 1 — and the values come only from the paper's abstract.
+> The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.
 
-<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (monovalent) dextran (Dx 1) in volunteers. International journal of clinical pharmacology, therapy, and toxicology 19(8):358–367 (1981).
@@ -36,23 +36,23 @@ Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (mo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The record for dextran 1 was rejected because the terminal half-life parameter (24 h) is dimensionally mismatched — its label refers to dextran 60 (Macrodex), not dextran 1 — and the values come only from the paper's abstract.**
+**The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.**
 
-The terminal half-life of 24 h is labeled as belonging to dextran 60 (Macrodex) while the record's measured compound is dextran 1, a dimension mismatch on a structural parameter that failed the consistency check. The record was built from the abstract alone, so the reported summary statistics (Ae 75%, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h) stood in for a fitted model. A second reader returned no values for all four parameters, disagreeing with each of the extracted values. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
+The record links a terminal half-life of 24 hours, explicitly labeled for dextran 60 (Macrodex), to the compound dextran 1. Because the data source was the paper's abstract, these summary statistics were used to populate the model parameters without a fitted model. Additionally, the second reader disagreed on the specific parameter identifier used for the urinary excretion amount. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

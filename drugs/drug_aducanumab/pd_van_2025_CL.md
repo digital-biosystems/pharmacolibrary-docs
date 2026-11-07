@@ -1,28 +1,28 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;aducanumab&quot;,&quot;href&quot;:&quot;drugs/drug_aducanumab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 PD Amyloid plaque burden (amyloid PET, Centiloid)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;aducanumab&quot;,&quot;href&quot;:&quot;drugs/drug_aducanumab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 PD amyloid plaque burden&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Amyloid plaque burden (amyloid PET, Centiloid) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+# amyloid plaque burden — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ## Record summary
 
-**As extracted:** Aducanumab (concentrations from the PK model of Kandadi_2022) drives Amyloid plaque burden (amyloid PET, Centiloid) (in CL): indirect response — drug stimulates the loss of Amyloid plaque burden (amyloid PET, Centiloid).
+**As extracted:** Aducanumab (concentrations from the PK model of Kandadi_2022) drives amyloid plaque burden (in CL): indirect response — drug stimulates the production of amyloid plaque burden.
 
 **Model:** No model was generated from this record.
 
-> Aducanumab concentrations (mM) act on amyloid plaque burden (Centiloid, CL) in an indirect turnover model by stimulating the first-order elimination rate (Kout) via a linear exposure–response relationship with slope 719 mM−1 day−1; plaque turnover was characterized by Kin = 0.028 CL/day and Kout = 0.00029/day (plaque half-life ~6.4 years). The verubecestat IC50 (24.1 nM) and 78.7% inhibition relate to BACE1 inhibitor simulations, not aducanumab.
+> Aducanumab concentration acts on amyloid plaque burden (CL) via a proportional increase in the elimination rate (Kout), where the record labels this linear effect as stimulation with a slope of 719 mM⁻¹ day⁻¹. The model incorporates zero-order formation (Kin) of 0.028 CL/day and first-order elimination (Kout) of 0.00029 /day, while the paper notes that verubecestat's IC50 of 24.1 nM and 78.7% inhibition were used in simulations for BACE1 inhibition rather than aducanumab's direct effect.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2025`
-- **model family:** `indirect_response_iv`
+- **model family:** `indirect_response_iii`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
@@ -35,8 +35,8 @@ van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & d
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | Impact of linear effect for aducanumab (slope) | `Q335` ·  | 719 | mM−1 day−1 | llm | van_2025:pdv3 |
-| PD (effect) | Log-transformed zero-order formation rate of amyloid plaque | `Q327` ·  | -3.58 | CL/day (log-transformed) | llm | van_2025:pdv3 |
-| PD (effect) | Log-transformed first-order elimination rate of amyloid plaque | `Q328` ·  | -8.13 | 1/day (log-transformed) | llm | van_2025:pdv3 |
+| PD (effect) | Log‐transformed zero‐order formation rate of amyloid plaque (K in) | `Q327` ·  | 0.028 | CL/day | llm | van_2025:pdv3 |
+| PD (effect) | Log‐transformed first‐order elimination rate of amyloid plaque (K out) | `Q328` ·  | 0.00029 | /day | llm | van_2025:pdv3 |
 | PD (effect) | half‐maximal inhibitory concentration of verubecestat for CSF biomarker effects (Aβ40, Aβ42, sAPPβ) | `Q322` ·  | 24.1 | nM | review_gapfill | van_2025:review |
 | PD (effect) | inhibition | `Q323` ·  | 78.7 | % | review_gapfill | van_2025:review |
 | variability | Additive error, CL | `Q315` ·  | 6.39 | CL | llm | van_2025:pdv3 |
@@ -48,19 +48,20 @@ van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & d
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 24.1 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 78.7 |  | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_iii | indirect_response_iv | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q327].value` | 0.028 | -3.58 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q328].value` | 0.00029 | -8.13 | mismatch |
 
 </details>
 

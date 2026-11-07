@@ -19,6 +19,14 @@
  "paper_reference": {
   "cmax": [
    {
+    "source": "Schlachter_2026:other_prose",
+    "value_si": 3.0
+   },
+   {
+    "source": "Schlachter_2026:other_prose",
+    "value_si": 13.0
+   },
+   {
     "source": "Schlachter_2026:discussion_prose",
     "value_si": 3.0
    },

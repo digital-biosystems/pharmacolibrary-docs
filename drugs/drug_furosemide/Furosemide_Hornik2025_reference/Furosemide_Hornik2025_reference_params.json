@@ -13,6 +13,26 @@
   40.0,
   80.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Hornik_2025:other_prose",
+    "value_si": 0.00259
+   },
+   {
+    "source": "Hornik_2025:other_prose",
+    "value_si": 0.00224
+   },
+   {
+    "source": "Hornik_2025:other_prose",
+    "value_si": 0.00196
+   },
+   {
+    "source": "Hornik_2025:other_prose",
+    "value_si": 0.0019
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.8083333333333333e-06,
   "F": 0.9,

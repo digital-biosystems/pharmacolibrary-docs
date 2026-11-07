@@ -12,6 +12,30 @@
  "paper_doses_mg": [
   6.0
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Krzyzanski_2021_2:results_prose",
+    "value_si": 6.25e-05
+   },
+   {
+    "source": "Krzyzanski_2021_2:results_prose",
+    "value_si": 7.890000000000001e-05
+   },
+   {
+    "source": "Krzyzanski_2021_2:results_prose",
+    "value_si": 6.69e-05
+   },
+   {
+    "source": "Krzyzanski_2021_2:results_prose",
+    "value_si": 6.59e-05
+   },
+   {
+    "source": "Krzyzanski_2021_2:results_prose",
+    "value_si": 3.5799999999999996e-05
+   }
+  ]
+ },
  "parameters": {
   "Cl": 2.5805555555555555e-06,
   "F": 1.0,

@@ -42,7 +42,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 
 - [B01A Antithrombotic Agents](atc/B01A.md) — 44 drugs with records
 - [B02A Antifibrinolytics](atc/B02A.md) — 4 drugs with records
-- [B02B Vitamin K And Other Hemostatics](atc/B02B.md) — 19 drugs with records
+- [B02B Vitamin K And Other Hemostatics](atc/B02B.md) — 20 drugs with records
 - [B03A Iron Preparations](atc/B03A.md) — 2 drugs with records
 - [B03B Vitamin B12 And Folic Acid](atc/B03B.md) — 2 drugs with records
 - [B03X Other Antianemic Preparations](atc/B03X.md) — 6 drugs with records
@@ -57,7 +57,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 
 - [C01A Cardiac Glycosides](atc/C01A.md) — 4 drugs with records
 - [C01B Antiarrhythmics, Class I And Iii](atc/C01B.md) — 22 drugs with records
-- [C01C Cardiac Stimulants Excl. Cardiac Glycosides](atc/C01C.md) — 19 drugs with records
+- [C01C Cardiac Stimulants Excl. Cardiac Glycosides](atc/C01C.md) — 21 drugs with records
 - [C01D Vasodilators Used In Cardiac Diseases](atc/C01D.md) — 9 drugs with records
 - [C01E Other Cardiac Preparations](atc/C01E.md) — 6 drugs with records
 - [C02A Antiadrenergic Agents, Centrally Acting](atc/C02A.md) — 4 drugs with records
@@ -82,12 +82,12 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [C07C Beta Blocking Agents And Other Diuretics](atc/C07C.md) — 5 drugs with records
 - [C07D Beta Blocking Agents, Thiazides And Other Diuretics](atc/C07D.md)
 - [C07F Beta Blocking Agents, Other Combinations](atc/C07F.md) — 11 drugs with records
-- [C08C Selective Calcium Channel Blockers With Mainly Vascular Effects](atc/C08C.md) — 13 drugs with records
+- [C08C Selective Calcium Channel Blockers With Mainly Vascular Effects](atc/C08C.md) — 15 drugs with records
 - [C08D Selective Calcium Channel Blockers With Direct Cardiac Effects](atc/C08D.md) — 3 drugs with records
 - [C08E Non-Selective Calcium Channel Blockers](atc/C08E.md) — 1 drug with records
 - [C08G Calcium Channel Blockers And Diuretics](atc/C08G.md) — 2 drugs with records
 - [C09A Ace Inhibitors, Plain](atc/C09A.md) — 11 drugs with records
-- [C09B Ace Inhibitors, Combinations](atc/C09B.md) — 15 drugs with records
+- [C09B Ace Inhibitors, Combinations](atc/C09B.md) — 17 drugs with records
 - [C09C Angiotensin Ii Receptor Blockers (Arbs), Plain](atc/C09C.md) — 10 drugs with records
 - [C09D Angiotensin Ii Receptor Blockers (Arbs), Combinations](atc/C09D.md) — 13 drugs with records
 - [C09X Other Agents Acting On The Renin-Angiotensin System](atc/C09X.md) — 3 drugs with records
@@ -156,13 +156,13 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [J01C Beta-Lactam Antibacterials, Penicillins](atc/J01C.md) — 18 drugs with records
 - [J01D Other Beta-Lactam Antibacterials](atc/J01D.md) — 42 drugs with records
 - [J01E Sulfonamides And Trimethoprim](atc/J01E.md) — 6 drugs with records
-- [J01F Macrolides, Lincosamides And Streptogramins](atc/J01F.md) — 10 drugs with records
+- [J01F Macrolides, Lincosamides And Streptogramins](atc/J01F.md) — 11 drugs with records
 - [J01G Aminoglycoside Antibacterials](atc/J01G.md) — 11 drugs with records
-- [J01M Quinolone Antibacterials](atc/J01M.md) — 21 drugs with records
+- [J01M Quinolone Antibacterials](atc/J01M.md) — 23 drugs with records
 - [J01R Combinations Of Antibacterials](atc/J01R.md) — 16 drugs with records
-- [J01X Other Antibacterials](atc/J01X.md) — 9 drugs with records
+- [J01X Other Antibacterials](atc/J01X.md) — 12 drugs with records
 - [J02A Antimycotics For Systemic Use](atc/J02A.md) — 13 drugs with records
-- [J04A Drugs For Treatment Of Tuberculosis](atc/J04A.md) — 17 drugs with records
+- [J04A Drugs For Treatment Of Tuberculosis](atc/J04A.md) — 21 drugs with records
 - [J04B Drugs For Treatment Of Lepra](atc/J04B.md) — 3 drugs with records
 - [J05A Direct Acting Antivirals](atc/J05A.md) — 82 drugs with records
 - [J06A Immune Sera](atc/J06A.md)
@@ -179,8 +179,8 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [L01C Plant Alkaloids And Other Natural Products](atc/L01C.md) — 13 drugs with records
 - [L01D Cytotoxic Antibiotics And Related Substances](atc/L01D.md) — 13 drugs with records
 - [L01E Protein Kinase Inhibitors](atc/L01E.md) — 68 drugs with records
-- [L01F Monoclonal Antibodies And Antibody Drug Conjugates](atc/L01F.md) — 43 drugs with records
-- [L01X Other Antineoplastic Agents](atc/L01X.md) — 73 drugs with records
+- [L01F Monoclonal Antibodies And Antibody Drug Conjugates](atc/L01F.md) — 49 drugs with records
+- [L01X Other Antineoplastic Agents](atc/L01X.md) — 74 drugs with records
 - [L02A Hormones And Related Agents](atc/L02A.md) — 8 drugs with records
 - [L02B Hormone Antagonists And Related Agents](atc/L02B.md) — 11 drugs with records
 - [L03A Immunostimulants](atc/L03A.md) — 18 drugs with records
@@ -218,7 +218,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [N06A Antidepressants](atc/N06A.md) — 45 drugs with records
 - [N06B Psychostimulants, Agents Used For Adhd And Nootropics](atc/N06B.md) — 12 drugs with records
 - [N06C Psycholeptics And Psychoanaleptics In Combination](atc/N06C.md) — 2 drugs with records
-- [N06D Anti-Dementia Drugs](atc/N06D.md) — 9 drugs with records
+- [N06D Anti-Dementia Drugs](atc/N06D.md) — 11 drugs with records
 - [N07A Parasympathomimetics](atc/N07A.md) — 4 drugs with records
 - [N07B Drugs Used In Addictive Disorders](atc/N07B.md) — 11 drugs with records
 - [N07C Antivertigo Preparations](atc/N07C.md) — 3 drugs with records
@@ -242,7 +242,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 
 ## R Respiratory System
 
-- [R01A Decongestants And Other Nasal Preparations For Topical Use](atc/R01A.md) — 26 drugs with records
+- [R01A Decongestants And Other Nasal Preparations For Topical Use](atc/R01A.md) — 25 drugs with records
 - [R01B Nasal Decongestants For Systemic Use](atc/R01B.md) — 2 drugs with records
 - [R02A Throat Preparations](atc/R02A.md) — 15 drugs with records
 - [R03A Adrenergics, Inhalants](atc/R03A.md) — 25 drugs with records
@@ -257,7 +257,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 
 ## S Sensory Organs
 
-- [S01A Antiinfectives](atc/S01A.md) — 37 drugs with records
+- [S01A Antiinfectives](atc/S01A.md) — 38 drugs with records
 - [S01B Antiinflammatory Agents](atc/S01B.md) — 14 drugs with records
 - [S01C Antiinflammatory Agents And Antiinfectives In Combination](atc/S01C.md) — 10 drugs with records
 - [S01E Antiglaucoma Preparations And Miotics](atc/S01E.md) — 16 drugs with records
@@ -268,7 +268,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [S01K Surgical Aids](atc/S01K.md) — 1 drug with records
 - [S01L Ocular Vascular Disorder Agents](atc/S01L.md) — 5 drugs with records
 - [S01X Other Ophthalmologicals](atc/S01X.md) — 9 drugs with records
-- [S02A Antiinfectives](atc/S02A.md) — 14 drugs with records
+- [S02A Antiinfectives](atc/S02A.md) — 15 drugs with records
 - [S02B Corticosteroids](atc/S02B.md) — 5 drugs with records
 - [S02C Corticosteroids And Antiinfectives In Combination](atc/S02C.md) — 6 drugs with records
 - [S02D Other Otologicals](atc/S02D.md) — 3 drugs with records

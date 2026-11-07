@@ -19,7 +19,7 @@ _not available_
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -29,18 +29,18 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 17:38 | 8:52 | 0/0/0 | 0/0/0 | 0/0/0 | 322,962/8,070 | ollama / qwen3.8:27b-mtp-q8_0 | 42 | 10/63 | 41/1 | 0 |
+| 2026-10-13 12:34 | 13:20 | 0/0/0 | 0/0/0 | 0/0/0 | 305,605/10,888 | einfracz / qwen3.8-27b | 59 | 10/74 | 58/1 | 0 |
 
 ## Coverage
 
-- **PubMed hits:** 560 matched, 188 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 568 matched, 222 returned
+- **screened:** 36  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_19 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -51,8 +51,10 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Bakarich_2014.pdf` | Bakarich SE et al., Three-dimensional printing fiber reinfo…, ACS applied materials & int… (2014) | pd | 4 | [10.1021/am503878d](https://doi.org/10.1021/am503878d) | [25197745](https://www.ncbi.nlm.nih.gov/pubmed/25197745) | metadata signals extractable PD data (Emax) |
 | `Corrêa_2009.pdf` | Corrêa AX et al., Natural impacted freshwaters: in situ u…, Ecotoxicology (London, Engl… (2009) | pd | 4 | [10.1007/s10646-009-0301-x](https://doi.org/10.1007/s10646-009-0301-x) | [19247831](https://www.ncbi.nlm.nih.gov/pubmed/19247831) | metadata signals extractable PD data (EC50) |
 | `De_2025.pdf` | De Silva ND et al., Alginate Nanocarrier Loading Catharanth…, Chemistry & biodiversity (2025) | pd | 4 | [10.1002/cbdv.202500320](https://doi.org/10.1002/cbdv.202500320) | [40802935](https://www.ncbi.nlm.nih.gov/pubmed/40802935) | metadata signals extractable PD data (IC50) |
+| `Fine_2006.pdf` | Fine T et al., Luminescent yeast cells entrapped in hy…, Biosensors & bioelectronics (2006) | pd | 4 | [10.1016/j.bios.2005.11.004](https://doi.org/10.1016/j.bios.2005.11.004) | [16460925](https://www.ncbi.nlm.nih.gov/pubmed/16460925) | metadata signals extractable PD data (EC50) |
 | `Inthanusorn_2025.pdf` | Inthanusorn W et al., Highly flexible thermoresponsive algina…, International journal of bi… (2025) | pd | 4 | [10.1016/j.ijbiomac.2025.145183](https://doi.org/10.1016/j.ijbiomac.2025.145183) | [40505932](https://www.ncbi.nlm.nih.gov/pubmed/40505932) | metadata signals extractable PD data (IC50) |
 | `Labre_2018.pdf` | Labre F et al., DMTMM-mediated amidation of alginate ol…, Carbohydrate polymers (2018) | pd | 4 | [10.1016/j.carbpol.2017.12.069](https://doi.org/10.1016/j.carbpol.2017.12.069) | [29352938](https://www.ncbi.nlm.nih.gov/pubmed/29352938) | metadata signals extractable PD data (IC50) |
+| `Li_2022.pdf` | Li Y et al., 3d oxidized alginate-porcine liver acel…, International journal of bi… (2022) | pd | 4 | [10.1016/j.ijbiomac.2022.06.169](https://doi.org/10.1016/j.ijbiomac.2022.06.169) | [35777510](https://www.ncbi.nlm.nih.gov/pubmed/35777510) | metadata signals extractable PD data (IC50) |
 | `Panahi_2022.pdf` | Panahi Z et al., Sodium alginate edible coating containi…, International journal of fo… (2022) | pd | 4 | [10.1016/j.ijfoodmicro.2022.109883](https://doi.org/10.1016/j.ijfoodmicro.2022.109883) | [35985080](https://www.ncbi.nlm.nih.gov/pubmed/35985080) | metadata signals extractable PD data (IC50) |
 | `Rengasamy_2013.pdf` | Rengasamy KR et al., Potential antiradical and alpha-glucosi…, Food chemistry (2013) | pd | 4 | [10.1016/j.foodchem.2013.04.019](https://doi.org/10.1016/j.foodchem.2013.04.019) | [23790932](https://www.ncbi.nlm.nih.gov/pubmed/23790932) | metadata signals extractable PD data (EC50) |
 | `Sulej_2019.pdf` | Sulej J et al., Antimicrobial and antioxidative potenti…, Fungal biology (2019) | pd | 4 | [10.1016/j.funbio.2019.09.007](https://doi.org/10.1016/j.funbio.2019.09.007) | [31733730](https://www.ncbi.nlm.nih.gov/pubmed/31733730) | metadata signals extractable PD data (EC50) |
@@ -60,8 +62,9 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Wu_2026.pdf` | Wu L et al., Stiffness-Tunable Hydrogel Microfluidic…, Advanced healthcare materia… (2026) | pd | 4 | [10.1002/adhm.202503515](https://doi.org/10.1002/adhm.202503515) | [41319192](https://www.ncbi.nlm.nih.gov/pubmed/41319192) | metadata signals extractable PD data (IC50) |
 | `Zhang_2023.pdf` | Zhang A et al., Characterization of bifunctional algina…, Applied microbiology and bi… (2023) | pd | 4 | [10.1007/s00253-023-12745-4](https://doi.org/10.1007/s00253-023-12745-4) | [37698609](https://www.ncbi.nlm.nih.gov/pubmed/37698609) | metadata signals extractable PD data (EC50) |
 | `Lan_2010.pdf` | Lan SF et al., Long-term cultivation of HepG2 liver ce…, Toxicology in vitro : an in… (2010) | pgx | 7 | [10.1016/j.tiv.2010.02.015](https://doi.org/10.1016/j.tiv.2010.02.015) | [20171269](https://www.ncbi.nlm.nih.gov/pubmed/20171269) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
+| `Lee_2015.pdf` | Lee KJ, [Underlying Mechanisms and Management o…, The Korean journal of gastr… (2015) | pgx | 5 | [10.4166/kjg.2015.66.2.70](https://doi.org/10.4166/kjg.2015.66.2.70) | [26289239](https://www.ncbi.nlm.nih.gov/pubmed/26289239) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-05 17:33 UTC</sub>
+<sub>queue written 2026-10-13 12:33 UTC</sub>
 
 ## Screened and excluded
 
@@ -76,9 +79,9 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Ahn_2022 | irrelevant | 0 | 0 | The paper describes a microfluidic platform for studying microbial cross-communication using alginate capsules, and does not report pharmacokinetic parameters for calcium alginate. |
 | popPK | Ahn_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and degradation of alginate-based multicompartment capsules in vitro and does not report pharmacokinetic parameters for calcium alginate as a drug. |
 | popPK | Al-Hasawi_2020 | irrelevant | 0 | 0 | The paper investigates the toxicity of heavy metals on algae using alginate as an immobilization matrix, not the pharmacokinetics of calcium alginate. |
-| PD | Al-Hasawi_2020 | not_relevant | 0 | 0 | The paper investigates the toxicity of heavy metals on algae, not the pharmacodynamics of calcium alginate as a drug. |
 | PGx | Al_2019 | not_relevant | 0 | 0 | The paper discusses bacterial alginate production in Pseudomonas aeruginosa, not the pharmacokinetics or pharmacodynamics of the drug calcium alginate. |
 | popPK | Aldawsari_2021 | irrelevant | 0 | 0 | The study is an in-vitro formulation and characterization of apigenin-loaded calcium-alginate beads, reporting no pharmacokinetic parameters for calcium alginate. |
+| popPK | Aravena_2018 | irrelevant | 0 | 0 | The paper describes the adsorption of trypsin onto an alginate matrix and contains no pharmacokinetic data for calcium alginate. |
 | popPK | Ashfaq_2023 | irrelevant | 0 | 0 | The paper describes the formulation and in vitro release of a chlorhexidine alginate gel, not the pharmacokinetics of calcium alginate. |
 | PGx | Augustine_2018 | not_relevant | 0 | 0 | The paper reports on a drug delivery system for darunavir/ritonavir and does not investigate pharmacogenomic effects or calcium alginate as a therapeutic agent. |
 | popPK | Awad_2024 | irrelevant | 0 | 0 | The study is an in vitro microbiology experiment evaluating antibiotic efficacy in alginate beads, not a pharmacokinetic study of calcium alginate. |
@@ -91,6 +94,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Biagini_2006 | not_relevant | 0 | 0 | The paper reports in vitro cytotoxicity (EC50) for various chemical entities, but does not report a pharmacodynamic or exposure-response relationship for calcium alginate. |
 | popPK | Bloch_2006 | irrelevant | 0 | 0 | The paper describes a feasibility study on oxygen supply to pancreatic islets using microalgae and does not report pharmacokinetic parameters for calcium alginate. |
 | PGx | Bodnár_2025 | not_relevant | 0 | 0 | The paper describes the formulation of an ABCG2 inhibitor using alginate microcapsules and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Braun_2026 | irrelevant | 0 | 0 | The paper investigates the rheological and biological properties of lactate-responsive alginate hydrogels in cancer models, containing no pharmacokinetic data for calcium alginate. |
 | popPK | Bruni_1995 | irrelevant | 0 | 0 | The study focuses on the kinetics of UDP-glucuronosyltransferase and bilirubin conjugation in hepatocytes, not the pharmacokinetics of calcium alginate. |
 | PD | Bruni_1995 | not_relevant | 0 | 0 | The paper analyzes the enzyme kinetics of UDPGT (Hill coefficients) and the efficacy of encapsulated hepatocytes, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug calcium alginate. |
 | PGx | Bunse_2021 | not_relevant | 0 | 0 | The paper studies marine bacterial communities and gene expression related to polysaccharide degradation, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of calcium alginate. |
@@ -116,17 +120,21 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Dodda_2026 | not_relevant | 0 | 0 | The paper characterizes the mechanical and biological properties of PCL/MXene/gelatin composite films and does not involve calcium alginate or report any pharmacodynamic or exposure-response relationships. |
 | PGx | Dominiak_2024 | not_relevant | 0 | 0 | The paper investigates the association between Vitamin D receptor polymorphisms and the development of malocclusions, not the pharmacokinetics or pharmacodynamics of calcium alginate. |
 | PGx | Dragoj_2021 | not_relevant | 0 | 0 | The paper describes a 3D cell culture model using alginate as a scaffold and tests temozolomide, but does not report pharmacogenomic effects on the PK/PD of calcium alginate. |
+| popPK | Eddleston_2022 | irrelevant | 0 | 0 | The paper is a narrative review of the emetic PP796 and paraquat formulations, with no pharmacokinetic data for calcium alginate. |
 | PGx | Elkayam_2006 | not_relevant | 0 | 0 | The paper describes a tissue engineering method for hepatocyte cell lines and does not report pharmacogenomic effects on the PK/PD of calcium alginate. |
 | PGx | Elliott_1997 | not_relevant | 0 | 0 | The paper discusses drug delivery systems for antihypertensives and does not report any pharmacogenomic effects on the PK/PD of calcium alginate. |
+| popPK | Etinosa_2026 | irrelevant | 0 | 0 | The paper is a review of functional biomaterials for cancer drug delivery and does not mention calcium alginate or report its pharmacokinetic parameters. |
 | popPK | Fabiyi_2026 | irrelevant | 0 | 0 | The paper is a review of Dihydromyricetin (DHM) and does not study calcium alginate or report any pharmacokinetic parameters for it. |
 | PD | Fabiyi_2026 | not_relevant | 0 | 0 | The paper is a review of dihydromyricetin (DHM) and does not contain any pharmacodynamic or exposure-response data for calcium alginate. |
 | popPK | Fatima_2025 | irrelevant | 0 | 0 | The paper is a review of nutraceuticals and natural compounds for chronic diseases and does not contain pharmacokinetic data for calcium alginate. |
 | PD | Fatima_2025 | not_relevant | 0 | 0 | The paper is a narrative review of nutraceuticals and does not report any specific pharmacodynamic or exposure-response data for calcium alginate. |
+| popPK | Fell_2026 | irrelevant | 0 | 0 | The paper investigates a cell-based delivery platform for monoclonal antibodies using alginate biomaterials, and does not report pharmacokinetic parameters for the drug calcium_alginate. |
 | popPK | Ferreira-Anta_2023 | irrelevant | 0 | 0 | The paper describes the extraction and characterization of seaweed biomass and does not contain any pharmacokinetic data for calcium alginate. |
 | PD | Ferreira-Anta_2023 | not_relevant | 0 | 0 | The paper reports an IC50 for a crude seaweed extract, not for calcium alginate, and does not provide a pharmacodynamic exposure-response model or numeric PD parameters for the specific compound. |
 | popPK | Fine_2006 | irrelevant | 0 | 0 | The paper describes a biosensor using calcium alginate as a hydrogel matrix for yeast cells, not a pharmacokinetic study of calcium alginate as a drug. |
 | PD | Foroohari_2025 | not_relevant | 3 | 2 | The paper reports an IC50 value for a combination therapy in vitro, but lacks a formal exposure-response or dose-response model with derivable PD parameters (e.g., Emax, EC50, slope) for calcium alginate or the specific drug delivery system in a PK/PD context. |
 | popPK | Gamez_2020 | irrelevant | 0 | 0 | The paper describes an in vitro bioreactor study for cell mobilization using alginate scaffolds and does not report pharmacokinetic parameters for calcium alginate. |
+| popPK | Gao_2026 | irrelevant | 0 | 0 | The study focuses on the in vitro antibacterial mechanisms of dihydroquercetin and ceftazidime against P. aeruginosa, containing no pharmacokinetic data for calcium alginate. |
 | PD | Garnett_1993 | not_relevant | 0 | 0 | The text is a general review of GERD management and does not report any specific pharmacodynamic or exposure-response data for calcium alginate. |
 | PGx | Gato-Diaz_2026 | not_relevant | 0 | 0 | The paper describes a 3D in vitro breast cancer model using alginate as a scaffold material, not the pharmacokinetics or pharmacodynamics of calcium alginate as a drug, and contains no pharmacogenomic data. |
 | popPK | Ghorbanizamani_2026 | irrelevant | 0 | 0 | The paper is a review of upconversion nanoparticles in biomedical applications and does not contain any pharmacokinetic data for calcium alginate. |
@@ -168,11 +176,12 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Lalaouna_2012 | not_relevant | 0 | 0 | The paper describes bacterial genetics and phenotypic switching in Pseudomonas brassicacearum, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of calcium alginate. |
 | PGx | Lan_2010 | not_relevant | 0 | 0 | The paper studies cell viability and drug metabolism in alginate hydrogels but does not report pharmacogenomic effects on the PK/PD of calcium alginate. |
 | PGx | Lee_2008 | not_relevant | 0 | 0 | The paper describes a high-throughput toxicology assay platform using alginate gels and does not report pharmacogenomic effects on the PK/PD of calcium alginate. |
+| PGx | Lee_2015 | not_relevant | 2 | 0 | The text mentions alginate preparations as a management option for refractory GERD but does not report any pharmacogenomic effects (gene variant changes to PK/PD) for calcium alginate. |
 | PGx | Li_2026 | not_relevant | 0 | 0 | The paper investigates the therapeutic mechanism of alginate on hyperuricemia via gut microbiota modulation and does not report any pharmacogenomic effects on PK or PD parameters. |
 | popPK | Li_2026_2 | irrelevant | 0 | 0 | The paper is a review on natural polysaccharide hydrogels for colorectal cancer and does not report pharmacokinetic parameters for calcium alginate. |
-| PD | Li_2026_2 | not_relevant | 0 | 0 | The paper is a review of natural polysaccharide hydrogels for colorectal cancer and does not report any pharmacodynamic or exposure-response data for calcium alginate. |
+| PD | Li_2026_2 | not_relevant | 0 | 0 | The paper is a review of polysaccharide hydrogels and contains no PK/PD data, exposure-response analysis, or numeric PD parameters for calcium alginate. |
 | popPK | Li_2026_3 | irrelevant | 0 | 0 | The paper is a bibliometric analysis of hydrogel-based ocular drug delivery and does not report pharmacokinetic parameters for calcium alginate. |
-| PD | Li_2026_3 | not_relevant | 0 | 0 | The paper is a bibliometric analysis of research trends and does not report any pharmacodynamic or exposure-response data for calcium alginate. |
+| PD | Li_2026_3 | not_relevant | 0 | 0 | The paper is a bibliometric and visualization analysis of research trends in hydrogel-based ocular drug delivery and does not report any experimental pharmacodynamic data, exposure-response relationships, or numeric PD parameters for calcium alginate. |
 | popPK | Liu_2013 | irrelevant | 0 | 0 | The paper describes the fabrication of calcium alginate micro-particles for cell co-culture and contains no pharmacokinetic data. |
 | PGx | Liu_2015 | not_relevant | 0 | 0 | The paper investigates the effect of matrix stiffness on tumor initiating cells using alginate beads as a culture scaffold, not the pharmacokinetics or pharmacodynamics of calcium alginate as a drug. |
 | popPK | Liu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of alpha-cobrotoxin and resveratrol, not calcium alginate. |
@@ -180,6 +189,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Luca_2024 | irrelevant | 0 | 0 | The study focuses on ibuprofen delivery using decellularized macroalgae and does not involve calcium alginate pharmacokinetics. |
 | PD | Luca_2024 | not_relevant | 0 | 0 | The paper focuses on the characterization of decellularized macroalgae hydrogels for tissue engineering and ibuprofen release, containing no pharmacodynamic or exposure-response analysis for calcium alginate. |
 | popPK | Maguire_2007 | irrelevant | 0 | 0 | The paper describes hepatic differentiation in an alginate microenvironment and does not report pharmacokinetic parameters for calcium alginate. |
+| PGx | Mahin_2026 | not_relevant | 0 | 0 | The paper focuses on scaffold fabrication for hepatotoxicity models and does not investigate pharmacogenomic effects on PK/PD parameters for calcium alginate. |
 | popPK | Mahmood_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metformin HCl, not calcium alginate, which is only used as a formulation excipient. |
 | PD | Mahmood_2025 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling of metformin pharmacokinetics (Cmax, AUC) and in vitro release, but does not report any pharmacodynamic (PD) or exposure-response relationship for calcium alginate or metformin. |
 | PD | Majumdar_2022 | not_relevant | 0 | 0 | The paper focuses on the formulation and characterization of chitosan-based delivery systems for beta-carotene, reporting IC50 values for antioxidant and anticancer activity, but does not contain any data or analysis regarding calcium alginate pharmacodynamics or exposure-response relationships. |
@@ -194,6 +204,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Mørch_2012 | irrelevant | 0 | 0 | The study investigates manganese (Mn) alginate gels for MRI contrast, not the pharmacokinetics of calcium alginate. |
 | popPK | Naim_2026 | irrelevant | 0 | 0 | The paper is a review of nanoengineered phytochemicals for neurodegenerative disorders and does not mention calcium alginate or report any pharmacokinetic parameters for it. |
 | PD | Naim_2026 | not_relevant | 0 | 0 | The paper is a review of nanoengineered phytochemicals for neurodegenerative disorders and does not report any pharmacodynamic or exposure-response data for calcium alginate. |
+| popPK | Naught_2002 | irrelevant | 0 | 0 | The paper is a biochemical study of bacterial enzyme kinetics, not a pharmacokinetic study of the drug calcium alginate. |
 | PD | Neto_2021 | not_relevant | 0 | 0 | The paper studies dehydroabietic acid (DHA), not calcium alginate, and reports static antimicrobial endpoints (MIC, MBIC) rather than a pharmacodynamic exposure-response model for the drug of interest. |
 | popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data for calcium alginate. |
 | PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific data, analysis, or numeric parameters for calcium alginate. |
@@ -222,7 +233,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | Rengasamy_2013 | not_relevant | 0 | 0 | The paper investigates the antiradical and alpha-glucosidase inhibitory properties of compounds from Ecklonia maxima, not the pharmacodynamics of calcium alginate. |
 | PD | Ristow_1982 | not_relevant | 0 | 0 | The paper studies the effect of dietary fiber on folic acid bioavailability, not the pharmacodynamics of calcium alginate itself. |
 | popPK | Rogalska_2024 | irrelevant | 0 | 0 | The study focuses on the food science properties of cocoa phenolics in yogurt and does not report pharmacokinetic parameters for calcium alginate. |
-| PD | Rogalska_2024 | not_relevant | 0 | 0 | The paper reports antioxidant activity (EC50 for DPPH/ABTS) and phenolic content in yogurt, which are physicochemical/food science metrics, not pharmacodynamic exposure-response relationships for a drug in a biological system. |
+| PD | Rogalska_2024 | not_relevant | 0 | 0 | The study investigates antioxidant properties and bacterial viability in yogurt; it is not a pharmacodynamic exposure-response or dose-response study of a drug, and calcium alginate is used merely as a carrier material. |
 | popPK | Salamat_2026 | irrelevant | 0 | 0 | The paper is a review of chitosan-based hydrogels and does not report pharmacokinetic parameters for calcium alginate. |
 | PD | Salamat_2026 | not_relevant | 0 | 0 | The paper is a comprehensive review of chitosan-based hydrogels and does not report any pharmacodynamic or exposure-response data for calcium alginate. |
 | popPK | Sarkhel_2014 | irrelevant | 0 | 0 | The study focuses on in vitro drug release and PK simulation for ocular delivery of model drugs (e.g., dexamethasone, IgG) and does not involve calcium alginate as a subject drug. |
@@ -238,6 +249,7 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Stampella_2015 | not_relevant | 0 | 0 | The paper describes an in vitro cell culture scaffold system for drug metabolism studies and does not report pharmacogenomic effects on the PK/PD of calcium alginate. |
 | popPK | Su_2025 | irrelevant | 0 | 0 | The paper is a review on nanotechnology in osteosarcoma treatment and does not contain pharmacokinetic data for calcium alginate. |
 | PD | Su_2025 | not_relevant | 0 | 0 | The paper is a review of nanotechnology strategies in osteosarcoma and does not report any pharmacodynamic or exposure-response data for calcium alginate. |
+| PGx | Sukumaran_2009 | not_relevant | 0 | 0 | The paper describes a high-throughput screening platform for CYP450 assays and does not report pharmacogenomic effects on a PK or PD parameter for calcium_alginate. |
 | popPK | Sulej_2019 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Sulej_2019 | not_relevant | 0 | 0 | The paper focuses on the antimicrobial and antioxidative properties of cellobiose dehydrogenase, not on the pharmacodynamics of calcium alginate. |
 | popPK | Tang_2024 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
@@ -254,6 +266,8 @@ _16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Turchaninova_2026 | irrelevant | 0 | 0 | The paper describes a cell transdifferentiation protocol for cardiac repair and does not involve the drug calcium_alginate or any pharmacokinetic analysis. |
 | PD | Turchaninova_2026 | not_relevant | 0 | 0 | The paper focuses on cell reprogramming protocols and cardiac conduction recovery, containing no pharmacodynamic modeling or exposure-response analysis for calcium alginate. |
 | PGx | Vaghjiani_2014 | not_relevant | 0 | 0 | The paper investigates the viability and function of encapsulated hepatocyte-like cells, not the pharmacogenomics of calcium alginate. |
+| popPK | Vasović_2026 | irrelevant | 0 | 0 | The paper is a review on oral peptide delivery and does not study calcium alginate or report any pharmacokinetic parameters for it. |
+| popPK | Vigués_2020 | irrelevant | 0 | 0 | The paper describes the fabrication of microbial biosensors using polyethersulfone and alginate, and contains no pharmacokinetic data for calcium alginate. |
 | PGx | Wacharanad_2021 | not_relevant | 0 | 0 | The paper studies the antimicrobial activity of silver nanoparticles in alginate gel and contains no pharmacogenomic data or analysis of calcium alginate PK/PD parameters. |
 | popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for diabetic wound healing and does not report pharmacokinetic parameters for calcium alginate. |
 | PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review of nanocarrier delivery systems for phytochemicals and does not report any pharmacodynamic or exposure-response data for calcium alginate. |

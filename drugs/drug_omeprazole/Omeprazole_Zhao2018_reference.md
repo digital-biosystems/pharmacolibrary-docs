@@ -5,11 +5,11 @@
 
 # omeprazole — `Omeprazole_Zhao2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Omeprazole's elimination clearance was left at default, quarantining the neonatal model because this core parameter lacked an explicit value.
+> Record refuses publication due to apparent assumption parameterization for omeprazole metabolites, ignoring covariate effects and molar corrections.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="model_quarantined" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="needs_review" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Zhao W, Leroux S, Biran V, Jacqz-Aigrain E. Developmental pharmacogenetics of CYP2C19 in neonates and young infants: omeprazole as a probe drug. British journal of clinical pharmacology 84(5):997–1005 (2018).
@@ -43,25 +43,21 @@ Zhao W, Leroux S, Biran V, Jacqz-Aigrain E. Developmental pharmacogenetics of CY
 | CLM1/F (l h-1) | CL/F | 0.863 | l h-1 | 18.4 |  |
 | CLM2/F (l h-1) | CL/F | 0.135 | l h-1 | 27.3 |  |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Omeprazole's elimination clearance was left at default, quarantining the neonatal model because this core parameter lacked an explicit value.**
+**Record refuses publication due to apparent assumption parameterization for omeprazole metabolites, ignoring covariate effects and molar corrections.**
 
-The central compartment's elimination clearance for the parent drug omeprazole has no extracted value, so a placeholder was used instead of a fitted estimate. The model also assumes bioavailability is one, yet the elimination clearance remains undefined in the record. Covariates defined for the metabolites were not simulated, meaning only the reference individual was tested. A second reader disagreed on the presence of the omeprazole sulfone link and several parameter values. Extracted — omeprazole: kabs 0.0509 h-1, V1/F 0.508 l; 5-hydroxy-omeprazole: V1/F 1 l, CL/F 0.863 l h-1; omeprazole sulfone: V1/F 1 l, CLfm 0.142 l h-1, CL/F 0.135 l h-1.
+The model builder substituted bioavailability (F) and metabolite bioavailability (Fm) as fixed values of 1, treating parameters as apparent rather than absolute. This approach omits specific covariate effects for CYP2C19 polymorphisms on the formation clearance of 5-hydroxy-omeprazole. The record retains placeholder values for covariate parameters like fcyp2c19_em_um set to 1, masking the pharmacogenetic impact on metabolic clearance. Extracted — omeprazole: kabs 0.0509 h-1, V1/F 0.508 l; 5-hydroxy-omeprazole: V1/F 1 l, CL/F 0.863 l h-1; omeprazole sulfone: V1/F 1 l, CLfm 0.142 l h-1, CL/F 0.135 l h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has omeprazole → 5-hydroxy-omeprazole (metabolism); omeprazole → omeprazole sulfone (metabolism), the second reading omeprazole → 5-hydroxy-omeprazole (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -199,15 +195,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | scenario | status | expected | obtained | note |
 |---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_metabolite_built[5-hydroxy-omeprazole] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.001, 'CL': 2.35e-07, 'formation': 1.827777777777778e-07} | 5-hydroxy-omeprazole = compartment M1 with its own numbers |
+| T3_metabolite_built[omeprazole sulfone] |  | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.001, 'CL': 3.611111111111111e-08, 'formation': 3.888888888888889e-08} | omeprazole sulfone = compartment M2 with its own numbers |
+| T3_metabolite_output[5-hydroxy-omeprazole] |  | pass |  | 0.0201 | C_M1 (5-hydroxy-omeprazole) must rise above 0 when the parent is dosed |
+| T3_metabolite_output[omeprazole sulfone] |  | pass |  | 0.009043 | C_M2 (omeprazole sulfone) must rise above 0 when the parent is dosed |
+| T3_molar_mass[5-hydroxy-omeprazole] |  | pass |  | {'MW': 0.345416, 'MW_m1': 0.361416} | formation is molecule-for-molecule |
+| T3_molar_mass[omeprazole sulfone] |  | pass |  | {'MW': 0.345416, 'MW_m2': 0.361416} | formation is molecule-for-molecule |
 | T3_output_variable |  | pass | C_central (measured=omeprazole) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_shared_parameters |  | pass | 7 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T3_shared_parameters |  | skipped |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
+| T2_pgx_Ultra | pgx:Ultra | pass |  |  | Ultra vs Normal: central.C auc -59 %, C_M2 auc -58 %, C_M2 cmax -57 % (PK_3M_9C.fmu, 2 phenotypes) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

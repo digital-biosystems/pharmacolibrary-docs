@@ -15,6 +15,18 @@
  "paper_reference": {
   "cmax": [
    {
+    "source": "Thoueille_2024:other_prose",
+    "value_si": 1.6
+   },
+   {
+    "source": "Thoueille_2024:other_prose",
+    "value_si": 0.001624
+   },
+   {
+    "source": "Thoueille_2024:other_prose",
+    "value_si": 0.00265
+   },
+   {
     "source": "Thoueille_2024:discussion_prose",
     "value_si": 1.6
    }

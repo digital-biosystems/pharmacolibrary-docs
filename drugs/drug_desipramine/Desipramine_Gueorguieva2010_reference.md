@@ -4,11 +4,11 @@
 
 # desipramine — `Desipramine_Gueorguieva2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-09-28 14:37 UTC (Needs review), but the paper was screened again on 2026-10-06 22:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (paper 20, model 2.59).
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gueorguieva I, Jackson K, Wrighton SA, Sinha VP, Chien JY. Desipramine, substrate for CYP2D6 activity: population pharmacokinetic model and design elements of drug-drug interaction trials. British journal of clinical pharmacology 70(4):523–536 (2010).
@@ -39,19 +39,19 @@ Gueorguieva I, Jackson K, Wrighton SA, Sinha VP, Chien JY. Desipramine, substrat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 20, model 2.59).**
+**The clearance plausibility check could not be computed.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — desipramine: CL 16 l h -1, V1 22 l, Q 13 l h -1, V2 13 l, IOV 7.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — desipramine: CL 111 l h -1, V1 1.9e+03 l, Q 58 l h -1, V2 1.05e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,32 +129,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C9_phys_window_Q22 | pass | clearance within physiological range | 111 L/h | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 1.9e+03 L | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.05e+03 L | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=desipramine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 21.6 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 17.9 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 18.3 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 16.3 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 12.9 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 16.8 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 20.5 | 0.001009 |  | unresolved concentration unit (exp 'ng ml -1', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 20 | 2.593 | 0.1296 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 20 | 2.593 | 0.1296 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 25 | 2.593 | 0.1037 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 23 | 2.593 | 0.1127 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 18 | 2.593 | 0.144 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 17 | 2.593 | 0.1525 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 20 | 2.593 | 0.1296 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 27 | 2.593 | 0.096 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

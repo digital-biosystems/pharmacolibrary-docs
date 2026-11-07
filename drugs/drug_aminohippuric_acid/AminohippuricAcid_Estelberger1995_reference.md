@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The aminohippuric acid record was rejected because its parameters (MRT 64, kel 69, tlag 28, Fab 54, equation variable 35) were reported in the unit 'a', which has no defined dimension, so no SI values could be established.
+> The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.
 
 <div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -40,23 +40,23 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The aminohippuric acid record was rejected because its parameters (MRT 64, kel 69, tlag 28, Fab 54, equation variable 35) were reported in the unit 'a', which has no defined dimension, so no SI values could be established.**
+**The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.**
 
-In this 1-compartment p-aminohippuric acid model for renal patients and healthy controls, five parameters were reported with the unit 'a', an undefined unit that cannot be expressed in SI. Only the volume of distribution (V = 6.31 L) carries a usable unit. The resulting dimension mismatch on a structural parameter led to rejection. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
+Values such as the mean time of residence (64) and absorption lag time (28) are listed with an undefined unit 'a'. This missing unit definition prevents conversion to standard SI units, causing a dimension mismatch in the model structure. Although the volume of distribution is correctly specified in liters, the undefined units for the other kinetic parameters invalidate the record. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading aminohippuric_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -107,23 +107,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[fa**]` | 54 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kk*]` | 69 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[la*]` |  | 3.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mh*].parameter_id` | Q53 | Q57 | mismatch |
-| `gpt-oss-120b` | `parameters[mh*].value` | 64 | 4.0 | mismatch |
+| `gpt-oss-120b` | `parameters[la*]` |  | 65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mh*]` | 64 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[pa*]` | 35 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rj**]` |  | 24.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume]` | 6.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[wr*]` |  | 54 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ze**]` | 28 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | aminohippuric_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | aminohippuric_acid | mismatch |
 
 </details>
 

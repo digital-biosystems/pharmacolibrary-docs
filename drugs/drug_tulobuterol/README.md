@@ -29,7 +29,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -39,31 +39,40 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:10 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 6,160/280 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-13 12:42 | 1:22 | 0/0/0 | 0/0/0 | 0/0/0 | 20,486/1,288 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
-- **PubMed hits:** 4 matched, 4 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 15 matched, 15 returned
+- **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Kim_2016.pdf` | Kim JH et al., The pharmacokinetics of the β2-adrenoce…, Veterinary journal (London,… (2016) | popPK | 9 | [10.1016/j.tvjl.2015.10.012](https://doi.org/10.1016/j.tvjl.2015.10.012) | [26639828](https://pubmed.ncbi.nlm.nih.gov/26639828) | The study reports PK parameters for tulobuterol in dogs, but the evidence only provides Cmax and Tmax, lacking clearance, volume, or half-life values. |
+| `Chasseaud_1986.pdf` | Chasseaud LF et al., Pharmacokinetics of the bronchodilator…, The Journal of internationa… (1986) | popPK | 8 | [10.1177/030006058601400501](https://doi.org/10.1177/030006058601400501) | [3770288](https://pubmed.ncbi.nlm.nih.gov/3770288) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2) for tulobuterol in humans, but lacks explicit clearance or volume values. |
+| `Iikura_1995.pdf` | Iikura Y et al., Pharmacokinetics and pharmacodynamics o…, Annals of allergy, asthma &… (1995) | popPK | 8 |  | [7697473](https://pubmed.ncbi.nlm.nih.gov/7697473) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, AUC) for tulobuterol in humans. |
+| `Uematsu_1993.pdf` | Uematsu T et al., The pharmacokinetics of the beta 2-adre…, European journal of clinica… (1993) | popPK | 8 | [10.1007/BF00316473](https://doi.org/10.1007/BF00316473) | [8099880](https://pubmed.ncbi.nlm.nih.gov/8099880) | The study reports qualitative PK parameters (tmax, linearity, absorption %) but lacks specific numeric values for clearance, volume, or half-life in the provided text. |
 | `Ziccone_1990.pdf` | Ziccone SP et al., The actions of tulobuterol on isolated…, Clinical and experimental p… (1990) | pd | 4 | [10.1111/j.1440-1681.1990.tb01364.x](https://doi.org/10.1111/j.1440-1681.1990.tb01364.x) | [1980643](https://www.ncbi.nlm.nih.gov/pubmed/1980643) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 15:10 UTC</sub>
+<sub>queue written 2026-10-13 12:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Brès_1985 | irrelevant | 2 | 1 | A qualitative review of beta-agonist metabolism mentioning tulobuterol's metabolite but reporting no quantitative PK parameters for it. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper discusses post-mortem inspection delays and detection sensitivity for pathogens and contaminants, containing no pharmacokinetic data for tulobuterol. |
+| popPK | Kim_2016 | relevant | 9 | 2 | The study reports PK parameters for tulobuterol in dogs, but the evidence only provides Cmax and Tmax, lacking clearance, volume, or half-life values. |
+| popPK | Matthys_1987 | irrelevant | 0 | 0 | The study investigates mucociliary clearance and lung function, not pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Park_2018 | irrelevant | 2 | 0 | The study reports only bioequivalence ratios (GMRs) for Cmax and AUC, lacking specific quantitative disposition parameters like clearance, volume, or half-life. |
 | popPK | Pérez-Schindler_2011 | irrelevant | 0 | 0 | In vitro rat ventricular strip pharmacology study with tulobuterol as an agonist; no PK parameters reported. |
+| popPK | Uematsu_1993 | relevant | 8 | 2 | The study reports qualitative PK parameters (tmax, linearity, absorption %) but lacks specific numeric values for clearance, volume, or half-life in the provided text. |
 | popPK | Ziccone_1990 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of tulobuterol on uterine strips; no PK parameters reported. |
 
 

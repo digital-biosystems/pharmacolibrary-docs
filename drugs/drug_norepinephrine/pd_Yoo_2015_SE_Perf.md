@@ -7,7 +7,7 @@
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not describe a pharmacodynamic model for norepinephrine acting on subjective performance; instead, it models dexmedetomidine inhibiting the release of norepinephrine via an indirect response model with an IC50 of 0.77 nM. The record's parameters (E0=7.1 mm, Emax=86.8 mm, EC50=3.3 nmol/L, γ=4.0, ke0=18.2 h−1) are not present in the provided excerpts.
+> The paper describes a model where dexmedetomidine plasma concentrations inhibit the production rate of norepinephrine (NE) via an indirect response model with an effect compartment, rather than norepinephrine directly driving subjective performance effects. The paper does not provide the specific parameters (E0, Emax, EC50, γ, ke0) for a 'Subjective effects: Performance' response as recorded, but reports an IC50 of 0.77 nM for dexmedetomidine’s inhibition of NE release.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yoo_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** stimulation/proportional
 
 ## Citation
 Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015)
@@ -35,7 +35,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | E0 | `Q324` ·  | 7.1 | mm | llm | Yoo_2015:pdv3 |
-| PD (effect) | Emax | `Q323` ·  | 86.8 | mm | direction | Yoo_2015:pdv3 |
+| PD (effect) | Emax | `Q320` ·  | 86.8 | mm | llm | Yoo_2015:pdv3 |
 | PD (effect) | EC50 | `Q321` ·  | 3.3 | nmol/L | llm | Yoo_2015:pdv3 |
 | PD (effect) | γ | `Q325` ·  | 4.0 |  | llm | Yoo_2015:pdv3 |
 | PD (effect) | ke0 | `Q326` ·  | 18.2 | h−1 | llm | Yoo_2015:pdv3 |
@@ -47,7 +47,7 @@ Yoo H et al., Mechanism-based population pharmacokine…, European journal of cl
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -58,11 +58,11 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `driver_compound` | norepinephrine |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | additive |  | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation |  | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional |  | mismatch |
 | `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax |  | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 86.8 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q321]` | 3.3 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 86.8 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q324]` | 7.1 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q325]` | 4.0 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q326]` | 18.2 |  | only_one_extracted |

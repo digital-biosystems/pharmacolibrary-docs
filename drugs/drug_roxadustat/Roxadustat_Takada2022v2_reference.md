@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Takada_2022_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # roxadustat — `Roxadustat_Takada2022v2_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Takada2022v2_reference" status="accepted_with_caveats" stale="false" population="Japanese dialysis-dependent chronic kidney disease patients with anaemia" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
+> Roxadustat record held because covariate effects were not simulated, and the terminal half-life parameter value was misidentified as absorption lag time.
+
+<div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Takada2022v2_reference" status="needs_review" stale="false" population="Japanese dialysis-dependent chronic kidney disease patients with anaemia" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population pharmacokinetics of roxadustat in Japanese dialysis-dependent chronic kidney disease patients with anaemia. British journal of clinical pharmacology 88(2):787–797 (2022).
@@ -29,6 +31,8 @@ Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population 
 <figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference/Roxadustat_Takada2022v2_reference.svg" alt="Roxadustat_Takada2022v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 0.914 | L/h |
@@ -45,23 +49,23 @@ Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Roxadustat record held because covariate effects were not simulated, and the terminal half-life parameter value was misidentified as absorption lag time.**
 
-The base model was simulated, not the covariate effects the record defines.
+The record defines a clearance covariate for older adults, but only the base model was simulated. Additionally, the parameter labeled 't1/2γ' has the value 0.287 h, which corresponds to absorption lag time, not a terminal half-life. The model builder assumed full bioavailability and used a default value for the lag time. Extracted — roxadustat: CL/F 0.914 L/h, V1/F 14.4 L, kabs 0.639 h−1, Q/F 0.131 L/h, V2/F 2.89 L, t1/2γ 0.287 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of age_ge_65_y_for_cl: this record has 0.791, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has roxadustat, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -122,18 +126,29 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (10/16 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.15 (3/20 fields) | 17 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[age_ge_65_y_for_cl]` | 0.791 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alag1].parameter_id` | Q89 | Q83 | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['additive_shift'] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[cuse on f1]` |  | 0.922 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 0.287 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` |  | 0.287 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 0.914 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 0.914 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fuse on f1]` |  | 0.737 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.639 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 0.131 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` |  | 0.131 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[sbuse on f1]` |  | 0.739 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q22_age]` |  | 0.791 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 14.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` |  | 14.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | 2.89 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` |  | 2.89 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | roxadustat | unknown | mismatch |
 
 </details>
 
@@ -173,7 +188,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=roxadustat) | central.C | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | apparent_assumption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

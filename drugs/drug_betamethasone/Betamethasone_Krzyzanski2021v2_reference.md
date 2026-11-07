@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;betamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/&quot;},{&quot;label&quot;:&quot;Krzyzanski_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # betamethasone — `Betamethasone_Krzyzanski2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-09-28 14:36 UTC (Rejected), but the paper was screened again on 2026-10-04 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> Betamethasone model failed time-to-peak, terminal half-life, and peak concentration checks due to missing ester hydrolysis links and apparent bioavailability assumptions.
 
-<div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="extracted" stale="true" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="needs_review" stale="false" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharmacokinetic modeling of intramuscular and oral dexamethasone and betamethasone in Indian women. Journal of pharmacokinetics and pharmacodynamics 48(2):261–272 (2021).
@@ -31,6 +31,8 @@ Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharma
 <figure class="pk-models-diagram"><img src="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference.svg" alt="Betamethasone_Krzyzanski2021v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL/FIM, L/h | CLm/F | 9.29 | L/h | 8.6 |
@@ -42,23 +44,23 @@ Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The betamethasone record was rejected because the absorption half-life parameter t1/2ka is dimensionally inconsistent: it is reported as 0.00638 with unit 1/h, a rate unit, while a half-life must carry units of time.**
+**Betamethasone model failed time-to-peak, terminal half-life, and peak concentration checks due to missing ester hydrolysis links and apparent bioavailability assumptions.**
 
-In the Krzyzanski_2021_2 model for betamethasone in healthy nonpregnant Indian women, the parameter labeled kaIMa is documented as the half-life of the absorption phase, which should be expressed in hours, but its reported unit is 1/h, matching a rate constant rather than a half-life. This dimension mismatch on a structural parameter triggered the rejection. Additionally, the unit of this parameter could not be converted to SI, so it reached the model builder without an SI value. The remaining parameters (CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.460 1/h, CL/F 0.538 L/h, FR 1.04, Fab 0.819) show no such conflict. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, t1/2ka 0.00638 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
+The model predicted a terminal half-life of 3.84 h, significantly deviating from the paper's reported range of 0.57 h to 109.0 h, which the second reader attributes to missing hydrolysis links for betamethasone phosphate and acetate. The peak concentration was 6.38e-05 kg/m3 compared to the paper's 6.25e-05, exceeding the tolerance despite the model assuming F=1 and Fm=1. The second reader also identified the dose compound as betamethasone phosphate rather than betamethasone, conflicting with the record's primary analyte. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betamethasone, the second reading betamethasone phosphate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -149,6 +151,37 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.538 L/h | ['Tab4:row8:col2', 'Krzyzanski_2021_2_table_3:row5:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 51.3 L | ['Tab4:row2:col2', 'Krzyzanski_2021_2_table_3:row1:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=betamethasone) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | 1: not acceptable |  | LLM adjudication → deterministic rule |
+| T1_cmax | reference | pass | 6.25e-05 | 6.384e-05 | 1.022 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 7.89e-05 | 6.384e-05 | 0.8092 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 6.69e-05 | 6.384e-05 | 0.9543 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 6.59e-05 | 6.384e-05 | 0.9688 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.58e-05 | 6.384e-05 | 1.783 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 7.5 | 3.844 | 0.5126 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.6 | 3.844 | 0.5058 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 14.9 | 3.844 | 0.258 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 18.7 | 3.844 | 0.2056 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.74 | 3.844 | 5.195 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.57 | 3.844 | 6.745 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 109 | 3.844 | 0.0353 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 3.3 | 3.439 | 1.042 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.2 | 3.439 | 1.563 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.8 | 3.439 | 1.228 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.6 | 3.439 | 1.323 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.9 | 3.439 | 1.186 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

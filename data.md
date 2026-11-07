@@ -4,13 +4,13 @@ The site ships three SQLite databases. Each runs in the browser (the Query and S
 
 | Database | File | Size | Contents | Licence |
 |---|---|---|---|---|
-| Query database | [pharmacolibrary-67727b0882.sqlite](data/pharmacolibrary-67727b0882.sqlite) | 18.9 MB | 17,358 records, 38,641 parameters, 2,176 drugs | licence not set yet; each record cites its source paper |
-| Passage database | [knowledge-c08954ab93.sqlite](data/knowledge-c08954ab93.sqlite) | 60.6 MB | 46,416 passages for 2,173 drugs: DrugBank 16,622, ClinPGx guideline 2,476, ClinPGx clinical 1,698, PubMed abstracts 25,620 | DrugBank CC BY-NC 4.0; ClinPGx CC BY-SA 4.0; abstracts per paper |
-| ADME sites database | [adme-80ce1c1a1a.sqlite](data/adme-80ce1c1a1a.sqlite) | 7.3 MB | 12,084 drugs, 35,923 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
+| Query database | [pharmacolibrary-bc94bf86d4.sqlite](data/pharmacolibrary-bc94bf86d4.sqlite) | 19.0 MB | 17,446 records, 38,918 parameters, 2,200 drugs | licence not set yet; each record cites its source paper |
+| Passage database | [knowledge-8bd0c9550d.sqlite](data/knowledge-8bd0c9550d.sqlite) | 61.0 MB | 46,759 passages for 2,196 drugs: DrugBank 16,794, ClinPGx guideline 2,476, ClinPGx clinical 1,698, PubMed abstracts 25,791 | DrugBank CC BY-NC 4.0; ClinPGx CC BY-SA 4.0; abstracts per paper |
+| ADME sites database | [adme-022c2280ad.sqlite](data/adme-022c2280ad.sqlite) | 7.3 MB | 12,084 drugs, 35,925 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
 
 ## Query database
 
-Tables `drug`, `drug_alias`, `paper`, `record`, `parameter`, `pd_record`, `pgx_record`, `qcode` and `search_doc`. A parameter keeps the paper's `value` and `unit_verbatim` (cite these) and a converted `value_si` in `unit_si` (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time) for comparison across studies. `record.status_label` is the record's status in the site's vocabulary (*Curated (human-checked)*, *Reproduces paper*, *Reproduces with caveats*, *Not simulated*, *Needs review*, *Rejected*; see the status definitions on any record page); `record.status` keeps the pipeline's own value.
+Tables `drug`, `drug_alias`, `paper`, `record`, `parameter`, `pd_record`, `pgx_record`, `qcode` and `search_doc`. A parameter keeps the paper's `value` and `unit_verbatim` (cite these) and a converted `value_si` in `unit_si` (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time) for comparison across studies. `record.status_label` is the record's status in the site's vocabulary (*Curated (human-checked)*, *Reproduces paper*, *Reproduces with caveats*, *Simulated*, *Not simulated*, *Needs review*, *Rejected*; see the status definitions on any record page); `record.status` keeps the pipeline's own value.
 
 ## Passage database
 

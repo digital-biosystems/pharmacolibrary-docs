@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Fleroxacin lacks distribution volume and elimination clearance, while metabolites have zero compartments, preventing a valid compartmental population PK model.
+> The record lacks distribution volume and elimination clearance because the source is an abstract-only exposure paper, not a fitted compartmental model.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Jiao2018_reference" status="rejected" stale="false" population="adults with cystic fibrosis and healthy adults" measured-compound="fleroxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -35,21 +35,21 @@ Jiao Y, Kim TH, Tao X, Kinzig M, Landersdorfer CB, Drescher SK et al. First popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Fleroxacin lacks distribution volume and elimination clearance, while metabolites have zero compartments, preventing a valid compartmental population PK model.**
+**The record lacks distribution volume and elimination clearance because the source is an abstract-only exposure paper, not a fitted compartmental model.**
 
-The record is abstract-only, so no distribution volume or clearance/elimination values exist to define the parent drug's compartmental kinetics. The metabolites N-oxide fleroxacin and N-demethylfleroxacin have n_cmt set to 0, making them unreachable or orphan structures despite having formation clearances of 0.378 L/h and 0.353 L/h. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
+The source text is abstract-only, so reported summary statistics stand in for a fitted model. Consequently, no distribution volume or clearance/elimination parameters are present, confirming it is not a compartmental population PK model. Additionally, the metabolites N-oxide fleroxacin and N-demethylfleroxacin are marked as unreachable, indicating they have no path from the dose. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fleroxacin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethylfleroxacin (metabolism), the second reading fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethyl fleroxacin (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -88,25 +88,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethylfleroxacin', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[formation clearance of n‐oxide fleroxacin]` |  | 0.52 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearances of n‐demethylfleroxacin in healthy volunteers]` | 0.353 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearances of n‐oxide fleroxacin in healthy volunteers]` | 0.378 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[linear nonrenal clearance]` |  | 1.01 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` |  | 1.12 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[saturable exsorption clearance into intestine]` |  | 0.83 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 0.81 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | fleroxacin | unknown | mismatch |
+| `gpt-oss:120b` | `model.links` | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethylfleroxacin', 'metabolism']] | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethyl fleroxacin', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[formation clearance of n‐demethylfleroxacin]` |  | 0.496 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[formation clearance of n‐oxide fleroxacin]` |  | 0.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[formation clearances of n‐demethylfleroxacin in healthy volunteers]` | 0.353 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[formation clearances of n‐oxide fleroxacin in healthy volunteers]` | 0.378 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[linear nonrenal clearance]` |  | 1.01 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance of n‐demethyl fleroxacin]` |  | 1.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance of n‐oxide fleroxacin]` |  | 1.53 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance]` |  | 1.12 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[saturable exsorption clearance into intestine]` |  | 0.83 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` |  | 0.81 | only_one_extracted |
 
 </details>
 

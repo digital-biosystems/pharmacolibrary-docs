@@ -25,6 +25,14 @@
     "value_si": 7e-07
    },
    {
+    "source": "Eichler_2023:other_prose",
+    "value_si": 0.72
+   },
+   {
+    "source": "Eichler_2023:other_prose",
+    "value_si": 0.8
+   },
+   {
     "source": "Eichler_2023:discussion_prose",
     "value_si": 0.72
    }

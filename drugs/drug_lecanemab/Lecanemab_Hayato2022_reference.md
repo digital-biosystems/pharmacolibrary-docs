@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The lecanemab two-compartment model from Hayato_2022 was rejected because one structural parameter's reported unit could not be converted to SI units, producing a dimension mismatch on a structural parameter.
+> The lecanemab record was rejected due to a dimensional mismatch on the clearance parameter, which has an unknown unit preventing conversion to SI.
 
 <div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="false" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,23 +46,23 @@ Hayato S, Takenaka O, Sreerama Reddy SH, Landry I, Reyderman L, Koyama A et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The lecanemab two-compartment model from Hayato_2022 was rejected because one structural parameter's reported unit could not be converted to SI units, producing a dimension mismatch on a structural parameter.**
+**The lecanemab record was rejected due to a dimensional mismatch on the clearance parameter, which has an unknown unit preventing conversion to SI.**
 
-The record reports lecanemab clearance CL 0.0181 L/h, central volume V1 3.22 L, intercompartmental clearance Q 0.0349 L/h and peripheral volume V2 2.19 L, plus a female clearance ratio of 0.792 and several covariate effects. The rejection reason is a dimension mismatch on a structural parameter, and the stated limitation is that a reported unit could not be converted to SI, so that parameter was carried without an SI value. The bioavailability parameter Fab is listed for lecanemab with no value, and the weight covariate effect on intercompartmental clearance appears twice with conflicting values, 0.403 and 0.606. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
+The clearance value of 0.0181 L/h could not be converted to standard units because the specific unit format was missing from the library. The second reader identified discrepancies in several parameter values, including clearance (2.55 vs 0.0181) and intercompartmental clearance (8.02 vs 0.0349), suggesting extraction errors. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lecanemab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.0181, the second reading 2.55; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -143,21 +143,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.722 (13/18 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lecanemab | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lecanemab | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 0.0181 | 2.55 | mismatch |
+| `gpt-oss-120b` | `parameters[females - cl].value` | 0.792 | 3.43 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 0.0349 | 8.02 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_ratio_ada_power].value` | 1.09 | 0.586 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_weight_power]` |  | 9.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_albumin_power].value` | -0.243 | 17.2 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power].value` | 0.403 | 7.52 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q87_category].value` | 0.998 | 4.07 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v2_race_power].value` | 0.455 | 24.4 | mismatch |
+| `gpt-oss-120b` | `parameters[v 1].value` | 3.22 | 1.18 | mismatch |
+| `gpt-oss-120b` | `parameters[v 2].value` | 2.19 | 7.21 | mismatch |
 
 </details>
 

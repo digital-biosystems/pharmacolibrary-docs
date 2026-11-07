@@ -4,11 +4,11 @@
 
 # hydrocortisone — `Hydrocortisone_Werumeus2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-10-05 09:27 UTC (Needs review), but the paper was screened again on 2026-10-07 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The hydrocortisone/cortisol model's terminal half-life (1.33 h) does not reproduce the paper's reported values (0.89–2.0 h), and the absorption rate ka was left at library defaults instead of being estimated, so the record is held for review.
+> Salivary cortisol is an orphan compartment with no dose path, and hydrocortisone clearance units failed conversion, invalidating the record.
 
-<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="true" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="false" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der Klauw MM et al. Pharmacokinetics of oral hydrocortisone - Results and implications from a randomized controlled trial. Metabolism: clinical and experimental 71:7–16 (2017).
@@ -40,23 +40,23 @@ Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The hydrocortisone/cortisol model's terminal half-life (1.33 h) does not reproduce the paper's reported values (0.89–2.0 h), and the absorption rate ka was left at library defaults instead of being estimated, so the record is held for review.**
+**Salivary cortisol is an orphan compartment with no dose path, and hydrocortisone clearance units failed conversion, invalidating the record.**
 
-Simulated as the paper dosed it, the model's terminal half-life is 1.3321202731100217 h, while the paper's values (0.89, 0.91, 1.82, 2.0 h) give ratios of 0.6661–1.4968, outside tolerance. The absorption rate constant ka (and Tlag) were not reported in the source and were defaulted, affecting the simulated profile without support from this paper. The model builder also assumed F=1, Fm=1 and no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagrees on the primary analyte (cortisol vs hydrocortisone), the parameterization (apparent vs mechanistic), and the clearance parameter identity. Extracted — hydrocortisone: CLm/F 338 L/h, V 486 L, t1/2z 1 h.
+The model defines salivary cortisol as a metabolite of plasma free cortisol but contains no parameter or rate constant linking it to a parent dose, making it unreachable from the administration site. The clearance parameter for plasma free cortisol was extracted with units that could not be converted to SI, preventing a valid numerical evaluation of the elimination rate. Additionally, the second reader disagreed on the primary analyte identity, suggesting the model may have confused the administered drug (hydrocortisone) with its metabolite (cortisol). Extracted — plasma free cortisol: CL 338 L/h, V 486 L, kel 1 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cortisol, the second reading hydrocortisone; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrocortisone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -92,24 +92,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['hydrocortisone', 'plasma free cortisol', 'metabolism'], ['plasma total cortisol', 'plasma free cortisol', 'interconversion'], ['plasma free cortisol', 'salivary cortisol', 'interconversion']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[cl]` |  | 337.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 195.00 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | 337.58 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2]` |  | 1.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` |  | 1.58 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t 1/2]` | 1.00 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v d]` |  | 486.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` |  | 445.02 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v d]` | 486.25 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | cortisol | hydrocortisone | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | hydrocortisone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cortisol | unknown | mismatch |
 
 </details>
 
@@ -134,31 +135,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 338 L/h |  |  | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col6', 'tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3', 'tab_1:row11:col4', 'tab_1:row11:col5', 'tab_1:row11:col6'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 486 L |  |  | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6', 'tab_1:row8:col1', 'tab_1:row8:col2', 'tab_1:row8:col3', 'tab_1:row8:col4', 'tab_1:row8:col5', 'tab_1:row8:col6', 'tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4', 'tab_1:row12:col5', 'tab_1:row12:col6'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=cortisol) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable |  | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 2.1 | 8.905e-06 |  | unresolved concentration unit (exp 'the C max1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 32.69 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 70.81 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 514.5 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 754.9 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 28.53 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 96.71 | 8.905e-06 |  | unresolved concentration unit (exp 'nmol/L', sim 'kg/m3') |
-| T1_t_half_terminal | reference | pass | 1.17 | 1.332 | 1.139 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.15 | 1.332 | 1.158 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.82 | 1.332 | 0.7319 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2 | 1.332 | 0.6661 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.91 | 1.332 | 1.464 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.89 | 1.332 | 1.497 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

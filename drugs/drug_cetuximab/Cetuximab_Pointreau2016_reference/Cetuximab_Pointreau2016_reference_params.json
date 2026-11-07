@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cetuximab_Pointreau2016_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3888888888888888e-07,
+  "F": 1.0,
+  "VdPerKg": 4.2857142857142856e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 5.7870370370370366e-05,
+  "k21": 1.1574074074074073e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662062
+ },
+ "reference_peaks": {
+  "central.C": 0.0003132314255747608
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

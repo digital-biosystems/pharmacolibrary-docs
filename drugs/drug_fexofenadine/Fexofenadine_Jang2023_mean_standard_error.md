@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fexofenadine’s unreported ka was defaulted, and the model predicts Cmax 0.0001086665312206624 kg/m3, below the paper’s reported values.
+> The fexofenadine model fails to reproduce peak concentration and time, using default absorption parameters instead of paper values.
 
 <div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Jang2023_mean_standard_error" status="needs_review" stale="false" population="healthy adults" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
@@ -46,19 +46,19 @@ Jang JH, Jeong SH, Lee YB. Quantitative assessment of the relevance of organic-a
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Fexofenadine’s unreported ka was defaulted, and the model predicts Cmax 0.0001086665312206624 kg/m3, below the paper’s reported values.**
+**The fexofenadine model fails to reproduce peak concentration and time, using default absorption parameters instead of paper values.**
 
-The model does not reproduce the paper’s time of peak concentration (tmax): the paper reports 2.0 h and the model predicts 2.693386773547094 h; it also does not reproduce peak concentration (Cmax) (paper 0.00045017 kg/m3, model 0.0001086665312206624 kg/m3). It does not reproduce terminal half-life either: reported values include 1.84 h and 3.38 h, compared with the model’s 2.397564831472877 h. Ka and Tlag were defaulted rather than estimated from the paper; the model also assumed F=1, Fm=1, no molar correction, and first-order depot input. Extracted — fexofenadine: D1 0.45 h, V/F 259 L, CL/F 75.9 L/h.
+The simulated peak concentration was 0.000109 compared to the paper's 0.000450, and the time to peak was 2.69 hours versus the reported 2.0 hours. The absorption rate constant and lag time were not reported in the source, so library defaults were used instead of fitted estimates. The terminal half-life also differed slightly, with the model producing 2.40 hours compared to the paper's 2.45 hours. Extracted — fexofenadine: D1 0.45 h, V/F 259 L, CL/F 75.9 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has none, the second reading 75.87; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of relative standard errors (rse) of the typical values of the pharmacokinetic parameters v/f, cl/f, ka, and tlag: this record has none, the second reading 30; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -117,7 +117,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl/f]` |  | 75.87 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[relative standard errors (rse) of the typical values of the pharmacokinetic parameters v/f, cl/f, ka, and tlag]` |  | 30 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[table 1: cl/f (l/h), tt]` | 75.87 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[table 1: v/f (l), tt]` | 259.19 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v/f]` |  | 259.19 | only_one_extracted |
@@ -154,7 +154,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable |  | pass | C_central (measured=fexofenadine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | deviation_id=defaulted_parameters: not acceptable; deviation_id=apparent_assumption: not acceptable; deviation_id=invented_absorption: not acceptable; deviation_id=input_model: not acceptable; defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | T1_cmax | reference | fail | 0.0004502 | 0.0001087 | 0.2414 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0005616 | 0.0001087 | 0.1935 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0007709 | 0.0001087 | 0.141 | ng/mL→SI vs simulated kg/m3 |

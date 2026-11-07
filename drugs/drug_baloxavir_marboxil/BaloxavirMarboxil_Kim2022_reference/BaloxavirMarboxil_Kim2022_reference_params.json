@@ -17,6 +17,22 @@
  "paper_reference": {
   "cmax": [
    {
+    "source": "Kim_2022:results_prose",
+    "value_si": 20.0
+   },
+   {
+    "source": "Kim_2022:results_prose",
+    "value_si": 0.84
+   },
+   {
+    "source": "Kim_2022:results_prose",
+    "value_si": 0.4754
+   },
+   {
+    "source": "Kim_2022:results_prose",
+    "value_si": 2.7799999999999998e-05
+   },
+   {
     "source": "Kim_2022:discussion_prose",
     "value_si": 2.7799999999999998e-05
    },

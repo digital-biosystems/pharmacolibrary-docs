@@ -12,15 +12,11 @@
   "cmax": [
    {
     "source": "Kim_2018:other_prose",
-    "value_si": 2669.0
+    "value_si": 0.002669
    },
    {
     "source": "Kim_2018:other_prose",
-    "value_si": 0.397
-   },
-   {
-    "source": "Kim_2018:other_prose",
-    "value_si": 0.015
+    "value_si": 3.97e-07
    }
   ]
  },

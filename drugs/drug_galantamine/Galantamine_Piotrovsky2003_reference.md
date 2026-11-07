@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The galantamine record was rejected because the parameter labelled CLm/F holds a 60% reduction in metabolic clearance in hepatic dysfunction (Pugh score 7 or higher), not a clearance value, giving a dimension mismatch on a structural parameter.
+> The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.
 
 <div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
 
@@ -34,23 +34,23 @@ Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The galantamine record was rejected because the parameter labelled CLm/F holds a 60% reduction in metabolic clearance in hepatic dysfunction (Pugh score 7 or higher), not a clearance value, giving a dimension mismatch on a structural parameter.**
+**The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.**
 
-For galantamine in Alzheimer's disease patients, the record contains CL of 14.8 L/h (median in male patients) alongside a CLm/F entry whose value is 60 with unit '%', taken from a sentence describing a percent reduction in metabolic clearance rather than an apparent metabolite clearance in L/h. This dimension mismatch on a structural parameter made the record unusable. Additionally, the record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
+The parameter labeled CLm/F, defined as apparent metabolite clearance, contains the value 60 with unit '%'. This represents a 60% reduction in metabolic clearance, not an absolute clearance value in volume per time. Consequently, the structural parameter lacks the correct physical dimensions for a clearance term. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galantamine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -81,23 +81,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[median clearance in male and female patients with alzheimer's disease (ad) was 14.8 and 12.4 l/h, respectively.]` | 14.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[median clearance in male patients with alzheimer's disease]` |  | 14.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance reduction in patients with moderate or severe hepatic dysfunction]` |  | 60 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction (pugh score 7 or higher).]` | 60 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction]` |  | 60 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | galantamine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | galantamine | unknown | mismatch |
 
 </details>
 

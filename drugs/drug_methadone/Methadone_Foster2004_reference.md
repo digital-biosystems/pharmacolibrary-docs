@@ -5,11 +5,11 @@
 
 # methadone — `Methadone_Foster2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-09-28 14:38 UTC (Needs review), but the paper was screened again on 2026-10-07 03:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Methadone's Vd, ka and Tlag were not reported, so library defaults were substituted and the model was quarantined; k12 (0.16 h-1) was also not covered.
+> This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="true" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="false" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Foster DJ, Somogyi AA, White JM, Bochner F. Population pharmacokinetics of (R)-, (S)- and rac-methadone in methadone maintenance patients. British journal of clinical pharmacology 57(6):742–755 (2004).
@@ -39,29 +39,25 @@ Foster DJ, Somogyi AA, White JM, Bochner F. Population pharmacokinetics of (R)-,
 | C last (ng.ml -1 ) † | Ct | 0.24 | ng.ml -1 |
 | apparent volume of distribution for R-methadone | V/F | 496.0 | L |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Methadone's Vd, ka and Tlag were not reported, so library defaults were substituted and the model was quarantined; k12 (0.16 h-1) was also not covered.**
+**This paper's disposition core is incomplete.**
 
-The record reports only CL/F (0.19 l h-1) and k12 (0.16 h-1) for methadone; volume of distribution, absorption rate constant and absorption lag time had no source value, so placeholders stood in and the model was held back rather than published with invented numbers. The k12 parameter was neither emitted nor defaulted, so parameter coverage covered 1 of 2 expected parameters. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and defaulted ka, which was judged an invented absorption deviation. The covariate effects defined in the record were not simulated — only the reference individual was. A second reader additionally disagreed on the analyte, reading rac-methadone rather than methadone, and proposed R/S-enantiomer interconversion links absent from the record. Extracted — methadone: CL/F 0.19 l h -1, k12 0.16 h -1, AUC 0.026, Ct 0.24.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Packiasabapathy_2020) cannot stand in for this paper's evidence. A reported unit could not be converted (AUCt and Ct), so that value has no SI equivalent. Extracted — methadone: CL/F 0.19 l h -1, k12 0.16 h -1, AUCt 0.026 mg.hr. ml -1, Ct 0.24 ng.ml -1; (R)-methadone: V/F 496 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rac-methadone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -159,30 +155,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.19 L/h | ['tab_1:row1:col4'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 496 L | ['Packiasabapathy_2020:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 2 scholar param(s) emitted or defaulted | 1 covered | neither emitted nor in defaulted[]: ['k12'] |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | invented_absorption: not acceptable | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 84 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 84 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 109 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 162 |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 20 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

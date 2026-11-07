@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Morphine_Andersen1986_f",
+ "molar_masses": {
+  "central.C": 0.28533769999999997
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.05,
+  0.1,
+  0.2,
+  1.0,
+  4.0,
+  8.0
+ ],
+ "parameters": {
+  "Cl": 9.741666666666666e-05,
+  "F": 1.0,
+  "MM": 0.28533769999999997,
+  "VdPerKg": 0.00022,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.0000000000000004e-08,
+  "k21": 5.060961582700713e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662126
+ },
+ "reference_peaks": {
+  "central.C": 8.734084926548563e-11
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

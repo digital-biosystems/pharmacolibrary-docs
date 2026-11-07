@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Gd-DTPA clearance of 0.04 ml s−1 was rejected for an implausible clearance-to-volume scale, attributed to a unit or scale extraction error.
+> Clearance 0.04 ml/s for gadopentetic acid is implausibly low, triggering rejection for physiological mismatch.
 
 <div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Steingoetter2011_reference" status="rejected" stale="false" population="male buffalo rats with implanted hepatocellular carcinoma" measured-compound="Gd-DTPA (gadopentetic acid)" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,23 +44,23 @@ Steingoetter A, Menne D, Braren RF. Assessing antiangiogenic therapy response by
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Gd-DTPA clearance of 0.04 ml s−1 was rejected for an implausible clearance-to-volume scale, attributed to a unit or scale extraction error.**
+**Clearance 0.04 ml/s for gadopentetic acid is implausibly low, triggering rejection for physiological mismatch.**
 
-The record gives a total clearance of 0.04 ml s−1 and a distribution volume of 0.5 mL. The review found their clearance-to-volume scale physiologically implausible and attributed this to a unit or scale extraction error. Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
+The clearance value of 0.04 ml/s falls outside the physiological window, indicating a likely unit or scale extraction error. The record was rejected because this magnitude is impossible for the drug. Other parameter checks could not be fully computed due to incomplete data. Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -120,21 +120,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.235 (4/17 fields) | 13 |
+| `qwen3.8-27b` | not confirmed | 0.353 (6/17 fields) | 11 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl]` |  | 0.04 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` | 0.04 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k c0 = cl / vc].parameter_id` | Q47 | Q86 | mismatch |
-| `qwen3.8-27b` | `parameters[k cl1]` |  | 2.9 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k cm1]` | 0.3 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k l2l3]` |  | 0.027 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k c0 = cl / vc].parameter_id` | Q47 | Q900 | mismatch |
+| `qwen3.8-27b` | `parameters[k cm1].parameter_id` | Q301 | Q306 | mismatch |
+| `qwen3.8-27b` | `parameters[k l2l1]` |  | 0.021 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k m1c]` | 0.012 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k m1m2]` |  | 3.6 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k m2m3]` | 0.24 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k t2l1]` |  | 0.38 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k t2t3]` | 3.7 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v d per catheter]` | 0.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | Gd-DTPA (gadopentetic acid) | Gd-DTPA | mismatch |

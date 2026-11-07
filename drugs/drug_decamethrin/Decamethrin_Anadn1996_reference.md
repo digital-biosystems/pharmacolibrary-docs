@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The deltamethrin record was rejected because the metabolite 4'-HO-deltamethrin is unlinked: the metabolism link from parent to metabolite carries no parameter, leaving the metabolite without a path from the dose, and the model was built from the abstract only.
+> The record was rejected because the deltamethrin metabolite lacks a defined formation rate constant, rendering the pathway structurally invalid.
 
 <div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -44,21 +44,23 @@ Anadón A, Martinez-Larrañaga MR, Fernandez-Cruz ML, Diaz MJ, Fernandez MC, Mar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.278). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The deltamethrin record was rejected because the metabolite 4'-HO-deltamethrin is unlinked: the metabolism link from parent to metabolite carries no parameter, leaving the metabolite without a path from the dose, and the model was built from the abstract only.**
+**The record was rejected because the deltamethrin metabolite lacks a defined formation rate constant, rendering the pathway structurally invalid.**
 
-The structure is parent–metabolite, with 4'-HO-deltamethrin formed from deltamethrin in the central compartment, but the metabolism link has link parameter 'none' of unknown kind, so the metabolite has no quantitative connection to the dose and counts as an unlinked metabolite. The record is also abstract-only, meaning reported summary statistics (e.g., t1/2z 33.0 hr for deltamethrin and 25.67 hr for 4'-HO-deltamethrin, CL 0.11 liter/hr, Fab 14.43%) stood in for a fitted model rather than being extracted from one. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
+The link from deltamethrin to 4'-HO-deltamethrin specifies no kinetic parameter to govern the metabolic conversion. Additionally, the record was derived solely from the abstract, so summary statistics like a bioavailability of 14.43% stand in for fitted model parameters. This combination of missing structural links and abstract-only data prevents the construction of a valid pharmacokinetic model. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
 
-<sub>reviewed by glm-5.3-flash</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auctissue/aucplasma: this record has 2.32, the second reading none; it also differs on 12 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -107,6 +109,39 @@ The structure is parent–metabolite, with 4'-HO-deltamethrin formed from deltam
 - no GROBID TEI available — transcribed from abstract in Anadón_1996_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.278 (5/18 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auctissue/aucplasma]` | 2.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives (t1/2 theta) from plasma after iv - 4'-ho-deltamethrin]` |  | 25.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives (t1/2 theta) from plasma after iv - deltamethrin]` |  | 33.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability of deltamethrin]` |  | 14.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 14.43 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 theta]` | 33.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 theta]` | 25.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax after oral dose]` |  | 1.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance of deltamethrin]` |  | 0.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 0.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v alpha(area)]` | 5.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d(m)]` | 2.04 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

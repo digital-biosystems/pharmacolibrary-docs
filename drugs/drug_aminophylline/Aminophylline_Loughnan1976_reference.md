@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The aminophylline/theophylline record was rejected because a structural parameter has a dimension mismatch: the volume of distribution V is reported as 0.25 with unit '1/kg' instead of a volume-per-weight unit such as l/kg.
+> The theophylline clearance parameter is dimensionally inconsistent with the single-compartment model structure.
 
 <div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,19 +44,19 @@ Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic ana
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The aminophylline/theophylline record was rejected because a structural parameter has a dimension mismatch: the volume of distribution V is reported as 0.25 with unit '1/kg' instead of a volume-per-weight unit such as l/kg.**
+**The theophylline clearance parameter is dimensionally inconsistent with the single-compartment model structure.**
 
-The record, built from the abstract of Loughnan_1976 for asthmatic children 1-4 years, reports theophylline V1 as 0.25 '1/kg', a unit that does not match the dimension of a distribution volume normalized to body weight. The other parameters (CLnorm 0.1 l/kg/hr, kel 0.49 hr-1, t1/2β 3.38 hr, t1/2α 0.13 hr, Css 10 mg/l) are dimensionally consistent. Because only the abstract was read, these summary statistics stood in for a fitted model. Extracted — theophylline: CLnorm 0.1 l/kg/hr, kel 0.49 hr-1, t1/2β 3.38 hr, t1/2α 0.13 hr, V 0.25 1/kg, Css 10 mg/1.
+The record defines theophylline clearance as 0.1 l/kg/hr within a one-compartment topology, creating a structural mismatch. Additionally, the elimination rate constant (0.49 hr-1) and its associated half-life (3.38 hr) do not align mathematically. Since the record was built from the abstract alone, these reported summary statistics stand in for a fitted model. Extracted — theophylline: CLnorm 0.1 l/kg/hr, kel 0.49 hr-1, t1/2β 3.38 hr, t1/2α 0.13 hr, V 0.25 1/kg, Css 10 mg/1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has theophylline, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -114,8 +114,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[loading dose]` |  | 5.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[man plasma theophylline clearance]` | 0.1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | 10 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` |  | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma theophylline clearance]` |  | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state plasma concentration of theophylline]` |  | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` | 0.25 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` |  | 0.25 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | theophylline | unknown | mismatch |

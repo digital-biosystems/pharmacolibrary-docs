@@ -4,11 +4,11 @@
 
 # granisetron — `Granisetron_Li2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-09-28 14:38 UTC (Rejected), but the paper was screened again on 2026-10-04 13:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Granisetron's distribution volume (1.5462161 mL) and clearance (0.25423392 mL/h) are physiologically implausible for a healthy-adult model, indicating a unit or scale extraction error, so the record was rejected.
+> Granisetron clearance (0.25423392 mL/h) and volume of distribution (1.5462161 mL) are implausibly small for healthy adults.
 
-<div class="pk-model-meta" hidden drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li J, Hu P, Zhou L, Nagahama F, Chen R. Population pharmacokinetic analysis of transdermal granisetron in healthy Chinese and Caucasian volunteers. Frontiers in pharmacology 14:1154026 (2023).
@@ -38,23 +38,23 @@ Li J, Hu P, Zhou L, Nagahama F, Chen R. Population pharmacokinetic analysis of t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**Granisetron's distribution volume (1.5462161 mL) and clearance (0.25423392 mL/h) are physiologically implausible for a healthy-adult model, indicating a unit or scale extraction error, so the record was rejected.**
+**Granisetron clearance (0.25423392 mL/h) and volume of distribution (1.5462161 mL) are implausibly small for healthy adults.**
 
-The extracted parameters for granisetron give a volume of distribution of 1.5462161 mL and total clearance of 0.25423392 mL/h, magnitudes far below any physiological window for granisetron in healthy adults, consistent with a unit/scale extraction error (the labels read mL and mL/h). The absorption rate constant of 0.0179879 1/h is also very slow. The rejection was based on this implausible clearance/volume magnitude. Extracted — granisetron: kabs 0.018, V 1.55 mL, CL 0.254 mL/h.
+The total clearance parameter is recorded as 0.25423392 mL/h, which is far below physiological expectations for an adult. The volume of distribution is listed as 1.5462161 mL, suggesting a severe scale or unit extraction error rather than a true biological property. Extracted — granisetron: kabs 0.018 1/h, V 1.55 mL, CL 0.254 mL/h.
 
 Independently confirmed by `gpt-oss:120b`.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

@@ -8,7 +8,7 @@
 
 > CL/F has no unit.
 
-<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="" parameterization="" topology=""></div>
+<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisinin-naphthoquine combination therapy for uncomplicated pediatric malaria: a pharmacokinetic study. Antimicrobial agents and chemotherapy 56(5):2472–2484 (2012).
@@ -16,26 +16,37 @@ Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisini
 
 ## Population and dosing
 
-**Population:** Papua New Guinea children with uncomplicated malaria.
+**Population:** Papua New Guinea children with uncomplicated malaria · condition uncomplicated malaria · age group child · n = 46.
+
+**Dosed compound ≠ measured compound:** dosed artemisinin-naphthoquine, measured naphthoquine.
 
 ## Model
 
-**Structure:** —; no model was built for this record.  
-**Parameters:** 0 extracted.  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, CLnorm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| mean absorption half-life (t(1/2)) | t1/2ka | 1.0 | h |
+| predicted median maximum plasma concentrations | Cmax | 57 | μg/liter |
+| mean NQ elimination t(1/2) | t1/2z | 22.8 | days |
+| clearance relative to bioavailability (CL/F) | CL/F | 1.1 | liters/h/kg |
+| Administration of NQ with fat (8.5 g; 615 kJ) versus water was associated with | Frel | 25 | % |
+| mean CL/F | CLnorm/F | 4.1 | liters/h/kg |
+| V/F | V/F | 21 | liters/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -45,14 +56,78 @@ _No resolved parameters._
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naphthoquine: t1/2ka 1 h, Cmax 57 μg/liter, t1/2z 22.8 days, CL/F 1.1 liters/h/kg, Frel 25 %, CLnorm/F 4.1 liters/h/kg, V/F 21 liters/kg.
 
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemisinin-naphthoquine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
 
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| mean absorption half-life (t(1/2)) | `Q95` · t1/2ka | 1.0 | h | 3600 | s | h | llm_corrected (0.6) | Batty_2012:abstract |
+| predicted median maximum plasma concentrations | `Q32` · Cmax | 57 | μg/liter |  |  | µg/l | llm (0.6) | Batty_2012:abstract |
+| mean NQ elimination t(1/2) | `Q57` · t1/2z | 22.8 | days | 1.97e+06 | s | d | llm (0.6) | Batty_2012:abstract |
+| clearance relative to bioavailability (CL/F) | `Q27` · CL/F | 1.1 | liters/h/kg |  |  |  | llm_corrected (0.6) | Batty_2012:abstract |
+| Administration of NQ with fat (8.5 g; 615 kJ) versus water was associated with | `Q87` · Frel | 25 | % |  |  | % | llm (0.6) | Batty_2012:abstract |
+| mean CL/F | `Q355` · CLnorm/F | 4.1 | liters/h/kg | 7.972e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Batty_2012:abstract |
+| V/F | `Q76` · V/F | 21 | liters/kg | 1.47 | m3 | l/kg | exact (1) | Batty_2012:abstract |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
 ## Departures & gaps
+
+**Interpretation flags:**
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=naphthoquine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Batty_2012_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+
+<details><summary>17 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[administration of nq with fat (8.5 g; 615 kj) versus water was associated with]` | 25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[administration of nq with fat (8.5 g; 615 kj) versus water]` |  | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance relative to bioavailability]` | 1.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance relative to bioavailability]` |  | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption half-life (t(1/2))]` | 1.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption half-life (t(1/2))]` |  | 1.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean cl/f]` | 4.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean nq elimination t]` | 22.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean nq elimination t]` |  | 22.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[predicted median maximum plasma concentrations]` | 57 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[predicted median maximum plasma concentrations]` |  | 57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reduction in the bioavailability of the second art dose]` |  | 77 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume at steady state relative to bioavailability (v(ss)/f)]` |  | 710 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | artemisinin-naphthoquine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | naphthoquine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

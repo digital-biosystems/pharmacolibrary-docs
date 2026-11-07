@@ -7,7 +7,7 @@
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Donanemab dose (dose-only driver) acts on CDR-SB in a disease-progression model, where donanemab reduces the rate of clinical decline (inhibition of disease progression, proportional effect form); the paper does not state an Imax/IC50/EC50/Emax/kin/kout/ke0 for this endpoint. Key parameters: baseline score 3.13, disease-progression rate 0.00517 week⁻¹, shape factor 3.51, with 28.6% reduction in progression rate for APOE ε4 carriers, age effect 0.0246, baseline tau effect 1.33, and time-from-diagnosis effect on baseline 0.112.
+> The paper describes the model as a disease progression model using a treatment-effect based on donanemab dosing information rather than a direct concentration-response relationship with specific potency parameters like IC50 or EC50. The final model indicates that donanemab treatment reduces the disease progression rate by 28.6% in APOE ε4 carriers, with a baseline score of 3.13, a progression rate of 0.00517 week^-1, and a shape factor of 3.51.
 >
-> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gueorguieva_2023_2`
 - **model family:** `disease_progression`
@@ -34,14 +34,10 @@ Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Baseline score | `Q324` ·  | 3.13 |  | llm | Gueorguieva_2023_2:pdv3 |
-| PD (effect) | Disease-progression rate | `Q340` ·  | 0.00517 | week–1 | llm | Gueorguieva_2023_2:pdv3 |
+| PD (effect) | Baseline score a | `Q324` ·  | 3.13 |  | llm | Gueorguieva_2023_2:pdv3 |
+| PD (effect) | Disease‐progression rate (week–1) | `Q340` ·  | 0.00517 | week–1 | llm | Gueorguieva_2023_2:pdv3 |
 | PD (effect) | Shape factor | `Q343` ·  | 3.51 |  | llm | Gueorguieva_2023_2:pdv3 |
-| model term | Reduction in rate of disease progression for APOE ε4 carriers | `Q900` ·  | 28.6 | % | llm | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of age on disease progression | `Q900` ·  | 0.0246 |  | llm | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of baseline tau on disease progression | `Q900` ·  | 1.33 |  | llm | Gueorguieva_2023_2:pdv3 |
-| model term | Effect of time from diagnosis of Alzheimer's disease on baseline score | `Q900` ·  | 0.112 |  | llm | Gueorguieva_2023_2:pdv3 |
-| variability | Population variability in the baseline score | `Q312` ·  | 61.7 | %CV | llm | Gueorguieva_2023_2:pdv3 |
+| — | Reduction in rate of disease progression for APOE ε4 carriers (%) | `Q100` ·  | 28.6 | % | nil | Gueorguieva_2023_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -50,7 +46,7 @@ Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -60,10 +56,10 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 28.6 |  | only_one_extracted |
 | `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 3.13 | 3.13 (2.73) | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q340].value` | 0.00517 | 0.00517 (6.44) | mismatch |
 | `einfracz:gpt-oss-120b` | `parameters[Q343]` | 3.51 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 0.112 |  | only_one_extracted |
 
 </details>
 

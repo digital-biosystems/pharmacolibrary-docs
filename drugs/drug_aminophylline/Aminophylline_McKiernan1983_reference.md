@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> The aminophylline (theophylline) record from McKiernan_1983 was rejected because it reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and a structural parameter failed a dimensional check.
+> Record rejected for aminophylline as the abstract-only report lacks distribution volume and clearance, preventing compartmental population PK modeling.
 
 <div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_McKiernan1983_reference" status="rejected" stale="false" population="adult cats" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,19 +46,19 @@ McKiernan BC, Koritz GD, Davis LE, Neff-Davis CA, Pheris DR. Pharmacokinetic stu
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
 ### Reviewer guidance
 
-**The aminophylline (theophylline) record from McKiernan_1983 was rejected because it reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and a structural parameter failed a dimensional check.**
+**Record rejected for aminophylline as the abstract-only report lacks distribution volume and clearance, preventing compartmental population PK modeling.**
 
-The paper is an exposure/outcome study read from the abstract alone, so its summary statistics (theophylline terminal half-life 7.8 h, absorption half-life 0.5 h, bioavailability 96%, normalized volume 0.46 l/kg) stood in for a fitted model. No distribution volume and no clearance or elimination rate are reported, which is disqualifying for a compartmental population PK model. In addition, a structural parameter failed a dimensional-consistency check (dimension mismatch). Extracted — theophylline: t1/2z 7.8 h, Vnorm 0.46 1/kg, t1/2ka 0.5 h, Fab 96 %.
+The study only reports theophylline half-life, absorption half-life, and bioavailability without any distribution volume or clearance values. Since these core kinetic parameters are absent, the data cannot support a mechanistic compartmental model. The record is therefore classified as an exposure/outcome summary rather than a fitted population pharmacokinetic model. Extracted — theophylline: t1/2z 7.8 h, Vnorm 0.46 1/kg, t1/2ka 0.5 h, Fab 96 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -101,14 +101,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[absorption half-life]` |  | 0.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` |  | 96 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` | 96 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean apparent specific volume of distribution (v'd(area]]` |  | 0.46 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma theophylline half-life]` |  | 7.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 7.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` | 7.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ab]` |  | 0.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2ab]` | 0.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v'd(area]` | 0.46 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v'd(area]]` |  | 0.46 | only_one_extracted |
 
 </details>
 

@@ -8,6 +8,42 @@
  "observables": [
   "central.C"
  ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 0.0033499999999999997
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 0.0022299999999999998
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 4380.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 2230.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 143.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 145.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 370.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 246.0
+   }
+  ]
+ },
  "parameters": {
   "Cl": 1.808333333333333e-05,
   "F": 1.0,

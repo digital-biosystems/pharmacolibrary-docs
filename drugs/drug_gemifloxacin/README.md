@@ -14,17 +14,19 @@ Gemifloxacin is a fluoroquinolone antibiotic used to treat bacterial infections 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1639595](https://www.wikidata.org/wiki/Q1639595) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| gemifloxacin | parent | 389.381 | C18H20FN5O4 | DrugBank | [9571107](https://pubchem.ncbi.nlm.nih.gov/compound/9571107) | Landersdorfer_2009 |
+
 ## popPK records
 
-_not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [MacGowan_2001_AUBKC_48](drugs/drug_gemifloxacin/pd_MacGowan_2001_AUBKC_48.md) | area under the bacterial-kill curve from 0 to 48 h ← gemifloxacin · direct sigmoid Emax (Hill) effect | — | MacGowan AP et al., Pharmacodynamics of gemifloxacin agains…, Antimicrobial agents and ch… (2001) | [10.1128/AAC.45.10.2916-2921.2001](https://doi.org/10.1128/AAC.45.10.2916-2921.2001) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [MacGowan_2001_T99_9](drugs/drug_gemifloxacin/pd_MacGowan_2001_T99_9.md) | time needed to kill 99.9% of the starting inoculum ← gemifloxacin · categorical (graded) response model | — | MacGowan AP et al., Pharmacodynamics of gemifloxacin agains…, Antimicrobial agents and ch… (2001) | [10.1128/AAC.45.10.2916-2921.2001](https://doi.org/10.1128/AAC.45.10.2916-2921.2001) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Allen_2004_bacterial_count](drugs/drug_gemifloxacin/pd_Allen_2004_bacterial_count.md) | bacterial count biomarker turnover ← gemifloxacin | — | Allen GP et al., In vitro activities of mutant preventio…, International journal of an… (2004) | [10.1016/j.ijantimicag.2004.03.011](https://doi.org/10.1016/j.ijantimicag.2004.03.011) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Landersdorfer_2009_reference](drugs/drug_gemifloxacin/Gemifloxacin_Landersdorfer2009_reference.md) | — | 1-compartment (no model) | 1 | Landersdorfer CB et al., Competitive inhibition of renal tubular…, Antimicrobial agents and ch… (2009) | [10.1128/AAC.01200-08](https://doi.org/10.1128/AAC.01200-08) |
 
 ## ADME sites
 
@@ -39,7 +41,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
-<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
@@ -49,34 +51,37 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:25 | 1:22 | 0/0/0 | 1/1/0 | 0/0/0 | 35,561/1,517 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-13 12:42 | 2:12 | 0/1/0 | 0/0/0 | 0/0/0 | 23,466/4,538 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Landersdorfer_2009.pdf` | Landersdorfer CB et al., Competitive inhibition of renal tubular…, Antimicrobial agents and ch… (2009) | popPK | 9 | [10.1128/AAC.01200-08](https://doi.org/10.1128/AAC.01200-08) | [19564368](https://pubmed.ncbi.nlm.nih.gov/19564368) | The study reports quantitative PK parameters for gemifloxacin in humans, including nonrenal clearance values (25.2 and 21.0 L/h) and renal elimination kinetic parameters (Km, Vmax). |
 | `Roy_2010.pdf` | Roy B et al., Convulsant activity and pharmacokinetic…, Journal of pharmaceutical s… (2010) | popPK | 6 | [10.1002/jps.21888](https://doi.org/10.1002/jps.21888) | [19670296](https://pubmed.ncbi.nlm.nih.gov/19670296) | The study models the pharmacokinetics of gemifloxacin in rats, but the specific numeric parameter values are not present in the provided text. |
 | `Blondeau_2004.pdf` | Blondeau JM et al., The role of PK/PD parameters to avoid s…, Journal of chemotherapy (Fl… (2004) | pd | 5 | [10.1080/1120009x.2004.11782371](https://doi.org/10.1080/1120009x.2004.11782371) | [15334827](https://www.ncbi.nlm.nih.gov/pubmed/15334827) | metadata signals extractable PD data (PK/PD) |
 | `Owens_2005.pdf` | Owens RC et al., Assessment of pharmacokinetic-pharmacod…, Diagnostic microbiology and… (2005) | pd | 5 | [10.1016/j.diagmicrobio.2004.08.019](https://doi.org/10.1016/j.diagmicrobio.2004.08.019) | [15629228](https://www.ncbi.nlm.nih.gov/pubmed/15629228) | metadata signals extractable PD data (PK-PD) |
 | `unknown_2012.pdf` | unknown, Retraction. Roy B, Bose A, Bhaumik U, D…, Journal of pharmaceutical s… (2012) | pd | 5 | [10.1002/jps.23012](https://doi.org/10.1002/jps.23012) | [22319775](https://www.ncbi.nlm.nih.gov/pubmed/22319775) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Allen_2004.pdf` | Allen GP et al., In vitro activities of mutant preventio…, International journal of an… (2004) | pd | 4 | [10.1016/j.ijantimicag.2004.03.011](https://doi.org/10.1016/j.ijantimicag.2004.03.011) | [15288314](https://www.ncbi.nlm.nih.gov/pubmed/15288314) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-07 12:25 UTC</sub>
+<sub>queue written 2026-10-13 12:40 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Abidullah_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of antispasmodic effects on isolated rabbit jejunum, not a pharmacokinetic study. |
+| popPK | Allen_2004 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic model focusing on antimicrobial resistance and mutant prevention concentrations, not a pharmacokinetic study reporting disposition parameters for gemifloxacin. |
+| popPK | Blondeau_2004 | irrelevant | 0 | 0 | The paper is a review of the mutant prevention concentration (MPC) concept and in vitro resistance data, not a pharmacokinetic study reporting quantitative disposition parameters for gemifloxacin. |
 | PGx | Garrison_2003 | not_relevant | 0 | 1 | The paper describes the in vitro effects of bacterial genetic mutations on antibiotic activity (bactericidal rates/log reductions) rather than a human pharmacogenomic effect on a pharmacokinetic or pharmacodynamic parameter of gemifloxacin. |
 | PGx | Hekmatpour_2026 | not_relevant | 0 | 0 | The paper studies bacterial resistance mechanisms (mutations in M. tuberculosis) rather than human pharmacogenomics. |
 | popPK | MacGowan_2001 | irrelevant | 1 | 0 | The study is an in vitro pharmacodynamic investigation that uses simulated human PK data to test antibacterial effects, rather than reporting original quantitative disposition parameters or a PK model for gemifloxacin. |
@@ -86,6 +91,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Roy_2010 | relevant | 6 | 0 | The study models the pharmacokinetics of gemifloxacin in rats, but the specific numeric parameter values are not present in the provided text. |
 | PGx | Shams_2005 | not_relevant | 0 | 0 | The text discusses general PK/PD properties of fluoroquinolones but does not report any pharmacogenomic effects. |
 | popPK | Vallet_2011 | irrelevant | 2 | 0 | This is a cellular pharmacology study focused on intracellular accumulation and activity in macrophages, not a systemic pharmacokinetic study reporting population PK parameters (CL, V, etc.) for gemifloxacin. |
+| PGx | Zhanel_2003 | not_relevant | 0 | 0 | The paper characterizes bacterial resistance mechanisms (gyrA, parC, parE) in S. pneumoniae, not human pharmacogenomic variants affecting gemifloxacin PK/PD. |
 | popPK | unknown_2012 | irrelevant | 0 | 0 | no_text gate: only 264 chars of text extracted (&lt; 400) |
 
 
@@ -93,4 +99,4 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgemifloxacin%5D&body=Drug%3A%20gemifloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gemifloxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-10-13 12:40 UTC</sub>
