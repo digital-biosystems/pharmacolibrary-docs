@@ -143,7 +143,7 @@ body.pk-cover-route .content { left: 0; transform: none !important; }
 .pk-covernav-sep { color: #94a3b8; font-size: 15.5px; line-height: 22px; user-select: none; }
 /* ── the front page's demo tiles ──────────────────────────────────────────
    2/3 simulator + 1/3 anatomogram (README-template's demo section), both lazy: no fetch
-   until pk-demo.js sees them near the viewport. The tiles share the home-card border. */
+   until pk-demo.js sees them in the viewport. The tiles share the home-card border. */
 .pk-demo { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 14px;
   align-items: stretch; margin: 14px 0 8px; }
 .pk-demo-sim, .pk-demo-anat { border: 1px solid rgba(128,128,128,.3); border-radius: 6px;
@@ -155,7 +155,11 @@ body.pk-cover-route .content { left: 0; transform: none !important; }
 .pk-demo-anat .pks-body { max-width: 100%; margin: 0 auto; }
 .pk-demo-delta { font-size: 13px; color: #475569; margin: 6px 0 0;
   font-variant-numeric: tabular-nums; }
+.pk-demo-src { font-size: 13px; color: #475569; margin: 4px 0 0; }
 .pk-demo-note { font-size: 13px; color: #64748b; margin: 6px 0 14px; }
+/* the home page's footer (README-template): citation, licences, source, contact, build date */
+.pk-home-foot { font-size: 13px; color: #5c6670; margin: 18px 0 8px; padding-top: 10px;
+  border-top: 1px solid rgba(128,128,128,.3); }
 .pkq-status.err { color: #b91c1c; }
 /* the cover search's drug list (pk-sidebar-search.js): dropped under the box, over the
    page; the sidebar's own rules give the rows, the hint shows below while there is one */
@@ -187,3 +191,7 @@ body.pk-cover-route .content { left: 0; transform: none !important; }
   .pk-covernav { gap: 7px; margin-left: 0; white-space: nowrap; }
   .pk-covernav a, .pk-covernav-sep { font-size: 14.5px; }
 }
+
+/* "Simulated" (status_vocab): the model runs per scenario, but the paper gives nothing to
+   compare with; blue so it reads as neither a verdict (green) nor a pipeline gap (grey) */
+.pk-badge--blue { background: #dbeafe; color: #1e3a8a; border: 1px solid #93c5fd; }

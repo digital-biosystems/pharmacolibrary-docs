@@ -14,9 +14,14 @@ window.$docsify = window.$docsify || {};
     ['Downloads', 'data'],
     ['About', 'pipeline']
   ];
+  var wasHome = false;
   hook.doneEach(function () {
     var path = (vm && vm.route && vm.route.path) || '';
     var onHome = path === '/';
+    // leaving the cover from low on the page (the body is the scroller here): the next page
+    // would open as far down as the cover was, past its title and citation
+    if (wasHome && !onHome && !/[?&]id=/.test(location.hash)) document.body.scrollTop = 0;
+    wasHome = onHome;
     document.body.classList.toggle('pk-cover-route', onHome);
     var old = document.querySelector('.pk-covernav');
     if (old) old.remove();

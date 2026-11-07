@@ -53,12 +53,13 @@ Built for model-informed drug development, precision dosing research and teachin
 </div>
 
 ## Demo (pharmacokinetics and site interaction of active metabolite of clopidogrel)
+<div class="pk-disclaimer" role="note">Research data extracted by software from published papers. Not clinically validated; not for dosing decisions.</div>
 <div class="pk-demo">
-  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_params.json" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1"></div>
+  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-source="Jung et al. 2024" data-sourceurl="https://doi.org/10.1002/psp4.13053" data-record="#/drugs/drug_clopidogrel/Clopidogrel_Jung2024"></div>
   <div class="pk-demo-anat" data-drug="clopidogrel"></div>
 </div>
 
-<p class="pk-demo-note">Left: only the active metabolite (clopidogrel H4) is drawn on a logarithmic axis, 5 days of daily dosing — the dashed grey curve is the default run (normal metaboliser, the paper dose of 75 mg a day); the solid blue curve starts as a CYP2C19 poor metaboliser at the same dose; move the dose or pick another phenotype and it answers, with the difference in Cmax and AUC underneath. Right: where this drug's acting sites sit, with the ADME view loading on first look. Nothing in either tile downloads until it is scrolled into view.</p>
+<p class="pk-demo-note">Left: the active metabolite, clopidogrel H4, on a logarithmic axis over 5 days of daily dosing. The dashed grey curve is a normal metabolizer at the paper's 75 mg a day; the blue curve starts as a CYP2C19 poor metabolizer at the same dose. Change the dose or phenotype to see Cmax and AUC respond. Right: the body sites with evidence for this drug.</p>
 
 
 <div class="pklg">
@@ -66,3 +67,5 @@ Built for model-informed drug development, precision dosing research and teachin
 <div class="tile"><i>popPK/PD/PGx records</i><b>{{popPK}}/{{PD}}/{{PGx}}</b><em>extracted population pharmacokinetics/pharmacodynamics/pharmacogenomics records</em></div>
 <div class="tile"><i>Papers behind the records</i><b>{{papers_records}}</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>{{parameters}}</b><em>parameter values the records carry, with units</em></div></div>
 </div>
+
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 (<a href="#/pipeline">BibTeX</a>) · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built {{built_at}}</p>

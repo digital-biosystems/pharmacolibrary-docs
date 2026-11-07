@@ -1,7 +1,7 @@
 // ── the home page's demo tiles ─────────────────────────────────────────────
 // README's "Demo" section: two tiles the generator's template stamps with data-* URLs
-// (the well-checked clopidogrel record). Both boot LAZILY: nothing in the tile fetches
-// until it scrolls near the viewport, so the landing page stays light.
+// (the curated clopidogrel record). Both boot when they enter the viewport, which on a desktop screen
+// is on arrival, so what they fetch has to stay small.
 //
 //   ① simulator (2/3): runs the record's own model with pk-sim.js — the same engine the
 //      Query page's "simulate" answers use — drawing ONLY the active metabolite (C_M1),
@@ -9,8 +9,9 @@
 //      and the reader's run, plus the numeric difference. Controls: dose + CYP2C19
 //      phenotype, nothing else. The reader's run starts as a poor metabolizer, so the
 //      difference shows on arrival.
-//   ② anatomogram (1/3): pk-sites.js's body view for this drug over the ADME database
-//      (loaded on first view, cached by the shared Cache API).
+//   ② anatomogram (1/3): pk-sites.js's body view for this drug, drawn from the small
+//      data/demo-sites.json (scripts/build-demo-sites.cjs). Only when that file is missing or
+//      was built from another database does the tile load sql.js and the ADME database.
 //
 // dbs-fmusim (the record-page component) always draws every observable curve with
 // view-model internals out of reach, so the compact tile drives pk-sim directly and
@@ -42,8 +43,7 @@ window.$docsify = window.$docsify || {};
     placeholders();
 
     // ── placeholders ─────────────────────────────────────────────────────
-    // Both tiles take a few seconds (the model's WebAssembly, the 7 MB ADME database), so
-    // each opens with a faded screenshot of its own finished view (assets/img/demo-*-
+    // Both tiles can take a few seconds (the model's WebAssembly above all), so each opens with a faded screenshot of its own finished view (assets/img/demo-*-
     // preview.webp, 60 kB together; retake them when the tile's look changes) and a
     // "loading" note. The real view replaces it whole (build() and runAnat() clear the
     // tile); an error replaces it too. width/height keep the tile's height from jumping.
@@ -53,18 +53,35 @@ window.$docsify = window.$docsify || {};
           '<img src="' + src + '" width="' + w + '" height="' + h + '" alt="" decoding="async">' +
           '<span class="pk-demo-ph-msg">Loading the ' + what + '…</span></div>';
       };
-      sim.innerHTML = ph('assets/img/demo-sim-preview.webp', 694, 383, 'simulation');
-      anat.innerHTML = ph('assets/img/demo-anat-preview.webp', 333, 323, 'anatomogram');
+      sim.innerHTML = ph('assets/img/demo-sim-preview.webp', 694, 404, 'simulation');
+      anat.innerHTML = ph('assets/img/demo-anat-preview.webp', 333, 388, 'anatomogram');
     }
 
     // ── anatomogram tile ─────────────────────────────────────────────────
+    // the prebuilt drawing data, if it is this drug's and from the published database; else null
+    function prebuiltSites() {
+      var json = function (url) {
+        return fetch(url).then(function (r) { if (!r.ok) throw new Error(url); return r.json(); });
+      };
+      return Promise.all([json('data/adme-latest.json'), json('data/demo-sites.json')])
+        .then(function (res) {
+          var ok = res[1].adme === res[0].file && res[1].drug === anat.dataset.drug;
+          return ok ? res[1].model : null;
+        })
+        .catch(function () { return null; });
+    }
+    function computedSites() {
+      return pkdb.loadAdme(function () {}).then(function (db) {
+        // resolve() turns slugs into adme_drug rows — compute()'s drugs must be rows
+        return pkSites.compute(db, pkSites.resolve(db, [anat.dataset.drug]), { text: false });
+      });
+    }
+
     function runAnat() {
       // pk-sites.js is normally pulled by the /sites route; the tile loads it itself
-      Promise.all([script('assets/js/pk-sites.js'),
-                   pkdb.loadAdme(function () {})]).then(function (res) {
-        var db = res[1];
-        // resolve() turns slugs into adme_drug rows — compute()'s drugs must be rows
-        var M = pkSites.compute(db, pkSites.resolve(db, [anat.dataset.drug]), { text: false });
+      script('assets/js/pk-sites.js').then(prebuiltSites).then(function (M) {
+        return M || computedSites();
+      }).then(function (M) {
         var root = document.createElement('div');
         // render() fills whatever containers exist; with only the anatomogram present the
         // heatmap, DDI box, PGx panel and table stay out
@@ -74,6 +91,13 @@ window.$docsify = window.$docsify || {};
         if (!body) throw new Error('no site evidence for this drug');
         anat.innerHTML = '';
         anat.appendChild(body);
+        var src = document.createElement('p');
+        src.className = 'pk-demo-src';
+        var open = document.createElement('a');
+        open.href = '#/sites?drugs=' + encodeURIComponent(anat.dataset.drug);
+        open.textContent = 'Open in Sites';
+        src.appendChild(open);
+        anat.appendChild(src);
       }).catch(function (e) {
         anat.innerHTML = '<p class="pkq-status err">' + String(e.message || e) + '</p>';
       });
@@ -105,7 +129,9 @@ window.$docsify = window.$docsify || {};
       var label = params.observable_labels[KEY];
       var doseDef = ctx.controls.filter(function (c) { return c.key === 'adminMass'; })[0] ||
                     { label: 'Dose', unit: 'mg', scale: 1e6, min: 0.1, max: 4, step: 0.05, mult: true };
-      var mgDefault = Math.round(P.adminMass * doseDef.scale);         // kg → mg
+      // the curated model's own dose is the paper's 300 mg loading dose; the tile doses daily, so
+      // its template names the paper's daily dose (data-dosemg). The model is linear in dose.
+      var mgDefault = +sim.dataset.dosemg || Math.round(P.adminMass * doseDef.scale);  // kg → mg
       var mgOf = function (mult) { return mult * mgDefault; };
 
       sim.innerHTML = '';
@@ -145,6 +171,21 @@ window.$docsify = window.$docsify || {};
       var delta = document.createElement('p');
       delta.className = 'pk-demo-delta';
       sim.appendChild(delta);
+      // whose model this is: the paper and the record behind the curves (template data-*)
+      var src = document.createElement('p');
+      src.className = 'pk-demo-src';
+      var link = function (href, text) {
+        var a = document.createElement('a');
+        a.href = href; a.textContent = text;
+        return a;
+      };
+      var paper = link(sim.dataset.sourceurl, sim.dataset.source);
+      paper.target = '_blank'; paper.rel = 'noopener';
+      src.appendChild(document.createTextNode('Model: '));
+      src.appendChild(paper);
+      src.appendChild(document.createTextNode(' · '));
+      src.appendChild(link(sim.dataset.record, 'open record'));
+      sim.appendChild(src);
 
       // the phenotype's overrides are straight parameter swaps, exactly like the record
       // page's component applies them
@@ -232,7 +273,7 @@ window.$docsify = window.$docsify || {};
         // the legend, right-aligned and small
         var lx = W - R, ly = T + 6;
         el2('text', { x: lx - 10, y: ly, 'text-anchor': 'end', 'font-size': 10.5,
-                      fill: '#475569' }, 'the default — 75 mg a day, Normal');
+                      fill: '#475569' }, 'the default — ' + mgDefault + ' mg a day, Normal');
         el2('circle', { cx: lx - 4, cy: ly - 3.5, r: 3.5, fill: '#94a3b8' });
         el2('text', { x: lx - 10, y: ly + 15, 'text-anchor': 'end', 'font-size': 10.5,
                       fill: '#475569' }, 'this run — ' + (pg.labels || {})[gen.value] +
@@ -264,8 +305,8 @@ window.$docsify = window.$docsify || {};
       redraw();                                     // reference vs the start phenotype
     }
 
-    // boot when the tiles actually enter the viewport, not near it: the landing page
-    // otherwise starts pulling the 7 MB ADME database on tall monitors
+    // boot when the tiles actually enter the viewport, not near it: a phone that never
+    // scrolls down to them does not pay for the model
     var booted = false;
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
