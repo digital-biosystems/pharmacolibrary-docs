@@ -73,7 +73,7 @@ Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.05%) |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
 | `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | advisory | only convention defaults (gamma = 1) |
@@ -107,9 +107,9 @@ The parameters this record sets on the template, in the template's SI units, and
 
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
-| input | model | `E0` | 0 |  |
+| input | model | `E0` | 7.361e+04 |  |
 | input | model | `EC50` | 0.412 |  |
-| input | model | `Emax` | -2.529e-07 |  |
+| input | model | `Emax` | -5.746e+04 |  |
 | input | model | `exposure_per_s` | 1 |  |
 | input | model | `gamma` | 1 |  |
 | output | concentration | `response` |  | kg/m3 |

@@ -17,7 +17,7 @@
   "0.007059999999999999": -0.324
  },
  "stop_time": 71.0,
- "subtitle": "Pain score (PPPM) against acetaminophen concentration",
+ "subtitle": "Pain (PPPM) against acetaminophen, ibuprofen, tramadol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
@@ -51,13 +51,13 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
-  "label": "acetaminophen concentration",
+  "label": "acetaminophen, ibuprofen, tramadol concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "pain units",
   "factor": 1.0,
-  "label": "Pain score (PPPM)"
+  "label": "Pain (PPPM)"
  }
 }

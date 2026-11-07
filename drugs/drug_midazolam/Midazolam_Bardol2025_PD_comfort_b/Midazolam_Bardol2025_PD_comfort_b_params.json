@@ -5,16 +5,16 @@
   "response"
  ],
  "parameters": {
-  "E0": 6.0,
+  "E0": 0.0,
   "EC50": 0.000186,
   "Emax": -6.0,
   "exposure_per_s": 1e-06,
-  "gamma": 2.42
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
-  "0": 6.0,
-  "0.000186": 3.0
+  "0": 0.0,
+  "0.000186": -3.0
  },
  "stop_time": 1900.0,
  "subtitle": "COMFORT-B score (COMFORT-B) against midazolam concentration",
@@ -22,12 +22,6 @@
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Concentration–effect simulated by the PD model",
  "units": {
-  "E0": {
-   "display_only": true,
-   "display_unit": "",
-   "factor": 1.0,
-   "si_unit": "1"
-  },
   "EC50": {
    "display_only": false,
    "display_unit": "ng/mL",
@@ -45,12 +39,6 @@
    "display_unit": "ng/mL",
    "factor": 1e-06,
    "si_unit": "kg/m3"
-  },
-  "gamma": {
-   "display_only": true,
-   "display_unit": "",
-   "factor": 1.0,
-   "si_unit": "1"
   },
   "response_unit": ""
  },

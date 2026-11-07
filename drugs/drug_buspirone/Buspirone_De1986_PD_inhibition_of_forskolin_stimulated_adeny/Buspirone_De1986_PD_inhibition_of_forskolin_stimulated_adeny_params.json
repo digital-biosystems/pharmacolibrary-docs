@@ -1,0 +1,57 @@
+{
+ "model_id": "Buspirone_De1986_PD_inhibition_of_forskolin_stimulated_adeny",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 146.0,
+  "Emax": -0.5,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "146.0": -0.25
+ },
+ "stop_time": 1500.0,
+ "subtitle": "inhibition of forskolin-stimulated adenylate cyclase activity against buspirone concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "% inhibition",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "% inhibition"
+ },
+ "x_axis": {
+  "display_unit": "nM",
+  "factor": 1.0,
+  "label": "buspirone concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "% inhibition",
+  "factor": 1.0,
+  "label": "inhibition of forskolin-stimulated adenylate cyclase activity"
+ }
+}

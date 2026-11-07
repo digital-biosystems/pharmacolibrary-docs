@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;miocamycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miocamycin_Litterio2000_reference&quot;,&quot;label&quot;:&quot;Litterio_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # miocamycin
 
@@ -21,11 +22,17 @@ Miocamycin (midecamycin acetate) is a macrolide antibiotic used to treat bacteri
 |---|---|---|---|---|---|---|
 | miocamycin | parent | 898.053 | C45H71NO17 | PubChem | [5282188](https://pubchem.ncbi.nlm.nih.gov/compound/5282188) | Litterio_2000 |
 
+## Start here
+
+> **Litterio_2000_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> Holando Argentino cattle, n = 5. [Run it in the simulator](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md?tab=Simulation) · [record](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Litterio_2000_reference](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md) | — | 1-compartment (no model) | 4 | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) |
+| <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Litterio_2000_reference](drugs/drug_miocamycin/Miocamycin_Litterio2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Litterio NJ et al., Pharmacokinetics of miocamycin followin…, Journal of veterinary medic… (2000) | [10.1046/j.1439-0442.2000.00260.x](https://doi.org/10.1046/j.1439-0442.2000.00260.x) |
 
 ## Pharmacodynamics (PD)
 

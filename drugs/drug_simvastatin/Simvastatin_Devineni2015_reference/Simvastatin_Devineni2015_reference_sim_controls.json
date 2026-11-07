@@ -30,6 +30,16 @@
   "mult": true
  },
  {
+  "key": "k12",
+  "label": "k12 (central→peripheral)",
+  "unit": "1/h",
+  "scale": 3600,
+  "min": 0.2,
+  "max": 5,
+  "step": 0.05,
+  "mult": true
+ },
+ {
   "key": "weight",
   "label": "Body weight",
   "unit": "kg",

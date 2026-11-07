@@ -2,19 +2,11 @@
  "dose_source": "paper",
  "model_id": "Brexpiprazole_Frederiksen2023v3_reference",
  "molar_masses": {
-  "C_M1": 0.449569,
   "central.C": 0.43357
  },
- "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
- "observable_labels": {
-  "C_M1": "DM-3411",
-  "C_M2": "DM-3412",
-  "C_central": "brexpiprazole"
- },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C",
-  "C_M1",
-  "C_M2"
+  "central.C"
  ],
  "paper_doses_kind": "range",
  "paper_doses_mg": [
@@ -22,41 +14,26 @@
   12.0
  ],
  "parameters": {
-  "CL1": 0.0,
-  "CLm1": 9.25e-07,
-  "CLm2": 1.1666666666666667e-07,
-  "F": 0.9,
-  "MW": 0.43357,
-  "MW_m1": 0.449569,
-  "MW_m2": 0.0,
+  "Cl": 6.222222222222222e-09,
+  "F": 1.0,
+  "MM": 0.43357,
   "Tlag": 1479.6,
-  "Vd1": 0.08120000000000001,
-  "Vd1m1": 0.00244,
-  "Vd1m2": 0.000447,
-  "Vd2": 0.040100000000000004,
-  "Vd2m2": 0.020399999999999998,
+  "VdPerKg": 0.0011600000000000002,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1.5e-07,
+  "k12": 2.4425287356321835e-06,
+  "k21": 4.945968412302576e-06,
   "ka": 0.00028333333333333335,
-  "q12": 1.9833333333333332e-07,
-  "q1_m11": 3.111111111111111e-07,
-  "q1_m21": 6.222222222222222e-09,
-  "q21": 1.9833333333333332e-07,
-  "qm21_m22": 6e-07,
-  "qm22_m21": 6e-07
+  "weight": 70.0
  },
  "reference_peak_times": {
-  "C_M1": 19911.82364729459,
-  "C_M2": 86400.0,
-  "central.C": 15583.16633266533
+  "central.C": 30339.60000000028
  },
  "reference_peaks": {
-  "C_M1": 5.261408671503443e-07,
-  "C_M2": 2.7212425598667888e-08,
-  "central.C": 1.5249926890885754e-06
+  "central.C": 1.370107338636822e-06
  },
- "stop_time": 86400.0,
- "template": "PK_3M_9C",
- "template_fmu": "PK_3M_9C.fmu"
+ "stop_time": 15552000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

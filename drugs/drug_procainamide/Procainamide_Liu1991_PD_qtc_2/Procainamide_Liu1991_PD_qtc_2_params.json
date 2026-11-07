@@ -1,0 +1,63 @@
+{
+ "model_id": "Procainamide_Liu1991_PD_qtc_2",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.0062,
+  "Emax": 0.0536,
+  "exposure_per_s": 0.001,
+  "gamma": 2.2
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.006199999999999999": 0.0268
+ },
+ "stop_time": 62.0,
+ "subtitle": "QTc prolongation (QTc) against acetylprocainamide concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "micrograms.ml-1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "ms",
+   "factor": 0.001,
+   "si_unit": "s"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "micrograms.ml-1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "ms"
+ },
+ "x_axis": {
+  "display_unit": "micrograms.ml-1",
+  "factor": 0.0009999999999999998,
+  "label": "acetylprocainamide concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ms",
+  "factor": 0.001,
+  "label": "QTc prolongation (QTc)"
+ }
+}

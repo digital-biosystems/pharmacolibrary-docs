@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Needs review"}]'></div>
 
 
-## Needs review (1084)
+## Needs review (1083)
 
 Incomplete, inconsistent or implausible extraction, or a failed replication.
 
@@ -726,6 +726,7 @@ Incomplete, inconsistent or implausible extraction, or a failed replication.
 | [montelukast](/drugs/drug_montelukast/) | [Migoya_2004 · population_mean_ratio](/drugs/drug_montelukast/Montelukast_Migoya2004_population_mean_ratio.md) | needs_review | confirmed |
 | [montelukast](/drugs/drug_montelukast/) | [Ramakrishnan_2005 · reference](/drugs/drug_montelukast/Montelukast_Ramakrishnan2005_reference.md) | needs_review | partial |
 | [morphine](/drugs/drug_morphine/) | [Ekblom_1993 · reference](/drugs/drug_morphine/Morphine_Ekblom1993_reference.md) | needs_review | partial |
+| [morphine](/drugs/drug_morphine/) | [Juul_2016 · reference](/drugs/drug_morphine/Morphine_Juul2016_reference.md) | needs_review | partial |
 | [morphine](/drugs/drug_morphine/) | [Ouellet_1995 · reference](/drugs/drug_morphine/Morphine_Ouellet1995_reference.md) | needs_review | partial |
 | [morphine](/drugs/drug_morphine/) | [Venkatasubramanian_2014 · reference](/drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md) | needs_review | unchecked |
 | [mosunetuzumab](/drugs/drug_mosunetuzumab/) | [Li_2025 · china_study_yo43555](/drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_china_study_yo43555.md) | needs_review | partial |
@@ -745,8 +746,6 @@ Incomplete, inconsistent or implausible extraction, or a failed replication.
 | [nalmefene](/drugs/drug_nalmefene/) | [Rosen_2000 · reference](/drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md) | needs_review | partial |
 | [naloxone](/drugs/drug_naloxone/) | [Dowling_2008 · reference](/drugs/drug_naloxone/Naloxone_Dowling2008_reference.md) | needs_review | partial |
 | [naltrexone](/drugs/drug_naltrexone/) | [Reuning_1979 · reference](/drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md) | needs_review | partial |
-| [Naphthoquine](/drugs/drug_naphthoquine/) | [Ali_2022 · reference](/drugs/drug_naphthoquine/Naphthoquine_Ali2022_reference.md) | needs_review | unchecked |
-| [Naphthoquine](/drugs/drug_naphthoquine/) | [Batty_2012 · reference](/drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | needs_review | unchecked |
 | [naproxen](/drugs/drug_naproxen/) | [Oliveira_2022_2 · reference](/drugs/drug_naproxen/Naproxen_Oliveira2022v2_reference.md) | needs_review | partial |
 | [navitoclax](/drugs/drug_navitoclax/) | [Polepally_2026 · population_estimate](/drugs/drug_navitoclax/Navitoclax_Polepally2026_population_estimate.md) | needs_review | partial |
 | [nemolizumab](/drugs/drug_nemolizumab/) | [Takechi_2025 · reference](/drugs/drug_nemolizumab/Nemolizumab_Takechi2025_reference.md) | needs_review | unchecked |

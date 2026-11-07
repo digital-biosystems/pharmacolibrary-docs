@@ -108,7 +108,7 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Reid1990_PD_sbp/Doxazosin_Reid1990_PD_sbp_matlab.zip" download>Doxazosin_Reid1990_PD_sbp_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Reid1990_PD_sbp/Doxazosin_Reid1990_PD_sbp_sbml.zip" download>Doxazosin_Reid1990_PD_sbp_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Reid1990_PD_sbp/Doxazosin_Reid1990_PD_sbp_cellml.zip" download>Doxazosin_Reid1990_PD_sbp_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Reid1990_PD_sbp/Doxazosin_Reid1990_PD_sbp_cellml.zip" download>Doxazosin_Reid1990_PD_sbp_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>

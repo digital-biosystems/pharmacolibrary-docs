@@ -1,0 +1,63 @@
+{
+ "model_id": "Trimethoprim_Mead2026_PD_cfu_ml_1",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 1.8e-05,
+  "Emax": -0.98,
+  "exposure_per_s": 0.001,
+  "gamma": 3.8
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.7999999999999994e-05": -0.49
+ },
+ "stop_time": 0.18,
+ "subtitle": "Bacterial population density (CFU mL -1) against Trimethoprim concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "μg mL -1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "CFU mL -1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg mL -1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "CFU mL -1"
+ },
+ "x_axis": {
+  "display_unit": "μg mL -1",
+  "factor": 0.0009999999999999998,
+  "label": "Trimethoprim concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "CFU mL -1",
+  "factor": 1.0,
+  "label": "Bacterial population density (CFU mL -1)"
+ }
+}

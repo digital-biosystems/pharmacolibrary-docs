@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;alirocumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alirocumab_Lunven2014_reference&quot;,&quot;label&quot;:&quot;Lunven_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nolain_2022_LDL_C&quot;,&quot;label&quot;:&quot;Nolain_2022 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alirocumab/pd_Nolain_2022_LDL_C.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # alirocumab
 
@@ -21,6 +22,12 @@ Alirocumab is a monoclonal antibody used to treat dyslipidemias, including condi
 |---|---|---|---|---|---|---|
 | alirocumab | parent | 218.053 | C3H9Na2O6P | PubChem | [88214187](https://pubchem.ncbi.nlm.nih.gov/compound/88214187) | Martinez_2019, Nolain_2022 |
 
+## Start here
+
+> **Lunven_2014_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> review reference. [Run it in the simulator](drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md?tab=Simulation) · [record](drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## Parameters across studies
 
 <div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.001</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Nolain_2022 · CL</text><circle cx="358.7" cy="30.0" r="4" fill="#ef6c00"><title>Nolain_2022 · CL: 0.009208 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Martinez_2019 · CL</text><circle cx="375.0" cy="46.0" r="4" fill="#ef6c00"><title>Martinez_2019 · CL: 0.0114 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Lunven_2014 · CL/F</text><circle cx="438.3" cy="62.0" r="4" fill="#78909c"><title>Lunven_2014 · CL/F: 0.02625 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Martinez_2019 · V</text><circle cx="366.8" cy="30.0" r="4" fill="#ef6c00"><title>Martinez_2019 · V: 3.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lunven_2014 · V/F</text><circle cx="448.6" cy="46.0" r="4" fill="#78909c"><title>Lunven_2014 · V/F: 5.481 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Nolain_2022 · V1</text><circle cx="366.8" cy="62.0" r="4" fill="#ef6c00"><title>Nolain_2022 · V1: 3.2 L</title></circle></svg></div>
@@ -33,15 +40,15 @@ Alirocumab is a monoclonal antibody used to treat dyslipidemias, including condi
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>blocking: C2_base_Q61 failed (ratio 0.0036)</sub> | [Martinez_2019_reference](drugs/drug_alirocumab/Alirocumab_Martinez2019_reference.md) | — | 1-compartment (no model) | 10 (+2 cov.) | Martinez JM et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0669-y](https://doi.org/10.1007/s40262-018-0669-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q329 — no SI value to build from</sub> | [Nolain_2022_reference](drugs/drug_alirocumab/Alirocumab_Nolain2022_reference.md) | — | general linear (no model) | 6 | Nolain P et al., Combined Semi-mechanistic Target-Mediat…, European journal of drug me… (2022) | [10.1007/s13318-022-00787-4](https://doi.org/10.1007/s13318-022-00787-4) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lunven_2014_reference](drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md) | — | 1-compartment (no model) | 2 | Lunven C et al., A randomized study of the relative phar…, Cardiovascular therapeutics (2014) | [10.1111/1755-5922.12093](https://doi.org/10.1111/1755-5922.12093) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lunven_2014_reference](drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Lunven C et al., A randomized study of the relative phar…, Cardiovascular therapeutics (2014) | [10.1111/1755-5922.12093](https://doi.org/10.1111/1755-5922.12093) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kovalenko_2025_reference](drugs/drug_alirocumab/Alirocumab_Kovalenko2025_reference.md) | — | 1-compartment (no model) | 0 | Kovalenko P et al., Target-Mediated Modeling of Alirocumab…, Clinical pharmacology in dr… (2025) | [10.1002/cpdd.1523](https://doi.org/10.1002/cpdd.1523) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nolain_2022_LDL_C](drugs/drug_alirocumab/pd_Nolain_2022_LDL_C.md) | low-density lipoprotein cholesterol ← PCSK9 · indirect response — drug inhibits the loss of low-density lipoprotein cholesterol | — | Nolain P et al., Combined Semi-mechanistic Target-Mediat…, European journal of drug me… (2022) | [10.1007/s13318-022-00787-4](https://doi.org/10.1007/s13318-022-00787-4) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Scherer_2017_LDLc](drugs/drug_alirocumab/pd_Scherer_2017_LDLc.md) | low-density lipoprotein cholesterol ← alirocumab · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Scherer N et al., Alternative Treatment Regimens With the…, Journal of clinical pharmac… (2017) | [10.1002/jcph.866](https://doi.org/10.1002/jcph.866) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Nolain_2022_LDL_C](drugs/drug_alirocumab/pd_Nolain_2022_LDL_C.md) | low-density lipoprotein cholesterol ← PCSK9 · indirect response — drug inhibits the loss of low-density lipoprotein cholesterol | ▶ model + simulator | Nolain P et al., Combined Semi-mechanistic Target-Mediat…, European journal of drug me… (2022) | [10.1007/s13318-022-00787-4](https://doi.org/10.1007/s13318-022-00787-4) |
 
 ## ADME sites
 
@@ -65,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:04 | 18:02 | 3/1/0 | 2/0/0 | 0/0/0 | 290,340/55,312 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 10:04 | 18:02 | 3/1/0 | 1/1/0 | 0/0/0 | 290,340/55,312 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 

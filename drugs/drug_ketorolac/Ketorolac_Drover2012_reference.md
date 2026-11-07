@@ -19,7 +19,7 @@ Drover DR, Hammer GB, Anderson BJ. The pharmacokinetics of ketorolac after singl
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
@@ -69,6 +69,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 622.8 s = 0.001113/s (absorption half-life 0.173 hour reported, ka not)
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ketorolac
@@ -152,15 +156,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_modelica.zip" download>Ketorolac_Drover2012_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_fmi.zip" download>Ketorolac_Drover2012_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_matlab.zip" download>Ketorolac_Drover2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_matlab_simbio.zip" download>Ketorolac_Drover2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_sbml.zip" download>Ketorolac_Drover2012_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_cellml.zip" download>Ketorolac_Drover2012_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_modelica.zip" download>Ketorolac_Drover2012_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_fmi.zip" download>Ketorolac_Drover2012_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_matlab.zip" download>Ketorolac_Drover2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_matlab_simbio.zip" download>Ketorolac_Drover2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_sbml.zip" download>Ketorolac_Drover2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_cellml.zip" download>Ketorolac_Drover2012_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -170,18 +174,20 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.2553 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
+| input | dosing | `F` | 0.9 | 1 |
+| input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 3e-05 | kg |
 | input | model | `Cl` | 5.694e-07 | m3/s |
 | input | model | `VdPerKg` | 0.0002171 | m3/kg |
+| input | model | `ka` | 0.001113 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -204,11 +210,11 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 30 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg parenteral (M01AB15) (defined daily dose)._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 4.01 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (M01AB15) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ketorolac/Ketorolac_Drover2012_reference/Ketorolac_Drover2012_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Ketorolac_Drover2012_reference_params.json` · controls `Ketorolac_Drover2012_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Ketorolac_Drover2012_reference_params.json` · controls `Ketorolac_Drover2012_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

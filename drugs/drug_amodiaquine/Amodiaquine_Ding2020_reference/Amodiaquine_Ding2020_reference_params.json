@@ -1,0 +1,27 @@
+{
+ "model_id": "Amodiaquine_Ding2020_reference",
+ "molar_masses": {
+  "central.C": 0.327812
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.472222222222222e-07,
+  "F": 1.0,
+  "MM": 0.327812,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004485714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "ka": 0.0007916666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {},
+ "reference_peaks": {},
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,69 @@
+{
+ "model_id": "Pegcetacoplan_Crass2024_PD_ldh",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.18823501233e-21,
+  "EC50": 0.187,
+  "Emax": -1.52769594341e-22,
+  "exposure_per_s": 0.001,
+  "gamma": 3.42
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.1882350123263995e-21,
+  "0.18699999999999997": 3.1118502151560797e-21
+ },
+ "stop_time": 1900.0,
+ "subtitle": "lactate dehydrogenase (LDH) against pegcetacoplan concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "U/L",
+   "factor": 1.6605390689199997e-24,
+   "si_unit": "kg/m3"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "μg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "U/L",
+   "factor": 1.6605390689199997e-24,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "U/L"
+ },
+ "x_axis": {
+  "display_unit": "μg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "pegcetacoplan concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "U/L",
+  "factor": 1.6605390689199997e-24,
+  "label": "lactate dehydrogenase (LDH)"
+ }
+}

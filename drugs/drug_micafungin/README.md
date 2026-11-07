@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;micafungin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Caballero_2023_N&quot;,&quot;label&quot;:&quot;Caballero_2023 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_micafungin/pd_Caballero_2023_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # micafungin
 
@@ -68,7 +69,7 @@ Micafungin is an antifungal medicine used to treat fungal infections such as can
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_micafungin/pd_Caballero_2023_N.md) | log CFU/mL ← micafungin · direct sigmoid Emax (Hill) effect | model (no simulator) | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_micafungin/pd_Caballero_2023_N.md) | log CFU/mL ← micafungin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kovanda_2018_mycologic_response](drugs/drug_micafungin/pd_Kovanda_2018_mycologic_response.md) | mycologic response ← micafungin · categorical (graded) response model | — | Kovanda LL et al., Exposure-Response Analysis of Micafungi…, The Pediatric infectious di… (2018) | [10.1097/INF.0000000000001957](https://doi.org/10.1097/INF.0000000000001957) |
 
 ## ADME sites

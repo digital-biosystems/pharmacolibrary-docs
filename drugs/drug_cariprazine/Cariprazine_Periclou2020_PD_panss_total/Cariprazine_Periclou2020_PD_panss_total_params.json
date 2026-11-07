@@ -1,0 +1,69 @@
+{
+ "model_id": "Cariprazine_Periclou2020_PD_panss_total",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 96.4,
+  "EC50": 55.0,
+  "Emax": -0.118,
+  "exposure_per_s": 1.0,
+  "gamma": 2.11
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 96.4,
+  "55.0": 96.34100000000001
+ },
+ "stop_time": 550.0,
+ "subtitle": "Positive and Negative Syndrome Scale total score (PANSS total) against total cariprazine (sum of cariprazine, DCAR, and DDCAR) concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "nM",
+  "factor": 1.0,
+  "label": "total cariprazine (sum of cariprazine, DCAR, and DDCAR) concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "Positive and Negative Syndrome Scale total score (PANSS total)"
+ }
+}

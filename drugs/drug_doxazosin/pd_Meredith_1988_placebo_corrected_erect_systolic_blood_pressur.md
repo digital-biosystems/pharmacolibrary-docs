@@ -57,14 +57,13 @@ Meredith PA et al., Pharmacokinetic and pharmacodynamic mod…, Xenobiotica; the
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | -1.99 | — |
+| slope | -2.05 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -1.99
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -2.05
 
 Deviations:
 
 - `defaulted_parameters` — E0
-- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
 
 ## Review
 
@@ -112,11 +111,11 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_modelica.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_modelica.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_matlab.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_matlab.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_sbml.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_sbml.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_doxazosin/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b/Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_cellml.zip" download>Doxazosin_Meredith1988_PD_placebo_corrected_erect_systolic_b_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>

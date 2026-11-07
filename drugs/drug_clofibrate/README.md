@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;clofibrate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofibrate_wierczek2022_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # clofibrate
 
@@ -24,11 +25,17 @@ Clofibrate is a fibrate lipid-lowering drug that was used to treat high blood li
 | etofylline | metabolite | 224.22 | C9H12N4O3 | PubChem | [1892](https://pubchem.ncbi.nlm.nih.gov/compound/1892) | Lücker_1980 |
 | etofylline clofibrate | metabolite | 420.85 | C19H21ClN4O5 | PubChem | [41109](https://pubchem.ncbi.nlm.nih.gov/compound/41109) | Lücker_1980 |
 
+## Start here
+
+> **Świerczek_2022_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> review reference. [Run it in the simulator](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md?tab=Simulation) · [record](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | — | 1-compartment (no model) | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lücker_1980_reference](drugs/drug_clofibrate/Clofibrate_Lcker1980_reference.md) | — | general linear (no model) | 0 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
 
 ## ADME sites

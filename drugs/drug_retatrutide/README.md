@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Guo_2025_Weight](drugs/drug_retatrutide/pd_Guo_2025_Weight.md) | weight reduction ← Retatrutide · direct Emax (saturable) effect | — | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Guo_2025_Weight](drugs/drug_retatrutide/pd_Guo_2025_Weight.md) | weight reduction ← Retatrutide · direct Emax (saturable) effect | — | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

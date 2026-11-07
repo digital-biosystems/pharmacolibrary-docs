@@ -22,7 +22,7 @@
  {
   "key": "EC50",
   "label": "Potency EC50",
-  "unit": "ng mL−1",
+  "unit": "ng mL-1",
   "scale": 1000000.0,
   "min": 0.1,
   "max": 10,
@@ -41,7 +41,7 @@
  {
   "key": "stop_time",
   "label": "(S)-carvedilol concentration range",
-  "unit": "ng mL−1",
+  "unit": "ng mL-1",
   "scale": 1.0,
   "min": 7.7,
   "max": 385.0,

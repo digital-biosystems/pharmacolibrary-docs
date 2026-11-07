@@ -33,9 +33,9 @@
   "label": "Midazolam concentration range",
   "unit": "ng/ml",
   "scale": 1.0,
-  "min": 49.0,
-  "max": 2450.0,
-  "step": 4.9,
+  "min": 47.0,
+  "max": 2350.0,
+  "step": 4.7,
   "sim": true
  }
 ]

@@ -1,0 +1,63 @@
+{
+ "model_id": "Levetiracetam_Schoemaker2018_PD_seizures",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.90046296296e-06,
+  "EC50": 0.0314,
+  "Emax": -95.6,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.900462962962963e-06,
+  "0.03139999999999999": -47.79999609953703
+ },
+ "stop_time": 320.0,
+ "subtitle": "seizure counts (seizures) against levetiracetam concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "day−1",
+   "factor": 1.1574074074074073e-05,
+   "si_unit": "1/s"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "% change",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "levetiracetam concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "day−1",
+  "factor": 1.1574074074074073e-05,
+  "label": "seizure counts (seizures)"
+ }
+}

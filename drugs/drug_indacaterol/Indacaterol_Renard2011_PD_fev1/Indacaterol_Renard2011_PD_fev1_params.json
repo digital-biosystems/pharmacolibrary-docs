@@ -1,0 +1,57 @@
+{
+ "model_id": "Indacaterol_Renard2011_PD_fev1",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 2.8e-08,
+  "Emax": 0.000177,
+  "exposure_per_s": 1e-09,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "2.8000000000000003e-08": 8.850000000000001e-05
+ },
+ "stop_time": 280.0,
+ "subtitle": "trough FEV1 (improvement vs placebo, steady state) (FEV1) against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "μg",
+   "factor": 1e-09,
+   "si_unit": "kg"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mL",
+   "factor": 1.0000000000000002e-06,
+   "si_unit": "m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg",
+   "factor": 1e-09,
+   "si_unit": "kg"
+  },
+  "response_unit": "mL"
+ },
+ "x_axis": {
+  "display_unit": "μg",
+  "factor": 1e-09,
+  "label": "dose",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mL",
+  "factor": 1.0000000000000002e-06,
+  "label": "trough FEV1 (improvement vs placebo, steady state) (FEV1)"
+ }
+}

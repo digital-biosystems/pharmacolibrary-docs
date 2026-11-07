@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;moclobemide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Birkett_1995_u&quot;,&quot;label&quot;:&quot;Birkett_1995 \u00b7 u&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/pd_Birkett_1995_u.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # moclobemide
 
@@ -40,7 +40,7 @@ Moclobemide is an antidepressant that works as a reversible inhibitor of monoami
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Birkett_1995_u](drugs/drug_moclobemide/pd_Birkett_1995_u.md) | Utilisation (market uptake) ← moclobemide · direct sigmoid Emax (Hill) effect | model (no simulator) | Birkett DJ et al., Modelling the market uptake of new drug…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04565.x](https://doi.org/10.1111/j.1365-2125.1995.tb04565.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Birkett_1995_u](drugs/drug_moclobemide/pd_Birkett_1995_u.md) | Utilisation (market uptake) ← moclobemide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Birkett DJ et al., Modelling the market uptake of new drug…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04565.x](https://doi.org/10.1111/j.1365-2125.1995.tb04565.x) |
 
 ## ADME sites
 

@@ -79,10 +79,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 1020 s = 0.0006796/s (absorption half-life 17 min reported, ka not)
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rufloxacin
@@ -174,7 +173,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_modelica.zip" download>Rufloxacin_Mattina1991_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_fmi.zip" download>Rufloxacin_Mattina1991_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_matlab.zip" download>Rufloxacin_Mattina1991_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_matlab.zip" download>Rufloxacin_Mattina1991_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_matlab_simbio.zip" download>Rufloxacin_Mattina1991_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_sbml.zip" download>Rufloxacin_Mattina1991_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_cellml.zip" download>Rufloxacin_Mattina1991_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -197,7 +196,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 0.0002 | kg |
 | input | model | `Cl` | 7.667e-07 | m3/s |
 | input | model | `VdPerKg` | 0.001586 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
+| input | model | `ka` | 0.0006796 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -226,7 +225,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (J01MA10) (defined daily dose)._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 2.45 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (J01MA10) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference/Rufloxacin_Mattina1991_reference_sim_controls.json"></dbs-fmusim>
 

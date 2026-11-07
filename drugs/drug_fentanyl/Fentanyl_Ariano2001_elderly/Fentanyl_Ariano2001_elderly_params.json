@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fentanyl_Ariano2001_elderly",
+ "molar_masses": {
+  "central.C": 0.3364705
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.35
+ ],
+ "parameters": {
+  "Cl": 5.736111111111112e-05,
+  "F": 0.9,
+  "MM": 0.3364705,
+  "Tlag": 900.0,
+  "VdPerKg": 0.00122,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-07,
+  "k12": 0.0033219489981785068,
+  "k21": 0.0017172787193973633,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4848.09619238477
+ },
+ "reference_peaks": {
+  "central.C": 5.581831677571617e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

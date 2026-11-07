@@ -50,7 +50,7 @@ Prins SA, Van Dijk M, Van Leeuwen P, Searle S, Anderson BJ, Tibboel D et al. Pha
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.

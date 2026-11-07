@@ -60,7 +60,7 @@ Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal o
 |---|---|---|
 | E0 | 429 ms | 0.429 s |
 | Emax | 20 ms | 0.02 s |
-| slope | 40 ms l mg-1 | — |
+| slope | 40 ms l mg-1 | 40 meter ** 3 * second / kilogram |
 
 Closed-form check points (response, SI): `at_0` = 0.429, `per_exposure_unit` = 40
 

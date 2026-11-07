@@ -1,0 +1,70 @@
+{
+ "dose_source": "paper",
+ "model_id": "Paracetamol_Sikina2018_reference",
+ "molar_masses": {
+  "central.C": 0.151165
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  9.3,
+  13.0,
+  325.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 6.74
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 2.69
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 0.52
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 1.18
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 2.98
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 0.07
+   },
+   {
+    "source": "Sikina_2018:other_prose",
+    "value_si": 0.54
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 2.48e-05,
+  "F": 1.0,
+  "MM": 0.151165,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0039012857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9.3e-06,
+  "ka": 0.0006025000000000001,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4145.369237220213
+ },
+ "reference_peaks": {
+  "central.C": 2.431713958422557e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

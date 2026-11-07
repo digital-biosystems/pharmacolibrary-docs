@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;alemtuzumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alemtuzumab_Dong2022_reference&quot;,&quot;label&quot;:&quot;Dong_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_Tcells&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 Tcells&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alemtuzumab/pd_van_2025_Tcells.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # alemtuzumab
 
@@ -34,7 +34,7 @@ Alemtuzumab is a monoclonal antibody used to treat multiple sclerosis and certai
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Dong_2022_ALC](drugs/drug_alemtuzumab/pd_Dong_2022_ALC.md) | absolute lymphocyte count ← alemtuzumab · direct Emax (saturable) effect | — | Dong M et al., Model-informed precision dosing for ale…, British journal of clinical… (2022) | [10.1111/bcp.14955](https://doi.org/10.1111/bcp.14955) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mould_2007_WBC](drugs/drug_alemtuzumab/pd_Mould_2007_WBC.md) | white blood cell (WBC) count ← alemtuzumab · indirect response — drug stimulates the production of white blood cell (WBC) count | model (no simulator) | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_Tcells](drugs/drug_alemtuzumab/pd_van_2025_Tcells.md) | T cells ← alemtuzumab · indirect response — drug stimulates the loss of T cells | model (no simulator) | van Vugt LK et al., Alemtuzumab Exposure and T Lymphocyte D…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3714](https://doi.org/10.1002/cpt.3714) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_Tcells](drugs/drug_alemtuzumab/pd_van_2025_Tcells.md) | T cells ← alemtuzumab · indirect response — drug stimulates the loss of T cells | ▶ model + simulator | van Vugt LK et al., Alemtuzumab Exposure and T Lymphocyte D…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3714](https://doi.org/10.1002/cpt.3714) |
 
 ## ADME sites
 

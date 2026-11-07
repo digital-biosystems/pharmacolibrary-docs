@@ -1,0 +1,44 @@
+{
+ "dose_source": "paper",
+ "model_id": "Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin",
+ "molar_masses": {
+  "central.C": 0.4185662
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kaleem_2018:other_prose",
+    "value_si": 5.66
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 0.00019027166666666666,
+  "F": 0.9,
+  "MM": 0.4185662,
+  "Tlag": 0.0,
+  "VdPerKg": 0.02082,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.00013055555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7964.729458917835
+ },
+ "reference_peaks": {
+  "central.C": 4.542024104289627e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

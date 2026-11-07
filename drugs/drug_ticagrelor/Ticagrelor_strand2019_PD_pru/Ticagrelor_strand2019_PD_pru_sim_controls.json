@@ -1,9 +1,19 @@
 [
  {
+  "key": "E0",
+  "label": "Baseline E0",
+  "unit": "%",
+  "scale": 100.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "PRU",
-  "scale": 1.0,
+  "unit": "%",
+  "scale": 100.0,
   "min": 0.2,
   "max": 3,
   "step": 0.05,

@@ -154,7 +154,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
 | input | model | `Cl` | 1.383e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0002566 | m3/kg |
+| input | model | `VdPerKg` | 0.0009237 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 

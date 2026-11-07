@@ -1,12 +1,14 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Disputed by a second reader"}]'></div>
 
 
-## Disputed by a second reader (3746) · rows 2401–3600 of 3746
+## Disputed by a second reader (3748) · rows 2401–3600 of 3748
 
 An independent second reading of the paper disagrees on a structural parameter.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
+| [niclosamide](/drugs/drug_niclosamide/) | [Weiss_2023 · oral_niclosamide](/drugs/drug_niclosamide/Niclosamide_Weiss2023_oral_niclosamide.md) | rejected | disputed |
+| [nicotine](/drugs/drug_nicotine/) | [Olsson_2021 · chewing_gum](/drugs/drug_nicotine/Nicotine_Olsson2021_chewing_gum.md) | needs_review | disputed |
 | [nicotine](/drugs/drug_nicotine/) | [Olsson_2021 · lozenge](/drugs/drug_nicotine/Nicotine_Olsson2021_lozenge.md) | needs_review | disputed |
 | [nicotine](/drugs/drug_nicotine/) | [Vélez_2015 · reference](/drugs/drug_nicotine/Nicotine_Vlez2015_reference.md) | model_quarantined | disputed |
 | [nicotine](/drugs/drug_nicotine/) | [Marchand_2017 · reference](/drugs/drug_nicotine/Nicotine_Marchand2017_reference.md) | rejected | disputed |
@@ -1205,7 +1207,5 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · krens_et_al_10](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_krens_et_al_10.md) | rejected | disputed |
 | [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · lalagkas_et_al_27](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_lalagkas_et_al_27.md) | rejected | disputed |
 | [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · li_et_al_29](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_li_et_al_29.md) | rejected | disputed |
-| [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · nguyen_et_al_11](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_nguyen_et_al_11.md) | rejected | disputed |
-| [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · vezina_et_al_25](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_vezina_et_al_25.md) | rejected | disputed |
 
 <p class="pnote">Continued on <a href="#/review/disputed-4">disputed-4</a></p>

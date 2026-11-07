@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Polymyxin B concentration range",
+  "label": "Colistin/polymyxin B concentration range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 0.33,

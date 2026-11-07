@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;sacituzumab govitecan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SacituzumabGovitecan_Sathe2025_reference&quot;,&quot;label&quot;:&quot;Sathe_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sacituzumab govitecan
 
@@ -22,11 +23,17 @@ Sacituzumab govitecan is an antibody-drug conjugate used to treat breast cancer,
 | free SN-38 | metabolite | 392.411 | C22H20N2O5 | PubChem | [104842](https://pubchem.ncbi.nlm.nih.gov/compound/104842) | Sathe_2024, Sathe_2025 |
 | sacituzumab_govitecan | metabolite | 1601.79 | C76H104N12O24S | PubChem | [91668186](https://pubchem.ncbi.nlm.nih.gov/compound/91668186) | Sathe_2024, Sathe_2025 |
 
+## Start here
+
+> **Sathe_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with HR+/HER2− mBC, mTNBC, or other solid tumors, n = &gt;=789. [Run it in the simulator](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md?tab=Simulation) · [record](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>caveat: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per…</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T3_topology_template</sub> | [Sathe_2025_reference](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md) | model (no simulator) | 1-compartment, oral | 13 (+8 cov.) | Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and translational… (2025) | [10.1111/cts.70291](https://doi.org/10.1111/cts.70291) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>caveat: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per…</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T3_topology_template</sub> | [Sathe_2025_reference](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 13 (+8 cov.) | Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and translational… (2025) | [10.1111/cts.70291](https://doi.org/10.1111/cts.70291) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Sathe_2024_final](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_final.md) | — | general linear (no model) | 8 (+7 cov.) | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ final_final_model_estimatea_rse](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r.md) | — | general linear (no model) | 3 (+1 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ untransformed_estimate](drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2024_untransformed_estimate.md) | — | general linear (no model) | 0 |  |  |

@@ -51,7 +51,7 @@ Davis JD et al., Effect of single doses of maraviroc on…, British journal of c
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 0.97 micros ml ng(-1) | — |
+| slope | 0.97 micros ml ng(-1) | 0.97 meter ** 3 * second / kilogram |
 
 Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.97
 

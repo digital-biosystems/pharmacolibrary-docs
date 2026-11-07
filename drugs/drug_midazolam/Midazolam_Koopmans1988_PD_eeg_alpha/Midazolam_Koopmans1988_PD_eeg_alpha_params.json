@@ -6,19 +6,21 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "EC50": 4.62e-05,
+  "EC50": 4.2e-05,
   "Emax": 0.0,
   "exposure_per_s": 1e-06,
-  "gamma": 3.7
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "4.62e-05": 0.0
+  "4.2e-05": 0.0
  },
- "stop_time": 470.0,
+ "stop_time": 420.0,
+ "subtitle": "EEG a activity (EEG-alpha) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,
@@ -38,23 +40,18 @@
    "factor": 1e-06,
    "si_unit": "kg/m3"
   },
-  "gamma": {
-   "display_only": true,
-   "display_unit": "",
-   "factor": 1.0,
-   "si_unit": "1"
-  },
-  "response_unit": "% of baseline"
+  "response_unit": "%"
  },
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "EEG a activity (EEG-alpha)"
  }
 }

@@ -1,0 +1,69 @@
+{
+ "model_id": "Naproxen_Blaser2021_PD_6_keto_pgf1",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 167.16,
+  "EC50": 0.034,
+  "Emax": -133.56,
+  "exposure_per_s": 1.0,
+  "gamma": 7.2
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 167.16,
+  "0.034": 100.38
+ },
+ "stop_time": 0.34,
+ "subtitle": "urinary 6-keto-PGF1α excretion (6-keto-PGF1α) against naproxen concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "pg/mg creatinine",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": true,
+   "display_unit": "µM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "pg/mg creatinine",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "µM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "pg/mg creatinine"
+ },
+ "x_axis": {
+  "display_unit": "µM",
+  "factor": 1.0,
+  "label": "naproxen concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "pg/mg creatinine",
+  "factor": 1.0,
+  "label": "urinary 6-keto-PGF1α excretion (6-keto-PGF1α)"
+ }
+}

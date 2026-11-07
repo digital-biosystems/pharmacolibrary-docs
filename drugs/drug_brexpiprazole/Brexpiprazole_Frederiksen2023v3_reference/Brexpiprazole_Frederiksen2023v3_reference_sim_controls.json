@@ -9,6 +9,26 @@
   "step": 0.1185
  },
  {
+  "key": "Cl",
+  "label": "Clearance",
+  "unit": "L/h",
+  "scale": 3600000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "VdPerKg",
+  "label": "Vd per kg",
+  "unit": "L/kg",
+  "scale": 1000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
   "key": "ka",
   "label": "Absorption rate ka",
   "unit": "1/h",
@@ -28,64 +48,34 @@
   "step": 1
  },
  {
-  "key": "q1_m11",
-  "label": "Formation of metabolite 1",
-  "unit": "L/h",
-  "scale": 3600000.0,
+  "key": "k12",
+  "label": "k12 (central→peripheral)",
+  "unit": "1/h",
+  "scale": 3600,
   "min": 0.2,
-  "max": 3,
+  "max": 5,
   "step": 0.05,
   "mult": true
  },
  {
-  "key": "q1_m21",
-  "label": "Formation of metabolite 2",
-  "unit": "L/h",
-  "scale": 3600000.0,
+  "key": "k21",
+  "label": "k21 (peripheral→central)",
+  "unit": "1/h",
+  "scale": 3600,
   "min": 0.2,
-  "max": 3,
+  "max": 5,
   "step": 0.05,
   "mult": true
  },
  {
-  "key": "CLm1",
-  "label": "Metabolite 1 clearance",
-  "unit": "L/h",
-  "scale": 3600000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
-  "key": "Vd1m1",
-  "label": "Metabolite 1 volume",
-  "unit": "L",
-  "scale": 1000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
-  "key": "CLm2",
-  "label": "Metabolite 2 clearance",
-  "unit": "L/h",
-  "scale": 3600000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
-  "key": "Vd1m2",
-  "label": "Metabolite 2 volume",
-  "unit": "L",
-  "scale": 1000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
+  "key": "weight",
+  "label": "Body weight",
+  "unit": "kg",
+  "scale": 1,
+  "min": 40,
+  "max": 120,
+  "step": 1,
+  "note": "Scales the volume (V = Vd per kg × weight) and nothing else."
  },
  {
   "key": "F",
@@ -108,22 +98,23 @@
  {
   "key": "adminPeriod",
   "label": "Dosage period",
-  "unit": "h",
-  "scale": 0.0002777777777777778,
+  "unit": "d",
+  "scale": 1.1574074074074073e-05,
   "min": 1,
-  "max": 48,
-  "step": 0.5,
+  "max": 56,
+  "step": 1,
   "fallback": true,
+  "default_s": 604800.0,
   "needs": "adminCount"
  },
  {
   "key": "stop_time",
   "label": "Simulated time",
-  "unit": "h",
-  "scale": 0.0002777777777777778,
+  "unit": "wk",
+  "scale": 1.6534391534391535e-06,
   "min": 3.0,
-  "max": 48.0,
-  "step": 1.0,
+  "max": 51.5,
+  "step": 0.5,
   "sim": true
  }
 ]

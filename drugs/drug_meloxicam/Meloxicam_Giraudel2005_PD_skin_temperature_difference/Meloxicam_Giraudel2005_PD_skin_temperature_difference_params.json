@@ -1,0 +1,69 @@
+{
+ "model_id": "Meloxicam_Giraudel2005_PD_skin_temperature_difference",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 10.3171007928,
+  "EC50": 0.001298,
+  "Emax": 68.5,
+  "exposure_per_s": 1e-06,
+  "gamma": 6.4
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 10.317100792751981,
+  "0.001298": 0.2926837104326803
+ },
+ "stop_time": 6700.0,
+ "subtitle": "Skin temperature difference against meloxicam concentration",
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "1C",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng ml-1",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng ml-1",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "1C"
+ },
+ "x_axis": {
+  "display_unit": "ng ml-1",
+  "factor": 1e-06,
+  "label": "meloxicam concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "1C",
+  "factor": 1.0,
+  "label": "Skin temperature difference"
+ }
+}

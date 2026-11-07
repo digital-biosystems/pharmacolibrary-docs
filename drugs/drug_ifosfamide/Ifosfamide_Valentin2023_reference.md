@@ -110,16 +110,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - molar mass: no plausible PubChem entry for '3-dechloroifosfamide' ('3-dechloroifosfamide') — left in mass units
 - molar mass: none found for '2-dechloroifosfamide' — its concentrations stay mass-only
 - molar mass: none found for '3-dechloroifosfamide' — its concentrations stay mass-only
-- column 'final model (%rse) [shrinkage]' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- dropped duplicate Q45 ('Fm2', value '0.34') — already have one for this compound
-- unit_dimension_unknown: 'θAPR_Fm2' (fm)
-- dropped duplicate Q45 ('Effect of aripiprant on Fm2 (θAPR_Fm2)', value '1.06') — already have one for this compound
-- implicit units: 'CL' → L/h (from the popPK convention: 'Clearance in population PK models is conventionally expressed in L/h (or mL/min); the value 4.0 is consistent with L/h f')
-- implicit units: 'Vd' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in L; the value 57.5 is consistent with L.')
-- implicit units: 'K20' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.14 is consistent with 1/h.')
-- implicit units: 'K30' → 1/h (from the popPK convention: 'First-order elimination rate constants are conventionally expressed in 1/h; the value 0.13 is consistent with 1/h.')
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -191,7 +181,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference/Ifosfamide_Valentin2023_reference_modelica.zip" download>Ifosfamide_Valentin2023_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference/Ifosfamide_Valentin2023_reference_modelica.zip" download>Ifosfamide_Valentin2023_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference/Ifosfamide_Valentin2023_reference_matlab.zip" download>Ifosfamide_Valentin2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ifosfamide/Ifosfamide_Valentin2023_reference/Ifosfamide_Valentin2023_reference_matlab_simbio.zip" download>Ifosfamide_Valentin2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

@@ -16,7 +16,7 @@
 
 **As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives diastolic blood pressure (in mm Hg): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** No model was generated from this record.
 
 > Doxazosin plasma concentrations (ng ml-1) drive a decrease in erect diastolic blood pressure (mm Hg) via an effect compartment model with a linear slope (m) of -1.4 mm Hg ng-1 ml-1 and an equilibration rate constant (Keq) of 2.3 h-1.
 >
@@ -34,23 +34,6 @@ Donnelly R et al., Concentration-effect relationships and…, British journal of
 
 ## Parameters
 _No resolved parameters._
-
-
-## Exposure-response model
-
-`Doxazosin_Donnelly1989v2_PD_dbp` — linear, `response = E0 + slope*exposure`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| slope | -1.4 mm Hg ng-1 ml-1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -1.4
-
-Deviations:
-
-- `defaulted_parameters` — E0
-- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

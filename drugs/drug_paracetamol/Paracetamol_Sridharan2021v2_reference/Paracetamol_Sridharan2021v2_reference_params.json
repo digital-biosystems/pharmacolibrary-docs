@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 3000 mg oral (N02BE01)",
+ "model_id": "Paracetamol_Sridharan2021v2_reference",
+ "molar_masses": {
+  "central.C": 0.151165
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2555555555555557e-08,
+  "F": 0.9,
+  "MM": 0.151165,
+  "Tlag": 252.0,
+  "VdPerKg": 1.6857142857142858e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.003,
+  "ka": 0.002711111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2703.598766589923
+ },
+ "reference_peaks": {
+  "central.C": 2.237778890542756
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

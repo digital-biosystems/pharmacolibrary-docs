@@ -1,0 +1,63 @@
+{
+ "model_id": "Ampicillin_JimenezToro2020_PD_amp_cro_12_vs_e_faecalis_atcc",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 1.36342592593e-09,
+  "Emax": -4.34,
+  "exposure_per_s": 1.15740740741e-11,
+  "gamma": 3.96
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.3634259259259258e-09": -2.17
+ },
+ "stop_time": 1200.0,
+ "subtitle": "bacterial killing (AMP + CRO (12) vs E. faecalis ATCC 29212) against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/kg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "1/s"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "log10 CFU/g",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/kg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "1/s"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "log10 CFU/g"
+ },
+ "x_axis": {
+  "display_unit": "mg/kg/day",
+  "factor": 1.1574074074074074e-11,
+  "label": "dose",
+  "per_s": 1.15740740741e-11,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "log10 CFU/g",
+  "factor": 1.0,
+  "label": "bacterial killing (AMP + CRO (12) vs E. faecalis ATCC 29212)"
+ }
+}

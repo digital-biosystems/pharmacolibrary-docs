@@ -1,0 +1,63 @@
+{
+ "model_id": "Oxymorphone_Sadiq2013_PD_tfl",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 5.27,
+  "EC50": 6.26e-05,
+  "Emax": 55.1,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 5.27,
+  "6.26e-05": 32.82
+ },
+ "stop_time": 630.0,
+ "subtitle": "tail-flick latency (TFL) against unbound oxymorphone concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "s",
+   "factor": 1.0,
+   "si_unit": "s"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "s",
+   "factor": 1.0,
+   "si_unit": "s"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "s"
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "label": "unbound oxymorphone concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "s",
+  "factor": 1.0,
+  "label": "tail-flick latency (TFL)"
+ }
+}

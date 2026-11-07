@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;tolmetin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolmetin_Selley1975_reference&quot;,&quot;label&quot;:&quot;Selley_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolmetin_Selley1975_reference&quot;,&quot;label&quot;:&quot;Selley_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Flores_Murrieta_1998_antinociceptive_effect&quot;,&quot;label&quot;:&quot;Flores-Murrieta_1998 \u00b7 antinociceptive effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolmetin/pd_Flores_Murrieta_1998_antinociceptive_effect.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tolmetin
 
@@ -41,7 +41,7 @@ Tolmetin is a non-steroidal anti-inflammatory drug used to treat osteoarthritis,
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Flores-Murrieta_1998_antinociceptive_effect](drugs/drug_tolmetin/pd_Flores_Murrieta_1998_antinociceptive_effect.md) | antinociceptive effect ← tolmetin · indirect response — drug inhibits the production of antinociceptive effect | model (no simulator) | Flores-Murrieta FJ et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1998) | [10.1023/a:1023273100270](https://doi.org/10.1023/a:1023273100270) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Flores-Murrieta_1998_antinociceptive_effect](drugs/drug_tolmetin/pd_Flores_Murrieta_1998_antinociceptive_effect.md) | antinociceptive effect ← tolmetin · indirect response — drug inhibits the production of antinociceptive effect | ▶ model + simulator | Flores-Murrieta FJ et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1998) | [10.1023/a:1023273100270](https://doi.org/10.1023/a:1023273100270) |
 
 ## ADME sites
 

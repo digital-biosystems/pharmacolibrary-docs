@@ -20,12 +20,12 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Midazolam concentration range",
   "unit": "ng/ml",
   "scale": 1.0,
-  "min": 47.0,
-  "max": 2350.0,
-  "step": 4.7,
+  "min": 42.0,
+  "max": 2100.0,
+  "step": 4.2,
   "sim": true
  }
 ]

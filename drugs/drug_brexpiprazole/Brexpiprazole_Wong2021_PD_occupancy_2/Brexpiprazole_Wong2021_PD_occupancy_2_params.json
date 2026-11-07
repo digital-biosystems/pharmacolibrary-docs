@@ -6,18 +6,18 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "EC50": 7.75e-06,
-  "Emax": 0.954,
+  "EC50": 8.99e-06,
+  "Emax": 1.0,
   "exposure_per_s": 1e-06,
   "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "7.75e-06": 0.47700000000000004
+  "8.99e-06": 0.5
  },
- "stop_time": 78.0,
- "subtitle": "D2/D3 receptor occupancy in the caudate nucleus (occupancy) against brexpiprazole concentration",
+ "stop_time": 90.0,
+ "subtitle": "striatal D2/D3 receptor occupancy in the caudate nucleus (occupancy) against brexpiprazole concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
@@ -52,6 +52,6 @@
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "D2/D3 receptor occupancy in the caudate nucleus (occupancy)"
+  "label": "striatal D2/D3 receptor occupancy in the caudate nucleus (occupancy)"
  }
 }

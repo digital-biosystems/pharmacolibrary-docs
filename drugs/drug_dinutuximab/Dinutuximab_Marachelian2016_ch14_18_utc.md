@@ -185,13 +185,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_matlab.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_matlab_simbio.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_sbml.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc/Dinutuximab_Marachelian2016_ch14_18_utc_cellml.zip" download>Dinutuximab_Marachelian2016_ch14_18_utc_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**Source paper** (the parameters are its): Marachelian A, Desai A, Balis F, Katzenstein H, Qayed M, Armstrong M et al. Comparative pharmacokinetics, safety, and tolerability of two sources of ch14.18 in pediatric patients with high-risk neuroblastoma following myeloablative therapy. Cancer chemotherapy and pharmacology 77(2):405–412 (2016). [doi:10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9)
+
+**This record:** Pharmacolibrary, model `Dinutuximab_Marachelian2016_ch14_18_utc`. <https://pharmacolibrary.github.io/#/drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc>
+
+```bibtex
+@misc{pharmacolibrary_DinutuximabMarachelian2016ch1418utc,
+  title  = {{Pharmacolibrary model Dinutuximab_Marachelian2016_ch14_18_utc}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dinutuximab/Dinutuximab_Marachelian2016_ch14_18_utc},
+  note   = {Parameters from doi:10.1007/s00280-015-2955-9},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

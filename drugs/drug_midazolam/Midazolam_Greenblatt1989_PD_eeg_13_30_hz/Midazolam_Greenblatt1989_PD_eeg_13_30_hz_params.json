@@ -17,7 +17,7 @@
   "3.52e-05": 0.107
  },
  "stop_time": 360.0,
- "subtitle": "percentage of total EEG amplitude occurring in the 13 to 30 Hz range (EEG 13-30 Hz) against midazolam concentration",
+ "subtitle": "percentage of total EEG amplitude occurring in the 13 to 30 Hz range (EEG 13-30 Hz %) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Concentration–response simulated by the PD model",
@@ -58,6 +58,6 @@
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "percentage of total EEG amplitude occurring in the 13 to 30 Hz range (EEG 13-30 Hz)"
+  "label": "percentage of total EEG amplitude occurring in the 13 to 30 Hz range (EEG 13-30 Hz %)"
  }
 }

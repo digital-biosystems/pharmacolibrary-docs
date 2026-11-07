@@ -1,6 +1,9 @@
 {
  "dose_source": "paper",
  "model_id": "Hydrochlorothiazide_Hao2014_tel_2_mg_kg_and_hctz_7_5_mg_kg_m",
+ "molar_masses": {
+  "central.C": 0.297739
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -15,6 +18,7 @@
  "parameters": {
   "Cl": 3.524305555555556e-05,
   "F": 1.0,
+  "MM": 0.297739,
   "Tlag": 0.0,
   "VdPerKg": 0.007250000000000001,
   "adminCount": 1.0,

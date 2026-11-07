@@ -1,0 +1,57 @@
+{
+ "model_id": "Amodiaquine_Bocci2020_PD_cpe",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.13,
+  "Emax": -100.0,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.13": -50.0
+ },
+ "stop_time": 1.3,
+ "subtitle": "SARS-CoV-2 cytopathic effect (Vero E6 cell viability, dose–response) (CPE) against amodiaquine concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "% at 10 μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "%"
+ },
+ "x_axis": {
+  "display_unit": "μM",
+  "factor": 1.0,
+  "label": "amodiaquine concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "% at 10 μM",
+  "factor": 1.0,
+  "label": "SARS-CoV-2 cytopathic effect (Vero E6 cell viability, dose–response) (CPE)"
+ }
+}

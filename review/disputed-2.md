@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Disputed by a second reader"}]'></div>
 
 
-## Disputed by a second reader (3746) · rows 1201–2400 of 3746
+## Disputed by a second reader (3748) · rows 1201–2400 of 3748
 
 An independent second reading of the paper disagrees on a structural parameter.
 
@@ -1132,12 +1132,12 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [montelukast](/drugs/drug_montelukast/) | [Knorr_2006 · 3_to_6](/drugs/drug_montelukast/Montelukast_Knorr2006_3_to_6.md) | needs_review | disputed |
 | [morniflumate](/drugs/drug_morniflumate/) | [Jeong_2024 · reference](/drugs/drug_morniflumate/Morniflumate_Jeong2024_reference.md) | rejected | disputed |
 | [moroxydine](/drugs/drug_moroxydine/) | [Liu_2016 · reference](/drugs/drug_moroxydine/Moroxydine_Liu2016_reference.md) | rejected | disputed |
+| [morphine](/drugs/drug_morphine/) | [Ihmsen_2021 · reference](/drugs/drug_morphine/Morphine_Ihmsen2021_reference.md) | curated_candidate | disputed |
+| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · f](/drugs/drug_morphine/Morphine_Andersen1986_f.md) | needs_review | disputed |
+| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · j](/drugs/drug_morphine/Morphine_Andersen1986_j.md) | needs_review | disputed |
+| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · k](/drugs/drug_morphine/Morphine_Andersen1986_k.md) | needs_review | disputed |
 | [morphine](/drugs/drug_morphine/) | [Andersen_1986 · o](/drugs/drug_morphine/Morphine_Andersen1986_o.md) | needs_review | disputed |
 | [morphine](/drugs/drug_morphine/) | [Cai_2025 · reference](/drugs/drug_morphine/Morphine_Cai2025_reference.md) | needs_review | disputed |
-| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · f](/drugs/drug_morphine/Morphine_Andersen1986_f.md) | not_modelled | disputed |
-| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · j](/drugs/drug_morphine/Morphine_Andersen1986_j.md) | not_modelled | disputed |
-| [morphine](/drugs/drug_morphine/) | [Andersen_1986 · k](/drugs/drug_morphine/Morphine_Andersen1986_k.md) | not_modelled | disputed |
-| [morphine](/drugs/drug_morphine/) | [Ihmsen_2021 · reference](/drugs/drug_morphine/Morphine_Ihmsen2021_reference.md) | not_modelled | disputed |
 | [morphine](/drugs/drug_morphine/) | [Andersen_1986 · n](/drugs/drug_morphine/Morphine_Andersen1986_n.md) | rejected | disputed |
 | [morphine](/drugs/drug_morphine/) | [Elkomy_2016 · reference](/drugs/drug_morphine/Morphine_Elkomy2016_reference.md) | rejected | disputed |
 | [morphine](/drugs/drug_morphine/) | [Murphy_1981 · reference](/drugs/drug_morphine/Morphine_Murphy1981_reference.md) | rejected | disputed |
@@ -1168,6 +1168,8 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [naltrexone](/drugs/drug_naltrexone/) | [Dunbar_2007 · reference](/drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md) | needs_review | disputed |
 | [naltrexone](/drugs/drug_naltrexone/) | [Li_1996 · reference](/drugs/drug_naltrexone/Naltrexone_Li1996_reference.md) | needs_review | disputed |
 | [naltrexone](/drugs/drug_naltrexone/) | [Christie_2025 · reference](/drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md) | rejected | disputed |
+| [Naphthoquine](/drugs/drug_naphthoquine/) | [Ali_2022 · reference](/drugs/drug_naphthoquine/Naphthoquine_Ali2022_reference.md) | needs_review | disputed |
+| [Naphthoquine](/drugs/drug_naphthoquine/) | [Batty_2012 · reference](/drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | needs_review | disputed |
 | [naproxen](/drugs/drug_naproxen/) | [Schlachter_2026 · reference](/drugs/drug_naproxen/Naproxen_Schlachter2026_reference.md) | needs_review | disputed |
 | [naproxen](/drugs/drug_naproxen/) | [Välitalo_2012 · reference](/drugs/drug_naproxen/Naproxen_Vlitalo2012_reference.md) | needs_review | disputed |
 | [naproxen](/drugs/drug_naproxen/) | [Björnsson_2011 · reference](/drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | rejected | disputed |
@@ -1205,7 +1207,5 @@ An independent second reading of the paper disagrees on a structural parameter.
 | [niclosamide](/drugs/drug_niclosamide/) | [Weiss_2023 · 0_167_nen_nebulized](/drugs/drug_niclosamide/Niclosamide_Weiss2023_0_167_nen_nebulized.md) | rejected | disputed |
 | [niclosamide](/drugs/drug_niclosamide/) | [Weiss_2023 · 0_5_nen_nebulized](/drugs/drug_niclosamide/Niclosamide_Weiss2023_0_5_nen_nebulized.md) | rejected | disputed |
 | [niclosamide](/drugs/drug_niclosamide/) | [Weiss_2023 · 1_nen_nebulized](/drugs/drug_niclosamide/Niclosamide_Weiss2023_1_nen_nebulized.md) | rejected | disputed |
-| [niclosamide](/drugs/drug_niclosamide/) | [Weiss_2023 · oral_niclosamide](/drugs/drug_niclosamide/Niclosamide_Weiss2023_oral_niclosamide.md) | rejected | disputed |
-| [nicotine](/drugs/drug_nicotine/) | [Olsson_2021 · chewing_gum](/drugs/drug_nicotine/Nicotine_Olsson2021_chewing_gum.md) | needs_review | disputed |
 
 <p class="pnote">Continued on <a href="#/review/disputed-3">disputed-3</a></p>

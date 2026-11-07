@@ -721,7 +721,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "abrocitinib",
   "stale": 0,
   "tally": {
@@ -2814,7 +2814,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "afatinib",
   "stale": 0,
   "tally": {
@@ -3191,7 +3191,7 @@
   "records": 6,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "ajmaline",
   "stale": 0,
   "tally": {
@@ -3960,7 +3960,7 @@
   "records": 3,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "alemtuzumab",
   "stale": 0,
   "tally": {
@@ -4183,7 +4183,7 @@
   "records": 7,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 7,
   "slug": "alfaxalone",
   "stale": 0,
   "tally": {
@@ -4610,7 +4610,7 @@
   ],
   "best_status": "not_simulated",
   "counts": {
-   "pd": 2,
+   "pd": 1,
    "pgx": 0,
    "pk": 3
   },
@@ -4657,13 +4657,13 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 2,
   "slug": "alirocumab",
   "stale": 0,
   "tally": {
    "pd": [
-    2,
-    0,
+    1,
+    1,
     0
    ],
    "pgx": [
@@ -5386,7 +5386,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "alprazolam",
   "stale": 0,
   "tally": {
@@ -6294,7 +6294,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 2,
   "slug": "amifampridine",
   "stale": 0,
   "tally": {
@@ -6452,7 +6452,7 @@
   "records": 9,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 9,
   "slug": "amikacin",
   "stale": 0,
   "tally": {
@@ -6633,7 +6633,7 @@
   "records": 6,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "amino_acids",
   "stale": 0,
   "tally": {
@@ -7524,7 +7524,7 @@
   "records": 9,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 7,
   "slug": "amisulpride",
   "stale": 0,
   "tally": {
@@ -8214,7 +8214,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 4,
   "slug": "amodiaquine",
   "stale": 0,
   "tally": {
@@ -9054,7 +9054,7 @@
   "records": 13,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 17,
   "slug": "ampicillin",
   "stale": 0,
   "tally": {
@@ -9352,7 +9352,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "anakinra",
   "stale": 0,
   "tally": {
@@ -9566,7 +9566,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 8,
   "slug": "angiotensin_ii",
   "stale": 0,
   "tally": {
@@ -10739,7 +10739,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 8,
   "slug": "argatroban",
   "stale": 0,
   "tally": {
@@ -11485,7 +11485,7 @@
   "records": 4,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "artemether",
   "stale": 0,
   "tally": {
@@ -13778,7 +13778,7 @@
   "records": 6,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "axitinib",
   "stale": 0,
   "tally": {
@@ -14381,7 +14381,7 @@
   "records": 18,
   "rejected": 12,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "azithromycin",
   "stale": 0,
   "tally": {
@@ -14720,7 +14720,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "baclofen",
   "stale": 0,
   "tally": {
@@ -15624,7 +15624,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 5,
   "slug": "bedaquiline",
   "stale": 0,
   "tally": {
@@ -16242,7 +16242,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 2,
   "slug": "bempedoic_acid",
   "stale": 0,
   "tally": {
@@ -18864,7 +18864,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "bictegravir",
   "stale": 0,
   "tally": {
@@ -20044,7 +20044,7 @@
   "records": 32,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 6,
   "slug": "bleomycin",
   "stale": 0,
   "tally": {
@@ -22696,7 +22696,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "buprenorphine",
   "stale": 0,
   "tally": {
@@ -22806,7 +22806,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "burosumab",
   "stale": 0,
   "tally": {
@@ -22904,7 +22904,7 @@
   "records": 7,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 9,
   "slug": "buspirone",
   "stale": 0,
   "tally": {
@@ -23613,7 +23613,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 7,
   "slug": "cafedrine",
   "stale": 0,
   "tally": {
@@ -25046,7 +25046,7 @@
   "records": 20,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 13,
+  "simulatable": 14,
   "slug": "canakinumab",
   "stale": 0,
   "tally": {
@@ -25230,7 +25230,7 @@
   "records": 3,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "cangrelor",
   "stale": 0,
   "tally": {
@@ -26039,7 +26039,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "captopril",
   "stale": 0,
   "tally": {
@@ -26817,7 +26817,7 @@
   "records": 20,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 8,
+  "simulatable": 10,
   "slug": "carboplatin",
   "stale": 0,
   "tally": {
@@ -27000,7 +27000,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 4,
   "slug": "cariprazine",
   "stale": 0,
   "tally": {
@@ -27298,7 +27298,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "carteolol",
   "stale": 0,
   "tally": {
@@ -27631,7 +27631,7 @@
   "records": 30,
   "rejected": 8,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 9,
   "slug": "carvedilol",
   "stale": 0,
   "tally": {
@@ -27845,7 +27845,7 @@
   "records": 4,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "caspofungin",
   "stale": 0,
   "tally": {
@@ -28683,7 +28683,7 @@
   "records": 8,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "cefazolin",
   "stale": 0,
   "tally": {
@@ -30018,7 +30018,7 @@
   "records": 9,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 6,
   "slug": "cefoxitin",
   "stale": 0,
   "tally": {
@@ -30966,7 +30966,7 @@
   "records": 16,
   "rejected": 8,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "cefuroxime",
   "stale": 0,
   "tally": {
@@ -31067,7 +31067,7 @@
   "records": 7,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 6,
   "slug": "celecoxib",
   "stale": 0,
   "tally": {
@@ -31793,7 +31793,7 @@
   "records": 6,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "cetirizine",
   "stale": 0,
   "tally": {
@@ -32857,7 +32857,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "chloroquine",
   "stale": 0,
   "tally": {
@@ -33734,7 +33734,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "ciclosporin",
   "stale": 0,
   "tally": {
@@ -33956,7 +33956,7 @@
   "records": 12,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "cilazapril",
   "stale": 0,
   "tally": {
@@ -34311,7 +34311,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "cinacalcet",
   "stale": 0,
   "tally": {
@@ -35247,7 +35247,7 @@
   "records": 9,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "cisplatin",
   "stale": 0,
   "tally": {
@@ -36477,7 +36477,7 @@
   "records": 5,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 5,
   "slug": "clofazimine",
   "stale": 0,
   "tally": {
@@ -36617,7 +36617,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "clofibrate",
   "stale": 0,
   "tally": {
@@ -37015,7 +37015,7 @@
   "records": 8,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "clonidine",
   "stale": 0,
   "tally": {
@@ -37717,7 +37717,7 @@
   "records": 19,
   "rejected": 12,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "clozapine",
   "stale": 0,
   "tally": {
@@ -41251,7 +41251,7 @@
   "atc_codes": [
    "L01AX04"
   ],
-  "best_status": "not_simulated",
+  "best_status": "caveats",
   "counts": {
    "pd": 14,
    "pgx": 0,
@@ -41324,7 +41324,7 @@
   "records": 7,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "dacarbazine",
   "stale": 0,
   "tally": {
@@ -42196,7 +42196,7 @@
   "records": 7,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 7,
   "slug": "dapsone",
   "stale": 0,
   "tally": {
@@ -42815,7 +42815,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "dasatinib",
   "stale": 0,
   "tally": {
@@ -43070,7 +43070,7 @@
   "records": 14,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "daunorubicin",
   "stale": 0,
   "tally": {
@@ -45128,7 +45128,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 10,
   "slug": "dexmedetomidine",
   "stale": 0,
   "tally": {
@@ -47912,7 +47912,7 @@
   "records": 5,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "diltiazem",
   "stale": 0,
   "tally": {
@@ -50919,7 +50919,7 @@
   ],
   "best_status": "reproduces",
   "counts": {
-   "pd": 18,
+   "pd": 16,
    "pgx": 0,
    "pk": 19
   },
@@ -51190,13 +51190,13 @@
   "records": 32,
   "rejected": 13,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 12,
   "slug": "doxorubicin",
   "stale": 0,
   "tally": {
    "pd": [
-    18,
-    0,
+    16,
+    2,
     0
    ],
    "pgx": [
@@ -51478,7 +51478,7 @@
   "records": 3,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "droperidol",
   "stale": 0,
   "tally": {
@@ -52007,7 +52007,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "dupilumab",
   "stale": 0,
   "tally": {
@@ -52509,7 +52509,7 @@
   "records": 11,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 9,
   "slug": "eculizumab",
   "stale": 0,
   "tally": {
@@ -52714,7 +52714,7 @@
   "records": 5,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "edoxaban",
   "stale": 0,
   "tally": {
@@ -53900,7 +53900,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "elvitegravir",
   "stale": 0,
   "tally": {
@@ -56395,7 +56395,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 11,
   "slug": "eravacycline",
   "stale": 0,
   "tally": {
@@ -56560,7 +56560,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "erenumab",
   "stale": 0,
   "tally": {
@@ -57530,7 +57530,7 @@
   "records": 4,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "escitalopram",
   "stale": 0,
   "tally": {
@@ -58241,7 +58241,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 6,
   "slug": "etanercept",
   "stale": 0,
   "tally": {
@@ -58291,7 +58291,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "etelcalcetide",
   "stale": 0,
   "tally": {
@@ -58922,7 +58922,7 @@
   "records": 5,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "ethosuximide",
   "stale": 0,
   "tally": {
@@ -59566,7 +59566,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 6,
   "slug": "etomidate",
   "stale": 0,
   "tally": {
@@ -60265,7 +60265,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "evolocumab",
   "stale": 0,
   "tally": {
@@ -62381,7 +62381,7 @@
   "records": 46,
   "rejected": 18,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 12,
   "slug": "fentanyl",
   "stale": 0,
   "tally": {
@@ -63405,7 +63405,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "fimasartan",
   "stale": 0,
   "tally": {
@@ -64563,7 +64563,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "fludarabine",
   "stale": 0,
   "tally": {
@@ -65511,7 +65511,7 @@
   ],
   "best_status": "reproduces",
   "counts": {
-   "pd": 13,
+   "pd": 11,
    "pgx": 46,
    "pk": 20
   },
@@ -66158,13 +66158,13 @@
   "records": 79,
   "rejected": 59,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 11,
   "slug": "fluorouracil",
   "stale": 0,
   "tally": {
    "pd": [
-    13,
-    4,
+    11,
+    6,
     0
    ],
    "pgx": [
@@ -66684,7 +66684,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "fluticasone",
   "stale": 0,
   "tally": {
@@ -66990,7 +66990,7 @@
   "records": 9,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 7,
   "slug": "fluvoxamine",
   "stale": 0,
   "tally": {
@@ -67298,7 +67298,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "formoterol",
   "stale": 0,
   "tally": {
@@ -68660,7 +68660,7 @@
   "records": 15,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 11,
+  "simulatable": 12,
   "slug": "furosemide",
   "stale": 0,
   "tally": {
@@ -68876,7 +68876,7 @@
   "records": 9,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "gabapentin",
   "stale": 0,
   "tally": {
@@ -69661,7 +69661,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "galcanezumab",
   "stale": 0,
   "tally": {
@@ -70040,7 +70040,7 @@
   "records": 13,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 6,
   "slug": "ganciclovir",
   "stale": 0,
   "tally": {
@@ -70296,7 +70296,7 @@
   "records": 5,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 3,
   "slug": "gatifloxacin",
   "stale": 0,
   "tally": {
@@ -72184,7 +72184,7 @@
   "records": 6,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "gliclazide",
   "stale": 0,
   "tally": {
@@ -73881,7 +73881,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 10,
   "slug": "guselkumab",
   "stale": 0,
   "tally": {
@@ -74112,7 +74112,7 @@
   "records": 5,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 6,
   "slug": "haloperidol",
   "stale": 0,
   "tally": {
@@ -75476,7 +75476,7 @@
   "records": 25,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 12,
+  "simulatable": 13,
   "slug": "hydrochlorothiazide",
   "stale": 0,
   "tally": {
@@ -77610,7 +77610,7 @@
   "records": 8,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "idarubicin",
   "stale": 0,
   "tally": {
@@ -78918,7 +78918,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "indacaterol",
   "stale": 0,
   "tally": {
@@ -79523,7 +79523,7 @@
   "records": 4,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 6,
   "slug": "infliximab",
   "stale": 0,
   "tally": {
@@ -79681,7 +79681,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "inositol",
   "stale": 0,
   "tally": {
@@ -82148,7 +82148,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "irbesartan",
   "stale": 0,
   "tally": {
@@ -82586,7 +82586,7 @@
   "records": 10,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 8,
+  "simulatable": 9,
   "slug": "isavuconazole",
   "stale": 0,
   "tally": {
@@ -83903,7 +83903,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "ixazomib",
   "stale": 0,
   "tally": {
@@ -84256,7 +84256,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 6,
   "slug": "ketamine",
   "stale": 0,
   "tally": {
@@ -84572,7 +84572,7 @@
   "records": 9,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 8,
   "slug": "ketoprofen",
   "stale": 0,
   "tally": {
@@ -85398,7 +85398,7 @@
   "records": 6,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "lamotrigine",
   "stale": 0,
   "tally": {
@@ -85703,7 +85703,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "lanreotide",
   "stale": 0,
   "tally": {
@@ -86439,7 +86439,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "lefamulin",
   "stale": 0,
   "tally": {
@@ -87746,7 +87746,7 @@
   "records": 10,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "levetiracetam",
   "stale": 0,
   "tally": {
@@ -88061,7 +88061,7 @@
   "records": 4,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "levodopa",
   "stale": 0,
   "tally": {
@@ -88345,7 +88345,7 @@
   "atc_codes": [
    "J01MA24"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 1,
    "pgx": 0,
@@ -89360,7 +89360,7 @@
   "atc_codes": [
    "J01XX08"
   ],
-  "best_status": "not_simulated",
+  "best_status": "reproduces",
   "counts": {
    "pd": 1,
    "pgx": 0,
@@ -89425,7 +89425,7 @@
   "records": 6,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 3,
   "slug": "linezolid",
   "stale": 0,
   "tally": {
@@ -89891,7 +89891,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "lisinopril",
   "stale": 0,
   "tally": {
@@ -90627,7 +90627,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "lonafarnib",
   "stale": 0,
   "tally": {
@@ -91231,7 +91231,7 @@
   "records": 24,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 14,
+  "simulatable": 16,
   "slug": "lorazepam",
   "stale": 0,
   "tally": {
@@ -92192,7 +92192,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "lurbinectedin",
   "stale": 0,
   "tally": {
@@ -95318,7 +95318,7 @@
   "records": 9,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 9,
   "slug": "meloxicam",
   "stale": 0,
   "tally": {
@@ -99777,7 +99777,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "metipranolol",
   "stale": 0,
   "tally": {
@@ -100807,7 +100807,7 @@
   "records": 37,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "micafungin",
   "stale": 0,
   "tally": {
@@ -101547,7 +101547,7 @@
   "records": 69,
   "rejected": 20,
   "rendered": true,
-  "simulatable": 19,
+  "simulatable": 30,
   "slug": "midazolam",
   "stale": 0,
   "tally": {
@@ -101605,7 +101605,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 2,
   "slug": "midecamycin",
   "stale": 0,
   "tally": {
@@ -102567,7 +102567,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "miocamycin",
   "stale": 0,
   "tally": {
@@ -103365,7 +103365,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "mitoxantrone",
   "stale": 0,
   "tally": {
@@ -103663,7 +103663,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "moclobemide",
   "stale": 0,
   "tally": {
@@ -103729,7 +103729,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "modafinil",
   "stale": 0,
   "tally": {
@@ -104167,7 +104167,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "mometasone",
   "stale": 0,
   "tally": {
@@ -105361,7 +105361,7 @@
   "records": 6,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "moxifloxacin",
   "stale": 0,
   "tally": {
@@ -105454,7 +105454,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "moxonidine",
   "stale": 0,
   "tally": {
@@ -106846,7 +106846,7 @@
   "records": 6,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 11,
   "slug": "naproxen",
   "stale": 0,
   "tally": {
@@ -108849,7 +108849,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "nifedipine",
   "stale": 0,
   "tally": {
@@ -109455,7 +109455,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "nintedanib",
   "stale": 0,
   "tally": {
@@ -111994,7 +111994,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "olanzapine",
   "stale": 0,
   "tally": {
@@ -112287,7 +112287,7 @@
   "records": 4,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "olmesartan",
   "stale": 0,
   "tally": {
@@ -112711,7 +112711,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "omadacycline",
   "stale": 0,
   "tally": {
@@ -113603,7 +113603,7 @@
  },
  "drug_orforglipron": {
   "atc_codes": [],
-  "best_status": "not_simulated",
+  "best_status": "needs_review",
   "counts": {
    "pd": 1,
    "pgx": 0,
@@ -114244,7 +114244,7 @@
   "records": 6,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "osimertinib",
   "stale": 0,
   "tally": {
@@ -114436,7 +114436,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "oxacillin",
   "stale": 0,
   "tally": {
@@ -114534,7 +114534,7 @@
   "records": 7,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "oxaliplatin",
   "stale": 0,
   "tally": {
@@ -114822,7 +114822,7 @@
   "records": 4,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "oxazepam",
   "stale": 0,
   "tally": {
@@ -115507,7 +115507,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "oxymorphone",
   "stale": 0,
   "tally": {
@@ -116175,7 +116175,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "palivizumab",
   "stale": 0,
   "tally": {
@@ -117258,7 +117258,7 @@
   "records": 45,
   "rejected": 23,
   "rendered": true,
-  "simulatable": 12,
+  "simulatable": 14,
   "slug": "paracetamol",
   "stale": 0,
   "tally": {
@@ -118667,7 +118667,7 @@
   "records": 4,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "pegcetacoplan",
   "stale": 0,
   "tally": {
@@ -123337,7 +123337,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "pipecuronium_bromide",
   "stale": 0,
   "tally": {
@@ -123460,7 +123460,7 @@
   "records": 5,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "piperacillin",
   "stale": 0,
   "tally": {
@@ -123584,7 +123584,7 @@
   "records": 10,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 8,
   "slug": "piperaquine",
   "stale": 0,
   "tally": {
@@ -125055,7 +125055,7 @@
   "records": 5,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "polymyxin_b",
   "stale": 0,
   "tally": {
@@ -125287,7 +125287,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "ponesimod",
   "stale": 0,
   "tally": {
@@ -125868,7 +125868,7 @@
   "records": 7,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "potassium_clorazepate",
   "stale": 0,
   "tally": {
@@ -127161,7 +127161,7 @@
   "records": 7,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "pregabalin",
   "stale": 0,
   "tally": {
@@ -127327,7 +127327,7 @@
   "atc_codes": [
    "J04AK08"
   ],
-  "best_status": "not_simulated",
+  "best_status": "caveats",
   "counts": {
    "pd": 4,
    "pgx": 0,
@@ -127400,7 +127400,7 @@
   "records": 7,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 4,
   "slug": "pretomanid",
   "stale": 0,
   "tally": {
@@ -128000,7 +128000,7 @@
   "records": 13,
   "rejected": 12,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 7,
   "slug": "procainamide",
   "stale": 0,
   "tally": {
@@ -129158,7 +129158,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 6,
   "slug": "propofol",
   "stale": 0,
   "tally": {
@@ -130149,7 +130149,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "pyrazinamide",
   "stale": 0,
   "tally": {
@@ -130215,7 +130215,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "pyridostigmine",
   "stale": 0,
   "tally": {
@@ -131208,7 +131208,7 @@
   "records": 14,
   "rejected": 9,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 6,
   "slug": "quinine",
   "stale": 0,
   "tally": {
@@ -132130,7 +132130,7 @@
   "records": 14,
   "rejected": 10,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "ranibizumab",
   "stale": 0,
   "tally": {
@@ -132780,7 +132780,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "relebactam",
   "stale": 0,
   "tally": {
@@ -133000,7 +133000,7 @@
   "records": 12,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "remdesivir",
   "stale": 0,
   "tally": {
@@ -133270,7 +133270,7 @@
   "records": 10,
   "rejected": 7,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 10,
   "slug": "remimazolam",
   "stale": 0,
   "tally": {
@@ -133714,7 +133714,7 @@
  },
  "drug_retatrutide": {
   "atc_codes": [],
-  "best_status": "not_simulated",
+  "best_status": "needs_review",
   "counts": {
    "pd": 1,
    "pgx": 0,
@@ -134577,7 +134577,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 4,
   "slug": "rifampicin",
   "stale": 0,
   "tally": {
@@ -134696,7 +134696,7 @@
   "records": 4,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "rifapentine",
   "stale": 0,
   "tally": {
@@ -134931,7 +134931,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "riluzole",
   "stale": 0,
   "tally": {
@@ -135348,7 +135348,7 @@
   "records": 12,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 15,
   "slug": "risankizumab",
   "stale": 0,
   "tally": {
@@ -135539,7 +135539,7 @@
   "records": 7,
   "rejected": 6,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "risperidone",
   "stale": 0,
   "tally": {
@@ -135801,7 +135801,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "rituximab",
   "stale": 0,
   "tally": {
@@ -135972,7 +135972,7 @@
   "records": 16,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 11,
+  "simulatable": 12,
   "slug": "rivaroxaban",
   "stale": 0,
   "tally": {
@@ -136847,7 +136847,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "ropeginterferon_alfa_2b",
   "stale": 0,
   "tally": {
@@ -138315,7 +138315,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "s_atenolol",
   "stale": 0,
   "tally": {
@@ -138521,7 +138521,7 @@
   "records": 4,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 1,
   "slug": "sacituzumab_govitecan",
   "stale": 0,
   "tally": {
@@ -138995,7 +138995,7 @@
   "records": 8,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 6,
   "slug": "salmeterol",
   "stale": 0,
   "tally": {
@@ -139349,7 +139349,7 @@
   "records": 5,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "saquinavir",
   "stale": 0,
   "tally": {
@@ -139605,7 +139605,7 @@
   "records": 1,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 4,
   "slug": "savolitinib",
   "stale": 0,
   "tally": {
@@ -139916,7 +139916,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "secukinumab",
   "stale": 0,
   "tally": {
@@ -140935,7 +140935,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "sertraline",
   "stale": 0,
   "tally": {
@@ -141675,7 +141675,7 @@
   "records": 21,
   "rejected": 5,
   "rendered": true,
-  "simulatable": 8,
+  "simulatable": 11,
   "slug": "simvastatin",
   "stale": 0,
   "tally": {
@@ -144131,7 +144131,7 @@
   "records": 10,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 8,
   "slug": "sorafenib",
   "stale": 0,
   "tally": {
@@ -144309,7 +144309,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "sotalol",
   "stale": 0,
   "tally": {
@@ -144359,7 +144359,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "sotatercept",
   "stale": 0,
   "tally": {
@@ -145645,7 +145645,7 @@
   "records": 8,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 6,
   "slug": "sufentanil",
   "stale": 0,
   "tally": {
@@ -145906,7 +145906,7 @@
   "records": 14,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 8,
   "slug": "sulbactam",
   "stale": 0,
   "tally": {
@@ -147187,7 +147187,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "sulpiride",
   "stale": 0,
   "tally": {
@@ -148237,7 +148237,7 @@
   "records": 8,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 7,
   "slug": "tacrolimus",
   "stale": 0,
   "tally": {
@@ -148323,7 +148323,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 5,
   "slug": "tadalafil",
   "stale": 0,
   "tally": {
@@ -150709,7 +150709,7 @@
   "records": 5,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 5,
   "slug": "telithromycin",
   "stale": 0,
   "tally": {
@@ -150906,7 +150906,7 @@
   "records": 19,
   "rejected": 9,
   "rendered": true,
-  "simulatable": 6,
+  "simulatable": 8,
   "slug": "telmisartan",
   "stale": 0,
   "tally": {
@@ -151145,7 +151145,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 4,
   "slug": "temocillin",
   "stale": 0,
   "tally": {
@@ -152022,7 +152022,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 5,
   "slug": "terazosin",
   "stale": 0,
   "tally": {
@@ -152966,7 +152966,7 @@
   "records": 8,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 7,
+  "simulatable": 8,
   "slug": "tetracycline",
   "stale": 0,
   "tally": {
@@ -153083,7 +153083,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "tezacaftor",
   "stale": 0,
   "tally": {
@@ -154372,7 +154372,7 @@
   "records": 3,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "tiagabine",
   "stale": 0,
   "tally": {
@@ -154726,7 +154726,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 4,
+  "simulatable": 5,
   "slug": "ticagrelor",
   "stale": 0,
   "tally": {
@@ -155030,7 +155030,7 @@
   "records": 4,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "tigecycline",
   "stale": 0,
   "tally": {
@@ -156828,7 +156828,7 @@
   "records": 9,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 8,
+  "simulatable": 11,
   "slug": "tofacitinib",
   "stale": 0,
   "tally": {
@@ -157169,7 +157169,7 @@
   "records": 5,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 7,
   "slug": "tolfenamic_acid",
   "stale": 0,
   "tally": {
@@ -157236,7 +157236,7 @@
   "records": 3,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "tolmetin",
   "stale": 0,
   "tally": {
@@ -157385,7 +157385,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "tolterodine",
   "stale": 0,
   "tally": {
@@ -157680,7 +157680,7 @@
   "records": 8,
   "rejected": 7,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "topotecan",
   "stale": 0,
   "tally": {
@@ -158414,7 +158414,7 @@
   "records": 6,
   "rejected": 4,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "tranexamic_acid",
   "stale": 0,
   "tally": {
@@ -159013,7 +159013,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "tremelimumab",
   "stale": 0,
   "tally": {
@@ -159408,7 +159408,7 @@
   "records": 5,
   "rejected": 2,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "triazolam",
   "stale": 0,
   "tally": {
@@ -159881,7 +159881,7 @@
   "records": 1,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "triflusal",
   "stale": 0,
   "tally": {
@@ -160349,7 +160349,7 @@
   "records": 6,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "trimethoprim",
   "stale": 0,
   "tally": {
@@ -162604,7 +162604,7 @@
   "records": 3,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "vaborbactam",
   "stale": 0,
   "tally": {
@@ -163569,7 +163569,7 @@
   "records": 4,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 4,
   "slug": "varenicline",
   "stale": 0,
   "tally": {
@@ -164392,7 +164392,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "vernakalant",
   "stale": 0,
   "tally": {
@@ -164483,7 +164483,7 @@
   "records": 1,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 3,
   "slug": "vestronidase_alfa",
   "stale": 0,
   "tally": {
@@ -165012,7 +165012,7 @@
   "records": 13,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 7,
   "slug": "vinblastine",
   "stale": 0,
   "tally": {
@@ -165648,7 +165648,7 @@
   "records": 2,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "voclosporin",
   "stale": 0,
   "tally": {
@@ -165972,7 +165972,7 @@
   "records": 30,
   "rejected": 21,
   "rendered": true,
-  "simulatable": 5,
+  "simulatable": 8,
   "slug": "von_willebrand_factor",
   "stale": 0,
   "tally": {
@@ -166360,7 +166360,7 @@
   "records": 5,
   "rejected": 3,
   "rendered": true,
-  "simulatable": 0,
+  "simulatable": 3,
   "slug": "vortioxetine",
   "stale": 0,
   "tally": {
@@ -168436,7 +168436,7 @@
   "records": 1,
   "rejected": 1,
   "rendered": true,
-  "simulatable": 1,
+  "simulatable": 2,
   "slug": "zolmitriptan",
   "stale": 0,
   "tally": {
@@ -168510,7 +168510,7 @@
   "records": 4,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 3,
+  "simulatable": 5,
   "slug": "zolpidem",
   "stale": 0,
   "tally": {
@@ -168650,7 +168650,7 @@
   "records": 2,
   "rejected": 0,
   "rendered": true,
-  "simulatable": 2,
+  "simulatable": 3,
   "slug": "zopiclone",
   "stale": 0,
   "tally": {

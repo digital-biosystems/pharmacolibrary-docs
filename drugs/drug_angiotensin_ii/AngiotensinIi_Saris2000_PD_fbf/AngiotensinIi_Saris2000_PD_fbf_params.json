@@ -1,0 +1,57 @@
+{
+ "model_id": "AngiotensinIi_Saris2000_PD_fbf",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 3.6e-06,
+  "Emax": -0.75,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "3.6e-06": -0.375
+ },
+ "stop_time": 36.0,
+ "subtitle": "forearm blood flow (FBF) against angiotensin ii concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "nmol/L",
+   "factor": 1e-06,
+   "si_unit": "mol/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "nmol/L",
+   "factor": 1e-06,
+   "si_unit": "mol/m3"
+  },
+  "response_unit": "%"
+ },
+ "x_axis": {
+  "display_unit": "nmol/L",
+  "factor": 1e-06,
+  "label": "angiotensin ii concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "forearm blood flow (FBF)"
+ }
+}

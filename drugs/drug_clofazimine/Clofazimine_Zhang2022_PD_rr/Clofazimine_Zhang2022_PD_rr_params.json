@@ -1,0 +1,69 @@
+{
+ "model_id": "Clofazimine_Zhang2022_PD_rr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": -0.67,
+  "EC50": 0.000316,
+  "Emax": -3.46,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": -0.67,
+  "0.000316": -2.4
+ },
+ "stop_time": 3200.0,
+ "subtitle": "rate of reduction in daily oocyst shedding (RR) against clofazimine concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "log(oocysts)/mg feces/day",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "log(oocysts)/mg feces/day",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "log(oocysts)/mg feces/day"
+ },
+ "x_axis": {
+  "display_unit": "ng/ml",
+  "factor": 1e-06,
+  "label": "clofazimine concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "log(oocysts)/mg feces/day",
+  "factor": 1.0,
+  "label": "rate of reduction in daily oocyst shedding (RR)"
+ }
+}

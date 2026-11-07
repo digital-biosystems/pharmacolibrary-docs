@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;vernakalant&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vernakalant_Mao2012_estimate&quot;,&quot;label&quot;:&quot;Mao_2012_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vernakalant/Vernakalant_Mao2012_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vernakalant_Mao2012_estimate&quot;,&quot;label&quot;:&quot;Mao_2012_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vernakalant/Vernakalant_Mao2012_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mao_2011_QTcF&quot;,&quot;label&quot;:&quot;Mao_2011 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vernakalant/pd_Mao_2011_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mao_2011_SBP&quot;,&quot;label&quot;:&quot;Mao_2011 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vernakalant/pd_Mao_2011_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # vernakalant
 
@@ -40,8 +40,8 @@ Vernakalant is an antiarrhythmic drug used to treat atrial fibrillation. It is a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mao_2011_QTcF](drugs/drug_vernakalant/pd_Mao_2011_QTcF.md) | QT interval prolongation corrected for heart rate by Fridericia's formula ← vernakalant · direct sigmoid Emax (Hill) effect | model (no simulator) | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mao_2011_SBP](drugs/drug_vernakalant/pd_Mao_2011_SBP.md) | systolic blood pressure ← vernakalant · direct sigmoid Emax (Hill) effect | model (no simulator) | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mao_2011_QTcF](drugs/drug_vernakalant/pd_Mao_2011_QTcF.md) | QT interval prolongation corrected for heart rate by Fridericia's formula ← vernakalant · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mao_2011_SBP](drugs/drug_vernakalant/pd_Mao_2011_SBP.md) | systolic blood pressure ← vernakalant · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
 
 ## Pharmacogenomics (PGx)
 

@@ -113,15 +113,29 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp/Ibrutinib_Ibrahim2023_PD_dbp_modelica.zip" download>Ibrutinib_Ibrahim2023_PD_dbp_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp/Ibrutinib_Ibrahim2023_PD_dbp_matlab.zip" download>Ibrutinib_Ibrahim2023_PD_dbp_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp/Ibrutinib_Ibrahim2023_PD_dbp_sbml.zip" download>Ibrutinib_Ibrahim2023_PD_dbp_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp/Ibrutinib_Ibrahim2023_PD_dbp_cellml.zip" download>Ibrutinib_Ibrahim2023_PD_dbp_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Ibrutinib_Ibrahim2023_PD_dbp`. <https://pharmacolibrary.github.io/#/drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp>
+
+```bibtex
+@misc{pharmacolibrary_IbrutinibIbrahim2023PDdbp,
+  title  = {{Pharmacolibrary model Ibrutinib_Ibrahim2023_PD_dbp}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ibrutinib/Ibrutinib_Ibrahim2023_PD_dbp},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

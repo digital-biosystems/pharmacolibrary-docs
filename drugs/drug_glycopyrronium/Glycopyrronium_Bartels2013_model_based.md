@@ -23,7 +23,7 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
@@ -83,6 +83,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 | Fast lung absorption half-life | Q59 | llm_corrected |
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 2.88e+05 s = 2.407e-06/s (absorption half-life 80 h reported, ka not)
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('GI tract absorption half-life', value '2') — already have one for this compound
@@ -187,15 +191,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_modelica.zip" download>Glycopyrronium_Bartels2013_model_based_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_fmi.zip" download>Glycopyrronium_Bartels2013_model_based_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_matlab.zip" download>Glycopyrronium_Bartels2013_model_based_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_matlab_simbio.zip" download>Glycopyrronium_Bartels2013_model_based_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_sbml.zip" download>Glycopyrronium_Bartels2013_model_based_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_cellml.zip" download>Glycopyrronium_Bartels2013_model_based_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_modelica.zip" download>Glycopyrronium_Bartels2013_model_based_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_fmi.zip" download>Glycopyrronium_Bartels2013_model_based_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_matlab.zip" download>Glycopyrronium_Bartels2013_model_based_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_matlab_simbio.zip" download>Glycopyrronium_Bartels2013_model_based_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_sbml.zip" download>Glycopyrronium_Bartels2013_model_based_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_cellml.zip" download>Glycopyrronium_Bartels2013_model_based_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -205,18 +209,20 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3184 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
+| input | dosing | `F` | 0.9 | 1 |
+| input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.00012 | kg |
 | input | model | `Cl` | 1.247e-05 | m3/s |
 | input | model | `VdPerKg` | 0.02238 | m3/kg |
+| input | model | `ka` | 2.407e-06 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -239,11 +245,11 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 120 mg infusion over 10 min, single dose. Doses in the paper: 120, 200, 400 mg.
+**Administration: oral** — 120 mg, single dose, first-order absorption (ka 0.00866 /h, F 0.9). Doses in the paper: 120, 200, 400 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based/Glycopyrronium_Bartels2013_model_based_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Glycopyrronium_Bartels2013_model_based_params.json` · controls `Glycopyrronium_Bartels2013_model_based_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Glycopyrronium_Bartels2013_model_based_params.json` · controls `Glycopyrronium_Bartels2013_model_based_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

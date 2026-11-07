@@ -17,8 +17,10 @@
   "88.0": 0.000305
  },
  "stop_time": 880.0,
+ "subtitle": "baseline tension against vinblastine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,
@@ -43,12 +45,13 @@
  "x_axis": {
   "display_unit": "pM",
   "factor": 1.0,
+  "label": "vinblastine concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "g",
   "factor": 0.001,
-  "label": "response"
+  "label": "baseline tension"
  }
 }

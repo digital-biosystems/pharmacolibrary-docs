@@ -1,0 +1,63 @@
+{
+ "model_id": "Oxacillin_Rodriguez2010_PD_e",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 4.519e-05,
+  "Emax": -5.42,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.73
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "4.518999999999999e-05": -2.71
+ },
+ "stop_time": 460.0,
+ "subtitle": "net antibacterial effect (log10 CFU/g) after 24 h of treatment (E) against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/kg",
+   "factor": 1e-06,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "log10 CFU/g",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/kg",
+   "factor": 1e-06,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "log10 CFU/g"
+ },
+ "x_axis": {
+  "display_unit": "mg/kg",
+  "factor": 1e-06,
+  "label": "dose",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "log10 CFU/g",
+  "factor": 1.0,
+  "label": "net antibacterial effect (log10 CFU/g) after 24 h of treatment (E)"
+ }
+}

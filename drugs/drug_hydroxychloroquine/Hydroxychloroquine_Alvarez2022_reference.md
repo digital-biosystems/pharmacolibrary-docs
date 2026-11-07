@@ -217,15 +217,32 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference/Hydroxychloroquine_Alvarez2022_reference_modelica.zip" download>Hydroxychloroquine_Alvarez2022_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**Source paper** (the parameters are its): Alvarez JC, Davido B, Moine P, Etting I, Annane D, Larabi IA et al. Population Pharmacokinetics of Hydroxychloroquine and 3 Metabolites in COVID-19 Patients and Pharmacokinetic/Pharmacodynamic Application. Pharmaceuticals (Basel, Switzerland) 15(2) (2022). [doi:10.3390/ph15020256](https://doi.org/10.3390/ph15020256)
+
+**This record:** Pharmacolibrary, model `Hydroxychloroquine_Alvarez2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference>
+
+```bibtex
+@misc{pharmacolibrary_HydroxychloroquineAlvarez2022reference,
+  title  = {{Pharmacolibrary model Hydroxychloroquine_Alvarez2022_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference},
+  note   = {Parameters from doi:10.3390/ph15020256},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

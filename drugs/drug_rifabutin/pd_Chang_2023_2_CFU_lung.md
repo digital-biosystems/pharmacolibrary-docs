@@ -59,9 +59,9 @@ Chang YS et al., Using Dynamic Oral Dosing of Rifapentin…, Antimicrobial agent
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 4.46 log10 CFU/lung | — |
-| slope | -0.09 wk−1 | — |
+| slope | -0.09 wk−1 | -1.488e-07 1 / second |
 
-Closed-form check points (response, SI): `at_0` = 4.46, `per_exposure_unit` = -0.09
+Closed-form check points (response, SI): `at_0` = 4.46, `per_exposure_unit` = -1.488e-07
 
 ## Review
 
@@ -107,9 +107,9 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_modelica.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_modelica.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_matlab.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_matlab.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_sbml.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Chang2023v2_PD_cfu_lung/Rifabutin_Chang2023v2_PD_cfu_lung_cellml.zip" download>Rifabutin_Chang2023v2_PD_cfu_lung_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

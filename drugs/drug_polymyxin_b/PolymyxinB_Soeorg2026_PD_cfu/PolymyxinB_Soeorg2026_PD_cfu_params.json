@@ -17,7 +17,7 @@
   "0.00032999999999999994": -1.81
  },
  "stop_time": 3.3,
- "subtitle": "colony-forming count (cfu) against polymyxin B concentration",
+ "subtitle": "colony-forming unit (cfu) against colistin/polymyxin B concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Exposure–response simulated by the PD model",
@@ -45,13 +45,13 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
-  "label": "polymyxin B concentration",
+  "label": "colistin/polymyxin B concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "log10 cfu/mL",
   "factor": 1.0,
-  "label": "colony-forming count (cfu)"
+  "label": "colony-forming unit (cfu)"
  }
 }

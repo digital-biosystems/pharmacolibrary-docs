@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;midecamycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midecamycin_DAgate2021_model_building&quot;,&quot;label&quot;:&quot;DAgate_2021_model_building&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midecamycin_DAgate2021_secondary_external_validation&quot;,&quot;label&quot;:&quot;DAgate_2021_secondary_external_validation&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # midecamycin
 
@@ -22,12 +23,18 @@ Midecamycin is a macrolide antibiotic used against bacterial infections. It is c
 |---|---|---|---|---|---|---|
 | midecamycin | parent | 813.979 | C41H67NO15 | DrugBank | — | DAgate_2021 |
 
+## Start here
+
+> **DAgate_2021_model_building** — <span class="pk-badge pk-badge--neutral">Not simulated</span> model building *. [Run it in the simulator](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md?tab=Simulation) · [record](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [DAgate_2021_model_building](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md) | — | 1-compartment (no model) | 2 | D'Agate S et al., Simplified Dosing Regimens for Gentamic…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.624662](https://doi.org/10.3389/fphar.2021.624662) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [↳ secondary_external_validation](drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md) | — | 1-compartment (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [DAgate_2021_model_building](drugs/drug_midecamycin/Midecamycin_DAgate2021_model_building.md) | ▶ model + simulator | 1-compartment, IV | 2 | D'Agate S et al., Simplified Dosing Regimens for Gentamic…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.624662](https://doi.org/10.3389/fphar.2021.624662) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [↳ secondary_external_validation](drugs/drug_midecamycin/Midecamycin_DAgate2021_secondary_external_validation.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 
 ## ADME sites
 

@@ -1,12 +1,14 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Disputed by a second reader"}]'></div>
 
 
-## Disputed by a second reader (3746) · rows 3601–3746 of 3746
+## Disputed by a second reader (3748) · rows 3601–3748 of 3748
 
 An independent second reading of the paper disagrees on a structural parameter.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
+| [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · nguyen_et_al_11](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_nguyen_et_al_11.md) | rejected | disputed |
+| [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · vezina_et_al_25](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_vezina_et_al_25.md) | rejected | disputed |
 | [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · zhao_et_al_23](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_zhao_et_al_23.md) | rejected | disputed |
 | [valganciclovir](/drugs/drug_valganciclovir/) | [Yang_2023 · zhou_et_al_19](/drugs/drug_valganciclovir/Valganciclovir_Yang2023_zhou_et_al_19.md) | rejected | disputed |
 | [valoctocogene roxaparvovec](/drugs/drug_valoctocogene_roxaparvovec/) | [Cao_2025 · reference](/drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | rejected | disputed |

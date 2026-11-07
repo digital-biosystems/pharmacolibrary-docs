@@ -2,7 +2,7 @@
  {
   "key": "E0",
   "label": "Baseline E0",
-  "unit": "pV/s",
+  "unit": "µV/s",
   "scale": 1.0,
   "min": 0.2,
   "max": 3,
@@ -12,7 +12,7 @@
  {
   "key": "Emax",
   "label": "Effect term Emax",
-  "unit": "pV/s",
+  "unit": "µV/s",
   "scale": 1.0,
   "min": 0.2,
   "max": 3,

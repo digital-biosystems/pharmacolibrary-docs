@@ -1,0 +1,63 @@
+{
+ "model_id": "Amikacin_Srivastava2016_PD_cfu_ml",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.99,
+  "Emax": 5.39,
+  "exposure_per_s": 1.0,
+  "gamma": 2.96
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.99": 2.695
+ },
+ "stop_time": 9.9,
+ "subtitle": "M. tuberculosis bacterial CFU per ml (CFU/ml) against amikacin concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "times the MIC",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "log 10 CFU/ml",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "times the MIC",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "log 10 CFU/ml"
+ },
+ "x_axis": {
+  "display_unit": "times the MIC",
+  "factor": 1.0,
+  "label": "amikacin concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "log 10 CFU/ml",
+  "factor": 1.0,
+  "label": "M. tuberculosis bacterial CFU per ml (CFU/ml)"
+ }
+}

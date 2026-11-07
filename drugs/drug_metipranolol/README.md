@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07B&quot;,&quot;href&quot;:&quot;atc/C07B.md&quot;},{&quot;label&quot;:&quot;metipranolol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia&quot;,&quot;label&quot;:&quot;Lapka_1990 \u00b7 inhibition of exercise-induced tachycardia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # metipranolol
 
@@ -33,7 +34,7 @@ Metipranolol is a non-selective beta blocker that was used to treat open-angle g
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lapka_1990_inhibition_of_exercise_induced_tachycardia](drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia.md) | inhibition of exercise-induced tachycardia ← deacetylmetipranolol · direct Emax (saturable) effect | model (no simulator) | Lapka R et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1990) | [10.1007/BF00315024](https://doi.org/10.1007/BF00315024) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lapka_1990_inhibition_of_exercise_induced_tachycardia](drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia.md) | inhibition of exercise-induced tachycardia ← deacetylmetipranolol · direct Emax (saturable) effect | ▶ model + simulator | Lapka R et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1990) | [10.1007/BF00315024](https://doi.org/10.1007/BF00315024) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Janků_1992_HR](drugs/drug_metipranolol/pd_Jank_1992_HR.md) | heart rate ← deacetylmetipranolol · direct Emax (saturable) effect | — | Janků I et al., Disposition kinetics and concentration-…, European journal of clinica… (1992) | [10.1007/BF00266359](https://doi.org/10.1007/BF00266359) |
 
 ## ADME sites

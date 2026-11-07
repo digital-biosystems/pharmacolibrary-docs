@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H05B&quot;,&quot;href&quot;:&quot;atc/H05B.md&quot;},{&quot;label&quot;:&quot;etelcalcetide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etelcalcetide_Chen2018_reference&quot;,&quot;label&quot;:&quot;Chen_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # etelcalcetide
 
@@ -22,11 +23,17 @@ Etelcalcetide is a calcimimetic medicine used to treat secondary hyperparathyroi
 |---|---|---|---|---|---|---|
 | etelcalcetide | parent | 1048.26 | C38H73N21O10S2 | DrugBank | [71511839](https://pubchem.ncbi.nlm.nih.gov/compound/71511839) | Chen_2018 |
 
+## Start here
+
+> **Chen_2018_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis. [Run it in the simulator](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md?tab=Simulation) · [record](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | — | 1-compartment (no model) | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
 
 ## Pharmacodynamics (PD)
 
