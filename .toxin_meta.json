@@ -155,6 +155,11 @@
    "chem_class": "Minerals and fibres",
    "label": "Airborne pollutants"
   },
+  "adenine": {
+   "category": "ANIM",
+   "chem_class": "Imidazopyrimidines",
+   "label": "Animal toxins"
+  },
   "allantoin": {
    "category": "ANIM",
    "chem_class": "Unclassified",
@@ -581,6 +586,11 @@
    "label": "Airborne pollutants"
   },
   "calcicludine": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "calciseptine": {
    "category": "ANIM",
    "chem_class": "Proteins and peptides",
    "label": "Animal toxins"
