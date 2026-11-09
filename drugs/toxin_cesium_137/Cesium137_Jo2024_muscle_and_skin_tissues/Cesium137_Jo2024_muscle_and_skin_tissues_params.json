@@ -1,0 +1,36 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cesium137_Jo2024_muscle_and_skin_tissues",
+ "molar_masses": {
+  "retainedFraction": 0.13291
+ },
+ "note": "Values for the shared TK_Retention_2.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "parameters": {
+  "A[1]": 0.3846153846153846,
+  "A[2]": 0.6153846153846153,
+  "MM": 0.13291,
+  "Tb[1]": 25702.968412179947,
+  "Tb[2]": 565056.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662142
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.996679480926715
+ },
+ "stop_time": 3024000.0,
+ "template": "TK_Retention_2",
+ "template_fmu": "TK_Retention_2.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

@@ -1,0 +1,2089 @@
+{
+ "toxins": {
+  "112_trichloroethane": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "11_dichloroethane": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "11_dichloroethene": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "1267_tetrachlorodibenzo_p_dioxin": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "12_diphenylhydrazine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "17_hydroxyprogesterone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "18_hydroxycorticosterone": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "1_naphthol": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "224_trimethylpentane": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbons",
+   "label": "Airborne pollutants"
+  },
+  "2378_tetrachlorodibenzo_p_dioxin": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "246_tribromophenol": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "24_dinitrotoluene": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "24_toluenediamine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "2_hydroxyflutamide": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "33_dichlorobenzidine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "33_dimethoxybenzidine_44_diisocyanate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "34_dichlorophenyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "3_hydroxy_carbofuran": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "3_methoxytyrosine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "3_methyl_2_oxovaleric_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "3_oxo_carbofuran": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "44_methylenedianiline": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "4_hydroxybutyric_acid": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "4_hydroxyproline": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "5_aminolevulinic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "5_hydroxy_l_tryptophan": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "9_hydroxyphenanthrene": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "a_chloroacetophenone": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "acetonitrile": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "actinium_227": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "actinolite_asbestos": {
+   "category": "AIR",
+   "chem_class": "Minerals and fibres",
+   "label": "Airborne pollutants"
+  },
+  "allantoin": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "alpha_bungarotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "alpha_conotoxin_conus_geographus": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "alpha_linolenic_acid": {
+   "category": "ANIM",
+   "chem_class": "Fatty Acyls",
+   "label": "Animal toxins"
+  },
+  "alteplase": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "aluminium_antimonide": {
+   "category": "AIR",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "aluminium_arsenide": {
+   "category": "AIR",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "aluminium_selenide": {
+   "category": "AIR",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "americium": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "americium_241": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "aminoadipic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "ammonium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ammonium_dichromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ammonium_diuranate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ammonium_tetrathiocyanato_diamminechromateiii": {
+   "category": "AIR",
+   "chem_class": "Organosulfur compounds",
+   "label": "Airborne pollutants"
+  },
+  "amosite_asbestos": {
+   "category": "AIR",
+   "chem_class": "Minerals and fibres",
+   "label": "Airborne pollutants"
+  },
+  "androstenedione": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "antimony_tribromide": {
+   "category": "AIR",
+   "chem_class": "Antimony and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "antimony_triselenide": {
+   "category": "AIR",
+   "chem_class": "Antimony and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic": {
+   "category": "CIG",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "arsenic_disulfide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_pentachloride": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_pentafluoride": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_pentasulfide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_tribromide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_trifluoride": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_triiodide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_triselenide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_trisulfide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsine": {
+   "category": "AIR",
+   "chem_class": "Miscellaneous inorganic compounds",
+   "label": "Airborne pollutants"
+  },
+  "barium_cadmium_stearate": {
+   "category": "AIR",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Airborne pollutants"
+  },
+  "barium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "barium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Barium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "basic_beryllium_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "basic_beryllium_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "basic_lead_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "benzenechromium_tricarbonyl": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "benzeneselenol": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "benzidine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_bromide": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_chloride": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_copper": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_fluoride": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_hydride": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_iodide": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_nitrate": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_oxide": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_phosphate": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_silicate": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_sulfate": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_telluride": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "bis3_fluorosalicylaldehyde_ethylenediimine_cobalt": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "bisbenzenechromium": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "biscyclooctadienenickel0": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbons",
+   "label": "Airborne pollutants"
+  },
+  "boron_arsenide": {
+   "category": "AIR",
+   "chem_class": "Boron and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "brevetoxin_b": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "bromide_ion": {
+   "category": "ANIM",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Animal toxins"
+  },
+  "bromoform": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "butyric_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "cadmium": {
+   "category": "CIG",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "cadmium_3_ethylhexanoate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_arsenide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_bromate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_bromide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_chloride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_cyclohexane_butyrate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_fluoborate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_fluoride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_fluosilicate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_iodide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_lactate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_mercury_sulfide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_nitrate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_oxide_fume": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_phosphate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_sulfate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_telluride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_tungstate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmiumi_tetrachloroaluminate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "calcicludine": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "calcium_arsenite": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "calcium_chromate_dihydrate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "calcium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "carbon_diselenide": {
+   "category": "AIR",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "carbonyl_cyanide_m_chlorophenyl_hydrazone": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "carbonyl_cyanide_p_trifluoromethoxyphenylhydrazone": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "cesium_137": {
+   "category": "AIR",
+   "chem_class": "Cesium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cesium_chromate": {
+   "category": "AIR",
+   "chem_class": "Cesium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chlorosulfonyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromated_copper_arsenate": {
+   "category": "AIR",
+   "chem_class": "Copper and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromic_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromium": {
+   "category": "CIG",
+   "chem_class": "Chromium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "chromium_carbide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "chromium_carbonyl": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromium_nitride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_chloride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_oxalate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_oxide": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_acetylacetonate": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_fluoride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_nitrate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_potassium_sulfate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_sulfate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_sulfide": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumvi_oxide": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromocene": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbons",
+   "label": "Airborne pollutants"
+  },
+  "chromyl_chloride": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "cis_dichlorobisethylenediaminecobaltiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "cobalt_sulfide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_bromide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_carbonate_hydroxide_11": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_carbonate_hydroxide_23": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_citrate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_fluoride": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_formate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_iii_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_iodide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_mesoporphyrin": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_molybdenumvi_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_nitrate": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_succinate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_sulfamate": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltiii_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cobaltiii_fluoride": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltiii_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltiii_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltocene": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "copper_chromite": {
+   "category": "AIR",
+   "chem_class": "Copper and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cyclopentadienylcobalt_dicarbonyl": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbons",
+   "label": "Airborne pollutants"
+  },
+  "d_2_hydroxyglutaric_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "d_fructose": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "d_glucose": {
+   "category": "ANIM",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Animal toxins"
+  },
+  "dichlorobisethylenediaminenickelii": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "dicobalt_edetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "dicobalt_octacarbonyl": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "diethyl_mercury": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "diethyldimethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "dimethyl_mercury": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "diphenyl_diselenide": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "ethoxyethyl_hydroxy_mercury": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "ethyl_thiocyanate": {
+   "category": "AIR",
+   "chem_class": "Organosulfur compounds",
+   "label": "Airborne pollutants"
+  },
+  "ethylmercuric_phosphate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "ethylmercury_chloride": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "ethyltrimethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "ferric_arsenate": {
+   "category": "AIR",
+   "chem_class": "Iron and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ferrous_arsenate": {
+   "category": "AIR",
+   "chem_class": "Iron and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "fluorescein_isothiocyanate": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "gallium_arsenide": {
+   "category": "AIR",
+   "chem_class": "Gallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "galliumii_selenide": {
+   "category": "AIR",
+   "chem_class": "Gallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "galliumiii_selenide": {
+   "category": "AIR",
+   "chem_class": "Gallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "germanium_selenide": {
+   "category": "AIR",
+   "chem_class": "Germanium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexachlorobutadiene": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexamethylene_diisocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexamminecobaltiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexavalent_chromium": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "hydrogen_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Unclassified",
+   "label": "Airborne pollutants"
+  },
+  "indium_arsenide": {
+   "category": "AIR",
+   "chem_class": "Indium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "indiumiii_selenide": {
+   "category": "AIR",
+   "chem_class": "Indium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "iodine_129": {
+   "category": "AIR",
+   "chem_class": "Iodine and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "iodine_131": {
+   "category": "AIR",
+   "chem_class": "Iodine and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ironiii_chromate": {
+   "category": "AIR",
+   "chem_class": "Iron and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead": {
+   "category": "CIG",
+   "chem_class": "Lead and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "lead_210": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_azide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_bromide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "lead_chlorate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_chloride": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_chromate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_chromate_oxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_fluoride": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_fluoroborate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_iodide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_molybdenum_chromate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_oxalate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "lead_oxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_perchlorate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_phosphate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_selenide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_stearate": {
+   "category": "AIR",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Airborne pollutants"
+  },
+  "lead_styphnate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "lead_subacetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "lead_telluride": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_tetroxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_thiocyanate": {
+   "category": "AIR",
+   "chem_class": "Organosulfur compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_thiosulfate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_tungstate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lithium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lithium_cobalt_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "magnesium_arsenate": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mangafodipir": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "meralluride": {
+   "category": "AIR",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Airborne pollutants"
+  },
+  "merbromin": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercaptomerin": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_amidochloride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_benzoate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_chloride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_oleate": {
+   "category": "AIR",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_potassium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "mercuric_potassium_iodide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercurol": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_cadmium_telluride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_oxide_sulfate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_selenide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_telluride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_bromide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_chloride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_fluoride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_iodide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_nitrate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_oxide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_sulfate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_bromide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_fluoride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_fulminate": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_iodide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_nitrate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_oxide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_sulfate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_sulfide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_thiocyanate": {
+   "category": "AIR",
+   "chem_class": "Organosulfur compounds",
+   "label": "Airborne pollutants"
+  },
+  "mersalyl_acid": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "methacryloyloxyethyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "methoxyethelmercuric_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "methyl_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "methylene_bis4_cyclohexylisocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "methylmercuric_dicyanamide": {
+   "category": "AIR",
+   "chem_class": "Organic 1,3-dipolar compounds",
+   "label": "Airborne pollutants"
+  },
+  "methylmercury": {
+   "category": "AIR",
+   "chem_class": "Unclassified",
+   "label": "Airborne pollutants"
+  },
+  "methyltriethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "n_butyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "neptunium_237": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel": {
+   "category": "FOOD",
+   "chem_class": "Nickel and its compounds",
+   "label": "Food toxins"
+  },
+  "nickel_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "nickel_aluminide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_ammonium_sulfate_hexahydrate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_arsenate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_bisdibutyldithiocarbamate": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "nickel_bromide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "nickel_chloride": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_chromate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "nickel_fluoride": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_formate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "nickel_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_iodide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_nitrate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_oxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_phosphate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_potassium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_subsulfide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_sulfamate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_sulfate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_sulfide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_tetracarbonyl": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_trioxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickelocene": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "ozone": {
+   "category": "AIR",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "palladiumii_cyanide": {
+   "category": "AIR",
+   "chem_class": "Palladium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "phenyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "phenyl_isothiocyanate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "phenylene_14_diisothiocyanate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "phenylmercuric_chloride": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "phenylmercuric_nitrate": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "plumbane": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_238": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_239": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_240": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_arsenite": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_cobaltinitrite": {
+   "category": "AIR",
+   "chem_class": "Potassium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "potassium_ferricyanide": {
+   "category": "AIR",
+   "chem_class": "Potassium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_tetraperoxochromatev": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_zinc_chromate_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "pyridinium_chlorochromate": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "pyridinium_dichromate": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "radium_226": {
+   "category": "AIR",
+   "chem_class": "Radium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radium_228": {
+   "category": "AIR",
+   "chem_class": "Radium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radium_bromide": {
+   "category": "AIR",
+   "chem_class": "Radium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radon_220": {
+   "category": "AIR",
+   "chem_class": "Radon and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radon_222": {
+   "category": "AIR",
+   "chem_class": "Radon and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "salcomine": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenic_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_dimethyldithiocarbamate": {
+   "category": "AIR",
+   "chem_class": "Organosulfur compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_dioxide": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_hexafluoride": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_hexasulfide": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_oxybromide": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_oxydichloride": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_tetrachloride": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_tetrafluoride": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_trioxide": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenous_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "silver_chromate": {
+   "category": "AIR",
+   "chem_class": "Silver and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "silver_cyanide": {
+   "category": "AIR",
+   "chem_class": "Silver and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "silver_selenite": {
+   "category": "AIR",
+   "chem_class": "Silver and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "silveri_selenide": {
+   "category": "AIR",
+   "chem_class": "Silver and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_arsenate": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_arsenite": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_cobaltinitrite": {
+   "category": "AIR",
+   "chem_class": "Sodium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "sodium_dichromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_selenite": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_uranate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_90": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_aluminate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_arsenite_tetrahydrate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_bromate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_bromide": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_chromate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_nitrate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "tert_butyl_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "tetracobalt_dodecacarbonyl": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "tetraethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "tetramethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "thallium": {
+   "category": "AIR",
+   "chem_class": "Thallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "thallium_selenide": {
+   "category": "AIR",
+   "chem_class": "Thallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "thalliumi_bromide": {
+   "category": "AIR",
+   "chem_class": "Thallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "thiomersal": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "thorium_227": {
+   "category": "AIR",
+   "chem_class": "Thorium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "thorium_228": {
+   "category": "AIR",
+   "chem_class": "Thorium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "thorium_230": {
+   "category": "AIR",
+   "chem_class": "Thorium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "tin_selenide": {
+   "category": "AIR",
+   "chem_class": "Tin and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "toluenesulfonylmethyl_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "trans_dichlorobisethylenediaminecobaltiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "tremolite_asbestos": {
+   "category": "AIR",
+   "chem_class": "Minerals and fibres",
+   "label": "Airborne pollutants"
+  },
+  "trifluoromethyl_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "trimethylsilyl_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "trisethylenediaminecobaltiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "tritium": {
+   "category": "AIR",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "triuranium_octaoxide": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_233": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_234": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_235": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_238": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_boride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_carbide": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Airborne pollutants"
+  },
+  "uranium_chloride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_dioxide": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_hexafluoride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_nitride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_pentachloride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_pentafluoride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_peroxide": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_tetrachloride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_trioxide": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranocene": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_chloride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_fluoride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_formate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_nitrate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_sulfate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_zinc_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "vinyl_bromide": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "white_phosphorus": {
+   "category": "AIR",
+   "chem_class": "Phosphorus and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "yttriumiii_arsenide": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_antimonide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_arsenide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_arsenite": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_beryllium_silicate": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_cadmium_sulfide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_chromate": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_chromate_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "zinc_dichromate": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_selenide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  }
+ }
+}

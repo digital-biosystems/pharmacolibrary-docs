@@ -1,15 +1,14 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Nickel&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/&quot;},{&quot;label&quot;:&quot;Zhao_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nickel_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_van2026_reference&quot;,&quot;label&quot;:&quot;van_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_van2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Zhao2017_reference&quot;,&quot;label&quot;:&quot;Zhao_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Zhao2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Nickel&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/&quot;},{&quot;label&quot;:&quot;Zhao_2017 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Nickel — `Nickel_Zhao2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span>
 
-> Bioavailability was left at a library placeholder because no value was provided for nickel.
+> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
 
-<div class="pk-model-meta" hidden drug="Nickel" model-id="Nickel_Zhao2017_reference" status="needs_review" stale="false" population="rat and occupational population" measured-compound="nickel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Nickel" model-id="Nickel_Zhao2017_reference" status="rejected" stale="false" population="rat and occupational population" measured-compound="nickel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhao H, Ge P, Chang X, Ren X, Chen L, Gao J et al. [Physiologically based toxicokinetic model for nickel]. Wei sheng yan jiu = Journal of hygiene research 46(5):797–801 (2017).
@@ -22,26 +21,19 @@ Zhao H, Ge P, Chang X, Ren X, Chen L, Gao J et al. [Physiologically based toxico
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 0 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL (L/h) | CL | 0.135 | L/h |
-| V (L) | V | 7.86 | L |
-| Ka (1/h) | kabs | 0.14 | 1/h |
-| absorption lag time (ALAG1) | tlag | 1.23 | h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,41 +41,13 @@ Zhao H, Ge P, Chang X, Ren X, Chen L, Gao J et al. [Physiologically based toxico
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-### Reviewer guidance
-
-**Bioavailability was left at a library placeholder because no value was provided for nickel.**
-
-The record contains values for clearance, volume of distribution, absorption rate, and lag time, but bioavailability is absent. Consequently, a default placeholder was substituted for the missing bioavailability value. This deviation triggered the refusal of the record. Extracted — nickel: CL 0.135 L/h, V 7.86 L, kabs 0.14 1/h, tlag 1.23 h.
-
-<sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 0.135 | L/h | 3.75e-08 | m3/s | L/h | review_gapfill (0.7) | Kwack_2026:review |
-| V (L) | `Q61` · V | 7.86 | L | 0.00786 | m3 | L | review_gapfill (0.7) | Kwack_2026:review |
-| Ka (1/h) | `Q49` · kabs | 0.14 | 1/h | 3.889e-05 | 1/s | 1/h | review_gapfill (0.7) | Jia_2026:review |
-| absorption lag time (ALAG1) | `Q83` · tlag | 1.23 | h | 4428 | s | h | review_gapfill (0.7) | Jia_2026:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F']
-
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nickel
-- gap-filled Q22 (CL) from Kwack_2026's review values (primary lacked it)
-- gap-filled Q61 (V) from Kwack_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Jia_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Jia_2026's review values (primary lacked it)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available, and no PDF or abstract text to fall back on
@@ -92,29 +56,11 @@ The record contains values for clearance, volume of distribution, absorption rat
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kwack_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jia_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kwack_2026:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Jia_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.135 | ['Kwack_2026:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.135 L/h | ['Kwack_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.86 L | ['Kwack_2026:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=nickel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -126,67 +72,13 @@ The record contains values for clearance, volume of distribution, absorption rat
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_modelica.zip" download>Nickel_Zhao2017_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_fmi.zip" download>Nickel_Zhao2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_matlab.zip" download>Nickel_Zhao2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_matlab_simbio.zip" download>Nickel_Zhao2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sbml.zip" download>Nickel_Zhao2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_cellml.zip" download>Nickel_Zhao2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 4428 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 3.75e-08 | m3/s |
-| input | model | `VdPerKg` | 0.0001123 | m3/kg |
-| input | model | `ka` | 3.889e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Zhao H, Ge P, Chang X, Ren X, Chen L, Gao J et al. [Physiologically based toxicokinetic model for nickel]. Wei sheng yan jiu = Journal of hygiene research 46(5):797–801 (2017).
-
-**This record:** Pharmacolibrary, model `Nickel_Zhao2017_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_nickel/Nickel_Zhao2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_NickelZhao2017reference,
-  title  = {{Pharmacolibrary model Nickel_Zhao2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_nickel/Nickel_Zhao2017_reference},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Nickel_Zhao2017_reference_params.json` · controls `Nickel_Zhao2017_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

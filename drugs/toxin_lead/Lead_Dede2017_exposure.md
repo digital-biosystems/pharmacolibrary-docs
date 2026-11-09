@@ -1,14 +1,14 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Lead&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/&quot;},{&quot;label&quot;:&quot;Dede_2017 \u00b7 exposure&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Lead&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/&quot;},{&quot;label&quot;:&quot;Dede_2017 \u00b7 exposure&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lead — `Lead_Dede2017_exposure`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was held back because the nonlinear metabolic links for arsenic and chromium could not be implemented in the available model structure.
+> This record was reviewed on 2026-11-07 17:01 UTC (Needs review), but the paper was screened again on 2026-09-08 17:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was held back because the nonlinear metabolic links for arsenic and chromium could not be implemented in the available model structure.
 
-<div class="pk-model-meta" hidden drug="Lead" model-id="Lead_Dede2017_exposure" status="needs_review" stale="false" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="Lead" model-id="Lead_Dede2017_exposure" status="needs_review" stale="true" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharmacokinetic and toxicokinetic models for estimating human exposure to five toxic elements through oral ingestion (2017).
@@ -20,10 +20,10 @@ Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharm
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -35,7 +35,7 @@ Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -106,11 +106,13 @@ The model specifies reduction and methylation pathways for arsenic and chromium 
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | pass | 2 |
-| C0b_disposition_core | pass |  |
-| C8_topology | fail |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Dede_2017_table_S1:row46:col6', 'Dede_2017_table_S2:row0:col4'] |
+| C8_topology | fail |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -138,7 +140,7 @@ The model specifies reduction and methylation pathways for arsenic and chromium 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

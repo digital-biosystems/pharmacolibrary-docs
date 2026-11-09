@@ -1,32 +1,35 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Nickel&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nickel_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_van2026_reference&quot;,&quot;label&quot;:&quot;van_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_van2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Zhao2017_reference&quot;,&quot;label&quot;:&quot;Zhao_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Zhao2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Nickel&quot;}]"></div>
 
 # Nickel
 
 - **generic name:** Nickel
-- **DrugBank:** none · **PubChem:** [CID 934](https://pubchem.ncbi.nlm.nih.gov/compound/934)
-- **groups:** not captured
+- **T3DB:** [T3D0053](http://www.t3db.ca/toxins/T3D0053) · **PubChem:** [CID 934](https://pubchem.ncbi.nlm.nih.gov/compound/934)
 
-## Start here
+## About
 
-> **Jia_2026_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> review reference. [Run it in the simulator](drugs/toxin_nickel/Nickel_Jia2026_reference.md?tab=Simulation) · [record](drugs/toxin_nickel/Nickel_Jia2026_reference.md)
+Cation.
 
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+<p><small>Source: <a href="https://www.wikidata.org/wiki/Q26841248">Wikidata Q26841248</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></small></p>
 
-## Parameters across studies
+- **Category:** Household Toxin, Industrial/Workplace Toxin, Pollutant, Airborne Pollutant, Food Toxin, Natural Toxin
+- **Route of exposure:** oral, inhalation, dermal
+- **Sources and uses:** Pure nickel is mainly used to make alloys, which are found in items such as coins, jewelry, valves and heat exchangers. Nickel compounds are used for nickel plating, to color ceramics, to make some batteries, and as catalysts.
+- **Mechanism of toxicity:** Nickel is known to substitute for other essential elements in certain enzmes, such as calcineurin. It is genotoxic, and some nickel compounds have been shown to promote cell proliferation. …
+- **Health effects:** The most common harmful health effect of nickel in humans is an allergic reaction. This usually manifests as a skin rash, although some people experience asthma attacks. …
+- **Carcinogenicity:** Metallic nickel is possibly carcinogenic to humons (Group 2B). …
+- **Minimal risk levels (ATSDR):** Intermediate Inhalation: 0.0002 mg/m3
+Chronic Inhalation: 0.00009 mg/m3
+- **Acute toxicity:** LD50: 250 mg/kg (Intraperitoneal, Rat)
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.001</text><line x1="277.5" y1="18" x2="277.5" y2="90" stroke="#ddd"/><text x="277.5" y="104" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="452.5" y1="18" x2="452.5" y2="90" stroke="#ddd"/><text x="452.5" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2026 · CL</text><circle cx="257.6" cy="30.0" r="4" fill="#2e7d32"><title>van_2026 · CL: 0.005917 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kwack_2026 · CL</text><circle cx="376.4" cy="46.0" r="4" fill="#ef6c00"><title>Kwack_2026 · CL: 0.135 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Zhao_2017 · CL</text><circle cx="376.4" cy="62.0" r="4" fill="#ef6c00"><title>Zhao_2017 · CL: 0.135 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jia_2026 · CL/F</text><circle cx="529.0" cy="78.0" r="4" fill="#2e7d32"><title>Jia_2026 · CL/F: 7.48 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kwack_2026 · V</text><circle cx="503.4" cy="30.0" r="4" fill="#ef6c00"><title>Kwack_2026 · V: 7.86 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Zhao_2017 · V</text><circle cx="503.4" cy="46.0" r="4" fill="#ef6c00"><title>Zhao_2017 · V: 7.86 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jia_2026 · V/F</text><circle cx="426.8" cy="62.0" r="4" fill="#2e7d32"><title>Jia_2026 · V/F: 4.75 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">van_2026 · V1</text><circle cx="398.4" cy="78.0" r="4" fill="#2e7d32"><title>van_2026 · V1: 3.94 L</title></circle></svg></div>
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D0053">T3DB T3D0053</a> (free for non-commercial use with attribution), quoted in part; reference markers removed.</small></p>
 
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+<p><small>Also: CAS 7440-02-0 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49786">ChEBI 49786</a></small></p>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jia_2026_reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2026_reference](drugs/toxin_nickel/Nickel_van2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | van der Zeeuw SL et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Kwack_2026_reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span><br><sub>blocking: T6_deviations</sub> | [Zhao_2017_reference](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zhao_2017_reference](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | — | 1-compartment (no model) | 0 | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +43,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-08 16:09 | 58:15 | 4/0/0 | 0/0/0 | 0/0/0 | 723,707/70,738 | ollama / qwen3.8:27b-mtp-q8_0 | 50 | 10/38 | 48/0 | 0 |
+| 2026-09-08 16:09 | 58:15 | 0/1/0 | 0/0/0 | 0/0/0 | 723,707/70,738 | ollama / qwen3.8:27b-mtp-q8_0 | 50 | 10/38 | 48/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12355 matched, 140 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 2  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

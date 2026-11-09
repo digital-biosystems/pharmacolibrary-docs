@@ -1,20 +1,27 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Chromium&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Chromium&quot;}]"></div>
 
 # Chromium
 
 - **generic name:** Chromium
-- **DrugBank:** none · **PubChem:** [CID 23976](https://pubchem.ncbi.nlm.nih.gov/compound/23976)
+- **T3DB:** [T3D0077](http://www.t3db.ca/toxins/T3D0077) · **PubChem:** [CID 23976](https://pubchem.ncbi.nlm.nih.gov/compound/23976)
 - **groups:** approved
 
 ## About
 
-**Description.** Chromium is a transition element with the chemical symbol Cr and atomic number 24 that belongs to Group 6 of the periodic table. It is used in various chemical, industrial and manufacturing applications such as wood preservation and metallurgy. The uses of chromium compounds depend on the valency of chromium, where trivalent Cr (III) compounds are used for dietary Cr supplementation and hexavalent Cr (VI) compounds are used as corrosion inhibitors in commercial settings and are known to be human carcinogens [L1982]. Humans can be exposed to chromium via ingestion, inhalation, and dermal or ocular exposure [L1983]. Trivalent chromium (Cr(III)) ion is considered to be an essential dietary trace element as it is involved in metabolism of blood glucose, regulation of insulin resistance and metabolism of lipids. Clinical trials and other studies suggest the evidence of chromium intake improving glucose tolerance in patients with Type I and II diabetes, however its clinical application in the standard management of type II diabetes mellitus is not established. Chromium deficiency has been associated with a diabetic-like state, impaired growth, decreased fertility and increased risk of cardiovascular diseases [A32343, A32351, L1982].
+Chromium is a naturally occurring heavy metal found in the environment commonly in trivalent, Cr(III), and hexavalent, Cr(VI), forms. The reduction of Cr(VI) to Cr(III) results in the formation of reactive intermediates that contribute to the cytotoxicity, genotoxicity and carcinogenicity of Cr(VI)-containing compounds. The major non-occupational source of chromium for humans is food such as vegetables, meat, urban air, hip or knee prostheses and cigarettes. …
 
-According to the National Institute of Health, the daily dietary reference intake (DRI) of chromium for adult male and non-pregnant female are 35 μg and 25 μg, respectively [L1986]. Chromium picolinate capsules may be used as nutritional adjuvant in patients with or at risk of type 2 diabetes mellitus (T2DM) to improve blood sugar metabolism and stabilize the levels of serum cholesterol. Chromium chloride is available as an intravenous injection for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN) [FDA Label].
+- **Category:** Cigarette Toxin, Household Toxin, Industrial/Workplace Toxin, Pollutant, Airborne Pollutant, Food Toxin, Natural Toxin
+- **Route of exposure:** oral, inhalation, dermal
+- **Sources and uses:** Elemental chromium is used mainly for making steel. Hexavalent chromium is used for chrome plating, dyes and pigments, leather tanning, and wood preserving.
+- **Mechanism of toxicity:** Hexavalent chromium's carcinogenic effects are caused by its metabolites, pentavalent and trivalent chromium. The DNA damage may be caused by hydroxyl radicals produced during reoxidation of pentavalent chromium by hydrogen peroxide molecules present in the cell. …
+- **Health effects:** Hexavalent chromium is a known carcinogen. Chronic inhalation especially has been linked to lung cancer. …
+- **Carcinogenicity:** IARC group 3, not classifiable as to its carcinogenicity to humans.
+- **Minimal risk levels (ATSDR):** Intermediate Oral: 0.005 mg/kg/day (Hexavalent chromium) 
+Chronic Oral: 0.001 mg/kg/day (Hexavalent chromium)
 
-**Indication.** Indicated for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN), to maintain chromium serum levels and to prevent depletion of endogenous stores and subsequent deficiency symptoms [FDA Label].
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D0077">T3DB T3D0077</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
 
-<p><small>Source: <a href="https://go.drugbank.com/drugs/DB11136">DrugBank DB11136</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+<p><small>Also: <a href="https://www.wikidata.org/wiki/Q26840903">Wikidata Q26840903</a> · CAS 7440-47-3 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28073">ChEBI 28073</a></small></p>
 
 ## popPK records
 

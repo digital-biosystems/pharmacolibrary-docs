@@ -1,6 +1,6 @@
 // ── the home route's cover presentation ────────────────────────────────────
 // '/' shows README.md — the whole front page — but WITHOUT the sidebar, and instead with
-// the section line (Drugs · Ask · Simulate · Downloads · About) on the title's row, at its
+// the section line (Drugs · Toxins · Ask · Simulate · Downloads · About) on the title's row, at its
 // right end: the page's first heading and the line share one flex row (.pk-cover-head), which wraps
 // the line under the title on a phone. It scrolls with the page, not fixed over it. Any
 // other route brings the sidebar back: that is the navigation on subpages. The body class
@@ -9,6 +9,7 @@ window.$docsify = window.$docsify || {};
 (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook, vm) {
   var LINKS = [
     ['Drugs', 'atc/README'],
+    ['Toxins', 'toxins/README'],
     ['Ask', 'query'],
     ['Simulate', 'drugs/drug_clopidogrel/Clopidogrel_Jung2024?tab=Models'],
     ['Downloads', 'data'],

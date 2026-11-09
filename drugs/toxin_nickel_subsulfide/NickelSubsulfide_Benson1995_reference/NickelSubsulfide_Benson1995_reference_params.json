@@ -1,0 +1,35 @@
+{
+ "dose_source": "library default",
+ "model_id": "NickelSubsulfide_Benson1995_reference",
+ "molar_masses": {
+  "retainedFraction": 0.058692999999999995
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.058692999999999995,
+  "Tb[1]": 496800.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662121
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9995815744808765
+ },
+ "review_status": "needs_review",
+ "stop_time": 3024000.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

@@ -1,10 +1,32 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;}]"></div>
 
 # Arsenic
 
 - **generic name:** Arsenic
-- **DrugBank:** none · **PubChem:** [CID 104734](https://pubchem.ncbi.nlm.nih.gov/compound/104734)
-- **groups:** not captured
+- **T3DB:** [T3D0001](http://www.t3db.ca/toxins/T3D0001) · **PubChem:** [CID 104734](https://pubchem.ncbi.nlm.nih.gov/compound/104734)
+
+## About
+
+Chemical compound.
+
+<p><small>Source: <a href="https://www.wikidata.org/wiki/Q27116590">Wikidata Q27116590</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></small></p>
+
+- **Category:** Cigarette Toxin, Pesticide, Household Toxin, Pollutant, Airborne Pollutant, Food Toxin, Natural Toxin
+- **Route of exposure:** oral, inhalation, dermal
+- **Sources and uses:** Arsenic is used in pesticides, wood preservatives, paints/pigments, and various metal alloys (electronics). Small amounts of arensic can be found in contaminated air, water, and some meat products, especially seafood.
+- **Mechanism of toxicity:** Arsenic and its metabolites disrupt ATP production through several mechanisms. At the level of the citric acid cycle, arsenic inhibits pyruvate dehydrogenase and by competing with phosphate it uncouples oxidative phosphorylation, thus inhibiting energy-linked reduction of NAD+, mitochondrial respiration, and ATP synthesis. …
+- **Health effects:** Arsenic poisoning can lead to death from multi-system organ failure, probably from necrotic cell death, not apoptosis. Arsenic is also a known carcinogen, especially in skin, liver, bladder and lung cancers. …
+- **Carcinogenicity:** IARC group 1, carcinogenic to humans.
+- **Minimal risk levels (ATSDR):** Acute Oral: 0.005 mg/kg/day
+Chronic Oral: 0.0003 mg/kg/day
+Chronic Inhalation: 0.01 mg/m3
+The World Health Organization asserts that a level of 0.01 mg/L in drinking water poses a risk of 1/1600 chance of lifetime skin cancer risk.
+- **Acute toxicity:** LD50: 763 mg/kg (Oral, Rat) 
+LD50: 13.4 ug/kg (Intraperitoneal, Rat)
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D0001">T3DB T3D0001</a> (free for non-commercial use with attribution), quoted in part; reference markers removed.</small></p>
+
+<p><small>Also: CAS 7440-38-2 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35828">ChEBI 35828</a></small></p>
 
 ## popPK records
 

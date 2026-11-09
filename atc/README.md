@@ -34,13 +34,13 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [A11H Other Plain Vitamin Preparations](atc/A11H.md) — 6 drugs with records
 - [A12A Calcium](atc/A12A.md) — 4 drugs with records
 - [A12B Potassium](atc/A12B.md)
-- [A12C Other Mineral Supplements](atc/A12C.md) — 7 drugs with records
+- [A12C Other Mineral Supplements](atc/A12C.md) — 8 drugs with records
 - [A14A Anabolic Steroids](atc/A14A.md)
 - [A16A Other Alimentary Tract And Metabolism Products](atc/A16A.md) — 16 drugs with records
 
 ## B Blood And Blood Forming Organs
 
-- [B01A Antithrombotic Agents](atc/B01A.md) — 44 drugs with records
+- [B01A Antithrombotic Agents](atc/B01A.md) — 45 drugs with records
 - [B02A Antifibrinolytics](atc/B02A.md) — 4 drugs with records
 - [B02B Vitamin K And Other Hemostatics](atc/B02B.md) — 20 drugs with records
 - [B03A Iron Preparations](atc/B03A.md) — 2 drugs with records
@@ -49,7 +49,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [B05A Blood And Related Products](atc/B05A.md) — 4 drugs with records
 - [B05B I.V. Solutions](atc/B05B.md) — 2 drugs with records
 - [B05C Irrigating Solutions](atc/B05C.md) — 11 drugs with records
-- [B05X I.V. Solution Additives](atc/B05X.md) — 14 drugs with records
+- [B05X I.V. Solution Additives](atc/B05X.md) — 15 drugs with records
 - [B06A Other Hematological Agents](atc/B06A.md) — 9 drugs with records
 - [B06C](atc/B06C.md) — 1 drug with records
 
@@ -111,7 +111,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [D07B Corticosteroids, Combinations With Antiseptics](atc/D07B.md) — 6 drugs with records
 - [D07C Corticosteroids, Combinations With Antibiotics](atc/D07C.md) — 9 drugs with records
 - [D07X Corticosteroids, Other Combinations](atc/D07X.md) — 7 drugs with records
-- [D08A Antiseptics And Disinfectants](atc/D08A.md) — 21 drugs with records
+- [D08A Antiseptics And Disinfectants](atc/D08A.md) — 23 drugs with records
 - [D09A Medicated Dressings](atc/D09A.md) — 6 drugs with records
 - [D10A Anti-Acne Preparations For Topical Use](atc/D10A.md) — 11 drugs with records
 - [D10B Anti-Acne Preparations For Systemic Use](atc/D10B.md) — 1 drug with records
@@ -267,7 +267,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [S01J Diagnostic Agents](atc/S01J.md) — 1 drug with records
 - [S01K Surgical Aids](atc/S01K.md) — 1 drug with records
 - [S01L Ocular Vascular Disorder Agents](atc/S01L.md) — 5 drugs with records
-- [S01X Other Ophthalmologicals](atc/S01X.md) — 9 drugs with records
+- [S01X Other Ophthalmologicals](atc/S01X.md) — 10 drugs with records
 - [S02A Antiinfectives](atc/S02A.md) — 15 drugs with records
 - [S02B Corticosteroids](atc/S02B.md) — 5 drugs with records
 - [S02C Corticosteroids And Antiinfectives In Combination](atc/S02C.md) — 6 drugs with records
@@ -284,7 +284,7 @@ Each class page lists its drugs, the records they carry and their best status. T
 - [V06D Other Nutrients](atc/V06D.md) — 2 drugs with records
 - [V08A X-Ray Contrast Media, Iodinated](atc/V08A.md) — 5 drugs with records
 - [V08B X-Ray Contrast Media, Non-Iodinated](atc/V08B.md)
-- [V08C Magnetic Resonance Imaging Contrast Media](atc/V08C.md) — 8 drugs with records
+- [V08C Magnetic Resonance Imaging Contrast Media](atc/V08C.md) — 9 drugs with records
 - [V08D Ultrasound Contrast Media](atc/V08D.md) — 2 drugs with records
 - [V09A Central Nervous System](atc/V09A.md)
 - [V09B Skeleton](atc/V09B.md)

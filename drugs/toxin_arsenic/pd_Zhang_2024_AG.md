@@ -1,4 +1,4 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 PD {&#x27;name&#x27;: &#x27;anion gap&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 PD {&#x27;name&#x27;: &#x27;anion gap&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # {'name': 'anion gap — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -46,7 +46,7 @@ Zhang H et al., Association and mediation analyses amon…, Scientific reports (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

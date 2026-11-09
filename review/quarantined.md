@@ -1,16 +1,18 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Quarantined models"}]'></div>
 
 
-## Quarantined models (63)
+## Quarantined models (66)
 
 The model was built but held back: its simulation failed a hard check.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
+| [Actinium-227](/drugs/toxin_actinium_227/) | [Sgouros_2021 · reference](/drugs/toxin_actinium_227/Actinium227_Sgouros2021_reference.md) | model_quarantined | unchecked |
 | [afatinib](/drugs/drug_afatinib/) | [Nakao_2019 · reference](/drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) | model_quarantined | partial |
 | [albendazole](/drugs/drug_albendazole/) | [Li_2024 · reference](/drugs/drug_albendazole/Albendazole_Li2024_reference.md) | model_quarantined | unchecked |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · parameter_estimates_flucloxacillin_model](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_flucloxacillin_mo.md) | model_quarantined | unchecked |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Keij_2023 · reference](/drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md) | model_quarantined | partial |
+| [Arsenic disulfide](/drugs/toxin_arsenic_disulfide/) | [Zhang_2021 · reference](/drugs/toxin_arsenic_disulfide/ArsenicDisulfide_Zhang2021_reference.md) | model_quarantined | unchecked |
 | [azithromycin](/drugs/drug_azithromycin/) | [Methaneethorn_2025 · reference](/drugs/drug_azithromycin/Azithromycin_Methaneethorn2025_reference.md) | model_quarantined | partial |
 | [azlocillin](/drugs/drug_azlocillin/) | [Modr_1982 · reference](/drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) | model_quarantined | partial |
 | [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · adc_changeb](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_adc_changeb.md) | model_quarantined | unchecked |
@@ -66,6 +68,7 @@ The model was built but held back: its simulation failed a hard check.
 | [palbociclib](/drugs/drug_palbociclib/) | [Marouille_2021 · final_final_population_pk_model_with_covariates](/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi.md) | model_quarantined | confirmed |
 | [salmeterol](/drugs/drug_salmeterol/) | [Himstedt_2020 · fluticasone_propionate](/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate.md) | model_quarantined | partial |
 | [secukinumab](/drugs/drug_secukinumab/) | [Bruin_2017 · reference](/drugs/drug_secukinumab/Secukinumab_Bruin2017_reference.md) | model_quarantined | confirmed |
+| [Sodium arsenite](/drugs/toxin_sodium_arsenite/) | [Ravandi_2025 · sy_2101_oral_fed_treatment_median](/drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median.md) | model_quarantined | unchecked |
 | [sunitinib](/drugs/drug_sunitinib/) | [Valderrama_2025 · reference](/drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference.md) | model_quarantined | partial |
 | [talazoparib](/drugs/drug_talazoparib/) | [Guo_2022 · estimate](/drugs/drug_talazoparib/Talazoparib_Guo2022_estimate.md) | model_quarantined | partial |
 | [tenofovir disoproxil](/drugs/drug_tenofovir_disoproxil/) | [Bouazza_2011 · reference](/drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) | model_quarantined | confirmed |

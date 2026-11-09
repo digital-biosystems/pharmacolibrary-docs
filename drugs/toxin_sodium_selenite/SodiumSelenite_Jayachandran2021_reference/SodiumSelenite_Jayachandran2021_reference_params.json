@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "SodiumSelenite_Jayachandran2021_reference",
+ "molar_masses": {
+  "central.C": 0.078971
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.5,
+  11.0,
+  16.5,
+  33.0,
+  49.5
+ ],
+ "parameters": {
+  "Cl": 4.416666666666667e-07,
+  "F": 1.0,
+  "MM": 0.078971,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006071428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.5e-06,
+  "ka": 0.00017833333333333335,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 17314.62925851703
+ },
+ "reference_peaks": {
+  "central.C": 0.0001085358178866455
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,17 +1,35 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Lead&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Lead&quot;}]"></div>
 
 # Lead
 
 - **generic name:** Lead
-- **DrugBank:** none · **PubChem:** [CID 73212](https://pubchem.ncbi.nlm.nih.gov/compound/73212)
-- **groups:** not captured
+- **T3DB:** [T3D0002](http://www.t3db.ca/toxins/T3D0002) · **PubChem:** [CID 73212](https://pubchem.ncbi.nlm.nih.gov/compound/73212)
+
+## About
+
+Cation.
+
+<p><small>Source: <a href="https://www.wikidata.org/wiki/Q3154109">Wikidata Q3154109</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></small></p>
+
+- **Category:** Cigarette Toxin, Household Toxin, Industrial/Workplace Toxin, Pollutant, Airborne Pollutant, Food Toxin, Natural Toxin
+- **Route of exposure:** oral, inhalation, dermal
+- **Sources and uses:** Lead is used extensively in building construction and can also be found in batteries, ammunition, non-Western cosmetics, solder, and pipes. Old paints and ceramic products may also contain lead, though recent legislation has banned its use.
+- **Mechanism of toxicity:** Lead mimics other biologically important metals, such as zinc, calcium, and iron, competing as cofactors for many of their respective enzymatic reactions. For example, lead has been shown to competitively inhibit calcium's binding of calmodulin, interferring with neurotransmitter release. …
+- **Health effects:** Lead is a neurotoxin and has been known to cause brain damage and reduced cognitive capacity, especially in children. Lead exposure can result in nephropathy, as well as blood disorders such as high blood pressure and anemia. …
+- **Carcinogenicity:** IARC group 2B, possibly carcinogenic to humans.
+- **Minimal risk levels (ATSDR):** Chronic Inhalation: 0.05 mg/m3
+- **Acute toxicity:** At blood lead levels between 25 and 60 μg/dL, neuropsychiatric effects such as delayed reaction times, irritability, and difficulty concentrating, as well as slowed motor nerve conduction and headache can occur. Anemia may appear at blood lead levels higher than 50 μg/dL. In adults, Abdominal colic, involving paroxysms of pain, may appear at blood lead levels greater than 80 μg/dL.
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D0002">T3DB T3D0002</a> (free for non-commercial use with attribution), quoted in part; reference markers removed.</small></p>
+
+<p><small>Also: CAS 7439-92-1 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49807">ChEBI 49807</a></small></p>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: nonlinear topology</sub> | [Dede_2017_exposure](drugs/toxin_lead/Lead_Dede2017_exposure.md) | — | nonlinear / manual (no model) | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: nonlinear topology</sub> | [↳ optimal](drugs/toxin_lead/Lead_Dede2017_optimal.md) | — | nonlinear / manual (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Dede_2017_exposure](drugs/toxin_lead/Lead_Dede2017_exposure.md) | held back | 1-compartment, IV | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [↳ optimal](drugs/toxin_lead/Lead_Dede2017_optimal.md) | held back | 1-compartment, IV | 2 |  |  |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 27159 matched, 258 returned
 - **screened:** 15  ·  **relevant:** 12
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

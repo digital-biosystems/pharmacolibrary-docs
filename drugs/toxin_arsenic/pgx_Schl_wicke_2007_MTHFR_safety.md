@@ -1,4 +1,4 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Schl\u00e4wicke_2007 \u00b7 PGx MTHFR&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Schl\u00e4wicke_2007 \u00b7 PGx MTHFR&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # MTHFR — PGx  <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span>
@@ -44,7 +44,7 @@ Schläwicke Engström K et al., Genetic polymorphisms influencing arsen…, Envi
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,122 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Airborne pollutants&quot;,&quot;href&quot;:&quot;toxins/AIR.md&quot;},{&quot;label&quot;:&quot;Amosite asbestos&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_amosite&quot;,&quot;label&quot;:&quot;Hesterberg_1998_amosite&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_amosite.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf10&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf11&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf11&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf11.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf21&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf21&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf21.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf22&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf22&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf22.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf33&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf33&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf33.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_mmvf34&quot;,&quot;label&quot;:&quot;Hesterberg_1998_mmvf34&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf34.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmositeAsbestos_Hesterberg1998_rcf1a&quot;,&quot;label&quot;:&quot;Hesterberg_1998_rcf1a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_rcf1a.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Amosite asbestos
+
+- **generic name:** Amosite asbestos
+- **T3DB:** [T3D0131](http://www.t3db.ca/toxins/T3D0131) · **PubChem:** [CID 436050](https://pubchem.ncbi.nlm.nih.gov/compound/436050)
+
+## About
+
+Chemical compound.
+
+<p><small>Source: <a href="https://www.wikidata.org/wiki/Q82941722">Wikidata Q82941722</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></small></p>
+
+- **Category:** Industrial/Workplace Toxin, Pollutant, Airborne Pollutant, Natural Toxin
+- **Route of exposure:** inhalation, injection
+- **Sources and uses:** Asbestos are used in building materials (roofing shingles, ceiling and floor tiles, paper products, and asbestos cement products), friction products (automobile clutch, brake, and transmission parts), heat-resistant fabrics, packaging, gaskets, and coatings. Some vermiculite or talc products may contain asbestos. …
+- **Mechanism of toxicity:** When asbestos fibers are inhaled, many are deposited on the epithelial surface of the respiratory tree. Fibers that are retained in the lung or mesothelium for long periods of time are capable of producing chronic inflammation and fibrotic and tumorigenic effects. …
+- **Health effects:** Infected people develop a slow buildup of scar-like tissue in the lungs and in the membrane that surrounds the lungs, so breathing becomes difficult. Blood flow to the lung may also be decreased, and this causes the heart to enlarge. …
+- **Carcinogenicity:** IARC group 1, carcinogenic to humans.
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D0131">T3DB T3D0131</a> (free for non-commercial use with attribution), quoted in part; reference markers removed.</small></p>
+
+<p><small>Also: CAS 12172-73-5 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:46678">ChEBI 46678</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| amosite_asbestos | metabolite | 309.27 | C14H15NO7 | PubChem | [436050](https://pubchem.ncbi.nlm.nih.gov/compound/436050) | Hesterberg_1998 |
+
+## Start here
+
+> **Hesterberg_1998_amosite** — <span class="pk-badge pk-badge--orange">Needs review</span> Fisher rats. [Run it in the simulator](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_amosite.md?tab=Simulation) · [record](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_amosite.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [Hesterberg_1998_amosite](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_amosite.md) | ▶ model + simulator | retention, 1 pool | 2 | Hesterberg TW et al., Biopersistence of synthetic vitreous fi…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8472](https://doi.org/10.1006/taap.1998.8472) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf10](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf10.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf11](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf11.md) | ▶ model + simulator | retention, 1 pool | 2 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf21](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf21.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf22](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf22.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [↳ mmvf32](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf32.md) | held back | 1-compartment, IV | 2 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf33](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf33.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ mmvf34](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_mmvf34.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_t_half_terminal</sub> | [↳ rcf1a](drugs/toxin_amosite_asbestos/AmositeAsbestos_Hesterberg1998_rcf1a.md) | ▶ model + simulator | retention, 1 pool | 1 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jones_1988_reference](drugs/toxin_amosite_asbestos/AmositeAsbestos_Jones1988_reference.md) | — | 1-compartment (no model) | 0 | Jones AD et al., Pulmonary clearance of UICC amosite fib…, British journal of industri… (1988) | [10.1136/oem.45.5.300](https://doi.org/10.1136/oem.45.5.300) |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [McFadden_1986_one_month](drugs/toxin_amosite_asbestos/AmositeAsbestos_McFadden1986_one_month.md) | — | 1-compartment (no model) | 0 | McFadden D et al., Smoking inhibits asbestos clearance, The American review of resp… (1986) | [10.1164/arrd.1986.133.3.372](https://doi.org/10.1164/arrd.1986.133.3.372) |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ one_week](drugs/toxin_amosite_asbestos/AmositeAsbestos_McFadden1986_one_week.md) | — | 1-compartment (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Vincent_1985_reference](drugs/toxin_amosite_asbestos/AmositeAsbestos_Vincent1985_reference.md) | — | 1-compartment (no model) | 0 | Vincent JH et al., Kinetics of deposition and clearance of…, British journal of industri… (1985) | [10.1136/oem.42.10.707](https://doi.org/10.1136/oem.42.10.707) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-09 05:34 | 21:58 | 9/4/0 | 0/0/0 | 0/0/0 | 734,655/37,038 | einfracz / qwen3.8-27b | 42 | 21/2 | 6/36 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 57 matched, 57 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 13  ·  extracted 0  ·  needs review 9  ·  rejected 4  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Leinardi_2025.pdf` | Leinardi R et al., Absence of phagolysosomal activation an…, Journal of hazardous materi… (2025) | popPK | 5 | [10.1016/j.jhazmat.2025.139648](https://doi.org/10.1016/j.jhazmat.2025.139648) | [40858012](https://pubmed.ncbi.nlm.nih.gov/40858012) | The paper describes the clearance and biodistribution (retention) of amosite asbestos in mice, which constitutes toxicokinetic data, but the specific numeric rate constants or half-lives are not present in the provided evidence. |
+
+<sub>queue written 2026-11-09 05:21 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Beckett_2023 | irrelevant | 0 | 0 | The paper is an epidemiological evaluation of exposure-response relationships and NOAELs, containing no quantitative toxicokinetic parameters such as half-life, clearance, or partition coefficients. |
+| popPK | Berman_2008 | irrelevant | 0 | 0 | The paper is an epidemiological study evaluating cancer risk models and potency factors, containing no quantitative toxicokinetic parameters (e.g., half-life, clearance, partition coefficients) for amosite asbestos. |
+| popPK | Bernstein_2005 | irrelevant | 0 | 0 | The study subject is Canadian chrysotile asbestos; amosite is only cited as a comparator with a single retained fiber count from another study (Hesterberg et al., 1998), and no kinetic parameters for amosite itself are reported here. |
+| popPK | Berry_2008 | irrelevant | 0 | 0 | The paper is an epidemiological comparison of exposure-response relationships for lung cancer risk and does not report any toxicokinetic parameters (e.g., clearance, half-life, or tissue retention) for amosite asbestos. |
+| popPK | Case_1991 | irrelevant | 0 | 0 | The paper is a review of tremolite (a different asbestos subtype) epidemiology and carcinogenicity, and does not report quantitative toxicokinetic parameters for amosite. |
+| popPK | Churg_1989 | relevant | 5 | 2 | The paper reports clearance/retention trends and concentration decreases for amosite in guinea pigs, but the specific numeric values are contained in figures not provided in the evidence. |
+| popPK | Churg_1996 | irrelevant | 2 | 3 | The paper reports qualitative mechanisms and relative changes in epithelial particle uptake in an in vitro model, lacking quantitative toxicokinetic parameters (half-life, clearance, rate constants, or partition coefficients) for amosite asbestos disposition. |
+| popPK | Cox_2023 | irrelevant | 0 | 0 | The paper is a mechanistic and epidemiological review discussing exposure-response shapes and biological mechanisms without reporting specific quantitative toxicokinetic parameters (e.g., half-life, clearance) for amosite asbestos. |
+| popPK | Darnton_2023 | irrelevant | 0 | 0 | The paper reports epidemiological dose-response risks (mesothelioma and lung cancer) for asbestos exposure but contains no toxicokinetic parameters such as half-life, clearance, or tissue retention. |
+| popPK | Dodson_2000 | irrelevant | 2 | 2 | The paper reports static tissue burdens (fibers/g dry weight) of amosite in lung, mesentery, and omentum from autopsy cases, but does not provide kinetic parameters such as clearance rates, half-lives, or rate constants required for toxicokinetic modeling. |
+| popPK | Dumortier_2012 | relevant | 5 | 3 | The paper reports a quantitative body burden (fiber concentration in BALF) and an extrapolated inhaled dose, which are toxicokinetic data, but it does not report kinetic rate parameters (clearance half-life or rate constants) as its primary focus. |
+| popPK | Gamble_2008 | irrelevant | 0 | 0 | The paper is an epidemiological review assessing cancer risk from amphibole cleavage fragments versus asbestos fibers and does not report any quantitative toxicokinetic parameters (half-life, clearance, etc.) for amosite. |
+| popPK | Gerde_1988 | irrelevant | 0 | 0 | The paper studies the adsorption of benzo(a)pyrene on amosite fibers in an in vitro solution, not the toxicokinetic parameters (absorption, distribution, metabolism, or excretion) of the amosite fibers themselves. |
+| popPK | Leinardi_2025 | relevant | 5 | 1 | The paper describes the clearance and biodistribution (retention) of amosite asbestos in mice, which constitutes toxicokinetic data, but the specific numeric rate constants or half-lives are not present in the provided evidence. |
+| popPK | McDonald_1982 | irrelevant | 0 | 0 | The paper is an epidemiological study reporting mortality statistics and mesothelioma incidence, containing no quantitative toxicokinetic parameters such as half-lives, clearance, or partition coefficients for amosite asbestos. |
+| popPK | McDonald_1985 | irrelevant | 0 | 0 | The paper is an epidemiological review of health impacts and exposure-response relationships that contains no quantitative toxicokinetic parameters for amosite asbestos. |
+| popPK | Riganti_2003 | irrelevant | 0 | 0 | The paper reports in vitro toxicological mechanisms (PPP inhibition, GSH depletion) rather than quantitative toxicokinetic parameters (e.g., clearance, half-life, partition coefficients) for amosite asbestos. |
+| popPK | Rödelsperger_1995 | irrelevant | 2 | 1 | The paper discusses dose-response and risk relationships using lung burden data but does not report quantitative toxicokinetic parameters (half-lives, rate constants, partition coefficients) for amosite asbestos. |
+| popPK | Solomon_1979 | irrelevant | 0 | 0 | The paper is an epidemiological study of radiological abnormalities (fissure thickening) in asbestos miners and does not report any quantitative toxicokinetic parameters for amosite asbestos. |
+| popPK | Stevens_2025 | irrelevant | 0 | 0 | The paper is an epidemiological exposure-response study proposing occupational exposure limits and contains no quantitative toxicokinetic parameters (e.g., half-life, clearance, retention) for amosite asbestos. |
+| popPK | Tomatis_2010 | irrelevant | 0 | 0 | The paper investigates surface chemistry, redox activity, and free radical generation of amosite fibers in cell-free and cellular assays, reporting no toxicokinetic parameters (e.g., clearance rates, half-lives, or retention) for the substance. |
+| popPK | Vernez_2019 | irrelevant | 0 | 0 | The paper is an exposure and risk assessment study reporting airborne concentrations and cancer risk estimates, with no toxicokinetic parameters (e.g., half-life, clearance, partition coefficients) for amosite asbestos. |
+| popPK | Weill_1994 | irrelevant | 0 | 0 | The paper is an epidemiological review of health outcomes (cancer, asbestosis) in workers and contains no quantitative toxicokinetic parameters (e.g., half-life, clearance, partition coefficients) for amosite asbestos. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamosite_asbestos%5D&body=Drug%3A%20amosite_asbestos%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_amosite_asbestos/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-09 05:21 UTC</sub>
