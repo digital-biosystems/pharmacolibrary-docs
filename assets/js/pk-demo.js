@@ -179,8 +179,10 @@ window.$docsify = window.$docsify || {};
         a.href = href; a.textContent = text;
         return a;
       };
-      // the paper's name opens its model page, which carries the DOI
-      src.appendChild(document.createTextNode('Model: '));
+      // the paper's name opens its model page, which carries the DOI; data-model names
+      // the model itself ('PK clopidogrel'), so the line reads 'Model: PK clopidogrel as …'
+      src.appendChild(document.createTextNode(
+        'Model: ' + (sim.dataset.model ? sim.dataset.model + ' as ' : '')));
       src.appendChild(link(sim.dataset.record, sim.dataset.source));
       sim.appendChild(src);
 

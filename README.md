@@ -60,7 +60,7 @@ Built for model-informed drug development, precision dosing research and teachin
 ## Demo (pharmacokinetics and site interaction of active metabolite of clopidogrel)
 <div class="pk-disclaimer" role="note">Research data extracted by software from published papers. Not clinically validated; not for dosing decisions.</div>
 <div class="pk-demo">
-  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-source="Jung et al. 2024" data-record="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45"></div>
+  <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-model="PK clopidogrel" data-source="Jung et al. 2024" data-record="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45"></div>
   <div class="pk-demo-anat" data-drug="clopidogrel"></div>
 </div>
 
@@ -69,9 +69,9 @@ Built for model-informed drug development, precision dosing research and teachin
 
 <div class="pklg">
 <div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>2,200</b><em>drugs and toxins; every one has a page</em></div>
-<div class="tile"><i>popPK/PD/PGx records</i><b>4,064/3,880/570</b><em>extracted population pharmacokinetics/pharmacodynamics/pharmacogenomics records</em></div>
+<div class="tile"><i>popPK · PD · PGx records</i><b>4,202 · 3,947 · 579</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
 <div class="tile"><i>Papers behind the records</i><b>8,272</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>38,918</b><em>parameter values the records carry, with units</em></div></div>
 </div>
 
-<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 (<a href="#/pipeline">BibTeX</a>) · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 09/11/2026 19:57:20 UTC</p>
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 (<a href="#/pipeline">BibTeX</a>) · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 11/11/2026 14:51:15 UTC</p>
 <!-- AUTOGEN:intro END -->
