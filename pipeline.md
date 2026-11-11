@@ -8,18 +8,6 @@ Pharmacolibrary collects pharmacokinetic, pharmacodynamic and pharmacogenomic mo
 
 Kulhanek, T., Jezek, F., Kofránek, J., Mateják, M., & Rommes, S. (2025, October). Pharmacolibrary-Free Library to Model Pharmacology. In *Modelica Conferences* (pp. 61-72). [https://doi.org/10.3384/ecp21861](https://doi.org/10.3384/ecp21861)
 
-```bibtex
-@inproceedings{kulhanek2025pharmacolibrary,
-  author    = {Kulhanek, T. and Jezek, F. and Kofr{\'a}nek, J. and Matej{\'a}k, M. and Rommes, S.},
-  title     = {Pharmacolibrary-Free Library to Model Pharmacology},
-  booktitle = {Modelica Conferences},
-  pages     = {61--72},
-  year      = {2025},
-  month     = oct,
-  doi       = {10.3384/ecp21861}
-}
-```
-
 ## How the knowledge base is made
 
 Literature is retrieved from PubMed and available full-text sources. Extraction follows *relevance assessment → screening → localisation → transcription → interpretation → validation*, then a model is built and its simulation compared with the paper's reported values. Parameter estimates keep the paper's labels and units.
