@@ -4,11 +4,11 @@
 
 # fosinopril — `Fosinopril_Hu1997_chinese`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the urine excretion fraction for fosinoprilat has a count unit instead of a percentage.
+> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 06:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the urine excretion fraction for fosinoprilat has a count unit instead of a percentage.
 
-<div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_chinese" status="rejected" stale="false" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_chinese" status="rejected" stale="true" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in Chinese and whites after intravenous administration. Journal of clinical pharmacology 37(9):834–840 (1997).
@@ -46,7 +46,7 @@ Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -168,13 +168,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Hu_1997_table_2:row11:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hu_1997_table_2:row13:col1'] |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L/hr | ['Hu_1997_table_2:row1:col1'] |
+| C5_dimension_Q47 | fail | 1 / [time] | L/hr ([length] ** 3 / [time]) | ['Hu_1997_table_2:row1:col1'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Hu_1997_table_2:row12:col1'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Hu_1997_table_2:row3:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Hu_1997_table_2:row4:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hu_1997_table_2:row7:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Hu_1997_table_2:row9:col1'] |
-| C5_dimension_Q67 | fail | [length] ** 3 / [time] | L/hr | ['Hu_1997_table_2:row0:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | L/hr ([length] ** 3 / [time]) | ['Hu_1997_table_2:row0:col1'] |
 | C5_dimension_Q89 | pass | [time] |  | ['Hu_1997_table_2:row5:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1124 | ['Hu_1997_table_2:row13:col1'] |
 | C8_topology | pass |  |  |  |
@@ -198,7 +198,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

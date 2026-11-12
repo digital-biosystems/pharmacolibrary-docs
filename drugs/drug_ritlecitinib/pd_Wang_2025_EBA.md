@@ -15,7 +15,7 @@
 
 **As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives eyebrow assessment: indirect response — drug stimulates the production of eyebrow assessment.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ritlecitinib concentrations (ng/mL) stimulate eyebrow assessment (EBA) scores via an indirect response mechanism where the drug stimulates the production rate (kin) of the response, with kin,drug assumed equal to kout,drug. Key parameters include an EC50 of 10.6 ng/mL (recorded; note paper excerpt lists 40.1 ng/mL for EBA), an Emax of 11.0, and a drug onset half-life (kin,drug) of 34.1 weeks.
 >
@@ -49,25 +49,74 @@ Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics 
 </details>
 
 
+## Exposure-response model
+
+`Ritlecitinib_Wang2025_PD_eba` — turnover (indirect response type III), `response = E0*(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 6.05 | — |
+| Emax | 11 | — |
+| EC50 | 10.6 ng/mL | 1.06e-05 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 6.05, `at_EC50` = 39.32, `at_inf` = 72.6
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as IDR-III predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba/Ritlecitinib_Wang2025_PD_eba_modelica.zip" download>Ritlecitinib_Wang2025_PD_eba_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba/Ritlecitinib_Wang2025_PD_eba_matlab.zip" download>Ritlecitinib_Wang2025_PD_eba_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba/Ritlecitinib_Wang2025_PD_eba_sbml.zip" download>Ritlecitinib_Wang2025_PD_eba_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba/Ritlecitinib_Wang2025_PD_eba_cellml.zip" download>Ritlecitinib_Wang2025_PD_eba_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Ritlecitinib_Wang2025_PD_eba`. <https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba>
+
+```bibtex
+@misc{pharmacolibrary_RitlecitinibWang2025PDeba,
+  title  = {{Pharmacolibrary model Ritlecitinib_Wang2025_PD_eba}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/Ritlecitinib_Wang2025_PD_eba},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

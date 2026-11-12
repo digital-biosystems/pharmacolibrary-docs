@@ -4,11 +4,11 @@
 
 # chlorhexidine — `Chlorhexidine_Xue2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The chlorhexidine volume of distribution of 5.0 mL is implausibly small, likely a unit extraction error.
+> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-03 23:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The chlorhexidine volume of distribution of 5.0 mL is implausibly small, likely a unit extraction error.
 
-<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="false" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="true" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performance liquid chromatographic determination of chlorhexidine in whole blood by solid-phase extraction and kinetics following an intravenous infusion in rats. Journal of analytical toxicology 33(2):85–91 (2009).
@@ -38,7 +38,7 @@ Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,6 +110,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q59 | pass | [time] |  | ['Xue_2009:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Xue_2009:abstract'] |
@@ -133,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

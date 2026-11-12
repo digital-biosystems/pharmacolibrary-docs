@@ -5,11 +5,11 @@
 
 # cetuximab — `Cetuximab_Grisic2020_mmcl`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; vmax has no unit (+1 more).
+> This record was reviewed on 2026-11-07 14:36 UTC (Needs review), but the paper was screened again on 2026-10-07 11:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; vmax has no unit (+1 more).
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl" status="needs_review" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_mmcl" status="needs_review" stale="true" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechanistic Clearance Models of Oncology Biotherapeutics and Impact of Study Design: Cetuximab as a Case Study. CPT: pharmacometrics & systems pharmacology 9(11):628–638 (2020).
@@ -42,7 +42,7 @@ Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechani
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,13 +135,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['psp412558-tbl-0002:row5:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Augustin_2026:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412558-tbl-0002:row3:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412558-tbl-0002:row2:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412558-tbl-0002:row4:col3'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | RSE% | ['psp412558-tbl-0002:row6:col3'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] | RSE% | ['psp412558-tbl-0002:row6:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 350 | ['Augustin_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0146 L/h | ['Augustin_2026:review'] |
@@ -174,7 +174,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

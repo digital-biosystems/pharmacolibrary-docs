@@ -26,7 +26,7 @@ Acetylcysteine is a mucolytic used for respiratory conditions with thick mucus s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Brown_2004_reference](drugs/drug_acetylcysteine/Acetylcysteine_Brown2004_reference.md) | — | 1-compartment (no model) | 4 | Brown M et al., Pharmacokinetics of intravenous N-acety…, European journal of clinica… (2004) | [10.1007/s00228-004-0862-9](https://doi.org/10.1007/s00228-004-0862-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brown_2004_reference](drugs/drug_acetylcysteine/Acetylcysteine_Brown2004_reference.md) | — | 1-compartment (no model) | 4 | Brown M et al., Pharmacokinetics of intravenous N-acety…, European journal of clinica… (2004) | [10.1007/s00228-004-0862-9](https://doi.org/10.1007/s00228-004-0862-9) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Fayed_2023_reference](drugs/drug_acetylcysteine/Acetylcysteine_Fayed2023_reference.md) | — | 1-compartment (no model) | 0 | Fayed MS et al., Population Pharmacokinetic Model of N-A…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1338](https://doi.org/10.1002/cpdd.1338) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Sahasrabudhe_2021_reference](drugs/drug_acetylcysteine/Acetylcysteine_Sahasrabudhe2021_reference.md) | — | 1-compartment (no model) | 0 | Sahasrabudhe SA et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1943](https://doi.org/10.1002/jcph.1943) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Teder_2021_reference](drugs/drug_acetylcysteine/Acetylcysteine_Teder2021_reference.md) | — | 1-compartment (no model) | 6 | Teder K et al., The Pharmacokinetic Profile and Bioavai…, Medicina (Kaunas, Lithuania) (2021) | [10.3390/medicina57111218](https://doi.org/10.3390/medicina57111218) |
@@ -72,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 67 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -43,7 +43,7 @@ Inositol is a sugar-like compound once classed as a B vitamin and marketed as a 
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Phelps_2016_reference](drugs/drug_inositol/Inositol_Phelps2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Phelps DL et al., Safety and pharmacokinetics of multiple…, Pediatric research (2016) | [10.1038/pr.2016.97](https://doi.org/10.1038/pr.2016.97) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Phelps_2013_covariate_estimate_standard_error](drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md) | — | 1-compartment (no model) | 1 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q367 — no SI value to build from</sub> | [↳ estimate](drugs/drug_inositol/Inositol_Phelps2013_estimate.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Antonowski_2022_reference](drugs/drug_inositol/Inositol_Antonowski2022_reference.md) | — | 1-compartment (no model) | 7 | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Antonowski_2022_reference](drugs/drug_inositol/Inositol_Antonowski2022_reference.md) | — | 1-compartment (no model) | 7 | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) |
 
 ## Pharmacodynamics (PD)
 
@@ -80,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1137 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

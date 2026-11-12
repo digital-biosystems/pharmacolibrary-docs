@@ -15,7 +15,7 @@
 
 **As extracted:** Tirzepatide (concentrations from the PK model of Schneck_2024) drives fat-free mass (in kg): indirect response — drug inhibits the production of fat-free mass.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tirzepatide concentrations (ng/mL) inhibit the formation of fat-free mass (kg) via an indirect response model with proportional effect, characterized by a maximum inhibition (Imax) of 0.144 and an IC50 of 1760 ng/mL. The model includes a first-order elimination rate constant (Kout) of 0.0314 week−1 and a placebo fractional reduction in formation (Kin) of 0.0658.
 >
@@ -47,6 +47,41 @@ Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmaco
 </details>
 
 
+## Exposure-response model
+
+`Tirzepatide_Chigutsa2025_PD_ffm` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 73.5 kg | 73.5 kg |
+| Emax | 0.144 | — |
+| EC50 | 1760 ng/mL | 0.00176 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 73.5, `at_EC50` = 68.21, `at_inf` = 62.92
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -75,19 +110,33 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm/Tirzepatide_Chigutsa2025_PD_ffm_modelica.zip" download>Tirzepatide_Chigutsa2025_PD_ffm_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm/Tirzepatide_Chigutsa2025_PD_ffm_matlab.zip" download>Tirzepatide_Chigutsa2025_PD_ffm_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm/Tirzepatide_Chigutsa2025_PD_ffm_sbml.zip" download>Tirzepatide_Chigutsa2025_PD_ffm_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm/Tirzepatide_Chigutsa2025_PD_ffm_cellml.zip" download>Tirzepatide_Chigutsa2025_PD_ffm_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Tirzepatide_Chigutsa2025_PD_ffm`. <https://pharmacolibrary.github.io/#/drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm>
+
+```bibtex
+@misc{pharmacolibrary_TirzepatideChigutsa2025PDffm,
+  title  = {{Pharmacolibrary model Tirzepatide_Chigutsa2025_PD_ffm}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tirzepatide/Tirzepatide_Chigutsa2025_PD_ffm},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

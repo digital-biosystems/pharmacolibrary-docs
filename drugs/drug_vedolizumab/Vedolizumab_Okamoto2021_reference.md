@@ -4,11 +4,11 @@
 
 # vedolizumab — `Vedolizumab_Okamoto2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Clearance, intercompartmental clearance, and volume parameters lacked SI units, preventing verification of dimensional consistency for vedolizumab.
+> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 01:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance, intercompartmental clearance, and volume parameters lacked SI units, preventing verification of dimensional consistency for vedolizumab.
 
-<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="false" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="true" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of vedolizumab in Asian and non-Asian patients with ulcerative colitis and Crohn's disease. Intestinal research 19(1):95–105 (2021).
@@ -48,7 +48,7 @@ Okamoto H, Dirks NL, Rosario M, Hori T, Hibi T. Population pharmacokinetics of v
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,7 +175,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['t2-ir-2019-09167:row6:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['t2-ir-2019-09167:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['t2-ir-2019-09167:row4:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day |  |  | ['t2-ir-2019-09167:row5:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) |  |  | ['t2-ir-2019-09167:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.165 |  |  | ['t2-ir-2019-09167:row1:col1'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00688 L/h |  |  | ['t2-ir-2019-09167:row1:col1'] |
@@ -198,7 +198,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

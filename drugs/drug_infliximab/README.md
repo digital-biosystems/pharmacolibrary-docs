@@ -32,7 +32,7 @@ Infliximab is a monoclonal antibody that blocks tumour necrosis factor alpha and
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces with caveats" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces with caveats</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Eser_2021_reference](drugs/drug_infliximab/Infliximab_Eser2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+7 cov.) | Eser A et al., Increased Induction Infliximab Clearanc…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1732](https://doi.org/10.1002/jcph.1732) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Little_2022_reference](drugs/drug_infliximab/Infliximab_Little2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Little RD et al., Therapeutic Drug Monitoring of Subcutan…, Journal of clinical medicine (2022) | [10.3390/jcm11206173](https://doi.org/10.3390/jcm11206173) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Hemperly_2025_reference](drugs/drug_infliximab/Infliximab_Hemperly2025_reference.md) | — | 2-compartment (no model) | 3 (+3 cov.) | Hemperly A et al., Pharmacokinetics and Exposure-Response…, Journal of clinical medicine (2025) | [10.3390/jcm14227968](https://doi.org/10.3390/jcm14227968) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hemperly_2025_reference](drugs/drug_infliximab/Infliximab_Hemperly2025_reference.md) | — | 2-compartment (no model) | 3 (+3 cov.) | Hemperly A et al., Pharmacokinetics and Exposure-Response…, Journal of clinical medicine (2025) | [10.3390/jcm14227968](https://doi.org/10.3390/jcm14227968) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Song_2025_reference](drugs/drug_infliximab/Infliximab_Song2025_reference.md) | — | 2-compartment (no model) | 7 | Song JH et al., Population Pharmacokinetic Model for th…, Gut and liver (2025) | [10.5009/gnl240503](https://doi.org/10.5009/gnl240503) |
 
 ## Pharmacodynamics (PD)
@@ -72,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 113 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

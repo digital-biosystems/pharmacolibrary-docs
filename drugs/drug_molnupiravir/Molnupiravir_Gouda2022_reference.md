@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;molnupiravir&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/&quot;},{&quot;label&quot;:&quot;Gouda_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Molnupiravir_Bihorel2023_reference&quot;,&quot;label&quot;:&quot;Bihorel_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Gouda2022_reference&quot;,&quot;label&quot;:&quot;Gouda_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Molnupiravir_Bihorel2023_reference&quot;,&quot;label&quot;:&quot;Bihorel_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Molnupiravir_Gouda2022_reference&quot;,&quot;label&quot;:&quot;Gouda_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # molnupiravir — `Molnupiravir_Gouda2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record held back because the apparent pharmacokinetic parameterization failed the deviation check due to unidentifiable fractions, despite conflicting readings on metabolite clearance.
+> This record was reviewed on 2026-11-07 16:15 UTC (Needs review), but the paper was screened again on 2026-10-07 17:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record held back because the apparent pharmacokinetic parameterization failed the deviation check due to unidentifiable fractions, despite conflicting readings on metabolite clearance.
 
-<div class="pk-model-meta" hidden drug="molnupiravir" model-id="Molnupiravir_Gouda2022_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="NHC" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="molnupiravir" model-id="Molnupiravir_Gouda2022_reference" status="needs_review" stale="true" population="healthy adult volunteers" measured-compound="NHC" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Gouda AS, Marzouk HM, Rezk MR, Salem AM, Morsi MI, Nouman EG et al. A validated LC-MS/MS method for determination of antiviral prodrug molnupiravir in human plasma and its application for a pharmacokinetic modeling study in healthy Egyptian volunteers. Journal of chromatography. B, Analytical technologies in the biomedical and life sciences 1206:123363 (2022).
@@ -45,7 +45,7 @@ Gouda AS, Marzouk HM, Rezk MR, Salem AM, Morsi MI, Nouman EG et al. A validated 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -158,6 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['t0020:row5:col1', 't0020:row5:col2', 't0020:row5:col3', 't0020:row5:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['t0020:row4:col2', 't0020:row4:col3', 't0020:row4:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['t0020:row6:col1', 't0020:row6:col2', 't0020:row6:col3', 't0020:row6:col4'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['t0020:row3:col2', 't0020:row3:col3', 't0020:row3:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 118 L | ['t0020:row6:col1', 't0020:row6:col2', 't0020:row6:col3', 't0020:row6:col4'] |

@@ -4,11 +4,11 @@
 
 # fitusiran — `Fitusiran_Fan2026_humansa`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Fitusiran record rejected because the fraction unbound parameter has a dimension mismatch, using a rate unit instead of a ratio.
+> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-05 19:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fitusiran record rejected because the fraction unbound parameter has a dimension mismatch, using a rate unit instead of a ratio.
 
-<div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="false" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="true" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to inform the development of GalNAc-conjugated siRNA therapeutics. Molecular therapy. Nucleic acids 37(2):102936 (2026).
@@ -45,7 +45,7 @@ Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -160,11 +160,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q330 | pass | 1 / [time] |  | ['tbl1:row12:col5'] |
-| C5_dimension_Q333 | fail | [length] | nM | ['tbl1:row9:col5'] |
+| C5_dimension_Q333 | fail | [mass] / [length] ** 3 | nM ([length]) | ['tbl1:row9:col5'] |
 | C5_dimension_Q334 | pass | 1 / [time] |  | ['tbl1:row15:col5'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['tbl1:row22:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tbl1:row3:col5'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | nmol/h | ['tbl1:row10:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | nmol/h ([substance] / [time]) | ['tbl1:row10:col5'] |
 | C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['tbl1:row11:col5'] |
 | C8_topology | pass |  |  |  |
 
@@ -184,7 +184,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

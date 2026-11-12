@@ -5,11 +5,11 @@
 
 # alfentanil — `Alfentanil_Meistelman1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 14:46 UTC (Needs review), but the paper was screened again on 2026-10-07 04:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Meistelman1987_reference" status="needs_review" stale="false" population="children and adults" measured-compound="alfentanil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Meistelman1987_reference" status="extracted" stale="true" population="children and adults" measured-compound="alfentanil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Meistelman C, Saint-Maurice C, Lepaul M, Levron JC, Loose JP, Mac Gee K. A comparison of alfentanil pharmacokinetics in children and adults. Anesthesiology 66(1):13–16 (1987).
@@ -27,8 +27,6 @@ Meistelman C, Saint-Maurice C, Lepaul M, Levron JC, Loose JP, Mac Gee K. A compa
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Total apparent volume of distribution (Vdss) in adults | Vss | 457 | ml/kg |
@@ -38,7 +36,7 @@ Meistelman C, Saint-Maurice C, Lepaul M, Levron JC, Loose JP, Mac Gee K. A compa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +115,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Meistelman_1987:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Meistelman_1987:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Meistelman_1987:abstract'] |
@@ -153,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

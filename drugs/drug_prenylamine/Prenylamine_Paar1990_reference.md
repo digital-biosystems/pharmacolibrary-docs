@@ -4,11 +4,11 @@
 
 # prenylamine — `Prenylamine_Paar1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because the AUC parameter for the (+)-enantiomer has a dimension mismatch, listing a percentage value instead of concentration-time units.
+> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-06 10:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the AUC parameter for the (+)-enantiomer has a dimension mismatch, listing a percentage value instead of concentration-time units.
 
-<div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharmacokinetics of prenylamine racemate and enantiomers in man. Arzneimittel-Forschung 40(6):657–661 (1990).
@@ -37,7 +37,7 @@ Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Paar_1990:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Paar_1990:abstract'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Paar_1990:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Paar_1990:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.8 | ['Paar_1990:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 348 L/h | ['Paar_1990:abstract'] |
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

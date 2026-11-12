@@ -31,7 +31,7 @@
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kosaka_2010_FI](drugs/toxin_5_aminolevulinic_acid/pd_Kosaka_2010_FI.md) | fluorescence intensity ← 5-aminolevulinic acid · direct sigmoid Emax (Hill) effect | — | Kosaka S et al., Comparative split-face study of 5-amino…, The Journal of dermatology (2010) | [10.1111/j.1346-8138.2010.00946.x](https://doi.org/10.1111/j.1346-8138.2010.00946.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Svaasand_1996_PpIX](drugs/toxin_5_aminolevulinic_acid/pd_Svaasand_1996_PpIX.md) | protoporphyrin IX biomarker turnover ← 5-aminolevulinic acid | — | Svaasand LO et al., Dosimetry model for photodynamic therap…, Lasers in surgery and medic… (1996) | [10.1002/(SICI)1096-9101(1996)18:2&lt;139::AID-LSM3&gt;3.0.CO;2-T](https://doi.org/10.1002/(SICI)1096-9101(1996)18:2&lt;139::AID-LSM3&gt;3.0.CO;2-T) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Svaasand_1996_PpIX](drugs/toxin_5_aminolevulinic_acid/pd_Svaasand_1996_PpIX.md) | protoporphyrin IX biomarker turnover ← 5-aminolevulinic acid | — | Svaasand LO et al., Dosimetry model for photodynamic therap…, Lasers in surgery and medic… (1996) | [10.1002/(SICI)1096-9101(1996)18:2&lt;139::AID-LSM3&gt;3.0.CO;2-T](https://doi.org/10.1002/(SICI)1096-9101(1996)18:2&lt;139::AID-LSM3&gt;3.0.CO;2-T) |
 
 ## ADME sites
 

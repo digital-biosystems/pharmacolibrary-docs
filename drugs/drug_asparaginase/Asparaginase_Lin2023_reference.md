@@ -5,11 +5,11 @@
 
 # asparaginase — `Asparaginase_Lin2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absorption rate constant units mismatch, blocking review of asparaginase pharmacokinetics.
+> This record was reviewed on 2026-11-07 15:25 UTC (Rejected), but the paper was screened again on 2026-10-07 23:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant units mismatch, blocking review of asparaginase pharmacokinetics.
 
-<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="true" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmacokinetics of intramuscular recombinant Erwinia chrysanthemi asparaginase (JZP458) in patients with acute lymphoblastic leukemia. Clinical and translational science 16(5):898–909 (2023).
@@ -43,7 +43,7 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts13499-tbl-0002:row1:col2', 'cts13499-tbl-0002:row1:col4', 'cts13499-tbl-0002:row1:col5', 'cts13499-tbl-0002:row1:col6', 'cts13499-tbl-0002:row1:col7'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l/h | ['cts13499-tbl-0002:row3:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l/h ([length] ** 3 / [time]) | ['cts13499-tbl-0002:row3:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cts13499-tbl-0002:row2:col2', 'cts13499-tbl-0002:row2:col4', 'cts13499-tbl-0002:row2:col5', 'cts13499-tbl-0002:row2:col6', 'cts13499-tbl-0002:row2:col7'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 146 | ['cts13499-tbl-0002:row1:col2', 'cts13499-tbl-0002:row1:col4', 'cts13499-tbl-0002:row1:col5', 'cts13499-tbl-0002:row1:col6', 'cts13499-tbl-0002:row1:col7'] |
 | C8_topology | pass |  |  |  |
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

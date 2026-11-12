@@ -41,11 +41,11 @@ Epirubicin is an anthracycline anticancer drug used to treat cancers such as bre
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Robert_1994_reference](drugs/drug_epirubicin/Epirubicin_Robert1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Robert J, Clinical pharmacokinetics of epirubicin, Clinical pharmacokinetics (1994) | [10.2165/00003088-199426060-00002](https://doi.org/10.2165/00003088-199426060-00002) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sandström_1999_reference](drugs/drug_epirubicin/Epirubicin_Sandstrm1999_reference.md) | — | 1-compartment (no model) | 2 | Sandström M et al., The pharmacokinetics of epirubicin and…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800051120](https://doi.org/10.1007/s002800051120) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Tjuljandin_1990_reference](drugs/drug_epirubicin/Epirubicin_Tjuljandin1990_reference.md) | — | 1-compartment (no model) | 4 | Tjuljandin SA et al., Pharmacokinetics and toxicity of two sc…, Cancer research (1990) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Wade_1992_reference](drugs/drug_epirubicin/Epirubicin_Wade1992_reference.md) | — | 1-compartment (no model) | 1 | Wade JR et al., Variability in the pharmacokinetics of…, Cancer chemotherapy and pha… (1992) | [10.1007/BF00686009](https://doi.org/10.1007/BF00686009) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Janssen_2021_reference](drugs/drug_epirubicin/Epirubicin_Janssen2021_reference.md) | — | 1-compartment (no model) | 0 | Janssen JM et al., Population Pharmacokinetics of Docetaxe…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00961-4](https://doi.org/10.1007/s40262-020-00961-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Janssen_2023_reference](drugs/drug_epirubicin/Epirubicin_Janssen2023_reference.md) | — | 1-compartment (no model) | 0 | Janssen JM et al., Semi-physiological Enriched Population…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01263-1](https://doi.org/10.1007/s40262-023-01263-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ralph_2003_reference](drugs/drug_epirubicin/Epirubicin_Ralph2003_reference.md) | — | 1-compartment (no model) | 0 | Ralph LD et al., A population model of epirubicin pharma…, Cancer chemotherapy and pha… (2003) | [10.1007/s00280-003-0608-x](https://doi.org/10.1007/s00280-003-0608-x) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Tjuljandin_1990_reference](drugs/drug_epirubicin/Epirubicin_Tjuljandin1990_reference.md) | — | 1-compartment (no model) | 4 | Tjuljandin SA et al., Pharmacokinetics and toxicity of two sc…, Cancer research (1990) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -86,13 +86,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:59 | 8:53 | 3/4/0 | 4/0/0 | 0/0/0 | 162,537/47,135 | openai / gpt-6-luna | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-06 17:59 | 8:53 | 4/3/0 | 4/0/0 | 0/0/0 | 162,537/47,135 | openai / gpt-6-luna | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 47 matched, 20 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 7  ·  extracted 0  ·  needs review 3  ·  rejected 4  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 4  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

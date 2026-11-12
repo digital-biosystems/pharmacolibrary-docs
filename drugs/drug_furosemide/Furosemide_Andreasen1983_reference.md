@@ -5,11 +5,11 @@
 
 # furosemide — `Furosemide_Andreasen1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch involving the volume of distribution parameter.
+> This record was reviewed on 2026-11-07 14:41 UTC (Rejected), but the paper was screened again on 2026-10-06 18:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch involving the volume of distribution parameter.
 
-<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Andreasen1983_reference" status="rejected" stale="false" population="young and elderly healthy male volunteers" measured-compound="frusemide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Andreasen1983_reference" status="rejected" stale="true" population="young and elderly healthy male volunteers" measured-compound="frusemide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Andreasen F, Hansen U, Husted SE, Jansen JA. The pharmacokinetics of frusemide are influenced by age. British journal of clinical pharmacology 16(4):391–397 (1983).
@@ -40,7 +40,7 @@ Andreasen F, Hansen U, Husted SE, Jansen JA. The pharmacokinetics of frusemide a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Miura_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Andreasen_1983:abstract', 'Andreasen_1983:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hernández-Gago_2026:review'] |
-| C5_dimension_Q65 | fail | dimensionless | 1 kg-1 | ['Andreasen_1983:abstract'] |
+| C5_dimension_Q65 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['Andreasen_1983:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 170 | ['Andreasen_1983:abstract', 'Andreasen_1983:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.2 L/h | ['Andreasen_1983:abstract', 'Andreasen_1983:abstract'] |
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

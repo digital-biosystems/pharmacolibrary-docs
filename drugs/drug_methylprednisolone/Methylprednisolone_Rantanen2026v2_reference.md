@@ -5,11 +5,11 @@
 
 # methylprednisolone — `Methylprednisolone_Rantanen2026v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Methylprednisolone clearance lacked a valid physical unit, and the peripheral volume was an implausible -0.21 L.
+> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-10-07 23:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Methylprednisolone clearance lacked a valid physical unit, and the peripheral volume was an implausible -0.21 L.
 
-<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Rantanen2026v2_reference" status="rejected" stale="false" population="neonates and paediatric patients undergoing cardiac surgery" measured-compound="methylprednisolone" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Rantanen2026v2_reference" status="rejected" stale="true" population="neonates and paediatric patients undergoing cardiac surgery" measured-compound="methylprednisolone" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Rantanen M, Keski-Nisula J, Olkkola KT, Neuvonen PJ, Pesonen E, Suominen P et al. Population Pharmacokinetics of Methylprednisolone in Neonates and Paediatric Patients Undergoing Cardiac Surgery with Cardiopulmonary Bypass (2026).
@@ -41,7 +41,7 @@ Rantanen M, Keski-Nisula J, Olkkola KT, Neuvonen PJ, Pesonen E, Suominen P et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_base_sign_Q64 | fail |  | -0.21 |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | ['tab_1:row4:col4', 'tab_1:row4:col6', 'tab_1:row4:col7'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_1:row4:col4', 'tab_1:row4:col6', 'tab_1:row4:col7'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Yang_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bai_2024:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row14:col4', 'tab_1:row14:col6', 'tab_1:row14:col7'] |
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

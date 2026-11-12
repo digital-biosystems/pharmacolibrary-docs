@@ -5,11 +5,11 @@
 
 # zidovudine — `Zidovudine_Tang2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Zidovudine elimination rate constant of 72 h−1 creates a dimension mismatch, and missing unit conversions leave metabolite compartments orphaned.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 16:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Zidovudine elimination rate constant of 72 h−1 creates a dimension mismatch, and missing unit conversions leave metabolite compartments orphaned.
 
-<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylation kinetics of zidovudine in the Chinese population and its significance for individualized antiretroviral therapy. Scientific reports 16(1) (2026).
@@ -43,7 +43,7 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,8 +141,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
-| C5_dimension_Q371 | fail | 1 / [time] | h− 1 | ['Tab2:row7:col1', 'Tab2:row7:col2'] |
-| C5_dimension_Q371 | fail | 1 / [time] | h− 1 | ['Tab2:row9:col1', 'Tab2:row9:col2'] |
+| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h− 1 (1 / [time]) | ['Tab2:row7:col1', 'Tab2:row7:col2'] |
+| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h− 1 (1 / [time]) | ['Tab2:row9:col1', 'Tab2:row9:col2'] |
 | C5_dimension_Q372 | pass | 1 / [time] |  | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
 | C8_topology | fail |  |  |  |
@@ -163,7 +163,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # vigabatrin — `Vigabatrin_Nhr2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Vigabatrin record lacks volume and clearance, and its maximal oral absorption rate (64.6 mmol/min) is dimensionally mismatched.
+> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 08:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vigabatrin record lacks volume and clearance, and its maximal oral absorption rate (64.6 mmol/min) is dimensionally mismatched.
 
-<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="false" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="true" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorption of vigabatrin carrier-mediated?. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 69:10–18 (2015).
@@ -39,7 +39,7 @@ Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorptio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,9 +120,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q1 | fail | [length] | mM | ['Nøhr_2015:abstract'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | mmol/min | ['Nøhr_2015:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | mM ([length]) | ['Nøhr_2015:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mmol/min ([substance] / [time]) | ['Nøhr_2015:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -141,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

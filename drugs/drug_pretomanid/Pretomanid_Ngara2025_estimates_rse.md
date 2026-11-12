@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;pretomanid&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/&quot;},{&quot;label&quot;:&quot;Ngara_2025 \u00b7 estimates_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pretomanid_Zou2022_reference&quot;,&quot;label&quot;:&quot;Zou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Zou2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pretomanid_Zou2022_reference&quot;,&quot;label&quot;:&quot;Zou_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Zou2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pretomanid_Nyangwa2026_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Nyangwa_2026_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/Pretomanid_Nyangwa2026_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Abdelwahab_2026_QTcF&quot;,&quot;label&quot;:&quot;Abdelwahab_2026 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Abdelwahab_2026_QTcF.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ngara_2025_Pretomanid&quot;,&quot;label&quot;:&quot;Ngara_2025 \u00b7 Pretomanid&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pretomanid/pd_Ngara_2025_Pretomanid.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pretomanid — `Pretomanid_Ngara2025_estimates_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Pretomanid clearance and central volume values are implausibly large for mice, indicating a unit error in the extracted record.
+> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-13 11:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pretomanid clearance and central volume values are implausibly large for mice, indicating a unit error in the extracted record.
 
-<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Ngara2025_estimates_rse" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="pretomanid" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Ngara2025_estimates_rse" status="rejected" stale="true" population="mice with tuberculosis" measured-compound="pretomanid" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational Modeling of BTZ-043 to Predict Phase 2A Efficacy and Evaluate Drug-Drug Interactions With Bedaquiline, Pretomanid, and Linezolid in Murine Models. The Journal of infectious diseases 231(5):e901–e911 (2025).
@@ -51,7 +51,7 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.792). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.792). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -154,12 +154,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Ngara_2025_table_1:row2:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ngara_2025_table_1:row1:col1', 'Ngara_2025_table_1:row25:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Ngara_2025_table_1:row3:col1', 'Ngara_2025_table_1:row27:col1'] |
-| C5_dimension_Q331 | fail | 1 / [time] | d−1 | ['Ngara_2025_table_1:row17:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | d−1 (1 / [time]) | ['Ngara_2025_table_1:row17:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Ngara_2025_table_1:row26:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ngara_2025_table_1:row23:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Ngara_2025_table_1:row6:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Ngara_2025_table_1:row5:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Ngara_2025_table_1:row4:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Ngara_2025_table_1:row4:col1'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['Ngara_2025_table_1:row29:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 404 L/h | ['Ngara_2025_table_1:row1:col1', 'Ngara_2025_table_1:row25:col1'] |
@@ -182,7 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # lasmiditan — `Lasmiditan_Tsai2021_population_mean_see`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Lasmiditan's central volume of distribution and absorption lag time were not extracted, so library placeholders were used and the model was quarantined.
+> This record was reviewed on 2026-11-07 16:45 UTC (Needs review), but the paper was screened again on 2026-10-07 06:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lasmiditan's central volume of distribution and absorption lag time were not extracted, so library placeholders were used and the model was quarantined.
 
-<div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_population_mean_see" status="model_quarantined" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_population_mean_see" status="needs_review" stale="true" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics, Safety, and Tolerability of Lasmiditan in Pediatric Patients with Migraine. Clinical pharmacokinetics 60(6):819-828 (2021).
@@ -48,7 +48,7 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,6 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row4:col1'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['Tab3:row5:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row3:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Tab3:row7:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 107 L/h | ['Tab3:row2:col1'] |
@@ -194,7 +195,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

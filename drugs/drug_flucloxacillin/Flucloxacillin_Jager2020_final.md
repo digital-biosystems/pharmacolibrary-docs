@@ -4,11 +4,11 @@
 
 # flucloxacillin — `Flucloxacillin_Jager2020_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The Bmax parameter, reported in mmol/L, was rejected due to a dimension mismatch with the model's structural expectations.
+> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 10:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The Bmax parameter, reported in mmol/L, was rejected due to a dimension mismatch with the model's structural expectations.
 
-<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_final" status="rejected" stale="false" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_final" status="rejected" stale="true" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Optimization of flucloxacillin dosing regimens in critically ill patients using population pharmacokinetic modelling of total and unbound concentrations. The Journal of antimicrobial chemotherapy 75(9):2641–2649 (2020).
@@ -41,7 +41,7 @@ Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Opt
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['dkaa187-T2:row4:col3', 'dkaa187-T2:row4:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['dkaa187-T2:row7:col3', 'dkaa187-T2:row7:col4'] |
-| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | mmol/L | ['dkaa187-T2:row3:col3', 'dkaa187-T2:row3:col4'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['dkaa187-T2:row3:col3', 'dkaa187-T2:row3:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['dkaa187-T2:row5:col3', 'dkaa187-T2:row5:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['dkaa187-T2:row6:col3', 'dkaa187-T2:row6:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 55.4 | ['dkaa187-T2:row4:col3', 'dkaa187-T2:row4:col4'] |
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

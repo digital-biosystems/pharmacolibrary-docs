@@ -42,7 +42,7 @@ Temozolomide is an alkylating anticancer drug used to treat brain cancers such a
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Büsker_2022_reference](drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04424-4](https://doi.org/10.1007/s00280-022-04424-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Panetta_2003_reference](drugs/drug_temozolomide/Temozolomide_Panetta2003_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Panetta JC et al., Population pharmacokinetics of temozolo…, Cancer chemotherapy and pha… (2003) | [10.1007/s00280-003-0670-4](https://doi.org/10.1007/s00280-003-0670-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jen_2000_reference](drugs/drug_temozolomide/Temozolomide_Jen2000_reference.md) | — | 1-compartment (no model) | 0 | Jen JF et al., Population pharmacokinetics of temozolo…, Pharmaceutical research (2000) | [10.1023/a:1026403805756](https://doi.org/10.1023/a:1026403805756) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ostermann_2004_reference](drugs/drug_temozolomide/Temozolomide_Ostermann2004_reference.md) | — | 1-compartment (no model) | 8 | Ostermann S et al., Plasma and cerebrospinal fluid populati…, Clinical cancer research :… (2004) | [10.1158/1078-0432.CCR-03-0807](https://doi.org/10.1158/1078-0432.CCR-03-0807) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ostermann_2004_reference](drugs/drug_temozolomide/Temozolomide_Ostermann2004_reference.md) | — | 1-compartment (no model) | 8 | Ostermann S et al., Plasma and cerebrospinal fluid populati…, Clinical cancer research :… (2004) | [10.1158/1078-0432.CCR-03-0807](https://doi.org/10.1158/1078-0432.CCR-03-0807) |
 
 ## Pharmacogenomics (PGx)
 
@@ -100,7 +100,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 192 matched, 60 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

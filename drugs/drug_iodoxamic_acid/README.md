@@ -27,7 +27,7 @@ Iodoxamic acid is an iodinated, water-soluble X-ray contrast agent that is taken
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Lin_1978_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Lin1978_reference.md) | — | 1-compartment (no model) | 1 | Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978) | [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_1978_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Lin1978_reference.md) | — | 1-compartment (no model) | 1 | Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978) | [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715) |
 | <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Moss_1980_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Moss1980_reference.md) | — | parent + metabolite (no model) | 0 | Moss AA et al., Gastrointestinal radiology. Pharmacokin…, Investigative radiology (1980) | [10.1097/00004424-198011001-00028](https://doi.org/10.1097/00004424-198011001-00028) |
 
 <details class="legend">
@@ -48,7 +48,7 @@ Iodoxamic acid is an iodinated, water-soluble X-ray contrast agent that is taken
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

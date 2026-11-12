@@ -42,7 +42,7 @@ Ornithine is used in liver therapy, as a lipotropic agent for liver conditions. 
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Serkland_2026_reference](drugs/drug_ornithine/Ornithine_Serkland2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Serkland TT et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01692-8](https://doi.org/10.1007/s40262-026-01692-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Jia_2026_reference](drugs/drug_ornithine/Ornithine_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Kwack_2026_reference](drugs/drug_ornithine/Ornithine_Kwack2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Le_1997_reference](drugs/drug_ornithine/Ornithine_Le1997_reference.md) | — | general linear (no model) | 7 | Le Bricon T et al., Ornithine alpha-ketoglutarate metabolis…, The American journal of cli… (1997) | [10.1093/ajcn/65.2.512](https://doi.org/10.1093/ajcn/65.2.512) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Le_1997_reference](drugs/drug_ornithine/Ornithine_Le1997_reference.md) | — | general linear (no model) | 7 | Le Bricon T et al., Ornithine alpha-ketoglutarate metabolis…, The American journal of cli… (1997) | [10.1093/ajcn/65.2.512](https://doi.org/10.1093/ajcn/65.2.512) |
 
 ## Pharmacodynamics (PD)
 
@@ -73,13 +73,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:40 | 6:42 | 3/1/0 | 0/1/0 | 0/0/0 | 790,326/46,265 | einfracz / qwen3.8-27b | 38 | 8/31 | 36/2 | 0 |
+| 2026-10-07 19:40 | 6:42 | 3/1/0 | 0/1/0 | 0/0/0 | 790,326/46,265 | einfracz / qwen3.8-27b | 37 | 8/31 | 35/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 606 matched, 117 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

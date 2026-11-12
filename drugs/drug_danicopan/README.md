@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;danicopan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chen_2026_AP&quot;,&quot;label&quot;:&quot;Chen_2026 \u00b7 AP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_danicopan/pd_Chen_2026_AP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # danicopan
 
@@ -22,7 +23,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | — | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | ▶ model + simulator | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
 
 ## ADME sites
 

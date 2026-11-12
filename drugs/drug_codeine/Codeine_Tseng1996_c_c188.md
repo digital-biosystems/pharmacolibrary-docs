@@ -5,11 +5,11 @@
 
 # codeine — `Codeine_Tseng1996_c_c188`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Codeine absorption lag time was rejected because the hour unit for the 2.35 value could not be converted to SI.
+> This record was reviewed on 2026-11-07 14:37 UTC (Rejected), but the paper was screened again on 2026-11-03 19:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Codeine absorption lag time was rejected because the hour unit for the 2.35 value could not be converted to SI.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_c188" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_c188" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine in Chinese subjects of different CYP2D6 genotypes. Clinical pharmacology and therapeutics 60(2):177–182 (1996).
@@ -44,7 +44,7 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,13 +125,13 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | nmol/L | ['Tseng_1996_table_p4_1:row0:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['Tseng_1996_table_p4_1:row0:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gretler_2020:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Tseng_1996_table_p4_1:row0:col5'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tseng_1996_table_p4_1:row0:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dean_2004:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Persson_1992:review'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | nmol · hr/L | ['Tseng_1996_table_p4_1:row0:col2'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nmol · hr/L ([substance] * [time] / [length] ** 3) | ['Tseng_1996_table_p4_1:row0:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 132 | ['Tseng_1996:other_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.92 L/h | ['Tseng_1996:other_prose'] |
@@ -153,7 +153,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

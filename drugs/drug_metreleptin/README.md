@@ -17,7 +17,7 @@ Metreleptin is a protein drug used to treat lipodystrophy, including acquired an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Wong_2004_reference](drugs/drug_metreleptin/Metreleptin_Wong2004_reference.md) | — | 1-compartment (no model) | 3 | Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004) | [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wong_2004_reference](drugs/drug_metreleptin/Metreleptin_Wong2004_reference.md) | — | 1-compartment (no model) | 3 | Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004) | [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931) |
 
 ## ADME sites
 
@@ -48,7 +48,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 35 matched, 31 returned
 - **screened:** 6  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

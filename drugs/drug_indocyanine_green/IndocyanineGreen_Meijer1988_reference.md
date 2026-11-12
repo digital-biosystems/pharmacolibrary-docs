@@ -5,11 +5,11 @@
 
 # indocyanine green — `IndocyanineGreen_Meijer1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Indocyanine green volume of distribution 3.01 mL and clearance 230 ml/min are physiologically implausible and dimensionally inconsistent.
+> This record was reviewed on 2026-11-07 14:38 UTC (Rejected), but the paper was screened again on 2026-10-07 21:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indocyanine green volume of distribution 3.01 mL and clearance 230 ml/min are physiologically implausible and dimensionally inconsistent.
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="false" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="true" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Meijer DK, Weert B, Vermeer GA. Pharmacokinetics of biliary excretion in man. VI. Indocyanine green. European journal of clinical pharmacology 35(3):295–303 (1988).
@@ -40,7 +40,7 @@ Meijer DK, Weert B, Vermeer GA. Pharmacokinetics of biliary excretion in man. VI
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Meijer_1988:abstract', 'Meijer_1988:abstract'] |
-| C5_dimension_Q50 | fail | [time] | min | ['Meijer_1988:abstract'] |
+| C5_dimension_Q50 | fail | 1 / [time] | min ([time]) | ['Meijer_1988:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Meijer_1988:abstract', 'Meijer_1988:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Meijer_1988:abstract', 'Meijer_1988:abstract', 'Meijer_1988:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Meijer_1988:abstract', 'Meijer_1988:abstract'] |
@@ -157,7 +157,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

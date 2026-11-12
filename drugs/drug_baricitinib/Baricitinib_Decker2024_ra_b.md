@@ -4,11 +4,11 @@
 
 # baricitinib — `Baricitinib_Decker2024_ra_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Baricitinib's oral clearance and central volume are unit-mismatched as years, and the peripheral compartment is structurally unreachable due to missing intercompartmental clearance.
+> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-06 23:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Baricitinib's oral clearance and central volume are unit-mismatched as years, and the peripheral compartment is structurally unreachable due to missing intercompartmental clearance.
 
-<div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_ra_b" status="rejected" stale="false" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_ra_b" status="rejected" stale="true" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A population pharmacokinetic model using allometric scaling for baricitinib in patients with juvenile idiopathic arthritis. CPT: pharmacometrics & systems pharmacology 13(6):970–981 (2024).
@@ -42,7 +42,7 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -156,10 +156,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Decker_2024_table_3:row5:col7'] |
-| C5_dimension_Q27 | fail | [time] | years | ['Decker_2024_table_3:row4:col7'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | years ([time]) | ['Decker_2024_table_3:row4:col7'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Decker_2024_table_3:row8:col7'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Decker_2024_table_3:row10:col7'] |
-| C5_dimension_Q76 | fail | [time] | years | ['Decker_2024_table_3:row7:col7'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | years ([time]) | ['Decker_2024_table_3:row7:col7'] |
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] |  | ['Decker_2024_table_3:row6:col7'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Decker_2024_table_3:row9:col7'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -183,7 +183,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

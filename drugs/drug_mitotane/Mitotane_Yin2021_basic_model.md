@@ -5,11 +5,11 @@
 
 # mitotane — `Mitotane_Yin2021_basic_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance parameter Q/F is dimensionally inconsistent with its unit of /day.
+> This record was reviewed on 2026-11-07 15:42 UTC (Rejected), but the paper was screened again on 2026-10-06 21:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance parameter Q/F is dimensionally inconsistent with its unit of /day.
 
-<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Yin2021_basic_model" status="rejected" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Yin2021_basic_model" status="rejected" stale="true" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et al. Population Pharmacokinetic and Pharmacogenetic Analysis of Mitotane in Patients with Adrenocortical Carcinoma: Towards Individualized Dosing. Clinical pharmacokinetics 60(1):89–102 (2021).
@@ -39,7 +39,7 @@ Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +124,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab2:row9:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col1'] |
-| C5_dimension_Q69 | fail | 1 / [time] | /day | ['Tab2:row12:col1'] |
+| C5_dimension_Q69 | fail | [length] ** 3 / [time] | /day (1 / [time]) | ['Tab2:row12:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab2:row11:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -148,7 +148,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;abatacept&quot;,&quot;href&quot;:&quot;drugs/drug_abatacept/&quot;},{&quot;label&quot;:&quot;Gandhi_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Li_2019_DAS28&quot;,&quot;label&quot;:&quot;Li_2019 \u00b7 DAS28&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abatacept/pd_Li_2019_DAS28.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abatacept — `Abatacept_Gandhi2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The subcutaneous bioavailability of abatacept is recorded as 6.09, an impossible value exceeding unity, while clearance and volume units are unconvertible.
+> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-06 23:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The subcutaneous bioavailability of abatacept is recorded as 6.09, an impossible value exceeding unity, while clearance and volume units are unconvertible.
 
-<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="true" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gandhi Y, Passarell JA, Roy A, Murthy B. Model-Based Selection and Recommendation for Subcutaneous Abatacept Dose in Patients With Polyarticular Juvenile Idiopathic Arthritis. Journal of clinical pharmacology 61(5):688–699 (2021).
@@ -51,7 +52,7 @@ Gandhi Y, Passarell JA, Roy A, Murthy B. Model-Based Selection and Recommendatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.344). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.344). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -181,11 +182,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Units | ['jcph1797-tbl-0002:row8:col1', 'jcph1797-tbl-0002:row8:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | Units ([luminosity] / [length] ** 2) | ['jcph1797-tbl-0002:row8:col1', 'jcph1797-tbl-0002:row8:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph1797-tbl-0002:row19:col1', 'jcph1797-tbl-0002:row19:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['jcph1797-tbl-0002:row2:col1', 'jcph1797-tbl-0002:row2:col2'] |
-| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | Units | ['jcph1797-tbl-0002:row4:col1', 'jcph1797-tbl-0002:row4:col2'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | Units | ['jcph1797-tbl-0002:row16:col1', 'jcph1797-tbl-0002:row16:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['jcph1797-tbl-0002:row2:col1', 'jcph1797-tbl-0002:row2:col2'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['jcph1797-tbl-0002:row4:col1', 'jcph1797-tbl-0002:row4:col2'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['jcph1797-tbl-0002:row16:col1', 'jcph1797-tbl-0002:row16:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.36 | ['jcph1797-tbl-0002:row8:col1', 'jcph1797-tbl-0002:row8:col2'] |
 | C8_topology | pass |  |  |  |
 
@@ -205,7 +206,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

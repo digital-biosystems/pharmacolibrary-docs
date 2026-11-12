@@ -4,11 +4,11 @@
 
 # cefpirome — `Cefpirome_Malerczyk1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:50 UTC (Needs review), but the paper was screened again on 2026-10-07 11:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Malerczyk1987_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Malerczyk1987_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Malerczyk V, Maass L, Verho M, Hajdú P, Klesel N, Rangoonwala R. Single and multiple dose pharmacokinetics of intravenous cefpirome (HR 810), a novel cephalosporin derivative. Infection 15(3):211–214 (1987).
@@ -35,7 +35,7 @@ Malerczyk V, Maass L, Verho M, Hajdú P, Klesel N, Rangoonwala R. Single and mul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,6 +111,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q60 | pass | [time] |  | ['Malerczyk_1987:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Haseeb_2022:review'] |
@@ -143,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

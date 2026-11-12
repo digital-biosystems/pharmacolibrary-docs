@@ -4,11 +4,11 @@
 
 # cibenzoline — `Cibenzoline_Brazzell1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Renal clearance for cibenzoline was rejected because its extracted unit (ng/mL) is dimensionally incorrect, describing concentration rather than plasma volume cleared per time.
+> This record was reviewed on 2026-11-07 16:46 UTC (Rejected), but the paper was screened again on 2026-10-08 16:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Renal clearance for cibenzoline was rejected because its extracted unit (ng/mL) is dimensionally incorrect, describing concentration rather than plasma volume cleared per time.
 
-<div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="false" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="true" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics and pharmacodynamics of intravenous cibenzoline in normal volunteers. Journal of clinical pharmacology 25(6):418–423 (1985).
@@ -43,7 +43,7 @@ Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,12 +146,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q26 | fail | [mass] / [length] ** 3 | ng/mL | ['Brazzell_1985_table_3:row9:col1', 'Brazzell_1985_table_3:row9:col2', 'Brazzell_1985_table_3:row9:col3', 'Brazzell_1985_table_3:row9:col4', 'Brazzell_1985_table_3:row9:col5', 'Brazzell_1985_table_3:row9:col6', 'Brazzell_1985_table_3:row9:col7', 'Brazzell_1985_table_3:row9:col8'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | ng/mL ([mass] / [length] ** 3) | ['Brazzell_1985_table_3:row9:col1', 'Brazzell_1985_table_3:row9:col2', 'Brazzell_1985_table_3:row9:col3', 'Brazzell_1985_table_3:row9:col4', 'Brazzell_1985_table_3:row9:col5', 'Brazzell_1985_table_3:row9:col6', 'Brazzell_1985_table_3:row9:col7', 'Brazzell_1985_table_3:row9:col8'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Brazzell_1985_table_3:row2:col1', 'Brazzell_1985_table_3:row2:col2', 'Brazzell_1985_table_3:row2:col3', 'Brazzell_1985_table_3:row2:col4', 'Brazzell_1985_table_3:row2:col5', 'Brazzell_1985_table_3:row2:col6', 'Brazzell_1985_table_3:row2:col7', 'Brazzell_1985_table_3:row2:col8'] |
 | C5_dimension_Q50 | pass | 1 / [time] |  | ['Brazzell_1985_table_3:row7:col1', 'Brazzell_1985_table_3:row7:col2', 'Brazzell_1985_table_3:row7:col3', 'Brazzell_1985_table_3:row7:col4', 'Brazzell_1985_table_3:row7:col5', 'Brazzell_1985_table_3:row7:col6', 'Brazzell_1985_table_3:row7:col7', 'Brazzell_1985_table_3:row7:col8'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Brazzell_1985_table_3:row10:col1', 'Brazzell_1985_table_3:row10:col2', 'Brazzell_1985_table_3:row10:col3', 'Brazzell_1985_table_3:row10:col4', 'Brazzell_1985_table_3:row10:col5', 'Brazzell_1985_table_3:row10:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Brazzell_1985_table_3:row6:col1', 'Brazzell_1985_table_3:row6:col2', 'Brazzell_1985_table_3:row6:col3', 'Brazzell_1985_table_3:row6:col4', 'Brazzell_1985_table_3:row6:col5', 'Brazzell_1985_table_3:row6:col6', 'Brazzell_1985_table_3:row6:col7', 'Brazzell_1985_table_3:row6:col8'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['Brazzell_1985_table_3:row1:col1', 'Brazzell_1985_table_3:row1:col2', 'Brazzell_1985_table_3:row1:col3', 'Brazzell_1985_table_3:row1:col4', 'Brazzell_1985_table_3:row1:col5', 'Brazzell_1985_table_3:row1:col6', 'Brazzell_1985_table_3:row1:col7', 'Brazzell_1985_table_3:row1:col8'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Brazzell_1985_table_3:row1:col1', 'Brazzell_1985_table_3:row1:col2', 'Brazzell_1985_table_3:row1:col3', 'Brazzell_1985_table_3:row1:col4', 'Brazzell_1985_table_3:row1:col5', 'Brazzell_1985_table_3:row1:col6', 'Brazzell_1985_table_3:row1:col7', 'Brazzell_1985_table_3:row1:col8'] |
 | C5_dimension_Q91 | pass | [mass] |  | ['Brazzell_1985_table_3:row8:col1', 'Brazzell_1985_table_3:row8:col2', 'Brazzell_1985_table_3:row8:col3', 'Brazzell_1985_table_3:row8:col4', 'Brazzell_1985_table_3:row8:col5', 'Brazzell_1985_table_3:row8:col6', 'Brazzell_1985_table_3:row8:col7', 'Brazzell_1985_table_3:row8:col8'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 23.8 L | ['Brazzell_1985_table_3:row6:col1', 'Brazzell_1985_table_3:row6:col2', 'Brazzell_1985_table_3:row6:col3', 'Brazzell_1985_table_3:row6:col4', 'Brazzell_1985_table_3:row6:col5', 'Brazzell_1985_table_3:row6:col6', 'Brazzell_1985_table_3:row6:col7', 'Brazzell_1985_table_3:row6:col8'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

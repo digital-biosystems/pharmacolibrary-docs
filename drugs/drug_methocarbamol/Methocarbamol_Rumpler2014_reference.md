@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;methocarbamol&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/&quot;},{&quot;label&quot;:&quot;Rumpler_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methocarbamol — `Methocarbamol_Rumpler2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Absorption rate constant for methocarbamol lacked a source value, so placeholder defaults were used for a model built only on abstract statistics.
+> This record was reviewed on 2026-11-07 16:42 UTC (Needs review), but the paper was screened again on 2026-10-07 02:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant for methocarbamol lacked a source value, so placeholder defaults were used for a model built only on abstract statistics.
 
-<div class="pk-model-meta" hidden drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="needs_review" stale="false" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="needs_review" stale="true" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaifenesin after single intravenous and multiple-dose oral administration of methocarbamol in the horse. Journal of veterinary pharmacology and therapeutics 37(1):25–34 (2014).
@@ -46,7 +46,7 @@ Rumpler MJ, Colahan P, Sams RA. The pharmacokinetics of methocarbamol and guaife
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -156,6 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q57 | pass | [time] |  | ['Rumpler_2014:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Rumpler_2014:abstract'] |
 | C5_dimension_Q73 | pass | [time] |  | ['Rumpler_2014:abstract'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Rumpler_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 37.8 L/h | ['Rumpler_2014:abstract'] |

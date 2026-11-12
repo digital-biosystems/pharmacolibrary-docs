@@ -39,9 +39,9 @@ Octreotide, a somatostatin analogue, is used to treat acromegaly and various neu
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Choe_2017_reference](drugs/drug_octreotide/Octreotide_Choe2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Choe S et al., Parameter estimation for sigmoid E&lt;sub&gt;…, Translational and clinical… (2017) | [10.12793/tcp.2017.25.2.74](https://doi.org/10.12793/tcp.2017.25.2.74) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ding_2004_reference](drugs/drug_octreotide/Octreotide_Ding2004_reference.md) | — | 1-compartment (no model) | 6 | Ding JS et al., [Determination of octreotide in human p…, Yao xue xue bao = Acta phar… (2004) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Ma_2005_reference](drugs/drug_octreotide/Octreotide_Ma2005_reference.md) | — | 1-compartment (no model) | 3 | Ma P et al., Pharmacokinetic-pharmacodynamic compari…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2005.04.003](https://doi.org/10.1016/j.clpt.2005.04.003) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Min_2025_reference](drugs/drug_octreotide/Octreotide_Min2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ding_2004_reference](drugs/drug_octreotide/Octreotide_Ding2004_reference.md) | — | 1-compartment (no model) | 6 | Ding JS et al., [Determination of octreotide in human p…, Yao xue xue bao = Acta phar… (2004) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Zhou_2000_reference](drugs/drug_octreotide/Octreotide_Zhou2000_reference.md) | — | 1-compartment (no model) | 2 | Zhou H et al., Population PK and PK/PD modelling of mi…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00297.x](https://doi.org/10.1046/j.1365-2125.2000.00297.x) |
 
 ## Pharmacodynamics (PD)
@@ -83,13 +83,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:49 | 18:48 | 3/2/0 | 2/0/0 | 0/0/0 | 712,235/24,480 | einfracz / qwen3.8-27b | 27 | 4/22 | 27/0 | 0 |
+| 2026-10-07 09:49 | 18:48 | 4/1/0 | 2/0/0 | 0/0/0 | 712,235/24,480 | einfracz / qwen3.8-27b | 27 | 4/22 | 27/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 319 matched, 119 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

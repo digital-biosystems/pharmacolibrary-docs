@@ -26,7 +26,7 @@ Flupirtine is a non-opioid analgesic that was used to treat pain.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Giorgi_2016_reference](drugs/drug_flupirtine/Flupirtine_Giorgi2016_reference.md) | — | 1-compartment (no model) | 2 | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Giorgi_2016_reference](drugs/drug_flupirtine/Flupirtine_Giorgi2016_reference.md) | — | 1-compartment (no model) | 2 | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
 
 ## Pharmacodynamics (PD)
 
@@ -82,13 +82,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:10 | 2:45 | 0/1/0 | 7/0/0 | 1/0/2 | 281,217/13,052 | einfracz / qwen3.8-27b | 8 | 3/7 | 7/1 | 0 |
+| 2026-10-07 06:10 | 2:45 | 1/0/0 | 7/0/0 | 1/0/2 | 281,217/13,052 | einfracz / qwen3.8-27b | 8 | 3/7 | 7/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 55 matched, 53 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

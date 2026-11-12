@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;5-Hydroxy-L-tryptophan&quot;,&quot;href&quot;:&quot;drugs/toxin_5_hydroxy_l_tryptophan/&quot;},{&quot;label&quot;:&quot;Guan_2020 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_5HydroxyLTryptophan_Arbona2023_reference&quot;,&quot;label&quot;:&quot;Arbona_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_5_hydroxy_l_tryptophan/D_5HydroxyLTryptophan_Arbona2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_5HydroxyLTryptophan_Smarius2008_reference&quot;,&quot;label&quot;:&quot;Smarius_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_5_hydroxy_l_tryptophan/D_5HydroxyLTryptophan_Smarius2008_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_5HydroxyLTryptophan_Westenberg1982_reference&quot;,&quot;label&quot;:&quot;Westenberg_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_5_hydroxy_l_tryptophan/D_5HydroxyLTryptophan_Westenberg1982_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 5-Hydroxy-L-tryptophan — `D_5HydroxyLTryptophan_Guan2020_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model for 5-hydroxy-L-tryptophan was held back because its elimination clearance parameter was left at library defaults instead of an extracted value.
 
-<div class="pk-model-meta" hidden drug="5-Hydroxy-L-tryptophan" model-id="D_5HydroxyLTryptophan_Guan2020_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="5-Hydroxy-L-tryptophan" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="5-Hydroxy-L-tryptophan" model-id="D_5HydroxyLTryptophan_Guan2020_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="5-Hydroxy-L-tryptophan" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Guan Z, Jacobs G, van Pelt H, Van Gerven JMA, Burggraaf J, Zhao W. PK/PD modeling of 5-hydroxytryptophan (5-HTP) challenge test with cortisol measurement in serum and saliva. Pharmacology research & perspectives 8(2):e00574 (2020).
@@ -22,12 +23,14 @@ Guan Z, Jacobs G, van Pelt H, Van Gerven JMA, Burggraaf J, Zhao W. PK/PD modelin
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | ka (h−1) | kabs | 12.10 | h−1 | 0.38 |
@@ -38,7 +41,7 @@ Guan Z, Jacobs G, van Pelt H, Van Gerven JMA, Burggraaf J, Zhao W. PK/PD modelin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +49,13 @@ Guan Z, Jacobs G, van Pelt H, Van Gerven JMA, Burggraaf J, Zhao W. PK/PD modelin
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model for 5-hydroxy-L-tryptophan was held back because its elimination clearance parameter was left at library defaults instead of an extracted value.**
+
+The record lists an elimination rate constant (kel) of 36.00 1/h, but the model builder failed to extract or default an explicit elimination clearance for the central compartment. This omission caused the model to rely on a library placeholder for clearance, triggering a quarantine. Additionally, the model assumed bioavailability (F) and metabolite formation (Fm) were both 1. Extracted — 5 hydroxy l tryptophan: kabs 12.1 h−1, V/F 5.32 L, A1 -12.3, tmax 11.5 h, kel 36 1/h.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -114,6 +123,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 5.32 L | ['prp2574-tbl-0002:row3:col1', 'prp2574-tbl-0002:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered | neither emitted nor in defaulted[]: ['kel'] |
+| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

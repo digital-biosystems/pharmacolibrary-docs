@@ -5,11 +5,11 @@
 
 # moxidectin — `Moxidectin_Wood2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CLint and CLNR have no unit.
+> This record was reviewed on 2026-11-07 15:43 UTC (Needs review), but the paper was screened again on 2026-10-07 10:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CLint and CLNR have no unit.
 
-<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="false" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="true" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wood ND, Smith D, Kinrade SA, Sullivan MT, Rayner CR, Wesche D et al. The use of quantitative clinical pharmacology approaches to support moxidectin dosing recommendations in lactation. PLoS neglected tropical diseases 18(8):e0012351 (2024).
@@ -44,7 +44,7 @@ Wood ND, Smith D, Kinrade SA, Sullivan MT, Rayner CR, Wesche D et al. The use of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 | C5_dimension_Q374 | pass | [mass] / [substance] |  | ['pntd.0012351.t001:row1:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['pntd.0012351.t001:row8:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Chhonker_2023:review'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | μL/min/mg protein | ['pntd.0012351.t001:row14:col1', 'pntd.0012351.t001:row14:col2'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] | μL/min/mg protein | ['pntd.0012351.t001:row14:col1', 'pntd.0012351.t001:row14:col2'] |
 | C5_unit_missing_Q79 | fail | [length] ** 3 / [time] | μl/min/mg protein | ['pntd.0012351.t001:row16:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -149,7 +149,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

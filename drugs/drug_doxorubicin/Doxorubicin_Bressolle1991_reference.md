@@ -5,11 +5,11 @@
 
 # doxorubicin — `Doxorubicin_Bressolle1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Doxorubicin clearance of 350.0 mL/day was rejected because the unit could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 14:26 UTC (Rejected), but the paper was screened again on 2026-11-03 15:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Doxorubicin clearance of 350.0 mL/day was rejected because the unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian estimation of doxorubicin pharmacokinetic parameters. Cancer chemotherapy and pharmacology 29(1):53–60 (1991).
@@ -40,7 +40,7 @@ Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian es
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,10 +136,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Augustin_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bressolle_1991_table_4:row0:col3', 'Bressolle_1991_table_4:row1:col3', 'Bressolle_1991_table_4:row2:col3', 'Bressolle_1991_table_4:row3:col3', 'Bressolle_1991_table_4:row4:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h⁻¹ | ['Bressolle_1991_table_2:row3:col1', 'Bressolle_1991_table_2:row3:col5'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h⁻¹ (1 / [time]) | ['Bressolle_1991_table_2:row3:col1', 'Bressolle_1991_table_2:row3:col5'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Bressolle_1991_table_4:row0:col2', 'Bressolle_1991_table_4:row1:col2', 'Bressolle_1991_table_4:row2:col2', 'Bressolle_1991_table_4:row3:col2', 'Bressolle_1991_table_4:row4:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 350 | ['Augustin_2026:review'] |
 | C8_topology | pass |  |  |  |
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

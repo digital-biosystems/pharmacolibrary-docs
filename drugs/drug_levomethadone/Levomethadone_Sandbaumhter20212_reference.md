@@ -5,11 +5,11 @@
 
 # levomethadone — `Levomethadone_Sandbaumhter20212_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because k21, V2, Vss, AUC∞, and CLb have unconvertible units, and the d-methadone metabolite path is unreachable from the levomethadone dose.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 03:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because k21, V2, Vss, AUC∞, and CLb have unconvertible units, and the d-methadone metabolite path is unreachable from the levomethadone dose.
 
-<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="false" population="anesthetized Shetland ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="true" population="anesthetized Shetland ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Sandbaumhüter FA, Gittel C, Larenza-Menzies MP, Theurillat R, Thormann W, Braun C. Stereoselective methadone disposition after administration of racemic methadone to anesthetized Shetland ponies assessed by capillary electrophoresis. Electrophoresis 42(17-18):1826–1831 (2021).
@@ -54,7 +54,7 @@ Sandbaumhüter FA, Gittel C, Larenza-Menzies MP, Theurillat R, Thormann W, Braun
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -160,19 +160,19 @@ Parameters k21, V2, Vss, AUC∞, and CLb are listed with the unit 'unit' instead
 | C0_has_structural_params | pass |  | 13 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [luminosity] / [length] ** 2 | unit | ['elps7427-tbl-0001:row14:col1'] |
-| C5_dimension_Q23 | fail | [luminosity] / [length] ** 2 | unit | ['elps7427-tbl-0001:row16:col1'] |
-| C5_dimension_Q301 | fail | [length] ** 3 / [time] | L/min | ['elps7427-tbl-0001:row9:col1'] |
-| C5_dimension_Q302 | fail | [luminosity] / [length] ** 2 | unit | ['elps7427-tbl-0001:row10:col1'] |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L/min | ['elps7427-tbl-0001:row5:col1'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | unit ([luminosity] / [length] ** 2) | ['elps7427-tbl-0001:row14:col1'] |
+| C5_dimension_Q23 | fail | [length] ** 3 / [time] | unit ([luminosity] / [length] ** 2) | ['elps7427-tbl-0001:row16:col1'] |
+| C5_dimension_Q301 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['elps7427-tbl-0001:row9:col1'] |
+| C5_dimension_Q302 | fail | 1 / [time] | unit ([luminosity] / [length] ** 2) | ['elps7427-tbl-0001:row10:col1'] |
+| C5_dimension_Q47 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['elps7427-tbl-0001:row5:col1'] |
 | C5_dimension_Q53 | pass | [time] |  | ['elps7427-tbl-0001:row15:col1'] |
 | C5_dimension_Q59 | pass | [time] |  | ['elps7427-tbl-0001:row6:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['elps7427-tbl-0001:row7:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['elps7427-tbl-0001:row12:col1'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | unit | ['elps7427-tbl-0001:row11:col1'] |
-| C5_dimension_Q65 | fail | [luminosity] / [length] ** 2 | unit | ['elps7427-tbl-0001:row13:col1'] |
-| C5_dimension_Q67 | fail | [length] ** 3 / [time] | L/min | ['elps7427-tbl-0001:row4:col1'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/mL | ['elps7427-tbl-0001:row17:col1'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | unit ([luminosity] / [length] ** 2) | ['elps7427-tbl-0001:row11:col1'] |
+| C5_dimension_Q65 | fail | [length] ** 3 | unit ([luminosity] / [length] ** 2) | ['elps7427-tbl-0001:row13:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['elps7427-tbl-0001:row4:col1'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/mL ([mass] / [length] ** 3) | ['elps7427-tbl-0001:row17:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.44 | ['elps7427-tbl-0001:row16:col1'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.46 L | ['elps7427-tbl-0001:row12:col1'] |
@@ -193,7 +193,7 @@ Parameters k21, V2, Vss, AUC∞, and CLb are listed with the unit 'unit' instead
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

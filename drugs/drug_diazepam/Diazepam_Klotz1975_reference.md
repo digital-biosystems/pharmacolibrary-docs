@@ -5,11 +5,11 @@
 
 # diazepam — `Diazepam_Klotz1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Diazepam blood clearance unit L/h could not be converted to SI, causing a dimension mismatch on a structural parameter.
+> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Diazepam blood clearance unit L/h could not be converted to SI, causing a dimension mismatch on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="false" population="adults with normal liver function and liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="true" population="adults with normal liver function and liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and liver disease on the disposition and elimination of diazepam in adult man. The Journal of clinical investigation 55(2):347–359 (1975).
@@ -42,7 +42,7 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,8 +150,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Klotz_1975:other_prose'] |
-| C5_dimension_Q57 | fail | [length] ** 2 | B | ['Klotz_1975_table_p9_1:row2:col1', 'Klotz_1975_table_p9_1:row2:col2', 'Klotz_1975_table_p9_1:row2:col3', 'Klotz_1975_table_p9_1:row2:col4', 'Klotz_1975_table_p9_1:row2:col5', 'Klotz_1975_table_p9_1:row2:col6'] |
-| C5_dimension_Q60 | fail | [length] ** 2 | B | ['Klotz_1975_table_p9_1:row4:col1', 'Klotz_1975_table_p9_1:row4:col2', 'Klotz_1975_table_p9_1:row4:col3', 'Klotz_1975_table_p9_1:row4:col4', 'Klotz_1975_table_p9_1:row4:col5', 'Klotz_1975_table_p9_1:row4:col6'] |
+| C5_dimension_Q57 | fail | [time] | B ([length] ** 2) | ['Klotz_1975_table_p9_1:row2:col1', 'Klotz_1975_table_p9_1:row2:col2', 'Klotz_1975_table_p9_1:row2:col3', 'Klotz_1975_table_p9_1:row2:col4', 'Klotz_1975_table_p9_1:row2:col5', 'Klotz_1975_table_p9_1:row2:col6'] |
+| C5_dimension_Q60 | fail | [time] | B ([length] ** 2) | ['Klotz_1975_table_p9_1:row4:col1', 'Klotz_1975_table_p9_1:row4:col2', 'Klotz_1975_table_p9_1:row4:col3', 'Klotz_1975_table_p9_1:row4:col4', 'Klotz_1975_table_p9_1:row4:col5', 'Klotz_1975_table_p9_1:row4:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13 | ['Klotz_1975:other_prose'] |
 | C8_topology | pass |  |  |  |
@@ -175,7 +175,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

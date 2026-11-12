@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model, full text, or quantitative parameters, and the mechanism for the effect of 1-hydroxynaphthalene on the binary response 'trouble sleeping' is not described.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Chen_2023_2`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

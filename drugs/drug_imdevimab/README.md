@@ -17,7 +17,7 @@ It is an approved antiviral monoclonal antibody, though it has also been investi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Lin_2024_reference](drugs/drug_imdevimab/Imdevimab_Lin2024_reference.md) | — | 2-compartment (no model) | 6 (+4 cov.) | Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024) | [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_2024_reference](drugs/drug_imdevimab/Imdevimab_Lin2024_reference.md) | — | 2-compartment (no model) | 6 (+4 cov.) | Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024) | [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ It is an approved antiviral monoclonal antibody, though it has also been investi
 
 - **PubMed hits:** 32 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 

@@ -4,11 +4,11 @@
 
 # cefpodoxime — `Cefpodoxime_Linnehan2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 11:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="cefpodoxime" model-id="Cefpodoxime_Linnehan2024_reference" status="rejected" stale="false" population="bottlenose dolphins" measured-compound="cefpodoxime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefpodoxime" model-id="Cefpodoxime_Linnehan2024_reference" status="needs_review" stale="true" population="bottlenose dolphins" measured-compound="cefpodoxime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Linnehan BK, Lesman SP, Boucher JF, Grover GS, Brodie EC, Meegan JM et al. POPULATION PHARMACOKINETICS OF CEFPODOXIME IN BOTTLENOSE DOLPHINS (. Journal of zoo and wildlife medicine : official publication of the American Association of Zoo Veterinarians 55(3):611–619 (2024).
@@ -30,7 +30,7 @@ Linnehan BK, Lesman SP, Boucher JF, Grover GS, Brodie EC, Meegan JM et al. POPUL
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Linnehan BK, Lesman SP, Boucher JF, Grover GS, Brodie EC, Meegan JM et al. POPUL
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Linnehan_2024:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Linnehan_2024:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Linnehan_2024:abstract'] |
@@ -138,13 +139,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

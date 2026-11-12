@@ -5,11 +5,11 @@
 
 # docetaxel — `Docetaxel_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for docetaxel lacks distribution volume and clearance, rendering it non-compartmental, and its reported unit failed conversion.
+> This record was reviewed on 2026-11-07 15:16 UTC (Rejected), but the paper was screened again on 2026-10-07 17:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for docetaxel lacks distribution volume and clearance, rendering it non-compartmental, and its reported unit failed conversion.
 
-<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="false" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="true" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus encequidar - A pharmacokinetic model and evaluation against IV docetaxel. Journal of pharmacokinetics and pharmacodynamics 51(4):335–352 (2024).
@@ -38,7 +38,7 @@ Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus en
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Fig5:caption', 'Fig5:caption'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Fig5:caption', 'Fig5:caption'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

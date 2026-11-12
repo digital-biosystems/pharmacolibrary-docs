@@ -26,8 +26,8 @@ Isotretinoin is a retinoid used to treat acne, and has also been used for condit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nulman_1998_reference](drugs/drug_isotretinoin/Isotretinoin_Nulman1998_reference.md) | — | 1-compartment (no model) | 1 | Nulman I et al., Steady-state pharmacokinetics of isotre…, Journal of clinical pharmac… (1998) | [10.1002/j.1552-4604.1998.tb04388.x](https://doi.org/10.1002/j.1552-4604.1998.tb04388.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Veal_2007_reference](drugs/drug_isotretinoin/Isotretinoin_Veal2007_reference.md) | — | 1-compartment (no model) | 4 | Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of cancer (2007) | [10.1038/sj.bjc.6603554](https://doi.org/10.1038/sj.bjc.6603554) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Nulman_1998_reference](drugs/drug_isotretinoin/Isotretinoin_Nulman1998_reference.md) | — | 1-compartment (no model) | 1 | Nulman I et al., Steady-state pharmacokinetics of isotre…, Journal of clinical pharmac… (1998) | [10.1002/j.1552-4604.1998.tb04388.x](https://doi.org/10.1002/j.1552-4604.1998.tb04388.x) |
 
 ## ADME sites
 
@@ -56,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:23 | 0:50 | 1/1/0 | 0/0/0 | 0/0/0 | 30,471/3,080 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 07:23 | 0:50 | 2/0/0 | 0/0/0 | 0/0/0 | 30,471/3,080 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

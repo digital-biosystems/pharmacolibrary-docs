@@ -5,11 +5,11 @@
 
 # ertapenem — `Ertapenem_Housman2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; cmax and AUC∞ have no unit.
+> This record was reviewed on 2026-11-07 14:48 UTC (Needs review), but the paper was screened again on 2026-10-07 10:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; cmax and AUC∞ have no unit.
 
-<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Housman2022_reference" status="needs_review" stale="false" population="obese patients undergoing surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Housman2022_reference" status="needs_review" stale="true" population="obese patients undergoing surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Housman ST, McWhorter PB, Barie PS, Nicolau DP. Ertapenem Concentrations in Obese Patients Undergoing Surgery. Surgical infections 23(6):545–549 (2022).
@@ -39,7 +39,7 @@ Housman ST, McWhorter PB, Barie PS, Nicolau DP. Ertapenem Concentrations in Obes
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,6 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chauzy_2022:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Housman_2022:abstract'] |
@@ -162,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

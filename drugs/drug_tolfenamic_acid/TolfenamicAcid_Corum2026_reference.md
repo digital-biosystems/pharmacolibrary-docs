@@ -5,11 +5,11 @@
 
 # tolfenamic acid — `TolfenamicAcid_Corum2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:01 UTC (Needs review), but the paper was screened again on 2026-10-07 01:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="needs_review" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="extracted" stale="true" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokinetics and Bioavailability of Tolfenamic Acid in Calves: First Evaluation of Subcutaneous Administration. Veterinary medicine and science 12(4):e71024 (2026).
@@ -31,8 +31,6 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2ʎz (h) d | t1/2γ | 6.64 | h |
@@ -41,7 +39,7 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +120,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Altinok-Yipel_2026:review'] |
 | C5_dimension_Q89 | pass | [time] |  | ['vms371024-tbl-0001:row3:col1', 'vms371024-tbl-0001:row3:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.17 | ['Altinok-Yipel_2026:review'] |
@@ -156,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -33,7 +33,7 @@ Brodalumab is a monoclonal antibody used to treat psoriasis. It is authorised in
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Rodríguez-Fernández_2022_reference](drugs/drug_brodalumab/Brodalumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18 — no SI value to build from</sub> | [Timmermann_2019_mean](drugs/drug_brodalumab/Brodalumab_Timmermann2019_mean.md) | — | 1-compartment (no model) | 4 | Timmermann S et al., Population pharmacokinetics of brodalum…, Basic & clinical pharmacolo… (2019) | [10.1111/bcpt.13202](https://doi.org/10.1111/bcpt.13202) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18 — no SI value to build from</sub> | [↳ median](drugs/drug_brodalumab/Brodalumab_Timmermann2019_median.md) | — | 1-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ value_rse](drugs/drug_brodalumab/Brodalumab_Timmermann2019_value_rse.md) | — | 2-compartment (no model) | 8 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ value_rse](drugs/drug_brodalumab/Brodalumab_Timmermann2019_value_rse.md) | — | 2-compartment (no model) | 8 (+3 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -68,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

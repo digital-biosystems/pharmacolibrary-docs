@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;Alteplase&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/&quot;},{&quot;label&quot;:&quot;Tanswell_1990 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alteplase_Garabedian1986_reference&quot;,&quot;label&quot;:&quot;Garabedian_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_Garabedian1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alteplase_Verstraete1985_reference&quot;,&quot;label&quot;:&quot;Verstraete_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_Verstraete1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alteplase_PiechowskiJozwiak2022_reference&quot;,&quot;label&quot;:&quot;Piechowski-Jozwiak_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_PiechowskiJozwiak2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The model was rejected because Vmax (3.7 micrograms/ml/hr) has a dimensional mismatch with the expected mass per time units.
 
 <div class="pk-model-meta" hidden drug="Alteplase" model-id="Alteplase_Tanswell1990_reference" status="rejected" stale="false" population="rats, rabbits and marmoset monkeys" measured-compound="Alteplase" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,7 +48,13 @@ Tanswell P, Heinzel G, Greischel A, Krause J. Nonlinear pharmacokinetics of tiss
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model was rejected because Vmax (3.7 micrograms/ml/hr) has a dimensional mismatch with the expected mass per time units.**
+
+The extracted Vmax parameter for alteplase is defined as the maximum metabolic rate but carries volume-normalized units. This creates a dimension conflict because the value implies a mass concentration flow rate rather than a total mass rate. Consequently, the record was refused despite being derived from abstract summary statistics. Extracted — alteplase: Km 1.5 micrograms/ml, Vmax 3.7 micrograms/ml/hr, t1/2z 4.4 min, CL 8 ml/min/kg, V 0.057 L/kg.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

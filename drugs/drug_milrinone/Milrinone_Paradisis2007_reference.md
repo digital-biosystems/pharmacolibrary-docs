@@ -5,11 +5,11 @@
 
 # milrinone — `Milrinone_Paradisis2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:37 UTC (Needs review), but the paper was screened again on 2026-10-06 08:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Paradisis2007_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Paradisis2007_reference" status="extracted" stale="true" population="preterm infants" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Paradisis M, Jiang X, McLachlan AJ, Evans N, Kluckow M, Osborn D. Population pharmacokinetics and dosing regimen design of milrinone in preterm infants. Archives of disease in childhood. Fetal and neonatal edition 92(3):F204–F209 (2007).
@@ -27,8 +27,6 @@ Paradisis M, Jiang X, McLachlan AJ, Evans N, Kluckow M, Osborn D. Population pha
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | volume of distribution | V | 512 | ml |
@@ -37,7 +35,7 @@ Paradisis M, Jiang X, McLachlan AJ, Evans N, Kluckow M, Osborn D. Population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,7 +108,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Foucher_2025:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Paradisis_2007:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Paradisis_2007:abstract'] |
@@ -145,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

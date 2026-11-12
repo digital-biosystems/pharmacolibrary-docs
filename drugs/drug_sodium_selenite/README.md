@@ -36,7 +36,7 @@ Sodium selenite is a selenium supplement used to treat or prevent selenium defic
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q20 — no SI value to build from</sub> | [Guo_1991_reference](drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md) | — | 1-compartment (no model) | 8 | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub> | [Jayachandran_2021_reference](drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md) | held back | 1-compartment, oral | 3 | Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D (2021) | [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9) |
-| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | — | 1-compartment (no model) | 3 | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | — | 1-compartment (no model) | 3 | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
 
 ## ADME sites
 
@@ -65,13 +65,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 09:55 | 6:36 | 2/1/0 | 0/0/0 | 0/0/0 | 68,738/22,615 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 09:55 | 6:36 | 3/0/0 | 0/0/0 | 0/0/0 | 68,738/22,615 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 19 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 3  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

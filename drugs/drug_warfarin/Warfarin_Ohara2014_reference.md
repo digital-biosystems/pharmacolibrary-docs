@@ -5,11 +5,11 @@
 
 # warfarin — `Warfarin_Ohara2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected because clearance and elimination rate parameters lack SI units, preventing standardization of the S-warfarin model.
+> This record was reviewed on 2026-11-07 14:21 UTC (Rejected), but the paper was screened again on 2026-09-27 11:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because clearance and elimination rate parameters lack SI units, preventing standardization of the S-warfarin model.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2014_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2014_reference" status="rejected" stale="true" population="Chinese patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ohara M, Takahashi H, Lee MT, Wen MS, Lee TH, Chuang HP et al. Determinants of the over-anticoagulation response during warfarin initiation therapy in Asian patients based on population pharmacokinetic-pharmacodynamic analyses. PloS one 9(8):e105891 (2014).
@@ -45,7 +45,7 @@ Ohara M, Takahashi H, Lee MT, Wen MS, Lee TH, Chuang HP et al. Determinants of t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,11 +175,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | fail | [time] | S | ['pone-0105891-t002:row3:col1', 'pone-0105891-t002:row3:col3'] |
-| C5_dimension_Q47 | fail | [time] | S | ['pone-0105891-t002:row22:col1', 'pone-0105891-t002:row22:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | S ([time]) | ['pone-0105891-t002:row3:col1', 'pone-0105891-t002:row3:col3'] |
+| C5_dimension_Q47 | fail | 1 / [time] | S ([time]) | ['pone-0105891-t002:row22:col1', 'pone-0105891-t002:row22:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
-| C5_dimension_Q67 | fail | [time] | S | ['pone-0105891-t002:row23:col1', 'pone-0105891-t002:row23:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | S ([time]) | ['pone-0105891-t002:row23:col1', 'pone-0105891-t002:row23:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 240 | ['pone-0105891-t002:row3:col1', 'pone-0105891-t002:row3:col3'] |
 | C8_topology | pass |  |  |  |
@@ -201,7 +201,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

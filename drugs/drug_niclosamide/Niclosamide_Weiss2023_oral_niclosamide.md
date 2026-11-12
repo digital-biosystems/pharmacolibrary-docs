@@ -5,11 +5,11 @@
 
 # niclosamide — `Niclosamide_Weiss2023_oral_niclosamide`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Niclosamide record rejected due to missing volume and clearance parameters, identifying it as an exposure paper rather than a compartmental PK model.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 09:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Niclosamide record rejected due to missing volume and clearance parameters, identifying it as an exposure paper rather than a compartmental PK model.
 
-<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_oral_niclosamide" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_oral_niclosamide" status="rejected" stale="true" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Single-dose pharmacokinetics and lung function of nebulized niclosamide ethanolamine in sheep. Pharmaceutical research 40(8):1915–1925 (2023).
@@ -44,7 +44,7 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Tab2:row3:col6'] |
-| C5_dimension_Q310 | fail | [mass] | mg/kg | ['Tab2:row0:col6', 'Tab2:row0:col11'] |
+| C5_dimension_Q310 | fail | [time] | mg/kg ([mass]) | ['Tab2:row0:col6', 'Tab2:row0:col11'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Tab2:row1:col6', 'Tab2:row1:col11'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Tab2:row2:col6', 'Tab2:row2:col11'] |
 | C8_topology | pass |  |  |  |
@@ -160,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

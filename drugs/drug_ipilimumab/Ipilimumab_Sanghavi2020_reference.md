@@ -5,11 +5,11 @@
 
 # ipilimumab — `Ipilimumab_Sanghavi2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> V and CL_ratio have no unit.
+> This record was reviewed on 2026-11-07 15:41 UTC (Needs review), but the paper was screened again on 2026-10-07 12:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. V and CL_ratio have no unit.
 
-<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumors receiving ipilimumab alone or with nivolumab" measured-compound="ipilimumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="needs_review" stale="true" population="patients with advanced solid tumors receiving ipilimumab alone or with nivolumab" measured-compound="ipilimumab" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Sanghavi K, Zhang J, Zhao X, Feng Y, Statkevich P, Sheng J et al. Population Pharmacokinetics of Ipilimumab in Combination With Nivolumab in Patients With Advanced Solid Tumors. CPT: pharmacometrics & systems pharmacology 9(1):29–39 (2020).
@@ -45,7 +45,7 @@ Sanghavi K, Zhang J, Zhao X, Feng Y, Statkevich P, Sheng J et al. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +148,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q57 | pass | [time] |  | ['psp412477-tbl-0002:row10:col1', 'psp412477-tbl-0002:row10:col2', 'psp412477-tbl-0002:row10:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412477-tbl-0002:row3:col1', 'psp412477-tbl-0002:row3:col2', 'psp412477-tbl-0002:row3:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412477-tbl-0002:row5:col1', 'psp412477-tbl-0002:row5:col2', 'psp412477-tbl-0002:row5:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['psp412477-tbl-0002:row13:col1', 'psp412477-tbl-0002:row13:col2', 'psp412477-tbl-0002:row13:col3', 'psp412477-tbl-0002:footnote'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['psp412477-tbl-0002:row7:col1', 'psp412477-tbl-0002:row7:col2', 'psp412477-tbl-0002:row7:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.1 | ['psp412477-tbl-0002:row2:col1', 'psp412477-tbl-0002:row2:col2', 'psp412477-tbl-0002:row2:col3'] |
 | C8_topology | pass |  |  |  |
@@ -182,7 +181,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

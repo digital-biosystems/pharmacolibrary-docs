@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;1-Naphthol&quot;,&quot;href&quot;:&quot;drugs/toxin_1_naphthol/&quot;},{&quot;label&quot;:&quot;Fu_2018 \u00b7 PD TL decline&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# TL decline — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
+# TL decline — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,6 +16,10 @@
 **As extracted:** 1-hydroxynaphthalene (the dose) drives TL decline: direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> The model describes the dose-dependent stimulation of TL decline by 1-hydroxynaphthalene using a linear model with an additive effect form. The parameter beta is specified as 0.053, but the paper does not provide further details on the underlying mechanism or other potency and rate values.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fu_2018`
 - **model family:** `linear`

@@ -32,7 +32,7 @@ Erenumab is a monoclonal antibody that blocks the calcitonin gene-related peptid
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Fiedler-Kelly_2019_reference](drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019) | [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kielbasa_2019_reference](drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Vu_2017_reference](drugs/drug_erenumab/Erenumab_Vu2017_reference.md) | — | 2-compartment (no model) | 8 | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Vu_2017_reference](drugs/drug_erenumab/Erenumab_Vu2017_reference.md) | — | 2-compartment (no model) | 8 | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -75,13 +75,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:37 | 3:53 | 2/1/0 | 1/0/0 | 0/0/1 | 268,715/21,981 | einfracz / qwen3.8-27b | 11 | 2/15 | 11/0 | 0 |
+| 2026-10-07 06:37 | 3:53 | 2/1/0 | 1/0/0 | 0/0/1 | 268,715/21,981 | einfracz / qwen3.8-27b | 9 | 2/15 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 40 matched, 38 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

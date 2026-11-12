@@ -34,7 +34,7 @@ Cinacalcet is a calcimimetic anti-parathyroid medicine used to treat hyperparath
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Schappacher-Tilp_2019_reference](drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
 
 ## Pharmacodynamics (PD)
 
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

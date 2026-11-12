@@ -5,11 +5,11 @@
 
 # Arketamine — `Arketamine_Stojanova2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance Q for tacrolimus has a dimension mismatch because it is reported in mass-normalized units (L/h/70 kg) instead of pure clearance units.
+> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 09:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q for tacrolimus has a dimension mismatch because it is reported in mass-normalized units (L/h/70 kg) instead of pure clearance units.
 
-<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="false" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="true" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Stojanova J, Murnion B, Burrows F, Carlos L, Mizuno T, Nadai T et al. Continuous Subcutaneous Ketamine Infusion May Induce Tacrolimus and Sirolimus Clearance: A Case Report. Pharmacotherapy 46(6):e70150 (2026).
@@ -46,7 +46,7 @@ Stojanova J, Murnion B, Burrows F, Carlos L, Mizuno T, Nadai T et al. Continuous
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -108,7 +108,7 @@ The parameter Q, representing drug distribution between kinetic compartments, is
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['phar70150-tbl-0001:row2:col1', 'phar70150-tbl-0001:row2:col2', 'phar70150-tbl-0001:row8:col1', 'phar70150-tbl-0001:row8:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['phar70150-tbl-0001:row12:col1', 'phar70150-tbl-0001:row12:col2'] |
-| C5_dimension_Q48 | fail | [length] ** 3 / [time] | L/h/70 kg | ['phar70150-tbl-0001:row5:col1', 'phar70150-tbl-0001:row5:col2'] |
+| C5_dimension_Q48 | fail | 1 / [time] | L/h/70 kg ([length] ** 3 / [time]) | ['phar70150-tbl-0001:row5:col1', 'phar70150-tbl-0001:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['phar70150-tbl-0001:row3:col1', 'phar70150-tbl-0001:row3:col2', 'phar70150-tbl-0001:row9:col1', 'phar70150-tbl-0001:row9:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['phar70150-tbl-0001:row10:col1', 'phar70150-tbl-0001:row10:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['phar70150-tbl-0001:row13:col1', 'phar70150-tbl-0001:row13:col2'] |
@@ -136,7 +136,7 @@ The parameter Q, representing drug distribution between kinetic compartments, is
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # panitumumab — `Panitumumab_Lobet2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Clearance was assigned units of L/day, a dimensionally invalid unit for a pharmacokinetic parameter, causing the record to be rejected.
+> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 18:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance was assigned units of L/day, a dimensionally invalid unit for a pharmacokinetic parameter, causing the record to be rejected.
 
-<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Lobet2026_reference" status="rejected" stale="false" population="adults with localized squamous cell carcinoma of the anus" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Lobet2026_reference" status="rejected" stale="true" population="adults with localized squamous cell carcinoma of the anus" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis of the relationship between body composition and the pharmacokinetics of panitumumab in the treatment of localized squamous cell carcinoma of the anus - An ancillary study of the FFCD0904 phase I and II trial. Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie 198:119242 (2026).
@@ -41,7 +41,7 @@ Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Lobet_2026_table_p5_1:row2:col1', 'Lobet_2026_table_p5_1:row2:col2', 'Lobet_2026_table_p5_1:row2:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Lobet_2026_table_p5_1:row0:col1', 'Lobet_2026_table_p5_1:row0:col2', 'Lobet_2026_table_p5_1:row0:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Lobet_2026_table_p5_1:row3:col1', 'Lobet_2026_table_p5_1:row3:col2', 'Lobet_2026_table_p5_1:row3:col3'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg.day-1 | ['Lobet_2026_table_p5_1:row4:col1', 'Lobet_2026_table_p5_1:row4:col2', 'Lobet_2026_table_p5_1:row4:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg.day-1 ([mass] / [time]) | ['Lobet_2026_table_p5_1:row4:col1', 'Lobet_2026_table_p5_1:row4:col2', 'Lobet_2026_table_p5_1:row4:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.269 | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col2', 'Lobet_2026_table_p5_1:row1:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0112 L/h | ['Lobet_2026_table_p5_1:row1:col1', 'Lobet_2026_table_p5_1:row1:col2', 'Lobet_2026_table_p5_1:row1:col3'] |
@@ -144,7 +144,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

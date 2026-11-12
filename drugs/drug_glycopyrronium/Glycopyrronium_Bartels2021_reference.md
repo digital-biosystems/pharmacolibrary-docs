@@ -5,11 +5,11 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The glycopyrronium record was rejected due to a dimension mismatch and an unreachable compartment.
+> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 19:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The glycopyrronium record was rejected due to a dimension mismatch and an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -72,7 +72,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +141,7 @@ The absorption rate constant is labeled in units of L/h, which is dimensionally 
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q310 | pass | [time] |  | ['Tab5:row8:col5'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab5:row7:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab5:row7:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab5:row6:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
@@ -163,7 +163,7 @@ The absorption rate constant is labeled in units of L/h, which is dimensionally 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

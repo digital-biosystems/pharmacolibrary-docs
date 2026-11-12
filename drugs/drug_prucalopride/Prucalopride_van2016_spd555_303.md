@@ -4,11 +4,11 @@
 
 # prucalopride — `Prucalopride_van2016_spd555_303`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because a 1-compartment model was paired with a peripheral volume parameter of 207 l, making that compartment unreachable.
+> This record was reviewed on 2026-11-07 16:16 UTC (Rejected), but the paper was screened again on 2026-10-04 16:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a 1-compartment model was paired with a peripheral volume parameter of 207 l, making that compartment unreachable.
 
-<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a population pharmacokinetic model of prucalopride in children with functional constipation. Pharmacology research & perspectives 4(4):e00236 (2016).
@@ -40,7 +40,7 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2016_table_4:row2:col4', 'van_2016_table_4:row2:col5', 'van_2016_table_4:row2:col6'] |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['van_2016_table_4:row5:col4', 'van_2016_table_4:row5:col5', 'van_2016_table_4:row5:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['van_2016_table_4:row3:col4', 'van_2016_table_4:row3:col5', 'van_2016_table_4:row3:col6'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng mL−1 | ['van_2016_table_4:row6:col4', 'van_2016_table_4:row6:col5', 'van_2016_table_4:row6:col6'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng mL−1 ([mass] / [length] ** 3) | ['van_2016_table_4:row6:col4', 'van_2016_table_4:row6:col5', 'van_2016_table_4:row6:col6'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng mL−1 h | ['van_2016_table_4:row4:col4', 'van_2016_table_4:row4:col5', 'van_2016_table_4:row4:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.7 | ['van_2016_table_4:row2:col4', 'van_2016_table_4:row2:col5', 'van_2016_table_4:row2:col6'] |
 | C8_topology | fail |  |  |  |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

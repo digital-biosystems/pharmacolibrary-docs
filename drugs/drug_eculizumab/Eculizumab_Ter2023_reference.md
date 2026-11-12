@@ -5,11 +5,11 @@
 
 # eculizumab — `Eculizumab_Ter2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Eculizumab's Vmax was assigned mg/day instead of L/day, causing a dimensional mismatch in the one-compartment model.
+> This record was reviewed on 2026-11-07 14:53 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Eculizumab's Vmax was assigned mg/day instead of L/day, causing a dimensional mismatch in the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="true" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ter Avest M, Bouwmeester RN, Duineveld C, Wijnsma KL, Volokhina EB, van den Heuvel LPWJ et al. Proposal for individualized dosing of eculizumab in atypical haemolytic uraemic syndrome: patient friendly and cost-effective. Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association 38(2):362–371 (2023).
@@ -38,7 +38,7 @@ Ter Avest M, Bouwmeester RN, Duineveld C, Wijnsma KL, Volokhina EB, van den Heuv
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl3:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tbl3:row2:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day | ['tbl3:row3:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) | ['tbl3:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.163 | ['tbl3:row1:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00679 L/h | ['tbl3:row1:col1'] |
@@ -137,7 +137,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # paclitaxel — `Paclitaxel_Friberg2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 15:25 UTC (Rejected), but the paper was screened again on 2026-09-15 20:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Friberg2002_reference" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Friberg2002_reference" status="rejected" stale="true" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Friberg LE, Henningsson A, Maas H, Nguyen L, Karlsson MO. Model of chemotherapy-induced myelosuppression with parameter consistency across drugs. Journal of clinical oncology : official journal of the American Society of Clinical Oncology (2002).
@@ -38,7 +38,7 @@ Friberg LE, Henningsson A, Maas H, Nguyen L, Karlsson MO. Model of chemotherapy-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,6 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
+| C5_unit_missing_Q81 | fail | [time] | (hours) | ['Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract'] |
 | C5_unit_missing_Q86 | fail | [mass] * [time] / [length] ** 3 | ((cid:1)109/L) | ['Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract', 'Friberg_2002:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -137,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

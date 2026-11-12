@@ -5,11 +5,11 @@
 
 # selumetinib — `Selumetinib_Patel2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant value of 0.622 was rejected because its unit, nmol/hr, is not a standard kinetic rate unit.
+> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 06:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant value of 0.622 was rejected because its unit, nmol/hr, is not a standard kinetic rate unit.
 
-<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="false" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="true" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population Pharmacokinetics of Selumetinib and Its Metabolite N-desmethyl-selumetinib in Adult Patients With Advanced Solid Tumors and Children With Low-Grade Gliomas. CPT: pharmacometrics & systems pharmacology 6(5):305–314 (2017).
@@ -49,7 +49,7 @@ Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -240,7 +240,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row7:col2', 'psp412175-tbl-0002:row7:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row38:col2', 'psp412175-tbl-0002:row38:col3'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['psp412175-tbl-0002:row41:col2', 'psp412175-tbl-0002:row41:col3'] |
-| C5_dimension_Q49 | fail | [substance] / [time] | nmol/hr | ['psp412175-tbl-0002:row2:col2', 'psp412175-tbl-0002:row2:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | nmol/hr ([substance] / [time]) | ['psp412175-tbl-0002:row2:col2', 'psp412175-tbl-0002:row2:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row5:col1', 'psp412175-tbl-0002:row5:col2', 'psp412175-tbl-0002:row5:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row6:col1', 'psp412175-tbl-0002:row6:col2', 'psp412175-tbl-0002:row6:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412175-tbl-0002:row40:col1', 'psp412175-tbl-0002:row40:col2', 'psp412175-tbl-0002:row40:col3'] |
@@ -270,7 +270,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

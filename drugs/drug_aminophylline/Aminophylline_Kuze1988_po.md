@@ -5,11 +5,11 @@
 
 # aminophylline — `Aminophylline_Kuze1988_po`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The theophylline fast distribution phase rate constant was recorded as 11.099 n=5 instead of an hourly rate, leaving one compartment unreachable due to invalid topology.
+> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-07 23:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The theophylline fast distribution phase rate constant was recorded as 11.099 n=5 instead of an hourly rate, leaving one compartment unreachable due to invalid topology.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Kuze1988_po" status="rejected" stale="false" population="anesthetized beagle-mix dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Kuze1988_po" status="rejected" stale="true" population="anesthetized beagle-mix dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and urinary excretion in dogs]. Nihon yakurigaku zasshi. Folia pharmacologica Japonica 91(5):325–334 (1988).
@@ -54,7 +54,7 @@ Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and u
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -176,7 +176,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row8:col4'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['Kuze_1988_table_1:row16:col4'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row11:col4'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] | n=5 |  |  | ['Kuze_1988_table_1:row1:col4'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] | n=5 |  |  | ['Kuze_1988_table_1:row1:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.112 |  |  | ['Kuze_1988_table_1:row10:col4'] |
 | C8_topology | fail |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.84 L/h |  |  | ['Kuze_1988_table_1:row10:col4'] |
@@ -200,7 +200,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

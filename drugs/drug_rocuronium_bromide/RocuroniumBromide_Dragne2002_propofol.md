@@ -5,11 +5,11 @@
 
 # rocuronium bromide — `RocuroniumBromide_Dragne2002_propofol`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Rocuronium bromide record rejected because a structural parameter had a dimension mismatch and a unit that could not be converted to SI units.
+> This record was reviewed on 2026-11-07 15:45 UTC (Rejected), but the paper was screened again on 2026-10-07 02:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rocuronium bromide record rejected because a structural parameter had a dimension mismatch and a unit that could not be converted to SI units.
 
-<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_propofol" status="rejected" stale="false" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_propofol" status="rejected" stale="true" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic relationship under stable propofol or isoflurane anesthesia. Canadian journal of anaesthesia = Journal canadien d'anesthesie 49(4):353–360 (2002).
@@ -50,7 +50,7 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,9 +152,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q60 | pass | [time] |  |  |  | ['Dragne_2002_table_p4_1:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Dragne_2002_table_p4_1:row10:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  |  |  | ['Dragne_2002_table_p4_1:row11:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ |  |  | ['Dragne_2002_table_p4_1:row3:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) |  |  | ['Dragne_2002_table_p4_1:row3:col1'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  |  |  | ['Dragne_2002_table_p4_1:row12:col1'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng·mL⁻¹ |  |  | ['Dragne_2002_table_p4_1:row1:col1'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng·mL⁻¹ ([mass] / [length] ** 3) |  |  | ['Dragne_2002_table_p4_1:row1:col1'] |
 | C5_dimension_Q89 | pass | [time] |  |  |  | ['Dragne_2002_table_p4_1:row8:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.37 |  |  | ['Dragne_2002_table_p4_1:row9:col1'] |
 | C8_topology | pass |  |  |  |  |  |
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

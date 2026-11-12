@@ -4,11 +4,11 @@
 
 # calcitonin (salmon synthetic) — `CalcitoninSalmonSynthetic_Huwyler1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume; cLint has no unit.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 10:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cLint has no unit.
 
-<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huwyler R, Born W, Ohnhaus EE, Fischer JA. Plasma kinetics and urinary excretion of exogenous human and salmon calcitonin in man. The American journal of physiology 236(1):E15–E19 (1979).
@@ -35,7 +35,7 @@ Huwyler R, Born W, Ohnhaus EE, Fischer JA. Plasma kinetics and urinary excretion
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Huwyler_1979:abstract'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | ml/kg per min | ['Huwyler_1979:abstract', 'Huwyler_1979:abstract'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] | ml/kg per min | ['Huwyler_1979:abstract', 'Huwyler_1979:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.1 | ['Huwyler_1979:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q24 | pass | clearance within physiological range | 0.1 L/h | ['Huwyler_1979:abstract'] |
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_CuestaGragera2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-22 12:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="rejected" stale="false" population="unknown" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="rejected" stale="true" population="unknown" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Cuesta-Gragera A, Navarro-Fontestad C, Mangas-Sanjuan V, González-Álvarez I, García-Arieta A, Trocóniz IF et al. Semi-physiologic model validation and bioequivalence trials simulation to select the best analyte for acetylsalicylic acid. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 74:86–94 (2015).
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,13 +139,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | fail |  | 0 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q1 | fail | [luminosity] / [length] ** 2 | units | ['Cuesta-Gragera_2015_table_1:row12:col1'] |
-| C5_dimension_Q1 | fail | [time] | H | ['Cuesta-Gragera_2015_table_1:row16:col1'] |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | units | ['Cuesta-Gragera_2015_table_1:row13:col1'] |
-| C5_dimension_Q22 | fail | [time] | H | ['Cuesta-Gragera_2015_table_1:row17:col1'] |
-| C5_dimension_Q26 | fail | [luminosity] / [length] ** 2 | units | ['Cuesta-Gragera_2015_table_1:row20:col1'] |
-| C5_dimension_Q369 | fail | [luminosity] / [length] ** 2 | units | ['Cuesta-Gragera_2015_table_1:row7:col1'] |
-| C5_dimension_Q54 | fail | [luminosity] / [length] ** 2 | units | ['Cuesta-Gragera_2015_table_1:row8:col1'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | units ([luminosity] / [length] ** 2) | ['Cuesta-Gragera_2015_table_1:row12:col1'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | H ([time]) | ['Cuesta-Gragera_2015_table_1:row16:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) | ['Cuesta-Gragera_2015_table_1:row13:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | H ([time]) | ['Cuesta-Gragera_2015_table_1:row17:col1'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) | ['Cuesta-Gragera_2015_table_1:row20:col1'] |
+| C5_dimension_Q369 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) | ['Cuesta-Gragera_2015_table_1:row7:col1'] |
+| C5_dimension_Q54 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) | ['Cuesta-Gragera_2015_table_1:row8:col1'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['extraction_rate', 'extraction_rate', 'extraction_rate'] |  |
 
 <details class="legend">
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # letermovir — `Letermovir_Prohn2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the Asian effect on volume of distribution is -0.280, producing a negative volume in that covariate scenario.
+> This record was reviewed on 2026-11-07 16:28 UTC (Rejected), but the paper was screened again on 2026-10-07 13:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the Asian effect on volume of distribution is -0.280, producing a negative volume in that covariate scenario.
 
-<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="false" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="true" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharmacokinetics of letermovir following oral and intravenous administration in healthy participants and allogeneic hematopoietic cell transplantation recipients. CPT: pharmacometrics & systems pharmacology 10(3):255–267 (2021).
@@ -48,7 +48,7 @@ Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -177,6 +177,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412593-tbl-0002:row10:col2', 'psp412593-tbl-0002:row10:col3', 'psp412593-tbl-0002:row10:col4', 'psp412593-tbl-0002:row10:col5', 'psp412593-tbl-0002:row12:col2', 'psp412593-tbl-0002:row12:col3', 'psp412593-tbl-0002:row12:col4', 'psp412593-tbl-0002:row12:col5', 'psp412593-tbl-0002:row19:col2', 'psp412593-tbl-0002:row19:col3', 'psp412593-tbl-0002:row19:col4', 'psp412593-tbl-0002:row19:col5', 'Prohn_2021_table_3:row3:col1', 'Prohn_2021_table_3:row3:col3', 'Prohn_2021_table_3:row3:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Prohn_2021_table_3:row10:col1', 'Prohn_2021_table_3:row10:col3', 'Prohn_2021_table_3:row10:col4'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['psp412593-tbl-0002:row5:col2', 'psp412593-tbl-0002:row5:col3', 'psp412593-tbl-0002:row5:col4'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['psp412593-tbl-0002:row7:col2', 'psp412593-tbl-0002:row7:col3', 'psp412593-tbl-0002:row7:col4', 'psp412593-tbl-0002:row7:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.2 | ['psp412593-tbl-0002:row1:col2', 'psp412593-tbl-0002:row1:col3', 'psp412593-tbl-0002:row1:col4', 'psp412593-tbl-0002:row1:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 12.2 L/h | ['psp412593-tbl-0002:row1:col2', 'psp412593-tbl-0002:row1:col3', 'psp412593-tbl-0002:row1:col4', 'psp412593-tbl-0002:row1:col5'] |
@@ -199,7 +200,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

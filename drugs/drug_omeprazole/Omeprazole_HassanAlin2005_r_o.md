@@ -5,11 +5,11 @@
 
 # omeprazole — `Omeprazole_HassanAlin2005_r_o`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Omeprazole was rejected because metabolite links lacked rate constants and a clearance unit remained unconverted to standard SI units.
+> This record was reviewed on 2026-11-07 14:25 UTC (Rejected), but the paper was screened again on 2026-11-04 06:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Omeprazole was rejected because metabolite links lacked rate constants and a clearance unit remained unconverted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_HassanAlin2005_r_o" status="rejected" stale="false" population="healthy subjects" measured-compound="omeprazole" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_HassanAlin2005_r_o" status="rejected" stale="true" population="healthy subjects" measured-compound="omeprazole" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Hassan-Alin M, Andersson T, Niazi M, Röhss K. A pharmacokinetic study comparing single and repeated oral doses of 20 mg and 40 mg omeprazole and its two optical isomers, S-omeprazole (esomeprazole) and R-omeprazole, in healthy subjects. European journal of clinical pharmacology 60(11):779–784 (2005).
@@ -43,7 +43,7 @@ Hassan-Alin M, Andersson T, Niazi M, Röhss K. A pharmacokinetic study comparing
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,9 +128,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frederiksen_2021:review'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | µmol/l | ['Hassan-Alin_2005_table_p3_1:row2:col3', 'Hassan-Alin_2005_table_p3_1:row2:col4', 'Hassan-Alin_2005_table_p3_1:row6:col3', 'Hassan-Alin_2005_table_p3_1:row6:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | µmol/l ([substance] / [length] ** 3) | ['Hassan-Alin_2005_table_p3_1:row2:col3', 'Hassan-Alin_2005_table_p3_1:row2:col4', 'Hassan-Alin_2005_table_p3_1:row6:col3', 'Hassan-Alin_2005_table_p3_1:row6:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gao_2025:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hassan-Alin_2005_table_p3_1:row2:col5', 'Hassan-Alin_2005_table_p3_1:row2:col6', 'Hassan-Alin_2005_table_p3_1:row6:col5', 'Hassan-Alin_2005_table_p3_1:row6:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gao_2025:review'] |
@@ -157,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

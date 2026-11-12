@@ -40,7 +40,7 @@ Cefalexin is a first-generation cephalosporin antibiotic used to treat bacterial
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="dog" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Prados_2014_base](drugs/drug_cefalexin/Cefalexin_Prados2014_base.md) | ▶ model + simulator | 1-compartment, oral | 4 | Prados AP et al., A population pharmacokinetic approach t…, Veterinary medicine interna… (2014) | [10.1155/2014/789353](https://doi.org/10.1155/2014/789353) |
 | <span class="pk-rf" hidden data-species="dog" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: T6_deviations</sub> | [↳ final](drugs/drug_cefalexin/Cefalexin_Prados2014_final.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Koroleva_1981_reference](drugs/drug_cefalexin/Cefalexin_Koroleva1981_reference.md) | — | 1-compartment (no model) | 2 | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | — |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koroleva_1981_reference](drugs/drug_cefalexin/Cefalexin_Koroleva1981_reference.md) | — | 1-compartment (no model) | 2 | Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 19 matched, 15 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

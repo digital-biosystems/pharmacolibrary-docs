@@ -5,11 +5,11 @@
 
 # brexpiprazole — `Brexpiprazole_Higashi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Brexpiprazole absorption and Km parameters have incorrect units, and V/F is in L/h, causing dimension and plausibility errors.
+> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-11-03 10:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Brexpiprazole absorption and Km parameters have incorrect units, and V/F is in L/h, causing dimension and plausibility errors.
 
-<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="rejected" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="rejected" stale="true" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharmacokinetics of brexpiprazole in Japanese healthy subjects and patients with schizophrenia. Drug metabolism and pharmacokinetics 62:101057 (2025).
@@ -45,7 +45,7 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -171,11 +171,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q1 | fail | [length] ** 3 | L | ['tab_2:row17:col1'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | L ([length] ** 3) | ['tab_2:row17:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_2:row5:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row12:col1'] |
-| C5_dimension_Q306 | fail | [length] ** 3 | L | ['tab_2:row10:col1'] |
-| C5_dimension_Q76 | fail | [length] ** 3 / [time] | L/h | ['tab_2:row8:col1', 'tab_2:row14:col1'] |
+| C5_dimension_Q306 | fail | 1 / [time] | L ([length] ** 3) | ['tab_2:row10:col1'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['tab_2:row8:col1', 'tab_2:row14:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.74 L/h | ['tab_2:row5:col1'] |
@@ -197,7 +197,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

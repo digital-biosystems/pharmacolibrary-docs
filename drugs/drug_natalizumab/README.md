@@ -36,7 +36,7 @@ Natalizumab is a monoclonal antibody used to treat multiple sclerosis, including
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2022_reference](drugs/drug_natalizumab/Natalizumab_Wang2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang B et al., Mechanistic modeling of a human IgG&lt;sub…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12738](https://doi.org/10.1002/psp4.12738) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Moein_2025_reference](drugs/drug_natalizumab/Natalizumab_Moein2025_reference.md) | — | 2-compartment (no model) | 4 | Moein A et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70043](https://doi.org/10.1002/jcph.70043) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Wang_2020_reference](drugs/drug_natalizumab/Natalizumab_Wang2020_reference.md) | — | 2-compartment (no model) | 6 | Wang Y et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1590](https://doi.org/10.1002/jcph.1590) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [van_2025_reference](drugs/drug_natalizumab/Natalizumab_van2025_reference.md) | — | 2-compartment (no model) | 8 (+2 cov.) | van den Berg SPH et al., Pharmacokinetic Model-Informed Precisio…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70014](https://doi.org/10.1002/psp4.70014) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2025_reference](drugs/drug_natalizumab/Natalizumab_van2025_reference.md) | — | 2-compartment (no model) | 8 (+2 cov.) | van den Berg SPH et al., Pharmacokinetic Model-Informed Precisio…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70014](https://doi.org/10.1002/psp4.70014) |
 
 ## Pharmacodynamics (PD)
 
@@ -74,7 +74,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 140 matched, 100 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 7  ·  extracted 4  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 7  ·  extracted 4  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

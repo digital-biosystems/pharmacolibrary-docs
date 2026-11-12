@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This paper's disposition core is incomplete; ct has no unit.
 
 <div class="pk-model-meta" hidden drug="Allantoin" model-id="Allantoin_FRIEDMAN1947v2_w_j" status="needs_review" stale="false" population="healthy humans (5 men, 1 woman)" measured-compound="Allantoin" parameterization="mechanistic" topology="1C"></div>
 
@@ -22,10 +22,10 @@ FRIEDMAN M, MYERS SO, ABRAHM PM. Allantoin clearance as a measure of glomerular 
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -47,7 +47,13 @@ FRIEDMAN M, MYERS SO, ABRAHM PM. Allantoin clearance as a measure of glomerular 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**This paper's disposition core is incomplete; ct has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Dai_2018) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — allantoin: Q 13.4 cc/min, Ct 7.4 mg/100 cc, CLR 101 cc/min, V 893 mL/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

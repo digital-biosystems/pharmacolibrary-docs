@@ -26,7 +26,7 @@ Ethanol is used as an antiseptic and disinfectant for the skin, and as an antido
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Holford_1987_reference](drugs/drug_ethanol/Ethanol_Holford1987_reference.md) | — | 1-compartment (no model) | 6 | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Holford_1987_reference](drugs/drug_ethanol/Ethanol_Holford1987_reference.md) | — | 1-compartment (no model) | 6 | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) |
 
 ## Pharmacodynamics (PD)
 
@@ -84,13 +84,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:47 | 2:12 | 0/1/0 | 1/0/0 | 0/0/4 | 142,181/7,521 | einfracz / qwen3.8-27b | 18 | 2/16 | 15/3 | 0 |
+| 2026-10-07 21:47 | 2:12 | 0/1/0 | 1/0/0 | 0/0/4 | 142,181/7,521 | einfracz / qwen3.8-27b | 16 | 2/16 | 13/3 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5300 matched, 87 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

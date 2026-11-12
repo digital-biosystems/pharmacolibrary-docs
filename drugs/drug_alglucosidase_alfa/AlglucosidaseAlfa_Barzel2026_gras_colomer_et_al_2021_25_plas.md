@@ -5,11 +5,11 @@
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Total clearance lacks a numeric value, preventing dimensionality checks for alglucosidase alfa elimination.
+> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-05 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Total clearance lacks a numeric value, preventing dimensionality checks for alglucosidase alfa elimination.
 
-<div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas" status="rejected" stale="false" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas" status="rejected" stale="true" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, Preijers T. Population Pharmacokinetic/Pharmacodynamic Modeling of Therapeutic Enzymes in Lysosomal Storage Diseases. Clinical pharmacokinetics 65(5):647-664 (2026).
@@ -45,7 +45,7 @@ Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['Barzel_2026_table_3:row11:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Barzel_2026_table_3:row1:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Barzel_2026_table_3:row3:col4'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Barzel_2026_table_3:row9:col4'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Barzel_2026_table_3:row9:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Barzel_2026_table_3:row12:col4'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Barzel_2026_table_3:row2:col4'] |
 | C8_topology | pass |  |  |  |
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

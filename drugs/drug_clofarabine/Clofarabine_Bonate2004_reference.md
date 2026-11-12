@@ -5,11 +5,11 @@
 
 # clofarabine — `Clofarabine_Bonate2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clofarabine model was rejected because the normalized clearance parameter (0.75 kg) has a mass unit, which is dimensionally incorrect for a rate constant.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 16:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clofarabine model was rejected because the normalized clearance parameter (0.75 kg) has a mass unit, which is dimensionally incorrect for a rate constant.
 
-<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="true" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharmacokinetics of clofarabine, a second-generation nucleoside analog, in pediatric patients with acute leukemia. Journal of clinical pharmacology 44(11):1309–1322 (2004).
@@ -41,7 +41,7 @@ Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,9 +134,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bonate_2004:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Bonate_2004:abstract'] |
-| C5_dimension_Q354 | fail | [mass] | kg | ['Bonate_2004:abstract'] |
+| C5_dimension_Q354 | fail | [length] ** 3 / [time] | kg ([mass]) | ['Bonate_2004:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bonate_2004:abstract'] |
-| C5_dimension_Q61 | fail | [mass] | kg | ['Bonate_2004:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | kg ([mass]) | ['Bonate_2004:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Bonate_2004:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Bonate_2004:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.8 | ['Bonate_2004:abstract'] |
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

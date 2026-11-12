@@ -5,11 +5,11 @@
 
 # quinine — `Quinine_Dyer1994v2_non_diabetics`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume; λ1 has no unit.
+> This record was reviewed on 2026-11-07 14:45 UTC (Needs review), but the paper was screened again on 2026-10-07 08:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; λ1 has no unit.
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="true" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokinetics and pharmacodynamics of quinine in the diabetic and non-diabetic elderly. British journal of clinical pharmacology 38(3):205–212 (1994).
@@ -44,7 +44,7 @@ Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q353 | pass | [length] ** 3 |  | ['Dyer_1994_2_table_p3_1:row0:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Dyer_1994_2_table_p3_1:row1:col1'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Dyer_1994_2_table_p3_1:row2:col1'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Dyer_1994_2_table_p3_1:row4:col1'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Dyer_1994_2_table_p3_1:row4:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.49 L/h | ['Dyer_1994_2_table_p3_1:row5:col1'] |
@@ -171,7 +171,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

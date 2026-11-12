@@ -64,8 +64,8 @@ Simvastatin is a statin used to lower blood lipids in conditions such as hyperli
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lohitnavy_2004_reference](drugs/drug_simvastatin/Simvastatin_Lohitnavy2004_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lohitnavy M et al., Bioequivalence study of two formulation…, Arzneimittel-Forschung (2004) | [10.1055/s-0031-1296933](https://doi.org/10.1055/s-0031-1296933) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lohitnavy_2015_reference](drugs/drug_simvastatin/Simvastatin_Lohitnavy2015_reference.md) | — | parent + metabolite (no model) | 0 | Lohitnavy M et al., Pharmacokinetic model for the inhibitio…, Annual International Confer… (2015) | [10.1109/EMBC.2015.7319084](https://doi.org/10.1109/EMBC.2015.7319084) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Methaneethorn_2014_reference](drugs/drug_simvastatin/Simvastatin_Methaneethorn2014_reference.md) | — | general linear (no model) | 3 | Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual International Confer… (2014) | [10.1109/EMBC.2014.6944925](https://doi.org/10.1109/EMBC.2014.6944925) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Methaneethorn_2014_2_reference](drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference.md) | — | general linear (no model) | 15 | Methaneethorn J et al., A pharmacokinetic drug-drug interaction…, Annual International Confer… (2014) | [10.1109/EMBC.2014.6944924](https://doi.org/10.1109/EMBC.2014.6944924) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tsamandouras_2015_reference](drugs/drug_simvastatin/Simvastatin_Tsamandouras2015_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Tsamandouras N et al., Development and Application of a Mechan…, Pharmaceutical research (2015) | [10.1007/s11095-014-1581-2](https://doi.org/10.1007/s11095-014-1581-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Methaneethorn_2014_2_reference](drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference.md) | — | general linear (no model) | 15 | Methaneethorn J et al., A pharmacokinetic drug-drug interaction…, Annual International Confer… (2014) | [10.1109/EMBC.2014.6944924](https://doi.org/10.1109/EMBC.2014.6944924) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tsamandouras_2015_reference](drugs/drug_simvastatin/Simvastatin_Tsamandouras2015_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Tsamandouras N et al., Development and Application of a Mechan…, Pharmaceutical research (2015) | [10.1007/s11095-014-1581-2](https://doi.org/10.1007/s11095-014-1581-2) |
 
 ## Pharmacodynamics (PD)
 
@@ -182,13 +182,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-04 16:22 | 3:54:07 | 16/5/0 | 6/0/0 | 6/0/49 | 2,570,552/400,831 | einfracz / qwen3.8-27b | 133 | 77/44 | 56/67 | 0 |
+| 2026-11-04 16:22 | 3:54:07 | 16/5/0 | 6/0/0 | 6/0/49 | 2,570,552/400,831 | einfracz / qwen3.8-27b | 129 | 77/44 | 53/66 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2148 matched, 281 returned
 - **screened:** 60  ·  **relevant:** 19
-- **records:** 21  ·  extracted 2  ·  needs review 9  ·  rejected 5  ·  stale 0
+- **records:** 21  ·  extracted 2  ·  needs review 9  ·  rejected 5  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

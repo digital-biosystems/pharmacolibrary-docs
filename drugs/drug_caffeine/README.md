@@ -43,7 +43,7 @@ Caffeine is a stimulant used to treat breathing problems such as apnea in newbor
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Guo_2020_reference](drugs/drug_caffeine/Caffeine_Guo2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Guo A et al., Population pharmacokinetic study of caf…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13240](https://doi.org/10.1111/jcpt.13240) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Thompson_2025_reference](drugs/drug_caffeine/Caffeine_Thompson2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Thompson EJ et al., Population Pharmacokinetics of Caffeine…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70004](https://doi.org/10.1002/jcph.70004) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Csajka_2005_reference](drugs/drug_caffeine/Caffeine_Csajka2005_reference.md) | — | parent + metabolite (no model) | 5 | Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02254.x](https://doi.org/10.1111/j.1365-2125.2005.02254.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Csajka_2005_reference](drugs/drug_caffeine/Caffeine_Csajka2005_reference.md) | — | parent + metabolite (no model) | 5 | Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02254.x](https://doi.org/10.1111/j.1365-2125.2005.02254.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -94,7 +94,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 381 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

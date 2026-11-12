@@ -27,7 +27,7 @@ Chlorpromazine is a phenothiazine antipsychotic used mainly for schizophrenia, a
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="goat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nawaz_1981_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nawaz1981_reference.md) | — | 1-compartment (no model) | 2 | Nawaz M, Pharmacokinetics and dosage of chlorpro…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00725.x](https://doi.org/10.1111/j.1365-2885.1981.tb00725.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Nielsen_1983_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference.md) | — | 1-compartment (no model) | 2 | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nielsen_1983_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference.md) | — | 1-compartment (no model) | 2 | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -75,13 +75,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:31 | 1:36 | 1/1/0 | 6/0/0 | 0/0/0 | 91,530/4,691 | ollama / glm-5.3-flash | 5 | 3/2 | 5/0 | 0 |
+| 2026-10-06 15:31 | 1:36 | 2/0/0 | 6/0/0 | 0/0/0 | 91,530/4,691 | ollama / glm-5.3-flash | 5 | 3/2 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 81 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

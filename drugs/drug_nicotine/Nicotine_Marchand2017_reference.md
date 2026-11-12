@@ -4,11 +4,11 @@
 
 # nicotine — `Nicotine_Marchand2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because apparent clearance and volume parameters are dimensionally incoherent, and the formation clearance value of 1.6 lacks a recognized unit.
+> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-07 03:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because apparent clearance and volume parameters are dimensionally incoherent, and the formation clearance value of 1.6 lacks a recognized unit.
 
-<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="false" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="true" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Population Pharmacokinetics in Healthy Adult Smokers: A Retrospective Analysis. European journal of drug metabolism and pharmacokinetics 42(6):943–954 (2017).
@@ -48,7 +48,7 @@ Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -166,9 +166,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q59 | pass | [time] |  | ['Tab3:row24:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4', 'Tab3:row5:col5', 'Tab3:row5:col6'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/mL | ['Tab3:row8:col1', 'Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4', 'Tab3:row8:col5', 'Tab3:row8:col6', 'Marchand_2017_table_4:row4:col2', 'Marchand_2017_table_4:row4:col3'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/mL ([mass] / [length] ** 3) | ['Tab3:row8:col1', 'Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4', 'Tab3:row8:col5', 'Tab3:row8:col6', 'Marchand_2017_table_4:row4:col2', 'Marchand_2017_table_4:row4:col3'] |
 | C5_unit_missing_Q370 | fail | [length] ** 3 / [time] |  | ['Tab3:row13:col1', 'Tab3:row13:col2'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Tab3:row23:col1'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Tab3:row23:col1'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=-0.489 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 150 L/h | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4', 'Tab3:row3:col5', 'Tab3:row3:col6', 'Marchand_2017_table_4:row2:col2', 'Marchand_2017_table_4:row2:col3'] |
@@ -191,7 +191,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

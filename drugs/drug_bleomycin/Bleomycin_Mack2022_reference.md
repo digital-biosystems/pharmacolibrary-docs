@@ -5,11 +5,11 @@
 
 # bleomycin — `Bleomycin_Mack2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; aUC has no unit.
+> This record was reviewed on 2026-11-07 14:22 UTC (Needs review), but the paper was screened again on 2026-11-03 08:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Mack2022_reference" status="needs_review" stale="false" population="patients with vascular malformations" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Mack2022_reference" status="needs_review" stale="true" population="patients with vascular malformations" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mack JM, Peterson EC, Crary SE, Moran JH, Neville K, Pierce CD et al. Pharmacokinetics of bleomycin sclerotherapy in patients with vascular malformations. Pediatric blood & cancer 69(8):e29733 (2022).
@@ -38,7 +38,7 @@ Mack JM, Peterson EC, Crary SE, Moran JH, Neville K, Pierce CD et al. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bitran_1985:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Mack_2022:abstract', 'Mack_2022:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Mack_2022:abstract', 'Mack_2022:abstract'] |
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # fremanezumab — `Fremanezumab_Iannone2026_adults`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-07 15:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Iannone2026_adults" status="rejected" stale="false" population="children and adolescents" measured-compound="fremanezumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Iannone2026_adults" status="rejected" stale="true" population="children and adolescents" measured-compound="fremanezumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Iannone LF, Romozzi M, Papetti L, Toldo I, Valeriani M, Geppetti P. Pharmacokinetics and Pharmacodynamics, Efficacy and Safety of Fremanezumab in Children and Adolescents with Migraine. European journal of drug metabolism and pharmacokinetics 51(2):133–139 (2026).
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -101,7 +101,7 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | fail |  | 0 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | ['Tab2:row4:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['Tab2:row4:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -120,7 +120,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

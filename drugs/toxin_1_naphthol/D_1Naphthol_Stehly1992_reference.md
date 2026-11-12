@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record for 1-naphthol lacks kinetic parameters, containing only bioavailability and tmax from an abstract-only source.
 
 <div class="pk-model-meta" hidden drug="1-Naphthol" model-id="D_1Naphthol_Stehly1992_reference" status="rejected" stale="false" population="channel catfish (Ictalurus punctatus)" measured-compound="1-Naphthol" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ Stehly GR, Plakas SM. Disposition of 1-naphthol in the channel catfish (Ictaluru
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record for 1-naphthol lacks kinetic parameters, containing only bioavailability and tmax from an abstract-only source.**
+
+The extraction yielded only absolute bioavailability (32) and peak time (1 hr), failing to capture half-life, rate constants, volume, or clearance. The source material consisted solely of the paper's abstract, meaning summary statistics substituted for a fitted model. Consequently, no kinetic quantities were available to support a pharmacokinetic description. Extracted — 1 naphthol: tmax 1 hr, Fab 32.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

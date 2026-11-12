@@ -43,7 +43,7 @@ Ranibizumab is an eye injection used to treat retinal diseases such as wet age-r
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ rbz_0_3_mg_0_03_ml](drugs/drug_ranibizumab/Ranibizumab_Kim2020_rbz_0_3_mg_0_03_ml.md) | — | 1-compartment (no model) | 8 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kågedal_2023_reference](drugs/drug_ranibizumab/Ranibizumab_Kgedal2023_reference.md) | — | 1-compartment (no model) | 4 | Kågedal M et al., Population Pharmacokinetics of Ranibizu…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2290](https://doi.org/10.1002/jcph.2290) |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Park_2015_reference](drugs/drug_ranibizumab/Ranibizumab_Park2015_reference.md) | — | 1-compartment (no model) | 2 | Park SJ et al., Intraocular pharmacokinetics of intravi…, Eye (London, England) (2015) | [10.1038/eye.2014.329](https://doi.org/10.1038/eye.2014.329) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Xu_2013_reference](drugs/drug_ranibizumab/Ranibizumab_Xu2013_reference.md) | — | 1-compartment (no model) | 5 | Xu L et al., Pharmacokinetics of ranibizumab in pati…, Investigative ophthalmology… (2013) | [10.1167/iovs.12-10260](https://doi.org/10.1167/iovs.12-10260) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Xu_2013_reference](drugs/drug_ranibizumab/Ranibizumab_Xu2013_reference.md) | — | 1-compartment (no model) | 5 | Xu L et al., Pharmacokinetics of ranibizumab in pati…, Investigative ophthalmology… (2013) | [10.1167/iovs.12-10260](https://doi.org/10.1167/iovs.12-10260) |
 
 ## Pharmacodynamics (PD)
 
@@ -108,7 +108,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 130 matched, 105 returned
 - **screened:** 7  ·  **relevant:** 6
-- **records:** 14  ·  extracted 0  ·  needs review 4  ·  rejected 10  ·  stale 0
+- **records:** 14  ·  extracted 0  ·  needs review 4  ·  rejected 10  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # melphalan flufenamide — `MelphalanFlufenamide_Huledal2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Melphalan flufenamide was rejected because its steady-state volume of distribution has a dimensional mismatch and its metabolite link lacks a defined rate constant.
+> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-07 16:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Melphalan flufenamide was rejected because its steady-state volume of distribution has a dimensional mismatch and its metabolite link lacks a defined rate constant.
 
-<div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="false" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="true" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharmacokinetics and Metabolism of Melflufen, an Alkylating Peptide-Drug Conjugate, in Patients with Relapsed Refractory Multiple Myeloma. Journal of clinical pharmacology 64(2):240–252 (2024).
@@ -39,7 +39,7 @@ Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q59 | pass | [time] |  | ['Huledal_2024:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Huledal_2024:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Huledal_2024:abstract', 'Huledal_2024:abstract'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Huledal_2024:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Huledal_2024:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 2.7 L | ['Huledal_2024:abstract', 'Huledal_2024:abstract'] |
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

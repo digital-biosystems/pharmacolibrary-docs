@@ -5,11 +5,11 @@
 
 # etofylline nicotinate — `EtofyllineNicotinate_Lcker1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The etofylline record lacks volume and clearance, is not a compartmental model, and contains an unreachable metabolite.
+> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-06 20:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The etofylline record lacks volume and clearance, is not a compartmental model, and contains an unreachable metabolite.
 
-<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetics of etofylline clofibrate, new antilipemic]. Arzneimittel-Forschung 30(11b):2045–2053 (1980).
@@ -36,7 +36,7 @@ Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,7 +118,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Lücker_1980:abstract', 'Lücker_1980:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Lücker_1980:abstract', 'Lücker_1980:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
@@ -139,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

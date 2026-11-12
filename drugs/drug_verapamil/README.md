@@ -26,7 +26,7 @@ Verapamil is a calcium channel blocker used to treat cardiovascular conditions s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -87,13 +87,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:27 | 6:42 | 0/1/0 | 1/0/0 | 0/0/2 | 452,113/34,358 | einfracz / qwen3.8-27b | 23 | 7/16 | 23/0 | 0 |
+| 2026-10-07 15:27 | 6:42 | 0/1/0 | 1/0/0 | 0/0/2 | 452,113/34,358 | einfracz / qwen3.8-27b | 22 | 7/16 | 22/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1464 matched, 81 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

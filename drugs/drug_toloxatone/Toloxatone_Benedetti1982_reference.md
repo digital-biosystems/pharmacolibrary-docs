@@ -5,11 +5,11 @@
 
 # toloxatone — `Toloxatone_Benedetti1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Toloxatone record rejected because it lacks distribution volume and clearance values, making it an exposure/outcome study rather than a compartmental model.
+> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Toloxatone record rejected because it lacks distribution volume and clearance values, making it an exposure/outcome study rather than a compartmental model.
 
-<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of toloxatone in man following intravenous and oral administrations. Arzneimittel-Forschung 32(3):276–280 (1982).
@@ -34,7 +34,7 @@ Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of tolo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Benedetti_1982:abstract'] |
-| C5_dimension_Q354 | fail | [length] ** 3 * [mass] / [time] | l/h . kg | ['Benedetti_1982:abstract'] |
+| C5_dimension_Q354 | fail | [length] ** 3 / [time] | l/h . kg ([length] ** 3 * [mass] / [time]) | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Benedetti_1982:abstract'] |
@@ -154,7 +154,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # dacarbazine — `Dacarbazine_Clemons2003_5_c1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The dacarbazine-to-metabolite metabolic rate constant lacks a recognizable unit, preventing dimensional verification of the model structure.
+> This record was reviewed on 2026-11-07 15:14 UTC (Rejected), but the paper was screened again on 2026-11-03 12:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The dacarbazine-to-metabolite metabolic rate constant lacks a recognizable unit, preventing dimensional verification of the model structure.
 
-<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Clemons2003_5_c1" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="8-aziridinyl-2-(2-hydroxyethyl)imidazo[4,5-d]pyrimidine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Clemons2003_5_c1" status="rejected" stale="true" population="patients with advanced breast cancer" measured-compound="8-aziridinyl-2-(2-hydroxyethyl)imidazo[4,5-d]pyrimidine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Clemons M, Ranson M, Margison JM, El Teraifi H, Griffiths A, Kelly J et al. Pharmacokinetic, biochemical and clinical effects of dimethyltriazenoimidazole-4-carboxamide-bischloroethylnitrosourea combination therapy in patients with advanced breast cancer. International journal of cancer 103(5):686–692 (2003).
@@ -45,7 +45,7 @@ Clemons M, Ranson M, Margison JM, El Teraifi H, Griffiths A, Kelly J et al. Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -149,13 +149,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | fail | 1 / [time] | hr-1 | ['Clemons_2003_table_3:row3:col9'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | hr-1 (1 / [time]) | ['Clemons_2003_table_3:row3:col9'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Clemons_2003_table_3:row3:col8'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Clemons_2003_table_3:row3:col11'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Clemons_2003_table_3:row3:col12'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Clemons_2003_table_3:row3:col7'] |
 | C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['Clemons_2003_table_3:row3:col6'] |
-| C5_dimension_Q99 | fail | 1 / [time] | hr-1 | ['Clemons_2003_table_3:row3:col10'] |
+| C5_dimension_Q99 | fail | [length] ** 3 / [time] | hr-1 (1 / [time]) | ['Clemons_2003_table_3:row3:col10'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 23.9 L | ['Clemons_2003_table_3:row3:col7'] |
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

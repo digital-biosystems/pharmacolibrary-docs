@@ -27,8 +27,8 @@ Dihydrocodeine is an opioid painkiller used to treat pain and cough. It is an ap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | — | parent + metabolite (no model) | 2 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Rowell_1983_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Rowell1983_reference.md) | — | 1-compartment (no model) | 0 | Rowell FJ et al., Pharmacokinetics of intravenous and ora…, European journal of clinica… (1983) | [10.1007/BF01037958](https://doi.org/10.1007/BF01037958) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | — | parent + metabolite (no model) | 2 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,13 +63,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:56 | 1:42 | 0/2/0 | 1/0/0 | 0/0/0 | 141,952/6,285 | einfracz / qwen3.8-27b | 11 | 2/8 | 11/0 | 0 |
+| 2026-10-07 04:56 | 1:42 | 1/1/0 | 1/0/0 | 0/0/0 | 141,952/6,285 | einfracz / qwen3.8-27b | 11 | 2/8 | 11/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 124 matched, 78 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Retlich_2015 \u00b7 PD plasma DPP-4 activity&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # plasma DPP-4 activity — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Linagliptin (concentrations from this paper's PK model) drives plasma DPP-4 activity (in RFU): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Linagliptin plasma concentrations (nmol/L) inhibit plasma DPP-4 activity (RFU) via a sigmoid Emax model, with a typical EC50 of 3.06 nmol/L, a Hill coefficient of 3.22, and a maximum effect (Emax) of 92.4%. The model accounts for sex-specific baseline DPP-4 activities (10,700 RFU for males and 11,565 RFU for females) and correlates individual EC50 values with baseline activity.
 >
@@ -47,6 +48,37 @@ Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacok
 </details>
 
 
+## Exposure-response model
+
+`Linagliptin_Retlich2015_PD_dpp_4_activity` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 1.07e+04 RFU | — |
+| Emax | -92.4 % | -0.924 1 |
+| EC50 | 3.06 nmol/L | 3.06e-06 mol/m3 |
+| gamma | 3.22 | — |
+
+Closed-form check points (response, SI): `at_0` = 1.07e+04, `at_EC50` = 1.07e+04, `at_inf` = 1.07e+04
+
+Deviations:
+
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -74,19 +106,54 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_modelica.zip" download>Linagliptin_Retlich2015_PD_dpp_4_activity_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_fmi.zip" download>Linagliptin_Retlich2015_PD_dpp_4_activity_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_matlab.zip" download>Linagliptin_Retlich2015_PD_dpp_4_activity_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_sbml.zip" download>Linagliptin_Retlich2015_PD_dpp_4_activity_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_cellml.zip" download>Linagliptin_Retlich2015_PD_dpp_4_activity_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 1.07e+04 |  |
+| input | model | `EC50` | 3.06e-06 |  |
+| input | model | `Emax` | -0.924 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 3.22 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Linagliptin_Retlich2015_PD_dpp_4_activity`. <https://pharmacolibrary.github.io/#/drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity>
+
+```bibtex
+@misc{pharmacolibrary_LinagliptinRetlich2015PDdpp4activity,
+  title  = {{Pharmacolibrary model Linagliptin_Retlich2015_PD_dpp_4_activity}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_linagliptin/Linagliptin_Retlich2015_PD_dpp_4_activity/Linagliptin_Retlich2015_PD_dpp_4_activity_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Linagliptin_Retlich2015_PD_dpp_4_activity_params.json` · controls `Linagliptin_Retlich2015_PD_dpp_4_activity_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

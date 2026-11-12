@@ -5,11 +5,11 @@
 
 # rituximab — `Rituximab_Serkland2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The extracted clearance value of 0.075 1/day is dimensionally inconsistent with the one-compartment structural model.
+> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 19:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted clearance value of 0.075 1/day is dimensionally inconsistent with the one-compartment structural model.
 
-<div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="false" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="true" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacokinetic-pharmacodynamic modelling in a clinical pilot study of rituximab in multiple sclerosis: Towards personalized dosing interval. British journal of clinical pharmacology 91(10):2988–2997 (2025).
@@ -35,7 +35,7 @@ Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +114,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | 1 / [time] | 1/day | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 1/day (1 / [time]) | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.075 | ['Serkland_2025:abstract', 'Serkland_2025:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

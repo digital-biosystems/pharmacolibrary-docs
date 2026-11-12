@@ -4,11 +4,11 @@
 
 # ibritumomab tiuxetan (90Y) — `IbritumomabTiuxetan90y_Morschhauser2018_f1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Clearance of 1.03 ml/min for ibritumomab tiuxetan 90y failed dimensional validation because the unit ml.min lacks SI conversion.
+> This record was reviewed on 2026-11-07 15:41 UTC (Rejected), but the paper was screened again on 2026-10-07 16:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance of 1.03 ml/min for ibritumomab tiuxetan 90y failed dimensional validation because the unit ml.min lacks SI conversion.
 
-<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_f1" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_f1" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al. A new pharmacokinetic model for 90Y-ibritumomab tiuxetan based on 3-dimensional dosimetry. Scientific reports 8(1):14860 (2018).
@@ -41,7 +41,7 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Morschhauser_2018_table_3:row11:col1', 'Morschhauser_2018_table_3:row11:col2', 'Morschhauser_2018_table_3:row18:col1', 'Morschhauser_2018_table_3:row18:col2', 'Morschhauser_2018_table_3:row25:col1', 'Morschhauser_2018_table_3:row25:col2'] |
-| C5_dimension_Q22 | fail | [length] ** 3 * [time] | ml.min | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml.min ([length] ** 3 * [time]) | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Morschhauser_2018_table_3:row1:col1', 'Morschhauser_2018_table_3:row1:col2', 'Morschhauser_2018_table_3:row7:col1', 'Morschhauser_2018_table_3:row7:col2', 'Morschhauser_2018_table_3:row14:col1', 'Morschhauser_2018_table_3:row14:col2', 'Morschhauser_2018_table_3:row21:col1', 'Morschhauser_2018_table_3:row21:col2'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Morschhauser_2018_table_3:row3:col1', 'Morschhauser_2018_table_3:row3:col2', 'Morschhauser_2018_table_3:row10:col1', 'Morschhauser_2018_table_3:row10:col2', 'Morschhauser_2018_table_3:row17:col1', 'Morschhauser_2018_table_3:row17:col2', 'Morschhauser_2018_table_3:row24:col1', 'Morschhauser_2018_table_3:row24:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Morschhauser_2018_table_3:row2:col1', 'Morschhauser_2018_table_3:row2:col2'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # cetirizine — `Cetirizine_Urien1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-07 15:23 UTC (Rejected), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="false" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="true" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Urien S, Tillement JP, Ganem B, Kuch MD. A pharmacokinetic-pharmacodynamic modelling of the antihistaminic (H1) effects of cetirizine. International journal of clinical pharmacology and therapeutics 37(10):499–502 (1999).
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -103,7 +103,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Urien_1999:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Urien_1999:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Urien_1999:abstract'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h(-1) | ['Urien_1999:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h(-1) (1 / [time]) | ['Urien_1999:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

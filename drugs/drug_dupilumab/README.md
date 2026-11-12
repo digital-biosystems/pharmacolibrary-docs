@@ -34,7 +34,7 @@ Dupilumab, a monoclonal antibody, is used to treat atopic dermatitis, prurigo, e
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ population_estimates](drugs/drug_dupilumab/Dupilumab_Kovalenko2020_population_estimates.md) | ▶ model + simulator | 1-compartment, oral | 4 (+8 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Takechi_2025_reference](drugs/drug_dupilumab/Dupilumab_Takechi2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025) | [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nguyen_2026_reference](drugs/drug_dupilumab/Dupilumab_Nguyen2026_reference.md) | — | 1-compartment (no model) | 0 | Nguyen JH et al., Population Pharmacokinetics of Dupiluma…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70233](https://doi.org/10.1002/cpt.70233) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhang_2021_reference](drugs/drug_dupilumab/Dupilumab_Zhang2021_reference.md) | — | 1-compartment (no model) | 7 (+6 cov.) | Zhang L et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12667](https://doi.org/10.1002/psp4.12667) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Zhang_2021_reference](drugs/drug_dupilumab/Dupilumab_Zhang2021_reference.md) | — | 1-compartment (no model) | 7 (+6 cov.) | Zhang L et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12667](https://doi.org/10.1002/psp4.12667) |
 
 ## Pharmacodynamics (PD)
 
@@ -71,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

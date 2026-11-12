@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Xu_2019 \u00b7 estimate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Ma_2020_ANC&quot;,&quot;label&quot;:&quot;Ma_2020 \u00b7 ANC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/pd_Ma_2020_ANC.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sarilumab — `Sarilumab_Xu2019_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sarialumab clearance was rejected because a structural parameter's unit prevented valid dimensional consistency checks.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sarialumab clearance was rejected because a structural parameter's unit prevented valid dimensional consistency checks.
 
-<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_estimate" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_estimate" status="rejected" stale="true" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in Patients with Rheumatoid Arthritis. Clinical pharmacokinetics 58(11):1455–1467 (2019).
@@ -48,7 +49,7 @@ Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,8 +166,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Tab3:row3:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row5:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab3:row4:col1'] |
-| C5_dimension_Q49 | fail | [time] | day | ['Tab3:row6:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day | ['Tab3:row2:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | day ([time]) | ['Tab3:row6:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) | ['Tab3:row2:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row7:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row8:col1'] |
 | C5_unit_missing_Q352 | fail | [length] ** 3 |  | ['Tab3:row17:col1'] |
@@ -192,7 +193,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

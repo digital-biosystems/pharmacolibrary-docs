@@ -4,11 +4,11 @@
 
 # technetium (99mTc) exametazime — `Technetium99mtcExametazime_Lassen1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because the lipid metabolism parameter, k3, was assigned a concentration-dependent unit of ml/g, conflicting with its dimensionless role in the structure.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 18:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the lipid metabolism parameter, k3, was assigned a concentration-dependent unit of ml/g, conflicting with its dimensionless role in the structure.
 
-<div class="pk-model-meta" hidden drug="technetium (99mTc) exametazime" model-id="Technetium99mtcExametazime_Lassen1988_reference" status="rejected" stale="false" population="human subjects receiving intracarotid HM-PAO" measured-compound="technetium_99mtc_exametazime (lipophilic HM-PAO)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="technetium (99mTc) exametazime" model-id="Technetium99mtcExametazime_Lassen1988_reference" status="rejected" stale="true" population="human subjects receiving intracarotid HM-PAO" measured-compound="technetium_99mtc_exametazime (lipophilic HM-PAO)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-PAO in the human brain after intracarotid bolus injection: a kinetic analysis. Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism 8(6):S13–S22 (1988).
@@ -40,7 +40,7 @@ Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,10 +135,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 / [mass] / [time] | ml/g/min | ['Lassen_1988:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml/g/min ([length] ** 3 / [mass] / [time]) | ['Lassen_1988:abstract'] |
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Lassen_1988:abstract'] |
-| C5_dimension_Q410 | fail | [length] ** 3 / [mass] | ml/g | ['Lassen_1988:abstract'] |
+| C5_dimension_Q410 | fail | dimensionless | ml/g ([length] ** 3 / [mass]) | ['Lassen_1988:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Lassen_1988:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.45 | ['Lassen_1988:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -160,7 +160,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

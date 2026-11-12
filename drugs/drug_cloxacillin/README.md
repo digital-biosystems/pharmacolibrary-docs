@@ -27,7 +27,7 @@ Cloxacillin is a penicillin antibiotic used to treat staphylococcal infections, 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1975_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1975_reference.md) | — | 1-compartment (no model) | 2 | Nauta EH et al., Pharmacokinetics of flucloxacillin and…, British journal of clinical… (1975) | [10.1111/j.1365-2125.1975.tb01566.x](https://doi.org/10.1111/j.1365-2125.1975.tb01566.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1976_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1976_reference.md) | — | 1-compartment (no model) | 4 | Nauta EH et al., Dicloxacillin and cloxacillin: pharmaco…, Clinical pharmacology and t… (1976) | [10.1002/cpt197620198](https://doi.org/10.1002/cpt197620198) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Nauta_1976_reference](drugs/drug_cloxacillin/Cloxacillin_Nauta1976_reference.md) | — | 1-compartment (no model) | 4 | Nauta EH et al., Dicloxacillin and cloxacillin: pharmaco…, Clinical pharmacology and t… (1976) | [10.1002/cpt197620198](https://doi.org/10.1002/cpt197620198) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,7 +63,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

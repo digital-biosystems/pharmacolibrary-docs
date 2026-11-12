@@ -5,11 +5,11 @@
 
 # fimasartan — `Fimasartan_Kim2014v2_ri_patients`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Fimasartan record rejected because elimination rate constant 0.067 is recorded in hours rather than per hour, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:31 UTC (Rejected), but the paper was screened again on 2026-10-07 15:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fimasartan record rejected because elimination rate constant 0.067 is recorded in hours rather than per hour, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="true" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on the pharmacokinetics of fimasartan: a single-dose, open-label, Phase I study. Drug design, development and therapy 8:1723–1731 (2014).
@@ -39,7 +39,7 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Kim_2014_2_table_4:row3:col2'] |
-| C5_dimension_Q47 | fail | [time] | h | ['Kim_2014_2_table_4:row4:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['Kim_2014_2_table_4:row4:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kim_2014_2_table_4:row5:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

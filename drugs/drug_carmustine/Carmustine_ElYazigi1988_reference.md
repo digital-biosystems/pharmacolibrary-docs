@@ -5,11 +5,11 @@
 
 # carmustine — `Carmustine_ElYazigi1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Record rejected because the one-compartment model for BCNU lacks a volume of distribution, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-07 16:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the one-compartment model for BCNU lacks a volume of distribution, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="false" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="true" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 El-Yazigi A, Martin CR. Capillary gas chromatography and thermionic N-P-specific detection of 1,3-bis(2-chloroethyl)-1-nitrosourea (BCNU) or 1-(2-chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) in stability and pharmacokinetic studies. Pharmaceutical research 5(4):220–225 (1988).
@@ -39,7 +39,7 @@ El-Yazigi A, Martin CR. Capillary gas chromatography and thermionic N-P-specific
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -107,9 +107,9 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | liters/hr.kg | ['El-Yazigi_1988:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | liters/hr.kg ([length] ** 3 * [mass] / [time]) | ['El-Yazigi_1988:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['El-Yazigi_1988:abstract'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['El-Yazigi_1988:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['El-Yazigi_1988:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.211 | ['El-Yazigi_1988:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -129,7 +129,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

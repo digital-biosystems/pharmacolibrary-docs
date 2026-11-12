@@ -5,11 +5,11 @@
 
 # topiramate — `Topiramate_Marques2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absorption rate constant 127 percent and clearance 65 percent violate dimensional expectations for the neonatal topiramate model.
+> This record was reviewed on 2026-11-07 15:46 UTC (Rejected), but the paper was screened again on 2026-10-04 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant 127 percent and clearance 65 percent violate dimensional expectations for the neonatal topiramate model.
 
-<div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="false" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="true" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topiramate pharmacokinetics in neonates undergoing therapeutic hypothermia and proposal of an optimised dosing schedule. Acta paediatrica (Oslo, Norway : 1992) 109(2):300–308 (2020).
@@ -37,7 +37,7 @@ Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topira
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,8 +130,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Marques_2020:abstract'] |
-| C5_dimension_Q49 | fail | dimensionless | % | ['Marques_2020:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Marques_2020:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | % (dimensionless) | ['Marques_2020:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Marques_2020:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 65 | ['Marques_2020:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

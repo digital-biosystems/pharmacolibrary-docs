@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;4-Hydroxybutyric acid&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/&quot;},{&quot;label&quot;:&quot;Brenneisen_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Cuypers2025_reference&quot;,&quot;label&quot;:&quot;Cuypers_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Cuypers2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Thorpy2020_reference&quot;,&quot;label&quot;:&quot;Thorpy_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Thorpy2020_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Brenneisen2004_reference&quot;,&quot;label&quot;:&quot;Brenneisen_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The clearance plausibility check could not be computed.
 
 <div class="pk-model-meta" hidden drug="4-Hydroxybutyric acid" model-id="D_4HydroxybutyricAcid_Brenneisen2004_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="4-Hydroxybutyric acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -20,10 +21,12 @@ Brenneisen R, Elsohly MA, Murphy TP, Passarelli J, Russmann S, Salamone SJ et al
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference.svg" alt="D_4HydroxybutyricAcid_Brenneisen2004_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -44,7 +47,13 @@ Brenneisen R, Elsohly MA, Murphy TP, Passarelli J, Russmann S, Salamone SJ et al
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — 4 hydroxybutyric acid: t1/2z 30.4 min, V 52.7 L, CL 1.23e+03 microL/min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -67,6 +76,7 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- engineer: built from a record validation left at "Needs review" (toxins) — not yet confirmed by a reviewer (C6_cl_magnitude failed (ratio None))
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Brenneisen_2004_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -105,19 +115,65 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_modelica.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_fmi.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_matlab.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_matlab_simbio.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_sbml.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_cellml.zip" download>D_4HydroxybutyricAcid_Brenneisen2004_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.1041 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 2.047e-08 | m3/s |
+| input | model | `VdPerKg` | 0.0007529 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Brenneisen R, Elsohly MA, Murphy TP, Passarelli J, Russmann S, Salamone SJ et al. Pharmacokinetics and excretion of gamma-hydroxybutyrate (GHB) in healthy subjects. Journal of analytical toxicology 28(8):625–630 (2004). [doi:10.1093/jat/28.8.625](https://doi.org/10.1093/jat/28.8.625)
+
+**This record:** Pharmacolibrary, model `D_4HydroxybutyricAcid_Brenneisen2004_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference>
+
+```bibtex
+@misc{pharmacolibrary_D4HydroxybutyricAcidBrenneisen2004reference,
+  title  = {{Pharmacolibrary model D_4HydroxybutyricAcid_Brenneisen2004_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference},
+  note   = {Parameters from doi:10.1093/jat/28.8.625},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<span class="pk-missing">This model was built from a record that validation left at <b>needs review</b>: its values are not yet confirmed. See the record's blocking checks before relying on the curve.</span>
+
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference/D_4HydroxybutyricAcid_Brenneisen2004_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `D_4HydroxybutyricAcid_Brenneisen2004_reference_params.json` · controls `D_4HydroxybutyricAcid_Brenneisen2004_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

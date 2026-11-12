@@ -4,11 +4,11 @@
 
 # lincomycin — `Lincomycin_Adam1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:28 UTC (Needs review), but the paper was screened again on 2026-10-13 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="lincomycin" model-id="Lincomycin_Adam1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="lincomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lincomycin" model-id="Lincomycin_Adam1979_reference" status="extracted" stale="true" population="healthy adults" measured-compound="lincomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Adam D, Pätzold J. [Serum concentration and kinetics after i.v.-infusion of 3 g lincomycin (author's transl)]. Arzneimittel-Forschung 29(1):130–134 (1979).
@@ -25,8 +25,6 @@ Adam D, Pätzold J. [Serum concentration and kinetics after i.v.-infusion of 3 g
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean serum half-life | t1/2z | 286.3 | min |
@@ -35,7 +33,7 @@ Adam D, Pätzold J. [Serum concentration and kinetics after i.v.-infusion of 3 g
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -100,7 +98,7 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Adam_1979:abstract', 'Adam_1979:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Adam_1979:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Adam_1979:abstract', 'Adam_1979:abstract'] |
@@ -133,7 +131,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

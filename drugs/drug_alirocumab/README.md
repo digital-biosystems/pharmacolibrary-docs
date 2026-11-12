@@ -38,7 +38,7 @@ Alirocumab is a monoclonal antibody used to treat dyslipidemias, including condi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>blocking: C2_base_Q61 failed (ratio 0.0036)</sub> | [Martinez_2019_reference](drugs/drug_alirocumab/Alirocumab_Martinez2019_reference.md) | — | 1-compartment (no model) | 10 (+2 cov.) | Martinez JM et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0669-y](https://doi.org/10.1007/s40262-018-0669-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>blocking: C2_base_Q61 failed (ratio 0.0036)</sub> | [Martinez_2019_reference](drugs/drug_alirocumab/Alirocumab_Martinez2019_reference.md) | — | 1-compartment (no model) | 10 (+2 cov.) | Martinez JM et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0669-y](https://doi.org/10.1007/s40262-018-0669-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q329 — no SI value to build from</sub> | [Nolain_2022_reference](drugs/drug_alirocumab/Alirocumab_Nolain2022_reference.md) | — | general linear (no model) | 6 | Nolain P et al., Combined Semi-mechanistic Target-Mediat…, European journal of drug me… (2022) | [10.1007/s13318-022-00787-4](https://doi.org/10.1007/s13318-022-00787-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lunven_2014_reference](drugs/drug_alirocumab/Alirocumab_Lunven2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Lunven C et al., A randomized study of the relative phar…, Cardiovascular therapeutics (2014) | [10.1111/1755-5922.12093](https://doi.org/10.1111/1755-5922.12093) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kovalenko_2025_reference](drugs/drug_alirocumab/Alirocumab_Kovalenko2025_reference.md) | — | 1-compartment (no model) | 0 | Kovalenko P et al., Target-Mediated Modeling of Alirocumab…, Clinical pharmacology in dr… (2025) | [10.1002/cpdd.1523](https://doi.org/10.1002/cpdd.1523) |
@@ -78,7 +78,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

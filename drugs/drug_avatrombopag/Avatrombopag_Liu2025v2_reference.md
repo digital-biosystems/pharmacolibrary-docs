@@ -4,11 +4,11 @@
 
 # avatrombopag — `Avatrombopag_Liu2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).
+> This record was reviewed on 2026-11-07 16:52 UTC (Needs review), but the paper was screened again on 2026-10-05 17:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (model/paper ratio 0.684).
 
-<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuticals (Basel, Switzerland) 18(6) (2025).
@@ -39,7 +39,7 @@ Liu X, Chen L, Ju G, Li C, Liu B, Fei Y et al. Investigation of the. Pharmaceuti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -151,6 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['pharmaceuticals-18-00903-t003:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['pharmaceuticals-18-00903-t003:row4:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['pharmaceuticals-18-00903-t003:row3:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h |  |  | ['pharmaceuticals-18-00903-t003:row5:col1'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 7.85 L/h |  |  | ['pharmaceuticals-18-00903-t003:row2:col1'] |
@@ -182,7 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

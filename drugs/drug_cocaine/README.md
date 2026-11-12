@@ -27,7 +27,7 @@ Cocaine is a stimulant and local anesthetic that has been used to treat pain and
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Pan_1998_reference](drugs/drug_cocaine/Cocaine_Pan1998_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., An animal model for simultaneous pharma…, Journal of pharmacological… (1998) | [10.1016/s1056-8719(97)00097-x](https://doi.org/10.1016/s1056-8719(97)00097-x) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Pan_1999_reference](drugs/drug_cocaine/Cocaine_Pan1999_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999) | [10.1021/js980282p](https://doi.org/10.1021/js980282p) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pan_1999_reference](drugs/drug_cocaine/Cocaine_Pan1999_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999) | [10.1021/js980282p](https://doi.org/10.1021/js980282p) |
 
 ## Pharmacodynamics (PD)
 
@@ -87,7 +87,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1798 matched, 189 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

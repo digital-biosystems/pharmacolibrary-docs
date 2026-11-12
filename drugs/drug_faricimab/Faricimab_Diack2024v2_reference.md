@@ -4,11 +4,11 @@
 
 # faricimab — `Faricimab_Diack2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Faricimab intrinsic and total clearance values are physiologically implausible because a reported unit could not be converted to standard units.
+> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 21:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Faricimab intrinsic and total clearance values are physiologically implausible because a reported unit could not be converted to standard units.
 
-<div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="false" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="true" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocular Pharmacokinetics of Faricimab Following Intravitreal Administration in Patients With Retinal Disease. Translational vision science & technology 13(11):14 (2024).
@@ -40,7 +40,7 @@ Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -147,7 +147,7 @@ The intrinsic clearance of 15.6 L/day and total clearance of 2.33 L/day are flag
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl3:row5:col2'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/day | ['tbl3:row4:col2'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/day ([length] ** 3 / [time]) | ['tbl3:row4:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tbl3:row1:col2'] |
 | C5_unit_missing_Q354 | fail | [length] ** 3 / [time] |  | ['tbl3:row19:col2'] |
 | C5_unit_missing_Q368 | fail | [length] ** 3 |  | ['tbl3:row17:col2'] |
@@ -172,7 +172,7 @@ The intrinsic clearance of 15.6 L/day and total clearance of 2.33 L/day are flag
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;elagolix&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/&quot;},{&quot;label&quot;:&quot;Abbas_2020 \u00b7 PD lumbar spine BMD&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Abbas_2020_BMD&quot;,&quot;label&quot;:&quot;Abbas_2020 \u00b7 BMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/pd_Abbas_2020_BMD.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lumbar spine BMD — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Elagolix (concentrations from the PK model of Beck_2022) drives lumbar spine BMD (in g/cm2): indirect response — drug stimulates the loss of lumbar spine BMD.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Elagolix average plasma concentrations (ng/mL) drive changes in lumbar spine BMD (g/cm²) via an indirect response model where the drug stimulates the zero-order bone formation rate (kin) with an Emax of 0.30 and EC50 of 240 ng/mL, while bone resorption (kout) proceeds at a first-order rate of 0.0015 1/day.
 >
@@ -54,6 +55,41 @@ Abbas Suleiman A et al., Exposure-Safety Analyses Identify Predi…, CPT: pharma
 </details>
 
 
+## Exposure-response model
+
+`Elagolix_Abbas2020_PD_bmd` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 1.06 g/cm3 | — |
+| Emax | 0.3 | — |
+| EC50 | 240 ng/mL | 0.00024 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 1.06, `at_EC50` = 0.9217, `at_inf` = 0.8154
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-IV predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
@@ -86,19 +122,54 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_modelica.zip" download>Elagolix_Abbas2020_PD_bmd_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_fmi.zip" download>Elagolix_Abbas2020_PD_bmd_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_matlab.zip" download>Elagolix_Abbas2020_PD_bmd_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_sbml.zip" download>Elagolix_Abbas2020_PD_bmd_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_cellml.zip" download>Elagolix_Abbas2020_PD_bmd_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_IndirectTurnoverSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 1.06 |  |
+| input | model | `EC50` | 0.00024 |  |
+| input | model | `Emax` | 0.3 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.IndirectTurnoverSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Elagolix_Abbas2020_PD_bmd`. <https://pharmacolibrary.github.io/#/drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd>
+
+```bibtex
+@misc{pharmacolibrary_ElagolixAbbas2020PDbmd,
+  title  = {{Pharmacolibrary model Elagolix_Abbas2020_PD_bmd}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_elagolix/Elagolix_Abbas2020_PD_bmd/Elagolix_Abbas2020_PD_bmd_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_IndirectTurnoverSweep` · parameters `Elagolix_Abbas2020_PD_bmd_params.json` · controls `Elagolix_Abbas2020_PD_bmd_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

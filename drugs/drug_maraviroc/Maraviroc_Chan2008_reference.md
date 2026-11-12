@@ -5,11 +5,11 @@
 
 # maraviroc — `Maraviroc_Chan2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The maraviroc model was rejected because the 24% bioavailability and 0.87 h lag time are population summary statistics, not structural parameters, from an abstract-only record.
+> This record was reviewed on 2026-11-07 15:32 UTC (Rejected), but the paper was screened again on 2026-10-07 16:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The maraviroc model was rejected because the 24% bioavailability and 0.87 h lag time are population summary statistics, not structural parameters, from an abstract-only record.
 
-<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="false" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="true" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chan PL, Weatherley B, McFadyen L. A population pharmacokinetic meta-analysis of maraviroc in healthy volunteers and asymptomatic HIV-infected subjects. British journal of clinical pharmacology 65 Suppl 1(Suppl 1):76–85 (2008).
@@ -41,7 +41,7 @@ Chan PL, Weatherley B, McFadyen L. A population pharmacokinetic meta-analysis of
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Courlet_2021:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chan_2008:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Courlet_2021:review'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Chan_2008:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Chan_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 51.5 | ['Chan_2008:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 51.5 L/h | ['Chan_2008:abstract'] |
@@ -158,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

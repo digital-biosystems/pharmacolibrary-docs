@@ -5,11 +5,11 @@
 
 # camostat — `Camostat_Kim2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The GBA volume of distribution uses hours instead of liters, causing a dimension mismatch, and GBPA lacks a clearance parameter for its metabolic link.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-05 16:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The GBA volume of distribution uses hours instead of liters, causing a dimension mismatch, and GBPA lacks a clearance parameter for its metabolic link.
 
-<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Population Pharmacokinetics of Camostat Mesylate and Its Major Metabolites Using a Phase I Study. Pharmaceutics 15(9) (2023).
@@ -44,7 +44,7 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,7 +111,7 @@ The record lists the volume of distribution for GBA as 1046 hours, which is dime
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-15-02357-t002:row6:col1', 'pharmaceutics-15-02357-t002:row6:col2', 'pharmaceutics-15-02357-t002:row6:col3', 'pharmaceutics-15-02357-t002:row6:col4', 'pharmaceutics-15-02357-t002:row6:col5', 'pharmaceutics-15-02357-t002:row6:col6'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['pharmaceutics-15-02357-t002:row3:col1', 'pharmaceutics-15-02357-t002:row3:col2', 'pharmaceutics-15-02357-t002:row3:col3', 'pharmaceutics-15-02357-t002:row3:col4', 'pharmaceutics-15-02357-t002:row3:col5', 'pharmaceutics-15-02357-t002:row3:col6'] |
 | C5_dimension_Q57 | pass | [time] |  | ['pharmaceutics-15-02357-t002:row2:col1', 'pharmaceutics-15-02357-t002:row2:col2', 'pharmaceutics-15-02357-t002:row2:col3', 'pharmaceutics-15-02357-t002:row2:col4', 'pharmaceutics-15-02357-t002:row2:col5', 'pharmaceutics-15-02357-t002:row2:col6'] |
-| C5_dimension_Q61 | fail | [time] | h | ['pharmaceutics-15-02357-t002:row7:col1', 'pharmaceutics-15-02357-t002:row7:col2', 'pharmaceutics-15-02357-t002:row7:col3', 'pharmaceutics-15-02357-t002:row7:col4', 'pharmaceutics-15-02357-t002:row7:col5', 'pharmaceutics-15-02357-t002:row7:col6'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | h ([time]) | ['pharmaceutics-15-02357-t002:row7:col1', 'pharmaceutics-15-02357-t002:row7:col2', 'pharmaceutics-15-02357-t002:row7:col3', 'pharmaceutics-15-02357-t002:row7:col4', 'pharmaceutics-15-02357-t002:row7:col5', 'pharmaceutics-15-02357-t002:row7:col6'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | h × ng/mL | ['pharmaceutics-15-02357-t002:row5:col1', 'pharmaceutics-15-02357-t002:row5:col2', 'pharmaceutics-15-02357-t002:row5:col3', 'pharmaceutics-15-02357-t002:row5:col4', 'pharmaceutics-15-02357-t002:row5:col5', 'pharmaceutics-15-02357-t002:row5:col6'] |
 | C5_unit_missing_Q74 | fail | [mass] * [time] / [length] ** 3 | h × ng/mL | ['pharmaceutics-15-02357-t002:row4:col1', 'pharmaceutics-15-02357-t002:row4:col2', 'pharmaceutics-15-02357-t002:row4:col3', 'pharmaceutics-15-02357-t002:row4:col4', 'pharmaceutics-15-02357-t002:row4:col5', 'pharmaceutics-15-02357-t002:row4:col6'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -134,7 +134,7 @@ The record lists the volume of distribution for GBA as 1046 hours, which is dime
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

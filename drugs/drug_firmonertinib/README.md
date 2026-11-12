@@ -27,7 +27,7 @@ Firmonertinib is an investigational EGFR tyrosine kinase inhibitor being studied
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Zou_2022_reference](drugs/drug_firmonertinib/Firmonertinib_Zou2022_reference.md) | — | parent + metabolite (no model) | 10 (+2 cov.) | Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Zou_2022_reference](drugs/drug_firmonertinib/Firmonertinib_Zou2022_reference.md) | — | parent + metabolite (no model) | 10 (+2 cov.) | Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,7 +54,7 @@ Firmonertinib is an investigational EGFR tyrosine kinase inhibitor being studied
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

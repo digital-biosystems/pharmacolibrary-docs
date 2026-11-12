@@ -5,11 +5,11 @@
 
 # celecoxib — `Celecoxib_Hannam2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Celecoxib was rejected because the bioavailability-adjusted volume of distribution parameter was recorded as -0.660.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 02:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Celecoxib was rejected because the bioavailability-adjusted volume of distribution parameter was recorded as -0.660.
 
-<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="false" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="true" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cerebrospinal fluid pharmacokinetics to inform pediatric investigation. Paediatric anaesthesia 33(4):291–302 (2023).
@@ -43,7 +43,7 @@ Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cer
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

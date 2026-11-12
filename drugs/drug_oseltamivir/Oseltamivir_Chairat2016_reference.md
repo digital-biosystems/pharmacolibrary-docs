@@ -5,11 +5,11 @@
 
 # oseltamivir — `Oseltamivir_Chairat2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Oseltamivir record rejected because the first-order formation rate constant for oseltamivir carboxylate could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 18:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Oseltamivir record rejected because the first-order formation rate constant for oseltamivir carboxylate could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Chairat2016_reference" status="rejected" stale="false" population="obese and non-obese Thai adult volunteers" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Chairat2016_reference" status="rejected" stale="true" population="obese and non-obese Thai adult volunteers" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et al. Population pharmacokinetics of oseltamivir and oseltamivir carboxylate in obese and non-obese volunteers. British journal of clinical pharmacology 81(6):1103–1112 (2016).
@@ -45,7 +45,7 @@ Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,11 +165,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['bcp12892-tbl-0001:row10:col1', 'bcp12892-tbl-0001:row10:col2', 'bcp12892-tbl-0001:row10:col4'] |
-| C5_dimension_Q305 | fail | [time] | h | ['bcp12892-tbl-0001:row6:col1', 'bcp12892-tbl-0001:row6:col2', 'bcp12892-tbl-0001:row6:col4'] |
+| C5_dimension_Q305 | fail | 1 / [time] | h ([time]) | ['bcp12892-tbl-0001:row6:col1', 'bcp12892-tbl-0001:row6:col2', 'bcp12892-tbl-0001:row6:col4'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['bcp12892-tbl-0001:row4:col1', 'bcp12892-tbl-0001:row4:col2', 'bcp12892-tbl-0001:row4:col4'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['bcp12892-tbl-0001:row9:col1', 'bcp12892-tbl-0001:row9:col2'] |
 | C5_dimension_Q367 | pass | [length] ** 3 |  | ['bcp12892-tbl-0001:row5:col1', 'bcp12892-tbl-0001:row5:col2', 'bcp12892-tbl-0001:row5:col4'] |
-| C5_dimension_Q49 | fail | [time] | h | ['bcp12892-tbl-0001:row3:col1', 'bcp12892-tbl-0001:row3:col2', 'bcp12892-tbl-0001:row3:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['bcp12892-tbl-0001:row3:col1', 'bcp12892-tbl-0001:row3:col2', 'bcp12892-tbl-0001:row3:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q290 | pass | volume within physiological range | 159 L | ['bcp12892-tbl-0001:row10:col1', 'bcp12892-tbl-0001:row10:col2', 'bcp12892-tbl-0001:row10:col4'] |
@@ -190,7 +190,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

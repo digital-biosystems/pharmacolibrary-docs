@@ -5,11 +5,11 @@
 
 # mecillinam — `Mecillinam_Soback1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:34 UTC (Needs review), but the paper was screened again on 2026-10-07 10:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Soback1986_reference" status="needs_review" stale="false" population="neonatal calves" measured-compound="mecillinam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Soback1986_reference" status="extracted" stale="true" population="neonatal calves" measured-compound="mecillinam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Soback S, Bor A, Paz R, Ziv G. Clinical pharmacology of mecillinam in calves. Journal of veterinary pharmacology and therapeutics 9(4):385–393 (1986).
@@ -29,8 +29,6 @@ Soback S, Bor A, Paz R, Ziv G. Clinical pharmacology of mecillinam in calves. Jo
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2 alpha | t1/2α | 11.7 | min |
@@ -41,7 +39,7 @@ Soback S, Bor A, Paz R, Ziv G. Clinical pharmacology of mecillinam in calves. Jo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Koumaki_2023:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Soback_1986:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Soback_1986:abstract'] |
@@ -162,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

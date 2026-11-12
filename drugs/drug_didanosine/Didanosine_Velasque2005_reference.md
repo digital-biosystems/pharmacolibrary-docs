@@ -5,11 +5,11 @@
 
 # didanosine — `Didanosine_Velasque2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance Q has unit /h instead of L/h, causing a dimension mismatch, and the volume of distribution unit L/kg conflicts with the model structure.
+> This record was reviewed on 2026-11-07 14:57 UTC (Rejected), but the paper was screened again on 2026-10-07 16:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q has unit /h instead of L/h, causing a dimension mismatch, and the volume of distribution unit L/kg conflicts with the model structure.
 
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="false" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="true" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Velasque LS, Estrela Rde C, Suarez-Kurtz G, Struchiner CJ. Estimating the genetic component (RGC) in pharmacokinetic variability of the antiretroviral didanosine among healthy Brazilians. AIDS (London, England) 19 Suppl 4:S76–S80 (2005).
@@ -39,7 +39,7 @@ Velasque LS, Estrela Rde C, Suarez-Kurtz G, Struchiner CJ. Estimating the geneti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Velasque_2005:abstract'] |
-| C5_dimension_Q30 | fail | 1 / [time] | /h | ['Velasque_2005:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['Velasque_2005:abstract'] |
 | C5_dimension_Q310 | pass | [time] |  | ['Velasque_2005:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Velasque_2005:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenberg_2022:review'] |
@@ -162,7 +162,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

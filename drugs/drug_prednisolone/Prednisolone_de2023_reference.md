@@ -5,11 +5,11 @@
 
 # prednisolone — `Prednisolone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The dissociation constant KD for prednisolone was rejected because its unit, nmol, prevented conversion to standard units.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-04 03:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The dissociation constant KD for prednisolone was rejected because its unit, nmol, prevented conversion to standard units.
 
-<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="true" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolone pharmacokinetics after oral prednisone administration in paediatric patients with kidney transplant. British journal of clinical pharmacology 89(5):1532–1540 (2023).
@@ -44,7 +44,7 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C2_base_Q375 | pass | 27.6 | 27.6 | 1 | 0.05 | footnote reference category |
 | C2_base_Q61 | pass | 101 | 101 | 1 | 0.05 | footnote reference category |
-| C5_dimension_Q331 | fail | [substance] | nmol |  |  | ['de_2023_table_p5_1:row6:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nmol ([substance]) |  |  | ['de_2023_table_p5_1:row6:col1'] |
 | C5_dimension_Q375 | pass | [length] ** 3 / [time] |  |  |  | ['de_2023_table_p5_1:row4:col1', 'de_2023_table_p5_1:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['de_2023_table_p5_1:row1:col1', 'de_2023_table_p5_1:row1:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['de_2023_table_p5_1:row3:col1', 'de_2023_table_p5_1:row3:col2'] |
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

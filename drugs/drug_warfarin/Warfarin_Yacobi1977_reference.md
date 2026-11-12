@@ -5,11 +5,11 @@
 
 # warfarin — `Warfarin_Yacobi1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Warfarin's distribution volume of 14.3 L could not be converted to standard units, blocking the one-compartment model.
+> This record was reviewed on 2026-11-07 14:22 UTC (Rejected), but the paper was screened again on 2026-11-04 15:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Warfarin's distribution volume of 14.3 L could not be converted to standard units, blocking the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yacobi1977_reference" status="rejected" stale="false" population="adult male rats" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yacobi1977_reference" status="rejected" stale="true" population="adult male rats" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: effect of plasma protein binding on distribution kinetics of warfarin in rats. Journal of pharmaceutical sciences 66(4):567–572 (1977).
@@ -44,7 +44,7 @@ Yacobi A, Levy G. Comparative pharmacokinetics of coumarin anticoagulants XXI: e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Yacobi_1977_table_p2_1:row5:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ | ['Yacobi_1977_table_p2_1:row4:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ (1 / [time]) | ['Yacobi_1977_table_p2_1:row4:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 14.3 L | ['Aoyama_2022:review'] |
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

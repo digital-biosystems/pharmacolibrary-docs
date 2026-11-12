@@ -26,7 +26,7 @@ Lacidipine is a calcium channel blocker used to treat high blood pressure. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Yang_2017_reference](drugs/drug_lacidipine/Lacidipine_Yang2017_reference.md) | — | 1-compartment (no model) | 6 | Yang B et al., Virtual population pharmacokinetic usin…, Asian journal of pharmaceut… (2017) | [10.1016/j.ajps.2016.03.003](https://doi.org/10.1016/j.ajps.2016.03.003) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q32, Q19, Q17 — no SI value to buil…</sub> | [Yang_2017_reference](drugs/drug_lacidipine/Lacidipine_Yang2017_reference.md) | — | 1-compartment (no model) | 6 | Yang B et al., Virtual population pharmacokinetic usin…, Asian journal of pharmaceut… (2017) | [10.1016/j.ajps.2016.03.003](https://doi.org/10.1016/j.ajps.2016.03.003) |
 
 ## ADME sites
 
@@ -56,13 +56,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:12 | 4:47 | 0/1/0 | 0/0/0 | 0/0/0 | 85,179/10,697 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/3 | 2/1 | 0 |
+| 2026-10-07 03:12 | 4:47 | 1/0/0 | 0/0/0 | 0/0/0 | 85,179/10,697 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/3 | 2/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 45 matched, 44 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

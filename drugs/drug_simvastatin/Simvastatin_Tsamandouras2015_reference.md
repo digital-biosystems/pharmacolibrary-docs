@@ -5,11 +5,11 @@
 
 # simvastatin — `Simvastatin_Tsamandouras2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Simvastatin record rejected because the metabolite simvastatin acid is structurally isolated and an intrinsic clearance parameter has an uninterpretable unit.
+> This record was reviewed on 2026-11-07 14:32 UTC (Rejected), but the paper was screened again on 2026-11-04 13:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Simvastatin record rejected because the metabolite simvastatin acid is structurally isolated and an intrinsic clearance parameter has an uninterpretable unit.
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="true" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Tsamandouras N, Dickinson G, Guo Y, Hall S, Rostami-Hodjegan A, Galetin A et al. Development and Application of a Mechanistic Pharmacokinetic Model for Simvastatin and its Active Metabolite Simvastatin Acid Using an Integrated Population PBPK Approach. Pharmaceutical research 32(6):1864–1883 (2015).
@@ -46,7 +46,7 @@ Tsamandouras N, Dickinson G, Guo Y, Hall S, Rostami-Hodjegan A, Galetin A et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -159,13 +159,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Tsamandouras_2015_table_3:row9:col1'] |
-| C5_dimension_Q3 | fail | [time] | a | ['Tsamandouras_2015_table_3:row2:col1'] |
-| C5_dimension_Q3 | fail | [time] | a | ['Tsamandouras_2015_table_3:row13:col1'] |
-| C5_dimension_Q410 | fail | [time] | a | ['Tsamandouras_2015_table_3:row4:col1'] |
-| C5_dimension_Q410 | fail | [time] | a | ['Tsamandouras_2015_table_3:row8:col1'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | a ([time]) | ['Tsamandouras_2015_table_3:row2:col1'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | a ([time]) | ['Tsamandouras_2015_table_3:row13:col1'] |
+| C5_dimension_Q410 | fail | dimensionless | a ([time]) | ['Tsamandouras_2015_table_3:row4:col1'] |
+| C5_dimension_Q410 | fail | dimensionless | a ([time]) | ['Tsamandouras_2015_table_3:row8:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Faltaos_2006:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_3:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Wright_2011:review'] |
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -26,8 +26,8 @@ Lincomycin is a lincosamide antibiotic used to treat staphylococcal and pneumoco
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Adam_1979_reference](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md) | — | 1-compartment (no model) | 3 | Adam D et al., [Serum concentration and kinetics after…, Arzneimittel-Forschung (1979) | — |
-| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Sreeshitha_2014_reference](drugs/drug_lincomycin/Lincomycin_Sreeshitha2014_reference.md) | — | 1-compartment (no model) | 4 | Sreeshitha Gouri S et al., Pharmacokinetics of lincomycin followin…, Tropical animal health and… (2014) | [10.1007/s11250-014-0595-4](https://doi.org/10.1007/s11250-014-0595-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Adam_1979_reference](drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md) | — | 1-compartment (no model) | 3 | Adam D et al., [Serum concentration and kinetics after…, Arzneimittel-Forschung (1979) | — |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Sreeshitha_2014_reference](drugs/drug_lincomycin/Lincomycin_Sreeshitha2014_reference.md) | — | 1-compartment (no model) | 4 | Sreeshitha Gouri S et al., Pharmacokinetics of lincomycin followin…, Tropical animal health and… (2014) | [10.1007/s11250-014-0595-4](https://doi.org/10.1007/s11250-014-0595-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -59,13 +59,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 11:16 | 6:30 | 1/1/0 | 1/0/0 | 0/0/0 | 289,366/28,781 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
+| 2026-10-13 11:16 | 6:30 | 2/0/0 | 1/0/0 | 0/0/0 | 289,366/28,781 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 9  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 PD Correct Answers of the 0-back (percentage of correct answers)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_Adaptive_tracker&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 Adaptive tracker&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_Adaptive_tracker.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvarez_Jimenez_2017_0_back&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 0-back&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_0_back.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Correct Answers of the 0-back (percentage of correct answers) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Mecamylamine (concentrations from this paper's PK model) drives Correct Answers of the 0-back (percentage of correct answers) (in % correct answers): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The paper states that a direct Emax model was selected to describe how plasma mecamylamine concentrations inhibit the percentage of correct answers in the 0-back paradigm without an effect compartment. The estimated potency (EC50) is 8.74 μg•L⁻¹ and the maximum inhibition (Emax) is 0.377%.
 >
@@ -42,6 +43,44 @@ Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Mecamylamine_AlvarezJimenez2017_PD_0_back` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 3.66 % correct answers | — |
+| Emax | -0.377 % | -0.00377 1 |
+| EC50 | 8.74 μg•L -1 | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 3.66, `at_EC50` = 3.658, `at_inf` = 3.656
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+- `pd_binding_exposure_unit_unresolved` — 'μg•L -1' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -71,19 +110,54 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_modelica.zip" download>Mecamylamine_AlvarezJimenez2017_PD_0_back_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_fmi.zip" download>Mecamylamine_AlvarezJimenez2017_PD_0_back_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_matlab.zip" download>Mecamylamine_AlvarezJimenez2017_PD_0_back_matlab.zip</a> <span class="pk-size">(2.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_sbml.zip" download>Mecamylamine_AlvarezJimenez2017_PD_0_back_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_cellml.zip" download>Mecamylamine_AlvarezJimenez2017_PD_0_back_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 3.66 |  |
+| input | model | `EC50` | 8.74 |  |
+| input | model | `Emax` | -0.00377 |  |
+| input | model | `exposure_per_s` | 1 |  |
+| input | model | `gamma` | 1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Mecamylamine_AlvarezJimenez2017_PD_0_back`. <https://pharmacolibrary.github.io/#/drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back>
+
+```bibtex
+@misc{pharmacolibrary_MecamylamineAlvarezJimenez2017PD0back,
+  title  = {{Pharmacolibrary model Mecamylamine_AlvarezJimenez2017_PD_0_back}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_PD_0_back/Mecamylamine_AlvarezJimenez2017_PD_0_back_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Mecamylamine_AlvarezJimenez2017_PD_0_back_params.json` · controls `Mecamylamine_AlvarezJimenez2017_PD_0_back_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

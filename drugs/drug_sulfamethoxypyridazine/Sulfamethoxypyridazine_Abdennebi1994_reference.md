@@ -4,11 +4,11 @@
 
 # sulfamethoxypyridazine — `Sulfamethoxypyridazine_Abdennebi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> Sulfamethoxypyridazine absolute bioavailability was rejected because its reported unit could not be converted to SI.
+> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 11:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sulfamethoxypyridazine absolute bioavailability was rejected because its reported unit could not be converted to SI.
 
-<div class="pk-model-meta" hidden drug="sulfamethoxypyridazine" model-id="Sulfamethoxypyridazine_Abdennebi1994_reference" status="rejected" stale="false" population="dromedary camels" measured-compound="sulfamethoxypyridazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sulfamethoxypyridazine" model-id="Sulfamethoxypyridazine_Abdennebi1994_reference" status="rejected" stale="true" population="dromedary camels" measured-compound="sulfamethoxypyridazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma protein binding of sulfamethoxypyridazine in camels (Camelus dromedarius)]. Revue d'elevage et de medecine veterinaire des pays tropicaux 47(1):97–102 (1994).
@@ -48,7 +48,7 @@ Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,8 +133,8 @@ The absolute bioavailability is listed as 53.9 with the unit 'p.100', which indi
 | C5_dimension_Q59 | pass | [time] |  | ['Abdennebi_1994_table_3:row8:col1', 'Abdennebi_1994_table_3:row8:col2', 'Abdennebi_1994_table_3:row8:col3', 'Abdennebi_1994_table_3:row8:col4', 'Abdennebi_1994_table_3:row8:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Abdennebi_1994_table_2:row10:col1', 'Abdennebi_1994_table_2:row10:col2', 'Abdennebi_1994_table_2:row10:col3', 'Abdennebi_1994_table_2:row10:col4', 'Abdennebi_1994_table_2:row10:col5'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Abdennebi_1994_table_2:row12:col1', 'Abdennebi_1994_table_2:row12:col2', 'Abdennebi_1994_table_2:row12:col3', 'Abdennebi_1994_table_2:row12:col4', 'Abdennebi_1994_table_2:row12:col5'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h⁻¹ | ['Abdennebi_1994_table_2:row1:col1', 'Abdennebi_1994_table_2:row1:col2', 'Abdennebi_1994_table_2:row1:col3', 'Abdennebi_1994_table_2:row1:col4', 'Abdennebi_1994_table_2:row1:col5'] |
-| C5_dimension_Q75 | fail | [length] ** 3 * [time] | l/kg.h | ['Abdennebi_1994_table_2:row13:col1', 'Abdennebi_1994_table_2:row13:col2', 'Abdennebi_1994_table_2:row13:col3', 'Abdennebi_1994_table_2:row13:col4', 'Abdennebi_1994_table_2:row13:col5'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h⁻¹ (1 / [time]) | ['Abdennebi_1994_table_2:row1:col1', 'Abdennebi_1994_table_2:row1:col2', 'Abdennebi_1994_table_2:row1:col3', 'Abdennebi_1994_table_2:row1:col4', 'Abdennebi_1994_table_2:row1:col5'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | l/kg.h ([length] ** 3 * [time]) | ['Abdennebi_1994_table_2:row13:col1', 'Abdennebi_1994_table_2:row13:col2', 'Abdennebi_1994_table_2:row13:col3', 'Abdennebi_1994_table_2:row13:col4', 'Abdennebi_1994_table_2:row13:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.16e+04 L | ['Abdennebi_1994_table_2:row10:col1', 'Abdennebi_1994_table_2:row10:col2', 'Abdennebi_1994_table_2:row10:col3', 'Abdennebi_1994_table_2:row10:col4', 'Abdennebi_1994_table_2:row10:col5'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 3.81e+04 L | ['Abdennebi_1994_table_2:row12:col1', 'Abdennebi_1994_table_2:row12:col2', 'Abdennebi_1994_table_2:row12:col3', 'Abdennebi_1994_table_2:row12:col4', 'Abdennebi_1994_table_2:row12:col5'] |
@@ -155,7 +155,7 @@ The absolute bioavailability is listed as 53.9 with the unit 'p.100', which indi
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

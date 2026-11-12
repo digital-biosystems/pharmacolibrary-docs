@@ -5,11 +5,11 @@
 
 # aminophylline — `Aminophylline_McKiernan1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Record rejected for aminophylline as the abstract-only report lacks distribution volume and clearance, preventing compartmental population PK modeling.
+> This record was reviewed on 2026-11-07 14:36 UTC (Rejected), but the paper was screened again on 2026-10-07 23:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected for aminophylline as the abstract-only report lacks distribution volume and clearance, preventing compartmental population PK modeling.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_McKiernan1983_reference" status="rejected" stale="false" population="adult cats" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_McKiernan1983_reference" status="rejected" stale="true" population="adult cats" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 McKiernan BC, Koritz GD, Davis LE, Neff-Davis CA, Pheris DR. Pharmacokinetic studies of theophylline in cats. Journal of veterinary pharmacology and therapeutics 6(2):99–104 (1983).
@@ -42,7 +42,7 @@ McKiernan BC, Koritz GD, Davis LE, Neff-Davis CA, Pheris DR. Pharmacokinetic stu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,8 +123,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q352 | fail | dimensionless | 1/kg | ['McKiernan_1983:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q352 | fail | [length] ** 3 | 1/kg (dimensionless) | ['McKiernan_1983:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['McKiernan_1983:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['McKiernan_1983:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -145,7 +146,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # paracetamol — `Paracetamol_Anderson2005_1_year_pna`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paracetamol absorption rate constant, 0.0043 hours, suffers a dimensional mismatch with its label.
+> This record was reviewed on 2026-11-07 14:17 UTC (Rejected), but the paper was screened again on 2026-11-04 07:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paracetamol absorption rate constant, 0.0043 hours, suffers a dimensional mismatch with its label.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_1_year_pna" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_1_year_pna" status="rejected" stale="true" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenous paracetamol (propacetamol) pharmacokinetics: a population analysis. Paediatric anaesthesia 15(4):282–292 (2005).
@@ -43,7 +43,7 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Anderson_2005_table_3:row6:col5'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Anderson_2005_table_3:row6:col2'] |
-| C5_dimension_Q49 | fail | [time] | h | ['Anderson_2005_table_3:row6:col6'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['Anderson_2005_table_3:row6:col6'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Anderson_2005_table_3:row6:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Anderson_2005_table_3:row6:col7'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

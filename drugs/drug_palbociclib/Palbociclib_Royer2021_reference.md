@@ -4,11 +4,11 @@
 
 # palbociclib — `Palbociclib_Royer2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption lag time for palbociclib is assigned the unit liters instead of hours, causing a dimensional mismatch that rejected the model.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 04:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption lag time for palbociclib is assigned the unit liters instead of hours, causing a dimensional mismatch that rejected the model.
 
-<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="false" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="true" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Population Pharmacokinetics of Palbociclib in aReal-World Situation. Pharmaceuticals (Basel, Switzerland) 14(3) (2021).
@@ -40,7 +40,7 @@ Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,7 +125,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['pharmaceuticals-14-00181-t002:row2:col1', 'pharmaceuticals-14-00181-t002:row2:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceuticals-14-00181-t002:row5:col1', 'pharmaceuticals-14-00181-t002:row5:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['pharmaceuticals-14-00181-t002:row4:col1', 'pharmaceuticals-14-00181-t002:row4:col4'] |
-| C5_dimension_Q83 | fail | [length] ** 3 | L | ['pharmaceuticals-14-00181-t002:row6:col1'] |
+| C5_dimension_Q83 | fail | [time] | L ([length] ** 3) | ['pharmaceuticals-14-00181-t002:row6:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 58.3 L/h | ['pharmaceuticals-14-00181-t002:row2:col1', 'pharmaceuticals-14-00181-t002:row2:col4'] |
@@ -147,7 +147,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

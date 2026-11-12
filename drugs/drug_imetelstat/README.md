@@ -26,7 +26,7 @@ Imetelstat is an anticancer medicine used to treat anemia in people with myelody
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
 
 ## ADME sites
 
@@ -56,7 +56,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

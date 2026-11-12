@@ -4,11 +4,11 @@
 
 # obinutuzumab — `Obinutuzumab_Zhai2017_gershwin_phase_ib`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The total clearance of obinutuzumab, reported as 0.584 L/day, was rejected because its unit could not be converted to standard SI units for validation.
+> This record was reviewed on 2026-11-07 14:59 UTC (Rejected), but the paper was screened again on 2026-10-07 18:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The total clearance of obinutuzumab, reported as 0.584 L/day, was rejected because its unit could not be converted to standard SI units for validation.
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_gershwin_phase_ib" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_gershwin_phase_ib" status="rejected" stale="true" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzumab in Chinese patients with B-cell lymphomas. British journal of clinical pharmacology 83(7):1446–1456 (2017).
@@ -41,7 +41,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,8 +139,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q174 | fail | 1 / [length] ** 3 | μg ml−1 mg−1 | ['Zhai_2017_table_3:row4:col3', 'Zhai_2017_table_3:row4:col5', 'Zhai_2017_table_3:row4:col7', 'Zhai_2017_table_3:row4:col8', 'Zhai_2017_table_3:row4:col9', 'Zhai_2017_table_3:row4:col10'] |
-| C5_dimension_Q189 | fail | [time] / [length] ** 3 | day·μg ml−1 mg−1 | ['Zhai_2017_table_3:row8:col10'] |
+| C5_dimension_Q174 | fail | [mass] / [length] ** 3 | μg ml−1 mg−1 (1 / [length] ** 3) | ['Zhai_2017_table_3:row4:col3', 'Zhai_2017_table_3:row4:col5', 'Zhai_2017_table_3:row4:col7', 'Zhai_2017_table_3:row4:col8', 'Zhai_2017_table_3:row4:col9', 'Zhai_2017_table_3:row4:col10'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | day·μg ml−1 mg−1 ([time] / [length] ** 3) | ['Zhai_2017_table_3:row8:col10'] |
 | C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 |  | ['Zhai_2017_table_3:row7:col3', 'Zhai_2017_table_3:row7:col5', 'Zhai_2017_table_3:row7:col7', 'Zhai_2017_table_3:row7:col8', 'Zhai_2017_table_3:row7:col9'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bender_2024:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Zhai_2017_table_3:row3:col3', 'Zhai_2017_table_3:row3:col5', 'Zhai_2017_table_3:row3:col7', 'Zhai_2017_table_3:row3:col8', 'Zhai_2017_table_3:row3:col9', 'Zhai_2017_table_3:row3:col10'] |
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

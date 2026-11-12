@@ -4,11 +4,11 @@
 
 # tiapride — `Tiapride_Huang2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the back-conversion rate constant (kmp) for tiapride, valued at 0.38, lacks a specified unit for dimensional verification.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-06 17:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the back-conversion rate constant (kmp) for tiapride, valued at 0.38, lacks a specified unit for dimensional verification.
 
-<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="false" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="true" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics of Tiapride in Children and Adolescents with Tic Disorders: Leveraging Plasma and Saliva Concentration to Guide Individualized Dosing. Drug design, development and therapy 20:587387 (2026).
@@ -41,7 +41,7 @@ Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +141,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  |  |  | ['t0003:row3:col1', 't0003:row3:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Huang_2026_table_2:row2:col1', 'Huang_2026_table_2:row2:col2', 'Huang_2026_table_2:row2:col4', 'Huang_2026_table_2:row2:col5', 'Huang_2026_table_2:row2:col6'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Huang_2026_table_2:row1:col1', 'Huang_2026_table_2:row1:col2', 'Huang_2026_table_2:row1:col4', 'Huang_2026_table_2:row1:col5', 'Huang_2026_table_2:row1:col6'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h |  |  | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) |  |  | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['Huang_2026_table_2:row3:col1', 'Huang_2026_table_2:row3:col2', 'Huang_2026_table_2:row3:col4', 'Huang_2026_table_2:row3:col5', 'Huang_2026_table_2:row3:col6'] |
 | C5_unit_missing_Q372 | fail | 1 / [time] |  |  |  | ['t0003:row5:col1', 't0003:row5:col2', 't0003:row5:col4', 't0003:row5:col5', 't0003:row5:col6'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
@@ -165,7 +165,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

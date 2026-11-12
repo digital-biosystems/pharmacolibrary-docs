@@ -5,11 +5,11 @@
 
 # dexamfetamine — `Dexamfetamine_Roberts2015_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The peripheral compartment volume of distribution for dextroamphetamine is recorded in milligrams instead of litres, causing a dimension mismatch and rendering the compartment structurally unreachable.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The peripheral compartment volume of distribution for dextroamphetamine is recorded in milligrams instead of litres, causing a dimension mismatch and rendering the compartment structurally unreachable.
 
-<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="true" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Population Pharmacokinetic Analysis of Dextroamphetamine in the Plasma and Hair of Healthy Adults. Clinical drug investigation 35(10):633–643 (2015).
@@ -41,7 +41,7 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row5:col4'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['T3:row3:col1'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['T3:row2:col1', 'T3:row2:col2', 'T3:row2:col3', 'T3:row2:col4'] |
-| C5_dimension_Q82 | fail | [mass] | mg | ['T3:row8:col1', 'T3:row8:col2', 'T3:row8:col3', 'T3:row8:col4'] |
+| C5_dimension_Q82 | fail | [length] ** 3 | mg ([mass]) | ['T3:row8:col1', 'T3:row8:col2', 'T3:row8:col3', 'T3:row8:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 28.7 L/h | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row5:col4'] |
@@ -160,7 +160,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -26,7 +26,7 @@ Istradefylline is a drug used to treat Parkinson's disease, acting as an adenosi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | — | 1-compartment (no model) | 6 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | — | 1-compartment (no model) | 6 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
 
 ## Pharmacodynamics (PD)
 
@@ -78,7 +78,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

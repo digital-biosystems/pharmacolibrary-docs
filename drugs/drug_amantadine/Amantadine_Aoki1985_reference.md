@@ -5,11 +5,11 @@
 
 # amantadine — `Amantadine_Aoki1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; cL_ratio has no unit.
+> This record was reviewed on 2026-11-07 15:08 UTC (Needs review), but the paper was screened again on 2026-10-06 12:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; cL_ratio has no unit.
 
-<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Aoki1985_reference" status="needs_review" stale="false" population="healthy elderly men" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Aoki1985_reference" status="needs_review" stale="true" population="healthy elderly men" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Aoki FY, Sitar DS. Amantadine kinetics in healthy elderly men: implications for influenza prevention. Clinical pharmacology and therapeutics 37(2):137–144 (1985).
@@ -40,7 +40,7 @@ Aoki FY, Sitar DS. Amantadine kinetics in healthy elderly men: implications for 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,13 +126,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jaber_2021:review'] |
 | C5_dimension_Q44 | pass | dimensionless |  | ['Aoki_1985:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Jaber_2021:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Aoki_1985:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Jaber_2021:review'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['Aoki_1985:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.6 | ['Jaber_2021:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 22.6 L/h | ['Jaber_2021:review'] |
@@ -164,7 +164,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

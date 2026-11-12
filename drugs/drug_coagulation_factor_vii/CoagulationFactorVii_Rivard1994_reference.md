@@ -5,11 +5,11 @@
 
 # coagulation factor VII — `CoagulationFactorVii_Rivard1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:54 UTC (Needs review), but the paper was screened again on 2026-10-05 17:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="coagulation factor VII" model-id="CoagulationFactorVii_Rivard1994_reference" status="needs_review" stale="false" population="patients with congenital FVII deficiency" measured-compound="factor VII" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="coagulation factor VII" model-id="CoagulationFactorVii_Rivard1994_reference" status="needs_review" stale="true" population="patients with congenital FVII deficiency" measured-compound="factor VII" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rivard GE, Kovac I, Kunschak M, Thöne P. Clinical study of recovery and half-life of vapor-heated factor VII concentrate. Transfusion 34(11):975–979 (1994).
@@ -38,7 +38,7 @@ Rivard GE, Kovac I, Kunschak M, Thöne P. Clinical study of recovery and half-li
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,6 +115,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Zenklusen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Rivard_1994:abstract', 'Rivard_1994:abstract'] |
@@ -148,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

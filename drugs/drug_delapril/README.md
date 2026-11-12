@@ -29,10 +29,10 @@ Delapril is an ACE inhibitor antihypertensive drug used to treat arterial hypert
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Onoyama_1988_metabolite_1_m_1](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_1_m_1.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Onoyama_1988_metabolite_1_m_1](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_1_m_1.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ metabolite_2_m_2_nrf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_nrf.md) | — | general linear (no model) | 1 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ metabolite_2_m_2_srf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_srf.md) | — | general linear (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ metabolite_3_m_3](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_3_m_3.md) | — | general linear (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ metabolite_3_m_3](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_3_m_3.md) | — | general linear (no model) | 4 |  |  |
 
 ## ADME sites
 
@@ -61,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 49 matched, 34 returned
 - **screened:** 7  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

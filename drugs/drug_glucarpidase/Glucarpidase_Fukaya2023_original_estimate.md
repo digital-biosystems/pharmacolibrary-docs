@@ -4,11 +4,11 @@
 
 # glucarpidase — `Glucarpidase_Fukaya2023_original_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model uses a Michaelis-Menten hydrolysis link from methotrexate to DAMPA, but the population is healthy volunteers and patients, not enzyme kinetics.
+> This record was reviewed on 2026-11-07 16:16 UTC (Rejected), but the paper was screened again on 2026-10-07 19:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model uses a Michaelis-Menten hydrolysis link from methotrexate to DAMPA, but the population is healthy volunteers and patients, not enzyme kinetics.
 
-<div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="true" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development of a population pharmacokinetics and pharmacodynamics model of glucarpidase rescue treatment after high-dose methotrexate therapy. Frontiers in oncology 13:1003633 (2023).
@@ -44,7 +44,7 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | [substance] | μmol | ['T4:row18:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | μmol ([substance]) | ['T4:row18:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T4:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['T4:row17:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['T4:row3:col2'] |
@@ -172,7 +172,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

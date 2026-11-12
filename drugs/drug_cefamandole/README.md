@@ -27,7 +27,7 @@ Cefamandole is a second-generation cephalosporin antibiotic that was used to tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Campillo_1979_reference](drugs/drug_cefamandole/Cefamandole_Campillo1979_reference.md) | — | 2-compartment (no model) | 8 | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Campillo_1979_reference](drugs/drug_cefamandole/Cefamandole_Campillo1979_reference.md) | — | 2-compartment (no model) | 8 | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Nielsen_1979_disappearance_of_cn](drugs/drug_cefamandole/Cefamandole_Nielsen1979_disappearance_of_cn.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ rate_constant](drugs/drug_cefamandole/Cefamandole_Nielsen1979_rate_constant.md) | — | general linear (no model) | 2 |  |  |
 
@@ -61,7 +61,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

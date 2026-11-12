@@ -4,11 +4,11 @@
 
 # desirudin — `Desirudin_Nafziger2010_moderate_renal_impairment`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The desirudin central-to-peripheral transfer rate constant was rejected because its reported unit, h-1, lacked a defined conversion to standard international units.
+> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-05 14:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The desirudin central-to-peripheral transfer rate constant was rejected because its reported unit, h-1, lacked a defined conversion to standard international units.
 
-<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="true" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impairment. Journal of clinical pharmacology 50(6):614–622 (2010).
@@ -41,7 +41,7 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Nafziger_2010_table_2:row5:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Nafziger_2010_table_2:row7:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Nafziger_2010_table_2:row6:col2'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h-1 | ['Nafziger_2010_table_2:row4:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h-1 (1 / [time]) | ['Nafziger_2010_table_2:row4:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 27.3 L | ['Nafziger_2010_table_2:row6:col2'] |
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

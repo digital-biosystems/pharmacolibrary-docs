@@ -5,11 +5,11 @@
 
 # didanosine — `Didanosine_Velasque2007_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> V2, Q3, and kabs have volume or rate units (L, L/h) instead of clearance (L/h) for kabs or volume (L) for V2/V3.
+> This record was reviewed on 2026-11-07 14:57 UTC (Rejected), but the paper was screened again on 2026-10-07 16:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. V2, Q3, and kabs have volume or rate units (L, L/h) instead of clearance (L/h) for kabs or volume (L) for V2/V3.
 
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2007_final" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2007_final" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Velasque LS, Estrela RC, Suarez-Kurtz G, Struchiner CJ. A new model for the population pharmacokinetics of didanosine in healthy subjects. Brazilian journal of medical and biological research = Revista brasileira de pesquisas medicas e biologicas 40(1):97–104 (2007).
@@ -45,7 +45,7 @@ Velasque LS, Estrela RC, Suarez-Kurtz G, Struchiner CJ. A new model for the popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,10 +148,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4'] |
 | C5_dimension_Q59 | pass | [time] |  | ['tab_2:row7:col2', 'tab_2:row7:col3', 'tab_2:row7:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenberg_2022:review'] |
-| C5_dimension_Q64 | fail | [length] ** 3 / [time] | L/h | ['tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_2:row9:col3', 'tab_2:row9:col4'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['tab_2:row16:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 91.12 | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
@@ -176,7 +176,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

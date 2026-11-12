@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Bhagunde_2026_2 \u00b7 PD plasma p\u2010tau181&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hayato_2022_SUVr&quot;,&quot;label&quot;:&quot;Hayato_2022 \u00b7 SUVr&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Hayato_2022_SUVr.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_amyloid_PET_plaque&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 amyloid PET plaque&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_van_2025_amyloid_PET_plaque.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # plasma p‐tau181 — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Lecanemab (concentrations from the PK model of Hayato_2022) drives plasma p‐tau181 (in pg/mL): indirect response — drug inhibits the production of plasma p‐tau181.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Plasma p‐tau181 (pg/mL) was modeled using an indirect response model where lecanemab serum concentration (mg/mL) inhibits the production of p‐tau181 via an Emax function. The estimated parameters were an Emax of 0.480, an EC50 of 31.4 mg/mL, and a Kout of 0.428 1/year, with a baseline p‐tau181 of 3.40 pg/mL.
 >
@@ -49,6 +50,41 @@ Bhagunde P et al., Pharmacokinetic/pharmacodynamic analyse…, Alzheimer's & dem
 </details>
 
 
+## Exposure-response model
+
+`Lecanemab_Bhagunde2026v2_PD_p_tau181` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 3.4 pg/mL | 3.4e-09 kg/m3 |
+| Emax | 0.48 | — |
+| EC50 | 31.4 mg/mL | 31.4 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 3.4e-09, `at_EC50` = 2.584e-09, `at_inf` = 1.768e-09
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
@@ -70,19 +106,33 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181/Lecanemab_Bhagunde2026v2_PD_p_tau181_modelica.zip" download>Lecanemab_Bhagunde2026v2_PD_p_tau181_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181/Lecanemab_Bhagunde2026v2_PD_p_tau181_matlab.zip" download>Lecanemab_Bhagunde2026v2_PD_p_tau181_matlab.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181/Lecanemab_Bhagunde2026v2_PD_p_tau181_sbml.zip" download>Lecanemab_Bhagunde2026v2_PD_p_tau181_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181/Lecanemab_Bhagunde2026v2_PD_p_tau181_cellml.zip" download>Lecanemab_Bhagunde2026v2_PD_p_tau181_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lecanemab_Bhagunde2026v2_PD_p_tau181`. <https://pharmacolibrary.github.io/#/drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181>
+
+```bibtex
+@misc{pharmacolibrary_LecanemabBhagunde2026v2PDptau181,
+  title  = {{Pharmacolibrary model Lecanemab_Bhagunde2026v2_PD_p_tau181}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lecanemab/Lecanemab_Bhagunde2026v2_PD_p_tau181},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

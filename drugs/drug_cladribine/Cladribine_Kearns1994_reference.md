@@ -5,11 +5,11 @@
 
 # cladribine — `Cladribine_Kearns1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Renal clearance value of 317.9 mL/min/m² contradicts total clearance of 39.4 L/h/m², violating mass balance constraints.
+> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Renal clearance value of 317.9 mL/min/m² contradicts total clearance of 39.4 L/h/m², violating mass balance constraints.
 
-<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="true" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-chlorodeoxyadenosine) in children with acute leukemia. Cancer research 54(5):1235–1239 (1994).
@@ -39,7 +39,7 @@ Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-ch
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q34 | fail | [length] | nM | ['Kearns_1994:abstract'] |
+| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | nM ([length]) | ['Kearns_1994:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kearns_1994:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lu_2024:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | liters/h/m2 | ['Kearns_1994:abstract'] |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

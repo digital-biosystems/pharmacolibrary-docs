@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_AlZubaydi2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.
+> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="true" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Al-Zubaydi F, Wassef A, Kagan L, Brunetti L. Development of a Population Pharmacokinetic Gabapentin Model Leveraging Therapeutic Drug Monitoring Concentrations. Pharmaceutics 16(12) (2024).
@@ -40,7 +40,7 @@ Al-Zubaydi F, Wassef A, Kagan L, Brunetti L. Development of a Population Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-16-01514-t002:row2:col1', 'pharmaceutics-16-01514-t002:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['pharmaceutics-16-01514-t002:row3:col1'] |
 | C5_unit_missing_Q24 | fail | [length] ** 3 / [time] |  | ['pharmaceutics-16-01514-t002:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -0.89 | ['pharmaceutics-16-01514-t002:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.73 | ['pharmaceutics-16-01514-t002:row4:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.73 L/h | ['pharmaceutics-16-01514-t002:row4:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 44.6 L | ['pharmaceutics-16-01514-t002:row3:col1'] |
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

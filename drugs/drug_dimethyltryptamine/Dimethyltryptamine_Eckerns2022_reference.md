@@ -5,11 +5,11 @@
 
 # Dimethyltryptamine — `Dimethyltryptamine_Eckerns2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model was rejected because the terminal half-life unit, hours, could not be converted to a standard metric time unit.
+> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-22 09:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because the terminal half-life unit, hours, could not be converted to a standard metric time unit.
 
-<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population pharmacokinetic/pharmacodynamic modeling of the psychedelic experience induced by N,N-dimethyltryptamine - Implications for dose considerations. Clinical and translational science 15(12):2928–2937 (2022).
@@ -44,7 +44,7 @@ Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -109,10 +109,10 @@ The terminal elimination phase half-life for dimethyltryptamine is recorded as 2
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts13410-tbl-0001:row1:col1'] |
-| C5_dimension_Q22 | fail | [length] | m | ['cts13410-tbl-0001:row5:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | m ([length]) | ['cts13410-tbl-0001:row5:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts13410-tbl-0001:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Jiang_2016:review'] |
-| C5_dimension_Q61 | fail | [length] | m | ['cts13410-tbl-0001:row6:col1'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | m ([length]) | ['cts13410-tbl-0001:row6:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts13410-tbl-0001:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts13410-tbl-0001:row4:col1'] |
 | C5_dimension_Q89 | pass | [time] |  | ['cts13410-tbl-0001:row14:col1'] |
@@ -138,7 +138,7 @@ The terminal elimination phase half-life for dimethyltryptamine is recorded as 2
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

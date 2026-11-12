@@ -5,11 +5,11 @@
 
 # moxifloxacin — `Moxifloxacin_Palmer2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance Q/F (0.860) was rejected because its unit 'unit' could not be converted to standard pharmacokinetic units.
+> This record was reviewed on 2026-11-07 15:46 UTC (Rejected), but the paper was screened again on 2026-10-07 12:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q/F (0.860) was rejected because its unit 'unit' could not be converted to standard pharmacokinetic units.
 
-<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="true" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Palmer M, Zou Y, Hesseling AC, van der Laan L, Courtney I, Kinikar AA et al. Population pharmacokinetics and dosing of dispersible moxifloxacin formulation in children with rifampicin-resistant tuberculosis. British journal of clinical pharmacology 91(6):1853–1864 (2025).
@@ -39,7 +39,7 @@ Palmer M, Zou Y, Hesseling AC, van der Laan L, Courtney I, Kinikar AA et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,10 +124,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C2_base_Q40 | fail | 1 | 6.9 | 6.9 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | unit |  |  | ['bcp70005-tbl-0002:row2:col1', 'bcp70005-tbl-0002:row2:col2', 'bcp70005-tbl-0002:row2:col3'] |
-| C5_dimension_Q69 | fail | [luminosity] / [length] ** 2 | unit |  |  | ['bcp70005-tbl-0002:row4:col1', 'bcp70005-tbl-0002:row4:col2', 'bcp70005-tbl-0002:row4:col3'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | unit ([luminosity] / [length] ** 2) |  |  | ['bcp70005-tbl-0002:row2:col1', 'bcp70005-tbl-0002:row2:col2', 'bcp70005-tbl-0002:row2:col3'] |
+| C5_dimension_Q69 | fail | [length] ** 3 / [time] | unit ([luminosity] / [length] ** 2) |  |  | ['bcp70005-tbl-0002:row4:col1', 'bcp70005-tbl-0002:row4:col2', 'bcp70005-tbl-0002:row4:col3'] |
 | C5_dimension_Q73 | pass | [time] |  |  |  | ['bcp70005-tbl-0002:row6:col1', 'bcp70005-tbl-0002:row6:col2', 'bcp70005-tbl-0002:row6:col3'] |
-| C5_dimension_Q76 | fail | [luminosity] / [length] ** 2 | unit |  |  | ['bcp70005-tbl-0002:row3:col1', 'bcp70005-tbl-0002:row3:col2', 'bcp70005-tbl-0002:row3:col3'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | unit ([luminosity] / [length] ** 2) |  |  | ['bcp70005-tbl-0002:row3:col1', 'bcp70005-tbl-0002:row3:col2', 'bcp70005-tbl-0002:row3:col3'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

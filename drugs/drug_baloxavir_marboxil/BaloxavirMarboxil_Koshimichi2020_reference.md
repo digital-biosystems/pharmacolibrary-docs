@@ -5,11 +5,11 @@
 
 # baloxavir marboxil — `BaloxavirMarboxil_Koshimichi2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for baloxavir acid was rejected because its unit, liters/h, is incompatible with the expected dimension of the parameter.
+> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-07 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for baloxavir acid was rejected because its unit, liters/h, is incompatible with the expected dimension of the parameter.
 
-<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="false" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="true" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population Pharmacokinetics and Exposure-Response Relationships of Baloxavir Marboxil in Influenza Patients at High Risk of Complications. Antimicrobial agents and chemotherapy 64(7) (2020).
@@ -51,7 +51,7 @@ Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -149,7 +149,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | liters/h | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3', 'T2:row9:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | liters/h ([length] ** 3 / [time]) | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3', 'T2:row9:col4'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['T2:row8:col1', 'T2:row8:col2', 'T2:row8:col3', 'T2:row8:col4'] |
 | C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3', 'T2:row7:col4'] |
@@ -176,7 +176,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

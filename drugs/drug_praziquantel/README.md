@@ -42,8 +42,8 @@ Praziquantel is an anthelmintic used to treat parasitic worm infections such as 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T6_deviations</sub> | [Bustinduy_2016_mean](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_mean.md) | ▶ model + simulator | 1-compartment, oral | 6 | Bustinduy AL et al., Population Pharmacokinetics and Pharmac…, mBio (2016) | [10.1128/mBio.00227-16](https://doi.org/10.1128/mBio.00227-16) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T6_deviations</sub> | [↳ median](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_median.md) | ▶ model + simulator | 1-compartment, oral | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ r_pzq](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_r_pzq.md) | — | 1-compartment (no model) | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ s_pzq](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_s_pzq.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ r_pzq](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_r_pzq.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ s_pzq](drugs/drug_praziquantel/Praziquantel_Bustinduy2016_s_pzq.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bonate_2018_reference](drugs/drug_praziquantel/Praziquantel_Bonate2018_reference.md) | — | 1-compartment (no model) | 0 | Bonate PL et al., Extrapolation of praziquantel pharmacok…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9601-1](https://doi.org/10.1007/s10928-018-9601-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Bustinduy_2020_mean](drugs/drug_praziquantel/Praziquantel_Bustinduy2020_mean.md) | — | 2-compartment (no model) | 7 | Bustinduy AL et al., Population Pharmacokinetics of Praziqua…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.00566-20](https://doi.org/10.1128/AAC.00566-20) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ median](drugs/drug_praziquantel/Praziquantel_Bustinduy2020_median.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -83,13 +83,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:34 | 11:01 | 2/6/0 | 1/0/0 | 0/0/0 | 558,868/32,137 | ollama / glm-5.3-flash | 10 | 0/10 | 10/0 | 0 |
+| 2026-10-07 09:34 | 11:01 | 4/4/0 | 1/0/0 | 0/0/0 | 558,868/32,137 | ollama / glm-5.3-flash | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 60 matched, 20 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs review 4  ·  rejected 4  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

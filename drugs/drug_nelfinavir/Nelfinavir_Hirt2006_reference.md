@@ -4,11 +4,11 @@
 
 # nelfinavir — `Nelfinavir_Hirt2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The M8 formation clearance of 62 is recorded in liters/h, dimensionally inconsistent with its percent label.
+> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 17:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The M8 formation clearance of 62 is recorded in liters/h, dimensionally inconsistent with its percent label.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="true" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-related effects on nelfinavir-M8 pharmacokinetics: a population study with 133 women. Antimicrobial agents and chemotherapy 50(6):2079–2086 (2006).
@@ -41,7 +41,7 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_0:row9:col1', 'tab_0:row9:col2', 'tab_0:row9:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_0:row14:col1', 'tab_0:row14:col2', 'tab_0:row14:col3'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/ml | ['tab_0:row13:col1', 'tab_0:row13:col2', 'tab_0:row13:col3'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/ml ([mass] / [length] ** 3) | ['tab_0:row13:col1', 'tab_0:row13:col2', 'tab_0:row13:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 35.5 | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 35.5 L/h | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
@@ -162,7 +162,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

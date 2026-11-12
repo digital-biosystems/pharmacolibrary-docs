@@ -5,11 +5,11 @@
 
 # fentanyl — `Fentanyl_Reed2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Fentanyl model rejected for a three-compartment parameter set in a two-compartment structure and a non-convertible unit.
+> This record was reviewed on 2026-11-07 14:24 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fentanyl model rejected for a three-compartment parameter set in a two-compartment structure and a non-convertible unit.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="true" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The pharmacokinetics and pharmacodynamics of fentanyl administered via transdermal patch in horses. Frontiers in pain research (Lausanne, Switzerland) 5:1373759 (2024).
@@ -50,7 +50,7 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q60 | pass | [time] |  | ['T2:row8:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row12:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['T2:row13:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | 1/h | ['T2:row4:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | 1/h (1 / [time]) | ['T2:row4:col1'] |
 | C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['T2:row10:col1'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['T2:row14:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

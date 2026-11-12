@@ -4,11 +4,11 @@
 
 # triamcinolone — `Triamcinolone_Oishi2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Clearance and volume units for triamcinolone acetonide are implausible, likely indicating extraction errors in the record.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-04 04:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance and volume units for triamcinolone acetonide are implausible, likely indicating extraction errors in the record.
 
-<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Oishi2008_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Oishi2008_reference" status="rejected" stale="true" population="male Wistar rats" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Oishi M, Maeda S, Hashida N, Ohguro N, Tano Y, Kurokawa N. Pharmacokinetic behavior of intravitreal triamcinolone acetonide prepared by a hospital pharmacy. Japanese journal of ophthalmology 52(6):489–492 (2008).
@@ -38,7 +38,7 @@ Oishi M, Maeda S, Hashida N, Ohguro N, Tano Y, Kurokawa N. Pharmacokinetic behav
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,6 +113,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kraus_2018:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Oishi_2008:abstract', 'Oishi_2008:abstract'] |
@@ -138,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

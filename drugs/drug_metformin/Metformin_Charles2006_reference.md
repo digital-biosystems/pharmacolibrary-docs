@@ -5,11 +5,11 @@
 
 # metformin — `Metformin_Charles2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Metformin clearance was set to 0.059 L/h and its distribution volume to 0.16 L/kg, conflicting with population estimates of 28 L/h and 190 L.
+> This record was reviewed on 2026-11-07 14:12 UTC (Rejected), but the paper was screened again on 2026-11-03 08:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Metformin clearance was set to 0.059 L/h and its distribution volume to 0.16 L/kg, conflicting with population estimates of 28 L/h and 190 L.
 
-<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Charles2006_reference" status="rejected" stale="false" population="pregnant women with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Charles2006_reference" status="rejected" stale="true" population="pregnant women with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Charles B, Norris R, Xiao X, Hague W. Population pharmacokinetics of metformin in late pregnancy. Therapeutic drug monitoring 28(1):67–72 (2006).
@@ -43,7 +43,7 @@ Charles B, Norris R, Xiao X, Hague W. Population pharmacokinetics of metformin i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583), gpt-5.6-luna (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583), gpt-5.6-luna (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
 | C2_base_Q22 | fail | 0.059 | 28 | 474.6 | 0.05 | footnote reference category |
 | C2_base_Q900 | fail | 0.55 | 28 | 50.91 | 0.05 | footnote reference category |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Choi_2025:review'] |
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

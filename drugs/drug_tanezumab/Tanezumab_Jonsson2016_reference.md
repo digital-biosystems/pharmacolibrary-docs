@@ -4,11 +4,11 @@
 
 # tanezumab — `Tanezumab_Jonsson2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Tanezumab total clearance (CL) of 0.135 l day–1 has a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 06:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tanezumab total clearance (CL) of 0.135 l day–1 has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="true" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezumab in phase 3 clinical trials for osteoarthritis pain. British journal of clinical pharmacology 81(4):688–699 (2016).
@@ -46,7 +46,7 @@ Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.619). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.619). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -171,7 +171,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['bcp12850-tbl-0002:row3:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['bcp12850-tbl-0002:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['bcp12850-tbl-0002:row4:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | μg day –1 | ['bcp12850-tbl-0002:row7:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μg day –1 ([mass] / [time]) | ['bcp12850-tbl-0002:row7:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.135 | ['bcp12850-tbl-0002:row1:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00562 L/h | ['bcp12850-tbl-0002:row1:col1'] |
@@ -194,7 +194,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

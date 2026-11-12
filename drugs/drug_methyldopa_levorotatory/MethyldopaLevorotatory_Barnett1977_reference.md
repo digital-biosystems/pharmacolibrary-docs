@@ -4,11 +4,11 @@
 
 # methyldopa (levorotatory) — `MethyldopaLevorotatory_Barnett1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the plasma clearance value of 11.2 was reported in units of 1/h, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-06 12:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the plasma clearance value of 11.2 was reported in units of 1/h, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="methyldopa (levorotatory)" model-id="MethyldopaLevorotatory_Barnett1977_reference" status="rejected" stale="false" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methyldopa (levorotatory)" model-id="MethyldopaLevorotatory_Barnett1977_reference" status="rejected" stale="true" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyldopa. Plasma levels following single intravenous, oral and multiple oral dosage in normotensive and hypertensive subjects. Clinical and experimental pharmacology & physiology 4(4):331–339 (1977).
@@ -36,7 +36,7 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,9 +111,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | 1 / [time] | 1 h-1 | ['Barnett_1977:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 1 h-1 (1 / [time]) | ['Barnett_1977:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Barnett_1977:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | 1 kg-1 | ['Barnett_1977:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['Barnett_1977:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.2 | ['Barnett_1977:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

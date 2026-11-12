@@ -5,11 +5,11 @@
 
 # gabapentin — `Gabapentin_Larsen2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the structural check detected a dimension mismatch in a model parameter, and it relied on abstract-only summary statistics rather than fitted values.
+> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 06:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the structural check detected a dimension mismatch in a model parameter, and it relied on abstract-only summary statistics rather than fitted values.
 
-<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="false" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="true" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Pharmacodynamic Relationship of Gabapentin in a CFA-induced Inflammatory Hyperalgesia Rat Model. Pharmaceutical research 33(5):1133–1143 (2016).
@@ -41,7 +41,7 @@ Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,11 +124,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q1 | fail | [mass] | mg/kg | ['Larsen_2016:abstract'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | mg/kg ([mass]) | ['Larsen_2016:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Adrian_2018:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Adrian_2018:review'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h∙kg | ['Larsen_2016:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h∙kg ([mass] / [time]) | ['Larsen_2016:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Adrian_2018:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 160.7 | ['Adrian_2018:review'] |
 | C8_topology | pass |  |  |  |
@@ -150,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

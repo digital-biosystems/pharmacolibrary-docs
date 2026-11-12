@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the full text or describe a specific pharmacodynamic mechanism, such as inhibition of elimination or production, for the effect of methyl bromide concentration on the binary kill response of A. glabripennis larvae. Instead, the record reports CxT products in g-h/m3 (ranging from 362.4 to 1196.1) required to achieve specific percentages of kill between 99.0% and 99.99683%.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Barak_2005`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

@@ -5,11 +5,11 @@
 
 # defibrotide — `Defibrotide_Pescador1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Defibrotide's two-compartment model was rejected because the AUC unit ng*h/mL is not recognized.
+> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-05 14:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Defibrotide's two-compartment model was rejected because the AUC unit ng*h/mL is not recognized.
 
-<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="false" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="true" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and of its profibrinolytic activity in the rabbit. Thrombosis research 30(1):1–11 (1983).
@@ -46,7 +46,7 @@ Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Pescador_1983_table_1:row11:col1', 'Pescador_1983_table_1:row11:col2', 'Pescador_1983_table_1:row11:col3', 'Pescador_1983_table_1:row11:col4', 'Pescador_1983_table_1:row11:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Pescador_1983_table_2:row4:col1', 'Pescador_1983_table_2:row4:col2', 'Pescador_1983_table_2:row4:col3', 'Pescador_1983_table_2:row4:col4'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Pescador_1983_table_1:row9:col1', 'Pescador_1983_table_1:row9:col2', 'Pescador_1983_table_1:row9:col3', 'Pescador_1983_table_1:row9:col4', 'Pescador_1983_table_1:row9:col5'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Pescador_1983_table_1:row1:col1', 'Pescador_1983_table_1:row1:col2', 'Pescador_1983_table_1:row1:col3', 'Pescador_1983_table_1:row1:col4', 'Pescador_1983_table_1:row1:col5'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Pescador_1983_table_1:row1:col1', 'Pescador_1983_table_1:row1:col2', 'Pescador_1983_table_1:row1:col3', 'Pescador_1983_table_1:row1:col4', 'Pescador_1983_table_1:row1:col5'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 107 L | ['Pescador_1983_table_1:row11:col1', 'Pescador_1983_table_1:row11:col2', 'Pescador_1983_table_1:row11:col3', 'Pescador_1983_table_1:row11:col4', 'Pescador_1983_table_1:row11:col5'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 13.9 L | ['Pescador_1983_table_2:row4:col1', 'Pescador_1983_table_2:row4:col2', 'Pescador_1983_table_2:row4:col3', 'Pescador_1983_table_2:row4:col4'] |
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

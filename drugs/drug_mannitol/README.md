@@ -34,7 +34,7 @@ Mannitol is an osmotic diuretic used for conditions such as anuria, oliguria, ce
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wei S et al., Population pharmacokinetic model of van…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1005791](https://doi.org/10.3389/fphar.2022.1005791) |
-| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Noorani_2022_reference](drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | — | 1-compartment (no model) | 2 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Noorani_2022_reference](drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | — | 1-compartment (no model) | 2 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 ## ADME sites
 
@@ -64,7 +64,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 98 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

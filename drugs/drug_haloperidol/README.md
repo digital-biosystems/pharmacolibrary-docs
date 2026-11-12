@@ -43,7 +43,7 @@ Haloperidol is an antipsychotic used to treat conditions such as schizophrenia, 
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Li_2022_base](drugs/drug_haloperidol/Haloperidol_Li2022_base.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [↳ final](drugs/drug_haloperidol/Haloperidol_Li2022_final.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q32, Q47, Q83 — no SI value to…</sub> | [Pilla_2013_reference](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | — | 2-compartment (no model) | 13 | Pilla Reddy V et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical psychop… (2013) | [10.1097/JCP.0b013e3182a4ee2c](https://doi.org/10.1097/JCP.0b013e3182a4ee2c) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Yukawa_2002_reference](drugs/drug_haloperidol/Haloperidol_Yukawa2002_reference.md) | — | 1-compartment (no model) | 1 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yukawa_2002_reference](drugs/drug_haloperidol/Haloperidol_Yukawa2002_reference.md) | — | 1-compartment (no model) | 1 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
 
 ## Pharmacodynamics (PD)
 
@@ -102,7 +102,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 169 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 3  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 3  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

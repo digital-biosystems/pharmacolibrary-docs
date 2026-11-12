@@ -26,7 +26,7 @@ Cyfluthrin is a pyrethroid insecticide used to kill insects and other ectoparasi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Rodríguez_2018_reference](drugs/drug_cyfluthrin/Cyfluthrin_Rodrguez2018_reference.md) | — | 1-compartment (no model) | 5 | Rodríguez JL et al., Bioavailability and nervous tissue dist…, Food and chemical toxicolog… (2018) | [10.1016/j.fct.2018.05.012](https://doi.org/10.1016/j.fct.2018.05.012) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rodríguez_2018_reference](drugs/drug_cyfluthrin/Cyfluthrin_Rodrguez2018_reference.md) | — | 1-compartment (no model) | 5 | Rodríguez JL et al., Bioavailability and nervous tissue dist…, Food and chemical toxicolog… (2018) | [10.1016/j.fct.2018.05.012](https://doi.org/10.1016/j.fct.2018.05.012) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,13 +49,13 @@ Cyfluthrin is a pyrethroid insecticide used to kill insects and other ectoparasi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:05 | 3:56 | 0/1/0 | 2/2/0 | 0/0/0 | 43,760/3,533 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 12:05 | 3:56 | 1/0/0 | 2/2/0 | 0/0/0 | 43,760/3,533 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 19 matched, 19 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

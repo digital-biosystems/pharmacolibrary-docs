@@ -5,11 +5,11 @@
 
 # avelumab — `Avelumab_van2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume; cL_ratio has no unit.
+> This record was reviewed on 2026-11-07 15:50 UTC (Needs review), but the paper was screened again on 2026-10-07 09:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; cL_ratio has no unit.
 
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="false" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="true" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van der Walt JS, Wilkins J, Khandelwal A, Venkatakrishnan K, Gao W, Milenković-Grišić AM. Interplay between pharmacokinetics and immunogenicity of therapeutic proteins: stepwise development of a bidirectional joint pharmacokinetics-anti-drug antibodies model. Journal of pharmacokinetics and pharmacodynamics 52(3):33 (2025).
@@ -44,7 +44,7 @@ van der Walt JS, Wilkins J, Khandelwal A, Venkatakrishnan K, Gao W, Milenković-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -172,7 +172,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2025_table_2:row3:col2', 'van_2025_table_2:row3:col4', 'van_2025_table_2:row3:col5', 'van_2025_table_2:row3:col6', 'van_2025_table_2:row3:col9', 'van_2025_table_2:row3:col10', 'van_2025_table_2:row3:col12', 'van_2025_table_2:row3:col13'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['van_2025_table_5:row22:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0285 | ['van_2025_table_2:row3:col2', 'van_2025_table_2:row3:col4', 'van_2025_table_2:row3:col5', 'van_2025_table_2:row3:col6', 'van_2025_table_2:row3:col9', 'van_2025_table_2:row3:col10', 'van_2025_table_2:row3:col12', 'van_2025_table_2:row3:col13'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0285 L/h | ['van_2025_table_2:row3:col2', 'van_2025_table_2:row3:col4', 'van_2025_table_2:row3:col5', 'van_2025_table_2:row3:col6', 'van_2025_table_2:row3:col9', 'van_2025_table_2:row3:col10', 'van_2025_table_2:row3:col12', 'van_2025_table_2:row3:col13'] |
@@ -203,7 +202,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

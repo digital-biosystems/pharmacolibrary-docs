@@ -4,11 +4,11 @@
 
 # idecabtagene vicleucel — `IdecabtageneVicleucel_Wu2025_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-06 20:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="rejected" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="needs_review" stale="true" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular Kinetics of Idecabtagene Vicleucel in Patients with Triple-Class-Exposed Relapsed/Refractory Multiple Myeloma. Clinical pharmacokinetics 64(7):1119–1132 (2025).
@@ -28,7 +28,7 @@ Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
@@ -39,7 +39,7 @@ Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,11 +140,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q56 | pass | [time] |  | ['Tab1:row5:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab1:row4:col1'] |
 | C5_unit_missing_Q372 | fail | 1 / [time] |  | ['Tab1:row7:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Tab1:row6:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Tab1:row6:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -157,13 +158,23 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

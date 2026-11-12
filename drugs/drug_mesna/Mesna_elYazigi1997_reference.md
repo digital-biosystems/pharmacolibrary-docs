@@ -4,11 +4,11 @@
 
 # mesna — `Mesna_elYazigi1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model is rejected due to a dimension mismatch and an unreachable dimesna compartment, caused by abstract-only summary statistics.
+> This record was reviewed on 2026-11-07 16:48 UTC (Rejected), but the paper was screened again on 2026-10-07 21:49 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model is rejected due to a dimension mismatch and an unreachable dimesna compartment, caused by abstract-only summary statistics.
 
-<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="false" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="true" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of mesna and dimesna after simultaneous intravenous bolus and infusion administration in patients undergoing bone marrow transplantation. Journal of clinical pharmacology 37(7):618–624 (1997).
@@ -44,7 +44,7 @@ el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of m
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,8 +139,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | L/hr.kg | ['el-Yazigi_1997:abstract'] |
-| C5_dimension_Q26 | fail | [length] ** 3 * [mass] / [time] | L/hr.kg | ['el-Yazigi_1997:abstract', 'el-Yazigi_1997:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | L/hr.kg ([length] ** 3 * [mass] / [time]) | ['el-Yazigi_1997:abstract'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | L/hr.kg ([length] ** 3 * [mass] / [time]) | ['el-Yazigi_1997:abstract', 'el-Yazigi_1997:abstract'] |
 | C5_dimension_Q53 | pass | [time] |  | ['el-Yazigi_1997:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['el-Yazigi_1997:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['el-Yazigi_1997:abstract'] |
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

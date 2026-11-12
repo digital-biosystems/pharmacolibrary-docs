@@ -4,11 +4,11 @@
 
 # Relatlimab — `Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The relatlimab model was rejected because the peripheral compartment is unconnected to the central compartment.
+> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 19:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The relatlimab model was rejected because the peripheral compartment is unconnected to the central compartment.
 
-<div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv" status="rejected" stale="false" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv" status="rejected" stale="true" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-Informed Clinical Pharmacology Profile of a Novel Fixed-Dose Combination of Nivolumab and Relatlimab in Adult and Adolescent Patients with Solid Tumors. Clinical cancer research : an official journal of the American Association for Cancer Research 30(14):3050–3058 (2024).
@@ -43,7 +43,7 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.952). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tbl3:row11:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tbl3:row12:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['tbl3:row13:col3'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | μg/h | ['tbl3:row14:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μg/h ([mass] / [time]) | ['tbl3:row14:col3'] |
 | C5_dimension_Q71 | pass | [mass] / [length] ** 3 |  | ['tbl3:row5:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.05 | ['tbl3:row9:col3'] |
 | C8_topology | fail |  |  |  |
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

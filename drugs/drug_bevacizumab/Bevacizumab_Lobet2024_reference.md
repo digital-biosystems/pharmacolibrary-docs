@@ -5,11 +5,11 @@
 
 # bevacizumab — `Bevacizumab_Lobet2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Bevacizumab lacks volume and clearance parameters, with a dimension mismatch on the 10 nM dissociation constant.
+> This record was reviewed on 2026-11-07 15:38 UTC (Rejected), but the paper was screened again on 2026-10-07 10:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bevacizumab lacks volume and clearance parameters, with a dimension mismatch on the 10 nM dissociation constant.
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="true" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lobet S, Caulet M, Paintaud G, Azzopardi N, Desvignes C, Chautard R et al. Confounding mitigation for the exposure-response relationship of bevacizumab in colorectal cancer patients. British journal of clinical pharmacology 90(4):976–986 (2024).
@@ -36,7 +36,7 @@ Lobet S, Caulet M, Paintaud G, Azzopardi N, Desvignes C, Chautard R et al. Confo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +114,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q331 | fail | [length] | nM | ['Lobet_2024:abstract'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nM ([length]) | ['Lobet_2024:abstract'] |
 | C5_dimension_Q334 | pass | 1 / [time] |  | ['Lobet_2024:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -134,7 +134,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

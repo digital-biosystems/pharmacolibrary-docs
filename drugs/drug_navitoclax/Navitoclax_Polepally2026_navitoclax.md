@@ -4,11 +4,11 @@
 
 # navitoclax — `Navitoclax_Polepally2026_navitoclax`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Kabs and CL_ratio have no unit.
+> This record was reviewed on 2026-11-07 16:36 UTC (Needs review), but the paper was screened again on 2026-10-06 21:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Kabs and CL_ratio have no unit.
 
-<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="true" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Polepally AR, Goebel A, Patel M, Biesdorf C, Potluri J, Menon RM et al. Semi-Mechanistic PK/PD Modeling of Platelets and Spleen Volume With Navitoclax in Combination With Ruxolitinib in Patients With Myelofibrosis. CPT: pharmacometrics & systems pharmacology 15(5):e70260 (2026).
@@ -42,7 +42,7 @@ Polepally AR, Goebel A, Patel M, Biesdorf C, Potluri J, Menon RM et al. Semi-Mec
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -151,7 +151,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Polepally_2026_table_4:row4:col1', 'Polepally_2026_table_4:row4:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Polepally_2026_table_4:row5:col1', 'Polepally_2026_table_4:row5:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Polepally_2026_table_4:row6:col1', 'Polepally_2026_table_4:row6:col2'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['Polepally_2026_table_4:row7:col1', 'Polepally_2026_table_4:row7:col2'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] |  | ['Polepally_2026_table_4:row3:col1', 'Polepally_2026_table_4:row3:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -185,7 +184,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hayato_2022_SUVr&quot;,&quot;label&quot;:&quot;Hayato_2022 \u00b7 SUVr&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Hayato_2022_SUVr.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_amyloid_PET_plaque&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 amyloid PET plaque&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_van_2025_amyloid_PET_plaque.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lecanemab — `Lecanemab_Majid2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL_ratio has no unit.
+> This record was reviewed on 2026-11-07 16:14 UTC (Needs review), but the paper was screened again on 2026-10-07 02:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Majid2024_reference" status="needs_review" stale="false" population="subjects with early Alzheimer&#39;s disease (MCI or mild dementia)" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Majid2024_reference" status="extracted" stale="true" population="subjects with early Alzheimer&#39;s disease (MCI or mild dementia)" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Majid O, Cao Y, Willis BA, Hayato S, Takenaka O, Lalovic B et al. Population pharmacokinetics and exposure-response analyses of safety (ARIA-E and isolated ARIA-H) of lecanemab in subjects with early Alzheimer's disease. CPT: pharmacometrics & systems pharmacology 13(12):2111–2123 (2024).
@@ -28,8 +29,6 @@ Majid O, Cao Y, Willis BA, Hayato S, Takenaka O, Lalovic B et al. Population pha
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL (L/h) | CL | 1.60 | L/h | 34.9 (None% RSE) |
@@ -47,7 +46,7 @@ Majid O, Cao Y, Willis BA, Hayato S, Takenaka O, Lalovic B et al. Population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -169,7 +168,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413224-tbl-0001:row6:col1', 'psp413224-tbl-0001:row6:col2', 'psp413224-tbl-0001:row6:col3', 'psp413224-tbl-0001:row6:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp413224-tbl-0001:row4:col1', 'psp413224-tbl-0001:row4:col2', 'psp413224-tbl-0001:row4:col3', 'psp413224-tbl-0001:row4:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413224-tbl-0001:row5:col1', 'psp413224-tbl-0001:row5:col2', 'psp413224-tbl-0001:row5:col3', 'psp413224-tbl-0001:row5:col4'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | ratio to males | ['psp413224-tbl-0001:row11:col1', 'psp413224-tbl-0001:row11:col2', 'psp413224-tbl-0001:row11:col3', 'psp413224-tbl-0001:row11:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.6 | ['psp413224-tbl-0001:row3:col1', 'psp413224-tbl-0001:row3:col2', 'psp413224-tbl-0001:row3:col3', 'psp413224-tbl-0001:row3:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.6 L/h | ['psp413224-tbl-0001:row3:col1', 'psp413224-tbl-0001:row3:col2', 'psp413224-tbl-0001:row3:col3', 'psp413224-tbl-0001:row3:col4'] |
@@ -202,7 +200,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

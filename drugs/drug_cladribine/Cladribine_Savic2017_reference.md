@@ -5,11 +5,11 @@
 
 # cladribine — `Cladribine_Savic2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record failed coherence and dimensional checks, and the second reader disagreed on two missing parameter values.
+> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record failed coherence and dimensional checks, and the second reader disagreed on two missing parameter values.
 
-<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="false" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="true" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokinetics of Cladribine in Patients with Multiple Sclerosis. Clinical pharmacokinetics 56(10):1245–1253 (2017).
@@ -51,7 +51,7 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.921). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 14 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [mass] / [time] | μg/h | ['Tab4:row29:col1', 'Tab4:row29:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | μg/h ([mass] / [time]) | ['Tab4:row29:col1', 'Tab4:row29:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab4:row31:col1', 'Tab4:row31:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab4:row32:col1', 'Tab4:row32:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab4:row5:col1', 'Tab4:row5:col2'] |
@@ -161,6 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] |  | ['Tab4:row3:col1', 'Tab4:row3:col2'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Tab4:row6:col1', 'Tab4:row6:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | μg/h | ['Tab4:row2:col1', 'Tab4:row2:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Tab4:row14:col1', 'Tab4:row14:col2'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.456 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 653 L/h | ['Tab4:row31:col1', 'Tab4:row31:col2'] |
@@ -184,7 +185,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

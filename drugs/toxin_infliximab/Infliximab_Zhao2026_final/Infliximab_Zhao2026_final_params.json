@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Infliximab_Zhao2026_final",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  350.0,
+  525.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 9.709757834757834e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002646153846153846,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00035,
+  "k12": 4.690191645133505e-08,
+  "k21": 6.667049280685646e-07,
+  "ka": 3.1597222222222224e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 709034.0681362726
+ },
+ "reference_peaks": {
+  "central.C": 0.0100235071263136
+ },
+ "stop_time": 7862400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

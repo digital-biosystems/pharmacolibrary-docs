@@ -4,11 +4,11 @@
 
 # omalizumab — `Omalizumab_Oh2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> KD and λ1 have no unit.
+> This record was reviewed on 2026-11-07 16:04 UTC (Needs review), but the paper was screened again on 2026-10-07 22:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. KD and λ1 have no unit.
 
-<div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Oh2023_reference" status="needs_review" stale="false" population="patients with chronic spontaneous urticaria" measured-compound="omalizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Oh2023_reference" status="needs_review" stale="true" population="patients with chronic spontaneous urticaria" measured-compound="omalizumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Oh E, Wada R, Le K, Zheng Y, Jin J, Poon V et al. PK/PD modeling to characterize placebo and treatment effect of omalizumab for chronic spontaneous urticaria. CPT: pharmacometrics & systems pharmacology 12(6):795–807 (2023).
@@ -47,7 +47,7 @@ Oh E, Wada R, Le K, Zheng Y, Jin J, Poon V et al. PK/PD modeling to characterize
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -215,7 +215,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Oh_2023_table_2:row4:col1', 'Oh_2023_table_2:row4:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Oh_2023_table_2:row7:col1', 'Oh_2023_table_2:row7:col2'] |
 | C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['Oh_2023_table_2:row8:col1', 'Oh_2023_table_2:row8:col2'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Oh_2023_table_2:row9:col1', 'Oh_2023_table_2:row9:col2'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Oh_2023_table_2:row9:col1', 'Oh_2023_table_2:row9:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.07 L/h | ['Oh_2023_table_2:row2:col1', 'Oh_2023_table_2:row2:col2'] |
@@ -248,7 +248,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

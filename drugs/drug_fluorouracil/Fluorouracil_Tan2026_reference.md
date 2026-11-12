@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Tan2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because a structural parameter unit could not be standardized, preventing dimension verification.
+> This record was reviewed on 2026-11-07 14:11 UTC (Rejected), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a structural parameter unit could not be standardized, preventing dimension verification.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Tan2026_reference" status="rejected" stale="false" population="patients receiving 5-fluorouracil-based chemotherapy" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Tan2026_reference" status="rejected" stale="true" population="patients receiving 5-fluorouracil-based chemotherapy" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Tan Z, Sancho-Araiz A, Völler S, Peeters SLJ, Manten T, Deenen MJ et al. Advancing Precision Dosing of 5-FU: Population PK Model Development, Limited Sampling Strategies, and Fit-for-Use Application. Clinical pharmacokinetics 65(7):1027-1042 (2026).
@@ -43,7 +43,7 @@ Tan Z, Sancho-Araiz A, Völler S, Peeters SLJ, Manten T, Deenen MJ et al. Advanc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ The two-compartment model for fluorouracil includes absorption rate constant 0.7
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tan_2026_table_S1:row0:col2', 'Tan_2026_table_S1:row1:col2', 'Tan_2026_table_S1:row2:col2', 'Tan_2026_table_S1:row3:col2', 'Tan_2026_table_S1:row4:col2', 'Tan_2026_table_S1:row5:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tan_2026_table_S1:row1:col3', 'Tan_2026_table_S1:row2:col3', 'Tan_2026_table_S1:row4:col3', 'Tan_2026_table_S1:row5:col3'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Tan_2026_table_S1:row1:col5', 'Tan_2026_table_S1:row2:col5', 'Tan_2026_table_S1:row4:col5', 'Tan_2026_table_S1:row5:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Tan_2026_table_S1:row1:col5', 'Tan_2026_table_S1:row2:col5', 'Tan_2026_table_S1:row4:col5', 'Tan_2026_table_S1:row5:col5'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 158 | ['Tan_2026_table_S1:row0:col1', 'Tan_2026_table_S1:row1:col1', 'Tan_2026_table_S1:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 158 L/h | ['Tan_2026_table_S1:row0:col1', 'Tan_2026_table_S1:row1:col1', 'Tan_2026_table_S1:row3:col1'] |
@@ -139,7 +139,7 @@ The two-compartment model for fluorouracil includes absorption rate constant 0.7
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # quinine — `Quinine_Michels2019_non_compartmental`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Quinine clearance and volume of distribution values are flagged as implausible due to a unit mismatch.
+> This record was reviewed on 2026-11-07 14:45 UTC (Rejected), but the paper was screened again on 2026-10-07 08:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Quinine clearance and volume of distribution values are flagged as implausible due to a unit mismatch.
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Michels2019_non_compartmental" status="rejected" stale="false" population="P. berghei-infected Wistar rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Michels2019_non_compartmental" status="rejected" stale="true" population="P. berghei-infected Wistar rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Michels LR, Maciel TR, Nakama KA, Teixeira FEG, de Carvalho FB, Gundel A et al. Effects of Surface Characteristics of Polymeric Nanocapsules on the Pharmacokinetics and Efficacy of Antimalarial Quinine. International journal of nanomedicine 14:10165–10178 (2019).
@@ -46,7 +46,7 @@ Michels LR, Maciel TR, Nakama KA, Teixeira FEG, de Carvalho FB, Gundel A et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Michels_2019_table_3:row1:col1', 'Michels_2019_table_3:row1:col2', 'Michels_2019_table_3:row1:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Michels_2019_table_3:row4:col1', 'Michels_2019_table_3:row4:col2', 'Michels_2019_table_3:row4:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Michels_2019_table_3:row6:col1'] |
-| C5_dimension_Q53 | fail | 1 / [time] | h−1 | ['Michels_2019_table_3:row7:col1'] |
+| C5_dimension_Q53 | fail | [time] | h−1 (1 / [time]) | ['Michels_2019_table_3:row7:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Michels_2019_table_3:row5:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Michels_2019_table_3:row8:col1'] |
 | C5_unit_missing_Q20 | fail | [mass] * [time] / [length] ** 3 | µg.h2/mL | ['Michels_2019_table_3:row3:col1', 'Michels_2019_table_3:row3:col3'] |
@@ -164,7 +164,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

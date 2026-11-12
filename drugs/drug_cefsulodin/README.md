@@ -26,7 +26,7 @@ Cefsulodin is a third-generation cephalosporin antibiotic used to treat bacteria
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Gibson_1982_reference](drugs/drug_cefsulodin/Cefsulodin_Gibson1982_reference.md) | — | 1-compartment (no model) | 6 | Gibson TP et al., Cefsulodin kinetics in renal impairment, Clinical pharmacology and t… (1982) | [10.1038/clpt.1982.84](https://doi.org/10.1038/clpt.1982.84) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Gibson_1982_reference](drugs/drug_cefsulodin/Cefsulodin_Gibson1982_reference.md) | — | 1-compartment (no model) | 6 | Gibson TP et al., Cefsulodin kinetics in renal impairment, Clinical pharmacology and t… (1982) | [10.1038/clpt.1982.84](https://doi.org/10.1038/clpt.1982.84) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gibson_1984_reference](drugs/drug_cefsulodin/Cefsulodin_Gibson1984_reference.md) | — | 1-compartment (no model) | 0 | Gibson TP et al., Kinetics of cefsulodin in patients with…, Reviews of infectious disea… (1984) | [10.1093/clinids/6.supplement_3.s689](https://doi.org/10.1093/clinids/6.supplement_3.s689) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Matzke_1983_reference](drugs/drug_cefsulodin/Cefsulodin_Matzke1983_reference.md) | — | 1-compartment (no model) | 0 | Matzke GR et al., Cefsulodin pharmacokinetics in patients…, Antimicrobial agents and ch… (1983) | [10.1128/AAC.23.3.369](https://doi.org/10.1128/AAC.23.3.369) |
 
@@ -56,7 +56,7 @@ Cefsulodin is a third-generation cephalosporin antibiotic used to treat bacteria
 
 - **PubMed hits:** 38 matched, 35 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -26,7 +26,7 @@ Sulfamethoxypyridazine is a long-acting sulfonamide antibiotic used to treat bac
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="camelid" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Abdennebi_1994_reference](drugs/drug_sulfamethoxypyridazine/Sulfamethoxypyridazine_Abdennebi1994_reference.md) | — | 1-compartment (no model) | 13 | Abdennebi EH et al., [Pharmacokinetics and plasma protein bi…, Revue d'elevage et de medec… (1994) | — |
+| <span class="pk-rf" hidden data-species="camelid" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Abdennebi_1994_reference](drugs/drug_sulfamethoxypyridazine/Sulfamethoxypyridazine_Abdennebi1994_reference.md) | — | 1-compartment (no model) | 13 | Abdennebi EH et al., [Pharmacokinetics and plasma protein bi…, Revue d'elevage et de medec… (1994) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kassem_1981_reference](drugs/drug_sulfamethoxypyridazine/Sulfamethoxypyridazine_Kassem1981_reference.md) | — | 1-compartment (no model) | 0 | Kassem AA et al., Biological availability of sulfamethoxy…, Die Pharmazie (1981) | — |
 
 <details class="legend">
@@ -47,7 +47,7 @@ Sulfamethoxypyridazine is a long-acting sulfonamide antibiotic used to treat bac
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

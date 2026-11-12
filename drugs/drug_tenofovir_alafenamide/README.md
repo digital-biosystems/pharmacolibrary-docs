@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tenofovir alafenamide
 
@@ -29,7 +30,7 @@ Tenofovir alafenamide is an antiviral used to treat hepatitis B, including chron
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Beliveau_2026_estimate](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_estimate.md) | — | general linear (no model) | 5 | Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026) | [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Beliveau_2026_estimate](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_estimate.md) | — | general linear (no model) | 5 | Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026) | [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_1one_taf_implant](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_1one_taf_implant.md) | — | general linear (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_2_aone_taf_implant](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_2_aone_taf_implant.md) | — | general linear (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ group_2_ctwo_taf_implants](drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_group_2_ctwo_taf_implants.md) | — | general linear (no model) | 0 |  |  |
@@ -41,7 +42,7 @@ Tenofovir alafenamide is an antiviral used to treat hepatitis B, including chron
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vegas_2025_CD4](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_CD4.md) | CD4+ T cell count ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vegas_2025_HIV_RNA](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load) ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Vegas_2025_HIV_RNA](drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load) ← tenofovir alafenamide/tenofovir (TAF/TFV) · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 ## ADME sites
 
@@ -82,7 +83,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 54 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 0  ·  needs review 0  ·  rejected 6  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs review 0  ·  rejected 6  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

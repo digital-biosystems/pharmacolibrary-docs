@@ -5,11 +5,11 @@
 
 # bevacizumab — `Bevacizumab_Turner2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 15:38 UTC (Needs review), but the paper was screened again on 2026-10-07 10:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="needs_review" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="extracted" stale="true" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacokinetics of bevacizumab in children with osteosarcoma: implications for dosing. Clinical cancer research : an official journal of the American Association for Cancer Research 20(10):2783–2792 (2014).
@@ -27,8 +27,6 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 12.2 | days |
@@ -36,7 +34,7 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -102,7 +100,7 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Turner_2014:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Turner_2014:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -134,7 +132,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

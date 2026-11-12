@@ -5,11 +5,11 @@
 
 # cefazolin — `Cefazolin_Wassef2026_dosage`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Cefazolin record rejected because the reported unit for clearance could not be converted to standard SI units, and a second reader disagreed on key values.
+> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-07 10:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cefazolin record rejected because the reported unit for clearance could not be converted to standard SI units, and a second reader disagreed on key values.
 
-<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_dosage" status="rejected" stale="false" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_dosage" status="rejected" stale="true" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. Cefazolin surgical prophylaxis in obesity: a body composition-driven population pharmacokinetic approach. Antimicrobial agents and chemotherapy:e0167725 (2026).
@@ -43,7 +43,7 @@ Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -166,7 +166,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  | ['Wassef_2026_table_2:row3:col2', 'Wassef_2026_table_2:row3:col3'] |
-| C5_dimension_Q189 | fail | [time] / [length] ** 3 | h∙L−1 | ['Wassef_2026_table_2:row4:col2', 'Wassef_2026_table_2:row4:col3'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | h∙L−1 ([time] / [length] ** 3) | ['Wassef_2026_table_2:row4:col2', 'Wassef_2026_table_2:row4:col3'] |
 | C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 |  | ['Wassef_2026_table_2:row6:col2', 'Wassef_2026_table_2:row6:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wassef_2026_table_2:row7:col2', 'Wassef_2026_table_2:row7:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wassef_2026_table_2:row8:col2', 'Wassef_2026_table_2:row8:col3'] |
@@ -194,7 +194,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

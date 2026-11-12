@@ -5,11 +5,11 @@
 
 # cefiderocol — `Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Cefiderocol's renal clearance fraction has an impossible unit, causing a dimensional mismatch that prevents the model from running.
+> This record was reviewed on 2026-11-07 15:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cefiderocol's renal clearance fraction has an impossible unit, causing a dimensional mismatch that prevents the model from running.
 
-<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="true" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacokinetics and Pharmacodynamics of Cefiderocol. Clinical pharmacokinetics 60(12):1495–1508 (2021).
@@ -46,7 +46,7 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,7 +112,7 @@ The parameter labeled "fe" is defined in the record's metadata as the fraction o
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bilal_2021_table_1:row8:col6', 'Bilal_2021_table_1:row8:col7', 'Bilal_2021_table_1:row8:col8'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Bilal_2021_table_1:row11:col6'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bilal_2021_table_1:row3:col6', 'Bilal_2021_table_1:row3:col7', 'Bilal_2021_table_1:row3:col8'] |
-| C5_dimension_Q44 | fail | [time] | h | ['Bilal_2021_table_1:row12:col6'] |
+| C5_dimension_Q44 | fail | dimensionless | h ([time]) | ['Bilal_2021_table_1:row12:col6'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bilal_2021_table_1:row7:col6', 'Bilal_2021_table_1:row7:col7', 'Bilal_2021_table_1:row7:col8'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Zhang_2025:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Bilal_2021_table_1:row10:col6', 'Bilal_2021_table_1:row10:col7', 'Bilal_2021_table_1:row10:col8'] |
@@ -139,7 +139,7 @@ The parameter labeled "fe" is defined in the record's metadata as the fraction o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

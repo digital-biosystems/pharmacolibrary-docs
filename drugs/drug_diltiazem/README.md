@@ -43,9 +43,9 @@ Diltiazem is a calcium channel blocker used to treat high blood pressure, angina
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kölle_1983_reference](drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Fu_1987_reference](drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md) | — | 1-compartment (no model) | 2 | Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987) | [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Guan_2018_reference](drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018) | [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Fu_1987_reference](drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md) | — | 1-compartment (no model) | 2 | Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987) | [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Höglund_1989_reference](drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md) | — | general linear (no model) | 2 | Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Höglund_1989_reference](drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md) | — | general linear (no model) | 2 | Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989) | — |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Murata_1989_reference](drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md) | — | 1-compartment (no model) | 1 | Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116) |
 
 ## Pharmacodynamics (PD)
@@ -102,13 +102,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:45 | 11:51 | 2/3/0 | 1/0/0 | 0/0/2 | 167,429/36,089 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 6/11 | 15/2 | 0 |
+| 2026-10-06 22:45 | 11:51 | 3/2/0 | 1/0/0 | 0/0/2 | 167,429/36,089 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 6/11 | 15/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 532 matched, 79 returned
 - **screened:** 17  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

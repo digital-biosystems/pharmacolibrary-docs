@@ -5,11 +5,11 @@
 
 # von Willebrand factor — `VonWillebrandFactor_Daniel2026_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Von Willebrand factor record was rejected because intercompartmental clearance Q (3290 mL) had invalid units.
+> This record was reviewed on 2026-11-07 14:23 UTC (Rejected), but the paper was screened again on 2026-10-05 20:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Von Willebrand factor record was rejected because intercompartmental clearance Q (3290 mL) had invalid units.
 
-<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_value" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_value" status="rejected" stale="true" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeling response to high-purity von Willebrand factor: toward tailored dosing during surgery in von Willebrand disease. Blood advances 10(3):903–914 (2026).
@@ -40,7 +40,7 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl2:row4:col1'] |
-| C5_dimension_Q30 | fail | [length] ** 3 | mL | ['Daniel_2026_table_S4:row10:col2'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | mL ([length] ** 3) | ['Daniel_2026_table_S4:row10:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Schöning_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tbl2:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 74.2 | ['tbl2:row4:col1'] |
@@ -191,7 +191,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

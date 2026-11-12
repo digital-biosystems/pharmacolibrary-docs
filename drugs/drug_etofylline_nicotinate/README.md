@@ -37,7 +37,7 @@ Etofylline nicotinate is a purine-derivative compound classified as a peripheral
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Zuidema_1981_reference](drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Zuidema1981_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | Zuidema J et al., Pharmacokinetics of etofylline after in…, International journal of cl… (1981) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lücker_1980_reference](drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Lcker1980_reference.md) | — | general linear (no model) | 1 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lücker_1980_reference](drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Lcker1980_reference.md) | — | general linear (no model) | 1 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +57,7 @@ Etofylline nicotinate is a purine-derivative compound classified as a peripheral
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

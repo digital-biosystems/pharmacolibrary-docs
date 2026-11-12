@@ -5,11 +5,11 @@
 
 # rifaximin — `Rifaximin_Wang2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The rifaximin clearance of 0.29 L/h and AUC unit h·μg/g were rejected due to an unconvertible unit and physiological implausibility.
+> This record was reviewed on 2026-11-07 16:31 UTC (Rejected), but the paper was screened again on 2026-10-04 18:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The rifaximin clearance of 0.29 L/h and AUC unit h·μg/g were rejected due to an unconvertible unit and physiological implausibility.
 
-<div class="pk-model-meta" hidden drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="false" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="true" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang H, Chen C, Chen X, Zhang J, Liu Y, Li X. PK/PD Modeling to Assess Rifaximin Clinical Dosage in a Mouse Model of Staphylococcus aureus-Induced Mastitis. Frontiers in veterinary science 8:651369 (2021).
@@ -48,7 +48,7 @@ Wang H, Chen C, Chen X, Zhang J, Liu Y, Li X. PK/PD Modeling to Assess Rifaximin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,16 +114,16 @@ The clearance value of 0.29 L/h falls outside the plausible physiological window
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 6.38 | 6.305 | 0.9882 | 0.25 | reported t½β |
-| C5_dimension_Q19 | fail | [time] | h·μg/g |  |  | ['Wang_2021_table_3:row4:col1', 'Wang_2021_table_3:row4:col2', 'Wang_2021_table_3:row4:col3', 'Wang_2021_table_3:row4:col4'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | h·μg/g ([time]) |  |  | ['Wang_2021_table_3:row4:col1', 'Wang_2021_table_3:row4:col2', 'Wang_2021_table_3:row4:col3', 'Wang_2021_table_3:row4:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['T4:row4:col1', 'T4:row4:col3', 'T4:row4:col4'] |
-| C5_dimension_Q32 | fail | dimensionless | μg/g |  |  | ['Wang_2021_table_3:row5:col1', 'Wang_2021_table_3:row5:col2', 'Wang_2021_table_3:row5:col3', 'Wang_2021_table_3:row5:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | μg/g (dimensionless) |  |  | ['Wang_2021_table_3:row5:col1', 'Wang_2021_table_3:row5:col2', 'Wang_2021_table_3:row5:col3', 'Wang_2021_table_3:row5:col4'] |
 | C5_dimension_Q53 | pass | [time] |  |  |  | ['Wang_2021_table_3:row3:col1', 'Wang_2021_table_3:row3:col2', 'Wang_2021_table_3:row3:col3', 'Wang_2021_table_3:row3:col4', 'Wang_2021_table_3:row3:col5'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['Wang_2021_table_3:row2:col1', 'Wang_2021_table_3:row2:col2', 'Wang_2021_table_3:row2:col3', 'Wang_2021_table_3:row2:col4', 'Wang_2021_table_3:row2:col5'] |
 | C5_dimension_Q60 | pass | [time] |  |  |  | ['T4:row6:col1', 'T4:row6:col2', 'T4:row6:col3', 'T4:row6:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['T4:row1:col1', 'T4:row1:col3', 'T4:row1:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['T4:row2:col1', 'T4:row2:col3', 'T4:row2:col4'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  |  |  | ['T4:row5:col1', 'T4:row5:col2', 'T4:row5:col3', 'T4:row5:col4'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  |  |  | ['T4:row5:col1', 'T4:row5:col2', 'T4:row5:col3', 'T4:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.29 |  |  | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.29 L/h |  |  | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
@@ -146,7 +146,7 @@ The clearance value of 0.29 L/h falls outside the plausible physiological window
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -35,7 +35,7 @@ Ipilimumab is a monoclonal antibody used to treat several cancers, including mel
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shang_2022_reference](drugs/drug_ipilimumab/Ipilimumab_Shang2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022) | [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [van_2019_reference](drugs/drug_ipilimumab/Ipilimumab_van2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | van Bussel MTJ et al., Intracranial antitumor responses of niv…, BMC cancer (2019) | [10.1186/s12885-019-5741-y](https://doi.org/10.1186/s12885-019-5741-y) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 24.4893)</sub> | [Feng_2014_reference](drugs/drug_ipilimumab/Ipilimumab_Feng2014_reference.md) | — | 2-compartment (no model) | 5 | Feng Y et al., Model-based clinical pharmacology profi…, British journal of clinical… (2014) | [10.1111/bcp.12323](https://doi.org/10.1111/bcp.12323) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61, Q31 — no SI value to build from</sub> | [Sanghavi_2020_reference](drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference.md) | — | 3-compartment (no model) | 8 | Sanghavi K et al., Population Pharmacokinetics of Ipilimum…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12477](https://doi.org/10.1002/psp4.12477) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Sanghavi_2020_reference](drugs/drug_ipilimumab/Ipilimumab_Sanghavi2020_reference.md) | — | 3-compartment (no model) | 8 | Sanghavi K et al., Population Pharmacokinetics of Ipilimum…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12477](https://doi.org/10.1002/psp4.12477) |
 
 ## Pharmacodynamics (PD)
 
@@ -83,7 +83,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 22 matched, 16 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 6  ·  extracted 4  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 4  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

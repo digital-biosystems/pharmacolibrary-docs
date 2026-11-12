@@ -5,11 +5,11 @@
 
 # bleomycin — `Bleomycin_Alberts1978_e_m_25_u`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; cL, Q and CLu have no unit.
+> This record was reviewed on 2026-11-07 14:21 UTC (Needs review), but the paper was screened again on 2026-11-03 08:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; cL, Q and CLu have no unit.
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_e_m_25_u" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_e_m_25_u" status="needs_review" stale="true" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomycin pharmacokinetics in man. I. Intravenous administration. Cancer chemotherapy and pharmacology 1(3):177–181 (1978).
@@ -42,7 +42,7 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row2:col3'] |
 | C5_unit_missing_Q24 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row2:col8'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['Alberts_1978_table_p3_1:row2:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.3 | ['Alberts_1978_table_p3_1:row2:col8'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 302.2 | ['Alberts_1978_table_p3_1:row2:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 32.2 L | ['Groselj_2021:review'] |
 
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

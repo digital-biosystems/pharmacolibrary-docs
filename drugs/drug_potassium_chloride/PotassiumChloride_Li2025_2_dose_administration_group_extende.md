@@ -4,11 +4,11 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_2_dose_administration_group_extende`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record lacks a distribution volume and clearance, failing dimension checks, and is not a compartmental population pharmacokinetic model.
+> This record was reviewed on 2026-11-07 15:57 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks a distribution volume and clearance, failing dimension checks, and is not a compartmental population pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_2_dose_administration_group_extende" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_2_dose_administration_group_extende" status="rejected" stale="true" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium chloride extended-release tablets and potassium citrate granules in patients with cardiovascular emergencies. Frontiers in cardiovascular medicine 12:1636090 (2025).
@@ -43,7 +43,7 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,12 +126,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q17 | fail | [substance] * [time] / [length] ** 3 | mmol·h/L | ['T2:row6:col3'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | mmol/L | ['T2:row2:col3'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | mmol·h/L ([substance] * [time] / [length] ** 3) | ['T2:row6:col3'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['T2:row2:col3'] |
 | C5_dimension_Q56 | pass | [time] |  | ['T2:row1:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['T2:row5:col3'] |
-| C5_dimension_Q86 | fail | [substance] / [length] ** 3 | mmol/L | ['T2:row0:col3'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['T2:row0:col3'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -150,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

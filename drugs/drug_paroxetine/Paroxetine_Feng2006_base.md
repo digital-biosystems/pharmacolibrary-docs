@@ -5,11 +5,11 @@
 
 # paroxetine — `Paroxetine_Feng2006_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Rejected because a structural parameter's unit was not recognized, preventing conversion to SI units for the paroxetine model.
+> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-22 12:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because a structural parameter's unit was not recognized, preventing conversion to SI units for the paroxetine model.
 
-<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="true" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: population pharmacokinetic analysis in late-life depression using sparse concentration sampling. British journal of clinical pharmacology 61(5):558–569 (2006).
@@ -42,7 +42,7 @@ Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,12 +131,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Feng_2006_table_p7_1:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Feng_2006_table_p7_1:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Feng_2006_table_p7_1:row5:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Feng_2006_table_p7_1:row2:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | µg h⁻¹ | ['Feng_2006_table_p7_1:row0:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µg h⁻¹ ([mass] / [time]) | ['Feng_2006_table_p7_1:row0:col1'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Feng_2006_table_p7_1:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q64 | pass | volume within physiological range | 254 L | ['Feng_2006_table_p7_1:row2:col1'] |
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

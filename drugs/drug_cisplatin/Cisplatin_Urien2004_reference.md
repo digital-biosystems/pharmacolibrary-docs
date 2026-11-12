@@ -5,11 +5,11 @@
 
 # cisplatin — `Cisplatin_Urien2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the renal clearance portion for irreversibly protein-bound platinum has an impossible negative value.
+> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the renal clearance portion for irreversibly protein-bound platinum has an impossible negative value.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients treated with cisplatin for various malignancies" measured-compound="unbound platinum (cisplatin)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="true" population="adult patients treated with cisplatin for various malignancies" measured-compound="unbound platinum (cisplatin)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Urien S, Lokiec F. Population pharmacokinetics of total and unbound plasma cisplatin in adult patients. British journal of clinical pharmacology 57(6):756–763 (2004).
@@ -49,7 +49,7 @@ Urien S, Lokiec F. Population pharmacokinetics of total and unbound plasma cispl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.04), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.04), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,7 +175,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C2_base_sign_Q26 | fail |  | -0.36 |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Urien_2004_table_3:row5:col2', 'Urien_2004_table_3:row5:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Urien_2004_table_3:row8:col1', 'Urien_2004_table_3:row8:col2', 'Urien_2004_table_3:row8:col3'] |
-| C5_dimension_Q305 | fail | 1 / [length] ** 3 | l -1 | ['tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4'] |
+| C5_dimension_Q305 | fail | 1 / [time] | l -1 (1 / [length] ** 3) | ['tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_4:row9:col1', 'tab_4:row9:col2', 'tab_4:row9:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['tab_4:row15:col1', 'Urien_2004_table_3:row16:col1'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Urien_2004_table_3:row15:col1'] |
@@ -204,7 +204,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

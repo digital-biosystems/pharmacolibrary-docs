@@ -4,11 +4,11 @@
 
 # delavirdine — `Delavirdine_Smith2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for delavirdine was rejected because the parameter V was incorrectly labeled as volume of distribution but assigned a value of 1376 mg/day.
+> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 15:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for delavirdine was rejected because the parameter V was incorrectly labeled as volume of distribution but assigned a value of 1376 mg/day.
 
-<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="false" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="true" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
 
 ## Citation
 Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population pharmacokinetics of delavirdine and N-delavirdine in HIV-infected individuals. Clinical pharmacokinetics 44(1):99–109 (2005).
@@ -38,7 +38,7 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,9 +124,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | micromol/L | ['Smith_2005:abstract'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | micromol/L ([substance] / [length] ** 3) | ['Smith_2005:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Smith_2005:abstract'] |
-| C5_dimension_Q61 | fail | [mass] / [time] | mg/day | ['Smith_2005:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | mg/day ([mass] / [time]) | ['Smith_2005:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Smith_2005:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Smith_2005:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -151,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

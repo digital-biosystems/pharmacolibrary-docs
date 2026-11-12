@@ -33,7 +33,7 @@ Oxitriptan (5-HTP) is an antidepressant used for major depressive disorder. It i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | — | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | model (no simulator) | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
 
 ## ADME sites
 

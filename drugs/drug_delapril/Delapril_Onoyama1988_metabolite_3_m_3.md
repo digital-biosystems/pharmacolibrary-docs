@@ -4,11 +4,11 @@
 
 # delapril — `Delapril_Onoyama1988_metabolite_3_m_3`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because it lacks volume or clearance for delapril metabolite M-1, and its metabolism links lack rate parameters.
+> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 05:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because it lacks volume or clearance for delapril metabolite M-1, and its metabolism links lack rate parameters.
 
-<div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="false" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="true" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokinetics of a new angiotensin I converting enzyme inhibitor (delapril) in patients with deteriorated kidney function and in normal control subjects. Clinical pharmacology and therapeutics 43(3):242–249 (1988).
@@ -41,7 +41,7 @@ Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Onoyama_1988_table_3:row1:col4'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Onoyama_1988_table_3:row2:col4', 'Onoyama_1988_table_3:row2:col5'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Onoyama_1988_table_3:row3:col4'] |
@@ -156,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

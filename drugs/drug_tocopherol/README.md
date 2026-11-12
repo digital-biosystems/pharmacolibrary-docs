@@ -26,7 +26,7 @@ Tocopherol (vitamin E) is a fat-soluble vitamin and antioxidant used as a vitami
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Hidiroglou_1996_reference](drugs/drug_tocopherol/Tocopherol_Hidiroglou1996_reference.md) | — | 1-compartment (no model) | 4 | Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy science (1996) | [10.3168/jds.S0022-0302(96)76455-X](https://doi.org/10.3168/jds.S0022-0302(96)76455-X) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hidiroglou_1996_reference](drugs/drug_tocopherol/Tocopherol_Hidiroglou1996_reference.md) | — | 1-compartment (no model) | 4 | Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy science (1996) | [10.3168/jds.S0022-0302(96)76455-X](https://doi.org/10.3168/jds.S0022-0302(96)76455-X) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,13 +81,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:02 | 2:07 | 0/1/0 | 0/1/0 | 0/0/4 | 168,941/6,014 | einfracz / qwen3.8-27b | 24 | 7/23 | 22/2 | 0 |
+| 2026-10-07 17:02 | 2:07 | 0/1/0 | 0/1/0 | 0/0/4 | 168,941/6,014 | einfracz / qwen3.8-27b | 21 | 7/23 | 19/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1019 matched, 100 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

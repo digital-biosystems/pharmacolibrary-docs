@@ -4,11 +4,11 @@
 
 # daridorexant — `Daridorexant_Krause2023_phase_i_data_intense_pk_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance unit for daridorexant could not be converted, preventing dimensional validation and resulting in rejection.
+> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-06 20:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance unit for daridorexant could not be converted, preventing dimensional validation and resulting in rejection.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_phase_i_data_intense_pk_estimate" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_phase_i_data_intense_pk_estimate" status="rejected" stale="true" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -44,7 +44,7 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.826). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.826). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,13 +143,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Krause_2023_table_2:row16:col1', 'Krause_2023_table_2:row16:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Krause_2023_table_2:row13:col1', 'Krause_2023_table_2:row13:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Krause_2023_table_2:row5:col1', 'Krause_2023_table_2:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row9:col1', 'Krause_2023_table_2:row9:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row11:col1', 'Krause_2023_table_2:row11:col2'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Krause_2023_table_2:row15:col1', 'Krause_2023_table_2:row15:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Krause_2023_table_2:row15:col1', 'Krause_2023_table_2:row15:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Krause_2023_table_2:row2:col1', 'Krause_2023_table_2:row2:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 24.4 L | ['Krause_2023_table_2:row9:col1', 'Krause_2023_table_2:row9:col2'] |
@@ -171,7 +171,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

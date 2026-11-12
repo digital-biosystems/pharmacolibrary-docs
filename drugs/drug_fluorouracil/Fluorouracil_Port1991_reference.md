@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Port1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The 5-fluorouracil model was rejected because the central volume unit creates a dimensional conflict with the metabolic clearance parameters.
+> This record was reviewed on 2026-11-07 14:11 UTC (Rejected), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The 5-fluorouracil model was rejected because the central volume unit creates a dimensional conflict with the metabolic clearance parameters.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Port1991_reference" status="rejected" stale="false" population="adults with liver tumors" measured-compound="5-fluorouracil and catabolites (FUPA, FBAL)" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Port1991_reference" status="rejected" stale="true" population="adults with liver tumors" measured-compound="5-fluorouracil and catabolites (FUPA, FBAL)" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Port RE, Bachert P, Semmler W. Kinetic modeling of in vivo--nuclear magnetic resonance spectroscopy data: 5-fluorouracil in liver and liver tumors. Clinical pharmacology and therapeutics 49(5):497–505 (1991).
@@ -46,7 +46,7 @@ Port RE, Bachert P, Semmler W. Kinetic modeling of in vivo--nuclear magnetic res
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -162,11 +162,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | 1 / [time] | min⁻¹ | ['Port_1991_table_2:row0:col2', 'Port_1991_table_2:row1:col2', 'Port_1991_table_2:row2:col2', 'Port_1991_table_2:row4:col2', 'Port_1991_table_2:row5:col2', 'Port_1991_table_2:row6:col2', 'Port_1991_table_2:row8:col2'] |
-| C5_dimension_Q22 | fail | 1 / [time] | min⁻¹ | ['Port_1991_table_2:row0:col6', 'Port_1991_table_2:row1:col6', 'Port_1991_table_2:row2:col6', 'Port_1991_table_2:row5:col6', 'Port_1991_table_2:row6:col6', 'Port_1991_table_2:row8:col6'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | min⁻¹ (1 / [time]) | ['Port_1991_table_2:row0:col2', 'Port_1991_table_2:row1:col2', 'Port_1991_table_2:row2:col2', 'Port_1991_table_2:row4:col2', 'Port_1991_table_2:row5:col2', 'Port_1991_table_2:row6:col2', 'Port_1991_table_2:row8:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | min⁻¹ (1 / [time]) | ['Port_1991_table_2:row0:col6', 'Port_1991_table_2:row1:col6', 'Port_1991_table_2:row2:col6', 'Port_1991_table_2:row5:col6', 'Port_1991_table_2:row6:col6', 'Port_1991_table_2:row8:col6'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Port_1991_table_2:row0:col7', 'Port_1991_table_2:row1:col7', 'Port_1991_table_2:row2:col7', 'Port_1991_table_2:row3:col7', 'Port_1991_table_2:row4:col7', 'Port_1991_table_2:row6:col7', 'Port_1991_table_2:row8:col7'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | µmol/min | ['Port_1991_table_2:row0:col3', 'Port_1991_table_2:row1:col3', 'Port_1991_table_2:row2:col3', 'Port_1991_table_2:row4:col3', 'Port_1991_table_2:row5:col3', 'Port_1991_table_2:row6:col3', 'Port_1991_table_2:row8:col3'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µmol/min ([substance] / [time]) | ['Port_1991_table_2:row0:col3', 'Port_1991_table_2:row1:col3', 'Port_1991_table_2:row2:col3', 'Port_1991_table_2:row4:col3', 'Port_1991_table_2:row5:col3', 'Port_1991_table_2:row6:col3', 'Port_1991_table_2:row8:col3'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 |  | ['Port_1991_table_2:row0:col1', 'Port_1991_table_2:row1:col1', 'Port_1991_table_2:row2:col1', 'Port_1991_table_2:row4:col1', 'Port_1991_table_2:row5:col1', 'Port_1991_table_2:row6:col1', 'Port_1991_table_2:row8:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0068 | ['Port_1991_table_2:row0:col6', 'Port_1991_table_2:row1:col6', 'Port_1991_table_2:row2:col6', 'Port_1991_table_2:row5:col6', 'Port_1991_table_2:row6:col6', 'Port_1991_table_2:row8:col6'] |
 | C8_topology | fail |  |  |  |
@@ -187,7 +187,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

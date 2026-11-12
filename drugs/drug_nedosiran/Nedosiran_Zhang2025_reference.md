@@ -4,11 +4,11 @@
 
 # nedosiran — `Nedosiran_Zhang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Vmax, CL and V have no unit.
+> This record was reviewed on 2026-11-07 16:57 UTC (Needs review), but the paper was screened again on 2026-10-07 17:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vmax, CL and V have no unit.
 
-<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="false" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="true" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
 
 ## Citation
 Zhang S, Gamallo P, Rawson V. Population Pharmacokinetic and Pharmacodynamic Modelling and Simulation for Nedosiran Clinical Development and Dose Guidance in Pediatric Patients with Primary Hyperoxaluria Type 1. Clinical pharmacokinetics 64(9):1395–1411 (2025).
@@ -45,7 +45,7 @@ Zhang S, Gamallo P, Rawson V. Population Pharmacokinetic and Pharmacodynamic Mod
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -188,7 +188,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab2:row6:col3', 'Tab2:row6:col4'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['Tab2:row10:col3', 'Tab2:row10:col4'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Tab2:row11:col3', 'Tab2:row11:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Tab2:row8:col3', 'Tab2:row8:col4'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Tab2:row8:col3', 'Tab2:row8:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 6.1 L/h | ['Tab2:row1:col3', 'Tab2:row1:col4'] |
@@ -221,7 +221,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_3`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because the unit L/kg for ajmaline's volume of distribution could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-08 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit L/kg for ajmaline's volume of distribution could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_3" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_3" status="rejected" stale="true" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajmaline disposition and pharmacologic response in beagle dogs. Journal of pharmacokinetics and biopharmaceutics 15(1):39–55 (1987).
@@ -43,7 +43,7 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Yasuhara_1987_table_1:row2:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Yasuhara_1987_table_1:row3:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Yasuhara_1987_table_1:row0:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min-1 | ['Yasuhara_1987_table_1:row1:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min-1 (1 / [time]) | ['Yasuhara_1987_table_1:row1:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.09 | ['Yasuhara_1987_table_1:row5:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 8.78 L/h | ['Yasuhara_1987_table_1:row5:col3'] |
@@ -145,7 +145,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

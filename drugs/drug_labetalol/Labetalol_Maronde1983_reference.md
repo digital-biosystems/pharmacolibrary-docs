@@ -4,11 +4,11 @@
 
 # labetalol — `Labetalol_Maronde1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> This record was reviewed on 2026-11-07 16:03 UTC (Needs review), but the paper was screened again on 2026-10-07 01:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="labetalol" model-id="Labetalol_Maronde1983_reference" status="needs_review" stale="false" population="patients with mild to moderate hypertension" measured-compound="labetalol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="labetalol" model-id="Labetalol_Maronde1983_reference" status="needs_review" stale="true" population="patients with mild to moderate hypertension" measured-compound="labetalol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Maronde RF, Robinson D, Vlachakis ND, Barr JW, Chung M, Zampaglione N et al. Study of single and multiple dose pharmacokinetic/pharmacodynamic modeling of the antihypertensive effects of labetalol. The American journal of medicine 75(4A):40–46 (1983).
@@ -35,7 +35,7 @@ Maronde RF, Robinson D, Vlachakis ND, Barr JW, Chung M, Zampaglione N et al. Stu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -106,6 +106,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Elliott_1984:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Maronde_1983:abstract', 'Maronde_1983:abstract'] |
@@ -139,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

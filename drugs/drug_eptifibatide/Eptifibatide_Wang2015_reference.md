@@ -4,11 +4,11 @@
 
 # eptifibatide — `Eptifibatide_Wang2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The two-compartment eptifibatide model lacks the inter-compartmental clearance parameter, rendering the peripheral compartment unreachable.
+> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-05 15:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The two-compartment eptifibatide model lacks the inter-compartmental clearance parameter, rendering the peripheral compartment unreachable.
 
-<div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokinetics and safety of eptifibatide in healthy Chinese volunteers and simulations on the dose regimens approved for a Western population. International journal of clinical pharmacology and therapeutics 53(8):658–666 (2015).
@@ -36,7 +36,7 @@ Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,8 +118,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wang_2015:abstract'] |
-| C5_dimension_Q61 | fail | [luminosity] / [length] ** 2 | L x kg⁻¹ | ['Wang_2015:abstract'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | L x kg⁻¹ | ['Wang_2015:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L x kg⁻¹ ([luminosity] / [length] ** 2) | ['Wang_2015:abstract'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | L x kg⁻¹ ([luminosity] / [length] ** 2) | ['Wang_2015:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.128 | ['Wang_2015:abstract'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.128 L/h | ['Wang_2015:abstract'] |
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

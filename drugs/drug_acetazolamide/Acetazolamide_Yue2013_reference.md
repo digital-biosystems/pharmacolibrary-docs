@@ -4,11 +4,11 @@
 
 # acetazolamide — `Acetazolamide_Yue2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Acetazolamide record rejected because a structural parameter unit could not be interpreted for comparison.
+> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-07 18:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Acetazolamide record rejected because a structural parameter unit could not be interpreted for comparison.
 
-<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="false" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="true" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yue CS, Huynh HH, Raymond C, Charbonneau L, Roy L. Population pharmacokinetic and pharmacodynamic modeling of acetazolamide in peritoneal dialysis patients and healthy volunteers. Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16(1):89–98 (2013).
@@ -44,7 +44,7 @@ Yue CS, Huynh HH, Raymond C, Charbonneau L, Roy L. Population pharmacokinetic an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.957). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.957). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,13 +135,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Yue_2013_table_p9_1:row13:col2', 'Yue_2013_table_p9_1:row13:col3', 'Yue_2013_table_p9_1:row13:col4', 'Yue_2013_table_p9_1:row23:col3', 'Yue_2013_table_p9_1:row23:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Yue_2013_table_p9_1:row3:col2', 'Yue_2013_table_p9_1:row3:col3', 'Yue_2013_table_p9_1:row3:col4', 'Yue_2013_table_p9_1:row17:col3', 'Yue_2013_table_p9_1:row17:col4'] |
 | C5_dimension_Q356 | pass | [length] ** 3 / [time] |  | ['Yue_2013_table_p9_1:row9:col2', 'Yue_2013_table_p9_1:row9:col3', 'Yue_2013_table_p9_1:row9:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Yue_2013_table_p9_1:row2:col2', 'Yue_2013_table_p9_1:row2:col3', 'Yue_2013_table_p9_1:row2:col4', 'Yue_2013_table_p9_1:row16:col3', 'Yue_2013_table_p9_1:row16:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Yue_2013_table_p9_1:row5:col2', 'Yue_2013_table_p9_1:row5:col3', 'Yue_2013_table_p9_1:row5:col4', 'Yue_2013_table_p9_1:row18:col3', 'Yue_2013_table_p9_1:row18:col4'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Yue_2013_table_p9_1:row12:col2', 'Yue_2013_table_p9_1:row12:col3', 'Yue_2013_table_p9_1:row12:col4'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Yue_2013_table_p9_1:row12:col2', 'Yue_2013_table_p9_1:row12:col3', 'Yue_2013_table_p9_1:row12:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Yue_2013_table_p9_1:row11:col2', 'Yue_2013_table_p9_1:row11:col3', 'Yue_2013_table_p9_1:row11:col4', 'Yue_2013_table_p9_1:row22:col3', 'Yue_2013_table_p9_1:row22:col4'] |
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] |  | ['Yue_2013_table_p9_1:row1:col2', 'Yue_2013_table_p9_1:row1:col3', 'Yue_2013_table_p9_1:row1:col4', 'Yue_2013_table_p9_1:row15:col3', 'Yue_2013_table_p9_1:row15:col4'] |
 | C8_topology | pass |  |  |  |
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

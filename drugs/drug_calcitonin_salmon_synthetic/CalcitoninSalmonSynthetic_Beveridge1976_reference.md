@@ -4,11 +4,11 @@
 
 # calcitonin (salmon synthetic) — `CalcitoninSalmonSynthetic_Beveridge1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 10:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Beveridge1976_reference" status="needs_review" stale="false" population="patients" measured-compound="synthetic salmon calcitonin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Beveridge1976_reference" status="extracted" stale="true" population="patients" measured-compound="synthetic salmon calcitonin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Beveridge T, Niederer W, Nüesch E, Petrin A. Pharmacokinetic study with synthetic salmon calcitonin (Sandoz). Zeitschrift fur Gastroenterologie. Verhandlungsband(10):12–15 (1976).
@@ -25,8 +25,6 @@ Beveridge T, Niederer W, Nüesch E, Petrin A. Pharmacokinetic study with synthet
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | 12 minutes after intravenous injection then an elimination half-life | t1/2z | 1.1 | hours |
@@ -34,7 +32,7 @@ Beveridge T, Niederer W, Nüesch E, Petrin A. Pharmacokinetic study with synthet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +112,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Beveridge_1976:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Beveridge_1976:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -146,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

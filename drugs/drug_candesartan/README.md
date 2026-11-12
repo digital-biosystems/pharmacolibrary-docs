@@ -42,7 +42,7 @@ Candesartan is an angiotensin II receptor antagonist used mainly to treat high b
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Kassem_2021_estimates](drugs/drug_candesartan/Candesartan_Kassem2021_estimates.md) | ▶ model + simulator | 1-compartment, oral | 4 (+4 cov.) | Kassem I et al., Population Pharmacokinetics of Candesar…, Clinical and translational… (2021) | [10.1111/cts.12842](https://doi.org/10.1111/cts.12842) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [↳ final_model](drugs/drug_candesartan/Candesartan_Kassem2021_final_model.md) | ▶ model + simulator | 1-compartment, oral | 4 (+2 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Meineke_1997_reference](drugs/drug_candesartan/Candesartan_Meineke1997_reference.md) | — | 1-compartment (no model) | 5 | Meineke I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1997) | [10.1007/s002280050366](https://doi.org/10.1007/s002280050366) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Meineke_1997_reference](drugs/drug_candesartan/Candesartan_Meineke1997_reference.md) | — | 1-compartment (no model) | 5 | Meineke I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1997) | [10.1007/s002280050366](https://doi.org/10.1007/s002280050366) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Pfister_1999_reference](drugs/drug_candesartan/Candesartan_Pfister1999_reference.md) | — | 1-compartment (no model) | 1 | Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00939.x](https://doi.org/10.1046/j.1365-2125.1999.00939.x) |
 
 ## ADME sites
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 33 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

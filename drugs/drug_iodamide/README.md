@@ -26,7 +26,7 @@ Iodamide is an iodinated, water-soluble X-ray contrast agent formerly used to vi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Difazio_1978_reference](drugs/drug_iodamide/Iodamide_Difazio1978_reference.md) | — | 1-compartment (no model) | 2 | Difazio LT et al., Pharmacokinetics of iodamide in normal…, Journal of clinical pharmac… (1978) | [10.1002/j.1552-4604.1978.tb01558.x](https://doi.org/10.1002/j.1552-4604.1978.tb01558.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Difazio_1978_reference](drugs/drug_iodamide/Iodamide_Difazio1978_reference.md) | — | 1-compartment (no model) | 2 | Difazio LT et al., Pharmacokinetics of iodamide in normal…, Journal of clinical pharmac… (1978) | [10.1002/j.1552-4604.1978.tb01558.x](https://doi.org/10.1002/j.1552-4604.1978.tb01558.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +40,13 @@ Iodamide is an iodinated, water-soluble X-ray contrast agent formerly used to vi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:10 | 2:49 | 0/1/0 | 0/0/0 | 0/0/0 | 14,994/924 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 22:10 | 2:49 | 1/0/0 | 0/0/0 | 0/0/0 | 14,994/924 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

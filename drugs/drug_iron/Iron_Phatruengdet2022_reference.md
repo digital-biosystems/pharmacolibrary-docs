@@ -5,11 +5,11 @@
 
 # Iron — `Iron_Phatruengdet2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete; cLb and CL have no unit.
+> This record was reviewed on 2026-11-07 15:41 UTC (Needs review), but the paper was screened again on 2026-10-07 16:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; cLb and CL have no unit.
 
-<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Phatruengdet2022_reference" status="needs_review" stale="false" population="rats" measured-compound="iron-tannic nanoparticles" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Phatruengdet2022_reference" status="needs_review" stale="true" population="rats" measured-compound="iron-tannic nanoparticles" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Phatruengdet T, Khuemjun P, Intakhad J, Krunchanuchat S, Chariyakornkul A, Wongpoomchai R et al. Pharmacokinetic/Pharmacodynamic Determinations of Iron-tannic Molecular Nanoparticles with its Implication in MR Imaging and Enhancement of Liver Clearance. Nanotheranostics 6(2):195–204 (2022).
@@ -43,7 +43,7 @@ Phatruengdet T, Khuemjun P, Intakhad J, Krunchanuchat S, Chariyakornkul A, Wongp
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q83 | pass | [time] |  | ['Ekobena_2025:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | hr-1 | ['Phatruengdet_2022:results_prose'] |
 | C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | hr-1 | ['Phatruengdet_2022:results_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.96 | ['Phatruengdet_2022:results_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.07 | ['Phatruengdet_2022:results_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 11.6 L | ['Ekobena_2025:review'] |
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

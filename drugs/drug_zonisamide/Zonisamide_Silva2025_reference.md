@@ -5,11 +5,11 @@
 
 # zonisamide — `Zonisamide_Silva2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch for the parameter labeled t1/2ka, which actually stores a 91.27% variability value.
+> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 08:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch for the parameter labeled t1/2ka, which actually stores a 91.27% variability value.
 
-<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="false" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="true" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population pharmacokinetic model for dosing optimization of zonisamide in patients with refractory epilepsy. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 207:107023 (2025).
@@ -38,7 +38,7 @@ Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Silva_2025:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Silva_2025:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Silva_2025:abstract'] |
-| C5_dimension_Q95 | fail | dimensionless | % | ['Silva_2025:abstract'] |
+| C5_dimension_Q95 | fail | [time] | % (dimensionless) | ['Silva_2025:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.761 L/h | ['Silva_2025:abstract'] |
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

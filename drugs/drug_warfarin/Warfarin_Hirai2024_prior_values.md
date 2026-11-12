@@ -5,11 +5,11 @@
 
 # warfarin — `Warfarin_Hirai2024_prior_values`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The warfarin model was rejected because the INR pharmacodynamic effect relies on the undefined parameter EDR50, which has no clear physiological meaning.
+> This record was reviewed on 2026-11-07 14:21 UTC (Rejected), but the paper was screened again on 2026-11-04 15:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The warfarin model was rejected because the INR pharmacodynamic effect relies on the undefined parameter EDR50, which has no clear physiological meaning.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Hirai2024_prior_values" status="rejected" stale="false" population="Japanese adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Hirai2024_prior_values" status="rejected" stale="true" population="Japanese adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Hirai T, Aoyama T, Tsuji Y, Itoh T, Matsumoto Y, Iwamoto T. Kinetic-pharmacodynamic model of warfarin for prothrombin time-international normalized ratio in Japanese patients. British journal of clinical pharmacology 90(3):828–836 (2024).
@@ -39,7 +39,7 @@ Hirai T, Aoyama T, Tsuji Y, Itoh T, Matsumoto Y, Iwamoto T. Kinetic-pharmacodyna
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,6 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gomeni_2026:review'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Hirai_2024_table_2:row9:col5', 'Hirai_2024_table_2:row9:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.348 | ['Aoyama_2022:review'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['EDR50'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.348 L/h | ['Aoyama_2022:review'] |
@@ -153,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

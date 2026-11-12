@@ -5,11 +5,11 @@
 
 # guselkumab — `Guselkumab_Tran2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-06 23:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Tran2022_reference" status="rejected" stale="false" population="healthy subjects and patients with psoriatic arthritis, plaque psoriasis and palmoplantar pustulosis" measured-compound="guselkumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Tran2022_reference" status="rejected" stale="true" population="healthy subjects and patients with psoriatic arthritis, plaque psoriasis and palmoplantar pustulosis" measured-compound="guselkumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tran L, Yao Z, Xu Z, Vermeulen A. Population pharmacokinetics analysis of guselkumab in healthy subjects and patients with psoriatic arthritis, plaque psoriasis and palmoplantar pustulosis. British journal of clinical pharmacology 88(10):4481–4493 (2022).
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,7 +112,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | fail |  | 0 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Tran_2022:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Tran_2022:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

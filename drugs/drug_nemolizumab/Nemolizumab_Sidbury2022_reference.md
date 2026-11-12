@@ -5,11 +5,11 @@
 
 # nemolizumab — `Nemolizumab_Sidbury2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant kabs has a mismatched unit (L/day) for nemolizumab, causing a dimension mismatch in the model.
+> This record was reviewed on 2026-11-07 16:18 UTC (Rejected), but the paper was screened again on 2026-10-07 08:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant kabs has a mismatched unit (L/day) for nemolizumab, causing a dimension mismatch in the model.
 
-<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="false" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="true" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmacokinetics, Safety, Efficacy, and Biomarker Profiles During Nemolizumab Treatment of Atopic Dermatitis in Adolescents. Dermatology and therapy 12(3):631–642 (2022).
@@ -42,7 +42,7 @@ Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['tab_1:row10:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['tab_1:row8:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/day |  |  | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/day ([length] ** 3 / [time]) |  |  | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
@@ -147,7 +147,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # clevidipine — `Clevidipine_Ericsson1999v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the metabolite terminal half-life (9.5 h) had an unverifiable dimension mismatch, and all parameters were abstract summary statistics rather than fitted values.
+> This record was reviewed on 2026-11-07 15:51 UTC (Rejected), but the paper was screened again on 2026-10-07 02:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the metabolite terminal half-life (9.5 h) had an unverifiable dimension mismatch, and all parameters were abstract summary statistics rather than fitted values.
 
-<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al. Pharmacokinetics and pharmacodynamics of clevidipine in healthy volunteers after intravenous infusion. European journal of clinical pharmacology 55(1):61–67 (1999).
@@ -39,7 +39,7 @@ Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q57 | pass | [time] |  | ['Ericsson_1999_2:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ericsson_1999_2:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Ericsson_1999_2:abstract'] |
-| C5_dimension_Q65 | fail | [luminosity] / [length] ** 2 | l x kg(-1) | ['Ericsson_1999_2:abstract'] |
+| C5_dimension_Q65 | fail | [length] ** 3 | l x kg(-1) ([luminosity] / [length] ** 2) | ['Ericsson_1999_2:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.14 | ['Ericsson_1999_2:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q23 | pass | clearance within physiological range | 0.14 L/h | ['Ericsson_1999_2:abstract'] |
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

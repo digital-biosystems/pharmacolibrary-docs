@@ -5,11 +5,11 @@
 
 # capecitabine — `Capecitabine_Zandvliet2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> K12 has no unit.
+> This record was reviewed on 2026-11-07 14:33 UTC (Needs review), but the paper was screened again on 2026-10-07 16:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. K12 has no unit.
 
-<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Zandvliet2008_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="indisulam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Zandvliet2008_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="indisulam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Zandvliet AS, Siegel-Lakhai WS, Beijnen JH, Copalu W, Etienne-Grimaldi MC, Milano G et al. PK/PD model of indisulam and capecitabine: interaction causes excessive myelosuppression. Clinical pharmacology and therapeutics 83(6):829–839 (2008).
@@ -49,7 +49,7 @@ Zandvliet AS, Siegel-Lakhai WS, Beijnen JH, Copalu W, Etienne-Grimaldi MC, Milan
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -188,6 +188,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Zandvliet_2008_table_1:row2:col2', 'Zandvliet_2008_table_1:row2:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Zandvliet_2008_table_1:row1:col2', 'Zandvliet_2008_table_1:row1:col3'] |
 | C5_unit_missing_Q301 | fail | 1 / [time] |  | ['Zandvliet_2008_table_1:row19:col2', 'Zandvliet_2008_table_1:row19:col3'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 35.9 | ['Zandvliet_2008_table_1:row3:col2', 'Zandvliet_2008_table_1:row3:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 35.9 L/h | ['Zandvliet_2008_table_1:row3:col2', 'Zandvliet_2008_table_1:row3:col3'] |
@@ -220,7 +221,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

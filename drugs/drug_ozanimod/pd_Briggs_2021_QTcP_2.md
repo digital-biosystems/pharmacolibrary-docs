@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ozanimod&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/&quot;},{&quot;label&quot;:&quot;Briggs_2021 \u00b7 PD QTcP&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_2&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_3&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTcP — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** CC112273 (measured concentrations) drives QTcP (in msec): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The plasma concentration of the active metabolite CC112273 directly stimulates the QTcP interval via an additive Emax mechanism. The model estimates a baseline QTcP of 394 msec, a maximum effect (Emax) of 1.26 msec, and an EC50 of 482 pmol/L.
 >
@@ -46,6 +47,46 @@ Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometric
 </details>
 
 
+## Exposure-response model
+
+`Ozanimod_Briggs2021_PD_qtcp_2` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 394 msec | 0.394 s |
+| Emax | 1.26 msec | 0.00126 s |
+| EC50 | 482 pmol/L | 4.82e-07 mol/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.394, `at_EC50` = 0.3946, `at_inf` = 0.3953
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_off_target_driver` — driver compound 'CC112273' is not 'ozanimod' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">Rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- off_target_driver: 'CC112273' is not 'ozanimod' (S12)
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
@@ -54,7 +95,9 @@ Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometric
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_ozanimod/Ozanimod_Briggs2021_PD_qtcp_2/Ozanimod_Briggs2021_PD_qtcp_2_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_ozanimod/Ozanimod_Briggs2021_PD_qtcp_2/Ozanimod_Briggs2021_PD_qtcp_2_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Ozanimod_Briggs2021_PD_qtcp_2_params.json` · controls `Ozanimod_Briggs2021_PD_qtcp_2_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

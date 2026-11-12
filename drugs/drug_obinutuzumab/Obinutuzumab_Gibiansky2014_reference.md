@@ -4,11 +4,11 @@
 
 # obinutuzumab — `Obinutuzumab_Gibiansky2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Obinutuzumab's total clearance was rejected because the reported unit was not recognized for dimension validation.
+> This record was reviewed on 2026-11-07 14:58 UTC (Rejected), but the paper was screened again on 2026-10-07 18:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Obinutuzumab's total clearance was rejected because the reported unit was not recognized for dimension validation.
 
-<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="false" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="true" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population Pharmacokinetics of Obinutuzumab (GA101) in Chronic Lymphocytic Leukemia (CLL) and Non-Hodgkin's Lymphoma and Exposure-Response in CLL. CPT: pharmacometrics & systems pharmacology 3(10):e144 (2014).
@@ -45,7 +45,7 @@ Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gibiansky_2014_table_p4_1:row3:col2', 'Gibiansky_2014_table_p4_1:row3:col3', 'Gibiansky_2014_table_p4_1:row3:col4'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/day | ['Gibiansky_2014_table_p4_1:row5:col2', 'Gibiansky_2014_table_p4_1:row5:col3', 'Gibiansky_2014_table_p4_1:row5:col4'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/day ([length] ** 3 / [time]) | ['Gibiansky_2014_table_p4_1:row5:col2', 'Gibiansky_2014_table_p4_1:row5:col3', 'Gibiansky_2014_table_p4_1:row5:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Gibiansky_2014_table_p4_1:row14:col2', 'Gibiansky_2014_table_p4_1:row14:col3', 'Gibiansky_2014_table_p4_1:row14:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Gibiansky_2014_table_p4_1:row10:col2', 'Gibiansky_2014_table_p4_1:row10:col3', 'Gibiansky_2014_table_p4_1:row10:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Gibiansky_2014_table_p4_1:row13:col2', 'Gibiansky_2014_table_p4_1:row13:col3', 'Gibiansky_2014_table_p4_1:row13:col4'] |
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

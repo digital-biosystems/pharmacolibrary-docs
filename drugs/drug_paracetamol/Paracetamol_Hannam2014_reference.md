@@ -5,11 +5,11 @@
 
 # paracetamol — `Paracetamol_Hannam2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paracetamol model was rejected because the unit for intercompartmental clearance, L/h/70kg, is not a standard pharmacokinetic unit and lacks a defined conversion.
+> This record was reviewed on 2026-11-07 14:20 UTC (Rejected), but the paper was screened again on 2026-11-04 07:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paracetamol model was rejected because the unit for intercompartmental clearance, L/h/70kg, is not a standard pharmacokinetic unit and lacks a defined conversion.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hannam2014_reference" status="rejected" stale="false" population="children and adults" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hannam2014_reference" status="rejected" stale="true" population="children and adults" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using diclofenac and acetaminophen in children. Paediatric anaesthesia 24(9):953–961 (2014).
@@ -45,7 +45,7 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q47 | fail | [time] | h | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['tab_1:row10:col1', 'tab_1:row10:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Gibb_2008:review'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

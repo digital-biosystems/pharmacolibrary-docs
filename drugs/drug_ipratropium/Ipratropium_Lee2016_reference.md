@@ -4,11 +4,11 @@
 
 # Ipratropium — `Ipratropium_Lee2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The ipratropium bromide apparent volume of distribution of 1340 L was rejected due to a dimensional mismatch found in an abstract-only record.
+> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 13:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ipratropium bromide apparent volume of distribution of 1340 L was rejected due to a dimensional mismatch found in an abstract-only record.
 
-<div class="pk-model-meta" hidden drug="Ipratropium" model-id="Ipratropium_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Ipratropium" model-id="Ipratropium_Lee2016_reference" status="rejected" stale="true" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Mesh-Type Nebulizer (NE-SM1 NEPLUS) for Intrapulmonary Delivery of Ipratropium Bromide in Surgical Patients. Basic & clinical pharmacology & toxicology 118(4):313–319 (2016).
@@ -36,7 +36,7 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q189 | fail | [time] / [length] ** 3 | min/L | ['Lee_2016:abstract'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | min/L ([time] / [length] ** 3) | ['Lee_2016:abstract'] |
 | C5_dimension_Q25 | pass | [length] ** 3 / [time] |  | ['Lee_2016:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Lee_2016:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # lenvatinib — `Lenvatinib_Tamai2017_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Lenvatinib record rejected because the absorption rate constant has the incorrect unit L/h and missing body weight exponent for the intercompartmental clearance.
+> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 02:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lenvatinib record rejected because the absorption rate constant has the incorrect unit L/h and missing body weight exponent for the intercompartmental clearance.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_final" status="rejected" stale="false" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_final" status="rejected" stale="true" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of Lenvatinib in Subjects With Advanced Hepatocellular Carcinoma Based on Population Pharmacokinetic and Exposure-Response Analyses. Journal of clinical pharmacology 57(9):1138–1147 (2017).
@@ -41,7 +41,7 @@ Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of L
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -170,7 +170,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row3:col3', 'jcph917-tbl-0002:row3:col4'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph917-tbl-0002:row13:col3', 'jcph917-tbl-0002:row13:col4', 'jcph917-tbl-0002:row13:col5'] |
 | C5_dimension_Q310 | pass | [time] |  | ['jcph917-tbl-0002:row21:col3', 'jcph917-tbl-0002:row21:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['jcph917-tbl-0002:row20:col3', 'jcph917-tbl-0002:row20:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['jcph917-tbl-0002:row20:col3', 'jcph917-tbl-0002:row20:col4'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row9:col3', 'jcph917-tbl-0002:row9:col4', 'jcph917-tbl-0002:row9:col5'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['jcph917-tbl-0002:row18:col3', 'jcph917-tbl-0002:row18:col4', 'jcph917-tbl-0002:row18:col5'] |
 | C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row11:col3', 'jcph917-tbl-0002:row11:col4', 'jcph917-tbl-0002:row11:col5'] |
@@ -195,7 +195,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

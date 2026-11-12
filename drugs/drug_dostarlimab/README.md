@@ -31,7 +31,7 @@ Dostarlimab is a monoclonal antibody drug used to treat endometrial cancer. It i
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Melhem_2022_mean](drugs/drug_dostarlimab/Dostarlimab_Melhem2022_mean.md) | ▶ model + simulator | 1-compartment, IV | 5 | Melhem M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2022) | [10.1111/bcp.15339](https://doi.org/10.1111/bcp.15339) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ estimate_b](drugs/drug_dostarlimab/Dostarlimab_Melhem2022_estimate_b.md) | — | 2-compartment (no model) | 5 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate_b](drugs/drug_dostarlimab/Dostarlimab_Melhem2022_estimate_b.md) | — | 2-compartment (no model) | 5 (+3 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Shang_2022_reference](drugs/drug_dostarlimab/Dostarlimab_Shang2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022) | [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub> | [Kuchimanchi_2025_reference](drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 (+3 cov.) | Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2025) | [10.1111/bcp.16325](https://doi.org/10.1111/bcp.16325) |
 
@@ -80,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

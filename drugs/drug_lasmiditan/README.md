@@ -40,7 +40,7 @@ Lasmiditan is an antimigraine drug used to treat migraine attacks. It is an appr
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [Tsai_2021_lasmiditan_geometric_mean_cv](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 6 | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub> | [↳ population_mean_see](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_population_mean_see.md) | held back | 1-compartment, oral | 6 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [↳ population_mean_see](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_population_mean_see.md) | held back | 1-compartment, oral | 6 (+2 cov.) |  |  |
 
 ## ADME sites
 
@@ -72,13 +72,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:28 | 2:39 | 2/0/0 | 0/0/0 | 0/0/0 | 198,842/14,931 | einfracz / qwen3.8-27b | 7 | 1/7 | 6/1 | 0 |
+| 2026-10-07 06:28 | 2:39 | 2/0/0 | 0/0/0 | 0/0/0 | 198,842/14,931 | einfracz / qwen3.8-27b | 6 | 1/7 | 5/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 27 matched, 27 returned
 - **screened:** 5  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

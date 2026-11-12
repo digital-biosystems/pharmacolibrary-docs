@@ -4,11 +4,11 @@
 
 # etilefrine — `Etilefrine_Hengstmann1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record failed due to a dimension mismatch and an unreachable compartment, with bioavailability and volume parameters incorrectly linked in a single-compartment model.
+> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-06 09:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record failed due to a dimension mismatch and an unreachable compartment, with bioavailability and volume parameters incorrectly linked in a single-compartment model.
 
-<div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="false" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="true" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine in man. European journal of clinical pharmacology 9(2-3):179–187 (1975).
@@ -36,7 +36,7 @@ Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,9 +111,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Hengstmann_1975:abstract'] |
-| C5_dimension_Q64 | fail | dimensionless | 1 | ['Hengstmann_1975:abstract'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | 1 (dimensionless) | ['Hengstmann_1975:abstract'] |
 | C8_topology | fail |  |  |  |
 
 <details class="legend">
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

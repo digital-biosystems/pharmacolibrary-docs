@@ -26,8 +26,8 @@ Acetazolamide, a carbonic anhydrase inhibitor, is used for glaucoma, epilepsy, a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Yano_1998_reference](drugs/drug_acetazolamide/Acetazolamide_Yano1998_reference.md) | — | 1-compartment (no model) | 1 | Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998) | [10.1007/s002280050422](https://doi.org/10.1007/s002280050422) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Yue_2013_reference](drugs/drug_acetazolamide/Acetazolamide_Yue2013_reference.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013) | [10.18433/j3qg7z](https://doi.org/10.18433/j3qg7z) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yano_1998_reference](drugs/drug_acetazolamide/Acetazolamide_Yano1998_reference.md) | — | 1-compartment (no model) | 1 | Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998) | [10.1007/s002280050422](https://doi.org/10.1007/s002280050422) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yue_2013_reference](drugs/drug_acetazolamide/Acetazolamide_Yue2013_reference.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013) | [10.18433/j3qg7z](https://doi.org/10.18433/j3qg7z) |
 
 ## Pharmacodynamics (PD)
 
@@ -67,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 52 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

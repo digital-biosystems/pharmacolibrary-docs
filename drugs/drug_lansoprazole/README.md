@@ -41,8 +41,8 @@ Lansoprazole is a proton-pump inhibitor used to treat acid-related conditions su
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wu_2019_reference](drugs/drug_lansoprazole/Lansoprazole_Wu2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Katashima_1995_reference](drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md) | — | 1-compartment (no model) | 2 | Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | — | 1-compartment (no model) | 4 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ 2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sakurai_2007_1_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md) | — | 1-compartment (no model) | 4 | Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_compartment](drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md) | — | 1-compartment (no model) | 4 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -93,7 +93,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 15  ·  **relevant:** 6
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

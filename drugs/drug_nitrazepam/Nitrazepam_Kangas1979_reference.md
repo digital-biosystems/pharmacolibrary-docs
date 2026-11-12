@@ -4,11 +4,11 @@
 
 # nitrazepam — `Nitrazepam_Kangas1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The apparent volume of distribution for nitrazepam is dimensionally inconsistent with its unit of 1/kg, and the abstract-only source provides no fitted model.
+> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-06 20:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent volume of distribution for nitrazepam is dimensionally inconsistent with its unit of 1/kg, and the abstract-only source provides no fitted model.
 
-<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="true" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human pharmacokinetics of nitrazepam: effect of age and diseases. European journal of clinical pharmacology 15(3):163–170 (1979).
@@ -37,7 +37,7 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,10 +121,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q32 | fail | [time] | d | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | d ([time]) | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | 1/kg | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -144,7 +144,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

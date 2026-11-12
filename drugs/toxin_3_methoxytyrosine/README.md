@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;3-Methoxytyrosine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_3Methoxytyrosine_AdamiakGiera2021_reference&quot;,&quot;label&quot;:&quot;Adamiak-Giera_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # 3-Methoxytyrosine
 
@@ -31,7 +32,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Adamiak-Giera_2021_reference](drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference.md) | — | parent + metabolite (no model) | 14 | Adamiak-Giera U et al., Pharmacokinetics of Levodopa and 3-O-Me…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091395](https://doi.org/10.3390/pharmaceutics13091395) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Adamiak-Giera_2021_reference](drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 14 | Adamiak-Giera U et al., Pharmacokinetics of Levodopa and 3-O-Me…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091395](https://doi.org/10.3390/pharmaceutics13091395) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,13 +46,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 15:30 | 6:45 | 1/0/0 | 0/0/0 | 0/0/0 | 137,291/8,078 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-09 15:30 | 6:45 | 0/1/0 | 0/0/0 | 0/0/0 | 137,291/8,078 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 25 matched, 25 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

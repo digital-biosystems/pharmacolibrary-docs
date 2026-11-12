@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Nelson1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected because Km has no unit, preventing SI conversion, despite being a structural parameter in the model.
+> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because Km has no unit, preventing SI conversion, despite being a structural parameter in the model.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1980_reference" status="rejected" stale="false" population="advanced cancer patients" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1980_reference" status="rejected" stale="true" population="advanced cancer patients" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nelson RL, Dyke RW, Root MA. Comparative pharmacokinetics of vindesine, vincristine and vinblastine in patients with cancer. Cancer treatment reviews 7 Suppl 1:17–24 (1980).
@@ -40,7 +40,7 @@ Nelson RL, Dyke RW, Root MA. Comparative pharmacokinetics of vindesine, vincrist
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,10 +125,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q304 | pass | 1 / [time] |  | ['tab_0:row10:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['tab_0:row5:col1'] |
-| C5_dimension_Q67 | fail | [time] | h | ['tab_0:row4:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h ([time]) | ['tab_0:row4:col1'] |
 | C5_dimension_Q89 | pass | [time] |  | ['tab_0:row6:col1'] |
 | C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['tab_0:row11:col1'] |
 | C5_unit_missing_Q76 | fail | [length] ** 3 |  | ['tab_0:row12:col1'] |
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

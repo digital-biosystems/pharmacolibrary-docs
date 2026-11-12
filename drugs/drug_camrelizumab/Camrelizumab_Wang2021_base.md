@@ -4,11 +4,11 @@
 
 # camrelizumab — `Camrelizumab_Wang2021_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected because the linear clearance unit could not be converted to SI, and steady-state concentrations lacked second-reader confirmation.
+> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 10:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the linear clearance unit could not be converted to SI, and steady-state concentrations lacked second-reader confirmation.
 
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="true" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokinetics of the anti-PD-1 antibody camrelizumab in patients with multiple tumor types and model-informed dosing strategy. Acta pharmacologica Sinica 42(8):1368–1375 (2021).
@@ -41,7 +41,7 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -149,7 +149,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Wang_2021_table_4:row1:col3', 'Wang_2021_table_4:row1:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row7:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row10:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day | ['tab_2:row5:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) | ['tab_2:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.242 | ['tab_2:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0101 L/h | ['tab_2:row3:col1'] |
@@ -172,7 +172,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

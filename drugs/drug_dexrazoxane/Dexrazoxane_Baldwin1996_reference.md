@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;dexrazoxane&quot;,&quot;href&quot;:&quot;drugs/drug_dexrazoxane/&quot;},{&quot;label&quot;:&quot;Baldwin_1996 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Mody_2023_2_R_2&quot;,&quot;label&quot;:&quot;Mody_2023_2 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexrazoxane — `Dexrazoxane_Baldwin1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The dexrazoxane clearance parameter of 0.33 is labeled with an invalid unit, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 19:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The dexrazoxane clearance parameter of 0.33 is labeled with an invalid unit, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="rejected" stale="true" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Baldwin JR, Lewis RC, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Dose-independent pharmacokinetics of the cardioprotective agent dexrazoxane in dogs. Biopharmaceutics & drug disposition 17(6):541–550 (1996).
@@ -43,7 +44,7 @@ Baldwin JR, Lewis RC, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Dose-ind
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,9 +144,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q189 | fail | [length] ** 3 | CL | ['Baldwin_1996:abstract'] |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | ['Baldwin_1996:abstract'] |
-| C5_dimension_Q410 | fail | [length] ** 3 | CL | ['Baldwin_1996:abstract'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
+| C5_dimension_Q410 | fail | dimensionless | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Mody_2023_2:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Baldwin_1996:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.33 | ['Baldwin_1996:abstract'] |
@@ -169,7 +170,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

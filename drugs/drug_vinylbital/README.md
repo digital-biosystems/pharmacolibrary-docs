@@ -26,7 +26,7 @@ Vinylbital is a barbiturate hypnotic and sedative drug. It is no longer in routi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Breimer_1976_reference](drugs/drug_vinylbital/Vinylbital_Breimer1976_reference.md) | — | 1-compartment (no model) | 3 | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Breimer_1976_reference](drugs/drug_vinylbital/Vinylbital_Breimer1976_reference.md) | — | 1-compartment (no model) | 3 | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +40,13 @@ Vinylbital is a barbiturate hypnotic and sedative drug. It is no longer in routi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:07 | 0:38 | 0/1/0 | 0/0/0 | 0/0/0 | 12,703/921 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 23:07 | 0:38 | 1/0/0 | 0/0/0 | 0/0/0 | 12,703/921 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

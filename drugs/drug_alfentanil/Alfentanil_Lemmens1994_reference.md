@@ -5,11 +5,11 @@
 
 # alfentanil — `Alfentanil_Lemmens1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Alfentanil record rejected due to missing SI conversion for lag time unit and a structural parameter dimension mismatch.
+> This record was reviewed on 2026-11-07 14:46 UTC (Rejected), but the paper was screened again on 2026-10-07 04:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Alfentanil record rejected due to missing SI conversion for lag time unit and a structural parameter dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Lemmens1994_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Lemmens1994_reference" status="rejected" stale="true" population="healthy adult male volunteers" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic modeling in drug development: application to the investigational opioid trefentanil. Clinical pharmacology and therapeutics 56(3):261–271 (1994).
@@ -44,7 +44,7 @@ Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Lemmens_1994_table_p7_2:row4:col1', 'Lemmens_1994_table_p7_2:row4:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lemmens_1994_table_p7_2:row8:col1', 'Lemmens_1994_table_p7_2:row8:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Lemmens_1994_table_p7_2:row9:col1', 'Lemmens_1994_table_p7_2:row9:col2'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Lemmens_1994_table_p7_2:row2:col1', 'Lemmens_1994_table_p7_2:row2:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) | ['Lemmens_1994_table_p7_2:row2:col1', 'Lemmens_1994_table_p7_2:row2:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Mertens_2004:review'] |
 | C5_dimension_Q89 | pass | [time] |  | ['Lemmens_1994_table_p7_2:row7:col1', 'Lemmens_1994_table_p7_2:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.483 | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # fentanyl — `Fentanyl_Kokubun2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Fentanyl clearance (83.7 ml/min/kg) was rejected because the unit could not be converted to SI, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:24 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fentanyl clearance (83.7 ml/min/kg) was rejected because the unit could not be converted to SI, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Kokubun2012_reference" status="rejected" stale="false" population="patients with cancer-related pain" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Kokubun2012_reference" status="rejected" stale="true" population="patients with cancer-related pain" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kokubun H, Ebinuma K, Matoba M, Takayanagi R, Yamada Y, Yago K. Population pharmacokinetics of transdermal fentanyl in patients with cancer-related pain. Journal of pain & palliative care pharmacotherapy 26(2):98–104 (2012).
@@ -39,7 +39,7 @@ Kokubun H, Ebinuma K, Matoba M, Takayanagi R, Yamada Y, Yago K. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Andersen_1986:review'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['Kokubun_2012_table_3:row0:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['Kokubun_2012_table_3:row0:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bower_1982:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.7 | ['Andersen_1986:review'] |
 | C8_topology | pass |  |  |  |
@@ -138,7 +138,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

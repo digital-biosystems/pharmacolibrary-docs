@@ -4,11 +4,11 @@
 
 # pefloxacin — `Pefloxacin_Martnez2017_iv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> The record was rejected because the N-demethyl pefloxacin metabolite half-life of 0.60 hours could not be converted to standard units.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 11:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the N-demethyl pefloxacin metabolite half-life of 0.60 hours could not be converted to standard units.
 
-<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Martnez2017_iv" status="rejected" stale="false" population="healthy broiler chickens" measured-compound="pefloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Martnez2017_iv" status="rejected" stale="true" population="healthy broiler chickens" measured-compound="pefloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea G et al. Oral Bioavailability and Plasma Disposition of Pefloxacin in Healthy Broiler Chickens. Frontiers in veterinary science 4:77 (2017).
@@ -50,7 +50,7 @@ Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 8.44 | 8.61 | 1.02 | 0.25 | reported t½β |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['T1:row18:col1'] |
-| C5_dimension_Q30 | fail | 1 / [time] | h−1 |  |  | ['T1:row12:col1', 'Martínez_2017_table_2:row2:col1'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | h−1 (1 / [time]) |  |  | ['T1:row12:col1', 'Martínez_2017_table_2:row2:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  |  |  | ['T1:row5:col1'] |
 | C5_dimension_Q53 | pass | [time] |  |  |  | ['T1:row17:col1', 'Martínez_2017_table_2:row6:col1'] |
 | C5_dimension_Q59 | pass | [time] |  |  |  | ['T1:row7:col1'] |
@@ -160,9 +160,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q60 | pass | [time] |  |  |  | ['T1:row8:col1', 'Martínez_2017_table_2:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['T1:row10:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  |  |  | ['T1:row11:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h−1 |  |  | ['T1:row4:col1'] |
-| C5_dimension_Q88 | fail | [mass] / [time] / [length] ** 3 | mg/h/L |  |  | ['T1:row15:col1', 'Martínez_2017_table_2:row5:col1'] |
-| C5_dimension_Q99 | fail | 1 / [time] | h−1 |  |  | ['T1:row13:col1', 'Martínez_2017_table_2:row3:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h−1 (1 / [time]) |  |  | ['T1:row4:col1'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | mg/h/L ([mass] / [time] / [length] ** 3) |  |  | ['T1:row15:col1', 'Martínez_2017_table_2:row5:col1'] |
+| C5_dimension_Q99 | fail | [length] ** 3 / [time] | h−1 (1 / [time]) |  |  | ['T1:row13:col1', 'Martínez_2017_table_2:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 |  |  | ['T1:row18:col1'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 13.3 L/h |  |  | ['T1:row18:col1'] |
@@ -185,7 +185,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

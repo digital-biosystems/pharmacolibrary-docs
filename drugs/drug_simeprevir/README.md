@@ -26,7 +26,7 @@ Simeprevir is an antiviral protease inhibitor that was used to treat chronic hep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Valade_2018_reference](drugs/drug_simeprevir/Simeprevir_Valade2018_reference.md) | — | 1-compartment (no model) | 2 | Valade E et al., Characterizing the Pharmacokinetic Inte…, The AAPS journal (2018) | [10.1208/s12248-018-0271-0](https://doi.org/10.1208/s12248-018-0271-0) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Valade_2018_reference](drugs/drug_simeprevir/Simeprevir_Valade2018_reference.md) | — | 1-compartment (no model) | 2 | Valade E et al., Characterizing the Pharmacokinetic Inte…, The AAPS journal (2018) | [10.1208/s12248-018-0271-0](https://doi.org/10.1208/s12248-018-0271-0) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 15 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

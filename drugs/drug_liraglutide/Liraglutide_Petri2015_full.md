@@ -5,11 +5,11 @@
 
 # liraglutide — `Liraglutide_Petri2015_full`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for liraglutide was recorded with a volume-per-time unit that conflicts with its dimension as a rate constant.
+> This record was reviewed on 2026-11-07 15:42 UTC (Rejected), but the paper was screened again on 2026-10-22 09:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for liraglutide was recorded with a volume-per-time unit that conflicts with its dimension as a rate constant.
 
-<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Petri2015_full" status="rejected" stale="false" population="pediatric and adult patients with type 2 diabetes" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Petri2015_full" status="rejected" stale="true" population="pediatric and adult patients with type 2 diabetes" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pediatric and adult populations with type 2 diabetes: a population pharmacokinetic analysis. Clinical pharmacokinetics 54(6):663–670 (2015).
@@ -41,7 +41,7 @@ Petri KC, Jacobsen LV, Klein DJ. Comparable liraglutide pharmacokinetics in pedi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -104,7 +104,7 @@ The parameter described as the absorption rate constant carries a value of 0.065
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Petri_2015_table_S1:row2:col3'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Petri_2015_table_S1:row1:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Petri_2015_table_S1:row1:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Petri_2015_table_S1:row3:col3'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | N/A | ['Petri_2015_table_S1:row5:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -128,7 +128,7 @@ The parameter described as the absorption rate constant carries a value of 0.065
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

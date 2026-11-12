@@ -43,10 +43,10 @@ Oxaliplatin is a platinum-based anticancer drug used to treat colorectal and oth
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Deyme_2019_reference](drugs/drug_oxaliplatin/Oxaliplatin_Deyme2019_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Deyme L et al., Population pharmacokinetics of FOLFIRIN…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3722-5](https://doi.org/10.1007/s00280-018-3722-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2025_reference](drugs/drug_oxaliplatin/Oxaliplatin_Yang2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Yang J et al., Clinical Pharmacology Profile of the Cl…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01552-x](https://doi.org/10.1007/s40262-025-01552-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Ferron_2008_reference](drugs/drug_oxaliplatin/Oxaliplatin_Ferron2008_reference.md) | — | 1-compartment (no model) | 3 | Ferron G et al., Pharmacokinetics of heated intraperiton…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-007-0654-x](https://doi.org/10.1007/s00280-007-0654-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lévi_2000_reference](drugs/drug_oxaliplatin/Oxaliplatin_Lvi2000_reference.md) | — | 1-compartment (no model) | 1 | Lévi F et al., Oxaliplatin: pharmacokinetics and chron…, Clinical pharmacokinetics (2000) | [10.2165/00003088-200038010-00001](https://doi.org/10.2165/00003088-200038010-00001) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub> | [Nikanjam_2015_reference](drugs/drug_oxaliplatin/Oxaliplatin_Nikanjam2015_reference.md) | — | 1-compartment (no model) | 5 | Nikanjam M et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-014-2667-6](https://doi.org/10.1007/s00280-014-2667-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k21</sub> | [Zhu_2023_reference](drugs/drug_oxaliplatin/Oxaliplatin_Zhu2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Zhu J et al., Translational Pharmacokinetic/Pharmacod…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092274](https://doi.org/10.3390/pharmaceutics15092274) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Delord_2003_reference](drugs/drug_oxaliplatin/Oxaliplatin_Delord2003_reference.md) | — | 1-compartment (no model) | 0 | Delord JP et al., Population pharmacokinetics of oxalipla…, Cancer chemotherapy and pha… (2003) | [10.1007/s00280-002-0550-3](https://doi.org/10.1007/s00280-002-0550-3) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Lévi_2000_reference](drugs/drug_oxaliplatin/Oxaliplatin_Lvi2000_reference.md) | — | 1-compartment (no model) | 1 | Lévi F et al., Oxaliplatin: pharmacokinetics and chron…, Clinical pharmacokinetics (2000) | [10.2165/00003088-200038010-00001](https://doi.org/10.2165/00003088-200038010-00001) |
 
 ## Pharmacodynamics (PD)
 
@@ -91,13 +91,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:34 | 3:01 | 5/2/0 | 2/0/0 | 0/0/0 | 166,461/16,604 | einfracz / qwen3.8-27b | 8 | 2/6 | 6/2 | 0 |
+| 2026-10-06 22:34 | 3:01 | 6/1/0 | 2/0/0 | 0/0/0 | 166,461/16,604 | einfracz / qwen3.8-27b | 8 | 2/6 | 6/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 71 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 7  ·  extracted 2  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 7  ·  extracted 2  ·  needs review 4  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

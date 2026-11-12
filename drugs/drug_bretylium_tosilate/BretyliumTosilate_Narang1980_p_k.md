@@ -5,11 +5,11 @@
 
 # bretylium tosilate — `BretyliumTosilate_Narang1980_p_k`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Bretylium central compartment volume (1.31 L/kg) has a unit that is dimensionally incompatible with the model's other mass-normalized parameters.
+> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-08 16:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bretylium central compartment volume (1.31 L/kg) has a unit that is dimensionally incompatible with the model's other mass-normalized parameters.
 
-<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="true" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretylium in man after intravenous administration. Journal of pharmacokinetics and biopharmaceutics 8(4):363–372 (1980).
@@ -51,7 +51,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,7 +132,7 @@ The central volume of distribution is reported in liters per kilogram, a unit th
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row9:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row10:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row11:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ | ['Narang_1980_table_2:row0:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr⁻¹ (1 / [time]) | ['Narang_1980_table_2:row0:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 91.7 L | ['Narang_1980_table_2:row9:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 564 L | ['Narang_1980_table_2:row10:col3'] |
@@ -154,7 +154,7 @@ The central volume of distribution is reported in liters per kilogram, a unit th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # codeine — `Codeine_Gretler2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Codeine model rejected because no metabolic rate constants were defined and the absorption unit could not be converted to SI.
+> This record was reviewed on 2026-11-07 14:36 UTC (Rejected), but the paper was screened again on 2026-11-03 19:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Codeine model rejected because no metabolic rate constants were defined and the absorption unit could not be converted to SI.
 
-<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetics and selected pharmacodynamic effects of codeine following a single oral administration to horses. Veterinary anaesthesia and analgesia 47(5):694–704 (2020).
@@ -51,7 +51,7 @@ Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q56 | pass | [time] |  | ['T4:row7:col1'] |
 | C5_dimension_Q59 | pass | [time] |  | ['T4:row13:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['T4:row14:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hour−1 | ['T4:row11:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hour−1 (1 / [time]) | ['T4:row11:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['T4:row5:col1'] |
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | mL minute−1 kg−1 | ['T4:row2:col1'] |
 | C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | mL minute−1 kg−1 | ['T4:row3:col1'] |
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

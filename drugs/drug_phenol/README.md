@@ -27,7 +27,7 @@ Phenol is used as an antiseptic and disinfectant, as a sclerosing agent, and as 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31 — no SI value to build from</sub> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | — | parent + metabolite (no model) | 6 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | — | parent + metabolite (no model) | 6 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
 
 ## Pharmacodynamics (PD)
 
@@ -83,13 +83,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:00 | 18:58 | 1/0/0 | 4/0/0 | 0/0/4 | 1,072,451/71,630 | einfracz / qwen3.8-27b | 53 | 18/33 | 51/2 | 0 |
+| 2026-10-07 15:00 | 18:58 | 1/0/0 | 4/0/0 | 0/0/4 | 1,072,451/71,630 | einfracz / qwen3.8-27b | 51 | 18/33 | 49/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2134 matched, 251 returned
 - **screened:** 19  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

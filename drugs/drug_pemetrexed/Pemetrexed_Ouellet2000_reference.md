@@ -5,11 +5,11 @@
 
 # pemetrexed — `Pemetrexed_Ouellet2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The central volume of distribution for pemetrexed disodium, valued at 11.3 with a unit of '1', is dimensionally invalid.
+> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The central volume of distribution for pemetrexed disodium, valued at 11.3 with a unit of '1', is dimensionally invalid.
 
-<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="true" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmacokinetics of pemetrexed disodium (ALIMTA) in patients with cancer. Cancer chemotherapy and pharmacology 46(3):227–234 (2000).
@@ -37,7 +37,7 @@ Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Ouellet_2000:abstract'] |
-| C5_dimension_Q63 | fail | dimensionless | 1 | ['Ouellet_2000:abstract'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | 1 (dimensionless) | ['Ouellet_2000:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Ouellet_2000:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q64 | pass | volume within physiological range | 5.2 L | ['Ouellet_2000:abstract'] |
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

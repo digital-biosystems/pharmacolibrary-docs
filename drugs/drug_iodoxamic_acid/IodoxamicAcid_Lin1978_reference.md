@@ -4,11 +4,11 @@
 
 # iodoxamic acid — `IodoxamicAcid_Lin1978_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The record lacks volume and clearance parameters, failing to describe a compartmental model for iodoxamic acid.
+> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 22:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance parameters, failing to describe a compartmental model for iodoxamic acid.
 
-<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rhesus monkey: biliary excretion, plasma protein binding, and enterophepatic circulation. Journal of pharmaceutical sciences 67(7):930–934 (1978).
@@ -36,7 +36,7 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,9 +116,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q1 | fail | [length] | micrometer | ['Lin_1978:abstract'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | mumoles/kg/min | ['Lin_1978:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | micrometer ([length]) | ['Lin_1978:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mumoles/kg/min ([substance] / [time]) | ['Lin_1978:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -137,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # oseltamivir — `Oseltamivir_Wang2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Q and Vmax have no unit.
+> This record was reviewed on 2026-11-07 15:44 UTC (Needs review), but the paper was screened again on 2026-10-07 18:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Q and Vmax have no unit.
 
-<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Wang2026_reference" status="needs_review" stale="false" population="infants and toddlers (birth through 23 months) with influenza virus infection" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Wang2026_reference" status="needs_review" stale="true" population="infants and toddlers (birth through 23 months) with influenza virus infection" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Wang K, Kimberlin DW, Whitley RJ, Acosta EP. Oseltamivir drug-disease modelling in infants with influenza virus infection. British journal of clinical pharmacology (2026).
@@ -49,7 +49,7 @@ Wang K, Kimberlin DW, Whitley RJ, Acosta EP. Oseltamivir drug-disease modelling 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -201,7 +201,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['bcp70623-tbl-0001:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['bcp70623-tbl-0001:row11:col1', 'bcp70623-tbl-0001:footnote'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['bcp70623-tbl-0001:row4:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | copies/mL | ['bcp70623-tbl-0001:row19:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] | copies/mL | ['bcp70623-tbl-0001:row19:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 86.8 L | ['bcp70623-tbl-0001:row2:col1'] |
@@ -234,7 +234,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

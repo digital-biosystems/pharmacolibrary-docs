@@ -50,7 +50,7 @@ Metamizole (dipyrone) is a pyrazolone painkiller and fever reducer used to treat
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ 4_faa](drugs/drug_metamizole/Metamizole_Blaser2021_4_faa.md) | — | general linear (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ 4_maa](drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md) | — | general linear (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Ekobena_2025_reference](drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ziesenitz_2019_reference](drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md) | — | 1-compartment (no model) | 1 | Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journal of clinica… (2019) | [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ziesenitz_2019_reference](drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md) | — | 1-compartment (no model) | 1 | Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journal of clinica… (2019) | [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2) |
 
 ## Pharmacogenomics (PGx)
 
@@ -97,13 +97,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:21 | 5:33 | 4/5/0 | 0/0/0 | 1/0/4 | 498,496/37,875 | einfracz / qwen3.8-27b | 31 | 6/29 | 27/4 | 0 |
+| 2026-10-07 06:21 | 5:33 | 4/5/0 | 0/0/0 | 1/0/4 | 498,496/37,875 | einfracz / qwen3.8-27b | 30 | 6/29 | 26/4 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 165 matched, 84 returned
 - **screened:** 5  ·  **relevant:** 4
-- **records:** 9  ·  extracted 1  ·  needs review 3  ·  rejected 5  ·  stale 0
+- **records:** 9  ·  extracted 1  ·  needs review 3  ·  rejected 5  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

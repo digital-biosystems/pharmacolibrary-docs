@@ -25,7 +25,7 @@ Rituximab is a monoclonal antibody used to treat B-cell blood cancers such as no
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Pasquiers_2025_reference](drugs/drug_rituximab/Rituximab_Pasquiers2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Pasquiers B et al., Comparison of rituximab induction and m…, EBioMedicine (2025) | [10.1016/j.ebiom.2025.105989](https://doi.org/10.1016/j.ebiom.2025.105989) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Serkland_2025_reference](drugs/drug_rituximab/Rituximab_Serkland2025_reference.md) | — | 1-compartment (no model) | 1 | Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2025) | [10.1002/bcp.70136](https://doi.org/10.1002/bcp.70136) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Serkland_2025_reference](drugs/drug_rituximab/Rituximab_Serkland2025_reference.md) | — | 1-compartment (no model) | 1 | Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2025) | [10.1002/bcp.70136](https://doi.org/10.1002/bcp.70136) |
 
 ## Pharmacodynamics (PD)
 
@@ -66,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 119 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

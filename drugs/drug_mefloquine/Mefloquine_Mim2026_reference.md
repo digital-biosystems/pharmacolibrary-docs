@@ -5,11 +5,11 @@
 
 # mefloquine — `Mefloquine_Mim2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Mefloquine's inter-compartmental clearance and central volume parameters lack valid SI values, and the model includes an unreachable artesunate-to-dihydroartemisinin link.
+> This record was reviewed on 2026-11-07 15:30 UTC (Rejected), but the paper was screened again on 2026-10-07 07:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Mefloquine's inter-compartmental clearance and central volume parameters lack valid SI values, and the model includes an unreachable artesunate-to-dihydroartemisinin link.
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected mice" measured-compound="mefloquine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Mim2026_reference" status="rejected" stale="true" population="P. berghei-infected mice" measured-compound="mefloquine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Pharmacokinetic and pharmacodynamic modeling of anti-plasmodial drugs mefloquine plus artesunate: insights on translational application. Antimicrobial agents and chemotherapy 70(3):e0171725 (2026).
@@ -44,7 +44,7 @@ Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | ['Mim_2026_table_1:row1:col1', 'Mim_2026_table_1:row1:col2', 'Mim_2026_table_1:row1:col3', 'Mim_2026_table_2:row2:col1', 'Mim_2026_table_2:row2:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['Mim_2026_table_1:row1:col1', 'Mim_2026_table_1:row1:col2', 'Mim_2026_table_1:row1:col3', 'Mim_2026_table_2:row2:col1', 'Mim_2026_table_2:row2:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Mim_2026_table_1:row4:col1', 'Mim_2026_table_1:row4:col2', 'Mim_2026_table_2:row6:col1', 'Mim_2026_table_2:row6:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Mim_2026_table_1:row0:col1', 'Mim_2026_table_1:row0:col2', 'Mim_2026_table_1:row0:col3', 'Mim_2026_table_1:row0:col4', 'Mim_2026_table_2:row1:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Mim_2026_table_1:row2:col2', 'Mim_2026_table_2:row3:col1', 'Mim_2026_table_2:row3:col2', 'Mim_2026_table_2:row3:col3'] |
@@ -163,7 +163,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

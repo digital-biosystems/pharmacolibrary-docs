@@ -37,7 +37,7 @@ Hydrocortisone, a glucocorticoid steroid hormone, is used as an anti-inflammator
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ old_model_5_6](drugs/drug_hydrocortisone/Hydrocortisone_Rozenveld2022_old_model_5_6.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Al-Kofahi_2021_reference](drugs/drug_hydrocortisone/Hydrocortisone_AlKofahi2021_reference.md) | — | parent + metabolite (no model) | 0 | Al-Kofahi M et al., An integrated PK-PD model for cortisol…, British journal of clinical… (2021) | [10.1111/bcp.14470](https://doi.org/10.1111/bcp.14470) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Melin_2020_reference](drugs/drug_hydrocortisone/Hydrocortisone_Melin2020_reference.md) | — | 1-compartment (no model) | 1 | Melin J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, The Journal of clinical end… (2020) | [10.1210/clinem/dgaa071](https://doi.org/10.1210/clinem/dgaa071) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | — | general linear (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | — | general linear (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
 ## Pharmacodynamics (PD)
 
@@ -86,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 102 matched, 19 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 6  ·  extracted 0  ·  needs review 3  ·  rejected 3  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs review 3  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # fostemsavir — `Fostemsavir_Parasrampuria2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Fostemsavir was rejected because its absorption rate constant had an unconvertible unit, causing a dimension mismatch for this parameter.
+> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-07 17:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fostemsavir was rejected because its absorption rate constant had an unconvertible unit, causing a dimension mismatch for this parameter.
 
-<div class="pk-model-meta" hidden drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="true" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokinetics and exposure-response relationship for temsavir following fostemsavir administration in treatment-experienced HIV patients. Pharmacology research & perspectives 13(3):e70023 (2025).
@@ -42,7 +42,7 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ _All readers agree on the compared fields of this record._
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['prp270023-tbl-0002:row2:col1'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['prp270023-tbl-0002:row1:col1'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['prp270023-tbl-0002:row5:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['prp270023-tbl-0002:row5:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['prp270023-tbl-0002:row3:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['prp270023-tbl-0002:row4:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -157,7 +157,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

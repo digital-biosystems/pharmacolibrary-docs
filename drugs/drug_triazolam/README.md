@@ -41,8 +41,8 @@ Triazolam is a benzodiazepine sedative used to treat insomnia and other sleep-wa
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Cha_2024_reference](drugs/drug_triazolam/Triazolam_Cha2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Cha HJ et al., Development of a Web Application for Si…, Pharmaceutics (2024) | [10.3390/pharmaceutics16050689](https://doi.org/10.3390/pharmaceutics16050689) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Gaudreault_1996_reference](drugs/drug_triazolam/Triazolam_Gaudreault1996_reference.md) | — | 1-compartment (no model) | 5 | Gaudreault J et al., Anticonvulsant pharmacodynamics and dis…, Journal of pharmaceutical s… (1996) | [10.1021/js9503183](https://doi.org/10.1021/js9503183) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Karl_1997_reference](drugs/drug_triazolam/Triazolam_Karl1997_reference.md) | — | 1-compartment (no model) | 3 | Karl HW et al., Pharmacokinetics of oral triazolam in c…, Journal of clinical psychop… (1997) | [10.1097/00004714-199706000-00005](https://doi.org/10.1097/00004714-199706000-00005) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [van_2011_reference](drugs/drug_triazolam/Triazolam_van2011_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | van Erp NP et al., Marginal increase of sunitinib exposure…, Cancer chemotherapy and pha… (2011) | [10.1007/s00280-010-1367-0](https://doi.org/10.1007/s00280-010-1367-0) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Karl_1997_reference](drugs/drug_triazolam/Triazolam_Karl1997_reference.md) | — | 1-compartment (no model) | 3 | Karl HW et al., Pharmacokinetics of oral triazolam in c…, Journal of clinical psychop… (1997) | [10.1097/00004714-199706000-00005](https://doi.org/10.1097/00004714-199706000-00005) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Okada_2024_reference](drugs/drug_triazolam/Triazolam_Okada2024_reference.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Okada A et al., Appropriate use of triazolam in elderly…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00777-z](https://doi.org/10.1186/s40360-024-00777-z) |
 
 ## Pharmacodynamics (PD)
@@ -94,13 +94,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:05 | 20:47 | 3/2/0 | 11/0/0 | 0/0/0 | 876,552/38,773 | ollama / glm-5.3-flash | 21 | 0/20 | 20/1 | 0 |
+| 2026-10-06 23:05 | 20:47 | 4/1/0 | 11/0/0 | 0/0/0 | 876,552/38,773 | ollama / glm-5.3-flash | 21 | 0/20 | 20/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 408 matched, 147 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

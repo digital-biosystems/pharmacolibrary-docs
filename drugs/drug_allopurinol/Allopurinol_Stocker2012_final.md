@@ -5,11 +5,11 @@
 
 # allopurinol — `Allopurinol_Stocker2012_final`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL_ratio has no unit.
+> This record was reviewed on 2026-11-07 14:33 UTC (Needs review), but the paper was screened again on 2026-11-03 20:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Stocker2012_final" status="needs_review" stale="false" population="patients with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Stocker2012_final" status="extracted" stale="true" population="patients with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al. The pharmacokinetics of oxypurinol in people with gout. British journal of clinical pharmacology 74(3):477–489 (2012).
@@ -29,8 +29,6 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/Fm (l h⁻¹)* | CLm/F | 0.595 | l h⁻¹ |
@@ -40,7 +38,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +133,6 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q305 | pass | 1 / [time] |  | ['Stocker_2012_table_3:row4:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Stocker_2012_table_3:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Stocker_2012_table_3:row3:col2'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | R | ['Stocker_2012_table_3:row8:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 38.1 L | ['Stocker_2012_table_3:row3:col2'] |
@@ -183,7 +180,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

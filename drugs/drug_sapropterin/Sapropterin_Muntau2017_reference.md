@@ -5,11 +5,11 @@
 
 # sapropterin — `Sapropterin_Muntau2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sapropterin CL/F (2789 L/h) and V/F (3870 L) were rejected due to a dimension mismatch involving unconverted units.
+> This record was reviewed on 2026-11-07 16:34 UTC (Rejected), but the paper was screened again on 2026-10-05 11:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sapropterin CL/F (2789 L/h) and V/F (3870 L) were rejected due to a dimension mismatch involving unconverted units.
 
-<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="false" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="true" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Efficacy, safety and population pharmacokinetics of sapropterin in PKU patients &lt;4 years: results from the SPARK open-label, multicentre, randomized phase IIIb trial. Orphanet journal of rare diseases 12(1):47 (2017).
@@ -43,7 +43,7 @@ Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Effica
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -105,7 +105,7 @@ The record lists sapropterin clearance and volume of distribution as 2789 L/h an
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab3:row3:col1', 'Tab3:row3:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Muntau_2017_table_4:row2:col1', 'Muntau_2017_table_4:row2:col2', 'Muntau_2017_table_4:row2:col3', 'Muntau_2017_table_4:row2:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row4:col1', 'Tab3:row4:col2'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | μg/L | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | μg/L ([mass] / [length] ** 3) | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 2.79e+03 L/h | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Muntau_2017_table_4:row0:col1', 'Muntau_2017_table_4:row0:col2', 'Muntau_2017_table_4:row0:col3', 'Muntau_2017_table_4:row0:col4'] |
@@ -127,7 +127,7 @@ The record lists sapropterin clearance and volume of distribution as 2789 L/h an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

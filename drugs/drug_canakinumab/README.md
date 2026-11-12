@@ -69,7 +69,7 @@ Canakinumab is a monoclonal antibody that blocks interleukin signalling and is u
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ mouse](drugs/drug_canakinumab/Canakinumab_Chakraborty2012_mouse.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ rhesus_monkey](drugs/drug_canakinumab/Canakinumab_Chakraborty2012_rhesus_monkey.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Urien_2013_reference](drugs/drug_canakinumab/Canakinumab_Urien2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Urien S et al., Anakinra pharmacokinetics in children a…, BMC pharmacology & toxicolo… (2013) | [10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ait-Oudhia_2012_reference](drugs/drug_canakinumab/Canakinumab_AitOudhia2012_reference.md) | — | 2-compartment (no model) | 9 | Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacometrics & syst… (2012) | [10.1038/psp.2012.6](https://doi.org/10.1038/psp.2012.6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ait-Oudhia_2012_reference](drugs/drug_canakinumab/Canakinumab_AitOudhia2012_reference.md) | — | 2-compartment (no model) | 9 | Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacometrics & syst… (2012) | [10.1038/psp.2012.6](https://doi.org/10.1038/psp.2012.6) |
 
 ## Pharmacodynamics (PD)
 
@@ -107,7 +107,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 85 matched, 74 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 20  ·  extracted 0  ·  needs review 16  ·  rejected 4  ·  stale 0
+- **records:** 20  ·  extracted 0  ·  needs review 16  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

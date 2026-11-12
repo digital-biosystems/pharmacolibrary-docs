@@ -17,7 +17,7 @@
 
 **As extracted:** Romiplostim (concentrations from the PK model of Fan_2023) drives platelets (in ×1012 cells/L): indirect response — drug stimulates the production of platelets.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Romiplostim concentrations (ng/mL) stimulate platelet production (×10^12 cells/L) via a catenary indirect response model where the drug acts on the production rate of megakaryocytes (TMP = 137.1 h) which subsequently produce platelets (TPLT = 254.4 h). The stimulation is characterized by a maximum effect parameter SmaxRM1 of 1.67 and SmaxRM2 of 27.8, with a half-maximal effective concentration (SC50RM) of 11.9 ng/mL.
 >
@@ -50,6 +50,41 @@ Fan X et al., Scaling Pharmacodynamics from Rats to H…, Pharmaceutics (2023)
 </details>
 
 
+## Exposure-response model
+
+`Romiplostim_Fan2023v2_PD_plt` — turnover (indirect response type III), `response = E0*(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.23 ×1012 cells/L | — |
+| Emax | 1.67 | — |
+| EC50 | 11.9 ng/mL | 1.19e-05 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.23, `at_EC50` = 0.4221, `at_inf` = 0.6141
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as IDR-III predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -78,19 +113,33 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt/Romiplostim_Fan2023v2_PD_plt_modelica.zip" download>Romiplostim_Fan2023v2_PD_plt_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt/Romiplostim_Fan2023v2_PD_plt_matlab.zip" download>Romiplostim_Fan2023v2_PD_plt_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt/Romiplostim_Fan2023v2_PD_plt_sbml.zip" download>Romiplostim_Fan2023v2_PD_plt_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt/Romiplostim_Fan2023v2_PD_plt_cellml.zip" download>Romiplostim_Fan2023v2_PD_plt_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Romiplostim_Fan2023v2_PD_plt`. <https://pharmacolibrary.github.io/#/drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt>
+
+```bibtex
+@misc{pharmacolibrary_RomiplostimFan2023v2PDplt,
+  title  = {{Pharmacolibrary model Romiplostim_Fan2023v2_PD_plt}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_romiplostim/Romiplostim_Fan2023v2_PD_plt},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

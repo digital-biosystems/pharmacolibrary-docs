@@ -26,8 +26,8 @@ Deferiprone is an iron chelator used to remove excess iron in conditions such as
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Abbas_2012_reference](drugs/drug_deferiprone/Deferiprone_Abbas2012_reference.md) | — | 1-compartment (no model) | 3 | Abbas M et al., Quantitative determination of deferipro…, Pakistan journal of pharmac… (2012) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Bellanti_2014_reference](drugs/drug_deferiprone/Deferiprone_Bellanti2014_reference.md) | — | 1-compartment (no model) | 3 | Bellanti F et al., Population pharmacokinetics of deferipr…, British journal of clinical… (2014) | [10.1111/bcp.12473](https://doi.org/10.1111/bcp.12473) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Abbas_2012_reference](drugs/drug_deferiprone/Deferiprone_Abbas2012_reference.md) | — | 1-compartment (no model) | 3 | Abbas M et al., Quantitative determination of deferipro…, Pakistan journal of pharmac… (2012) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bellanti_2014_reference](drugs/drug_deferiprone/Deferiprone_Bellanti2014_reference.md) | — | 1-compartment (no model) | 3 | Bellanti F et al., Population pharmacokinetics of deferipr…, British journal of clinical… (2014) | [10.1111/bcp.12473](https://doi.org/10.1111/bcp.12473) |
 
 ## Pharmacodynamics (PD)
 
@@ -61,13 +61,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:48 | 0:57 | 0/2/0 | 2/0/0 | 0/0/0 | 49,196/3,374 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 18:48 | 0:57 | 1/1/0 | 2/0/0 | 0/0/0 | 49,196/3,374 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Graefe-Mody_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_GraefeMody2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is an exposure/outcome paper lacking clearance and volume, with a dimension mismatch on terminal half-life.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-05 00:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is an exposure/outcome paper lacking clearance and volume, with a dimension mismatch on terminal half-life.
 
-<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodynamics of linagliptin. Clinical pharmacokinetics 51(7):411–427 (2012).
@@ -39,7 +40,7 @@ Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodyn
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,11 +127,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q44 | pass | dimensionless |  | ['Graefe-Mody_2012:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tadayasu_2013:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Graefe-Mody_2012:abstract'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | nmol · h/L | ['Graefe-Mody_2012:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nmol · h/L ([substance] * [time] / [length] ** 3) | ['Graefe-Mody_2012:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -149,7 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

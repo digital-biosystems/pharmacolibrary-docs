@@ -4,11 +4,11 @@
 
 # alverine — `Alverine_Cho2026_parent_alverine`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because a unit for a structural parameter could not be converted to SI, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:28 UTC (Rejected), but the paper was screened again on 2026-10-04 12:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because a unit for a structural parameter could not be converted to SI, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_parent_alverine" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_parent_alverine" status="rejected" stale="true" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Parent-Metabolite Pharmacokinetic Model With Apparent Presystemic Metabolism to Characterize the Disposition of Alverine. CPT: pharmacometrics & systems pharmacology 15(9):e70342 (2026).
@@ -42,7 +42,7 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -155,11 +155,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [substance] * [time] / [length] ** 3 | μmol·h/L | ['Cho_2026_table_1:row4:col1'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | μmol·h/L ([substance] * [time] / [length] ** 3) | ['Cho_2026_table_1:row4:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cho_2026_table_1:row5:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Cho_2026_table_1:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cho_2026_table_1:row6:col1'] |
-| C5_dimension_Q74 | fail | [substance] * [time] / [length] ** 3 | μmol·h/L | ['Cho_2026_table_1:row3:col1'] |
+| C5_dimension_Q74 | fail | [mass] * [time] / [length] ** 3 | μmol·h/L ([substance] * [time] / [length] ** 3) | ['Cho_2026_table_1:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.5 | ['Cho_2026_table_1:row5:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.3e+03 L/h | ['Cho_2026_table_1:row5:col1'] |
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

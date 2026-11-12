@@ -4,11 +4,11 @@
 
 # lithium chloride — `LithiumChloride_Rosenthal1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:17 UTC (Needs review), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Rosenthal1986_reference" status="needs_review" stale="false" population="adult dogs" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Rosenthal1986_reference" status="extracted" stale="true" population="adult dogs" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journal of veterinary pharmacology and therapeutics 9(1):81–87 (1986).
@@ -30,8 +30,6 @@ Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journ
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2 | t1/2z | 21.6 | h |
@@ -40,7 +38,7 @@ Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journ
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,7 +118,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Rosenthal_1986:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Rosenthal_1986:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -152,7 +150,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

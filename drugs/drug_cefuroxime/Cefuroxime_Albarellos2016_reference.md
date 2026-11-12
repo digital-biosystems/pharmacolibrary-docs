@@ -5,11 +5,11 @@
 
 # cefuroxime — `Cefuroxime_Albarellos2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The cefuroxime clearance (0.011 L/h/kg) and volume (0.065 L/kg) parameters are inconsistent with the terminal half-life (1.12 h) and mean residence time (1.49 h) derived from abstract-only data.
+> This record was reviewed on 2026-11-07 14:41 UTC (Rejected), but the paper was screened again on 2026-10-07 11:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The cefuroxime clearance (0.011 L/h/kg) and volume (0.065 L/kg) parameters are inconsistent with the terminal half-life (1.12 h) and mean residence time (1.49 h) derived from abstract-only data.
 
-<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2016_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2016_reference" status="rejected" stale="true" population="beagle dogs" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmacokinetics of cefuroxime after intravenous, intramuscular, and subcutaneous administration to dogs. Journal of veterinary pharmacology and therapeutics 39(1):40–44 (2016).
@@ -46,7 +46,7 @@ Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,6 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cao_2025:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Albarellos_2016:abstract'] |
@@ -154,7 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q56 | pass | [time] |  | ['Albarellos_2016:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Albarellos_2016:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cao_2025:review'] |
-| C5_dimension_Q75 | fail | [time] | h | ['Albarellos_2016:abstract'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | h ([time]) | ['Albarellos_2016:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.011 | ['Cao_2025:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.77 L/h | ['Cao_2025:review'] |
@@ -176,7 +177,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

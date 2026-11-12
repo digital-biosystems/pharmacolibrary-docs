@@ -5,11 +5,11 @@
 
 # nimodipine — `Nimodipine_Seker2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.
+> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-07 04:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.
 
-<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="true" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. Pharmacokinetic Modeling of Intra-arterial Nimodipine Therapy for Subarachnoid Hemorrhage-Related Cerebral Vasospasm. Clinical neuroradiology 27(2):199–203 (2017).
@@ -37,7 +37,7 @@ Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Seker_2017:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Seker_2017:abstract'] |
-| C5_dimension_Q32 | fail | dimensionless | % | ['Seker_2017:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | % (dimensionless) | ['Seker_2017:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Seker_2017:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 70 L/h | ['Seker_2017:abstract'] |
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

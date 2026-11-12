@@ -4,11 +4,11 @@
 
 # vindesine — `Vindesine_Owellen1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-06 15:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="vindesine" model-id="Vindesine_Owellen1977_reference" status="needs_review" stale="false" population="humans" measured-compound="vindesine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vindesine" model-id="Vindesine_Owellen1977_reference" status="extracted" stale="true" population="humans" measured-compound="vindesine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in humans. Cancer research 37(8 Pt 1):2603–2607 (1977).
@@ -27,8 +27,6 @@ Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2 alpha | t1/2α | 3.24 | min |
@@ -39,7 +37,7 @@ Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,7 +111,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q59 | pass | [time] |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
@@ -149,7 +147,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

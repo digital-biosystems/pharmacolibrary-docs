@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017 \u00b7 combined_single_and_multiple_dose_models_parameter_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # exenatide — `Exenatide_Cirincione2017_combined_single_and_multiple_dose_m`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Exenatide clearance of 0.059 L/h has a unit that could not be converted to standard SI units, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Exenatide clearance of 0.059 L/h has a unit that could not be converted to standard SI units, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Release Formulation of Exenatide Following Single- and Multiple-Dose Administration. The AAPS journal 19(2):487–496 (2017).
@@ -48,7 +47,7 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.609). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,16 +149,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Cirincione_2017_table_p6_1:row14:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Choi_2025:review'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/day | ['Cirincione_2017_table_p6_1:row1:col5'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/day ([length] ** 3 / [time]) | ['Cirincione_2017_table_p6_1:row1:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Cirincione_2017_table_p6_1:row16:col5'] |
 | C5_dimension_Q306 | pass | 1 / [time] |  | ['Cirincione_2017_table_p6_1:row9:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Cirincione_2017_table_p6_1:row0:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cirincione_2017_table_p6_1:row2:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Cirincione_2017_table_p6_1:row17:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day | ['Cirincione_2017_table_p6_1:row15:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) | ['Cirincione_2017_table_p6_1:row15:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.059 | ['Choi_2025:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.059 L/h | ['Choi_2025:review'] |
@@ -182,7 +181,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

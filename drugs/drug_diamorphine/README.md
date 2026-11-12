@@ -33,7 +33,7 @@ Diamorphine (heroin) is an opioid that has been used medically for pain relief a
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Cai_2025_fisher_information_matrix_estimates_stochastic_approximation](drugs/drug_diamorphine/Diamorphine_Cai2025_fisher_information_matrix_estimates_stoc.md) | — | general linear (no model) | 9 | Cai L et al., Intranasal diamorphine population pharm…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13186](https://doi.org/10.1002/psp4.13186) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ population_value_estimation_mode](drugs/drug_diamorphine/Diamorphine_Cai2025_population_value_estimation_mode.md) | — | general linear (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Rook_2006_reference](drugs/drug_diamorphine/Diamorphine_Rook2006_reference.md) | — | general linear (no model) | 4 | Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645040-00005](https://doi.org/10.2165/00003088-200645040-00005) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Rook_2006_reference](drugs/drug_diamorphine/Diamorphine_Rook2006_reference.md) | — | general linear (no model) | 4 | Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645040-00005](https://doi.org/10.2165/00003088-200645040-00005) |
 
 ## Pharmacodynamics (PD)
 
@@ -76,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 48 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

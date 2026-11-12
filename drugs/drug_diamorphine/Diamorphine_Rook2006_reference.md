@@ -4,11 +4,11 @@
 
 # diamorphine — `Diamorphine_Rook2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because the clearance of the morphine-glucuronides parameter is missing its value.
+> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 02:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the clearance of the morphine-glucuronides parameter is missing its value.
 
-<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="true" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmacokinetics of heroin and its major metabolites. Clinical pharmacokinetics 45(4):401–417 (2006).
@@ -39,7 +39,7 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
-| C5_dimension_Q57 | fail | dimensionless | % | ['Rook_2006:abstract'] |
+| C5_dimension_Q57 | fail | [time] | % (dimensionless) | ['Rook_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 73.6 | ['Rook_2006:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown', 'unknown', 'unknown'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 73.6 L/h | ['Rook_2006:abstract'] |
@@ -156,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

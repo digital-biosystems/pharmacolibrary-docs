@@ -4,11 +4,11 @@
 
 # fosfomycin — `Fosfomycin_Hppe2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance; vmax has no unit.
+> This record was reviewed on 2026-11-07 15:17 UTC (Needs review), but the paper was screened again on 2026-10-13 11:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Hppe2023_reference" status="needs_review" stale="false" population="critically ill patients during continuous venovenous hemodialysis" measured-compound="fosfomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Hppe2023_reference" status="needs_review" stale="true" population="critically ill patients during continuous venovenous hemodialysis" measured-compound="fosfomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al. Population pharmacokinetic modeling of multiple-dose intravenous fosfomycin in critically ill patients during continuous venovenous hemodialysis. Scientific reports 13(1):18132 (2023).
@@ -39,7 +39,7 @@ Hüppe T, Götz KM, Meiser A, de Faria Fernandes A, Maurer F, Groesdonk HV et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,11 +131,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Theta_{{{\text{V}}_{{{\text{K}}0{\text{A}}}} }}$$\end{document}ΘVK0A | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] | \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\Theta_{{{\text{V}}_{{{\text{K}}0{\text{A}}}} }}$$\end{document}ΘVK0A | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 18.2 L | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
 
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

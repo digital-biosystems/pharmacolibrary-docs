@@ -5,11 +5,11 @@
 
 # omeprazole — `Omeprazole_Andersson1990_10_mg_mean`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the intercompartmental clearance parameter has a dimension mismatch, and the absorption half-life was incorrectly mapped to time to maximum concentration.
+> This record was reviewed on 2026-11-07 14:24 UTC (Rejected), but the paper was screened again on 2026-11-04 06:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the intercompartmental clearance parameter has a dimension mismatch, and the absorption half-life was incorrectly mapped to time to maximum concentration.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Andersson1990_10_mg_mean" status="rejected" stale="false" population="healthy adults" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Andersson1990_10_mg_mean" status="rejected" stale="true" population="healthy adults" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Andersson T, Cederberg C, Regårdh CG, Skånberg I. Pharmacokinetics of various single intravenous and oral doses of omeprazole. European journal of clinical pharmacology 39(2):195–197 (1990).
@@ -47,7 +47,7 @@ Andersson T, Cederberg C, Regårdh CG, Skånberg I. Pharmacokinetics of various 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gao_2025:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Andersson_1990_table_1:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Andersson_1990_table_1:row4:col1'] |
-| C5_dimension_Q63 | fail | dimensionless | 1/kg | ['Andersson_1990_table_1:row3:col1'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Andersson_1990_table_1:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Gao_2025:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['McCann_2023:review'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Andersson_1990_table_1:row7:col1'] |
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

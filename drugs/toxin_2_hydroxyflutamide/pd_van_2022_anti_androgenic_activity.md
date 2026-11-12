@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;2-hydroxyflutamide&quot;,&quot;href&quot;:&quot;drugs/toxin_2_hydroxyflutamide/&quot;},{&quot;label&quot;:&quot;van_2022 \u00b7 PD anti-androgenic activity&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2Hydroxyflutamide_Mendoza2017_reference&quot;,&quot;label&quot;:&quot;Mendoza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Mendoza2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # anti-androgenic activity — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** 2_hydroxyflutamide (measured concentrations) drives anti-androgenic activity: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> 2-hydroxyflutamide concentrations act on the anti-androgenic activity in AR-CALUX cells, modeled with a four-parameter nonlinear regression of log(inhibitor) vs. response to quantify antagonism. The paper reports an IC50 of 0.05 µM and a hillslope of −1.354 for HF, without describing the specific molecular mechanism (e.g., inhibition of production or elimination) of the measured response.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2022`
 - **model family:** `emax`

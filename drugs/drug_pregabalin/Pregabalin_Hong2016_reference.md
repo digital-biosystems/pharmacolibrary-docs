@@ -5,11 +5,11 @@
 
 # pregabalin — `Pregabalin_Hong2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL has no unit.
+> This record was reviewed on 2026-11-07 15:19 UTC (Needs review), but the paper was screened again on 2026-10-07 07:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CL has no unit.
 
-<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Hong2016_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Hong2016_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hong T, Han S, Lee J, Jeon S, Yim DS. Comparison of oral absorption models for pregabalin: usefulness of transit compartment model. Drug design, development and therapy 10:3995–4003 (2016).
@@ -46,7 +46,7 @@ Hong T, Han S, Lee J, Jeon S, Yim DS. Comparison of oral absorption models for p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,6 +175,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['t5-dddt-10-3995:row5:col2', 't5-dddt-10-3995:row5:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['van_2018:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['t5-dddt-10-3995:row4:col2', 't5-dddt-10-3995:row4:col3'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['t5-dddt-10-3995:row9:col2', 't5-dddt-10-3995:row9:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 109 L | ['Bae_2016:review'] |
@@ -206,7 +207,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

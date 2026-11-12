@@ -5,11 +5,11 @@
 
 # medroxyprogesterone — `Medroxyprogesterone_Engel2026_cab_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Medroxyprogesterone acetate's elimination rate constant of 11 h−1 was rejected because its unit could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 08:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Medroxyprogesterone acetate's elimination rate constant of 11 h−1 was rejected because its unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_cab_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_cab_estimates" status="rejected" stale="true" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and Subcutaneous Pharmacokinetic Modeling to Support the Development of Long-Acting Multipurpose Prevention Technology for HIV and Pregnancy. Biomedicines 14(4) (2026).
@@ -43,7 +43,7 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -109,7 +109,7 @@ The record defines the elimination rate constant for the terminal phase as 11 h�
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['biomedicines-14-00873-t002:row5:col5', 'biomedicines-14-00873-t002:row5:col6'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h−1 | ['biomedicines-14-00873-t002:row4:col5', 'biomedicines-14-00873-t002:row4:col6'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h−1 (1 / [time]) | ['biomedicines-14-00873-t002:row4:col5', 'biomedicines-14-00873-t002:row4:col6'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -128,7 +128,7 @@ The record defines the elimination rate constant for the terminal phase as 11 h�
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

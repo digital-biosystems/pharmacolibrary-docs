@@ -4,11 +4,11 @@
 
 # bepridil — `Bepridil_NielsenKudsk1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record lacks volume and clearance parameters, failing to define a compartmental pharmacokinetic model for bepridil.
+> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 04:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance parameters, failing to define a compartmental pharmacokinetic model for bepridil.
 
-<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="true" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kinetics and dynamic effects in the isolated rabbit heart. Pharmacology & toxicology 63(2):122–128 (1988).
@@ -37,7 +37,7 @@ Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q71 | fail | dimensionless | micrograms g-1 | ['Nielsen-Kudsk_1988:abstract'] |
+| C5_dimension_Q71 | fail | [mass] / [length] ** 3 | micrograms g-1 (dimensionless) | ['Nielsen-Kudsk_1988:abstract'] |
 | C5_dimension_Q72 | pass | [time] |  | ['Nielsen-Kudsk_1988:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

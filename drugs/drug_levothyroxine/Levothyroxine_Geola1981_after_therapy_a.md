@@ -5,11 +5,11 @@
 
 # Levothyroxine — `Levothyroxine_Geola1981_after_therapy_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.
+> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 00:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The levothyroxine clearance parameter of 24.13 mL/min/kg failed the dimensional consistency check for its structural role.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="false" population="hypothyroid patient with Hashimoto&#39;s thyroiditis" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="true" population="hypothyroid patient with Hashimoto&#39;s thyroiditis" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone autoantibodies in a hypothyroid patient: effect on thyroxine metabolic clearance rate. The Journal of clinical endocrinology and metabolism 53(3):580–586 (1981).
@@ -39,7 +39,7 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,9 +128,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Latif_2015:review'] |
-| C5_dimension_Q51 | fail | [length] ** 3 / [time] | liters/day | ['Geola_1981_table_1:row12:col2'] |
+| C5_dimension_Q51 | fail | 1 / [time] | liters/day ([length] ** 3 / [time]) | ['Geola_1981_table_1:row12:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Inada_1975:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.13 | ['Latif_2015:review'] |
 | C8_topology | pass |  |  |  |
@@ -153,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

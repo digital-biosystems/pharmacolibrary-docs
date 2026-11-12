@@ -5,11 +5,11 @@
 
 # gatifloxacin — `Gatifloxacin_Ambrose2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 15:55 UTC (Needs review), but the paper was screened again on 2026-10-13 12:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Ambrose2007_reference" status="needs_review" stale="false" population="mice with B. anthracis infection" measured-compound="gatifloxacin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Ambrose2007_reference" status="extracted" stale="true" population="mice with B. anthracis infection" measured-compound="gatifloxacin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharmacokinetics-pharmacodynamics of gatifloxacin in a lethal murine Bacillus anthracis inhalation infection model. Antimicrobial agents and chemotherapy 51(12):4351–4355 (2007).
@@ -29,8 +29,6 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | V c /F | V1/F | 0.20 | L/kg |
@@ -42,7 +40,7 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -149,7 +147,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Ambrose_2007_table_1:row2:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Wang_2020:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ambrose_2007_table_1:row7:col2'] |
@@ -187,7 +185,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

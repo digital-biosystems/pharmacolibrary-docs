@@ -35,7 +35,7 @@ Zalcitabine is a nucleoside reverse transcriptase inhibitor that was used to tre
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Adams_1998_reference](drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Adams JM et al., Zalcitabine population pharmacokinetics…, Antimicrobial agents and ch… (1998) | [10.1128/AAC.42.2.409](https://doi.org/10.1128/AAC.42.2.409) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [Ibrahim_1991_reference](drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Ibrahim SS et al., Pharmacokinetics of 2',3'-dideoxycytidi…, Journal of pharmaceutical s… (1991) | [10.1002/jps.2600800110](https://doi.org/10.1002/jps.2600800110) |
-| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Kelley_1987_reference](drugs/drug_zalcitabine/Zalcitabine_Kelley1987_reference.md) | — | 1-compartment (no model) | 3 | Kelley JA et al., The disposition and metabolism of 2',3'…, Drug metabolism and disposi… (1987) | — |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Kelley_1987_reference](drugs/drug_zalcitabine/Zalcitabine_Kelley1987_reference.md) | — | 1-compartment (no model) | 3 | Kelley JA et al., The disposition and metabolism of 2',3'…, Drug metabolism and disposi… (1987) | — |
 
 ## ADME sites
 
@@ -69,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 270 matched, 140 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

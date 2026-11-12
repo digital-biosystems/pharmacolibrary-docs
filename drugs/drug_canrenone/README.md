@@ -43,6 +43,7 @@ Canrenone is an antimineralocorticoid (aldosterone antagonist) that has been inv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ho_1984_reference](drugs/drug_canrenone/Canrenone_Ho1984_reference.md) | — | parent + metabolite (no model) | 2 | Ho PC et al., Pharmacokinetics of canrenone and metab…, European journal of clinica… (1984) | [10.1007/BF00549592](https://doi.org/10.1007/BF00549592) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: CLelim[central] left at base-class defaults</sub> | [Lass_2024_reference](drugs/drug_canrenone/Canrenone_Lass2024_reference.md) | held back | 1-compartment general linear | 5 | Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024) | [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T6_deviations</sub> | [Suyagh_2012_final_pharmacokinetic_model](drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T6_deviations</sub> | [↳ median](drugs/drug_canrenone/Canrenone_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
@@ -56,7 +57,6 @@ Canrenone is an antimineralocorticoid (aldosterone antagonist) that has been inv
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ 6_years_female](drugs/drug_canrenone/Canrenone_Tatipalli2021_6_years_female.md) | — | parent + metabolite (no model) | 12 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ 6_years_male](drugs/drug_canrenone/Canrenone_Tatipalli2021_6_years_male.md) | — | parent + metabolite (no model) | 12 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ adults](drugs/drug_canrenone/Canrenone_Tatipalli2021_adults.md) | — | parent + metabolite (no model) | 12 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ho_1984_reference](drugs/drug_canrenone/Canrenone_Ho1984_reference.md) | — | parent + metabolite (no model) | 2 | Ho PC et al., Pharmacokinetics of canrenone and metab…, European journal of clinica… (1984) | [10.1007/BF00549592](https://doi.org/10.1007/BF00549592) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,13 +70,13 @@ Canrenone is an antimineralocorticoid (aldosterone antagonist) that has been inv
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:17 | 31:58 | 13/1/0 | 0/0/0 | 0/0/0 | 404,466/104,699 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 4/4 | 8/0 | 0 |
+| 2026-10-06 18:17 | 31:58 | 14/0/0 | 0/0/0 | 0/0/0 | 404,466/104,699 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 4/4 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 14  ·  extracted 0  ·  needs review 13  ·  rejected 1  ·  stale 0
+- **records:** 14  ·  extracted 0  ·  needs review 14  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

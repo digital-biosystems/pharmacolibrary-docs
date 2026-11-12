@@ -5,11 +5,11 @@
 
 # Levothyroxine — `Levothyroxine_MirallesGarca1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Levothyroxine record rejected because triiodothyronine (T3) is an unlinked metabolite and clearance uses a non-standard unit.
+> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 00:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Levothyroxine record rejected because triiodothyronine (T3) is an unlinked metabolite and clearance uses a non-standard unit.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_reference" status="rejected" stale="false" population="ewes with or without acute liver insufficiency" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_reference" status="rejected" stale="true" population="ewes with or without acute liver insufficiency" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. The kinetics of the thyroid hormones and the peripheral conversion rate of thyroxine to triiodothyronine in acute liver insufficiency under experimental conditions. Hormone and metabolic research = Hormon- und Stoffwechselforschung = Hormones et metabolisme 13(3):158–164 (1981).
@@ -49,7 +49,7 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 12 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q189 | fail | [mass] / [time] | µg/d/kg | ['Miralles-García_1981_table_2:row0:col16', 'Miralles-García_1981_table_2:row1:col16', 'Miralles-García_1981_table_2:row2:col16', 'Miralles-García_1981_table_2:row3:col16', 'Miralles-García_1981_table_2:row4:col16', 'Miralles-García_1981_table_2:row5:col16', 'Miralles-García_1981_table_2:row6:col16', 'Miralles-García_1981_table_2:row7:col16', 'Miralles-García_1981_table_2:row8:col16', 'Miralles-García_1981_table_2:row9:col16'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | µg/d/kg ([mass] / [time]) | ['Miralles-García_1981_table_2:row0:col16', 'Miralles-García_1981_table_2:row1:col16', 'Miralles-García_1981_table_2:row2:col16', 'Miralles-García_1981_table_2:row3:col16', 'Miralles-García_1981_table_2:row4:col16', 'Miralles-García_1981_table_2:row5:col16', 'Miralles-García_1981_table_2:row6:col16', 'Miralles-García_1981_table_2:row7:col16', 'Miralles-García_1981_table_2:row8:col16', 'Miralles-García_1981_table_2:row9:col16'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Miralles-García_1981_table_2:row0:col14', 'Miralles-García_1981_table_2:row1:col14', 'Miralles-García_1981_table_2:row2:col14', 'Miralles-García_1981_table_2:row3:col14', 'Miralles-García_1981_table_2:row4:col14', 'Miralles-García_1981_table_2:row5:col14', 'Miralles-García_1981_table_2:row6:col14', 'Miralles-García_1981_table_2:row7:col14', 'Miralles-García_1981_table_2:row8:col14', 'Miralles-García_1981_table_2:row9:col14'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Miralles-García_1981_table_2:row0:col6', 'Miralles-García_1981_table_2:row1:col6', 'Miralles-García_1981_table_2:row2:col6', 'Miralles-García_1981_table_2:row3:col6', 'Miralles-García_1981_table_2:row4:col6', 'Miralles-García_1981_table_2:row5:col6', 'Miralles-García_1981_table_2:row6:col6', 'Miralles-García_1981_table_2:row7:col6', 'Miralles-García_1981_table_2:row8:col6', 'Miralles-García_1981_table_2:row9:col6'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Miralles-García_1981_table_2:row0:col7', 'Miralles-García_1981_table_2:row1:col7', 'Miralles-García_1981_table_2:row2:col7', 'Miralles-García_1981_table_2:row3:col7', 'Miralles-García_1981_table_2:row4:col7', 'Miralles-García_1981_table_2:row5:col7', 'Miralles-García_1981_table_2:row6:col7', 'Miralles-García_1981_table_2:row7:col7', 'Miralles-García_1981_table_2:row8:col7', 'Miralles-García_1981_table_2:row9:col7'] |
@@ -180,7 +180,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_2:row0:col11', 'Miralles-García_1981_table_2:row1:col11', 'Miralles-García_1981_table_2:row2:col11', 'Miralles-García_1981_table_2:row3:col11', 'Miralles-García_1981_table_2:row4:col11', 'Miralles-García_1981_table_2:row5:col11', 'Miralles-García_1981_table_2:row6:col11', 'Miralles-García_1981_table_2:row7:col11', 'Miralles-García_1981_table_2:row8:col11', 'Miralles-García_1981_table_2:row9:col11'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_2:row0:col12', 'Miralles-García_1981_table_2:row1:col12', 'Miralles-García_1981_table_2:row2:col12', 'Miralles-García_1981_table_2:row3:col12', 'Miralles-García_1981_table_2:row4:col12', 'Miralles-García_1981_table_2:row5:col12', 'Miralles-García_1981_table_2:row6:col12', 'Miralles-García_1981_table_2:row7:col12', 'Miralles-García_1981_table_2:row8:col12', 'Miralles-García_1981_table_2:row9:col12'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_2:row0:col13', 'Miralles-García_1981_table_2:row1:col13', 'Miralles-García_1981_table_2:row2:col13', 'Miralles-García_1981_table_2:row3:col13', 'Miralles-García_1981_table_2:row4:col13', 'Miralles-García_1981_table_2:row5:col13', 'Miralles-García_1981_table_2:row6:col13', 'Miralles-García_1981_table_2:row7:col13', 'Miralles-García_1981_table_2:row8:col13', 'Miralles-García_1981_table_2:row9:col13'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h-1 | ['Miralles-García_1981_table_2:row0:col2', 'Miralles-García_1981_table_2:row1:col2', 'Miralles-García_1981_table_2:row2:col2', 'Miralles-García_1981_table_2:row3:col2', 'Miralles-García_1981_table_2:row4:col2', 'Miralles-García_1981_table_2:row5:col2', 'Miralles-García_1981_table_2:row6:col2', 'Miralles-García_1981_table_2:row7:col2', 'Miralles-García_1981_table_2:row8:col2', 'Miralles-García_1981_table_2:row9:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h-1 (1 / [time]) | ['Miralles-García_1981_table_2:row0:col2', 'Miralles-García_1981_table_2:row1:col2', 'Miralles-García_1981_table_2:row2:col2', 'Miralles-García_1981_table_2:row3:col2', 'Miralles-García_1981_table_2:row4:col2', 'Miralles-García_1981_table_2:row5:col2', 'Miralles-García_1981_table_2:row6:col2', 'Miralles-García_1981_table_2:row7:col2', 'Miralles-García_1981_table_2:row8:col2', 'Miralles-García_1981_table_2:row9:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.047 | ['Miralles-García_1981_table_2:row0:col14', 'Miralles-García_1981_table_2:row1:col14', 'Miralles-García_1981_table_2:row2:col14', 'Miralles-García_1981_table_2:row3:col14', 'Miralles-García_1981_table_2:row4:col14', 'Miralles-García_1981_table_2:row5:col14', 'Miralles-García_1981_table_2:row6:col14', 'Miralles-García_1981_table_2:row7:col14', 'Miralles-García_1981_table_2:row8:col14', 'Miralles-García_1981_table_2:row9:col14'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.137 L/h | ['Miralles-García_1981_table_2:row0:col14', 'Miralles-García_1981_table_2:row1:col14', 'Miralles-García_1981_table_2:row2:col14', 'Miralles-García_1981_table_2:row3:col14', 'Miralles-García_1981_table_2:row4:col14', 'Miralles-García_1981_table_2:row5:col14', 'Miralles-García_1981_table_2:row6:col14', 'Miralles-García_1981_table_2:row7:col14', 'Miralles-García_1981_table_2:row8:col14', 'Miralles-García_1981_table_2:row9:col14'] |
@@ -204,7 +204,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

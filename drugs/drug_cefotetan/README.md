@@ -26,7 +26,7 @@ Cefotetan is a cephalosporin antibiotic used to treat bacterial infections such 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17 — no SI value to build from</sub> | [Sugiyama_1986_reference](drugs/drug_cefotetan/Cefotetan_Sugiyama1986_reference.md) | — | 1-compartment (no model) | 5 | Sugiyama H et al., [Transfer of cefotetan into exudates fr…, The Japanese journal of ant… (1986) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17 — no SI value to build from</sub> | [Sugiyama_1986_reference](drugs/drug_cefotetan/Cefotetan_Sugiyama1986_reference.md) | — | 1-compartment (no model) | 5 | Sugiyama H et al., [Transfer of cefotetan into exudates fr…, The Japanese journal of ant… (1986) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ohkawa_1983_reference](drugs/drug_cefotetan/Cefotetan_Ohkawa1983_reference.md) | — | 1-compartment (no model) | 0 | Ohkawa M et al., Pharmacokinetics of cefotetan in normal…, Antimicrobial agents and ch… (1983) | [10.1128/AAC.23.1.31](https://doi.org/10.1128/AAC.23.1.31) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Smith_1986_reference](drugs/drug_cefotetan/Cefotetan_Smith1986_reference.md) | — | 1-compartment (no model) | 0 | Smith BR et al., Cefotetan pharmacokinetics in volunteer…, Antimicrobial agents and ch… (1986) | [10.1128/AAC.29.5.887](https://doi.org/10.1128/AAC.29.5.887) |
 
@@ -59,7 +59,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

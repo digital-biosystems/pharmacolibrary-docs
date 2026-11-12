@@ -5,11 +5,11 @@
 
 # methotrexate — `Methotrexate_elYazigi1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Methotrexate absorption rate constant's per-day unit could not be converted to a standard SI rate, causing rejection.
+> This record was reviewed on 2026-11-07 14:13 UTC (Rejected), but the paper was screened again on 2026-11-04 02:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Methotrexate absorption rate constant's per-day unit could not be converted to a standard SI rate, causing rejection.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_reference" status="rejected" stale="false" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_reference" status="rejected" stale="true" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and its 7-OH metabolite in cancer patients treated with different high-methotrexate dosage regimens. International journal of cancer 38(6):795–800 (1986).
@@ -42,7 +42,7 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,11 +112,11 @@ The absorption rate constant is 0.268 per day, a unit that could not be converte
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |  |  |
 | C1_half_life_beta | fail | 3.08 | 28.18 | 9.148 | 0.25 | reported t½β |
-| C5_dimension_Q47 | fail | dimensionless | 0.126 |  |  | ['tab_0:row13:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | 0.126 (dimensionless) |  |  | ['tab_0:row13:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Pan_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Hernández-Gago_2026:review'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['Tan_2024:review'] |
-| C5_dimension_Q88 | fail | [length] * [time] | yM.hr |  |  | ['tab_0:row3:col2'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | yM.hr ([length] * [time]) |  |  | ['tab_0:row3:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l/hr.kg |  |  | ['el-Yazigi_1986:discussion_prose'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.123 |  |  | ['el-Yazigi_1986:discussion_prose'] |
 | C8_topology | pass |  |  |  |  |  |
@@ -138,7 +138,7 @@ The absorption rate constant is 0.268 per day, a unit that could not be converte
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

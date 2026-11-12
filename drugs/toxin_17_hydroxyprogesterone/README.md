@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;17-Hydroxyprogesterone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_17Hydroxyprogesterone_Caritis2011_reference&quot;,&quot;label&quot;:&quot;Caritis_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2011_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # 17-Hydroxyprogesterone
 
@@ -28,11 +29,17 @@
 | 17-hydroxyprogesterone caproate | metabolite | 428.613 | C27H40O4 | PubChem | [169870](https://pubchem.ncbi.nlm.nih.gov/compound/169870) | Caritis_2011 |
 | 17_hydroxyprogesterone | metabolite | 330.468 | C21H30O3 | PubChem | [6238](https://pubchem.ncbi.nlm.nih.gov/compound/6238) | Caritis_2011 |
 
+## Start here
+
+> **Caritis_2011_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> women with multifetal gestation, n = 71. [Run it in the simulator](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2011_reference.md?tab=Simulation) · [record](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2011_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Caritis_2011_reference](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2011_reference.md) | — | 1-compartment (no model) | 3 | Caritis SN et al., Pharmacokinetics of 17-hydroxyprogester…, American journal of obstetr… (2011) | [10.1016/j.ajog.2011.03.028](https://doi.org/10.1016/j.ajog.2011.03.028) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Caritis_2011_reference](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2011_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Caritis SN et al., Pharmacokinetics of 17-hydroxyprogester…, American journal of obstetr… (2011) | [10.1016/j.ajog.2011.03.028](https://doi.org/10.1016/j.ajog.2011.03.028) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Caritis_2025_reference](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Caritis2025_reference.md) | — | 1-compartment (no model) | 0 | Caritis SN et al., The dosing regimen for 17-hydroxyproges…, American journal of obstetr… (2025) | [10.1016/j.ajog.2024.04.020](https://doi.org/10.1016/j.ajog.2024.04.020) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Melin_2020_reference](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Melin2020_reference.md) | — | general linear (no model) | 0 | Melin J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, The Journal of clinical end… (2020) | [10.1210/clinem/dgaa071](https://doi.org/10.1210/clinem/dgaa071) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Stachanow_2023_reference](drugs/toxin_17_hydroxyprogesterone/D_17Hydroxyprogesterone_Stachanow2023_reference.md) | — | general linear (no model) | 0 | Stachanow V et al., Model-Informed Target Morning 17α-Hydro…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16030464](https://doi.org/10.3390/ph16030464) |

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts indicate that sodium bromide concentrations are measured as a response using HPLC, but the paper does not state a pharmacodynamic model, mechanism, or any potency or rate parameters (such as IC50, kout, or ke0) linking drug concentrations to this response.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Roberts_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

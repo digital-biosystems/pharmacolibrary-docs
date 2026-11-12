@@ -5,11 +5,11 @@
 
 # donepezil — `Donepezil_Kaikousidis2023_total_fit_per_os_and_in_raw_data`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Rejected due to an implausible 562.0 L peripheral volume and an unconvered unit preventing the 0.015 L brain volume from being standardized.
+> This record was reviewed on 2026-11-07 14:34 UTC (Rejected), but the paper was screened again on 2026-10-07 01:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected due to an implausible 562.0 L peripheral volume and an unconvered unit preventing the 0.015 L brain volume from being standardized.
 
-<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_total_fit_per_os_and_in_raw_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_total_fit_per_os_and_in_raw_data" status="rejected" stale="true" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain and Blood Pharmacokinetic Modeling after Nasal Film and Oral Solution Administration in Mice. Pharmaceutics 15(5) (2023).
@@ -49,7 +49,7 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -230,6 +230,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['pharmaceutics-15-01409-t004:row13:col1', 'pharmaceutics-15-01409-t004:row13:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Jung_2022:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['pharmaceutics-15-01409-t004:row9:col1', 'pharmaceutics-15-01409-t004:row9:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | min | ['pharmaceutics-15-01409-t004:row11:col1', 'pharmaceutics-15-01409-t004:row11:col2'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.015 L | ['pharmaceutics-15-01409-t004:row8:col1', 'pharmaceutics-15-01409-t004:row8:col2'] |
 | C9_phys_window_Q63 | fail | volume within physiological range | 0.024 L | ['pharmaceutics-15-01409-t004:row13:col1', 'pharmaceutics-15-01409-t004:row13:col2'] |
@@ -251,7 +252,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

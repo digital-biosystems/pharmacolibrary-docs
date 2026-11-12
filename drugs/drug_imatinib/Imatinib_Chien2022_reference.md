@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;imatinib&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/&quot;},{&quot;label&quot;:&quot;Chien_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imatinib_Chien2022_reference&quot;,&quot;label&quot;:&quot;Chien_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Chien2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Imatinib_Garrett2023_reference&quot;,&quot;label&quot;:&quot;Garrett_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Garrett2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imatinib_Khosravan2016_reference&quot;,&quot;label&quot;:&quot;Khosravan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Khosravan2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Imatinib_Chien2022_reference&quot;,&quot;label&quot;:&quot;Chien_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Chien2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Imatinib_Garrett2023_reference&quot;,&quot;label&quot;:&quot;Garrett_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Garrett2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Imatinib_Khosravan2016_reference&quot;,&quot;label&quot;:&quot;Khosravan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_imatinib/Imatinib_Khosravan2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # imatinib — `Imatinib_Chien2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00353, model 0.0018).
+> This record was reviewed on 2026-11-07 15:55 UTC (Needs review), but the paper was screened again on 2026-10-07 01:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00353, model 0.0018).
 
-<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Chien2022_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="imatinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Chien2022_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="imatinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Chien YH, Würthwein G, Zubiaur P, Posocco B, Pena MÁ, Borobia AM et al. Population pharmacokinetic modelling of imatinib in healthy subjects receiving a single dose of 400 mg. Cancer chemotherapy and pharmacology 90(2):125–136 (2022).
@@ -45,7 +45,7 @@ Chien YH, Würthwein G, Zubiaur P, Posocco B, Pena MÁ, Borobia AM et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.947). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.947). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -153,6 +153,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Tab2:row5:col2', 'Tab2:row5:col3'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  |  |  | ['Tab2:row2:col2', 'Tab2:row2:col3'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['Tab2:row4:col2', 'Tab2:row4:col3'] |
+| C5_unit_missing_Q81 | fail | [time] | h |  |  | ['Tab2:row6:col2', 'Tab2:row6:col3'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 13.2 L/h |  |  | ['Tab2:row1:col2', 'Tab2:row1:col3'] |

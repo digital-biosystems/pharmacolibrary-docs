@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dacomitinib&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/&quot;},{&quot;label&quot;:&quot;Ruiz-Garcia_2020 \u00b7 parameter_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_estimate_rse&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_parameter_estimate&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_estimate_rse&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_parameter_estimate&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dacomitinib — `Dacomitinib_RuizGarcia2020_parameter_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The dacomitinib record was held back because a parameter unit could not be converted to standard units and the reported bioavailability value is a covariate effect rather than a proportion.
+> This record was reviewed on 2026-11-07 15:39 UTC (Needs review), but the paper was screened again on 2026-10-06 23:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The dacomitinib record was held back because a parameter unit could not be converted to standard units and the reported bioavailability value is a covariate effect rather than a proportion.
 
-<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_parameter_estimate" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_parameter_estimate" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ruiz-Garcia A, Tan W, Li J, Haughey M, Masters J, Hibma J et al. Pharmacokinetic Models to Characterize the Absorption Phase and the Influence of a Proton Pump Inhibitor on the Overall Exposure of Dacomitinib. Pharmaceutics 12(4) (2020).
@@ -45,7 +45,7 @@ Ruiz-Garcia A, Tan W, Li J, Haughey M, Masters J, Hibma J et al. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,6 +134,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-12-00330-t004:row6:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['pharmaceutics-12-00330-t004:row2:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['pharmaceutics-12-00330-t004:row4:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['pharmaceutics-12-00330-t004:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 29.89 | ['pharmaceutics-12-00330-t004:row1:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 29.9 L/h | ['pharmaceutics-12-00330-t004:row1:col1'] |

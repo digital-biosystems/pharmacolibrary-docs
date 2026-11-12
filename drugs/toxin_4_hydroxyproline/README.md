@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;4-Hydroxyproline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4Hydroxyproline_Lachmann1990_reference&quot;,&quot;label&quot;:&quot;Lachmann_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxyproline/D_4Hydroxyproline_Lachmann1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # 4-Hydroxyproline
 
@@ -26,11 +27,17 @@
 | 14C-oxaceprol (N-acetyl-4-hydroxyproline) | metabolite | 173.168 | C7H11NO4 | PubChem | [65784](https://pubchem.ncbi.nlm.nih.gov/compound/65784) | Lachmann_1990 |
 | 4_hydroxyproline | metabolite | 131.131 | C5H9NO3 | PubChem | [5810](https://pubchem.ncbi.nlm.nih.gov/compound/5810) | Lachmann_1990 |
 
+## Start here
+
+> **Lachmann_1990_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> male Beagle dogs, n = 6. [Run it in the simulator](drugs/toxin_4_hydroxyproline/D_4Hydroxyproline_Lachmann1990_reference.md?tab=Simulation) · [record](drugs/toxin_4_hydroxyproline/D_4Hydroxyproline_Lachmann1990_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lachmann_1990_reference](drugs/toxin_4_hydroxyproline/D_4Hydroxyproline_Lachmann1990_reference.md) | — | retention function (no model) | 1 | Lachmann G et al., Pharmacokinetics and metabolism of 14C-…, Arzneimittel-Forschung (1990) | — |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lachmann_1990_reference](drugs/toxin_4_hydroxyproline/D_4Hydroxyproline_Lachmann1990_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Lachmann G et al., Pharmacokinetics and metabolism of 14C-…, Arzneimittel-Forschung (1990) | — |
 
 ## ADME sites
 

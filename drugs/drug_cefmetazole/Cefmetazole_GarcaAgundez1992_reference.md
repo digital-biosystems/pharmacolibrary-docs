@@ -5,11 +5,11 @@
 
 # cefmetazole — `Cefmetazole_GarcaAgundez1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:52 UTC (Needs review), but the paper was screened again on 2026-10-07 11:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="cefmetazole" model-id="Cefmetazole_GarcaAgundez1992_reference" status="needs_review" stale="false" population="anaesthetized rats" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefmetazole" model-id="Cefmetazole_GarcaAgundez1992_reference" status="needs_review" stale="true" population="anaesthetized rats" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 García-Agundez MJ, Fernández-Lastra C, Jiménez R, González J, Mariño EL. Pharmacokinetic parameters from data relating to the plasma and biliary excretion kinetics of cefmetazole in rats. European journal of drug metabolism and pharmacokinetics 17(3):167–173 (1992).
@@ -39,7 +39,7 @@ García-Agundez MJ, Fernández-Lastra C, Jiménez R, González J, Mariño EL. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,6 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hamada_2022:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['García-Agundez_1992:abstract'] |
@@ -151,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

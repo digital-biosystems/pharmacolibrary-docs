@@ -5,11 +5,11 @@
 
 # olaparib — `Olaparib_DeJongh2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.
+> This record was reviewed on 2026-11-07 16:10 UTC (Rejected), but the paper was screened again on 2026-10-06 21:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_DeJongh2025_reference" status="rejected" stale="false" population="SCID and Nude mice" measured-compound="olaparib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_DeJongh2025_reference" status="rejected" stale="true" population="SCID and Nude mice" measured-compound="olaparib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 DeJongh J, Cadogan E, Davies M, Ramos-Montoya A, Smith A, van Steeg T et al. Defining preclinical efficacy with the DNAPK inhibitor AZD7648 in combination with olaparib: a minimal systems pharmacokinetic-pharmacodynamic model. Journal of pharmacokinetics and pharmacodynamics 52(2):17 (2025).
@@ -48,7 +48,7 @@ DeJongh J, Cadogan E, Davies M, Ramos-Montoya A, Smith A, van Steeg T et al. Def
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5', 'Tab2:row5:col6', 'Tab2:row5:col7'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6', 'Tab2:row7:col7'] |
 | C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['DeJongh_2025_table_1:row4:col3', 'DeJongh_2025_table_1:row4:col4', 'DeJongh_2025_table_1:row4:col5', 'DeJongh_2025_table_1:row4:col6', 'DeJongh_2025_table_1:row4:col7'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['DeJongh_2025_table_1:row3:col3', 'DeJongh_2025_table_1:row3:col4', 'DeJongh_2025_table_1:row3:col5', 'DeJongh_2025_table_1:row3:col6', 'DeJongh_2025_table_1:row3:col7'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['DeJongh_2025_table_1:row3:col3', 'DeJongh_2025_table_1:row3:col4', 'DeJongh_2025_table_1:row3:col5', 'DeJongh_2025_table_1:row3:col6', 'DeJongh_2025_table_1:row3:col7'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.251 | ['Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'DeJongh_2025_table_1:row2:col3', 'DeJongh_2025_table_1:row2:col4', 'DeJongh_2025_table_1:row2:col5', 'DeJongh_2025_table_1:row2:col6', 'DeJongh_2025_table_1:row2:col7'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['CmD50'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.251 L/h | ['Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'DeJongh_2025_table_1:row2:col3', 'DeJongh_2025_table_1:row2:col4', 'DeJongh_2025_table_1:row2:col5', 'DeJongh_2025_table_1:row2:col6', 'DeJongh_2025_table_1:row2:col7'] |
@@ -193,7 +193,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

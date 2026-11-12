@@ -5,11 +5,11 @@
 
 # daclatasvir — `Daclatasvir_AlNahari2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The zero-order input rate (R1, 1.5 /h) for daclatasvir has mismatched dimensions, and the record relies solely on abstract data.
+> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 15:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The zero-order input rate (R1, 1.5 /h) for daclatasvir has mismatched dimensions, and the record relies solely on abstract data.
 
-<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="false" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="true" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacokinetics of daclatasvir in Egyptian adolescents with genotype-4 HCV infection. Antiviral therapy 25(2):101–110 (2020).
@@ -40,7 +40,7 @@ Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,7 +134,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
-| C5_dimension_Q307 | fail | 1 / [time] | /h | ['Al-Nahari_2020:abstract'] |
+| C5_dimension_Q307 | fail | [mass] / [time] | /h (1 / [time]) | ['Al-Nahari_2020:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Al-Nahari_2020:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Al-Nahari_2020:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
@@ -160,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -26,7 +26,7 @@ Bepridil is a calcium channel blocker that was used to treat angina pectoris and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Nielsen-Kudsk_1988_reference](drugs/drug_bepridil/Bepridil_NielsenKudsk1988_reference.md) | — | 1-compartment (no model) | 2 | Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988) | [10.1111/j.1600-0773.1988.tb00923.x](https://doi.org/10.1111/j.1600-0773.1988.tb00923.x) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1988_reference](drugs/drug_bepridil/Bepridil_NielsenKudsk1988_reference.md) | — | 1-compartment (no model) | 2 | Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988) | [10.1111/j.1600-0773.1988.tb00923.x](https://doi.org/10.1111/j.1600-0773.1988.tb00923.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Taguchi_2006_reference](drugs/drug_bepridil/Bepridil_Taguchi2006_reference.md) | — | 1-compartment (no model) | 1 | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2006) | [10.1248/bpb.29.517](https://doi.org/10.1248/bpb.29.517) |
 
 ## Pharmacogenomics (PGx)
@@ -80,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 122 matched, 65 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

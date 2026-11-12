@@ -4,11 +4,11 @@
 
 # mercaptopurine — `Mercaptopurine_Jost2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Rejected because the record lacks distribution volume and clearance, and 6-thioguanine nucleotides are unreachable.
+> This record was reviewed on 2026-11-07 16:09 UTC (Rejected), but the paper was screened again on 2026-10-07 16:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the record lacks distribution volume and clearance, and 6-thioguanine nucleotides are unreachable.
 
-<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="true" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulation of Maintenance Therapy of Childhood Acute Lymphoblastic Leukemia. Frontiers in physiology 11:217 (2020).
@@ -41,7 +41,7 @@ Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_unit_missing_Q317 | fail | [mass] / [length] ** 3 |  | ['tab_4:row11:col1'] |
 | C5_unit_missing_Q338 | fail | 1 / [time] |  | ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row8:col1', 'tab_4:row8:col2'] |
 | C5_unit_missing_Q89 | fail | [time] |  | ['tab_4:row5:col1', 'tab_4:row5:col2', 'tab_4:row10:col1', 'tab_4:row10:col2'] |
@@ -151,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

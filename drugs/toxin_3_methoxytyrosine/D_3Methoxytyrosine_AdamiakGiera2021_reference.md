@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;3-Methoxytyrosine&quot;,&quot;href&quot;:&quot;drugs/toxin_3_methoxytyrosine/&quot;},{&quot;label&quot;:&quot;Adamiak-Giera_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_3Methoxytyrosine_AdamiakGiera2021_reference&quot;,&quot;label&quot;:&quot;Adamiak-Giera_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 3-Methoxytyrosine — `D_3Methoxytyrosine_AdamiakGiera2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model structure was incorrectly set as a single-compartment oral absorption model rather than a parent-metabolite system, so the measured 3-methoxytyrosine concentration was output from the parent central compartment.
 
-<div class="pk-model-meta" hidden drug="3-Methoxytyrosine" model-id="D_3Methoxytyrosine_AdamiakGiera2021_reference" status="extracted" stale="false" population="idiopathic Parkinson&#39;s disease patients" measured-compound="3-Methoxytyrosine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="3-Methoxytyrosine" model-id="D_3Methoxytyrosine_AdamiakGiera2021_reference" status="rejected" stale="false" population="idiopathic Parkinson&#39;s disease patients" measured-compound="3-Methoxytyrosine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Adamiak-Giera U, Jawień W, Pierzchlińska A, Białecka M, Kobierski JD, Janus T et al. Pharmacokinetics of Levodopa and 3-O-Methyldopa in Parkinsonian Patients Treated with Levodopa and Ropinirole and in Patients with Motor Complications. Pharmaceutics 13(9):1395 (2021).
@@ -24,12 +25,16 @@ Adamiak-Giera U, Jawień W, Pierzchlińska A, Białecka M, Kobierski JD, Janus T
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 14 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference/D_3Methoxytyrosine_AdamiakGiera2021_reference.svg" alt="D_3Methoxytyrosine_AdamiakGiera2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | lag time (min) | tlag | 9.97 | min |
@@ -49,7 +54,7 @@ Adamiak-Giera U, Jawień W, Pierzchlińska A, Białecka M, Kobierski JD, Janus T
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +62,13 @@ Adamiak-Giera U, Jawień W, Pierzchlińska A, Białecka M, Kobierski JD, Janus T
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model structure was incorrectly set as a single-compartment oral absorption model rather than a parent-metabolite system, so the measured 3-methoxytyrosine concentration was output from the parent central compartment.**
+
+The topology described a parent-metabolite relationship, but the implemented model used a one-compartment enteral structure that lacks a metabolite compartment. As a result, the output variable corresponded to the parent central concentration instead of the metabolite analyte. Furthermore, the absorption lag time was not explicitly set to the extracted value of 9.97 minutes, resulting in an unspecified default. Extracted — 3 methoxytyrosine: tlag 9.97 min, Vm/F 32.4 L, CLm/F 0.816 L/min, AUC∞ 150 mg × min/L, tmax 35.5 min, Cmax 2.27 mg/L, MRT 41.6 min, kabs 0.18 min-1, … (+6).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 
@@ -85,6 +96,10 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'MET3-OMD (min)' — extend the ontology if this is a real PK parameter (source ['Adamiak-Giera_2021_table_5:row12:col1', 'Adamiak-Giera_2021_table_5:row12:col2'])
 - metabolite 3-methoxytyrosine: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
@@ -95,6 +110,7 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - companion parameter table 4 transcribed (3 record(s))
@@ -127,6 +143,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=3-Methoxytyrosine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | k12 (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -137,23 +166,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.2 /h, F 1). Dose in the paper: 100 mg.
+
+<dbs-fmusim paramsurl="drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference/D_3Methoxytyrosine_AdamiakGiera2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_3_methoxytyrosine/D_3Methoxytyrosine_AdamiakGiera2021_reference/D_3Methoxytyrosine_AdamiakGiera2021_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `D_3Methoxytyrosine_AdamiakGiera2021_reference_params.json` · controls `D_3Methoxytyrosine_AdamiakGiera2021_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

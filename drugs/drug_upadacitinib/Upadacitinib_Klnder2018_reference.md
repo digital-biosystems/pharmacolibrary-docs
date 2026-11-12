@@ -4,11 +4,11 @@
 
 # upadacitinib — `Upadacitinib_Klnder2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL_ratio has no unit.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 01:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2018_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2018_reference" status="extracted" stale="true" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Klünder B, Mohamed MF, Othman AA. Population Pharmacokinetics of Upadacitinib in Healthy Subjects and Subjects with Rheumatoid Arthritis: Analyses of Phase I and II Clinical Trials. Clinical pharmacokinetics 57(8):977–988 (2018).
@@ -28,8 +28,6 @@ Klünder B, Mohamed MF, Othman AA. Population Pharmacokinetics of Upadacitinib i
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) | CL/F | 39.7 | L/h |
@@ -44,7 +42,7 @@ Klünder B, Mohamed MF, Othman AA. Population Pharmacokinetics of Upadacitinib i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,7 +144,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row7:col1', 'Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row6:col1', 'Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['Tab3:row15:col1', 'Tab3:row15:col2', 'Tab3:row15:col3', 'Tab3:row15:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 39.7 L/h | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4'] |
@@ -179,7 +176,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

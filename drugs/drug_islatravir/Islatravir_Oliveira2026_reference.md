@@ -4,11 +4,11 @@
 
 # Islatravir — `Islatravir_Oliveira2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Isaltavir's macro-rate constant Alpha (0.6) was rejected due to a dimension mismatch in its structural parameter.
+> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-22 10:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Isaltavir's macro-rate constant Alpha (0.6) was rejected due to a dimension mismatch in its structural parameter.
 
-<div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Oliveira2026_reference" status="rejected" stale="false" population="NZW rabbits" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Oliveira2026_reference" status="rejected" stale="true" population="NZW rabbits" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharmacokinetic Modeling to Develop a Long-Acting Subcutaneous HIV Treatment Platform for Young Children. Pharmaceutics 18(5) (2026).
@@ -41,7 +41,7 @@ Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -104,7 +104,7 @@ The record lists the macro-rate constant Alpha as 0.6 1/h, representing the fast
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Oliveira_2026_table_p9_2:row3:col2', 'Oliveira_2026_table_p9_2:row7:col2', 'Oliveira_2026_table_p9_2:row11:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kinsale_2024:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | 1/h | ['Oliveira_2026_table_p9_2:row1:col2', 'Oliveira_2026_table_p9_2:row5:col2', 'Oliveira_2026_table_p9_2:row9:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | 1/h (1 / [time]) | ['Oliveira_2026_table_p9_2:row1:col2', 'Oliveira_2026_table_p9_2:row5:col2', 'Oliveira_2026_table_p9_2:row9:col2'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -123,7 +123,7 @@ The record lists the macro-rate constant Alpha as 0.6 1/h, representing the fast
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

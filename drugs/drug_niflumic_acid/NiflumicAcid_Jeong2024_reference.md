@@ -4,11 +4,11 @@
 
 # niflumic acid — `NiflumicAcid_Jeong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for niflumic acid was rejected because the kabs parameter has a clearance unit (L/h) and the metabolite link lacks a rate constant.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 01:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for niflumic acid was rejected because the kabs parameter has a clearance unit (L/h) and the metabolite link lacks a rate constant.
 
-<div class="pk-model-meta" hidden drug="niflumic acid" model-id="NiflumicAcid_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morningumate" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="niflumic acid" model-id="NiflumicAcid_Jeong2024_reference" status="rejected" stale="true" population="healthy Korean men" measured-compound="morningumate" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate in healthy Korean men: extending pharmacometrics analysis to niflumic acid, its major active metabolite. Naunyn-Schmiedeberg's archives of pharmacology 397(2):843–856 (2024).
@@ -41,7 +41,7 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['tab_0:row2:col1', 'tab_0:row2:col2', 'tab_0:row2:col3'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['tab_0:row8:col1', 'tab_0:row8:col2', 'tab_0:row8:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['tab_0:row8:col1', 'tab_0:row8:col2', 'tab_0:row8:col3'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

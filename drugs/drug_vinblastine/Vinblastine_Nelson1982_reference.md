@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Nelson1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1982_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1982_reference" status="extracted" stale="true" population="patients with cancer" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesine, vincristine, and vinblastine in human patients with cancer. Medical and pediatric oncology 10(2):115–127 (1982).
@@ -29,8 +29,6 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | k₁₂ (hr⁻¹) | k12 | 4.42 | hr⁻¹ |
@@ -45,7 +43,7 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Nelson_1982_table_2:row0:col1', 'Nelson_1982_table_2:row1:col1', 'Nelson_1982_table_2:row2:col1', 'Nelson_1982_table_2:row3:col1', 'Nelson_1982_table_2:row4:col1', 'Nelson_1982_table_2:row5:col1', 'Nelson_1982_table_2:row6:col1', 'Nelson_1982_table_2:row7:col1', 'Nelson_1982_table_2:row8:col1', 'Nelson_1982_table_2:row9:col1', 'Nelson_1982_table_2:row10:col1', 'Nelson_1982_table_3:row0:col1', 'Nelson_1982_table_3:row1:col1', 'Nelson_1982_table_3:row2:col1', 'Nelson_1982_table_3:row3:col1', 'Nelson_1982_table_3:row4:col1', 'Nelson_1982_table_3:row5:col1'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Nelson_1982_table_2:row0:col2', 'Nelson_1982_table_2:row1:col2', 'Nelson_1982_table_2:row2:col2', 'Nelson_1982_table_2:row3:col2', 'Nelson_1982_table_2:row4:col2', 'Nelson_1982_table_2:row5:col2', 'Nelson_1982_table_2:row6:col2', 'Nelson_1982_table_2:row7:col2', 'Nelson_1982_table_2:row8:col2', 'Nelson_1982_table_2:row9:col2', 'Nelson_1982_table_2:row10:col2', 'Nelson_1982_table_3:row0:col2', 'Nelson_1982_table_3:row1:col2', 'Nelson_1982_table_3:row2:col2', 'Nelson_1982_table_3:row3:col2', 'Nelson_1982_table_3:row4:col2', 'Nelson_1982_table_3:row5:col2'] |
 | C5_dimension_Q303 | pass | 1 / [time] |  | ['Nelson_1982_table_2:row0:col3', 'Nelson_1982_table_2:row1:col3', 'Nelson_1982_table_2:row2:col3', 'Nelson_1982_table_2:row3:col3', 'Nelson_1982_table_2:row4:col3', 'Nelson_1982_table_2:row5:col3', 'Nelson_1982_table_2:row6:col3', 'Nelson_1982_table_2:row7:col3', 'Nelson_1982_table_2:row8:col3', 'Nelson_1982_table_2:row9:col3', 'Nelson_1982_table_2:row10:col3', 'Nelson_1982_table_3:row0:col3', 'Nelson_1982_table_3:row1:col3', 'Nelson_1982_table_3:row2:col3', 'Nelson_1982_table_3:row3:col3', 'Nelson_1982_table_3:row4:col3', 'Nelson_1982_table_3:row5:col3'] |
@@ -178,7 +176,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # romiplostim — `Romiplostim_Fan2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The elimination rate constant for romiplostim has a dimension mismatch, causing the record to be rejected.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-05 19:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for romiplostim has a dimension mismatch, causing the record to be rejected.
 
-<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="false" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="true" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin and Romiplostim to Treat Chemotherapy-Induced Anemia and Thrombocytopenia via Pharmacodynamic Interaction on Hematopoietic Stem and Progenitor Cells. ACS pharmacology & translational science 6(12):1884–1897 (2023).
@@ -39,7 +39,7 @@ Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | [luminosity] / [length] ** 2 | units | ['tbl1:row8:col2', 'tbl1:row8:col3'] |
+| C5_dimension_Q47 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['tbl1:row8:col2', 'tbl1:row8:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Fan_2023_2:review'] |
 | C8_topology | pass |  |  |  |
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

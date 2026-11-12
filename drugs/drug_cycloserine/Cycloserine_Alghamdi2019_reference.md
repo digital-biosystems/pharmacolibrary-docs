@@ -5,11 +5,11 @@
 
 # cycloserine — `Cycloserine_Alghamdi2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.
+> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 12:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.
 
-<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="false" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="true" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Alghamdi WA, Alsultan A, Al-Shaer MH, An G, Ahmed S, Alkabab Y et al. Cycloserine Population Pharmacokinetics and Pharmacodynamics in Patients with Tuberculosis. Antimicrobial agents and chemotherapy 63(5) (2019).
@@ -42,7 +42,7 @@ Alghamdi WA, Alsultan A, Al-Shaer MH, An G, Ahmed S, Alkabab Y et al. Cycloserin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -127,22 +127,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | fail | 16.8 | 8.63 | 0.5137 | 0.25 | reported t½β |
-| C2_base_sign_Q22 | fail |  | -0.66 |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['T2:row8:col1', 'T2:row8:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['T2:row5:col1', 'T2:row5:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['T2:row6:col1', 'T2:row6:col2'] |
-| C5_dimension_Q83 | pass | [time] |  |  |  | ['T2:row4:col1', 'T2:row4:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | vs HS |  |  | ['T2:row9:col2'] |
-| C7_apparent_coherence | pass |  |  |  |  |  |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2 L/h |  |  | ['T2:row8:col1', 'T2:row8:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 24.9 L |  |  | ['T2:row6:col1', 'T2:row6:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_base_sign_Q22 | fail |  | -0.66 |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T2:row8:col1', 'T2:row8:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row5:col1', 'T2:row5:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['T2:row6:col1', 'T2:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['T2:row4:col1', 'T2:row4:col2'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | vs HS | ['T2:row9:col2'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2 L/h | ['T2:row8:col1', 'T2:row8:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 24.9 L | ['T2:row6:col1', 'T2:row6:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

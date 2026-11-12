@@ -35,7 +35,7 @@ Cariprazine is an antipsychotic used to treat schizophrenia and bipolar I disord
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Periclou_2021_reference](drugs/drug_cariprazine/Cariprazine_Periclou2021_reference.md) | model (no simulator) | 2-compartment general linear | 6 | Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021) | [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Periclou_2021_reference](drugs/drug_cariprazine/Cariprazine_Periclou2021_reference.md) | model (no simulator) | 2-compartment general linear | 6 | Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021) | [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -91,7 +91,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 21 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

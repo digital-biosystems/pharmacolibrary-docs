@@ -5,11 +5,11 @@
 
 # rocuronium bromide — `RocuroniumBromide_Khalil1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:45 UTC (Needs review), but the paper was screened again on 2026-10-07 02:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Khalil1994_reference" status="needs_review" stale="false" population="adults with cirrhosis and normal liver function" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Khalil1994_reference" status="needs_review" stale="true" population="adults with cirrhosis and normal liver function" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Khalil M, D'Honneur G, Duvaldestin P, Slavov V, De Hys C, Gomeni R. Pharmacokinetics and pharmacodynamics of rocuronium in patients with cirrhosis. Anesthesiology 80(6):1241–1247 (1994).
@@ -51,7 +51,7 @@ Khalil M, D'Honneur G, Duvaldestin P, Slavov V, De Hys C, Gomeni R. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,6 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Ji_2023:review'] |
 | C5_dimension_Q352 | pass | [length] ** 3 |  | ['Khalil_1994:abstract'] |
@@ -169,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

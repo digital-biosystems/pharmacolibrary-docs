@@ -45,7 +45,7 @@ Lopinavir is an antiviral protease inhibitor used to treat HIV infection and HIV
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Thoueille_2023_reference](drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Thoueille P et al., Population pharmacokinetic analysis of…, BMC pharmacology & toxicolo… (2023) | [10.1186/s40360-023-00687-6](https://doi.org/10.1186/s40360-023-00687-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Wang_2014_reference](drugs/drug_lopinavir/Lopinavir_Wang2014_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Wang K et al., Integrated population pharmacokinetic/v…, Clinical pharmacokinetics (2014) | [10.1007/s40262-013-0122-1](https://doi.org/10.1007/s40262-013-0122-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [López_2011_reference](drugs/drug_lopinavir/Lopinavir_Lpez2011_reference.md) | — | 1-compartment (no model) | 0 | López Aspiroz E et al., Population pharmacokinetics of lopinavi…, Therapeutic drug monitoring (2011) | [10.1097/FTD.0b013e31822d578b](https://doi.org/10.1097/FTD.0b013e31822d578b) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Urien_2011_reference](drugs/drug_lopinavir/Lopinavir_Urien2011_reference.md) | — | 1-compartment (no model) | 4 | Urien S et al., Lopinavir/ritonavir population pharmaco…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03926.x](https://doi.org/10.1111/j.1365-2125.2011.03926.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Urien_2011_reference](drugs/drug_lopinavir/Lopinavir_Urien2011_reference.md) | — | 1-compartment (no model) | 4 | Urien S et al., Lopinavir/ritonavir population pharmaco…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03926.x](https://doi.org/10.1111/j.1365-2125.2011.03926.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -117,7 +117,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 997 matched, 95 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 1  ·  needs review 4  ·  rejected 2  ·  stale 0
+- **records:** 7  ·  extracted 1  ·  needs review 4  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # aminophylline — `Aminophylline_Loughnan1976_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The theophylline clearance parameter is dimensionally inconsistent with the single-compartment model structure.
+> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-07 23:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The theophylline clearance parameter is dimensionally inconsistent with the single-compartment model structure.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="true" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic analysis of the disposition of intravenous theophylline in young children. The Journal of pediatrics 88(5):874–879 (1976).
@@ -40,7 +40,7 @@ Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic ana
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,12 +136,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q34 | fail | [mass] | mg/1 | ['Loughnan_1976:abstract'] |
+| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | mg/1 ([mass]) | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Loughnan_1976:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | 1/kg | ['Loughnan_1976:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Loughnan_1976:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -160,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

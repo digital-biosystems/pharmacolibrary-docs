@@ -4,11 +4,11 @@
 
 # bentazepam — `Bentazepam_Colino1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Bentazepam's elimination rate constant was recorded as 0.16 l/h instead of h^-1, creating a dimensional error in the model.
+> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-06 18:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bentazepam's elimination rate constant was recorded as 0.16 l/h instead of h^-1, creating a dimensional error in the model.
 
-<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="true" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback control of serum bentazepam concentrations and Bayesian estimation in multiple dosage regimens in patients. International journal of clinical pharmacology, therapy, and toxicology 29(11):457–462 (1991).
@@ -36,7 +36,7 @@ Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback contr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -106,8 +106,8 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | l/h | ['Colino_1991:abstract'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l/h | ['Colino_1991:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | l/h ([length] ** 3 / [time]) | ['Colino_1991:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l/h ([length] ** 3 / [time]) | ['Colino_1991:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Colino_1991:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Colino_1991:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -129,7 +129,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

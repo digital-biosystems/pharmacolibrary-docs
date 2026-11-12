@@ -26,8 +26,8 @@ Chlorhexidine is an antiseptic used to prevent and treat infections such as ging
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | — | 1-compartment (no model) | 3 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | — | 1-compartment (no model) | 3 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | — | 1-compartment (no model) | 3 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | — | 1-compartment (no model) | 3 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
 
 ## Pharmacodynamics (PD)
 
@@ -64,7 +64,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 37 matched, 37 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

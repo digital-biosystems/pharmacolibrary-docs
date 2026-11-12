@@ -5,11 +5,11 @@
 
 # Pipecuronium — `Pipecuronium_Caldwell1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Pipecuronium clearance value of 2.4 was assigned incorrect units of minutes, causing a structural dimension mismatch.
+> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 02:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pipecuronium clearance value of 2.4 was assigned incorrect units of minutes, causing a structural dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1989_reference" status="rejected" stale="false" population="patients with normal renal function and end-stage renal disease" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1989_reference" status="rejected" stale="true" population="patients with normal renal function and end-stage renal disease" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The influence of renal failure on the pharmacokinetics and duration of action of pipecuronium bromide in patients anesthetized with halothane and nitrous oxide. Anesthesiology 70(1):7–12 (1989).
@@ -37,7 +37,7 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [time] | min | ['Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | min ([time]) | ['Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Caldwell_1989:abstract', 'Caldwell_1989:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.4 | ['Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract', 'Caldwell_1989:abstract'] |
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

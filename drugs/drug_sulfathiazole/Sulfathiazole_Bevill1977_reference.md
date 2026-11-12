@@ -4,11 +4,11 @@
 
 # sulfathiazole — `Sulfathiazole_Bevill1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:35 UTC (Needs review), but the paper was screened again on 2026-10-07 21:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="sulfathiazole" model-id="Sulfathiazole_Bevill1977_reference" status="needs_review" stale="false" population="sheep" measured-compound="sulfathiazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sulfathiazole" model-id="Sulfathiazole_Bevill1977_reference" status="extracted" stale="true" population="sheep" measured-compound="sulfathiazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bevill RF, Koritz GD, Dittert LW, Bourne DW. Disposition of sulfonamides in food-producing animals V: Disposition of sulfathiazole in tissue, urine, and plasma of sheep following intravenous administration. Journal of pharmaceutical sciences 66(9):1297–1300 (1977).
@@ -28,8 +28,6 @@ Bevill RF, Koritz GD, Dittert LW, Bourne DW. Disposition of sulfonamides in food
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life | t1/2z | 1.1 | hr |
@@ -37,7 +35,7 @@ Bevill RF, Koritz GD, Dittert LW, Bourne DW. Disposition of sulfonamides in food
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,7 +108,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Bevill_1977:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bevill_1977:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -142,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

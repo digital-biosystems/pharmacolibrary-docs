@@ -15,7 +15,7 @@
 
 **As extracted:** Peginterferon_beta_1a (the dose) drives Gd-enhanced lesion count: direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Peginterferon β-1a inhibits Gd+ lesion count via a proportional mechanism driven by steady-state AUC (ng/mL h), using an empirical first-order exponential function for the temporal pattern of effect onset rather than an effect compartment. The slope of AUC effect on log(λ) is -0.0256, with baseline mean lesion counts of 0.48 for the lower activity subpopulation and 1.69 for the higher activity subpopulation.
 >
@@ -42,6 +42,31 @@ Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacok
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`PeginterferonBeta1a_Hang2016_PD_gd_lesion_count` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.48 | — |
+| slope | -0.0256 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.48, `per_exposure_unit` = -0.0256
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -74,19 +99,33 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_modelica.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_matlab.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sbml.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_cellml.zip" download>PeginterferonBeta1a_Hang2016_PD_gd_lesion_count_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `PeginterferonBeta1a_Hang2016_PD_gd_lesion_count`. <https://pharmacolibrary.github.io/#/drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count>
+
+```bibtex
+@misc{pharmacolibrary_PeginterferonBeta1aHang2016PDgdlesioncount,
+  title  = {{Pharmacolibrary model PeginterferonBeta1a_Hang2016_PD_gd_lesion_count}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_peginterferon_beta_1a/PeginterferonBeta1a_Hang2016_PD_gd_lesion_count},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

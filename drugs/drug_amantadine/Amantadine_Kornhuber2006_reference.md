@@ -5,11 +5,11 @@
 
 # amantadine — `Amantadine_Kornhuber2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:10 UTC (Needs review), but the paper was screened again on 2026-10-06 12:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="needs_review" stale="false" population="patients with brain tissue samples" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="extracted" stale="true" population="patients with brain tissue samples" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinetic characterization of amantadine in human brain tissue. Therapeutic drug monitoring 28(5):693–695 (2006).
@@ -27,8 +27,6 @@ Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinet
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2 | t1/2z | 6.5 | days |
@@ -38,7 +36,7 @@ Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ohk_2022:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Jaber_2021:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kornhuber_2006:abstract'] |
@@ -157,7 +155,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

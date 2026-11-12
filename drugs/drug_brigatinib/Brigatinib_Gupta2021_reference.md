@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;brigatinib&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/&quot;},{&quot;label&quot;:&quot;Gupta_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brigatinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brigatinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brigatinib — `Brigatinib_Gupta2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for brigatinib was held back because the absorption rate constant and lag time were left at library placeholders, not paper estimates.
+> This record was reviewed on 2026-11-07 16:00 UTC (Needs review), but the paper was screened again on 2026-10-06 21:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for brigatinib was held back because the absorption rate constant and lag time were left at library placeholders, not paper estimates.
 
-<div class="pk-model-meta" hidden drug="brigatinib" model-id="Brigatinib_Gupta2021_reference" status="needs_review" stale="false" population="healthy volunteers and patients with cancer" measured-compound="brigatinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brigatinib" model-id="Brigatinib_Gupta2021_reference" status="needs_review" stale="true" population="healthy volunteers and patients with cancer" measured-compound="brigatinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Gupta N, Wang X, Offman E, Prohn M, Narasimhan N, Kerstein D et al. Population Pharmacokinetics of Brigatinib in Healthy Volunteers and Patients With Cancer. Clinical pharmacokinetics 60(2):235–247 (2021).
@@ -49,7 +49,7 @@ Gupta N, Wang X, Offman E, Prohn M, Narasimhan N, Kerstein D et al. Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -162,6 +162,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row3:col1'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['Tab3:row6:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row4:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Tab3:row8:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 10.6 L/h | ['Tab3:row1:col1'] |

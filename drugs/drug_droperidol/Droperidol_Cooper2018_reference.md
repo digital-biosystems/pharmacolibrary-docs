@@ -5,11 +5,11 @@
 
 # droperidol — `Droperidol_Cooper2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant unit is not convertible to SI, and the intercompartmental clearance failed a structural consistency check.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 15:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant unit is not convertible to SI, and the intercompartmental clearance failed a structural consistency check.
 
-<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intranasal droperidol in volunteers characterised via population modelling. SAGE open medicine 6:2050312118813283 (2018).
@@ -41,7 +41,7 @@ Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,9 +136,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['table3-2050312118813283:row4:col2'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['table3-2050312118813283:row5:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['table3-2050312118813283:row5:col2'] |
 | C5_dimension_Q60 | pass | [time] |  | ['table3-2050312118813283:row8:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['table3-2050312118813283:row2:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['table3-2050312118813283:row3:col2'] |
@@ -162,7 +162,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

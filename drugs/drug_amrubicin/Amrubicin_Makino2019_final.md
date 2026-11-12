@@ -4,11 +4,11 @@
 
 # amrubicin — `Amrubicin_Makino2019_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The amrubicinol parameter for the maximum rate of metabolism was rejected because its value 1.5 was reported in an unrecognized unit, preventing conversion to standard PK units.
+> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-06 16:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The amrubicinol parameter for the maximum rate of metabolism was rejected because its value 1.5 was reported in an unrecognized unit, preventing conversion to standard PK units.
 
-<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_final" status="rejected" stale="false" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_final" status="rejected" stale="true" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual optimal dose of amrubicin to prevent severe neutropenia in Japanese patients with lung cancer. Cancer science 110(11):3573–3583 (2019).
@@ -50,7 +50,7 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -163,15 +163,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row11:col3', 'cas14194-tbl-0001:row11:col4'] |
-| C5_dimension_Q22 | fail | [luminosity] | CLm | ['cas14194-tbl-0001:row26:col3', 'cas14194-tbl-0001:row26:col4'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CLm ([luminosity]) | ['cas14194-tbl-0001:row26:col3', 'cas14194-tbl-0001:row26:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row6:col3', 'cas14194-tbl-0001:row6:col4'] |
-| C5_dimension_Q305 | fail | [length] ** 3 / [time] | L/h | ['cas14194-tbl-0001:row12:col3', 'cas14194-tbl-0001:row12:col4'] |
+| C5_dimension_Q305 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['cas14194-tbl-0001:row12:col3', 'cas14194-tbl-0001:row12:col4'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row10:col3', 'cas14194-tbl-0001:row10:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row9:col3', 'cas14194-tbl-0001:row9:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row4:col3', 'cas14194-tbl-0001:row4:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row7:col3', 'cas14194-tbl-0001:row7:col4'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row8:col3', 'cas14194-tbl-0001:row8:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | Vm | ['cas14194-tbl-0001:row24:col3', 'cas14194-tbl-0001:row24:col4'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] | Vm | ['cas14194-tbl-0001:row24:col3', 'cas14194-tbl-0001:row24:col4'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['cas14194-tbl-0001:row36:col3', 'cas14194-tbl-0001:row36:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 121 L/h | ['cas14194-tbl-0001:row11:col3', 'cas14194-tbl-0001:row11:col4'] |
@@ -194,7 +195,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

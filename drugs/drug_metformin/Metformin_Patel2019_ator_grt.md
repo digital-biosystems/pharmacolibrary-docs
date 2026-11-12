@@ -5,11 +5,11 @@
 
 # metformin — `Metformin_Patel2019_ator_grt`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 14:14 UTC (Needs review), but the paper was screened again on 2026-11-03 08:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="needs_review" stale="false" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="extracted" stale="true" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmacokinetic Interaction of Green Rooibos Extract With Atorvastatin and Metformin in Rats. Frontiers in pharmacology 10:1243 (2019).
@@ -31,8 +31,6 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | T max (h) | tmax | 0.67 | h |
@@ -47,7 +45,7 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +126,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['T4:row5:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['T4:row11:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['T4:row12:col2'] |
@@ -167,7 +165,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

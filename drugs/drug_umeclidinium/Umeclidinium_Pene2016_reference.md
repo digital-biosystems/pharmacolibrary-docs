@@ -5,11 +5,11 @@
 
 # umeclidinium — `Umeclidinium_Pene2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for umeclidinium was rejected because its non-standard units were not recognized for dimensional analysis.
+> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 15:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for umeclidinium was rejected because its non-standard units were not recognized for dimensional analysis.
 
-<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Pene2016_reference" status="rejected" stale="true" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A Novel Method for Studying the Pharmacokinetics of [(14) C]Umeclidinium After Application to the Axilla or Palm of Healthy Male Subjects. Clinical and translational science 9(4):183–191 (2016).
@@ -43,7 +43,7 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ _All readers agree on the compared fields of this record._
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts12406-tbl-0003:row2:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts12406-tbl-0003:row4:col2'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['cts12406-tbl-0003:row5:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['cts12406-tbl-0003:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts12406-tbl-0003:row1:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts12406-tbl-0003:row3:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['cts12406-tbl-0003:row8:col2'] |
@@ -154,7 +154,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

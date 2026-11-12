@@ -5,11 +5,11 @@
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for 4-methylaminoantipyrine lacks compartmental volume or clearance parameters, rendering it an exposure summary rather than a PK model.
+> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-22 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for 4-methylaminoantipyrine lacks compartmental volume or clearance parameters, rendering it an exposure summary rather than a PK model.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_reference" status="rejected" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_reference" status="rejected" stale="true" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al. Comparative Effects of Metamizole (Dipyrone) and Naproxen on Renal Function and Prostacyclin Synthesis in Salt-Depleted Healthy Subjects - A Randomized Controlled Parallel Group Study. Frontiers in pharmacology 12:620635 (2021).
@@ -45,7 +45,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -109,7 +109,8 @@ The extracted parameters include only summary statistics like Cmax of 14.9 mg/L 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Blaser_2021_table_2:row1:col1', 'Blaser_2021_table_2:row1:col2', 'Blaser_2021_table_2:row1:col3', 'Blaser_2021_table_2:row1:col4', 'Blaser_2021_table_2:row8:col1', 'Blaser_2021_table_2:row8:col2', 'Blaser_2021_table_2:row8:col3', 'Blaser_2021_table_2:row8:col4'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Blaser_2021_table_2:row2:col1', 'Blaser_2021_table_2:row2:col2', 'Blaser_2021_table_2:row2:col3', 'Blaser_2021_table_2:row2:col4'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Blaser_2021_table_2:row6:col1', 'Blaser_2021_table_2:row6:col2', 'Blaser_2021_table_2:row6:col4'] |
@@ -133,7 +134,7 @@ The extracted parameters include only summary statistics like Cmax of 14.9 mg/L 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

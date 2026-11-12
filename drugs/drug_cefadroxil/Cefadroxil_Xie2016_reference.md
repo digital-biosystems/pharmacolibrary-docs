@@ -4,11 +4,11 @@
 
 # cefadroxil — `Cefadroxil_Xie2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> C5 dimension mismatch on a structural parameter.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="false" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="true" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of cefadroxil renal transport in wild-type and Pept2 knockout mice. Xenobiotica; the fate of foreign compounds in biological systems 46(4):342–349 (2016).
@@ -36,7 +36,7 @@ Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Xie_2016:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Xie_2016:abstract'] |
-| C5_dimension_Q61 | fail | [substance] / [time] | nmoL/min | ['Xie_2016:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | nmoL/min ([substance] / [time]) | ['Xie_2016:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Xie_2016:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Xie_2016:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

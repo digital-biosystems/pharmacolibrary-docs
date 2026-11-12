@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;eplerenone&quot;,&quot;href&quot;:&quot;drugs/drug_eplerenone/&quot;},{&quot;label&quot;:&quot;Jaisser_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Jaisser_2021_Na_K&quot;,&quot;label&quot;:&quot;Jaisser_2021 \u00b7 Na+/K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_eplerenone/pd_Jaisser_2021_Na_K.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # eplerenone — `Eplerenone_Jaisser2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The volume of distribution parameter for eplerenone was rejected because its unit was recorded as hours instead of a volume unit.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-06 18:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution parameter for eplerenone was rejected because its unit was recorded as hours instead of a volume unit.
 
-<div class="pk-model-meta" hidden drug="eplerenone" model-id="Eplerenone_Jaisser2021_reference" status="rejected" stale="false" population="uninephrectomized Sprague Dawley rats with mineralocorticoid-induced renal injury" measured-compound="eplerenone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="eplerenone" model-id="Eplerenone_Jaisser2021_reference" status="rejected" stale="true" population="uninephrectomized Sprague Dawley rats with mineralocorticoid-induced renal injury" measured-compound="eplerenone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jaisser F, Tan X, Chi S, Liu J, Wang P, Bush M et al. The Non-Steroidal Mineralocorticoid Receptor Antagonist KBP-5074 Limits Albuminuria and has Improved Therapeutic Index Compared With Eplerenone in a Rat Model With Mineralocorticoid-Induced Renal Injury. Frontiers in pharmacology 12:604928 (2021).
@@ -39,7 +40,7 @@ Jaisser F, Tan X, Chi S, Liu J, Wang P, Bush M et al. The Non-Steroidal Mineralo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jaisser_2021:review'] |
-| C5_dimension_Q61 | fail | [time] | h | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | h ([time]) | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.17 | ['Jaisser_2021:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.17 L/h | ['Jaisser_2021:review'] |
@@ -143,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

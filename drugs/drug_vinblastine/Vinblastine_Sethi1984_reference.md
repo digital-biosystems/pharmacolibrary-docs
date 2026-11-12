@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Sethi1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
-> Vinblastine's elimination rate constant unit could not be converted to SI, causing a dimension mismatch and record rejection.
+> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-11-04 18:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vinblastine's elimination rate constant unit could not be converted to SI, causing a dimension mismatch and record rejection.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="rejected" stale="false" population="adult male rhesus monkeys" measured-compound="vincristine, vinblastine, vindesine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="rejected" stale="true" population="adult male rhesus monkeys" measured-compound="vincristine, vinblastine, vindesine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Sethi VS, Surratt P, Spurr CL. Pharmacokinetics of vincristine, vinblastine, and vindesine in rhesus monkeys. Cancer chemotherapy and pharmacology 12(1):31–35 (1984).
@@ -49,7 +49,7 @@ Sethi VS, Surratt P, Spurr CL. Pharmacokinetics of vincristine, vinblastine, and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [length] * [time] | nM · min | ['Sethi_1984_table_1:row4:col3'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | nM · min ([length] * [time]) | ['Sethi_1984_table_1:row4:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Sethi_1984_table_1:row6:col3'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row8:col3'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Sethi_1984_table_1:row9:col3'] |
@@ -171,7 +171,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

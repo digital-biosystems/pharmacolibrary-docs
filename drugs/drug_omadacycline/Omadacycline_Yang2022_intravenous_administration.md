@@ -5,11 +5,11 @@
 
 # omadacycline — `Omadacycline_Yang2022_intravenous_administration`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> AUC has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.716).
+> This record was reviewed on 2026-11-07 15:29 UTC (Needs review), but the paper was screened again on 2026-10-07 10:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. AUC has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.716).
 
-<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_intravenous_administration" status="needs_review" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_intravenous_administration" status="needs_review" stale="true" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety and Pharmacokinetics/Pharmacodynamics Analysis of Omadacycline in Chinese Healthy Subjects. Frontiers in pharmacology 13:869237 (2022).
@@ -51,7 +51,7 @@ Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,7 +144,7 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 15 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | fail | 1.9 | 1.361 | 0.7163 | 0.25 | reported t½β |
+| C1_half_life_beta | fail | 1.9 | 17.41 | 9.162 | 0.25 | reported t½β |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Yang_2022_table_1:row6:col1', 'Yang_2022_table_1:row6:col2', 'Yang_2022_table_1:row6:col4', 'Yang_2022_table_1:row6:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'Yang_2022_table_1:row8:col2', 'Yang_2022_table_1:row8:col3', 'Yang_2022_table_1:row8:col4', 'Yang_2022_table_1:row8:col5'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  |  |  | ['Yang_2022_table_1:row14:col3'] |
@@ -191,7 +191,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

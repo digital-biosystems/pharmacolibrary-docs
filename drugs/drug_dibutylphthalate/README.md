@@ -27,7 +27,7 @@ Dibutyl phthalate is a phthalate ester classified as an insecticide and repellen
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q88 — no SI value to build from</sub> | [Chang_2013_reference](drugs/drug_dibutylphthalate/Dibutylphthalate_Chang2013_reference.md) | — | 1-compartment (no model) | 8 | Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013) | [10.3390/ijms14010836](https://doi.org/10.3390/ijms14010836) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q88 — no SI value to build from</sub> | [Chang_2013_reference](drugs/drug_dibutylphthalate/Dibutylphthalate_Chang2013_reference.md) | — | 1-compartment (no model) | 8 | Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013) | [10.3390/ijms14010836](https://doi.org/10.3390/ijms14010836) |
 
 ## Pharmacodynamics (PD)
 
@@ -77,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 143 matched, 79 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

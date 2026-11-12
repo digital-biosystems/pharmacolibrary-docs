@@ -4,11 +4,11 @@
 
 # vincamine — `Vincamine_Millart1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record lacks volume of distribution and clearance parameters, providing only summary statistics from the abstract instead of a fitted compartmental model.
+> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-06 20:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume of distribution and clearance parameters, providing only summary statistics from the abstract instead of a fitted compartmental model.
 
-<div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic study of two pharmaceutical preparations containing alkaloid vincamine administered orally to human subjects. International journal of clinical pharmacology, therapy, and toxicology 21(11):581–586 (1983).
@@ -35,7 +35,7 @@ Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -103,9 +103,9 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q32 | fail | [mass] | micrograms | ['Millart_1983:abstract'] |
-| C5_dimension_Q56 | fail | 1 / [time] | h-1 | ['Millart_1983:abstract', 'Millart_1983:abstract'] |
-| C5_dimension_Q88 | fail | [mass] | micrograms | ['Millart_1983:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | micrograms ([mass]) | ['Millart_1983:abstract'] |
+| C5_dimension_Q56 | fail | [time] | h-1 (1 / [time]) | ['Millart_1983:abstract', 'Millart_1983:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | micrograms ([mass]) | ['Millart_1983:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -124,7 +124,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

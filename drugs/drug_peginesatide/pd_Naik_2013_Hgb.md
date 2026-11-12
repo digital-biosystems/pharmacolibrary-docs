@@ -15,7 +15,7 @@
 
 **As extracted:** Peginesatide (concentrations from this paper's PK model) drives hemoglobin (in g/dL): indirect response — drug stimulates the production of hemoglobin.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Peginesatide plasma concentrations (ng/mL) stimulate the endogenous production rate of red blood cell progenitor cells via a modified precursor-dependent lifespan indirect response model, with an estimated EC50 of 401 ng/mL and a maximum effect (Emax) of 0.542. The model incorporates a mean transit time for progenitor cells of 462 hours and for red blood cells of 1640 hours, alongside a baseline hemoglobin of 11.5 g/dL.
 >
@@ -51,6 +51,41 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 </details>
 
 
+## Exposure-response model
+
+`Peginesatide_Naik2013_PD_hgb` — turnover (indirect response type III), `response = E0*(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 11.5 g/dL | 115 kg/m3 |
+| Emax | 0.542 | — |
+| EC50 | 401 ng/mL | 0.000401 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 115, `at_EC50` = 146.2, `at_inf` = 177.3
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as IDR-III predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -80,19 +115,33 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_modelica.zip" download>Peginesatide_Naik2013_PD_hgb_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_matlab.zip" download>Peginesatide_Naik2013_PD_hgb_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_sbml.zip" download>Peginesatide_Naik2013_PD_hgb_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_cellml.zip" download>Peginesatide_Naik2013_PD_hgb_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Peginesatide_Naik2013_PD_hgb`. <https://pharmacolibrary.github.io/#/drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb>
+
+```bibtex
+@misc{pharmacolibrary_PeginesatideNaik2013PDhgb,
+  title  = {{Pharmacolibrary model Peginesatide_Naik2013_PD_hgb}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

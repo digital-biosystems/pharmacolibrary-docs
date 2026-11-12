@@ -26,7 +26,7 @@ Ipriflavone, an isoflavone derivative, has been studied for the treatment of bon
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +40,13 @@ Ipriflavone, an isoflavone derivative, has been studied for the treatment of bon
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:42 | 1:21 | 0/1/0 | 0/0/0 | 0/0/0 | 18,519/1,833 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 03:42 | 1:21 | 1/0/0 | 0/0/0 | 0/0/0 | 18,519/1,833 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 22 matched, 22 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

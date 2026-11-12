@@ -5,11 +5,11 @@
 
 # avelumab — `Avelumab_Grisic2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the KD parameter’s unit, month−1, is dimensionally incorrect for an equilibrium dissociation constant.
+> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-07 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the KD parameter’s unit, month−1, is dimensionally incorrect for an equilibrium dissociation constant.
 
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="false" population="patients with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="true" population="patients with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-Based Characterization of the Bidirectional Interaction Between Pharmacokinetics and Tumor Growth Dynamics in Patients with Metastatic Merkel Cell Carcinoma Treated with Avelumab. Clinical cancer research : an official journal of the American Association for Cancer Research 28(7):1363–1371 (2022).
@@ -45,7 +45,7 @@ Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,7 +165,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C2_sign_Q22_category | fail | -0.3674 |  | base 0.0236 + shift -0.391 (category) |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl1:row6:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tbl1:row8:col1'] |
-| C5_dimension_Q331 | fail | 1 / [time] | month−1 | ['tbl1:row2:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | month−1 (1 / [time]) | ['tbl1:row2:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['tbl1:row4:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tbl1:row7:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tbl1:row9:col1'] |
@@ -191,7 +191,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

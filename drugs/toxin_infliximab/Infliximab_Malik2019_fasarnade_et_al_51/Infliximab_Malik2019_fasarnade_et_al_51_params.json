@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Infliximab_Malik2019_fasarnade_et_al_51",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  70.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 4.241666666666666e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 5.1142857142857145e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "k12": 4.725325884543761e-07,
+  "k21": 1.3113695090439274e-06,
+  "ka": 3.1597222222222224e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 950226.8537074148
+ },
+ "reference_peaks": {
+  "central.C": 0.002031790398098173
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

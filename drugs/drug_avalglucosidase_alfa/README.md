@@ -19,7 +19,7 @@ Avalglucosidase alfa is an enzyme medication used to treat glycogen storage dise
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tiraboschi_2023_20_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg.md) | — | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ 40_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | — | 2-compartment (no model) | 8 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | — | 2-compartment (no model) | 8 (+3 cov.) |  |  |
 
 ## ADME sites
 
@@ -48,7 +48,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

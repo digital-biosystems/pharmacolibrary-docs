@@ -5,11 +5,11 @@
 
 # darunavir — `Darunavir_Abdalla2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The darunavir oral clearance of 169 L/h was rejected because its unit could not be standardized for model verification.
+> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 15:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The darunavir oral clearance of 169 L/h was rejected because its unit could not be standardized for model verification.
 
-<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="false" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="true" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultaneous pharmacokinetic modeling of unbound and total darunavir with ritonavir in adolescents: a substudy of the SMILE trial. Antimicrobial agents and chemotherapy 68(2):e0100423 (2024).
@@ -43,7 +43,7 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.524). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.524). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -154,7 +154,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
-| C5_dimension_Q61 | fail | [length] ** 3 / [substance] | L/mmol | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L/mmol ([length] ** 3 / [substance]) | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_1:row23:col1', 'tab_1:row23:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
 | C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['tab_1:row8:col1', 'tab_1:row8:col2'] |
@@ -179,7 +179,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

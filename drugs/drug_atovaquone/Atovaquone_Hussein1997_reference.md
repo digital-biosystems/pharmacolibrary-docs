@@ -5,11 +5,11 @@
 
 # atovaquone — `Atovaquone_Hussein1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The extracted clearance/F value of 58.5 percent is dimensionally inconsistent with its definition as a clearance rate.
+> This record was reviewed on 2026-11-07 16:00 UTC (Rejected), but the paper was screened again on 2026-10-07 05:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted clearance/F value of 58.5 percent is dimensionally inconsistent with its definition as a clearance rate.
 
-<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_Hussein1997_reference" status="rejected" stale="false" population="patients with acute Plasmodium falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_Hussein1997_reference" status="rejected" stale="true" population="patients with acute Plasmodium falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hussein Z, Eaves J, Hutchinson DB, Canfield CJ. Population pharmacokinetics of atovaquone in patients with acute malaria caused by Plasmodium falciparum. Clinical pharmacology and therapeutics 61(5):518–530 (1997).
@@ -39,7 +39,7 @@ Hussein Z, Eaves J, Hutchinson DB, Canfield CJ. Population pharmacokinetics of a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | fail | dimensionless | % | ['Hussein_1997:abstract'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Hussein_1997:abstract'] |
 | C5_dimension_Q353 | pass | [length] ** 3 |  | ['Hussein_1997:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hussein_1997:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hussein_1997:abstract'] |
@@ -161,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

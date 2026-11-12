@@ -5,11 +5,11 @@
 
 # carvedilol — `Carvedilol_Bertera2009_l_name_rats`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Carvedilol clearance of 36.5 L/h was rejected due to a unit that could not be converted to standard units.
+> This record was reviewed on 2026-11-07 14:22 UTC (Rejected), but the paper was screened again on 2026-10-07 00:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Carvedilol clearance of 36.5 L/h was rejected due to a unit that could not be converted to standard units.
 
-<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="false" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="true" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bertera FM, Di Verniero CA, Mayer MA, Bramuglia GF, Taira CA, Höcht C. Is urethane-chloralose anaesthesia appropriate for pharmacokinetic-pharmacodynamic assessment? Studies with carvedilol. Journal of pharmacological and toxicological methods 59(1):13–20 (2009).
@@ -43,7 +43,7 @@ Bertera FM, Di Verniero CA, Mayer MA, Bramuglia GF, Taira CA, Höcht C. Is ureth
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,11 +132,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q19 | fail | [mass] / [length] ** 3 / [time] | ng ml -1 h -1 | ['Bertera_2009_table_2:row4:col3', 'Bertera_2009_table_2:row4:col4'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | ng ml -1 h -1 ([mass] / [length] ** 3 / [time]) | ['Bertera_2009_table_2:row4:col3', 'Bertera_2009_table_2:row4:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['McTavish_1993:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | µg ml -1 | ['Bertera_2009_table_2:row2:col3', 'Bertera_2009_table_2:row2:col4'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | µg ml -1 ([mass] / [length] ** 3) | ['Bertera_2009_table_2:row2:col3', 'Bertera_2009_table_2:row2:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.5 | ['McTavish_1993:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 36.5 L/h | ['McTavish_1993:review'] |
@@ -157,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

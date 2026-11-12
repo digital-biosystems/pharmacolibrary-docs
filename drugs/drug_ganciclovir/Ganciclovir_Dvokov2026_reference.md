@@ -5,11 +5,11 @@
 
 # ganciclovir — `Ganciclovir_Dvokov2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for ganciclovir has an invalid volume unit, preventing model execution.
+> This record was reviewed on 2026-11-07 14:43 UTC (Rejected), but the paper was screened again on 2026-10-07 17:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for ganciclovir has an invalid volume unit, preventing model execution.
 
-<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Dvokov2026_reference" status="rejected" stale="true" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski T et al. Population Pharmacokinetics and Dose Optimization of Valganciclovir and Ganciclovir in Lung Transplant Recipients. Medical principles and practice : international journal of the Kuwait University, Health Science Centre 35(2):169–180 (2026).
@@ -44,7 +44,7 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.565). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.565). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -158,7 +158,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T3:row4:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['T3:row8:col1'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['T3:row7:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['T3:row7:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['T3:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['T3:row6:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['T3:row9:col1'] |
@@ -184,7 +184,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

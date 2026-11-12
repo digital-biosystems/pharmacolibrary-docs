@@ -43,10 +43,10 @@ Thalidomide is an immunomodulatory drug used for conditions such as multiple mye
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kamikawa_2006_reference](drugs/drug_thalidomide/Thalidomide_Kamikawa2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kamikawa R et al., The pharmacokinetics of low-dose thalid…, Biological & pharmaceutical… (2006) | [10.1248/bpb.29.2331](https://doi.org/10.1248/bpb.29.2331) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Noormohamed_1999_reference](drugs/drug_thalidomide/Thalidomide_Noormohamed1999_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Noormohamed FH et al., Pharmacokinetics and hemodynamic effect…, AIDS research and human ret… (1999) | [10.1089/088922299310331](https://doi.org/10.1089/088922299310331) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Figg_1999_reference](drugs/drug_thalidomide/Thalidomide_Figg1999_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Figg WD et al., Pharmacokinetics of thalidomide in an e…, Journal of pharmaceutical s… (1999) | [10.1021/js980172i](https://doi.org/10.1021/js980172i) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Teo_1999_reference](drugs/drug_thalidomide/Thalidomide_Teo1999_reference.md) | — | 1-compartment (no model) | 3 | Teo SK et al., Single-dose oral pharmacokinetics of th…, Journal of clinical pharmac… (1999) | — |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.60).">human + animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chung_2004_reference](drugs/drug_thalidomide/Thalidomide_Chung2004_reference.md) | — | 1-compartment (no model) | 0 | Chung F et al., Thalidomide pharmacokinetics and metabo…, Clinical cancer research :… (2004) | [10.1158/1078-0432.CCR-04-0421](https://doi.org/10.1158/1078-0432.CCR-04-0421) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Eriksson_1995_reference](drugs/drug_thalidomide/Thalidomide_Eriksson1995_reference.md) | — | general linear (no model) | 0 | Eriksson T et al., Stereospecific determination, chiral in…, Chirality (1995) | [10.1002/chir.530070109](https://doi.org/10.1002/chir.530070109) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Eriksson_2003_reference](drugs/drug_thalidomide/Thalidomide_Eriksson2003_reference.md) | — | 1-compartment (no model) | 0 | Eriksson T et al., Pharmacokinetics of thalidomide in pati…, The Journal of pharmacy and… (2003) | [10.1211/0022357022241](https://doi.org/10.1211/0022357022241) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Teo_1999_reference](drugs/drug_thalidomide/Thalidomide_Teo1999_reference.md) | — | 1-compartment (no model) | 3 | Teo SK et al., Single-dose oral pharmacokinetics of th…, Journal of clinical pharmac… (1999) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -101,13 +101,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:51 | 12:41 | 4/4/0 | 3/0/0 | 0/0/2 | 296,976/17,966 | einfracz / qwen3.8-27b | 21 | 7/10 | 20/1 | 1 |
+| 2026-10-07 00:51 | 12:41 | 5/3/0 | 3/0/0 | 0/0/2 | 296,976/17,966 | einfracz / qwen3.8-27b | 21 | 7/10 | 20/1 | 1 |
 
 ## Coverage
 
 - **PubMed hits:** 252 matched, 113 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 8  ·  extracted 3  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **records:** 8  ·  extracted 3  ·  needs review 2  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

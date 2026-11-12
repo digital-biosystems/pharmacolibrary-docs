@@ -32,9 +32,9 @@ Durvalumab is a monoclonal antibody that blocks the PD-L1 protein and is used to
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces with caveats" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces with caveats</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Zhao_2026_reference](drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+6 cov.) | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub> | [Abegesah_2025_reference](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+4 cov.) | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Proctor_2026_reference](drugs/drug_durvalumab/Durvalumab_Proctor2026_reference.md) | — | 1-compartment (no model) | 2 | Proctor JR et al., Albumin Levels Are Predictive of Cachex…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70185](https://doi.org/10.1002/psp4.70185) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Baverel_2018_reference](drugs/drug_durvalumab/Durvalumab_Baverel2018_reference.md) | — | 2-compartment (no model) | 3 | Baverel PG et al., Population Pharmacokinetics of Durvalum…, Clinical pharmacology and t… (2018) | [10.1002/cpt.982](https://doi.org/10.1002/cpt.982) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Ogasawara_2020_reference](drugs/drug_durvalumab/Durvalumab_Ogasawara2020_reference.md) | — | 2-compartment (no model) | 5 (+4 cov.) | Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00804-x](https://doi.org/10.1007/s40262-019-00804-x) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Proctor_2026_reference](drugs/drug_durvalumab/Durvalumab_Proctor2026_reference.md) | — | 1-compartment (no model) | 2 | Proctor JR et al., Albumin Levels Are Predictive of Cachex…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70185](https://doi.org/10.1002/psp4.70185) |
 
 ## Pharmacodynamics (PD)
 
@@ -77,13 +77,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:30 | 13:32 | 2/3/0 | 4/0/0 | 0/0/0 | 317,940/65,350 | openai / gpt-6-luna | 9 | 0/9 | 9/0 | 0 |
+| 2026-10-07 12:30 | 13:32 | 3/2/0 | 4/0/0 | 0/0/0 | 317,940/65,350 | openai / gpt-6-luna | 9 | 0/9 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 18 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

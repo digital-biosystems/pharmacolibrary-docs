@@ -5,11 +5,11 @@
 
 # glibenclamide — `Glibenclamide_Savic2007_transit`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Kel, kcomp and kabs have no unit.
+> This record was reviewed on 2026-11-07 15:17 UTC (Needs review), but the paper was screened again on 2026-09-15 21:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Kel, kcomp and kabs have no unit.
 
-<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Savic2007_transit" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glibenclamide, furosemide, amiloride, moxonidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Savic2007_transit" status="needs_review" stale="true" population="healthy volunteers" measured-compound="glibenclamide, furosemide, amiloride, moxonidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Savic RM, Jonker DM, Kerbusch T, Karlsson MO. Implementation of a transit compartment model for describing drug absorption in pharmacokinetic studies. Journal of pharmacokinetics and pharmacodynamics (2007).
@@ -42,7 +42,7 @@ Savic RM, Jonker DM, Kerbusch T, Karlsson MO. Implementation of a transit compar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -157,6 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_unit_missing_Q47 | fail | 1 / [time] |  | ['tab_1:row5:col2', 'tab_1:row5:col3', 'tab_1:row5:col4'] |
 | C5_unit_missing_Q48 | fail | 1 / [time] |  | ['tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] |  | ['tab_1:row14:col2', 'tab_1:row14:col3', 'tab_1:row14:col4', 'Savic_2007_table_3:row8:col2', 'Savic_2007_table_3:row8:col3', 'Savic_2007_table_3:row8:col4', 'Savic_2007_table_4:row11:col2', 'Savic_2007_table_4:row11:col3', 'Savic_2007_table_4:row11:col4', 'Savic_2007_table_5:row10:col2', 'Savic_2007_table_5:row10:col3', 'Savic_2007_table_5:row10:col4'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['tab_1:row15:col4', 'Savic_2007_table_3:row9:col4', 'Savic_2007_table_4:row12:col2', 'Savic_2007_table_4:row12:col4', 'Savic_2007_table_5:row11:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.2 | ['Savic_2007_table_3:row4:col2', 'Savic_2007_table_3:row4:col3', 'Savic_2007_table_3:row4:col4', 'Savic_2007_table_4:row4:col2', 'Savic_2007_table_4:row4:col3', 'Savic_2007_table_4:row4:col4', 'Savic_2007_table_5:row4:col2', 'Savic_2007_table_5:row4:col3', 'Savic_2007_table_5:row4:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.2 L/h | ['Savic_2007_table_3:row4:col2', 'Savic_2007_table_3:row4:col3', 'Savic_2007_table_3:row4:col4', 'Savic_2007_table_4:row4:col2', 'Savic_2007_table_4:row4:col3', 'Savic_2007_table_4:row4:col4', 'Savic_2007_table_5:row4:col2', 'Savic_2007_table_5:row4:col3', 'Savic_2007_table_5:row4:col4'] |
@@ -188,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

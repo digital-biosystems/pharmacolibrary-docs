@@ -4,11 +4,11 @@
 
 # tisotumab vedotin — `TisotumabVedotin_Gibiansky2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Vmax has no unit.
+> This record was reviewed on 2026-11-07 16:58 UTC (Needs review), but the paper was screened again on 2026-10-07 21:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="tisotumab vedotin" model-id="TisotumabVedotin_Gibiansky2022_reference" status="needs_review" stale="false" population="patients with locally advanced and/or metastatic solid tumors" measured-compound="tisotumab vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="tisotumab vedotin" model-id="TisotumabVedotin_Gibiansky2022_reference" status="needs_review" stale="true" population="patients with locally advanced and/or metastatic solid tumors" measured-compound="tisotumab vedotin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Gibiansky L, Passey C, Voellinger J, Gunawan R, Hanley WD, Gupta M et al. Population pharmacokinetic analysis for tisotumab vedotin in patients with locally advanced and/or metastatic solid tumors. CPT: pharmacometrics & systems pharmacology 11(10):1358–1370 (2022).
@@ -49,7 +49,7 @@ Gibiansky L, Passey C, Voellinger J, Gunawan R, Hanley WD, Gupta M et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['psp412850-tbl-0002:row15:col1', 'psp412850-tbl-0002:row15:col2', 'psp412850-tbl-0002:row15:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['psp412850-tbl-0002:row4:col1', 'psp412850-tbl-0002:row4:col2', 'psp412850-tbl-0002:row4:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['psp412850-tbl-0002:row5:col1', 'psp412850-tbl-0002:row5:col2', 'psp412850-tbl-0002:row5:col3'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  |  |  | ['psp412850-tbl-0002:row6:col1', 'psp412850-tbl-0002:row6:col2', 'psp412850-tbl-0002:row6:col3'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  |  |  | ['psp412850-tbl-0002:row6:col1', 'psp412850-tbl-0002:row6:col2', 'psp412850-tbl-0002:row6:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.42 |  |  | ['psp412850-tbl-0002:row2:col1', 'psp412850-tbl-0002:row2:col2', 'psp412850-tbl-0002:row2:col3'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0592 L/h |  |  | ['psp412850-tbl-0002:row2:col1', 'psp412850-tbl-0002:row2:col2', 'psp412850-tbl-0002:row2:col3'] |
@@ -199,7 +199,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

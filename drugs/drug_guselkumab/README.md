@@ -33,7 +33,7 @@ Guselkumab is a monoclonal antibody that acts as an interleukin inhibitor, belon
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yao_2018_reference](drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1063](https://doi.org/10.1002/jcph.1063) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Chen_2022_reference](drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Chen Y et al., Population pharmacokinetics and exposur…, Clinical and translational… (2022) | [10.1111/cts.13197](https://doi.org/10.1111/cts.13197) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tran_2022_reference](drugs/drug_guselkumab/Guselkumab_Tran2022_reference.md) | — | 1-compartment (no model) | 0 | Tran L et al., Population pharmacokinetics analysis of…, British journal of clinical… (2022) | [10.1111/bcp.15364](https://doi.org/10.1111/bcp.15364) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tran_2022_reference](drugs/drug_guselkumab/Guselkumab_Tran2022_reference.md) | — | 1-compartment (no model) | 0 | Tran L et al., Population pharmacokinetics analysis of…, British journal of clinical… (2022) | [10.1111/bcp.15364](https://doi.org/10.1111/bcp.15364) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 22 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

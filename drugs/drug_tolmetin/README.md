@@ -33,9 +33,9 @@ Tolmetin is a non-steroidal anti-inflammatory drug used to treat osteoarthritis,
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Selley_1975_reference](drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Selley ML et al., Pharmacokinetic studies of tolmetin in…, Clinical pharmacology and t… (1975) | [10.1002/cpt1975175599](https://doi.org/10.1002/cpt1975175599) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -68,13 +68,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:29 | 0:22 | 1/2/0 | 1/0/0 | 0/0/0 | 26,941/2,331 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 01:29 | 0:22 | 2/1/0 | 1/0/0 | 0/0/0 | 26,941/2,331 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

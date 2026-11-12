@@ -4,11 +4,11 @@
 
 # mosunetuzumab — `Mosunetuzumab_Bender2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The transit rate constant has units of days, which is dimensionally invalid for a first-order rate constant.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 17:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The transit rate constant has units of days, which is dimensionally invalid for a first-order rate constant.
 
-<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="true" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population pharmacokinetics and CD20 binding dynamics for mosunetuzumab in relapsed/refractory B-cell non-Hodgkin lymphoma. Clinical and translational science 17(6):e13825 (2024).
@@ -41,7 +41,7 @@ Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts13825-tbl-0002:row3:col1', 'cts13825-tbl-0002:row3:col2'] |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['cts13825-tbl-0002:row1:col1', 'cts13825-tbl-0002:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts13825-tbl-0002:row6:col1', 'cts13825-tbl-0002:row6:col2'] |
-| C5_dimension_Q306 | fail | [time] | day | ['cts13825-tbl-0002:row4:col1', 'cts13825-tbl-0002:row4:col2'] |
+| C5_dimension_Q306 | fail | 1 / [time] | day ([time]) | ['cts13825-tbl-0002:row4:col1', 'cts13825-tbl-0002:row4:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts13825-tbl-0002:row2:col1', 'cts13825-tbl-0002:row2:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts13825-tbl-0002:row5:col1', 'cts13825-tbl-0002:row5:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.584 | ['cts13825-tbl-0002:row3:col1', 'cts13825-tbl-0002:row3:col2'] |
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

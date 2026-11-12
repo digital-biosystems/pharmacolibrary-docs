@@ -4,11 +4,11 @@
 
 # vinorelbine — `Vinorelbine_Gauvin2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume.
+> This record was reviewed on 2026-11-07 15:49 UTC (Needs review), but the paper was screened again on 2026-10-06 15:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Gauvin2002_reference" status="needs_review" stale="false" population="elderly patients with advanced metastatic cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Gauvin2002_reference" status="needs_review" stale="true" population="elderly patients with advanced metastatic cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gauvin A, Pinguet F, Culine S, Astre C, Cupissol D, Bressolle F. Blood and plasma pharmacokinetics of vinorelbine in elderly patients with advanced metastatic cancer. Cancer chemotherapy and pharmacology 49(1):48–56 (2002).
@@ -36,7 +36,7 @@ Gauvin A, Pinguet F, Culine S, Astre C, Cupissol D, Bressolle F. Blood and plasm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gauvin_2002:abstract'] |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Gauvin_2002:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.45 | ['Gauvin_2002:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.71 | ['Gauvin_2002:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 49.7 L/h | ['Gauvin_2002:abstract'] |
 | C9_phys_window_Q23 | pass | clearance within physiological range | 31.5 L/h | ['Gauvin_2002:abstract'] |
@@ -150,7 +150,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

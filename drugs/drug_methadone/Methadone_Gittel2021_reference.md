@@ -5,11 +5,11 @@
 
 # methadone — `Methadone_Gittel2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:45 UTC (Needs review), but the paper was screened again on 2026-10-07 03:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Gittel2021_reference" status="needs_review" stale="false" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Gittel2021_reference" status="extracted" stale="true" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza Menzies MP et al. Pharmacokinetics and pharmacodynamics of l-methadone in isoflurane-anaesthetized and mechanically ventilated ponies. Veterinary anaesthesia and analgesia 48(2):213–222 (2021).
@@ -29,8 +29,6 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 44.3 | minutes |
@@ -40,7 +38,7 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +114,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tang_2021:review'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Gittel_2021:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Gittel_2021:abstract'] |
@@ -152,7 +150,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

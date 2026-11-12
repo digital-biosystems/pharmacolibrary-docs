@@ -5,11 +5,11 @@
 
 # netilmicin — `Netilmicin_Siegel1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 15:55 UTC (Needs review), but the paper was screened again on 2026-10-07 11:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="netilmicin" model-id="Netilmicin_Siegel1979_reference" status="needs_review" stale="false" population="newborn infants" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="netilmicin" model-id="Netilmicin_Siegel1979_reference" status="extracted" stale="true" population="newborn infants" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Siegel JD, McCracken GH, Thomas ML, Threlkeld N. Pharmacokinetic properties of netilmicin in newborn infants. Antimicrobial agents and chemotherapy 15(2):246–253 (1979).
@@ -29,8 +29,6 @@ Siegel JD, McCracken GH, Thomas ML, Threlkeld N. Pharmacokinetic properties of n
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t1/2 (h) | t1/2z | 4.7 | h |
@@ -39,7 +37,7 @@ Siegel JD, McCracken GH, Thomas ML, Threlkeld N. Pharmacokinetic properties of n
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +112,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Siegel_1979_table_2:row9:col1', 'Siegel_1979_table_2:row9:col2', 'Siegel_1979_table_2:row9:col3', 'Siegel_1979_table_2:row9:col4', 'Siegel_1979_table_2:row9:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Siegel_1979_table_2:row11:col1', 'Siegel_1979_table_2:row11:col2', 'Siegel_1979_table_2:row11:col3', 'Siegel_1979_table_2:row11:col4', 'Siegel_1979_table_2:row11:col5'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Siegel_1979_table_2:row10:col1', 'Siegel_1979_table_2:row10:col2', 'Siegel_1979_table_2:row10:col3', 'Siegel_1979_table_2:row10:col4', 'Siegel_1979_table_2:row10:col5'] |
@@ -147,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

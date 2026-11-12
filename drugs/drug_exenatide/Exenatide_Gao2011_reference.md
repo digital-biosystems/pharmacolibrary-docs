@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Gao_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # exenatide — `Exenatide_Gao2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The receptor binding association rate constant for exenatide has an invalid unit, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-22 09:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The receptor binding association rate constant for exenatide has an invalid unit, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2011_reference" status="rejected" stale="false" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="exendin-4" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2011_reference" status="rejected" stale="true" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="exendin-4" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in type 2 diabetic Goto-Kakizaki rats. The Journal of pharmacology and experimental therapeutics 336(3):881–890 (2011).
@@ -46,7 +45,7 @@ Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in ty
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,10 +136,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Choi_2025:review'] |
-| C5_dimension_Q329 | fail | dimensionless | 38 | ['tab_0:row3:col2', 'tab_0:row3:col2'] |
-| C5_dimension_Q330 | fail | dimensionless | 38 | ['tab_0:row5:col2', 'tab_0:row5:col2'] |
-| C5_dimension_Q333 | fail | [length] | nM | ['tab_0:row8:col2'] |
-| C5_dimension_Q334 | fail | dimensionless | 38 | ['tab_0:row7:col2', 'tab_0:row7:col2'] |
+| C5_dimension_Q329 | fail | [length] ** 3 / [mass] / [time] | 38 (dimensionless) | ['tab_0:row3:col2', 'tab_0:row3:col2'] |
+| C5_dimension_Q330 | fail | 1 / [time] | 38 (dimensionless) | ['tab_0:row5:col2', 'tab_0:row5:col2'] |
+| C5_dimension_Q333 | fail | [mass] / [length] ** 3 | nM ([length]) | ['tab_0:row8:col2'] |
+| C5_dimension_Q334 | fail | 1 / [time] | 38 (dimensionless) | ['tab_0:row7:col2', 'tab_0:row7:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Choi_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row2:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.059 | ['Choi_2025:review'] |
@@ -164,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

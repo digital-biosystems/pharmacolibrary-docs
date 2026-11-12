@@ -34,7 +34,7 @@ Boric acid is an antiseptic used against infections, including ear infections. I
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jansen_1984_reference](drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 | Jansen JA et al., Boric acid single dose pharmacokinetics…, Archives of toxicology (1984) | [10.1007/BF00316588](https://doi.org/10.1007/BF00316588) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub> | [Usuda_1998_reference](drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md) | — | 1-compartment (no model) | 7 | Usuda K et al., Serum and urinary boron levels in rats…, Archives of toxicology (1998) | [10.1007/s002040050530](https://doi.org/10.1007/s002040050530) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Not simulated</sub> | [Usuda_1998_reference](drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md) | — | 1-compartment (no model) | 7 | Usuda K et al., Serum and urinary boron levels in rats…, Archives of toxicology (1998) | [10.1007/s002040050530](https://doi.org/10.1007/s002040050530) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Syvänen_2012_reference](drugs/drug_boric_acid/BoricAcid_Syvnen2012_reference.md) | — | 2-compartment (no model) | 4 | Syvänen S et al., Alteration in P-glycoprotein functional…, The AAPS journal (2012) | [10.1208/s12248-011-9318-1](https://doi.org/10.1208/s12248-011-9318-1) |
 
 ## Pharmacodynamics (PD)
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 106 matched, 66 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

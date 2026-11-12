@@ -4,11 +4,11 @@
 
 # galantamine — `Galantamine_Piotrovsky2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 01:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent metabolite clearance parameter is assigned a dimensionless 60% reduction value instead of a required rate constant.
 
-<div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="true" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine population pharmacokinetics in patients with Alzheimer's disease: modeling and simulations. Journal of clinical pharmacology 43(5):514–523 (2003).
@@ -34,7 +34,7 @@ Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,7 +113,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Piotrovsky_2003:abstract', 'Piotrovsky_2003:abstract'] |
-| C5_dimension_Q351 | fail | dimensionless | % | ['Piotrovsky_2003:abstract'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Piotrovsky_2003:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 14.8 L/h | ['Piotrovsky_2003:abstract', 'Piotrovsky_2003:abstract'] |
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # cisatracurium — `Cisatracurium_Sorooshian1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The plasma volume of distribution unit '1' is dimensionally inconsistent with the apparent volume value of 13.28.
+> This record was reviewed on 2026-11-07 14:54 UTC (Rejected), but the paper was screened again on 2026-10-07 02:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The plasma volume of distribution unit '1' is dimensionally inconsistent with the apparent volume value of 13.28.
 
-<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="false" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="true" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacokinetics and pharmacodynamics of cisatracurium in young and elderly adult patients. Anesthesiology 84(5):1083–1091 (1996).
@@ -36,7 +36,7 @@ Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -105,7 +105,7 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Sorooshian_1996:abstract'] |
-| C5_dimension_Q76 | fail | dimensionless | 1 | ['Sorooshian_1996:abstract', 'Sorooshian_1996:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | 1 (dimensionless) | ['Sorooshian_1996:abstract', 'Sorooshian_1996:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 19.1 L/h | ['Sorooshian_1996:abstract'] |
@@ -126,7 +126,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

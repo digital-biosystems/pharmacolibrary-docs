@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Kir_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2007_HR_2&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_van_2007_HR_2.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_DBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCoy_1994_HR&quot;,&quot;label&quot;:&quot;McCoy_1994 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_McCoy_1994_HR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Baek_2008_SBP&quot;,&quot;label&quot;:&quot;Baek_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/pd_Baek_2008_SBP.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the absorption rate constant was reported in mass units (mg/min/kg) instead of time.
+> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the absorption rate constant was reported in mass units (mg/min/kg) instead of time.
 
-<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Kir2025_reference" status="rejected" stale="false" population="malnourished rats" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Kir2025_reference" status="rejected" stale="true" population="malnourished rats" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling of Atenolol and Metoprolol Absorption in Malnourished Rats. European journal of drug metabolism and pharmacokinetics 50(3):251–263 (2025).
@@ -44,7 +45,7 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,9 +131,9 @@ The absorption rate constant for atenolol is assigned a value of 1.19 with the u
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | mL/min/kg | ['Kir_2025_table_3:row4:col2', 'Kir_2025_table_3:row4:col3', 'Kir_2025_table_3:row4:col4'] |
-| C5_dimension_Q303 | fail | [mass] / [time] | mg/min/kg | ['Tab2:row10:col1', 'Tab2:row10:col2'] |
-| C5_dimension_Q49 | fail | [mass] / [time] | mg/min/kg | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4', 'Kir_2025_table_3:row5:col1', 'Kir_2025_table_3:row5:col3', 'Kir_2025_table_3:row5:col4'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | mL/min/kg ([length] ** 3 / [time]) | ['Kir_2025_table_3:row4:col2', 'Kir_2025_table_3:row4:col3', 'Kir_2025_table_3:row4:col4'] |
+| C5_dimension_Q303 | fail | 1 / [time] | mg/min/kg ([mass] / [time]) | ['Tab2:row10:col1', 'Tab2:row10:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | mg/min/kg ([mass] / [time]) | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4', 'Kir_2025_table_3:row5:col1', 'Kir_2025_table_3:row5:col3', 'Kir_2025_table_3:row5:col4'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Tab2:row12:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.04 | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'] |
 | C8_topology | pass |  |  |  |
@@ -155,7 +156,7 @@ The absorption rate constant for atenolol is assigned a value of 1.19 with the u
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

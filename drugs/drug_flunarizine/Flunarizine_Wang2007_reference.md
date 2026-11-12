@@ -4,11 +4,11 @@
 
 # flunarizine — `Flunarizine_Wang2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Flunarizine's elimination rate constant of 0.16 L h(-1) has units incompatible with first-order kinetics.
+> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-07 04:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Flunarizine's elimination rate constant of 0.16 L h(-1) has units incompatible with first-order kinetics.
 
-<div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="false" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="true" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluation of flunarizine-loaded lipid microspheres. The Journal of pharmacy and pharmacology 59(3):351–357 (2007).
@@ -38,7 +38,7 @@ Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +114,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L h(-1) | ['Wang_2007:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | L h(-1) ([length] ** 3 / [time]) | ['Wang_2007:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wang_2007:abstract'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Wang_2007:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

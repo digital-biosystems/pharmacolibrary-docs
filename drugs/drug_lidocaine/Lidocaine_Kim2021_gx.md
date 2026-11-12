@@ -4,11 +4,11 @@
 
 # lidocaine — `Lidocaine_Kim2021_gx`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record lacks distribution volume and clearance, and reports an unrealistic t1/2z of 61.78 h for lidocaine in rats.
+> This record was reviewed on 2026-11-07 14:38 UTC (Rejected), but the paper was screened again on 2026-10-06 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks distribution volume and clearance, and reports an unrealistic t1/2z of 61.78 h for lidocaine in rats.
 
-<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_gx" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_gx" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Metabolite Pharmacokinetics in Hyaluronic Acid Injection. Pharmaceutics 13(2) (2021).
@@ -40,7 +40,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,8 @@ The model is rejected because it lacks the distribution volume and clearance or 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Kim_2021_table_3:row2:col3', 'Kim_2021_table_3:row2:col6', 'Kim_2021_table_3:row2:col9', 'Kim_2021_table_3:row2:col12', 'Kim_2021_table_3:row2:col15'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Kim_2021_table_3:row3:col3', 'Kim_2021_table_3:row3:col6', 'Kim_2021_table_3:row3:col9', 'Kim_2021_table_3:row3:col12', 'Kim_2021_table_3:row3:col15'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kim_2021_table_3:row1:col3', 'Kim_2021_table_3:row1:col6', 'Kim_2021_table_3:row1:col9', 'Kim_2021_table_3:row1:col12', 'Kim_2021_table_3:row1:col15'] |
@@ -141,7 +142,7 @@ The model is rejected because it lacks the distribution volume and clearance or 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

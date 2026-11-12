@@ -5,11 +5,11 @@
 
 # dupilumab — `Dupilumab_Zhang2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model was rejected because the peripheral compartment lacks an inbound transfer rate, and the absorption half-life unit could not be converted.
+> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-07 08:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because the peripheral compartment lacks an inbound transfer rate, and the absorption half-life unit could not be converted.
 
-<div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Zhang2021_reference" status="rejected" stale="false" population="adults and adolescents with asthma" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Zhang2021_reference" status="rejected" stale="true" population="adults and adolescents with asthma" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhang L, Gao Y, Li M, Xu C, Davis JD, Kanamaluru V et al. Population pharmacokinetic analysis of dupilumab in adult and adolescent patients with asthma. CPT: pharmacometrics & systems pharmacology 10(8):941–952 (2021).
@@ -49,7 +49,7 @@ Zhang L, Gao Y, Li M, Xu C, Davis JD, Kanamaluru V et al. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -168,7 +168,7 @@ The record defines the peripheral volume V2 (2.76 L) and outbound clearance k31 
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['psp412667-tbl-0003:row1:col1', 'psp412667-tbl-0003:row1:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412667-tbl-0003:row2:col1', 'psp412667-tbl-0003:row2:col4'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] |  | ['psp412667-tbl-0003:row8:col1', 'psp412667-tbl-0003:row8:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['psp412667-tbl-0003:row5:col1', 'psp412667-tbl-0003:row5:col4'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['psp412667-tbl-0003:row5:col1', 'psp412667-tbl-0003:row5:col4'] |
 | C5_unit_missing_Q95 | fail | [time] |  | ['psp412667-tbl-0003:row7:col1', 'psp412667-tbl-0003:row7:col4'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.76 L | ['psp412667-tbl-0003:row2:col1', 'psp412667-tbl-0003:row2:col4'] |
@@ -189,7 +189,7 @@ The record defines the peripheral volume V2 (2.76 L) and outbound clearance k31 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

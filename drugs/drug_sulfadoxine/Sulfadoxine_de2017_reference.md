@@ -5,11 +5,11 @@
 
 # Sulfadoxine — `Sulfadoxine_de2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to an implausible negative clearance in a covariate scenario and a unit that could not be converted to SI.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 08:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_de2017_reference" status="rejected" stale="false" population="pregnant and postpartum women" measured-compound="sulfadoxine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_de2017_reference" status="extracted" stale="true" population="pregnant and postpartum women" measured-compound="sulfadoxine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokinetics of Sulfadoxine and Pyrimethamine for Intermittent Preventive Treatment of Malaria During Pregnancy and After Delivery. CPT: pharmacometrics & systems pharmacology 6(7):430–438 (2017).
@@ -31,8 +31,6 @@ de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokine
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | F | Fab | 1 |  |
@@ -47,7 +45,7 @@ de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -178,14 +176,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q31 | fail |  | -75.7 |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row3:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['psp412181-tbl-0002:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp412181-tbl-0002:row5:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['psp412181-tbl-0002:row12:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row6:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['psp412181-tbl-0002:row7:col1'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row11:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.0303 L/h | ['psp412181-tbl-0002:row3:col1'] |
@@ -202,13 +198,23 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

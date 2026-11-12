@@ -4,11 +4,11 @@
 
 # triamcinolone — `Triamcinolone_French2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because the extracted clearance and volume of distribution values are physiologically implausible for triamcinolone acetonide in horses.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-04 04:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted clearance and volume of distribution values are physiologically implausible for triamcinolone acetonide in horses.
 
-<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="false" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="true" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 French K, Pollitt CC, Pass MA. Pharmacokinetics and metabolic effects of triamcinolone acetonide and their possible relationships to glucocorticoid-induced laminitis in horses. Journal of veterinary pharmacology and therapeutics 23(5):287–292 (2000).
@@ -39,7 +39,7 @@ French K, Pollitt CC, Pass MA. Pharmacokinetics and metabolic effects of triamci
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,6 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kraus_2018:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['French_2000:abstract'] |
@@ -145,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

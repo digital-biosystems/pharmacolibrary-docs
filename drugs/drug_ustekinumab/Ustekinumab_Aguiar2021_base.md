@@ -5,11 +5,11 @@
 
 # ustekinumab — `Ustekinumab_Aguiar2021_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The unit nmol/L for Kd could not be converted to standard SI units, causing a dimension mismatch that rejected the ustekinumab model record.
+> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 01:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The unit nmol/L for Kd could not be converted to standard SI units, causing a dimension mismatch that rejected the ustekinumab model record.
 
-<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_base" status="rejected" stale="false" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_base" status="rejected" stale="true" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Ustekinumab Dosing Individualization in Crohn's Disease Guided by a Population Pharmacokinetic-Pharmacodynamic Model. Pharmaceutics 13(10) (2021).
@@ -43,7 +43,7 @@ Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Usteki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,7 +152,7 @@ _All readers agree on the compared fields of this record._
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 17 | 19.08 | 1.122 | 0.25 | reported t½β |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['pharmaceutics-13-01587-t002:row10:col1'] |
-| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L |  |  | ['pharmaceutics-13-01587-t002:row25:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) |  |  | ['pharmaceutics-13-01587-t002:row25:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['pharmaceutics-13-01587-t002:row3:col1'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  |  |  | ['pharmaceutics-13-01587-t002:row4:col1'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 |  |  |  | ['pharmaceutics-13-01587-t002:row8:col1'] |
@@ -176,7 +176,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

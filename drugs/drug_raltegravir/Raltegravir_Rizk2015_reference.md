@@ -5,11 +5,11 @@
 
 # raltegravir — `Raltegravir_Rizk2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Raltegravir record lacks volume and clearance, containing only summary exposure statistics rather than a compartmental model.
+> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Raltegravir record lacks volume and clearance, containing only summary exposure statistics rather than a compartmental model.
 
-<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Rizk2015_reference" status="rejected" stale="false" population="HIV-infected children 4 weeks to 18 years of age" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Rizk2015_reference" status="rejected" stale="true" population="HIV-infected children 4 weeks to 18 years of age" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population pharmacokinetic analysis of raltegravir pediatric formulations in HIV-infected children 4 weeks to 18 years of age. Journal of clinical pharmacology 55(7):748–756 (2015).
@@ -36,7 +36,7 @@ Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +117,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Rizk_2015:abstract'] |
-| C5_dimension_Q75 | fail | [length] | nM | ['Rizk_2015:abstract'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | nM ([length]) | ['Rizk_2015:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

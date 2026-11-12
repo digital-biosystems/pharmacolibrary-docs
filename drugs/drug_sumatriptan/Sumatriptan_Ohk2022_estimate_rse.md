@@ -4,11 +4,11 @@
 
 # sumatriptan — `Sumatriptan_Ohk2022_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected due to double correction of apparent clearance and volume for bioavailability, and a dimension mismatch for a rate constant.
+> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 15:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to double correction of apparent clearance and volume for bioavailability, and a dimension mismatch for a rate constant.
 
-<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_estimate_rse" status="rejected" stale="false" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_estimate_rse" status="rejected" stale="true" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex differences in the pharmacokinetics of oral sumatriptan in healthy Korean subjects using population pharmacokinetic modeling. Biopharmaceutics & drug disposition 43(1):23–32 (2022).
@@ -43,7 +43,7 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,9 +139,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['bdd2307-tbl-0004:row2:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['bdd2307-tbl-0004:row1:col2'] |
-| C5_dimension_Q68 | fail | 1 / [time] | h−1 | ['bdd2307-tbl-0004:row5:col2'] |
+| C5_dimension_Q68 | fail | 1 / [time] | h−1 (1 / [time]) | ['bdd2307-tbl-0004:row5:col2'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['bdd2307-tbl-0004:row3:col2'] |
-| C5_dimension_Q95 | fail | 1 / [time] | h−1 | ['bdd2307-tbl-0004:row4:col2'] |
+| C5_dimension_Q95 | fail | [time] | h−1 (1 / [time]) | ['bdd2307-tbl-0004:row4:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['bdd2307-tbl-0004:row6:col2'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.558 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 281 L/h | ['bdd2307-tbl-0004:row2:col2'] |
@@ -162,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

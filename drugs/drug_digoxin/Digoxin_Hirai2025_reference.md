@@ -5,11 +5,11 @@
 
 # digoxin — `Digoxin_Hirai2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Digoxin clearance was recorded as 21% instead of a standard volumetric flow rate, causing a dimensional mismatch in the one-compartment model.
+> This record was reviewed on 2026-11-07 14:28 UTC (Rejected), but the paper was screened again on 2026-10-06 02:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Digoxin clearance was recorded as 21% instead of a standard volumetric flow rate, causing a dimensional mismatch in the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Hirai2025_reference" status="rejected" stale="false" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Hirai2025_reference" status="rejected" stale="true" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hirai T, Kasai H, Shiga T. Population pharmacokinetic analysis of the interaction of digoxin with N-desethylamiodarone in patients with atrial fibrillation and heart failure. British journal of clinical pharmacology 91(10):2827–2835 (2025).
@@ -37,7 +37,7 @@ Hirai T, Kasai H, Shiga T. Population pharmacokinetic analysis of the interactio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Hirai_2025:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Hirai_2025:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Dong_2024:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hernández-Gago_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 21 | ['Hirai_2025:abstract'] |
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

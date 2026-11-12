@@ -34,8 +34,8 @@ Alglucosidase alfa is an enzyme medication used to treat glycogen storage diseas
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Barzel_2026_qi_et_al_2018_23_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_qi_et_al_2018_23_plasma.md) | — | 1-compartment (no model) | 4 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub> | [↳ tiraboschi_et_al_2023_22_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma.md) | held back | 1-compartment, oral | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ troy_et_al_2020_26_serum_csf](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_troy_et_al_2020_26_serum_csf.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ gras_colomer_et_al_2021_25_plasma_leukocyte](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas.md) | — | 2-compartment (no model) | 9 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ tuffal_et_al_2023_21_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tuffal_et_al_2023_21_plasma.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ gras_colomer_et_al_2021_25_plasma_leukocyte](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ tuffal_et_al_2023_21_plasma](drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Barzel2026_tuffal_et_al_2023_21_plasma.md) | — | 2-compartment (no model) | 9 |  |  |
 
 ## ADME sites
 
@@ -66,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 73 matched, 65 returned
 - **screened:** 9  ·  **relevant:** 1
-- **records:** 6  ·  extracted 1  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 1  ·  needs review 3  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

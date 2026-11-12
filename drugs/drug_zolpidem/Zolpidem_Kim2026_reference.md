@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;zolpidem&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/&quot;},{&quot;label&quot;:&quot;Kim_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolpidem_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zolpidem_Kim2026_reference&quot;,&quot;label&quot;:&quot;Kim_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Kim2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zolpidem_Yoon2021_reference&quot;,&quot;label&quot;:&quot;Yoon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Yoon2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2026_DSST&quot;,&quot;label&quot;:&quot;Kim_2026 \u00b7 DSST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Kim_2026_DSST.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perrais_1999_mIPSC_duration&quot;,&quot;label&quot;:&quot;Perrais_1999 \u00b7 mIPSC duration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolpidem_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zolpidem_Kim2026_reference&quot;,&quot;label&quot;:&quot;Kim_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Kim2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zolpidem_Yoon2021_reference&quot;,&quot;label&quot;:&quot;Yoon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/Zolpidem_Yoon2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2026_DSST&quot;,&quot;label&quot;:&quot;Kim_2026 \u00b7 DSST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Kim_2026_DSST.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Perrais_1999_mIPSC_duration&quot;,&quot;label&quot;:&quot;Perrais_1999 \u00b7 mIPSC duration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # zolpidem — `Zolpidem_Kim2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Zolpidem absorption unit could not be standardized and non-integer transit compartments caused model deviations.
+> This record was reviewed on 2026-11-07 16:19 UTC (Needs review), but the paper was screened again on 2026-10-06 23:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Zolpidem absorption unit could not be standardized and non-integer transit compartments caused model deviations.
 
-<div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Kim2026_reference" status="needs_review" stale="false" population="healthy Korean volunteers" measured-compound="zolpidem" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Kim2026_reference" status="needs_review" stale="true" population="healthy Korean volunteers" measured-compound="zolpidem" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kim HC, Sunwoo J, Yoon S, Jang IJ, Chung JY. Population Pharmacokinetic-Pharmacodynamic Analysis of Zolpidem in Healthy Volunteers: Covariate Contributions to Variability in CNS Responses. CPT: pharmacometrics & systems pharmacology 15(3):e70208 (2026).
@@ -44,7 +44,7 @@ Kim HC, Sunwoo J, Yoon S, Jang IJ, Chung JY. Population Pharmacokinetic-Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,6 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp470208-tbl-0002:row5:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp470208-tbl-0002:row2:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['psp470208-tbl-0002:row6:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['psp470208-tbl-0002:row3:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 18 L/h | ['psp470208-tbl-0002:row5:col1'] |

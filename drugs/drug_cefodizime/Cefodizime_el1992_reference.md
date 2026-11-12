@@ -5,11 +5,11 @@
 
 # cefodizime — `Cefodizime_el1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 15:38 UTC (Needs review), but the paper was screened again on 2026-10-07 11:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_el1992_reference" status="needs_review" stale="false" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_el1992_reference" status="extracted" stale="true" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics of cefodizime in patients with liver cirrhosis and ascites. Chemotherapy 38(4):201–205 (1992).
@@ -27,8 +27,6 @@ el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics o
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life | t1/2z | 2.7 | h |
@@ -37,7 +35,7 @@ el Touny M, el Guinaidy M, Abdel Bary M, Osman L, Sabbour MS. Pharmacokinetics o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,7 +109,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['el_1992:abstract', 'el_1992:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['el_1992:abstract', 'el_1992:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['el_1992:abstract', 'el_1992:abstract'] |
@@ -144,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

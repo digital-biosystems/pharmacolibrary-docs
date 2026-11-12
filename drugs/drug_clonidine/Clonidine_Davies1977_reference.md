@@ -5,11 +5,11 @@
 
 # clonidine — `Clonidine_Davies1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The elimination rate constant for clonidine was rejected due to a unit mismatch, with a second reader proposing 73.2 instead of 0.084.
+> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 06:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for clonidine was rejected due to a unit mismatch, with a second reader proposing 73.2 instead of 0.084.
 
-<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Davies1977_reference" status="rejected" stale="false" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Davies1977_reference" status="rejected" stale="true" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Davies DS, Wing AM, Reid JL, Neill DM, Tippett P, Dollery CT. Pharmacokinetics and concentration-effect relationships of intervenous and oral clonidine. Clinical pharmacology and therapeutics 21(5):593–601 (1977).
@@ -48,7 +48,7 @@ Davies DS, Wing AM, Reid JL, Neill DM, Tippett P, Dollery CT. Pharmacokinetics a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q60 | pass | [time] |  | ['Davies_1977_table_2:row3:col1', 'Davies_1977_table_2:row3:col2', 'Davies_1977_table_2:row3:col3', 'Davies_1977_table_2:row3:col4', 'Davies_1977_table_2:row3:col5', 'Davies_1977_table_2:row3:col6', 'Davies_1977_table_2:row3:col7'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Davies_1977_table_2:row7:col1', 'Davies_1977_table_2:row7:col2', 'Davies_1977_table_2:row7:col3', 'Davies_1977_table_2:row7:col4', 'Davies_1977_table_2:row7:col5', 'Davies_1977_table_2:row7:col6', 'Davies_1977_table_2:row7:col7'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Davies_1977_table_2:row8:col1', 'Davies_1977_table_2:row8:col2', 'Davies_1977_table_2:row8:col3', 'Davies_1977_table_2:row8:col4', 'Davies_1977_table_2:row8:col5', 'Davies_1977_table_2:row8:col6', 'Davies_1977_table_2:row8:col7'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Davies_1977_table_2:row0:col1', 'Davies_1977_table_2:row0:col2', 'Davies_1977_table_2:row0:col3', 'Davies_1977_table_2:row0:col4', 'Davies_1977_table_2:row0:col5', 'Davies_1977_table_2:row0:col6', 'Davies_1977_table_2:row0:col7'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) | ['Davies_1977_table_2:row0:col1', 'Davies_1977_table_2:row0:col2', 'Davies_1977_table_2:row0:col3', 'Davies_1977_table_2:row0:col4', 'Davies_1977_table_2:row0:col5', 'Davies_1977_table_2:row0:col6', 'Davies_1977_table_2:row0:col7'] |
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] |  | ['Davies_1977_table_4:row3:col2', 'Davies_1977_table_4:row3:col3', 'Davies_1977_table_4:row3:col4', 'Davies_1977_table_4:row3:col5', 'Davies_1977_table_4:row3:col6', 'Davies_1977_table_4:row3:col7', 'Davies_1977_table_4:row3:col8'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.05 | ['Davies_1977_table_2:row9:col1', 'Davies_1977_table_2:row9:col2', 'Davies_1977_table_2:row9:col3', 'Davies_1977_table_2:row9:col4', 'Davies_1977_table_2:row9:col5', 'Davies_1977_table_2:row9:col6', 'Davies_1977_table_2:row9:col7'] |
 | C8_topology | pass |  |  |  |
@@ -182,7 +182,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

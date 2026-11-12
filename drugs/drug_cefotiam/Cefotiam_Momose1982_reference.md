@@ -5,11 +5,11 @@
 
 # cefotiam — `Cefotiam_Momose1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The volume of distribution was recorded as 70.0 L, creating a dimensional mismatch with the drug's clearance of 63.2 L/h.
+> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 10:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution was recorded as 70.0 L, creating a dimensional mismatch with the drug's clearance of 63.2 L/h.
 
-<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="false" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="true" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsulodin and cefotiam to human aqueous humor and cornea]. The Japanese journal of antibiotics 35(12):2879–2893 (1982).
@@ -37,7 +37,7 @@ Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Burlot_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Irby_2021:review'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Momose_1982:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Momose_1982:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 63.2 | ['Burlot_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 63.2 L/h | ['Burlot_2026:review'] |
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

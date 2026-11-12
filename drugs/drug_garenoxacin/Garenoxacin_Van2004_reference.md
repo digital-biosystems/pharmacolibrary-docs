@@ -4,11 +4,11 @@
 
 # garenoxacin — `Garenoxacin_Van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for garenoxacin was rejected because its unit, liters per hour, could not be converted to a standard unit.
+> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-13 11:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for garenoxacin was rejected because its unit, liters per hour, could not be converted to a standard unit.
 
-<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Van2004_reference" status="rejected" stale="false" population="patients with community-acquired respiratory tract infections" measured-compound="garenoxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="garenoxacin" model-id="Garenoxacin_Van2004_reference" status="rejected" stale="true" population="patients with community-acquired respiratory tract infections" measured-compound="garenoxacin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Van Wart S, Phillips L, Ludwig EA, Russo R, Gajjar DA, Bello A et al. Population pharmacokinetics and pharmacodynamics of garenoxacin in patients with community-acquired respiratory tract infections. Antimicrobial agents and chemotherapy 48(12):4766–4777 (2004).
@@ -42,7 +42,7 @@ Van Wart S, Phillips L, Ludwig EA, Russo R, Gajjar DA, Bello A et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,7 +112,7 @@ The model specifies an oral one-compartment structure for garenoxacin. The param
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_3:row5:col3', 'tab_3:row5:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l/hr | ['Van_2004_table_2:row2:col1', 'Van_2004_table_2:row2:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l/hr ([length] ** 3 / [time]) | ['Van_2004_table_2:row2:col1', 'Van_2004_table_2:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_3:row6:col1', 'tab_3:row6:col2', 'tab_3:row6:col3', 'tab_3:row6:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -135,7 +135,7 @@ The model specifies an oral one-compartment structure for garenoxacin. The param
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

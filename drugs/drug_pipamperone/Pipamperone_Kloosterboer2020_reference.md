@@ -4,11 +4,11 @@
 
 # pipamperone — `Pipamperone_Kloosterboer2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Pipamperone record rejected because it lacks clearance and elimination parameters, making it not a compartmental population pharmacokinetic model.
+> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-06 16:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pipamperone record rejected because it lacks clearance and elimination parameters, making it not a compartmental population pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="false" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="true" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers MHJ et al. Pipamperone Population Pharmacokinetics Related to Effectiveness and Side Effects in Children and Adolescents. Clinical pharmacokinetics 59(11):1393–1405 (2020).
@@ -36,7 +36,7 @@ Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,8 +132,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q353 | pass | [length] ** 3 |  | ['Tab2:row2:col1'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab2:row1:col1', 'Tab2:row1:col2'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | μg/L | ['Tab2:row9:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab2:row1:col1', 'Tab2:row1:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | μg/L ([mass] / [length] ** 3) | ['Tab2:row9:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -153,7 +153,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

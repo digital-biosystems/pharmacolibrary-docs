@@ -35,7 +35,7 @@ Daptomycin is an antibiotic used to treat serious bacterial infections, mainly t
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Lou_2021_reference](drugs/drug_daptomycin/Daptomycin_Lou2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lou Y et al., Population pharmacokinetics and individ…, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105818](https://doi.org/10.1016/j.ejps.2021.105818) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dvorchik_2004_reference](drugs/drug_daptomycin/Daptomycin_Dvorchik2004_reference.md) | — | 1-compartment (no model) | 0 | Dvorchik B et al., Population pharmacokinetics of daptomyc…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.8.2799-2807.2004](https://doi.org/10.1128/AAC.48.8.2799-2807.2004) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [García-Martínez_2022_reference](drugs/drug_daptomycin/Daptomycin_GarcaMartnez2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | García-Martínez T et al., Population Pharmacokinetic/Pharmacodyna…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102226](https://doi.org/10.3390/pharmaceutics14102226) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [García-Martínez_2022_reference](drugs/drug_daptomycin/Daptomycin_GarcaMartnez2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | García-Martínez T et al., Population Pharmacokinetic/Pharmacodyna…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102226](https://doi.org/10.3390/pharmaceutics14102226) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Olney_2024_2_reference](drugs/drug_daptomycin/Daptomycin_Olney2024v2_reference.md) | — | 1-compartment (no model) | 0 | Olney KB et al., Daptomycin Dose Optimization in Pediatr…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2425](https://doi.org/10.1002/jcph.2425) |
 
 ## ADME sites
@@ -73,7 +73,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 131 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

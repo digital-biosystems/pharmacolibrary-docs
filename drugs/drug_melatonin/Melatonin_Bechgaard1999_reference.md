@@ -5,11 +5,11 @@
 
 # melatonin — `Melatonin_Bechgaard1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:03 UTC (Needs review), but the paper was screened again on 2026-10-06 21:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Bechgaard1999_reference" status="needs_review" stale="false" population="rabbits" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Bechgaard1999_reference" status="needs_review" stale="true" population="rabbits" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bechgaard E, Lindhardt K, Martinsen L. Intranasal absorption of melatonin in vivo bioavailability study. International journal of pharmaceutics 182(1):1–5 (1999).
@@ -42,7 +42,7 @@ Bechgaard E, Lindhardt K, Martinsen L. Intranasal absorption of melatonin in viv
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,6 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wang_2024:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bechgaard_1999:abstract'] |
@@ -168,7 +169,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

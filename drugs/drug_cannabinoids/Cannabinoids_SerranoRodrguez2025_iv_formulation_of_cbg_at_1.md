@@ -5,11 +5,11 @@
 
 # cannabinoids — `Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The record was rejected due to apparent clearance coherence errors and a dimension mismatch in Vmax for cannabigerol.
+> This record was reviewed on 2026-11-07 15:14 UTC (Rejected), but the paper was screened again on 2026-10-07 05:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to apparent clearance coherence errors and a dimension mismatch in Vmax for cannabigerol.
 
-<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1" status="rejected" stale="false" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1" status="rejected" stale="true" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Serrano-Rodríguez JM, Miraz R, Saitua A, Díez de Castro E, Ledesma-Escobar C, Ferreiro-Vera C et al. Metabolism, pharmacokinetics, and bioavailability of cannabigerol in horses following intravenous and oral administration with micellar and oil formulations. Frontiers in veterinary science 12:1688214 (2025).
@@ -54,7 +54,7 @@ Serrano-Rodríguez JM, Miraz R, Saitua A, Díez de Castro E, Ledesma-Escobar C, 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,10 +119,10 @@ The maximum metabolic rate Vmax was reported as 0.0041 L/kg, which is dimensiona
 | C0_has_structural_params | pass |  | 16 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | fail | [substance] * [time] / [length] ** 3 | μmol/L·h | ['Serrano-Rodríguez_2025_table_2:row2:col1', 'Serrano-Rodríguez_2025_table_2:row2:col2', 'Serrano-Rodríguez_2025_table_2:row2:col3', 'Serrano-Rodríguez_2025_table_2:row2:col4'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | μmol/L·h ([substance] * [time] / [length] ** 3) | ['Serrano-Rodríguez_2025_table_2:row2:col1', 'Serrano-Rodríguez_2025_table_2:row2:col2', 'Serrano-Rodríguez_2025_table_2:row2:col3', 'Serrano-Rodríguez_2025_table_2:row2:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Serrano-Rodríguez_2025_table_S1:row6:col4', 'Serrano-Rodríguez_2025_table_S1:row6:col5', 'Serrano-Rodríguez_2025_table_S1:row6:col6', 'Serrano-Rodríguez_2025_table_S1:row6:col7'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Serrano-Rodríguez_2025_table_S1:row8:col4', 'Serrano-Rodríguez_2025_table_S1:row8:col5', 'Serrano-Rodríguez_2025_table_S1:row8:col6'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | μmol/L | ['Serrano-Rodríguez_2025_table_2:row4:col3', 'Serrano-Rodríguez_2025_table_2:row4:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | μmol/L ([substance] / [length] ** 3) | ['Serrano-Rodríguez_2025_table_2:row4:col3', 'Serrano-Rodríguez_2025_table_2:row4:col4'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Serrano-Rodríguez_2025_table_S1:row12:col4', 'Serrano-Rodríguez_2025_table_S1:row12:col5', 'Serrano-Rodríguez_2025_table_S1:row12:col6', 'Serrano-Rodríguez_2025_table_S1:row12:col7'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Serrano-Rodríguez_2025_table_2:row5:col3', 'Serrano-Rodríguez_2025_table_2:row5:col4'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Serrano-Rodríguez_2025_table_2:row6:col1', 'Serrano-Rodríguez_2025_table_2:row6:col2', 'Serrano-Rodríguez_2025_table_2:row6:col3', 'Serrano-Rodríguez_2025_table_2:row6:col4'] |
@@ -130,7 +130,7 @@ The maximum metabolic rate Vmax was reported as 0.0041 L/kg, which is dimensiona
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Serrano-Rodríguez_2025_table_S1:row9:col4', 'Serrano-Rodríguez_2025_table_S1:row9:col5', 'Serrano-Rodríguez_2025_table_S1:row9:col6', 'Serrano-Rodríguez_2025_table_S1:row9:col7'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Serrano-Rodríguez_2025_table_2:row7:col1', 'Serrano-Rodríguez_2025_table_2:row7:col2'] |
 | C5_dimension_Q66 | pass | [length] ** 3 |  | ['Serrano-Rodríguez_2025_table_S1:row10:col4', 'Serrano-Rodríguez_2025_table_S1:row10:col5', 'Serrano-Rodríguez_2025_table_S1:row10:col6', 'Serrano-Rodríguez_2025_table_S1:row10:col7'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | μmol/L·h | ['Serrano-Rodríguez_2025_table_2:row3:col1', 'Serrano-Rodríguez_2025_table_2:row3:col2', 'Serrano-Rodríguez_2025_table_2:row3:col3', 'Serrano-Rodríguez_2025_table_2:row3:col4'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | μmol/L·h ([substance] * [time] / [length] ** 3) | ['Serrano-Rodríguez_2025_table_2:row3:col1', 'Serrano-Rodríguez_2025_table_2:row3:col2', 'Serrano-Rodríguez_2025_table_2:row3:col3', 'Serrano-Rodríguez_2025_table_2:row3:col4'] |
 | C5_unit_missing_Q47 | fail | 1 / [time] |  | ['Serrano-Rodríguez_2025_table_S1:row4:col4', 'Serrano-Rodríguez_2025_table_S1:row4:col5', 'Serrano-Rodríguez_2025_table_S1:row4:col6', 'Serrano-Rodríguez_2025_table_S1:row4:col7'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] |  | ['Serrano-Rodríguez_2025_table_S1:row2:col4', 'Serrano-Rodríguez_2025_table_S1:row2:col5', 'Serrano-Rodríguez_2025_table_S1:row2:col6', 'Serrano-Rodríguez_2025_table_S1:row2:col7'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.29 with apparent parameterization |  |
@@ -156,7 +156,7 @@ The maximum metabolic rate Vmax was reported as 0.0041 L/kg, which is dimensiona
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

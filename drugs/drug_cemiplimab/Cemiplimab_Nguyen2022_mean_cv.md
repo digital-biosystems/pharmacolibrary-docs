@@ -5,11 +5,11 @@
 
 # cemiplimab — `Cemiplimab_Nguyen2022_mean_cv`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Cemiplimab clearance was incorrectly recorded as a negative change in clearance (-10.8%), causing the base clearance value to be replaced with an implausible negative number.
+> This record was reviewed on 2026-11-07 15:28 UTC (Rejected), but the paper was screened again on 2026-10-07 10:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cemiplimab clearance was incorrectly recorded as a negative change in clearance (-10.8%), causing the base clearance value to be replaced with an implausible negative number.
 
-<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="rejected" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="needs_review" stale="true" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population pharmacokinetics modeling and exposure-response analyses of cemiplimab in patients with recurrent or metastatic cervical cancer. CPT: pharmacometrics & systems pharmacology 11(11):1458–1471 (2022).
@@ -29,7 +29,7 @@ Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
@@ -43,7 +43,7 @@ Nguyen JH, Epling D, Dolphin N, Paccaly A, Conrado D, Davis JD et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -189,13 +189,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 19.7 | 16.6 | 0.8424 | 0.25 | reported t½β |
-| C2_base_sign_Q31 | fail |  | -10.8 |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Nguyen_2022_table_2:row0:col3'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['Nguyen_2022_table_2:row15:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Nguyen_2022:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  |  |  | ['Nguyen_2022_table_2:row30:col3'] |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 |  |  |  | ['Nguyen_2022_table_2:row35:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  |  |  | ['Nguyen_2022_table_2:row10:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.246 |  |  | ['Nguyen_2022_table_2:row0:col3'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0103 L/h |  |  | ['Nguyen_2022_table_2:row0:col3'] |
@@ -212,13 +210,23 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

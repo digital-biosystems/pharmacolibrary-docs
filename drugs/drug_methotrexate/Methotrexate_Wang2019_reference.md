@@ -5,11 +5,11 @@
 
 # methotrexate — `Methotrexate_Wang2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Methotrexate absorption rate constant units are incompatible with the model, and the model structure includes an unreachable compartment.
+> This record was reviewed on 2026-11-07 14:12 UTC (Rejected), but the paper was screened again on 2026-09-15 06:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Methotrexate absorption rate constant units are incompatible with the model, and the model structure includes an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Wang2019_reference" status="rejected" stale="false" population="Chinese patients with rheumatoid arthritis" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Wang2019_reference" status="rejected" stale="true" population="Chinese patients with rheumatoid arthritis" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wang Z, Zhang N, Chen C, Chen S, Xu J, Zhou Y et al. Influence of the OATP Polymorphism on the Population Pharmacokinetics of Methotrexate in Chinese Patients. Current drug metabolism 20(7):592–600 (2019).
@@ -39,7 +39,7 @@ Wang Z, Zhang N, Chen C, Chen S, Xu J, Zhou Y et al. Influence of the OATP Polym
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T3:row1:col1', 'T3:row1:col2'] |
-| C5_dimension_Q49 | fail | [time] / [length] ** 3 | h/L | ['T3:row3:col1', 'T3:row3:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h/L ([time] / [length] ** 3) | ['T3:row3:col1', 'T3:row3:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Pan_2026:review'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['T3:row2:col1', 'T3:row2:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['T3:row5:col1', 'T3:row5:col2'] |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

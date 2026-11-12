@@ -4,11 +4,11 @@
 
 # istradefylline — `Istradefylline_Knebel2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch on the intercompartmental clearance parameter, which was extracted from an abstract-only source.
+> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-06 14:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the intercompartmental clearance parameter, which was extracted from an abstract-only source.
 
-<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="true" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population pharmacokinetic analysis of istradefylline in healthy subjects and in patients with Parkinson's disease. Journal of clinical pharmacology 51(1):40–52 (2011).
@@ -39,7 +39,7 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q18 | fail | dimensionless | % | ['Knebel_2011:abstract'] |
+| C5_dimension_Q18 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Knebel_2011:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Knebel_2011:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Knebel_2011:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Knebel_2011:abstract'] |
@@ -158,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the full text to specify the mechanism by which alpha-bungarotoxin inhibits acetylcholine-induced contractions. The record identifies an IC50 of 9×10(-7) M, but no rate parameters or explicit kinetic mechanism are stated in the available excerpts.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Seifert_2005`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

@@ -5,11 +5,11 @@
 
 # quinidine — `Quinidine_Ueda1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Quinidine record rejected because the intercompartmental rate constant value of 0.226 min⁻¹ has a unit that cannot be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:20 UTC (Rejected), but the paper was screened again on 2026-10-08 21:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Quinidine record rejected because the intercompartmental rate constant value of 0.226 min⁻¹ has a unit that cannot be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="true" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmethyl metabolite in rabbits. Journal of pharmaceutical sciences 69(12):1400–1403 (1980).
@@ -46,7 +46,7 @@ Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmeth
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -160,13 +160,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Ueda_1980_table_1:row8:col1', 'Ueda_1980_table_1:row8:col2', 'Ueda_1980_table_1:row8:col3'] |
-| C5_dimension_Q30 | fail | 1 / [time] | min⁻¹ | ['Ueda_1980_table_1:row4:col1', 'Ueda_1980_table_1:row4:col2', 'Ueda_1980_table_1:row4:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | min⁻¹ (1 / [time]) | ['Ueda_1980_table_1:row4:col1', 'Ueda_1980_table_1:row4:col2', 'Ueda_1980_table_1:row4:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Ueda_1980_table_1:row2:col1', 'Ueda_1980_table_1:row2:col2', 'Ueda_1980_table_1:row2:col3'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Ueda_1980_table_1:row1:col1', 'Ueda_1980_table_1:row1:col2', 'Ueda_1980_table_1:row1:col3'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Ueda_1980_table_1:row3:col1', 'Ueda_1980_table_1:row3:col2', 'Ueda_1980_table_1:row3:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Ueda_1980_table_1:row7:col1', 'Ueda_1980_table_1:row7:col2', 'Ueda_1980_table_1:row7:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Ueda_1980_table_1:row9:col1', 'Ueda_1980_table_1:row9:col2', 'Ueda_1980_table_1:row9:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Ueda_1980_table_1:row0:col1', 'Ueda_1980_table_1:row0:col2', 'Ueda_1980_table_1:row0:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) | ['Ueda_1980_table_1:row0:col1', 'Ueda_1980_table_1:row0:col2', 'Ueda_1980_table_1:row0:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.8 | ['Ueda_1980_table_1:row8:col1', 'Ueda_1980_table_1:row8:col2', 'Ueda_1980_table_1:row8:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 70.6 L/h | ['Ueda_1980_table_1:row8:col1', 'Ueda_1980_table_1:row8:col2', 'Ueda_1980_table_1:row8:col3'] |
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

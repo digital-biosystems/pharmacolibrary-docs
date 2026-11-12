@@ -25,8 +25,8 @@ Vosoritide is a peptide drug used to treat achondroplasia, a condition affecting
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Qi_2024_median](drugs/drug_vosoritide/Vosoritide_Qi2024_median.md) | — | 1-compartment (no model) | 4 (+2 cov.) | Qi Y et al., Development of a Weight-Band Dosing App…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01371-6](https://doi.org/10.1007/s40262-024-01371-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ typical_value](drugs/drug_vosoritide/Vosoritide_Qi2024_typical_value.md) | — | 1-compartment (no model) | 4 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Qi_2024_median](drugs/drug_vosoritide/Vosoritide_Qi2024_median.md) | — | 1-compartment (no model) | 4 (+2 cov.) | Qi Y et al., Development of a Weight-Band Dosing App…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01371-6](https://doi.org/10.1007/s40262-024-01371-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ typical_value](drugs/drug_vosoritide/Vosoritide_Qi2024_typical_value.md) | — | 1-compartment (no model) | 4 (+2 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -67,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

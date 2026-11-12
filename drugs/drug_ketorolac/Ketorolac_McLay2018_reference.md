@@ -5,11 +5,11 @@
 
 # ketorolac — `Ketorolac_McLay2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance parameter is incompatible with the record's one-compartment model structure.
+> This record was reviewed on 2026-11-07 14:51 UTC (Rejected), but the paper was screened again on 2026-10-07 01:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance parameter is incompatible with the record's one-compartment model structure.
 
-<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="false" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="true" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The pharmacokinetics of intravenous ketorolac in children aged 2 months to 16 years: A population analysis. Paediatric anaesthesia 28(2):80–86 (2018).
@@ -37,7 +37,7 @@ McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,8 +118,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | L. 70 kg-1 | ['McLay_2018:abstract'] |
-| C5_dimension_Q30 | fail | [length] ** 3 | L. 70 kg-1 | ['McLay_2018:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | L. 70 kg-1 ([length] ** 3) | ['McLay_2018:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | L. 70 kg-1 ([length] ** 3) | ['McLay_2018:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.53 | ['McLay_2018:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

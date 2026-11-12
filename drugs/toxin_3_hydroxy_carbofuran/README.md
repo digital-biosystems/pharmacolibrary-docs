@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;3-Hydroxy-carbofuran&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_3HydroxyCarbofuran_Cui2019_reference&quot;,&quot;label&quot;:&quot;Cui_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_3_hydroxy_carbofuran/D_3HydroxyCarbofuran_Cui2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # 3-Hydroxy-carbofuran
 
@@ -28,11 +29,17 @@
 | 3-hydroxycarbofuran | parent | 237.255 | C12H15NO4 | PubChem | [27975](https://pubchem.ncbi.nlm.nih.gov/compound/27975) | Cui_2019 |
 | Carbofuran | metabolite | — (mass units only) | — | — | — | — |
 
+## Start here
+
+> **Cui_2019_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult zebrafish. [Run it in the simulator](drugs/toxin_3_hydroxy_carbofuran/D_3HydroxyCarbofuran_Cui2019_reference.md?tab=Simulation) · [record](drugs/toxin_3_hydroxy_carbofuran/D_3HydroxyCarbofuran_Cui2019_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [Cui_2019_reference](drugs/toxin_3_hydroxy_carbofuran/D_3HydroxyCarbofuran_Cui2019_reference.md) | — | retention function (no model) | 1 | Cui J et al., Bioaccumulation and Metabolism of Carbo…, Journal of agricultural and… (2019) | [10.1021/acs.jafc.9b03674](https://doi.org/10.1021/acs.jafc.9b03674) |
+| <span class="pk-rf" hidden data-species="fish" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [Cui_2019_reference](drugs/toxin_3_hydroxy_carbofuran/D_3HydroxyCarbofuran_Cui2019_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Cui J et al., Bioaccumulation and Metabolism of Carbo…, Journal of agricultural and… (2019) | [10.1021/acs.jafc.9b03674](https://doi.org/10.1021/acs.jafc.9b03674) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

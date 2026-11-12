@@ -4,11 +4,11 @@
 
 # colchicine — `Colchicine_Rochdi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected because the macro-rate constant for colchicine's fast phase is listed with the units of a half-life.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 03:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the macro-rate constant for colchicine's fast phase is listed with the units of a half-life.
 
-<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="false" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="true" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and absolute bioavailability of colchicine after i.v. and oral administration in healthy human volunteers and elderly subjects. European journal of clinical pharmacology 46(4):351–354 (1994).
@@ -40,7 +40,7 @@ Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and abs
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q60 | pass | [time] |  | ['Rochdi_1994:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
-| C5_dimension_Q67 | fail | [time] | min | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min ([time]) | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.5 | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.5 L/h | ['Rochdi_1994:abstract', 'Rochdi_1994:abstract'] |
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

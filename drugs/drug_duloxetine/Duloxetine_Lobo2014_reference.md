@@ -5,11 +5,11 @@
 
 # duloxetine — `Duloxetine_Lobo2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record's Cavg parameter value of 30% for duloxetine causes a dimension mismatch, and it was rejected because the record was built from the abstract alone.
+> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-06 22:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record's Cavg parameter value of 30% for duloxetine causes a dimension mismatch, and it was rejected because the record was built from the abstract alone.
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="false" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="true" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lobo ED, Quinlan T, Prakash A. Pharmacokinetics of orally administered duloxetine in children and adolescents with major depressive disorder. Clinical pharmacokinetics 53(8):731–740 (2014).
@@ -39,7 +39,7 @@ Lobo ED, Quinlan T, Prakash A. Pharmacokinetics of orally administered duloxetin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Lobo_2014:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Lobo_2014:abstract'] |
-| C5_dimension_Q71 | fail | dimensionless | % | ['Lobo_2014:abstract'] |
+| C5_dimension_Q71 | fail | [mass] / [length] ** 3 | % (dimensionless) | ['Lobo_2014:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Lobo_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -156,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

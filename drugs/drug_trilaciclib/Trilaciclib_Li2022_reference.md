@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;trilaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/&quot;},{&quot;label&quot;:&quot;Li_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trilaciclib_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trilaciclib_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # trilaciclib — `Trilaciclib_Li2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Absorption rate constant and bioavailability assumed without data, causing simulated topotecan peak concentrations to differ from reported values.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-07 20:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Absorption rate constant and bioavailability assumed without data, causing simulated topotecan peak concentrations to differ from reported values.
 
-<div class="pk-model-meta" hidden drug="trilaciclib" model-id="Trilaciclib_Li2022_reference" status="needs_review" stale="false" population="patients with extensive-stage small-cell lung cancer" measured-compound="topotecan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="trilaciclib" model-id="Trilaciclib_Li2022_reference" status="needs_review" stale="true" population="patients with extensive-stage small-cell lung cancer" measured-compound="topotecan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li C, Horton JK, Sale M, Curd L, Goti V, Tao W et al. Pharmacokinetic Drug-Drug Interaction Studies Between Trilaciclib and Midazolam, Metformin, Rifampin, Itraconazole, and Topotecan in Healthy Volunteers and Patients with Extensive-Stage Small-Cell Lung Cancer. Clinical drug investigation 42(8):679–692 (2022).
@@ -41,7 +41,7 @@ Li C, Horton JK, Sale M, Curd L, Goti V, Tao W et al. Pharmacokinetic Drug-Drug 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -172,7 +172,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 5.68 | 5.687 | 1.001 | 0.25 | reported t½β |
+| C1_half_life_beta | fail | 5.68 | 2.515 | 0.4428 | 0.25 | reported t½β |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4', 'Tab2:row1:col5', 'Li_2022_table_3:row0:col2', 'Li_2022_table_3:row0:col3', 'Li_2022_table_3:row0:col4', 'Li_2022_table_4:row0:col2', 'Li_2022_table_4:row0:col3', 'Li_2022_table_4:row0:col4'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |

@@ -4,11 +4,11 @@
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_six_anephric_patients`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:20 UTC (Needs review), but the paper was screened again on 2026-10-07 06:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_six_anephric_patients" status="needs_review" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_six_anephric_patients" status="extracted" stale="true" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric patients. The Journal of clinical investigation 54(5):1221–1226 (1974).
@@ -30,8 +30,6 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Vₐ, liter | V | 5.01 | liter |
@@ -40,7 +38,7 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,7 +118,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q60 | pass | [time] |  | ['Lowenthal_1974_table_3:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lowenthal_1974_table_3:row5:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Somani_2016:review'] |
@@ -170,7 +168,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

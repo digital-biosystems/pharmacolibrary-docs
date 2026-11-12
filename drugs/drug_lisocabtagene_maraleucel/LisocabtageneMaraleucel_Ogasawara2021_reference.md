@@ -4,11 +4,11 @@
 
 # lisocabtagene maraleucel — `LisocabtageneMaraleucel_Ogasawara2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-06 20:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="rejected" stale="false" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="needs_review" stale="true" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellular Kinetics of Lisocabtagene Maraleucel, an Autologous CD19-Directed Chimeric Antigen Receptor T-Cell Product, in Patients with Relapsed/Refractory Large B-Cell Lymphoma. Clinical pharmacokinetics 60(12):1621–1633 (2021).
@@ -28,7 +28,7 @@ Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellula
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
@@ -39,7 +39,7 @@ Ogasawara K, Dodds M, Mack T, Lymp J, Dell'Aringa J, Smith J. Population Cellula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,8 @@ _All readers agree on the compared fields of this record._
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q59 | pass | [time] |  | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4'] |
@@ -138,13 +139,23 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

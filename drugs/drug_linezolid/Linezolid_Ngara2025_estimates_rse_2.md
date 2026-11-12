@@ -5,11 +5,11 @@
 
 # linezolid — `Linezolid_Ngara2025_estimates_rse_2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The oral absorption lag time was rejected because its reported unit, days inverse, was not present in the available conversion reference.
+> This record was reviewed on 2026-11-07 15:27 UTC (Rejected), but the paper was screened again on 2026-10-13 12:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The oral absorption lag time was rejected because its reported unit, days inverse, was not present in the available conversion reference.
 
-<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse_2" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse_2" status="rejected" stale="true" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational Modeling of BTZ-043 to Predict Phase 2A Efficacy and Evaluate Drug-Drug Interactions With Bedaquiline, Pretomanid, and Linezolid in Murine Models. The Journal of infectious diseases 231(5):e901–e911 (2025).
@@ -43,7 +43,7 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jiaf088-T2:row3:col1', 'jiaf088-T2:row11:col1', 'jiaf088-T2:row19:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['jiaf088-T2:row5:col1', 'jiaf088-T2:row13:col1', 'jiaf088-T2:row21:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['jiaf088-T2:row4:col1', 'jiaf088-T2:row12:col1', 'jiaf088-T2:row20:col1'] |
-| C5_dimension_Q83 | fail | 1 / [time] | d−1 | ['jiaf088-T2:row38:col1'] |
+| C5_dimension_Q83 | fail | [time] | d−1 (1 / [time]) | ['jiaf088-T2:row38:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.01 L/h | ['jiaf088-T2:row3:col1', 'jiaf088-T2:row11:col1', 'jiaf088-T2:row19:col1'] |
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/&quot;},{&quot;label&quot;:&quot;van_2007 \u00b7 PD heart rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries&quot;,&quot;label&quot;:&quot;Graves_1993 \u00b7 relaxation of rat mesenteric resistance arteries pre-contracted with K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jamet_2015_RFU&quot;,&quot;label&quot;:&quot;Jamet_2015 \u00b7 RFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Jamet_2015_RFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lacerda_J_nior_2025_uterine_relaxation&quot;,&quot;label&quot;:&quot;Lacerda-J\u00fanior_2025 \u00b7 uterine relaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Lacerda_J_nior_2025_uterine_relaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Madders_2025_cAMP_i&quot;,&quot;label&quot;:&quot;Madders_2025 \u00b7 [cAMP]i&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Madders_2025_cAMP_i.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # heart rate — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
@@ -17,7 +18,7 @@
 
 **As extracted:** Isoprenaline drives heart rate (in b.p.m.): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The paper describes a sigmoid Emax model with an effect compartment linking S(-)-atenolol concentrations to the reduction of isoprenaline-induced heart rate, rather than the isoprenaline stimulation described in the record. The paper does not provide specific numerical values for the isoprenaline PD parameters (E0, Emax, EC50, n) in the provided excerpts, only noting that the EC50 for S(-)-atenolol was unreliable without isoprenaline.
 >
@@ -48,6 +49,33 @@ van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal
 </details>
 
 
+## Exposure-response model
+
+`Isoprenaline_van2007_PD_hr` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 374 b.p.m. | — |
+| Emax | 130 b.p.m. | — |
+| EC50 | 0.0138 ng ml À1 | 1.38e-08 kg/m3 |
+| gamma | 1.18 | — |
+
+Closed-form check points (response, SI): `at_0` = 374, `at_EC50` = 439, `at_inf` = 504
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -69,19 +97,54 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_modelica.zip" download>Isoprenaline_van2007_PD_hr_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_fmi.zip" download>Isoprenaline_van2007_PD_hr_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_matlab.zip" download>Isoprenaline_van2007_PD_hr_matlab.zip</a> <span class="pk-size">(1.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_sbml.zip" download>Isoprenaline_van2007_PD_hr_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_cellml.zip" download>Isoprenaline_van2007_PD_hr_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 374 |  |
+| input | model | `EC50` | 1.38e-08 |  |
+| input | model | `Emax` | 130 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 1.18 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Isoprenaline_van2007_PD_hr`. <https://pharmacolibrary.github.io/#/drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr>
+
+```bibtex
+@misc{pharmacolibrary_Isoprenalinevan2007PDhr,
+  title  = {{Pharmacolibrary model Isoprenaline_van2007_PD_hr}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_isoprenaline/Isoprenaline_van2007_PD_hr/Isoprenaline_van2007_PD_hr_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Isoprenaline_van2007_PD_hr_params.json` · controls `Isoprenaline_van2007_PD_hr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

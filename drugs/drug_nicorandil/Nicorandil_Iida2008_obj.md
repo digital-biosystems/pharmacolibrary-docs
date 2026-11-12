@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;nicorandil&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/&quot;},{&quot;label&quot;:&quot;Iida_2008 \u00b7 obj&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Iida_2008_2_PAWP&quot;,&quot;label&quot;:&quot;Iida_2008_2 \u00b7 PAWP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/pd_Iida_2008_2_PAWP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nicorandil — `Nicorandil_Iida2008_obj`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance; v3/F and t1/2γ have no unit.
+> This record was reviewed on 2026-11-07 16:28 UTC (Needs review), but the paper was screened again on 2026-09-09 23:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; v3/F and t1/2γ have no unit.
 
-<div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008_obj" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008_obj" status="needs_review" stale="true" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic modelling of the effects of nicorandil in the treatment of acute heart failure. British journal of clinical pharmacology (2008).
@@ -37,7 +38,7 @@ Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_unit_missing_Q78 | fail | [length] ** 3 |  | ['tab_2:row11:col7', 'tab_2:row11:col8', 'tab_2:row11:col10', 'tab_2:row11:col11'] |
 | C5_unit_missing_Q89 | fail | [time] |  | ['tab_2:row12:col7', 'tab_2:row12:col8', 'tab_2:row12:col10', 'tab_2:row12:col11'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -170,7 +171,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

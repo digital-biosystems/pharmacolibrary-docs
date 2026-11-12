@@ -5,11 +5,11 @@
 
 # salbutamol — `Salbutamol_Marques2024_value`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 14:49 UTC (Needs review), but the paper was screened again on 2026-11-04 09:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="false" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="extracted" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population Pharmacokinetic Model for Oral Salbutamol in Virtual Patients. Pharmaceutics 17(1) (2024).
@@ -29,8 +29,6 @@ Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population P
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Fa (%) | Fab | 85.20 |  |
@@ -44,7 +42,7 @@ Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +113,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Marques_2024_table_3:row6:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Marques_2024_table_3:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Heuberger_2018:review'] |
@@ -153,7 +151,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

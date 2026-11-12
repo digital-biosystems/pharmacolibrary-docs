@@ -43,7 +43,7 @@ Daclatasvir is an antiviral drug used to treat chronic hepatitis C, including in
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Wang_2018_asv_estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_asv_estimate_rse.md) | — | 2-compartment (no model) | 7 | Wang HC et al., Integrated pharmacokinetic/viral dynami…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.84](https://doi.org/10.1038/aps.2017.84) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F, k12</sub> | [↳ dcv_estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md) | ▶ model + simulator | 2-compartment, oral | 5 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_estimate_rse.md) | — | 1-compartment (no model) | 2 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Al-Nahari_2020_reference](drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md) | — | 1-compartment (no model) | 6 | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Al-Nahari_2020_reference](drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md) | — | 1-compartment (no model) | 6 | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Cressey_2021_reference](drugs/drug_daclatasvir/Daclatasvir_Cressey2021_reference.md) | — | 1-compartment (no model) | 0 | Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021) | [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282) |
 
 ## Pharmacodynamics (PD)
@@ -91,7 +91,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 38 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 6  ·  extracted 1  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 1  ·  needs review 3  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

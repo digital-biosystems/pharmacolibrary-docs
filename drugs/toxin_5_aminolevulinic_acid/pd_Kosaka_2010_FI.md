@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies 5-aminolevulinic acid as a dose-only driver of fluorescence intensity using a sigmoid Emax model with stimulation, but since the paper excerpts are unavailable, the specific mechanism, effect form, and key potency or rate parameters are not stated.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Kosaka_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

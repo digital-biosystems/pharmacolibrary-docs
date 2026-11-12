@@ -5,11 +5,11 @@
 
 # suramin sodium — `SuraminSodium_Motzer1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:08 UTC (Needs review), but the paper was screened again on 2026-10-07 09:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="needs_review" stale="false" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="extracted" stale="true" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Motzer RJ, Nanus DM, O'Moore P, Scher HI, Bajorin DF, Reuter V et al. Phase II trial of suramin in patients with advanced renal cell carcinoma: treatment results, pharmacokinetics, and tumor growth factor expression. Cancer research 52(20):5775–5779 (1992).
@@ -26,8 +26,6 @@ Motzer RJ, Nanus DM, O'Moore P, Scher HI, Bajorin DF, Reuter V et al. Phase II t
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | time to target level | tss | 13.8 | days |
@@ -37,7 +35,7 @@ Motzer RJ, Nanus DM, O'Moore P, Scher HI, Bajorin DF, Reuter V et al. Phase II t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,7 +118,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Naviaux_2017:review'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Motzer_1992:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Motzer_1992:abstract'] |
@@ -156,7 +154,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

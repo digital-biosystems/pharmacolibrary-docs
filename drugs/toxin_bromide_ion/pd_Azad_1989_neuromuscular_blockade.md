@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Doses of pipecuronium bromide (mcg/kg) inhibit neuromuscular blockade time-to-event, with an ED50 of 22.42 mcg/kg, ED90 of 31.81 mcg/kg, and ED95 of 35.12 mcg/kg. The paper does not describe the underlying mechanism or rate parameters.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Azad_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

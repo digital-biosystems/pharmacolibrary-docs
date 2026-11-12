@@ -33,8 +33,8 @@ Human insulin is an anti-diabetic medication used to treat type-1 diabetes and m
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Potocka_2011_reference](drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011) | [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Nosadini_1988_reference](drugs/drug_insulin_human/InsulinHuman_Nosadini1988_reference.md) | — | 1-compartment (no model) | 2 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
-| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Vølund_1987_reference](drugs/drug_insulin_human/InsulinHuman_Vlund1987_reference.md) | — | general linear (no model) | 2 | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nosadini_1988_reference](drugs/drug_insulin_human/InsulinHuman_Nosadini1988_reference.md) | — | 1-compartment (no model) | 2 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Vølund_1987_reference](drugs/drug_insulin_human/InsulinHuman_Vlund1987_reference.md) | — | general linear (no model) | 2 | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) |
 
 ## Pharmacodynamics (PD)
 
@@ -92,7 +92,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 80 matched, 46 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

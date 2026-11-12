@@ -5,11 +5,11 @@
 
 # metformin — `Metformin_Pentikinen1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:14 UTC (Needs review), but the paper was screened again on 2026-11-03 08:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Pentikinen1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Pentikinen1979_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pentikäinen PJ, Neuvonen PJ, Penttilä A. Pharmacokinetics of metformin after intravenous and oral administration to man. European journal of clinical pharmacology 16(3):195–202 (1979).
@@ -39,7 +39,7 @@ Pentikäinen PJ, Neuvonen PJ, Penttilä A. Pharmacokinetics of metformin after i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -127,6 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Pentikäinen_1979:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chae_2012:review'] |
@@ -162,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

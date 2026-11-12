@@ -5,11 +5,11 @@
 
 # milrinone — `Milrinone_Taniguchi2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:38 UTC (Needs review), but the paper was screened again on 2026-10-06 08:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Taniguchi2000_reference" status="needs_review" stale="false" population="patients with severe congestive heart failure during CVVH" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Taniguchi2000_reference" status="needs_review" stale="true" population="patients with severe congestive heart failure during CVVH" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Taniguchi T, Shibata K, Saito S, Matsumoto H, Okeie K. Pharmacokinetics of milrinone in patients with congestive heart failure during continuous venovenous hemofiltration. Intensive care medicine 26(8):1089–1093 (2000).
@@ -38,7 +38,7 @@ Taniguchi T, Shibata K, Saito S, Matsumoto H, Okeie K. Pharmacokinetics of milri
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -105,6 +105,7 @@ _All readers agree on the compared fields of this record._
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Foucher_2025:review'] |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['Taniguchi_2000:abstract'] |
@@ -141,7 +142,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

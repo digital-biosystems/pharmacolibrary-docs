@@ -4,11 +4,11 @@
 
 # acetazolamide — `Acetazolamide_Yano1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Acetazolamide apparent oral clearance was rejected due to a dimension mismatch where the value was missing.
+> This record was reviewed on 2026-11-07 16:22 UTC (Rejected), but the paper was screened again on 2026-10-07 18:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Acetazolamide apparent oral clearance was rejected due to a dimension mismatch where the value was missing.
 
-<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="false" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="true" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokinetics and pharmacodynamics of acetazolamide in patients with transient intraocular pressure elevation. European journal of clinical pharmacology 54(1):63–68 (1998).
@@ -35,7 +35,7 @@ Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,8 +128,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | fail | 1 / [time] | h(-1) | ['Yano_1998:abstract'] |
-| C5_dimension_Q76 | fail | [luminosity] / [length] ** 2 | l x kg(-1) | ['Yano_1998:abstract'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | h(-1) (1 / [time]) | ['Yano_1998:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | l x kg(-1) ([luminosity] / [length] ** 2) | ['Yano_1998:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

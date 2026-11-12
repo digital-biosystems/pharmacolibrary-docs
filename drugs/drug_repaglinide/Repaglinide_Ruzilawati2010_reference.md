@@ -4,11 +4,11 @@
 
 # repaglinide — `Repaglinide_Ruzilawati2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Repaglinide's volume of distribution is recorded as 23.09 L/h, an implausible value for a volume parameter, causing the model to be rejected.
+> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 16:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Repaglinide's volume of distribution is recorded as 23.09 L/h, an implausible value for a volume parameter, causing the model to be rejected.
 
-<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="false" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="true" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of repaglinide in healthy volunteers by using Non-Parametric Adaptive Grid Algorithm. Journal of clinical pharmacy and therapeutics 35(1):105–112 (2010).
@@ -35,7 +35,7 @@ Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,8 +116,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q47 | fail | [time] | h | ['Ruzilawati_2010:abstract'] |
-| C5_dimension_Q61 | fail | [length] ** 3 / [time] | L/h | ['Ruzilawati_2010:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['Ruzilawati_2010:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Ruzilawati_2010:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.00641 L | ['Ruzilawati_2010:abstract'] |
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

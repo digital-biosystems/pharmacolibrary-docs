@@ -5,11 +5,11 @@
 
 # risankizumab — `Risankizumab_Khatri2019_population_estimate_rse_a_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absolute subcutaneous bioavailability parameter was assigned the unit 'd' instead of a dimensionless fraction, causing a dimension mismatch rejection.
+> This record was reviewed on 2026-11-07 15:00 UTC (Rejected), but the paper was screened again on 2026-10-07 00:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absolute subcutaneous bioavailability parameter was assigned the unit 'd' instead of a dimensionless fraction, causing a dimension mismatch rejection.
 
-<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Khatri2019_population_estimate_rse_a_b" status="rejected" stale="false" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Khatri2019_population_estimate_rse_a_b" status="rejected" stale="true" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Khatri A, Eckert D, Oberoi R, Suleiman A, Pang Y, Cheng L et al. Pharmacokinetics of Risankizumab in Asian Healthy Subjects and Patients With Moderate to Severe Plaque Psoriasis, Generalized Pustular Psoriasis, and Erythrodermic Psoriasis. Journal of clinical pharmacology 59(12):1656–1668 (2019).
@@ -50,7 +50,7 @@ Khatri A, Eckert D, Oberoi R, Suleiman A, Pang Y, Cheng L et al. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.743). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.743). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 28 | 28.23 | 1.008 | 0.25 | reported t½β |
 | C2_reference | pass |  |  |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 6 / [time] | CL; L/d |  |  | ['jcph1473-tbl-0005:row1:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL; L/d ([length] ** 6 / [time]) |  |  | ['jcph1473-tbl-0005:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['jcph1473-tbl-0005:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['jcph1473-tbl-0005:row3:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['jcph1473-tbl-0005:row2:col1'] |
@@ -207,7 +207,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

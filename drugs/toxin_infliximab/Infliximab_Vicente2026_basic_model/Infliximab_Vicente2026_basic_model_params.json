@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Infliximab_Vicente2026_basic_model",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  120.0
+ ],
+ "parameters": {
+  "Cl": 4.75e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000124,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00012,
+  "ka": 3.1388888888888887e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 677521.4428857715
+ },
+ "reference_peaks": {
+  "central.C": 0.008604510178298313
+ },
+ "stop_time": 7862400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

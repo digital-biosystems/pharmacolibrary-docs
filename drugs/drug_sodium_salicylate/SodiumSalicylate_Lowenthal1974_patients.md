@@ -4,11 +4,11 @@
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_patients`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The 0.00879 min⁻¹ rate constant was rejected because its unit could not be converted to SI, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:20 UTC (Rejected), but the paper was screened again on 2026-10-07 06:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The 0.00879 min⁻¹ rate constant was rejected because its unit could not be converted to SI, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_patients" status="rejected" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_patients" status="rejected" stale="true" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric patients. The Journal of clinical investigation 54(5):1221–1226 (1974).
@@ -47,7 +47,7 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +124,7 @@ The record reports a micro-rate constant (k₆₁) of 0.00879 min⁻¹. Although
 | C5_dimension_Q48 | pass | 1 / [time] |  | ['Lowenthal_1974_table_2:row7:col1', 'Lowenthal_1974_table_2:row7:col2', 'Lowenthal_1974_table_2:row7:col3', 'Lowenthal_1974_table_2:row7:col4', 'Lowenthal_1974_table_2:row7:col5', 'Lowenthal_1974_table_2:row7:col6'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Lowenthal_1974_table_2:row10:col1', 'Lowenthal_1974_table_2:row10:col2', 'Lowenthal_1974_table_2:row10:col3', 'Lowenthal_1974_table_2:row10:col4', 'Lowenthal_1974_table_2:row10:col5', 'Lowenthal_1974_table_2:row10:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lowenthal_1974_table_2:row8:col1', 'Lowenthal_1974_table_2:row8:col2', 'Lowenthal_1974_table_2:row8:col3', 'Lowenthal_1974_table_2:row8:col4', 'Lowenthal_1974_table_2:row8:col5', 'Lowenthal_1974_table_2:row8:col6'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Lowenthal_1974_table_2:row3:col1', 'Lowenthal_1974_table_2:row3:col2', 'Lowenthal_1974_table_2:row3:col3', 'Lowenthal_1974_table_2:row3:col4', 'Lowenthal_1974_table_2:row3:col5', 'Lowenthal_1974_table_2:row3:col6'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) | ['Lowenthal_1974_table_2:row3:col1', 'Lowenthal_1974_table_2:row3:col2', 'Lowenthal_1974_table_2:row3:col3', 'Lowenthal_1974_table_2:row3:col4', 'Lowenthal_1974_table_2:row3:col5', 'Lowenthal_1974_table_2:row3:col6'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Somani_2016:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 3.5 L | ['Lowenthal_1974_table_2:row8:col1', 'Lowenthal_1974_table_2:row8:col2', 'Lowenthal_1974_table_2:row8:col3', 'Lowenthal_1974_table_2:row8:col4', 'Lowenthal_1974_table_2:row8:col5', 'Lowenthal_1974_table_2:row8:col6'] |
@@ -145,7 +145,7 @@ The record reports a micro-rate constant (k₆₁) of 0.00879 min⁻¹. Although
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

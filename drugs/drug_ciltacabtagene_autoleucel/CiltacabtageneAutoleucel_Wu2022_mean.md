@@ -4,11 +4,11 @@
 
 # ciltacabtagene autoleucel — `CiltacabtageneAutoleucel_Wu2022_mean`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ciltacabtagene autoleucel lacks volume and clearance parameters because the study is an exposure/outcome report, not a compartmental model.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 22:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ciltacabtagene autoleucel lacks volume and clearance parameters because the study is an exposure/outcome report, not a compartmental model.
 
-<div class="pk-model-meta" hidden drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_mean" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_mean" status="rejected" stale="true" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu LS, Su Y, Li C, Zhou W, Jackson CC, Sun YN et al. Population-based cellular kinetic characterization of ciltacabtagene autoleucel in subjects with relapsed or refractory multiple myeloma. Clinical and translational science 15(12):3000–3011 (2022).
@@ -43,7 +43,7 @@ Wu LS, Su Y, Li C, Zhou W, Jackson CC, Sun YN et al. Population-based cellular k
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,10 +110,11 @@ The record defines absorption and disposition parameters but omits any distribut
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q56 | pass | [time] |  | ['Wu_2022_table_3:row7:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | day−1 | ['Wu_2022_table_3:row2:col1'] |
+| C5_dimension_Q67 | fail | 1 / [time] | day−1 (1 / [time]) | ['Wu_2022_table_3:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Wu_2022_table_3:row0:col1'] |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 |  | ['Wu_2022_table_3:row6:col1'] |
 | C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 |  | ['Wu_2022_table_3:row5:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | days | ['Wu_2022_table_3:row1:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -132,7 +133,7 @@ The record defines absorption and disposition parameters but omits any distribut
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

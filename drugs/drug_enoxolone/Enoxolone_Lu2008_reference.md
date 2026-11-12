@@ -4,11 +4,11 @@
 
 # enoxolone — `Enoxolone_Lu2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Enoxolone volume of distribution parameter is assigned units of L/kg instead of L.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 13:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Enoxolone volume of distribution parameter is assigned units of L/kg instead of L.
 
-<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="false" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="true" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lu Y, Li J, Du SY. [Study on pharmacokinetics of glycyrrhetic acid in rats by RP-HPLC]. Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica 33(11):1294–1296 (2008).
@@ -40,7 +40,7 @@ Lu Y, Li J, Du SY. [Study on pharmacokinetics of glycyrrhetic acid in rats by RP
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +141,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lu_2008:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Lu_2008:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Lu_2008:abstract'] |
-| C5_dimension_Q61 | fail | [luminosity] / [length] ** 2 | L x kg(-1) | ['Lu_2008:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L x kg(-1) ([luminosity] / [length] ** 2) | ['Lu_2008:abstract'] |
 | C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | mg x L(-1) | ['Lu_2008:abstract'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | mg x h(-1) x L(-1) | ['Lu_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.715 | ['Lu_2008:abstract'] |
@@ -164,7 +164,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

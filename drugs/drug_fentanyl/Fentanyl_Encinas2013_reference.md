@@ -5,11 +5,11 @@
 
 # fentanyl — `Fentanyl_Encinas2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CLint has no unit.
+> This record was reviewed on 2026-11-07 14:23 UTC (Needs review), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CLint has no unit.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Encinas2013_reference" status="needs_review" stale="false" population="neonates" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Encinas2013_reference" status="needs_review" stale="true" population="neonates" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Encinas E, Calvo R, Lukas JC, Vozmediano V, Rodriguez M, Suarez E. A predictive pharmacokinetic/pharmacodynamic model of fentanyl for analgesia/sedation in neonates based on a semi-physiologic approach. Paediatric drugs 15(3):247–257 (2013).
@@ -51,7 +51,7 @@ Encinas E, Calvo R, Lukas JC, Vozmediano V, Rodriguez M, Suarez E. A predictive 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +148,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['tab_2:row10:col1'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_2:row9:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Andersen_1986:review'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | L/min/g of liver | ['tab_2:row4:col1'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] | L/min/g of liver | ['tab_2:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.028 | ['tab_2:row6:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.68 L/h | ['tab_2:row6:col1'] |
@@ -182,7 +182,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

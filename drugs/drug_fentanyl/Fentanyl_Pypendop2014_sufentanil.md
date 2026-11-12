@@ -5,11 +5,11 @@
 
 # fentanyl — `Fentanyl_Pypendop2014_sufentanil`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> The record was rejected because the model structure includes an orphan compartment with no dose path, and a structural rate constant has a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:24 UTC (Rejected), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the model structure includes an orphan compartment with no dose path, and a structural rate constant has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_sufentanil" status="rejected" stale="false" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_sufentanil" status="rejected" stale="true" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokinetics of fentanyl, alfentanil, and sufentanil in isoflurane-anesthetized cats. Journal of veterinary pharmacology and therapeutics 37(1):13–17 (2014).
@@ -48,7 +48,7 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,9 +140,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | 13.9-24.3 | ['Pypendop_2014_table_1:row14:col3'] |
-| C5_dimension_Q303 | fail | dimensionless | 0.455-0.908 | ['Pypendop_2014_table_1:row19:col3'] |
-| C5_dimension_Q354 | fail | dimensionless | 13.9-24.3 | ['Pypendop_2014_table_1:row15:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 13.9-24.3 (dimensionless) | ['Pypendop_2014_table_1:row14:col3'] |
+| C5_dimension_Q303 | fail | 1 / [time] | 0.455-0.908 (dimensionless) | ['Pypendop_2014_table_1:row19:col3'] |
+| C5_dimension_Q354 | fail | [length] ** 3 / [time] | 13.9-24.3 (dimensionless) | ['Pypendop_2014_table_1:row15:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Pypendop_2014_table_1:row25:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Pypendop_2014_table_1:row8:col3'] |
@@ -173,7 +173,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

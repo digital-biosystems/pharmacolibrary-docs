@@ -4,11 +4,11 @@
 
 # revefenacin — `Revefenacin_Lo2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because revefenacin's absorption rate constant has a unit mismatch.
+> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-07 14:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because revefenacin's absorption rate constant has a unit mismatch.
 
-<div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="false" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="true" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patients with Chronic Obstructive Pulmonary Disease. Clinical pharmacokinetics 60(3):391–401 (2021).
@@ -47,7 +47,7 @@ Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patien
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row10:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab2:row11:col1', 'Tab2:row11:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab2:row12:col1', 'Tab2:row12:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
@@ -191,7 +191,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

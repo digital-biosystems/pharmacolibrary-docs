@@ -4,11 +4,11 @@
 
 # axatilimab — `Axatilimab_Yang2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Intercompartmental clearance Q (2.6 L/h) has a dimension mismatch, and the CSF-1 compartment is unreachable from the dose, so the model was rejected.
+> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-06 23:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Intercompartmental clearance Q (2.6 L/h) has a dimension mismatch, and the CSF-1 compartment is unreachable from the dose, so the model was rejected.
 
-<div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="false" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="true" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic Population PK/PD Modeling of Axatilimab in Healthy Participants and Patients With Solid Tumors or Chronic Graft-Versus-Host Disease. Clinical pharmacology and therapeutics 117(3):704–715 (2025).
@@ -45,7 +45,7 @@ Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -208,7 +208,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['cpt3503-tbl-0001:row11:col1', 'cpt3503-tbl-0001:row11:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cpt3503-tbl-0001:row2:col1', 'cpt3503-tbl-0001:row2:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cpt3503-tbl-0001:row5:col1', 'cpt3503-tbl-0001:row5:col2'] |
-| C5_dimension_Q66 | fail | 1 / [time] | 1/h | ['cpt3503-tbl-0001:row15:col1', 'cpt3503-tbl-0001:row15:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | 1/h (1 / [time]) | ['cpt3503-tbl-0001:row15:col1', 'cpt3503-tbl-0001:row15:col2'] |
 | C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['cpt3503-tbl-0001:row7:col1', 'cpt3503-tbl-0001:row7:col2'] |
 | C5_unit_missing_Q86 | fail | [mass] * [time] / [length] ** 3 |  | ['cpt3503-tbl-0001:row10:col1', 'cpt3503-tbl-0001:row10:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.3 | ['cpt3503-tbl-0001:row3:col1', 'cpt3503-tbl-0001:row3:col2'] |
@@ -233,7 +233,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

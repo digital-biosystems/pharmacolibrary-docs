@@ -5,11 +5,11 @@
 
 # simvastatin — `Simvastatin_Methaneethorn2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Simvastatin's elimination rate constant was rejected because its unit could not be converted to SI units, preventing a standard value.
+> This record was reviewed on 2026-11-07 14:31 UTC (Rejected), but the paper was screened again on 2026-11-04 13:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Simvastatin's elimination rate constant was rejected because its unit could not be converted to SI units, preventing a standard value.
 
-<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014v2_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014v2_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-drug interaction model of simvastatin and verapamil in humans. Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference 2014:5711–5714 (2014).
@@ -51,7 +51,7 @@ Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-d
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.226). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.226). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -177,10 +177,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 15 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | [length] | μM | ['Methaneethorn_2014_2_table_1:row5:col2', 'Methaneethorn_2014_2_table_1:row20:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | μM ([length]) | ['Methaneethorn_2014_2_table_1:row5:col2', 'Methaneethorn_2014_2_table_1:row20:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row17:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row18:col2'] |
-| C5_dimension_Q350 | fail | [length] | μM | ['Methaneethorn_2014_2_table_1:row9:col2'] |
+| C5_dimension_Q350 | fail | 1 / [time] | μM ([length]) | ['Methaneethorn_2014_2_table_1:row9:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row6:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row7:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Methaneethorn_2014_2_table_1:row23:col2'] |
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row3:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Methaneethorn_2014_2_table_1:row15:col2'] |
-| C5_dimension_Q66 | fail | [length] / [time] | μM/h | ['Methaneethorn_2014_2_table_1:row4:col2', 'Methaneethorn_2014_2_table_1:row19:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μM/h ([length] / [time]) | ['Methaneethorn_2014_2_table_1:row4:col2', 'Methaneethorn_2014_2_table_1:row19:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 150 L | ['Methaneethorn_2014_2_table_1:row2:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 22.5 L | ['Methaneethorn_2014_2_table_1:row3:col2'] |
@@ -212,7 +212,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

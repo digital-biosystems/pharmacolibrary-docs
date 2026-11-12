@@ -5,11 +5,11 @@
 
 # paracetamol — `Paracetamol_HaslundKrog2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch on a structural parameter and reliance on abstract-only summary statistics.
+> This record was reviewed on 2026-11-07 14:20 UTC (Rejected), but the paper was screened again on 2026-11-04 07:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on a structural parameter and reliance on abstract-only summary statistics.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_HaslundKrog2023_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_HaslundKrog2023_reference" status="rejected" stale="true" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Haslund-Krog S, Barry JM, Birnbaum AK, Dalhoff K, Brink Henriksen T, Sherwin CMT et al. Pharmacokinetics and safety of prolonged paracetamol treatment in neonates: An interventional cohort study. British journal of clinical pharmacology 89(11):3421–3431 (2023).
@@ -40,7 +40,7 @@ Haslund-Krog S, Barry JM, Birnbaum AK, Dalhoff K, Brink Henriksen T, Sherwin CMT
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Haslund-Krog_2023:abstract'] |
-| C5_dimension_Q34 | fail | [substance] / [length] ** 3 | μmol/L | ['Haslund-Krog_2023:abstract'] |
+| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | μmol/L ([substance] / [length] ** 3) | ['Haslund-Krog_2023:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Haslund-Krog_2023:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Haslund-Krog_2023:abstract'] |
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

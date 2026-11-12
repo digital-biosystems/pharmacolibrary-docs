@@ -4,11 +4,11 @@
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_estimate_see`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Abemaciclib's bioavailability fraction unit, marked as 'SEE', prevented conversion to standard units, causing a structural dimension mismatch and rejection.
+> This record was reviewed on 2026-11-07 15:14 UTC (Rejected), but the paper was screened again on 2026-10-06 20:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Abemaciclib's bioavailability fraction unit, marked as 'SEE', prevented conversion to standard units, causing a structural dimension mismatch and rejection.
 
-<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="true" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner PK. Development and Application of a Mechanistic Population Modeling Approach to Describe Abemaciclib Pharmacokinetics. CPT: pharmacometrics & systems pharmacology 9(9):523–533 (2020).
@@ -54,7 +54,7 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.406). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.406). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -222,7 +222,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row15:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row16:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row7:col1'] |
-| C5_dimension_Q307 | fail | [substance] / [time] | µmol/h | ['psp412544-tbl-0002:row3:col1'] |
+| C5_dimension_Q307 | fail | [mass] / [time] | µmol/h ([substance] / [time]) | ['psp412544-tbl-0002:row3:col1'] |
 | C5_dimension_Q310 | pass | [time] |  | ['psp412544-tbl-0002:row9:col1'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row13:col1'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row14:col1'] |
@@ -230,6 +230,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412544-tbl-0002:row6:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412544-tbl-0002:row8:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['psp412544-tbl-0002:row10:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['psp412544-tbl-0002:row5:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 254 | ['psp412544-tbl-0002:row15:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 254 L/h | ['psp412544-tbl-0002:row15:col1'] |
@@ -253,7 +254,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

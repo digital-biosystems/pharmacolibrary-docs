@@ -5,11 +5,11 @@
 
 # Bretylium — `Bretylium_Narang1980_s_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the unit for the central volume of distribution could not be interpreted, and the peripheral compartment is structurally disconnected from the dose.
+> This record was reviewed on 2026-11-07 14:53 UTC (Rejected), but the paper was screened again on 2026-10-08 16:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the central volume of distribution could not be interpreted, and the peripheral compartment is structurally disconnected from the dose.
 
-<div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Narang1980_s_b" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Narang1980_s_b" status="rejected" stale="true" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretylium in man after intravenous administration. Journal of pharmacokinetics and biopharmaceutics 8(4):363–372 (1980).
@@ -49,7 +49,7 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row9:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row10:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Narang_1980_table_2:row11:col2'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['Narang_1980_table_2:row0:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Narang_1980_table_2:row0:col2'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 122 L | ['Narang_1980_table_2:row9:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 625 L | ['Narang_1980_table_2:row10:col2'] |
@@ -191,7 +191,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

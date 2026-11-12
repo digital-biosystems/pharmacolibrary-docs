@@ -5,11 +5,11 @@
 
 # quazepam — `Quazepam_Hilbert1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The abstract-only record lacks volume and clearance parameters, preventing construction of a compartmental population PK model for quazepam.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 20:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-only record lacks volume and clearance parameters, preventing construction of a compartmental population PK model for quazepam.
 
-<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="false" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="true" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam kinetics in the elderly. Clinical pharmacology and therapeutics 36(4):566–569 (1984).
@@ -40,7 +40,7 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,7 +134,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Hilbert_1984:abstract', 'Hilbert_1984:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hilbert_1984:abstract'] |
@@ -159,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

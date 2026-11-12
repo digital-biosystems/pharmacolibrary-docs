@@ -26,9 +26,9 @@ Baricitinib is a JAK inhibitor used to treat rheumatoid arthritis and, in some s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Decker_2024_jia_a](drugs/drug_baricitinib/Baricitinib_Decker2024_jia_a.md) | — | 3-compartment (no model) | 9 | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Decker_2024_jia_a](drugs/drug_baricitinib/Baricitinib_Decker2024_jia_a.md) | — | 3-compartment (no model) | 9 | Decker RL et al., A population pharmacokinetic model usin…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13131](https://doi.org/10.1002/psp4.13131) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ population_mean_see](drugs/drug_baricitinib/Baricitinib_Decker2024_population_mean_see.md) | — | 3-compartment (no model) | 9 (+2 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ ra_b](drugs/drug_baricitinib/Baricitinib_Decker2024_ra_b.md) | — | 3-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ ra_b](drugs/drug_baricitinib/Baricitinib_Decker2024_ra_b.md) | — | 3-compartment (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Decker_2026_reference](drugs/drug_baricitinib/Baricitinib_Decker2026_reference.md) | — | 3-compartment (no model) | 9 (+1 cov.) | Decker RL et al., A Population Pharmacokinetic and Exposu…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01563-8](https://doi.org/10.1007/s40262-025-01563-8) |
 
 ## Pharmacodynamics (PD)
@@ -76,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 14 matched, 13 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

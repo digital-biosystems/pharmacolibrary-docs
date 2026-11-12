@@ -5,11 +5,11 @@
 
 # azithromycin — `Azithromycin_Hughes2020_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The azithromycin drug-target association rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-07 11:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The azithromycin drug-target association rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_final" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_final" status="rejected" stale="true" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellular, and Lung Concentrations of Azithromycin With Different Dosing Regimens Used in COVID-19 Clinical Trials. CPT: pharmacometrics & systems pharmacology 9(8):435–443 (2020).
@@ -45,7 +45,7 @@ Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp412537-tbl-0002:row4:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['psp412537-tbl-0002:row6:col3'] |
-| C5_dimension_Q329 | fail | 1 / [time] | hour−1 | ['psp412537-tbl-0002:row16:col3'] |
+| C5_dimension_Q329 | fail | [length] ** 3 / [mass] / [time] | hour−1 (1 / [time]) | ['psp412537-tbl-0002:row16:col3'] |
 | C5_dimension_Q330 | pass | 1 / [time] |  | ['psp412537-tbl-0002:row17:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp412537-tbl-0002:row3:col3'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['psp412537-tbl-0002:row8:col3'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

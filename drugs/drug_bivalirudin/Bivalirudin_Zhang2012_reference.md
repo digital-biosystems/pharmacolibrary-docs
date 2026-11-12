@@ -4,11 +4,11 @@
 
 # bivalirudin — `Bivalirudin_Zhang2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The central compartment volume of 24.2% is dimensionally invalid for a two-compartment model.
+> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-05 14:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The central compartment volume of 24.2% is dimensionally invalid for a two-compartment model.
 
-<div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="false" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="true" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokinetics and pharmacodynamics of bivalirudin in young healthy Chinese volunteers. Acta pharmacologica Sinica 33(11):1387–1394 (2012).
@@ -39,7 +39,7 @@ Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Zhang_2012:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Zhang_2012:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Zhang_2012:abstract', 'Zhang_2012:abstract'] |
-| C5_dimension_Q63 | fail | dimensionless | % | ['Zhang_2012:abstract'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | % (dimensionless) | ['Zhang_2012:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.323 | ['Zhang_2012:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 22.6 L/h | ['Zhang_2012:abstract'] |
@@ -138,7 +138,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

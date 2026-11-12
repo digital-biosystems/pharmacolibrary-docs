@@ -5,11 +5,11 @@
 
 # sildenafil — `Sildenafil_Olgun2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sildenafil record rejected because it lacks fitted clearance and volume values, relying on abstract-only summary statistics rather than a compartmental population pharmacokinetic model.
+> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 09:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sildenafil record rejected because it lacks fitted clearance and volume values, relying on abstract-only summary statistics rather than a compartmental population pharmacokinetic model.
 
-<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="false" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="true" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al. Pharmacokinetics of sildenafil in children with pulmonary arterial hypertension. World journal of pediatrics : WJP 13(6):588–592 (2017).
@@ -35,7 +35,7 @@ Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q17 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | ['Olguín_2017:abstract'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | ng/mL/hour ([mass] / [length] ** 3 / [time]) | ['Olguín_2017:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Olguín_2017:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Olguín_2017:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Olguín_2017:abstract'] |
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

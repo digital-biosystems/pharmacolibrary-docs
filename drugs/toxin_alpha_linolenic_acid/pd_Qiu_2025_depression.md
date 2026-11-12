@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that alpha-linolenic acid was modeled as a dose-only driver with an inhibitory effect on depression, but the effect form is marked as unknown. Because no paper text is available, the specific mechanism and any potency or rate parameters are not stated.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Qiu_2025`
 - **model family:** `linear`
 - **driver:** `dose_only`

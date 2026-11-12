@@ -26,7 +26,7 @@ Vidarabine is an antiviral drug that was used to treat herpes simplex infections
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Yang_1992_reference](drugs/drug_vidarabine/Vidarabine_Yang1992_reference.md) | — | 1-compartment (no model) | 3 | Yang TY et al., [Studies on pharmacokinetics of 9-beta-…, Yao xue xue bao = Acta phar… (1992) | — |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_1992_reference](drugs/drug_vidarabine/Vidarabine_Yang1992_reference.md) | — | 1-compartment (no model) | 3 | Yang TY et al., [Studies on pharmacokinetics of 9-beta-…, Yao xue xue bao = Acta phar… (1992) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -58,13 +58,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:59 | 7:27 | 0/1/0 | 2/0/0 | 0/0/0 | 144,283/41,308 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 15:59 | 7:27 | 1/0/0 | 2/0/0 | 0/0/0 | 144,283/41,308 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

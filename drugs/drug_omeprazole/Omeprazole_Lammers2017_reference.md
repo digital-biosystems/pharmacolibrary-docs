@@ -5,11 +5,11 @@
 
 # omeprazole — `Omeprazole_Lammers2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Omeprazole clearance and volume parameters were rejected due to double correction, an unreachable compartment, and a non-SI unit.
+> This record was reviewed on 2026-11-07 14:25 UTC (Rejected), but the paper was screened again on 2026-11-04 06:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Omeprazole clearance and volume parameters were rejected due to double correction, an unreachable compartment, and a non-SI unit.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Lammers2017_reference" status="rejected" stale="false" population="12 healthy male subjects" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Lammers2017_reference" status="rejected" stale="true" population="12 healthy male subjects" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Lammers LA, Achterbergh R, van Schaik RHN, Romijn JA, Mathôt RAA. Effect of Short-Term Fasting on Systemic Cytochrome P450-Mediated Drug Metabolism in Healthy Subjects: A Randomized, Controlled, Crossover Study Using a Cocktail Approach. Clinical pharmacokinetics 56(10):1231–1244 (2017).
@@ -72,7 +72,7 @@ Lammers LA, Achterbergh R, van Schaik RHN, Romijn JA, Mathôt RAA. Effect of Sho
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.773). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -263,6 +263,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | 2.5–97.5% | ['Tab3:row3:col9'] |
 | C5_unit_missing_Q290 | fail | [length] ** 3 | 2.5–97.5% | ['Tab3:row8:col1'] |
 | C5_unit_missing_Q290 | fail | [length] ** 3 | 2.5–97.5% | ['Tab3:row8:col9'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Tab3:row15:col7'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.97 with apparent parameterization |  |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.67 L/h | ['Tab3:row2:col1'] |
@@ -296,7 +297,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

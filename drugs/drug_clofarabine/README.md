@@ -34,7 +34,7 @@ Clofarabine is a purine analogue anticancer drug used to treat acute lymphoblast
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Bonate_2011_reference](drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherapy and pha… (2011) | [10.1007/s00280-010-1376-z](https://doi.org/10.1007/s00280-010-1376-z) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Bonate_2004_reference](drugs/drug_clofarabine/Clofarabine_Bonate2004_reference.md) | — | 3-compartment (no model) | 6 | Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004) | [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bonate_2004_reference](drugs/drug_clofarabine/Clofarabine_Bonate2004_reference.md) | — | 3-compartment (no model) | 6 | Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004) | [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Nijstad_2021_reference](drugs/drug_clofarabine/Clofarabine_Nijstad2021_reference.md) | — | 1-compartment (no model) | 2 | Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021) | [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2019_reference](drugs/drug_clofarabine/Clofarabine_Wang2019_reference.md) | — | 1-compartment (no model) | 0 | Wang H et al., Population Pharmacokinetics of Clofarab…, Biology of blood and marrow… (2019) | [10.1016/j.bbmt.2019.04.017](https://doi.org/10.1016/j.bbmt.2019.04.017) |
 
@@ -84,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 25 matched, 25 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

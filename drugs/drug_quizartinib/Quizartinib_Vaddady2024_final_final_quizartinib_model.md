@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Vaddady_2024 \u00b7 final_final_quizartinib_model&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quizartinib — `Quizartinib_Vaddady2024_final_final_quizartinib_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model was rejected due to a negative clearance value in a covariate scenario for quizartinib.
+> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 05:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Vaddady2024_final_final_quizartinib_model" status="rejected" stale="false" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Vaddady2024_final_final_quizartinib_model" status="extracted" stale="true" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Population pharmacokinetic analysis of quizartinib in patients with newly diagnosed FLT3-internal-tandem-duplication-positive acute myeloid leukemia. Clinical and translational science 17(12):e70074 (2024).
@@ -28,8 +29,6 @@ Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Popula
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CLquiz | CL | 6.65 | L/h |  |
@@ -51,7 +50,7 @@ Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -179,7 +178,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q31 | fail |  | -0.301 |  |
+| C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row2:col2', 'cts70074-tbl-0003:row2:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row4:col2', 'cts70074-tbl-0003:row4:col3'] |
 | C5_dimension_Q310 | pass | [time] |  | ['cts70074-tbl-0003:row10:col2', 'cts70074-tbl-0003:row10:col3'] |
@@ -189,7 +188,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['cts70074-tbl-0003:row7:col2', 'cts70074-tbl-0003:row7:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['cts70074-tbl-0003:row8:col2', 'cts70074-tbl-0003:row8:col3'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row6:col2', 'cts70074-tbl-0003:row6:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row11:col2', 'cts70074-tbl-0003:row11:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.65 | ['cts70074-tbl-0003:row2:col2', 'cts70074-tbl-0003:row2:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.65 L/h | ['cts70074-tbl-0003:row2:col2', 'cts70074-tbl-0003:row2:col3'] |
@@ -206,13 +204,23 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

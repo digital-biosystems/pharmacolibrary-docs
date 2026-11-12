@@ -4,11 +4,11 @@
 
 # dextran — `Dextran_Schwarz1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.
+> This record was reviewed on 2026-11-07 16:47 UTC (Rejected), but the paper was screened again on 2026-10-05 21:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The terminal half-life of 24 hours was assigned to the wrong dextran molecular weight in this abstract-only summary.
 
-<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (monovalent) dextran (Dx 1) in volunteers. International journal of clinical pharmacology, therapy, and toxicology 19(8):358–367 (1981).
@@ -36,7 +36,7 @@ Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (mo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Schwarz_1981:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Schwarz_1981:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Schwarz_1981:abstract'] |
-| C5_dimension_Q91 | fail | dimensionless | % | ['Schwarz_1981:abstract'] |
+| C5_dimension_Q91 | fail | [mass] | % (dimensionless) | ['Schwarz_1981:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 187 | ['Schwarz_1981:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 11.2 L/h | ['Schwarz_1981:abstract'] |
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

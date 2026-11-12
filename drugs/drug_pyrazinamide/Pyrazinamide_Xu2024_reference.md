@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;pyrazinamide&quot;,&quot;href&quot;:&quot;drugs/drug_pyrazinamide/&quot;},{&quot;label&quot;:&quot;Xu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyrazinamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyrazinamide_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pyrazinamide — `Pyrazinamide_Xu2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="pyrazinamide" model-id="Pyrazinamide_Xu2024_reference" status="not_modelled" stale="false" population="adults with drug-susceptible pulmonary tuberculosis" measured-compound="pyrazinamide" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-11-07 16:14 UTC (Not simulated), but the paper was screened again on 2026-10-13 11:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No model has been built from this record yet.
+
+<div class="pk-model-meta" hidden drug="pyrazinamide" model-id="Pyrazinamide_Xu2024_reference" status="needs_review" stale="true" population="adults with drug-susceptible pulmonary tuberculosis" measured-compound="pyrazinamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Xu AY, Velásquez GE, Zhang N, Chang VK, Phillips PPJ, Nahid P et al. Pyrazinamide Safety, Efficacy, and Dosing for Treating Drug-Susceptible Pulmonary Tuberculosis: A Phase 3, Randomized Controlled Clinical Trial. American journal of respiratory and critical care medicine 210(11):1358–1369 (2024).
@@ -29,7 +31,7 @@ Xu AY, Velásquez GE, Zhang N, Chang VK, Phillips PPJ, Nahid P et al. Pyrazinami
 <figure class="pk-models-diagram"><img src="drugs/drug_pyrazinamide/Pyrazinamide_Xu2024_reference/Pyrazinamide_Xu2024_reference.svg" alt="Pyrazinamide_Xu2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
@@ -39,7 +41,7 @@ Xu AY, Velásquez GE, Zhang N, Chang VK, Phillips PPJ, Nahid P et al. Pyrazinami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,6 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C1_half_life_beta | pass | 6.6 | 6.558 | 0.9936 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['tbl2:row3:col1', 'tbl2:row3:col2', 'tbl2:row3:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['tbl2:row4:col1', 'tbl2:row4:col2', 'tbl2:row4:col3'] |
+| C5_unit_missing_Q81 | fail | [time] | h |  |  | ['tbl2:row7:col1', 'tbl2:row7:col2', 'tbl2:row7:col3'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 3.53 L/h |  |  | ['tbl2:row3:col1', 'tbl2:row3:col2', 'tbl2:row3:col3'] |

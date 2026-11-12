@@ -4,11 +4,11 @@
 
 # armodafinil — `Armodafinil_Willavize2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected due to unreachable metabolites and a dimension mismatch on armodafinil's volume of distribution parameter.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 00:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to unreachable metabolites and a dimension mismatch on armodafinil's volume of distribution parameter.
 
-<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="rejected" stale="true" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Modeling of Armodafinil and Its Major Metabolites. Journal of clinical pharmacology 57(2):255–265 (2017).
@@ -37,7 +37,7 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q18 | fail | dimensionless | % | ['Willavize_2017:abstract'] |
+| C5_dimension_Q18 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Willavize_2017:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Willavize_2017:abstract'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Willavize_2017:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Willavize_2017:abstract'] |
@@ -149,7 +149,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

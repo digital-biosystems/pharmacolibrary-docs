@@ -28,8 +28,8 @@ Garenoxacin is a fluoroquinolone antibiotic developed as an antibacterial drug f
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Tanigawara_2012_end_of_phase_ii_stagea](drugs/drug_garenoxacin/Garenoxacin_Tanigawara2012_end_of_phase_ii_stagea.md) | — | 1-compartment (no model) | 1 | Tanigawara Y et al., Optimal dose finding of garenoxacin bas…, European journal of clinica… (2012) | [10.1007/s00228-011-1095-3](https://doi.org/10.1007/s00228-011-1095-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ end_of_phase_iii_stageb](drugs/drug_garenoxacin/Garenoxacin_Tanigawara2012_end_of_phase_iii_stageb.md) | — | 1-compartment (no model) | 1 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Van_2004_reference](drugs/drug_garenoxacin/Garenoxacin_Van2004_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Van Wart S et al., Population pharmacokinetics and pharmac…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.12.4766-4777.2004](https://doi.org/10.1128/AAC.48.12.4766-4777.2004) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Yamagishi_2015_reference](drugs/drug_garenoxacin/Garenoxacin_Yamagishi2015_reference.md) | — | 1-compartment (no model) | 3 | Yamagishi Y et al., Pharmacokinetic study of garenoxacin in…, The Japanese journal of ant… (2015) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Yamagishi_2015_reference](drugs/drug_garenoxacin/Garenoxacin_Yamagishi2015_reference.md) | — | 1-compartment (no model) | 3 | Yamagishi Y et al., Pharmacokinetic study of garenoxacin in…, The Japanese journal of ant… (2015) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Van_2004_reference](drugs/drug_garenoxacin/Garenoxacin_Van2004_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Van Wart S et al., Population pharmacokinetics and pharmac…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.12.4766-4777.2004](https://doi.org/10.1128/AAC.48.12.4766-4777.2004) |
 
 ## Pharmacodynamics (PD)
 
@@ -59,13 +59,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:00 | 33:36 | 2/2/0 | 1/0/0 | 0/0/0 | 313,663/123,727 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
+| 2026-10-13 12:00 | 33:36 | 3/1/0 | 1/0/0 | 0/0/0 | 313,663/123,727 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

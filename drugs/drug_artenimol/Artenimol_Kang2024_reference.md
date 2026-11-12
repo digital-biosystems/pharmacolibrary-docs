@@ -5,11 +5,11 @@
 
 # artenimol — `Artenimol_Kang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Kabs has no unit.
+> This record was reviewed on 2026-11-07 16:19 UTC (Needs review), but the paper was screened again on 2026-10-07 06:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Kabs has no unit.
 
-<div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Kang2024_reference" status="needs_review" stale="false" population="hamsters, rats, and dogs (preclinical allometric scaling to humans)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Kang2024_reference" status="needs_review" stale="true" population="hamsters, rats, and dogs (preclinical allometric scaling to humans)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic Modeling and Scaling for Drug Repurposing of Pyronaridine and Artesunate. International journal of molecular sciences 25(13) (2024).
@@ -50,7 +50,7 @@ Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -204,7 +204,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

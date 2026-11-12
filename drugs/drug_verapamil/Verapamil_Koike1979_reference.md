@@ -4,11 +4,11 @@
 
 # verapamil — `Verapamil_Koike1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.
+> This record was reviewed on 2026-11-07 16:59 UTC (Rejected), but the paper was screened again on 2026-10-07 15:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Verapamil apparent volume of distribution is listed as 2.51 1/kg, a dimensionally invalid unit that prevents calculation.
 
-<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Research communications in chemical pathology and pharmacology 24(1):37–47 (1979).
@@ -39,7 +39,7 @@ Koike Y, Shimamura K, Shudo I, Saito H. Pharmacokinetics of verapamil in man. Re
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q56 | pass | [time] |  | ['Koike_1979:abstract', 'Koike_1979:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Koike_1979:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Koike_1979:abstract'] |
-| C5_dimension_Q76 | fail | dimensionless | 1/kg | ['Koike_1979:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Koike_1979:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 30 L/h | ['Koike_1979:abstract'] |
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

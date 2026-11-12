@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;ivermectin&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/&quot;},{&quot;label&quot;:&quot;Kobylinski_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ivermectin_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ivermectin_Kobylinski2017_reference&quot;,&quot;label&quot;:&quot;Kobylinski_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Kobylinski2017_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ivermectin_Duthaler2019_reference&quot;,&quot;label&quot;:&quot;Duthaler_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Duthaler2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ivermectin_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ivermectin_Duthaler2019_reference&quot;,&quot;label&quot;:&quot;Duthaler_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Duthaler2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ivermectin_Kobylinski2017_reference&quot;,&quot;label&quot;:&quot;Kobylinski_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ivermectin/Ivermectin_Kobylinski2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ivermectin — `Ivermectin_Kobylinski2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Kobylinski2017_reference" status="curated_candidate" stale="false" population="healthy Thai volunteers" measured-compound="ivermectin" parameterization="apparent" topology="2C"></div>
+> This record was reviewed on 2026-11-07 15:42 UTC (Reproduces paper), but the paper was screened again on 2026-10-07 08:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Every check that could be run on this record passed.
+
+<div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Kobylinski2017_reference" status="needs_review" stale="true" population="healthy Thai volunteers" measured-compound="ivermectin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Kobylinski KC, Ubalee R, Ponlawat A, Nitatsukprasert C, Phasomkulsolsil S, Wattanakul T et al. Ivermectin susceptibility and sporontocidal effect in Greater Mekong Subregion Anopheles. Malaria journal 16(1):280 (2017).
@@ -29,6 +31,8 @@ Kobylinski KC, Ubalee R, Ponlawat A, Nitatsukprasert C, Phasomkulsolsil S, Watta
 <figure class="pk-models-diagram"><img src="drugs/drug_ivermectin/Ivermectin_Kobylinski2017_reference/Ivermectin_Kobylinski2017_reference.svg" alt="Ivermectin_Kobylinski2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | F | Fab | 1 |  |  | 10.7 (42.9% RSE) |
@@ -41,7 +45,7 @@ Kobylinski KC, Ubalee R, Ponlawat A, Nitatsukprasert C, Phasomkulsolsil S, Watta
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,6 +126,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab1:row7:col1', 'Tab1:row7:col2', 'Tab1:row7:col4'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Tab1:row3:col1', 'Tab1:row3:col2', 'Tab1:row3:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 9.02 L/h | ['Tab1:row4:col1', 'Tab1:row4:col2', 'Tab1:row4:col4'] |

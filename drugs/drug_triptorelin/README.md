@@ -26,10 +26,10 @@ Triptorelin is a gonadotropin-releasing hormone analogue used as hormonal antica
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Müller_1997_group_i](drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | — | 1-compartment (no model) | 7 | Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.t01-1-00592.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00592.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ group_ii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | — | 1-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ group_iii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | — | 1-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ group_iv](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Müller_1997_group_i](drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | — | 1-compartment (no model) | 7 | Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.t01-1-00592.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00592.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_ii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_iii](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ group_iv](drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | — | 1-compartment (no model) | 7 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -67,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 4  ·  needs review 0  ·  rejected 0  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

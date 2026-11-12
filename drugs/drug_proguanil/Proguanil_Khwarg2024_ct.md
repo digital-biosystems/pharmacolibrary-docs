@@ -5,11 +5,11 @@
 
 # proguanil — `Proguanil_Khwarg2024_ct`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:19 UTC (Needs review), but the paper was screened again on 2026-10-07 07:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_ct" status="needs_review" stale="false" population="healthy Korean adults" measured-compound="proguanil" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_ct" status="needs_review" stale="true" population="healthy Korean adults" measured-compound="proguanil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism on the pharmacokinetics of proguanil in Korean: A semi-physiologic population pharmacokinetic approach. Clinical and translational science 17(12):e70103 (2024).
@@ -42,7 +42,7 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,6 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cherkaoui-Rbati_2023:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row3:col4', 'Khwarg_2024_table_2:row3:col5', 'Khwarg_2024_table_2:row3:col6', 'Khwarg_2024_table_2:row8:col4', 'Khwarg_2024_table_2:row8:col5', 'Khwarg_2024_table_2:row8:col6'] |
@@ -167,7 +168,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

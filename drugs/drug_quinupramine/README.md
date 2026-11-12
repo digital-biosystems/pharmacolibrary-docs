@@ -18,7 +18,7 @@ Quinupramine is a tricyclic antidepressant used to treat depression. It is an ap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | — | 1-compartment (no model) | 5 | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | — | 1-compartment (no model) | 5 | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -44,7 +44,7 @@ Quinupramine is a tricyclic antidepressant used to treat depression. It is an ap
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

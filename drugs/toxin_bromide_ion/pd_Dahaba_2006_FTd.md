@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a dose-only relationship where rocuronium bromide acts on first twitch depression (FTd), but no pharmacokinetic parameters or specific effect model terms (e.g., Emax, IC50) are provided in the record. The mechanism of action is explicitly marked as unknown, and the paper excerpt is unavailable, so no specific potency or rate values can be reported.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Dahaba_2006`
 - **model family:** `categorical`
 - **driver:** `dose_only`

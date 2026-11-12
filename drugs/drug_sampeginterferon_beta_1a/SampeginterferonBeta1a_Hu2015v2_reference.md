@@ -4,11 +4,11 @@
 
 # sampeginterferon beta-1a — `SampeginterferonBeta1a_Hu2015v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Dialysis clearance was misrecorded as a first-order rate constant, and the peripheral compartment volume lacks a defined unit.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-06 23:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dialysis clearance was misrecorded as a first-order rate constant, and the peripheral compartment volume lacks a defined unit.
 
-<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="false" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="true" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetics, pharmacodynamics, and safety of peginterferon beta-1a in subjects with normal or impaired renal function. Journal of clinical pharmacology 55(2):179–188 (2015).
@@ -40,7 +40,7 @@ Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,9 +126,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row1:col1', 'tab_2:row1:col2', 'tab_2:row1:col3'] |
-| C5_dimension_Q356 | fail | 1 / [time] | h À1 | ['tab_2:row7:col2', 'tab_2:row7:col3'] |
+| C5_dimension_Q356 | fail | [length] ** 3 / [time] | h À1 (1 / [time]) | ['tab_2:row7:col2', 'tab_2:row7:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_2:row2:col2', 'tab_2:row2:col3'] |
-| C5_dimension_Q95 | fail | 1 / [time] | h À1 | ['tab_2:row3:col2', 'tab_2:row3:col3'] |
+| C5_dimension_Q95 | fail | [time] | h À1 (1 / [time]) | ['tab_2:row3:col2', 'tab_2:row3:col3'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 |  | ['tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row10:col3', 'tab_2:row10:col4', 'tab_2:row12:col3', 'tab_2:row12:col4', 'tab_2:row13:col3', 'tab_2:row13:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.12 | ['tab_2:row1:col1', 'tab_2:row1:col2', 'tab_2:row1:col3'] |
 | C8_topology | fail |  |  |  |
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

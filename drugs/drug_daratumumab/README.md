@@ -17,7 +17,7 @@ Daratumumab is a monoclonal antibody used to treat multiple myeloma. It is appro
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Xu_2018_reference](drugs/drug_daratumumab/Daratumumab_Xu2018_reference.md) | — | 1-compartment (no model) | 1 | Xu XS et al., Pharmacokinetics and Exposure-Response…, Advances in therapy (2018) | [10.1007/s12325-018-0815-9](https://doi.org/10.1007/s12325-018-0815-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Xu_2018_reference](drugs/drug_daratumumab/Daratumumab_Xu2018_reference.md) | — | 1-compartment (no model) | 1 | Xu XS et al., Pharmacokinetics and Exposure-Response…, Advances in therapy (2018) | [10.1007/s12325-018-0815-9](https://doi.org/10.1007/s12325-018-0815-9) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Luo_2021_columba](drugs/drug_daratumumab/Daratumumab_Luo2021_columba.md) | — | 1-compartment (no model) | 0 | Luo MM et al., Exposure-Response and Population Pharma…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1771](https://doi.org/10.1002/jcph.1771) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ mmy1008](drugs/drug_daratumumab/Daratumumab_Luo2021_mmy1008.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ pavo_part_2](drugs/drug_daratumumab/Daratumumab_Luo2021_pavo_part_2.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -62,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 20 matched, 16 returned
 - **screened:** 6  ·  **relevant:** 2
-- **records:** 8  ·  extracted 0  ·  needs review 1  ·  rejected 7  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs review 1  ·  rejected 7  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

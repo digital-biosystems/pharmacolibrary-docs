@@ -5,11 +5,11 @@
 
 # amiodarone — `Amiodarone_Sermsappasuk2006_estimate_mean_s_d`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record for amiodarone lacks elimination and volume parameters, and includes an absorption constant despite an intravenous perfusion study design.
+> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-22 10:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for amiodarone lacks elimination and volume parameters, and includes an absorption constant despite an intravenous perfusion study design.
 
-<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Sermsappasuk2006_estimate_mean_s_d" status="rejected" stale="false" population="isolated perfused rat heart" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Sermsappasuk2006_estimate_mean_s_d" status="rejected" stale="true" population="isolated perfused rat heart" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sermsappasuk P, Baek M, Weiss M. Kinetic analysis of myocardial uptake and negative inotropic effect of amiodarone in rat heart. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 28(3):243–248 (2006).
@@ -42,7 +42,7 @@ Sermsappasuk P, Baek M, Weiss M. Kinetic analysis of myocardial uptake and negat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Sermsappasuk_2006_table_1:row1:col1'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Sermsappasuk_2006_table_1:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kolowrat_2025:review'] |
-| C5_dimension_Q99 | fail | [time] | min | ['Sermsappasuk_2006_table_1:row4:col1'] |
+| C5_dimension_Q99 | fail | [length] ** 3 / [time] | min ([time]) | ['Sermsappasuk_2006_table_1:row4:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

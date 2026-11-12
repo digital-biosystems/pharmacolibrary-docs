@@ -5,11 +5,11 @@
 
 # insulin (human) — `InsulinHuman_Vlund1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The insulin-to-C-peptide link has no defined rate constant, leaving the metabolite compartment unreachable from the dose.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-04 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The insulin-to-C-peptide link has no defined rate constant, leaving the metabolite compartment unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="true" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin appearance without independent assessment of C-peptide kinetics. Diabetes 36(10):1195–1202 (1987).
@@ -38,7 +38,7 @@ Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin ap
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +117,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Vølund_1987:abstract', 'Vølund_1987:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Vølund_1987:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

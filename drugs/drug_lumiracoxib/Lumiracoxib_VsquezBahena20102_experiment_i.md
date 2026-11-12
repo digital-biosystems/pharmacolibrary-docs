@@ -4,11 +4,11 @@
 
 # lumiracoxib — `Lumiracoxib_VsquezBahena20102_experiment_i`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The first-order transit rate constant was recorded in seconds instead of per hour, causing a dimension mismatch that refused the model.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 01:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The first-order transit rate constant was recorded in seconds instead of per hour, causing a dimension mismatch that refused the model.
 
-<div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_experiment_i" status="rejected" stale="false" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_experiment_i" status="rejected" stale="true" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Trocóniz IF. Pharmacokinetic-pharmacodynamic modelling of the analgesic effects of lumiracoxib, a selective inhibitor of cyclooxygenase-2, in rats. British journal of pharmacology 159(1):176–187 (2010).
@@ -43,7 +43,7 @@ Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Troc�
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -142,8 +142,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q306 | fail | [time] | s | ['tab_2:row8:col1', 'tab_2:row8:col3', 'tab_2:row8:col4'] |
-| C5_dimension_Q331 | fail | 1 / [time] | h -1 | ['tab_2:row6:col1', 'tab_2:row6:col3'] |
+| C5_dimension_Q306 | fail | 1 / [time] | s ([time]) | ['tab_2:row8:col1', 'tab_2:row8:col3', 'tab_2:row8:col4'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | h -1 (1 / [time]) | ['tab_2:row6:col1', 'tab_2:row6:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Vásquez-Bahena_2010_2_table_1:row4:col8'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Vásquez-Bahena_2010_2_table_1:row1:col8'] |
 | C8_topology | pass |  |  |  |
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

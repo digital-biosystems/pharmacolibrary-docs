@@ -45,8 +45,8 @@ Cefazolin is a first-generation cephalosporin antibiotic used to treat bacterial
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Šantavý_2022_reference](drugs/drug_cefazolin/Cefazolin_antav2022_reference.md) | — | 3-compartment (no model) | 5 | Šantavý P et al., Population Pharmacokinetics of Prophyla…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11111582](https://doi.org/10.3390/antibiotics11111582) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Alli_2023_mean](drugs/drug_cefazolin/Cefazolin_Alli2023_mean.md) | — | 2-compartment (no model) | 7 | Alli A et al., Peri-operative pharmacokinetics of cefa…, PloS one (2023) | [10.1371/journal.pone.0291425](https://doi.org/10.1371/journal.pone.0291425) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ median](drugs/drug_cefazolin/Cefazolin_Alli2023_median.md) | — | 2-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Wassef_2026_all](drugs/drug_cefazolin/Cefazolin_Wassef2026_all.md) | — | 1-compartment (no model) | 7 | Wassef A et al., Cefazolin surgical prophylaxis in obesi…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01677-25](https://doi.org/10.1128/aac.01677-25) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ dosage](drugs/drug_cefazolin/Cefazolin_Wassef2026_dosage.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wassef_2026_all](drugs/drug_cefazolin/Cefazolin_Wassef2026_all.md) | — | 1-compartment (no model) | 7 | Wassef A et al., Cefazolin surgical prophylaxis in obesi…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01677-25](https://doi.org/10.1128/aac.01677-25) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ dosage](drugs/drug_cefazolin/Cefazolin_Wassef2026_dosage.md) | — | 1-compartment (no model) | 7 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -89,7 +89,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 100 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 8  ·  extracted 2  ·  needs review 2  ·  rejected 4  ·  stale 0
+- **records:** 8  ·  extracted 2  ·  needs review 2  ·  rejected 4  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

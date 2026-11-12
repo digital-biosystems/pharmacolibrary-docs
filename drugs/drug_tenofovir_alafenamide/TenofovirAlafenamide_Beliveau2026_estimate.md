@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Beliveau_2026 \u00b7 estimate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tenofovir alafenamide — `TenofovirAlafenamide_Beliveau2026_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The tenofovir diphosphate compartment is an unreachable orphan, and its parameters use non-standard units like fmol/10^6 cells/h.
+> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The tenofovir diphosphate compartment is an unreachable orphan, and its parameters use non-standard units like fmol/10^6 cells/h.
 
-<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="false" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="true" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population pharmacokinetics of tenofovir alafenamide delivered via an annual subdermal implant in South African women. Scientific reports 16(1) (2026).
@@ -38,7 +39,7 @@ Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Beliveau_2026_table_3:row9:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Beliveau_2026_table_3:row11:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Beliveau_2026_table_3:row2:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 | fmol/106 cells/h | ['Beliveau_2026_table_3:row10:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] | fmol/106 cells/h | ['Beliveau_2026_table_3:row10:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 62.6 L | ['Beliveau_2026_table_3:row2:col1'] |
@@ -158,7 +159,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

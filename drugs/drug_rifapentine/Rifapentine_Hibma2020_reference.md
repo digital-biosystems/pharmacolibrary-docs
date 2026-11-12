@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifapentine&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/&quot;},{&quot;label&quot;:&quot;Hibma_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Radtke_2021_CFU&quot;,&quot;label&quot;:&quot;Radtke_2021 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Radtke_2021_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Radtke_2021_CFU&quot;,&quot;label&quot;:&quot;Radtke_2021 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/pd_Radtke_2021_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifapentine — `Rifapentine_Hibma2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Rifapentine absorption rate and lag time were left at unreported library defaults, and the metabolite lacks a defined metabolic link from the parent drug.
+> This record was reviewed on 2026-11-07 16:03 UTC (Needs review), but the paper was screened again on 2026-10-07 12:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rifapentine absorption rate and lag time were left at unreported library defaults, and the metabolite lacks a defined metabolic link from the parent drug.
 
-<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Hibma2020_reference" status="needs_review" stale="false" population="adults with latent tuberculosis infection" measured-compound="rifapentine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Hibma2020_reference" status="needs_review" stale="true" population="adults with latent tuberculosis infection" measured-compound="rifapentine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hibma JE, Radtke KK, Dorman SE, Jindani A, Dooley KE, Weiner M et al. Rifapentine Population Pharmacokinetics and Dosing Recommendations for Latent Tuberculosis Infection. American journal of respiratory and critical care medicine 202(6):866–877 (2020).
@@ -45,7 +45,7 @@ Hibma JE, Radtke KK, Dorman SE, Jindani A, Dooley KE, Weiner M et al. Rifapentin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.19). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.19). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -167,6 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_1:row13:col1', 'tab_1:row13:col3', 'tab_1:row13:col4'] |
 | C5_dimension_Q367 | pass | [length] ** 3 |  | ['tab_1:row14:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row3:col1', 'tab_1:row3:col3', 'tab_1:row3:col4'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['tab_1:row4:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.11 L/h | ['tab_1:row2:col1', 'tab_1:row2:col3', 'tab_1:row2:col4'] |

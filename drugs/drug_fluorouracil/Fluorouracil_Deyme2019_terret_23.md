@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Deyme2019_terret_23`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The irinotecan volume of distribution parameter has a unit mismatch, and SN38G is an unreachable metabolite.
+> This record was reviewed on 2026-11-07 14:07 UTC (Rejected), but the paper was screened again on 2026-11-03 21:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The irinotecan volume of distribution parameter has a unit mismatch, and SN38G is an unreachable metabolite.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_terret_23" status="rejected" stale="false" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_terret_23" status="rejected" stale="true" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a review of studies and parameters. Cancer chemotherapy and pharmacology 83(1):27–42 (2019).
@@ -41,7 +41,7 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,13 +121,13 @@ The irinotecan volume of distribution under steady-state is reported as 1387 L, 
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Deyme_2019_table_4:row0:col7'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Arshad_2020:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row0:col8'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row0:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Deyme_2019_table_4:row0:col6'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Deyme_2019_table_4:row0:col6'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Deyme_2019_table_4:row0:col9'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 256 | ['Arshad_2020:review'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
@@ -151,7 +151,7 @@ The irinotecan volume of distribution under steady-state is reported as 1387 L, 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

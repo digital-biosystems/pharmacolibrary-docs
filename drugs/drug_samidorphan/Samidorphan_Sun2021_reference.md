@@ -4,11 +4,11 @@
 
 # Samidorphan — `Samidorphan_Sun2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The samidorphan record was rejected because the absorption rate constant was recorded in hours, a unit not standard for this parameter type, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-06 17:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The samidorphan record was rejected because the absorption rate constant was recorded in hours, a unit not standard for this parameter type, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="false" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="true" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and Samidorphan When Administered in Combination in Healthy Subjects and Patients With Schizophrenia. Journal of clinical pharmacology 61(11):1430–1441 (2021).
@@ -56,7 +56,7 @@ Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.705). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.705). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -215,7 +215,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph1911-tbl-0004:row1:col1', 'jcph1911-tbl-0004:row1:col2', 'Sun_2021_table_3:row0:col1', 'Sun_2021_table_3:row0:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph1911-tbl-0004:row2:col1', 'jcph1911-tbl-0004:row2:col2', 'Sun_2021_table_3:row1:col1', 'Sun_2021_table_3:row1:col2'] |
-| C5_dimension_Q49 | fail | [time] | h | ['jcph1911-tbl-0004:row4:col1', 'jcph1911-tbl-0004:row4:col2', 'Sun_2021_table_3:row2:col1', 'Sun_2021_table_3:row2:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['jcph1911-tbl-0004:row4:col1', 'jcph1911-tbl-0004:row4:col2', 'Sun_2021_table_3:row2:col1', 'Sun_2021_table_3:row2:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['jcph1911-tbl-0004:row6:col1', 'jcph1911-tbl-0004:row6:col2', 'Sun_2021_table_3:row5:col1', 'Sun_2021_table_3:row5:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['jcph1911-tbl-0004:row3:col1', 'jcph1911-tbl-0004:row3:col2', 'Sun_2021_table_3:row4:col1', 'Sun_2021_table_3:row4:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['jcph1911-tbl-0004:row5:col1', 'jcph1911-tbl-0004:row5:col2'] |
@@ -241,7 +241,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

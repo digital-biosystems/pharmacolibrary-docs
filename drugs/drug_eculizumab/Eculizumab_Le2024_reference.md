@@ -5,11 +5,11 @@
 
 # eculizumab — `Eculizumab_Le2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Eculizumab's Vmax (26.07 mg/day) was rejected because its unit of mass per time was not recognized for conversion to SI.
+> This record was reviewed on 2026-11-07 14:53 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Eculizumab's Vmax (26.07 mg/day) was rejected because its unit of mass per time was not recognized for conversion to SI.
 
-<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Le2024_reference" status="rejected" stale="false" population="adults with atypical haemolytic uraemic syndrome and C3 glomerulopathy" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Le2024_reference" status="rejected" stale="true" population="adults with atypical haemolytic uraemic syndrome and C3 glomerulopathy" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Le Tilly O, Gatault P, Semlali S, Sberro-Soussan R, Passot C, Bertrand D et al. Eculizumab dose tapering should take into account the nonlinearity of its pharmacokinetics. British journal of clinical pharmacology 90(5):1312–1321 (2024).
@@ -40,7 +40,7 @@ Le Tilly O, Gatault P, Semlali S, Sberro-Soussan R, Passot C, Bertrand D et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  |  |  | ['Le_2024_table_p5_2:row4:col1', 'Le_2024_table_p5_2:row4:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Le_2024_table_p5_2:row2:col1', 'Le_2024_table_p5_2:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Le_2024_table_p5_2:row1:col1', 'Le_2024_table_p5_2:row1:col2'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day |  |  | ['Le_2024_table_p5_2:row3:col1', 'Le_2024_table_p5_2:row3:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) |  |  | ['Le_2024_table_p5_2:row3:col1', 'Le_2024_table_p5_2:row3:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.318 |  |  | ['Le_2024_table_p5_2:row2:col1', 'Le_2024_table_p5_2:row2:col2'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00384 L/h |  |  | ['Le_2024_table_p5_2:row2:col1', 'Le_2024_table_p5_2:row2:col2'] |
@@ -145,7 +145,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

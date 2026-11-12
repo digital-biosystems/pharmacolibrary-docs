@@ -5,11 +5,11 @@
 
 # ethionamide — `Ethionamide_Auclair2001_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is not a compartmental PK model because it lacks clearance and elimination rate constant values for ethionamide.
+> This record was reviewed on 2026-11-07 15:04 UTC (Rejected), but the paper was screened again on 2026-10-07 13:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental PK model because it lacks clearance and elimination rate constant values for ethionamide.
 
-<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionamide administered under fasting conditions or with orange juice, food, or antacids. Antimicrobial agents and chemotherapy 45(3):810–814 (2001).
@@ -37,7 +37,7 @@ Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q57 | pass | [time] |  | ['Auclair_2001:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Auclair_2001:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Al-Shaer_2020:review'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Auclair_2001:abstract', 'Auclair_2001:abstract', 'Auclair_2001:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Auclair_2001:abstract', 'Auclair_2001:abstract', 'Auclair_2001:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

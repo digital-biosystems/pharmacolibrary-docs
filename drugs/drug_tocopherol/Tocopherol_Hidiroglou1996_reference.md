@@ -4,11 +4,11 @@
 
 # Tocopherol — `Tocopherol_Hidiroglou1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> Tocopherol record lacked clearance or volume, so no compartmental model was built.
+> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 17:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tocopherol record lacked clearance or volume, so no compartmental model was built.
 
-<div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="false" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="true" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscular administration of acetylated alpha-tocopherol to sheep. Journal of dairy science 79(6):1027–1030 (1996).
@@ -41,7 +41,7 @@ Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,10 +123,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Hidiroglou_1996:abstract'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Hidiroglou_1996:abstract'] |
-| C5_dimension_Q57 | fail | 1 / [time] | /h | ['Hidiroglou_1996:abstract', 'Hidiroglou_1996:abstract'] |
+| C5_dimension_Q57 | fail | [time] | /h (1 / [time]) | ['Hidiroglou_1996:abstract', 'Hidiroglou_1996:abstract'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | micrograms/h per ml | ['Hidiroglou_1996:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -146,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # donepezil — `Donepezil_Kaikousidis2023_in_mean_data`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Donepezil's central volume of 0.021 L is physiologically implausible, and the model contains an unreachable compartment.
+> This record was reviewed on 2026-11-07 14:34 UTC (Rejected), but the paper was screened again on 2026-10-07 01:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Donepezil's central volume of 0.021 L is physiologically implausible, and the model contains an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_in_mean_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_in_mean_data" status="rejected" stale="true" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain and Blood Pharmacokinetic Modeling after Nasal Film and Oral Solution Administration in Mice. Pharmaceutics 15(5) (2023).
@@ -48,7 +48,7 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -226,6 +226,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Kaikousidis_2023_table_3:row5:col1', 'Kaikousidis_2023_table_3:row5:col2', 'Kaikousidis_2023_table_3:row17:col1', 'Kaikousidis_2023_table_3:row17:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Kaikousidis_2023_table_3:row6:col1', 'Kaikousidis_2023_table_3:row6:col2', 'Kaikousidis_2023_table_3:row18:col1', 'Kaikousidis_2023_table_3:row18:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Kaikousidis_2023_table_3:row1:col1', 'Kaikousidis_2023_table_3:row1:col2', 'Kaikousidis_2023_table_3:row13:col1', 'Kaikousidis_2023_table_3:row13:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | min | ['Kaikousidis_2023_table_3:row3:col1', 'Kaikousidis_2023_table_3:row3:col2', 'Kaikousidis_2023_table_3:row15:col1', 'Kaikousidis_2023_table_3:row15:col2'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q63 | fail | volume within physiological range | 0.021 L | ['Kaikousidis_2023_table_3:row5:col1', 'Kaikousidis_2023_table_3:row5:col2', 'Kaikousidis_2023_table_3:row17:col1', 'Kaikousidis_2023_table_3:row17:col2'] |
 | C9_phys_window_Q64 | fail | volume within physiological range | 0.005 L | ['Kaikousidis_2023_table_3:row6:col1', 'Kaikousidis_2023_table_3:row6:col2', 'Kaikousidis_2023_table_3:row18:col1', 'Kaikousidis_2023_table_3:row18:col2'] |
@@ -246,7 +247,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

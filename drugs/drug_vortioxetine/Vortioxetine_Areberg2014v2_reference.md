@@ -5,11 +5,11 @@
 
 # vortioxetine — `Vortioxetine_Areberg2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Vortioxetine record rejected for missing volume and elimination clearance, indicating it is not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 19:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vortioxetine record rejected for missing volume and elimination clearance, indicating it is not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="false" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="true" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis of vortioxetine in healthy individuals. Basic & clinical pharmacology & toxicology 115(6):552–559 (2014).
@@ -40,7 +40,7 @@ Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,7 +118,7 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tbl4:row26:col1'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['tbl4:row2:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['tbl4:row2:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -137,7 +137,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

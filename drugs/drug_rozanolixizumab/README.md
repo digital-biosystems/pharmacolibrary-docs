@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;rozanolixizumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Lledo_Garcia_2022_IgG&quot;,&quot;label&quot;:&quot;Lledo-Garcia_2022 \u00b7 IgG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # rozanolixizumab
 
@@ -17,13 +18,13 @@ Rozanolixizumab is a monoclonal antibody used to treat myasthenia gravis. It is 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Lledo-Garcia_2022_reference](drugs/drug_rozanolixizumab/Rozanolixizumab_LledoGarcia2022_reference.md) | — | 1-compartment (no model) | 6 | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Lledo-Garcia_2022_reference](drugs/drug_rozanolixizumab/Rozanolixizumab_LledoGarcia2022_reference.md) | — | 1-compartment (no model) | 6 | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span> | [Lledo-Garcia_2022_IgG](drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md) | IgG ← rozanolixizumab · indirect response — drug stimulates the loss of IgG | — | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span> | [Lledo-Garcia_2022_IgG](drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md) | IgG ← rozanolixizumab · indirect response — drug stimulates the loss of IgG | ▶ model + simulator | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
 
 ## ADME sites
 
@@ -53,7 +54,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 1 matched, 1 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 

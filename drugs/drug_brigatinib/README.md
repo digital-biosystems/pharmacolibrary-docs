@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;brigatinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brigatinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brigatinib_Gupta2021_reference&quot;,&quot;label&quot;:&quot;Gupta_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # brigatinib
 
@@ -25,7 +25,7 @@ Brigatinib is a protein kinase inhibitor used to treat non-small-cell lung carci
 
 ## Start here
 
-> **Gupta_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers and patients with cancer, n = 442. [Run it in the simulator](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md?tab=Simulation) · [record](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md)
+> **Gupta_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> healthy volunteers and patients with cancer, n = 442. [Run it in the simulator](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md?tab=Simulation) · [record](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Brigatinib is a protein kinase inhibitor used to treat non-small-cell lung carci
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Gupta_2021_reference](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+1 cov.) | Gupta N et al., Population Pharmacokinetics of Brigatin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00929-4](https://doi.org/10.1007/s40262-020-00929-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Gupta_2021_reference](drugs/drug_brigatinib/Brigatinib_Gupta2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+1 cov.) | Gupta N et al., Population Pharmacokinetics of Brigatin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00929-4](https://doi.org/10.1007/s40262-020-00929-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gupta_2022_reference](drugs/drug_brigatinib/Brigatinib_Gupta2022_reference.md) | — | 1-compartment (no model) | 0 | Gupta N et al., Population pharmacokinetic and exposure…, Clinical and translational… (2022) | [10.1111/cts.13231](https://doi.org/10.1111/cts.13231) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gupta_2023_fasted](drugs/drug_brigatinib/Brigatinib_Gupta2023_fasted.md) | — | 1-compartment (no model) | 0 | Gupta N et al., Clinical Pharmacology of Brigatinib: A…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ fed](drugs/drug_brigatinib/Brigatinib_Gupta2023_fed.md) | — | 1-compartment (no model) | 0 |  |  |
@@ -110,7 +110,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

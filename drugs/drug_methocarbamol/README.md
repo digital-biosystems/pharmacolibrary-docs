@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;methocarbamol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # methocarbamol
 
@@ -25,7 +25,7 @@ Methocarbamol is a centrally acting muscle relaxant used for painful muscle spas
 
 ## Start here
 
-> **Rumpler_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> Thoroughbred horses. [Run it in the simulator](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md?tab=Simulation) · [record](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md)
+> **Rumpler_2014_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> Thoroughbred horses. [Run it in the simulator](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md?tab=Simulation) · [record](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Methocarbamol is a centrally acting muscle relaxant used for painful muscle spas
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
 
 ## ADME sites
 
@@ -71,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 32 matched, 31 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

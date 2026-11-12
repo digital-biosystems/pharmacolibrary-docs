@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Xu_2026 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Ma_2020_ANC&quot;,&quot;label&quot;:&quot;Ma_2020 \u00b7 ANC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/pd_Ma_2020_ANC.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sarilumab — `Sarilumab_Xu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The volume of distribution of a metabolite parameter uses units of mass per time, which is dimensionally invalid.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 00:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution of a metabolite parameter uses units of mass per time, which is dimensionally invalid.
 
-<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="false" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="true" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling, Simulation, and Extrapolation to Optimize Pediatric Development Plan: Sarilumab Polyarticular-Course juvenile arthritis Application. Journal of pharmacokinetics and pharmacodynamics 53(3) (2026).
@@ -42,7 +43,7 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.741). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -158,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
-| C5_dimension_Q367 | fail | [mass] / [time] | mg/day | ['Tab1:row1:col1', 'Tab1:row1:col2'] |
+| C5_dimension_Q367 | fail | [length] ** 3 | mg/day ([mass] / [time]) | ['Tab1:row1:col1', 'Tab1:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tab1:row7:col1', 'Tab1:row7:col2'] |
@@ -183,7 +184,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

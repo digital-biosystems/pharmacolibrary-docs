@@ -23,7 +23,7 @@ Sodium salicylate is a salicylate non-steroidal anti-inflammatory drug used as a
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lowenthal_1974 · V</text><circle cx="434.9" cy="30.0" r="4" fill="#ef6c00"><title>Lowenthal_1974 · V: 5.01 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lowenthal_1974 · V</text><circle cx="447.2" cy="46.0" r="4" fill="#ef6c00"><title>Lowenthal_1974 · V: 5.43 L</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lowenthal_1974 · V</text><circle cx="434.9" cy="30.0" r="4" fill="#78909c"><title>Lowenthal_1974 · V: 5.01 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lowenthal_1974 · V</text><circle cx="447.2" cy="46.0" r="4" fill="#78909c"><title>Lowenthal_1974 · V: 5.43 L</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -31,9 +31,9 @@ Sodium salicylate is a salicylate non-steroidal anti-inflammatory drug used as a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Lowenthal_1974_four_normal_subjects](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects.md) | — | 1-compartment (no model) | 3 | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ six_anephric_patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_patients.md) | — | 1-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Lowenthal_1974_four_normal_subjects](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects.md) | — | 1-compartment (no model) | 3 | Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of clinical inv… (1974) | [10.1172/JCI107865](https://doi.org/10.1172/JCI107865) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [↳ six_anephric_patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ patients](drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_patients.md) | — | 1-compartment (no model) | 9 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -60,7 +60,7 @@ Sodium salicylate is a salicylate non-steroidal anti-inflammatory drug used as a
 
 - **PubMed hits:** 81 matched, 55 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs review 0  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # ketoprofen — `Ketoprofen_Hurault1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the plasma clearance unit was recorded as liters instead of liters per hour.
+> This record was reviewed on 2026-11-07 15:05 UTC (Rejected), but the paper was screened again on 2026-10-07 01:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the plasma clearance unit was recorded as liters instead of liters per hour.
 
-<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Hurault1989_reference" status="rejected" stale="false" population="patients with acute ureteral colic" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Hurault1989_reference" status="rejected" stale="true" population="patients with acute ureteral colic" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hurault de Ligny B, Debruyne D, Ryckelynck JP, Levaltier B, Albessard F, Moulin M. [Pharmacokinetics of intravenous ketoprofen. Therapeutic value in renal colic]. Nephrologie 10(1):23–26 (1989).
@@ -41,7 +41,7 @@ Hurault de Ligny B, Debruyne D, Ryckelynck JP, Levaltier B, Albessard F, Moulin 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | l | ['Hurault_1989:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | l ([length] ** 3) | ['Hurault_1989:abstract'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Hurault_1989:abstract'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Hurault_1989:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Hurault_1989:abstract'] |
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

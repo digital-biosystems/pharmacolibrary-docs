@@ -5,11 +5,11 @@
 
 # oxazepam — `Oxazepam_Dingemanse1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record for oxazepam was rejected because its volume of distribution unit, kg-1, is dimensionally inconsistent with the concentration-based model structure.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-06 19:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for oxazepam was rejected because its volume of distribution unit, kg-1, is dimensionally inconsistent with the concentration-based model structure.
 
-<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="true" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi H et al. Pharmacokinetic-pharmacodynamic modelling of the anticonvulsant effect of oxazepam in individual rats. British journal of pharmacology 99(1):53–58 (1990).
@@ -39,7 +39,7 @@ Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,7 +126,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Dingemanse_1990:abstract'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Dingemanse_1990:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | kg-1 | ['Dingemanse_1990:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | kg-1 (dimensionless) | ['Dingemanse_1990:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 28 | ['Dingemanse_1990:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 28 L/h | ['Dingemanse_1990:abstract'] |
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

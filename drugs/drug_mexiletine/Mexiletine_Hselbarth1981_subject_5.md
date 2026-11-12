@@ -4,11 +4,11 @@
 
 # mexiletine — `Mexiletine_Hselbarth1981_subject_5`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Mexiletine elimination rate constant has incompatible units preventing model conversion.
+> This record was reviewed on 2026-11-07 15:10 UTC (Rejected), but the paper was screened again on 2026-10-08 19:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Mexiletine elimination rate constant has incompatible units preventing model conversion.
 
-<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_5" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_5" status="rejected" stale="true" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine in healthy subjects. Clinical pharmacology and therapeutics 29(6):729–736 (1981).
@@ -42,7 +42,7 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,13 +140,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q17 | fail | [mass] / [length] ** 3 / [time] | µg/ml/hr | ['Häselbarth_1981_table_3:row7:col5'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | µg/ml/hr ([mass] / [length] ** 3 / [time]) | ['Häselbarth_1981_table_3:row7:col5'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Häselbarth_1981_table_3:row6:col5'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Häselbarth_1981_table_3:row2:col5'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Häselbarth_1981_table_3:row5:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Sauer_2025:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Häselbarth_1981_table_3:row3:col5', 'Häselbarth_1981_table_4:row3:col5'] |
-| C5_dimension_Q88 | fail | [mass] / [length] ** 3 / [time] | µg/ml/hr | ['Häselbarth_1981_table_4:row7:col5'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | µg/ml/hr ([mass] / [length] ** 3 / [time]) | ['Häselbarth_1981_table_4:row7:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 74 L | ['Sauer_2025:review'] |
 
@@ -166,7 +166,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

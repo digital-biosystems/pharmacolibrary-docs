@@ -5,11 +5,11 @@
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is abstract-only, so summary statistics stand in for a fitted model, and a dimension mismatch was found on a structural parameter.
+> This record was reviewed on 2026-11-07 16:48 UTC (Rejected), but the paper was screened again on 2026-10-06 23:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is abstract-only, so summary statistics stand in for a fitted model, and a dimension mismatch was found on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MAO-inhibitor moclobemide in man. Arzneimittel-Forschung 34(1):80–82 (1984).
@@ -39,7 +39,7 @@ Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MA
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,9 +138,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Główka_2019:review'] |
-| C5_dimension_Q310 | fail | [mass] | mg | ['Raaflaub_1984:abstract'] |
+| C5_dimension_Q310 | fail | [time] | mg ([mass]) | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Główka_2019:review'] |
@@ -165,7 +165,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

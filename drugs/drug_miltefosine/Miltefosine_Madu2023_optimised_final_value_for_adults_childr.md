@@ -5,11 +5,11 @@
 
 # miltefosine — `Miltefosine_Madu2023_optimised_final_value_for_adults_childr`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance; kabs and λ1 have no unit.
+> This record was reviewed on 2026-11-07 15:24 UTC (Needs review), but the paper was screened again on 2026-10-07 07:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; kabs and λ1 have no unit.
 
-<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Madu2023_optimised_final_value_for_adults_childr" status="needs_review" stale="false" population="adult and paediatric patients with leishmaniasis (PBPK virtual populations)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Madu2023_optimised_final_value_for_adults_childr" status="needs_review" stale="true" population="adult and paediatric patients with leishmaniasis (PBPK virtual populations)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Madu SJ, Wang K, Chirumamilla SK, Turner DB, Steel PG, Li M. Assessing Dose-Exposure-Response Relationships of Miltefosine in Adults and Children using Physiologically-Based Pharmacokinetic Modeling Approach. Pharmaceutical research 40(12):2983–3000 (2023).
@@ -45,7 +45,7 @@ Madu SJ, Wang K, Chirumamilla SK, Turner DB, Steel PG, Li M. Assessing Dose-Expo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -167,7 +167,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q374 | pass | [mass] / [substance] |  | ['Tab1:row2:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Tab1:row26:col3'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] | children | ['Tab1:row21:col3'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] | children | ['Tab1:row34:col3', 'Tab1:footnote'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] | children | ['Tab1:row34:col3', 'Tab1:footnote'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 21.7 L | ['Tab1:row26:col3'] |
 
@@ -197,7 +197,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

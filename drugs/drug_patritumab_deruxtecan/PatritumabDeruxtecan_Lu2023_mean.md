@@ -4,11 +4,11 @@
 
 # patritumab deruxtecan — `PatritumabDeruxtecan_Lu2023_mean`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The parent compound clearance value of 0.342 L/d was rejected due to a dimension mismatch against its structural parameter.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 18:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The parent compound clearance value of 0.342 L/d was rejected due to a dimension mismatch against its structural parameter.
 
-<div class="pk-model-meta" hidden drug="patritumab deruxtecan" model-id="PatritumabDeruxtecan_Lu2023_mean" status="rejected" stale="false" population="patients with HER3-expressing solid tumors" measured-compound="patritumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="patritumab deruxtecan" model-id="PatritumabDeruxtecan_Lu2023_mean" status="rejected" stale="true" population="patients with HER3-expressing solid tumors" measured-compound="patritumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokinetics of Patritumab Deruxtecan in Patients With Solid Tumors. Journal of clinical pharmacology 63(1):77–90 (2023).
@@ -47,7 +47,7 @@ Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -203,7 +203,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Lu_2023_table_3:row3:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['jcph2137-tbl-0002:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['jcph2137-tbl-0002:row6:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | μg/d | ['jcph2137-tbl-0002:row3:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μg/d ([mass] / [time]) | ['jcph2137-tbl-0002:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.342 | ['jcph2137-tbl-0002:row1:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0142 L/h | ['jcph2137-tbl-0002:row1:col1'] |
@@ -227,7 +227,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

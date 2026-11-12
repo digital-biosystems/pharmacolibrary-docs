@@ -5,11 +5,11 @@
 
 # pertuzumab — `Pertuzumab_Sakaeda2024_120_mg_2_000_u_rhuph20_sc`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-10-07 18:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Sakaeda2024_120_mg_2_000_u_rhuph20_sc" status="needs_review" stale="false" population="healthy adult males" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Sakaeda2024_120_mg_2_000_u_rhuph20_sc" status="needs_review" stale="true" population="healthy adult males" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sakaeda M, Kotani N, Yoneya T, Zheng Y, Habara Y. [Pharmacological properties and clinical development overview of pertuzumab (genetical recombination), trastuzumab (genetical recombination) and vorhyaluronidase alfa (genetical recombination) (PHESGO. Nihon yakurigaku zasshi. Folia pharmacologica Japonica 159(4):241–253 (2024).
@@ -44,7 +44,7 @@ Sakaeda M, Kotani N, Yoneya T, Zheng Y, Habara Y. [Pharmacological properties an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -142,6 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Sakaeda_2024_table_3:row3:col2'] |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Sakaeda_2024_table_3:row4:col2'] |
@@ -182,7 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

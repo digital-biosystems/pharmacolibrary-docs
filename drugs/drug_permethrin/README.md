@@ -32,7 +32,7 @@ Permethrin is a pyrethroid insecticide used to treat scabies and lice infestatio
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Anadón_1991_reference](drugs/drug_permethrin/Permethrin_Anadn1991_reference.md) | — | general linear (no model) | 7 | Anadón A et al., Toxicokinetics of permethrin in the rat, Toxicology and applied phar… (1991) | [10.1016/0041-008x(91)90284-l](https://doi.org/10.1016/0041-008x(91)90284-l) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Côté_2014_reference](drugs/drug_permethrin/Permethrin_Ct2014_reference.md) | — | general linear (no model) | 1 | Côté J et al., A novel toxicokinetic modeling of cyper…, PloS one (2014) | [10.1371/journal.pone.0088517](https://doi.org/10.1371/journal.pone.0088517) |
-| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Gögebakan_2015_reference](drugs/drug_permethrin/Permethrin_Ggebakan2015_reference.md) | — | 1-compartment (no model) | 8 | Gögebakan T et al., Single-dose toxicokinetics of permethri…, British poultry science (2015) | [10.1080/00071668.2015.1085957](https://doi.org/10.1080/00071668.2015.1085957) |
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Gögebakan_2015_reference](drugs/drug_permethrin/Permethrin_Ggebakan2015_reference.md) | — | 1-compartment (no model) | 8 | Gögebakan T et al., Single-dose toxicokinetics of permethri…, British poultry science (2015) | [10.1080/00071668.2015.1085957](https://doi.org/10.1080/00071668.2015.1085957) |
 
 ## Pharmacodynamics (PD)
 
@@ -107,7 +107,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 255 matched, 143 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -15,7 +15,7 @@
 
 **As extracted:** Abemaciclib (concentrations from the PK model of Chigutsa_2020::estimate_see) drives Tumor size (sum of longest diameters of target lesions) (in mm): delayed effect through transit (transduction) compartments.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Abemaciclib plasma concentrations (ng/mL) were linked to change in tumor size (sum of longest target-lesion diameters, mm); the record describes a proportional stimulatory transduction model, but the supplied paper excerpts do not specify the mechanism. Recorded values are 0.0399 week⁻¹ per unit plasma concentration for drug effect, 0.934 week⁻¹ transit rate, 0.00715 mm/week tumor growth rate, 8.44 weeks to half the initial drug effect, and 7.11 weeks’ delay before waning begins.
 >
@@ -51,6 +51,35 @@ Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmaco
 </details>
 
 
+## Exposure-response model
+
+`Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 36.7 mm | — |
+| slope | 0.0399 week −1 | 6.597e-08 1 / second |
+
+Closed-form check points (response, SI): `at_0` = 36.7, `per_exposure_unit` = 6.597e-08
+
+Deviations:
+
+- `pd_binding_family_inferred` — the record's model family is transduction; read from the parameters: a slope and no Emax — linear
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
 
@@ -84,19 +113,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_matlab.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_matlab.zip</a> <span class="pk-size">(2.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sbml.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_cellml.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet`. <https://pharmacolibrary.github.io/#/drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet>
+
+```bibtex
+@misc{pharmacolibrary_AbemaciclibChigutsa2026PDtumorsizesumoflongestdiamet,
+  title  = {{Pharmacolibrary model Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

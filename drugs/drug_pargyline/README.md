@@ -41,7 +41,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:18 | 3:44 | 0/0/0 | 0/0/0 | 0/0/0 | 31,423/2,161 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 16:18 | 3:44 | 0/0/0 | 0/0/0 | 0/0/0 | 31,423/2,161 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/1 | 0/0 | 0 |
 
 ## Coverage
 

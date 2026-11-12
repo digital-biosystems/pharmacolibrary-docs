@@ -5,11 +5,11 @@
 
 # rutoside — `Rutoside_Domnguez2021_rutin`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The relative bioavailability of rutin was rejected because its unit of mg/kg is dimensionally inconsistent with the parameter's meaning.
+> This record was reviewed on 2026-11-07 15:05 UTC (Rejected), but the paper was screened again on 2026-10-06 22:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The relative bioavailability of rutin was rejected because its unit of mg/kg is dimensionally inconsistent with the parameter's meaning.
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="true" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões CM, Aragón DM. Matrix Effects of the Hydroethanolic Extract of Calyces of Physalis peruviana L. on Rutin Pharmacokinetics in Wistar Rats Using Population Modeling. Pharmaceutics 13(4) (2021).
@@ -51,7 +51,7 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,7 +165,7 @@ The record lists relative bioavailability (Frel) for rutin as 1.0 with units of 
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Domínguez_2021_table_2:row2:col1', 'Domínguez_2021_table_2:row2:col2', 'Domínguez_2021_table_3:row2:col1', 'Domínguez_2021_table_3:row2:col2'] |
-| C5_dimension_Q189 | fail | [time] / [length] ** 3 | h/L | ['Domínguez_2021_table_2:row9:col1', 'Domínguez_2021_table_2:row9:col2'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | h/L ([time] / [length] ** 3) | ['Domínguez_2021_table_2:row9:col1', 'Domínguez_2021_table_2:row9:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Domínguez_2021_table_2:row4:col1', 'Domínguez_2021_table_2:row4:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Domínguez_2021_table_3:row6:col1', 'Domínguez_2021_table_3:row6:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Domínguez_2021_table_3:row3:col1', 'Domínguez_2021_table_3:row3:col2'] |
@@ -198,7 +198,7 @@ The record lists relative bioavailability (Frel) for rutin as 1.0 with units of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

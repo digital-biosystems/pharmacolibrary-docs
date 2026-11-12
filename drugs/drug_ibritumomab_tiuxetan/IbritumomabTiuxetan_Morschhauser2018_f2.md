@@ -4,11 +4,11 @@
 
 # ibritumomab tiuxetan — `IbritumomabTiuxetan_Morschhauser2018_f2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Clearance for ibritumomab tiuxetan, valued at 1.03, was rejected because its unit could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 16:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clearance for ibritumomab tiuxetan, valued at 1.03, was rejected because its unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_f2" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_f2" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al. A new pharmacokinetic model for 90Y-ibritumomab tiuxetan based on 3-dimensional dosimetry. Scientific reports 8(1):14860 (2018).
@@ -45,7 +45,7 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Morschhauser_2018_table_3:row11:col1', 'Morschhauser_2018_table_3:row11:col3', 'Morschhauser_2018_table_3:row18:col1', 'Morschhauser_2018_table_3:row18:col3', 'Morschhauser_2018_table_3:row25:col1', 'Morschhauser_2018_table_3:row25:col3'] |
-| C5_dimension_Q22 | fail | [length] ** 3 * [time] | ml.min | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml.min ([length] ** 3 * [time]) | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col3'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Morschhauser_2018_table_3:row8:col3'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Morschhauser_2018_table_3:row9:col3'] |
 | C5_dimension_Q303 | pass | 1 / [time] |  | ['Morschhauser_2018_table_3:row15:col3', 'Morschhauser_2018_table_3:row22:col3'] |
@@ -179,7 +179,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

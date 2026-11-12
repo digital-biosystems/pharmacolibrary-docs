@@ -5,11 +5,11 @@
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_naproxen`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the dose compound was misidentified, leaving the central metabolite compartment orphaned without a defined link from the parent drug.
+> This record was reviewed on 2026-11-07 15:18 UTC (Rejected), but the paper was screened again on 2026-10-22 11:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the dose compound was misidentified, leaving the central metabolite compartment orphaned without a defined link from the parent drug.
 
-<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="rejected" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="rejected" stale="true" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al. Comparative Effects of Metamizole (Dipyrone) and Naproxen on Renal Function and Prostacyclin Synthesis in Salt-Depleted Healthy Subjects - A Randomized Controlled Parallel Group Study. Frontiers in pharmacology 12:620635 (2021).
@@ -46,7 +46,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,8 +175,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['T3:row2:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['T3:row6:col2'] |
-| C5_dimension_Q30 | fail | 1 / [time] | 1/h | ['T3:row3:col2', 'T3:row3:col3'] |
-| C5_dimension_Q30 | fail | 1 / [time] | 1/h | ['T3:row7:col2', 'T3:row7:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['T3:row3:col2', 'T3:row3:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['T3:row7:col2', 'T3:row7:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['T3:row5:col2', 'T3:row5:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['T3:row1:col2', 'T3:row1:col3'] |
 | C5_dimension_Q57 | pass | [time] |  | ['T3:row15:col2', 'T3:row15:col3'] |
@@ -203,7 +203,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

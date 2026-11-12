@@ -27,7 +27,7 @@ Acriflavinium chloride (acriflavine) is a topical antiseptic used against local 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Plakas_1998_reference](drugs/drug_acriflavinium_chloride/AcriflaviniumChloride_Plakas1998_reference.md) | — | general linear (no model) | 1 | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) |
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Plakas_1998_reference](drugs/drug_acriflavinium_chloride/AcriflaviniumChloride_Plakas1998_reference.md) | — | general linear (no model) | 1 | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Acriflavinium chloride (acriflavine) is a topical antiseptic used against local 
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

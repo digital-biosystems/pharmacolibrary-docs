@@ -4,11 +4,11 @@
 
 # fleroxacin — `Fleroxacin_Miller1992_vitreous_humor`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record is not a compartmental population PK model, as it lacks distribution volume and clearance parameters for fleroxacin.
+> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 11:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental population PK model, as it lacks distribution volume and clearance parameters for fleroxacin.
 
-<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_vitreous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_vitreous_humor" status="rejected" stale="true" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin pharmacokinetics in aqueous and vitreous humors determined by using complete concentration-time data from individual rabbits. Antimicrobial agents and chemotherapy 36(1):32–38 (1992).
@@ -39,7 +39,7 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q32 | fail | [mass] / [length] | pg/mi | ['tab_1:row5:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | pg/mi ([mass] / [length]) | ['tab_1:row5:col4'] |
 | C5_dimension_Q56 | pass | [time] |  | ['tab_1:row6:col4'] |
 | C5_dimension_Q59 | pass | [time] |  | ['tab_1:row1:col4'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | mg h/liter | ['tab_1:row3:col4'] |
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

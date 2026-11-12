@@ -4,11 +4,11 @@
 
 # pyrimethamine — `Pyrimethamine_de2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.
+> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-07 08:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_de2017_reference" status="rejected" stale="false" population="pregnant and postpartum women receiving IPTp" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_de2017_reference" status="rejected" stale="true" population="pregnant and postpartum women receiving IPTp" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokinetics of Sulfadoxine and Pyrimethamine for Intermittent Preventive Treatment of Malaria During Pregnancy and After Delivery. CPT: pharmacometrics & systems pharmacology 6(7):430–438 (2017).
@@ -46,7 +46,7 @@ de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -180,7 +180,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row6:col3'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['psp412181-tbl-0002:row7:col3'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row14:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['psp412181-tbl-0002:row11:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.35 L/h | ['psp412181-tbl-0002:row3:col3', 'psp412181-tbl-0002:row3:col4'] |
@@ -203,7 +202,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

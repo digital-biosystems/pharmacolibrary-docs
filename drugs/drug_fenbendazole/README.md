@@ -30,7 +30,7 @@ Fenbendazole is an antinematodal drug used to treat worm (nematode) infections. 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="camelid" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Beier_2000_reference](drugs/drug_fenbendazole/Fenbendazole_Beier2000_reference.md) | — | 1-compartment (no model) | 2 | Beier E et al., Oral pharmacokinetics of fenbendazole i…, Small ruminant research : t… (2000) | [10.1016/s0921-4488(00)00124-3](https://doi.org/10.1016/s0921-4488(00)00124-3) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Bach_2021_reference](drugs/drug_fenbendazole/Fenbendazole_Bach2021_reference.md) | — | general linear (no model) | 9 | Bach T et al., Population Pharmacokinetic Model of Oxf…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02129-20](https://doi.org/10.1128/AAC.02129-20) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Bach_2021_reference](drugs/drug_fenbendazole/Fenbendazole_Bach2021_reference.md) | — | general linear (no model) | 9 | Bach T et al., Population Pharmacokinetic Model of Oxf…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02129-20](https://doi.org/10.1128/AAC.02129-20) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Mackintosh_1985_reference](drugs/drug_fenbendazole/Fenbendazole_Mackintosh1985_reference.md) | — | general linear (no model) | 0 | Mackintosh CG et al., Efficacy and pharmacokinetics of febant…, New Zealand veterinary jour… (1985) | [10.1080/00480169.1985.35194](https://doi.org/10.1080/00480169.1985.35194) |
 
 ## Pharmacodynamics (PD)
@@ -63,7 +63,7 @@ Fenbendazole is an antinematodal drug used to treat worm (nematode) infections. 
 
 - **PubMed hits:** 22 matched, 20 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

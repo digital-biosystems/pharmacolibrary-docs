@@ -5,11 +5,11 @@
 
 # Nirmatrelvir — `Nirmatrelvir_Qu2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Nirmatrelvir was rejected because the apparent clearance unit 'L/h' mismatched the absorption rate constant unit 'ka' on a structural parameter.
+> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-10-07 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nirmatrelvir was rejected because the apparent clearance unit 'L/h' mismatched the absorption rate constant unit 'ka' on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Qu2023_reference" status="rejected" stale="false" population="older adult Chinese patients with COVID-19 infection" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Qu2023_reference" status="rejected" stale="true" population="older adult Chinese patients with COVID-19 infection" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic modeling and simulation for nirmatrelvir exposure assessment in Chinese older patients with COVID-19 infection. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 189:106535 (2023).
@@ -38,7 +38,7 @@ Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,9 +131,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Qu_2023:abstract'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['Qu_2023:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['Qu_2023:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Qu_2023:abstract'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Qu_2023:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Qu_2023:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.16 L/h | ['Qu_2023:abstract'] |
@@ -155,7 +155,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

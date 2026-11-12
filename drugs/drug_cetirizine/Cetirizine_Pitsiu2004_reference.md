@@ -5,11 +5,11 @@
 
 # cetirizine — `Cetirizine_Pitsiu2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The apparent volume of distribution parameter is recorded as 1.4 L/year instead of a volume unit, causing a dimensional mismatch.
+> This record was reviewed on 2026-11-07 15:23 UTC (Rejected), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent volume of distribution parameter is recorded as 1.4 L/year instead of a volume unit, causing a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Pitsiu2004_reference" status="rejected" stale="false" population="children aged 6 months to 12 years" measured-compound="cetirizine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Pitsiu2004_reference" status="rejected" stale="true" population="children aged 6 months to 12 years" measured-compound="cetirizine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Pitsiu M, Hussein Z, Majid O, Aarons L, de Longueville M, Stockis A. Retrospective population pharmacokinetic analysis of cetirizine in children aged 6 months to 12 years. British journal of clinical pharmacology 57(4):402–411 (2004).
@@ -36,7 +36,7 @@ Pitsiu M, Hussein Z, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,7 +120,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Pitsiu_2004:abstract'] |
-| C5_dimension_Q76 | fail | [length] ** 3 / [time] | l year(-1) | ['Pitsiu_2004:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | l year(-1) ([length] ** 3 / [time]) | ['Pitsiu_2004:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.12 L/h | ['Pitsiu_2004:abstract'] |
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

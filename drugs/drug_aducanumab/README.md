@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;aducanumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kandadi_2022_SUVR&quot;,&quot;label&quot;:&quot;Kandadi_2022 \u00b7 SUVR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_aducanumab/pd_Kandadi_2022_SUVR.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # aducanumab
 
@@ -24,10 +25,10 @@ Aducanumab is a monoclonal antibody against beta-amyloid that was developed to t
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Kandadi_2022_SUVR](drugs/drug_aducanumab/pd_Kandadi_2022_SUVR.md) | composite SUVR ← aducanumab · indirect response — drug stimulates the loss of composite SUVR | — | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Kandadi_2022_SUVR](drugs/drug_aducanumab/pd_Kandadi_2022_SUVR.md) | composite SUVR ← aducanumab · indirect response — drug stimulates the loss of composite SUVR | ▶ model + simulator | Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Muralidharan_2022_ARIA_E](drugs/drug_aducanumab/pd_Muralidharan_2022_ARIA_E.md) | first incidence of ARIA-E ← aducanumab · time-to-event model | — | Muralidharan KK et al., A Time-to-Event Exposure-Response Model…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2047](https://doi.org/10.1002/jcph.2047) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Muralidharan_2022_ARIA_E_2](drugs/drug_aducanumab/pd_Muralidharan_2022_ARIA_E_2.md) | time to ARIA-E resolution ← aducanumab · time-to-event model | — | Muralidharan KK et al., A Time-to-Event Exposure-Response Model…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2047](https://doi.org/10.1002/jcph.2047) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_CL](drugs/drug_aducanumab/pd_van_2025_CL.md) | amyloid plaque burden ← aducanumab · indirect response — drug stimulates the production of amyloid plaque burden | — | van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & dementia (New… (2025) | [10.1002/trc2.70169](https://doi.org/10.1002/trc2.70169) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_CL](drugs/drug_aducanumab/pd_van_2025_CL.md) | amyloid plaque burden ← aducanumab · indirect response — drug stimulates the production of amyloid plaque burden | model (no simulator) | van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & dementia (New… (2025) | [10.1002/trc2.70169](https://doi.org/10.1002/trc2.70169) |
 
 ## ADME sites
 

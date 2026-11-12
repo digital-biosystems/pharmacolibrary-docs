@@ -4,11 +4,11 @@
 
 # metreleptin — `Metreleptin_Wong2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The single-compartment model for r-metHuLeptin was rejected due to a dimension mismatch on the clearance parameter value of 79 ml/kg.h.
+> This record was reviewed on 2026-11-07 16:56 UTC (Rejected), but the paper was screened again on 2026-10-05 11:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The single-compartment model for r-metHuLeptin was rejected due to a dimension mismatch on the clearance parameter value of 79 ml/kg.h.
 
-<div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed state: effects of adiposity, age, and gender on endogenous leptin production and clearance rates. The Journal of clinical endocrinology and metabolism 89(6):2672–2677 (2004).
@@ -36,7 +36,7 @@ Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [time] | ml/kg.h | ['Wong_2004:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml/kg.h ([length] ** 3 * [time]) | ['Wong_2004:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wong_2004:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Wong_2004:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 79 | ['Wong_2004:abstract'] |
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

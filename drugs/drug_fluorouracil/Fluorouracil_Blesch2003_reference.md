@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Blesch2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the capecitabine-to-5-H-DFCR metabolic link lacks a defined rate parameter and an FBAL unit was unrecognizable.
+> This record was reviewed on 2026-11-07 14:06 UTC (Rejected), but the paper was screened again on 2026-11-03 21:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the capecitabine-to-5-H-DFCR metabolic link lacks a defined rate parameter and an FBAL unit was unrecognizable.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Blesch2003_reference" status="rejected" stale="false" population="cancer patients" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Blesch2003_reference" status="rejected" stale="true" population="cancer patients" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Blesch KS, Gieschke R, Tsukamoto Y, Reigner BG, Burger HU, Steimer JL. Clinical pharmacokinetic/pharmacodynamic and physiologically based pharmacokinetic modeling in new drug development: the capecitabine experience. Investigational new drugs 21(2):195–223 (2003).
@@ -47,7 +47,7 @@ Blesch KS, Gieschke R, Tsukamoto Y, Reigner BG, Burger HU, Steimer JL. Clinical 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.35). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.35). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['tab_0:row14:col2'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['tab_0:row4:col2'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['tab_0:row6:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l/h | ['tab_0:row1:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l/h ([length] ** 3 / [time]) | ['tab_0:row1:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row3:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_0:row7:col2'] |
@@ -195,7 +195,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

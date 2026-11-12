@@ -5,11 +5,11 @@
 
 # sapropterin — `Sapropterin_Qi2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sapropterin's absorption half-life of 0.235 hours was recorded in dimensionless units, causing a dimensional mismatch that prevented SI conversion.
+> This record was reviewed on 2026-11-07 16:34 UTC (Rejected), but the paper was screened again on 2026-10-05 11:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sapropterin's absorption half-life of 0.235 hours was recorded in dimensionless units, causing a dimensional mismatch that prevented SI conversion.
 
-<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Qi2015_reference" status="rejected" stale="false" population="pediatric and adult patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Qi2015_reference" status="rejected" stale="true" population="pediatric and adult patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qi Y, Mould DR, Zhou H, Merilainen M, Musson DG. A prospective population pharmacokinetic analysis of sapropterin dihydrochloride in infants and young children with phenylketonuria. Clinical pharmacokinetics 54(2):195–207 (2015).
@@ -43,7 +43,7 @@ Qi Y, Mould DR, Zhou H, Merilainen M, Musson DG. A prospective population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -151,8 +151,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row1:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tab3:row3:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row6:col2'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | μg/L | ['Tab3:row7:col2'] |
-| C5_dimension_Q95 | fail | [luminosity] / [length] ** 2 | units | ['Tab3:row5:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | μg/L ([mass] / [length] ** 3) | ['Tab3:row7:col2'] |
+| C5_dimension_Q95 | fail | [time] | units ([luminosity] / [length] ** 2) | ['Tab3:row5:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 2.71e+03 L/h | ['Tab3:row1:col2'] |
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

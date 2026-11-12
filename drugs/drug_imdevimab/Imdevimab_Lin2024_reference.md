@@ -4,11 +4,11 @@
 
 # Imdevimab — `Imdevimab_Lin2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Imdevimab clearance of 0.2359 L/day was rejected due to a dimensional mismatch from an unconvertible unit on the absorption rate constant.
+> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Imdevimab clearance of 0.2359 L/day was rejected due to a dimensional mismatch from an unconvertible unit on the absorption rate constant.
 
-<div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="true" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Pharmacokinetics of Casirivimab and Imdevimab in Pediatric and Adult Non-Infected Individuals, Pediatric and Adult Ambulatory or Hospitalized Patients or Household Contacts of Patients Infected with SARS-COV-2. Pharmaceutical research 41(10):1933–1949 (2024).
@@ -47,7 +47,7 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.559). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.559). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -211,7 +211,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.2359 | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4'] |
@@ -236,7 +236,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

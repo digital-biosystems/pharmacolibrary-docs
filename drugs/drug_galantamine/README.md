@@ -27,7 +27,7 @@ Galantamine is an acetylcholinesterase inhibitor used to treat Alzheimer's disea
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Mihailova_1986_reference](drugs/drug_galantamine/Galantamine_Mihailova1986_reference.md) | — | 1-compartment (no model) | 0 | Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986) | [10.1159/000138184](https://doi.org/10.1159/000138184) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
 
 ## ADME sites
 
@@ -68,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 27 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

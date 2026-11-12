@@ -4,11 +4,11 @@
 
 # leflunomide — `Leflunomide_Li2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch on the elimination rate constant parameter for metabolite A771726.
+> This record was reviewed on 2026-11-07 15:32 UTC (Rejected), but the paper was screened again on 2026-10-06 23:58 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the elimination rate constant parameter for metabolite A771726.
 
-<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomide in Chinese healthy volunteers. Acta pharmacologica Sinica 23(6):551–555 (2002).
@@ -39,7 +39,7 @@ Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Li_2002:abstract'] |
-| C5_dimension_Q47 | fail | [time] | h | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Li_2002:abstract', 'Li_2002:abstract', 'Li_2002:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Li_2002:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

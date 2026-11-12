@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "LSerine_Schouten2021_reference",
+ "molar_masses": {
+  "central.C": 0.105093
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.0023148148148146e-09,
+  "F": 1.0,
+  "MM": 0.105093,
+  "VdPerKg": 4.485714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 7.77748289690965e-06,
+  "k21": 7.903332134723721e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662078
+ },
+ "reference_peaks": {
+  "central.C": 0.001686627651491798
+ },
+ "stop_time": 1555200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

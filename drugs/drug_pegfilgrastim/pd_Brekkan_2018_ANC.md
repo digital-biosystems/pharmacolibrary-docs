@@ -15,7 +15,7 @@
 
 **As extracted:** Pegfilgrastim (measured concentrations) drives absolute neutrophil count (in 10^9 cells/L): indirect response — drug stimulates the production of absolute neutrophil count.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pegfilgrastim concentrations drive the absolute neutrophil count (ANC) via a transit-chain model that stimulates both the maturation and production rates of neutrophils. The paper specifies a base ANC of 2.70 (10^9 cells/L), an EC50 of 9.24 ng/mL, a maximum effect on the maturation rate of 102, and a maximum effect on the production rate of 109, without explicitly defining the mechanistic relationship of these parameters to specific rate constants like kin or kout in the provided text.
 >
@@ -50,6 +50,41 @@ Brekkan A et al., A Population Pharmacokinetic-Pharmacody…, The AAPS journal (
 </details>
 
 
+## Exposure-response model
+
+`Pegfilgrastim_Brekkan2018_PD_anc` — turnover (indirect response type III), `response = E0*(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 2.7 10 9 cells/L | — |
+| Emax | 102 | — |
+| EC50 | 9.24 ng/mL | 9.24e-06 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 2.7, `at_EC50` = 140.4, `at_inf` = 278.1
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as IDR-III predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
@@ -78,19 +113,33 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_modelica.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_matlab.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_sbml.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc/Pegfilgrastim_Brekkan2018_PD_anc_cellml.zip" download>Pegfilgrastim_Brekkan2018_PD_anc_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Pegfilgrastim_Brekkan2018_PD_anc`. <https://pharmacolibrary.github.io/#/drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc>
+
+```bibtex
+@misc{pharmacolibrary_PegfilgrastimBrekkan2018PDanc,
+  title  = {{Pharmacolibrary model Pegfilgrastim_Brekkan2018_PD_anc}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pegfilgrastim/Pegfilgrastim_Brekkan2018_PD_anc},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

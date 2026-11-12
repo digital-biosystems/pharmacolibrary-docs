@@ -4,11 +4,11 @@
 
 # ribociclib — `Ribociclib_Samant2018_fed_state`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 15:47 UTC (Rejected), but the paper was screened again on 2026-10-07 06:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Samant2018_fed_state" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Samant2018_fed_state" status="needs_review" stale="true" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioavailability Is Not Affected by Gastric pH Changes or Food Intake: In Silico and Clinical Evaluations. Clinical pharmacology and therapeutics 104(2):374–383 (2018).
@@ -26,7 +26,7 @@ Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioa
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -37,7 +37,7 @@ Samant TS, Dhuria S, Lu Y, Laisney M, Yang S, Grandeury A et al. Ribociclib Bioa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -108,7 +108,8 @@ _All readers agree on the compared fields of this record._
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 |  | ['Samant_2018_table_2:row3:col2', 'Samant_2018_table_2:row3:col3', 'Samant_2018_table_2:row3:col4', 'Samant_2018_table_2:row3:col5', 'Samant_2018_table_2:row3:col6'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Samant_2018_table_2:row1:col2', 'Samant_2018_table_2:row1:col3', 'Samant_2018_table_2:row1:col4', 'Samant_2018_table_2:row1:col5', 'Samant_2018_table_2:row1:col6'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Samant_2018_table_2:row2:col3', 'Samant_2018_table_2:row2:col4', 'Samant_2018_table_2:row2:col6'] |
@@ -125,13 +126,23 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

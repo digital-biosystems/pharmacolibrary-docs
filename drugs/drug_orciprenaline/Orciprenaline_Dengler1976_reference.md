@@ -4,11 +4,11 @@
 
 # orciprenaline — `Orciprenaline_Dengler1976_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The record was rejected because the 10 percent renal clearance parameter is dimensionally mismatched with the 1400 ml/min total clearance.
+> This record was reviewed on 2026-11-07 16:43 UTC (Rejected), but the paper was screened again on 2026-10-07 14:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the 10 percent renal clearance parameter is dimensionally mismatched with the 1400 ml/min total clearance.
 
-<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="false" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="true" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in various animal species and man. Archives internationales de pharmacodynamie et de therapie 223(1):71–87 (1976).
@@ -38,7 +38,7 @@ Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in v
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Dengler_1976:abstract'] |
-| C5_dimension_Q26 | fail | dimensionless | per cent | ['Dengler_1976:abstract'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | per cent (dimensionless) | ['Dengler_1976:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Dengler_1976:abstract', 'Dengler_1976:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dengler_1976:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1400 | ['Dengler_1976:abstract'] |
@@ -140,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

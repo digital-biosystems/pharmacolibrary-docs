@@ -26,8 +26,8 @@ Decamethrin (deltamethrin) is a pyrethroid insecticide used to kill ectoparasite
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Hüyük_2017_reference](drugs/drug_decamethrin/Decamethrin_Hyk2017_reference.md) | — | 1-compartment (no model) | 7 | Hüyük R et al., Toxicokinetics of the broad-spectrum py…, British poultry science (2017) | [10.1080/00071668.2016.1211253](https://doi.org/10.1080/00071668.2016.1211253) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Anadón_1996_reference](drugs/drug_decamethrin/Decamethrin_Anadn1996_reference.md) | — | parent + metabolite (no model) | 9 | Anadón A et al., Toxicokinetics of deltamethrin and its…, Toxicology and applied phar… (1996) | [10.1006/taap.1996.0254](https://doi.org/10.1006/taap.1996.0254) |
-| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Hüyük_2017_reference](drugs/drug_decamethrin/Decamethrin_Hyk2017_reference.md) | — | 1-compartment (no model) | 7 | Hüyük R et al., Toxicokinetics of the broad-spectrum py…, British poultry science (2017) | [10.1080/00071668.2016.1211253](https://doi.org/10.1080/00071668.2016.1211253) |
 | <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Zhu_2014_reference](drugs/drug_decamethrin/Decamethrin_Zhu2014_reference.md) | — | 1-compartment (no model) | 3 | Zhu P et al., Application of gas chromatography-mass…, Biomedical and environmenta… (2014) | [10.3967/bes2014.035](https://doi.org/10.3967/bes2014.035) |
 
 ## Pharmacodynamics (PD)
@@ -111,13 +111,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:55 | 25:14 | 0/3/0 | 23/2/0 | 0/0/2 | 940,346/58,668 | ollama / glm-5.3-flash | 53 | 1/43 | 53/0 | 0 |
+| 2026-10-07 12:55 | 25:14 | 1/2/0 | 23/2/0 | 0/0/2 | 940,346/58,668 | ollama / glm-5.3-flash | 53 | 1/43 | 53/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 291 matched, 138 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

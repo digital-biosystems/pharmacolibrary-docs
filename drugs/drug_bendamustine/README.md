@@ -41,7 +41,7 @@ Bendamustine is an alkylating anticancer drug used to treat blood cancers such a
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Radhakrishnan_2019_reference](drugs/drug_bendamustine/Bendamustine_Radhakrishnan2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Radhakrishnan SV et al., A Phase 1 Study of Intravenous Busulfan…, Cell transplantation (2019) | [10.1177/0963689719880541](https://doi.org/10.1177/0963689719880541) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_cmax</sub> | [Kim_2018_reference](drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Kim T et al., Clinical response and pharmacokinetics…, BMC cancer (2018) | [10.1186/s12885-018-4632-y](https://doi.org/10.1186/s12885-018-4632-y) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Darwish_2014_reference](drugs/drug_bendamustine/Bendamustine_Darwish2014_reference.md) | — | 1-compartment (no model) | 5 | Darwish M et al., Population pharmacokinetics and pharmac…, Current medical research an… (2014) | [10.1185/03007995.2014.941976](https://doi.org/10.1185/03007995.2014.941976) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Darwish_2014_reference](drugs/drug_bendamustine/Bendamustine_Darwish2014_reference.md) | — | 1-compartment (no model) | 5 | Darwish M et al., Population pharmacokinetics and pharmac…, Current medical research an… (2014) | [10.1185/03007995.2014.941976](https://doi.org/10.1185/03007995.2014.941976) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Darwish_2014_2_reference](drugs/drug_bendamustine/Bendamustine_Darwish2014v2_reference.md) | — | 1-compartment (no model) | 0 | Darwish M et al., An evaluation of the potential for drug…, Cancer chemotherapy and pha… (2014) | [10.1007/s00280-014-2445-5](https://doi.org/10.1007/s00280-014-2445-5) |
 
 ## Pharmacodynamics (PD)
@@ -82,7 +82,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 106 matched, 86 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

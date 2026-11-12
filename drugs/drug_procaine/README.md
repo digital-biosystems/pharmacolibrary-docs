@@ -41,7 +41,7 @@ Procaine is a local anesthetic used to relieve pain, for example in procedures i
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979) | [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007) |
 | <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Olivarez_2022_reference](drugs/drug_procaine/Procaine_Olivarez2022_reference.md) | — | 1-compartment (no model) | 2 | Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.1101461](https://doi.org/10.3389/fvets.2022.1101461) |
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) | — | 1-compartment (no model) | 5 | Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976) | [10.1136/bjsm.10.3.109](https://doi.org/10.1136/bjsm.10.3.109) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Tobin_1976_reference](drugs/drug_procaine/Procaine_Tobin1976_reference.md) | — | 1-compartment (no model) | 5 | Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976) | [10.1136/bjsm.10.3.109](https://doi.org/10.1136/bjsm.10.3.109) |
 
 ## Pharmacodynamics (PD)
 
@@ -86,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 234 matched, 86 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

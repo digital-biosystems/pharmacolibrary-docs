@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sarilumab&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD 28-joint disease activity score by C-reactive protein&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Ma_2020_ANC&quot;,&quot;label&quot;:&quot;Ma_2020 \u00b7 ANC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sarilumab/pd_Ma_2020_ANC.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 28-joint disease activity score by C-reactive protein — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Sarilumab (concentrations from the PK model of Xu_2019::estimate) drives 28-joint disease activity score by C-reactive protein: indirect response — drug inhibits the production of 28-joint disease activity score by C-reactive protein.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Sarilumab concentrations inhibit the production rate (Kin) of DAS28-CRP via a direct Emax effect with a gamma of 1. The model estimates an IC50 of 2.32 mg/L, a Kout of 0.0264 day−1, and a Log(Emax) of 0.237.
 >
@@ -53,25 +54,74 @@ Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokineti
 </details>
 
 
+## Exposure-response model
+
+`Sarilumab_Ma2020_PD_das28_crp` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 6.06 | — |
+| Emax | 0.237 | — |
+| EC50 | 2.32 mg/L | 0.00232 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 6.06, `at_EC50` = 5.342, `at_inf` = 4.624
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp/Sarilumab_Ma2020_PD_das28_crp_modelica.zip" download>Sarilumab_Ma2020_PD_das28_crp_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp/Sarilumab_Ma2020_PD_das28_crp_matlab.zip" download>Sarilumab_Ma2020_PD_das28_crp_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp/Sarilumab_Ma2020_PD_das28_crp_sbml.zip" download>Sarilumab_Ma2020_PD_das28_crp_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp/Sarilumab_Ma2020_PD_das28_crp_cellml.zip" download>Sarilumab_Ma2020_PD_das28_crp_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Sarilumab_Ma2020_PD_das28_crp`. <https://pharmacolibrary.github.io/#/drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp>
+
+```bibtex
+@misc{pharmacolibrary_SarilumabMa2020PDdas28crp,
+  title  = {{Pharmacolibrary model Sarilumab_Ma2020_PD_das28_crp}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sarilumab/Sarilumab_Ma2020_PD_das28_crp},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

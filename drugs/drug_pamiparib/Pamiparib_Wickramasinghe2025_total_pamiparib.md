@@ -4,11 +4,11 @@
 
 # pamiparib — `Pamiparib_Wickramasinghe2025_total_pamiparib`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Pamiparib's record was refused because the peripheral volume parameter V2/F=17 L failed a dimension check and the model structure contains an unreachable compartment.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-06 22:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Pamiparib's record was refused because the peripheral volume parameter V2/F=17 L failed a dimension check and the model structure contains an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_total_pamiparib" status="rejected" stale="false" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_total_pamiparib" status="rejected" stale="true" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharmacokinetic Modeling of Total and Unbound Pamiparib in Glioblastoma Patients: Insights into Drug Disposition and Dosing Optimization. Pharmaceutics 17(4) (2025).
@@ -43,7 +43,7 @@ Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -175,8 +175,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-17-00524-t003:row2:col1', 'pharmaceutics-17-00524-t003:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Wickramasinghe_2025_table_2:row3:col1', 'Wickramasinghe_2025_table_2:row3:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['pharmaceutics-17-00524-t003:row3:col1', 'pharmaceutics-17-00524-t003:row3:col2'] |
-| C5_dimension_Q86 | fail | [length] ** 3 | PCC | ['pharmaceutics-17-00524-t003:row6:col1', 'pharmaceutics-17-00524-t003:row6:col2'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['pharmaceutics-17-00524-t003:row9:col1', 'pharmaceutics-17-00524-t003:row9:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | PCC ([length] ** 3) | ['pharmaceutics-17-00524-t003:row6:col1', 'pharmaceutics-17-00524-t003:row6:col2'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['pharmaceutics-17-00524-t003:row9:col1', 'pharmaceutics-17-00524-t003:row9:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 7.76 L/h | ['pharmaceutics-17-00524-t003:row4:col1', 'pharmaceutics-17-00524-t003:row4:col2'] |
@@ -199,7 +199,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

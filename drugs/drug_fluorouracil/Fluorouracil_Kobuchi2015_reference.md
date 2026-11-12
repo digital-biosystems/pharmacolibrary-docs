@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> This record was reviewed on 2026-11-07 14:11 UTC (Needs review), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2015_reference" status="needs_review" stale="false" population="male Wistar Hannover rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2015_reference" status="needs_review" stale="true" population="male Wistar Hannover rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Semi-physiological pharmacokinetic-pharmacodynamic (PK-PD) modeling and simulation of 5-fluorouracil for thrombocytopenia in rats. Xenobiotica; the fate of foreign compounds in biological systems 45(1):19–28 (2015).
@@ -42,7 +42,7 @@ Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Semi-physi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,6 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Arshad_2020:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Deyme_2019:review'] |
+| C5_unit_missing_Q81 | fail | [time] | day | ['Kobuchi_2015_table_2:row8:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 256 | ['Arshad_2020:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 256 L/h | ['Arshad_2020:review'] |
@@ -159,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

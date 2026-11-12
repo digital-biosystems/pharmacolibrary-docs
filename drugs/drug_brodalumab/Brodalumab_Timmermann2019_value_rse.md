@@ -5,11 +5,11 @@
 
 # brodalumab — `Brodalumab_Timmermann2019_value_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Brodalumab's absorption rate constant was rejected because its per-day unit could not be converted to a standard SI unit.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-06 23:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Brodalumab's absorption rate constant was rejected because its per-day unit could not be converted to a standard SI unit.
 
-<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="true" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with moderate to severe plaque psoriasis. Basic & clinical pharmacology & toxicology 125(1):16–25 (2019).
@@ -47,7 +47,7 @@ Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['bcpt13202-tbl-0003:row1:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['bcpt13202-tbl-0003:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['bcpt13202-tbl-0003:row7:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/d | ['bcpt13202-tbl-0003:row4:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/d ([mass] / [time]) | ['bcpt13202-tbl-0003:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.155 | ['bcpt13202-tbl-0003:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00646 L/h | ['bcpt13202-tbl-0003:row3:col1'] |
@@ -156,7 +156,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

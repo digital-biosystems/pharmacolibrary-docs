@@ -32,7 +32,7 @@ Temocapril is an ACE inhibitor developed for treating high blood pressure. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Luo_2024_reference](drugs/drug_temocapril/Temocapril_Luo2024_reference.md) | — | general linear (no model) | 2 | Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024) | [10.3390/pharmaceutics16020234](https://doi.org/10.3390/pharmaceutics16020234) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Luo_2024_reference](drugs/drug_temocapril/Temocapril_Luo2024_reference.md) | — | general linear (no model) | 2 | Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024) | [10.3390/pharmaceutics16020234](https://doi.org/10.3390/pharmaceutics16020234) |
 
 ## Pharmacodynamics (PD)
 
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 43 matched, 43 returned
 - **screened:** 11  ·  **relevant:** 7
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

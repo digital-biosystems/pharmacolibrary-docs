@@ -5,11 +5,11 @@
 
 # risankizumab — `Risankizumab_Suleiman2019v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absolute subcutaneous bioavailability parameter was mislabeled as excretion, and a structural parameter lacked a standard unit value.
+> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-07 00:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absolute subcutaneous bioavailability parameter was mislabeled as excretion, and a structural parameter lacked a standard unit value.
 
-<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019v2_reference" status="rejected" stale="false" population="adults with psoriasis and Crohn&#39;s disease" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019v2_reference" status="rejected" stale="true" population="adults with psoriasis and Crohn&#39;s disease" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Suleiman AA, Khatri A, Minocha M, Othman AA. Population Pharmacokinetics of the Interleukin-23 Inhibitor Risankizumab in Subjects with Psoriasis and Crohn's Disease: Analyses of Phase I and II Trials. Clinical pharmacokinetics 58(3):375–387 (2019).
@@ -44,7 +44,7 @@ Suleiman AA, Khatri A, Minocha M, Othman AA. Population Pharmacokinetics of the 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 6 / [time] | CL; L/day | ['Tab3:row1:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL; L/day ([length] ** 6 / [time]) | ['Tab3:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab3:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab3:row5:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab3:row2:col1'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

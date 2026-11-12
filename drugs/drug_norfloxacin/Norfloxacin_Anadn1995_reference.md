@@ -5,11 +5,11 @@
 
 # norfloxacin — `Norfloxacin_Anadn1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:57 UTC (Needs review), but the paper was screened again on 2026-10-07 11:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Anadn1995_reference" status="needs_review" stale="false" population="healthy pigs" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Anadn1995_reference" status="needs_review" stale="true" population="healthy pigs" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Anadón A, Martinez-Larrañaga MR, Diaz MJ, Fernandez R, Martinez MA, Fernandez MC. Pharmacokinetics and tissue residues of norfloxacin and its N-desethyl- and oxo-metabolites in healthy pigs. Journal of veterinary pharmacology and therapeutics 18(3):220–225 (1995).
@@ -42,7 +42,7 @@ Anadón A, Martinez-Larrañaga MR, Diaz MJ, Fernandez R, Martinez MA, Fernandez 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,6 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Martínez_2017:review'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Anadón_1995:abstract', 'Anadón_1995:abstract'] |
@@ -162,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

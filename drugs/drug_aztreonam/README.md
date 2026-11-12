@@ -27,7 +27,7 @@ Aztreonam is a monobactam antibiotic used to treat infections caused by gram-neg
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Barrasa_2024_reference](drugs/drug_aztreonam/Aztreonam_Barrasa2024_reference.md) | — | 2-compartment (no model) | 3 | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Das_2024_reference](drugs/drug_aztreonam/Aztreonam_Das2024_reference.md) | — | 3-compartment (no model) | 11 (+10 cov.) | Das S et al., Dose selection for aztreonam-avibactam,…, European journal of clinica… (2024) | [10.1007/s00228-023-03609-x](https://doi.org/10.1007/s00228-023-03609-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Das_2024_reference](drugs/drug_aztreonam/Aztreonam_Das2024_reference.md) | — | 3-compartment (no model) | 11 (+10 cov.) | Das S et al., Dose selection for aztreonam-avibactam,…, European journal of clinica… (2024) | [10.1007/s00228-023-03609-x](https://doi.org/10.1007/s00228-023-03609-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zhang_2023_reference](drugs/drug_aztreonam/Aztreonam_Zhang2023_reference.md) | — | 1-compartment (no model) | 0 | Zhang J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2023) | [10.3390/pharmaceutics15010251](https://doi.org/10.3390/pharmaceutics15010251) |
 
 ## ADME sites
@@ -57,7 +57,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 58 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

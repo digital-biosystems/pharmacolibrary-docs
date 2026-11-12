@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;4-Hydroxybutyric acid&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/&quot;},{&quot;label&quot;:&quot;Cuypers_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Cuypers2025_reference&quot;,&quot;label&quot;:&quot;Cuypers_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Cuypers2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Thorpy2020_reference&quot;,&quot;label&quot;:&quot;Thorpy_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Thorpy2020_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4HydroxybutyricAcid_Brenneisen2004_reference&quot;,&quot;label&quot;:&quot;Brenneisen_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_4_hydroxybutyric_acid/D_4HydroxybutyricAcid_Brenneisen2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Clearance value 164.94 kg h has units conflicting with expected clearance dimensions.
 
 <div class="pk-model-meta" hidden drug="4-Hydroxybutyric acid" model-id="D_4HydroxybutyricAcid_Cuypers2024_reference" status="rejected" stale="false" population="6-week-old swine" measured-compound="gamma-hydroxybutyric acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +47,13 @@ Cuypers C, Devreese M, Van Uytfanghe K, Stove C, Schauvliege S. Pharmacokinetics
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Clearance value 164.94 kg h has units conflicting with expected clearance dimensions.**
+
+The record lists clearance for gamma-hydroxybutyric acid as 164.94 kg h, which is dimensionally inconsistent with standard clearance units. Additionally, the whole blood concentration C0 of 1727.21 μg/mL was flagged for dimension mismatch. Since the record is abstract-only, these summary statistics stand in for a fitted model. Extracted — 4 hydroxybutyric acid: C0 1.73e+03 μg/mL, V 339 mL/kg, CL 165 kg h.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

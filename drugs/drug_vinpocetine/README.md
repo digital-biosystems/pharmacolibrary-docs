@@ -28,8 +28,8 @@ Vinpocetine is a nootropic vasodilator that has been used for vascular dementia.
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q290, Q69 — no SI value to build fr…</sub> | [Petric_2023_reference](drugs/drug_vinpocetine/Vinpocetine_Petric2023_reference.md) | — | 1-compartment (no model) | 9 | Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023) | [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vereczkey_1979_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1979_reference.md) | — | 1-compartment (no model) | 4 | Vereczkey L et al., Pharmacokinetics of vinpocetine in huma…, Arzneimittel-Forschung (1979) | — |
 | <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vereczkey_1987_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1987_reference.md) | — | parent + metabolite (no model) | 3 | Vereczkey L et al., Pharmacokinetics of apovincaminic acid…, Polish journal of pharmacol… (1987) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Vereczkey_1979_reference](drugs/drug_vinpocetine/Vinpocetine_Vereczkey1979_reference.md) | — | 1-compartment (no model) | 4 | Vereczkey L et al., Pharmacokinetics of vinpocetine in huma…, Arzneimittel-Forschung (1979) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Vlase_2005_reference](drugs/drug_vinpocetine/Vinpocetine_Vlase2005_reference.md) | — | 1-compartment (no model) | 2 | Vlase L et al., Pharmacokinetics and comparative bioava…, Arzneimittel-Forschung (2005) | [10.1055/s-0031-1296915](https://doi.org/10.1055/s-0031-1296915) |
 
 ## Pharmacodynamics (PD)
@@ -65,13 +65,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:45 | 2:27 | 2/2/0 | 3/0/0 | 0/0/0 | 141,417/11,694 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 00:45 | 2:27 | 3/1/0 | 3/0/0 | 0/0/0 | 141,417/11,694 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # quinine — `Quinine_Le2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Quinine absorption and elimination rate constants lack valid SI units, and the 0.156 mL/h clearance is physiologically implausible.
+> This record was reviewed on 2026-11-07 14:45 UTC (Rejected), but the paper was screened again on 2026-10-07 08:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Quinine absorption and elimination rate constants lack valid SI units, and the 0.156 mL/h clearance is physiologically implausible.
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="true" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pharmacokinetics and pharmacodynamics in children with malaria caused by Plasmodium falciparum. Antimicrobial agents and chemotherapy 49(9):3658–3662 (2005).
@@ -39,7 +39,7 @@ Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,10 +125,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Maciel_2024:review'] |
-| C5_dimension_Q49 | fail | [length] ** 3 | liters/kg | ['tab_1:row4:col1'] |
-| C5_dimension_Q68 | fail | [length] ** 3 | liters/kg | ['tab_1:row5:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | liters/kg ([length] ** 3) | ['tab_1:row4:col1'] |
+| C5_dimension_Q68 | fail | 1 / [time] | liters/kg ([length] ** 3) | ['tab_1:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.156 | ['Maciel_2024:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | fail | clearance within physiological range | 0.000156 L/h | ['Maciel_2024:review'] |
@@ -149,7 +150,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

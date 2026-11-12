@@ -4,11 +4,11 @@
 
 # prethcamide — `Prethcamide_Brya1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Blood clearance was recorded in reciprocal minutes while absorption rate was in reciprocal hours, causing a dimension mismatch in the prethcamide pharmacokinetic record.
+> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 18:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Blood clearance was recorded in reciprocal minutes while absorption rate was in reciprocal hours, causing a dimension mismatch in the prethcamide pharmacokinetic record.
 
-<div class="pk-model-meta" hidden drug="prethcamide" model-id="Prethcamide_Brya1985_reference" status="rejected" stale="false" population="rabbits" measured-compound="prethcamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prethcamide" model-id="Prethcamide_Brya1985_reference" status="rejected" stale="true" population="rabbits" measured-compound="prethcamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenous injection and oral administration in rabbits. Polish journal of pharmacology and pharmacy 37(5):653–661 (1985).
@@ -38,7 +38,7 @@ Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenou
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q23 | fail | 1 / [time] | 1/min | ['Bryła_1985:abstract', 'Bryła_1985:abstract'] |
+| C5_dimension_Q23 | fail | [length] ** 3 / [time] | 1/min (1 / [time]) | ['Bryła_1985:abstract', 'Bryła_1985:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bryła_1985:abstract', 'Bryła_1985:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Bryła_1985:abstract', 'Bryła_1985:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Bryła_1985:abstract', 'Bryła_1985:abstract'] |
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

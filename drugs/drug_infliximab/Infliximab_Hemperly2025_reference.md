@@ -5,11 +5,11 @@
 
 # infliximab — `Infliximab_Hemperly2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The population clearance typical value lacks an extracted numeric value, preventing dimension validation for the pediatric infliximab model.
+> This record was reviewed on 2026-11-07 15:53 UTC (Rejected), but the paper was screened again on 2026-10-06 23:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The population clearance typical value lacks an extracted numeric value, preventing dimension validation for the pediatric infliximab model.
 
-<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="false" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="true" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Hemperly A, Yang J, Ta A, Vande Casteele N. Pharmacokinetics and Exposure-Response During Infliximab Induction Therapy in Pediatric IBD Using Point-of-Care Assay. Journal of clinical medicine 14(22) (2025).
@@ -40,7 +40,7 @@ Hemperly A, Yang J, Ta A, Vande Casteele N. Pharmacokinetics and Exposure-Respon
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ The record lists a population clearance typical value of 0.252 L/day without a c
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 6 / [time] | CL; L/day | ['jcm-14-07968-t003:row2:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL; L/day ([length] ** 6 / [time]) | ['jcm-14-07968-t003:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcm-14-07968-t003:row4:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['jcm-14-07968-t003:row1:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['jcm-14-07968-t003:row3:col1'] |
@@ -143,7 +143,7 @@ The record lists a population clearance typical value of 0.252 L/day without a c
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

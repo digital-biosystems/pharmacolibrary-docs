@@ -41,7 +41,7 @@ Bictegravir is an antiviral medicine used to treat HIV infections. It is an appr
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Ekobena_2025_reference](drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Khoei_2026_reference](drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Khoei A et al., Dolutegravir population pharmacokinetic…, HIV medicine (2026) | [10.1111/hiv.70278](https://doi.org/10.1111/hiv.70278) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Sun_2026_reference](drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md) | — | 1-compartment (no model) | 4 | Sun S et al., Population Pharmacokinetics of Bictegra…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70134](https://doi.org/10.1002/jcph.70134) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sun_2026_reference](drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md) | — | 1-compartment (no model) | 4 | Sun S et al., Population Pharmacokinetics of Bictegra…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70134](https://doi.org/10.1002/jcph.70134) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 110 matched, 67 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

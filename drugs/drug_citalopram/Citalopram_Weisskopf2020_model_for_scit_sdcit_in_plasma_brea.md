@@ -5,11 +5,11 @@
 
 # citalopram — `Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Λ1 has no unit.
+> This record was reviewed on 2026-11-07 15:39 UTC (Needs review), but the paper was screened again on 2026-10-06 22:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Λ1 has no unit.
 
-<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea" status="needs_review" stale="false" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="escitalopram (SCIT)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea" status="needs_review" stale="true" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="escitalopram (SCIT)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Weisskopf E, Guidi M, Fischer CJ, Bickle Graz M, Beaufils E, Nguyen KA et al. A population pharmacokinetic model for escitalopram and its major metabolite in depressive patients during the perinatal period: Prediction of infant drug exposure through breast milk. British journal of clinical pharmacology 86(8):1642–1653 (2020).
@@ -43,7 +43,7 @@ Weisskopf E, Guidi M, Fischer CJ, Bickle Graz M, Beaufils E, Nguyen KA et al. A 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,7 +134,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Weisskopf_2020_table_p7_1:row0:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Weisskopf_2020_table_p7_1:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Weisskopf_2020_table_p7_1:row1:col2'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Weisskopf_2020_table_p7_1:row7:col2'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Weisskopf_2020_table_p7_1:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8 | ['Weisskopf_2020_table_p7_1:row0:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 8 L/h | ['Weisskopf_2020_table_p7_1:row0:col2'] |
@@ -167,7 +167,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

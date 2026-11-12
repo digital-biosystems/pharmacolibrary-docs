@@ -5,11 +5,11 @@
 
 # levamisole — `Levamisole_Cheng2026_dog_20_7`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
-> Only clearance was extracted — no volume.
+> This record was reviewed on 2026-11-07 14:28 UTC (Needs review), but the paper was screened again on 2026-10-07 10:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Cheng2026_dog_20_7" status="needs_review" stale="false" population="multiple animal species (2 bird and 6 mammalian species) with joint interspecies PK modeling" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Cheng2026_dog_20_7" status="needs_review" stale="true" population="multiple animal species (2 bird and 6 mammalian species) with joint interspecies PK modeling" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cheng C, Jeong YS, Jusko WJ. Meta-analysis of levamisole absorption and disposition across diverse species using a minimal physiologically-based pharmacokinetic model. Journal of pharmaceutical investigation 56(1):171–183 (2026).
@@ -43,7 +43,7 @@ Cheng C, Jeong YS, Jusko WJ. Meta-analysis of levamisole absorption and disposit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Cheng_2026_table_1:row7:col5'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Cheng_2026_table_1:row0:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Veltkamp_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.57 | ['Cheng_2026_table_1:row5:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.55 | ['Cheng_2026_table_1:row1:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 38.5 L/h | ['Cheng_2026_table_1:row1:col5'] |
 | C9_phys_window_Q23 | pass | clearance within physiological range | 39.9 L/h | ['Cheng_2026_table_1:row5:col5'] |
@@ -169,7 +169,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

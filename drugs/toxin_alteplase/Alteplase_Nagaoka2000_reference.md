@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;Alteplase&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/&quot;},{&quot;label&quot;:&quot;Nagaoka_2000 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alteplase_Garabedian1986_reference&quot;,&quot;label&quot;:&quot;Garabedian_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_Garabedian1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alteplase_Verstraete1985_reference&quot;,&quot;label&quot;:&quot;Verstraete_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_Verstraete1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alteplase_PiechowskiJozwiak2022_reference&quot;,&quot;label&quot;:&quot;Piechowski-Jozwiak_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_alteplase/Alteplase_PiechowskiJozwiak2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Alteplase clearance is expressed as 22.5 µg/min instead of volumetric units, causing a dimensional mismatch in the rat model.
 
 <div class="pk-model-meta" hidden drug="Alteplase" model-id="Alteplase_Nagaoka2000_reference" status="rejected" stale="false" population="rat" measured-compound="Alteplase" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,7 +48,13 @@ Nagaoka MR, Kouyoumdjian M, Borges DR. The hepatic clearance of recombinant tiss
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Alteplase clearance is expressed as 22.5 µg/min instead of volumetric units, causing a dimensional mismatch in the rat model.**
+
+The clearance value of 22.5 µg/min uses mass per time, conflicting with the required volume per time dimension for a structural parameter. The specific unit could not be translated to standard SI terms, leaving the parameter value incomplete for structural validation. This inability to confirm the dimensional consistency resulted in the rejection of the model record. Extracted — alteplase: CL 22.5 µg/min, V 0.057 L/kg.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ### All parameter columns
 

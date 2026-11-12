@@ -25,10 +25,10 @@ Neomycin is an aminoglycoside antibiotic used to treat bacterial infections, app
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q59, Q57 — no SI value to buil…</sub> | [↳ placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -60,13 +60,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 02:34 | 3:44 | 0/4/0 | 0/1/0 | 0/0/0 | 73,046/7,446 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
+| 2026-10-04 02:34 | 3:44 | 4/0/0 | 0/1/0 | 0/0/0 | 73,046/7,446 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 54 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # vecuronium — `Vecuronium_Xue1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:22 UTC (Needs review), but the paper was screened again on 2026-10-07 03:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Xue1997_reference" status="needs_review" stale="false" population="adult patients undergoing plastic surgery" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Xue1997_reference" status="extracted" stale="true" population="adult patients undergoing plastic surgery" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xue FS, Liao X, Tong SY, Liu JH, Li L, Zou Q et al. Pharmacokinetics of vecuronium during acute isovolaemic haemodilution. British journal of anaesthesia 79(5):612–616 (1997).
@@ -26,8 +26,6 @@ Xue FS, Liao X, Tong SY, Liu JH, Li L, Zou Q et al. Pharmacokinetics of vecuroni
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean volume of the central compartment | V | 42.3 | ml kg-1 |
@@ -37,7 +35,7 @@ Xue FS, Liao X, Tong SY, Liu JH, Li L, Zou Q et al. Pharmacokinetics of vecuroni
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,7 +111,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hammer_2008:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Xue_1997:abstract', 'Xue_1997:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Xue_1997:abstract', 'Xue_1997:abstract'] |
@@ -150,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

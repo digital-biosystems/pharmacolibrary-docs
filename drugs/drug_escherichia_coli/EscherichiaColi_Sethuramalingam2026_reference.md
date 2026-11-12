@@ -5,11 +5,11 @@
 
 # escherichia coli — `EscherichiaColi_Sethuramalingam2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the absorption half-life of 0.054 was recorded in 1/h, an incompatible unit for a time parameter.
+> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-10-04 19:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the absorption half-life of 0.054 was recorded in 1/h, an incompatible unit for a time parameter.
 
-<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Sethuramalingam2026_reference" status="rejected" stale="false" population="children with newly diagnosed acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Sethuramalingam2026_reference" status="rejected" stale="true" population="children with newly diagnosed acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Sethuramalingam S, Mohapatra S, Agarwal PK, Kumar-M P, Hota D, Gopal J et al. Comparative assessment of asparaginase activity, population pharmacokinetics, and safety of biosimilar native Escherichia coli and pegylated asparaginase in children with newly diagnosed acute lymphoblastic leukemia: a pharmacometrics-based randomized clinical trial. BMC cancer 26(1):1023 (2026).
@@ -39,7 +39,7 @@ Sethuramalingam S, Mohapatra S, Agarwal PK, Kumar-M P, Hota D, Gopal J et al. Co
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4'] |
-| C5_dimension_Q95 | fail | 1 / [time] | /h | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
+| C5_dimension_Q95 | fail | [time] | /h (1 / [time]) | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.32 | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.32 L/h | ['Tab3:row5:col1', 'Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

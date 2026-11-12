@@ -50,8 +50,8 @@ Propafenone is an antiarrhythmic medicine used to treat heart rhythm problems su
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from</sub> | [↳ lung](drugs/drug_propafenone/Propafenone_Fernndez1991_lung.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from</sub> | [↳ muscle](drugs/drug_propafenone/Propafenone_Fernndez1991_muscle.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from</sub> | [↳ plasma](drugs/drug_propafenone/Propafenone_Fernndez1991_plasma.md) | — | 1-compartment (no model) | 2 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | — | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Haefeli_1991_reference](drugs/drug_propafenone/Propafenone_Haefeli1991_reference.md) | — | 1-compartment (no model) | 5 | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Haefeli_1991_reference](drugs/drug_propafenone/Propafenone_Haefeli1991_reference.md) | — | 1-compartment (no model) | 5 | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | — | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -94,13 +94,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 21:29 | 32:29 | 10/2/0 | 4/0/0 | 0/0/0 | 453,522/107,996 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 16/1 | 1/3 | 0 |
+| 2026-10-08 21:29 | 32:29 | 11/1/0 | 4/0/0 | 0/0/0 | 453,522/107,996 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 16/1 | 1/3 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 17 matched, 15 returned
 - **screened:** 18  ·  **relevant:** 5
-- **records:** 12  ·  extracted 0  ·  needs review 10  ·  rejected 2  ·  stale 0
+- **records:** 12  ·  extracted 0  ·  needs review 11  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

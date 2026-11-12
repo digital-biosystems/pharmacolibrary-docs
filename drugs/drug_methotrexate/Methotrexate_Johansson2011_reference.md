@@ -5,11 +5,11 @@
 
 # methotrexate — `Methotrexate_Johansson2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Methotrexate's unbound clearance of 0.0874 uses an invalid 'CL' unit.
+> This record was reviewed on 2026-11-07 14:12 UTC (Rejected), but the paper was screened again on 2026-11-04 02:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Methotrexate's unbound clearance of 0.0874 uses an invalid 'CL' unit.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Johansson2011_reference" status="rejected" stale="false" population="osteosarcoma patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Johansson2011_reference" status="rejected" stale="true" population="osteosarcoma patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Johansson ÅM, Hill N, Perisoglou M, Whelan J, Karlsson MO, Standing JF. A population pharmacokinetic/pharmacodynamic model of methotrexate and mucositis scores in osteosarcoma. Therapeutic drug monitoring 33(6):711–718 (2011).
@@ -43,7 +43,7 @@ Johansson ÅM, Hill N, Perisoglou M, Whelan J, Karlsson MO, Standing JF. A popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col4'] |
-| C5_dimension_Q24 | fail | [length] ** 3 | CL | ['tab_2:row8:col4'] |
+| C5_dimension_Q24 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_2:row8:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row3:col4'] |
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

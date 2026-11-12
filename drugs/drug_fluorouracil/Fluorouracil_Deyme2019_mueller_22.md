@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Deyme2019_mueller_22`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Irinotecan's elimination rate constant unit cannot be converted to SI, and metabolite SN38 has no dose path.
+> This record was reviewed on 2026-11-07 14:07 UTC (Rejected), but the paper was screened again on 2026-11-03 21:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Irinotecan's elimination rate constant unit cannot be converted to SI, and metabolite SN38 has no dose path.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_mueller_22" status="rejected" stale="false" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_mueller_22" status="rejected" stale="true" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a review of studies and parameters. Cancer chemotherapy and pharmacology 83(1):27–42 (2019).
@@ -43,7 +43,7 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ The elimination rate constant for irinotecan is 5.69 h-1, a unit that could not 
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col2', 'Deyme_2019_table_4:row1:col8'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Deyme_2019_table_4:row1:col6'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Deyme_2019_table_4:row1:col6'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Deyme_2019_table_4:row1:col4'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Deyme_2019_table_4:row1:col9'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
@@ -157,7 +157,7 @@ The elimination rate constant for irinotecan is 5.69 h-1, a unit that could not 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

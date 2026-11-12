@@ -4,11 +4,11 @@
 
 # retinol — `Retinol_Green2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The retinyl acetate parent compound is unreachable from the dose, and a volume parameter used an unconverted unit.
+> This record was reviewed on 2026-11-07 16:07 UTC (Rejected), but the paper was screened again on 2026-10-05 08:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The retinyl acetate parent compound is unreachable from the dose, and a volume parameter used an unconverted unit.
 
-<div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Green2024v2_reference" status="rejected" stale="false" population="Ghanaian women of reproductive age" measured-compound="retinol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Green2024v2_reference" status="rejected" stale="true" population="Ghanaian women of reproductive age" measured-compound="retinol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of Population-Based Compartmental Modeling and Retinol Isotope Dilution to Study Vitamin A Kinetics and Total Body Stores among Ghanaian Women of Reproductive Age. Current developments in nutrition 8(11):104484 (2024).
@@ -41,7 +41,7 @@ Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -164,10 +164,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q351 | fail | [substance] / [time] | μmol/d | ['Green_2024_2_table_2:row20:col1'] |
-| C5_dimension_Q63 | fail | [substance] | μmol | ['Green_2024_2_table_2:row16:col1'] |
-| C5_dimension_Q64 | fail | [substance] | μmol | ['Green_2024_2_table_2:row17:col1'] |
-| C5_dimension_Q77 | fail | [substance] | μmol | ['Green_2024_2_table_2:row18:col1'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | μmol/d ([substance] / [time]) | ['Green_2024_2_table_2:row20:col1'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | μmol ([substance]) | ['Green_2024_2_table_2:row16:col1'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | μmol ([substance]) | ['Green_2024_2_table_2:row17:col1'] |
+| C5_dimension_Q77 | fail | [length] ** 3 | μmol ([substance]) | ['Green_2024_2_table_2:row18:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
 
@@ -187,7 +187,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

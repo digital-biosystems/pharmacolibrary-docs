@@ -4,11 +4,11 @@
 
 # sorbitol — `Sorbitol_Nau1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sorbitol clearance is recorded with incorrect time-based units rather than volume-based units.
+> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-04 17:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sorbitol clearance is recorded with incorrect time-based units rather than volume-based units.
 
-<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="false" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="true" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passage of sorbitol after intravenous infusion. Stroke 23(9):1276–1279 (1992).
@@ -40,7 +40,7 @@ Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,9 +137,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | 1 / [time] | 1/hr | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
-| C5_dimension_Q32 | fail | [mass] | mg/1 | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
-| C5_dimension_Q57 | fail | dimensionless | 1 | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 1/hr (1 / [time]) | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | mg/1 ([mass]) | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
+| C5_dimension_Q57 | fail | [time] | 1 (dimensionless) | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Nau_1992:abstract'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 31.7 | ['Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract', 'Nau_1992:abstract'] |
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

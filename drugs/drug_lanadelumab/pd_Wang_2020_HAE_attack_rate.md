@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 PD HAE attack rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Wang_2020_cHMWK&quot;,&quot;label&quot;:&quot;Wang_2020 \u00b7 cHMWK&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/pd_Wang_2020_cHMWK.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2020_HAE_attack_rate&quot;,&quot;label&quot;:&quot;Wang_2020 \u00b7 HAE attack rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/pd_Wang_2020_HAE_attack_rate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HAE attack rate — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Lanadelumab (concentrations from this paper's PK model) drives HAE attack rate (in attacks/month): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Lanadelumab concentration (Cave,ss) inhibits the HAE attack rate via a saturable Emax model with a delay parameter, characterized by an Emax of -3.74 attacks/month and an EC50 of 4.03 µg/mL. The paper does not specify a mechanism for the attack rate reduction, though it notes lanadelumab inhibits cHMWK formation (Imax 53.7%, IC50 5.71 µg/mL) upstream.
 >
@@ -43,6 +44,42 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 </details>
 
 
+## Exposure-response model
+
+`Lanadelumab_Wang2020_PD_hae_attack_rate` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | -3.74 attacks/month | — |
+| EC50 | 4.03 µg/mL | 0.00403 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -1.87, `at_inf` = -3.74
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -64,19 +101,54 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_modelica.zip" download>Lanadelumab_Wang2020_PD_hae_attack_rate_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_fmi.zip" download>Lanadelumab_Wang2020_PD_hae_attack_rate_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_matlab.zip" download>Lanadelumab_Wang2020_PD_hae_attack_rate_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_sbml.zip" download>Lanadelumab_Wang2020_PD_hae_attack_rate_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_cellml.zip" download>Lanadelumab_Wang2020_PD_hae_attack_rate_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `EC50` | 0.00403 |  |
+| input | model | `Emax` | -3.74 |  |
+| input | model | `exposure_per_s` | 0.001 |  |
+| input | model | `gamma` | 1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lanadelumab_Wang2020_PD_hae_attack_rate`. <https://pharmacolibrary.github.io/#/drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate>
+
+```bibtex
+@misc{pharmacolibrary_LanadelumabWang2020PDhaeattackrate,
+  title  = {{Pharmacolibrary model Lanadelumab_Wang2020_PD_hae_attack_rate}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_PD_hae_attack_rate/Lanadelumab_Wang2020_PD_hae_attack_rate_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Lanadelumab_Wang2020_PD_hae_attack_rate_params.json` · controls `Lanadelumab_Wang2020_PD_hae_attack_rate_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

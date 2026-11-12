@@ -27,7 +27,7 @@ Temoporfin is a photosensitizing antineoplastic agent used in photodynamic thera
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bovis_2012_reference](drugs/drug_temoporfin/Temoporfin_Bovis2012_reference.md) | — | 1-compartment (no model) | 0 | Bovis MJ et al., Improved in vivo delivery of m-THPC via…, Journal of controlled relea… (2012) | [10.1016/j.jconrel.2011.09.085](https://doi.org/10.1016/j.jconrel.2011.09.085) |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Jones_2003_reference](drugs/drug_temoporfin/Temoporfin_Jones2003_reference.md) | — | 1-compartment (no model) | 6 | Jones HJ et al., Photodynamic therapy effect of m-THPC (…, British journal of cancer (2003) | [10.1038/sj.bjc.6601101](https://doi.org/10.1038/sj.bjc.6601101) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Jones_2003_reference](drugs/drug_temoporfin/Temoporfin_Jones2003_reference.md) | — | 1-compartment (no model) | 6 | Jones HJ et al., Photodynamic therapy effect of m-THPC (…, British journal of cancer (2003) | [10.1038/sj.bjc.6601101](https://doi.org/10.1038/sj.bjc.6601101) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2011_reference](drugs/drug_temoporfin/Temoporfin_Wang2011_reference.md) | — | 1-compartment (no model) | 0 | Wang JD et al., [Pharmacokinetics of photosensitizer m-…, Zhonghua wai ke za zhi [Chi… (2011) | — |
 
 <details class="legend">
@@ -48,7 +48,7 @@ Temoporfin is a photosensitizing antineoplastic agent used in photodynamic thera
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

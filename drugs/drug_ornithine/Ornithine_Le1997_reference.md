@@ -5,11 +5,11 @@
 
 # Ornithine — `Ornithine_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch on the formation clearance parameter, compounded by reliance on abstract-only data where summary statistics replaced fitted model parameters.
+> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 19:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on the formation clearance parameter, compounded by reliance on abstract-only data where summary statistics replaced fitted model parameters.
 
-<div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Le1997_reference" status="rejected" stale="true" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Ornithine alpha-ketoglutarate metabolism after enteral administration in burn patients: bolus compared with continuous infusion. The American journal of clinical nutrition 65(2):512–518 (1997).
@@ -43,7 +43,7 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,14 +133,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q19 | fail | [substance] * [time] / [length] ** 3 | mmol.min/L | ['Le_1997:abstract'] |
-| C5_dimension_Q19 | fail | [substance] * [time] / [length] ** 3 | mmol.min/L | ['Le_1997:abstract'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | mmol.min/L ([substance] * [time] / [length] ** 3) | ['Le_1997:abstract'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | mmol.min/L ([substance] * [time] / [length] ** 3) | ['Le_1997:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kwack_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Le_1997:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Le_1997:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kwack_2026:review'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | mmol.min/L | ['Le_1997:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | mmol.min/L ([substance] * [time] / [length] ** 3) | ['Le_1997:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.133 | ['Kwack_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.133 L/h | ['Kwack_2026:review'] |
@@ -162,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

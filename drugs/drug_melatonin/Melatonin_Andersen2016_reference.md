@@ -5,11 +5,11 @@
 
 # melatonin — `Melatonin_Andersen2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:03 UTC (Needs review), but the paper was screened again on 2026-10-06 21:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="extracted" stale="true" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et al. Pharmacokinetics of oral and intravenous melatonin in healthy volunteers. BMC pharmacology & toxicology 17:8 (2016).
@@ -29,8 +29,6 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t 1/2 elimination min | t1/2z | 39.4 | min |
@@ -40,7 +38,7 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +122,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wang_2024:review'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Tab2:row2:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tab2:row0:col1', 'Tab2:row0:col2'] |
@@ -160,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

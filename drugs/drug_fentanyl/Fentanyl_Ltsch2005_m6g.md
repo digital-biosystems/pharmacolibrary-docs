@@ -5,11 +5,11 @@
 
 # fentanyl — `Fentanyl_Ltsch2005_m6g`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; t1/2z and t1/2γ have no unit.
+> This record was reviewed on 2026-11-07 14:24 UTC (Needs review), but the paper was screened again on 2026-11-03 18:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; t1/2z and t1/2γ have no unit.
 
-<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Ltsch2005_m6g" status="needs_review" stale="false" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Ltsch2005_m6g" status="needs_review" stale="true" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lötsch J. Pharmacokinetic-pharmacodynamic modeling of opioids. Journal of pain and symptom management 29(5 Suppl):S90–S103 (2005).
@@ -40,7 +40,7 @@ Lötsch J. Pharmacokinetic-pharmacodynamic modeling of opioids. Journal of pain 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -104,6 +104,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Andersen_1986:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Eleveld_2026:review'] |
@@ -142,7 +143,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

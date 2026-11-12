@@ -26,7 +26,7 @@ Bumetanide is a loop (high-ceiling) diuretic used to treat fluid retention and s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Pentikäinen_1985_reference](drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md) | — | 1-compartment (no model) | 4 | Pentikäinen PJ et al., Bumetanide kinetics in renal failure, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.91](https://doi.org/10.1038/clpt.1985.91) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Pentikäinen_1985_reference](drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md) | — | 1-compartment (no model) | 4 | Pentikäinen PJ et al., Bumetanide kinetics in renal failure, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.91](https://doi.org/10.1038/clpt.1985.91) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jullien_2016_reference](drugs/drug_bumetanide/Bumetanide_Jullien2016_reference.md) | — | 1-compartment (no model) | 0 | Jullien V et al., Pilot evaluation of the population phar…, Journal of clinical pharmac… (2016) | [10.1002/jcph.596](https://doi.org/10.1002/jcph.596) |
 
 ## Pharmacogenomics (PGx)
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 80 matched, 29 returned
 - **screened:** 6  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

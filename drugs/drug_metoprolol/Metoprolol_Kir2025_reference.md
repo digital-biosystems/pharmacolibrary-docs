@@ -4,11 +4,11 @@
 
 # metoprolol — `Metoprolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Metoprolol absorption parameter k01 carries mass per time units (mg/min/kg), creating a dimensional mismatch with the required rate constant.
+> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 00:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Metoprolol absorption parameter k01 carries mass per time units (mg/min/kg), creating a dimensional mismatch with the required rate constant.
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="false" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Kir2025_reference" status="rejected" stale="true" population="malnourished rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling of Atenolol and Metoprolol Absorption in Malnourished Rats. European journal of drug metabolism and pharmacokinetics 50(3):251–263 (2025).
@@ -44,7 +44,7 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,9 +129,9 @@ The parameter labeled k01 is defined as the absorption rate constant but has the
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kir_2025_table_2:row4:col2', 'Kir_2025_table_2:row4:col3', 'Kir_2025_table_2:row4:col4'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | mL/min/kg | ['Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
-| C5_dimension_Q303 | fail | [mass] / [time] | mg/min/kg | ['Kir_2025_table_2:row9:col1', 'Kir_2025_table_2:row9:col2'] |
-| C5_dimension_Q49 | fail | [mass] / [time] | mg/min/kg | ['Tab3:row6:col1', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Kir_2025_table_2:row5:col1', 'Kir_2025_table_2:row5:col2', 'Kir_2025_table_2:row5:col3', 'Kir_2025_table_2:row5:col4'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | mL/min/kg ([length] ** 3 / [time]) | ['Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4'] |
+| C5_dimension_Q303 | fail | 1 / [time] | mg/min/kg ([mass] / [time]) | ['Kir_2025_table_2:row9:col1', 'Kir_2025_table_2:row9:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | mg/min/kg ([mass] / [time]) | ['Tab3:row6:col1', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Kir_2025_table_2:row5:col1', 'Kir_2025_table_2:row5:col2', 'Kir_2025_table_2:row5:col3', 'Kir_2025_table_2:row5:col4'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Tab3:row12:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.04 | ['Kir_2025_table_2:row4:col2', 'Kir_2025_table_2:row4:col3', 'Kir_2025_table_2:row4:col4'] |
 | C8_topology | pass |  |  |  |
@@ -154,7 +154,7 @@ The parameter labeled k01 is defined as the absorption rate constant but has the
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

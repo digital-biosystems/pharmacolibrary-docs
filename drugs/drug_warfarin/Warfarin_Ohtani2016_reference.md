@@ -5,11 +5,11 @@
 
 # warfarin — `Warfarin_Ohtani2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The unit for fu (0.2) is recorded as 'S', conflicting with its definition as a dimensionless fraction, preventing SI conversion.
+> This record was reviewed on 2026-11-07 14:21 UTC (Rejected), but the paper was screened again on 2026-11-04 15:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The unit for fu (0.2) is recorded as 'S', conflicting with its definition as a dimensionless fraction, preventing SI conversion.
 
-<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohtani2016_reference" status="rejected" stale="false" population="healthy adults and special populations (European Caucasian, Japanese)" measured-compound="(S)-warfarin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohtani2016_reference" status="rejected" stale="true" population="healthy adults and special populations (European Caucasian, Japanese)" measured-compound="(S)-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ohtani H, Hakoda R, Imaoka A, Akiyoshi T. In silico evaluation of warfarin-bucolome therapy. Biopharmaceutics & drug disposition 37(4):233–242 (2016).
@@ -44,7 +44,7 @@ Ohtani H, Hakoda R, Imaoka A, Akiyoshi T. In silico evaluation of warfarin-bucol
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Aoyama_2022:review'] |
-| C5_dimension_Q3 | fail | [time] | S | ['tab_0:row12:col1'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | S ([time]) | ['tab_0:row12:col1'] |
 | C5_dimension_Q374 | pass | [mass] / [substance] |  | ['tab_0:row2:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gomeni_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aoyama_2022:review'] |
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

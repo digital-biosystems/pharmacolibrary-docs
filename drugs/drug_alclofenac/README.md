@@ -26,7 +26,7 @@ It has been withdrawn and is no longer in use.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
 
 ## ADME sites
 
@@ -51,13 +51,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:38 | 0:30 | 0/1/0 | 0/0/0 | 0/0/0 | 6,633/615 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 00:38 | 0:30 | 1/0/0 | 0/0/0 | 0/0/0 | 6,633/615 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -4,11 +4,11 @@
 
 # sumatriptan — `Sumatriptan_Christensen2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the apparent clearance parameter for sumatriptan has a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:11 UTC (Rejected), but the paper was screened again on 2026-10-07 15:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the apparent clearance parameter for sumatriptan has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="false" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="true" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatriptan nasal spray in adolescents. Journal of clinical pharmacology 43(7):721–726 (2003).
@@ -37,7 +37,7 @@ Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatripta
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -109,7 +109,7 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Christensen_2003:abstract'] |
-| C5_dimension_Q27 | fail | [length] ** 3 | L | ['Christensen_2003:abstract'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | L ([length] ** 3) | ['Christensen_2003:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Christensen_2003:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Christensen_2003:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Christensen_2003:abstract'] |
@@ -133,7 +133,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

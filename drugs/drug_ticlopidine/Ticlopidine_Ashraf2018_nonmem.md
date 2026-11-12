@@ -4,11 +4,11 @@
 
 # ticlopidine — `Ticlopidine_Ashraf2018_nonmem`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ticlopidine record rejected because S-ketamine CLint (301 L/h) lacked a valid SI conversion and the nonmem column was misinterpreted as a study population.
+> This record was reviewed on 2026-11-07 16:31 UTC (Rejected), but the paper was screened again on 2026-10-05 16:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ticlopidine record rejected because S-ketamine CLint (301 L/h) lacked a valid SI conversion and the nonmem column was misinterpreted as a study population.
 
-<div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_nonmem" status="rejected" stale="false" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_nonmem" status="rejected" stale="true" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Population Pharmacokinetic Model to Predict the Drug-Drug Interaction Between S-ketamine and Ticlopidine in Healthy Human Volunteers. CPT: pharmacometrics & systems pharmacology 7(10):687–697 (2018).
@@ -38,7 +38,7 @@ Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,7 +112,7 @@ The recorded molecule S-ketamine does not match the drug ticlopidine, and its CL
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/h | ['psp412346-tbl-0002:row3:col2', 'psp412346-tbl-0002:row3:col3'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/h ([length] ** 3 / [time]) | ['psp412346-tbl-0002:row3:col2', 'psp412346-tbl-0002:row3:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412346-tbl-0002:row8:col2', 'psp412346-tbl-0002:row8:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['psp412346-tbl-0002:row6:col2', 'psp412346-tbl-0002:row6:col3'] |
 | C8_topology | pass |  |  |  |
@@ -134,7 +134,7 @@ The recorded molecule S-ketamine does not match the drug ticlopidine, and its CL
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

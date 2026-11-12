@@ -4,11 +4,11 @@
 
 # mitomycin — `Mitomycin_Rump1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The mitomycin C volume of distribution is specified in 1/kg, a dimensionally invalid unit.
+> This record was reviewed on 2026-11-07 14:48 UTC (Rejected), but the paper was screened again on 2026-10-06 18:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mitomycin C volume of distribution is specified in 1/kg, a dimensionally invalid unit.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="false" population="colorectal cancer patients with liver metastases undergoing chemoembolisation" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="true" population="colorectal cancer patients with liver metastases undergoing chemoembolisation" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M et al. Pharmacokinetics of intraarterial mitomycin C in the chemoembolisation treatment of liver metastases. General pharmacology 27(4):669–671 (1996).
@@ -38,7 +38,7 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,11 +117,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | ml/min.kg | ['Rump_1996:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml/min.kg ([length] ** 3 * [mass] / [time]) | ['Rump_1996:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Rump_1996:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Rump_1996:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Rump_1996:abstract'] |
-| C5_dimension_Q65 | fail | dimensionless | 1/kg | ['Rump_1996:abstract'] |
+| C5_dimension_Q65 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Rump_1996:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.9 | ['Rump_1996:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -141,7 +141,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

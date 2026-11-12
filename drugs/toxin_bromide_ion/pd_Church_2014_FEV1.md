@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> A population Emax model describes the dose-dependent stimulation of trough FEV1 (measured in L) by umeclidinium bromide, with a geometric mean ED50 of 37 μg and a predicted maximum response (Emax) of 0.185 L. The paper does not specify the underlying physiological mechanism of this direct dose-response relationship, nor does it include rate parameters such as ke0 or kout.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Church_2014`
 - **model family:** `emax`
 - **driver:** `dose_only`

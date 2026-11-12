@@ -45,8 +45,8 @@ Dacarbazine is an alkylating anticancer drug used to treat cancers such as melan
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Middleton_2000_reference](drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Middleton MR et al., Randomized phase III study of temozolom…, Journal of clinical oncolog… (2000) | [10.1200/JCO.2000.18.1.158](https://doi.org/10.1200/JCO.2000.18.1.158) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Breithaupt_1982_reference](drugs/drug_dacarbazine/Dacarbazine_Breithaupt1982_reference.md) | — | parent + metabolite (no model) | 2 | Breithaupt H et al., Pharmacokinetics of dacarbazine (DTIC)…, Cancer chemotherapy and pha… (1982) | [10.1007/BF00265388](https://doi.org/10.1007/BF00265388) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | — | parent + metabolite (no model) | 0 | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Clemons_2003_5_c1](drugs/drug_dacarbazine/Dacarbazine_Clemons2003_5_c1.md) | — | parent + metabolite (no model) | 7 | Clemons M et al., Pharmacokinetic, biochemical and clinic…, International journal of ca… (2003) | [10.1002/ijc.10849](https://doi.org/10.1002/ijc.10849) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ 5_c2](drugs/drug_dacarbazine/Dacarbazine_Clemons2003_5_c2.md) | — | parent + metabolite (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Clemons_2003_5_c1](drugs/drug_dacarbazine/Dacarbazine_Clemons2003_5_c1.md) | — | parent + metabolite (no model) | 7 | Clemons M et al., Pharmacokinetic, biochemical and clinic…, International journal of ca… (2003) | [10.1002/ijc.10849](https://doi.org/10.1002/ijc.10849) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 5_c2](drugs/drug_dacarbazine/Dacarbazine_Clemons2003_5_c2.md) | — | parent + metabolite (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Didolkar_1996_reference](drugs/drug_dacarbazine/Dacarbazine_Didolkar1996_reference.md) | — | 1-compartment (no model) | 0 | Didolkar MS et al., Pharmacokinetics of dacarbazine in the…, Journal of surgical oncology (1996) | [10.1002/(SICI)1096-9098(199611)63:3&lt;148::AID-JSO4&gt;3.0.CO;2-D](https://doi.org/10.1002/(SICI)1096-9098(199611)63:3&lt;148::AID-JSO4&gt;3.0.CO;2-D) |
 
 ## Pharmacodynamics (PD)
@@ -110,13 +110,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-03 14:01 | 1:32:10 | 2/5/0 | 14/0/0 | 0/0/2 | 1,379,243/138,342 | einfracz / qwen3.8-27b | 65 | 39/19 | 28/37 | 0 |
+| 2026-11-03 14:01 | 1:32:10 | 2/5/0 | 14/0/0 | 0/0/2 | 1,379,243/138,342 | einfracz / qwen3.8-27b | 59 | 39/19 | 24/35 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 323 matched, 257 returned
 - **screened:** 23  ·  **relevant:** 8
-- **records:** 7  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

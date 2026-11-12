@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifampicin&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/&quot;},{&quot;label&quot;:&quot;Ngo_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifampicin_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifampicin_Ngo2024_reference&quot;,&quot;label&quot;:&quot;Ngo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Ngo2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifampicin_Srivastava2022_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Srivastava2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srivastava_2022_CFU&quot;,&quot;label&quot;:&quot;Srivastava_2022 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifampicin_Ngo2024_reference&quot;,&quot;label&quot;:&quot;Ngo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Ngo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifampicin_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifampicin_Srivastava2022_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/Rifampicin_Srivastava2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Srivastava_2022_CFU&quot;,&quot;label&quot;:&quot;Srivastava_2022 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifampicin — `Rifampicin_Ngo2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="rifampicin" model-id="Rifampicin_Ngo2024_reference" status="not_modelled" stale="false" population="adults with tuberculosis" measured-compound="rifampicin" parameterization="apparent" topology="1C"></div>
+> This record was reviewed on 2026-11-07 16:14 UTC (Not simulated), but the paper was screened again on 2026-10-13 12:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No model has been built from this record yet.
+
+<div class="pk-model-meta" hidden drug="rifampicin" model-id="Rifampicin_Ngo2024_reference" status="needs_review" stale="true" population="adults with tuberculosis" measured-compound="rifampicin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ngo HX, Xu AY, Velásquez GE, Zhang N, Chang VK, Kurbatova EV et al. Pharmacokinetic-Pharmacodynamic Evidence From a Phase 3 Trial to Support Flat-Dosing of Rifampicin for Tuberculosis. Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 78(6):1680–1689 (2024).
@@ -29,7 +31,7 @@ Ngo HX, Xu AY, Velásquez GE, Zhang N, Chang VK, Kurbatova EV et al. Pharmacokin
 <figure class="pk-models-diagram"><img src="drugs/drug_rifampicin/Rifampicin_Ngo2024_reference/Rifampicin_Ngo2024_reference.svg" alt="Rifampicin_Ngo2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
@@ -40,7 +42,7 @@ Ngo HX, Xu AY, Velásquez GE, Zhang N, Chang VK, Kurbatova EV et al. Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,6 +125,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['ciae119-T2:row1:col1', 'ciae119-T2:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Srivastava_2022:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['ciae119-T2:row2:col1', 'ciae119-T2:row2:col2'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['ciae119-T2:row3:col1', 'ciae119-T2:row3:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 19.6 L/h | ['ciae119-T2:row1:col1', 'ciae119-T2:row1:col2'] |

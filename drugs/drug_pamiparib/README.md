@@ -26,8 +26,8 @@ Pamiparib is an investigational anticancer drug belonging to the PARP inhibitor 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Wickramasinghe_2025_total_pamiparib](drugs/drug_pamiparib/Pamiparib_Wickramasinghe2025_total_pamiparib.md) | — | 2-compartment (no model) | 7 (+1 cov.) | Wickramasinghe C et al., Population Pharmacokinetic Modeling of…, Pharmaceutics (2025) | [10.3390/pharmaceutics17040524](https://doi.org/10.3390/pharmaceutics17040524) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ unbound_pamiparib](drugs/drug_pamiparib/Pamiparib_Wickramasinghe2025_unbound_pamiparib.md) | — | 2-compartment (no model) | 7 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Wickramasinghe_2025_total_pamiparib](drugs/drug_pamiparib/Pamiparib_Wickramasinghe2025_total_pamiparib.md) | — | 2-compartment (no model) | 7 (+1 cov.) | Wickramasinghe C et al., Population Pharmacokinetic Modeling of…, Pharmaceutics (2025) | [10.3390/pharmaceutics17040524](https://doi.org/10.3390/pharmaceutics17040524) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ unbound_pamiparib](drugs/drug_pamiparib/Pamiparib_Wickramasinghe2025_unbound_pamiparib.md) | — | 2-compartment (no model) | 7 (+1 cov.) |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Pamiparib is an investigational anticancer drug belonging to the PARP inhibitor 
 
 - **PubMed hits:** 1 matched, 1 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 

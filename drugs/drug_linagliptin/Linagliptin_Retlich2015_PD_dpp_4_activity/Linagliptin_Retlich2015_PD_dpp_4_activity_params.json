@@ -1,0 +1,69 @@
+{
+ "model_id": "Linagliptin_Retlich2015_PD_dpp_4_activity",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 10700.0,
+  "EC50": 3.06e-06,
+  "Emax": -0.924,
+  "exposure_per_s": 1e-06,
+  "gamma": 3.22
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 10700.0,
+  "3.06e-06": 10699.538
+ },
+ "stop_time": 31.0,
+ "subtitle": "plasma DPP-4 activity (DPP-4 activity) against linagliptin concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "RFU",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "nmol/L",
+   "factor": 1e-06,
+   "si_unit": "mol/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "nmol/L",
+   "factor": 1e-06,
+   "si_unit": "mol/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "RFU"
+ },
+ "x_axis": {
+  "display_unit": "nmol/L",
+  "factor": 1e-06,
+  "label": "linagliptin concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "RFU",
+  "factor": 1.0,
+  "label": "plasma DPP-4 activity (DPP-4 activity)"
+ }
+}

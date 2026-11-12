@@ -5,11 +5,11 @@
 
 # ornithine oxoglurate — `OrnithineOxoglurate_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Three metabolites are orphaned from the dose because the metabolism links from ornithine oxoglurate have no rate constants.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-04 15:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Three metabolites are orphaned from the dose because the metabolism links from ornithine oxoglurate have no rate constants.
 
-<div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="true" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Ornithine alpha-ketoglutarate metabolism after enteral administration in burn patients: bolus compared with continuous infusion. The American journal of clinical nutrition 65(2):512–518 (1997).
@@ -40,7 +40,7 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,6 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wang_2022:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Le_1997:abstract'] |
@@ -152,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

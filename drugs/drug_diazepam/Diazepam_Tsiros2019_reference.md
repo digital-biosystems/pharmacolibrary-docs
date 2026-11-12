@@ -5,11 +5,11 @@
 
 # diazepam — `Diazepam_Tsiros2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; q2 and CLint have no unit.
+> This record was reviewed on 2026-11-07 14:48 UTC (Needs review), but the paper was screened again on 2026-11-03 21:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; q2 and CLint have no unit.
 
-<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Tsiros2019_reference" status="needs_review" stale="false" population="adults" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Tsiros2019_reference" status="needs_review" stale="true" population="adults" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tsiros P, Bois FY, Dokoumetzidis A, Tsiliki G, Sarimveis H. Population pharmacokinetic reanalysis of a Diazepam PBPK model: a comparison of Stan and GNU MCSim. Journal of pharmacokinetics and pharmacodynamics 46(2):173–192 (2019).
@@ -42,7 +42,7 @@ Tsiros P, Bois FY, Dokoumetzidis A, Tsiliki G, Sarimveis H. Population pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -153,10 +153,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cavallaro_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cavallaro_2026:review'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] |  | ['tab_2:row7:col1', 'tab_2:row7:col2', 'tab_2:row7:col10', 'Tsiros_2019_table_9:row6:col1', 'Tsiros_2019_table_9:row6:col2', 'Tsiros_2019_table_9:row6:col9', 'Tsiros_2019_table_9:row6:col10'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] |  | ['tab_2:row7:col1', 'tab_2:row7:col2', 'tab_2:row7:col10', 'Tsiros_2019_table_9:row6:col1', 'Tsiros_2019_table_9:row6:col2', 'Tsiros_2019_table_9:row6:col9', 'Tsiros_2019_table_9:row6:col10'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['tab_2:row3:col2', 'tab_2:row3:col10', 'Tsiros_2019_table_9:row2:col2', 'Tsiros_2019_table_9:row2:col9', 'Tsiros_2019_table_9:row2:col10'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.651 | ['Cavallaro_2026:review'] |
 | C8_topology | pass |  |  |  |
@@ -189,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

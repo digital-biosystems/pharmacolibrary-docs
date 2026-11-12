@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Owellen1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="needs_review" stale="false" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="extracted" stale="true" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine in humans. Cancer research 37(8 Pt 1):2597–2602 (1977).
@@ -26,8 +26,6 @@ Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | alpha phase: t1/2 | t1/2α | 3.9 | min |
@@ -39,7 +37,7 @@ Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545), qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed 0/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545), qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Levêque_1996:review'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Owellen_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Owellen_1977:abstract'] |
@@ -169,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

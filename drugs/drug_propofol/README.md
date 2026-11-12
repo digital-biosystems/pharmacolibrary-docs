@@ -42,7 +42,7 @@ Propofol is an intravenous medication used to induce and maintain general anaest
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Eleveld_2018_reference](drugs/drug_propofol/Propofol_Eleveld2018_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Eleveld DJ et al., Pharmacokinetic-pharmacodynamic model f…, British journal of anaesthe… (2018) | [10.1016/j.bja.2018.01.018](https://doi.org/10.1016/j.bja.2018.01.018) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Jones_1990_reference](drugs/drug_propofol/Propofol_Jones1990_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Jones RD et al., Pharmacokinetics of propofol in children, British journal of anaesthe… (1990) | [10.1093/bja/65.5.661](https://doi.org/10.1093/bja/65.5.661) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [de_2025_reference](drugs/drug_propofol/Propofol_de2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Jong BT et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01548-7](https://doi.org/10.1007/s40262-025-01548-7) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Kim_2023_reference](drugs/drug_propofol/Propofol_Kim2023_reference.md) | — | 2-compartment (no model) | 6 | Kim KM et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-022-09836-6](https://doi.org/10.1007/s10928-022-09836-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Kim_2023_reference](drugs/drug_propofol/Propofol_Kim2023_reference.md) | — | 2-compartment (no model) | 6 | Kim KM et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-022-09836-6](https://doi.org/10.1007/s10928-022-09836-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -99,7 +99,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 731 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 3  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 3  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

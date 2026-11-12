@@ -5,11 +5,11 @@
 
 # omeprazole — `Omeprazole_Marier2004_pooled`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The zero-order input rate parameter has a time unit, causing a dimension mismatch for the structural model.
+> This record was reviewed on 2026-11-07 14:25 UTC (Rejected), but the paper was screened again on 2026-11-04 06:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The zero-order input rate parameter has a time unit, causing a dimension mismatch for the structural model.
 
-<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Marier2004_pooled" status="rejected" stale="false" population="healthy adults and children with GERD" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Marier2004_pooled" status="rejected" stale="true" population="healthy adults and children with GERD" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinetics of omeprazole in healthy adults and in children with gastroesophageal reflux disease. Therapeutic drug monitoring 26(1):3–8 (2004).
@@ -42,7 +42,7 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frederiksen_2021:review'] |
-| C5_dimension_Q307 | fail | [time] | h | ['tab_1:row6:col3'] |
+| C5_dimension_Q307 | fail | [mass] / [time] | h ([time]) | ['tab_1:row6:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Gao_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gao_2025:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['tab_1:row2:col3'] |
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

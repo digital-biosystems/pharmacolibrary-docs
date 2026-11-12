@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;apomorphine&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/&quot;},{&quot;label&quot;:&quot;Nasser_2024 \u00b7 subcutaneous&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Nasser_2024_UPDRS_Part_III&quot;,&quot;label&quot;:&quot;Nasser_2024 \u00b7 UPDRS Part III&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Nasser_2024_UPDRS_Part_III.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Patel_1995_single_pulse_stimulated_dopamine_release&quot;,&quot;label&quot;:&quot;Patel_1995 \u00b7 single pulse stimulated dopamine release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_apomorphine/pd_Patel_1995_single_pulse_stimulated_dopamine_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # apomorphine — `Apomorphine_Nasser2024_subcutaneous`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Molecular weight was recorded in milligrams instead of a molar mass unit, creating a structural dimension mismatch for apomorphine.
+> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Molecular weight was recorded in milligrams instead of a molar mass unit, creating a structural dimension mismatch for apomorphine.
 
-<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_subcutaneous" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_subcutaneous" status="rejected" stale="true" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-based comparison of subcutaneous versus sublingual apomorphine administration in the treatment of motor fluctuations in Parkinson's disease. Journal of pharmacokinetics and pharmacodynamics 51(4):385–393 (2024).
@@ -42,7 +43,7 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -153,9 +154,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | fail | [mass] | mg | ['Tab4:row10:col1', 'Tab4:row10:col2'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | mg ([mass]) | ['Tab4:row10:col1', 'Tab4:row10:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Nasser_2024_table_1:row0:col1'] |
-| C5_dimension_Q374 | fail | [mass] | mg | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row9:col1', 'Tab4:row9:col2', 'Tab4:row13:col1', 'Tab4:row13:col2', 'Tab4:row17:col2', 'Tab4:row21:col1', 'Tab4:row21:col2'] |
+| C5_dimension_Q374 | fail | [mass] / [substance] | mg ([mass]) | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row9:col1', 'Tab4:row9:col2', 'Tab4:row13:col1', 'Tab4:row13:col2', 'Tab4:row17:col2', 'Tab4:row21:col1', 'Tab4:row21:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Nasser_2024_table_1:row2:col1'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Tab4:row18:col1', 'Tab4:row18:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Nasser_2024_table_1:row1:col1'] |
@@ -180,7 +181,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

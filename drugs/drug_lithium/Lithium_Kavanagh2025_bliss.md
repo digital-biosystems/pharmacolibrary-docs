@@ -5,11 +5,11 @@
 
 # lithium — `Lithium_Kavanagh2025_bliss`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The unit for creatinine clearance, 113 mL/min, could not be standardized, causing a dimension mismatch on the renal clearance parameter.
+> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-10-06 16:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The unit for creatinine clearance, 113 mL/min, could not be standardized, causing a dimension mismatch on the renal clearance parameter.
 
-<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kavanagh2025_bliss" status="rejected" stale="false" population="adults with bipolar disorder on stable lithium doses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kavanagh2025_bliss" status="rejected" stale="true" population="adults with bipolar disorder on stable lithium doses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kavanagh ON, Asprey E, Edelmann KA, Ritter P, Cousins DA, Wing VC. A one-compartment model provides benchmark Lithium dose prediction. Journal of psychopharmacology (Oxford, England):2698811251378508 (2025).
@@ -45,7 +45,7 @@ Kavanagh ON, Asprey E, Edelmann KA, Ritter P, Cousins DA, Wing VC. A one-compart
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,8 +137,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['table1-02698811251378508:row8:col1'] |
-| C5_dimension_Q310 | fail | [mass] / [time] | mg/day | ['table1-02698811251378508:row7:col1'] |
-| C5_dimension_Q34 | fail | [substance] / [length] ** 3 | mmol/L | ['table1-02698811251378508:row9:col1'] |
+| C5_dimension_Q310 | fail | [time] | mg/day ([mass] / [time]) | ['table1-02698811251378508:row7:col1'] |
+| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['table1-02698811251378508:row9:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Aurélie_2023:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Aurélie_2023:review'] |
 | C8_topology | pass |  |  |  |
@@ -160,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

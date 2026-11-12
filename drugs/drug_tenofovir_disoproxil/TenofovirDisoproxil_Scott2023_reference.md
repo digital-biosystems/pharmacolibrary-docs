@@ -4,11 +4,11 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Scott2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Tenofovir's apparent clearance of 16.7 L/h and peripheral volume of 190 L are implausible magnitudes indicating a unit or scale error.
+> This record was reviewed on 2026-11-07 15:22 UTC (Rejected), but the paper was screened again on 2026-10-07 16:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tenofovir's apparent clearance of 16.7 L/h and peripheral volume of 190 L are implausible magnitudes indicating a unit or scale error.
 
-<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="false" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="true" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Scott RK, Yu Y, Marzinke MA, Coleman JS, Hendrix CW, Bies R. Clinical trial simulation to evaluate tenofovir disoproxil fumarate/emtricitabine HIV pre-exposure prophylaxis dosing during pregnancy. Frontiers in reproductive health 5:1224580 (2023).
@@ -42,7 +42,7 @@ Scott RK, Yu Y, Marzinke MA, Coleman JS, Hendrix CW, Bies R. Clinical trial simu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -161,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['T2:row1:col1', 'T2:row1:col2', 'Scott_2023_table_3:row0:col1', 'Scott_2023_table_3:row0:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row5:col1', 'T2:row5:col2', 'Scott_2023_table_3:row4:col1', 'Scott_2023_table_3:row4:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['T2:row3:col1', 'T2:row3:col2', 'Scott_2023_table_3:row2:col1', 'Scott_2023_table_3:row2:col2'] |
-| C5_dimension_Q82 | fail | [length] ** 3 / [time] | L/h | ['T2:row4:col1', 'T2:row4:col2', 'Scott_2023_table_3:row3:col1', 'Scott_2023_table_3:row3:col2'] |
+| C5_dimension_Q82 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['T2:row4:col1', 'T2:row4:col2', 'Scott_2023_table_3:row3:col1', 'Scott_2023_table_3:row3:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 | C9_phys_window_Q290 | pass | volume within physiological range | 58.8 L | ['T2:row2:col1', 'T2:row2:col2', 'Scott_2023_table_3:row1:col1', 'Scott_2023_table_3:row1:col2'] |
@@ -183,7 +183,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

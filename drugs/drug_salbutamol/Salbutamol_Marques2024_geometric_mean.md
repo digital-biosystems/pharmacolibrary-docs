@@ -5,11 +5,11 @@
 
 # salbutamol — `Salbutamol_Marques2024_geometric_mean`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model does not reproduce the paper's terminal half-life (model/paper ratio 0.723).
+> This record was reviewed on 2026-11-07 14:49 UTC (Needs review), but the paper was screened again on 2026-11-04 09:07 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model does not reproduce the paper's terminal half-life (model/paper ratio 0.723).
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_geometric_mean" status="needs_review" stale="false" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_geometric_mean" status="needs_review" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population Pharmacokinetic Model for Oral Salbutamol in Virtual Patients. Pharmaceutics 17(1) (2024).
@@ -42,7 +42,7 @@ Marques L, Vale N. Improving Individualized Salbutamol Treatment: A Population P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,6 +131,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Heuberger_2018:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Marques_2024_table_7:row3:col3'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['Heuberger_2018:review'] |
+| C5_unit_missing_Q81 | fail | [time] |  |  |  | ['Marques_2024_table_7:row0:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 77.9 |  |  | ['Marques_2024_table_7:row6:col3'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 77.9 L/h |  |  | ['Marques_2024_table_7:row6:col3'] |
@@ -179,7 +180,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

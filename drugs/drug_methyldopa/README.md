@@ -40,8 +40,8 @@ Methyldopa is a centrally acting antihypertensive drug used to treat high blood 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Brogden_1988_reference](drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Brogden RN et al., Captopril. An update of its pharmacodyn…, Drugs (1988) | [10.2165/00003495-198836050-00003](https://doi.org/10.2165/00003495-198836050-00003) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Singh_1985_reference](drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Singh BN et al., Acebutolol. A review of its pharmacolog…, Drugs (1985) | [10.2165/00003495-198529060-00003](https://doi.org/10.2165/00003495-198529060-00003) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Jorga_1997_reference](drugs/drug_methyldopa/Methyldopa_Jorga1997_reference.md) | — | parent + metabolite (no model) | 4 | Jorga KM et al., Optimizing levodopa pharmacokinetics wi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90033-3](https://doi.org/10.1016/S0009-9236(97)90033-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Jorga_1997_reference](drugs/drug_methyldopa/Methyldopa_Jorga1997_reference.md) | — | parent + metabolite (no model) | 4 | Jorga KM et al., Optimizing levodopa pharmacokinetics wi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90033-3](https://doi.org/10.1016/S0009-9236(97)90033-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Liu_2025_reference](drugs/drug_methyldopa/Methyldopa_Liu2025_reference.md) | — | 1-compartment (no model) | 0 | Liu X et al., Determining the Optimal Dosing of Methy…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01523-2](https://doi.org/10.1007/s40262-025-01523-2) |
 
 ## ADME sites
@@ -73,13 +73,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-10 17:37 | 23:16 | 2/3/0 | 0/0/0 | 0/0/0 | 1,409,526/136,392 | einfracz / qwen3.8-27b | 40 | 35/5 | 4/36 | 0 |
+| 2026-10-10 17:37 | 23:16 | 3/2/0 | 0/0/0 | 0/0/0 | 1,409,526/136,392 | einfracz / qwen3.8-27b | 38 | 35/5 | 4/34 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 112 matched, 74 returned
 - **screened:** 39  ·  **relevant:** 2
-- **records:** 5  ·  extracted 2  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs review 1  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

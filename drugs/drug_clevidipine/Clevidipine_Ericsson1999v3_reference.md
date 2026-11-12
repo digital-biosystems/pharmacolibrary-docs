@@ -5,11 +5,11 @@
 
 # clevidipine — `Clevidipine_Ericsson1999v3_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Record for clevidipine was rejected because it lacks volume and clearance, and the metabolite H 152/81 is an unreachable compartment.
+> This record was reviewed on 2026-11-07 15:51 UTC (Rejected), but the paper was screened again on 2026-10-07 02:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record for clevidipine was rejected because it lacks volume and clearance, and the metabolite H 152/81 is an unreachable compartment.
 
-<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="false" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="true" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokinetics of new calcium channel antagonist clevidipine in the rat, rabbit, and dog and pharmacokinetic/pharmacodynamic relationship in anesthetized dogs. Drug metabolism and disposition: the biological fate of chemicals 27(5):558–564 (1999).
@@ -37,7 +37,7 @@ Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Ericsson_1999_3:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Ericsson_1999_3:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
@@ -136,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

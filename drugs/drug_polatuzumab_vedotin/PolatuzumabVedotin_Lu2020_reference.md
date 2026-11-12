@@ -4,11 +4,11 @@
 
 # polatuzumab vedotin — `PolatuzumabVedotin_Lu2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The formation clearance parameter for the unconjugated MMAE metabolite lacks a defined unit, creating a dimensional mismatch that invalidated the model structure.
+> This record was reviewed on 2026-11-07 14:28 UTC (Rejected), but the paper was screened again on 2026-10-07 19:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The formation clearance parameter for the unconjugated MMAE metabolite lacks a defined unit, creating a dimensional mismatch that invalidated the model structure.
 
-<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="false" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="true" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Population Pharmacokinetic Model of Polatuzumab Vedotin in Patients With Non-Hodgkin Lymphoma. CPT: pharmacometrics & systems pharmacology 9(1):48–59 (2020).
@@ -51,7 +51,7 @@ Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.535). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.535). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -197,8 +197,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412482-tbl-0001:row14:col3', 'psp412482-tbl-0001:row14:col4', 'psp412482-tbl-0001:row14:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412482-tbl-0001:row6:col3', 'psp412482-tbl-0001:row6:col4', 'psp412482-tbl-0001:row6:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412482-tbl-0001:row17:col3', 'psp412482-tbl-0001:row17:col4', 'psp412482-tbl-0001:row17:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | ['psp412482-tbl-0001:row8:col3', 'psp412482-tbl-0001:row8:col4', 'psp412482-tbl-0001:row8:col5'] |
-| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | ng/mL/hour | ['psp412482-tbl-0001:row18:col3', 'psp412482-tbl-0001:row18:col4', 'psp412482-tbl-0001:row18:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | ng/mL/hour ([mass] / [length] ** 3 / [time]) | ['psp412482-tbl-0001:row8:col3', 'psp412482-tbl-0001:row8:col4', 'psp412482-tbl-0001:row8:col5'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | ng/mL/hour ([mass] / [length] ** 3 / [time]) | ['psp412482-tbl-0001:row18:col3', 'psp412482-tbl-0001:row18:col4', 'psp412482-tbl-0001:row18:col5'] |
 | C5_unit_missing_Q370 | fail | [length] ** 3 / [time] |  | ['psp412482-tbl-0001:row20:col3', 'psp412482-tbl-0001:row20:col4', 'psp412482-tbl-0001:row20:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00623 | ['psp412482-tbl-0001:row3:col3', 'psp412482-tbl-0001:row3:col4', 'psp412482-tbl-0001:row3:col5'] |
 | C8_topology | pass |  |  |  |
@@ -225,7 +225,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

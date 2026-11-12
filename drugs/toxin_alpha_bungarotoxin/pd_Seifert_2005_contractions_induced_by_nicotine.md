@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that alpha-bungarotoxin inhibits contractions induced by nicotine with an IC50 of 9×10^-7 M. However, the specific pharmacodynamic mechanism (e.g., direct Emax vs. indirect effects) is not described in the provided excerpts.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Seifert_2005`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

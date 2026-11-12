@@ -5,11 +5,11 @@
 
 # cefalexin — `Cefalexin_Koroleva1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Cephalexin maximum concentration is incorrectly recorded as 1.1 hours instead of a concentration unit, preventing a valid compartmental model fit.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-07 10:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cephalexin maximum concentration is incorrectly recorded as 1.1 hours instead of a concentration unit, preventing a valid compartmental model fit.
 
-<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="false" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="true" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics]. Antibiotiki 26(3):113–116 (1981).
@@ -37,7 +37,7 @@ Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics].
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q32 | fail | [time] | hour | ['Koroleva_1981:abstract', 'Koroleva_1981:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | hour ([time]) | ['Koroleva_1981:abstract', 'Koroleva_1981:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Koroleva_1981:abstract', 'Koroleva_1981:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

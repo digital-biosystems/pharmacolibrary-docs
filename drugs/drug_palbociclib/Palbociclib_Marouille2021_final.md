@@ -4,11 +4,11 @@
 
 # palbociclib — `Palbociclib_Marouille2021_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 04:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Marouille2021_final" status="rejected" stale="false" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Marouille2021_final" status="rejected" stale="true" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. Pharmacokinetic/Pharmacodynamic Model of Neutropenia in Real-Life Palbociclib-Treated Patients. Pharmaceutics 13(10) (2021).
@@ -37,7 +37,7 @@ Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,11 +129,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | pass | 1 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_unit_missing_Q81 | fail | [time] | days | ['pharmaceutics-13-01708-t004:row5:col3', 'pharmaceutics-13-01708-t004:row5:col4'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,7 +152,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

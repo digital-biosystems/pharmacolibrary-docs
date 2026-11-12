@@ -68,10 +68,10 @@ Built for model-informed drug development, precision dosing research and teachin
 
 
 <div class="pklg">
-<div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>2,200</b><em>drugs and toxins; every one has a page</em></div>
-<div class="tile"><i>popPK · PD · PGx records</i><b>4,311 · 3,952 · 589</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
-<div class="tile"><i>Papers behind the records</i><b>8,272</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>38,918</b><em>parameter values the records carry, with units</em></div></div>
+<div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>2,479</b><em>drugs and toxins; every one has a page</em></div>
+<div class="tile"><i>popPK · PD · PGx records</i><b>4,634 · 3,990 · 590</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
+<div class="tile"><i>Papers behind the records</i><b>9,096</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>43,286</b><em>parameter values the records carry, with units</em></div></div>
 </div>
 
-<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 11/11/2026 16:30:58 UTC</p>
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 12/11/2026 10:31:03 UTC</p>
 <!-- AUTOGEN:intro END -->

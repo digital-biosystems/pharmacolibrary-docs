@@ -34,7 +34,7 @@ Voclosporin is an immunosuppressive calcineurin inhibitor used to treat lupus ne
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Abdel-Kahaar_2023_reference](drugs/drug_voclosporin/Voclosporin_AbdelKahaar2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Abdel-Kahaar E et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01246-2](https://doi.org/10.1007/s40262-023-01246-2) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Mayo_2014_reference](drugs/drug_voclosporin/Voclosporin_Mayo2014_reference.md) | — | 1-compartment (no model) | 2 | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mayo_2014_reference](drugs/drug_voclosporin/Voclosporin_Mayo2014_reference.md) | — | 1-compartment (no model) | 2 | Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014) | [10.1002/jcph.237](https://doi.org/10.1002/jcph.237) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

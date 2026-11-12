@@ -4,11 +4,11 @@
 
 # fenbendazole — `Fenbendazole_Bach2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the oxfendazole bioavailability parameter has no extracted value, and the peripheral volume unit of milligrams is dimensionally incompatible.
+> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-07 10:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the oxfendazole bioavailability parameter has no extracted value, and the peripheral volume unit of milligrams is dimensionally incompatible.
 
-<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokinetic Model of Oxfendazole and Metabolites in Healthy Adults following Single Ascending Doses. Antimicrobial agents and chemotherapy 65(4) (2021).
@@ -46,7 +46,7 @@ Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -156,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Bach_2021_table_p6_1:row7:col2', 'Bach_2021_table_p6_1:row7:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Bach_2021_table_p6_1:row9:col2', 'Bach_2021_table_p6_1:row9:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bach_2021_table_p6_1:row2:col2', 'Bach_2021_table_p6_1:row2:col3'] |
-| C5_dimension_Q64 | fail | [mass] | mg | ['Bach_2021_table_p6_1:row1:col2'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | mg ([mass]) | ['Bach_2021_table_p6_1:row1:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Bach_2021_table_p6_1:row4:col2', 'Bach_2021_table_p6_1:row4:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -179,7 +179,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

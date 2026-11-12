@@ -40,7 +40,7 @@ Canagliflozin is an anti-diabetic medicine used to treat type 2 diabetes mellitu
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k21</sub> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Elenjickal_2025_reference](drugs/drug_canagliflozin/Canagliflozin_Elenjickal2025_reference.md) | — | 1-compartment (no model) | 3 | Elenjickal EJ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01571-8](https://doi.org/10.1007/s40262-025-01571-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Elenjickal_2025_reference](drugs/drug_canagliflozin/Canagliflozin_Elenjickal2025_reference.md) | — | 1-compartment (no model) | 3 | Elenjickal EJ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01571-8](https://doi.org/10.1007/s40262-025-01571-8) |
 
 ## Pharmacodynamics (PD)
 
@@ -103,7 +103,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 60 matched, 43 returned
 - **screened:** 6  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

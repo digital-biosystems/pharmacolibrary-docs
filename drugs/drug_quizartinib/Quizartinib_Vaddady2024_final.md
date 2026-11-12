@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Vaddady_2024 \u00b7 final&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quizartinib — `Quizartinib_Vaddady2024_final`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL_ratio has no unit.
+> This record was reviewed on 2026-11-07 15:58 UTC (Needs review), but the paper was screened again on 2026-10-07 05:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Vaddady2024_final" status="needs_review" stale="false" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Vaddady2024_final" status="extracted" stale="true" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Population pharmacokinetic analysis of quizartinib in patients with newly diagnosed FLT3-internal-tandem-duplication-positive acute myeloid leukemia. Clinical and translational science 17(12):e70074 (2024).
@@ -28,8 +29,6 @@ Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Popula
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CLquiz | CL | 4.61 | L/h |
@@ -45,7 +44,7 @@ Vaddady P, Glatard A, Smania G, Nakayama S, Inoue H, Kurumaddali A et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -154,7 +153,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row4:col7', 'cts70074-tbl-0003:row4:col8'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts70074-tbl-0003:row3:col7', 'cts70074-tbl-0003:row3:col8'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts70074-tbl-0003:row5:col7', 'cts70074-tbl-0003:row5:col8'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['cts70074-tbl-0003:row11:col7', 'cts70074-tbl-0003:row11:col8'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.61 | ['cts70074-tbl-0003:row2:col7', 'cts70074-tbl-0003:row2:col8'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.61 L/h | ['cts70074-tbl-0003:row2:col7', 'cts70074-tbl-0003:row2:col8'] |
@@ -187,7 +185,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

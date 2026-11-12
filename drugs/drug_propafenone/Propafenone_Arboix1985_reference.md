@@ -5,11 +5,11 @@
 
 # propafenone — `Propafenone_Arboix1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Propafenone clearance is recorded with rate units, and the peripheral compartment is unreachable.
+> This record was reviewed on 2026-11-07 14:51 UTC (Rejected), but the paper was screened again on 2026-10-06 04:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Propafenone clearance is recorded with rate units, and the peripheral compartment is unreachable.
 
-<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="false" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="true" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafenone in patients with episodes of paroxysmal supraventricular tachycardia. Methods and findings in experimental and clinical pharmacology 7(8):435–438 (1985).
@@ -38,7 +38,7 @@ Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafe
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,11 +130,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | 1 / [time] | 1/h | ['Arboix_1985:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Arboix_1985:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Arboix_1985:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Arboix_1985:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Arboix_1985:abstract'] |
-| C5_dimension_Q64 | fail | dimensionless | 1/kg | ['Arboix_1985:abstract'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Arboix_1985:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.03 | ['Arboix_1985:abstract'] |
 | C8_topology | fail |  |  |  |
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

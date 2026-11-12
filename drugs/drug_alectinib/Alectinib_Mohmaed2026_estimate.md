@@ -5,11 +5,11 @@
 
 # alectinib — `Alectinib_Mohmaed2026_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The alectinib model was rejected because the absorption lag time unit (hours) could not be converted to standard units, causing a structural dimension mismatch.
+> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-06 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The alectinib model was rejected because the absorption lag time unit (hours) could not be converted to standard units, causing a structural dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="true" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G et al. Reducing the Burden of Interaction Studies in Cancer Patients Using a Stable Isotopically Labeled Microtracer: A Proof-of-Concept Study with Alectinib. Clinical pharmacology and therapeutics 119(3):713–720 (2026).
@@ -44,7 +44,7 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cpt70141-tbl-0002:row1:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['cpt70141-tbl-0002:row2:col1'] |
-| C5_dimension_Q83 | fail | [luminosity] / [length] ** 2 | unit | ['cpt70141-tbl-0002:row7:col1'] |
+| C5_dimension_Q83 | fail | [time] | unit ([luminosity] / [length] ** 2) | ['cpt70141-tbl-0002:row7:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['cpt70141-tbl-0002:row3:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 84.2 L/h | ['cpt70141-tbl-0002:row1:col1'] |
@@ -158,7 +159,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # alectinib — `Alectinib_van2025_value`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Alectinib's tissue-plasma partition coefficient value 3.25 lacks an SI unit, causing a dimension mismatch that rejected the model.
+> This record was reviewed on 2026-11-07 15:13 UTC (Rejected), but the paper was screened again on 2026-10-06 21:15 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Alectinib's tissue-plasma partition coefficient value 3.25 lacks an SI unit, causing a dimension mismatch that rejected the model.
 
-<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_value" status="rejected" stale="false" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_value" status="rejected" stale="true" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Middle-Out Physiologically Based Pharmacokinetic Modeling to Support Pediatric Dosing Recommendation for Alectinib. CPT: pharmacometrics & systems pharmacology 14(6):1077–1086 (2025).
@@ -41,7 +41,7 @@ van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Mid
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -157,9 +157,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] / [substance] | μL/min/pmol | ['psp470020-tbl-0001:row18:col1'] |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] / [substance] | μL/min/pmol | ['psp470020-tbl-0001:row23:col1'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | μL/min/pmol ([length] ** 3 / [time] / [substance]) | ['psp470020-tbl-0001:row18:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | μL/min/pmol ([length] ** 3 / [time] / [substance]) | ['psp470020-tbl-0001:row23:col1'] |
 | C5_dimension_Q3 | pass | [length] ** 3 / [time] / [mass] |  | ['psp470020-tbl-0001:row22:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.98 | ['psp470020-tbl-0001:row18:col1'] |
 | C8_topology | pass |  |  |  |
@@ -180,7 +180,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

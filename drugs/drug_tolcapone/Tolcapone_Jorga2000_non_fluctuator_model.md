@@ -4,11 +4,11 @@
 
 # tolcapone — `Tolcapone_Jorga2000_non_fluctuator_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The hepatic clearance covariate is negative, and the relative bioavailability unit 'F' prevents standard conversion.
+> This record was reviewed on 2026-11-07 16:32 UTC (Rejected), but the paper was screened again on 2026-10-06 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The hepatic clearance covariate is negative, and the relative bioavailability unit 'F' prevents standard conversion.
 
-<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="true" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics of tolcapone in parkinsonian patients in dose finding studies. British journal of clinical pharmacology 49(1):39–48 (2000).
@@ -45,7 +45,7 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -163,9 +163,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C2_base_sign_Q25 | fail |  | -0.81 |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1', 'tab_1:row4:col3', 'tab_1:row4:col4'] |
-| C5_dimension_Q25 | fail | [length] ** 3 | CL | ['tab_1:row16:col1'] |
-| C5_dimension_Q26 | fail | [length] ** 3 | CL | ['tab_1:row19:col3', 'tab_1:row19:col4'] |
-| C5_dimension_Q49 | fail | [time] | h | ['tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5'] |
+| C5_dimension_Q25 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_1:row16:col1'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_1:row19:col3', 'tab_1:row19:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row5:col1', 'tab_1:row5:col3', 'tab_1:row5:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_1:row8:col3', 'tab_1:row8:col4'] |
 | C5_unit_missing_Q57 | fail | [time] | Vp | ['tab_1:row22:col1'] |
@@ -191,7 +191,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

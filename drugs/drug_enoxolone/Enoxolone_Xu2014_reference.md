@@ -4,11 +4,11 @@
 
 # enoxolone — `Enoxolone_Xu2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
-> The enoxolone model was rejected because metabolite compartments 3MGA and GAM are orphaned, lacking a defined input from the parent drug.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-07 13:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The enoxolone model was rejected because metabolite compartments 3MGA and GAM are orphaned, lacking a defined input from the parent drug.
 
-<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="false" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="true" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynamic model for glycyrrhizin-induced pseudoaldosteronism and prediction of the dose limit causing hypokalemia in a virtual elderly population. PloS one 9(12):e114049 (2014).
@@ -51,7 +51,7 @@ Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,7 +144,7 @@ The extracted structure defines 3MGA as formed from glycyrrhizin and GAM as form
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Xu_2014_table_4:row5:col1'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Xu_2014_table_3:row0:col1', 'Xu_2014_table_4:row0:col1'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Xu_2014_table_3:row1:col1', 'Xu_2014_table_4:row1:col1'] |
@@ -152,7 +152,7 @@ The extracted structure defines 3MGA as formed from glycyrrhizin and GAM as form
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Xu_2014_table_3:row9:col1', 'Xu_2014_table_4:row7:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Xu_2014_table_4:row11:col1'] |
 | C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['Xu_2014_table_3:row6:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Xu_2014_table_3:row5:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Xu_2014_table_3:row5:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 431 | ['Xu_2014_table_4:row5:col1'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['CLmet'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 431 L/h | ['Xu_2014_table_4:row5:col1'] |
@@ -173,7 +173,7 @@ The extracted structure defines 3MGA as formed from glycyrrhizin and GAM as form
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

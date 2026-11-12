@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Chong1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; aUC has no unit.
+> This record was reviewed on 2026-11-07 14:50 UTC (Needs review), but the paper was screened again on 2026-11-04 18:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Chong1988_reference" status="needs_review" stale="false" population="adults with primary testicular cancer" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Chong1988_reference" status="needs_review" stale="true" population="adults with primary testicular cancer" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The correlation of vinblastine pharmacokinetics to toxicity in testicular cancer patients. Journal of clinical pharmacology 28(8):714–718 (1988).
@@ -42,7 +42,7 @@ Chong CD, Logothetis CJ, Savaraj N, Fritsche HA, Gietner AM, Samuels ML. The cor
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,6 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['Chong_1988_table_3:row1:col4'] |
 | C5_dimension_Q352 | pass | [length] ** 3 |  | ['Chong_1988_table_3:row5:col4'] |
@@ -163,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

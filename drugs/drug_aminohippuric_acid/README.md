@@ -41,7 +41,7 @@ Aminohippuric acid is a diagnostic agent used in tests of kidney function and fo
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kinowski_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kinowski JM et al., Bayesian estimation of p-aminohippurate…, Journal of pharmaceutical s… (1995) | [10.1002/jps.2600840309](https://doi.org/10.1002/jps.2600840309) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Gibiansky_2020_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Gibiansky2020_reference.md) | — | 2-compartment (no model) | 4 | Gibiansky L et al., Mechanistic Population Pharmacokinetic…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1791](https://doi.org/10.1002/cpt.1791) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Estelberger_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Estelberger1995_reference.md) | — | 1-compartment (no model) | 5 | Estelberger W et al., System identification of the low-dose k…, European journal of clinica… (1995) | [10.1515/cclm.1995.33.11.847](https://doi.org/10.1515/cclm.1995.33.11.847) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Estelberger_1995_reference](drugs/drug_aminohippuric_acid/AminohippuricAcid_Estelberger1995_reference.md) | — | 1-compartment (no model) | 5 | Estelberger W et al., System identification of the low-dose k…, European journal of clinica… (1995) | [10.1515/cclm.1995.33.11.847](https://doi.org/10.1515/cclm.1995.33.11.847) |
 
 ## Pharmacodynamics (PD)
 
@@ -84,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 138 matched, 83 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

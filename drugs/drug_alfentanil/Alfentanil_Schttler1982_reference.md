@@ -5,11 +5,11 @@
 
 # alfentanil — `Alfentanil_Schttler1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Alfentanil total volume of distribution is reported as 33 with no dimension, causing a dimensional mismatch in the model structure.
+> This record was reviewed on 2026-11-07 14:46 UTC (Rejected), but the paper was screened again on 2026-10-07 04:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Alfentanil total volume of distribution is reported as 33 with no dimension, causing a dimensional mismatch in the model structure.
 
-<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Schttler1982_reference" status="rejected" stale="false" population="patients (ASA class I and II)" measured-compound="alfentanyl" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Schttler1982_reference" status="rejected" stale="true" population="patients (ASA class I and II)" measured-compound="alfentanyl" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schüttler J, Stoeckel H. [Clinical pharmacokinetics of alfentanyl (author's transl)]. Der Anaesthesist 31(1):10–14 (1982).
@@ -39,7 +39,7 @@ Schüttler J, Stoeckel H. [Clinical pharmacokinetics of alfentanyl (author's tra
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Schüttler_1982:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Schüttler_1982:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Schüttler_1982:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | 1 | ['Schüttler_1982:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | 1 (dimensionless) | ['Schüttler_1982:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Mertens_2004:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 336 | ['Schüttler_1982:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

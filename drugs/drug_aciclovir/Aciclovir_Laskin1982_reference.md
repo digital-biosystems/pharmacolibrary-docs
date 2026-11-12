@@ -4,11 +4,11 @@
 
 # aciclovir — `Aciclovir_Laskin1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Aciclovir total clearance of 300 L/h causes a dimension mismatch in the one-compartment model structure.
+> This record was reviewed on 2026-11-07 15:49 UTC (Rejected), but the paper was screened again on 2026-10-07 22:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Aciclovir total clearance of 300 L/h causes a dimension mismatch in the one-compartment model structure.
 
-<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="false" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="true" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects of probenecid on the pharmacokinetics and elimination of acyclovir in humans. Antimicrobial agents and chemotherapy 21(5):804–807 (1982).
@@ -37,7 +37,7 @@ Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Laskin_1982:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Laskin_1982:abstract', 'Laskin_1982:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Laskin_1982:abstract'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | nmol.h/ml | ['Laskin_1982:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nmol.h/ml ([substance] * [time] / [length] ** 3) | ['Laskin_1982:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 300 | ['Laskin_1982:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 300 L/h | ['Laskin_1982:abstract'] |
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

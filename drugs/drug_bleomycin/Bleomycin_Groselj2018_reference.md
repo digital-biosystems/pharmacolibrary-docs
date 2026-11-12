@@ -5,11 +5,11 @@
 
 # bleomycin — `Bleomycin_Groselj2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The volume of distribution value 32.17 L is dimensionally incompatible with the murine population, causing a unit mismatch.
+> This record was reviewed on 2026-11-07 14:22 UTC (Rejected), but the paper was screened again on 2026-11-03 08:42 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution value 32.17 L is dimensionally incompatible with the murine population, causing a unit mismatch.
 
-<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Groselj2018_reference" status="rejected" stale="false" population="B16F1 melanoma and TS/A carcinoma tumours in mice" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Groselj2018_reference" status="rejected" stale="true" population="B16F1 melanoma and TS/A carcinoma tumours in mice" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Groselj A, Kranjc S, Bosnjak M, Krzan M, Kosjek T, Prevc A et al. Vascularization of the tumours affects the pharmacokinetics of bleomycin and the effectiveness of electrochemotherapy. Basic & clinical pharmacology & toxicology 123(3):247–256 (2018).
@@ -42,7 +42,7 @@ Groselj A, Kranjc S, Bosnjak M, Krzan M, Kosjek T, Prevc A et al. Vascularizatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Groselj_2018_table_p20_1:row2:col3', 'Groselj_2018_table_p20_1:row2:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Groselj_2021:review'] |
-| C5_dimension_Q75 | fail | [time] | days | ['Groselj_2018_table_p20_1:row5:col3', 'Groselj_2018_table_p20_1:row5:col4'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | days ([time]) | ['Groselj_2018_table_p20_1:row5:col3', 'Groselj_2018_table_p20_1:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.52 | ['Groselj_2018:other_prose'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0312 L/h | ['Groselj_2018:other_prose'] |
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

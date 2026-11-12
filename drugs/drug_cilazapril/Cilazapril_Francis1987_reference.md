@@ -5,11 +5,11 @@
 
 # cilazapril — `Cilazapril_Francis1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:57 UTC (Needs review), but the paper was screened again on 2026-11-03 07:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Francis1987_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="cilazaprilat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Francis1987_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="cilazaprilat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Francis RJ, Brown AN, Kler L, Fasanella d'Amore T, Nussberger J, Waeber B et al. Pharmacokinetics of the converting enzyme inhibitor cilazapril in normal volunteers and the relationship to enzyme inhibition: development of a mathematical model. Journal of cardiovascular pharmacology 9(1):32–38 (1987).
@@ -40,7 +40,7 @@ Francis RJ, Brown AN, Kler L, Fasanella d'Amore T, Nussberger J, Waeber B et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -94,6 +94,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Deget_1991:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Francis_1987:abstract'] |
@@ -131,7 +132,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

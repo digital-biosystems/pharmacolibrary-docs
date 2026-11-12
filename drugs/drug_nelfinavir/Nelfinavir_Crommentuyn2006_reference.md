@@ -4,11 +4,11 @@
 
 # nelfinavir — `Nelfinavir_Crommentuyn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Nelfinavir's volume of distribution (281) is recorded with units of L/h instead of L.
+> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 17:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nelfinavir's volume of distribution (281) is recorded with units of L/h instead of L.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="true" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. Population pharmacokinetics and pharmacodynamics of nelfinavir and its active metabolite M8 in HIV-1-infected children. The Pediatric infectious disease journal 25(6):538–543 (2006).
@@ -35,7 +35,7 @@ Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Crommentuyn_2006:abstract'] |
-| C5_dimension_Q61 | fail | [length] ** 3 / [time] | L/h | ['Crommentuyn_2006:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Crommentuyn_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.6 | ['Crommentuyn_2006:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 32.6 L/h | ['Crommentuyn_2006:abstract'] |
@@ -141,7 +141,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

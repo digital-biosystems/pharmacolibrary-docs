@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;trilaciclib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trilaciclib_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trilaciclib_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # trilaciclib
 
@@ -25,7 +25,7 @@ Trilaciclib is a kinase inhibitor used in patients with small cell lung cancer, 
 
 ## Start here
 
-> **Li_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with extensive-stage small-cell lung cancer, n = 114. [Run it in the simulator](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md)
+> **Li_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> patients with extensive-stage small-cell lung cancer, n = 114. [Run it in the simulator](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,7 +34,7 @@ Trilaciclib is a kinase inhibitor used in patients with small cell lung cancer, 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Dai_2024_reference](drugs/drug_trilaciclib/Trilaciclib_Dai2024_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub> | [Li_2022_reference](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li C et al., Pharmacokinetic Drug-Drug Interaction S…, Clinical drug investigation (2022) | [10.1007/s40261-022-01179-x](https://doi.org/10.1007/s40261-022-01179-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.4428)</sub> | [Li_2022_reference](drugs/drug_trilaciclib/Trilaciclib_Li2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li C et al., Pharmacokinetic Drug-Drug Interaction S…, Clinical drug investigation (2022) | [10.1007/s40261-022-01179-x](https://doi.org/10.1007/s40261-022-01179-x) |
 
 ## Pharmacodynamics (PD)
 
@@ -83,7 +83,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

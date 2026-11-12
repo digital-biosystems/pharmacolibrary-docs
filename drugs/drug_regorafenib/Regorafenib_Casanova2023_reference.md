@@ -4,11 +4,11 @@
 
 # regorafenib — `Regorafenib_Casanova2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> This record was reviewed on 2026-11-07 15:33 UTC (Needs review), but the paper was screened again on 2026-10-07 05:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Casanova2023_reference" status="needs_review" stale="false" population="pediatric patients with recurrent/refractory solid tumors" measured-compound="regorafenib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Casanova2023_reference" status="needs_review" stale="true" population="pediatric patients with recurrent/refractory solid tumors" measured-compound="regorafenib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Casanova M, Bautista F, Campbell-Hewson Q, Makin G, Marshall LV, Verschuur AC et al. Regorafenib plus Vincristine and Irinotecan in Pediatric Patients with Recurrent/Refractory Solid Tumors: An Innovative Therapy for Children with Cancer Study. Clinical cancer research : an official journal of the American Association for Cancer Research 29(21):4341–4351 (2023).
@@ -39,7 +39,7 @@ Casanova M, Bautista F, Campbell-Hewson Q, Makin G, Marshall LV, Verschuur AC et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,6 +121,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Casanova_2023_table_5:row0:col1', 'Casanova_2023_table_5:row0:col2', 'Casanova_2023_table_5:row1:col1', 'Casanova_2023_table_5:row1:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Delahousse_2024:review'] |
@@ -156,7 +157,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

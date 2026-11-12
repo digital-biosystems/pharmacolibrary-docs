@@ -5,11 +5,11 @@
 
 # Suramin — `Suramin_Scher1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The abstract-only record lacks an inter-compartmental clearance value, making the peripheral compartment structurally unreachable in the two-compartment suramin model.
+> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-10-07 09:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The abstract-only record lacks an inter-compartmental clearance value, making the peripheral compartment structurally unreachable in the two-compartment suramin model.
 
-<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="true" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adaptive control with feedback to individualize suramin dosing. Cancer research 52(1):64–70 (1992).
@@ -38,7 +38,7 @@ Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adap
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,7 +114,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Naviaux_2017:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
@@ -142,7 +142,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,31 @@
+{
+ "dose_source": "library default",
+ "model_id": "Rituximab_Gibiansky2021_reference",
+ "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7939814814814816e-08,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 7.128571428571428e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 9.7417056334892e-07,
+  "k21": 1.3138138138138138e-06,
+  "ka": 4.305555555555555e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 775695.3907815631
+ },
+ "reference_peaks": {
+  "central.C": 0.0006909623097446358
+ },
+ "review_status": "needs_review",
+ "stop_time": 1728000.0,
+ "template": "PK_3C_enteral",
+ "template_fmu": "PK_3C_enteral.fmu"
+}

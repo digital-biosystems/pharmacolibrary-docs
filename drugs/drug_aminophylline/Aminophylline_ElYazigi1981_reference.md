@@ -5,11 +5,11 @@
 
 # aminophylline — `Aminophylline_ElYazigi1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The volume of distribution for theophylline was assigned hours instead of volume, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:35 UTC (Rejected), but the paper was screened again on 2026-10-07 23:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution for theophylline was assigned hours instead of volume, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_ElYazigi1981_reference" status="rejected" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_ElYazigi1981_reference" status="rejected" stale="true" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 El-Yazigi A, Sawchuk RJ. Theophylline absorption and disposition in rabbits: oral, intravenous, and concentration-dependent kinetic studies. Journal of pharmaceutical sciences 70(4):452–456 (1981).
@@ -40,7 +40,7 @@ El-Yazigi A, Sawchuk RJ. Theophylline absorption and disposition in rabbits: ora
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -118,9 +118,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['El-Yazigi_1981:abstract'] |
-| C5_dimension_Q61 | fail | [time] | hr | ['El-Yazigi_1981:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | hr ([time]) | ['El-Yazigi_1981:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

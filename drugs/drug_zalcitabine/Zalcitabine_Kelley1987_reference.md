@@ -5,11 +5,11 @@
 
 # zalcitabine — `Zalcitabine_Kelley1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:37 UTC (Needs review), but the paper was screened again on 2026-10-07 16:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Kelley1987_reference" status="needs_review" stale="false" population="BDF1 mice and rhesus monkeys" measured-compound="2&#39;,3&#39;-dideoxycytidine (zalcitabine)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Kelley1987_reference" status="needs_review" stale="true" population="BDF1 mice and rhesus monkeys" measured-compound="2&#39;,3&#39;-dideoxycytidine (zalcitabine)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kelley JA, Litterst CL, Roth JS, Vistica DT, Poplack DG, Cooney DA et al. The disposition and metabolism of 2',3'-dideoxycytidine, an in vitro inhibitor of human T-lymphotrophic virus type III infectivity, in mice and monkeys. Drug metabolism and disposition: the biological fate of chemicals 15(5):595–601 (1987).
@@ -38,7 +38,7 @@ Kelley JA, Litterst CL, Roth JS, Vistica DT, Poplack DG, Cooney DA et al. The di
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,6 +119,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Senek_2020:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kelley_1987:abstract'] |
@@ -152,7 +153,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # perindopril — `Perindopril_Parker2005_single_dose`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the binding capacity unit for perindoprilat could not be interpreted, blocking validation of the structural parameter.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 06:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the binding capacity unit for perindoprilat could not be interpreted, blocking validation of the structural parameter.
 
-<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="true" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprilat in normal volunteers and patients: influence of age and disease state. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 26(1):104–113 (2005).
@@ -42,7 +42,7 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -168,9 +168,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | fail | 1 / [time] | h -1 | ['Parker_2005_table_2:row5:col2'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | h -1 (1 / [time]) | ['Parker_2005_table_2:row5:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Parker_2005_table_2:row2:col2'] |
-| C5_dimension_Q49 | fail | [time] | h | ['Parker_2005_table_3:row7:col1', 'Parker_2005_table_4:row5:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['Parker_2005_table_3:row7:col1', 'Parker_2005_table_4:row5:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Parker_2005_table_2:row1:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -192,7 +192,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # Levothyroxine — `Levothyroxine_MirallesGarca1981_a_h_i`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The triiodothyronine metabolite compartment is unreachable from the dose, causing the model to be rejected.
+> This record was reviewed on 2026-11-07 14:40 UTC (Rejected), but the paper was screened again on 2026-11-04 00:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The triiodothyronine metabolite compartment is unreachable from the dose, causing the model to be rejected.
 
-<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_a_h_i" status="rejected" stale="false" population="ewes with or without acute liver insufficiency" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_a_h_i" status="rejected" stale="true" population="ewes with or without acute liver insufficiency" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. The kinetics of the thyroid hormones and the peripheral conversion rate of thyroxine to triiodothyronine in acute liver insufficiency under experimental conditions. Hormone and metabolic research = Hormon- und Stoffwechselforschung = Hormones et metabolisme 13(3):158–164 (1981).
@@ -47,7 +47,7 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.043). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.043). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -180,7 +180,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_3:row3:col8', 'Miralles-García_1981_table_3:row4:col8', 'Miralles-García_1981_table_3:row5:col8', 'Miralles-García_1981_table_4:row3:col8', 'Miralles-García_1981_table_4:row4:col8', 'Miralles-García_1981_table_4:row5:col8', 'Miralles-García_1981_table_4:row6:col8'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_3:row3:col9', 'Miralles-García_1981_table_3:row4:col9', 'Miralles-García_1981_table_3:row5:col9', 'Miralles-García_1981_table_4:row3:col9', 'Miralles-García_1981_table_4:row4:col9', 'Miralles-García_1981_table_4:row5:col9'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Miralles-García_1981_table_3:row3:col10', 'Miralles-García_1981_table_3:row4:col10', 'Miralles-García_1981_table_3:row5:col10', 'Miralles-García_1981_table_4:row3:col10', 'Miralles-García_1981_table_4:row4:col10', 'Miralles-García_1981_table_4:row5:col10'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['Miralles-García_1981_table_3:row6:col1'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Miralles-García_1981_table_3:row6:col1'] |
 | C5_unit_missing_Q75 | fail | [mass] / [length] ** 3 |  | ['Miralles-García_1981_table_3:row3:col12', 'Miralles-García_1981_table_3:row4:col12', 'Miralles-García_1981_table_3:row5:col12', 'Miralles-García_1981_table_3:row6:col12', 'Miralles-García_1981_table_4:row3:col12', 'Miralles-García_1981_table_4:row4:col12', 'Miralles-García_1981_table_4:row5:col12', 'Miralles-García_1981_table_4:row6:col12'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 6.4 L | ['Miralles-García_1981_table_3:row3:col8', 'Miralles-García_1981_table_3:row4:col8', 'Miralles-García_1981_table_3:row5:col8', 'Miralles-García_1981_table_4:row3:col8', 'Miralles-García_1981_table_4:row4:col8', 'Miralles-García_1981_table_4:row5:col8', 'Miralles-García_1981_table_4:row6:col8'] |
@@ -203,7 +203,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

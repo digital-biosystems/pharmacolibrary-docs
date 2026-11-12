@@ -34,7 +34,7 @@ Nitrous oxide is an inhalational general anaesthetic and non-opioid analgesic us
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hampsey_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
 
 ## Pharmacodynamics (PD)
 
@@ -60,7 +60,7 @@ Nitrous oxide is an inhalational general anaesthetic and non-opioid analgesic us
 
 - **PubMed hits:** 747 matched, 152 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

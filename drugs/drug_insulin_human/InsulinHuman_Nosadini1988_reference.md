@@ -5,11 +5,11 @@
 
 # insulin (human) — `InsulinHuman_Nosadini1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The insulin human record was rejected because the extracted clearance value of 15.5 mL/min.kg has a dimension mismatch with the model structure.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-04 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The insulin human record was rejected because the extracted clearance value of 15.5 mL/min.kg has a dimension mismatch with the model structure.
 
-<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="true" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Porcine and human insulin absorption from subcutaneous tissues in normal and insulin-dependent diabetic subjects: a deconvolution-based approach. The Journal of clinical endocrinology and metabolism 67(3):551–559 (1988).
@@ -36,7 +36,7 @@ Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Por
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | mL/min.kg | ['Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | mL/min.kg ([length] ** 3 * [mass] / [time]) | ['Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.5 | ['Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract', 'Nosadini_1988:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

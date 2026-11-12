@@ -5,11 +5,11 @@
 
 # buprenorphine — `Buprenorphine_Ng2015_original_data_set`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The buprenorphine model was rejected because the total clearance parameter had a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:55 UTC (Rejected), but the paper was screened again on 2026-10-07 04:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The buprenorphine model was rejected because the total clearance parameter had a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Ng2015_original_data_set" status="rejected" stale="false" population="neonates with NAS and healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Ng2015_original_data_set" status="rejected" stale="true" population="neonates with NAS and healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ng CM, Dombrowsky E, Lin H, Erlich ME, Moody DE, Barrett JS et al. Population Pharmacokinetic Model of Sublingual Buprenorphine in Neonatal Abstinence Syndrome. Pharmacotherapy 35(7):670–680 (2015).
@@ -45,7 +45,7 @@ Ng CM, Dombrowsky E, Lin H, Erlich ME, Moody DE, Barrett JS et al. Population Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q1 | fail | [time] | days | ['T2:row20:col1', 'T2:row20:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | days ([time]) | ['T2:row20:col1', 'T2:row20:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T2:row8:col1', 'T2:row8:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['T2:row10:col1', 'T2:row10:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tang_2021:review'] |
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

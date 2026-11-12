@@ -34,7 +34,7 @@ Nimodipine is a calcium channel blocker used to treat subarachnoid hemorrhage. I
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Foucher_2025_reference](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neurological… (2025) | [10.1016/j.jns.2025.125666](https://doi.org/10.1016/j.jns.2025.125666) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Seker_2017_reference](drugs/drug_nimodipine/Nimodipine_Seker2017_reference.md) | — | 1-compartment (no model) | 3 | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Seker_2017_reference](drugs/drug_nimodipine/Nimodipine_Seker2017_reference.md) | — | 1-compartment (no model) | 3 | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) |
 
 ## ADME sites
 
@@ -68,7 +68,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 122 matched, 58 returned
 - **screened:** 11  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

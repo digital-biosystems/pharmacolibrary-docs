@@ -5,11 +5,11 @@
 
 # ticagrelor — `Ticagrelor_Kathman2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ticagrelor lacks population distribution volume and clearance parameters, identifying the record as an exposure/outcome paper rather than a compartmental PK model.
+> This record was reviewed on 2026-11-07 15:45 UTC (Rejected), but the paper was screened again on 2026-10-05 16:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ticagrelor lacks population distribution volume and clearance parameters, identifying the record as an exposure/outcome paper rather than a compartmental PK model.
 
-<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Kathman SJ, Wheeler JJ, Bhatt DL, Arnold SE, Lee JS. Population pharmacokinetic-pharmacodynamic modeling of PB2452, a monoclonal antibody fragment being developed as a ticagrelor reversal agent, in healthy volunteers. CPT: pharmacometrics & systems pharmacology 11(1):68–81 (2022).
@@ -37,7 +37,7 @@ Kathman SJ, Wheeler JJ, Bhatt DL, Arnold SE, Lee JS. Population pharmacokinetic-
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.195). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.195). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -226,16 +226,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row36:col1', 'psp412734-tbl-0003:row36:col2', 'psp412734-tbl-0003:row36:col3'] |
-| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row28:col1', 'psp412734-tbl-0003:row28:col2', 'psp412734-tbl-0003:row28:col3'] |
-| C5_dimension_Q290 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row30:col1', 'psp412734-tbl-0003:row30:col2', 'psp412734-tbl-0003:row30:col3'] |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row47:col1', 'psp412734-tbl-0003:row47:col2', 'psp412734-tbl-0003:row47:col3'] |
-| C5_dimension_Q306 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row12:col1', 'psp412734-tbl-0003:row12:col2', 'psp412734-tbl-0003:row12:col3'] |
-| C5_dimension_Q309 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row34:col1', 'psp412734-tbl-0003:row34:col2', 'psp412734-tbl-0003:row34:col3'] |
-| C5_dimension_Q331 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row8:col1', 'psp412734-tbl-0003:row8:col2', 'psp412734-tbl-0003:row8:col3'] |
-| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row39:col1', 'psp412734-tbl-0003:row39:col2', 'psp412734-tbl-0003:row39:col3'] |
-| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row41:col1', 'psp412734-tbl-0003:row41:col2', 'psp412734-tbl-0003:row41:col3'] |
-| C5_dimension_Q82 | fail | [luminosity] / [length] ** 2 | Units | ['psp412734-tbl-0003:row32:col1', 'psp412734-tbl-0003:row32:col2', 'psp412734-tbl-0003:row32:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row36:col1', 'psp412734-tbl-0003:row36:col2', 'psp412734-tbl-0003:row36:col3'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row28:col1', 'psp412734-tbl-0003:row28:col2', 'psp412734-tbl-0003:row28:col3'] |
+| C5_dimension_Q290 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row30:col1', 'psp412734-tbl-0003:row30:col2', 'psp412734-tbl-0003:row30:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row47:col1', 'psp412734-tbl-0003:row47:col2', 'psp412734-tbl-0003:row47:col3'] |
+| C5_dimension_Q306 | fail | 1 / [time] | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row12:col1', 'psp412734-tbl-0003:row12:col2', 'psp412734-tbl-0003:row12:col3'] |
+| C5_dimension_Q309 | fail | [length] ** 3 / [time] | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row34:col1', 'psp412734-tbl-0003:row34:col2', 'psp412734-tbl-0003:row34:col3'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row8:col1', 'psp412734-tbl-0003:row8:col2', 'psp412734-tbl-0003:row8:col3'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row39:col1', 'psp412734-tbl-0003:row39:col2', 'psp412734-tbl-0003:row39:col3'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row41:col1', 'psp412734-tbl-0003:row41:col2', 'psp412734-tbl-0003:row41:col3'] |
+| C5_dimension_Q82 | fail | [length] ** 3 | Units ([luminosity] / [length] ** 2) | ['psp412734-tbl-0003:row32:col1', 'psp412734-tbl-0003:row32:col2', 'psp412734-tbl-0003:row32:col3'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['psp412734-tbl-0003:row7:col1', 'psp412734-tbl-0003:row7:col2', 'psp412734-tbl-0003:row7:col3', 'Kathman_2022_table_2:row4:col1', 'Kathman_2022_table_2:row4:col2', 'Kathman_2022_table_2:row4:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -256,7 +256,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

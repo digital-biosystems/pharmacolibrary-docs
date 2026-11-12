@@ -4,11 +4,11 @@
 
 # firmonertinib — `Firmonertinib_Zou2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Firmonertinib model rejected because a reported unit could not be converted to SI, causing a dimension mismatch and negative clearance in the metabolite.
+> This record was reviewed on 2026-11-07 16:54 UTC (Rejected), but the paper was screened again on 2026-10-07 00:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Firmonertinib model rejected because a reported unit could not be converted to SI, causing a dimension mismatch and negative clearance in the metabolite.
 
-<div class="pk-model-meta" hidden drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="false" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="true" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Zou HX, Zhang YF, Zhong DF, Jiang Y, Liu F, Zhao QY et al. Effect of autoinduction and food on the pharmacokinetics of furmonertinib and its active metabolite characterized by a population pharmacokinetic model. Acta pharmacologica Sinica 43(7):1865–1874 (2022).
@@ -48,7 +48,7 @@ Zou HX, Zhang YF, Zhong DF, Jiang Y, Liu F, Zhao QY et al. Effect of autoinducti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.594). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.594). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -164,10 +164,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row9:col1', 'tab_1:row9:col2', 'tab_1:row9:col3', 'tab_1:row9:col4', 'tab_1:row9:col5'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4', 'tab_1:row2:col5'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4', 'tab_1:row3:col5'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3', 'tab_1:row14:col4', 'tab_1:row14:col5'] |
-| C5_dimension_Q47 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5'] |
-| C5_dimension_Q48 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4', 'tab_1:row12:col5'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row4:col5'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3', 'tab_1:row14:col4', 'tab_1:row14:col5'] |
+| C5_dimension_Q47 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5'] |
+| C5_dimension_Q48 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4', 'tab_1:row12:col5'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row4:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col3', 'tab_1:row10:col4', 'tab_1:row10:col5'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['tab_1:row5:col1', 'tab_1:row5:col2', 'tab_1:row5:col3', 'tab_1:row5:col4', 'tab_1:row5:col5'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col4', 'tab_1:row6:col5'] |
@@ -195,7 +195,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -30,7 +30,7 @@
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ higuchi_r2](drugs/drug_islatravir/Islatravir_Kinsale2024_higuchi_r2.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ ritger_peppas_b_r2](drugs/drug_islatravir/Islatravir_Kinsale2024_ritger_peppas_b_r2.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ zero_order_r2](drugs/drug_islatravir/Islatravir_Kinsale2024_zero_order_r2.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Oliveira_2026_reference](drugs/drug_islatravir/Islatravir_Oliveira2026_reference.md) | — | 1-compartment (no model) | 3 | Oliveira D et al., Harnessing Pharmacokinetic Modeling to…, Pharmaceutics (2026) | [10.3390/pharmaceutics18050522](https://doi.org/10.3390/pharmaceutics18050522) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Oliveira_2026_reference](drugs/drug_islatravir/Islatravir_Oliveira2026_reference.md) | — | 1-compartment (no model) | 3 | Oliveira D et al., Harnessing Pharmacokinetic Modeling to…, Pharmaceutics (2026) | [10.3390/pharmaceutics18050522](https://doi.org/10.3390/pharmaceutics18050522) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,7 +57,7 @@
 
 - **PubMed hits:** 44 matched, 34 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # naproxen — `Naproxen_Calvo1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimension mismatch on a structural parameter for the naproxen model derived from the paper abstract.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 08:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimension mismatch on a structural parameter for the naproxen model derived from the paper abstract.
 
-<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Calvo1979_reference" status="rejected" stale="false" population="healthy volunteers and patients with diabetic microangiopathy" measured-compound="naproxen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Calvo1979_reference" status="rejected" stale="true" population="healthy volunteers and patients with diabetic microangiopathy" measured-compound="naproxen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Calvo MV, Dominguez-Gil A, Miralles JM, de Pablo F. Pharmacokinetics of naproxen in healthy volunteers and in patients with diabetic microangiopathy. International journal of clinical pharmacology and biopharmacy 17(12):486–491 (1979).
@@ -42,7 +42,7 @@ Calvo MV, Dominguez-Gil A, Miralles JM, de Pablo F. Pharmacokinetics of naproxen
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Calvo_1979:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Calvo_1979:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Björnsson_2011:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['Calvo_1979:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Calvo_1979:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 4.29e+03 L | ['Björnsson_2011:review'] |
 
@@ -173,7 +173,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

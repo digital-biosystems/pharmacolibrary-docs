@@ -4,11 +4,11 @@
 
 # tolcapone — `Tolcapone_Jorga2000_fluctuator_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Tolcapone record rejected because the peripheral volume of distribution value 1.08 uses an unrecognized unit, and the terminal half-life value 0.55 is dimensionally inconsistent.
+> This record was reviewed on 2026-11-07 16:32 UTC (Rejected), but the paper was screened again on 2026-10-06 14:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tolcapone record rejected because the peripheral volume of distribution value 1.08 uses an unrecognized unit, and the terminal half-life value 0.55 is dimensionally inconsistent.
 
-<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_fluctuator_model" status="rejected" stale="true" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics of tolcapone in parkinsonian patients in dose finding studies. British journal of clinical pharmacology 49(1):39–48 (2000).
@@ -46,7 +46,7 @@ Jorga K, Fotteler B, Banken L, Snell P, Steimer JL. Population pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -169,9 +169,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C2_base_sign_Q25 | fail |  | -0.81 |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3'] |
-| C5_dimension_Q25 | fail | [length] ** 3 | CL | ['tab_1:row16:col1', 'tab_1:row16:col2'] |
-| C5_dimension_Q354 | fail | [length] ** 3 | CL | ['tab_1:row15:col1', 'tab_1:row15:col2'] |
-| C5_dimension_Q49 | fail | [time] | h | ['tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col5'] |
+| C5_dimension_Q25 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_1:row16:col1', 'tab_1:row16:col2'] |
+| C5_dimension_Q354 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['tab_1:row15:col1', 'tab_1:row15:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row5:col1', 'tab_1:row5:col2', 'tab_1:row5:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_1:row8:col3'] |
 | C5_unit_missing_Q57 | fail | [time] | V | ['tab_1:row20:col1', 'tab_1:row20:col2'] |
@@ -198,7 +198,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

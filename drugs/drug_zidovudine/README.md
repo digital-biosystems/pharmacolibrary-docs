@@ -32,7 +32,7 @@ Zidovudine (AZT) is an antiviral nucleoside analogue used to treat HIV infection
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Fauchet_2013_reference](drugs/drug_zidovudine/Zidovudine_Fauchet2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Fauchet F et al., Population pharmacokinetics study of re…, Antimicrobial agents and ch… (2013) | [10.1128/AAC.00911-13](https://doi.org/10.1128/AAC.00911-13) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tang_2026_reference](drugs/drug_zidovudine/Zidovudine_Tang2026_reference.md) | — | general linear (no model) | 7 | Tang F et al., The study on the transport and phosphor…, Scientific reports (2026) | [10.1038/s41598-026-49905-1](https://doi.org/10.1038/s41598-026-49905-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Tang_2026_reference](drugs/drug_zidovudine/Zidovudine_Tang2026_reference.md) | — | general linear (no model) | 7 | Tang F et al., The study on the transport and phosphor…, Scientific reports (2026) | [10.1038/s41598-026-49905-1](https://doi.org/10.1038/s41598-026-49905-1) |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.10).">human + animal</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [von_2009_reference](drugs/drug_zidovudine/Zidovudine_von2009_reference.md) | — | general linear (no model) | 6 (+3 cov.) | von Kleist M et al., Pharmacokinetic-pharmacodynamic relatio…, European journal of pharmac… (2009) | [10.1016/j.ejps.2008.12.010](https://doi.org/10.1016/j.ejps.2008.12.010) |
 
 ## Pharmacodynamics (PD)
@@ -84,7 +84,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 224 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

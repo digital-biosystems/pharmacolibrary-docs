@@ -4,11 +4,11 @@
 
 # bumetanide — `Bumetanide_Pentikinen1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:41 UTC (Needs review), but the paper was screened again on 2026-10-06 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="bumetanide" model-id="Bumetanide_Pentikinen1985_reference" status="needs_review" stale="false" population="healthy subjects and patients with renal failure" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bumetanide" model-id="Bumetanide_Pentikinen1985_reference" status="extracted" stale="true" population="healthy subjects and patients with renal failure" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide kinetics in renal failure. Clinical pharmacology and therapeutics 37(5):582–588 (1985).
@@ -26,8 +26,6 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | volume at steady state | Vss | 22.1 | L |
@@ -37,7 +35,7 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +119,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Pentikäinen_1985:abstract', 'Pentikäinen_1985:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Pentikäinen_1985:abstract', 'Pentikäinen_1985:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Pentikäinen_1985:abstract', 'Pentikäinen_1985:abstract'] |
@@ -155,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,9 +5,11 @@
 
 # cariprazine — `Cariprazine_Periclou2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="not_simulated" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></div>
+> This record was reviewed on 2026-11-07 16:37 UTC (Not simulated), but the paper was screened again on 2026-10-06 15:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+
+<div class="pk-model-meta" hidden drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="extracted" stale="true" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Population Pharmacokinetics of Cariprazine and its Major Metabolites. European journal of drug metabolism and pharmacokinetics 46(1):53–69 (2021).
@@ -27,8 +29,6 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka First-order absorption rate constant | kabs | 0.352 | h−1 |
@@ -40,7 +40,7 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,17 +152,18 @@ The record lacks explicit values for the cariprazine central volume, first perip
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 21.5 L/h | ['Periclou_2021:results_prose'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 266 L | ['Periclou_2021:results_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 128 L | ['Periclou_2021:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 149 L | ['Periclou_2021:results_prose'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_beta | pass | 10.1 | 8.576 | 0.8491 | 0.25 | reported t½β |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 21.5 L/h |  |  | ['Periclou_2021:results_prose'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 266 L |  |  | ['Periclou_2021:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 128 L |  |  | ['Periclou_2021:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 149 L |  |  | ['Periclou_2021:results_prose'] |
 
 **Reviewer per-scenario checks:**
 

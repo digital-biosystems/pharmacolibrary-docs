@@ -4,11 +4,11 @@
 
 # darifenacin — `Darifenacin_Kerbusch2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The darifenacin record was rejected because the negative distribution rate constant kcomp (-0.555 h⁻¹) is physically impossible.
+> This record was reviewed on 2026-11-07 16:47 UTC (Rejected), but the paper was screened again on 2026-10-07 09:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The darifenacin record was rejected because the negative distribution rate constant kcomp (-0.555 h⁻¹) is physically impossible.
 
-<div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="false" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="true" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic modelling of darifenacin and its hydroxylated metabolite using pooled data, incorporating saturable first-pass metabolism, CYP2D6 genotype and formulation-dependent bioavailability. British journal of clinical pharmacology 56(6):639–652 (2003).
@@ -40,7 +40,7 @@ Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic mode
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_3:row3:col1', 'tab_3:row3:col3'] |
 | C5_dimension_Q48 | pass | 1 / [time] |  | ['tab_3:row7:col1', 'tab_3:row7:col3'] |
-| C5_dimension_Q49 | fail | [time] | h | ['tab_3:row9:col1', 'tab_3:row9:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['tab_3:row9:col1', 'tab_3:row9:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_3:row6:col1', 'tab_3:row6:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 24.8 L/h | ['tab_3:row3:col1', 'tab_3:row3:col3'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

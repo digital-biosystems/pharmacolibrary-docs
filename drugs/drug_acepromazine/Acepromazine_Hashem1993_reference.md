@@ -5,11 +5,11 @@
 
 # acepromazine — `Acepromazine_Hashem1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because it lacks distribution volume and clearance, containing only summary statistics from an abstract-only source.
+> This record was reviewed on 2026-11-07 15:46 UTC (Rejected), but the paper was screened again on 2026-10-06 14:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because it lacks distribution volume and clearance, containing only summary statistics from an abstract-only source.
 
-<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="rejected" stale="false" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="rejected" stale="true" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hashem A, Keller H. Disposition, bioavailability and clinical efficacy of orally administered acepromazine in the horse. Journal of veterinary pharmacology and therapeutics 16(3):359–368 (1993).
@@ -41,7 +41,7 @@ Hashem A, Keller H. Disposition, bioavailability and clinical efficacy of orally
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,8 +129,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q310 | fail | [mass] | mg/kg | ['Hashem_1993:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q310 | fail | [time] | mg/kg ([mass]) | ['Hashem_1993:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Hashem_1993:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Hashem_1993:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hashem_1993:abstract'] |
@@ -152,7 +153,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

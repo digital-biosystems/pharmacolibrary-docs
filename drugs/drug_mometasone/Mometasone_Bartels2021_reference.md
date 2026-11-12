@@ -5,11 +5,11 @@
 
 # mometasone — `Mometasone_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for mometasone furoate is rejected due to an absorption rate constant unit error and an orphaned peripheral compartment.
+> This record was reviewed on 2026-11-07 16:36 UTC (Rejected), but the paper was screened again on 2026-10-08 00:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for mometasone furoate is rejected due to an absorption rate constant unit error and an orphaned peripheral compartment.
 
-<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -44,7 +44,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Vlachou_2021:review'] |
 | C5_dimension_Q310 | pass | [time] |  | ['Tab5:row8:col5'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab5:row7:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab5:row7:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab5:row6:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

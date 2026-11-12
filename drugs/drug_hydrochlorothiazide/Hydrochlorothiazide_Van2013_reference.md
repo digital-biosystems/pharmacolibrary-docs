@@ -5,11 +5,11 @@
 
 # hydrochlorothiazide — `Hydrochlorothiazide_Van2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Hydrochlorothiazide renal clearance was rejected due to a dimension mismatch on the structural parameter.
+> This record was reviewed on 2026-11-07 14:30 UTC (Rejected), but the paper was screened again on 2026-11-04 01:31 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Hydrochlorothiazide renal clearance was rejected due to a dimension mismatch on the structural parameter.
 
-<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="rejected" stale="false" population="healthy subjects, CHF patients, and patients with renal failure or hypertension" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="rejected" stale="true" population="healthy subjects, CHF patients, and patients with renal failure or hypertension" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population-based meta-analysis of hydrochlorothiazide pharmacokinetics. Biopharmaceutics & drug disposition 34(9):527–539 (2013).
@@ -43,7 +43,7 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population-based meta-analysis 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.842). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,12 +128,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q26 | fail | 1 / [time] | 1/h | ['Van_2013_table_p7_1:row2:col1'] |
-| C5_dimension_Q30 | fail | 1 / [time] | 1/h | ['Van_2013_table_p7_1:row6:col1'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Van_2013_table_p7_1:row2:col1'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Van_2013_table_p7_1:row6:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Van_2013_table_p7_1:row0:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Van_2013_table_p7_1:row5:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Van_2013_table_p7_1:row7:col1'] |
-| C5_dimension_Q79 | fail | 1 / [time] | 1/h | ['Van_2013_table_p7_1:row4:col1'] |
+| C5_dimension_Q79 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Van_2013_table_p7_1:row4:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 97.3 L | ['Van_2013_table_p7_1:row5:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 178 L | ['Van_2013_table_p7_1:row7:col1'] |
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -37,7 +37,7 @@ Prednisone is a glucocorticoid used to treat many inflammatory, autoimmune, and 
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Bouazza_2025_reference](drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Magee_2002_reference](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Sassen_2020_reference](drugs/drug_prednisone/Prednisone_Sassen2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Sassen SDT et al., Population Pharmacokinetics and Pharmac…, Clinical infectious disease… (2020) | [10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | — | 1-compartment (no model) | 2 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | — | 1-compartment (no model) | 2 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
 
 ## Pharmacodynamics (PD)
 
@@ -93,13 +93,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 20:09 | 20:37 | 3/1/0 | 1/0/0 | 0/0/1 | 396,148/59,074 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 2/22 | 22/1 | 0 |
+| 2026-10-04 20:09 | 20:37 | 3/1/0 | 1/0/0 | 0/0/1 | 396,148/59,074 | ollama / qwen3.8:27b-mtp-q8_0 | 22 | 2/22 | 21/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 376 matched, 75 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

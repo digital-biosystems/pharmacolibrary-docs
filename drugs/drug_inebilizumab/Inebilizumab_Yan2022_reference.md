@@ -4,11 +4,11 @@
 
 # inebilizumab — `Inebilizumab_Yan2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.
+> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.
 
-<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="true" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic Modeling of Inebilizumab in Subjects with Neuromyelitis Optica Spectrum Disorders, Systemic Sclerosis, or Relapsing Multiple Sclerosis. Clinical pharmacokinetics 61(3):387–400 (2022).
@@ -46,7 +46,7 @@ Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab6:row11:col1', 'Tab6:row11:col2', 'Tab6:row11:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab6:row3:col1', 'Tab6:row3:col2', 'Tab6:row3:col3', 'Tab6:row3:col5', 'Tab6:row3:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab6:row7:col1', 'Tab6:row7:col2', 'Tab6:row7:col3', 'Tab6:row7:col5', 'Tab6:row7:col6'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | µg/day | ['Tab6:row9:col1', 'Tab6:row9:col2', 'Tab6:row9:col3', 'Tab6:row9:col5', 'Tab6:row9:col6'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µg/day ([mass] / [time]) | ['Tab6:row9:col1', 'Tab6:row9:col2', 'Tab6:row9:col3', 'Tab6:row9:col5', 'Tab6:row9:col6'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 188 | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00783 L/h | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
@@ -175,7 +175,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

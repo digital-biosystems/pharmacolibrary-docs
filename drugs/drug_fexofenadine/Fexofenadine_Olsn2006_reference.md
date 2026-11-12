@@ -5,11 +5,11 @@
 
 # fexofenadine — `Fexofenadine_Olsn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Bioavailability was extracted as a percentage (2.6%) rather than a fraction, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:17 UTC (Rejected), but the paper was screened again on 2026-10-07 23:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Bioavailability was extracted as a percentage (2.6%) rather than a fraction, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="false" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="true" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Olsén L, Ingvast-Larsson C, Larsson P, Broström H, Bondesson U, Sundqvist M et al. Fexofenadine in horses: pharmacokinetics, pharmacodynamics and effect of ivermectin pretreatment. Journal of veterinary pharmacology and therapeutics 29(2):129–135 (2006).
@@ -41,7 +41,7 @@ Olsén L, Ingvast-Larsson C, Larsson P, Broström H, Bondesson U, Sundqvist M et
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Olsén_2006:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Olsén_2006:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Olsén_2006:abstract'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Olsén_2006:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Olsén_2006:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 56 L/h | ['Olsén_2006:abstract'] |
@@ -143,7 +143,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

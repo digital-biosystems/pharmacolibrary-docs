@@ -5,11 +5,11 @@
 
 # atezolizumab — `Atezolizumab_Netterberg2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Atezolizumab record rejected because the 1/h unit for the elimination rate constant cannot be converted to SI.
+> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-07 09:22 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Atezolizumab record rejected because the 1/h unit for the elimination rate constant cannot be converted to SI.
 
-<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="false" population="patients with relapsed/refractory non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="true" population="patients with relapsed/refractory non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Netterberg I, Li CC, Molinero L, Budha N, Sukumaran S, Stroh M et al. A PK/PD Analysis of Circulating Biomarkers and Their Relationship to Tumor Response in Atezolizumab-Treated non-small Cell Lung Cancer Patients. Clinical pharmacology and therapeutics 105(2):486–495 (2019).
@@ -40,7 +40,7 @@ Netterberg I, Li CC, Molinero L, Budha N, Sukumaran S, Stroh M et al. A PK/PD An
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,7 +146,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['cpt1198-tbl-0001:row27:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chan_2025:review'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | pg/mL | ['cpt1198-tbl-0001:row4:col1', 'cpt1198-tbl-0001:row11:col1'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | pg/mL ([mass] / [length] ** 3) | ['cpt1198-tbl-0001:row4:col1', 'cpt1198-tbl-0001:row11:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 6.91 L | ['Chan_2025:review'] |
 
@@ -166,7 +166,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

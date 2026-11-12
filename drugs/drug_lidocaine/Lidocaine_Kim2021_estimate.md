@@ -4,11 +4,11 @@
 
 # lidocaine — `Lidocaine_Kim2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
+> This record was reviewed on 2026-11-07 14:37 UTC (Rejected), but the paper was screened again on 2026-10-06 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Metabolite Pharmacokinetics in Hyaluronic Acid Injection. Pharmaceutics 13(2) (2021).
@@ -50,7 +50,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -181,15 +181,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 13 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | nmol/L | ['pharmaceutics-13-00203-t004:row12:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['pharmaceutics-13-00203-t004:row12:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-13-00203-t004:row13:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-13-00203-t004:row15:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['pharmaceutics-13-00203-t004:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-13-00203-t004:row3:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-13-00203-t004:row10:col2'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | nmol/h | ['pharmaceutics-13-00203-t004:row11:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | nmol/h ([substance] / [time]) | ['pharmaceutics-13-00203-t004:row11:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-13-00203-t004:row6:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['pharmaceutics-13-00203-t004:row5:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['pharmaceutics-13-00203-t004:row8:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 14.9 L/h | ['pharmaceutics-13-00203-t004:row13:col2'] |
@@ -213,7 +214,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

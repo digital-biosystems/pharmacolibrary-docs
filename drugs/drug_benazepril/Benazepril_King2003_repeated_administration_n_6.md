@@ -4,11 +4,11 @@
 
 # benazepril — `Benazepril_King2003_repeated_administration_n_6`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> The record was rejected because the elimination rate constant for benazeprilat has a dimension mismatch, and the absorption rate constant is assigned a time unit (h) rather than a rate unit.
+> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-07 05:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the elimination rate constant for benazeprilat has a dimension mismatch, and the absorption rate constant is assigned a time unit (h) rather than a rate unit.
 
-<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="false" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="true" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the disposition and effect of benazepril and benazeprilat in cats. Journal of veterinary pharmacology and therapeutics 26(3):213–224 (2003).
@@ -47,7 +47,7 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -162,10 +162,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | nmol/L | ['tab_1:row9:col2', 'tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['tab_1:row9:col2', 'tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
 | C5_dimension_Q331 | pass | [mass] / [length] ** 3 |  | ['tab_1:row10:col5'] |
-| C5_dimension_Q47 | fail | [time] | h | ['tab_1:row6:col5'] |
-| C5_dimension_Q49 | fail | [time] | h | ['tab_1:row13:col5'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['tab_1:row6:col5'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['tab_1:row13:col5'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row4:col2', 'tab_1:row4:col4'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | n ¼ 6 | ['tab_1:row14:col2', 'tab_1:row14:col4', 'tab_1:row14:col5'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -188,7 +188,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

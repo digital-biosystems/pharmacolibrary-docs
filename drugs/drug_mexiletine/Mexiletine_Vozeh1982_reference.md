@@ -4,11 +4,11 @@
 
 # mexiletine — `Mexiletine_Vozeh1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The volume of distribution parameter for mexiletine used a non-standard unit, causing a dimension mismatch that led to rejection.
+> This record was reviewed on 2026-11-07 15:10 UTC (Rejected), but the paper was screened again on 2026-10-08 19:55 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution parameter for mexiletine used a non-standard unit, causing a dimension mismatch that led to rejection.
 
-<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="false" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="true" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in patients treated with oral mexiletine. European journal of clinical pharmacology 23(5):445–451 (1982).
@@ -38,7 +38,7 @@ Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q352 | fail | dimensionless | 1/kg | ['tab_0:row4:col1'] |
+| C5_dimension_Q352 | fail | [length] ** 3 | 1/kg (dimensionless) | ['tab_0:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_0:row5:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Sauer_2025:review'] |
 | C8_topology | pass |  |  |  |
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

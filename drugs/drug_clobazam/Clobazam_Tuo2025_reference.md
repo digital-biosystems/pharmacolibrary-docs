@@ -4,11 +4,11 @@
 
 # clobazam — `Clobazam_Tuo2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the unit for the clobazam clearance of 10.53 was invalid, preventing dimensional validation.
+> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-10-06 18:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the clobazam clearance of 10.53 was invalid, preventing dimensional validation.
 
-<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="false" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="true" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Tuo Y, Yu X, Li S, Wang J, Liu M, Song X et al. Population Pharmacokinetics and Model-Informed Precision Dosing of Clobazam Based on the Developmental and Genetic Characteristics of Children with Epilepsy. Pharmaceutics 17(7) (2025).
@@ -40,7 +40,7 @@ Tuo Y, Yu X, Li S, Wang J, Liu M, Song X et al. Population Pharmacokinetics and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,8 +148,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | fail | 1 / [length] ** 3 | L−1 | ['pharmaceutics-17-00813-t002:row4:col1', 'pharmaceutics-17-00813-t002:row4:col2', 'pharmaceutics-17-00813-t002:row4:col3', 'pharmaceutics-17-00813-t002:row4:col4', 'pharmaceutics-17-00813-t002:row4:col5'] |
-| C5_dimension_Q27 | fail | 1 / [length] ** 3 | L−1 | ['pharmaceutics-17-00813-t002:row6:col1', 'pharmaceutics-17-00813-t002:row6:col2', 'pharmaceutics-17-00813-t002:row6:col3', 'pharmaceutics-17-00813-t002:row6:col4', 'pharmaceutics-17-00813-t002:row6:col5'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | L−1 (1 / [length] ** 3) | ['pharmaceutics-17-00813-t002:row4:col1', 'pharmaceutics-17-00813-t002:row4:col2', 'pharmaceutics-17-00813-t002:row4:col3', 'pharmaceutics-17-00813-t002:row4:col4', 'pharmaceutics-17-00813-t002:row4:col5'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | L−1 (1 / [length] ** 3) | ['pharmaceutics-17-00813-t002:row6:col1', 'pharmaceutics-17-00813-t002:row6:col2', 'pharmaceutics-17-00813-t002:row6:col3', 'pharmaceutics-17-00813-t002:row6:col4', 'pharmaceutics-17-00813-t002:row6:col5'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['pharmaceutics-17-00813-t002:row5:col1', 'pharmaceutics-17-00813-t002:row5:col2', 'pharmaceutics-17-00813-t002:row5:col3', 'pharmaceutics-17-00813-t002:row5:col4', 'pharmaceutics-17-00813-t002:row5:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-17-00813-t002:row2:col1', 'pharmaceutics-17-00813-t002:row2:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['pharmaceutics-17-00813-t002:row3:col1', 'pharmaceutics-17-00813-t002:row3:col2', 'pharmaceutics-17-00813-t002:row3:col3', 'pharmaceutics-17-00813-t002:row3:col4', 'pharmaceutics-17-00813-t002:row3:col5'] |
@@ -174,7 +174,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

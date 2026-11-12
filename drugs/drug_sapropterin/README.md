@@ -34,8 +34,8 @@ Sapropterin is used to treat phenylketonuria, a metabolic disorder. It is author
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Feillet_2008_reference](drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Muntau_2017_reference](drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017) | [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Qi_2015_reference](drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Muntau_2017_reference](drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017) | [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Qi_2015_reference](drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4) |
 
 ## ADME sites
 
@@ -70,7 +70,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 11 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

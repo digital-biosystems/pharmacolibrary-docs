@@ -5,11 +5,11 @@
 
 # capecitabine — `Capecitabine_Gieschke2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for capecitabine was recorded as 70 L/h, a dimensionally invalid unit for a first-order rate process.
+> This record was reviewed on 2026-11-07 14:33 UTC (Rejected), but the paper was screened again on 2026-10-07 16:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for capecitabine was recorded as 70 L/h, a dimensionally invalid unit for a first-order rate process.
 
-<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Gieschke2003_reference" status="rejected" stale="false" population="adults with advanced or metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Gieschke2003_reference" status="rejected" stale="true" population="adults with advanced or metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Gieschke R, Burger HU, Reigner B, Blesch KS, Steimer JL. Population pharmacokinetics and concentration-effect relationships of capecitabine metabolites in colorectal cancer patients. British journal of clinical pharmacology 55(3):252–263 (2003).
@@ -46,7 +46,7 @@ Gieschke R, Burger HU, Reigner B, Blesch KS, Steimer JL. Population pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_3:row5:col1', 'tab_3:row5:col2', 'tab_3:row5:col3', 'tab_3:row5:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_3:row9:col1', 'tab_3:row9:col2', 'tab_3:row9:col3', 'tab_3:row9:col4'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_3:row7:col1', 'tab_3:row7:col2', 'tab_3:row7:col3', 'tab_3:row7:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h -1 | ['tab_3:row2:col1', 'tab_3:row2:col2', 'tab_3:row2:col3', 'tab_3:row2:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l h -1 ([length] ** 3 / [time]) | ['tab_3:row2:col1', 'tab_3:row2:col2', 'tab_3:row2:col3', 'tab_3:row2:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_3:row4:col1', 'tab_3:row4:col2', 'tab_3:row4:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_3:row6:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_3:row8:col1', 'tab_3:row8:col2', 'tab_3:row8:col3', 'tab_3:row8:col4'] |
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

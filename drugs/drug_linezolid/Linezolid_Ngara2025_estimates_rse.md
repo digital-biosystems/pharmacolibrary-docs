@@ -5,11 +5,11 @@
 
 # linezolid — `Linezolid_Ngara2025_estimates_rse`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> CL/F 404 L/h and V1/F 764 L are implausibly large for mouse linezolid, likely unit extraction errors.
+> This record was reviewed on 2026-11-07 15:27 UTC (Rejected), but the paper was screened again on 2026-10-13 12:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. CL/F 404 L/h and V1/F 764 L are implausibly large for mouse linezolid, likely unit extraction errors.
 
-<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse" status="rejected" stale="true" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational Modeling of BTZ-043 to Predict Phase 2A Efficacy and Evaluate Drug-Drug Interactions With Bedaquiline, Pretomanid, and Linezolid in Murine Models. The Journal of infectious diseases 231(5):e901–e911 (2025).
@@ -47,7 +47,7 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.783). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.783). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,13 +145,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Ngara_2025_table_1:row3:col1', 'Ngara_2025_table_1:row27:col1'] |
-| C5_dimension_Q331 | fail | 1 / [time] | d−1 | ['Ngara_2025_table_1:row17:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | d−1 (1 / [time]) | ['Ngara_2025_table_1:row17:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Ngara_2025_table_1:row26:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Ngara_2025_table_1:row6:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Ngara_2025_table_1:row5:col1'] |
 | C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['Ngara_2025_table_1:row2:col1'] |
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['Ngara_2025_table_1:row1:col1', 'Ngara_2025_table_1:row25:col1'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Ngara_2025_table_1:row4:col1'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Ngara_2025_table_1:row4:col1'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['Ngara_2025_table_1:row29:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q290 | pass | volume within physiological range | 764 L | ['Ngara_2025_table_1:row3:col1', 'Ngara_2025_table_1:row27:col1'] |
@@ -173,7 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

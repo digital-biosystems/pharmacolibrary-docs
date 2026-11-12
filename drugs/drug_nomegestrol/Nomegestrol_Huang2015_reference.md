@@ -4,11 +4,11 @@
 
 # nomegestrol — `Nomegestrol_Huang2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The nomegestrol acetate clearance parameter has units of h·kg, which is dimensionally incorrect.
+> This record was reviewed on 2026-11-07 16:57 UTC (Rejected), but the paper was screened again on 2026-10-07 08:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The nomegestrol acetate clearance parameter has units of h·kg, which is dimensionally incorrect.
 
-<div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="false" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="true" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution, and excretion of nomegestrol acetate in female rats. European journal of drug metabolism and pharmacokinetics 40(4):435–442 (2015).
@@ -37,7 +37,7 @@ Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [time] * [mass] | h·kg | ['Huang_2015:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | h·kg ([time] * [mass]) | ['Huang_2015:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.58 | ['Huang_2015:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

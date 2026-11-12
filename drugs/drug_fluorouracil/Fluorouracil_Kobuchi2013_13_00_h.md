@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2013_13_00_h`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The volume of distribution for fluorouracil, given as 3.83 mm3, uses a non-standard unit that blocked unit standardization, causing rejection.
+> This record was reviewed on 2026-11-07 14:08 UTC (Rejected), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution for fluorouracil, given as 3.83 mm3, uses a non-standard unit that blocked unit standardization, causing rejection.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_13_00_h" status="rejected" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_13_00_h" status="rejected" stale="true" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmacodynamic modeling of 5-fluorouracil by using a biomarker to predict tumor growth in a rat model of colorectal cancer. Journal of pharmaceutical sciences 102(6):2056–2067 (2013).
@@ -42,7 +42,7 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Kobuchi_2013_table_2:row0:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | day-1 | ['Kobuchi_2013_table_2:row2:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | day-1 (1 / [time]) | ['Kobuchi_2013_table_2:row2:col3'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 | mm3 | ['Kobuchi_2013_table_2:row3:col3'] |
 | C8_topology | pass |  |  |  |
 
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

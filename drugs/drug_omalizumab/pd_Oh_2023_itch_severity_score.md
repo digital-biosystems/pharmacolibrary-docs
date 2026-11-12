@@ -15,7 +15,7 @@
 
 **As extracted:** Total omalizumab drives weekly itch severity score: delayed effect through an effect compartment.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model uses an effect compartment approach where total omalizumab concentration in the effect compartment (C bio) linearly inhibits the weekly itch severity score, with an effect-site elimination rate constant (ke0) of 0.0937 1/d and a linear slope term of 0.0172. A parallel additive placebo effect is described with a baseline score of 13.5, a plateau effect of 6.73, and an onset rate of 0.033 1/d.
 >
@@ -46,6 +46,35 @@ Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & s
 </details>
 
 
+## Exposure-response model
+
+`Omalizumab_Oh2023_PD_itch_severity_score` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 13.5 | — |
+| slope | 0.0172 | — |
+
+Closed-form check points (response, SI): `at_0` = 13.5, `per_exposure_unit` = 0.0172
+
+Deviations:
+
+- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
@@ -73,19 +102,33 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score/Omalizumab_Oh2023_PD_itch_severity_score_modelica.zip" download>Omalizumab_Oh2023_PD_itch_severity_score_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score/Omalizumab_Oh2023_PD_itch_severity_score_matlab.zip" download>Omalizumab_Oh2023_PD_itch_severity_score_matlab.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score/Omalizumab_Oh2023_PD_itch_severity_score_sbml.zip" download>Omalizumab_Oh2023_PD_itch_severity_score_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score/Omalizumab_Oh2023_PD_itch_severity_score_cellml.zip" download>Omalizumab_Oh2023_PD_itch_severity_score_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Omalizumab_Oh2023_PD_itch_severity_score`. <https://pharmacolibrary.github.io/#/drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score>
+
+```bibtex
+@misc{pharmacolibrary_OmalizumabOh2023PDitchseverityscore,
+  title  = {{Pharmacolibrary model Omalizumab_Oh2023_PD_itch_severity_score}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_omalizumab/Omalizumab_Oh2023_PD_itch_severity_score},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

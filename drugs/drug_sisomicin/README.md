@@ -27,7 +27,7 @@ Sisomicin is an aminoglycoside antibiotic that inhibits protein synthesis in bac
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Meyers_1976_reference](drugs/drug_sisomicin/Sisomicin_Meyers1976_reference.md) | — | 1-compartment (no model) | 1 | Meyers BR et al., Pharmacokinetic parameters of sisomicin, Antimicrobial agents and ch… (1976) | [10.1128/AAC.10.1.25](https://doi.org/10.1128/AAC.10.1.25) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Firsov_1980_reference](drugs/drug_sisomicin/Sisomicin_Firsov1980_reference.md) | — | 1-compartment (no model) | 1 | Firsov AA et al., [Pharmacokinetic basis of the nephrotox…, Antibiotiki (1980) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Firsov_1980_reference](drugs/drug_sisomicin/Sisomicin_Firsov1980_reference.md) | — | 1-compartment (no model) | 1 | Firsov AA et al., [Pharmacokinetic basis of the nephrotox…, Antibiotiki (1980) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nishimura_1984_reference](drugs/drug_sisomicin/Sisomicin_Nishimura1984_reference.md) | — | 1-compartment (no model) | 0 | Nishimura T et al., [A pharmacokinetic investigation of sis…, The Japanese journal of ant… (1984) | — |
 
 ## Pharmacodynamics (PD)
@@ -56,7 +56,7 @@ Sisomicin is an aminoglycoside antibiotic that inhibits protein synthesis in bac
 
 - **PubMed hits:** 72 matched, 53 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

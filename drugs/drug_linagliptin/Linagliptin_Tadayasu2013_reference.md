@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4_activity&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4 activity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_Tadayasu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> A structural parameter failed a dimensional check, and one compartment had no path from the dose.
+> This record was reviewed on 2026-11-07 16:25 UTC (Rejected), but the paper was screened again on 2026-10-05 00:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A structural parameter failed a dimensional check, and one compartment had no path from the dose.
 
-<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Population pharmacokinetic/pharmacodynamic analysis of the DPP-4 inhibitor linagliptin in Japanese patients with type 2 diabetes mellitus. Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16(5):708–721 (2013).
@@ -43,7 +44,7 @@ Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
 | C5_dimension_Q309 | pass | [length] ** 3 / [time] |  | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
-| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L | ['tab_2:row13:col1', 'tab_2:row13:col2'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['tab_2:row13:col1', 'tab_2:row13:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['tab_2:row9:col1', 'tab_2:row9:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
@@ -166,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

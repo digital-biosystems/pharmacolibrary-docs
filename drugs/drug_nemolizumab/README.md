@@ -32,7 +32,7 @@ Nemolizumab is a monoclonal antibody used to treat atopic dermatitis and prurigo
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Reproduces with caveats" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces with caveats</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Fauchet_2026_reference](drugs/drug_nemolizumab/Nemolizumab_Fauchet2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+8 cov.) | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331 — no SI value to build from</sub> | [Takechi_2025_reference](drugs/drug_nemolizumab/Nemolizumab_Takechi2025_reference.md) | — | 1-compartment (no model) | 5 | Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025) | [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Sidbury_2022_reference](drugs/drug_nemolizumab/Nemolizumab_Sidbury2022_reference.md) | — | 1-compartment (no model) | 6 | Sidbury R et al., Pharmacokinetics, Safety, Efficacy, and…, Dermatology and therapy (2022) | [10.1007/s13555-021-00678-7](https://doi.org/10.1007/s13555-021-00678-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Sidbury_2022_reference](drugs/drug_nemolizumab/Nemolizumab_Sidbury2022_reference.md) | — | 1-compartment (no model) | 6 | Sidbury R et al., Pharmacokinetics, Safety, Efficacy, and…, Dermatology and therapy (2022) | [10.1007/s13555-021-00678-7](https://doi.org/10.1007/s13555-021-00678-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +70,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

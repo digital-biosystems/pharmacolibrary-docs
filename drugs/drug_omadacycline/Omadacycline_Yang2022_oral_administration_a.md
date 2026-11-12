@@ -5,11 +5,11 @@
 
 # omadacycline — `Omadacycline_Yang2022_oral_administration_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The parameter labeled t1/2ka contains the value 0.967 in units of h-1, which is dimensionally inconsistent with the stated meaning of a half-life.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 10:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The parameter labeled t1/2ka contains the value 0.967 in units of h-1, which is dimensionally inconsistent with the stated meaning of a half-life.
 
-<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_oral_administration_a" status="rejected" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_oral_administration_a" status="rejected" stale="true" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety and Pharmacokinetics/Pharmacodynamics Analysis of Omadacycline in Chinese Healthy Subjects. Frontiers in pharmacology 13:869237 (2022).
@@ -43,7 +43,7 @@ Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.923). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.923). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['T2:row12:col4', 'T2:row12:col5', 'T2:row12:col6'] |
-| C5_dimension_Q95 | fail | 1 / [time] | h −1 |  |  | ['T2:row9:col4', 'T2:row9:col5', 'T2:row9:col6'] |
+| C5_dimension_Q95 | fail | [time] | h −1 (1 / [time]) |  |  | ['T2:row9:col4', 'T2:row9:col5', 'T2:row9:col6'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 |  |  |  | ['Yang_2022_table_1:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.5 |  |  | ['T2:row6:col4', 'T2:row6:col5', 'T2:row6:col6'] |
 | C8_topology | pass |  |  |  |  |  |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

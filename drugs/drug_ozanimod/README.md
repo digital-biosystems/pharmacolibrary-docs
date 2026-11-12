@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ozanimod&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_2&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Briggs_2021_QTcP_3&quot;,&quot;label&quot;:&quot;Briggs_2021 \u00b7 QTcP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ozanimod
 
@@ -22,9 +23,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | ▶ model + simulator | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
 
 ## ADME sites
 

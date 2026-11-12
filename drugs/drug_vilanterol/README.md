@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;Vilanterol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Llanos_Paez_2023_FEV1&quot;,&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 FEV1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Vilanterol
 
@@ -42,9 +43,9 @@ Vilanterol is a long-acting inhaled beta-2 agonist used to treat obstructive air
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gong_2022_trough_FEV1](drugs/drug_vilanterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← vilanterol/umeclidinium · stimulation effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← VI · direct linear effect | — | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | forced expiratory volume in one second ← vilanterol · direct Emax (saturable) effect | — | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kempsford_2014_HR](drugs/drug_vilanterol/pd_Kempsford_2014_HR.md) | maximal heart rate ← VI · direct linear effect | model (no simulator) | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Kempsford_2014_QTcF](drugs/drug_vilanterol/pd_Kempsford_2014_QTcF.md) | maximal QTcF ← VI · direct linear effect | model (no simulator) | Kempsford R et al., A repeat-dose thorough QT study of inha…, British journal of clinical… (2014) | [10.1111/bcp.12243](https://doi.org/10.1111/bcp.12243) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Llanos-Paez_2023_FEV1](drugs/drug_vilanterol/pd_Llanos_Paez_2023_FEV1.md) | forced expiratory volume in one second ← vilanterol · direct Emax (saturable) effect | ▶ model + simulator | Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09853-z](https://doi.org/10.1007/s10928-023-09853-z) |
 
 ## ADME sites
 

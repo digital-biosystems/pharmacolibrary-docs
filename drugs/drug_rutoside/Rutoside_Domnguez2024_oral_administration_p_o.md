@@ -5,11 +5,11 @@
 
 # rutoside — `Rutoside_Domnguez2024_oral_administration_p_o`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Rutoside's absolute bioavailability was doubly corrected in the CL/F and F parameters, and the metabolite fraction unit could not be converted.
+> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-06 22:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rutoside's absolute bioavailability was doubly corrected in the CL/F and F parameters, and the metabolite fraction unit could not be converted.
 
-<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_oral_administration_p_o" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_oral_administration_p_o" status="rejected" stale="true" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Physalis peruviana Extract: Population Pharmacokinetics in New Zealand Rabbits. Pharmaceutics 16(10) (2024).
@@ -49,7 +49,7 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Domínguez_2024_table_1:row1:col3', 'Domínguez_2024_table_1:row1:col4'] |
-| C5_dimension_Q189 | fail | [time] / [length] ** 3 | h/L/kg | ['Domínguez_2024_table_1:row10:col3'] |
+| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | h/L/kg ([time] / [length] ** 3) | ['Domínguez_2024_table_1:row10:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Domínguez_2024_table_1:row6:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Domínguez_2024_table_1:row2:col3', 'Domínguez_2024_table_1:row2:col4'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Domínguez_2024_table_1:row7:col3'] |
@@ -219,7 +219,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

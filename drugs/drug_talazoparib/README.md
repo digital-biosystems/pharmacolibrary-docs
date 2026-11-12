@@ -40,7 +40,7 @@ Talazoparib is a PARP inhibitor anticancer drug used to treat breast cancer. It 
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q54, Q27 — no SI value to build from</sub> | [↳ moderate_hepatic](drugs/drug_talazoparib/Talazoparib_Guo2022_moderate_hepatic.md) | — | 1-compartment (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q54, Q27 — no SI value to build from</sub> | [↳ normal_hepatic](drugs/drug_talazoparib/Talazoparib_Guo2022_normal_hepatic.md) | — | 1-compartment (no model) | 7 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q54, Q27 — no SI value to build from</sub> | [↳ severe_hepatic](drugs/drug_talazoparib/Talazoparib_Guo2022_severe_hepatic.md) | — | 1-compartment (no model) | 7 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Hadigol_2026_reference](drugs/drug_talazoparib/Talazoparib_Hadigol2026_reference.md) | — | parent + metabolite (no model) | 15 (+5 cov.) | Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70125](https://doi.org/10.1002/jcph.70125) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hadigol_2026_reference](drugs/drug_talazoparib/Talazoparib_Hadigol2026_reference.md) | — | parent + metabolite (no model) | 15 (+5 cov.) | Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70125](https://doi.org/10.1002/jcph.70125) |
 
 ## ADME sites
 
@@ -77,7 +77,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 7  ·  extracted 0  ·  needs review 6  ·  rejected 1  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 6  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

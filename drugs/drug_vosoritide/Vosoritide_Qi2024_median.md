@@ -4,11 +4,11 @@
 
 # vosoritide — `Vosoritide_Qi2024_median`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant was recorded in undefined units, preventing dimensional consistency and causing rejection.
+> This record was reviewed on 2026-11-07 16:41 UTC (Rejected), but the paper was screened again on 2026-10-07 03:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant was recorded in undefined units, preventing dimensional consistency and causing rejection.
 
-<div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="false" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="true" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development of a Weight-Band Dosing Approach for Vosoritide in Children with Achondroplasia Using a Population Pharmacokinetic Model. Clinical pharmacokinetics 63(5):707–719 (2024).
@@ -41,7 +41,7 @@ Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,8 +130,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab5:row1:col4'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['Tab5:row3:col4'] |
-| C5_dimension_Q68 | fail | [luminosity] / [length] ** 2 | units | ['Tab5:row4:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['Tab5:row3:col4'] |
+| C5_dimension_Q68 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['Tab5:row4:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tab5:row2:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

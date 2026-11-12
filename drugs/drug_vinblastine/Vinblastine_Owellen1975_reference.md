@@ -5,11 +5,11 @@
 
 # vinblastine — `Vinblastine_Owellen1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because the structural parameter λ2, valued at 185 min, is dimensionally inconsistent with its pharmacokinetic meaning.
+> This record was reviewed on 2026-11-07 14:50 UTC (Rejected), but the paper was screened again on 2026-11-04 18:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the structural parameter λ2, valued at 185 min, is dimensionally inconsistent with its pharmacokinetic meaning.
 
-<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1975_reference" status="rejected" stale="false" population="adults with malignant disease" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1975_reference" status="rejected" stale="true" population="adults with malignant disease" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Owellen RJ, Hartke CA. The pharmacokinetics of 4-acetyl tritium vinblastine in two patients. Cancer research 35(4):975–980 (1975).
@@ -37,7 +37,7 @@ Owellen RJ, Hartke CA. The pharmacokinetics of 4-acetyl tritium vinblastine in t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,11 +112,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Levêque_1996:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Owellen_1975:abstract', 'Owellen_1975:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Owellen_1975:abstract', 'Owellen_1975:abstract'] |
-| C5_dimension_Q68 | fail | [time] | min | ['Owellen_1975:abstract', 'Owellen_1975:abstract'] |
+| C5_dimension_Q68 | fail | 1 / [time] | min ([time]) | ['Owellen_1975:abstract', 'Owellen_1975:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.2 | ['Levêque_1996:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | ['Levêque_1996:review'] |
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

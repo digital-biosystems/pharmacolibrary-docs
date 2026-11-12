@@ -5,11 +5,11 @@
 
 # iotalamic acid — `IotalamicAcid_Groth1978_case_5`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Sodium iothalamate's central compartment volume is 0.016 ml and its peripheral volume is 0.082 L, both outside the physiological window.
+> This record was reviewed on 2026-11-07 15:13 UTC (Rejected), but the paper was screened again on 2026-10-07 23:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Sodium iothalamate's central compartment volume is 0.016 ml and its peripheral volume is 0.082 L, both outside the physiological window.
 
-<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="false" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="true" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indicator in single intravenous injection tests. Upsala journal of medical sciences 83(1):53–63 (1978).
@@ -43,7 +43,7 @@ Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indica
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Groth_1978_table_2:row2:col4'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | ml/min | ['Groth_1978_table_3:row5:col3', 'Groth_1978_table_3:row5:col4'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | ml/min ([length] ** 3 / [time]) | ['Groth_1978_table_3:row5:col3', 'Groth_1978_table_3:row5:col4'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Groth_1978_table_3:row1:col3', 'Groth_1978_table_3:row1:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Groth_1978_table_5:row4:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Groth_1978_table_3:row3:col3', 'Groth_1978_table_3:row3:col4'] |
@@ -171,7 +171,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

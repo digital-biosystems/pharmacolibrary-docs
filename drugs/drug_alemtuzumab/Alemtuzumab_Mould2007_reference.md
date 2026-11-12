@@ -5,11 +5,11 @@
 
 # alemtuzumab — `Alemtuzumab_Mould2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the extracted elimination rate constant units (micrograms per liter) conflict with the parameter's required time-based definition.
+> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted elimination rate constant units (micrograms per liter) conflict with the parameter's required time-based definition.
 
-<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="true" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Population pharmacokinetics-pharmacodynamics of alemtuzumab (Campath) in patients with chronic lymphocytic leukaemia and its link to treatment response. British journal of clinical pharmacology 64(3):278–291 (2007).
@@ -38,7 +38,7 @@ Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -141,9 +141,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Mould_2007:abstract'] |
 | C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Mould_2007:abstract'] |
-| C5_dimension_Q47 | fail | [mass] / [length] ** 3 | microg l(-1) | ['Mould_2007:abstract'] |
-| C5_dimension_Q61 | fail | [mass] / [time] | microg h(-1) | ['Mould_2007:abstract'] |
-| C5_dimension_Q88 | fail | [mass] / [time] / [length] ** 3 | microg h(-1) ml(-1) | ['Mould_2007:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | microg l(-1) ([mass] / [length] ** 3) | ['Mould_2007:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | microg h(-1) ([mass] / [time]) | ['Mould_2007:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | microg h(-1) ml(-1) ([mass] / [time] / [length] ** 3) | ['Mould_2007:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

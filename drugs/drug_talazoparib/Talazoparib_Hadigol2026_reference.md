@@ -4,11 +4,11 @@
 
 # talazoparib — `Talazoparib_Hadigol2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant for talazoparib carries the incompatible unit mL/ng, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-06 21:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant for talazoparib carries the incompatible unit mL/ng, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacokinetics Analysis of Talazoparib and Enzalutamide Combination Therapy for Patients With Metastatic Castration-Resistant Prostate Cancer. Journal of clinical pharmacology 66(2):e70125 (2026).
@@ -55,7 +55,7 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -245,7 +245,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph70125-tbl-0003:row2:col1', 'jcph70125-tbl-0003:row2:col2', 'jcph70125-tbl-0003:row2:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph70125-tbl-0003:row4:col1', 'jcph70125-tbl-0003:row4:col2', 'jcph70125-tbl-0003:row4:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Hadigol_2026_table_2:row2:col1', 'Hadigol_2026_table_2:row2:col2', 'Hadigol_2026_table_2:row2:col3'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [mass] | mL/ng | ['Hadigol_2026_table_1:row4:col1', 'Hadigol_2026_table_1:row4:col2', 'Hadigol_2026_table_1:row4:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | mL/ng ([length] ** 3 / [mass]) | ['Hadigol_2026_table_1:row4:col1', 'Hadigol_2026_table_1:row4:col2', 'Hadigol_2026_table_1:row4:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['jcph70125-tbl-0003:row3:col1', 'jcph70125-tbl-0003:row3:col2', 'jcph70125-tbl-0003:row3:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Hadigol_2026_table_2:row1:col1', 'Hadigol_2026_table_2:row1:col2', 'Hadigol_2026_table_2:row1:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Hadigol_2026_table_2:row3:col1', 'Hadigol_2026_table_2:row3:col2', 'Hadigol_2026_table_2:row3:col3'] |
@@ -279,7 +279,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

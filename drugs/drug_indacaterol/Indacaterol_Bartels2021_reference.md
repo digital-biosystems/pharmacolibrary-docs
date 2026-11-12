@@ -5,11 +5,11 @@
 
 # indacaterol — `Indacaterol_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Indacaterol's absorption rate constant of 50 L/h and volume of 81.0 mL are physiologically implausible due to unit errors.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 14:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indacaterol's absorption rate constant of 50 L/h and volume of 81.0 mL are physiologically implausible due to unit errors.
 
-<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analysis of Indacaterol/Glycopyrronium/Mometasone Furoate After Administration of Combination Therapies Using the Breezhaler. European journal of drug metabolism and pharmacokinetics 46(4):487–504 (2021).
@@ -42,7 +42,7 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab5:row7:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab5:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Llanos-Paez_2023:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.081 L | ['Llanos-Paez_2023:review'] |
@@ -164,7 +164,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

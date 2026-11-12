@@ -4,11 +4,11 @@
 
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_final`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.
+> This record was reviewed on 2026-11-07 15:40 UTC (Rejected), but the paper was screened again on 2026-10-07 10:02 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.
 
-<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="false" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="true" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al. Population pharmacokinetics of free flucloxacillin in patients treated with oral flucloxacillin plus probenecid. British journal of clinical pharmacology 87(12):4681–4690 (2021).
@@ -44,7 +44,7 @@ Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Drennan_2021_2_table_p5_1:row3:col3', 'Drennan_2021_2_table_p5_1:row3:col4', 'Drennan_2021_2_table_p5_1:row3:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Drennan_2021_2_table_p5_1:row5:col3', 'Drennan_2021_2_table_p5_1:row5:col4', 'Drennan_2021_2_table_p5_1:row5:col5'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Drennan_2021_2_table_p5_1:row1:col3', 'Drennan_2021_2_table_p5_1:row1:col4', 'Drennan_2021_2_table_p5_1:row1:col5'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] |  | ['Drennan_2021_2_table_p5_1:row10:col4', 'Drennan_2021_2_table_p5_1:row10:col5'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] |  | ['Drennan_2021_2_table_p5_1:row10:col4', 'Drennan_2021_2_table_p5_1:row10:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.5 | ['Drennan_2021_2_table_p5_1:row7:col3', 'Drennan_2021_2_table_p5_1:row7:col4', 'Drennan_2021_2_table_p5_1:row7:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 18.5 L/h | ['Drennan_2021_2_table_p5_1:row7:col3', 'Drennan_2021_2_table_p5_1:row7:col4', 'Drennan_2021_2_table_p5_1:row7:col5'] |
@@ -183,7 +183,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

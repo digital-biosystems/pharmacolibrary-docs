@@ -5,11 +5,11 @@
 
 # ibuprofen — `Ibuprofen_Gregoire2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The interconversion rate constant Q1 between R- and S-ibuprofen was left at library defaults, not supported by the paper.
+> This record was reviewed on 2026-11-07 14:28 UTC (Needs review), but the paper was screened again on 2026-11-03 11:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2008_reference" status="needs_review" stale="false" population="preterm newborn infants" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2008_reference" status="extracted" stale="true" population="preterm newborn infants" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic analysis of Ibuprofen enantiomers in preterm newborn infants. Journal of clinical pharmacology 48(12):1460–1468 (2008).
@@ -31,8 +31,6 @@ Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | S-ibuprofen V1, mL/kg | V1 | 173 | mL/kg |
@@ -42,7 +40,7 @@ Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,18 +128,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 34.3 | 34.26 | 0.9989 | 0.25 | reported t½β |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.5 |  |  | ['Gregoire_2008:results_prose'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.245 L/h |  |  | ['Gregoire_2008:results_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 21.4 L |  |  | ['Gregoire_2008:discussion_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 12.1 L |  |  | ['Gregoire_2008:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 21.4 L |  |  | ['Gregoire_2008:results_prose'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.5 | ['Gregoire_2008:results_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.245 L/h | ['Gregoire_2008:results_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 21.4 L | ['Gregoire_2008:discussion_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 12.1 L | ['Gregoire_2008:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 21.4 L | ['Gregoire_2008:results_prose'] |
 
 **Reviewer per-scenario checks:**
 

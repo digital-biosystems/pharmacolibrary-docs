@@ -40,7 +40,7 @@ Diphenhydramine is an antihistamine used for conditions such as urticaria, motio
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Wasfi_2003_reference](drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative pharmacokinetics of diphenh…, Veterinary research communi… (2003) | [10.1023/a:1025789607863](https://doi.org/10.1023/a:1025789607863) |
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Yoo_1993_reference](drugs/drug_diphenhydramine/Diphenhydramine_Yoo1993_reference.md) | — | 1-compartment (no model) | 5 | Yoo SD et al., Transplacental and nonplacental clearan…, Journal of pharmaceutical s… (1993) | [10.1002/jps.2600820206](https://doi.org/10.1002/jps.2600820206) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Yoo_1993_reference](drugs/drug_diphenhydramine/Diphenhydramine_Yoo1993_reference.md) | — | 1-compartment (no model) | 5 | Yoo SD et al., Transplacental and nonplacental clearan…, Journal of pharmaceutical s… (1993) | [10.1002/jps.2600820206](https://doi.org/10.1002/jps.2600820206) |
 
 ## Pharmacodynamics (PD)
 
@@ -93,7 +93,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 298 matched, 133 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

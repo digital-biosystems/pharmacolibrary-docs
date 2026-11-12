@@ -4,11 +4,11 @@
 
 # lenvatinib — `Lenvatinib_Majid2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The apparent intercompartmental clearance was recorded with units of L/h, causing a dimensional mismatch for this structural parameter.
+> This record was reviewed on 2026-11-07 15:55 UTC (Rejected), but the paper was screened again on 2026-10-07 02:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The apparent intercompartmental clearance was recorded with units of L/h, causing a dimensional mismatch for this structural parameter.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Majid2024_reference" status="rejected" stale="false" population="subjects from 19 studies, including healthy subjects and patients with RR-DTC, RCC, and HCC" measured-compound="lenvatinib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Majid2024_reference" status="rejected" stale="true" population="subjects from 19 studies, including healthy subjects and patients with RR-DTC, RCC, and HCC" measured-compound="lenvatinib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Majid O, Hayato S, Sreerama Reddy SH, Lalovic B, Hihara T, Hoshi T et al. Population pharmacokinetic-pharmacodynamic modeling of serum biomarkers as predictors of tumor dynamics following lenvatinib treatment in patients with radioiodine-refractory differentiated thyroid cancer (RR-DTC). CPT: pharmacometrics & systems pharmacology 13(6):954–969 (2024).
@@ -46,7 +46,7 @@ Majid O, Hayato S, Sreerama Reddy SH, Lalovic B, Hihara T, Hoshi T et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -191,7 +191,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp413130-tbl-0001:row2:col1', 'psp413130-tbl-0001:row2:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['psp413130-tbl-0001:row3:col1', 'psp413130-tbl-0001:row3:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413130-tbl-0001:row6:col1', 'psp413130-tbl-0001:row6:col2'] |
-| C5_dimension_Q31 | fail | dimensionless | ratio | ['psp413130-tbl-0001:row13:col1', 'psp413130-tbl-0001:row13:col2'] |
+| C5_dimension_Q31 | fail |  | ratio (dimensionless) | ['psp413130-tbl-0001:row13:col1', 'psp413130-tbl-0001:row13:col2'] |
 | C5_dimension_Q310 | pass | [time] |  | ['psp413130-tbl-0001:row9:col1', 'psp413130-tbl-0001:row9:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp413130-tbl-0001:row8:col1', 'psp413130-tbl-0001:row8:col2'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['psp413130-tbl-0001:row5:col1', 'psp413130-tbl-0001:row5:col2'] |
@@ -218,7 +218,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

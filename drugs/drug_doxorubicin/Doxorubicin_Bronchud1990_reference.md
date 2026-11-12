@@ -5,11 +5,11 @@
 
 # doxorubicin — `Doxorubicin_Bronchud1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the doxorubicinol AUC of 2.14 µMhL⁻¹ uses a non-standard unit, preventing standardization and causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:26 UTC (Rejected), but the paper was screened again on 2026-11-03 15:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the doxorubicinol AUC of 2.14 µMhL⁻¹ uses a non-standard unit, preventing standardization and causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bronchud1990_reference" status="rejected" stale="false" population="patients with metastatic breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bronchud1990_reference" status="rejected" stale="true" population="patients with metastatic breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative pharmacokinetics of escalating doses of doxorubicin in patients with metastatic breast cancer. Cancer chemotherapy and pharmacology 25(6):435–439 (1990).
@@ -42,7 +42,7 @@ Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bronchud_1990_table_1:row0:col4', 'Bronchud_1990_table_1:row1:col4', 'Bronchud_1990_table_1:row2:col4', 'Bronchud_1990_table_1:row3:col4'] |
-| C5_dimension_Q32 | fail | [length] | µM | ['Bronchud_1990_table_1:row0:col2', 'Bronchud_1990_table_1:row1:col2', 'Bronchud_1990_table_1:row2:col2', 'Bronchud_1990_table_1:row3:col2'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | µM ([length]) | ['Bronchud_1990_table_1:row0:col2', 'Bronchud_1990_table_1:row1:col2', 'Bronchud_1990_table_1:row2:col2', 'Bronchud_1990_table_1:row3:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bronchud_1990_table_1:row0:col3', 'Bronchud_1990_table_1:row1:col3', 'Bronchud_1990_table_1:row2:col3', 'Bronchud_1990_table_1:row3:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Béguin_2024:review'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | µMhL⁻¹ | ['Bronchud_1990_table_1:row0:col5', 'Bronchud_1990_table_1:row1:col5', 'Bronchud_1990_table_1:row2:col5', 'Bronchud_1990_table_1:row3:col5'] |
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

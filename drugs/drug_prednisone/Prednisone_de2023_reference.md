@@ -5,11 +5,11 @@
 
 # prednisone — `Prednisone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the 27.6 L/h apparent clearance value for prednisolone has a dimension mismatch in the structural parameter.
+> This record was reviewed on 2026-11-07 16:14 UTC (Rejected), but the paper was screened again on 2026-10-04 19:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the 27.6 L/h apparent clearance value for prednisolone has a dimension mismatch in the structural parameter.
 
-<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="true" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolone pharmacokinetics after oral prednisone administration in paediatric patients with kidney transplant. British journal of clinical pharmacology 89(5):1532–1540 (2023).
@@ -38,7 +38,7 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +117,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q24 | fail | dimensionless | % | ['de_2023:abstract'] |
+| C5_dimension_Q24 | fail | [length] ** 3 / [time] | % (dimensionless) | ['de_2023:abstract'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['de_2023:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

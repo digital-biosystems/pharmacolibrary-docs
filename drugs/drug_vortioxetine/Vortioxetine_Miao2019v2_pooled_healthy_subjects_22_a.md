@@ -5,11 +5,11 @@
 
 # vortioxetine — `Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Vortioxetine's peripheral compartment volume of distribution has an incorrect unit and lacks an absorption fraction, rendering the model structurally invalid.
+> This record was reviewed on 2026-11-07 15:59 UTC (Rejected), but the paper was screened again on 2026-10-07 19:05 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Vortioxetine's peripheral compartment volume of distribution has an incorrect unit and lacks an absorption fraction, rendering the model structurally invalid.
 
-<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="true" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and Safety of Vortioxetine in the Chinese Population. Advances in therapy 36(11):3134–3146 (2019).
@@ -40,7 +40,7 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row3:col1'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab3:row1:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab3:row1:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tab3:row10:col1'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 | N = 887a | ['Tab3:row5:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

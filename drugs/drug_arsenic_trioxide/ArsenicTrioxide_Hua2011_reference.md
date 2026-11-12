@@ -4,11 +4,11 @@
 
 # arsenic trioxide — `ArsenicTrioxide_Hua2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Volume of distribution for arsenic trioxide was recorded as 335.1 L, a value physically impossible for a human.
+> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 23:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Volume of distribution for arsenic trioxide was recorded as 335.1 L, a value physically impossible for a human.
 
-<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="false" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="true" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in Chinese primary hepatocarcinoma patients. Asian Pacific journal of cancer prevention : APJCP 12(1):61–65 (2011).
@@ -39,7 +39,7 @@ Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | fail | [mass] / [time] / [length] ** 3 | μg/h/L | ['Hua_2011:abstract'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | μg/h/L ([mass] / [time] / [length] ** 3) | ['Hua_2011:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hua_2011:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Hua_2011:abstract'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Hua_2011:abstract', 'Hua_2011:abstract'] |
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

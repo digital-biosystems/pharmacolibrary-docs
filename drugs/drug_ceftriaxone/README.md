@@ -43,7 +43,7 @@ Ceftriaxone is a third-generation cephalosporin antibiotic used to treat many ba
 | <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Kumar_2010_reference](drugs/drug_ceftriaxone/Ceftriaxone_Kumar2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Kumar S et al., Plasma pharmacokinetics and milk levels…, Veterinary research communi… (2010) | [10.1007/s11259-010-9421-2](https://doi.org/10.1007/s11259-010-9421-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Meenks_2022_reference](drugs/drug_ceftriaxone/Ceftriaxone_Meenks2022_reference.md) | — | 1-compartment (no model) | 4 | Meenks SD et al., Population pharmacokinetics of unbound…, International journal of cl… (2022) | [10.5414/CP204181](https://doi.org/10.5414/CP204181) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Roubaud-Baudron_2025_reference](drugs/drug_ceftriaxone/Ceftriaxone_RoubaudBaudron2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Roubaud-Baudron C et al., Pharmacokinetics of Subcutaneous and In…, Open forum infectious disea… (2025) | [10.1093/ofid/ofaf313](https://doi.org/10.1093/ofid/ofaf313) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Patel_1981_reference](drugs/drug_ceftriaxone/Ceftriaxone_Patel1981_reference.md) | — | 1-compartment (no model) | 4 | Patel IH et al., Pharmacokinetics of ceftriaxone in huma…, Antimicrobial agents and ch… (1981) | [10.1128/AAC.20.5.634](https://doi.org/10.1128/AAC.20.5.634) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Patel_1981_reference](drugs/drug_ceftriaxone/Ceftriaxone_Patel1981_reference.md) | — | 1-compartment (no model) | 4 | Patel IH et al., Pharmacokinetics of ceftriaxone in huma…, Antimicrobial agents and ch… (1981) | [10.1128/AAC.20.5.634](https://doi.org/10.1128/AAC.20.5.634) |
 
 ## Pharmacodynamics (PD)
 
@@ -87,7 +87,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 150 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 3  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

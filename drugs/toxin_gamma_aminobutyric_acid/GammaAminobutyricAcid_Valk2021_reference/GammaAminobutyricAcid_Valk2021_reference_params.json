@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "GammaAminobutyricAcid_Valk2021_reference",
+ "molar_masses": {
+  "central.C": 0.10312099999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.25e-05,
+  "F": 1.0,
+  "MM": 0.10312099999999999,
+  "VdPerKg": 0.00368,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.00011367753623188407,
+  "k21": 0.0009728682170542637,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662037
+ },
+ "reference_peaks": {
+  "central.C": 3.648535451382474e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

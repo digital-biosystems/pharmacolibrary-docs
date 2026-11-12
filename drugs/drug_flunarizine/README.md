@@ -26,7 +26,7 @@ Flunarizine is a calcium channel blocker with antihistamine and antivertigo acti
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Wang_2007_reference](drugs/drug_flunarizine/Flunarizine_Wang2007_reference.md) | — | 1-compartment (no model) | 3 | Wang YJ et al., Formulation, preparation and evaluation…, The Journal of pharmacy and… (2007) | [10.1211/jpp.59.3.0003](https://doi.org/10.1211/jpp.59.3.0003) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wang_2007_reference](drugs/drug_flunarizine/Flunarizine_Wang2007_reference.md) | — | 1-compartment (no model) | 3 | Wang YJ et al., Formulation, preparation and evaluation…, The Journal of pharmacy and… (2007) | [10.1211/jpp.59.3.0003](https://doi.org/10.1211/jpp.59.3.0003) |
 
 ## Pharmacodynamics (PD)
 
@@ -89,7 +89,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 130 matched, 55 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

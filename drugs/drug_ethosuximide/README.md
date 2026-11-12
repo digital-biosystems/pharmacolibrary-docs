@@ -43,7 +43,7 @@ Ethosuximide is an anticonvulsant used to treat epilepsy, especially childhood a
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ granules_a](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_a.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ granules_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_granules_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T6_deviations</sub> | [↳ syrup_zarontin_b](drugs/drug_ethosuximide/Ethosuximide_Diezi2023_syrup_zarontin_b.md) | ▶ model + simulator | 2-compartment, oral | 11 |  |  |
-| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | — | 1-compartment (no model) | 4 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | — | 1-compartment (no model) | 4 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -80,7 +80,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 131 matched, 80 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 5  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 5  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

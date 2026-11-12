@@ -5,11 +5,11 @@
 
 # ketorolac — `Ketorolac_Cerreta2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:51 UTC (Needs review), but the paper was screened again on 2026-10-07 01:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cerreta2019_reference" status="needs_review" stale="false" population="injured Eastern box turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cerreta2019_reference" status="extracted" stale="true" population="injured Eastern box turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cerreta AJ, Masterson CA, Lewbart GA, Dise DR, Papich MG. Pharmacokinetics of ketorolac in wild Eastern box turtles (Terrapene carolina carolina) after single intramuscular administration. Journal of veterinary pharmacology and therapeutics 42(2):154–159 (2019).
@@ -29,8 +29,6 @@ Cerreta AJ, Masterson CA, Lewbart GA, Dise DR, Papich MG. Pharmacokinetics of ke
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | long half-life (T1/2 ) | t1/2z | 9.78 | hr |
@@ -39,7 +37,7 @@ Cerreta AJ, Masterson CA, Lewbart GA, Dise DR, Papich MG. Pharmacokinetics of ke
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +114,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cavallaro_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Cerreta_2019:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Cerreta_2019:abstract'] |
@@ -151,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

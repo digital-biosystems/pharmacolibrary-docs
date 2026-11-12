@@ -5,11 +5,11 @@
 
 # ranibizumab — `Ranibizumab_Xu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ranibizumab intravitreal clearance was extracted as 0.023 mL/h, an implausibly small value that failed the physiological plausibility check.
+> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-10-07 21:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ranibizumab intravitreal clearance was extracted as 0.023 mL/h, an implausibly small value that failed the physiological plausibility check.
 
-<div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Xu2013_reference" status="rejected" stale="false" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Xu2013_reference" status="rejected" stale="true" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizumab in patients with neovascular age-related macular degeneration: a population approach. Investigative ophthalmology & visual science 54(3):1616–1624 (2013).
@@ -39,7 +39,7 @@ Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,6 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Del_2020:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Crass_2025:review'] |
@@ -151,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

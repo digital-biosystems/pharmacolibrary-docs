@@ -5,11 +5,11 @@
 
 # ampicillin — `Ampicillin_Setiawan2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The ampicillin absorption rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:43 UTC (Rejected), but the paper was screened again on 2026-10-07 10:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ampicillin absorption rate constant was rejected because its unit could not be converted to standard SI units, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Setiawan2023_reference" status="rejected" stale="false" population="hospitalised adult patients" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Setiawan2023_reference" status="rejected" stale="true" population="hospitalised adult patients" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Setiawan E, Cotta MO, Abdul-Aziz MH, Widjanarko D, Sosilya H, Lukas DL et al. Population Pharmacokinetics and Dosing Simulations of Ampicillin and Sulbactam in Hospitalised Adult Patients. Clinical pharmacokinetics 62(4):573–586 (2023).
@@ -41,7 +41,7 @@ Setiawan E, Cotta MO, Abdul-Aziz MH, Widjanarko D, Sosilya H, Lukas DL et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,8 +123,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8', 'Tab2:row3:col9', 'Tab2:row3:col10'] |
-| C5_dimension_Q301 | fail | [length] ** 3 / [time] | L/h | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5', 'Tab2:row5:col6', 'Tab2:row5:col7', 'Tab2:row5:col8', 'Tab2:row5:col9', 'Tab2:row5:col10'] |
-| C5_dimension_Q302 | fail | [length] ** 3 / [time] | L/h | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6', 'Tab2:row6:col7', 'Tab2:row6:col8', 'Tab2:row6:col9', 'Tab2:row6:col10'] |
+| C5_dimension_Q301 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5', 'Tab2:row5:col6', 'Tab2:row5:col7', 'Tab2:row5:col8', 'Tab2:row5:col9', 'Tab2:row5:col10'] |
+| C5_dimension_Q302 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6', 'Tab2:row6:col7', 'Tab2:row6:col8', 'Tab2:row6:col9', 'Tab2:row6:col10'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Jimenez-Toro_2020:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8', 'Tab2:row4:col9', 'Tab2:row4:col10'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.15 | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8', 'Tab2:row3:col9', 'Tab2:row3:col10'] |
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # lithium chloride — `LithiumChloride_Martin2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The AUClast parameter uses incompatible units of h*ng/mL while the C0 parameter uses mmol/L, creating a dimensional mismatch.
+> This record was reviewed on 2026-11-07 16:17 UTC (Rejected), but the paper was screened again on 2026-10-07 22:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The AUClast parameter uses incompatible units of h*ng/mL while the C0 parameter uses mmol/L, creating a dimensional mismatch.
 
-<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Martin2018_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Martin2018_reference" status="rejected" stale="true" population="healthy adult horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Pharmacokinetics of intravenous lithium chloride and assessment of agreement between two methods of lithium concentration measurement in the horse. Equine veterinary journal 50(4):537–543 (2018).
@@ -43,7 +43,7 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q57 | pass | [time] |  | ['Martin_2018:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Martin_2018:abstract'] |
 | C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['Martin_2018:abstract'] |
-| C5_dimension_Q86 | fail | [substance] / [length] ** 3 | mmol/L | ['Martin_2018:abstract'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['Martin_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.273 | ['Martin_2018:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.15 L/h | ['Martin_2018:abstract'] |
@@ -151,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

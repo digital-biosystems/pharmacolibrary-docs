@@ -5,11 +5,11 @@
 
 # favipiravir — `Favipiravir_Irie2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> V/F is recorded as 41.6 L/h and kabs is 1.5 h⁻¹, triggering dimension and plausibility failures for favipiravir.
+> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-07 17:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. V/F is recorded as 41.6 L/h and kabs is 1.5 h⁻¹, triggering dimension and plausibility failures for favipiravir.
 
-<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Irie2021_reference" status="rejected" stale="false" population="patients with COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Irie2021_reference" status="rejected" stale="true" population="patients with COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Irie K, Nakagawa A, Fujita H, Tamura R, Eto M, Ikesue H et al. Population pharmacokinetics of favipiravir in patients with COVID-19. CPT: pharmacometrics & systems pharmacology 10(10):1161–1170 (2021).
@@ -39,7 +39,7 @@ Irie K, Nakagawa A, Fujita H, Tamura R, Eto M, Ikesue H et al. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,7 +124,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp412685-tbl-0004:row2:col1', 'psp412685-tbl-0004:row2:col3', 'psp412685-tbl-0004:row2:col5', 'psp412685-tbl-0004:row2:col6', 'psp412685-tbl-0004:row2:col8'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Agyeman_2026:review'] |
-| C5_dimension_Q76 | fail | [length] ** 3 / [time] | L/h | ['psp412685-tbl-0004:row3:col1', 'psp412685-tbl-0004:row3:col3', 'psp412685-tbl-0004:row3:col5', 'psp412685-tbl-0004:row3:col6', 'psp412685-tbl-0004:row3:col8'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['psp412685-tbl-0004:row3:col1', 'psp412685-tbl-0004:row3:col3', 'psp412685-tbl-0004:row3:col5', 'psp412685-tbl-0004:row3:col6', 'psp412685-tbl-0004:row3:col8'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 5.11 L/h | ['psp412685-tbl-0004:row2:col1', 'psp412685-tbl-0004:row2:col3', 'psp412685-tbl-0004:row2:col5', 'psp412685-tbl-0004:row2:col6', 'psp412685-tbl-0004:row2:col8'] |
@@ -146,7 +146,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

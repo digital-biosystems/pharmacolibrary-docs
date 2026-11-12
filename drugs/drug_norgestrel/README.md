@@ -26,7 +26,7 @@ Norgestrel is a progestogen used in hormonal contraceptives, typically combined 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Uniyal_1976_reference](drugs/drug_norgestrel/Norgestrel_Uniyal1976_reference.md) | — | 1-compartment (no model) | 2 | Uniyal JP et al., Disappearance of (14,15-3H)d,1-norgestr…, Acta endocrinologica (1976) | [10.1530/acta.0.0820851](https://doi.org/10.1530/acta.0.0820851) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Uniyal_1976_reference](drugs/drug_norgestrel/Norgestrel_Uniyal1976_reference.md) | — | 1-compartment (no model) | 2 | Uniyal JP et al., Disappearance of (14,15-3H)d,1-norgestr…, Acta endocrinologica (1976) | [10.1530/acta.0.0820851](https://doi.org/10.1530/acta.0.0820851) |
 
 ## ADME sites
 
@@ -57,13 +57,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:01 | 3:30 | 0/1/0 | 0/0/0 | 0/0/0 | 146,897/2,900 | einfracz / qwen3.8-27b | 6 | 0/5 | 6/0 | 0 |
+| 2026-10-07 09:01 | 3:30 | 1/0/0 | 0/0/0 | 0/0/0 | 146,897/2,900 | einfracz / qwen3.8-27b | 6 | 0/5 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 91 matched, 36 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

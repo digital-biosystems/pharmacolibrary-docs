@@ -5,11 +5,11 @@
 
 # Ginkgo folium — `GinkgoFolium_Moreau1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 15:41 UTC (Needs review), but the paper was screened again on 2026-10-07 02:35 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Moreau1986_reference" status="needs_review" stale="false" population="rats" measured-compound="radiolabelled Ginkgo biloba extract constituents (total 14C radioactivity)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Moreau1986_reference" status="needs_review" stale="true" population="rats" measured-compound="radiolabelled Ginkgo biloba extract constituents (total 14C radioactivity)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Moreau JP, Eck CR, McCabe J, Skinner S. [Absorption, distribution and elimination of a labelled extract of Ginkgo biloba leaves in the rat]. Presse medicale (Paris, France : 1983) 15(31):1458–1461 (1986).
@@ -41,7 +41,7 @@ Moreau JP, Eck CR, McCabe J, Skinner S. [Absorption, distribution and eliminatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,6 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chen_2007:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Schoemaker_2019:review'] |
@@ -160,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

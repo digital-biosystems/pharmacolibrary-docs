@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;elagolix&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Abbas_2020_BMD&quot;,&quot;label&quot;:&quot;Abbas_2020 \u00b7 BMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/pd_Abbas_2020_BMD.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # elagolix
 
@@ -26,13 +27,13 @@ Elagolix is a hormone-lowering medicine used to treat endometriosis. It is an ap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Beck_2022_reference](drugs/drug_elagolix/Elagolix_Beck2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Beck_2022_reference](drugs/drug_elagolix/Elagolix_Beck2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Abbas_2020_BMD](drugs/drug_elagolix/pd_Abbas_2020_BMD.md) | lumbar spine BMD ← elagolix · indirect response — drug stimulates the loss of lumbar spine BMD | — | Abbas Suleiman A et al., Exposure-Safety Analyses Identify Predi…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12560](https://doi.org/10.1002/psp4.12560) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Abbas_2020_BMD](drugs/drug_elagolix/pd_Abbas_2020_BMD.md) | lumbar spine BMD ← elagolix · indirect response — drug stimulates the loss of lumbar spine BMD | ▶ model + simulator | Abbas Suleiman A et al., Exposure-Safety Analyses Identify Predi…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12560](https://doi.org/10.1002/psp4.12560) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Winzenborg_2021_BMD](drugs/drug_elagolix/pd_Winzenborg_2021_BMD.md) | bone mineral density (BMD) loss ← elagolix · indirect response — drug inhibits the production of bone mineral density (BMD) loss | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_DYSM](drugs/drug_elagolix/pd_Winzenborg_2021_DYSM.md) | dysmenorrhea (DYSM) responder rates ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Winzenborg_2021_DYSP](drugs/drug_elagolix/pd_Winzenborg_2021_DYSP.md) | dyspareunia (DYSP) responder rates ← elagolix · categorical (graded) response model | — | Winzenborg I et al., A Personalized Medicine Approach Using…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12570](https://doi.org/10.1002/psp4.12570) |
@@ -75,7 +76,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

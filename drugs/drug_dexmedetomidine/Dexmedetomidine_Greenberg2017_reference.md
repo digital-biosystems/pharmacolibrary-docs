@@ -5,11 +5,11 @@
 
 # dexmedetomidine — `Dexmedetomidine_Greenberg2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because the clearance parameter uses an abstract-only derived percent difference (-40%) as its value instead of an absolute clearance.
+> This record was reviewed on 2026-11-07 15:03 UTC (Rejected), but the paper was screened again on 2026-10-06 20:17 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because the clearance parameter uses an abstract-only derived percent difference (-40%) as its value instead of an absolute clearance.
 
-<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="rejected" stale="false" population="infants receiving dexmedetomidine for sedation" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="rejected" stale="true" population="infants receiving dexmedetomidine for sedation" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Greenberg RG, Wu H, Laughon M, Capparelli E, Rowe S, Zimmerman KO et al. Population Pharmacokinetics of Dexmedetomidine in Infants. Journal of clinical pharmacology 57(9):1174–1182 (2017).
@@ -36,7 +36,7 @@ Greenberg RG, Wu H, Laughon M, Capparelli E, Rowe S, Zimmerman KO et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +117,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_base_sign_Q22 | fail |  | -40 |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Greenberg_2017:abstract', 'Greenberg_2017:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Greenberg_2017:abstract', 'Greenberg_2017:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenberg_2017:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | -40 | ['Greenberg_2017:abstract', 'Greenberg_2017:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -139,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

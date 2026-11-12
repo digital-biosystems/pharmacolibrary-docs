@@ -26,7 +26,7 @@ Lindane, an organochlorine isomer of hexachlorocyclohexane, was used as a scabic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="other animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Thybaud_1991_reference](drugs/drug_lindane/Lindane_Thybaud1991_reference.md) | — | 1-compartment (no model) | 2 | Thybaud E et al., Uptake and elimination of lindane by Ly…, Ecotoxicology and environme… (1991) | [10.1016/0147-6513(91)90075-z](https://doi.org/10.1016/0147-6513(91)90075-z) |
+| <span class="pk-rf" hidden data-species="other animal" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Thybaud_1991_reference](drugs/drug_lindane/Lindane_Thybaud1991_reference.md) | — | 1-compartment (no model) | 2 | Thybaud E et al., Uptake and elimination of lindane by Ly…, Ecotoxicology and environme… (1991) | [10.1016/0147-6513(91)90075-z](https://doi.org/10.1016/0147-6513(91)90075-z) |
 
 ## Pharmacodynamics (PD)
 
@@ -85,13 +85,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:53 | 8:21 | 0/1/0 | 15/3/0 | 0/0/0 | 253,395/14,794 | ollama / glm-5.3-flash | 10 | 1/4 | 10/0 | 0 |
+| 2026-10-07 10:53 | 8:21 | 1/0/0 | 15/3/0 | 0/0/0 | 253,395/14,794 | ollama / glm-5.3-flash | 10 | 1/4 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 124 matched, 67 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

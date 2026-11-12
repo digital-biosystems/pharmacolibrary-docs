@@ -5,11 +5,11 @@
 
 # lorazepam — `Lorazepam_Papini2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> CL_ratio has no unit.
+> This record was reviewed on 2026-11-07 14:27 UTC (Needs review), but the paper was screened again on 2026-10-06 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Papini2006_reference" status="needs_review" stale="false" population="term parturients during labor" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Papini2006_reference" status="extracted" stale="true" population="term parturients during labor" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Papini O, da Cunha SP, da Silva Mathes Ado C, Bertucci C, Moisés EC, de Barros Duarte L et al. Kinetic disposition of lorazepam with focus on the glucuronidation capacity, transplacental transfer in parturients and racemization in biological samples. Journal of pharmaceutical and biomedical analysis 40(2):397–403 (2006).
@@ -27,8 +27,6 @@ Papini O, da Cunha SP, da Silva Mathes Ado C, Bertucci C, Moisés EC, de Barros 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t(1/2a) | t1/2α | 3.2 | h |
@@ -45,7 +43,7 @@ Papini O, da Cunha SP, da Silva Mathes Ado C, Bertucci C, Moisés EC, de Barros 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,7 +146,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Papini_2006:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Panetta_2024:review'] |
 | C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['Papini_2006:abstract'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['Papini_2006:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.01 L/h | ['Papini_2006:abstract'] |
@@ -181,7 +178,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

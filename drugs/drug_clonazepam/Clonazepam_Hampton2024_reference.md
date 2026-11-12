@@ -5,11 +5,11 @@
 
 # clonazepam — `Clonazepam_Hampton2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 15:48 UTC (Needs review), but the paper was screened again on 2026-10-07 07:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="false" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="extracted" stale="true" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hampton CE, Kleine SA, Smith JS, Mulon PY, Smith CK, Shanks GA et al. Pharmacokinetics of oral clonazepam in growing commercial pigs (Sus scrofa domestica). Journal of veterinary pharmacology and therapeutics 47(5):365–371 (2024).
@@ -29,8 +29,6 @@ Hampton CE, Kleine SA, Smith JS, Mulon PY, Smith CK, Shanks GA et al. Pharmacoki
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Elimination half-life | t1/2z | 7.3 | h |
@@ -39,7 +37,7 @@ Hampton CE, Kleine SA, Smith JS, Mulon PY, Smith CK, Shanks GA et al. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -104,7 +102,7 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q53 | pass | [time] |  | ['Hampton_2024:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hampton_2024:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hampton_2024:abstract'] |
@@ -138,7 +136,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

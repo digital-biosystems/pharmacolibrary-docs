@@ -5,11 +5,11 @@
 
 # cetuximab — `Cetuximab_Dirks2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected due to a dimensional mismatch in the elimination rate constant for cetuximab, which is reported in micrograms per milliliter instead of a time-based unit.
+> This record was reviewed on 2026-11-07 14:36 UTC (Rejected), but the paper was screened again on 2026-10-07 11:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected due to a dimensional mismatch in the elimination rate constant for cetuximab, which is reported in micrograms per milliliter instead of a time-based unit.
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="false" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="true" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuximab in patients with squamous cell carcinoma of the head and neck. Journal of clinical pharmacology 48(3):267–278 (2008).
@@ -39,7 +39,7 @@ Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuxima
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,8 +123,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Dirks_2008:abstract'] |
-| C5_dimension_Q47 | fail | [mass] / [length] ** 3 | mug/mL | ['Dirks_2008:abstract'] |
-| C5_dimension_Q61 | fail | [mass] / [time] | mg/h | ['Dirks_2008:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | mug/mL ([mass] / [length] ** 3) | ['Dirks_2008:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | mg/h ([mass] / [time]) | ['Dirks_2008:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Dirks_2008:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Dirks_2008:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -147,7 +147,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

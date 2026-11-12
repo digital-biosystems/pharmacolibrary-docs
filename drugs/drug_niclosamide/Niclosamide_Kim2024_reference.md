@@ -5,11 +5,11 @@
 
 # niclosamide — `Niclosamide_Kim2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> Niclosamide absorption rate constant recorded in L/h instead of 1/h, causing a dimension mismatch and triggering a false clearance/volume implausibility flag.
+> This record was reviewed on 2026-11-07 15:44 UTC (Rejected), but the paper was screened again on 2026-10-07 09:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Niclosamide absorption rate constant recorded in L/h instead of 1/h, causing a dimension mismatch and triggering a false clearance/volume implausibility flag.
 
-<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="false" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="true" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kim T, Jung W, Cho S, Kim G, Yun HY, Chae JW. Predicting lung exposure of intramuscular niclosamide as an antiviral agent: Power-law based pharmacokinetic modeling. Clinical and translational science 17(5):e13833 (2024).
@@ -44,7 +44,7 @@ Kim T, Jung W, Cho S, Kim G, Yun HY, Chae JW. Predicting lung exposure of intram
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,7 @@ The absorption rate constant has a value of 0.042 with the unit L/h, conflicting
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts13833-tbl-0002:row6:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts13833-tbl-0002:row7:col1'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['cts13833-tbl-0002:row9:col1'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['cts13833-tbl-0002:row9:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts13833-tbl-0002:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts13833-tbl-0002:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.485 | ['cts13833-tbl-0002:row6:col1'] |
@@ -154,7 +154,7 @@ The absorption rate constant has a value of 0.042 with the unit L/h, conflicting
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

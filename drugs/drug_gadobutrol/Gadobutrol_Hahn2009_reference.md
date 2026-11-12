@@ -4,11 +4,11 @@
 
 # gadobutrol — `Gadobutrol_Hahn2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is not a compartmental population PK model as it lacks distribution volume and clearance parameters.
+> This record was reviewed on 2026-11-07 16:08 UTC (Rejected), but the paper was screened again on 2026-10-07 17:36 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental population PK model as it lacks distribution volume and clearance parameters.
 
-<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="true" population="pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics and safety of gadobutrol-enhanced magnetic resonance imaging in pediatric patients. Investigative radiology 44(12):776–783 (2009).
@@ -38,7 +38,7 @@ Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,7 +126,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q352 | pass | [length] ** 3 |  | ['Hahn_2009:abstract'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Hahn_2009:abstract'] |
-| C5_dimension_Q75 | fail | [substance] / [length] ** 3 | micromol/L | ['Hahn_2009:abstract'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | micromol/L ([substance] / [length] ** 3) | ['Hahn_2009:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -145,7 +145,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -40,8 +40,8 @@ Melphalan is an alkylating anticancer drug used mainly to treat multiple myeloma
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Li_2022_reference](drugs/drug_melphalan/Melphalan_Li2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Buitrago_2016_reference](drugs/drug_melphalan/Melphalan_Buitrago2016_reference.md) | — | 1-compartment (no model) | 2 | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Shah_2022_reference](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | — | 1-compartment (no model) | 1 | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Buitrago_2016_reference](drugs/drug_melphalan/Melphalan_Buitrago2016_reference.md) | — | 1-compartment (no model) | 2 | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chandra_2022_reference](drugs/drug_melphalan/Melphalan_Chandra2022_reference.md) | — | 1-compartment (no model) | 0 | Chandra S et al., Test-dose pharmacokinetics guided melph…, British journal of clinical… (2022) | [10.1111/bcp.14932](https://doi.org/10.1111/bcp.14932) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nath_2007_reference](drugs/drug_melphalan/Melphalan_Nath2007_reference.md) | — | 1-compartment (no model) | 0 | Nath CE et al., Population pharmacokinetics of melphala…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02862.x](https://doi.org/10.1111/j.1365-2125.2007.02862.x) |
 
@@ -79,13 +79,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:34 | 3:10 | 2/3/0 | 1/0/0 | 0/0/0 | 166,485/11,704 | einfracz / qwen3.8-27b | 12 | 3/9 | 10/2 | 0 |
+| 2026-10-07 17:34 | 3:10 | 3/2/0 | 1/0/0 | 0/0/0 | 166,485/11,704 | einfracz / qwen3.8-27b | 12 | 3/9 | 10/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 114 matched, 63 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

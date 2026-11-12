@@ -21,8 +21,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hang_2016_Gd_lesion_count](drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count.md) | Gd-enhanced lesion count ← peginterferon_beta_1a · direct linear effect | — | Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-016-9477-x](https://doi.org/10.1007/s10928-016-9477-x) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hang_2016_T2_lesion_count](drugs/drug_peginterferon_beta_1a/pd_Hang_2016_T2_lesion_count.md) | new or newly enlarged T2 hyperintense lesions ← peginterferon_beta_1a · direct linear effect | — | Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-016-9477-x](https://doi.org/10.1007/s10928-016-9477-x) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hang_2016_Gd_lesion_count](drugs/drug_peginterferon_beta_1a/pd_Hang_2016_Gd_lesion_count.md) | Gd-enhanced lesion count ← peginterferon_beta_1a · direct linear effect | model (no simulator) | Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-016-9477-x](https://doi.org/10.1007/s10928-016-9477-x) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Hang_2016_T2_lesion_count](drugs/drug_peginterferon_beta_1a/pd_Hang_2016_T2_lesion_count.md) | new or newly enlarged T2 hyperintense lesions ← peginterferon_beta_1a · direct linear effect | model (no simulator) | Hang Y et al., Analysis of peginterferon β-1a exposure…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-016-9477-x](https://doi.org/10.1007/s10928-016-9477-x) |
 
 ## ADME sites
 

@@ -5,11 +5,11 @@
 
 # ceftriaxone — `Ceftriaxone_Patel1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ceftriaxone was rejected because the AUC unit pg.h/mi could not be converted to SI units, and the extracted A (37.1) and B (1306) values conflicted with the paper's 3.3 and 305.
+> This record was reviewed on 2026-11-07 15:39 UTC (Rejected), but the paper was screened again on 2026-10-07 10:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ceftriaxone was rejected because the AUC unit pg.h/mi could not be converted to SI units, and the extracted A (37.1) and B (1306) values conflicted with the paper's 3.3 and 305.
 
-<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmacokinetics of ceftriaxone in humans. Antimicrobial agents and chemotherapy 20(5):634–641 (1981).
@@ -41,7 +41,7 @@ Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Alonso_2021:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_1:row8:col1', 'tab_1:row8:col2', 'tab_1:row8:col3'] |
-| C5_dimension_Q88 | fail | [mass] * [time] / [length] | pg.h/mi | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | pg.h/mi ([mass] * [time] / [length]) | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 4.54 L | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
 
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chen_2006_pH&quot;,&quot;label&quot;:&quot;Chen_2006 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/pd_Chen_2006_pH.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yang_2009_gastrin&quot;,&quot;label&quot;:&quot;Yang_2009 \u00b7 gastrin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # rabeprazole
 
@@ -25,11 +26,11 @@ Rabeprazole is a proton-pump inhibitor used to treat acid-related conditions suc
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Chen_2006_pH](drugs/drug_rabeprazole/pd_Chen_2006_pH.md) | intragastric pH ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of drug me… (2006) | [10.1007/BF03190639](https://doi.org/10.1007/BF03190639) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Chen_2006_pH](drugs/drug_rabeprazole/pd_Chen_2006_pH.md) | intragastric pH ← rabeprazole · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of drug me… (2006) | [10.1007/BF03190639](https://doi.org/10.1007/BF03190639) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hayato_2012_pH4HT](drugs/drug_rabeprazole/pd_Hayato_2012_pH4HT.md) | pH 4 holding time ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Hayato S et al., Dose-response relationships of rabepraz…, European journal of clinica… (2012) | [10.1007/s00228-011-1164-7](https://doi.org/10.1007/s00228-011-1164-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jeong_2023_pH](drugs/drug_rabeprazole/pd_Jeong_2023_pH.md) | gastric pH ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Jeong SH et al., Exploring Differences in Pharmacometric…, Biomedicines (2023) | [10.3390/biomedicines11113021](https://doi.org/10.3390/biomedicines11113021) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sheng_2010_pH](drugs/drug_rabeprazole/pd_Sheng_2010_pH.md) | intragastric pH values ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2009_gastrin](drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md) | gastrin ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Yang_2009_gastrin](drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md) | gastrin ← rabeprazole · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
 
 ## ADME sites
 

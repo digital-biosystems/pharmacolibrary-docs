@@ -5,11 +5,11 @@
 
 # idarubicin — `Idarubicin_Looby1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Idarubicin's steady-state volume of distribution was assigned unit '1', creating a dimension mismatch with the other flow-based parameters.
+> This record was reviewed on 2026-11-07 15:09 UTC (Rejected), but the paper was screened again on 2026-10-06 18:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Idarubicin's steady-state volume of distribution was assigned unit '1', creating a dimension mismatch with the other flow-based parameters.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Looby1997_reference" status="rejected" stale="false" population="rabbits" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Looby1997_reference" status="rejected" stale="true" population="rabbits" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Looby M, Linke R, Weiss M. Pharmacokinetics and tissue distribution of idarubicin and its active metabolite idarubicinol in the rabbit. Cancer chemotherapy and pharmacology 39(6):554–556 (1997).
@@ -39,7 +39,7 @@ Looby M, Linke R, Weiss M. Pharmacokinetics and tissue distribution of idarubici
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -116,7 +116,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Looby_1997:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Looby_1997:abstract'] |
-| C5_dimension_Q65 | fail | dimensionless | 1 | ['Looby_1997:abstract'] |
+| C5_dimension_Q65 | fail | [length] ** 3 | 1 (dimensionless) | ['Looby_1997:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 221.7 | ['Looby_1997:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 13.3 L/h | ['Looby_1997:abstract'] |
@@ -137,7 +137,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

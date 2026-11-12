@@ -27,7 +27,7 @@ Revefenacin is an inhaled anticholinergic medicine used to treat chronic obstruc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Lo_2021_reference](drugs/drug_revefenacin/Revefenacin_Lo2021_reference.md) | — | parent + metabolite (no model) | 11 (+1 cov.) | Lo A et al., Population Pharmacokinetics of Revefena…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00938-3](https://doi.org/10.1007/s40262-020-00938-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lo_2021_reference](drugs/drug_revefenacin/Revefenacin_Lo2021_reference.md) | — | parent + metabolite (no model) | 11 (+1 cov.) | Lo A et al., Population Pharmacokinetics of Revefena…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00938-3](https://doi.org/10.1007/s40262-020-00938-3) |
 
 ## ADME sites
 
@@ -67,7 +67,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 

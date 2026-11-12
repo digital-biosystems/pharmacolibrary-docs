@@ -4,11 +4,11 @@
 
 # clomipramine — `Clomipramine_NielsenKudsk1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> The clomipramine record was rejected because the abstract-only source provided accumulation and half-life values, not the required distribution volume and clearance for a compartmental model.
+> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-06 22:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clomipramine record was rejected because the abstract-only source provided accumulation and half-life values, not the required distribution volume and clearance for a compartmental model.
 
-<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="true" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomipramine in the isolated, perfused rabbit heart. Acta pharmacologica et toxicologica 46(3):213–218 (1980).
@@ -38,7 +38,7 @@ Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,9 +120,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q18 | fail | [mass] | micrograms | ['Nielsen-Kudsk_1980:abstract'] |
-| C5_dimension_Q34 | fail | [mass] | micrograms | ['Nielsen-Kudsk_1980:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q18 | fail | [mass] * [time] / [length] ** 3 | micrograms ([mass]) | ['Nielsen-Kudsk_1980:abstract'] |
+| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | micrograms ([mass]) | ['Nielsen-Kudsk_1980:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Nielsen-Kudsk_1980:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -142,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

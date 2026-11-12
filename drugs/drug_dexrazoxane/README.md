@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;dexrazoxane&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Mody_2023_2_R_2&quot;,&quot;label&quot;:&quot;Mody_2023_2 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dexrazoxane
 
@@ -26,7 +27,7 @@ Dexrazoxane is a detoxifying agent used to protect against tissue damage from an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Baldwin_1996_reference](drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference.md) | — | 1-compartment (no model) | 8 | Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Baldwin_1996_reference](drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference.md) | — | 1-compartment (no model) | 8 | Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,8 +39,8 @@ Dexrazoxane is a detoxifying agent used to protect against tissue damage from an
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_4](drugs/drug_dexrazoxane/pd_Mody_2023_R_4.md) | Cell viability (MDA-MB-468, static combination with DOX, competitive interaction model) ← dexrazoxane · direct sigmoid Emax (Hill) effect | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_5](drugs/drug_dexrazoxane/pd_Mody_2023_R_5.md) | Cell viability over time (JIMT-1, single-agent and combination cellular PD model) ← dexrazoxane · delayed effect through transit (transduction) compartments | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_6](drugs/drug_dexrazoxane/pd_Mody_2023_R_6.md) | Cell viability over time (MDA-MB-468, single-agent and combination cellular PD model) ← dexrazoxane · delayed effect through transit (transduction) compartments | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mody_2023_2_R](drugs/drug_dexrazoxane/pd_Mody_2023_2_R.md) | AC16 cell viability ← dexrazoxane · direct linear effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mody_2023_2_R_2](drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md) | AC16 cell viability (DEX cardioprotection against DOX-induced cell death) ← dexrazoxane · direct Emax (saturable) effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Mody_2023_2_R](drugs/drug_dexrazoxane/pd_Mody_2023_2_R.md) | AC16 cell viability ← dexrazoxane · direct linear effect | model (no simulator) | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mody_2023_2_R_2](drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md) | AC16 cell viability (DEX cardioprotection against DOX-induced cell death) ← dexrazoxane · direct Emax (saturable) effect | ▶ model + simulator | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
 
 ## ADME sites
 
@@ -71,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # etomidate — `Etomidate_Richter1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Rejected because etomidate lacks clearance and volume, and the unfounded link to alfentanil creates an orphan compartment.
+> This record was reviewed on 2026-11-07 14:58 UTC (Rejected), but the paper was screened again on 2026-10-07 04:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because etomidate lacks clearance and volume, and the unfounded link to alfentanil creates an orphan compartment.
 
-<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Richter1985_reference" status="rejected" stale="false" population="patients undergoing orthopedic surgery" measured-compound="etomidate" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Richter1985_reference" status="rejected" stale="true" population="patients undergoing orthopedic surgery" measured-compound="etomidate" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Richter O, Klatte A, Abel J, Freye E, Haag W, Hartung E. Pharmacokinetic data analysis of alfentanil after multiple injections and etomidate-infusion in patients undergoing orthopedic surgery. International journal of clinical pharmacology, therapy, and toxicology 23(1):11–15 (1985).
@@ -34,7 +34,7 @@ Richter O, Klatte A, Abel J, Freye E, Haag W, Hartung E. Pharmacokinetic data an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -108,7 +108,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Richter_1985:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 
@@ -128,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

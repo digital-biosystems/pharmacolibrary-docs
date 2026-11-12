@@ -28,8 +28,8 @@ Irinotecan is a topoisomerase I inhibitor used as an anticancer medicine, mainly
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Adiwijaya_2017_reference](drugs/drug_irinotecan/Irinotecan_Adiwijaya2017_reference.md) | — | parent + metabolite (no model) | 0 | Adiwijaya BS et al., Population Pharmacokinetics of Liposoma…, Clinical pharmacology and t… (2017) | [10.1002/cpt.720](https://doi.org/10.1002/cpt.720) |
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Friberg_2002_cpt_11](drugs/drug_irinotecan/Irinotecan_Friberg2002_cpt_11.md) | — | 1-compartment (no model) | 1 | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
-| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ dmdc](drugs/drug_irinotecan/Irinotecan_Friberg2002_dmdc.md) | — | 1-compartment (no model) | 1 |  |  |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Friberg_2002_cpt_11](drugs/drug_irinotecan/Irinotecan_Friberg2002_cpt_11.md) | — | 1-compartment (no model) | 1 | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-rf" hidden data-species="unknown" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ dmdc](drugs/drug_irinotecan/Irinotecan_Friberg2002_dmdc.md) | — | 1-compartment (no model) | 1 |  |  |
 | <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zhu_2023_reference](drugs/drug_irinotecan/Irinotecan_Zhu2023_reference.md) | — | parent + metabolite (no model) | 0 | Zhu J et al., Translational Pharmacokinetic/Pharmacod…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092274](https://doi.org/10.3390/pharmaceutics15092274) |
 
 ## Pharmacodynamics (PD)
@@ -81,7 +81,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 95 matched, 20 returned
 - **screened:** 16  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

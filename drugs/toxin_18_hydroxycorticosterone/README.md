@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;18-Hydroxycorticosterone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_18Hydroxycorticosterone_Huston1981_reference&quot;,&quot;label&quot;:&quot;Huston_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_18_hydroxycorticosterone/D_18Hydroxycorticosterone_Huston1981_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # 18-Hydroxycorticosterone
 
@@ -28,11 +29,17 @@
 |---|---|---|---|---|---|---|
 | 18-Hydroxycorticosterone (18_hydroxycorticosterone) | parent | 362.466 | C21H30O5 | PubChem | [11222](https://pubchem.ncbi.nlm.nih.gov/compound/11222) | Huston_1981 |
 
+## Start here
+
+> **Huston_1981_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> three subjects, n = 3. [Run it in the simulator](drugs/toxin_18_hydroxycorticosterone/D_18Hydroxycorticosterone_Huston1981_reference.md?tab=Simulation) · [record](drugs/toxin_18_hydroxycorticosterone/D_18Hydroxycorticosterone_Huston1981_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Huston_1981_reference](drugs/toxin_18_hydroxycorticosterone/D_18Hydroxycorticosterone_Huston1981_reference.md) | — | retention function (no model) | 1 | Huston G et al., Evaluation of the mineralocorticoid act…, Clinical science (London, E… (1981) | [10.1042/cs0610201](https://doi.org/10.1042/cs0610201) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Huston_1981_reference](drugs/toxin_18_hydroxycorticosterone/D_18Hydroxycorticosterone_Huston1981_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Huston G et al., Evaluation of the mineralocorticoid act…, Clinical science (London, E… (1981) | [10.1042/cs0610201](https://doi.org/10.1042/cs0610201) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

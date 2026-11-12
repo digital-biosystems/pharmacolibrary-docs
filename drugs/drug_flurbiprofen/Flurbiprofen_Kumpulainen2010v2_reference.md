@@ -5,11 +5,11 @@
 
 # flurbiprofen — `Flurbiprofen_Kumpulainen2010v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is not a compartmental popPK model because it lacks distribution volume and clearance/elimination parameters.
+> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 14:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is not a compartmental popPK model because it lacks distribution volume and clearance/elimination parameters.
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="false" population="children aged 3 months to 13 years" measured-compound="flurbiprofen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="true" population="children aged 3 months to 13 years" measured-compound="flurbiprofen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasma and cerebrospinal fluid pharmacokinetics of flurbiprofen in children. British journal of clinical pharmacology 70(4):557–566 (2010).
@@ -50,7 +50,7 @@ Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,8 +143,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | fail |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Kumpulainen_2010_2_table_p6_1:row11:col1', 'Kumpulainen_2010_2_table_p6_1:row11:col2', 'Kumpulainen_2010_2_table_p6_1:row11:col3'] |
-| C5_dimension_Q301 | fail | [length] ** 3 / [time] | l h⁻¹ | ['Kumpulainen_2010_2_table_p6_1:row1:col1', 'Kumpulainen_2010_2_table_p6_1:row1:col2', 'Kumpulainen_2010_2_table_p6_1:row1:col3'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h⁻¹ | ['Kumpulainen_2010_2_table_p6_1:row3:col1', 'Kumpulainen_2010_2_table_p6_1:row3:col2', 'Kumpulainen_2010_2_table_p6_1:row3:col3'] |
+| C5_dimension_Q301 | fail | 1 / [time] | l h⁻¹ ([length] ** 3 / [time]) | ['Kumpulainen_2010_2_table_p6_1:row1:col1', 'Kumpulainen_2010_2_table_p6_1:row1:col2', 'Kumpulainen_2010_2_table_p6_1:row1:col3'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l h⁻¹ ([length] ** 3 / [time]) | ['Kumpulainen_2010_2_table_p6_1:row3:col1', 'Kumpulainen_2010_2_table_p6_1:row3:col2', 'Kumpulainen_2010_2_table_p6_1:row3:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Kumpulainen_2010_2_table_p6_1:row2:col1', 'Kumpulainen_2010_2_table_p6_1:row2:col2', 'Kumpulainen_2010_2_table_p6_1:row2:col3'] |
 | C5_unit_missing_Q349 | fail | 1 / [time] | UPTK | ['Kumpulainen_2010_2_table_p6_1:row12:col1', 'Kumpulainen_2010_2_table_p6_1:row12:col2', 'Kumpulainen_2010_2_table_p6_1:row12:col3'] |
 | C8_topology | pass |  |  |  |
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

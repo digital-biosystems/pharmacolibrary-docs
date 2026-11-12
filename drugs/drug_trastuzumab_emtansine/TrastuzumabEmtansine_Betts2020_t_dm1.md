@@ -5,11 +5,11 @@
 
 # trastuzumab emtansine — `TrastuzumabEmtansine_Betts2020_t_dm1`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The model was rejected due to a dimension mismatch on the dissociation constant parameter and missing link definitions for the binding interactions.
+> This record was reviewed on 2026-11-07 14:33 UTC (Rejected), but the paper was screened again on 2026-10-07 21:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected due to a dimension mismatch on the dissociation constant parameter and missing link definitions for the binding interactions.
 
-<div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Betts2020_t_dm1" status="rejected" stale="false" population="adults with cancer" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Betts2020_t_dm1" status="rejected" stale="true" population="adults with cancer" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Betts A, Clark T, Jasper P, Tolsma J, van der Graaf PH, Graziani EI et al. Use of translational modeling and simulation for quantitative comparison of PF-06804103, a new generation HER2 ADC, with Trastuzumab-DM1. Journal of pharmacokinetics and pharmacodynamics 47(5):513-526 (2020).
@@ -42,7 +42,7 @@ Betts A, Clark T, Jasper P, Tolsma J, van der Graaf PH, Graziani EI et al. Use o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Betts_2020_table_4:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Betts_2020_table_4:row3:col2'] |
-| C5_dimension_Q331 | fail | [length] | nM | ['Betts_2020_table_4:row4:col2'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nM ([length]) | ['Betts_2020_table_4:row4:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Betts_2020_table_4:row7:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Betts_2020_table_4:row0:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Betts_2020_table_4:row2:col2'] |
@@ -171,7 +171,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

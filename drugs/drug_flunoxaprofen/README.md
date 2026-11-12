@@ -26,7 +26,7 @@ Flunoxaprofen is a non-steroidal anti-inflammatory drug of the propionic acid ty
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Segre_1987_reference](drugs/drug_flunoxaprofen/Flunoxaprofen_Segre1987_reference.md) | — | 1-compartment (no model) | 3 | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Segre_1987_reference](drugs/drug_flunoxaprofen/Flunoxaprofen_Segre1987_reference.md) | — | 1-compartment (no model) | 3 | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +40,13 @@ Flunoxaprofen is a non-steroidal anti-inflammatory drug of the propionic acid ty
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:09 | 0:58 | 0/1/0 | 0/0/0 | 0/0/0 | 20,143/1,571 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 08:09 | 0:58 | 1/0/0 | 0/0/0 | 0/0/0 | 20,143/1,571 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

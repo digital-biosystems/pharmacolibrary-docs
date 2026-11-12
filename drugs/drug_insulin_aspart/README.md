@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin aspart&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_R_ppel_2017_GIR&quot;,&quot;label&quot;:&quot;R\u00fcppel_2017 \u00b7 GIR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # insulin aspart
 
@@ -33,7 +34,7 @@ Insulin aspart is a fast-acting insulin analogue used to treat diabetes, includi
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Haahr_2016_GIR](drugs/drug_insulin_aspart/pd_Haahr_2016_GIR.md) | glucose infusion rate ← insulin aspart · stimulation effect | — | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Heise_2014_GIR](drugs/drug_insulin_aspart/pd_Heise_2014_GIR.md) | glucose infusion rate ← insulin aspart · indirect response — drug inhibits the loss of glucose infusion rate | — | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rüppel_2017_GIR](drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR.md) | glucose infusion rate ← insulin · direct sigmoid Emax (Hill) effect | — | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Rüppel_2017_GIR](drugs/drug_insulin_aspart/pd_R_ppel_2017_GIR.md) | glucose infusion rate ← insulin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rüppel_2017_GIRAUC](drugs/drug_insulin_aspart/pd_R_ppel_2017_GIRAUC.md) | AUC of GIR ← insulin · direct sigmoid Emax (Hill) effect | — | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
 
 ## ADME sites

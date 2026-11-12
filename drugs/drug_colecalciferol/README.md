@@ -41,7 +41,7 @@ Colecalciferol (vitamin D3) is a vitamin used to treat or prevent vitamin D defi
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
-| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 
 ## ADME sites
@@ -72,13 +72,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 08:01 | 26:11 | 3/0/0 | 0/0/0 | 0/0/0 | 530,989/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 5/24 | 25/0 | 0 |
+| 2026-10-05 08:01 | 26:11 | 3/0/0 | 0/0/0 | 0/0/0 | 530,989/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 5/24 | 24/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9645 matched, 70 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

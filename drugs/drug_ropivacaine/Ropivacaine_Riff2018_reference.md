@@ -5,11 +5,11 @@
 
 # ropivacaine — `Ropivacaine_Riff2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the apparent clearance parameter's value was paired with an invalid unit for that structural parameter.
+> This record was reviewed on 2026-11-07 14:39 UTC (Rejected), but the paper was screened again on 2026-10-07 04:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the apparent clearance parameter's value was paired with an invalid unit for that structural parameter.
 
-<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Riff2018_reference" status="rejected" stale="false" population="women undergoing unilateral mastectomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Riff2018_reference" status="rejected" stale="true" population="women undergoing unilateral mastectomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Riff C, Guilhaumou R, Marsot A, Beaussier M, Cohen M, Blin O et al. Ropivacaine Wound Infiltration for Pain Management After Breast Cancer Mastectomy: A Population Pharmacokinetic Analysis. Clinical pharmacology in drug development 7(8):811–819 (2018).
@@ -38,7 +38,7 @@ Riff C, Guilhaumou R, Marsot A, Beaussier M, Cohen M, Blin O et al. Ropivacaine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -117,7 +117,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | fail | 1 / [time] | h-1 | ['Riff_2018:abstract'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | h-1 (1 / [time]) | ['Riff_2018:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Riff_2018:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Riff_2018:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Riff_2018:abstract'] |
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

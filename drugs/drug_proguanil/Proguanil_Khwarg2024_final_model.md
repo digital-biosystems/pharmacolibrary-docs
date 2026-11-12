@@ -5,11 +5,11 @@
 
 # proguanil — `Proguanil_Khwarg2024_final_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The fu parameter for proguanil is dimensionless, so a dimension mismatch error occurred.
+> This record was reviewed on 2026-11-07 15:20 UTC (Rejected), but the paper was screened again on 2026-10-07 07:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The fu parameter for proguanil is dimensionless, so a dimension mismatch error occurred.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_final_model" status="rejected" stale="false" population="healthy Korean adults" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_final_model" status="rejected" stale="true" population="healthy Korean adults" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism on the pharmacokinetics of proguanil in Korean: A semi-physiologic population pharmacokinetic approach. Clinical and translational science 17(12):e70103 (2024).
@@ -45,7 +45,7 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -151,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['cts70103-tbl-0003:row4:col1', 'cts70103-tbl-0003:row4:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['cts70103-tbl-0003:row5:col1', 'cts70103-tbl-0003:row5:col2'] |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/h | ['cts70103-tbl-0003:row8:col1', 'cts70103-tbl-0003:row8:col2'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/h ([length] ** 3 / [time]) | ['cts70103-tbl-0003:row8:col1', 'cts70103-tbl-0003:row8:col2'] |
 | C5_dimension_Q306 | pass | 1 / [time] |  | ['cts70103-tbl-0003:row15:col1', 'cts70103-tbl-0003:row15:col2'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['cts70103-tbl-0003:row16:col1', 'cts70103-tbl-0003:row16:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['cts70103-tbl-0003:row3:col1', 'cts70103-tbl-0003:row3:col2'] |
@@ -179,7 +179,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

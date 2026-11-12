@@ -26,7 +26,7 @@ Ornidazole is a nitroimidazole antimicrobial used against protozoal and anaerobi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Turcant_1987_reference](drugs/drug_ornidazole/Ornidazole_Turcant1987_reference.md) | — | 1-compartment (no model) | 2 | Turcant A et al., Pharmacokinetics of ornidazole in neona…, European journal of clinica… (1987) | [10.1007/BF00609970](https://doi.org/10.1007/BF00609970) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Turcant_1987_reference](drugs/drug_ornidazole/Ornidazole_Turcant1987_reference.md) | — | 1-compartment (no model) | 2 | Turcant A et al., Pharmacokinetics of ornidazole in neona…, European journal of clinica… (1987) | [10.1007/BF00609970](https://doi.org/10.1007/BF00609970) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,7 +52,7 @@ Ornidazole is a nitroimidazole antimicrobial used against protozoal and anaerobi
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

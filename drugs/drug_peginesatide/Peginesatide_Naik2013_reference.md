@@ -4,11 +4,11 @@
 
 # peginesatide — `Peginesatide_Naik2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance; vmax has no unit.
+> This record was reviewed on 2026-11-07 16:51 UTC (Needs review), but the paper was screened again on 2026-10-05 21:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; vmax has no unit.
 
-<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="false" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="peginesatide" model-id="Peginesatide_Naik2013_reference" status="needs_review" stale="true" population="patients with chronic kidney disease on dialysis" measured-compound="peginesatide" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Naik H, Tsai MC, Fiedler-Kelly J, Qiu P, Vakilynejad M. A Population Pharmacokinetic and Pharmacodynamic Analysis of Peginesatide in Patients with Chronic Kidney Disease on Dialysis. PloS one 8(6):e66422 (2013).
@@ -47,7 +47,7 @@ Naik H, Tsai MC, Fiedler-Kelly J, Qiu P, Vakilynejad M. A Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.871). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,14 +148,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['pone-0066422-t006:row2:col1', 'pone-0066422-t006:row2:col2', 'pone-0066422-t006:row2:col3', 'pone-0066422-t006:row2:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['pone-0066422-t006:row6:col1', 'pone-0066422-t006:row6:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pone-0066422-t006:row4:col1', 'pone-0066422-t006:row4:col2', 'pone-0066422-t006:row4:col3', 'pone-0066422-t006:row4:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['pone-0066422-t006:row3:col1', 'pone-0066422-t006:row3:col2', 'pone-0066422-t006:row3:col3', 'pone-0066422-t006:row3:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['pone-0066422-t006:row7:col1', 'pone-0066422-t006:row7:col2', 'pone-0066422-t006:row7:col3', 'pone-0066422-t006:row7:col4'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['pone-0066422-t006:row1:col1', 'pone-0066422-t006:row1:col2', 'pone-0066422-t006:row1:col3', 'pone-0066422-t006:row1:col4'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['pone-0066422-t006:row1:col1', 'pone-0066422-t006:row1:col2', 'pone-0066422-t006:row1:col3', 'pone-0066422-t006:row1:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.49 L | ['pone-0066422-t006:row3:col1', 'pone-0066422-t006:row3:col2', 'pone-0066422-t006:row3:col3', 'pone-0066422-t006:row3:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 0.519 L | ['pone-0066422-t006:row7:col1', 'pone-0066422-t006:row7:col2', 'pone-0066422-t006:row7:col3', 'pone-0066422-t006:row7:col4'] |
@@ -186,7 +186,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

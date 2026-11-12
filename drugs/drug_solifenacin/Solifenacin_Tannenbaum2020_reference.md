@@ -4,11 +4,11 @@
 
 # solifenacin — `Solifenacin_Tannenbaum2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Solifenacin’s Fab is recorded as 1.12 A, causing a unit mismatch that rejects the model.
+> This record was reviewed on 2026-11-07 16:58 UTC (Rejected), but the paper was screened again on 2026-10-07 09:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Solifenacin’s Fab is recorded as 1.12 A, causing a unit mismatch that rejects the model.
 
-<div class="pk-model-meta" hidden drug="solifenacin" model-id="Solifenacin_Tannenbaum2020_reference" status="rejected" stale="false" population="pediatric patients with overactive bladder or neurogenic detrusor overactivity" measured-compound="solifenacin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="solifenacin" model-id="Solifenacin_Tannenbaum2020_reference" status="rejected" stale="true" population="pediatric patients with overactive bladder or neurogenic detrusor overactivity" measured-compound="solifenacin" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verheggen F et al. Pharmacokinetics of solifenacin in pediatric populations with overactive bladder or neurogenic detrusor overactivity. Pharmacology research & perspectives 8(6):e00684 (2020).
@@ -47,7 +47,7 @@ Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verhegg
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,9 +165,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 38 | 36.83 | 0.9692 | 0.25 | reported t½β |
-| C5_dimension_Q174 | fail | 1 / [length] ** 3 | ng mL–1 mg–1 |  |  | ['Tannenbaum_2020_table_4:row2:col1', 'Tannenbaum_2020_table_4:row2:col2', 'Tannenbaum_2020_table_4:row2:col3'] |
+| C5_dimension_Q174 | fail | [mass] / [length] ** 3 | ng mL–1 mg–1 (1 / [length] ** 3) |  |  | ['Tannenbaum_2020_table_4:row2:col1', 'Tannenbaum_2020_table_4:row2:col2', 'Tannenbaum_2020_table_4:row2:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['prp2684-tbl-0003:row2:col1', 'prp2684-tbl-0003:row2:col2', 'Tannenbaum_2020_table_4:row5:col1', 'Tannenbaum_2020_table_4:row5:col2', 'Tannenbaum_2020_table_4:row5:col3'] |
-| C5_dimension_Q37 | fail | 1 / [length] ** 3 | ng mL–1 mg–1 |  |  | ['Tannenbaum_2020_table_4:row7:col1', 'Tannenbaum_2020_table_4:row7:col2', 'Tannenbaum_2020_table_4:row7:col3'] |
+| C5_dimension_Q37 | fail | [mass] / [length] ** 3 | ng mL–1 mg–1 (1 / [length] ** 3) |  |  | ['Tannenbaum_2020_table_4:row7:col1', 'Tannenbaum_2020_table_4:row7:col2', 'Tannenbaum_2020_table_4:row7:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['prp2684-tbl-0003:row8:col1', 'prp2684-tbl-0003:row8:col2'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['Tannenbaum_2020_table_4:row4:col1', 'Tannenbaum_2020_table_4:row4:col2', 'Tannenbaum_2020_table_4:row4:col3'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  |  |  | ['prp2684-tbl-0003:row10:col1', 'prp2684-tbl-0003:row10:col2'] |
@@ -198,7 +198,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

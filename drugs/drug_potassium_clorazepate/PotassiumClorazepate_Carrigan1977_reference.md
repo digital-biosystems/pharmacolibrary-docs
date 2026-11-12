@@ -5,11 +5,11 @@
 
 # potassium clorazepate — `PotassiumClorazepate_Carrigan1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record lacks volume and clearance, failing dimension checks, as it misinterprets abstract-only summary statistics as model parameters.
+> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-06 20:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record lacks volume and clearance, failing dimension checks, as it misinterprets abstract-only summary statistics as model parameters.
 
-<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Carrigan1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nordiazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Carrigan1977_reference" status="rejected" stale="true" population="healthy adults" measured-compound="nordiazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Carrigan PJ, Chao GC, Barker WM, Hoffman DJ, Chun AH. Steady-state bioavailability of two clorazepate dipotassium dosage forms. Journal of clinical pharmacology 17(1):18–28 (1977).
@@ -39,7 +39,7 @@ Carrigan PJ, Chao GC, Barker WM, Hoffman DJ, Chun AH. Steady-state bioavailabili
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,8 +121,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q310 | fail | [mass] | mg | ['Carrigan_1977:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q310 | fail | [time] | mg ([mass]) | ['Carrigan_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Carrigan_1977:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Carrigan_1977:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -143,7 +144,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

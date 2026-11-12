@@ -1,12 +1,13 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Quarantined models"}]'></div>
 
 
-## Quarantined models (66)
+## Quarantined models (91)
 
 The model was built but held back: its simulation failed a hard check.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
+| [5-Hydroxy-L-tryptophan](/drugs/toxin_5_hydroxy_l_tryptophan/) | [Guan_2020 · reference](/drugs/toxin_5_hydroxy_l_tryptophan/D_5HydroxyLTryptophan_Guan2020_reference.md) | model_quarantined | unchecked |
 | [Actinium-227](/drugs/toxin_actinium_227/) | [Sgouros_2021 · reference](/drugs/toxin_actinium_227/Actinium227_Sgouros2021_reference.md) | model_quarantined | unchecked |
 | [afatinib](/drugs/drug_afatinib/) | [Nakao_2019 · reference](/drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) | model_quarantined | partial |
 | [albendazole](/drugs/drug_albendazole/) | [Li_2024 · reference](/drugs/drug_albendazole/Albendazole_Li2024_reference.md) | model_quarantined | unchecked |
@@ -59,13 +60,37 @@ The model was built but held back: its simulation failed a hard check.
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · tseng_et_al_2018_49](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_tseng_et_al_2018_49.md) | model_quarantined | partial |
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · zhao_et_al_2013_44](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_zhao_et_al_2013_44.md) | model_quarantined | partial |
 | [glibenclamide](/drugs/drug_glibenclamide/) | [Rambiritch_2016_2 · final_final_two_compartment_model_estimate](/drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_final_final_two_compartment_m.md) | model_quarantined | unchecked |
+| [Heparin](/drugs/toxin_heparin/) | [Jia_2015 · reference](/drugs/toxin_heparin/Heparin_Jia2015_reference.md) | model_quarantined | unchecked |
 | [iloperidone](/drugs/drug_iloperidone/) | [Pei_2016 · estimate](/drugs/drug_iloperidone/Iloperidone_Pei2016_estimate.md) | model_quarantined | confirmed |
+| [L-Serine](/drugs/toxin_l_serine/) | [Lee_2022 · reference](/drugs/toxin_l_serine/LSerine_Lee2022_reference.md) | model_quarantined | unchecked |
 | [magnesium sulfate](/drugs/drug_magnesium_sulfate/) | [Du_2019 · reference](/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md) | model_quarantined | partial |
 | [melagatran](/drugs/drug_melagatran/) | [Cullberg_2005 · reference](/drugs/drug_melagatran/Melagatran_Cullberg2005_reference.md) | model_quarantined | partial |
 | [meropenem](/drugs/drug_meropenem/) | [Rančić_2024 · reference](/drugs/drug_meropenem/Meropenem_Rani2024_reference.md) | model_quarantined | partial |
 | [nadroparin](/drugs/drug_nadroparin/) | [Mast_2023 · final](/drugs/drug_nadroparin/Nadroparin_Mast2023_final.md) | model_quarantined | partial |
 | [ospemifene](/drugs/drug_ospemifene/) | [Kubota_2017 · reference](/drugs/drug_ospemifene/Ospemifene_Kubota2017_reference.md) | model_quarantined | confirmed |
 | [palbociclib](/drugs/drug_palbociclib/) | [Marouille_2021 · final_final_population_pk_model_with_covariates](/drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · blasco](/drugs/toxin_rituximab/Rituximab_Chen2021_blasco.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · candelaria](/drugs/toxin_rituximab/Rituximab_Chen2021_candelaria.md) | model_quarantined | partial |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · li](/drugs/toxin_rituximab/Rituximab_Chen2021_li.md) | model_quarantined | partial |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · lioger](/drugs/toxin_rituximab/Rituximab_Chen2021_lioger.md) | model_quarantined | partial |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · m_ller](/drugs/toxin_rituximab/Rituximab_Chen2021_m_ller.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · puisset](/drugs/toxin_rituximab/Rituximab_Chen2021_puisset.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · regazzi](/drugs/toxin_rituximab/Rituximab_Chen2021_regazzi.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · ternant](/drugs/toxin_rituximab/Rituximab_Chen2021_ternant.md) | model_quarantined | partial |
+| [Rituximab](/drugs/toxin_rituximab/) | [Chen_2021 · tout](/drugs/toxin_rituximab/Rituximab_Chen2021_tout.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · bertrand_lioger_et_al_57](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_bertrand_lioger_et_al_57.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · candice_jamois_et_al_61](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_candice_jamois_et_al_61.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · carsten_m_ller_et_al_53](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_carsten_m_ller_et_al_53.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · chee_m_ng_et_al_58](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_chee_m_ng_et_al_58.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · florent_puisset_et_al_60](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_florent_puisset_et_al_60.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · h_l_ne_blasco_et_al_52](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_h_l_ne_blasco_et_al_52.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · mira_tout_et_al_56](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_mira_tout_et_al_56.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · myrna_candelaria_et_al_55](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_myrna_candelaria_et_al_55.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · shu_liu_et_al_12](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_shu_liu_et_al_12.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · shu_liu_et_al_13](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_shu_liu_et_al_13.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · uma_fogueri_et_al_33](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_uma_fogueri_et_al_33.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · vikram_gota_et_al_54](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_vikram_gota_et_al_54.md) | model_quarantined | confirmed |
+| [Rituximab](/drugs/toxin_rituximab/) | [Zhenyan_2026 · yewei_chen_et_al_59](/drugs/toxin_rituximab/Rituximab_Zhenyan2026_yewei_chen_et_al_59.md) | model_quarantined | confirmed |
 | [salmeterol](/drugs/drug_salmeterol/) | [Himstedt_2020 · fluticasone_propionate](/drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate.md) | model_quarantined | partial |
 | [secukinumab](/drugs/drug_secukinumab/) | [Bruin_2017 · reference](/drugs/drug_secukinumab/Secukinumab_Bruin2017_reference.md) | model_quarantined | confirmed |
 | [Sodium arsenite](/drugs/toxin_sodium_arsenite/) | [Ravandi_2025 · sy_2101_oral_fed_treatment_median](/drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median.md) | model_quarantined | unchecked |

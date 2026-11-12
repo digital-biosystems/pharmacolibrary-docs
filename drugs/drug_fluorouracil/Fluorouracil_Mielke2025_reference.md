@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Mielke2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the unit for the apparent intercompartmental clearance could not be converted to standard pharmacokinetic units.
+> This record was reviewed on 2026-11-07 14:11 UTC (Rejected), but the paper was screened again on 2026-11-03 21:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the apparent intercompartmental clearance could not be converted to standard pharmacokinetic units.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Mielke2025_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Mielke2025_reference" status="rejected" stale="true" population="adult cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mielke H, Algharably EAE, Gundert-Remy U. 5-Fluorouracil Toxicity: Revisiting the Relevance of Pharmacokinetic Parameters. Pharmaceuticals (Basel, Switzerland) 18(5):653 (2025).
@@ -41,7 +41,7 @@ Mielke H, Algharably EAE, Gundert-Remy U. 5-Fluorouracil Toxicity: Revisiting th
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,13 +146,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Mielke_2025_table_1:row28:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Arshad_2020:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Mielke_2025_table_1:row0:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Deyme_2019:review'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | ['Mielke_2025_table_1:row27:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Mielke_2025_table_1:row27:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 256 | ['Arshad_2020:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 256 L/h | ['Arshad_2020:review'] |
@@ -174,7 +175,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

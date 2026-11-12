@@ -26,7 +26,7 @@ Pasireotide, a somatostatin analogue, is used to treat Cushing's disease caused 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nedelman_2018_reference](drugs/drug_pasireotide/Pasireotide_Nedelman2018_reference.md) | — | 1-compartment (no model) | 0 | Nedelman J et al., Population Pharmacokinetics of Subcutan…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0600-y](https://doi.org/10.1007/s40262-017-0600-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nedelman_2018_reference](drugs/drug_pasireotide/Pasireotide_Nedelman2018_reference.md) | — | 1-compartment (no model) | 0 | Nedelman J et al., Population Pharmacokinetics of Subcutan…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0600-y](https://doi.org/10.1007/s40262-017-0600-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -66,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

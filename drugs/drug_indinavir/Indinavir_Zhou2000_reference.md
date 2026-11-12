@@ -5,11 +5,11 @@
 
 # indinavir — `Indinavir_Zhou2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Indinavir's clearance parameter failed dimensional consistency checks because the record relied on abstract-only summary statistics rather than fitted model estimates.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 13:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Indinavir's clearance parameter failed dimensional consistency checks because the record relied on abstract-only summary statistics rather than fitted model estimates.
 
-<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="true" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma population pharmacokinetics and penetration into cerebrospinal fluid of indinavir in combination with zidovudine and lamivudine in HIV-1-infected patients. AIDS (London, England) 14(18):2869–2876 (2000).
@@ -42,7 +42,7 @@ Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,14 +136,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Zhou_2000:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kappelhoff_2005:review'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | micromol/l | ['Zhou_2000:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | micromol/l ([substance] / [length] ** 3) | ['Zhou_2000:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Kappelhoff_2005:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Zhou_2000:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kappelhoff_2005:review'] |
-| C5_dimension_Q75 | fail | [substance] / [length] ** 3 | micromol/l | ['Zhou_2000:abstract'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | micromol/l ([substance] / [length] ** 3) | ['Zhou_2000:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Kappelhoff_2005:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.5 | ['Kappelhoff_2005:review'] |
 | C8_topology | pass |  |  |  |
@@ -166,7 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -26,7 +26,7 @@ Cibenzoline (cifenline) is an antiarrhythmic agent of class I, developed for tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Brazzell_1985_reference](drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | — | 1-compartment (no model) | 7 | Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985) | [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brazzell_1985_reference](drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | — | 1-compartment (no model) | 7 | Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985) | [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -71,7 +71,7 @@ Cibenzoline (cifenline) is an antiarrhythmic agent of class I, developed for tre
 
 - **PubMed hits:** 41 matched, 40 returned
 - **screened:** 8  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

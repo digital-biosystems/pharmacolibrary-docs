@@ -5,11 +5,11 @@
 
 # pomalidomide — `Pomalidomide_Li2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Pomalidomide's drug interaction clearance ratio lacks a unit, and its peripheral-to-central volume ratio deviates from a 1C structure.
+> This record was reviewed on 2026-11-07 15:56 UTC (Needs review), but the paper was screened again on 2026-10-07 00:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="needs_review" stale="false" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="extracted" stale="true" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of pomalidomide. Journal of clinical pharmacology 55(5):563–572 (2015).
@@ -29,8 +29,6 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | ka, h−1 | kabs | 1.25 | h−1 |  |
@@ -45,7 +43,7 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -162,7 +160,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q78 | pass | [length] ** 3 |  |  |  | ['tbl2:row3:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['tbl2:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['tbl2:row6:col1'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  |  |  | ['tbl2:row7:col1'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 8.52 L/h |  |  | ['tbl2:row5:col1'] |
@@ -194,7 +191,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

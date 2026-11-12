@@ -5,11 +5,11 @@
 
 # clonidine — `Clonidine_Paalzow1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the central compartment volume unit, ml/kg, could not be converted to SI units, causing a dimension mismatch on a structural parameter.
+> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 06:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the central compartment volume unit, ml/kg, could not be converted to SI units, causing a dimension mismatch on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="false" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="true" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Paalzow LK, Edlund PO. Pharmacokinetics of clonidine in the rat and cat. Journal of pharmacokinetics and biopharmaceutics 7(5):481–494 (1979).
@@ -47,7 +47,7 @@ Paalzow LK, Edlund PO. Pharmacokinetics of clonidine in the rat and cat. Journal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Paalzow_1979_table_3:row2:col1', 'Paalzow_1979_table_3:row2:col2', 'Paalzow_1979_table_3:row2:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Paalzow_1979_table_3:row3:col1', 'Paalzow_1979_table_3:row3:col2', 'Paalzow_1979_table_3:row3:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Paalzow_1979_table_3:row4:col1', 'Paalzow_1979_table_3:row4:col2', 'Paalzow_1979_table_3:row4:col3'] |
-| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | ['Paalzow_1979_table_1:row1:col1', 'Paalzow_1979_table_1:row1:col2', 'Paalzow_1979_table_1:row1:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ (1 / [time]) | ['Paalzow_1979_table_1:row1:col1', 'Paalzow_1979_table_1:row1:col2', 'Paalzow_1979_table_1:row1:col3'] |
 | C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | min-ng/ml | ['Paalzow_1979_table_3:row1:col1', 'Paalzow_1979_table_3:row1:col2', 'Paalzow_1979_table_3:row1:col3'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | min-ng/ml | ['Paalzow_1979_table_3:row0:col1', 'Paalzow_1979_table_3:row0:col2', 'Paalzow_1979_table_3:row0:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 68.77 | ['Paalzow_1979_table_3:row5:col1', 'Paalzow_1979_table_3:row5:col2', 'Paalzow_1979_table_3:row5:col3'] |
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

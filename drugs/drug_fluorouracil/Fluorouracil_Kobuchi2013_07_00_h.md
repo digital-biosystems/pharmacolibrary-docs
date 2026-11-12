@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2013_07_00_h`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the units day-1 and L could not be converted to SI, preventing proper model evaluation for 5-fluorouracil.
+> This record was reviewed on 2026-11-07 14:08 UTC (Rejected), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the units day-1 and L could not be converted to SI, preventing proper model evaluation for 5-fluorouracil.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_07_00_h" status="rejected" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_07_00_h" status="rejected" stale="true" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmacodynamic modeling of 5-fluorouracil by using a biomarker to predict tumor growth in a rat model of colorectal cancer. Journal of pharmaceutical sciences 102(6):2056–2067 (2013).
@@ -44,7 +44,7 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,11 +137,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q302 | fail | [length] ** 3 / [mass] / [time] | mL µg-1 day-1 | ['Kobuchi_2013_table_2:row1:col2'] |
+| C5_dimension_Q302 | fail | 1 / [time] | mL µg-1 day-1 ([length] ** 3 / [mass] / [time]) | ['Kobuchi_2013_table_2:row1:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Kobuchi_2013_table_2:row0:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Deyme_2019:review'] |
-| C5_dimension_Q67 | fail | 1 / [time] | day-1 | ['Kobuchi_2013_table_2:row2:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | day-1 (1 / [time]) | ['Kobuchi_2013_table_2:row2:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 161 L | ['Deyme_2019:review'] |
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

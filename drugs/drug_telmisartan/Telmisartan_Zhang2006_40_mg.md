@@ -5,11 +5,11 @@
 
 # telmisartan — `Telmisartan_Zhang2006_40_mg`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Telmisartan model was rejected because the elimination rate constant unit could not be standardized.
+> This record was reviewed on 2026-11-07 14:32 UTC (Rejected), but the paper was screened again on 2026-11-04 16:54 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Telmisartan model was rejected because the elimination rate constant unit could not be standardized.
 
-<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Zhang2006_40_mg" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Zhang2006_40_mg" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan in healthy Chinese subjects after oral administration of two dosage levels. Arzneimittel-Forschung 56(8):569–573 (2006).
@@ -46,7 +46,7 @@ Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Zhang_2006_table_p4_1:row4:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Zhang_2006_table_p4_1:row6:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Zhang_2006_table_p4_1:row0:col1'] |
-| C5_dimension_Q47 | fail | [time] | h | ['Zhang_2006_table_p4_1:row3:col1'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['Zhang_2006_table_p4_1:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chae_2018:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Zhang_2006_table_p4_1:row1:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Zhang_2006_table_p4_1:row2:col1'] |
@@ -155,7 +155,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

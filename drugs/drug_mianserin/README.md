@@ -34,7 +34,7 @@ Mianserin is an antidepressant used to treat depression. It has been withdrawn i
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces with caveats" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces with caveats</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Timmer_1985_reference](drugs/drug_mianserin/Mianserin_Timmer1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Timmer CJ et al., Absolute bioavailability of mianserin t…, European journal of drug me… (1985) | [10.1007/BF03189759](https://doi.org/10.1007/BF03189759) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Maguire_1983_reference](drugs/drug_mianserin/Mianserin_Maguire1983_reference.md) | — | 1-compartment (no model) | 7 | Maguire K et al., The pharmacokinetics of mianserin in el…, Psychiatry research (1983) | [10.1016/0165-1781(83)90016-1](https://doi.org/10.1016/0165-1781(83)90016-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Maguire_1983_reference](drugs/drug_mianserin/Mianserin_Maguire1983_reference.md) | — | 1-compartment (no model) | 7 | Maguire K et al., The pharmacokinetics of mianserin in el…, Psychiatry research (1983) | [10.1016/0165-1781(83)90016-1](https://doi.org/10.1016/0165-1781(83)90016-1) |
 
 ## ADME sites
 
@@ -69,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 237 matched, 111 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

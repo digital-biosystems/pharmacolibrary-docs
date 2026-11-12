@@ -5,11 +5,11 @@
 
 # inositol — `Inositol_Antonowski2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The AUC/dose parameter for myo-inositol uses a non-standard unit, preventing consistent dimensional analysis and rejecting the record.
+> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 16:34 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The AUC/dose parameter for myo-inositol uses a non-standard unit, preventing consistent dimensional analysis and rejecting the record.
 
-<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="true" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahuta L et al. Pharmacokinetics of. International journal of molecular sciences 23(19) (2022).
@@ -45,7 +45,7 @@ Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahut
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -127,7 +127,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['ijms-23-11246-t001:row3:col2'] |
 | C5_dimension_Q57 | pass | [time] |  | ['ijms-23-11246-t001:row9:col1', 'ijms-23-11246-t001:row9:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['ijms-23-11246-t001:row1:col2'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | mg/L | ['ijms-23-11246-t001:row4:col1', 'ijms-23-11246-t001:row4:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mg/L ([mass] / [length] ** 3) | ['ijms-23-11246-t001:row4:col1', 'ijms-23-11246-t001:row4:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.853 L/h | ['ijms-23-11246-t001:row2:col2'] |
@@ -149,7 +149,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

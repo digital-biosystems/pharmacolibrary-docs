@@ -47,8 +47,8 @@ Buprenorphine is an opioid used to treat pain and opioid dependence, including h
 | <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub> | [↳ otm](drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331 — no SI value to build from</sub> | [Yassen_2007_reference](drugs/drug_buprenorphine/Buprenorphine_Yassen2007_reference.md) | — | 1-compartment (no model) | 5 | Yassen A et al., Mechanism-based PK/PD modeling of the r…, Clinical pharmacology and t… (2007) | [10.1038/sj.clpt.6100025](https://doi.org/10.1038/sj.clpt.6100025) |
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Castro-Cuellar_2023_reference](drugs/drug_buprenorphine/Buprenorphine_CastroCuellar2023_reference.md) | — | 1-compartment (no model) | 0 | Castro-Cuellar G et al., Pharmacokinetics of intra-articular bup…, Journal of veterinary pharm… (2023) | [10.1111/jvp.13119](https://doi.org/10.1111/jvp.13119) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ng_2015_1000_bootstrap_replicates](drugs/drug_buprenorphine/Buprenorphine_Ng2015_1000_bootstrap_replicates.md) | — | 1-compartment (no model) | 6 | Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015) | [10.1002/phar.1610](https://doi.org/10.1002/phar.1610) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ original_data_set](drugs/drug_buprenorphine/Buprenorphine_Ng2015_original_data_set.md) | — | 1-compartment (no model) | 6 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ng_2015_1000_bootstrap_replicates](drugs/drug_buprenorphine/Buprenorphine_Ng2015_1000_bootstrap_replicates.md) | — | 1-compartment (no model) | 6 | Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015) | [10.1002/phar.1610](https://doi.org/10.1002/phar.1610) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ original_data_set](drugs/drug_buprenorphine/Buprenorphine_Ng2015_original_data_set.md) | — | 1-compartment (no model) | 6 (+2 cov.) |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -127,13 +127,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:53 | 6:07 | 7/3/0 | 6/0/0 | 1/0/14 | 613,614/43,772 | einfracz / qwen3.8-27b | 51 | 47/4 | 28/23 | 0 |
+| 2026-10-07 04:53 | 6:07 | 7/3/0 | 6/0/0 | 1/0/14 | 613,614/43,772 | einfracz / qwen3.8-27b | 49 | 47/4 | 26/23 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 588 matched, 71 returned
 - **screened:** 10  ·  **relevant:** 9
-- **records:** 10  ·  extracted 2  ·  needs review 5  ·  rejected 3  ·  stale 0
+- **records:** 10  ·  extracted 2  ·  needs review 5  ·  rejected 3  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

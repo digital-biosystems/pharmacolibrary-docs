@@ -5,11 +5,11 @@
 
 # olaparib — `Olaparib_Overbeek2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance; cLint has no unit.
+> This record was reviewed on 2026-11-07 16:10 UTC (Needs review), but the paper was screened again on 2026-10-06 21:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance; cLint has no unit.
 
-<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients" measured-compound="olaparib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Overbeek2025_reference" status="needs_review" stale="true" population="healthy volunteers and patients" measured-compound="olaparib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Overbeek JK, van Erp NP, Burger DM, den Broeder AA, Koolen SLW, Huitema ADR et al. Population Pharmacokinetics of Cobicistat and its Effect on the Pharmacokinetics of the Anticancer Drug Olaparib. Clinical pharmacokinetics 64(3):425–435 (2025).
@@ -39,7 +39,7 @@ Overbeek JK, van Erp NP, Burger DM, den Broeder AA, Koolen SLW, Huitema ADR et a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Sterlé_2024:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Overbeek_2025_table_3:row1:col1', 'Overbeek_2025_table_3:row1:col2'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | L.h−1.Lliver−1 | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] | L.h−1.Lliver−1 | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 8.7 L | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Overbeek_2025_table_3:row1:col1', 'Overbeek_2025_table_3:row1:col2'] |
 
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

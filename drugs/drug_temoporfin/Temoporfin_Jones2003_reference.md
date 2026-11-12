@@ -4,11 +4,11 @@
 
 # temoporfin — `Temoporfin_Jones2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record for temoporfin was rejected due to a dimension mismatch on the hepatic flow parameter and missing units.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-06 21:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for temoporfin was rejected due to a dimension mismatch on the hepatic flow parameter and missing units.
 
-<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="false" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="true" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in vivo: correlation with pharmacokinetics. British journal of cancer 89(2):398–404 (2003).
@@ -45,7 +45,7 @@ Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,8 +144,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q369 | fail | [time] | h | ['Jones_2003_table_3:row2:col1', 'Jones_2003_table_3:row2:col2'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q369 | fail | [length] ** 3 / [time] | h ([time]) | ['Jones_2003_table_3:row2:col1', 'Jones_2003_table_3:row2:col2'] |
 | C5_dimension_Q53 | pass | [time] |  | ['tbl1:row12:col1'] |
 | C5_dimension_Q57 | pass | [time] |  | ['tbl1:row8:col1'] |
 | C5_dimension_Q59 | pass | [time] |  | ['tbl1:row7:col1'] |
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

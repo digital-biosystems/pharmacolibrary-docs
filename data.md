@@ -4,9 +4,9 @@ The site ships three SQLite databases. Each runs in the browser (the Query and S
 
 | Database | File | Size | Contents | Licence |
 |---|---|---|---|---|
-| Query database | [pharmacolibrary-bc94bf86d4.sqlite](data/pharmacolibrary-bc94bf86d4.sqlite) | 19.0 MB | 17,446 records, 38,918 parameters, 2,200 drugs | licence not set yet; each record cites its source paper |
-| Passage database | [knowledge-8bd0c9550d.sqlite](data/knowledge-8bd0c9550d.sqlite) | 61.0 MB | 46,759 passages for 2,196 drugs: DrugBank 16,794, ClinPGx guideline 2,476, ClinPGx clinical 1,698, PubMed abstracts 25,791 | DrugBank CC BY-NC 4.0; ClinPGx CC BY-SA 4.0; abstracts per paper |
-| ADME sites database | [adme-022c2280ad.sqlite](data/adme-022c2280ad.sqlite) | 7.3 MB | 12,084 drugs, 35,925 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
+| Query database | [pharmacolibrary-b32b7bbd54.sqlite](data/pharmacolibrary-b32b7bbd54.sqlite) | 21.3 MB | 19,467 records, 43,286 parameters, 2,479 drugs | licence not set yet; each record cites its source paper |
+| Passage database | [knowledge-93268e2669.sqlite](data/knowledge-93268e2669.sqlite) | 65.7 MB | 49,943 passages for 2,475 drugs: DrugBank 17,285, ClinPGx guideline 2,476, ClinPGx clinical 1,699, PubMed abstracts 28,483 | DrugBank CC BY-NC 4.0; ClinPGx CC BY-SA 4.0; abstracts per paper |
+| ADME sites database | [adme-914a449ed7.sqlite](data/adme-914a449ed7.sqlite) | 7.4 MB | 12,084 drugs, 35,940 enzyme/transporter/target links, 7,155 organ mentions | DrugBank-derived links CC BY-NC 4.0; tissue table licence not set yet |
 
 ## Query database
 

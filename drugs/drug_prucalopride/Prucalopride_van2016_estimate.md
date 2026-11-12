@@ -4,11 +4,11 @@
 
 # prucalopride — `Prucalopride_van2016_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:16 UTC (Needs review), but the paper was screened again on 2026-10-04 16:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_estimate" status="needs_review" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_estimate" status="needs_review" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a population pharmacokinetic model of prucalopride in children with functional constipation. Pharmacology research & perspectives 4(4):e00236 (2016).
@@ -42,7 +42,7 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,6 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['prp2236-tbl-0003:row7:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['prp2236-tbl-0003:row4:col1'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['prp2236-tbl-0003:row6:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['prp2236-tbl-0003:row9:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q64 | pass | volume within physiological range | 446 L | ['prp2236-tbl-0003:row4:col1'] |
 
@@ -163,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -52,7 +52,7 @@ Suramin is an antiprotozoal drug developed against trypanosomiasis and related p
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [↳ social](drugs/drug_suramin/Suramin_Naviaux2017_social.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [↳ social_inter](drugs/drug_suramin/Suramin_Naviaux2017_social_inter.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [↳ stereotypy](drugs/drug_suramin/Suramin_Naviaux2017_stereotypy.md) | ▶ model + simulator | 1-compartment, IV | 2 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Scher_1992_reference](drugs/drug_suramin/Suramin_Scher1992_reference.md) | — | 2-compartment (no model) | 5 | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Scher_1992_reference](drugs/drug_suramin/Suramin_Scher1992_reference.md) | — | 2-compartment (no model) | 5 | Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -101,7 +101,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 672 matched, 71 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 15  ·  extracted 14  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 15  ·  extracted 14  ·  needs review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

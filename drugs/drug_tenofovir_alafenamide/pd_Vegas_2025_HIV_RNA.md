@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Vegas_2025 \u00b7 PD HIV-RNA (viral load)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HIV-RNA (viral load) — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Tenofovir alafenamide/tenofovir (TAF/TFV) (measured concentrations) drives HIV-RNA (viral load) (in copies/mL): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Tenofovir alafenamide/tenofovir (TAF/TFV) plasma concentrations (ng/mL) inhibit HIV-RNA (copies/mL) via a sigmoid Emax effect on the antiviral efficacy term (ϵ) of a viral dynamics model, with EC50 8.5 ng/mL, EMAX 0.99, and gamma 1; the paper does not state a distinct mechanism beyond this Emax-driven inhibition of viral production.
 >
@@ -46,6 +47,37 @@ Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS j
 </details>
 
 
+## Exposure-response model
+
+`TenofovirAlafenamide_Vegas2025_PD_hiv_rna` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 4.346e+04 copies/mL | — |
+| Emax | -0.99 copies/mL | — |
+| EC50 | 8.5 ng/mL | 8.5e-06 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 4.346e+04, `at_EC50` = 4.346e+04, `at_inf` = 4.346e+04
+
+Deviations:
+
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
 
@@ -74,19 +106,54 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_modelica.zip" download>TenofovirAlafenamide_Vegas2025_PD_hiv_rna_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_fmi.zip" download>TenofovirAlafenamide_Vegas2025_PD_hiv_rna_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_matlab.zip" download>TenofovirAlafenamide_Vegas2025_PD_hiv_rna_matlab.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_sbml.zip" download>TenofovirAlafenamide_Vegas2025_PD_hiv_rna_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_cellml.zip" download>TenofovirAlafenamide_Vegas2025_PD_hiv_rna_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 4.346e+04 |  |
+| input | model | `EC50` | 8.5e-06 |  |
+| input | model | `Emax` | -0.99 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `TenofovirAlafenamide_Vegas2025_PD_hiv_rna`. <https://pharmacolibrary.github.io/#/drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna>
+
+```bibtex
+@misc{pharmacolibrary_TenofovirAlafenamideVegas2025PDhivrna,
+  title  = {{Pharmacolibrary model TenofovirAlafenamide_Vegas2025_PD_hiv_rna}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Vegas2025_PD_hiv_rna/TenofovirAlafenamide_Vegas2025_PD_hiv_rna_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `TenofovirAlafenamide_Vegas2025_PD_hiv_rna_params.json` · controls `TenofovirAlafenamide_Vegas2025_PD_hiv_rna_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

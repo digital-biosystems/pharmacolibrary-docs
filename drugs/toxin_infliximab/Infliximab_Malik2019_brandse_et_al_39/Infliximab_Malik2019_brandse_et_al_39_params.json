@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Infliximab_Malik2019_brandse_et_al_39",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  70.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 4.155555555555556e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 6.742857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "k12": 1.70668549905838e-07,
+  "k21": 3.3564814814814815e-07,
+  "ka": 3.1597222222222224e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 835260.0000000044
+ },
+ "reference_peaks": {
+  "central.C": 0.001505922290997153
+ },
+ "stop_time": 5443200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

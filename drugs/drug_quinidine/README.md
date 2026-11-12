@@ -46,7 +46,7 @@ Quinidine is a class Ia antiarrhythmic used to treat heart rhythm problems such 
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: T6_deviations</sub> | [Kuroda_2024_reference](drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 13 | Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Verme_1992_reference](drugs/drug_quinidine/Quinidine_Verme1992_reference.md) | — | 1-compartment (no model) | 2 | Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992) | [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rakhit_1984_reference](drugs/drug_quinidine/Quinidine_Rakhit1984_reference.md) | model (no simulator) | 1-compartment general linear | 5 | Rakhit A et al., Pharmacokinetics of quinidine and three…, Journal of pharmacokinetics… (1984) | [10.1007/BF01063608](https://doi.org/10.1007/BF01063608) |
-| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ueda_1980_reference](drugs/drug_quinidine/Quinidine_Ueda1980_reference.md) | — | parent + metabolite (no model) | 8 | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ueda_1980_reference](drugs/drug_quinidine/Quinidine_Ueda1980_reference.md) | — | parent + metabolite (no model) | 8 | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) |
 
 ## Pharmacodynamics (PD)
 
@@ -88,13 +88,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 21:50 | 20:54 | 6/1/0 | 1/0/0 | 0/0/0 | 241,969/57,712 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 21/4 | 7/4 | 0 |
+| 2026-10-08 21:50 | 20:54 | 6/1/0 | 1/0/0 | 0/0/0 | 241,969/57,712 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 21/4 | 6/4 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 114 matched, 20 returned
 - **screened:** 20  ·  **relevant:** 7
-- **records:** 7  ·  extracted 0  ·  needs review 5  ·  rejected 1  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 5  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

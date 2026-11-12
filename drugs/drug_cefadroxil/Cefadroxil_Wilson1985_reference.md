@@ -4,11 +4,11 @@
 
 # cefadroxil — `Cefadroxil_Wilson1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The clearance parameter value of 7.0 ml/min.kg is dimensionally inconsistent with the other parameters.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 10:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter value of 7.0 ml/min.kg is dimensionally inconsistent with the other parameters.
 
-<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="false" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="true" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse: pharmacokinetics and in vitro antibacterial activity. Journal of veterinary pharmacology and therapeutics 8(3):246–253 (1985).
@@ -39,7 +39,7 @@ Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse:
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,10 +125,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | ml/min.kg | ['Wilson_1985:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | ml/min.kg ([length] ** 3 * [mass] / [time]) | ['Wilson_1985:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wilson_1985:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Wilson_1985:abstract'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | micrograms/ml | ['Wilson_1985:abstract'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | micrograms/ml ([mass] / [length] ** 3) | ['Wilson_1985:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q76 | pass | volume within physiological range | 32.3 L | ['Wilson_1985:abstract'] |
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

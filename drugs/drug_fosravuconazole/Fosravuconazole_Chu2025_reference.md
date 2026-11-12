@@ -4,11 +4,11 @@
 
 # fosravuconazole — `Fosravuconazole_Chu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The itraconazole and hydroxyitraconazole metabolites are unreachable orphans because their formation links to the parent drug fosravuconazole lack assigned rate constants.
+> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 22:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The itraconazole and hydroxyitraconazole metabolites are unreachable orphans because their formation links to the parent drug fosravuconazole lack assigned rate constants.
 
-<div class="pk-model-meta" hidden drug="fosravuconazole" model-id="Fosravuconazole_Chu2025_reference" status="rejected" stale="false" population="Sudanese patients with eumycetoma" measured-compound="ravuconazole" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="fosravuconazole" model-id="Fosravuconazole_Chu2025_reference" status="rejected" stale="true" population="Sudanese patients with eumycetoma" measured-compound="ravuconazole" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokinetics and Pharmacodynamics of Fosravuconazole, Itraconazole, and Hydroxyitraconazole in Sudanese Patients With Eumycetoma. The Journal of infectious diseases 232(3):e518–e528 (2025).
@@ -47,7 +47,7 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -160,14 +160,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q1 | fail | [length] | Km | ['jiaf279-T2:row4:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | Km ([length]) | ['jiaf279-T2:row4:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['jiaf279-T2:row17:col2', 'jiaf279-T2:row17:col3'] |
 | C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['jiaf279-T2:row15:col2', 'jiaf279-T2:row15:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jiaf279-T2:row6:col2', 'jiaf279-T2:row6:col3'] |
-| C5_dimension_Q49 | fail | [time] | ka | ['jiaf279-T2:row2:col1', 'jiaf279-T2:row2:col2', 'jiaf279-T2:row14:col1', 'jiaf279-T2:row14:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['jiaf279-T2:row2:col1', 'jiaf279-T2:row2:col2', 'jiaf279-T2:row14:col1', 'jiaf279-T2:row14:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['jiaf279-T2:row5:col2', 'jiaf279-T2:row5:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['jiaf279-T2:row7:col2', 'jiaf279-T2:row7:col3'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['jiaf279-T2:row3:col2', 'jiaf279-T2:row3:col3'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['jiaf279-T2:row3:col2', 'jiaf279-T2:row3:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.16 | ['jiaf279-T2:row17:col2', 'jiaf279-T2:row17:col3'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.16 L/h | ['jiaf279-T2:row17:col2', 'jiaf279-T2:row17:col3'] |
@@ -191,7 +191,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

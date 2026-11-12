@@ -4,11 +4,11 @@
 
 # idecabtagene vicleucel — `IdecabtageneVicleucel_Wu2025_stochastic_approximation`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only clearance was extracted — no volume; vmax and kmp have no unit.
+> This record was reviewed on 2026-11-07 16:44 UTC (Needs review), but the paper was screened again on 2026-10-06 20:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; vmax and kmp have no unit.
 
-<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_stochastic_approximation" status="needs_review" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_stochastic_approximation" status="needs_review" stale="true" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular Kinetics of Idecabtagene Vicleucel in Patients with Triple-Class-Exposed Relapsed/Refractory Multiple Myeloma. Clinical pharmacokinetics 64(7):1119–1132 (2025).
@@ -41,7 +41,7 @@ Wu F, Zhou J, Zheng X, Masilamani M, Cheng Y, Caia A et al. Population Cellular 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q56 | pass | [time] |  | ['Tab1:row5:col2', 'Tab1:row5:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab1:row4:col2', 'Tab1:row4:col3'] |
 | C5_unit_missing_Q372 | fail | 1 / [time] |  | ['Tab1:row7:col2', 'Tab1:row7:col3'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  | ['Tab1:row6:col2', 'Tab1:row6:col3'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  | ['Tab1:row6:col2', 'Tab1:row6:col3'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -184,7 +184,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -37,7 +37,7 @@ Ruxolitinib, a JAK inhibitor, is used for myeloproliferative disorders such as m
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Appeldoorn_2023_reference](drugs/drug_ruxolitinib/Ruxolitinib_Appeldoorn2023_reference.md) | — | 2-compartment (no model) | 4 | Appeldoorn TYJ et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01225-7](https://doi.org/10.1007/s40262-023-01225-7) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hurwitz_2021_reference](drugs/drug_ruxolitinib/Ruxolitinib_Hurwitz2021_reference.md) | — | 1-compartment (no model) | 0 | Hurwitz SJ et al., Pharmacokinetics of Ruxolitinib in HIV…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1930](https://doi.org/10.1002/jcph.1930) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Isberner_2021_reference](drugs/drug_ruxolitinib/Ruxolitinib_Isberner2021_reference.md) | — | 1-compartment (no model) | 0 | Isberner N et al., Ruxolitinib exposure in patients with a…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04351-w](https://doi.org/10.1007/s00280-021-04351-w) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Tachet_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Tachet2026_reference.md) | — | 1-compartment (no model) | 4 | Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Tachet_2026_reference](drugs/drug_ruxolitinib/Ruxolitinib_Tachet2026_reference.md) | — | 1-compartment (no model) | 4 | Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367) |
 
 ## Pharmacodynamics (PD)
 
@@ -79,7 +79,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 16 matched, 15 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 0  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

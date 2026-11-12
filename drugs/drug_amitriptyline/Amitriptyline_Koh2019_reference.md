@@ -5,11 +5,11 @@
 
 # amitriptyline — `Amitriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Amitriptyline model was rejected because its clearance unit was not recognized, preventing standardization to SI, alongside multiple parameter value discrepancies.
+> This record was reviewed on 2026-11-07 16:02 UTC (Rejected), but the paper was screened again on 2026-10-06 21:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Amitriptyline model was rejected because its clearance unit was not recognized, preventing standardization to SI, alongside multiple parameter value discrepancies.
 
-<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="rejected" stale="false" population="healthy Korean adult male volunteers" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="rejected" stale="true" population="healthy Korean adult male volunteers" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Analysis Demonstrates the Impact of CYP2C19 and CYP2D6 Genetic Polymorphisms on the Pharmacokinetics of Amitriptyline and Its Metabolite, Nortriptyline. Journal of clinical pharmacology 59(4):532–540 (2019).
@@ -48,7 +48,7 @@ Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Anal
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -165,7 +165,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col3'] |
-| C5_dimension_Q30 | fail | 1 / [time] | 1/h | ['tab_1:row29:col1', 'tab_1:row29:col2', 'tab_1:row29:col3'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['tab_1:row29:col1', 'tab_1:row29:col2', 'tab_1:row29:col3'] |
 | C5_dimension_Q310 | pass | [time] |  | ['tab_1:row20:col1', 'tab_1:row20:col2', 'tab_1:row20:col3'] |
 | C5_dimension_Q348 | pass | 1 / [time] |  | ['tab_1:row22:col1', 'tab_1:row22:col2', 'tab_1:row22:col3'] |
 | C5_dimension_Q48 | pass | 1 / [time] |  | ['tab_1:row21:col1', 'tab_1:row21:col2', 'tab_1:row21:col3'] |
@@ -173,6 +173,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['tab_1:row24:col1', 'tab_1:row24:col2', 'tab_1:row24:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 92.1 | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 92.1 L/h | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
@@ -196,7 +197,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

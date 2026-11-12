@@ -4,11 +4,11 @@
 
 # aztreonam — `Aztreonam_Das2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartmental clearance for aztreonam was recorded with area under the curve units, creating a dimension mismatch that prevents simulation.
+> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 10:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance for aztreonam was recorded with area under the curve units, creating a dimension mismatch that prevents simulation.
 
-<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="false" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="true" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Das S, Riccobene T, Carrothers TJ, Wright JG, MacPherson M, Cristinacce A et al. Dose selection for aztreonam-avibactam, including adjustments for renal impairment, for Phase IIa and Phase III evaluation. European journal of clinical pharmacology 80(4):529–543 (2024).
@@ -57,7 +57,7 @@ Das S, Riccobene T, Carrothers TJ, Wright JG, MacPherson M, Cristinacce A et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -198,7 +198,7 @@ The parameter labeled AUC has a meaning describing area under the concentration-
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Das_2024_table_S4:row5:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Das_2024_table_S3:row1:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Das_2024_table_S3:row3:col1'] |
-| C5_dimension_Q88 | fail | [length] ** 3 / [time] | L/h | ['Das_2024_table_S3:row2:col1'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Das_2024_table_S3:row2:col1'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Das_2024_table_S4:row17:col1'] |
 | C5_unit_missing_Q77 | fail | [length] ** 3 |  | ['Das_2024_table_S5:row18:col1'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['Das_2024_table_S5:row15:col1'] |
@@ -224,7 +224,7 @@ The parameter labeled AUC has a meaning describing area under the concentration-
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

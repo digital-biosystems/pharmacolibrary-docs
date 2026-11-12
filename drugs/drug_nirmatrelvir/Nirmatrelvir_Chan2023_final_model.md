@@ -5,11 +5,11 @@
 
 # Nirmatrelvir — `Nirmatrelvir_Chan2023_final_model`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Nirmatrelvir clearance became negative due to an interaction effect of -0.308 applied to a base clearance of 9.09 L/h.
+> This record was reviewed on 2026-11-07 14:42 UTC (Rejected), but the paper was screened again on 2026-10-07 17:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nirmatrelvir clearance became negative due to an interaction effect of -0.308 applied to a base clearance of 9.09 L/h.
 
-<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Chan2023_final_model" status="rejected" stale="false" population="adults and adolescents with/without COVID-19" measured-compound="nirmatrelvir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Chan2023_final_model" status="needs_review" stale="true" population="adults and adolescents with/without COVID-19" measured-compound="nirmatrelvir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chan PLS, Singh RSP, Cox DS, Shi H, Damle B, Nicholas T. Dosing recommendation of nirmatrelvir/ritonavir using an integrated population pharmacokinetic analysis. CPT: pharmacometrics & systems pharmacology 12(12):1897–1910 (2023).
@@ -31,7 +31,7 @@ Chan PLS, Singh RSP, Cox DS, Shi H, Damle B, Nicholas T. Dosing recommendation o
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -50,7 +50,7 @@ Chan PLS, Singh RSP, Cox DS, Shi H, Damle B, Nicholas T. Dosing recommendation o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -162,14 +162,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q31 | fail |  | -0.308 |  |
+| C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413039-tbl-0003:row2:col1', 'psp413039-tbl-0003:row2:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413039-tbl-0003:row4:col1', 'psp413039-tbl-0003:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['psp413039-tbl-0003:row6:col1', 'psp413039-tbl-0003:row6:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Zaryab_2026:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413039-tbl-0003:row3:col1', 'psp413039-tbl-0003:row3:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['psp413039-tbl-0003:row5:col1', 'psp413039-tbl-0003:row5:col2'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] |  | ['psp413039-tbl-0003:row11:col1', 'psp413039-tbl-0003:row11:col2'] |
 | C5_unit_missing_Q354 | fail | [length] ** 3 / [time] |  | ['psp413039-tbl-0003:row7:col1', 'psp413039-tbl-0003:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.09 | ['psp413039-tbl-0003:row2:col1', 'psp413039-tbl-0003:row2:col2'] |
 | C8_topology | pass |  |  |  |
@@ -187,13 +186,23 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

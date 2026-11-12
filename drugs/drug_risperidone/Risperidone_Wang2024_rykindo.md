@@ -5,11 +5,11 @@
 
 # risperidone — `Risperidone_Wang2024_rykindo`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The intercompartment clearance parameter was rejected because its reported unit of days is incompatible with the required volume per time dimensions.
+> This record was reviewed on 2026-11-07 15:35 UTC (Rejected), but the paper was screened again on 2026-10-06 17:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartment clearance parameter was rejected because its reported unit of days is incompatible with the required volume per time dimensions.
 
-<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_rykindo" status="rejected" stale="false" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_rykindo" status="rejected" stale="true" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinetic Analysis to Support and Facilitate Switching from Risperidone Formulations to Rykindo in Patients with Schizophrenia. Neurology and therapy 13(2):355–372 (2024).
@@ -46,7 +46,7 @@ Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -188,7 +188,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q310 | pass | [time] |  | ['Tab2:row13:col1', 'Tab2:row13:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col1', 'Tab2:row2:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab2:row11:col1', 'Tab2:row11:col4'] |
-| C5_dimension_Q99 | fail | [time] | d | ['Tab2:row8:col1', 'Tab2:row8:col4'] |
+| C5_dimension_Q99 | fail | [length] ** 3 / [time] | d ([time]) | ['Tab2:row8:col1', 'Tab2:row8:col4'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 186.7 | ['Tab2:row4:col1', 'Tab2:row4:col4'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.78 L/h | ['Tab2:row4:col1', 'Tab2:row4:col4'] |
@@ -209,7 +209,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

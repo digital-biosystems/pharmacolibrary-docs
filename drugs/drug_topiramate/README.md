@@ -42,7 +42,7 @@ Topiramate is an anticonvulsant used to treat epilepsy and seizures, and also mi
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Elewa_2023_reference](drugs/drug_topiramate/Topiramate_Elewa2023_reference.md) | — | 1-compartment (no model) | 1 | Elewa M et al., Population Pharmacokinetics of Topirama…, Therapeutic drug monitoring (2023) | [10.1097/FTD.0000000000001143](https://doi.org/10.1097/FTD.0000000000001143) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Lee_2024_reference](drugs/drug_topiramate/Topiramate_Lee2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lee S et al., Topiramate dosage optimization for effe…, Annals of clinical and tran… (2024) | [10.1002/acn3.51962](https://doi.org/10.1002/acn3.51962) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q23 — no SI value to build from</sub> | [Majid_2016_reference](drugs/drug_topiramate/Topiramate_Majid2016_reference.md) | — | 1-compartment (no model) | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Marques_2020_reference](drugs/drug_topiramate/Topiramate_Marques2020_reference.md) | — | 1-compartment (no model) | 3 | Marques MR et al., Topiramate pharmacokinetics in neonates…, Acta paediatrica (Oslo, Nor… (2020) | [10.1111/apa.14944](https://doi.org/10.1111/apa.14944) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Marques_2020_reference](drugs/drug_topiramate/Topiramate_Marques2020_reference.md) | — | 1-compartment (no model) | 3 | Marques MR et al., Topiramate pharmacokinetics in neonates…, Acta paediatrica (Oslo, Nor… (2020) | [10.1111/apa.14944](https://doi.org/10.1111/apa.14944) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wei_2023_reference](drugs/drug_topiramate/Topiramate_Wei2023_reference.md) | — | 1-compartment (no model) | 0 | Wei S et al., Population pharmacokinetics of topirama…, European journal of clinica… (2023) | [10.1007/s00228-023-03549-6](https://doi.org/10.1007/s00228-023-03549-6) |
 
 ## Pharmacodynamics (PD)
@@ -101,13 +101,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 21:27 | 14:31 | 3/2/0 | 3/0/0 | 0/0/5 | 242,653/40,432 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 2/8 | 12/0 | 0 |
+| 2026-10-04 21:27 | 14:31 | 3/2/0 | 3/0/0 | 0/0/5 | 242,653/40,432 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/8 | 11/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 171 matched, 62 returned
 - **screened:** 11  ·  **relevant:** 4
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

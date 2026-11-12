@@ -5,11 +5,11 @@
 
 # nordazepam — `Nordazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Record rejected because oxazepam and 3-hydroxydiazepam are orphan compartments with no elimination path.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-06 19:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because oxazepam and 3-hydroxydiazepam are orphan compartments with no elimination path.
 
-<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Lscher1981_reference" status="rejected" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Lscher1981_reference" status="rejected" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internationales de pharmacodynamie et de therapie 254(2):180–195 (1981).
@@ -38,7 +38,7 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -129,7 +129,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Löscher_1981:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Löscher_1981:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
@@ -150,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

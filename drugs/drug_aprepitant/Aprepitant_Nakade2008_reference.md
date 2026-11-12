@@ -5,11 +5,11 @@
 
 # aprepitant — `Aprepitant_Nakade2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance parameter for aprepitant is incorrectly recorded with units of percent, causing a dimension mismatch that invalidates the model.
+> This record was reviewed on 2026-11-07 16:40 UTC (Rejected), but the paper was screened again on 2026-10-04 13:43 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance parameter for aprepitant is incorrectly recorded with units of percent, causing a dimension mismatch that invalidates the model.
 
-<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="false" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="true" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population pharmacokinetics of aprepitant and dexamethasone in the prevention of chemotherapy-induced nausea and vomiting. Cancer chemotherapy and pharmacology 63(1):75–83 (2008).
@@ -39,7 +39,7 @@ Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,7 +120,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Nakade_2008:abstract', 'Nakade_2008:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Nakade_2008:abstract', 'Nakade_2008:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Nakade_2008:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Nakade_2008:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Nakade_2008:abstract'] |
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

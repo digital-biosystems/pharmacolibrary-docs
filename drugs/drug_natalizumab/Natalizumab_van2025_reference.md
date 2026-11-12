@@ -5,11 +5,11 @@
 
 # natalizumab — `Natalizumab_van2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Record rejected due to a unit conversion failure for the absorption rate constant of natalizumab, which lacks an SI value.
+> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-06 22:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected due to a unit conversion failure for the absorption rate constant of natalizumab, which lacks an SI value.
 
-<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="true" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY et al. Pharmacokinetic Model-Informed Precision Dosing of Natalizumab in Multiple Sclerosis. CPT: pharmacometrics & systems pharmacology 14(6):1032–1041 (2025).
@@ -46,7 +46,7 @@ van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Moein_2025:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp470014-tbl-0002:row3:col1', 'psp470014-tbl-0002:row3:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp470014-tbl-0002:row4:col1', 'psp470014-tbl-0002:row4:col2'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/d | ['psp470014-tbl-0002:row6:col1', 'psp470014-tbl-0002:row6:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/d ([mass] / [time]) | ['psp470014-tbl-0002:row6:col1', 'psp470014-tbl-0002:row6:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Wang_2020:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.164 | ['psp470014-tbl-0002:row2:col1', 'psp470014-tbl-0002:row2:col2'] |
 | C8_topology | pass |  |  |  |
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

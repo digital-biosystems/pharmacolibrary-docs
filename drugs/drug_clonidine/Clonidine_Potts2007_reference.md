@@ -5,11 +5,11 @@
 
 # clonidine — `Clonidine_Potts2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the clearance unit is unrecognizable and the peripheral compartment is structurally disconnected from the dose.
+> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 06:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the clearance unit is unrecognizable and the peripheral compartment is structurally disconnected from the dose.
 
-<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="true" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine disposition in children; a population analysis. Paediatric anaesthesia 17(10):924–933 (2007).
@@ -41,7 +41,7 @@ Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,8 +131,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] / [time] | c | ['tab_0:row9:col2', 'tab_0:row9:col4'] |
-| C5_dimension_Q49 | fail | [time] | h | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | c ([length] / [time]) | ['tab_0:row9:col2', 'tab_0:row9:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['tab_0:row8:col1', 'tab_0:row8:col2'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 |  | ['tab_0:row11:col2', 'tab_0:row11:col4'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 |  | ['tab_0:row12:col2', 'tab_0:row12:col4'] |
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

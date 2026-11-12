@@ -4,11 +4,11 @@
 
 # dibutylphthalate — `Dibutylphthalate_Chang2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Only clearance was extracted — no volume; λ1 and AUC have no unit (+1 more).
+> This record was reviewed on 2026-11-07 16:47 UTC (Needs review), but the paper was screened again on 2026-10-07 13:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume; λ1 and AUC have no unit (+1 more).
 
-<div class="pk-model-meta" hidden drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="true" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chang LW, Hou ML, Tsai TH. Pharmacokinetics of dibutyl phthalate (DBP) in the rat determined by UPLC-MS/MS. International journal of molecular sciences 14(1):836–849 (2013).
@@ -45,7 +45,7 @@ Chang LW, Hou ML, Tsai TH. Pharmacokinetics of dibutyl phthalate (DBP) in the ra
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -127,7 +127,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 | C5_dimension_Q59 | pass | [time] |  | ['t4-ijms-14-00836:row8:col1'] |
 | C5_dimension_Q60 | pass | [time] |  | ['t4-ijms-14-00836:row9:col1'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['t4-ijms-14-00836:row4:col1'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['t4-ijms-14-00836:row5:col1'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['t4-ijms-14-00836:row5:col1'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | min μg/mL | ['t4-ijms-14-00836:row7:col1'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 551 | ['t4-ijms-14-00836:row10:col1'] |
 | C8_topology | pass |  |  |  |
@@ -159,7 +159,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

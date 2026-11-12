@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;sitafloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/&quot;},{&quot;label&quot;:&quot;Paiboonvong_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sitafloxacin — `Sitafloxacin_Paiboonvong2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
+> This record was reviewed on 2026-11-07 16:31 UTC (Needs review), but the paper was screened again on 2026-10-07 12:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
-<div class="pk-model-meta" hidden drug="sitafloxacin" model-id="Sitafloxacin_Paiboonvong2025_reference" status="needs_review" stale="false" population="critically ill Thai patients with pneumonia" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sitafloxacin" model-id="Sitafloxacin_Paiboonvong2025_reference" status="needs_review" stale="true" population="critically ill Thai patients with pneumonia" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Paiboonvong T, Montakantikul P, Panjasawatwong N, Singkham N, Punyawudho B. Population Pharmacokinetics and Pharmacodynamics of Sitafloxacin in Plasma and Alveolar Epithelial Lining Fluid of Critically Ill Thai Patients With Pneumonia. Pharmacology research & perspectives 13(2):e70081 (2025).
@@ -46,7 +46,7 @@ Paiboonvong T, Montakantikul P, Panjasawatwong N, Singkham N, Punyawudho B. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,6 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['prp270081-tbl-0002:row2:col1', 'prp270081-tbl-0002:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['prp270081-tbl-0002:row3:col1', 'prp270081-tbl-0002:row3:col2'] |
+| C5_unit_missing_Q81 | fail | [time] | hr | ['prp270081-tbl-0002:row4:col1', 'prp270081-tbl-0002:row4:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 9.46 L/h | ['prp270081-tbl-0002:row2:col1', 'prp270081-tbl-0002:row2:col2'] |

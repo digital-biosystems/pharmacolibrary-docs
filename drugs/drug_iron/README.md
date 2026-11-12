@@ -41,7 +41,7 @@ Iron is used to treat iron deficiency anemia and hypochromic anemia. It is an ap
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Ekobena_2025_reference](drugs/drug_iron/Iron_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Lv_2025_reference](drugs/drug_iron/Iron_Lv2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282) |
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q23, Q22 — no SI value to build from</sub> | [Phatruengdet_2022_reference](drugs/drug_iron/Iron_Phatruengdet2022_reference.md) | — | parent + metabolite (no model) | 5 | Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022) | [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q23, Q22 — no SI value to build from</sub> | [Phatruengdet_2022_reference](drugs/drug_iron/Iron_Phatruengdet2022_reference.md) | — | parent + metabolite (no model) | 5 | Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022) | [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k21</sub> | [Xu_2026_reference](drugs/drug_iron/Iron_Xu2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Fan_2025_reference](drugs/drug_iron/Iron_Fan2025_reference.md) | — | nonlinear / manual (no model) | 0 | Fan X et al., A whole-body mechanistic physiologicall…, Drug delivery and translati… (2025) | [10.1007/s13346-024-01675-x](https://doi.org/10.1007/s13346-024-01675-x) |
 
@@ -96,13 +96,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:30 | 5:50 | 4/1/0 | 2/0/0 | 1/0/3 | 558,074/16,035 | einfracz / qwen3.8-27b | 48 | 10/38 | 42/6 | 1 |
+| 2026-10-07 16:30 | 5:50 | 4/1/0 | 2/0/0 | 1/0/3 | 558,074/16,035 | einfracz / qwen3.8-27b | 42 | 10/38 | 36/6 | 1 |
 
 ## Coverage
 
 - **PubMed hits:** 5916 matched, 250 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 5  ·  extracted 2  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

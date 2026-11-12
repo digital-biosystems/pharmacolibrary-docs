@@ -4,11 +4,11 @@
 
 # metoprolol — `Metoprolol_Bortolotti1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> The extracted plasma protein binding value of 32% for metoprolol has a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:03 UTC (Rejected), but the paper was screened again on 2026-10-07 00:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The extracted plasma protein binding value of 32% for metoprolol has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="false" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="true" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynamic modelling of metoprolol in rabbits with liver failure. European journal of drug metabolism and pharmacokinetics 14(2):145–151 (1989).
@@ -41,7 +41,7 @@ Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynam
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | 1 / [time] | 1/h/kg | ['Bortolotti_1989:abstract', 'Bortolotti_1989:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | 1/h/kg (1 / [time]) | ['Bortolotti_1989:abstract', 'Bortolotti_1989:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Bortolotti_1989:abstract', 'Bortolotti_1989:abstract'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Bortolotti_1989:abstract', 'Bortolotti_1989:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bortolotti_1989:abstract', 'Bortolotti_1989:abstract'] |
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

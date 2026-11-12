@@ -5,11 +5,11 @@
 
 # daptomycin — `Daptomycin_GarcaMartnez2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Peripheral volume recorded as 21 L/h causes a unit mismatch and unconvertible scale, rejecting the daptomycin model.
+> This record was reviewed on 2026-11-07 16:01 UTC (Rejected), but the paper was screened again on 2026-10-07 11:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Peripheral volume recorded as 21 L/h causes a unit mismatch and unconvertible scale, rejecting the daptomycin model.
 
-<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="false" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="true" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R, Mangas-Sanjuán V, Merino-Sanjuan M. Population Pharmacokinetic/Pharmacodynamic Modelling of Daptomycin for Schedule Optimization in Patients with Renal Impairment. Pharmaceutics 14(10) (2022).
@@ -41,7 +41,7 @@ García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R,
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-14-02226-t002:row5:col1', 'pharmaceutics-14-02226-t002:row5:col2', 'pharmaceutics-14-02226-t002:row5:col4', 'pharmaceutics-14-02226-t002:row5:col5'] |
 | C5_dimension_Q331 | pass | [mass] / [length] ** 3 |  | ['pharmaceutics-14-02226-t002:row8:col1', 'pharmaceutics-14-02226-t002:row8:col2', 'pharmaceutics-14-02226-t002:row8:col4', 'pharmaceutics-14-02226-t002:row8:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['pharmaceutics-14-02226-t002:row4:col1', 'pharmaceutics-14-02226-t002:row4:col2', 'pharmaceutics-14-02226-t002:row4:col4', 'pharmaceutics-14-02226-t002:row4:col5'] |
-| C5_dimension_Q64 | fail | [length] ** 3 / [time] | L/h | ['pharmaceutics-14-02226-t002:row6:col1', 'pharmaceutics-14-02226-t002:row6:col2', 'pharmaceutics-14-02226-t002:row6:col4', 'pharmaceutics-14-02226-t002:row6:col5'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['pharmaceutics-14-02226-t002:row6:col1', 'pharmaceutics-14-02226-t002:row6:col2', 'pharmaceutics-14-02226-t002:row6:col4', 'pharmaceutics-14-02226-t002:row6:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.98 | ['pharmaceutics-14-02226-t002:row3:col1', 'pharmaceutics-14-02226-t002:row3:col2', 'pharmaceutics-14-02226-t002:row3:col4', 'pharmaceutics-14-02226-t002:row3:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.98 L/h | ['pharmaceutics-14-02226-t002:row3:col1', 'pharmaceutics-14-02226-t002:row3:col2', 'pharmaceutics-14-02226-t002:row3:col4', 'pharmaceutics-14-02226-t002:row3:col5'] |
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

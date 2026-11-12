@@ -5,11 +5,11 @@
 
 # Pyronaridine — `Pyronaridine_Kang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Dihydroartemisinin absorption rate constant uses an unconvertible substance unit and its clearance is implausibly high.
+> This record was reviewed on 2026-11-07 16:06 UTC (Rejected), but the paper was screened again on 2026-10-07 08:25 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dihydroartemisinin absorption rate constant uses an unconvertible substance unit and its clearance is implausibly high.
 
-<div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Kang2024_reference" status="rejected" stale="false" population="hamsters, rats, and dogs (preclinical PK for allometric scaling to humans)" measured-compound="pyronaridine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Kang2024_reference" status="rejected" stale="true" population="hamsters, rats, and dogs (preclinical PK for allometric scaling to humans)" measured-compound="pyronaridine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic Modeling and Scaling for Drug Repurposing of Pyronaridine and Artesunate. International journal of molecular sciences 25(13) (2024).
@@ -50,7 +50,7 @@ Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.44). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.44). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -202,7 +202,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

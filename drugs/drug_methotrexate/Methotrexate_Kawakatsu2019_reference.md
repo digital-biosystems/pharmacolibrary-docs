@@ -5,11 +5,11 @@
 
 # methotrexate — `Methotrexate_Kawakatsu2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The methotrexate clearance parameter lacks a valid unit, and the GFR covariate effect is incorrectly assigned to the Q parameter instead of CL.
+> This record was reviewed on 2026-11-07 14:12 UTC (Rejected), but the paper was screened again on 2026-11-04 02:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The methotrexate clearance parameter lacks a valid unit, and the GFR covariate effect is incorrectly assigned to the Q parameter instead of CL.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Kawakatsu2019_reference" status="rejected" stale="false" population="pediatric and adult oncology patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Kawakatsu2019_reference" status="rejected" stale="true" population="pediatric and adult oncology patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kawakatsu S, Nikanjam M, Lin M, Le S, Saunders I, Kuo DJ et al. Population pharmacokinetic analysis of high-dose methotrexate in pediatric and adult oncology patients. Cancer chemotherapy and pharmacology 84(6):1339–1348 (2019).
@@ -43,7 +43,7 @@ Kawakatsu S, Nikanjam M, Lin M, Le S, Saunders I, Kuo DJ et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | ['Kawakatsu_2019_table_p5_1:row0:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['Kawakatsu_2019_table_p5_1:row0:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Kawakatsu_2019_table_p5_1:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Pan_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Kawakatsu_2019_table_p5_1:row1:col1'] |
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

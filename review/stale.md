@@ -1,19 +1,426 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Stale verdict"}]'></div>
 
 
-## Stale verdict (10)
+## Stale verdict (417)
 
 The extraction changed after the review; the verdict shown is older than the data.
 
 | Drug | Record | Status | Second reading |
 |---|---|---|---|
+| [abacavir](/drugs/drug_abacavir/) | [Rabie_2020 · reference](/drugs/drug_abacavir/Abacavir_Rabie2020_reference.md) | needs_review | unchecked |
+| [acalabrutinib](/drugs/drug_acalabrutinib/) | [Edlund_2022 · reference](/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md) | needs_review | confirmed |
+| [acetazolamide](/drugs/drug_acetazolamide/) | [Yue_2013 · reference](/drugs/drug_acetazolamide/Acetazolamide_Yue2013_reference.md) | rejected | partial |
+| [acetylsalicylic acid](/drugs/drug_acetylsalicylic_acid/) | [Zapadniuk_1987 · reference](/drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference.md) | needs_review | partial |
+| [aciclovir](/drugs/drug_aciclovir/) | [Laskin_1982 · reference](/drugs/drug_aciclovir/Aciclovir_Laskin1982_reference.md) | rejected | partial |
+| [aflibercept](/drugs/drug_aflibercept/) | [Park_2016 · reference](/drugs/drug_aflibercept/Aflibercept_Park2016_reference.md) | needs_review | partial |
+| [ajmaline](/drugs/drug_ajmaline/) | [Yasuhara_1987 · dog_1](/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_1.md) | rejected | confirmed |
+| [ajmaline](/drugs/drug_ajmaline/) | [Yasuhara_1987 · dog_2](/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_2.md) | rejected | confirmed |
+| [ajmaline](/drugs/drug_ajmaline/) | [Yasuhara_1987 · dog_3](/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_3.md) | rejected | confirmed |
+| [ajmaline](/drugs/drug_ajmaline/) | [Yasuhara_1987 · dog_4](/drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_4.md) | rejected | confirmed |
+| [alectinib](/drugs/drug_alectinib/) | [Mohmaed_2026 · estimate](/drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md) | rejected | partial |
+| [alectinib](/drugs/drug_alectinib/) | [van_2025 · value](/drugs/drug_alectinib/Alectinib_van2025_value.md) | rejected | partial |
+| [alfentanil](/drugs/drug_alfentanil/) | [Meistelman_1987 · reference](/drugs/drug_alfentanil/Alfentanil_Meistelman1987_reference.md) | extracted | partial |
+| [amantadine](/drugs/drug_amantadine/) | [Aoki_1985 · reference](/drugs/drug_amantadine/Amantadine_Aoki1985_reference.md) | needs_review | partial |
+| [aminophylline](/drugs/drug_aminophylline/) | [Kuze_1988 · im](/drugs/drug_aminophylline/Aminophylline_Kuze1988_im.md) | rejected | confirmed |
+| [aminophylline](/drugs/drug_aminophylline/) | [Kuze_1988 · iv](/drugs/drug_aminophylline/Aminophylline_Kuze1988_iv.md) | rejected | confirmed |
+| [aminophylline](/drugs/drug_aminophylline/) | [Kuze_1988 · po](/drugs/drug_aminophylline/Aminophylline_Kuze1988_po.md) | rejected | confirmed |
+| [amlodipine](/drugs/drug_amlodipine/) | [Jeppesen_1998 · reference](/drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md) | needs_review | partial |
+| [amlodipine](/drugs/drug_amlodipine/) | [Mukherjee_2018 · reference](/drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md) | needs_review | partial |
+| [amlodipine](/drugs/drug_amlodipine/) | [Vlachou_2021 · reference](/drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md) | needs_review | unchecked |
+| [amodiaquine](/drugs/drug_amodiaquine/) | [Ali_2018 · typical_valuea](/drugs/drug_amodiaquine/Amodiaquine_Ali2018_typical_valuea.md) | needs_review | partial |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · preterm_and_term_infants_aged_10_to_52_days](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_preterm_and_term_infants_aged_10_to_5.md) | needs_review | unchecked |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · preterm_and_term_neonates_25_42_wks_ga](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_preterm_and_term_neonates_25_42_wks_g.md) | needs_review | unchecked |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Carceles_1995 · intramuscular_route_n_5](/drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intramuscular_route_n_5.md) | rejected | unchecked |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Carceles_1995 · intravenous_route_w_10](/drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intravenous_route_w_10.md) | rejected | unchecked |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Lacampagne_2026 · reference](/drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md) | rejected | confirmed |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Tang_2019 · reference](/drugs/drug_amoxicillin/Amoxicillin_Tang2019_reference.md) | rejected | partial |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [van_2026 · formulation_amoxicillin_clavulanate_7_1](/drugs/drug_amoxicillin/Amoxicillin_van2026_formulation_amoxicillin_clavulanate_7_1.md) | rejected | partial |
+| [amsacrine](/drugs/drug_amsacrine/) | [Kestell_1990 · reference](/drugs/drug_amsacrine/Amsacrine_Kestell1990_reference.md) | rejected | partial |
+| [aprindine](/drugs/drug_aprindine/) | [Kobari_1984 · reference](/drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | needs_review | partial |
+| [Arketamine](/drugs/drug_arketamine/) | [Stojanova_2026 · reference](/drugs/drug_arketamine/Arketamine_Stojanova2026_reference.md) | rejected | unchecked |
+| [armodafinil](/drugs/drug_armodafinil/) | [Willavize_2017 · reference](/drugs/drug_armodafinil/Armodafinil_Willavize2017_reference.md) | rejected | partial |
+| [arsenic trioxide](/drugs/drug_arsenic_trioxide/) | [Hua_2011 · reference](/drugs/drug_arsenic_trioxide/ArsenicTrioxide_Hua2011_reference.md) | rejected | partial |
+| [artemisinin](/drugs/drug_artemisinin/) | [Gordi_2005 · reference](/drugs/drug_artemisinin/Artemisinin_Gordi2005_reference.md) | extracted | partial |
+| [artenimol](/drugs/drug_artenimol/) | [Kang_2024 · reference](/drugs/drug_artenimol/Artenimol_Kang2024_reference.md) | needs_review | partial |
+| [ascorbic acid](/drugs/drug_ascorbic_acid/) | [Bluck_1996 · reference](/drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | rejected | unchecked |
+| [atenolol](/drugs/drug_atenolol/) | [Celardo_1987 · before_renal_failure](/drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md) | rejected | partial |
+| [atenolol](/drugs/drug_atenolol/) | [Kir_2025 · reference](/drugs/drug_atenolol/Atenolol_Kir2025_reference.md) | rejected | unchecked |
+| [azithromycin](/drugs/drug_azithromycin/) | [Hughes_2020 · base](/drugs/drug_azithromycin/Azithromycin_Hughes2020_base.md) | rejected | partial |
+| [azithromycin](/drugs/drug_azithromycin/) | [Hughes_2020 · final](/drugs/drug_azithromycin/Azithromycin_Hughes2020_final.md) | rejected | partial |
+| [azithromycin](/drugs/drug_azithromycin/) | [Hughes_2020 · hybrid_model_5_14](/drugs/drug_azithromycin/Azithromycin_Hughes2020_hybrid_model_5_14.md) | rejected | partial |
+| [azlocillin](/drugs/drug_azlocillin/) | [Krupp_1990 · reference](/drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) | extracted | partial |
+| [azlocillin](/drugs/drug_azlocillin/) | [Millart_1984 · reference](/drugs/drug_azlocillin/Azlocillin_Millart1984_reference.md) | needs_review | partial |
+| [azlocillin](/drugs/drug_azlocillin/) | [Drugeon_1984 · reference](/drugs/drug_azlocillin/Azlocillin_Drugeon1984_reference.md) | rejected | partial |
+| [aztreonam](/drugs/drug_aztreonam/) | [Das_2024 · reference](/drugs/drug_aztreonam/Aztreonam_Das2024_reference.md) | rejected | unchecked |
+| [bamipine](/drugs/drug_bamipine/) | [Neidlein_1987_3 · reference](/drugs/drug_bamipine/Bamipine_Neidlein1987v3_reference.md) | needs_review | partial |
+| [baricitinib](/drugs/drug_baricitinib/) | [Decker_2024 · jia_a](/drugs/drug_baricitinib/Baricitinib_Decker2024_jia_a.md) | rejected | partial |
+| [baricitinib](/drugs/drug_baricitinib/) | [Decker_2024 · ra_b](/drugs/drug_baricitinib/Baricitinib_Decker2024_ra_b.md) | rejected | partial |
+| [benazepril](/drugs/drug_benazepril/) | [King_2003 · repeated_administration_n_6](/drugs/drug_benazepril/Benazepril_King2003_repeated_administration_n_6.md) | rejected | partial |
+| [benazepril](/drugs/drug_benazepril/) | [King_2003 · single_administration_n_5](/drugs/drug_benazepril/Benazepril_King2003_single_administration_n_5.md) | rejected | partial |
+| [bendazac](/drugs/drug_bendazac/) | [Valeri_1985 · reference](/drugs/drug_bendazac/Bendazac_Valeri1985_reference.md) | needs_review | confirmed |
+| [bendroflumethiazide](/drugs/drug_bendroflumethiazide/) | [Schäfer-Korting_1985 · reference](/drugs/drug_bendroflumethiazide/Bendroflumethiazide_SchferKorting1985_reference.md) | needs_review | partial |
+| [bentazepam](/drugs/drug_bentazepam/) | [Colino_1991 · reference](/drugs/drug_bentazepam/Bentazepam_Colino1991_reference.md) | rejected | confirmed |
+| [betamethasone](/drugs/drug_betamethasone/) | [Sullivan_2026 · reference](/drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md) | needs_review | partial |
+| [bevacizumab](/drugs/drug_bevacizumab/) | [Turner_2014 · reference](/drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md) | extracted | confirmed |
+| [bevacizumab](/drugs/drug_bevacizumab/) | [Lobet_2024 · reference](/drugs/drug_bevacizumab/Bevacizumab_Lobet2024_reference.md) | rejected | partial |
+| [biapenem](/drugs/drug_biapenem/) | [Kozawa_1998 · reference](/drugs/drug_biapenem/Biapenem_Kozawa1998_reference.md) | needs_review | partial |
+| [Bictegravir](/drugs/drug_bictegravir/) | [Sun_2026 · reference](/drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md) | rejected | partial |
+| [bivalirudin](/drugs/drug_bivalirudin/) | [Zhang_2012 · reference](/drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | rejected | confirmed |
+| [bleomycin](/drugs/drug_bleomycin/) | [Giri_1986 · reference](/drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md) | rejected | partial |
+| [bleomycin](/drugs/drug_bleomycin/) | [Groselj_2018 · reference](/drugs/drug_bleomycin/Bleomycin_Groselj2018_reference.md) | rejected | partial |
+| [bretylium tosilate](/drugs/drug_bretylium_tosilate/) | [Narang_1980 · p_k](/drugs/drug_bretylium_tosilate/BretyliumTosilate_Narang1980_p_k.md) | rejected | unchecked |
+| [brodalumab](/drugs/drug_brodalumab/) | [Timmermann_2019 · value_rse](/drugs/drug_brodalumab/Brodalumab_Timmermann2019_value_rse.md) | rejected | confirmed |
+| [camostat](/drugs/drug_camostat/) | [Kim_2023 · reference](/drugs/drug_camostat/Camostat_Kim2023_reference.md) | rejected | unchecked |
+| [camrelizumab](/drugs/drug_camrelizumab/) | [Wang_2021 · base](/drugs/drug_camrelizumab/Camrelizumab_Wang2021_base.md) | rejected | partial |
+| [cannabinoids](/drugs/drug_cannabinoids/) | [Serrano-Rodríguez_2025 · iv_formulation_of_cbg_at_1_0_mg_kg](/drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1.md) | rejected | unchecked |
+| [carboplatin](/drugs/drug_carboplatin/) | [Gareau_2026 · estimate](/drugs/drug_carboplatin/Carboplatin_Gareau2026_estimate.md) | rejected | partial |
+| [cariprazine](/drugs/drug_cariprazine/) | [Periclou_2021 · reference](/drugs/drug_cariprazine/Cariprazine_Periclou2021_reference.md) | extracted | unchecked |
+| [carmustine](/drugs/drug_carmustine/) | [El-Yazigi_1988 · reference](/drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | rejected | confirmed |
+| [cefiderocol](/drugs/drug_cefiderocol/) | [Bilal_2021 · phase_i_study_in_renally_impaired_subjects](/drugs/drug_cefiderocol/Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj.md) | rejected | unchecked |
+| [cefodizime](/drugs/drug_cefodizime/) | [Boccazzi_1990 · reference](/drugs/drug_cefodizime/Cefodizime_Boccazzi1990_reference.md) | needs_review | confirmed |
+| [cefpiramide](/drugs/drug_cefpiramide/) | [Conte_1987 · reference](/drugs/drug_cefpiramide/Cefpiramide_Conte1987_reference.md) | needs_review | partial |
+| [cefuroxime](/drugs/drug_cefuroxime/) | [Albarellos_2016 · reference](/drugs/drug_cefuroxime/Cefuroxime_Albarellos2016_reference.md) | rejected | partial |
+| [celecoxib](/drugs/drug_celecoxib/) | [Hannam_2023 · reference](/drugs/drug_celecoxib/Celecoxib_Hannam2023_reference.md) | rejected | partial |
+| [cetirizine](/drugs/drug_cetirizine/) | [Pitsiu_2004 · reference](/drugs/drug_cetirizine/Cetirizine_Pitsiu2004_reference.md) | rejected | partial |
+| [cetirizine](/drugs/drug_cetirizine/) | [Urien_1999 · reference](/drugs/drug_cetirizine/Cetirizine_Urien1999_reference.md) | rejected | confirmed |
+| [cetuximab](/drugs/drug_cetuximab/) | [Grisic_2020 · mmcl](/drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl.md) | needs_review | partial |
+| [cetuximab](/drugs/drug_cetuximab/) | [Grisic_2020 · mmcl_lcl](/drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl_lcl.md) | needs_review | partial |
+| [cetuximab](/drugs/drug_cetuximab/) | [Grisic_2020 · mmcl_tvarcl](/drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl_tvarcl.md) | needs_review | partial |
+| [cetuximab](/drugs/drug_cetuximab/) | [Dirks_2008 · reference](/drugs/drug_cetuximab/Cetuximab_Dirks2008_reference.md) | rejected | partial |
+| [chlorambucil](/drugs/drug_chlorambucil/) | [Al-Nadaf_2022 · reference](/drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_reference.md) | needs_review | confirmed |
+| [chlorhexidine](/drugs/drug_chlorhexidine/) | [Xue_2009 · reference](/drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | rejected | partial |
+| [chlortalidone](/drugs/drug_chlortalidone/) | [Fleuren_1979 · reference](/drugs/drug_chlortalidone/Chlortalidone_Fleuren1979_reference.md) | needs_review | partial |
+| [cibenzoline](/drugs/drug_cibenzoline/) | [Brazzell_1985 · reference](/drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | rejected | partial |
+| [cilazapril](/drugs/drug_cilazapril/) | [Francis_1987 · reference](/drugs/drug_cilazapril/Cilazapril_Francis1987_reference.md) | needs_review | unchecked |
+| [ciltacabtagene autoleucel](/drugs/drug_ciltacabtagene_autoleucel/) | [Wu_2022 · mean](/drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_mean.md) | rejected | unchecked |
+| [ciltacabtagene autoleucel](/drugs/drug_ciltacabtagene_autoleucel/) | [Wu_2022 · median](/drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_median.md) | rejected | unchecked |
+| [ciprofloxacin](/drugs/drug_ciprofloxacin/) | [Höffken_1985 · 100_mg_orally](/drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_100_mg_orally.md) | extracted | unchecked |
+| [ciprofloxacin](/drugs/drug_ciprofloxacin/) | [Höffken_1985 · 50_mg_orally](/drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_50_mg_orally.md) | extracted | unchecked |
+| [ciprofloxacin](/drugs/drug_ciprofloxacin/) | [Höffken_1985 · 750_mg_orally](/drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_750_mg_orally.md) | extracted | unchecked |
+| [ciprofloxacin](/drugs/drug_ciprofloxacin/) | [Sassen_2020 · reference](/drugs/drug_ciprofloxacin/Ciprofloxacin_Sassen2020_reference.md) | needs_review | partial |
+| [ciprofloxacin](/drugs/drug_ciprofloxacin/) | [Dowling_1995 · reference](/drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md) | rejected | partial |
+| [cisatracurium](/drugs/drug_cisatracurium/) | [Sorooshian_1996 · reference](/drugs/drug_cisatracurium/Cisatracurium_Sorooshian1996_reference.md) | rejected | confirmed |
+| [cladribine](/drugs/drug_cladribine/) | [Savic_2017 · reference](/drugs/drug_cladribine/Cladribine_Savic2017_reference.md) | rejected | partial |
+| [clofarabine](/drugs/drug_clofarabine/) | [Bonate_2004 · reference](/drugs/drug_clofarabine/Clofarabine_Bonate2004_reference.md) | rejected | partial |
+| [clonazepam](/drugs/drug_clonazepam/) | [Hampton_2024 · reference](/drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md) | extracted | confirmed |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · age_exp_cl_fclozapine_parameter_estimates](/drugs/drug_clozapine/Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · base](/drugs/drug_clozapine/Clozapine_Reeves2024_base.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · base_base_model_relative_standard_error](/drugs/drug_clozapine/Clozapine_Reeves2024_base_base_model_relative_standard_error.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · c_clozapine_mg_l](/drugs/drug_clozapine/Clozapine_Reeves2024_c_clozapine_mg_l.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · ethnic_cl_fclozapine_parameter_estimates](/drugs/drug_clozapine/Clozapine_Reeves2024_ethnic_cl_fclozapine_parameter_estimate.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · sex_cl_fclozapine_parameter_estimates](/drugs/drug_clozapine/Clozapine_Reeves2024_sex_cl_fclozapine_parameter_estimates.md) | rejected | unchecked |
+| [clozapine](/drugs/drug_clozapine/) | [Reeves_2024 · smoke_cl_fclozapine_parameter_estimates](/drugs/drug_clozapine/Clozapine_Reeves2024_smoke_cl_fclozapine_parameter_estimates.md) | rejected | unchecked |
 | [coagulation factor XIII](/drugs/drug_coagulation_factor_xiii/) | [Dodds_2005 · reference](/drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md) |  | unchecked |
+| [codeine](/drugs/drug_codeine/) | [Gretler_2020 · reference](/drugs/drug_codeine/Codeine_Gretler2020_reference.md) | rejected | partial |
+| [codeine](/drugs/drug_codeine/) | [Tseng_1996 · c_c188](/drugs/drug_codeine/Codeine_Tseng1996_c_c188.md) | rejected | confirmed |
+| [codeine](/drugs/drug_codeine/) | [Tseng_1996 · c_t188](/drugs/drug_codeine/Codeine_Tseng1996_c_t188.md) | rejected | confirmed |
+| [codeine](/drugs/drug_codeine/) | [Tseng_1996 · t_t188](/drugs/drug_codeine/Codeine_Tseng1996_t_t188.md) | rejected | unchecked |
+| [daratumumab](/drugs/drug_daratumumab/) | [Xu_2018 · reference](/drugs/drug_daratumumab/Daratumumab_Xu2018_reference.md) | needs_review | partial |
+| [deferiprone](/drugs/drug_deferiprone/) | [Abbas_2012 · reference](/drugs/drug_deferiprone/Deferiprone_Abbas2012_reference.md) | needs_review | partial |
+| [defibrotide](/drugs/drug_defibrotide/) | [Pescador_1983 · reference](/drugs/drug_defibrotide/Defibrotide_Pescador1983_reference.md) | rejected | partial |
+| [delavirdine](/drugs/drug_delavirdine/) | [Smith_2005 · reference](/drugs/drug_delavirdine/Delavirdine_Smith2005_reference.md) | rejected | partial |
+| [denosumab](/drugs/drug_denosumab/) | [Choi_2025 · reference](/drugs/drug_denosumab/Denosumab_Choi2025_reference.md) | needs_review | partial |
+| [denosumab](/drugs/drug_denosumab/) | [Sánchez-Vidaurre_2025 · reference](/drugs/drug_denosumab/Denosumab_SnchezVidaurre2025_reference.md) | rejected | confirmed |
+| [desirudin](/drugs/drug_desirudin/) | [Nafziger_2010 · moderate_renal_impairment](/drugs/drug_desirudin/Desirudin_Nafziger2010_moderate_renal_impairment.md) | rejected | partial |
+| [desirudin](/drugs/drug_desirudin/) | [Nafziger_2010 · normal_renal_function](/drugs/drug_desirudin/Desirudin_Nafziger2010_normal_renal_function.md) | rejected | partial |
+| [dexamfetamine](/drugs/drug_dexamfetamine/) | [Roberts_2015 · final](/drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final.md) | rejected | confirmed |
+| [dexmedetomidine](/drugs/drug_dexmedetomidine/) | [Greenberg_2017 · reference](/drugs/drug_dexmedetomidine/Dexmedetomidine_Greenberg2017_reference.md) | rejected | partial |
+| [dexrazoxane](/drugs/drug_dexrazoxane/) | [Baldwin_1996 · reference](/drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference.md) | rejected | partial |
+| [diazepam](/drugs/drug_diazepam/) | [Tsiros_2019 · reference](/drugs/drug_diazepam/Diazepam_Tsiros2019_reference.md) | needs_review | partial |
+| [diazepam](/drugs/drug_diazepam/) | [Klotz_1975 · reference](/drugs/drug_diazepam/Diazepam_Klotz1975_reference.md) | rejected | partial |
+| [dibutylphthalate](/drugs/drug_dibutylphthalate/) | [Chang_2013 · reference](/drugs/drug_dibutylphthalate/Dibutylphthalate_Chang2013_reference.md) | needs_review | unchecked |
+| [diclofenac](/drugs/drug_diclofenac/) | [Standing_2008 · reference](/drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md) | rejected | partial |
+| [diclofenac](/drugs/drug_diclofenac/) | [Wasfi_2003 · a_male](/drugs/drug_diclofenac/Diclofenac_Wasfi2003_a_male.md) | rejected | confirmed |
+| [diclofenac](/drugs/drug_diclofenac/) | [Wasfi_2003 · b_male](/drugs/drug_diclofenac/Diclofenac_Wasfi2003_b_male.md) | rejected | partial |
+| [diclofenac](/drugs/drug_diclofenac/) | [Wasfi_2003 · d_female](/drugs/drug_diclofenac/Diclofenac_Wasfi2003_d_female.md) | rejected | confirmed |
+| [diclofenac](/drugs/drug_diclofenac/) | [Wasfi_2003 · e_female](/drugs/drug_diclofenac/Diclofenac_Wasfi2003_e_female.md) | rejected | confirmed |
+| [diclofenac](/drugs/drug_diclofenac/) | [Wasfi_2003 · f_female](/drugs/drug_diclofenac/Diclofenac_Wasfi2003_f_female.md) | rejected | partial |
+| [didanosine](/drugs/drug_didanosine/) | [Velasque_2005 · reference](/drugs/drug_didanosine/Didanosine_Velasque2005_reference.md) | rejected | partial |
+| [diflunisal](/drugs/drug_diflunisal/) | [Gao_1998 · reference](/drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | needs_review | confirmed |
+| [diltiazem](/drugs/drug_diltiazem/) | [Fu_1987 · reference](/drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md) | needs_review | partial |
+| [Dimethyltryptamine](/drugs/drug_dimethyltryptamine/) | [Eckernäs_2022 · reference](/drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_reference.md) | rejected | unchecked |
+| [dofetilide](/drugs/drug_dofetilide/) | [Tunblad_2008 · final](/drugs/drug_dofetilide/Dofetilide_Tunblad2008_final.md) | extracted | partial |
+| [donepezil](/drugs/drug_donepezil/) | [Kaikousidis_2023 · total_fit_per_os_and_in_raw_data](/drugs/drug_donepezil/Donepezil_Kaikousidis2023_total_fit_per_os_and_in_raw_data.md) | rejected | partial |
+| [doxorubicin](/drugs/drug_doxorubicin/) | [Bressolle_1991 · reference](/drugs/drug_doxorubicin/Doxorubicin_Bressolle1991_reference.md) | rejected | partial |
+| [droperidol](/drugs/drug_droperidol/) | [Cooper_2018 · reference](/drugs/drug_droperidol/Droperidol_Cooper2018_reference.md) | rejected | partial |
 | [drotrecogin alfa (activated)](/drugs/drug_drotrecogin_alfa_activated/) | [Macias_2002 · patients with severe sepsis](/drugs/drug_drotrecogin_alfa_activated/DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep.md) |  | unchecked |
+| [duloxetine](/drugs/drug_duloxetine/) | [Lobo_2014 · reference](/drugs/drug_duloxetine/Duloxetine_Lobo2014_reference.md) | rejected | partial |
+| [duloxetine](/drugs/drug_duloxetine/) | [Skinner_2004 · reference](/drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | rejected | partial |
+| [dupilumab](/drugs/drug_dupilumab/) | [Zhang_2021 · reference](/drugs/drug_dupilumab/Dupilumab_Zhang2021_reference.md) | rejected | unchecked |
+| [eculizumab](/drugs/drug_eculizumab/) | [Le_2024 · reference](/drugs/drug_eculizumab/Eculizumab_Le2024_reference.md) | rejected | confirmed |
+| [eculizumab](/drugs/drug_eculizumab/) | [Ter_2023 · reference](/drugs/drug_eculizumab/Eculizumab_Ter2023_reference.md) | rejected | confirmed |
+| [eflornithine](/drugs/drug_eflornithine/) | [Jansson_2008 · d_eflornithine_estimate_rse](/drugs/drug_eflornithine/Eflornithine_Jansson2008_d_eflornithine_estimate_rse.md) | needs_review | partial |
+| [elagolix](/drugs/drug_elagolix/) | [Beck_2022 · reference](/drugs/drug_elagolix/Elagolix_Beck2022_reference.md) | rejected | unchecked |
+| [eltrombopag](/drugs/drug_eltrombopag/) | [Farrell_2014 · reference](/drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | needs_review | partial |
+| [enoxolone](/drugs/drug_enoxolone/) | [Xu_2014 · reference](/drugs/drug_enoxolone/Enoxolone_Xu2014_reference.md) | rejected | unchecked |
+| [ephedrine](/drugs/drug_ephedrine/) | [Csajka_2005 · reference](/drugs/drug_ephedrine/Ephedrine_Csajka2005_reference.md) | rejected | partial |
+| [epinephrine](/drugs/drug_epinephrine/) | [Frechen_2015 · reference](/drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md) | needs_review | partial |
+| [epirubicin](/drugs/drug_epirubicin/) | [Tjuljandin_1990 · reference](/drugs/drug_epirubicin/Epirubicin_Tjuljandin1990_reference.md) | needs_review | partial |
+| [eplerenone](/drugs/drug_eplerenone/) | [Jaisser_2021 · reference](/drugs/drug_eplerenone/Eplerenone_Jaisser2021_reference.md) | rejected | partial |
+| [eptifibatide](/drugs/drug_eptifibatide/) | [Wang_2015 · reference](/drugs/drug_eptifibatide/Eptifibatide_Wang2015_reference.md) | rejected | partial |
+| [erenumab](/drugs/drug_erenumab/) | [Vu_2017 · reference](/drugs/drug_erenumab/Erenumab_Vu2017_reference.md) | rejected | partial |
+| [etilefrine](/drugs/drug_etilefrine/) | [Hengstmann_1975 · reference](/drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | rejected | partial |
+| [etodolac](/drugs/drug_etodolac/) | [Baek_2019 · reference](/drugs/drug_etodolac/Etodolac_Baek2019_reference.md) | needs_review | partial |
+| [etravirine](/drugs/drug_etravirine/) | [Kakuda_2010 · reference](/drugs/drug_etravirine/Etravirine_Kakuda2010_reference.md) | rejected | partial |
+| [faricimab](/drugs/drug_faricimab/) | [Diack_2024_2 · reference](/drugs/drug_faricimab/Faricimab_Diack2024v2_reference.md) | rejected | unchecked |
+| [favipiravir](/drugs/drug_favipiravir/) | [Irie_2021 · reference](/drugs/drug_favipiravir/Favipiravir_Irie2021_reference.md) | rejected | partial |
+| [felodipine](/drugs/drug_felodipine/) | [Yang_1998 · reference](/drugs/drug_felodipine/Felodipine_Yang1998_reference.md) | needs_review | partial |
+| [fenquizone](/drugs/drug_fenquizone/) | [Maggi_1985 · reference](/drugs/drug_fenquizone/Fenquizone_Maggi1985_reference.md) | needs_review | partial |
+| [fentanyl](/drugs/drug_fentanyl/) | [Björkman_1994 · small_intestine](/drugs/drug_fentanyl/Fentanyl_Bjrkman1994_small_intestine.md) | needs_review | partial |
+| [fentanyl](/drugs/drug_fentanyl/) | [Encinas_2013 · reference](/drugs/drug_fentanyl/Fentanyl_Encinas2013_reference.md) | needs_review | confirmed |
+| [fentanyl](/drugs/drug_fentanyl/) | [Lötsch_2005 · m6g](/drugs/drug_fentanyl/Fentanyl_Ltsch2005_m6g.md) | needs_review | unchecked |
+| [fentanyl](/drugs/drug_fentanyl/) | [Kokubun_2012 · reference](/drugs/drug_fentanyl/Fentanyl_Kokubun2012_reference.md) | rejected | confirmed |
+| [fentanyl](/drugs/drug_fentanyl/) | [Lemmens_1994 · reference](/drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md) | rejected | partial |
+| [fentanyl](/drugs/drug_fentanyl/) | [Reed_2024 · reference](/drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md) | rejected | partial |
+| [fexofenadine](/drugs/drug_fexofenadine/) | [Olsén_2006 · reference](/drugs/drug_fexofenadine/Fexofenadine_Olsn2006_reference.md) | rejected | partial |
+| [fibrinogen, human](/drugs/drug_fibrinogen_human/) | [Khayat_2023 · reference](/drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_reference.md) | needs_review | partial |
+| [flecainide](/drugs/drug_flecainide/) | [Sangrador_1989 · reference](/drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md) | rejected | partial |
 | [floxuridine](/drugs/drug_floxuridine/) | [Port_1999 · rats with Morris hepatoma M3924A](/drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) |  | unchecked |
+| [flumequine](/drugs/drug_flumequine/) | [Ziv_1986 · reference](/drugs/drug_flumequine/Flumequine_Ziv1986_reference.md) | extracted | partial |
+| [flumequine](/drugs/drug_flumequine/) | [Anadón_2008 · reference](/drugs/drug_flumequine/Flumequine_Anadn2008_reference.md) | needs_review | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · bressolle_33](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_bressolle_33.md) | rejected | unchecked |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · mueller_22](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_mueller_22.md) | rejected | unchecked |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · porta_oltra_34](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_porta_oltra_34.md) | rejected | unchecked |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · terret_23](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_terret_23.md) | rejected | unchecked |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · van_kuilenburg_36](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_van_kuilenburg_36.md) | rejected | unchecked |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Kobuchi_2013 · 07_00_h](/drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_07_00_h.md) | rejected | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Kobuchi_2013 · 13_00_h](/drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_13_00_h.md) | rejected | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Kobuchi_2013 · 19_00_h](/drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_19_00_h.md) | rejected | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Kobuchi_2013 · control](/drugs/drug_fluorouracil/Fluorouracil_Kobuchi2013_control.md) | rejected | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Kobuchi_2014 · reference](/drugs/drug_fluorouracil/Fluorouracil_Kobuchi2014_reference.md) | rejected | confirmed |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Mielke_2025 · reference](/drugs/drug_fluorouracil/Fluorouracil_Mielke2025_reference.md) | rejected | partial |
+| [fluorouracil](/drugs/drug_fluorouracil/) | [Tan_2026 · reference](/drugs/drug_fluorouracil/Fluorouracil_Tan2026_reference.md) | rejected | unchecked |
+| [flurbiprofen](/drugs/drug_flurbiprofen/) | [Loisios-Konstantinidis_2020_2 · reference](/drugs/drug_flurbiprofen/Flurbiprofen_LoisiosKonstantinidis2020v2_reference.md) | needs_review | unchecked |
+| [fluticasone](/drugs/drug_fluticasone/) | [Möllmann_1998 · reference](/drugs/drug_fluticasone/Fluticasone_Mllmann1998_reference.md) | needs_review | partial |
+| [fosinopril](/drugs/drug_fosinopril/) | [Hu_1997 · caucasian](/drugs/drug_fosinopril/Fosinopril_Hu1997_caucasian.md) | rejected | partial |
+| [fosinopril](/drugs/drug_fosinopril/) | [Hu_1997 · chinese](/drugs/drug_fosinopril/Fosinopril_Hu1997_chinese.md) | rejected | partial |
+| [fostemsavir](/drugs/drug_fostemsavir/) | [Parasrampuria_2025 · reference](/drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md) | rejected | confirmed |
+| [fremanezumab](/drugs/drug_fremanezumab/) | [Iannone_2026 · adults](/drugs/drug_fremanezumab/Fremanezumab_Iannone2026_adults.md) | rejected | confirmed |
+| [fremanezumab](/drugs/drug_fremanezumab/) | [Iannone_2026 · children_adolescents_6_17_years](/drugs/drug_fremanezumab/Fremanezumab_Iannone2026_children_adolescents_6_17_years.md) | rejected | confirmed |
+| [furosemide](/drugs/drug_furosemide/) | [Vert_1982 · reference](/drugs/drug_furosemide/Furosemide_Vert1982_reference.md) | needs_review | partial |
+| [gabapentin](/drugs/drug_gabapentin/) | [Al-Zubaydi_2024 · reference](/drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | rejected | partial |
+| [gabapentin](/drugs/drug_gabapentin/) | [Larsen_2016 · reference](/drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md) | rejected | partial |
+| [gabapentin](/drugs/drug_gabapentin/) | [Zhou_2026 · reference](/drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md) | rejected | partial |
+| [gadodiamide](/drugs/drug_gadodiamide/) | [Van_1993 · reference](/drugs/drug_gadodiamide/Gadodiamide_Van1993_reference.md) | needs_review | partial |
+| [galactose](/drugs/drug_galactose/) | [Henderson_1982 · reference](/drugs/drug_galactose/Galactose_Henderson1982_reference.md) | rejected | partial |
+| [garenoxacin](/drugs/drug_garenoxacin/) | [Van_2004 · reference](/drugs/drug_garenoxacin/Garenoxacin_Van2004_reference.md) | rejected | unchecked |
+| [glibenclamide](/drugs/drug_glibenclamide/) | [Rambiritch_2016_2 · reference](/drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md) | rejected | unchecked |
 | [glycerol](/drugs/drug_glycerol/) | [Beylot_1987 · healthy adults and insulin-dependent diabetic patients](/drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md) |  | unchecked |
+| [glycopyrronium](/drugs/drug_glycopyrronium/) | [Bartels_2021 · reference](/drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | rejected | unchecked |
+| [guselkumab](/drugs/drug_guselkumab/) | [Tran_2022 · reference](/drugs/drug_guselkumab/Guselkumab_Tran2022_reference.md) | rejected | partial |
 | [hexobendine](/drugs/drug_hexobendine/) | [Kolassa_1975 · rats](/drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md) |  | unchecked |
+| [hydroflumethiazide](/drugs/drug_hydroflumethiazide/) | [Brørs_1979 · reference](/drugs/drug_hydroflumethiazide/Hydroflumethiazide_Brrs1979_reference.md) | needs_review | confirmed |
+| [hydroflumethiazide](/drugs/drug_hydroflumethiazide/) | [Yakatan_1977 · reference](/drugs/drug_hydroflumethiazide/Hydroflumethiazide_Yakatan1977_reference.md) | needs_review | partial |
+| [ibritumomab tiuxetan](/drugs/drug_ibritumomab_tiuxetan/) | [Morschhauser_2018 · f1](/drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f1.md) | rejected | partial |
+| [ibritumomab tiuxetan](/drugs/drug_ibritumomab_tiuxetan/) | [Morschhauser_2018 · f2](/drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f2.md) | rejected | partial |
+| [ibritumomab tiuxetan](/drugs/drug_ibritumomab_tiuxetan/) | [Morschhauser_2018 · liver](/drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_liver.md) | rejected | partial |
+| [ibritumomab tiuxetan](/drugs/drug_ibritumomab_tiuxetan/) | [Morschhauser_2018 · lumbar_vertebrae_l2_l4](/drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_lumbar_vertebrae_l2_l4.md) | rejected | partial |
+| [ibritumomab tiuxetan](/drugs/drug_ibritumomab_tiuxetan/) | [Morschhauser_2018 · spleen](/drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_spleen.md) | rejected | partial |
+| [ibuprofen](/drugs/drug_ibuprofen/) | [DeGraves_1993 · reference](/drugs/drug_ibuprofen/Ibuprofen_DeGraves1993_reference.md) | extracted | confirmed |
+| [idarubicin](/drugs/drug_idarubicin/) | [Looby_1997 · reference](/drugs/drug_idarubicin/Idarubicin_Looby1997_reference.md) | rejected | partial |
+| [idarubicin](/drugs/drug_idarubicin/) | [Weiss_2002 · reference](/drugs/drug_idarubicin/Idarubicin_Weiss2002_reference.md) | rejected | confirmed |
+| [Imipenem](/drugs/drug_imipenem/) | [Gruber_1985 · reference](/drugs/drug_imipenem/Imipenem_Gruber1985_reference.md) | extracted | partial |
+| [infliximab](/drugs/drug_infliximab/) | [Hemperly_2025 · reference](/drugs/drug_infliximab/Infliximab_Hemperly2025_reference.md) | rejected | unchecked |
+| [inositol](/drugs/drug_inositol/) | [Antonowski_2022 · reference](/drugs/drug_inositol/Inositol_Antonowski2022_reference.md) | rejected | confirmed |
+| [iodamide](/drugs/drug_iodamide/) | [Difazio_1978 · reference](/drugs/drug_iodamide/Iodamide_Difazio1978_reference.md) | needs_review | confirmed |
+| [ipriflavone](/drugs/drug_ipriflavone/) | [Ma_1997 · reference](/drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | needs_review | partial |
+| [Islatravir](/drugs/drug_islatravir/) | [Oliveira_2026 · reference](/drugs/drug_islatravir/Islatravir_Oliveira2026_reference.md) | rejected | unchecked |
+| [isotretinoin](/drugs/drug_isotretinoin/) | [Nulman_1998 · reference](/drugs/drug_isotretinoin/Isotretinoin_Nulman1998_reference.md) | needs_review | confirmed |
+| [ivermectin](/drugs/drug_ivermectin/) | [Kobylinski_2017 · reference](/drugs/drug_ivermectin/Ivermectin_Kobylinski2017_reference.md) | needs_review | confirmed |
+| [ketorolac](/drugs/drug_ketorolac/) | [Cerreta_2019 · reference](/drugs/drug_ketorolac/Ketorolac_Cerreta2019_reference.md) | extracted | partial |
+| [ketorolac](/drugs/drug_ketorolac/) | [Gregory_2021 · reference](/drugs/drug_ketorolac/Ketorolac_Gregory2021_reference.md) | needs_review | partial |
+| [ketorolac](/drugs/drug_ketorolac/) | [McLay_2018 · reference](/drugs/drug_ketorolac/Ketorolac_McLay2018_reference.md) | rejected | partial |
+| [labetalol](/drugs/drug_labetalol/) | [Maronde_1983 · reference](/drugs/drug_labetalol/Labetalol_Maronde1983_reference.md) | needs_review | partial |
+| [lacidipine](/drugs/drug_lacidipine/) | [Yang_2017 · reference](/drugs/drug_lacidipine/Lacidipine_Yang2017_reference.md) | needs_review | partial |
 | [Lead](/drugs/toxin_lead/) | [Dede_2017 · exposure](/drugs/toxin_lead/Lead_Dede2017_exposure.md) | needs_review | unchecked |
 | [Lead](/drugs/toxin_lead/) | [Dede_2017 · optimal](/drugs/toxin_lead/Lead_Dede2017_optimal.md) | needs_review | unchecked |
+| [lenvatinib](/drugs/drug_lenvatinib/) | [Tamai_2017 · base](/drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base.md) | rejected | confirmed |
+| [lenvatinib](/drugs/drug_lenvatinib/) | [Tamai_2017 · final](/drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final.md) | rejected | partial |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · chicken_4_5](/drugs/drug_levamisole/Levamisole_Cheng2026_chicken_4_5.md) | needs_review | partial |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · duck_2_5](/drugs/drug_levamisole/Levamisole_Cheng2026_duck_2_5.md) | needs_review | partial |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · goat_2](/drugs/drug_levamisole/Levamisole_Cheng2026_goat_2.md) | needs_review | unchecked |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · pig_39_2](/drugs/drug_levamisole/Levamisole_Cheng2026_pig_39_2.md) | needs_review | partial |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · rabbit_2](/drugs/drug_levamisole/Levamisole_Cheng2026_rabbit_2.md) | needs_review | unchecked |
+| [levamisole](/drugs/drug_levamisole/) | [Cheng_2026 · sheep_2](/drugs/drug_levamisole/Levamisole_Cheng2026_sheep_2.md) | needs_review | unchecked |
+| [levomethadone](/drugs/drug_levomethadone/) | [Sandbaumhüter_2021_2 · reference](/drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md) | rejected | unchecked |
+| [lidocaine](/drugs/drug_lidocaine/) | [Kim_2021 · gx](/drugs/drug_lidocaine/Lidocaine_Kim2021_gx.md) | rejected | unchecked |
+| [linagliptin](/drugs/drug_linagliptin/) | [Graefe-Mody_2012 · reference](/drugs/drug_linagliptin/Linagliptin_GraefeMody2012_reference.md) | rejected | partial |
+| [lincomycin](/drugs/drug_lincomycin/) | [Adam_1979 · reference](/drugs/drug_lincomycin/Lincomycin_Adam1979_reference.md) | extracted | confirmed |
+| [liraglutide](/drugs/drug_liraglutide/) | [Petri_2015 · base](/drugs/drug_liraglutide/Liraglutide_Petri2015_base.md) | rejected | unchecked |
+| [liraglutide](/drugs/drug_liraglutide/) | [Petri_2015 · full](/drugs/drug_liraglutide/Liraglutide_Petri2015_full.md) | rejected | unchecked |
+| [lisocabtagene maraleucel](/drugs/drug_lisocabtagene_maraleucel/) | [Ogasawara_2021 · reference](/drugs/drug_lisocabtagene_maraleucel/LisocabtageneMaraleucel_Ogasawara2021_reference.md) | needs_review | confirmed |
+| [lorazepam](/drugs/drug_lorazepam/) | [Chamberlain_2012 · reference](/drugs/drug_lorazepam/Lorazepam_Chamberlain2012_reference.md) | rejected | partial |
+| [magnesium (different salts in combination)](/drugs/drug_magnesium_different_salts_in_combination/) | [Rower_2017 · reference](/drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Rower2017_reference.md) | needs_review | confirmed |
+| [mangafodipir](/drugs/drug_mangafodipir/) | [Hirt_2009 · reference](/drugs/drug_mangafodipir/Mangafodipir_Hirt2009_reference.md) | rejected | partial |
+| [mannitol](/drugs/drug_mannitol/) | [Noorani_2022 · reference](/drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | rejected | partial |
+| [medroxyprogesterone](/drugs/drug_medroxyprogesterone/) | [Engel_2026 · cab_estimates](/drugs/drug_medroxyprogesterone/Medroxyprogesterone_Engel2026_cab_estimates.md) | rejected | unchecked |
+| [mefloquine](/drugs/drug_mefloquine/) | [Simpson_1999 · reference](/drugs/drug_mefloquine/Mefloquine_Simpson1999_reference.md) | rejected | partial |
+| [Metamizole](/drugs/drug_metamizole/) | [Ziesenitz_2019 · reference](/drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md) | rejected | partial |
+| [metamizole sodium](/drugs/drug_metamizole_sodium/) | [Blaser_2021 · reference](/drugs/drug_metamizole_sodium/MetamizoleSodium_Blaser2021_reference.md) | rejected | unchecked |
+| [metformin](/drugs/drug_metformin/) | [Patel_2019 · ator_grt](/drugs/drug_metformin/Metformin_Patel2019_ator_grt.md) | extracted | unchecked |
+| [methotrexate](/drugs/drug_methotrexate/) | [Johansson_2011 · reference](/drugs/drug_methotrexate/Methotrexate_Johansson2011_reference.md) | rejected | partial |
+| [methotrexate](/drugs/drug_methotrexate/) | [el-Yazigi_1986 · dosage_regimen_c](/drugs/drug_methotrexate/Methotrexate_elYazigi1986_dosage_regimen_c.md) | rejected | partial |
+| [methotrexate](/drugs/drug_methotrexate/) | [el-Yazigi_1986 · reference](/drugs/drug_methotrexate/Methotrexate_elYazigi1986_reference.md) | rejected | unchecked |
+| [Methyldopa](/drugs/drug_methyldopa/) | [Barnett_1977 · reference](/drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | rejected | partial |
+| [methyldopa (levorotatory)](/drugs/drug_methyldopa_levorotatory/) | [Barnett_1977 · reference](/drugs/drug_methyldopa_levorotatory/MethyldopaLevorotatory_Barnett1977_reference.md) | rejected | partial |
+| [methylprednisolone](/drugs/drug_methylprednisolone/) | [Rantanen_2026_2 · reference](/drugs/drug_methylprednisolone/Methylprednisolone_Rantanen2026v2_reference.md) | rejected | partial |
+| [methyprylon](/drugs/drug_methyprylon/) | [Gwilt_1982 · caster_oil](/drugs/drug_methyprylon/Methyprylon_Gwilt1982_caster_oil.md) | rejected | confirmed |
+| [methyprylon](/drugs/drug_methyprylon/) | [Gwilt_1982 · control](/drugs/drug_methyprylon/Methyprylon_Gwilt1982_control.md) | rejected | confirmed |
+| [metoprolol](/drugs/drug_metoprolol/) | [Kir_2025 · reference](/drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md) | rejected | unchecked |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_1](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_1.md) | rejected | partial |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_2](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_2.md) | rejected | partial |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_3](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_3.md) | rejected | partial |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_4](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_4.md) | rejected | partial |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_5](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_5.md) | rejected | partial |
+| [mexiletine](/drugs/drug_mexiletine/) | [Häselbarth_1981 · subject_6](/drugs/drug_mexiletine/Mexiletine_Hselbarth1981_subject_6.md) | rejected | partial |
+| [miconazole](/drugs/drug_miconazole/) | [Mikamo_1997 · reference](/drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | needs_review | confirmed |
+| [midazolam](/drugs/drug_midazolam/) | [Aarons_1991 · individual_fitb_x](/drugs/drug_midazolam/Midazolam_Aarons1991_individual_fitb_x.md) | rejected | partial |
+| [midazolam](/drugs/drug_midazolam/) | [Brown_1993 · i_v_bolus](/drugs/drug_midazolam/Midazolam_Brown1993_i_v_bolus.md) | rejected | partial |
+| [midazolam](/drugs/drug_midazolam/) | [Brown_1993 · i_v_infusion](/drugs/drug_midazolam/Midazolam_Brown1993_i_v_infusion.md) | rejected | partial |
+| [milrinone](/drugs/drug_milrinone/) | [Paradisis_2007 · reference](/drugs/drug_milrinone/Milrinone_Paradisis2007_reference.md) | extracted | partial |
+| [milrinone](/drugs/drug_milrinone/) | [Taniguchi_2000 · reference](/drugs/drug_milrinone/Milrinone_Taniguchi2000_reference.md) | needs_review | confirmed |
+| [miltefosine](/drugs/drug_miltefosine/) | [Madu_2023 · initial_value](/drugs/drug_miltefosine/Miltefosine_Madu2023_initial_value.md) | needs_review | partial |
+| [miltefosine](/drugs/drug_miltefosine/) | [Madu_2023 · optimised_final_value_for_adults_children](/drugs/drug_miltefosine/Miltefosine_Madu2023_optimised_final_value_for_adults_childr.md) | needs_review | partial |
+| [mirogabalin](/drugs/drug_mirogabalin/) | [Yin_2016 · reference](/drugs/drug_mirogabalin/Mirogabalin_Yin2016_reference.md) | rejected | partial |
+| [mirtazapine](/drugs/drug_mirtazapine/) | [Yan_2026 · reference](/drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | rejected | confirmed |
+| [mitomycin](/drugs/drug_mitomycin/) | [Erlichman_1987 · reference](/drugs/drug_mitomycin/Mitomycin_Erlichman1987_reference.md) | needs_review | partial |
+| [mitomycin](/drugs/drug_mitomycin/) | [Rump_1996 · reference](/drugs/drug_mitomycin/Mitomycin_Rump1996_reference.md) | rejected | partial |
+| [mitomycin](/drugs/drug_mitomycin/) | [Shimizu_1991 · reference](/drugs/drug_mitomycin/Mitomycin_Shimizu1991_reference.md) | rejected | partial |
+| [mitotane](/drugs/drug_mitotane/) | [Yin_2021 · basic_model](/drugs/drug_mitotane/Mitotane_Yin2021_basic_model.md) | rejected | confirmed |
+| [modafinil](/drugs/drug_modafinil/) | [Willavize_2017 · reference](/drugs/drug_modafinil/Modafinil_Willavize2017_reference.md) | rejected | partial |
+| [mosunetuzumab](/drugs/drug_mosunetuzumab/) | [Li_2025 · china_study_yo43555](/drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_china_study_yo43555.md) | needs_review | partial |
+| [mosunetuzumab](/drugs/drug_mosunetuzumab/) | [Li_2025 · global_study_go29781_group_b_dose_expansion_cohort_patients_with_r_r_fl](/drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan.md) | needs_review | partial |
+| [mosunetuzumab](/drugs/drug_mosunetuzumab/) | [Li_2025 · mean](/drugs/drug_mosunetuzumab/Mosunetuzumab_Li2025_mean.md) | needs_review | partial |
+| [moxidectin](/drugs/drug_moxidectin/) | [Vanapalli_2002 · reference](/drugs/drug_moxidectin/Moxidectin_Vanapalli2002_reference.md) | needs_review | partial |
+| [moxidectin](/drugs/drug_moxidectin/) | [Wood_2024 · reference](/drugs/drug_moxidectin/Moxidectin_Wood2024_reference.md) | needs_review | unchecked |
+| [nadolol](/drugs/drug_nadolol/) | [Mehta_1992 · reference](/drugs/drug_nadolol/Nadolol_Mehta1992_reference.md) | needs_review | confirmed |
+| [nalbuphine](/drugs/drug_nalbuphine/) | [Bressolle_2011 · basic_model](/drugs/drug_nalbuphine/Nalbuphine_Bressolle2011_basic_model.md) | needs_review | partial |
+| [nalbuphine](/drugs/drug_nalbuphine/) | [Bressolle_2011 · final](/drugs/drug_nalbuphine/Nalbuphine_Bressolle2011_final.md) | needs_review | partial |
+| [nalbuphine](/drugs/drug_nalbuphine/) | [Bressolle_2011 · mean](/drugs/drug_nalbuphine/Nalbuphine_Bressolle2011_mean.md) | needs_review | unchecked |
+| [nemolizumab](/drugs/drug_nemolizumab/) | [Sidbury_2022 · reference](/drugs/drug_nemolizumab/Nemolizumab_Sidbury2022_reference.md) | rejected | confirmed |
+| [netilmicin](/drugs/drug_netilmicin/) | [Siegel_1979 · reference](/drugs/drug_netilmicin/Netilmicin_Siegel1979_reference.md) | extracted | partial |
+| [niclosamide](/drugs/drug_niclosamide/) | [Kim_2024 · reference](/drugs/drug_niclosamide/Niclosamide_Kim2024_reference.md) | rejected | unchecked |
+| [nicorandil](/drugs/drug_nicorandil/) | [Iida_2008_2 · reference](/drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | extracted | partial |
+| [nicorandil](/drugs/drug_nicorandil/) | [Iida_2008 · obj](/drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md) | needs_review | partial |
+| [nicorandil](/drugs/drug_nicorandil/) | [Iida_2008 · sig](/drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md) | needs_review | partial |
+| [nicotinic acid](/drugs/drug_nicotinic_acid/) | [Wu_1989 · reference](/drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | needs_review | partial |
+| [nifedipine](/drugs/drug_nifedipine/) | [Blea_1997 · reference](/drugs/drug_nifedipine/Nifedipine_Blea1997_reference.md) | needs_review | partial |
+| [norfloxacin](/drugs/drug_norfloxacin/) | [Anadón_1995 · reference](/drugs/drug_norfloxacin/Norfloxacin_Anadn1995_reference.md) | needs_review | partial |
+| [norfloxacin](/drugs/drug_norfloxacin/) | [Xu_2015 · reference](/drugs/drug_norfloxacin/Norfloxacin_Xu2015_reference.md) | needs_review | partial |
+| [nusinersen](/drugs/drug_nusinersen/) | [Biliouris_2018 · reference](/drugs/drug_nusinersen/Nusinersen_Biliouris2018_reference.md) | rejected | confirmed |
+| [obinutuzumab](/drugs/drug_obinutuzumab/) | [Gibiansky_2014 · reference](/drugs/drug_obinutuzumab/Obinutuzumab_Gibiansky2014_reference.md) | rejected | partial |
+| [obinutuzumab](/drugs/drug_obinutuzumab/) | [Zhai_2017 · nhl](/drugs/drug_obinutuzumab/Obinutuzumab_Zhai2017_nhl.md) | rejected | unchecked |
+| [ofatumumab](/drugs/drug_ofatumumab/) | [Yu_2022 · reference](/drugs/drug_ofatumumab/Ofatumumab_Yu2022_reference.md) | rejected | partial |
+| [omadacycline](/drugs/drug_omadacycline/) | [Yang_2022 · intravenous_administration](/drugs/drug_omadacycline/Omadacycline_Yang2022_intravenous_administration.md) | needs_review | confirmed |
+| [omeprazole](/drugs/drug_omeprazole/) | [Andersson_1990 · 10_mg_oral_mean](/drugs/drug_omeprazole/Omeprazole_Andersson1990_10_mg_oral_mean.md) | needs_review | confirmed |
+| [omeprazole](/drugs/drug_omeprazole/) | [Andersson_1990 · 40_mg_iv_mean](/drugs/drug_omeprazole/Omeprazole_Andersson1990_40_mg_iv_mean.md) | needs_review | partial |
+| [omeprazole](/drugs/drug_omeprazole/) | [Andersson_1990 · 40_mg_oral_mean](/drugs/drug_omeprazole/Omeprazole_Andersson1990_40_mg_oral_mean.md) | needs_review | partial |
+| [omeprazole](/drugs/drug_omeprazole/) | [Andersson_1990 · 40_mg_mean](/drugs/drug_omeprazole/Omeprazole_Andersson1990_40_mg_mean.md) | rejected | partial |
+| [omeprazole](/drugs/drug_omeprazole/) | [Andersson_1990 · 90_mg_oral_mean](/drugs/drug_omeprazole/Omeprazole_Andersson1990_90_mg_oral_mean.md) | rejected | partial |
+| [ondansetron](/drugs/drug_ondansetron/) | [Baek_2015 · reference](/drugs/drug_ondansetron/Ondansetron_Baek2015_reference.md) | rejected | partial |
+| [orciprenaline](/drugs/drug_orciprenaline/) | [Dengler_1976 · reference](/drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference.md) | rejected | partial |
+| [oxycodone](/drugs/drug_oxycodone/) | [Ladebo_2020 · reference](/drugs/drug_oxycodone/Oxycodone_Ladebo2020_reference.md) | rejected | partial |
+| [paclitaxel](/drugs/drug_paclitaxel/) | [Tsushima_2020 · reference](/drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | rejected | partial |
+| [palbociclib](/drugs/drug_palbociclib/) | [Marouille_2021 · final](/drugs/drug_palbociclib/Palbociclib_Marouille2021_final.md) | rejected | partial |
+| [palbociclib](/drugs/drug_palbociclib/) | [Royer_2021 · reference](/drugs/drug_palbociclib/Palbociclib_Royer2021_reference.md) | rejected | confirmed |
+| [paliperidone](/drugs/drug_paliperidone/) | [Shimizu_2020 · 100_mg_eq_gluteal](/drugs/drug_paliperidone/Paliperidone_Shimizu2020_100_mg_eq_gluteal.md) | needs_review | partial |
+| [paliperidone](/drugs/drug_paliperidone/) | [Shimizu_2020 · 150_mg_eq_gluteal](/drugs/drug_paliperidone/Paliperidone_Shimizu2020_150_mg_eq_gluteal.md) | needs_review | partial |
+| [paliperidone](/drugs/drug_paliperidone/) | [Shimizu_2020 · 50_mg_eq_gluteal](/drugs/drug_paliperidone/Paliperidone_Shimizu2020_50_mg_eq_gluteal.md) | needs_review | partial |
+| [panitumumab](/drugs/drug_panitumumab/) | [Lobet_2026 · reference](/drugs/drug_panitumumab/Panitumumab_Lobet2026_reference.md) | rejected | confirmed |
+| [paracetamol](/drugs/drug_paracetamol/) | [Belle_2000 · base](/drugs/drug_paracetamol/Paracetamol_Belle2000_base.md) | rejected | partial |
+| [paracetamol](/drugs/drug_paracetamol/) | [Belle_2000 · final](/drugs/drug_paracetamol/Paracetamol_Belle2000_final.md) | rejected | partial |
+| [paracetamol](/drugs/drug_paracetamol/) | [Haslund-Krog_2023 · reference](/drugs/drug_paracetamol/Paracetamol_HaslundKrog2023_reference.md) | rejected | partial |
+| [pefloxacin](/drugs/drug_pefloxacin/) | [Pant_2005 · reference](/drugs/drug_pefloxacin/Pefloxacin_Pant2005_reference.md) | needs_review | partial |
+| [pegcetacoplan](/drugs/drug_pegcetacoplan/) | [Crass_2024 · reference](/drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | rejected | confirmed |
 | [phenprocoumon](/drugs/drug_phenprocoumon/) | [Abduljalil_2013 · patients on steady-state phenprocoumon](/drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) |  | unchecked |
 | [phospholipids](/drugs/drug_phospholipids/) | [Hummel_1975 · non pregnant female rats](/drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md) |  | unchecked |
+| [Piperaquine](/drugs/drug_piperaquine/) | [Chotsiri_2021 · population_estimatec](/drugs/drug_piperaquine/Piperaquine_Chotsiri2021_population_estimatec.md) | needs_review | partial |
+| [Piperaquine](/drugs/drug_piperaquine/) | [Chotsiri_2021 · prior_estimateb](/drugs/drug_piperaquine/Piperaquine_Chotsiri2021_prior_estimateb.md) | needs_review | confirmed |
+| [pirenzepine](/drugs/drug_pirenzepine/) | [Vergin_1989 · reference](/drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md) | rejected | partial |
+| [pomalidomide](/drugs/drug_pomalidomide/) | [Li_2017 · reference](/drugs/drug_pomalidomide/Pomalidomide_Li2017_reference.md) | rejected | unchecked |
+| [potassium salicylate](/drugs/drug_potassium_salicylate/) | [Kotschwar_2009 · mean_se](/drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_mean_se.md) | rejected | unchecked |
+| [potassium salicylate](/drugs/drug_potassium_salicylate/) | [Wójcicki_1981 · reference](/drugs/drug_potassium_salicylate/PotassiumSalicylate_Wjcicki1981_reference.md) | rejected | partial |
+| [praziquantel](/drugs/drug_praziquantel/) | [Bustinduy_2016 · s_pzq](/drugs/drug_praziquantel/Praziquantel_Bustinduy2016_s_pzq.md) | needs_review | confirmed |
+| [prednisone](/drugs/drug_prednisone/) | [de_2023 · reference](/drugs/drug_prednisone/Prednisone_de2023_reference.md) | rejected | partial |
+| [pregabalin](/drugs/drug_pregabalin/) | [Hong_2016 · reference](/drugs/drug_pregabalin/Pregabalin_Hong2016_reference.md) | needs_review | partial |
+| [prenylamine](/drugs/drug_prenylamine/) | [Paar_1990 · reference](/drugs/drug_prenylamine/Prenylamine_Paar1990_reference.md) | rejected | partial |
+| [pretomanid](/drugs/drug_pretomanid/) | [Zou_2022 · reference](/drugs/drug_pretomanid/Pretomanid_Zou2022_reference.md) | needs_review | partial |
+| [pretomanid](/drugs/drug_pretomanid/) | [Salinger_2019 · reference](/drugs/drug_pretomanid/Pretomanid_Salinger2019_reference.md) | rejected | partial |
+| [primaquine](/drugs/drug_primaquine/) | [Chairat_2018 · reference](/drugs/drug_primaquine/Primaquine_Chairat2018_reference.md) | needs_review | unchecked |
+| [primaquine](/drugs/drug_primaquine/) | [Lee_2021 · reference](/drugs/drug_primaquine/Primaquine_Lee2021_reference.md) | rejected | unchecked |
+| [procaine](/drugs/drug_procaine/) | [Tobin_1976 · reference](/drugs/drug_procaine/Procaine_Tobin1976_reference.md) | needs_review | partial |
+| [prucalopride](/drugs/drug_prucalopride/) | [van_2016 · estimate](/drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | needs_review | partial |
+| [prucalopride](/drugs/drug_prucalopride/) | [van_2016 · spd555_303](/drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | rejected | partial |
+| [pyrimethamine](/drugs/drug_pyrimethamine/) | [Salman_2011 · reference](/drugs/drug_pyrimethamine/Pyrimethamine_Salman2011_reference.md) | rejected | partial |
+| [quetiapine](/drugs/drug_quetiapine/) | [Isbister_2007 · reference](/drugs/drug_quetiapine/Quetiapine_Isbister2007_reference.md) | needs_review | partial |
+| [quinine](/drugs/drug_quinine/) | [Le_2005 · reference](/drugs/drug_quinine/Quinine_Le2005_reference.md) | rejected | partial |
+| [quinine](/drugs/drug_quinine/) | [Michels_2019 · non_compartmental](/drugs/drug_quinine/Quinine_Michels2019_non_compartmental.md) | rejected | confirmed |
+| [raltegravir](/drugs/drug_raltegravir/) | [Bukkems_2021 · reference](/drugs/drug_raltegravir/Raltegravir_Bukkems2021_reference.md) | needs_review | partial |
+| [regorafenib](/drugs/drug_regorafenib/) | [Casanova_2023 · reference](/drugs/drug_regorafenib/Regorafenib_Casanova2023_reference.md) | needs_review | partial |
+| [Relatlimab](/drugs/drug_relatlimab/) | [Zhao_2024 · 1l_melanoma_geo_mean_cv](/drugs/drug_relatlimab/Relatlimab_Zhao2024_1l_melanoma_geo_mean_cv.md) | rejected | partial |
+| [Relatlimab](/drugs/drug_relatlimab/) | [Zhao_2024 · melanoma_1l_prior_io_geo_mean_cv](/drugs/drug_relatlimab/Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv.md) | rejected | partial |
+| [Relatlimab](/drugs/drug_relatlimab/) | [Zhao_2024 · prior_io_melanoma_geo_mean_cv](/drugs/drug_relatlimab/Relatlimab_Zhao2024_prior_io_melanoma_geo_mean_cv.md) | rejected | partial |
+| [ribociclib](/drugs/drug_ribociclib/) | [Samant_2018 · fasted_state](/drugs/drug_ribociclib/Ribociclib_Samant2018_fasted_state.md) | needs_review | confirmed |
+| [ribociclib](/drugs/drug_ribociclib/) | [Samant_2018 · fed_state](/drugs/drug_ribociclib/Ribociclib_Samant2018_fed_state.md) | needs_review | confirmed |
+| [ribociclib](/drugs/drug_ribociclib/) | [Samant_2018 · geometric_mean_geometric_coefficient_of_variation](/drugs/drug_ribociclib/Ribociclib_Samant2018_geometric_mean_geometric_coefficient_o.md) | needs_review | confirmed |
+| [rifampicin](/drugs/drug_rifampicin/) | [Ngo_2024 · reference](/drugs/drug_rifampicin/Rifampicin_Ngo2024_reference.md) | needs_review | confirmed |
+| [rifapentine](/drugs/drug_rifapentine/) | [Liu_2025 · reference](/drugs/drug_rifapentine/Rifapentine_Liu2025_reference.md) | rejected | partial |
+| [rifaximin](/drugs/drug_rifaximin/) | [Wang_2021 · reference](/drugs/drug_rifaximin/Rifaximin_Wang2021_reference.md) | rejected | unchecked |
+| [riluzole](/drugs/drug_riluzole/) | [Chow_2012 · reference](/drugs/drug_riluzole/Riluzole_Chow2012_reference.md) | rejected | partial |
+| [rolitetracycline](/drugs/drug_rolitetracycline/) | [Lashev_1995 · reference](/drugs/drug_rolitetracycline/Rolitetracycline_Lashev1995_reference.md) | needs_review | partial |
+| [romiplostim](/drugs/drug_romiplostim/) | [Fan_2023 · reference](/drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md) | rejected | partial |
+| [ropivacaine](/drugs/drug_ropivacaine/) | [Riff_2018 · reference](/drugs/drug_ropivacaine/Ropivacaine_Riff2018_reference.md) | rejected | partial |
+| [rutoside](/drugs/drug_rutoside/) | [Domínguez_2021 · rutin](/drugs/drug_rutoside/Rutoside_Domnguez2021_rutin.md) | rejected | unchecked |
+| [sacituzumab govitecan](/drugs/drug_sacituzumab_govitecan/) | [Sathe_2025 · reference](/drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference.md) | extracted | unchecked |
+| [salbutamol](/drugs/drug_salbutamol/) | [Marques_2024 · value](/drugs/drug_salbutamol/Salbutamol_Marques2024_value.md) | extracted | unchecked |
+| [salbutamol](/drugs/drug_salbutamol/) | [Marques_2024 · estimate](/drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md) | needs_review | confirmed |
+| [salbutamol](/drugs/drug_salbutamol/) | [Marques_2024 · geometric_mean](/drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md) | needs_review | confirmed |
+| [salbutamol](/drugs/drug_salbutamol/) | [Valenzuela_2006 · reference](/drugs/drug_salbutamol/Salbutamol_Valenzuela2006_reference.md) | rejected | partial |
+| [sapropterin](/drugs/drug_sapropterin/) | [Muntau_2017 · reference](/drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | rejected | unchecked |
+| [serelaxin](/drugs/drug_serelaxin/) | [Soubret_2018 · reference](/drugs/drug_serelaxin/Serelaxin_Soubret2018_reference.md) | rejected | partial |
+| [sodium iodide (131I)](/drugs/drug_sodium_iodide_131i/) | [Hardiansyah_2025 · reference](/drugs/drug_sodium_iodide_131i/SodiumIodide131i_Hardiansyah2025_reference.md) | needs_review | partial |
+| [sodium salicylate](/drugs/drug_sodium_salicylate/) | [Lowenthal_1974 · patients](/drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_patients.md) | rejected | unchecked |
+| [sofosbuvir](/drugs/drug_sofosbuvir/) | [Rower_2015_2 · reference](/drugs/drug_sofosbuvir/Sofosbuvir_Rower2015v2_reference.md) | needs_review | partial |
+| [sorafenib](/drugs/drug_sorafenib/) | [Huh_2021 · parameter_estimates_relative_standard_error](/drugs/drug_sorafenib/Sorafenib_Huh2021_parameter_estimates_relative_standard_erro.md) | needs_review | partial |
+| [sorbitol](/drugs/drug_sorbitol/) | [Nau_1992 · reference](/drugs/drug_sorbitol/Sorbitol_Nau1992_reference.md) | rejected | partial |
+| [stavudine](/drugs/drug_stavudine/) | [Tatsunami_2001 · reference](/drugs/drug_stavudine/Stavudine_Tatsunami2001_reference.md) | needs_review | partial |
+| [stavudine](/drugs/drug_stavudine/) | [Horton_1995 · population_estimate](/drugs/drug_stavudine/Stavudine_Horton1995_population_estimate.md) | rejected | partial |
+| [sulbactam](/drugs/drug_sulbactam/) | [Foulds_1983 · reference](/drugs/drug_sulbactam/Sulbactam_Foulds1983_reference.md) | needs_review | partial |
+| [sulfamethoxypyridazine](/drugs/drug_sulfamethoxypyridazine/) | [Abdennebi_1994 · reference](/drugs/drug_sulfamethoxypyridazine/Sulfamethoxypyridazine_Abdennebi1994_reference.md) | rejected | unchecked |
+| [sulpiride](/drugs/drug_sulpiride/) | [Helmy_2013 · reference](/drugs/drug_sulpiride/Sulpiride_Helmy2013_reference.md) | rejected | partial |
+| [sumatriptan](/drugs/drug_sumatriptan/) | [Christensen_2003 · reference](/drugs/drug_sumatriptan/Sumatriptan_Christensen2003_reference.md) | rejected | confirmed |
+| [Suramin](/drugs/drug_suramin/) | [Scher_1992 · reference](/drugs/drug_suramin/Suramin_Scher1992_reference.md) | rejected | partial |
+| [tafenoquine](/drugs/drug_tafenoquine/) | [Watson_2022 · reference](/drugs/drug_tafenoquine/Tafenoquine_Watson2022_reference.md) | needs_review | partial |
+| [telmisartan](/drugs/drug_telmisartan/) | [Zhang_2006 · 40_mg](/drugs/drug_telmisartan/Telmisartan_Zhang2006_40_mg.md) | rejected | confirmed |
+| [telmisartan](/drugs/drug_telmisartan/) | [Zhang_2006 · 80_mg](/drugs/drug_telmisartan/Telmisartan_Zhang2006_80_mg.md) | rejected | confirmed |
+| [Temsavir](/drugs/drug_temsavir/) | [Parasrampuria_2025 · reference](/drugs/drug_temsavir/Temsavir_Parasrampuria2025_reference.md) | rejected | unchecked |
+| [teniposide](/drugs/drug_teniposide/) | [Cheng_1999 · reference](/drugs/drug_teniposide/Teniposide_Cheng1999_reference.md) | needs_review | partial |
+| [terizidone](/drugs/drug_terizidone/) | [Mulubwa_2019 · reference](/drugs/drug_terizidone/Terizidone_Mulubwa2019_reference.md) | needs_review | partial |
+| [thalidomide](/drugs/drug_thalidomide/) | [Teo_1999 · reference](/drugs/drug_thalidomide/Thalidomide_Teo1999_reference.md) | needs_review | partial |
 | [thiamine (vit B1)](/drugs/drug_thiamine_vit_b1/) | [Rindi_1980 · rats](/drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) |  | unchecked |
+| [ticlopidine](/drugs/drug_ticlopidine/) | [Ashraf_2018 · nonmem](/drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | rejected | unchecked |
+| [ticlopidine](/drugs/drug_ticlopidine/) | [Ashraf_2018 · sir_resultsa](/drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | rejected | unchecked |
+| [tisotumab vedotin](/drugs/drug_tisotumab_vedotin/) | [Gibiansky_2022 · reference](/drugs/drug_tisotumab_vedotin/TisotumabVedotin_Gibiansky2022_reference.md) | needs_review | partial |
+| [tocainide](/drugs/drug_tocainide/) | [Lalka_1976 · average](/drugs/drug_tocainide/Tocainide_Lalka1976_average.md) | rejected | partial |
+| [tocainide](/drugs/drug_tocainide/) | [Lalka_1976 · nahco3_treated](/drugs/drug_tocainide/Tocainide_Lalka1976_nahco3_treated.md) | rejected | partial |
+| [Tocopherol](/drugs/drug_tocopherol/) | [Hidiroglou_1996 · reference](/drugs/drug_tocopherol/Tocopherol_Hidiroglou1996_reference.md) | rejected | partial |
+| [tolcapone](/drugs/drug_tolcapone/) | [Jorga_2000 · non_fluctuator_model](/drugs/drug_tolcapone/Tolcapone_Jorga2000_non_fluctuator_model.md) | rejected | partial |
+| [tramadol](/drugs/drug_tramadol/) | [Robertson_2019 · reference](/drugs/drug_tramadol/Tramadol_Robertson2019_reference.md) | rejected | unchecked |
+| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_i](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | extracted | unchecked |
+| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_ii](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | extracted | unchecked |
+| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_iii](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | extracted | unchecked |
+| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_iv](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | extracted | unchecked |
+| [umeclidinium](/drugs/drug_umeclidinium/) | [Pene_2016 · reference](/drugs/drug_umeclidinium/Umeclidinium_Pene2016_reference.md) | rejected | confirmed |
+| [ustekinumab](/drugs/drug_ustekinumab/) | [Aguiar_2021 · base](/drugs/drug_ustekinumab/Ustekinumab_Aguiar2021_base.md) | rejected | confirmed |
+| [valganciclovir](/drugs/drug_valganciclovir/) | [Czock_2002 · reference](/drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference.md) | needs_review | partial |
+| [vamorolone](/drugs/drug_vamorolone/) | [Li_2024 · reference](/drugs/drug_vamorolone/Vamorolone_Li2024_reference.md) | rejected | partial |
+| [vecuronium](/drugs/drug_vecuronium/) | [Xue_1997 · reference](/drugs/drug_vecuronium/Vecuronium_Xue1997_reference.md) | extracted | partial |
+| [vedolizumab](/drugs/drug_vedolizumab/) | [Rosario_2015 · reference](/drugs/drug_vedolizumab/Vedolizumab_Rosario2015_reference.md) | rejected | confirmed |
+| [vinblastine](/drugs/drug_vinblastine/) | [Owellen_1975 · reference](/drugs/drug_vinblastine/Vinblastine_Owellen1975_reference.md) | rejected | partial |
+| [vincamine](/drugs/drug_vincamine/) | [Millart_1983 · reference](/drugs/drug_vincamine/Vincamine_Millart1983_reference.md) | rejected | confirmed |
+| [vinorelbine](/drugs/drug_vinorelbine/) | [Gauvin_2002 · reference](/drugs/drug_vinorelbine/Vinorelbine_Gauvin2002_reference.md) | needs_review | partial |
+| [vortioxetine](/drugs/drug_vortioxetine/) | [Areberg_2014_2 · reference](/drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md) | rejected | confirmed |
+| [vosoritide](/drugs/drug_vosoritide/) | [Qi_2024 · median](/drugs/drug_vosoritide/Vosoritide_Qi2024_median.md) | rejected | partial |
+| [vosoritide](/drugs/drug_vosoritide/) | [Qi_2024 · typical_value](/drugs/drug_vosoritide/Vosoritide_Qi2024_typical_value.md) | rejected | partial |
+| [warfarin](/drugs/drug_warfarin/) | [Yacobi_1977 · reference](/drugs/drug_warfarin/Warfarin_Yacobi1977_reference.md) | rejected | partial |
+| [zanamivir](/drugs/drug_zanamivir/) | [Brown_2011 · reference](/drugs/drug_zanamivir/Zanamivir_Brown2011_reference.md) | needs_review | partial |

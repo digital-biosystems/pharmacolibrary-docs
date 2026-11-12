@@ -4,11 +4,11 @@
 
 # butorphanol — `Butorphanol_Saeed2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Butorphanol record lacks volume and clearance, and the duration parameter has an unconvertible unit, causing dimension mismatch.
+> This record was reviewed on 2026-11-07 16:04 UTC (Rejected), but the paper was screened again on 2026-10-07 04:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Butorphanol record lacks volume and clearance, and the duration parameter has an unconvertible unit, causing dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="false" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="true" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis Integrating Allometric Scaling and Minimal Physiologically Based Pharmacokinetic Modeling. CPT: pharmacometrics & systems pharmacology 15(7):e70293 (2026).
@@ -40,7 +40,7 @@ Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -146,10 +146,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q310 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row8:col2', 'tab_1:row8:col3'] |
-| C5_dimension_Q410 | fail | [luminosity] / [length] ** 2 | units | ['tab_1:row7:col2', 'tab_1:row7:col3'] |
+| C5_dimension_Q310 | fail | [time] | units ([luminosity] / [length] ** 2) | ['tab_1:row8:col2', 'tab_1:row8:col3'] |
+| C5_dimension_Q410 | fail | dimensionless | units ([luminosity] / [length] ** 2) | ['tab_1:row7:col2', 'tab_1:row7:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row12:col3'] |
 | C8_topology | pass |  |  |  |
 
@@ -169,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

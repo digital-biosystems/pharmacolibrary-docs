@@ -4,11 +4,11 @@
 
 # levacetylmethadol — `Levacetylmethadol_Finkle1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Levacetylmethadol lacks distribution volume and clearance values, and nor-LAAM and dinor-LAAM have no defined elimination rates, preventing a valid compartmental model.
+> This record was reviewed on 2026-11-07 16:50 UTC (Rejected), but the paper was screened again on 2026-10-07 03:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Levacetylmethadol lacks distribution volume and clearance values, and nor-LAAM and dinor-LAAM have no defined elimination rates, preventing a valid compartmental model.
 
-<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="true" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine disposition of 1-alpha-acetylmethadol and its principal metabolites in man. Journal of analytical toxicology 6(2):100–105 (1982).
@@ -36,7 +36,7 @@ Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine dispositio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,7 +113,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | fail |  |  |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Finkle_1982:abstract', 'Finkle_1982:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Finkle_1982:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Finkle_1982:abstract', 'Finkle_1982:abstract', 'Finkle_1982:abstract'] |
@@ -135,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

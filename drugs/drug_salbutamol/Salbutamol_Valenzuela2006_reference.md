@@ -5,11 +5,11 @@
 
 # salbutamol — `Salbutamol_Valenzuela2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Salbutamol's clearance of 46.77 L/h causes a dimension mismatch, and abstract-only sourcing left model parameters unfitted.
+> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-11-04 09:01 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Salbutamol's clearance of 46.77 L/h causes a dimension mismatch, and abstract-only sourcing left model parameters unfitted.
 
-<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Valenzuela2006_reference" status="rejected" stale="false" population="rat small intestine (in situ)" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Valenzuela2006_reference" status="rejected" stale="true" population="rat small intestine (in situ)" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Valenzuela B, López-Pintor E, Pérez-Ruixo JJ, Nácher A, Martín-Villodre A, Casabó VG. Modelling intestinal absorption of salbutamol sulphate in rats. International journal of pharmaceutics 314(1):21–30 (2006).
@@ -41,7 +41,7 @@ Valenzuela B, López-Pintor E, Pérez-Ruixo JJ, Nácher A, Martín-Villodre A, C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -125,12 +125,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q1 | fail | [length] | mM | ['Valenzuela_2006:abstract'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | mM ([length]) | ['Valenzuela_2006:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Boger_2019:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Valenzuela_2006:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wen_2026:review'] |
-| C5_dimension_Q66 | fail | [length] / [time] | mM/h | ['Valenzuela_2006:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mM/h ([length] / [time]) | ['Valenzuela_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.77 | ['Boger_2019:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 46.8 L/h | ['Boger_2019:review'] |
@@ -152,7 +153,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

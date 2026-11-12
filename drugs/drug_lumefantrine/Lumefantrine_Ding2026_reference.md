@@ -5,9 +5,11 @@
 
 # Lumefantrine — `Lumefantrine_Ding2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="not_simulated" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
+> This record was reviewed on 2026-11-07 15:45 UTC (Not simulated), but the paper was screened again on 2026-10-07 07:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lumefantrine clearance was omitted because its reported unit could not be converted to standard SI units.
+
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="needs_review" stale="true" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Population pharmacokinetics of artemether-lumefantrine plus amodiaquine in patients with uncomplicated Plasmodium falciparum malaria. British journal of clinical pharmacology 92(2):589–605 (2026).
@@ -29,7 +31,7 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 **Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
@@ -61,7 +63,7 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.435). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.435). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -291,6 +293,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q80 | pass | [length] ** 3 / [time] |  |  |  | ['Ding_2026_table_3:row14:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['bcp70301-tbl-0004:row9:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['Ding_2026_table_3:row13:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h |  |  | ['bcp70301-tbl-0004:row3:col1', 'Ding_2026_table_2:row2:col1'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.35 L/h |  |  | ['bcp70301-tbl-0004:row6:col1'] |

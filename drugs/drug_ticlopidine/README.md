@@ -18,8 +18,8 @@ Ticlopidine is an antiplatelet drug that inhibits platelet aggregation and is us
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ sir_resultsa](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | — | parent + metabolite (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ sir_resultsa](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | — | parent + metabolite (no model) | 3 |  |  |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,7 +66,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 351 matched, 145 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

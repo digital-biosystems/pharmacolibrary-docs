@@ -5,11 +5,11 @@
 
 # potassium salicylate — `PotassiumSalicylate_Kotschwar2009_mean_se`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Rejected because the absorption rate constant for salicylate lacks a compatible unit, leaving its SI value undefined.
+> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 07:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Rejected because the absorption rate constant for salicylate lacks a compatible unit, leaving its SI value undefined.
 
-<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_mean_se" status="rejected" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_mean_se" status="rejected" stale="true" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesic efficacy of sodium salicylate in an amphotericin B-induced bovine synovitis-arthritis model. Journal of dairy science 92(8):3731–3743 (2009).
@@ -49,7 +49,7 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,7 +122,7 @@ The parameter labeled 'ka capsule' has a value of 0.22 but no unit extracted, un
 | C5_dimension_Q57 | pass | [time] |  | ['Kotschwar_2009_table_2:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kotschwar_2009_table_2:row5:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Koh_2025:review'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | mg/L | ['Kotschwar_2009_table_2:row3:col1'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mg/L ([mass] / [length] ** 3) | ['Kotschwar_2009_table_2:row3:col1'] |
 | C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | mL/min•kg | ['Kotschwar_2009_table_2:row4:col1'] |
 | C5_unit_missing_Q47 | fail | 1 / [time] |  | ['Kotschwar_2009_table_2:row2:col1'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | min × mg/L | ['Kotschwar_2009_table_2:row0:col1'] |
@@ -146,7 +146,7 @@ The parameter labeled 'ka capsule' has a value of 0.22 but no unit extracted, un
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

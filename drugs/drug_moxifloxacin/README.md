@@ -44,7 +44,7 @@ Moxifloxacin is a fluoroquinolone antibiotic used to treat bacterial infections 
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Xu_2024_reference](drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Xu AY et al., Pyrazinamide Safety, Efficacy, and Dosi…, American journal of respira… (2024) | [10.1164/rccm.202401-0165OC](https://doi.org/10.1164/rccm.202401-0165OC) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Yun_2022_reference](drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious disea… (2022) | [10.1093/ofid/ofab660](https://doi.org/10.1093/ofid/ofab660) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bock_2023_reference](drugs/drug_moxifloxacin/Moxifloxacin_Bock2023_reference.md) | — | 1-compartment (no model) | 0 | Bock M et al., Attainment of Target Antibiotic Levels…, Clinical infectious disease… (2023) | [10.1093/cid/ciad168](https://doi.org/10.1093/cid/ciad168) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Palmer_2025_reference](drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md) | — | 1-compartment (no model) | 5 | Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025) | [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Palmer_2025_reference](drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md) | — | 1-compartment (no model) | 5 | Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025) | [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005) |
 
 ## Pharmacodynamics (PD)
 
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 209 matched, 20 returned
 - **screened:** 15  ·  **relevant:** 5
-- **records:** 6  ·  extracted 2  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 2  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

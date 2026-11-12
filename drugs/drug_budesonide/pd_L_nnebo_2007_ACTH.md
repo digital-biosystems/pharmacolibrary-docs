@@ -15,7 +15,7 @@
 
 **As extracted:** Budesonide (concentrations from this paper's PK model) drives ACTH (in pmol l-1): indirect response — drug inhibits the production of ACTH.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Budesonide plasma concentrations inhibit the production of ACTH via a proportional indirect response mechanism, characterized by an I_max of 1 and an IC50 of 0.325 mg l-1. The model assumes a first-order elimination rate constant (k_out,ACTH) of 4.68 h-1 for ACTH from a baseline of 2.58 pmol l-1.
 >
@@ -45,6 +45,41 @@ Lönnebo A et al., An integrated model for the effect of b…, British journal o
 </details>
 
 
+## Exposure-response model
+
+`Budesonide_Lnnebo2007_PD_acth` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 2.58 pmol l-1 | 2.58e-09 mol/m3 |
+| Emax | 1 | — |
+| EC50 | 0.325 mg l-1 | 0.000325 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 2.58e-09, `at_EC50` = 1.29e-09, `at_inf` = 0
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -72,19 +107,33 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth/Budesonide_Lnnebo2007_PD_acth_modelica.zip" download>Budesonide_Lnnebo2007_PD_acth_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth/Budesonide_Lnnebo2007_PD_acth_matlab.zip" download>Budesonide_Lnnebo2007_PD_acth_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth/Budesonide_Lnnebo2007_PD_acth_sbml.zip" download>Budesonide_Lnnebo2007_PD_acth_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth/Budesonide_Lnnebo2007_PD_acth_cellml.zip" download>Budesonide_Lnnebo2007_PD_acth_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Budesonide_Lnnebo2007_PD_acth`. <https://pharmacolibrary.github.io/#/drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth>
+
+```bibtex
+@misc{pharmacolibrary_BudesonideLnnebo2007PDacth,
+  title  = {{Pharmacolibrary model Budesonide_Lnnebo2007_PD_acth}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_budesonide/Budesonide_Lnnebo2007_PD_acth},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

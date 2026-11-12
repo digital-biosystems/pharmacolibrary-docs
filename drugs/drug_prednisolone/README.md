@@ -44,7 +44,7 @@ Prednisolone is a glucocorticoid steroid used to treat inflammatory and autoimmu
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Tan_2024_reference](drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Magee_2002_reference](drugs/drug_prednisolone/Prednisolone_Magee2002_reference.md) | — | 1-compartment (no model) | 0 | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
 | <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Purcell_2025_reference](drugs/drug_prednisolone/Prednisolone_Purcell2025_reference.md) | — | 1-compartment (no model) | 4 | Purcell BL et al., Influence of bodyweight on prednisolone…, PloS one (2025) | [10.1371/journal.pone.0326586](https://doi.org/10.1371/journal.pone.0326586) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [de_2023_reference](drugs/drug_prednisolone/Prednisolone_de2023_reference.md) | — | 1-compartment (no model) | 6 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [de_2023_reference](drugs/drug_prednisolone/Prednisolone_de2023_reference.md) | — | 1-compartment (no model) | 6 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
 
 ## Pharmacodynamics (PD)
 
@@ -209,7 +209,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 340 matched, 78 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

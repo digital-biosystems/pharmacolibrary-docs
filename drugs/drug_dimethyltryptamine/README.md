@@ -49,7 +49,7 @@
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ mean_of_individual_parameters](drugs/drug_dimethyltryptamine/Dimethyltryptamine_Good2023_mean_of_individual_parameters.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ parameters_derived_from_mean](drugs/drug_dimethyltryptamine/Dimethyltryptamine_Good2023_parameters_derived_from_mean.md) | — | 1-compartment (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Jiang_2016_reference](drugs/drug_dimethyltryptamine/Dimethyltryptamine_Jiang2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jiang XL et al., Development of a mechanism-based pharma…, Acta pharmaceutica Sinica. B (2016) | [10.1016/j.apsb.2016.07.007](https://doi.org/10.1016/j.apsb.2016.07.007) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Eckernäs_2022_reference](drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_reference.md) | — | parent + metabolite (no model) | 8 | Eckernäs E et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13410](https://doi.org/10.1111/cts.13410) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Eckernäs_2022_reference](drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_reference.md) | — | parent + metabolite (no model) | 8 | Eckernäs E et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13410](https://doi.org/10.1111/cts.13410) |
 
 ## Pharmacodynamics (PD)
 
@@ -106,7 +106,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 157 matched, 81 returned
 - **screened:** 11  ·  **relevant:** 1
-- **records:** 8  ·  extracted 0  ·  needs review 5  ·  rejected 3  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs review 5  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

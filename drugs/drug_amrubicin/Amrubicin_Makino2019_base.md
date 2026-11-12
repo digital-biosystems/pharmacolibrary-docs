@@ -4,11 +4,11 @@
 
 # amrubicin — `Amrubicin_Makino2019_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The mean transit time parameter lacks a unit, preventing conversion to SI, causing the amrubicin model to be rejected.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-06 16:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mean transit time parameter lacks a unit, preventing conversion to SI, causing the amrubicin model to be rejected.
 
-<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="false" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="true" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual optimal dose of amrubicin to prevent severe neutropenia in Japanese patients with lung cancer. Cancer science 110(11):3573–3583 (2019).
@@ -47,7 +47,7 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,12 +143,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row6:col1', 'cas14194-tbl-0001:row6:col2'] |
-| C5_dimension_Q305 | fail | [length] ** 3 / [time] | L/h | ['cas14194-tbl-0001:row12:col1', 'cas14194-tbl-0001:row12:col2'] |
+| C5_dimension_Q305 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['cas14194-tbl-0001:row12:col1', 'cas14194-tbl-0001:row12:col2'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row10:col1', 'cas14194-tbl-0001:row10:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row9:col1', 'cas14194-tbl-0001:row9:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row4:col1', 'cas14194-tbl-0001:row4:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row7:col1', 'cas14194-tbl-0001:row7:col2'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row8:col1', 'cas14194-tbl-0001:row8:col2'] |
+| C5_unit_missing_Q81 | fail | [time] |  | ['cas14194-tbl-0001:row36:col1', 'cas14194-tbl-0001:row36:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 97 | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 97 L/h | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
@@ -171,7 +172,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

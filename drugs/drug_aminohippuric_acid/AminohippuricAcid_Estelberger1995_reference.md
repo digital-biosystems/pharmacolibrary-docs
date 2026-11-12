@@ -5,11 +5,11 @@
 
 # aminohippuric acid — `AminohippuricAcid_Estelberger1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.
+> This record was reviewed on 2026-11-07 16:10 UTC (Rejected), but the paper was screened again on 2026-10-07 21:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because p-aminohippuric acid parameters like MRT lack a defined unit, preventing SI conversion.
 
-<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="true" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identification of the low-dose kinetics of p-aminohippuric acid. European journal of clinical chemistry and clinical biochemistry : journal of the Forum of European Clinical Chemistry Societies 33(11):847–853 (1995).
@@ -40,7 +40,7 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -137,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | [time] | a | ['Estelberger_1995_table_2:row5:col2', 'Estelberger_1995_table_2:row5:col3', 'Estelberger_1995_table_2:row5:col4', 'Estelberger_1995_table_2:row5:col6', 'Estelberger_1995_table_2:row5:col7', 'Estelberger_1995_table_2:row5:col8', 'Estelberger_1995_table_2:row5:col9', 'Estelberger_1995_table_2:row5:col10'] |
+| C5_dimension_Q47 | fail | 1 / [time] | a ([time]) | ['Estelberger_1995_table_2:row5:col2', 'Estelberger_1995_table_2:row5:col3', 'Estelberger_1995_table_2:row5:col4', 'Estelberger_1995_table_2:row5:col6', 'Estelberger_1995_table_2:row5:col7', 'Estelberger_1995_table_2:row5:col8', 'Estelberger_1995_table_2:row5:col9', 'Estelberger_1995_table_2:row5:col10'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Estelberger_1995_table_2:row0:col2', 'Estelberger_1995_table_2:row0:col3', 'Estelberger_1995_table_2:row0:col4', 'Estelberger_1995_table_2:row0:col6', 'Estelberger_1995_table_2:row0:col7', 'Estelberger_1995_table_2:row0:col8', 'Estelberger_1995_table_2:row0:col9', 'Estelberger_1995_table_2:row0:col10'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gibiansky_2020:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Estelberger_1995_table_2:row6:col2', 'Estelberger_1995_table_2:row6:col3', 'Estelberger_1995_table_2:row6:col4', 'Estelberger_1995_table_2:row6:col6', 'Estelberger_1995_table_2:row6:col7', 'Estelberger_1995_table_2:row6:col8', 'Estelberger_1995_table_2:row6:col9', 'Estelberger_1995_table_2:row6:col10'] |
@@ -160,7 +160,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

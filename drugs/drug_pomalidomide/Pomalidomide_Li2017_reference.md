@@ -5,11 +5,11 @@
 
 # pomalidomide — `Pomalidomide_Li2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the unit for the intercompartmental clearance parameter was unrecognizable, preventing verification of its physical dimensions.
+> This record was reviewed on 2026-11-07 15:56 UTC (Rejected), but the paper was screened again on 2026-10-07 00:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the unit for the intercompartmental clearance parameter was unrecognizable, preventing verification of its physical dimensions.
 
-<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2017_reference" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2017_reference" status="rejected" stale="true" population="adults with relapsed or refractory multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population pharmacokinetics of pomalidomide in patients with relapsed or refractory multiple myeloma with various degrees of impaired renal function. Clinical pharmacology : advances and applications 9:133–145 (2017).
@@ -44,7 +44,7 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -108,12 +108,11 @@ The parameter Q2, representing apparent intercompartmental clearance between the
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q3 | fail | [length] ** 3 / [time] | L/h | ['Li_2017_table_6:row3:col1', 'Li_2017_table_6:row3:col2', 'Li_2017_table_6:row3:col3', 'Li_2017_table_6:row3:col4'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [mass] / [time] | L/h ([length] ** 3 / [time]) | ['Li_2017_table_6:row3:col1', 'Li_2017_table_6:row3:col2', 'Li_2017_table_6:row3:col3', 'Li_2017_table_6:row3:col4'] |
 | C5_dimension_Q355 | pass | [length] ** 3 / [time] |  | ['t3-cpaa-9-133:row3:col1', 't3-cpaa-9-133:row3:col2', 't3-cpaa-9-133:row3:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['t3-cpaa-9-133:row2:col1', 't3-cpaa-9-133:row2:col2', 't3-cpaa-9-133:row2:col3', 'Li_2017_table_6:row2:col1', 'Li_2017_table_6:row2:col2', 'Li_2017_table_6:row2:col3', 'Li_2017_table_6:row2:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['t3-cpaa-9-133:row7:col1', 't3-cpaa-9-133:row7:col2', 't3-cpaa-9-133:row7:col3'] |
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | group 3 vs group 1 | ['t3-cpaa-9-133:row5:col1', 't3-cpaa-9-133:row5:col2', 't3-cpaa-9-133:row5:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | group 2 vs group 1 | ['t3-cpaa-9-133:row4:col1', 't3-cpaa-9-133:row4:col2', 't3-cpaa-9-133:row4:col3'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] |  | ['t3-cpaa-9-133:row1:col1', 't3-cpaa-9-133:row1:col2', 't3-cpaa-9-133:row1:col3', 'Li_2017_table_6:row1:col1', 'Li_2017_table_6:row1:col2', 'Li_2017_table_6:row1:col3', 'Li_2017_table_6:row1:col4'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['t3-cpaa-9-133:row12:col1', 't3-cpaa-9-133:row12:col2', 't3-cpaa-9-133:row12:col3', 'Li_2017_table_6:row10:col1', 'Li_2017_table_6:row10:col2', 'Li_2017_table_6:row10:col3', 'Li_2017_table_6:row10:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -136,7 +135,7 @@ The parameter Q2, representing apparent intercompartmental clearance between the
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

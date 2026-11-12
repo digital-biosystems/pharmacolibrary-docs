@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;Androstenedione&quot;,&quot;href&quot;:&quot;drugs/toxin_androstenedione/&quot;},{&quot;label&quot;:&quot;Edman_1981 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Androstenedione_AlKofahi2021_reference&quot;,&quot;label&quot;:&quot;Al-Kofahi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_androstenedione/Androstenedione_AlKofahi2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
 <div class="pk-model-meta" hidden drug="Androstenedione" model-id="Androstenedione_Edman1981_reference" status="needs_review" stale="false" population="pregnant and nonpregnant women" measured-compound="Androstenedione" parameterization="mechanistic" topology="1C"></div>
 
@@ -20,10 +21,10 @@ Edman CD, Toofanian A, MacDonald PC, Gant NF. Placental clearance rate of matern
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -42,7 +43,13 @@ Edman CD, Toofanian A, MacDonald PC, Gant NF. Placental clearance rate of matern
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — androstenedione: CL 497 ml/min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

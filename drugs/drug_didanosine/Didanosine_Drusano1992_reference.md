@@ -5,11 +5,11 @@
 
 # didanosine — `Didanosine_Drusano1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:55 UTC (Needs review), but the paper was screened again on 2026-10-07 16:10 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="extracted" stale="true" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of bioavailability on determination of the maximal tolerated dose of 2',3'-dideoxyinosine in phase I trials. Antimicrobial agents and chemotherapy 36(6):1280–1283 (1992).
@@ -27,8 +27,6 @@ Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of 
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Clearance of the drug from plasma | CLnorm | 47.7 | L/h |
@@ -41,7 +39,7 @@ Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -126,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenberg_2022:review'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Drusano_1992:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Innes_2018:review'] |
@@ -181,7 +179,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

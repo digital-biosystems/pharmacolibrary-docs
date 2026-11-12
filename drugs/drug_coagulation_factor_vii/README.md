@@ -36,7 +36,7 @@ Coagulation factor VII is a blood clotting protein used to treat or prevent blee
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub> | [↳ patients_with_cirrhosis_and_ugib_18](drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a.md) | ▶ model + simulator | 1-compartment, IV | 3 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub> | [↳ patients_with_cirrhosis_and_ugib_19_unpublished_data_klitgaard_data_on_file_2004](drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a.md) | ▶ model + simulator | 1-compartment, IV | 3 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub> | [↳ patients_with_traumatic_blunt_and_or_penetrating_injury_2_23](drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_traumatic_b.md) | ▶ model + simulator | 1-compartment, IV | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Rivard_1994_reference](drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Rivard1994_reference.md) | — | 1-compartment (no model) | 2 | Rivard GE et al., Clinical study of recovery and half-lif…, Transfusion (1994) | [10.1046/j.1537-2995.1994.341195065036.x](https://doi.org/10.1046/j.1537-2995.1994.341195065036.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Rivard_1994_reference](drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Rivard1994_reference.md) | — | 1-compartment (no model) | 2 | Rivard GE et al., Clinical study of recovery and half-lif…, Transfusion (1994) | [10.1046/j.1537-2995.1994.341195065036.x](https://doi.org/10.1046/j.1537-2995.1994.341195065036.x) |
 
 ## ADME sites
 
@@ -65,7 +65,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 246 matched, 57 returned
 - **screened:** 12  ·  **relevant:** 7
-- **records:** 13  ·  extracted 0  ·  needs review 13  ·  rejected 0  ·  stale 0
+- **records:** 13  ·  extracted 0  ·  needs review 13  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

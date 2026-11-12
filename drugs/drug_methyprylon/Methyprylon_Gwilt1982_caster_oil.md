@@ -5,11 +5,11 @@
 
 # methyprylon — `Methyprylon_Gwilt1982_caster_oil`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The steady-state volume of distribution for methyprylon was rejected due to a dimension mismatch on the structural parameter.
+> This record was reviewed on 2026-11-07 16:15 UTC (Rejected), but the paper was screened again on 2026-10-06 21:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The steady-state volume of distribution for methyprylon was rejected due to a dimension mismatch on the structural parameter.
 
-<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_caster_oil" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_caster_oil" status="rejected" stale="true" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposition of methyprylon in intoxicated dogs. Canadian Anaesthetists' Society journal 29(4):381–383 (1982).
@@ -47,7 +47,7 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row6:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row5:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row7:col2'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['Gwilt_1982_table_2:row0:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Gwilt_1982_table_2:row0:col2'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Gwilt_1982_table_2:row9:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.95 | ['Gwilt_1982_table_2:row8:col2'] |
 | C8_topology | pass |  |  |  |
@@ -156,7 +156,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

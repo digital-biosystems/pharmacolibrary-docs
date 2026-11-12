@@ -5,11 +5,11 @@
 
 # doxorubicin — `Doxorubicin_Kunarajah2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The doxorubicinol formation clearance of 32.1 has an undefined unit 'Qm', preventing it from being converted to standard pharmacokinetic units.
+> This record was reviewed on 2026-11-07 14:27 UTC (Rejected), but the paper was screened again on 2026-11-03 15:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The doxorubicinol formation clearance of 32.1 has an undefined unit 'Qm', preventing it from being converted to standard pharmacokinetic units.
 
-<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Kunarajah2017v2_reference" status="rejected" stale="false" population="children with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Kunarajah2017v2_reference" status="rejected" stale="true" population="children with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kunarajah K, Hennig S, Norris RLG, Lobb M, Charles BG, Pinkerton R et al. Population pharmacokinetic modelling of doxorubicin and doxorubicinol in children with cancer: is there a relationship with cardiac troponin profiles?. Cancer chemotherapy and pharmacology 80(1):15–25 (2017).
@@ -48,7 +48,7 @@ Kunarajah K, Hennig S, Norris RLG, Lobb M, Charles BG, Pinkerton R et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -172,8 +172,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q370 | fail | [length] | Qm | ['Kunarajah_2017_2_table_2:row9:col2'] |
-| C5_dimension_Q47 | fail | dimensionless | kdeg | ['Kunarajah_2017_2_table_2:row19:col2'] |
+| C5_dimension_Q370 | fail | [length] ** 3 / [time] | Qm ([length]) | ['Kunarajah_2017_2_table_2:row9:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | kdeg (dimensionless) | ['Kunarajah_2017_2_table_2:row19:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/h/1.8 m² | ['Kunarajah_2017_2_table_2:row1:col2'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/h/1.8 m² | ['Kunarajah_2017_2_table_2:row7:col2'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/h/1.8 m² | ['Kunarajah_2017_2_table_2:row3:col2'] |
@@ -199,7 +199,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

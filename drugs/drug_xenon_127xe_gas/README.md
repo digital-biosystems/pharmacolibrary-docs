@@ -25,7 +25,7 @@ Xenon-127 is a radioactive isotope of xenon used as a diagnostic radiopharmaceut
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,13 +39,13 @@ Xenon-127 is a radioactive isotope of xenon used as a diagnostic radiopharmaceut
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:32 | 1:08 | 0/1/0 | 0/0/0 | 0/0/0 | 12,814/5,059 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 19:32 | 1:08 | 1/0/0 | 0/0/0 | 0/0/0 | 12,814/5,059 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -26,7 +26,7 @@ Mercuric chloride, also known as corrosive sublimate, is a mercury compound that
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,13 +46,13 @@ Mercuric chloride, also known as corrosive sublimate, is a mercury compound that
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:37 | 4:32 | 0/1/0 | 0/1/0 | 0/0/0 | 100,443/4,534 | einfracz / qwen3.8-27b | 6 | 0/5 | 5/1 | 0 |
+| 2026-10-07 22:37 | 4:32 | 1/0/0 | 0/1/0 | 0/0/0 | 100,443/4,534 | einfracz / qwen3.8-27b | 6 | 0/5 | 5/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 126 matched, 70 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

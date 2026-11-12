@@ -5,11 +5,11 @@
 
 # risankizumab — `Risankizumab_Pang2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The model was rejected because the peripheral compartment, with a volume of 4.67 L, was unreachable from the dose.
+> This record was reviewed on 2026-11-07 15:00 UTC (Rejected), but the paper was screened again on 2026-10-07 00:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because the peripheral compartment, with a volume of 4.67 L, was unreachable from the dose.
 
-<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="true" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Pang Y, Khatri A, Suleiman AA, Othman AA. Clinical Pharmacokinetics and Pharmacodynamics of Risankizumab in Psoriasis Patients. Clinical pharmacokinetics 59(3):311–326 (2020).
@@ -41,7 +41,7 @@ Pang Y, Khatri A, Suleiman AA, Othman AA. Clinical Pharmacokinetics and Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,20 +131,19 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |  |  |
-| C1_half_life_beta | pass | 28 | 23.79 | 0.8495 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Rodríguez-Fernández_2022:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Rodríguez-Fernández_2022:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 |  |  | ['Rodríguez-Fernández_2022:review'] |
-| C8_topology | fail |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h |  |  | ['Rodríguez-Fernández_2022:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.2 L |  |  | ['Pang_2020:results_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.52 L |  |  | ['Pang_2020:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.67 L |  |  | ['Pang_2020:results_prose'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rodríguez-Fernández_2022:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Rodríguez-Fernández_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.19 | ['Rodríguez-Fernández_2022:review'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00792 L/h | ['Rodríguez-Fernández_2022:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 11.2 L | ['Pang_2020:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 6.52 L | ['Pang_2020:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.67 L | ['Pang_2020:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

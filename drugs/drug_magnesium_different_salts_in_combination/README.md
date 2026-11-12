@@ -42,8 +42,8 @@ Magnesium salts in combination are used as mineral supplements to correct or pre
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Deng_2024_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and childbirth (2024) | [10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Osawa_2018_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Osawa EA et al., Magnesium sulfate therapy after cardiac…, Critical care and resuscita… (2018) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [da_2020_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020) | [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rower_2017_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Rower2017_reference.md) | — | 1-compartment (no model) | 1 | Rower JE et al., Clinical pharmacokinetics of magnesium…, European journal of clinica… (2017) | [10.1007/s00228-016-2165-3](https://doi.org/10.1007/s00228-016-2165-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Brookfield_2021_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Brookfield2021_referenc.md) | — | 1-compartment (no model) | 2 | Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global reports (2021) | [10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Rower_2017_reference](drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Rower2017_reference.md) | — | 1-compartment (no model) | 1 | Rower JE et al., Clinical pharmacokinetics of magnesium…, European journal of clinica… (2017) | [10.1007/s00228-016-2165-3](https://doi.org/10.1007/s00228-016-2165-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +57,13 @@ Magnesium salts in combination are used as mineral supplements to correct or pre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:17 | 2:28 | 4/2/0 | 0/0/0 | 0/0/0 | 213,619/10,049 | einfracz / qwen3.8-27b | 14 | 3/11 | 13/1 | 0 |
+| 2026-10-07 17:17 | 2:28 | 5/1/0 | 0/0/0 | 0/0/0 | 213,619/10,049 | einfracz / qwen3.8-27b | 14 | 3/11 | 13/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 128 matched, 61 returned
 - **screened:** 12  ·  **relevant:** 9
-- **records:** 6  ·  extracted 4  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 4  ·  needs review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

@@ -5,11 +5,11 @@
 
 # cilazapril — `Cilazapril_Williams1990_eighth_dose`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 14:57 UTC (Needs review), but the paper was screened again on 2026-11-03 11:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1990_eighth_dose" status="needs_review" stale="false" population="healthy young volunteers" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1990_eighth_dose" status="needs_review" stale="true" population="healthy young volunteers" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Williams PE, Brown AN, Rajaguru S, Francis RJ, Bell AJ, Dewland PM. Pharmacokinetics of cilazapril during repeated oral dosing in healthy young volunteers. European journal of drug metabolism and pharmacokinetics 15(1):63–67 (1990).
@@ -45,7 +45,7 @@ Williams PE, Brown AN, Rajaguru S, Francis RJ, Bell AJ, Dewland PM. Pharmacokine
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,6 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Williams_1990_table_p4_1:row4:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Deget_1991:review'] |
@@ -186,7 +187,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

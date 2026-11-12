@@ -5,11 +5,11 @@
 
 # methotrexate — `Methotrexate_elYazigi1986_dosage_regimen_a`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant, reported with a per-day unit, could not be converted to the model's time scale.
+> This record was reviewed on 2026-11-07 14:13 UTC (Rejected), but the paper was screened again on 2026-11-04 02:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant, reported with a per-day unit, could not be converted to the model's time scale.
 
-<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_dosage_regimen_a" status="rejected" stale="false" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_elYazigi1986_dosage_regimen_a" status="rejected" stale="true" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and its 7-OH metabolite in cancer patients treated with different high-methotrexate dosage regimens. International journal of cancer 38(6):795–800 (1986).
@@ -45,7 +45,7 @@ el-Yazigi A, Amer M, Al-Saleh I, Martin C. Pharmacokinetics of methotrexate and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,9 +143,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |  |  |
 | C1_half_life_beta | fail | 3.08 | 28.18 | 9.148 | 0.25 | reported t½β |
-| C5_dimension_Q17 | fail | [length] * [time] | μM.hr |  |  | ['el-Yazigi_1986_table_4:row0:col1'] |
-| C5_dimension_Q32 | fail | [length] | μM |  |  | ['el-Yazigi_1986_table_4:row1:col1'] |
-| C5_dimension_Q331 | fail | [time] | hr |  |  | ['el-Yazigi_1986_table_4:row3:col1'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | μM.hr ([length] * [time]) |  |  | ['el-Yazigi_1986_table_4:row0:col1'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | μM ([length]) |  |  | ['el-Yazigi_1986_table_4:row1:col1'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | hr ([time]) |  |  | ['el-Yazigi_1986_table_4:row3:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Pan_2026:review'] |
 | C5_dimension_Q56 | pass | [time] |  |  |  | ['el-Yazigi_1986_table_4:row2:col1'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['el-Yazigi_1986_table_4:row4:col1'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

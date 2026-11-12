@@ -34,7 +34,7 @@ Glucarpidase is a detoxifying agent used to treat toxicity caused by antineoplas
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: nonlinear topology</sub> | [Fukaya_2023_phase_1](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_phase_1.md) | — | nonlinear / manual (no model) | 2 | Fukaya Y et al., Development of a population pharmacokin…, Frontiers in oncology (2023) | [10.3389/fonc.2023.1003633](https://doi.org/10.3389/fonc.2023.1003633) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: nonlinear topology</sub> | [↳ phase_2](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_phase_2.md) | — | nonlinear / manual (no model) | 2 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ original_estimate](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_original_estimate.md) | — | nonlinear / manual (no model) | 4 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ original_estimate](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_original_estimate.md) | — | nonlinear / manual (no model) | 4 (+3 cov.) |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Glucarpidase is a detoxifying agent used to treat toxicity caused by antineoplas
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

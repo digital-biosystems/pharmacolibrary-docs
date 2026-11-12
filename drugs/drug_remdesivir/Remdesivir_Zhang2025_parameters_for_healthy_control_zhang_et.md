@@ -5,11 +5,11 @@
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The remdesivir model was rejected because the renal clearance parameter used hours as its unit, which is incompatible with a clearance quantity.
+> This record was reviewed on 2026-11-07 14:49 UTC (Rejected), but the paper was screened again on 2026-11-04 11:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The remdesivir model was rejected because the renal clearance parameter used hours as its unit, which is incompatible with a clearance quantity.
 
-<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="rejected" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="rejected" stale="true" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and its metabolites in healthy subjects and patients with renal impairment. Frontiers in pharmacology 16:1488961 (2025).
@@ -45,7 +45,7 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,11 +143,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q26 | fail | 1 / [time] | /h | ['T1:row9:col2'] |
-| C5_dimension_Q30 | fail | 1 / [time] | /h | ['T1:row2:col2'] |
-| C5_dimension_Q30 | fail | 1 / [time] | /h | ['T1:row3:col2'] |
+| C5_dimension_Q26 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row9:col2'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row2:col2'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row3:col2'] |
 | C5_dimension_Q350 | pass | 1 / [time] |  | ['T1:row6:col2'] |
-| C5_dimension_Q370 | fail | 1 / [time] | /h | ['T1:row5:col2'] |
+| C5_dimension_Q370 | fail | [length] ** 3 / [time] | /h (1 / [time]) | ['T1:row5:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Humeniuk_2021:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 92.6 L | ['Humeniuk_2021:review'] |
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

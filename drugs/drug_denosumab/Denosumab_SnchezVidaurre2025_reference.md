@@ -5,11 +5,11 @@
 
 # denosumab — `Denosumab_SnchezVidaurre2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Denosumab's covariate-based volume distribution parameter holds an implausible negative value of -0.534.
+> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-07 03:16 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Denosumab's covariate-based volume distribution parameter holds an implausible negative value of -0.534.
 
-<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="false" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="true" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of Denosumab Biosimilar MB09 and Reference Denosumab to Establish PK Similarity. Pharmaceutics 17(9) (2025).
@@ -43,7 +43,7 @@ Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -143,7 +143,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-17-01146-t004:row5:col1', 'pharmaceutics-17-01146-t004:row5:col3', 'pharmaceutics-17-01146-t004:row5:col4', 'Sánchez-Vidaurre_2025_table_3:row4:col1', 'Sánchez-Vidaurre_2025_table_3:row4:col3', 'Sánchez-Vidaurre_2025_table_3:row4:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-17-01146-t004:row4:col1', 'pharmaceutics-17-01146-t004:row4:col3', 'pharmaceutics-17-01146-t004:row4:col4', 'Sánchez-Vidaurre_2025_table_3:row3:col1', 'Sánchez-Vidaurre_2025_table_3:row3:col3', 'Sánchez-Vidaurre_2025_table_3:row3:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-17-01146-t004:row2:col1', 'pharmaceutics-17-01146-t004:row2:col3', 'pharmaceutics-17-01146-t004:row2:col4', 'Sánchez-Vidaurre_2025_table_3:row1:col1', 'Sánchez-Vidaurre_2025_table_3:row1:col3', 'Sánchez-Vidaurre_2025_table_3:row1:col4'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | ng/day | ['pharmaceutics-17-01146-t004:row7:col1', 'pharmaceutics-17-01146-t004:row7:col3', 'pharmaceutics-17-01146-t004:row7:col4', 'Sánchez-Vidaurre_2025_table_3:row6:col1', 'Sánchez-Vidaurre_2025_table_3:row6:col3', 'Sánchez-Vidaurre_2025_table_3:row6:col4'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | ng/day ([mass] / [time]) | ['pharmaceutics-17-01146-t004:row7:col1', 'pharmaceutics-17-01146-t004:row7:col3', 'pharmaceutics-17-01146-t004:row7:col4', 'Sánchez-Vidaurre_2025_table_3:row6:col1', 'Sánchez-Vidaurre_2025_table_3:row6:col3', 'Sánchez-Vidaurre_2025_table_3:row6:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['pharmaceutics-17-01146-t004:row3:col1', 'pharmaceutics-17-01146-t004:row3:col3', 'pharmaceutics-17-01146-t004:row3:col4', 'Sánchez-Vidaurre_2025_table_3:row2:col1', 'Sánchez-Vidaurre_2025_table_3:row2:col3', 'Sánchez-Vidaurre_2025_table_3:row2:col4'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['pharmaceutics-17-01146-t004:row8:col1', 'pharmaceutics-17-01146-t004:row8:col3', 'pharmaceutics-17-01146-t004:row8:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -168,7 +168,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

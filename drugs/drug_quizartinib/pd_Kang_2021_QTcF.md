@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Kang_2021 \u00b7 PD QTcF&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTcF — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Quizartinib and AC886 (measured concentrations) drive QTcF (in ms): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Quizartinib and AC886 concentrations directly and additively increase QTcF through separate sigmoid Emax effects, with no consistent hysteresis; the paper describes a direct concentration–response relationship, not an effect on response production or elimination. For quizartinib, Emax was 31.2 ms, EC50 315 ng/mL, and Hill coefficient 1.52; for AC886, Emax was 2.69 ms, EC50 60.5 ng/mL, and Hill coefficient 16.9.
 >
@@ -61,6 +62,33 @@ Kang D et al., Concentration-QTc analysis of quizartin…, Cancer chemotherapy a
 </details>
 
 
+## Exposure-response model
+
+`Quizartinib_Kang2021_PD_qtcf` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 413 ms | 0.413 s |
+| Emax | 31.2 ms | 0.0312 s |
+| EC50 | 315 ng/mL | 0.000315 kg/m3 |
+| gamma | 1.52 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.413, `at_EC50` = 0.4286, `at_inf` = 0.4442
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
 
@@ -92,19 +120,54 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_modelica.zip" download>Quizartinib_Kang2021_PD_qtcf_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_fmi.zip" download>Quizartinib_Kang2021_PD_qtcf_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_matlab.zip" download>Quizartinib_Kang2021_PD_qtcf_matlab.zip</a> <span class="pk-size">(1.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_sbml.zip" download>Quizartinib_Kang2021_PD_qtcf_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_cellml.zip" download>Quizartinib_Kang2021_PD_qtcf_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0.413 |  |
+| input | model | `EC50` | 0.000315 |  |
+| input | model | `Emax` | 0.0312 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 1.52 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Quizartinib_Kang2021_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf>
+
+```bibtex
+@misc{pharmacolibrary_QuizartinibKang2021PDqtcf,
+  title  = {{Pharmacolibrary model Quizartinib_Kang2021_PD_qtcf}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_quizartinib/Quizartinib_Kang2021_PD_qtcf/Quizartinib_Kang2021_PD_qtcf_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Quizartinib_Kang2021_PD_qtcf_params.json` · controls `Quizartinib_Kang2021_PD_qtcf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

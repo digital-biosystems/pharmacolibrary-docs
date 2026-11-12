@@ -5,11 +5,11 @@
 
 # oxycodone — `Oxycodone_Ladebo2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Oxycodone total clearance of 38.03 L/h fails dimension validation, causing record rejection due to abstract-only source data limitations.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 14:56 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Oxycodone total clearance of 38.03 L/h fails dimension validation, causing record rejection due to abstract-only source data limitations.
 
-<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Population pharmacokinetic-pharmacodynamic modelling of liquid and controlled-release formulations of oxycodone in healthy volunteers. Basic & clinical pharmacology & toxicology 126(3):263–276 (2020).
@@ -40,7 +40,7 @@ Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,13 +120,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Shi_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Ladebo_2020:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ladebo_2020:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Shi_2026:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Ladebo_2020:abstract'] |
-| C5_dimension_Q95 | fail | 1 / [time] | hour-1 | ['Ladebo_2020:abstract'] |
+| C5_dimension_Q95 | fail | [time] | hour-1 (1 / [time]) | ['Ladebo_2020:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 38.03 | ['Shi_2026:review'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 38 L/h | ['Shi_2026:review'] |
@@ -148,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -4,11 +4,11 @@
 
 # imetelstat — `Imetelstat_GonzlezSales2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.
+> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-06 20:46 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.
 
-<div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="false" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="true" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 González-Sales M, Lennox AL, Huang F, Pamulapati C, Wan Y, Sun L et al. Population pharmacokinetics of imetelstat, a first-in-class oligonucleotide telomerase inhibitor. CPT: pharmacometrics & systems pharmacology 13(7):1264–1277 (2024).
@@ -45,7 +45,7 @@ González-Sales M, Lennox AL, Huang F, Pamulapati C, Wan Y, Sun L et al. Populat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q334 | pass | 1 / [time] |  |  |  | ['psp413160-tbl-0002:row5:col1', 'psp413160-tbl-0002:row5:col2', 'psp413160-tbl-0002:row5:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['psp413160-tbl-0002:row2:col1', 'psp413160-tbl-0002:row2:col2', 'psp413160-tbl-0002:row2:col3'] |
 | C5_unit_missing_Q329 | fail | [length] ** 3 / [mass] / [time] |  |  |  | ['psp413160-tbl-0002:row6:col1', 'psp413160-tbl-0002:row6:col2', 'psp413160-tbl-0002:row6:col3'] |
-| C5_unit_missing_Q66 | fail | [length] ** 3 |  |  |  | ['psp413160-tbl-0002:row10:col2', 'psp413160-tbl-0002:row10:col3'] |
+| C5_unit_missing_Q66 | fail | [mass] / [time] |  |  |  | ['psp413160-tbl-0002:row10:col2', 'psp413160-tbl-0002:row10:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1 |  |  | ['psp413160-tbl-0002:row1:col1', 'psp413160-tbl-0002:row1:col2', 'psp413160-tbl-0002:row1:col3'] |
 | C8_topology | pass |  |  |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1 L/h |  |  | ['psp413160-tbl-0002:row1:col1', 'psp413160-tbl-0002:row1:col2', 'psp413160-tbl-0002:row1:col3'] |
@@ -179,7 +179,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

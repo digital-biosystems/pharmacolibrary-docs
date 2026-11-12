@@ -4,11 +4,11 @@
 
 # barbexaclone — `Barbexaclone_Iven1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because the hydrolysis link from barbexaclone to phenobarbital lacks a defined rate constant.
+> This record was reviewed on 2026-11-07 16:45 UTC (Rejected), but the paper was screened again on 2026-10-07 06:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the hydrolysis link from barbexaclone to phenobarbital lacks a defined rate constant.
 
-<div class="pk-model-meta" hidden drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="false" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="true" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Iven H, Feldbusch E. Pharmacokinetics of phenobarbital and propylhexedrine after administration of barbexaclone in the mouse. Naunyn-Schmiedeberg's archives of pharmacology 324(2):153–159 (1983).
@@ -43,7 +43,7 @@ Iven H, Feldbusch E. Pharmacokinetics of phenobarbital and propylhexedrine after
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Iven_1983:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Iven_1983:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Iven_1983:abstract'] |
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

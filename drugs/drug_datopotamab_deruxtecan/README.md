@@ -25,7 +25,7 @@ Datopotamab deruxtecan is an antibody-drug conjugate used to treat breast cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q1, Q66, Q364, Q47 — no SI value to…</sub> | [Hong_2025_reference](drugs/drug_datopotamab_deruxtecan/DatopotamabDeruxtecan_Hong2025_reference.md) | — | parent + metabolite (no model) | 9 (+14 cov.) | Hong Y et al., Population Pharmacokinetic Analysis of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70118](https://doi.org/10.1002/psp4.70118) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q1, Q66, Q364, Q47 — no SI value to…</sub> | [Hong_2025_reference](drugs/drug_datopotamab_deruxtecan/DatopotamabDeruxtecan_Hong2025_reference.md) | — | parent + metabolite (no model) | 9 (+14 cov.) | Hong Y et al., Population Pharmacokinetic Analysis of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70118](https://doi.org/10.1002/psp4.70118) |
 
 ## Pharmacodynamics (PD)
 
@@ -75,7 +75,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

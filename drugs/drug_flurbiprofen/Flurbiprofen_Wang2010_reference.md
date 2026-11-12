@@ -5,11 +5,11 @@
 
 # flurbiprofen — `Flurbiprofen_Wang2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Flurbiprofen's apparent clearance values of 1.28 and 1.32 L/h were recorded as a metabolite parameter without identifying a metabolite.
+> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-07 14:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Flurbiprofen's apparent clearance values of 1.28 and 1.32 L/h were recorded as a metabolite parameter without identifying a metabolite.
 
-<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="false" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="true" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flurbiprofen]. Yao xue xue bao = Acta pharmaceutica Sinica 45(11):1427–1432 (2010).
@@ -43,7 +43,7 @@ Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flur
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,10 +135,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | ['Wang_2010:abstract'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | ['Wang_2010:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | L x h(-1) ([luminosity] / [length] ** 2 / [time]) | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | L x h(-1) ([luminosity] / [length] ** 2 / [time]) | ['Wang_2010:abstract'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | L x h(-1) ([luminosity] / [length] ** 2 / [time]) | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | L x h(-1) ([luminosity] / [length] ** 2 / [time]) | ['Wang_2010:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Wang_2010:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
@@ -166,7 +166,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

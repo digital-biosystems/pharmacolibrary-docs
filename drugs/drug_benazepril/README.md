@@ -27,8 +27,8 @@ Benazepril is an ACE inhibitor used to treat high blood pressure and congestive 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="cat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [King_2003_repeated_administration_n_6](drugs/drug_benazepril/Benazepril_King2003_repeated_administration_n_6.md) | — | 1-compartment (no model) | 8 | King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary pharm… (2003) | [10.1046/j.1365-2885.2003.00468.x](https://doi.org/10.1046/j.1365-2885.2003.00468.x) |
-| <span class="pk-rf" hidden data-species="cat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ single_administration_n_5](drugs/drug_benazepril/Benazepril_King2003_single_administration_n_5.md) | — | 1-compartment (no model) | 8 |  |  |
+| <span class="pk-rf" hidden data-species="cat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [King_2003_repeated_administration_n_6](drugs/drug_benazepril/Benazepril_King2003_repeated_administration_n_6.md) | — | 1-compartment (no model) | 8 | King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary pharm… (2003) | [10.1046/j.1365-2885.2003.00468.x](https://doi.org/10.1046/j.1365-2885.2003.00468.x) |
+| <span class="pk-rf" hidden data-species="cat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ single_administration_n_5](drugs/drug_benazepril/Benazepril_King2003_single_administration_n_5.md) | — | 1-compartment (no model) | 8 |  |  |
 
 ## Pharmacodynamics (PD)
 
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 19 matched, 19 returned
 - **screened:** 8  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

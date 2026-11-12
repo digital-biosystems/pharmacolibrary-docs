@@ -34,7 +34,7 @@ Propylthiouracil is an antithyroid medicine used to treat hyperthyroidism, goite
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Główka_2018_reference](drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018) | [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -67,13 +67,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:48 | 1:17 | 1/1/0 | 1/0/0 | 0/0/0 | 78,227/8,236 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 09:48 | 1:17 | 2/0/0 | 1/0/0 | 0/0/0 | 78,227/8,236 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

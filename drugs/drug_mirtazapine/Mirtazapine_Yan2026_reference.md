@@ -4,11 +4,11 @@
 
 # mirtazapine — `Mirtazapine_Yan2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The mirtazapine record is rejected because the total clearance parameter has a negative value, causing a dimension mismatch and an implausible pharmacokinetic result.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-06 23:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The mirtazapine record is rejected because the total clearance parameter has a negative value, causing a dimension mismatch and an implausible pharmacokinetic result.
 
-<div class="pk-model-meta" hidden drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="false" population="Chinese inpatients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="true" population="Chinese inpatients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosing: A Population Analysis of the Effects of BMI, Paroxetine and Fluvoxamine. Drug design, development and therapy 20:601238 (2026).
@@ -37,7 +37,7 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -119,7 +119,7 @@ _All readers agree on the compared fields of this record._
 | C0c_disposition_complete | pass |  |  |  |
 | C2_base_sign_Q22 | fail |  | -0.269 |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['t0002:row3:col1', 't0002:row3:col2', 't0002:row3:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['t0002:row2:col1', 't0002:row2:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['t0002:row2:col1', 't0002:row2:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['t0002:row4:col1', 't0002:row4:col2', 't0002:row4:col4'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['t0002:row5:col1', 't0002:row5:col2', 't0002:row5:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -143,7 +143,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # treosulfan — `Treosulfan_Danielak2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Treosulfan model rejected because the apparent intercompartmental clearance parameter was assigned units of 1/h, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 14:53 UTC (Rejected), but the paper was screened again on 2026-10-07 16:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Treosulfan model rejected because the apparent intercompartmental clearance parameter was assigned units of 1/h, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Danielak2020_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="treosulfan" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Danielak2020_reference" status="rejected" stale="true" population="Wistar rats" measured-compound="treosulfan" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Danielak D, Romański M, Kasprzyk A, Teżyk A, Główka F. Population pharmacokinetic approach for evaluation of treosulfan and its active monoepoxide disposition in plasma and brain on the basis of a rat model. Pharmacological reports : PR 72(5):1297–1309 (2020).
@@ -49,7 +49,7 @@ Danielak D, Romański M, Kasprzyk A, Teżyk A, Główka F. Population pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -176,11 +176,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab1:row4:col1'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab1:row7:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
-| C5_dimension_Q30 | fail | 1 / [time] | 1/h | ['Tab1:row2:col1'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Tab1:row2:col1'] |
 | C5_dimension_Q348 | pass | 1 / [time] |  | ['Tab1:row10:col1', 'Tab1:row10:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab1:row8:col1'] |
 | C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['Tab1:row14:col1'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] |  | ['Tab1:row15:col1'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [mass] / [time] |  | ['Tab1:row15:col1'] |
 | C5_unit_missing_Q82 | fail | [length] ** 3 |  | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -205,7 +205,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # carvedilol — `Carvedilol_Albers2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The absorption rate constant value of 0.62 uses unit l h -1, causing a dimension mismatch in the one-compartment model.
+> This record was reviewed on 2026-11-07 14:22 UTC (Rejected), but the paper was screened again on 2026-10-07 00:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The absorption rate constant value of 0.62 uses unit l h -1, causing a dimension mismatch in the one-compartment model.
 
-<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="false" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="true" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Albers S, Meibohm B, Mir TS, Läer S. Population pharmacokinetics and dose simulation of carvedilol in paediatric patients with congestive heart failure. British journal of clinical pharmacology 65(4):511–522 (2008).
@@ -42,7 +42,7 @@ Albers S, Meibohm B, Mir TS, Läer S. Population pharmacokinetics and dose simul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h -1 | ['tab_2:row10:col1', 'tab_2:row10:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l h -1 ([length] ** 3 / [time]) | ['tab_2:row10:col1', 'tab_2:row10:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['tab_2:row8:col1', 'tab_2:row8:col2'] |
 | C5_dimension_Q78 | pass | [length] ** 3 |  | ['tab_2:row6:col1', 'tab_2:row6:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

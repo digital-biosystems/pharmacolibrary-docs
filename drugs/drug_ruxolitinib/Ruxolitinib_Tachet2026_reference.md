@@ -5,11 +5,11 @@
 
 # ruxolitinib — `Ruxolitinib_Tachet2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record for ruxolitinib was rejected because the Km parameter, which is an enzyme affinity measure, has a unit of L that is dimensionally mismatched.
+> This record was reviewed on 2026-11-07 15:57 UTC (Rejected), but the paper was screened again on 2026-10-07 07:52 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for ruxolitinib was rejected because the Km parameter, which is an enzyme affinity measure, has a unit of L that is dimensionally mismatched.
 
-<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="true" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tachet J, Meyer SC, Grandoni F, Haefliger E, Nagy-Hulliger M, Halter JP et al. Ruxolitinib Pharmacokinetics and Exposure-Toxicity Relationship in Hematologic Malignancies and Immune-Mediated Diseases: A Prospective Observational Study. Clinical pharmacology and therapeutics (2026).
@@ -38,7 +38,7 @@ Tachet J, Meyer SC, Grandoni F, Haefliger E, Nagy-Hulliger M, Halter JP et al. R
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q1 | fail | [length] ** 3 | L | ['cpt70367-tbl-0002:row5:col1', 'cpt70367-tbl-0002:row5:col2', 'cpt70367-tbl-0002:row5:col3'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | L ([length] ** 3) | ['cpt70367-tbl-0002:row5:col1', 'cpt70367-tbl-0002:row5:col2', 'cpt70367-tbl-0002:row5:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['cpt70367-tbl-0002:row2:col1', 'cpt70367-tbl-0002:row2:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['cpt70367-tbl-0002:row3:col1', 'cpt70367-tbl-0002:row3:col2', 'cpt70367-tbl-0002:row3:col3'] |
 | C5_unit_missing_Q65 | fail | [length] ** 3 |  | ['cpt70367-tbl-0002:row4:col1', 'cpt70367-tbl-0002:row4:col3'] |
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

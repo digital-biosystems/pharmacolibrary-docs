@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Lee_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # primaquine — `Primaquine_Lee2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The paper reports none of the model's key parameters.
+> This record was reviewed on 2026-11-07 15:57 UTC (Rejected), but the paper was screened again on 2026-10-07 07:50 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="false" population="healthy Korean adults (normal and obese groups)" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="true" population="healthy Korean adults (normal and obese groups)" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Lee WY, Chae DW, Kim CO, Lee SE, Kwak YG, Yeom JS et al. Population Pharmacokinetics of Primaquine in the Korean Population. Pharmaceutics 13(5) (2021).
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,9 +114,9 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 |---|---|---|---|---|
 | C0_has_structural_params | fail |  | 0 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | Unit | ['pharmaceutics-13-00652-t002:row6:col2', 'pharmaceutics-13-00652-t002:row6:col3'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 | Unit | ['pharmaceutics-13-00652-t002:row4:col2', 'pharmaceutics-13-00652-t002:row4:col3'] |
-| C5_dimension_Q370 | fail | [luminosity] / [length] ** 2 | Unit | ['pharmaceutics-13-00652-t002:row5:col2', 'pharmaceutics-13-00652-t002:row5:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | Unit ([luminosity] / [length] ** 2) | ['pharmaceutics-13-00652-t002:row6:col2', 'pharmaceutics-13-00652-t002:row6:col3'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | Unit ([luminosity] / [length] ** 2) | ['pharmaceutics-13-00652-t002:row4:col2', 'pharmaceutics-13-00652-t002:row4:col3'] |
+| C5_dimension_Q370 | fail | [length] ** 3 / [time] | Unit ([luminosity] / [length] ** 2) | ['pharmaceutics-13-00652-t002:row5:col2', 'pharmaceutics-13-00652-t002:row5:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -136,7 +136,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/&quot;},{&quot;label&quot;:&quot;Frechen_2015 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yoo_2015_BI&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 BI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_BI.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_DAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 DAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_DAP.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_HR&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_HR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SAP&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SAP.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drow&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drow&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drow.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Drug&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Drug&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Drug.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yoo_2015_SE_Perf&quot;,&quot;label&quot;:&quot;Yoo_2015 \u00b7 SE_Perf&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/pd_Yoo_2015_SE_Perf.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epinephrine — `Epinephrine_Frechen2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:09 UTC (Needs review), but the paper was screened again on 2026-10-04 01:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Frechen2015_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Frechen2015_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Frechen S, Suleiman AA, Mohammad Nejad Sigaroudi A, Wachall B, Fuhr U. Population pharmacokinetic and pharmacodynamic modeling of epinephrine administered using a mobile inhaler. Drug metabolism and pharmacokinetics 30(6):391–399 (2015).
@@ -39,7 +40,7 @@ Frechen S, Suleiman AA, Mohammad Nejad Sigaroudi A, Wachall B, Fuhr U. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,6 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Knych_2023:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Knych_2023:review'] |
@@ -175,7 +177,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

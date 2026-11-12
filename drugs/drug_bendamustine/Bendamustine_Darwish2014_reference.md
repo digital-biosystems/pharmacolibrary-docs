@@ -5,11 +5,11 @@
 
 # bendamustine — `Bendamustine_Darwish2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Cmax value 1 h for bendamustine in abstract-only record Darwish_2014 is a dimension mismatch for a concentration parameter.
+> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 16:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Cmax value 1 h for bendamustine in abstract-only record Darwish_2014 is a dimension mismatch for a concentration parameter.
 
-<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="false" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="true" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Population pharmacokinetics and pharmacokinetics/pharmacodynamics of bendamustine in pediatric patients with relapsed/refractory acute leukemia. Current medical research and opinion 30(11):2305–2315 (2014).
@@ -39,7 +39,7 @@ Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Darwish_2014:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Darwish_2014_2:review'] |
-| C5_dimension_Q32 | fail | [time] | h | ['Darwish_2014:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | h ([time]) | ['Darwish_2014:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Lammers_2017:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kim_2018:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 31.7 | ['Darwish_2014_2:review'] |
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

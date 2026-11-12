@@ -27,8 +27,8 @@ Valganciclovir is an antiviral drug used to treat cytomegalovirus retinitis. It 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Czock_2002_reference](drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference.md) | — | 1-compartment (no model) | 4 | Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Dvořáčková_2026_reference](drugs/drug_valganciclovir/Valganciclovir_Dvokov2026_reference.md) | — | general linear (no model) | 7 (+1 cov.) | Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026) | [10.1159/000548942](https://doi.org/10.1159/000548942) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Czock_2002_reference](drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference.md) | — | 1-compartment (no model) | 4 | Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dvořáčková_2026_reference](drugs/drug_valganciclovir/Valganciclovir_Dvokov2026_reference.md) | — | general linear (no model) | 7 (+1 cov.) | Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026) | [10.1159/000548942](https://doi.org/10.1159/000548942) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Itohara_2025_reference](drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference.md) | — | 1-compartment (no model) | 5 | Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Märtson_2022_reference](drugs/drug_valganciclovir/Valganciclovir_Mrtson2022_reference.md) | — | 2-compartment (no model) | 5 | Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Yang_2023_acosta_et_al_20](drugs/drug_valganciclovir/Valganciclovir_Yang2023_acosta_et_al_20.md) | — | 1-compartment (no model) | 0 | Yang W et al., Establishment and Evaluation of a Param…, Pharmaceutics (2023) | [10.3390/pharmaceutics15071801](https://doi.org/10.3390/pharmaceutics15071801) |
@@ -74,13 +74,13 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:44 | 5:31 | 0/15/0 | 1/0/0 | 0/0/0 | 279,095/14,260 | ollama / glm-5.3-flash | 6 | 2/4 | 6/0 | 0 |
+| 2026-10-07 16:44 | 5:31 | 1/14/0 | 1/0/0 | 0/0/0 | 279,095/14,260 | ollama / glm-5.3-flash | 6 | 2/4 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 50 matched, 15 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 15  ·  extracted 0  ·  needs review 0  ·  rejected 15  ·  stale 0
+- **records:** 15  ·  extracted 0  ·  needs review 1  ·  rejected 14  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

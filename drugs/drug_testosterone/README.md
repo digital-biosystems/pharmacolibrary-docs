@@ -29,7 +29,7 @@ Testosterone is an androgen, the primary male sex hormone, used to treat conditi
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q76 — no SI value to build from</sub> | [Bi_2018_bootstrapa](drugs/drug_testosterone/Testosterone_Bi2018_bootstrapa.md) | — | 1-compartment (no model) | 3 | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [↳ final_model](drugs/drug_testosterone/Testosterone_Bi2018_final_model.md) | — | 2-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Pastuszak_2021_reference](drugs/drug_testosterone/Testosterone_Pastuszak2021_reference.md) | — | 1-compartment (no model) | 4 (+3 cov.) | Pastuszak AW et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1939](https://doi.org/10.1002/jcph.1939) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pastuszak_2021_reference](drugs/drug_testosterone/Testosterone_Pastuszak2021_reference.md) | — | 1-compartment (no model) | 4 (+3 cov.) | Pastuszak AW et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1939](https://doi.org/10.1002/jcph.1939) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Vogiatzi_2023_reference](drugs/drug_testosterone/Testosterone_Vogiatzi2023_reference.md) | — | 1-compartment (no model) | 0 | Vogiatzi MG et al., Allometric Scaling of Testosterone Enan…, Journal of the Endocrine So… (2023) | [10.1210/jendso/bvad059](https://doi.org/10.1210/jendso/bvad059) |
 
 ## Pharmacodynamics (PD)
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 322 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

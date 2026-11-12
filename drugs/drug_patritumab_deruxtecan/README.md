@@ -27,7 +27,7 @@ Patritumab deruxtecan is an investigational antibody-drug conjugate being studie
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lu_2023_iiv_of_mean](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_iiv_of_mean.md) | — | parent + metabolite (no model) | 0 | Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2137](https://doi.org/10.1002/jcph.2137) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [↳ mean](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_mean.md) | — | parent + metabolite (no model) | 9 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ mean](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Lu2023_mean.md) | — | parent + metabolite (no model) | 9 (+3 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Xu_2025_reference](drugs/drug_patritumab_deruxtecan/PatritumabDeruxtecan_Xu2025_reference.md) | — | parent + metabolite (no model) | 0 | Xu Y et al., Integrated Two-Analyte Population Pharm…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01521-4](https://doi.org/10.1007/s40262-025-01521-4) |
 
 <details class="legend">
@@ -48,7 +48,7 @@ Patritumab deruxtecan is an investigational antibody-drug conjugate being studie
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

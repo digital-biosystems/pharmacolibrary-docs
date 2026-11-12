@@ -5,11 +5,11 @@
 
 # glibenclamide — `Glibenclamide_Comin2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Glibenclamide model rejected because intercompartmental clearance of 179 h⁻¹ is physiologically implausible and its unit could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:17 UTC (Rejected), but the paper was screened again on 2026-10-22 09:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Glibenclamide model rejected because intercompartmental clearance of 179 h⁻¹ is physiologically implausible and its unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Comin2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="glibenclamide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Comin2025_reference" status="rejected" stale="true" population="healthy adults" measured-compound="glibenclamide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body Dynamic PET Microdosing Data to Predict the Whole-Body Pharmacokinetics of Glyburide in Humans. Clinical pharmacokinetics 64(11):1709–1722 (2025).
@@ -43,7 +43,7 @@ Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body D
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -144,8 +144,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | fail | 1 / [time] | h⁻¹ | ['Comin_2025_table_2:row10:col1'] |
-| C5_dimension_Q301 | fail | [time] | h | ['Comin_2025_table_2:row2:col1', 'Comin_2025_table_2:row2:col4'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | h⁻¹ (1 / [time]) | ['Comin_2025_table_2:row10:col1'] |
+| C5_dimension_Q301 | fail | 1 / [time] | h ([time]) | ['Comin_2025_table_2:row2:col1', 'Comin_2025_table_2:row2:col4'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Comin_2025_table_2:row7:col1'] |
 | C5_dimension_Q346 | pass | 1 / [time] |  | ['Comin_2025_table_2:row18:col1', 'Comin_2025_table_2:row18:col4', 'Comin_2025_table_2:row18:col8'] |
 | C5_dimension_Q349 | pass | 1 / [time] |  | ['Comin_2025_table_2:row15:col1', 'Comin_2025_table_2:row15:col4', 'Comin_2025_table_2:row15:col8'] |
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

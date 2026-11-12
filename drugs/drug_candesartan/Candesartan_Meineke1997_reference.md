@@ -5,11 +5,11 @@
 
 # candesartan — `Candesartan_Meineke1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the central volume of distribution parameter, listed with the dimensionless unit '1', has a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:05 UTC (Rejected), but the paper was screened again on 2026-10-07 07:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the central volume of distribution parameter, listed with the dimensionless unit '1', has a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Meineke1997_reference" status="rejected" stale="false" population="patients with mild to moderate essential hypertension" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Meineke1997_reference" status="rejected" stale="true" population="patients with mild to moderate essential hypertension" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmacodynamics of candesartan after administration of its pro-drug candesartan cilexetil in patients with mild to moderate essential hypertension--a population analysis. European journal of clinical pharmacology 53(3-4):221–228 (1997).
@@ -41,7 +41,7 @@ Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,11 +135,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | fail | 1 / [time] | 1.h-1 | ['Meineke_1997:abstract'] |
-| C5_dimension_Q351 | fail | 1 / [time] | 1.h-1 | ['Meineke_1997:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1.h-1 (1 / [time]) | ['Meineke_1997:abstract'] |
+| C5_dimension_Q351 | fail | [length] ** 3 / [time] | 1.h-1 (1 / [time]) | ['Meineke_1997:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Meineke_1997:abstract'] |
-| C5_dimension_Q63 | fail | dimensionless | 1 | ['Meineke_1997:abstract'] |
-| C5_dimension_Q64 | fail | dimensionless | 1 | ['Meineke_1997:abstract'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | 1 (dimensionless) | ['Meineke_1997:abstract'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | 1 (dimensionless) | ['Meineke_1997:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

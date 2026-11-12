@@ -17,7 +17,7 @@ Nusinersen is an antisense oligonucleotide medicine used to treat spinal muscula
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Biliouris_2018_reference](drugs/drug_nusinersen/Nusinersen_Biliouris2018_reference.md) | — | 1-compartment (no model) | 0 | Biliouris K et al., A Semi-Mechanistic Population Pharmacok…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12323](https://doi.org/10.1002/psp4.12323) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Biliouris_2018_reference](drugs/drug_nusinersen/Nusinersen_Biliouris2018_reference.md) | — | 1-compartment (no model) | 0 | Biliouris K et al., A Semi-Mechanistic Population Pharmacok…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12323](https://doi.org/10.1002/psp4.12323) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Luu_2017_reference](drugs/drug_nusinersen/Nusinersen_Luu2017_reference.md) | — | 1-compartment (no model) | 0 | Luu KT et al., Population Pharmacokinetics of Nusiners…, Journal of clinical pharmac… (2017) | [10.1002/jcph.884](https://doi.org/10.1002/jcph.884) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [MacCannell_2022_reference](drugs/drug_nusinersen/Nusinersen_MacCannell2022_reference.md) | — | 1-compartment (no model) | 1 | MacCannell D et al., Restoration of Nusinersen Levels Follow…, CNS drugs (2022) | [10.1007/s40263-022-00899-0](https://doi.org/10.1007/s40263-022-00899-0) |
 
@@ -50,7 +50,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 17 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

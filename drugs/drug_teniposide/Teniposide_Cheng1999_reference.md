@@ -4,11 +4,11 @@
 
 # teniposide — `Teniposide_Cheng1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> This paper's disposition core is incomplete.
+> This record was reviewed on 2026-11-07 16:31 UTC (Needs review), but the paper was screened again on 2026-10-06 13:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. This paper's disposition core is incomplete.
 
-<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Cheng1999_reference" status="needs_review" stale="false" population="patients with ovarian cancer receiving intraperitoneal chemotherapy" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Cheng1999_reference" status="needs_review" stale="true" population="patients with ovarian cancer receiving intraperitoneal chemotherapy" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cheng A, Peng Z, Hong Z. [A pharmacokinetic study of teniposide in intraperitoneal chemotherapy of ovarian cancer]. Hua xi yi ke da xue xue bao = Journal of West China University of Medical Sciences = Huaxi yike daxue xuebao 30(1):95–98 (1999).
@@ -36,7 +36,7 @@ Cheng A, Peng Z, Hong Z. [A pharmacokinetic study of teniposide in intraperitone
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -114,6 +114,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jouinot_2018:review'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Cheng_1999:abstract'] |
@@ -147,7 +148,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

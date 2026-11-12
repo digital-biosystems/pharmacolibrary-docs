@@ -15,7 +15,7 @@
 
 **As extracted:** Inotersen (concentrations from this paper's PK model) drives serum TTR (transthyretin) level (in mg/dL): indirect response — drug inhibits the production of serum TTR (transthyretin) level.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Inotersen plasma concentrations (ng/mL) inhibit the production (input) rate of serum TTR in an indirect response model (inhibition function on kin), with Imax 0.913, IC50 9.07 ng/mL, kout 0.00308 h−1, and estimated baseline TTR 20.4 mg/dL (disease effect on baseline in healthy volunteers 0.269).
 >
@@ -50,25 +50,74 @@ Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeut
 </details>
 
 
+## Exposure-response model
+
+`Inotersen_Yu2020v2_PD_ttr` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 20.4 mg/dL | 0.204 kg/m3 |
+| Emax | 0.913 | — |
+| EC50 | 9.07 ng/mL | 9.07e-06 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.204, `at_EC50` = 0.1109, `at_inf` = 0.01775
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces with caveats</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr/Inotersen_Yu2020v2_PD_ttr_modelica.zip" download>Inotersen_Yu2020v2_PD_ttr_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr/Inotersen_Yu2020v2_PD_ttr_matlab.zip" download>Inotersen_Yu2020v2_PD_ttr_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr/Inotersen_Yu2020v2_PD_ttr_sbml.zip" download>Inotersen_Yu2020v2_PD_ttr_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr/Inotersen_Yu2020v2_PD_ttr_cellml.zip" download>Inotersen_Yu2020v2_PD_ttr_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Inotersen_Yu2020v2_PD_ttr`. <https://pharmacolibrary.github.io/#/drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr>
+
+```bibtex
+@misc{pharmacolibrary_InotersenYu2020v2PDttr,
+  title  = {{Pharmacolibrary model Inotersen_Yu2020v2_PD_ttr}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_inotersen/Inotersen_Yu2020v2_PD_ttr},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

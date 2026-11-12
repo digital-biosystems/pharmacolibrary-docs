@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;acalabrutinib&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/&quot;},{&quot;label&quot;:&quot;Edlund_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Edlund2022_reference&quot;,&quot;label&quot;:&quot;Edlund_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Edlund2022_reference&quot;,&quot;label&quot;:&quot;Edlund_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acalabrutinib — `Acalabrutinib_Edlund2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was held back because the relative bioavailability parameter was extracted with a negative value of -0.358.
+> This record was reviewed on 2026-11-07 15:35 UTC (Needs review), but the paper was screened again on 2026-10-06 20:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was held back because the relative bioavailability parameter was extracted with a negative value of -0.358.
 
-<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="needs_review" stale="false" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="needs_review" stale="true" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Edlund H, Bellanti F, Liu H, Vishwanathan K, Tomkinson H, Ware J et al. Improved characterization of the pharmacokinetics of acalabrutinib and its pharmacologically active metabolite, ACP-5862, in patients with B-cell malignancies and in healthy subjects using a population pharmacokinetic approach. British journal of clinical pharmacology 88(2):846–852 (2022).
@@ -49,7 +49,7 @@ Edlund H, Bellanti F, Liu H, Vishwanathan K, Tomkinson H, Ware J et al. Improved
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -166,6 +166,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['bcp14988-tbl-0001:row11:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['bcp14988-tbl-0001:row6:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['bcp14988-tbl-0001:row12:col1'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['bcp14988-tbl-0001:row8:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 134 L/h | ['bcp14988-tbl-0001:row3:col1'] |

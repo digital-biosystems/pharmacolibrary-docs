@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;lecanemab&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 PD amyloid plaque burden&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hayato_2022_SUVr&quot;,&quot;label&quot;:&quot;Hayato_2022 \u00b7 SUVr&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_Hayato_2022_SUVr.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2025_amyloid_PET_plaque&quot;,&quot;label&quot;:&quot;van_2025 \u00b7 amyloid PET plaque&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lecanemab/pd_van_2025_amyloid_PET_plaque.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amyloid plaque burden — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Lecanemab (the dose) drives amyloid plaque burden (in CL): indirect response — drug stimulates the loss of amyloid plaque burden.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > In the described turnover model, lecanemab (an anti-amyloid antibody) acts as a stimulator of the first-order elimination rate (Kout) of amyloid plaque burden, rather than inhibiting production. The baseline elimination rate constant (Kout) was estimated at 0.00029/day (1/day) with a baseline formation rate (Kin) of 0.028 CL/day, and the model predicts that lecanemab treatment increases this elimination rate by a factor of 5.3 to 18.6.
 >
@@ -43,6 +44,42 @@ van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & d
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Lecanemab_van2025_PD_amyloid_pet_plaque` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 96.55 CL | — |
+| Emax | 1 | — |
+| EC50 | 78.7 % | 0.787 1 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 96.55, `at_EC50` = 64.37, `at_inf` = 48.28
+
+Deviations:
+
+- `defaulted_parameters` — Emax, gamma
+- `pd_binding_e0_from_kin_kout` — no baseline row; E0 = kin/kout (0.028/0.00029 = 96.55) — the paper's stated baseline may differ
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-IV predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: Emax |
+
+Advisory:
+
+- defaulted: Emax — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -73,19 +110,54 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_modelica.zip" download>Lecanemab_van2025_PD_amyloid_pet_plaque_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_fmi.zip" download>Lecanemab_van2025_PD_amyloid_pet_plaque_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_matlab.zip" download>Lecanemab_van2025_PD_amyloid_pet_plaque_matlab.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_sbml.zip" download>Lecanemab_van2025_PD_amyloid_pet_plaque_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_cellml.zip" download>Lecanemab_van2025_PD_amyloid_pet_plaque_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_IndirectTurnoverSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 96.55 |  |
+| input | model | `EC50` | 0.787 |  |
+| input | model | `Emax` | 1 |  |
+| input | model | `exposure_per_s` | 0.01 |  |
+| input | model | `gamma` | 1 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.IndirectTurnoverSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lecanemab_van2025_PD_amyloid_pet_plaque`. <https://pharmacolibrary.github.io/#/drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque>
+
+```bibtex
+@misc{pharmacolibrary_Lecanemabvan2025PDamyloidpetplaque,
+  title  = {{Pharmacolibrary model Lecanemab_van2025_PD_amyloid_pet_plaque}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_lecanemab/Lecanemab_van2025_PD_amyloid_pet_plaque/Lecanemab_van2025_PD_amyloid_pet_plaque_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_IndirectTurnoverSweep` · parameters `Lecanemab_van2025_PD_amyloid_pet_plaque_params.json` · controls `Lecanemab_van2025_PD_amyloid_pet_plaque_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

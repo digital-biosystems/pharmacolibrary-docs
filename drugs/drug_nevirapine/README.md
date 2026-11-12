@@ -42,7 +42,7 @@ It is an approved medicine included on the WHO essential medicines list and rema
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Mustafa_2016_reference](drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mustafa S et al., Population pharmacokinetics of nevirapi…, European journal of clinica… (2016) | [10.1007/s00228-016-2049-6](https://doi.org/10.1007/s00228-016-2049-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Sabo_2000_reference](drugs/drug_nevirapine/Nevirapine_Sabo2000_reference.md) | — | 1-compartment (no model) | 1 | Sabo JP et al., Pharmacokinetics of nevirapine and lami…, AAPS pharmSci (2000) | [10.1208/ps020101](https://doi.org/10.1208/ps020101) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Wattanakul_2014_reference](drugs/drug_nevirapine/Nevirapine_Wattanakul2014_reference.md) | — | 1-compartment (no model) | 1 | Wattanakul T et al., Population pharmacokinetics of nevirapi…, Antiviral therapy (2014) | [10.3851/IMP2741](https://doi.org/10.3851/IMP2741) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Chou_2010_reference](drugs/drug_nevirapine/Nevirapine_Chou2010_reference.md) | — | 1-compartment (no model) | 1 | Chou M et al., Population pharmacokinetic-pharmacogene…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.00512-10](https://doi.org/10.1128/AAC.00512-10) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chou_2010_reference](drugs/drug_nevirapine/Nevirapine_Chou2010_reference.md) | — | 1-compartment (no model) | 1 | Chou M et al., Population pharmacokinetic-pharmacogene…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.00512-10](https://doi.org/10.1128/AAC.00512-10) |
 
 ## Pharmacodynamics (PD)
 
@@ -86,7 +86,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 153 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

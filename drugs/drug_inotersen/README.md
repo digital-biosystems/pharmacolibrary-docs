@@ -23,7 +23,7 @@ Inotersen is a nervous system drug used to treat amyloidosis. It is authorised i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Yu_2020_2_TTR](drugs/drug_inotersen/pd_Yu_2020_2_TTR.md) | serum TTR (transthyretin) level ← inotersen · indirect response — drug inhibits the production of serum TTR (transthyretin) level | — | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
+| <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Yu_2020_2_TTR](drugs/drug_inotersen/pd_Yu_2020_2_TTR.md) | serum TTR (transthyretin) level ← inotersen · indirect response — drug inhibits the production of serum TTR (transthyretin) level | model (no simulator) | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
 
 ## ADME sites
 

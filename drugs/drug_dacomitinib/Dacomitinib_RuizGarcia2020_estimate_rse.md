@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dacomitinib&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/&quot;},{&quot;label&quot;:&quot;Ruiz-Garcia_2020 \u00b7 estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_estimate_rse&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_parameter_estimate&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_estimate_rse&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dacomitinib_RuizGarcia2020_parameter_estimate&quot;,&quot;label&quot;:&quot;Ruiz-Garcia_2020_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_parameter_estimate.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dacomitinib — `Dacomitinib_RuizGarcia2020_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_estimate_rse" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
+> This record was reviewed on 2026-11-07 15:39 UTC (Reproduces paper), but the paper was screened again on 2026-10-06 23:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Every check that could be run on this record passed.
+
+<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_estimate_rse" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ruiz-Garcia A, Tan W, Li J, Haughey M, Masters J, Hibma J et al. Pharmacokinetic Models to Characterize the Absorption Phase and the Influence of a Proton Pump Inhibitor on the Overall Exposure of Dacomitinib. Pharmaceutics 12(4) (2020).
@@ -29,6 +31,8 @@ Ruiz-Garcia A, Tan W, Li J, Haughey M, Masters J, Hibma J et al. Pharmacokinetic
 <figure class="pk-models-diagram"><img src="drugs/drug_dacomitinib/Dacomitinib_RuizGarcia2020_estimate_rse/Dacomitinib_RuizGarcia2020_estimate_rse.svg" alt="Dacomitinib_RuizGarcia2020_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | CL (L/h) | CL | 29.2 | L/h | 4.212 |
@@ -42,7 +46,7 @@ Ruiz-Garcia A, Tan W, Li J, Haughey M, Masters J, Hibma J et al. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -134,6 +138,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Ruiz-Garcia_2020_table_3:row3:col1', 'Ruiz-Garcia_2020_table_3:row3:col2', 'Ruiz-Garcia_2020_table_3:row3:col3', 'Ruiz-Garcia_2020_table_3:row3:col4', 'Ruiz-Garcia_2020_table_3:row3:col5'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Ruiz-Garcia_2020_table_3:row5:col1', 'Ruiz-Garcia_2020_table_3:row5:col2', 'Ruiz-Garcia_2020_table_3:row5:col3', 'Ruiz-Garcia_2020_table_3:row5:col4', 'Ruiz-Garcia_2020_table_3:row5:col5'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Ruiz-Garcia_2020_table_3:row9:col3'] |
+| C5_unit_missing_Q81 | fail | [time] | h | ['Ruiz-Garcia_2020_table_3:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 29.2 | ['Ruiz-Garcia_2020_table_3:row2:col1', 'Ruiz-Garcia_2020_table_3:row2:col2', 'Ruiz-Garcia_2020_table_3:row2:col3', 'Ruiz-Garcia_2020_table_3:row2:col4', 'Ruiz-Garcia_2020_table_3:row2:col5'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 29.2 L/h | ['Ruiz-Garcia_2020_table_3:row2:col1', 'Ruiz-Garcia_2020_table_3:row2:col2', 'Ruiz-Garcia_2020_table_3:row2:col3', 'Ruiz-Garcia_2020_table_3:row2:col4', 'Ruiz-Garcia_2020_table_3:row2:col5'] |

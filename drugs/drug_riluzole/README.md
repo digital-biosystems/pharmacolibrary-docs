@@ -42,7 +42,7 @@ Riluzole is a medication used to treat amyotrophic lateral sclerosis. It is an a
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Berges_2015_reference](drugs/drug_riluzole/Riluzole_Berges2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Berges A et al., Ozanezumab dose selection for amyotroph…, PloS one (2015) | [10.1371/journal.pone.0117355](https://doi.org/10.1371/journal.pone.0117355) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Bruno_1997_reference](drugs/drug_riluzole/Riluzole_Bruno1997_reference.md) | — | 1-compartment (no model) | 2 | Bruno R et al., Population pharmacokinetics of riluzole…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90047-3](https://doi.org/10.1016/S0009-9236(97)90047-3) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub> | [Nguyen_2021_reference](drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Nguyen A et al., Longitudinal Impact of Acute Spinal Cor…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1876](https://doi.org/10.1002/jcph.1876) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Chow_2012_reference](drugs/drug_riluzole/Riluzole_Chow2012_reference.md) | — | 1-compartment (no model) | 7 | Chow DS et al., Pharmacology of riluzole in acute spina…, Journal of neurosurgery. Sp… (2012) | [10.3171/2012.5.AOSPINE12112](https://doi.org/10.3171/2012.5.AOSPINE12112) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Chow_2012_reference](drugs/drug_riluzole/Riluzole_Chow2012_reference.md) | — | 1-compartment (no model) | 7 | Chow DS et al., Pharmacology of riluzole in acute spina…, Journal of neurosurgery. Sp… (2012) | [10.3171/2012.5.AOSPINE12112](https://doi.org/10.3171/2012.5.AOSPINE12112) |
 
 ## Pharmacodynamics (PD)
 
@@ -114,7 +114,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 181 matched, 118 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

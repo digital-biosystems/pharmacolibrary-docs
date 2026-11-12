@@ -5,11 +5,11 @@
 
 # chloroquine — `Chloroquine_Karunajeewa2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Chloroquine apparent volume of distribution (0.007 liters) is implausibly small, causing the record to be rejected.
+> This record was reviewed on 2026-11-07 15:48 UTC (Rejected), but the paper was screened again on 2026-10-07 06:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Chloroquine apparent volume of distribution (0.007 liters) is implausibly small, causing the record to be rejected.
 
-<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="rejected" stale="false" population="pregnant and nonpregnant women (Papua New Guinea)" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="rejected" stale="true" population="pregnant and nonpregnant women (Papua New Guinea)" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Karunajeewa HA, Salman S, Mueller I, Baiwog F, Gomorrai S, Law I et al. Pharmacokinetics of chloroquine and monodesethylchloroquine in pregnancy. Antimicrobial agents and chemotherapy 54(3):1186–1192 (2010).
@@ -40,7 +40,7 @@ Karunajeewa HA, Salman S, Mueller I, Baiwog F, Gomorrai S, Law I et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Chairat_2018:review'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Karunajeewa_2010_table_2:row4:col3'] |
-| C5_dimension_Q49 | fail | [time] | h | ['Karunajeewa_2010_table_2:row2:col1', 'Karunajeewa_2010_table_2:row2:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['Karunajeewa_2010_table_2:row2:col1', 'Karunajeewa_2010_table_2:row2:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 16 L/h | ['Chairat_2018:review'] |
@@ -157,7 +157,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

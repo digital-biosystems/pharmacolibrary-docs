@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;elagolix&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/&quot;},{&quot;label&quot;:&quot;Beck_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Abbas_2020_BMD&quot;,&quot;label&quot;:&quot;Abbas_2020 \u00b7 BMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_elagolix/pd_Abbas_2020_BMD.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # elagolix — `Elagolix_Beck2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Elagolix absorption rate constant 2.46 L/h was rejected because the unit could not be converted to standard time-based units.
+> This record was reviewed on 2026-11-07 16:53 UTC (Rejected), but the paper was screened again on 2026-10-07 09:18 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Elagolix absorption rate constant 2.46 L/h was rejected because the unit could not be converted to standard time-based units.
 
-<div class="pk-model-meta" hidden drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="false" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="true" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Beck D, Winzenborg I, Liu M, Degner J, Mostafa NM, Noertersheuser P et al. Population Pharmacokinetics of Elagolix in Combination with Low-Dose Estradiol/Norethindrone Acetate in Women with Uterine Fibroids. Clinical pharmacokinetics 61(4):577–587 (2022).
@@ -42,7 +43,7 @@ Beck D, Winzenborg I, Liu M, Degner J, Mostafa NM, Noertersheuser P et al. Popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -113,7 +114,7 @@ The record lists the absorption rate constant with a value of 2.46 and units of 
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row3:col1', 'Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:row3:col4'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab3:row4:col1', 'Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | ['Tab3:row6:col1', 'Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['Tab3:row6:col1', 'Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab3:row7:col1', 'Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4'] |
 | C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab3:row8:col1', 'Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab3:row9:col1', 'Tab3:row9:col2', 'Tab3:row9:col3', 'Tab3:row9:col4'] |
@@ -139,7 +140,7 @@ The record lists the absorption rate constant with a value of 2.46 and units of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

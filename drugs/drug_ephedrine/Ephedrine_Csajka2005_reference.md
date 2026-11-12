@@ -5,11 +5,11 @@
 
 # ephedrine — `Ephedrine_Csajka2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record is rejected because an absorption rate constant value of 0.064 is assigned incorrect volume-based units instead of time-based units.
+> This record was reviewed on 2026-11-07 16:30 UTC (Rejected), but the paper was screened again on 2026-10-06 08:57 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record is rejected because an absorption rate constant value of 0.064 is assigned incorrect volume-based units instead of time-based units.
 
-<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelling of ephedrine, norephedrine and caffeine in healthy subjects. British journal of clinical pharmacology 59(3):335–345 (2005).
@@ -40,7 +40,7 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Csajka_2005:abstract', 'Csajka_2005:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Csajka_2005:abstract'] |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l min(-1) | ['Csajka_2005:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | l min(-1) ([length] ** 3 / [time]) | ['Csajka_2005:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Csajka_2005:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Csajka_2005:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.083 | ['Csajka_2005:abstract', 'Csajka_2005:abstract'] |
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

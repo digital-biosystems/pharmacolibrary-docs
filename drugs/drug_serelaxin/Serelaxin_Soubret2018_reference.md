@@ -4,11 +4,11 @@
 
 # serelaxin — `Serelaxin_Soubret2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Serelaxin clearance 9.2 has units of %, which is dimensionally inconsistent with clearance as a proportionality factor.
+> This record was reviewed on 2026-11-07 16:52 UTC (Rejected), but the paper was screened again on 2026-10-06 10:28 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Serelaxin clearance 9.2 has units of %, which is dimensionally inconsistent with clearance as a proportionality factor.
 
-<div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="false" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="true" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and in healthy subjects. British journal of clinical pharmacology 84(11):2572–2585 (2018).
@@ -35,7 +35,7 @@ Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,7 +110,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Soubret_2018:abstract', 'Soubret_2018:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Soubret_2018:abstract', 'Soubret_2018:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Soubret_2018:abstract', 'Soubret_2018:abstract', 'Soubret_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.2 | ['Soubret_2018:abstract', 'Soubret_2018:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

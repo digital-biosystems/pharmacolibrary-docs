@@ -5,11 +5,11 @@
 
 # potassium salicylate — `PotassiumSalicylate_Wjcicki1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The salicylate elimination rate constant value of 40% is dimensionally invalid, and the record relies on abstract-only summary statistics rather than a fitted model.
+> This record was reviewed on 2026-11-07 15:34 UTC (Rejected), but the paper was screened again on 2026-10-07 07:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The salicylate elimination rate constant value of 40% is dimensionally invalid, and the record relies on abstract-only summary statistics rather than a fitted model.
 
-<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="false" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="true" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unilateral nephrectomy in rabbits on pharmacokinetics of salicylate. Polish journal of pharmacology and pharmacy 33(5):517–520 (1981).
@@ -43,7 +43,7 @@ Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unil
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -131,12 +131,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | dimensionless | % | ['Wójcicki_1981:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | % (dimensionless) | ['Wójcicki_1981:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Koh_2025:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wójcicki_1981:abstract', 'Wójcicki_1981:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lowenthal_1974:review'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Koh_2025:review'] |
-| C5_dimension_Q88 | fail | dimensionless | % | ['Wójcicki_1981:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Wójcicki_1981:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 11.8 L | ['Lowenthal_1974:review'] |
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

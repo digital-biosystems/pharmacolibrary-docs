@@ -5,11 +5,11 @@
 
 # atezolizumab — `Atezolizumab_Chan2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the intercompartmental clearance unit could not be converted to standard SI units.
+> This record was reviewed on 2026-11-07 15:12 UTC (Rejected), but the paper was screened again on 2026-10-07 09:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the intercompartmental clearance unit could not be converted to standard SI units.
 
-<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="rejected" stale="false" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="rejected" stale="true" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Chan P, Liu SN, Gosselin N, Sauve Z, Marchand M, Lin A et al. Population Pharmacokinetics and Exposure-Response of Subcutaneous Atezolizumab in Patients With Non-Small Cell Lung Cancer. CPT: pharmacometrics & systems pharmacology 14(4):726–737 (2025).
@@ -48,7 +48,7 @@ Chan P, Liu SN, Gosselin N, Sauve Z, Marchand M, Lin A et al. Population Pharmac
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.542). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -164,7 +164,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp413310-tbl-0002:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp413310-tbl-0002:row4:col1'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | unit | ['psp413310-tbl-0002:row13:col1', 'psp413310-tbl-0002:row13:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | unit ([luminosity] / [length] ** 2) | ['psp413310-tbl-0002:row13:col1', 'psp413310-tbl-0002:row13:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp413310-tbl-0002:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp413310-tbl-0002:row3:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.2 | ['psp413310-tbl-0002:row1:col1'] |
@@ -189,7 +189,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

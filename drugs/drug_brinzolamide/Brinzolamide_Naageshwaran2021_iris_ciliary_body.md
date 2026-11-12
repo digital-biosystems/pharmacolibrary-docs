@@ -4,11 +4,11 @@
 
 # brinzolamide — `Brinzolamide_Naageshwaran2021_iris_ciliary_body`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Record rejected because the 673 µL apparent volume of distribution for brinzolamide failed a dimension check and was outside the physiological range.
+> This record was reviewed on 2026-11-07 16:26 UTC (Rejected), but the paper was screened again on 2026-10-07 19:00 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Record rejected because the 673 µL apparent volume of distribution for brinzolamide failed a dimension check and was outside the physiological range.
 
-<div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_iris_ciliary_body" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_iris_ciliary_body" status="rejected" stale="true" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive Ocular and Systemic Pharmacokinetics of Brinzolamide in Rabbits After Intracameral, Topical, and Intravenous Administration. Journal of pharmaceutical sciences 110(1):529–535 (2021).
@@ -46,7 +46,7 @@ Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -148,9 +148,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [time] | h*ng/g | ['Naageshwaran_2021_table_1:row4:col2', 'Naageshwaran_2021_table_1:row4:col4'] |
-| C5_dimension_Q19 | fail | [time] | h*ng/g | ['Naageshwaran_2021_table_1:row3:col2', 'Naageshwaran_2021_table_1:row3:col4'] |
-| C5_dimension_Q32 | fail | dimensionless | ng/g | ['Naageshwaran_2021_table_1:row0:col2', 'Naageshwaran_2021_table_1:row0:col4'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | h*ng/g ([time]) | ['Naageshwaran_2021_table_1:row4:col2', 'Naageshwaran_2021_table_1:row4:col4'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | h*ng/g ([time]) | ['Naageshwaran_2021_table_1:row3:col2', 'Naageshwaran_2021_table_1:row3:col4'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | ng/g (dimensionless) | ['Naageshwaran_2021_table_1:row0:col2', 'Naageshwaran_2021_table_1:row0:col4'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Naageshwaran_2021_table_1:row1:col2', 'Naageshwaran_2021_table_1:row1:col4'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Naageshwaran_2021_table_1:row2:col2', 'Naageshwaran_2021_table_1:row2:col4'] |
 | C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | h* /g | ['Naageshwaran_2021_table_1:row5:col2', 'Naageshwaran_2021_table_1:row5:col4'] |
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

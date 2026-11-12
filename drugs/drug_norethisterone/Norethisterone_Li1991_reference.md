@@ -5,11 +5,11 @@
 
 # norethisterone — `Norethisterone_Li1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Norethisterone is an orphan metabolite lacking dose links, while the absorption rate constant unit was incompatible with the structural parameter dimensions.
+> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-07 08:40 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Norethisterone is an orphan metabolite lacking dose links, while the absorption rate constant unit was incompatible with the structural parameter dimensions.
 
-<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Li1991_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="norethisterone, norethisterone-3-oxime" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Li1991_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="norethisterone, norethisterone-3-oxime" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Li DZ, Fu GM, Zuo MD, Zhou MY, Zhao XL, Wang GP et al. Pharmacokinetic studies of norethisterone-3-oxime and norethisterone-3-oxime acetate in rhesus monkey. Journal of Tongji Medical University = Tong ji yi ke da xue xue bao 11(2):81–87 (1991).
@@ -42,7 +42,7 @@ Li DZ, Fu GM, Zuo MD, Zhou MY, Zhao XL, Wang GP et al. Pharmacokinetic studies o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -136,8 +136,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | [time] | h | ['Li_1991:abstract', 'Li_1991:abstract'] |
-| C5_dimension_Q49 | fail | [time] | h | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C5_dimension_Q47 | fail | 1 / [time] | h ([time]) | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['Li_1991:abstract', 'Li_1991:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Li_1991:abstract', 'Li_1991:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hoeben_2026:review'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none', 'none'] |  |
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;Androstenedione&quot;,&quot;href&quot;:&quot;drugs/toxin_androstenedione/&quot;},{&quot;label&quot;:&quot;Nebesio_2016 \u00b7 PGx NR3C1&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Androstenedione_AlKofahi2021_reference&quot;,&quot;label&quot;:&quot;Al-Kofahi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_androstenedione/Androstenedione_AlKofahi2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # NR3C1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span>

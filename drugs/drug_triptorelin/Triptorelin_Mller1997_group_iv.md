@@ -4,11 +4,11 @@
 
 # triptorelin — `Triptorelin_Mller1997_group_iv`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Only volume was extracted — no clearance.
+> This record was reviewed on 2026-11-07 16:09 UTC (Needs review), but the paper was screened again on 2026-10-06 22:08 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_iv" status="needs_review" stale="false" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_iv" status="extracted" stale="true" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. Pharmacokinetics of triptorelin after intravenous bolus administration in healthy males and in males with renal or hepatic insufficiency. British journal of clinical pharmacology 44(4):335–341 (1997).
@@ -30,8 +30,6 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | t 1/2, z (h) | t1/2z | 220 | h |
@@ -44,7 +42,7 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -112,7 +110,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Müller_1997_table_2:row0:col2'] |
 | C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Müller_1997_table_4:row18:col4'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Müller_1997_table_2:row18:col6'] |
@@ -149,7 +147,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

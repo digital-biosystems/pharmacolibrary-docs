@@ -4,11 +4,11 @@
 
 # simeprevir — `Simeprevir_Valade2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The simeprevir record lacks clearance and volume parameters, preventing it from constituting a compartmental population PK model.
+> This record was reviewed on 2026-11-07 16:44 UTC (Rejected), but the paper was screened again on 2026-10-07 17:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The simeprevir record lacks clearance and volume parameters, preventing it from constituting a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="simeprevir" model-id="Simeprevir_Valade2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simeprevir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="simeprevir" model-id="Simeprevir_Valade2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="simeprevir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S et al. Characterizing the Pharmacokinetic Interaction Between Simeprevir and Odalasvir in Healthy Volunteers Using a Population Modeling Approach. The AAPS journal 20(6):111 (2018).
@@ -35,7 +35,7 @@ Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -115,7 +115,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q350 | fail | [mass] / [length] ** 3 | ng/mL | ['Valade_2018:abstract'] |
+| C5_dimension_Q350 | fail | 1 / [time] | ng/mL ([mass] / [length] ** 3) | ['Valade_2018:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -134,7 +134,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

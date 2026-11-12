@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/&quot;},{&quot;label&quot;:&quot;Chen_2006 \u00b7 PD intragastric pH&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chen_2006_pH&quot;,&quot;label&quot;:&quot;Chen_2006 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/pd_Chen_2006_pH.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yang_2009_gastrin&quot;,&quot;label&quot;:&quot;Yang_2009 \u00b7 gastrin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # intragastric pH — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Rabeprazole (concentrations from the PK model of Sheng_2010) drives intragastric pH: direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Rabeprazole concentration (ng/ml) stimulates intragastric pH via a sigmoid Emax model with an E0 of 2.30, an Emax of 7.32, an EC50 of 51.3 ng/ml, and a Hill coefficient of 5.00. The paper does not provide a full text to specify the underlying mechanism beyond the model parameters.
 >
@@ -45,6 +46,33 @@ Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of 
 </details>
 
 
+## Exposure-response model
+
+`Rabeprazole_Chen2006_PD_ph` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 2.3 | — |
+| Emax | 7.32 | — |
+| EC50 | 51.3 ng/ml | 5.13e-05 kg/m3 |
+| gamma | 5 | — |
+
+Closed-form check points (response, SI): `at_0` = 2.3, `at_EC50` = 5.96, `at_inf` = 9.62
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
@@ -66,19 +94,54 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_modelica.zip" download>Rabeprazole_Chen2006_PD_ph_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_fmi.zip" download>Rabeprazole_Chen2006_PD_ph_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_matlab.zip" download>Rabeprazole_Chen2006_PD_ph_matlab.zip</a> <span class="pk-size">(1.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_sbml.zip" download>Rabeprazole_Chen2006_PD_ph_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_cellml.zip" download>Rabeprazole_Chen2006_PD_ph_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_SigmoidEmaxSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 2.3 |  |
+| input | model | `EC50` | 5.13e-05 |  |
+| input | model | `Emax` | 7.32 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `gamma` | 5 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Rabeprazole_Chen2006_PD_ph`. <https://pharmacolibrary.github.io/#/drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph>
+
+```bibtex
+@misc{pharmacolibrary_RabeprazoleChen2006PDph,
+  title  = {{Pharmacolibrary model Rabeprazole_Chen2006_PD_ph}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+<dbs-fmusim paramsurl="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_rabeprazole/Rabeprazole_Chen2006_PD_ph/Rabeprazole_Chen2006_PD_ph_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_SigmoidEmaxSweep` · parameters `Rabeprazole_Chen2006_PD_ph_params.json` · controls `Rabeprazole_Chen2006_PD_ph_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

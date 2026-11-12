@@ -5,11 +5,11 @@
 
 # dostarlimab — `Dostarlimab_Melhem2022_estimate_b`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Dostarlimab clearance was rejected due to a dimension mismatch, as its reported unit could not be resolved to standard units.
+> This record was reviewed on 2026-11-07 15:52 UTC (Rejected), but the paper was screened again on 2026-10-07 12:09 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Dostarlimab clearance was rejected due to a dimension mismatch, as its reported unit could not be resolved to standard units.
 
-<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="true" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinetics and exposure-response of anti-programmed cell death protein-1 monoclonal antibody dostarlimab in advanced solid tumours. British journal of clinical pharmacology 88(9):4142–4154 (2022).
@@ -45,7 +45,7 @@ Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -173,10 +173,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C1_half_life_alpha | pass | 1.51 | 1.472 | 0.9748 | 0.25 | reported t½α |
 | C1_half_life_beta | pass | 23.5 | 20.86 | 0.8877 | 0.25 | reported t½β |
 | C2_reference | pass |  |  |  |  |  |
-| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | units |  |  | ['bcp15339-tbl-0003:row1:col1'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | units ([luminosity] / [length] ** 2) |  |  | ['bcp15339-tbl-0003:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['bcp15339-tbl-0003:row3:col1'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['bcp15339-tbl-0003:row6:col1'] |
-| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | units |  |  | ['bcp15339-tbl-0003:row2:col1'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | units ([luminosity] / [length] ** 2) |  |  | ['bcp15339-tbl-0003:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['bcp15339-tbl-0003:row4:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.179 |  |  | ['bcp15339-tbl-0003:row1:col1'] |
 | C8_topology | pass |  |  |  |  |  |
@@ -198,7 +198,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

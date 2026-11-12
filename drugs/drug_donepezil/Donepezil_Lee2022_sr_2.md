@@ -5,11 +5,11 @@
 
 # donepezil — `Donepezil_Lee2022_sr_2`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because the absorption rate constant's unit, /hour, prevented dimensional validation, leaving the value unconverted for model fitting.
+> This record was reviewed on 2026-11-07 14:34 UTC (Rejected), but the paper was screened again on 2026-10-07 01:30 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the absorption rate constant's unit, /hour, prevented dimensional validation, leaving the value unconverted for model fitting.
 
-<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Lee2022_sr_2" status="rejected" stale="false" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Lee2022_sr_2" status="rejected" stale="true" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Lee DY, Shin S, Kim TH, Shin BS. Establishment of Level a In Vitro-In Vivo Correlation (IVIVC) via Extended DoE-IVIVC Model: A Donepezil Case Study. Pharmaceutics 14(6) (2022).
@@ -48,7 +48,7 @@ Lee DY, Shin S, Kim TH, Shin BS. Establishment of Level a In Vitro-In Vivo Corre
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -161,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Lee_2022_table_3:row5:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Lee_2022_table_3:row7:col3'] |
-| C5_dimension_Q310 | fail | [mass] | mg | ['Lee_2022_table_3:row0:col3'] |
+| C5_dimension_Q310 | fail | [time] | mg ([mass]) | ['Lee_2022_table_3:row0:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Lee_2022_table_3:row3:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bakker_2021:review'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Lee_2022_table_3:row8:col3'] |
@@ -190,7 +190,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -5,11 +5,11 @@
 
 # lorazepam — `Lorazepam_Chamberlain2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Lorazepam's structural mismatch involved using a 4 mg dose as the zero-order input duration parameter.
+> This record was reviewed on 2026-11-07 14:26 UTC (Rejected), but the paper was screened again on 2026-10-06 19:13 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Lorazepam's structural mismatch involved using a 4 mg dose as the zero-order input duration parameter.
 
-<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Chamberlain2012_reference" status="rejected" stale="false" population="pediatric patients with or at risk of status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Chamberlain2012_reference" status="rejected" stale="true" population="pediatric patients with or at risk of status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Chamberlain JM, Capparelli EV, Brown KM, Vance CW, Lillis K, Mahajan P et al. Pharmacokinetics of intravenous lorazepam in pediatric patients with and without status epilepticus. The Journal of pediatrics 160(4):667–672.e2 (2012).
@@ -40,7 +40,7 @@ Chamberlain JM, Capparelli EV, Brown KM, Vance CW, Lillis K, Mahajan P et al. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -123,7 +123,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chamberlain_2012:abstract'] |
-| C5_dimension_Q310 | fail | [mass] | mg | ['Chamberlain_2012:abstract'] |
+| C5_dimension_Q310 | fail | [time] | mg ([mass]) | ['Chamberlain_2012:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Chamberlain_2012:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chamberlain_2012:abstract'] |
@@ -149,7 +149,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

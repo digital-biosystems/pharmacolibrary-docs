@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Animal toxins&quot;,&quot;href&quot;:&quot;toxins/ANIM.md&quot;},{&quot;label&quot;:&quot;2-hydroxyflutamide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2Hydroxyflutamide_Mendoza2017_reference&quot;,&quot;label&quot;:&quot;Mendoza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Mendoza2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # 2-hydroxyflutamide
 
@@ -30,7 +31,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Mendoza_2017_reference](drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Mendoza2017_reference.md) | — | parent + metabolite (no model) | 4 | Mendoza FJ et al., Pharmacokinetics of the anti-androgenic…, Veterinary journal (London,… (2017) | [10.1016/j.tvjl.2017.06.001](https://doi.org/10.1016/j.tvjl.2017.06.001) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Mendoza_2017_reference](drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Mendoza2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Mendoza FJ et al., Pharmacokinetics of the anti-androgenic…, Veterinary journal (London,… (2017) | [10.1016/j.tvjl.2017.06.001](https://doi.org/10.1016/j.tvjl.2017.06.001) |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Xu_1998_reference](drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Xu1998_reference.md) | — | 1-compartment (no model) | 0 | Xu CJ et al., Pharmacokinetics of flutamide and its m…, Zhongguo yao li xue bao = A… (1998) | — |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Xu_1999_reference](drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Xu1999_reference.md) | — | 1-compartment (no model) | 0 | Xu CJ et al., Pharmacokinetics of 2-hydroxyflutamide,…, Zhongguo yao li xue bao = A… (1999) | — |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zuo_2002_reference](drugs/toxin_2_hydroxyflutamide/D_2Hydroxyflutamide_Zuo2002_reference.md) | — | 1-compartment (no model) | 0 | Zuo Z et al., Hydroxypropyl-beta-cyclodextrin-flutami…, Journal of pharmacy & pharm… (2002) | — |
@@ -39,7 +40,7 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Zhao_2004_GR_transactivation](drugs/toxin_2_hydroxyflutamide/pd_Zhao_2004_GR_transactivation.md) | glucocorticoid receptor transcriptional activation ← 2-hydroxyflutamide · inhibition effect | — | Zhao J et al., Oxandrolone blocks glucocorticoid signa…, Steroids (2004) | [10.1016/j.steroids.2004.01.006](https://doi.org/10.1016/j.steroids.2004.01.006) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Zhao_2004_GR_transactivation](drugs/toxin_2_hydroxyflutamide/pd_Zhao_2004_GR_transactivation.md) | glucocorticoid receptor transcriptional activation ← 2-hydroxyflutamide · inhibition effect | — | Zhao J et al., Oxandrolone blocks glucocorticoid signa…, Steroids (2004) | [10.1016/j.steroids.2004.01.006](https://doi.org/10.1016/j.steroids.2004.01.006) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2022_anti_androgenic_activity](drugs/toxin_2_hydroxyflutamide/pd_van_2022_anti_androgenic_activity.md) | anti-androgenic activity ← 2_hydroxyflutamide · direct Emax (saturable) effect | — | van Tongeren TCA et al., Next Generation Risk Assessment of the…, Frontiers in toxicology (2022) | [10.3389/ftox.2022.881235](https://doi.org/10.3389/ftox.2022.881235) |
 
 <details class="legend">
@@ -54,13 +55,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 15:04 | 12:32 | 1/3/0 | 2/0/0 | 0/0/0 | 186,603/11,276 | einfracz / qwen3.8-27b | 5 | 0/3 | 5/0 | 0 |
+| 2026-11-09 15:04 | 12:32 | 0/4/0 | 2/0/0 | 0/0/0 | 186,603/11,276 | einfracz / qwen3.8-27b | 5 | 0/3 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 60 matched, 60 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 4  ·  extracted 1  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

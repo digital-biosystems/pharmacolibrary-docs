@@ -4,11 +4,11 @@
 
 # eplontersen — `Eplontersen_Diep2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Eplontersen record was rejected because the absorption rate constant of 29.6% is dimensionally invalid for a rate parameter.
+> This record was reviewed on 2026-11-07 16:49 UTC (Rejected), but the paper was screened again on 2026-10-07 04:27 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Eplontersen record was rejected because the absorption rate constant of 29.6% is dimensionally invalid for a rate parameter.
 
-<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmacokinetic/pharmacodynamic modelling of eplontersen, an antisense oligonucleotide in development for transthyretin amyloidosis. British journal of clinical pharmacology 88(12):5389–5398 (2022).
@@ -35,7 +35,7 @@ Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -111,8 +111,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q49 | fail | dimensionless | % | ['Diep_2022:abstract'] |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q49 | fail | 1 / [time] | % (dimensionless) | ['Diep_2022:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Diep_2022:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -132,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

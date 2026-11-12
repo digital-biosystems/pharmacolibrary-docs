@@ -5,11 +5,11 @@
 
 # carboplatin — `Carboplatin_Gareau2026_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The half-life unit was recorded as 'K' instead of time, causing a dimension mismatch and rejection.
+> This record was reviewed on 2026-11-07 14:32 UTC (Rejected), but the paper was screened again on 2026-10-07 21:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The half-life unit was recorded as 'K' instead of time, causing a dimension mismatch and rejection.
 
-<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Gareau2026_estimate" status="rejected" stale="false" population="dogs with confirmed neoplasia" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Gareau2026_estimate" status="rejected" stale="true" population="dogs with confirmed neoplasia" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gareau A, Papich MG, Evans BJ, Intile JL. Serum Symmetric Dimethylarginine as a Predictor of Toxicity of Carboplatin in Dogs. Veterinary and comparative oncology 24(1):140-149 (2026).
@@ -44,7 +44,7 @@ Gareau A, Papich MG, Evans BJ, Intile JL. Serum Symmetric Dimethylarginine as a 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -133,7 +133,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['vco70034-tbl-0003:row2:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['vco70034-tbl-0003:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Yang_2025:review'] |
-| C5_dimension_Q57 | fail | [mass] * [length] ** 2 / [time] ** 2 / [temperature] | K | ['vco70034-tbl-0003:row5:col1'] |
+| C5_dimension_Q57 | fail | [time] | K ([mass] * [length] ** 2 / [time] ** 2 / [temperature]) | ['vco70034-tbl-0003:row5:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['vco70034-tbl-0003:row1:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Centanni_2024:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.16 | ['vco70034-tbl-0003:row2:col1'] |
@@ -157,7 +157,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

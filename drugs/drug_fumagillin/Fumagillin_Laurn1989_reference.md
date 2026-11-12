@@ -4,11 +4,11 @@
 
 # fumagillin — `Fumagillin_Laurn1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Fumagillin plasma clearance was recorded with mass units (6 mg/kg) instead of a volumetric flow rate, invalidating the pharmacokinetic parameters.
+> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-07 05:37 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Fumagillin plasma clearance was recorded with mass units (6 mg/kg) instead of a volumetric flow rate, invalidating the pharmacokinetic parameters.
 
-<div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="false" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="true" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmacokinetics of the antibiotic fumagillin in yearling rainbow trout (Salmo gairdneri). Toxicology and applied pharmacology 98(3):444–453 (1989).
@@ -40,7 +40,7 @@ Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -124,9 +124,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [mass] | mg/kg | ['Laurén_1989:abstract', 'Laurén_1989:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | mg/kg ([mass]) | ['Laurén_1989:abstract', 'Laurén_1989:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Laurén_1989:abstract'] |
-| C5_dimension_Q67 | fail | [time] | min | ['Laurén_1989:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min ([time]) | ['Laurén_1989:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6 | ['Laurén_1989:abstract', 'Laurén_1989:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -146,7 +146,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

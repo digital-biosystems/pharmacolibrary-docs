@@ -4,11 +4,11 @@
 
 # ascorbic acid — `AscorbicAcid_Bluck1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Ascorbic acid record lacks volume and clearance, and the AUC percentage 150.4 has an invalid unit causing dimension mismatch.
+> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-05 07:24 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Ascorbic acid record lacks volume and clearance, and the AUC percentage 150.4 has an invalid unit causing dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man using stable isotopes and gas chromatography/mass spectrometry. Journal of mass spectrometry : JMS 31(7):741–748 (1996).
@@ -36,7 +36,7 @@ Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man usin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -92,7 +92,7 @@ The record is an exposure/outcome paper, not a compartmental population PK model
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q84 | fail | [current] * [time] | e | ['Bluck_1996_table_1:row8:col1', 'Bluck_1996_table_1:row8:col2', 'Bluck_1996_table_1:row8:col3', 'Bluck_1996_table_1:row8:col4', 'Bluck_1996_table_1:row8:col5'] |
+| C5_dimension_Q84 | fail | dimensionless | e ([current] * [time]) | ['Bluck_1996_table_1:row8:col1', 'Bluck_1996_table_1:row8:col2', 'Bluck_1996_table_1:row8:col3', 'Bluck_1996_table_1:row8:col4', 'Bluck_1996_table_1:row8:col5'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -111,7 +111,7 @@ The record is an exposure/outcome paper, not a compartmental population PK model
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

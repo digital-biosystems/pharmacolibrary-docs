@@ -5,11 +5,11 @@
 
 # celecoxib — `Celecoxib_Dhondt2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
-> Celecoxib was rejected due to an unconvertible unit on a structural parameter, leaving the model without a valid SI value for evaluation.
+> This record was reviewed on 2026-11-07 15:29 UTC (Rejected), but the paper was screened again on 2026-10-07 02:19 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Celecoxib was rejected due to an unconvertible unit on a structural parameter, leaving the model without a valid SI value for evaluation.
 
-<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="false" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. Comparative population pharmacokinetics and absolute oral bioavailability of COX-2 selective inhibitors celecoxib, mavacoxib and meloxicam in cockatiels (Nymphicus hollandicus). Scientific reports 7(1):12043 (2017).
@@ -49,7 +49,7 @@ Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -168,8 +168,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Tab1:row4:col1', 'Tab1:row4:col2', 'Tab1:row14:col1', 'Tab1:row14:col2', 'Tab1:row26:col1', 'Tab1:row26:col2', 'Dhondt_2017_table_2:row3:col1', 'Dhondt_2017_table_2:row3:col2', 'Dhondt_2017_table_2:row13:col1', 'Dhondt_2017_table_2:row13:col2', 'Dhondt_2017_table_2:row23:col1', 'Dhondt_2017_table_2:row23:col2', 'Dhondt_2017_table_3:row3:col1', 'Dhondt_2017_table_3:row3:col2', 'Dhondt_2017_table_3:row13:col1', 'Dhondt_2017_table_3:row13:col2', 'Dhondt_2017_table_3:row22:col1', 'Dhondt_2017_table_3:row22:col2'] |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | L/h.kg | ['Tab1:row2:col1', 'Tab1:row2:col2', 'Tab1:row2:col3', 'Dhondt_2017_table_2:row1:col1', 'Dhondt_2017_table_2:row1:col2', 'Dhondt_2017_table_2:row1:col3', 'Dhondt_2017_table_3:row1:col1', 'Dhondt_2017_table_3:row1:col2', 'Dhondt_2017_table_3:row1:col3', 'Dhondt_2017_table_3:row8:col1', 'Dhondt_2017_table_3:row8:col2', 'Dhondt_2017_table_3:row8:col3'] |
-| C5_dimension_Q27 | fail | [length] ** 3 * [mass] / [time] | L/h.kg | ['Tab1:row9:col1', 'Tab1:row9:col2', 'Tab1:row9:col3', 'Tab1:row19:col1', 'Tab1:row19:col2', 'Tab1:row19:col3', 'Dhondt_2017_table_2:row8:col1', 'Dhondt_2017_table_2:row8:col2', 'Dhondt_2017_table_2:row8:col3', 'Dhondt_2017_table_2:row18:col1', 'Dhondt_2017_table_2:row18:col2', 'Dhondt_2017_table_2:row18:col3', 'Dhondt_2017_table_3:row16:col1', 'Dhondt_2017_table_3:row16:col2', 'Dhondt_2017_table_3:row16:col3'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | L/h.kg ([length] ** 3 * [mass] / [time]) | ['Tab1:row2:col1', 'Tab1:row2:col2', 'Tab1:row2:col3', 'Dhondt_2017_table_2:row1:col1', 'Dhondt_2017_table_2:row1:col2', 'Dhondt_2017_table_2:row1:col3', 'Dhondt_2017_table_3:row1:col1', 'Dhondt_2017_table_3:row1:col2', 'Dhondt_2017_table_3:row1:col3', 'Dhondt_2017_table_3:row8:col1', 'Dhondt_2017_table_3:row8:col2', 'Dhondt_2017_table_3:row8:col3'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | L/h.kg ([length] ** 3 * [mass] / [time]) | ['Tab1:row9:col1', 'Tab1:row9:col2', 'Tab1:row9:col3', 'Tab1:row19:col1', 'Tab1:row19:col2', 'Tab1:row19:col3', 'Dhondt_2017_table_2:row8:col1', 'Dhondt_2017_table_2:row8:col2', 'Dhondt_2017_table_2:row8:col3', 'Dhondt_2017_table_2:row18:col1', 'Dhondt_2017_table_2:row18:col2', 'Dhondt_2017_table_2:row18:col3', 'Dhondt_2017_table_3:row16:col1', 'Dhondt_2017_table_3:row16:col2', 'Dhondt_2017_table_3:row16:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Tab1:row12:col1', 'Tab1:row12:col2', 'Tab1:row24:col1', 'Tab1:row24:col2', 'Dhondt_2017_table_2:row11:col1', 'Dhondt_2017_table_2:row11:col2', 'Dhondt_2017_table_2:row21:col1', 'Dhondt_2017_table_2:row21:col2', 'Dhondt_2017_table_3:row20:col1', 'Dhondt_2017_table_3:row20:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab1:row5:col1', 'Tab1:row5:col2', 'Tab1:row15:col1', 'Tab1:row15:col2', 'Tab1:row27:col1', 'Tab1:row27:col2', 'Dhondt_2017_table_2:row4:col1', 'Dhondt_2017_table_2:row4:col2', 'Dhondt_2017_table_2:row14:col1', 'Dhondt_2017_table_2:row14:col2', 'Dhondt_2017_table_2:row24:col1', 'Dhondt_2017_table_2:row24:col2', 'Dhondt_2017_table_3:row4:col1', 'Dhondt_2017_table_3:row4:col2', 'Dhondt_2017_table_3:row23:col1', 'Dhondt_2017_table_3:row23:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab1:row10:col1', 'Tab1:row10:col2', 'Tab1:row10:col3', 'Tab1:row21:col1', 'Tab1:row21:col2', 'Dhondt_2017_table_2:row9:col1', 'Dhondt_2017_table_2:row9:col2', 'Dhondt_2017_table_2:row9:col3', 'Dhondt_2017_table_2:row19:col1', 'Dhondt_2017_table_2:row19:col2', 'Dhondt_2017_table_2:row19:col3', 'Dhondt_2017_table_3:row9:col1', 'Dhondt_2017_table_3:row9:col2', 'Dhondt_2017_table_3:row9:col3', 'Dhondt_2017_table_3:row18:col1', 'Dhondt_2017_table_3:row18:col2', 'Dhondt_2017_table_3:row18:col3'] |
@@ -177,7 +177,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q57 | pass | [time] |  | ['Tab1:row6:col1', 'Tab1:row6:col2', 'Tab1:row16:col1', 'Tab1:row16:col2', 'Tab1:row28:col1', 'Tab1:row28:col2', 'Dhondt_2017_table_2:row5:col1', 'Dhondt_2017_table_2:row5:col2', 'Dhondt_2017_table_2:row15:col1', 'Dhondt_2017_table_2:row15:col2', 'Dhondt_2017_table_2:row25:col1', 'Dhondt_2017_table_2:row25:col2', 'Dhondt_2017_table_3:row5:col1', 'Dhondt_2017_table_3:row5:col2', 'Dhondt_2017_table_3:row24:col1', 'Dhondt_2017_table_3:row24:col2'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Tab1:row11:col1', 'Tab1:row11:col2', 'Tab1:row23:col1', 'Tab1:row23:col2', 'Dhondt_2017_table_2:row10:col1', 'Dhondt_2017_table_2:row10:col2', 'Dhondt_2017_table_2:row20:col1', 'Dhondt_2017_table_2:row20:col2', 'Dhondt_2017_table_3:row19:col1', 'Dhondt_2017_table_3:row19:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Tab1:row20:col1', 'Tab1:row20:col2', 'Tab1:row20:col3', 'Dhondt_2017_table_3:row17:col1', 'Dhondt_2017_table_3:row17:col2'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/mL | ['Tab1:row3:col1', 'Tab1:row3:col2', 'Dhondt_2017_table_2:row2:col1', 'Dhondt_2017_table_2:row2:col2', 'Dhondt_2017_table_3:row2:col1', 'Dhondt_2017_table_3:row2:col2', 'Dhondt_2017_table_3:row12:col1', 'Dhondt_2017_table_3:row12:col2'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/mL ([mass] / [length] ** 3) | ['Tab1:row3:col1', 'Tab1:row3:col2', 'Dhondt_2017_table_2:row2:col1', 'Dhondt_2017_table_2:row2:col2', 'Dhondt_2017_table_3:row2:col1', 'Dhondt_2017_table_3:row2:col2', 'Dhondt_2017_table_3:row12:col1', 'Dhondt_2017_table_3:row12:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -197,7 +197,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

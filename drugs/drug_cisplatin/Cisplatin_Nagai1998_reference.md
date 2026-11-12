@@ -5,11 +5,11 @@
 
 # cisplatin — `Cisplatin_Nagai1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The clearance value of 27.3% is a relative change, not an absolute rate, and volume of distribution is unassigned.
+> This record was reviewed on 2026-11-07 15:06 UTC (Rejected), but the paper was screened again on 2026-10-07 22:33 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The clearance value of 27.3% is a relative change, not an absolute rate, and volume of distribution is unassigned.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="cisplatin (unchanged CDDP)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="rejected" stale="true" population="patients with cancer" measured-compound="cisplatin (unchanged CDDP)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmacokinetics and pharmacodynamics of cisplatin in patients with cancer: analysis with the NONMEM program. Journal of clinical pharmacology 38(11):1025–1034 (1998).
@@ -38,7 +38,7 @@ Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | dimensionless | % | ['Nagai_1998:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Nagai_1998:abstract'] |
 | C5_dimension_Q352 | pass | [length] ** 3 |  | ['Nagai_1998:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.3 | ['Nagai_1998:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -142,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

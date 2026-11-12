@@ -5,11 +5,11 @@
 
 # sulfadiazine — `Sulfadiazine_Ekstrand2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because trimethoprim was recorded as a co-administered compound linked to sulfadiazine, creating an unreachable compartment in the model structure.
+> This record was reviewed on 2026-11-07 15:33 UTC (Rejected), but the paper was screened again on 2026-10-07 10:38 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because trimethoprim was recorded as a co-administered compound linked to sulfadiazine, creating an unreachable compartment in the model structure.
 
-<div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Ekstrand2022_reference" status="rejected" stale="false" population="neonatal foals" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Ekstrand2022_reference" status="rejected" stale="true" population="neonatal foals" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Ekstrand C, Nostell K, Gehring R, Bondesson U, Bröjer J. The disposition of trimethoprim and sulfadiazine in neonatal foals after intravenous administration. Veterinary medicine and science 8(3):1065–1071 (2022).
@@ -47,7 +47,7 @@ Ekstrand C, Nostell K, Gehring R, Bondesson U, Bröjer J. The disposition of tri
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q60 | pass | [time] |  | ['vms3763-tbl-0001:row11:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['vms3763-tbl-0001:row2:col2', 'vms3763-tbl-0001:row2:col3'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['vms3763-tbl-0001:row13:col2'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['vms3763-tbl-0001:row7:col1', 'vms3763-tbl-0001:row7:col2'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['vms3763-tbl-0001:row7:col1', 'vms3763-tbl-0001:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.09 | ['vms3763-tbl-0001:row4:col2', 'vms3763-tbl-0001:row4:col3'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.3 L/h | ['vms3763-tbl-0001:row4:col2', 'vms3763-tbl-0001:row4:col3'] |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

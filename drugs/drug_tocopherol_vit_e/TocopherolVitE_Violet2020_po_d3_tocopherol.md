@@ -4,11 +4,11 @@
 
 # tocopherol (vit E) — `TocopherolVitE_Violet2020_po_d3_tocopherol`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The elimination rate constant for d6-α-tocopherol, 0.022, has an invalid unit preventing model calculation.
+> This record was reviewed on 2026-11-07 16:51 UTC (Rejected), but the paper was screened again on 2026-10-07 17:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The elimination rate constant for d6-α-tocopherol, 0.022, has an invalid unit preventing model calculation.
 
-<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E sequestration by liver fat in humans. JCI insight 5(1) (2020).
@@ -42,7 +42,7 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C2_base_Q47 | fail | 0.022 | 0.024 | 1.091 | 0.05 | footnote reference category |
 | C2_base_Q56 | fail | 11.4 | 7.7 | 0.6754 | 0.05 | footnote reference category |
 | C2_base_Q57 | pass | 31.5 | 30 | 0.9524 | 0.05 | footnote reference category |
-| C5_dimension_Q47 | fail | [current] * [time] | Ke |  |  | ['Violet_2020_table_2:row0:col4'] |
+| C5_dimension_Q47 | fail | 1 / [time] | Ke ([current] * [time]) |  |  | ['Violet_2020_table_2:row0:col4'] |
 | C5_dimension_Q56 | pass | [time] |  |  |  | ['Violet_2020_table_2:row6:col4'] |
 | C5_dimension_Q57 | pass | [time] |  |  |  | ['Violet_2020_table_2:row2:col4'] |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 |  |  |  | ['Violet_2020_table_2:row10:col4'] |
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

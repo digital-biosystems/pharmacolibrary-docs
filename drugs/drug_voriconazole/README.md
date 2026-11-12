@@ -42,7 +42,7 @@ Voriconazole is an antifungal medicine used to treat serious fungal infections s
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Wang_2024_reference](drugs/drug_voriconazole/Voriconazole_Wang2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang J et al., Population Pharmacokinetics of Voricona…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2357](https://doi.org/10.1002/jcph.2357) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q37 — no SI value to build from</sub> | [Tilen_2022_reference](drugs/drug_voriconazole/Voriconazole_Tilen2022_reference.md) | — | 1-compartment (no model) | 3 (+7 cov.) | Tilen R et al., Pharmacogenetic Analysis of Voriconazol…, Pharmaceutics (2022) | [10.3390/pharmaceutics14061289](https://doi.org/10.3390/pharmaceutics14061289) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yang_2021_reference](drugs/drug_voriconazole/Voriconazole_Yang2021_reference.md) | — | 1-compartment (no model) | 1 | Yang P et al., Predicting the Outcome of Voriconazole…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.711187](https://doi.org/10.3389/fphar.2021.711187) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [van_2023_reference](drugs/drug_voriconazole/Voriconazole_van2023_reference.md) | — | 1-compartment (no model) | 5 | van den Born DA et al., Voriconazole exposure is influenced by…, International journal of an… (2023) | [10.1016/j.ijantimicag.2023.106750](https://doi.org/10.1016/j.ijantimicag.2023.106750) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [van_2023_reference](drugs/drug_voriconazole/Voriconazole_van2023_reference.md) | — | 1-compartment (no model) | 5 | van den Born DA et al., Voriconazole exposure is influenced by…, International journal of an… (2023) | [10.1016/j.ijantimicag.2023.106750](https://doi.org/10.1016/j.ijantimicag.2023.106750) |
 
 ## Pharmacodynamics (PD)
 
@@ -90,7 +90,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 195 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

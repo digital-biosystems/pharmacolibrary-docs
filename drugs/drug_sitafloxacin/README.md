@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;sitafloxacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sitafloxacin
 
@@ -25,7 +25,7 @@ Sitafloxacin is a fluoroquinolone antibacterial investigated for treating bacter
 
 ## Start here
 
-> **Paiboonvong_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> critically ill Thai patients with pneumonia, n = 12. [Run it in the simulator](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md?tab=Simulation) · [record](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md)
+> **Paiboonvong_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> critically ill Thai patients with pneumonia, n = 12. [Run it in the simulator](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md?tab=Simulation) · [record](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -39,7 +39,7 @@ Sitafloxacin is a fluoroquinolone antibacterial investigated for treating bacter
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Paiboonvong_2025_reference](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+1 cov.) | Paiboonvong T et al., Population Pharmacokinetics and Pharmac…, Pharmacology research & per… (2025) | [10.1002/prp2.70081](https://doi.org/10.1002/prp2.70081) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub> | [Paiboonvong_2025_reference](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+1 cov.) | Paiboonvong T et al., Population Pharmacokinetics and Pharmac…, Pharmacology research & per… (2025) | [10.1002/prp2.70081](https://doi.org/10.1002/prp2.70081) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Tanigawara_2013_reference](drugs/drug_sitafloxacin/Sitafloxacin_Tanigawara2013_reference.md) | — | 1-compartment (no model) | 2 | Tanigawara Y et al., Population pharmacokinetics and pharmac…, Journal of infection and ch… (2013) | [10.1007/s10156-013-0580-2](https://doi.org/10.1007/s10156-013-0580-2) |
 
 ## Pharmacodynamics (PD)
@@ -74,7 +74,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -39,13 +39,13 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fu_2018_TL_decline](drugs/toxin_1_naphthol/pd_Fu_2018_TL_decline.md) | TL decline ← 1-hydroxynaphthalene · direct linear effect | — | Fu W et al., The interaction effects of polycyclic a…, Environmental pollution (Ba… (2018) | [10.1016/j.envpol.2018.05.026](https://doi.org/10.1016/j.envpol.2018.05.026) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fu_2018_TL_ratio](drugs/toxin_1_naphthol/pd_Fu_2018_TL_ratio.md) | TL ratio ← 1-hydroxynaphthalene · direct linear effect | — | Fu W et al., The interaction effects of polycyclic a…, Environmental pollution (Ba… (2018) | [10.1016/j.envpol.2018.05.026](https://doi.org/10.1016/j.envpol.2018.05.026) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2023_2_trouble_sleeping](drugs/toxin_1_naphthol/pd_Chen_2023_2_trouble_sleeping.md) | trouble sleeping ← 1-hydroxynaphthalene · categorical (graded) response model | — | Chen J et al., Dose-response association of polycyclic…, Environmental science and p… (2023) | [10.1007/s11356-023-28218-0](https://doi.org/10.1007/s11356-023-28218-0) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Guo_2024_BPDE_DNA_adduct](drugs/toxin_1_naphthol/pd_Guo_2024_BPDE_DNA_adduct.md) | leukocyte BPDE-DNA adduct ← 1-hydroxynaphthalene · direct linear effect | — | Guo L et al., Polycyclic aromatic hydrocarbon and its…, Environment international (2024) | [10.1016/j.envint.2024.108922](https://doi.org/10.1016/j.envint.2024.108922) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Yang_2025_TFQIFT4](drugs/toxin_1_naphthol/pd_Yang_2025_TFQIFT4.md) | thyroid feedback quantile index of FT4 ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Yang_2025_TSHI](drugs/toxin_1_naphthol/pd_Yang_2025_TSHI.md) | thyroid-stimulating hormone index ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Yang_2025_TT4RI](drugs/toxin_1_naphthol/pd_Yang_2025_TT4RI.md) | thyrotropin thyroxine resistance index ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fu_2018_TL_decline](drugs/toxin_1_naphthol/pd_Fu_2018_TL_decline.md) | TL decline ← 1-hydroxynaphthalene · direct linear effect | — | Fu W et al., The interaction effects of polycyclic a…, Environmental pollution (Ba… (2018) | [10.1016/j.envpol.2018.05.026](https://doi.org/10.1016/j.envpol.2018.05.026) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fu_2018_TL_ratio](drugs/toxin_1_naphthol/pd_Fu_2018_TL_ratio.md) | TL ratio ← 1-hydroxynaphthalene · direct linear effect | — | Fu W et al., The interaction effects of polycyclic a…, Environmental pollution (Ba… (2018) | [10.1016/j.envpol.2018.05.026](https://doi.org/10.1016/j.envpol.2018.05.026) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Guo_2024_BPDE_DNA_adduct](drugs/toxin_1_naphthol/pd_Guo_2024_BPDE_DNA_adduct.md) | leukocyte BPDE-DNA adduct ← 1-hydroxynaphthalene · direct linear effect | — | Guo L et al., Polycyclic aromatic hydrocarbon and its…, Environment international (2024) | [10.1016/j.envint.2024.108922](https://doi.org/10.1016/j.envint.2024.108922) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2025_TFQIFT4](drugs/toxin_1_naphthol/pd_Yang_2025_TFQIFT4.md) | thyroid feedback quantile index of FT4 ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2025_TSHI](drugs/toxin_1_naphthol/pd_Yang_2025_TSHI.md) | thyroid-stimulating hormone index ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yang_2025_TT4RI](drugs/toxin_1_naphthol/pd_Yang_2025_TT4RI.md) | thyrotropin thyroxine resistance index ← 1-hydroxynaphthalene · direct linear effect | — | Yang Q et al., Impact of polycyclic aromatic hydrocarb…, BMJ open (2025) | [10.1136/bmjopen-2024-098106](https://doi.org/10.1136/bmjopen-2024-098106) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +59,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-09 14:35 | 26:33 | 0/2/0 | 2/2/0 | 0/0/0 | 394,874/20,290 | einfracz / qwen3.8-27b | 21 | 7/10 | 21/0 | 0 |
+| 2026-11-09 14:35 | 26:33 | 0/2/0 | 4/0/0 | 0/0/0 | 394,874/20,290 | einfracz / qwen3.8-27b | 21 | 7/10 | 21/0 | 0 |
 
 ## Coverage
 

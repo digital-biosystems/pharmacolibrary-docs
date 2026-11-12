@@ -5,11 +5,11 @@
 
 # proguanil — `Proguanil_Hussein1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The proguanil record is rejected because the parameter fm, representing the fraction of drug converted to a metabolite, has an impossible value of 114.
+> This record was reviewed on 2026-11-07 15:19 UTC (Rejected), but the paper was screened again on 2026-10-07 07:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The proguanil record is rejected because the parameter fm, representing the fraction of drug converted to a metabolite, has an impossible value of 114.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="rejected" stale="false" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="rejected" stale="true" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of proguanil in patients with acute P. falciparum malaria after combined therapy with atovaquone. British journal of clinical pharmacology 42(5):589–597 (1996).
@@ -39,7 +39,7 @@ Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hussein_1996:abstract'] |
-| C5_dimension_Q27 | fail | dimensionless | % | ['Hussein_1996:abstract'] |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Hussein_1996:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hussein_1996:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -164,7 +164,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

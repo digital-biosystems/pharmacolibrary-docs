@@ -4,11 +4,11 @@
 
 # cefamandole — `Cefamandole_Campillo1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> A cefamandole two-compartment model was rejected because it includes an unreachable third compartment and a dimension mismatch on its structural parameter.
+> This record was reviewed on 2026-11-07 16:21 UTC (Rejected), but the paper was screened again on 2026-10-07 10:48 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. A cefamandole two-compartment model was rejected because it includes an unreachable third compartment and a dimension mismatch on its structural parameter.
 
-<div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Campillo1979_reference" status="rejected" stale="false" population="patients with terminal renal impairment" measured-compound="cefamandole" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Campillo1979_reference" status="rejected" stale="true" population="patients with terminal renal impairment" measured-compound="cefamandole" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics of cefamandole in patients undergoing hemodialysis. International journal of clinical pharmacology and biopharmacy 17(9):416–420 (1979).
@@ -40,7 +40,7 @@ Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Campillo_1979:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Campillo_1979:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Campillo_1979:abstract'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 | ['Campillo_1979:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Campillo_1979:abstract'] |
 | C8_topology | fail |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.7 L | ['Campillo_1979:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.19 L | ['Campillo_1979:abstract'] |
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

@@ -32,7 +32,7 @@ Pegcetacoplan is a complement inhibitor used to treat paroxysmal nocturnal hemog
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Crass_2025_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_estimate.md) | — | 1-compartment (no model) | 1 | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_cmax</sub> | [↳ transformed_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crass_2025_2_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025v2_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264) |
 
 ## Pharmacodynamics (PD)
@@ -71,7 +71,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -5,11 +5,11 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The maximum metabolic rate (Vmax) for 5-fluorouracil was rejected because its unit, mg·kg−1·hr−1, cannot be converted to standard international units.
+> This record was reviewed on 2026-11-07 14:11 UTC (Rejected), but the paper was screened again on 2026-11-03 21:29 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The maximum metabolic rate (Vmax) for 5-fluorouracil was rejected because its unit, mg·kg−1·hr−1, cannot be converted to standard international units.
 
-<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2014_reference" status="rejected" stale="false" population="rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2014_reference" status="rejected" stale="true" population="rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Pharmacokinetic-pharmacodynamic (PK-PD) modeling and simulation of 5-fluorouracil for erythropenia in rats. Journal of pharmacological and toxicological methods 70(2):134–144 (2014).
@@ -44,7 +44,7 @@ Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -120,13 +120,13 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Kobuchi_2014_table_1:row3:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Kobuchi_2014_table_1:row0:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Kobuchi_2014_table_1:row1:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Bae_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kobuchi_2014_table_1:row4:col2'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg·kg−1·hr−1 | ['Kobuchi_2014_table_1:row2:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg·kg−1·hr−1 ([mass] / [time]) | ['Kobuchi_2014_table_1:row2:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 23.8 L | ['Kobuchi_2014_table_1:row4:col2'] |
 
@@ -146,7 +146,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

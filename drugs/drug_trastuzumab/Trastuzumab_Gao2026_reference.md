@@ -5,11 +5,11 @@
 
 # trastuzumab — `Trastuzumab_Gao2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Λ1 and V2 have no unit.
+> This record was reviewed on 2026-11-07 16:01 UTC (Needs review), but the paper was screened again on 2026-10-07 21:23 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Λ1 and V2 have no unit.
 
-<div class="pk-model-meta" hidden drug="trastuzumab" model-id="Trastuzumab_Gao2026_reference" status="needs_review" stale="false" population="patients with HER2-expressing or mutated advanced solid tumors" measured-compound="trastuzumab rezetecan" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="trastuzumab" model-id="Trastuzumab_Gao2026_reference" status="needs_review" stale="true" population="patients with HER2-expressing or mutated advanced solid tumors" measured-compound="trastuzumab rezetecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Gao X, Zhao K, Zhao Y, Zhang Y, Zhao J, Zhao C et al. Population Pharmacokinetics of Trastuzumab Rezetecan in Patients With HER2-Expressing or Mutated Advanced Solid Tumors. CPT: pharmacometrics & systems pharmacology 15(5):e70259 (2026).
@@ -45,7 +45,7 @@ Gao X, Zhao K, Zhao Y, Zhang Y, Zhao J, Zhao C et al. Population Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -201,7 +201,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp470259-tbl-0001:row9:col1', 'psp470259-tbl-0001:row9:col2', 'psp470259-tbl-0001:row9:col4', 'psp470259-tbl-0001:row9:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp470259-tbl-0001:row5:col1', 'psp470259-tbl-0001:row5:col2', 'psp470259-tbl-0001:row5:col4', 'psp470259-tbl-0001:row5:col6'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 |  | ['psp470259-tbl-0001:row22:col1', 'psp470259-tbl-0001:row22:col2', 'psp470259-tbl-0001:row22:col4', 'psp470259-tbl-0001:row22:col6'] |
-| C5_unit_missing_Q67 | fail | [mass] / [time] |  | ['psp470259-tbl-0001:row7:col1', 'psp470259-tbl-0001:row7:col2', 'psp470259-tbl-0001:row7:col4', 'psp470259-tbl-0001:row7:col6'] |
+| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['psp470259-tbl-0001:row7:col1', 'psp470259-tbl-0001:row7:col2', 'psp470259-tbl-0001:row7:col4', 'psp470259-tbl-0001:row7:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.36 | ['psp470259-tbl-0001:row2:col1', 'psp470259-tbl-0001:row2:col2', 'psp470259-tbl-0001:row2:col4', 'psp470259-tbl-0001:row2:col6'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.015 L/h | ['psp470259-tbl-0001:row2:col1', 'psp470259-tbl-0001:row2:col2', 'psp470259-tbl-0001:row2:col4', 'psp470259-tbl-0001:row2:col6'] |
@@ -236,7 +236,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

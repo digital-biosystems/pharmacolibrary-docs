@@ -4,11 +4,11 @@
 
 # deferiprone — `Deferiprone_Bellanti2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the extracted V/F value of 20 represents a gender difference percentage, not a volume of distribution, causing a dimension mismatch.
+> This record was reviewed on 2026-11-07 16:42 UTC (Rejected), but the paper was screened again on 2026-10-07 18:47 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the extracted V/F value of 20 represents a gender difference percentage, not a volume of distribution, causing a dimension mismatch.
 
-<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="true" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone in healthy subjects. British journal of clinical pharmacology 78(6):1397–1406 (2014).
@@ -36,7 +36,7 @@ Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,7 +121,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bellanti_2014:abstract', 'Bellanti_2014:abstract'] |
-| C5_dimension_Q76 | fail | dimensionless | % | ['Bellanti_2014:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | % (dimensionless) | ['Bellanti_2014:abstract'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Bellanti_2014:abstract', 'Bellanti_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -142,7 +142,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

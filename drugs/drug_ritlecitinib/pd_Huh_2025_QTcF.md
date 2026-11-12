@@ -15,7 +15,7 @@
 
 **As extracted:** Ritlecitinib (concentrations from the PK model of Purohit_2023::study_1_30_mg_qd) drives change from baseline heart rate– corrected QTcF (∆QTcF) (in ms): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A linear PK/PD model describes the additive effect of ritlecitinib plasma concentrations (ng/mL) on the change from baseline heart rate–corrected QTcF (∆QTcF) in ms, with an estimated slope of 0.000213 ms/ng/mL. The paper does not describe a specific physiological mechanism (such as inhibition of elimination) for this concentration-response relationship, but rather specifies a linear association using a pre-specified statistical model.
 >
@@ -42,25 +42,72 @@ Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & 
 </details>
 
 
+## Exposure-response model
+
+`Ritlecitinib_Huh2025_PD_qtcf` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 0.000213 ms/ng/mL | 0.213 meter ** 3 * second / kilogram |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.213
+
+Deviations:
+
+- `defaulted_parameters` — E0
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_modelica.zip" download>Ritlecitinib_Huh2025_PD_qtcf_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_matlab.zip" download>Ritlecitinib_Huh2025_PD_qtcf_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_sbml.zip" download>Ritlecitinib_Huh2025_PD_qtcf_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf/Ritlecitinib_Huh2025_PD_qtcf_cellml.zip" download>Ritlecitinib_Huh2025_PD_qtcf_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Ritlecitinib_Huh2025_PD_qtcf`. <https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf>
+
+```bibtex
+@misc{pharmacolibrary_RitlecitinibHuh2025PDqtcf,
+  title  = {{Pharmacolibrary model Ritlecitinib_Huh2025_PD_qtcf}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_ritlecitinib/Ritlecitinib_Huh2025_PD_qtcf},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

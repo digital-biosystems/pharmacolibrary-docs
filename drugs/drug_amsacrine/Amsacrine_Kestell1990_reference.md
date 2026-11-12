@@ -4,11 +4,11 @@
 
 # amsacrine — `Amsacrine_Kestell1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Amsacrine's Vss of 3.3 L/kg is dimensionally mismatched with the model structure.
+> This record was reviewed on 2026-11-07 16:37 UTC (Rejected), but the paper was screened again on 2026-10-07 22:59 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Amsacrine's Vss of 3.3 L/kg is dimensionally mismatched with the model structure.
 
-<div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="false" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="true" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposition of amsacrine and its analogue 9-([2-methoxy-4-[(methylsulfonyl)amino]phenyl]amino)-N,5-dimethyl-4- acridinecarboxamide (CI-921) in plasma, liver, and Lewis lung tumors in mice. Cancer research 50(3):503–508 (1990).
@@ -39,7 +39,7 @@ Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -122,11 +122,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | mumol/liter | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | mumol/liter ([substance] / [length] ** 3) | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Kestell_1990:abstract'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | mumol/h/kg | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
-| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | mumol.h/liter | ['Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mumol/h/kg ([substance] / [time]) | ['Kestell_1990:abstract', 'Kestell_1990:abstract'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | mumol.h/liter ([substance] * [time] / [length] ** 3) | ['Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract', 'Kestell_1990:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q65 | pass | volume within physiological range | 231 L | ['Kestell_1990:abstract'] |
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

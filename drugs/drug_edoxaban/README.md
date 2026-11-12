@@ -44,7 +44,7 @@ Edoxaban is a direct factor Xa inhibitor used to prevent stroke in atrial fibril
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ueshima_2025_reference](drugs/drug_edoxaban/Edoxaban_Ueshima2025_reference.md) | — | 1-compartment (no model) | 1 | Ueshima S et al., Population pharmacokinetics and pharmac…, Journal of pharmaceutical h… (2025) | [10.1186/s40780-025-00453-2](https://doi.org/10.1186/s40780-025-00453-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Edwina_2025_reference](drugs/drug_edoxaban/Edoxaban_Edwina2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Edwina AE et al., Population pharmacokinetics of edoxaban…, Journal of thrombosis and h… (2025) | [10.1016/j.jtha.2025.06.023](https://doi.org/10.1016/j.jtha.2025.06.023) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Terrier_2022_reference](drugs/drug_edoxaban/Edoxaban_Terrier2022_reference.md) | — | 1-compartment (no model) | 0 | Terrier J et al., Population Pharmacokinetic Models for D…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2649](https://doi.org/10.1002/cpt.2649) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Yin_2014_reference](drugs/drug_edoxaban/Edoxaban_Yin2014_reference.md) | — | 1-compartment (no model) | 2 | Yin OQ et al., Population pharmacokinetics and dose-ex…, Clinical drug investigation (2014) | [10.1007/s40261-014-0229-7](https://doi.org/10.1007/s40261-014-0229-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yin_2014_reference](drugs/drug_edoxaban/Edoxaban_Yin2014_reference.md) | — | 1-compartment (no model) | 2 | Yin OQ et al., Population pharmacokinetics and dose-ex…, Clinical drug investigation (2014) | [10.1007/s40261-014-0229-7](https://doi.org/10.1007/s40261-014-0229-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -112,7 +112,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 127 matched, 60 returned
 - **screened:** 6  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

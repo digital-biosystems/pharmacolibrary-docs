@@ -25,8 +25,8 @@ Alemtuzumab is a monoclonal antibody used to treat multiple sclerosis and certai
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> | [Dong_2022_reference](drugs/drug_alemtuzumab/Alemtuzumab_Dong2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Dong M et al., Model-informed precision dosing for ale…, British journal of clinical… (2022) | [10.1111/bcp.14955](https://doi.org/10.1111/bcp.14955) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Admiraal_2019_reference](drugs/drug_alemtuzumab/Alemtuzumab_Admiraal2019_reference.md) | — | 1-compartment (no model) | 6 | Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Mould_2007_reference](drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_reference.md) | — | 1-compartment (no model) | 4 | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Admiraal_2019_reference](drugs/drug_alemtuzumab/Alemtuzumab_Admiraal2019_reference.md) | — | 1-compartment (no model) | 6 | Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Mould_2007_reference](drugs/drug_alemtuzumab/Alemtuzumab_Mould2007_reference.md) | — | 1-compartment (no model) | 4 | Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,7 +63,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 27 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

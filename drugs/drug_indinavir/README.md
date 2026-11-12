@@ -45,7 +45,7 @@ Indinavir is a protease inhibitor that was used to treat HIV infection and AIDS.
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Brendel_2005_reference](drugs/drug_indinavir/Indinavir_Brendel2005_reference.md) | — | 1-compartment (no model) | 0 | Brendel K et al., Population pharmacokinetic analysis of…, Fundamental & clinical phar… (2005) | [10.1111/j.1472-8206.2005.00315.x](https://doi.org/10.1111/j.1472-8206.2005.00315.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kshirsagar_2007_reference](drugs/drug_indinavir/Indinavir_Kshirsagar2007_reference.md) | — | 1-compartment (no model) | 0 | Kshirsagar SA et al., Improving data reliability using a non-…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-006-9032-2](https://doi.org/10.1007/s10928-006-9032-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Solas_2007_reference](drugs/drug_indinavir/Indinavir_Solas2007_reference.md) | — | 1-compartment (no model) | 0 | Solas C et al., Minimal effect of MDR1 and CYP3A5 genet…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02903.x](https://doi.org/10.1111/j.1365-2125.2007.02903.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub> | [Zhou_2000_reference](drugs/drug_indinavir/Indinavir_Zhou2000_reference.md) | — | 1-compartment (no model) | 8 | Zhou XJ et al., Plasma population pharmacokinetics and…, AIDS (London, England) (2000) | [10.1097/00002030-200012220-00008](https://doi.org/10.1097/00002030-200012220-00008) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Zhou_2000_reference](drugs/drug_indinavir/Indinavir_Zhou2000_reference.md) | — | 1-compartment (no model) | 8 | Zhou XJ et al., Plasma population pharmacokinetics and…, AIDS (London, England) (2000) | [10.1097/00002030-200012220-00008](https://doi.org/10.1097/00002030-200012220-00008) |
 
 ## Pharmacodynamics (PD)
 
@@ -94,7 +94,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 387 matched, 147 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 7  ·  extracted 1  ·  needs review 2  ·  rejected 4  ·  stale 0
+- **records:** 7  ·  extracted 1  ·  needs review 2  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

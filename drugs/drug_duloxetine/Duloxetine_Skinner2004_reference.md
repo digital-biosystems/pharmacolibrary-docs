@@ -5,11 +5,11 @@
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Tmax for duloxetine is recorded as 0.139 years, a dimensionally inconsistent unit that caused the model review failure.
+> This record was reviewed on 2026-11-07 15:02 UTC (Rejected), but the paper was screened again on 2026-10-06 22:53 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Tmax for duloxetine is recorded as 0.139 years, a dimensionally inconsistent unit that caused the model review failure.
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="false" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="true" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect of age on the pharmacokinetics of duloxetine in women. British journal of clinical pharmacology 57(1):54–61 (2004).
@@ -44,7 +44,7 @@ Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -140,8 +140,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [mass] / [time] / [length] ** 3 | ng h -1 ml -1 | ['Skinner_2004_table_2:row4:col1', 'Skinner_2004_table_2:row4:col2', 'Skinner_2004_table_2:row4:col4'] |
-| C5_dimension_Q19 | fail | [mass] / [time] / [length] ** 3 | ng h -1 ml -1 | ['Skinner_2004_table_2:row3:col2', 'Skinner_2004_table_2:row3:col4'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | ng h -1 ml -1 ([mass] / [time] / [length] ** 3) | ['Skinner_2004_table_2:row4:col1', 'Skinner_2004_table_2:row4:col2', 'Skinner_2004_table_2:row4:col4'] |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | ng h -1 ml -1 ([mass] / [time] / [length] ** 3) | ['Skinner_2004_table_2:row3:col2', 'Skinner_2004_table_2:row3:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Skinner_2004_table_2:row7:col2', 'Skinner_2004_table_2:row7:col4'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Skinner_2004_table_2:row5:col1', 'Skinner_2004_table_2:row5:col2', 'Skinner_2004_table_2:row5:col4'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Skinner_2004_table_2:row9:col1', 'Skinner_2004_table_2:row9:col2', 'Skinner_2004_table_2:row9:col4'] |
@@ -169,7 +169,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

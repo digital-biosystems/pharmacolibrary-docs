@@ -4,11 +4,11 @@
 
 # adefovir dipivoxil — `AdefovirDipivoxil_Dong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the renal clearance parameter for adefovir was reported in litres per hour, causing a dimension mismatch with the model's expected units.
+> This record was reviewed on 2026-11-07 16:24 UTC (Rejected), but the paper was screened again on 2026-10-07 15:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the renal clearance parameter for adefovir was reported in litres per hour, causing a dimension mismatch with the model's expected units.
 
-<div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Dong2024_reference" status="rejected" stale="false" population="healthy adults" measured-compound="adefovir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Dong2024_reference" status="rejected" stale="true" population="healthy adults" measured-compound="adefovir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding adefovir pharmacokinetics as a component of a transporter phenotyping cocktail. European journal of clinical pharmacology 80(7):1069–1078 (2024).
@@ -44,7 +44,7 @@ Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding ade
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -152,11 +152,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C2_base_Q61 | fail | 235 | 12.4 | 0.0528 | 0.05 | footnote reference category |
-| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | nmol/L |  |  | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) |  |  | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  |  |  | ['Tab3:row4:col1', 'Tab3:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Tab3:row10:col1', 'Tab3:row10:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Tab3:row3:col1', 'Tab3:row3:col2'] |
-| C5_dimension_Q66 | fail | [substance] / [time] | µmol/h |  |  | ['Tab3:row6:col1', 'Tab3:row6:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µmol/h ([substance] / [time]) |  |  | ['Tab3:row6:col1', 'Tab3:row6:col2'] |
 | C5_dimension_Q83 | pass | [time] |  |  |  | ['Tab3:row2:col1', 'Tab3:row2:col2'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
@@ -178,7 +178,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

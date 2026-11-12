@@ -5,11 +5,11 @@
 
 # paracetamol — `Paracetamol_Belle2000_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> C5 dimension mismatch on a structural parameter.
+> This record was reviewed on 2026-11-07 14:17 UTC (Rejected), but the paper was screened again on 2026-09-27 13:32 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. C5 dimension mismatch on a structural parameter.
 
-<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Belle2000_base" status="rejected" stale="false" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Belle2000_base" status="rejected" stale="true" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A population approach to enzyme characterization and identification: application to phenacetin O-deethylation. Pharmaceutical research 17(12):1531–1536 (2000).
@@ -43,7 +43,7 @@ Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A p
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q1 | fail | [length] | M | ['tab_1:row5:col1', 'tab_1:row5:col3', 'tab_1:row5:col4'] |
+| C5_dimension_Q1 | fail | [mass] / [length] ** 3 | M ([length]) | ['tab_1:row5:col1', 'tab_1:row5:col3', 'tab_1:row5:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Allegaert_2014:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Anderson_1998:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Albert_1984:review'] |
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

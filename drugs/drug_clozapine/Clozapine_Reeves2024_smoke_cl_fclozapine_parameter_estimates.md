@@ -5,11 +5,11 @@
 
 # clozapine — `Clozapine_Reeves2024_smoke_cl_fclozapine_parameter_estimates`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> Clozapine's bioavailability-adjusted volume of distribution was rejected because its extracted value lacked a recognized unit for conversion to standard SI units.
+> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Clozapine's bioavailability-adjusted volume of distribution was rejected because its extracted value lacked a recognized unit for conversion to standard SI units.
 
-<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_smoke_cl_fclozapine_parameter_estimates" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_smoke_cl_fclozapine_parameter_estimates" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
@@ -38,7 +38,7 @@ Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -110,7 +110,7 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | mg L−1 | ['Reeves_2024_table_3:row1:col4'] |
+| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mg L−1 ([mass] / [length] ** 3) | ['Reeves_2024_table_3:row1:col4'] |
 | C5_unit_missing_Q76 | fail | [length] ** 3 |  | ['Reeves_2024:results_prose'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -132,7 +132,7 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

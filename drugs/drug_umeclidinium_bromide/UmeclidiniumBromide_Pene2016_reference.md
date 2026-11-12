@@ -5,11 +5,11 @@
 
 # umeclidinium bromide — `UmeclidiniumBromide_Pene2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
-> The record was rejected because the absorption rate constant for umeclidinium bromide had an undefined unit, preventing dimensional consistency checks.
+> This record was reviewed on 2026-11-07 15:01 UTC (Rejected), but the paper was screened again on 2026-10-07 15:20 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was rejected because the absorption rate constant for umeclidinium bromide had an undefined unit, preventing dimensional consistency checks.
 
-<div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="true" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A Novel Method for Studying the Pharmacokinetics of [(14) C]Umeclidinium After Application to the Axilla or Palm of Healthy Male Subjects. Clinical and translational science 9(4):183–191 (2016).
@@ -45,7 +45,7 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -138,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cts12406-tbl-0003:row2:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cts12406-tbl-0003:row4:col2'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | ['cts12406-tbl-0003:row5:col2'] |
+| C5_dimension_Q49 | fail | 1 / [time] | units ([luminosity] / [length] ** 2) | ['cts12406-tbl-0003:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['cts12406-tbl-0003:row1:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['cts12406-tbl-0003:row3:col2'] |
 | C5_dimension_Q83 | pass | [time] |  | ['cts12406-tbl-0003:row8:col2'] |
@@ -164,7 +164,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
